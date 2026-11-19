@@ -4,6 +4,8 @@
 
 For offline browsing, open [`index.html`](index.html) in the extracted folder to reach the reference through clickable links.
 
+The preservation catalog and guide for 208 historical Emuera distribution archives is available at [preservation/](preservation/README.md).
+
 This project is an independent, evidence-based compatibility survey for Emuera-compatible engines. Its initial dataset records a finite comparison between Emuera 1.824 +v24 and PyEmuera 3.0.0. Emuera runs variants written in ERB with CSV data; this project examines selected language and command behavior rather than distributing variants. The saved Emuera observations provide a reference for future PyEmuera compatibility fixes and regression checks, as well as for other compatible implementations.
 
 The historical ledger records 694 typed targets, 2,898 main scenarios, 16 supplemental items and 114 separate grammar cases. The survey recorded its source census as complete within the declared scope. The ledger retains scoped matches, differences, unsupported behavior and unresolved observations. Registered modes describe case configurations. A shared run can supply records for several cases.
