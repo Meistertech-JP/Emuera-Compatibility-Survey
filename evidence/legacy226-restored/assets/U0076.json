@@ -1,0 +1,33 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTK"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_PRINTK_EXISTING_20261115.json",
+  "acceptance_sha256": "05c3249aac87ca8866348037e05fb08d23a7552c27575e37351b878809c2a27e",
+  "registered_case_ids": [
+    "PRINTK01",
+    "KANALITERAL213_K213_0",
+    "KANALITERAL213_K213_1",
+    "KANALITERAL213_K213_2",
+    "KANALITERAL213_K213_3",
+    "KANALITERAL213_K213_4",
+    "KANALITERAL213_K213_5",
+    "KANALITERAL213_K213_6",
+    "KANALITERAL213_K213_7",
+    "KANALITERAL213_K213_8",
+    "KANALITERAL213_K213_9",
+    "KANALITERAL213_K213_10",
+    "KANALITERAL213_K213_11",
+    "KANALITERAL213_STANDALONE"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "evidence_reference_hashes_validated": true,
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "global_completion": false
+}

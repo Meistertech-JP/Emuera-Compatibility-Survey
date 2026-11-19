@@ -1,0 +1,130 @@
+{
+  "desktop": "PyEmueraProbe_ebe153e7ab8c46a49936b8355166d550",
+  "desktop_created": true,
+  "no_input_sent": true,
+  "native_artifact_sha256_before": {
+    "Emuera1824+v24.exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "mode": "native",
+  "create_process_ok": true,
+  "pid": 209088,
+  "enumeration_ok": true,
+  "windows": [
+    {
+      "hwnd": 32181394,
+      "pid": 209088
+    },
+    {
+      "hwnd": 24971670,
+      "pid": 209088
+    },
+    {
+      "hwnd": 3410802,
+      "pid": 209088
+    },
+    {
+      "hwnd": 15337232,
+      "pid": 209088
+    },
+    {
+      "hwnd": 20384472,
+      "pid": 209088
+    },
+    {
+      "hwnd": 27528266,
+      "pid": 209088
+    },
+    {
+      "hwnd": 29886780,
+      "pid": 209088
+    }
+  ],
+  "own_windows": [
+    {
+      "hwnd": 32181394,
+      "pid": 209088
+    },
+    {
+      "hwnd": 24971670,
+      "pid": 209088
+    },
+    {
+      "hwnd": 3410802,
+      "pid": 209088
+    },
+    {
+      "hwnd": 15337232,
+      "pid": 209088
+    },
+    {
+      "hwnd": 20384472,
+      "pid": 209088
+    },
+    {
+      "hwnd": 27528266,
+      "pid": 209088
+    },
+    {
+      "hwnd": 29886780,
+      "pid": 209088
+    }
+  ],
+  "children": [
+    {
+      "hwnd": 35196060,
+      "pid": 209088,
+      "class": "WindowsForms10.RICHEDIT50W.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 8850778,
+      "pid": 209088,
+      "class": "WindowsForms10.SCROLLBAR.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 31919588,
+      "pid": 209088,
+      "class": "WindowsForms10.Window.8.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 6557230,
+      "pid": 209088,
+      "class": "WindowsForms10.Window.8.app.0.34f5582_r8_ad1",
+      "title": "menuStrip1"
+    },
+    {
+      "hwnd": 11865650,
+      "pid": 209088,
+      "class": "WindowsForms10.EDIT.app.0.34f5582_r8_ad1",
+      "title": "Emuera Ver. 1.824"
+    }
+  ],
+  "capture_returncode": 0,
+  "capture_output": "target 31919588 WindowsForms10.Window.8.app.0.34f5582_r8_ad1 760 461\nprint 1\nbits 461\nwrote [SURVEY_ROOT]\\work\\command-coverage-20261111\\runs\\native-fresh-KANALOG02-5166d550-display.bmp 1401494\n",
+  "capture_samples": [
+    {
+      "sample": 1,
+      "returncode": 0,
+      "output": "target 31919588 WindowsForms10.Window.8.app.0.34f5582_r8_ad1 760 461\nprint 1\nbits 461\nwrote [SURVEY_ROOT]\\work\\command-coverage-20261111\\runs\\native-fresh-KANALOG02-5166d550-display.bmp 1401494\n"
+    },
+    {
+      "sample": 2,
+      "returncode": 0,
+      "output": "target 31919588 WindowsForms10.Window.8.app.0.34f5582_r8_ad1 760 461\nprint 1\nbits 461\nwrote [SURVEY_ROOT]\\work\\command-coverage-20261111\\runs\\native-fresh-KANALOG02-sample2-5166d550-display.bmp 1401494\n"
+    }
+  ],
+  "closed_desktop": true,
+  "input_sha256_before": {
+    "ERB/KANALOG02.ERB": "ab5052153327ca3577dab899bd13780fe01bc7dfa1f14c4fe9b623809c4c35d5"
+  },
+  "input_sha256_after": {
+    "ERB/KANALOG02.ERB": "ab5052153327ca3577dab899bd13780fe01bc7dfa1f14c4fe9b623809c4c35d5"
+  },
+  "native_artifact_sha256_after": {
+    "Emuera1824+v24.exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  }
+}

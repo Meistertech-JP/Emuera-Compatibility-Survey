@@ -1,0 +1,98 @@
+{
+  "case_id": "ARGBOUND245_string_numeric",
+  "case_verdict": "different_scoped",
+  "comparison_classification": "different_diagnostic_body_only_selected_state_stop_equal",
+  "comparison_limits": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.",
+  "condition": {
+    "arguments": "\"0\"",
+    "dead": false,
+    "fixture_sha256": "e9cc18847fcd927d2f77358747d43d9ca2e88092c4b1ca6697b5d0e5f1e633d5",
+    "name": "string_numeric",
+    "target_line": 9
+  },
+  "configuration_contents_disclosed": false,
+  "dead_branch_only": false,
+  "fixture_path": "cases/ARGBOUND245_string_numeric/fixture/SEARCHBOUND01.ERB",
+  "group": "diagnostic_difference",
+  "legacy_case_id": "PARENT245_string_numeric",
+  "necessary_comparison_complete": true,
+  "non_disclosure_limit": "Full configuration, original receipts, and original ledgers are not in this projection. Hash equality does not prove full execution condition or engine identity.",
+  "original_receipts_disclosed": false,
+  "parent_review": {
+    "case_relation": "case_listed",
+    "decision": "accepted",
+    "scope": "Selected parent source only; other target evidence is not included."
+  },
+  "public_stderr_path": "cases/ARGBOUND245_string_numeric/raw/public-stderr.bin",
+  "public_stderr_sha256": "8d2d087dd950e961abdc40a240db88c27654448d41702dad22b480d293cb7081",
+  "requirement_ids": [
+    "normal_output_state_control",
+    "finite_boundary_error",
+    "evaluation_and_side_effects"
+  ],
+  "runs": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": {
+        "body": "ADDCOPYCHARA命令:第1引数の型が正しくありません",
+        "line": 9
+      },
+      "fixture_sha256": "e9cc18847fcd927d2f77358747d43d9ca2e88092c4b1ca6697b5d0e5f1e633d5",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_string_numeric/raw/native-01-emuera.log",
+      "raw_sha256": "7ef9c74ca10777d2bdbba55b7dc282c819651ea6d4a73bc7a8001577c8437fc9",
+      "selected_lines": [
+        "BEGIN245 string_numeric",
+        "BEFORE245 N=1 R=701"
+      ]
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": {
+        "body": "ADDCOPYCHARA命令:第1引数の型が正しくありません",
+        "line": 9
+      },
+      "fixture_sha256": "e9cc18847fcd927d2f77358747d43d9ca2e88092c4b1ca6697b5d0e5f1e633d5",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_string_numeric/raw/native-02-emuera.log",
+      "raw_sha256": "7ef9c74ca10777d2bdbba55b7dc282c819651ea6d4a73bc7a8001577c8437fc9",
+      "selected_lines": [
+        "BEGIN245 string_numeric",
+        "BEFORE245 N=1 R=701"
+      ]
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "error": {
+        "body": "式の結果が数値ではありません",
+        "code": "E_TYPE",
+        "line": 9
+      },
+      "fixture_config_pre_post_equal": true,
+      "fixture_sha256": "e9cc18847fcd927d2f77358747d43d9ca2e88092c4b1ca6697b5d0e5f1e633d5",
+      "raw_path": "cases/ARGBOUND245_string_numeric/raw/public-stdout.bin",
+      "raw_sha256": "7cba605b0d90e6089a73d6e370840fe300a379773a02f8226502662a3c8bb6d6",
+      "returncode": 1,
+      "selected_lines": [
+        "BEGIN245 string_numeric",
+        "BEFORE245 N=1 R=701"
+      ]
+    }
+  },
+  "selected_checkpoints_equal": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ADDCOPYCHARA"
+  },
+  "target_outcome": "different_scoped",
+  "target_runtime_entered": true
+}

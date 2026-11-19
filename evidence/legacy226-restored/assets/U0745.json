@@ -1,0 +1,43 @@
+{
+  "schema": "parent-target-adjudication-1",
+  "generated_utc": "2026-11-14T13:12:27.900248+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "LOG10"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "finite_remainder": [],
+  "finite_scope": "Pinned v24 signature and expression routing; valid positive helper/RESULT/RESULTS case, positive 1, 9->0 and 10->1 truncation controls; separate nonpositive 0 and -1 helper cases with Native x2/public pyz x1, helper once, all independent sentinels observed, same line-8 stop; localized diagnostic difference retained.",
+  "case_results": [
+    {
+      "case_id": "LOG10DOMAINZERO01",
+      "comparison_path": "evidence/log10-domain-boundary-20261114/COMPARISON.json",
+      "comparison_sha256": "899518e262105ea4c3b7c86a46536de63e77474ad72079f9826ca6b90c8b12c3",
+      "classification": "different_scoped"
+    },
+    {
+      "case_id": "LOG10DOMAINNEG01",
+      "comparison_path": "evidence/log10-domain-boundary-20261114/COMPARISON.json",
+      "comparison_sha256": "899518e262105ea4c3b7c86a46536de63e77474ad72079f9826ca6b90c8b12c3",
+      "classification": "different_scoped"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+      "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8"
+    },
+    {
+      "path": "evidence/log10-domain-boundary-20261114/SOURCE_SCOPE.md",
+      "sha256": "f52075992802f51d2b09b0ccc029f3b23e09d04e1963f20120e05e857c3cb571"
+    }
+  ],
+  "limitations": [
+    "No post-error state, return assignment C, Native natural exit or exit code observed.",
+    "Expression form only; method_as_command:LOG10 stays separate.",
+    "No whole-function compatibility claim."
+  ],
+  "product_modified": false,
+  "public_artifacts_modified": false
+}

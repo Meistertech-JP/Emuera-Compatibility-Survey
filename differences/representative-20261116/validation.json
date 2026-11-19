@@ -1,0 +1,27 @@
+{
+  "schema": "representative-evidence-validation-v1",
+  "offline_bundle": {
+    "status": "PASS",
+    "cases": 4,
+    "asset_files": 36,
+    "claims": "selected raw markers and settings checked",
+    "reproducibility": "not_established",
+    "scope": "offline bundle integrity; no engine execution"
+  },
+  "controls": {
+    "isolated_copy": "PASS",
+    "modified_p38_stderr_rejected": "PASS"
+  },
+  "private_provenance_check": {
+    "source_files_rehashed": 62,
+    "output_assets_rehashed": 36,
+    "status": "PASS"
+  },
+  "other_neutral_index_verifier": "PASS",
+  "limitations": [
+    "No Native or PyEmuera process was started.",
+    "Full original configuration and runner not included.",
+    "Original evidence P38 stderr is not separately pinned by its historical pilot inventory.",
+    "Screen visually inspected; this is not a comprehensive security or licensing audit."
+  ]
+}

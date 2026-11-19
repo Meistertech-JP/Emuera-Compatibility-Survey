@@ -1,0 +1,41 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-15T05:10:05.074789+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "HTML_POPPRINTINGSTR"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "scope": "Reached zero-argument expression calls that pop a pending line to a RESULTS slot, observe the next call returning empty, then pop a second pending line; independent RESULT sentinel and continuation only.",
+  "source": {
+    "case_source_json": "evidence/html-buffer-queries-20261113-219/SOURCE.json",
+    "case_source_json_sha256": "891cd2567d898dc9b3238624afabde3e2f3eda48ae3fded9823cf0440e83cdb2",
+    "source_excerpt": "evidence/html-buffer-queries-20261113-219/SOURCE_EXCERPTS_V24.txt",
+    "source_excerpt_sha256": "15e470b3d0c4d999313c6edb7f1462a5642bd2956e7bf0fa95d1e5935a0a596a",
+    "contract": "Creator.Method.cs registration and HtmlPopPrintingStrMethod; EmueraConsole.Print.cs PopDisplayingLines"
+  },
+  "case": {
+    "case_id": "HTMLBUFFER219_EXPR_HTML_POPPRINTINGSTR",
+    "case_path": "evidence/html-buffer-queries-20261113-219",
+    "control": "pop_html_expr_control/CONTROL.json",
+    "comparison_sha256": "67bb17d25a6150702df1035ec5dd5e4978eefc0eb01d569dd6c2fb472f753ebd",
+    "case_review_sha256": "571bece948577925bc925471d004d8ee0a14f3286d03fc0578e46301aa8db125",
+    "fixture_sha256": "76455731ce59e1cde07024cc53dbb972b7947541e88ac5f37343f0f81ac36624",
+    "raw_log_sha256": "746c53b524f2dd91a8191237d609ca81a539a663e828a98dd6ac08e115b7fd78",
+    "all_three_raw_logs_byte_identical": true,
+    "public_receipt_sha256": "f40f98aaee2edfd80ac6ef18063a95e43c42a79c96cf9965982fd43899935b46",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "native_exit_observed": false,
+    "synthetic_keyboard_events_sent": false
+  },
+  "explicit_exclusions": [
+    "RESULTS sentinel preservation; RESULTS slots intentionally receive function return values",
+    "command form and its public load-time rejection, tracked as a separate target",
+    "HTML GUI pixels, arbitrary tags/styles, all error paths, and Native natural process exit"
+  ],
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_modified": false
+}

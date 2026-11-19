@@ -1,0 +1,19 @@
+{
+  "case_id": "CARRAY_CURRENT_SUMCARRAY_EXPR_END_OVERRUN_20261115",
+  "mode": "public-01",
+  "identity_basis": "explicit_case_evidence_and_source_path",
+  "inputs_before": {
+    "ERB/SEARCHBOUND01.ERB": "3430c2a5f956fb70e755f42f45aa53d1958d7f9a21fb7c931e2d6047d79d4076",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "3430c2a5f956fb70e755f42f45aa53d1958d7f9a21fb7c931e2d6047d79d4076",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "203ba1290e2f9df6e7e3c158ab820001422cd14dea797aa9195dfb7de2f175ae",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable"
+}

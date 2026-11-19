@@ -1,0 +1,32 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-14T12:24:37.973351+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "SQRT"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "SQRTBASE01",
+    "MATHINVOKE_SQRTEXPR",
+    "MATHBOUNDARY200_expression_function_SQRT",
+    "SQRTNEGFAULT01"
+  ],
+  "finite_scope": "Active v24 registration/signature; selected normal and helper controls; case200 0/1 and large-double rounding; and SQRT(-1) through an argument helper, with Native x2/public pyz x1 helper count and stop line compared. Error diagnostic difference is explicitly documented.",
+  "review": "REVIEW_ja.md",
+  "review_sha256": "ed872a32e94ded2a4fc47cbcfc8e268fcb23cb4444f3313c4d7d79607d8dfaa4",
+  "case_review": "../../evidence/phase2-sqrt-negative-helper-20261114/CASE_REVIEW_ja.md",
+  "case_review_sha256": "b0e0ba639c3d9635bcada72f815e3f8d317199f0052d2bbcb52c71dc8f723b23",
+  "comparison": "../../evidence/phase2-sqrt-negative-helper-20261114/COMPARISON.json",
+  "comparison_sha256": "bdfe1bbee3dddc4f0e016072517f45c2af91c697165322994acc6f2d52c41137",
+  "excluded": [
+    "all other values",
+    "arity/type matrix",
+    "complete floating-point domain/overflow",
+    "post-error state equality",
+    "Native natural exit/exit code"
+  ],
+  "product_code_changed": false,
+  "public_artifacts_changed": false
+}

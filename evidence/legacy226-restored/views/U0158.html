@@ -1,0 +1,37 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0158 · emuera.log</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0158 · emuera.log</h1>
+<p>U0158 / native-01。ARRAYSHIFT/REMOVE/COPYの配列値・評価回数・順序。SHIFTの12453対12345、早期評価終了を含む差を保持。出力20行、マーカー19種、診断候補0行を確認。例: MUT0, MUT1, MUT2。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>85a9bc57a2af51ce2bf08100cb399ec3b8ae8563a437a46e32a443fe9fe443d0</code></p>
+<p><a href="../assets/U0158.log">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>85a9bc57a2af51ce2bf08100cb399ec3b8ae8563a437a46e32a443fe9fe443d0</code></p>
+<pre>Now Loading...
+MUT0 DATA=[0,1,2,3,4] COUNT=5 ORDER=12453
+MUT1 DATA=[3,4,5,0,0] COUNT=5 ORDER=12453
+MUT2 DATA=[1,2,3,4,5] COUNT=2 ORDER=12
+MUT3 DATA=[1,2,3,4,5] COUNT=4 ORDER=1245
+MUT4 DATA=[1,0,2,3,5] COUNT=5 ORDER=12453
+MUT5 DATA=[1,4,5,0,0] COUNT=3 ORDER=123
+MUT6 DATA=[1,2,3,4,5] COUNT=3 ORDER=123
+MUT7 DATA=[X,S1,S2,S3,S4] COUNT=5 ORDER=12453
+MUT8 DATA=[S3,S4,S5,X,X] COUNT=5 ORDER=12453
+MUT9 DATA=[S1,S2,S3,S4,S5] COUNT=2 ORDER=12
+MUT10 DATA=[S1,S2,S3,S4,S5] COUNT=4 ORDER=1245
+MUT11 DATA=[S1,X,S2,S3,S5] COUNT=5 ORDER=12453
+MUT12 DATA=[S1,S4,S5,,] COUNT=3 ORDER=123
+MUT13 DATA=[S1,S2,S3,S4,S5] COUNT=3 ORDER=123
+MUT14 DEST=[1,2,3,4,5,99,99] COUNT=0 ORDER=0
+MUT15 DEST=[1,2,3,4,5,99,99] COUNT=2 ORDER=12
+MUT16 DEST=[S1,S2,S3,S4,S5,OLD,OLD] COUNT=0 ORDER=0
+MUT17 DEST=[S1,S2,S3,S4,S5,OLD,OLD] COUNT=2 ORDER=12
+DONE
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1740 · command_or_syntax:ARRAYREMOVE · check</li>
+</ul></html>

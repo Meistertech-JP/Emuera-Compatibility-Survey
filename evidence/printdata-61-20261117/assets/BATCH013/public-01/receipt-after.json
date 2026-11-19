@@ -1,0 +1,42 @@
+{
+  "fixture": "CHOICE_BAD_PRINTDATAK",
+  "mode": "public-01",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "-B",
+    "-I",
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "."
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "ce7384fa5cd6285bf027ed3efcb453d98f9b24fc2319923d30ea9ecd9a51e685",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "started_utc": "2026-11-15T23:29:41.426082+00:00",
+  "preflight_sha256": "d1175b8e24eabc726cf328e8ee892ff41d47de038884cd45c84a7863c1dccc90",
+  "native_before": null,
+  "helper_sha256": null,
+  "returncode": 1,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "ce7384fa5cd6285bf027ed3efcb453d98f9b24fc2319923d30ea9ecd9a51e685",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "ended_utc": "2026-11-15T23:29:41.938305+00:00",
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "cb642e47d13937d240781b1cfaa70344c335d1638471014f7220d01deb175aca",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "d1175b8e24eabc726cf328e8ee892ff41d47de038884cd45c84a7863c1dccc90",
+    "stderr.bin": "ca214fa8c0db7a9ab269afc09e04f4eb8e7fa9075d1ff639c8a57d8908c3b0aa",
+    "stdout.bin": "631dfd82e2918762ccb55c41a7e4b305661249c12db4ec144791dc84fb92396a",
+    ".pyemuera/logs/emuera.log": "3f345130c8def71617c4ff524cd70bf64371d4bca5ea75d0e0771d6d2166f260",
+    ".pyemuera/logs/output-20261116-082941-871745.txt": "a2063ec6102c1ae2c8bff6e0fc03ac3afdb597b6779f35d951df077f2bd48229",
+    ".pyemuera/logs/output-20261116-082941-898743.txt": "30bcaff4e79c4f5700fcf967ce55ddbef0969b16b07174a7c1d337ffa11fab1a",
+    ".pyemuera/logs/outputlog-manifest.json": "94421db7757ab623527ba6cf1bd18eeb2adef89183999b1b9bf0fb635051c034"
+  }
+}

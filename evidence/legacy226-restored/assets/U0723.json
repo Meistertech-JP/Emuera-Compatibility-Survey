@@ -1,0 +1,644 @@
+{
+  "schema": "parent-command-six-adjudication-v1",
+  "scope": [
+    "CLEARTEXTBOX",
+    "DO",
+    "LOOP",
+    "TOOLTIP_SETCOLOR",
+    "TOOLTIP_SETDELAY",
+    "TOOLTIP_SETDURATION"
+  ],
+  "review": {
+    "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-command-evidence-review-20261113\\REVIEW.json",
+    "sha256": "7c6074a8379e595b608ce331abca2f60c2163d1598c769e7a6e6ace3c7359a2c"
+  },
+  "original_requirements": {
+    "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\target-closure-review-20261113\\commands\\MATRIX.json",
+    "sha256": "747f2183bce98969241c88789d3cdd5036c819fc8a88181ebc544620f9c237f6"
+  },
+  "evidence_index": {
+    "path": "EVIDENCE.json",
+    "sha256": "f0789d7e2635642df1113d56161a568c7b558ed894eec297f5900870090fefba"
+  },
+  "decision_basis": "Authored comparison against unchanged original finite requirements and original raw/runtime/source evidence; structural validation is not acceptance. Exactly six proposals; no parent integration or ledger writes.",
+  "pins": {
+    "source_archive": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "native_exe_member": "Emuera1824+v24/Emuera1824+v24.exe",
+    "native_exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "public_pyz": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "rows": [
+    {
+      "kind": "command_or_syntax",
+      "name": "CLEARTEXTBOX",
+      "accepted": true,
+      "comparison_outcome": "documented_availability_gap",
+      "requirements": [
+        {
+          "id": "registration_form",
+          "requirement": "Exact v24 CLEARTEXTBOX command registration and constructor arguments, not expression or method-as-command homonym.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "VOID registration and ScriptProc dispatch to MainWindow.clear_richText are exact archive members."
+        },
+        {
+          "id": "signature_parser",
+          "requirement": "CLEARTEXTBOX: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "VOID builder ignores surplus text with a level-1 warning; no expression evaluation. Public source rejects nonempty arguments. This source-only parser difference is retained, not claimed matched."
+        },
+        {
+          "id": "normal_output_state_control",
+          "requirement": "Target reached and subsequent checkpoint continues; previous input textbox state handled separately.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Own line281 is followed by C202_19_STATE and END in Native1, Native2 and public. Pending P> joins <T; DELTA=0, RESULT=701 and RESULTS=sentinel survive."
+        },
+        {
+          "id": "finite_boundary_error",
+          "requirement": "Inspect ClearTextBox implementation to decide observable state; do not claim empty GUI textbox from OUTPUTLOG alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "MainWindow.clear_richText calls richTextBox1.Clear. OUTPUTLOG proves continuation/history only; populated editable text is unobserved. Public warning explicitly says pending terminal input is cleared and no retained GUI edit box exists."
+        },
+        {
+          "id": "evaluation_and_side_effects",
+          "requirement": "VOID has no expression/range axes; if unavailable publicly, document explicit adaptation/availability instead of pixel equivalence.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "No expression/range axes for VOID. Explicit terminal adaptation discharges the original availability alternative; no GUI textbox-state equivalence is inferred."
+        }
+      ],
+      "case_ids": [
+        "DISPLAYLINES202_C202_19"
+      ],
+      "context_case_ids": [],
+      "evidence_refs": [
+        "C00055",
+        "C00405",
+        "C00407",
+        "C00768",
+        "C00833",
+        "C00834",
+        "C01046",
+        "C01047",
+        "C01048",
+        "C01049",
+        "C01050",
+        "C01462",
+        "C01463",
+        "S_CLEAR"
+      ],
+      "evidence_hashes": [
+        "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+        "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+        "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+        "3609c88ed5f4fd384323356923fdb8cd6c561d5fbb6ec5c06803606657ca4d72",
+        "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+        "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+        "7cf1fbbba3f0e9c6efb669f83e74d5414a0a7291c88a97bcaf8f616586e5ff9f",
+        "81cb18a4a1b36005e9df801f6194a3644c07513be62107157a0369ed6b9e1886",
+        "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+        "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+        "e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83",
+        "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb"
+      ],
+      "remainder": [],
+      "limits": "Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred."
+    },
+    {
+      "kind": "command_or_syntax",
+      "name": "DO",
+      "accepted": false,
+      "comparison_outcome": "matched_selected_paths_original_requirements_incomplete",
+      "requirements": [
+        {
+          "id": "registration_form",
+          "requirement": "Exact v24 DO command registration and constructor arguments, not expression or method-as-command homonym.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Exact DO registration selects ENDIF_Instruction (VOID, no-op runtime handler); structural pairing comes from ErbLoader, independently read."
+        },
+        {
+          "id": "signature_parser",
+          "requirement": "DO: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "VOID builder body and inherited guards read from exact archive. Surplus text warns; source review is not malformed-input runtime proof."
+        },
+        {
+          "id": "normal_output_state_control",
+          "requirement": "Chosen loop body/continue/break sequence with exact marker/counter trace.",
+          "discharged": false,
+          "assessment": "partial_original_obligation_remains",
+          "finding": "LOOPCOND02/03 prove entered/nested bodies and CONTINUE, traces123/123123. Their BREAK instructions are only A>4/B>4 guards, never reached; the original named break sequence is not observed."
+        },
+        {
+          "id": "finite_boundary_error",
+          "requirement": "Review LOOPCOND02/03 nested/false-body and WHILE01; outside-loop BREAK or CONTINUE guard in exact builders/parser.",
+          "discharged": false,
+          "assessment": "partial_original_obligation_remains",
+          "finding": "WHILE01 original fixture/raw reviewed as a related control only: it enters A<3 and has no false-entry body. Exact ErbLoader outside-loop BREAK/CONTINUE guard and DO/LOOP pairing are inspected; false-body runtime obligation remains."
+        },
+        {
+          "id": "evaluation_and_side_effects",
+          "requirement": "Condition helper count and skipped body divide-by-zero; paired delimiter source role is independent of text token spelling.",
+          "discharged": false,
+          "assessment": "partial_original_obligation_remains",
+          "finding": "Condition counts3/6 and ordering agree, including CONTINUE. None of LOOPCOND02, LOOPCOND03 or WHILE01 contains the original requested skipped-body divide-by-zero witness. The proposal narrows this away without discharging it."
+        }
+      ],
+      "case_ids": [
+        "LOOPCOND02",
+        "LOOPCOND03"
+      ],
+      "context_case_ids": [
+        "WHILE01"
+      ],
+      "evidence_refs": [
+        "C00117",
+        "C00118",
+        "C00178",
+        "C00179",
+        "C00180",
+        "C00181",
+        "C00182",
+        "C00768",
+        "C00833",
+        "C00834",
+        "C00850",
+        "C00860",
+        "C00861",
+        "C01101",
+        "C01102",
+        "C01103",
+        "C01104",
+        "C01105",
+        "S_GUARD",
+        "S_PAIR"
+      ],
+      "evidence_hashes": [
+        "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab",
+        "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+        "07eff50984adbd4063196ab0c78a6562eb91388e197f4e13af043587b14fd1b2",
+        "16cddd1ba4025495a5d25aa0e6f06236598438ed223588ba41dd91a961301202",
+        "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+        "442f507d9cb4d4e78cb45598eb277175990746dd5ebaccd5e71f2ca15ad81009",
+        "5bb5082d06287340610fcdbc437b2f059a654d6ceff24c965f6310d5221851e1",
+        "83a813862aa190b70278a573968c5c32093ea8d7a1b15247d43ecf225cd54156",
+        "89df5be3b0a14d21c5702ee61096ac256a8b88f845daec064d685102173bf6fc",
+        "bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95",
+        "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+        "c64a30eeeeb59d7d3978b91e14bf4d1d9c3eb043a9578bebd598cc26b23fa7c1",
+        "cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d",
+        "e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83",
+        "e5420babaf03421ed7d6141bec042625da71690097a38221a830f083254a967c",
+        "ea36b01f1630d891dcf26f1ae0eb01016bf96d4776bbbdfdc3b994bffc473c37"
+      ],
+      "remainder": [
+        "Retain a reached BREAK sequence or explicitly resolve that original normal_output_state_control clause with a source-backed scope decision; the existing guard BREAK is never executed.",
+        "Discharge frozen nested/false-body and skipped-body divide-by-zero clauses with an original bound witness, or obtain an explicit parent requirement correction with rationale. LOOPCOND02/03 and WHILE01 do not contain that fault witness; no new execution authorized here."
+      ],
+      "limits": "Finite traces remain valid evidence; rejection of closure does not assert an engine defect. WHILE01 is read only as named context, not separately adjudicated."
+    },
+    {
+      "kind": "command_or_syntax",
+      "name": "LOOP",
+      "accepted": false,
+      "comparison_outcome": "matched_selected_paths_original_requirements_incomplete",
+      "requirements": [
+        {
+          "id": "registration_form",
+          "requirement": "Exact v24 LOOP command registration and constructor arguments, not expression or method-as-command homonym.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Exact LOOP registration selects LOOP_Instruction; evaluates integer condition and jumps to paired DO on nonzero."
+        },
+        {
+          "id": "signature_parser",
+          "requirement": "LOOP: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "INT_EXPRESSION(false) full builder plus base guards read. minArg=0 does not mean free-form: empty terms become0 with warning, null/type guards apply, excess terms warn. No universal parser parity inferred."
+        },
+        {
+          "id": "normal_output_state_control",
+          "requirement": "Chosen loop body/continue/break sequence with exact marker/counter trace.",
+          "discharged": false,
+          "assessment": "partial_original_obligation_remains",
+          "finding": "LOOPCOND02/03 prove post-body conditions, nested finite continuation and CONTINUE traces. Active BREAK path is absent; guard BREAK is dead in these runs."
+        },
+        {
+          "id": "finite_boundary_error",
+          "requirement": "Review LOOPCOND02/03 nested/false-body and WHILE01; outside-loop BREAK or CONTINUE guard in exact builders/parser.",
+          "discharged": false,
+          "assessment": "partial_original_obligation_remains",
+          "finding": "WHILE01 original fixture/raw reviewed only as a related control; no false-entry branch. Exact outside-loop guard and delimiter pairing read from ErbLoader. The frozen false-body clause is not discharged."
+        },
+        {
+          "id": "evaluation_and_side_effects",
+          "requirement": "Condition helper count and skipped body divide-by-zero; paired delimiter source role is independent of text token spelling.",
+          "discharged": false,
+          "assessment": "partial_original_obligation_remains",
+          "finding": "ZZ_COND count3, ZZ_INNER count6 and trace123/123123 match. Original skipped-body divide-by-zero witness is absent from all three named fixtures; normal trace matching cannot substitute for it."
+        }
+      ],
+      "case_ids": [
+        "LOOPCOND02",
+        "LOOPCOND03"
+      ],
+      "context_case_ids": [
+        "WHILE01"
+      ],
+      "evidence_refs": [
+        "C00117",
+        "C00118",
+        "C00178",
+        "C00179",
+        "C00180",
+        "C00181",
+        "C00182",
+        "C00768",
+        "C00842",
+        "C00843",
+        "C00860",
+        "C00861",
+        "C01106",
+        "C01107",
+        "C01108",
+        "C01109",
+        "C01110",
+        "C01111",
+        "S_GUARD",
+        "S_PAIR"
+      ],
+      "evidence_hashes": [
+        "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab",
+        "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+        "07eff50984adbd4063196ab0c78a6562eb91388e197f4e13af043587b14fd1b2",
+        "16cddd1ba4025495a5d25aa0e6f06236598438ed223588ba41dd91a961301202",
+        "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+        "442f507d9cb4d4e78cb45598eb277175990746dd5ebaccd5e71f2ca15ad81009",
+        "5bb5082d06287340610fcdbc437b2f059a654d6ceff24c965f6310d5221851e1",
+        "83a813862aa190b70278a573968c5c32093ea8d7a1b15247d43ecf225cd54156",
+        "89df5be3b0a14d21c5702ee61096ac256a8b88f845daec064d685102173bf6fc",
+        "bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95",
+        "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+        "c64a30eeeeb59d7d3978b91e14bf4d1d9c3eb043a9578bebd598cc26b23fa7c1",
+        "cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d",
+        "e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83",
+        "e5420babaf03421ed7d6141bec042625da71690097a38221a830f083254a967c",
+        "ea36b01f1630d891dcf26f1ae0eb01016bf96d4776bbbdfdc3b994bffc473c37"
+      ],
+      "remainder": [
+        "Retain a reached BREAK sequence or explicitly resolve that original normal_output_state_control clause with a source-backed scope decision; the existing guard BREAK is never executed.",
+        "Discharge frozen nested/false-body and skipped-body divide-by-zero clauses with an original bound witness, or obtain an explicit parent requirement correction with rationale. LOOPCOND02/03 and WHILE01 do not contain that fault witness; no new execution authorized here."
+      ],
+      "limits": "Finite traces remain valid evidence; rejection of closure does not assert an engine defect. WHILE01 is read only as named context, not separately adjudicated."
+    },
+    {
+      "kind": "command_or_syntax",
+      "name": "TOOLTIP_SETCOLOR",
+      "accepted": true,
+      "comparison_outcome": "documented_availability_gap",
+      "requirements": [
+        {
+          "id": "registration_form",
+          "requirement": "Exact v24 TOOLTIP_SETCOLOR command registration and constructor arguments, not expression or method-as-command homonym.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Exact TOOLTIP_SETCOLOR registration, SP_SWAP(false), handler and Console.SetToolTipColor assigning ForeColor/BackColor inspected."
+        },
+        {
+          "id": "signature_parser",
+          "requirement": "TOOLTIP_SETCOLOR: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "SP_SWAP(false) requires two Int64 terms via default minArg=-1; base rejects missing/null/type faults, warns on extras. Public exact-count checking differs on extras; source-only difference explicitly retained."
+        },
+        {
+          "id": "normal_output_state_control",
+          "requirement": "Valid literal and helper setter call reaches AFTER with preserved RESULT/RESULTS.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Literal0,16777215 and own counted helper setter reach O0/O1 and DONE227 in both Native logs and public; O1 A=2 B=12 R=701 S=[sentinel227]."
+        },
+        {
+          "id": "finite_boundary_error",
+          "requirement": "Case227 negative/Int32Max+1 or bad color/error-order; Native GUI setting vs public no-tooltip warning is explicit availability limitation.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "color_low stops at own line7 foreground guard. color_second_fault instead stops at helper line21 division-by-zero before first-color validation; Native/public error bodies and locations agree, diagnostic wrappers differ."
+        },
+        {
+          "id": "evaluation_and_side_effects",
+          "requirement": "Source exact setters and helper order/exception boundary; no pixel/duration-popup-equivalence requirement for public absent GUI feature.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Exact handler evaluates X then Y before validating colors; B=12 corroborates order on normal return. Error-time state and actual GUI color fields unobserved. Retained public tooltip model and unsupported-hover warning satisfy original availability limitation."
+        }
+      ],
+      "case_ids": [
+        "TOOLTIP227_color_valid",
+        "TOOLTIP227_color_low",
+        "TOOLTIP227_color_second_fault"
+      ],
+      "context_case_ids": [],
+      "evidence_refs": [
+        "C00110",
+        "C00111",
+        "C00112",
+        "C00681",
+        "C00682",
+        "C00683",
+        "C00684",
+        "C00685",
+        "C00686",
+        "C00687",
+        "C00688",
+        "C00689",
+        "C00690",
+        "C00691",
+        "C00692",
+        "C00693",
+        "C00694",
+        "C00695",
+        "C00696",
+        "C00697",
+        "C00698",
+        "C00699",
+        "C00700",
+        "C00701",
+        "C00768",
+        "C01435",
+        "C01436",
+        "C01437",
+        "C01438",
+        "C01439",
+        "C01440",
+        "C01441",
+        "C01442",
+        "C01443",
+        "C01444",
+        "C01445",
+        "C01464"
+      ],
+      "evidence_hashes": [
+        "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+        "02f733ef90e0db5c81d11c7bf0914bc8f45215a5d883cb96268b476f4eaa3244",
+        "0617de5d48c52a09b81e7ceb5eec07e7e9fd4ea126c1e53df8dadf99cafdbea3",
+        "17b53c1da30c0d20bf7e04208d7b4d434e4293c6e4eb6b81461c48c828b1ac25",
+        "23638444d3e169d10ee75a0abdc224635b8cc09c10860a4c1565ea5b8fa57cce",
+        "2ae3c17b6e51f0956d1659c5bddb479dd96451d9754807b3e180f34b896e1728",
+        "2f074b58c82c9764dfb1dd9db8e92c2ccc6662282dac2af6adde2f142ec4e10b",
+        "363f47edc9b7e799282ea11c1d9e63dff48e3e23ead51409a6877f73f42589dd",
+        "370ea6e7ebe4c403ec9e0c70fd0693fa5f6d9a6f7f8b10b0fbdfc774a26392f0",
+        "38e1e918d66724fb8b427e5aeb5fb1503c68618a64cf5ecd7b57234a15e838b5",
+        "3b1fa81672097f9281013cce97ec362d0835c9803b6088b45bc98e9f1a7341bd",
+        "3c8f94e64c60203477df4c22cdcf7b11bfd46890852167aa0d4762fd60d8c0ca",
+        "3d7152148e96d3b98d9d3de117209ab2c83b237865ea998a15b2e7401e3fcf39",
+        "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+        "4cfc87a54732b6f865c3e4c046ede02afcfc548d899c74c9d9d3610e7e013bbc",
+        "53348804c3b380a2c37b30a4033558dfc7008410a7077feccb6003505bfbf2be",
+        "5679dfc1777abbdcd65fbf59fbe2879a7466ee1c5442334ca1766d9dbd5b7731",
+        "66f0ef5a275b0220a688d76b742f6150f04f281116e0f21d81d198258ad7e71c",
+        "6f1555b21e4dd38393c254ee7e9583346451d00bf5bfd6d80e9f2396c5a9844a",
+        "70673faf28754993cc49611ea2f5d2b8c05c42b9357d3f5ab8fcb3e8ae95b54e",
+        "797d867ff0286f082e40f6fbbadae81f09dd89979c537bf4a8e61325e73f70c3",
+        "877664e83943890f76362e654f0ebfdfe4bb4ac0be71e5bef88cb8b1a9680594",
+        "8c6c4971728b37ee082e0abb0aa05eef75ff7a01a2c62e4787f173e0efb039ac",
+        "a32e2fb7c43443adfc12eb825ec0f1536d5625301ac647499c5390d4541e0a28",
+        "a68d610365547aca7c096acde13395285cf4fbd418f563a6708cc69568c65d95",
+        "a8b1552ac577a1db8c7f8308c7f5cbc6e744507653891569e274516207932b64",
+        "c03748223d05820a114110c214f3fd12b152b83529d6476aa0d0f55a574b9c15",
+        "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+        "d85bdd9a2dfd2c0a6d005a1e8d486ac4010ee666b0e99e3d911dcf443cd0fda8",
+        "d986d42e469ce0a2e246aa6f211a2261460304e64002879a830cbaec5f48f9a5",
+        "e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83",
+        "e504c63485f018ff040f08e25645831d2d909c11981bd4c75e55dfdaecfe22ce",
+        "fcff61584f543afedec5a7c4dc3690f1747cba51f917785e834d57d89259e6f8"
+      ],
+      "remainder": [],
+      "limits": "Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred."
+    },
+    {
+      "kind": "command_or_syntax",
+      "name": "TOOLTIP_SETDELAY",
+      "accepted": true,
+      "comparison_outcome": "documented_availability_gap",
+      "requirements": [
+        {
+          "id": "registration_form",
+          "requirement": "Exact v24 TOOLTIP_SETDELAY command registration and constructor arguments, not expression or method-as-command homonym.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Exact registration and INT_EXPRESSION(false) handler call Console.SetToolTipDelay, which writes ToolTip.InitialDelay."
+        },
+        {
+          "id": "signature_parser",
+          "requirement": "TOOLTIP_SETDELAY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Full integer builder/base guards reviewed: missing expression is native warning/default0, extras warn; public exact arity differs. Selected literal/helper forms are valid; no all-input parser match claimed."
+        },
+        {
+          "id": "normal_output_state_control",
+          "requirement": "Valid literal and helper setter call reaches AFTER with preserved RESULT/RESULTS.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Own literal0/helper25 operations reach O0/O1 and DONE227 in both Native logs and public; O1 A=1 B=1 R=701 S=[sentinel227]."
+        },
+        {
+          "id": "finite_boundary_error",
+          "requirement": "Case227 negative/Int32Max+1 or bad color/error-order; Native GUI setting vs public no-tooltip warning is explicit availability limitation.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "delay_negative helper(-1) stops at own line7 range guard in Native/public; error body agrees with differing diagnostic transport. Public unsupported-hover warning retained on valid path."
+        },
+        {
+          "id": "evaluation_and_side_effects",
+          "requirement": "Source exact setters and helper order/exception boundary; no pixel/duration-popup-equivalence requirement for public absent GUI feature.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Handler evaluates helper once before 0..Int32Max guard. Normal A=1/B=1 agrees. Error-time helper state and actual GUI delay are unobserved; original requirement allows explicit absent-popup limitation."
+        }
+      ],
+      "case_ids": [
+        "TOOLTIP227_delay_valid",
+        "TOOLTIP227_delay_negative"
+      ],
+      "context_case_ids": [],
+      "evidence_refs": [
+        "C00113",
+        "C00114",
+        "C00700",
+        "C00702",
+        "C00703",
+        "C00704",
+        "C00705",
+        "C00706",
+        "C00707",
+        "C00708",
+        "C00709",
+        "C00710",
+        "C00711",
+        "C00712",
+        "C00713",
+        "C00714",
+        "C00768",
+        "C00842",
+        "C00843",
+        "C01445",
+        "C01446",
+        "C01447",
+        "C01448",
+        "C01449",
+        "C01450",
+        "C01451",
+        "C01452",
+        "C01465"
+      ],
+      "evidence_hashes": [
+        "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+        "17b53c1da30c0d20bf7e04208d7b4d434e4293c6e4eb6b81461c48c828b1ac25",
+        "2ceac32c3d6593451e9dc5e40558c46a9952661e5bebd2ac01a27763ae7c309e",
+        "3a5b25d8cc63d700f05c8ae33c30468246f2bf0a552a1fa0c16445bd56c3ef98",
+        "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+        "40d3490e00f7461d6fbf783adc14eb4de45f9f470a2980cb0a7d5b5fc6454893",
+        "4b3eb96bc084d110590811dec93532a396bc246ef8b00b7b118bff77cc236670",
+        "4dfa4458868c82b5707394ae21e79e21147cff7262c1fc330f1b0b5d78ebaec4",
+        "6632fbc58ee548ecfe15108809ffe72bab25940e1ad62022aa62ba3d9aa39e89",
+        "70673faf28754993cc49611ea2f5d2b8c05c42b9357d3f5ab8fcb3e8ae95b54e",
+        "74376024d09aad27d075cf1e86e8e60109f95a6e6ee9667c7ba86610d0d71996",
+        "7fac7cb21ead2d5051ca16b20d08535b6f77f6a1224b26a202e6875de882a98c",
+        "8303abcad0160008b9194df774468bc0c5ccaa62a7c6f908cba72257d2e4df44",
+        "a11835c073971a59aee52e75a46a77be2321acb9ac8229a40f3fe838c18b7c91",
+        "a95a71d90f260c7382d56c7037d4158d841e1a8a36dedfe503ca86ee50f5a6b5",
+        "c03748223d05820a114110c214f3fd12b152b83529d6476aa0d0f55a574b9c15",
+        "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+        "d72e087e0fb265eb794ab204d72f6febb3547f4c11c0cff31b4851afee880a89",
+        "dafa5a295d07cb3010abe62c6e263cb08a83042e2256b9fdfd1ecde0199b01c0",
+        "e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83",
+        "ec8f14ef012b77379aa85a65a089f5b3de7e892426c47461c3e5d6823ef4f4fe",
+        "f6b34bcddf38acd9c1de59c39315c8cab20c307cea33c7dc5da2d356cd5b864f",
+        "f88b8eb92949001720c46b8ac58ad676fc4668955360584929ac0420a7fc6a33",
+        "fdd27bd30a600b98958ba94948da80d572d5713a64652c1bda04a986f0935f63"
+      ],
+      "remainder": [],
+      "limits": "Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred."
+    },
+    {
+      "kind": "command_or_syntax",
+      "name": "TOOLTIP_SETDURATION",
+      "accepted": true,
+      "comparison_outcome": "documented_availability_gap",
+      "requirements": [
+        {
+          "id": "registration_form",
+          "requirement": "Exact v24 TOOLTIP_SETDURATION command registration and constructor arguments, not expression or method-as-command homonym.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Exact registration and integer handler plus Console.SetToolTipDuration assigning tooltip_duration inspected."
+        },
+        {
+          "id": "signature_parser",
+          "requirement": "TOOLTIP_SETDURATION: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Full INT_EXPRESSION(false)/base guards reviewed, including native warning/default0 for omission and warning on extras; public exact arity differs. Selected normal inputs only have runtime credit."
+        },
+        {
+          "id": "normal_output_state_control",
+          "requirement": "Valid literal and helper setter call reaches AFTER with preserved RESULT/RESULTS.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Own literal0/helper2147483647 reach O0/O1 and DONE227 in Native1/2 and public; O1 A=1 B=1 R=701 S=[sentinel227]."
+        },
+        {
+          "id": "finite_boundary_error",
+          "requirement": "Case227 negative/Int32Max+1 or bad color/error-order; Native GUI setting vs public no-tooltip warning is explicit availability limitation.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "duration_high helper2147483648 stops at own line7 Int32 guard in Native/public, same error body with different wrappers. Valid public warning explicitly excludes terminal hover popup."
+        },
+        {
+          "id": "evaluation_and_side_effects",
+          "requirement": "Source exact setters and helper order/exception boundary; no pixel/duration-popup-equivalence requirement for public absent GUI feature.",
+          "discharged": true,
+          "assessment": "discharged_with_stated_scope",
+          "finding": "Helper count/order agrees. Native source clamps duration>32767 after range check; public source also min(v,32767), but stored native/public duration and popup timing were not read back. Original requirement permits this documented GUI limitation."
+        }
+      ],
+      "case_ids": [
+        "TOOLTIP227_duration_valid",
+        "TOOLTIP227_duration_high"
+      ],
+      "context_case_ids": [],
+      "evidence_refs": [
+        "C00115",
+        "C00116",
+        "C00700",
+        "C00707",
+        "C00715",
+        "C00716",
+        "C00717",
+        "C00718",
+        "C00719",
+        "C00720",
+        "C00721",
+        "C00722",
+        "C00723",
+        "C00724",
+        "C00725",
+        "C00726",
+        "C00768",
+        "C00842",
+        "C00843",
+        "C01445",
+        "C01453",
+        "C01454",
+        "C01455",
+        "C01456",
+        "C01457",
+        "C01458",
+        "C01459",
+        "C01466"
+      ],
+      "evidence_hashes": [
+        "00b515ac11dd8d6cb95c856149ff45d7f6fda76f8cfcfcf9a0de6ccb95e62ae8",
+        "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+        "06b62b7273c69f4d580e9e4d1c2b4b9c887fc68ec940b55b3bad7a8ea80d5144",
+        "17b53c1da30c0d20bf7e04208d7b4d434e4293c6e4eb6b81461c48c828b1ac25",
+        "2ceac32c3d6593451e9dc5e40558c46a9952661e5bebd2ac01a27763ae7c309e",
+        "3a5810e20e474c0e4592483d2e630a9bff956388590a3f4a8ce91e4edf04451a",
+        "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+        "578e75e9b8aefbac778d8d2ed594b5fe9dbcfdc969e1f977e8e4dfe8eb4bdcbe",
+        "70673faf28754993cc49611ea2f5d2b8c05c42b9357d3f5ab8fcb3e8ae95b54e",
+        "77b906bd3ee2192178faf6460e8d224373063d63cdc42a2a6c75bf8c77bd0154",
+        "822bbf87eeabd72d45ff36485848e49f2cf202ca1d0fae40f6bde8fb8005ed7a",
+        "9ba1f5470b2f669d14a62688c55c367e26dc93c78a28f7e062975e7c531f1138",
+        "bc5b71131194275a1a9294f7620cf735a079329eaf5ba90c8c0a54c15d52dce9",
+        "bd4bc4498857b8631fe56c0a1134eee54b347f5836165b9b7dc6d1b6ebe16d46",
+        "c03748223d05820a114110c214f3fd12b152b83529d6476aa0d0f55a574b9c15",
+        "c5a4e650783498cbca8454b5bab282653d3964918c12cfd7867c5dea4cc15c65",
+        "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+        "d6c1c5ac30ea62f1201cba807fcddc2ffedb789e50bd43a90075230f53114ba0",
+        "d7f8ae2bd9609da2a215e708770933ea6066f01aac1d0f481a5dd2ab4ca60c7f",
+        "df8e9881a343f7c4713d7a84a55382d2cc27832d37b2ca99db03fc94ad20bf78",
+        "e0c2b4b58c097fc508384d7623416c7647856b7905a04c0fc8a17eff0edafdf9",
+        "e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83",
+        "f31856dfbda5ae9ab89bc7e824a08ba4e442d9b56ce81890dc20cb77ddf0df42",
+        "fcddd3a5b0b10383d1dba8adcecd19eac71d1f846aa3637fdac1094da4688aba"
+      ],
+      "remainder": [],
+      "limits": "Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred."
+    }
+  ],
+  "counts": {
+    "adjudicated": 6,
+    "accepted": 4,
+    "rejected": 2
+  },
+  "execution": "Offline file/ZIP inspection only; no engine, tests, UI, Git, Drive or external actions."
+}

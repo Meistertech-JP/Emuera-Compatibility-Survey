@@ -1,0 +1,96 @@
+{
+  "case_id": "ARGBOUND246_strlen-trailing",
+  "case_verdict": "matched_scoped",
+  "comparison_classification": "raw_string_trailing_comma_is_data_matched",
+  "comparison_limits": "Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.",
+  "condition": {
+    "call": "STRLEN \"abc\",",
+    "fixture_sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+    "kind": "command_or_syntax",
+    "name": "strlen-trailing",
+    "target": "STRLEN",
+    "target_line": 9,
+    "variant": "trailing"
+  },
+  "configuration_contents_disclosed": false,
+  "fixture_path": "cases/ARGBOUND246_strlen-trailing/fixture/SEARCHBOUND01.ERB",
+  "group": "matched_state",
+  "legacy_case_id": "PARENT246_strlen-trailing",
+  "necessary_comparison_complete": true,
+  "non_disclosure_limit": "Full configuration, original receipts, and original ledgers are not in this projection. Hash equality does not prove full execution condition or engine identity.",
+  "original_receipts_disclosed": false,
+  "parent_review": {
+    "case_relation": "earlier_review_not_case_specific",
+    "decision": "finite_remaining_proof",
+    "scope": "Selected parent source only; other target evidence is not included."
+  },
+  "public_stderr_path": "cases/ARGBOUND246_strlen-trailing/raw/public-stderr.bin",
+  "public_stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+  "requirement_ids": [
+    "normal_output_state_control",
+    "finite_boundary_error",
+    "evaluation_and_side_effects"
+  ],
+  "runs": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND246_strlen-trailing/raw/native-01-emuera.log",
+      "raw_sha256": "58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29",
+      "state": [
+        919,
+        818,
+        6,
+        1,
+        173
+      ]
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND246_strlen-trailing/raw/native-02-emuera.log",
+      "raw_sha256": "58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29",
+      "state": [
+        919,
+        818,
+        6,
+        1,
+        173
+      ]
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "error": null,
+      "fixture_config_pre_post_equal": true,
+      "fixture_sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+      "raw_path": "cases/ARGBOUND246_strlen-trailing/raw/public-stdout.bin",
+      "raw_sha256": "51db54e397abb263108cc277671b02b848d73be86646f486b82d5094fcc20c9b",
+      "returncode": 0,
+      "state": [
+        919,
+        818,
+        6,
+        1,
+        173
+      ]
+    }
+  },
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "STRLEN"
+  },
+  "target_outcome": "documented_difference"
+}

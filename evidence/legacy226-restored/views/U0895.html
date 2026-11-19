@@ -1,0 +1,29 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0895 · capture_one.py</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0895 · capture_one.py</h1>
+<p>U0895: capture_crop_only.pyを呼びnative-printkl-crop-タグ.pngのSHA/寸法/終了コードを出す補助コード。固定私的パスなし。U0894の元basename同伴が必要。識別タグと出力パスの記録を保持。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>40618c95c2bd71c2d74cc46848d036a28bf07d4b08c6c4bc31560271b50847d9</code></p>
+<p><a href="../assets/U0895.py">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>40618c95c2bd71c2d74cc46848d036a28bf07d4b08c6c4bc31560271b50847d9</code></p>
+<pre>import hashlib,json,re,subprocess,sys
+from pathlib import Path
+root=Path(__file__).resolve().parent
+tag=re.sub(r&quot;[^A-Za-z0-9_-]&quot;,&quot;_&quot;,sys.argv[1])[-32:]
+out=root/(&quot;native-printkl-crop-&quot;+tag+&quot;.png&quot;)
+r=subprocess.run([sys.executable,str(root/&quot;capture_crop_only.py&quot;),sys.argv[1],sys.argv[2],sys.argv[3],str(out)],capture_output=True,text=True)
+record={&quot;crop_returncode&quot;:r.returncode,&quot;crop_path&quot;:str(out) if out.is_file() else None,&quot;crop_sha256&quot;:hashlib.sha256(out.read_bytes()).hexdigest() if out.is_file() else None,&quot;crop_size_bytes&quot;:out.stat().st_size if out.is_file() else None}
+if out.is_file():
+ from PIL import Image
+ with Image.open(out) as im: record[&quot;crop_dimensions&quot;]=list(im.size)
+print(json.dumps(record,separators=(&quot;,&quot;,&quot;:&quot;)))
+raise SystemExit(r.returncode)
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1885 · command_or_syntax:PRINTKL · check</li>
+</ul></html>

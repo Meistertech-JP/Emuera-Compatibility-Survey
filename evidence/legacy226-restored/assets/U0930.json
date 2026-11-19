@@ -1,0 +1,20 @@
+{
+  "target": {
+    "kind": "expression_function",
+    "name": "SPRITECREATED"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "documented_difference",
+  "basis": [
+    "Pinned public pyz source documents that active resource declarations require an unsupported image backend and stops before SPRITECREATED.",
+    "Same-input Native positive-resource execution returns 1 twice; public execution reaches the explicit pre-target E_UNSUPPORTED gate.",
+    "Existing empty-catalog case directly observes the supported Native/public return value 0 with matching raw output log.",
+    "Independent review accepts this as the bounded source-plus-actual-supported-return alternative recorded in the parent requirement."
+  ],
+  "limits": [
+    "Public positive-resource SPRITECREATED return remains unobserved.",
+    "No graphics rendering equivalence claim.",
+    "Separate command-form SPRITECREATED target remains independent and is not closed by this decision."
+  ],
+  "evidence": "INDEPENDENT_REVIEW_20261113.md and COMPARISON.json"
+}

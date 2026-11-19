@@ -1,0 +1,36 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T17:12:38.455337+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "INPUTS"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "included_prior_cases": [
+    "P36EMPTY02",
+    "P36SPACE02"
+  ],
+  "included_new_cases": [
+    "INPUTS_DYNAMIC_DEFAULT_EMPTY_20261114"
+  ],
+  "finite_scope": [
+    "v24 registration and SP_INPUTS optional string FORM",
+    "empty and ASCII-space inputs with RESULTS/output length history",
+    "dynamic optional string default evaluated once",
+    "empty input chooses DEFAULT_SENTINEL",
+    "Native/public outputlog equality and continuation"
+  ],
+  "comparison_path": "evidence/input-string-default-eval-20261114/COMPARISON.json",
+  "comparison_sha256": "72451983e8a9ecc581c8f8fff9329924907cc6e8e629bf987f7b91d3d94bf94c",
+  "source_scope_path": "SOURCE_SCOPE.txt",
+  "source_scope_sha256": "6451520b94a013bbd036ae106a85b1db1f52153532a027fe060a02261977879d",
+  "review_path": "REVIEW_ja.md",
+  "limitations": [
+    "no numeric-invalid retry or timed timeout; different command contracts",
+    "no IME, tabs, fullwidth spaces, cancellation or prompt rendering parity",
+    "Native natural exit and exit code unobserved"
+  ],
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

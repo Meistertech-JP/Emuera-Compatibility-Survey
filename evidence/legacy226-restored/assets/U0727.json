@@ -1,0 +1,2584 @@
+{
+  "schema": "semantic-review-existing-candidates-1",
+  "review_date": "2026-11-15",
+  "review_scope": "Read-only semantic review of the assigned 12 existing-evidence candidates; no Native/public execution and no ledger/register/count edits. Recommendations apply only to the exact finite documented differences, not full command completion.",
+  "assigned_targets": [
+    "CLEARLINE",
+    "REUSELASTLINE",
+    "DRAWLINE",
+    "BAR",
+    "BARL",
+    "BEGIN",
+    "SAVEGAME",
+    "LOADGAME",
+    "SIF",
+    "IF",
+    "REPEAT",
+    "COPYCHARA"
+  ],
+  "input_hashes": {
+    "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-existing-review-audit-20261115\\PARENT_EXISTING_REVIEW_AUDIT_PROPOSAL.json": "0d75cf4337aa949cbdb8134ed896f96cba598dd03e81e8bad747a0b59674aa67",
+    "[SURVEY_ROOT]\\work\\command-coverage-20261111\\TARGET_COMPARISON_REVIEW_CURRENT.json": "56fd2f32b1a705cfa76ab9789ff9336306b592496656f484fb534e90ba01a171",
+    "[SURVEY_ROOT]\\work\\command-coverage-20261111\\CASE_SCENARIO_REGISTER.json": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da"
+  },
+  "snapshot_identity_matches_proposal": {
+    "TARGET_COMPARISON_REVIEW_CURRENT.json": true,
+    "CASE_SCENARIO_REGISTER.json": true
+  },
+  "targets": [
+    {
+      "name": "CLEARLINE",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "17c5358ab004ffec1e0d43e09517bfb91f8f4a5aab2a3b5dec60ef6702151871",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented CLEARLINE difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "DISPLAYLINES202_C202_02"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 201,
+              "end_line": 201
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 521,
+              "end_line": 536
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 171,
+              "end_line": 181
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "DISPLAYLINES202_C202_02"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "C202_02で、完了行を1行消すとき保留中の`P>`がNativeでは保持され、PyEmueraでは失われる。LINECOUNT差分は両者-1、通常行・動的ゼロ・負値・ヘルパー評価とSKIP条件は選択範囲で一致。差は単なる診断や画面レイアウトでなく、保持文字列の状態差。Native独立2回と公開pyzの原ログ／比較表が対応し、v24のdeleteLineが表示行列を消しpending bufferを消さない実装とも整合する。親はこの保留prefix条件の差だけを受け入れ可能。全削除境界・描画同等性までは主張しない。",
+      "cases": [
+        {
+          "case_id": "DISPLAYLINES202_C202_02",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/display-line-controls-20261113-202/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "pending prefix survives deletion pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": true, \"evaluation\": true}.",
+          "observation_points_and_comparison": "pending prefix survives deletion pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": true, \"evaluation\": true}.",
+          "limitations": "Nineteen returning observations plus one terminal runtime-empty form in one fixture. Serialized text/history/LINECOUNT and helper effects only, no GUI paint/font equivalence/transient frames. Native GUI font-measured drawable width and public terminal width not equated: width-derived differences are observations, not isolated logic-defect proof. CLEARTEXTBOX populated editable control behavior unobserved. Terminal stop line300 agrees but diagnostics/error-log lifecycle differ; post-error state unobserved. Native2 processes alive5s then cleanup; no natural exit or full display closure.",
+          "evidence_reference_count": 64,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/display-line-controls-20261113-202/COMPARISON.json",
+              "sha256": "dc43fff98e6592bacf775a356a57426a7f98b9c186492fff50dcf8c5dded5c7f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/fixture.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/REVIEW.md",
+              "sha256": "b856792e34d4e97226dd7a301d137f837ed2f76c929736c788a9b954d73e54af",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "32138b9888686ada1f0bda781fbe045609abe9fbe6f7d9e22c9bfb55477edd82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/probe.json",
+              "sha256": "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/probe.json",
+              "sha256": "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/verified.stdout.bin",
+              "sha256": "b998d998eb6422412183117ef9712d6cb1423c0d0ef72945893aa3f17335c278",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/.pyemuera/logs/emuera.log",
+              "sha256": "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "REUSELASTLINE",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "e1c9deeadfa5a05e796ea8692a1abe5a33c17ab87db431e56bc17a6bbfce4125",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented REUSELASTLINE difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "DISPLAYLINES202_C202_07",
+            "DISPLAYLINES202_C202_09",
+            "DISPLAYLINES202_C202_10"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 202,
+              "end_line": 202
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 506,
+              "end_line": 520
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 178,
+              "end_line": 188
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "DISPLAYLINES202_C202_07",
+        "DISPLAYLINES202_C202_09",
+        "DISPLAYLINES202_C202_10"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "C202_07/09/10の3条件で、フォーム評価順A=2/B=12は一致する一方、保留prefixの保持、文字列ログおよび論理LINECOUNTに差が記録されている。C202_07では最終保持本文が後続行で置換された後に一致しても、同じ試行のLINECOUNT差(+1対0)とraw差が残る。C202_09/10ではNativeがP>を保持し、PyEmueraは失い、C202_10のdeltaは+2対0。よって一時表示の全フレーム差とせず、記録された最終本文・履歴・カウンターの限定差として親受入できる。中間一時文字列や全表示条件の等価性は未確認。",
+      "cases": [
+        {
+          "case_id": "DISPLAYLINES202_C202_07",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/display-line-controls-20261113-202/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "form and later temporary removal pending=False skip=False: exact axis flags {\"raw\": false, \"layout\": true, \"value\": true, \"state\": false, \"evaluation\": true}.",
+          "observation_points_and_comparison": "form and later temporary removal pending=False skip=False: exact axis flags {\"raw\": false, \"layout\": true, \"value\": true, \"state\": false, \"evaluation\": true}.",
+          "limitations": "Nineteen returning observations plus one terminal runtime-empty form in one fixture. Serialized text/history/LINECOUNT and helper effects only, no GUI paint/font equivalence/transient frames. Native GUI font-measured drawable width and public terminal width not equated: width-derived differences are observations, not isolated logic-defect proof. CLEARTEXTBOX populated editable control behavior unobserved. Terminal stop line300 agrees but diagnostics/error-log lifecycle differ; post-error state unobserved. Native2 processes alive5s then cleanup; no natural exit or full display closure.",
+          "evidence_reference_count": 64,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/display-line-controls-20261113-202/COMPARISON.json",
+              "sha256": "dc43fff98e6592bacf775a356a57426a7f98b9c186492fff50dcf8c5dded5c7f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/fixture.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/REVIEW.md",
+              "sha256": "b856792e34d4e97226dd7a301d137f837ed2f76c929736c788a9b954d73e54af",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "32138b9888686ada1f0bda781fbe045609abe9fbe6f7d9e22c9bfb55477edd82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/probe.json",
+              "sha256": "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/probe.json",
+              "sha256": "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/verified.stdout.bin",
+              "sha256": "b998d998eb6422412183117ef9712d6cb1423c0d0ef72945893aa3f17335c278",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/.pyemuera/logs/emuera.log",
+              "sha256": "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "DISPLAYLINES202_C202_09",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/display-line-controls-20261113-202/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "empty with pending prefix pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": true, \"evaluation\": true}.",
+          "observation_points_and_comparison": "empty with pending prefix pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": true, \"evaluation\": true}.",
+          "limitations": "Nineteen returning observations plus one terminal runtime-empty form in one fixture. Serialized text/history/LINECOUNT and helper effects only, no GUI paint/font equivalence/transient frames. Native GUI font-measured drawable width and public terminal width not equated: width-derived differences are observations, not isolated logic-defect proof. CLEARTEXTBOX populated editable control behavior unobserved. Terminal stop line300 agrees but diagnostics/error-log lifecycle differ; post-error state unobserved. Native2 processes alive5s then cleanup; no natural exit or full display closure.",
+          "evidence_reference_count": 64,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/display-line-controls-20261113-202/COMPARISON.json",
+              "sha256": "dc43fff98e6592bacf775a356a57426a7f98b9c186492fff50dcf8c5dded5c7f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/fixture.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/REVIEW.md",
+              "sha256": "b856792e34d4e97226dd7a301d137f837ed2f76c929736c788a9b954d73e54af",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "32138b9888686ada1f0bda781fbe045609abe9fbe6f7d9e22c9bfb55477edd82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/probe.json",
+              "sha256": "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/probe.json",
+              "sha256": "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/verified.stdout.bin",
+              "sha256": "b998d998eb6422412183117ef9712d6cb1423c0d0ef72945893aa3f17335c278",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/.pyemuera/logs/emuera.log",
+              "sha256": "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "DISPLAYLINES202_C202_10",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/display-line-controls-20261113-202/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "ordinary pending prefix pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": false, \"evaluation\": true}.",
+          "observation_points_and_comparison": "ordinary pending prefix pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": false, \"evaluation\": true}.",
+          "limitations": "Nineteen returning observations plus one terminal runtime-empty form in one fixture. Serialized text/history/LINECOUNT and helper effects only, no GUI paint/font equivalence/transient frames. Native GUI font-measured drawable width and public terminal width not equated: width-derived differences are observations, not isolated logic-defect proof. CLEARTEXTBOX populated editable control behavior unobserved. Terminal stop line300 agrees but diagnostics/error-log lifecycle differ; post-error state unobserved. Native2 processes alive5s then cleanup; no natural exit or full display closure.",
+          "evidence_reference_count": 64,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/display-line-controls-20261113-202/COMPARISON.json",
+              "sha256": "dc43fff98e6592bacf775a356a57426a7f98b9c186492fff50dcf8c5dded5c7f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/fixture.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/REVIEW.md",
+              "sha256": "b856792e34d4e97226dd7a301d137f837ed2f76c929736c788a9b954d73e54af",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "32138b9888686ada1f0bda781fbe045609abe9fbe6f7d9e22c9bfb55477edd82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/probe.json",
+              "sha256": "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/probe.json",
+              "sha256": "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/verified.stdout.bin",
+              "sha256": "b998d998eb6422412183117ef9712d6cb1423c0d0ef72945893aa3f17335c278",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/.pyemuera/logs/emuera.log",
+              "sha256": "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DRAWLINE",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "DRAWLINE"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "9a2c381cc89f08df4638691b27527630257e4db91e1affc0c0b22c5be1677325",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented DRAWLINE difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "DISPLAYLINES202_C202_13",
+            "DISPLAYLINES202_C202_14"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 184,
+              "end_line": 184
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+              "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+              "start_line": 154,
+              "end_line": 159
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 170,
+              "end_line": 180
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "DISPLAYLINES202_C202_13",
+        "DISPLAYLINES202_C202_14"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "C202_13/14で、固定された実行環境・設定においてDRAWLINEのシリアライズ長がNative 84個、PyEmuera 100個のハイフンとなり、保留prefixありでは行分割・prefix連結とLINECOUNTにも差が記録されている。これはログ化されたテキスト／論理行の観測であってピクセル描画差ではない。84対100はフォント計測幅・設定差を排除していないため、単一環境での出力差としてのみ親受入可能。DRAWLINEFORMや全フォント幅には一般化しない。",
+      "cases": [
+        {
+          "case_id": "DISPLAYLINES202_C202_13",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/display-line-controls-20261113-202/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "default bar pending=False skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": true, \"evaluation\": true}.",
+          "observation_points_and_comparison": "default bar pending=False skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": true, \"evaluation\": true}.",
+          "limitations": "Nineteen returning observations plus one terminal runtime-empty form in one fixture. Serialized text/history/LINECOUNT and helper effects only, no GUI paint/font equivalence/transient frames. Native GUI font-measured drawable width and public terminal width not equated: width-derived differences are observations, not isolated logic-defect proof. CLEARTEXTBOX populated editable control behavior unobserved. Terminal stop line300 agrees but diagnostics/error-log lifecycle differ; post-error state unobserved. Native2 processes alive5s then cleanup; no natural exit or full display closure.",
+          "evidence_reference_count": 64,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/display-line-controls-20261113-202/COMPARISON.json",
+              "sha256": "dc43fff98e6592bacf775a356a57426a7f98b9c186492fff50dcf8c5dded5c7f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/fixture.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/REVIEW.md",
+              "sha256": "b856792e34d4e97226dd7a301d137f837ed2f76c929736c788a9b954d73e54af",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "32138b9888686ada1f0bda781fbe045609abe9fbe6f7d9e22c9bfb55477edd82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/probe.json",
+              "sha256": "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/probe.json",
+              "sha256": "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/verified.stdout.bin",
+              "sha256": "b998d998eb6422412183117ef9712d6cb1423c0d0ef72945893aa3f17335c278",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/.pyemuera/logs/emuera.log",
+              "sha256": "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "DISPLAYLINES202_C202_14",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/display-line-controls-20261113-202/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "bar after pending prefix pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": false, \"evaluation\": true}.",
+          "observation_points_and_comparison": "bar after pending prefix pending=True skip=False: exact axis flags {\"raw\": false, \"layout\": false, \"value\": false, \"state\": false, \"evaluation\": true}.",
+          "limitations": "Nineteen returning observations plus one terminal runtime-empty form in one fixture. Serialized text/history/LINECOUNT and helper effects only, no GUI paint/font equivalence/transient frames. Native GUI font-measured drawable width and public terminal width not equated: width-derived differences are observations, not isolated logic-defect proof. CLEARTEXTBOX populated editable control behavior unobserved. Terminal stop line300 agrees but diagnostics/error-log lifecycle differ; post-error state unobserved. Native2 processes alive5s then cleanup; no natural exit or full display closure.",
+          "evidence_reference_count": 64,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/display-line-controls-20261113-202/COMPARISON.json",
+              "sha256": "dc43fff98e6592bacf775a356a57426a7f98b9c186492fff50dcf8c5dded5c7f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/fixture.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/REVIEW.md",
+              "sha256": "b856792e34d4e97226dd7a301d137f837ed2f76c929736c788a9b954d73e54af",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "32138b9888686ada1f0bda781fbe045609abe9fbe6f7d9e22c9bfb55477edd82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/probe.json",
+              "sha256": "9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/emuera.log",
+              "sha256": "15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/probe.json",
+              "sha256": "e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/verified.stdout.bin",
+              "sha256": "b998d998eb6422412183117ef9712d6cb1423c0d0ef72945893aa3f17335c278",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/display-line-controls-20261113-202/public-01/.pyemuera/logs/emuera.log",
+              "sha256": "631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BAR",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "BAR"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "2e51d4d4f8acb48abd10dcc7ea4393e0dc6c055a885ceb6943eb2931e45447ed",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented BAR difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "BARCONFIG194_BAR_different_scoped"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 185,
+              "end_line": 185
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 901,
+              "end_line": 923
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 181,
+              "end_line": 191
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "BARCONFIG194_BAR_different_scoped"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "BARCONFIG194の選択条件B194_26で、Int64.MaxValue, Int64.MaxValue, 3のBARがNative `[...]`、PyEmuera `[***]`。Nativeを2回記録し、同じケース群で評価回数3・順序123を観測。保存されたv24のExpressionMediator.CreateBarのunchecked乗算と、独立計算した折返し期待値がNative出力に整合する。これは特定のオーバーフロー値に対する出力差で、通常値・不正引数・描画幅全般の差とはしない。",
+      "cases": [
+        {
+          "case_id": "BARCONFIG194_BAR_different_scoped",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/bar-and-config-20261113-194/CASE_REVIEW_ja.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Selected BAR 1 triples: Int64max*3 overflow: Native [...], public [***]; unchecked signed multiplication differs; helpers COUNT3/ORDER123 match. BAR versus BARL newline separately observed.",
+          "observation_points_and_comparison": "Selected BAR 1 triples: Int64max*3 overflow: Native [...], public [***]; unchecked signed multiplication differs; helpers COUNT3/ORDER123 match. BAR versus BARL newline separately observed.",
+          "limitations": "Eight selected numeric triples across BARSTR expression/method command and BAR/BARL, one standard config snapshot. Integer overflow source arithmetic corroborated for selected values only; no invalid max/length, huge width, custom bar chars/config changes, skipped-display argument ordering, GUI font rendering or full bar closure. Native2 processes alive5s then cleanup; natural exit unobserved.",
+          "evidence_reference_count": 34,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/bar-and-config-20261113-194/CASE_REVIEW_ja.md",
+              "sha256": "fa4d1d7f307b021095443f2307fd4882e24f9c42d37e799059ecdc53207340cd",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/COMPARISON.json",
+              "sha256": "058e9c6a2d24516ef67f9f0af2303f06b6a381a41d15f43e8670848d71f10015",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "f33f71c4bff92fd7b28dad663ad7b166742546e4897924104a566ae75dabca5f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-01/emuera.log",
+              "sha256": "8b06beb8e065a1dda3336ffcc5b463f24a1556b42c3cc63480c6b3e5b2ed6589",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-01/probe.json",
+              "sha256": "ba826799a72141a95b34d1097aba704ecb39eb1288778f7e61af1cb2430af203",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-02/emuera.log",
+              "sha256": "8b06beb8e065a1dda3336ffcc5b463f24a1556b42c3cc63480c6b3e5b2ed6589",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-02/probe.json",
+              "sha256": "d69aa40ad9b9fcb998bb4c62bf211eaa9a51bf58a1ec9993ddfc6e4716d5851a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/py/verified.stdout.bin",
+              "sha256": "1a8700f813a4ad92931100bc33a1bc8840633e5228d49f0defcae7c64ef49b4b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9f4d5beb6160edc6a37500ff277ea944bb1cf54dfbf28f8e547cf9877d17384a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9f4d5beb6160edc6a37500ff277ea944bb1cf54dfbf28f8e547cf9877d17384a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9f4d5beb6160edc6a37500ff277ea944bb1cf54dfbf28f8e547cf9877d17384a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/py/.pyemuera/logs/emuera.log",
+              "sha256": "51ade5600d49fb66138ab5edca7250b5591bd615d5bcb9719e532a168531e47a",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BARL",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "BARL"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "265cfd14bf31d1bbafadbeeb3a35ac6b43bc5773e9ffeb1f4fa14c5cbf707061",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented BARL difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "BARCONFIG194_BARL_different_scoped"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 186,
+              "end_line": 186
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 901,
+              "end_line": 923
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 181,
+              "end_line": 191
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "BARCONFIG194_BARL_different_scoped"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "BARCONFIG194の選択条件B194_27で、Int64.MaxValue, Int64.MaxValue, 3のBARLがNative `[...]`、PyEmuera `[***]`。Native2回、評価回数3・順序123の記録とunchecked乗算のv24ソース根拠がある。BARLの改行有無は別の観測軸であり、本判定は当該オーバーフロー出力だけ。一般的なBARL表示や全数値域に拡張しない。",
+      "cases": [
+        {
+          "case_id": "BARCONFIG194_BARL_different_scoped",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/bar-and-config-20261113-194/CASE_REVIEW_ja.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Selected BARL 1 triples: Int64max*3 overflow: Native [...], public [***]; unchecked signed multiplication differs; helpers COUNT3/ORDER123 match. BAR versus BARL newline separately observed.",
+          "observation_points_and_comparison": "Selected BARL 1 triples: Int64max*3 overflow: Native [...], public [***]; unchecked signed multiplication differs; helpers COUNT3/ORDER123 match. BAR versus BARL newline separately observed.",
+          "limitations": "Eight selected numeric triples across BARSTR expression/method command and BAR/BARL, one standard config snapshot. Integer overflow source arithmetic corroborated for selected values only; no invalid max/length, huge width, custom bar chars/config changes, skipped-display argument ordering, GUI font rendering or full bar closure. Native2 processes alive5s then cleanup; natural exit unobserved.",
+          "evidence_reference_count": 34,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/bar-and-config-20261113-194/CASE_REVIEW_ja.md",
+              "sha256": "fa4d1d7f307b021095443f2307fd4882e24f9c42d37e799059ecdc53207340cd",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/COMPARISON.json",
+              "sha256": "058e9c6a2d24516ef67f9f0af2303f06b6a381a41d15f43e8670848d71f10015",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "f33f71c4bff92fd7b28dad663ad7b166742546e4897924104a566ae75dabca5f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-01/emuera.log",
+              "sha256": "8b06beb8e065a1dda3336ffcc5b463f24a1556b42c3cc63480c6b3e5b2ed6589",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-01/probe.json",
+              "sha256": "ba826799a72141a95b34d1097aba704ecb39eb1288778f7e61af1cb2430af203",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-02/emuera.log",
+              "sha256": "8b06beb8e065a1dda3336ffcc5b463f24a1556b42c3cc63480c6b3e5b2ed6589",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-02/probe.json",
+              "sha256": "d69aa40ad9b9fcb998bb4c62bf211eaa9a51bf58a1ec9993ddfc6e4716d5851a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/py/verified.stdout.bin",
+              "sha256": "1a8700f813a4ad92931100bc33a1bc8840633e5228d49f0defcae7c64ef49b4b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9f4d5beb6160edc6a37500ff277ea944bb1cf54dfbf28f8e547cf9877d17384a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9f4d5beb6160edc6a37500ff277ea944bb1cf54dfbf28f8e547cf9877d17384a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9f4d5beb6160edc6a37500ff277ea944bb1cf54dfbf28f8e547cf9877d17384a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/bar-and-config-20261113-194/py/.pyemuera/logs/emuera.log",
+              "sha256": "51ade5600d49fb66138ab5edca7250b5591bd615d5bcb9719e532a168531e47a",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BEGIN",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "BEGIN"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "24cf6ee9fb3e0910f08350634f8c846f8f21715c6d4e7260fdcd4a41bf59fdc0",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented BEGIN difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "BEGIN209_direct_train",
+            "BEGIN209_direct_shop"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 217,
+              "end_line": 217
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 1715,
+              "end_line": 1732
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 175,
+              "end_line": 185
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "BEGIN209_direct_shop",
+        "BEGIN209_direct_train"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "BEGIN209の直接SYSTEM_TITLE→BEGIN TRAIN/SHOPで、NativeはRESULT=701を保持し、PyEmueraはRESULT=0を書き込む一方、A=71・STYLE=0等の選択状態は一致。ソースではNative BEGINがstate.Return(0)を呼び、明示的RESULT代入を行う通常RETURNとは異なる。TRAIN/SHOP各Native2回と公開pyzの出力が記録され、後続親RETURN99の一致をBEGIN直後の一致と誤用していない。親は直接遷移時のRESULT差に限定して受け入れ可能。",
+      "cases": [
+        {
+          "case_id": "BEGIN209_direct_shop",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Direct BEGIN reaches event and resets style identically, but Native preserves RESULT701 and public writes0.",
+          "observation_points_and_comparison": "Direct BEGIN reaches event and resets style identically, but Native preserves RESULT701 and public writes0.",
+          "limitations": "Six valid fixtures for TRAIN/SHOP only: nested parent QUIT control, direct transition, nested parent RETURN. One real chara and selected A/STYLE/RESULT/CHARANUM/TARGET/MASTER/NEXTCOM. No other BEGIN keywords/context restrictions, unknown keyword, all training resets, other events/default game loop, recursive/event return or complete state-machine closure. Initial marker SHOULD_NOT_RUN was an incorrect prediction: source+Native prove parent continues; original fixtures retained, not engine failures. Native12 processes alive5s then own cleanup; natural exit unobserved.",
+          "evidence_reference_count": 188,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/COMPARISON.json",
+              "sha256": "5cb8a22a853930305e310f0f20e0ea6b2f206f0234c62279396a4f8669c939b2",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "6f83d4209efe8d48711974b8a41a34bf696a45f37e6f60e832877c25c7aaa8e1",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-01/emuera.log",
+              "sha256": "24882298fad0fb81d30e6155055cc05ecc593af071d800155c96858467b5eeac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-01/probe.json",
+              "sha256": "bcab55a39f17f0382a5e89a08c97a5d9348974020d6da28af3d4081cb3c35e24",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-02/emuera.log",
+              "sha256": "24882298fad0fb81d30e6155055cc05ecc593af071d800155c96858467b5eeac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-02/probe.json",
+              "sha256": "a4d71efca71568e837497b1131363e053c502c26b3f66f91596934baf84b9029",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/py/verified.stdout.bin",
+              "sha256": "a2a3ba32b4d3e13cd6df9c8fb9a075c0b136963fc404a073d95a347b49550e0b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "727bfc1f6d80e69917d3874bd3e7ee6f2d6696832f4c88a8f0018425189fb609",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "727bfc1f6d80e69917d3874bd3e7ee6f2d6696832f4c88a8f0018425189fb609",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "727bfc1f6d80e69917d3874bd3e7ee6f2d6696832f4c88a8f0018425189fb609",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/py/.pyemuera/logs/emuera.log",
+              "sha256": "d10ac04382439ac6067e7b7b15c828e46e73d334701780113c7c334a0939a523",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-01/emuera.log",
+              "sha256": "5707987cf5fc50e6497d41f6f1c2e3d2187629ab9a4729ed2efa6d02b1ec2ad3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-01/probe.json",
+              "sha256": "1d951c1656915fc8f94fb7e79dd0e1efbbb72b8bcb4854742432ab3ece62612a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-02/emuera.log",
+              "sha256": "5707987cf5fc50e6497d41f6f1c2e3d2187629ab9a4729ed2efa6d02b1ec2ad3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-02/probe.json",
+              "sha256": "c8860fa106edcaf7b38c46b0904f0c11e5d175e3f25670ea220326e60af720ff",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/py/verified.stdout.bin",
+              "sha256": "c719991ca16a7bedd616b4cf1cada0cc9148c9e21f9be5b727f2920d1f138ec7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "91b003564296e29f96f5bb8b41e13c68648e49e22f20a0f6bb3f06ce749821d8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "91b003564296e29f96f5bb8b41e13c68648e49e22f20a0f6bb3f06ce749821d8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "91b003564296e29f96f5bb8b41e13c68648e49e22f20a0f6bb3f06ce749821d8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/py/.pyemuera/logs/emuera.log",
+              "sha256": "a7e3a702fab50396104f17c2902d5c59d9710074e4479b3aa2718919b5bb1a5f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-01/emuera.log",
+              "sha256": "ae5760f95957b90a0e7fb31dd9712088f6edbbcd64b4b611f0adb2dd52377b82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-01/probe.json",
+              "sha256": "5b6c2e0ee32134dc9fb59922baa61f6fa46233c364f9c87fe3bd5d1a4cc2a355",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-02/emuera.log",
+              "sha256": "ae5760f95957b90a0e7fb31dd9712088f6edbbcd64b4b611f0adb2dd52377b82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-02/probe.json",
+              "sha256": "bde7f80486a4f8715bd55a74293bd76151f767467db5c7bf1c7eb1429a5f1bc3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/py/verified.stdout.bin",
+              "sha256": "7c9f2fcb716a50713223b98171249098f8d041b8f9841e2f1d03417a0facec00",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "61acc9b896deac76eb845b108e90bf3e4a54eb04540f76cb4d3f1d77c9b3bcad",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "61acc9b896deac76eb845b108e90bf3e4a54eb04540f76cb4d3f1d77c9b3bcad",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "61acc9b896deac76eb845b108e90bf3e4a54eb04540f76cb4d3f1d77c9b3bcad",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/py/.pyemuera/logs/emuera.log",
+              "sha256": "ae5760f95957b90a0e7fb31dd9712088f6edbbcd64b4b611f0adb2dd52377b82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-01/emuera.log",
+              "sha256": "52b3b3561c17ea54bd24af56b2e081372a3c9acf7ca0b7867cf3694b5bf88d96",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-01/probe.json",
+              "sha256": "bd82c6d1d11cf604cc4c944f1f7ce792611d3c3337291ea5eabd2547263f1312",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-02/emuera.log",
+              "sha256": "52b3b3561c17ea54bd24af56b2e081372a3c9acf7ca0b7867cf3694b5bf88d96",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-02/probe.json",
+              "sha256": "16fd1c3fccb493f55e496c44a9a514f8d6c49de3c8708181bc095e006d743c00",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/py/verified.stdout.bin",
+              "sha256": "bf16f37f8894ccf1716182c18639116e6fdc57e8b59b0aa9cd3eb4531472873c",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e9d5f3e3b90ce7c807bfbf1058611d5c848abefaf8ce8bc5e340601e4d18b251",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e9d5f3e3b90ce7c807bfbf1058611d5c848abefaf8ce8bc5e340601e4d18b251",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e9d5f3e3b90ce7c807bfbf1058611d5c848abefaf8ce8bc5e340601e4d18b251",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/py/.pyemuera/logs/emuera.log",
+              "sha256": "52b3b3561c17ea54bd24af56b2e081372a3c9acf7ca0b7867cf3694b5bf88d96",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-01/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-01/probe.json",
+              "sha256": "2f58f003b29cee1259b48eef99ce79a03b69cc4c2ac33b326e76e3442cb444a3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-02/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-02/probe.json",
+              "sha256": "e7601eb8ceb63c069692c250ab8225a44c8f64c37137e5b3e6fe526242a9e8a4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/py/verified.stdout.bin",
+              "sha256": "52362ff302fe8bd77a32dfe1d0796e3309ab34c1ec382e0d6ce39f5a53957b3a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "533940297c2ebd4f33e6c4aff13dd09e32454e56059e2fe71a01974dfc0b59d4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "533940297c2ebd4f33e6c4aff13dd09e32454e56059e2fe71a01974dfc0b59d4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "533940297c2ebd4f33e6c4aff13dd09e32454e56059e2fe71a01974dfc0b59d4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/py/.pyemuera/logs/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-01/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-01/probe.json",
+              "sha256": "cae2beeef1da81aaf0ee2990c84a3dc7e8d5b4b1c1fe74733844fb80637081f3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-02/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-02/probe.json",
+              "sha256": "66fd3cc06eaa510acfe5f53aaddc76c156c772073d2afddd2514e3272c379cdf",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/py/verified.stdout.bin",
+              "sha256": "52362ff302fe8bd77a32dfe1d0796e3309ab34c1ec382e0d6ce39f5a53957b3a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bd3282254a5a458af76e3ef212cd2bedf53e43323cc1b1157162f7b8e6387df0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bd3282254a5a458af76e3ef212cd2bedf53e43323cc1b1157162f7b8e6387df0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bd3282254a5a458af76e3ef212cd2bedf53e43323cc1b1157162f7b8e6387df0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/py/.pyemuera/logs/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "BEGIN209_direct_train",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Direct BEGIN reaches event and resets style identically, but Native preserves RESULT701 and public writes0.",
+          "observation_points_and_comparison": "Direct BEGIN reaches event and resets style identically, but Native preserves RESULT701 and public writes0.",
+          "limitations": "Six valid fixtures for TRAIN/SHOP only: nested parent QUIT control, direct transition, nested parent RETURN. One real chara and selected A/STYLE/RESULT/CHARANUM/TARGET/MASTER/NEXTCOM. No other BEGIN keywords/context restrictions, unknown keyword, all training resets, other events/default game loop, recursive/event return or complete state-machine closure. Initial marker SHOULD_NOT_RUN was an incorrect prediction: source+Native prove parent continues; original fixtures retained, not engine failures. Native12 processes alive5s then own cleanup; natural exit unobserved.",
+          "evidence_reference_count": 188,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/COMPARISON.json",
+              "sha256": "5cb8a22a853930305e310f0f20e0ea6b2f206f0234c62279396a4f8669c939b2",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "6f83d4209efe8d48711974b8a41a34bf696a45f37e6f60e832877c25c7aaa8e1",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-01/emuera.log",
+              "sha256": "24882298fad0fb81d30e6155055cc05ecc593af071d800155c96858467b5eeac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-01/probe.json",
+              "sha256": "bcab55a39f17f0382a5e89a08c97a5d9348974020d6da28af3d4081cb3c35e24",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-02/emuera.log",
+              "sha256": "24882298fad0fb81d30e6155055cc05ecc593af071d800155c96858467b5eeac",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-02/probe.json",
+              "sha256": "a4d71efca71568e837497b1131363e053c502c26b3f66f91596934baf84b9029",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/py/verified.stdout.bin",
+              "sha256": "a2a3ba32b4d3e13cd6df9c8fb9a075c0b136963fc404a073d95a347b49550e0b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "727bfc1f6d80e69917d3874bd3e7ee6f2d6696832f4c88a8f0018425189fb609",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "727bfc1f6d80e69917d3874bd3e7ee6f2d6696832f4c88a8f0018425189fb609",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "727bfc1f6d80e69917d3874bd3e7ee6f2d6696832f4c88a8f0018425189fb609",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_shop/py/.pyemuera/logs/emuera.log",
+              "sha256": "d10ac04382439ac6067e7b7b15c828e46e73d334701780113c7c334a0939a523",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-01/emuera.log",
+              "sha256": "5707987cf5fc50e6497d41f6f1c2e3d2187629ab9a4729ed2efa6d02b1ec2ad3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-01/probe.json",
+              "sha256": "1d951c1656915fc8f94fb7e79dd0e1efbbb72b8bcb4854742432ab3ece62612a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-02/emuera.log",
+              "sha256": "5707987cf5fc50e6497d41f6f1c2e3d2187629ab9a4729ed2efa6d02b1ec2ad3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-02/probe.json",
+              "sha256": "c8860fa106edcaf7b38c46b0904f0c11e5d175e3f25670ea220326e60af720ff",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/py/verified.stdout.bin",
+              "sha256": "c719991ca16a7bedd616b4cf1cada0cc9148c9e21f9be5b727f2920d1f138ec7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "91b003564296e29f96f5bb8b41e13c68648e49e22f20a0f6bb3f06ce749821d8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "91b003564296e29f96f5bb8b41e13c68648e49e22f20a0f6bb3f06ce749821d8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "91b003564296e29f96f5bb8b41e13c68648e49e22f20a0f6bb3f06ce749821d8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/direct_train/py/.pyemuera/logs/emuera.log",
+              "sha256": "a7e3a702fab50396104f17c2902d5c59d9710074e4479b3aa2718919b5bb1a5f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-01/emuera.log",
+              "sha256": "ae5760f95957b90a0e7fb31dd9712088f6edbbcd64b4b611f0adb2dd52377b82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-01/probe.json",
+              "sha256": "5b6c2e0ee32134dc9fb59922baa61f6fa46233c364f9c87fe3bd5d1a4cc2a355",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-02/emuera.log",
+              "sha256": "ae5760f95957b90a0e7fb31dd9712088f6edbbcd64b4b611f0adb2dd52377b82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-02/probe.json",
+              "sha256": "bde7f80486a4f8715bd55a74293bd76151f767467db5c7bf1c7eb1429a5f1bc3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/py/verified.stdout.bin",
+              "sha256": "7c9f2fcb716a50713223b98171249098f8d041b8f9841e2f1d03417a0facec00",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "61acc9b896deac76eb845b108e90bf3e4a54eb04540f76cb4d3f1d77c9b3bcad",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "61acc9b896deac76eb845b108e90bf3e4a54eb04540f76cb4d3f1d77c9b3bcad",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "61acc9b896deac76eb845b108e90bf3e4a54eb04540f76cb4d3f1d77c9b3bcad",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_shop/py/.pyemuera/logs/emuera.log",
+              "sha256": "ae5760f95957b90a0e7fb31dd9712088f6edbbcd64b4b611f0adb2dd52377b82",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-01/emuera.log",
+              "sha256": "52b3b3561c17ea54bd24af56b2e081372a3c9acf7ca0b7867cf3694b5bf88d96",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-01/probe.json",
+              "sha256": "bd82c6d1d11cf604cc4c944f1f7ce792611d3c3337291ea5eabd2547263f1312",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-02/emuera.log",
+              "sha256": "52b3b3561c17ea54bd24af56b2e081372a3c9acf7ca0b7867cf3694b5bf88d96",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-02/probe.json",
+              "sha256": "16fd1c3fccb493f55e496c44a9a514f8d6c49de3c8708181bc095e006d743c00",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/py/verified.stdout.bin",
+              "sha256": "bf16f37f8894ccf1716182c18639116e6fdc57e8b59b0aa9cd3eb4531472873c",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e9d5f3e3b90ce7c807bfbf1058611d5c848abefaf8ce8bc5e340601e4d18b251",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e9d5f3e3b90ce7c807bfbf1058611d5c848abefaf8ce8bc5e340601e4d18b251",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e9d5f3e3b90ce7c807bfbf1058611d5c848abefaf8ce8bc5e340601e4d18b251",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/nested_return_train/py/.pyemuera/logs/emuera.log",
+              "sha256": "52b3b3561c17ea54bd24af56b2e081372a3c9acf7ca0b7867cf3694b5bf88d96",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-01/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-01/probe.json",
+              "sha256": "2f58f003b29cee1259b48eef99ce79a03b69cc4c2ac33b326e76e3442cb444a3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-02/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-02/probe.json",
+              "sha256": "e7601eb8ceb63c069692c250ab8225a44c8f64c37137e5b3e6fe526242a9e8a4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/py/verified.stdout.bin",
+              "sha256": "52362ff302fe8bd77a32dfe1d0796e3309ab34c1ec382e0d6ce39f5a53957b3a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "533940297c2ebd4f33e6c4aff13dd09e32454e56059e2fe71a01974dfc0b59d4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "533940297c2ebd4f33e6c4aff13dd09e32454e56059e2fe71a01974dfc0b59d4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "533940297c2ebd4f33e6c4aff13dd09e32454e56059e2fe71a01974dfc0b59d4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/shop/py/.pyemuera/logs/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-01/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-01/probe.json",
+              "sha256": "cae2beeef1da81aaf0ee2990c84a3dc7e8d5b4b1c1fe74733844fb80637081f3",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-02/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-02/probe.json",
+              "sha256": "66fd3cc06eaa510acfe5f53aaddc76c156c772073d2afddd2514e3272c379cdf",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/py/verified.stdout.bin",
+              "sha256": "52362ff302fe8bd77a32dfe1d0796e3309ab34c1ec382e0d6ce39f5a53957b3a",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bd3282254a5a458af76e3ef212cd2bedf53e43323cc1b1157162f7b8e6387df0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bd3282254a5a458af76e3ef212cd2bedf53e43323cc1b1157162f7b8e6387df0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/py/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bd3282254a5a458af76e3ef212cd2bedf53e43323cc1b1157162f7b8e6387df0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/begin-train-shop-20261113-209/train/py/.pyemuera/logs/emuera.log",
+              "sha256": "c735153c4bb8029febeb5b891e4cca8d08514c1b0037f609d0d99acced8c2282",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SAVEGAME",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "SAVEGAME"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "2e600192ee1920599531f6edb7e8c16621efcac9468d7fd79600d4775753c4cf",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented SAVEGAME difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "SAVEDENY01",
+            "SAVEDENYREPLAY01"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 219,
+              "end_line": 219
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 1733,
+              "end_line": 1756
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 170,
+              "end_line": 180
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "SAVEDENY01",
+        "SAVEDENYREPLAY01"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "SAVEDENYREPLAY01（および以前のSAVEDENY01）で、@EVENTTRAIN内のSAVEGAMEに対しNativeは__CAN_SAVE__欠如で拒否しRETURN前に停止、PyEmueraはセーブスロット画面へ進んで入力EOFとなる。原ERB・Nativeログ・画面クロップ・py出力とリプレイ比較があり、ソースはTrain_CallEventTrain状態に__CAN_SAVE__がないことを確認する。これはこの禁止コンテキストでの制御フロー差であり、実際のスロット保存結果を示さない。限定条件の親受入を支持する。",
+      "cases": [
+        {
+          "case_id": "SAVEDENY01",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/savegame-loadgame-permission-20261112/COMPARISON_REPORT.md",
+          "invocation": "BEGIN TRAIN invokes @EVENTTRAIN; body prints BEFORE then executes SAVEGAME.",
+          "fixtures_and_initial_state": "evidence/savegame-loadgame-permission-20261112/variants/SAVEDENY/ERB/SAVEDENY.ERB; isolated Native v24 and disposable Py copy; fresh save directory; no Native input.",
+          "observation_points_and_comparison": "Native diagnostic rejects SAVEGAME during @EVENTTRAIN because __CAN_SAVE__ is absent. Published PyEmuera instead displays the save-slot menu and then reaches input EOF. Scoped mismatch.",
+          "limitations": "One permission context and one run. This does not characterize every BEGIN mode, function or SAVEGAME/LOADGAME path. The LOADGAME denial boundary remains unverified. No engine change was made.",
+          "evidence_reference_count": 10,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/savegame-loadgame-permission-20261112/V24_SAVELOADGAME_excerpt.txt",
+              "sha256": "a6fecfc80383de9f145a81c9f64eb36a231a89af43dc5357dd0b916c4a95c1e1",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-loadgame-permission-20261112/native-cases/SAVEDENY-d98fb100/probe.json",
+              "sha256": "6b16303a28b22c464b7a6f10f16264920bae86b2a02af13df8d35877c11e4222",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-loadgame-permission-20261112/native-cases/SAVEDENY-d98fb100/emuera.log",
+              "sha256": "6f9afd8e34bbd85314d68a0e2e83b315b42ae984d9ea8f3a5a557543d832fe19",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-loadgame-permission-20261112/variants/SAVEDENY/ERB/SAVEDENY.ERB",
+              "sha256": "3882e4c80d2f94192c21bb5fdc7ae70c96593ba6a29c30bd0054a43de741a63a",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "SAVEDENYREPLAY01",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/savegame-deny-replay-20261113-57/CASE_REVIEW_ja.md",
+          "invocation": "BEGIN TRAIN invokes @EVENTTRAIN; body prints BEFORE then executes SAVEGAME.",
+          "fixtures_and_initial_state": "Fresh minimal ERB variant; isolated Native v24 and published PyEmuera 3.0.0 pyz; fresh save state; stdin EOF for Py; Native launched on a private desktop with no input.",
+          "observation_points_and_comparison": "Native reports that SAVEGAME cannot run in @EVENTTRAIN. PyEmuera enters the corresponding slot menu then stops at E_INPUT_EOF.",
+          "limitations": "One denied @EVENTTRAIN context. Does not test slot selection or all BEGIN/function contexts. No product code changed.",
+          "evidence_reference_count": 13,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/CASE_REVIEW_ja.md",
+              "sha256": "1cc5818f6606ab00c9acf9acc4184fe2ec0f00dba7aef071b8c6abc4adb9df04",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/COMPARISON.json",
+              "sha256": "4858cf33c04ba1d672802e142e2bbe3062920f014eaecb308f039ac90eb6cc48",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/V24_SAVELOADGAME_excerpt.txt",
+              "sha256": "a6fecfc80383de9f145a81c9f64eb36a231a89af43dc5357dd0b916c4a95c1e1",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/native-cases/SAVEDENYREPLAY-69b0dc81/probe.json",
+              "sha256": "1474f8b4ebbb60020183c70ac6fe6ce149ba6b15781e82993a94f9ddaf04c585",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/native-cases/SAVEDENYREPLAY-69b0dc81/emuera.log",
+              "sha256": "5a69c8f1277db70308a8e24f9f114b7ba0663c2f86d31c34c3c6d281cb0affb7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/variants/SAVEDENYREPLAY/ERB/SAVEDENYREPLAY.ERB",
+              "sha256": "3882e4c80d2f94192c21bb5fdc7ae70c96593ba6a29c30bd0054a43de741a63a",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LOADGAME",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "LOADGAME"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "177a1d5d67f21ae7a78b47749652f2feadc4761b03c0366b81865987b116eb54",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented LOADGAME difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "LOADDENY01"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 220,
+              "end_line": 220
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 1733,
+              "end_line": 1756
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 170,
+              "end_line": 180
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "LOADDENY01"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "LOADDENY01で、@EVENTTRAIN内のLOADGAMEをNativeは__CAN_SAVE__欠如で拒否しRETURN前に停止、PyEmueraはロードスロット画面へ進み入力EOFとなる。各エンジンの反復Nativeログ・クロップ・Py出力と、命令別ERBが登録されている。スロット選択後のロードや他コンテキストは未試験。この禁止コンテキスト内の制御フロー差に限って親受入可能。",
+      "cases": [
+        {
+          "case_id": "LOADDENY01",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/savegame-deny-replay-20261113-57/CASE_REVIEW_ja.md",
+          "invocation": "BEGIN TRAIN invokes @EVENTTRAIN; body prints BEFORE then executes LOADGAME.",
+          "fixtures_and_initial_state": "Fresh minimal ERB variant; isolated Native v24 and published PyEmuera 3.0.0 pyz; fresh save state; stdin EOF for Py; Native launched on a private desktop with no input.",
+          "observation_points_and_comparison": "Native reports that LOADGAME cannot run in @EVENTTRAIN. PyEmuera enters the corresponding slot menu then stops at E_INPUT_EOF.",
+          "limitations": "One denied @EVENTTRAIN context. Does not test slot selection or all BEGIN/function contexts. No product code changed.",
+          "evidence_reference_count": 13,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/CASE_REVIEW_ja.md",
+              "sha256": "1cc5818f6606ab00c9acf9acc4184fe2ec0f00dba7aef071b8c6abc4adb9df04",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/COMPARISON.json",
+              "sha256": "4858cf33c04ba1d672802e142e2bbe3062920f014eaecb308f039ac90eb6cc48",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/V24_SAVELOADGAME_excerpt.txt",
+              "sha256": "a6fecfc80383de9f145a81c9f64eb36a231a89af43dc5357dd0b916c4a95c1e1",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/native-cases/LOADDENY-d8b83ae3/probe.json",
+              "sha256": "40c0d04fa3ff1997af755c613c362a5ccfdae9765558538aa479d80207f91fa7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/native-cases/LOADDENY-d8b83ae3/emuera.log",
+              "sha256": "6dbf3f3a2a7b1b13c5c586644174d5cd9e0b0119db8dba401d5bd7e6aee2e918",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/savegame-deny-replay-20261113-57/variants/LOADDENY/ERB/LOADDENY.ERB",
+              "sha256": "a997d5db4ad3779e3af94a8fcdc351fa10a3118255a884cea21badb320375ad1",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SIF",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "SIF"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "16eb2c530600db3c83117dd8fdecaed70c50a31744c49b112290de16edbd13e0",
+      "remaining_conditions": [
+        {
+          "type": "finite_grouped_queue",
+          "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+          "target": {
+            "kind": "structural_syntax",
+            "name": "SIF"
+          },
+          "queue_ids": [],
+          "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+        }
+      ],
+      "examined_case_ids": [
+        "PILOTSIF14",
+        "SIFEDGE02"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "PILOTSIF14（SIF直後が部分IF）とSIFEDGE02（関数ラベル）で、Nativeは先行BEFOREを表示後にSIF行で停止・警告、PyEmueraは読み込み時に後続構造境界を検出してBEFORE前に停止する。独立した最小fixture、Nativeクロップ／ログ、Py出力、v24 SetJumpToの該当分岐がある。先行出力と停止行の差は挙動差である一方、診断全文や全画面一致の証拠ではない。真条件・空行・通常命令等を未確認として、列挙2境界だけ親受入可能。",
+      "cases": [
+        {
+          "case_id": "PILOTSIF14",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "PILOT_FLOW_INTENT_REVIEW_ja.md",
+          "invocation": "control-flow scenario in PILOTSIF14.ERB",
+          "fixtures_and_initial_state": "fresh separate ERB/csv directories, explicit branch and loop values",
+          "observation_points_and_comparison": "native BEFORE then SIF line5 error; Py load error at IF line6 without BEFORE",
+          "limitations": "specific selected paths only; structural markers linked as syntax, not proof each marker handler executed",
+          "evidence_reference_count": 10,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "pilot/variants/PILOTSIF14/ERB/PILOTSIF14.ERB",
+              "sha256": "783bd7c79c42ab5b0d514ef187305fad656b9387dcbfb3b20974ca0d678d6d09",
+              "matches_registered": true
+            },
+            {
+              "path": "PILOT_FLOW_INTENT_REVIEW_ja.md",
+              "sha256": "8e721dba436d18c37354f6c4ef806684c464a31f81e2389667a03537477a3cb7",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/pilot-flow-python-c7366477/comparison.json",
+              "sha256": "ff0e7fa2af60f2c8fa95299aa44229c48ed20637c625f166b612fa4718b1306d",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-e18ddbaa3ef541f18eb7a7d4977c50de/probe.json",
+              "sha256": "d04755f671ba5f4c1f8326dc1917b0171fd5b24f397efdfe6261d41689d5e5e3",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-e18ddbaa3ef541f18eb7a7d4977c50de/emuera.log",
+              "sha256": "75510a75dd622a78fd3e55378a5706debae5c98087b333a3197e55d73d29d472",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "SIFEDGE02",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "SIF_EDGE_REVIEW_ja.md",
+          "invocation": "PRINTL BEFORE; SIF 0; @SIFDEST; PRINTL AFTER; INPUT; QUIT",
+          "fixtures_and_initial_state": "fresh matching ERB; Native uses isolated desktop; PyEmuera 3.0.0 published pyz run separately under CPython 3.12.10; no Native input sent",
+          "observation_points_and_comparison": "Native warns at SIF line, displays BEFORE, then stops on that line; PyEmuera stops while loading at SIF line before BEFORE. AFTER is not reached.",
+          "limitations": "Only SIF followed by function label was compared. True condition, blank/comment, ordinary command, jump label, other partial structures, exact diagnostic bytes, and broader SIF compatibility remain unverified. SIFEDGE01 was an exploratory reserved-name collision and is excluded.",
+          "evidence_reference_count": 8,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "pilot/variants/SIFEDGE02/ERB/SIFEDGE02.ERB",
+              "sha256": "97f1e42dda18e723ca80378fe80da52b0fdbd5b1409324260d05b2bab5dd9351",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-7cd766f850854ca19481a495ce46e7c2/probe.json",
+              "sha256": "98e6ea0f9287e0ed40c956f899922bc54b7170f575a22129bf5e17541c4cc777",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-7cd766f850854ca19481a495ce46e7c2/emuera.log",
+              "sha256": "42596eb83a79713e78ae8e3e41294781219d10ef6d1e83ed993ee46455ce133b",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/sifedge02-python/stdout.bin",
+              "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+              "matches_registered": true
+            },
+            {
+              "path": "SIF_EDGE_REVIEW_ja.md",
+              "sha256": "9a61e98eb1b1bff39cf77a7680c6dc18975b223d21c34d7907f64aa3b9cd775f",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IF",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "IF"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "b017ed77bce80ccca19db747727cacd14bf4d4a407c7f92f1503ec59609d9de6",
+      "remaining_conditions": [
+        {
+          "type": "finite_grouped_queue",
+          "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+          "target": {
+            "kind": "structural_syntax",
+            "name": "IF"
+          },
+          "queue_ids": [],
+          "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+        }
+      ],
+      "examined_case_ids": [
+        "P38B",
+        "P38CALL01",
+        "P38UNUSED01"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "P38Bでトップレベル未閉鎖IFの条件1でも、NativeはBEFORE後に当該行で停止し、PyEmueraは読込時にBEFORE前で停止する。P38CALL01は未閉鎖IFを呼出し時にNativeが診断するのに対しPyは読込時拒否、P38UNUSED01は未呼出関数を含むERBでNativeがBEFOREまで進む一方Pyが先行拒否。source/reviewと個別ERB・比較出力が揃い、既存独立レビューの範囲説明もある。実行時点・先行出力の限定差として親受入可能だが、全構文エラーや全関数ロード方式へ一般化しない。",
+      "cases": [
+        {
+          "case_id": "P38B",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "P38B_REVIEW_ja.md",
+          "invocation": "PRINTL BEFORE; IF 1; PRINTL BODY with ENDIF omitted",
+          "fixtures_and_initial_state": "fresh identical ERB; native and PyEmuera separately",
+          "observation_points_and_comparison": "compare preceding output, stop line, loading and execution timing",
+          "limitations": "unclosed IF with condition 1 only; not all parser errors",
+          "evidence_reference_count": 7,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "pilot/variants/P38B/ERB/P38B.ERB",
+              "sha256": "8dca42ea4c22d9b457c7a90233e5d02a5934f3ee2978c58bd072403c858fe5d0",
+              "matches_registered": true
+            },
+            {
+              "path": "P38B_REVIEW_ja.md",
+              "sha256": "089a708ec0cb7d440d6879dd27fca8a6d76208f0fe2fa410bfe9927d79042d2e",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/p38b-recheck/comparison.json",
+              "sha256": "a2056135f05f68c5165c0584d5f3d1fbc0c46d9ebbcc888c8c75eb0894caa896",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/P38-third-party-review-20261112/THIRD_PARTY_REVIEW_ja.md",
+              "sha256": "1facc48b623502fcdc545b16c930128b739ce514c606d72f02d74ea19441aa17",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "P38CALL01",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "P38_UNREACHABLE_IF_REVIEW_ja.md",
+          "invocation": "@SYSTEM_TITLE: PRINTL BEFORE; CALL UNUSED_EDGE; @UNUSED_EDGE: IF 1; PRINTL BODY (no ENDIF)",
+          "fixtures_and_initial_state": "fresh matching ERB; Native isolated desktop with no input; public PyEmuera pyz launched separately under CPython 3.12.10",
+          "observation_points_and_comparison": "Native displays BEFORE before entering or reaching the malformed function; when called, Native diagnoses missing ENDIF at function body. PyEmuera rejects either fixture during loading before BEFORE.",
+          "limitations": "Only this function-call path and unclosed IF. Native displays a runtime diagnostic; output and diagnostic bytes are not compared. Other syntax errors remain unverified.",
+          "evidence_reference_count": 9,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "pilot/variants/P38CALL01/ERB/P38CALL01.ERB",
+              "sha256": "d21a3f00c899e187d8e15c0eab9c0a9fff325d0a185d1e7d897b655c5bb265d0",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-22a99cfc0333454b809b8ba9f70af9ed/probe.json",
+              "sha256": "dbc93a8bd12db8b613a07d3f5bb403e99a06d7317c9be891cd538c0066dbb4ed",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/p38call01-python/stdout.bin",
+              "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+              "matches_registered": true
+            },
+            {
+              "path": "P38_UNREACHABLE_IF_REVIEW_ja.md",
+              "sha256": "6b802d7be748e048d2162038f0518badbe088d27196005c46ae4e5687a2fa483",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/P38-third-party-review-20261112/THIRD_PARTY_REVIEW_ja.md",
+              "sha256": "1facc48b623502fcdc545b16c930128b739ce514c606d72f02d74ea19441aa17",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "P38UNUSED01",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "P38_UNREACHABLE_IF_REVIEW_ja.md",
+          "invocation": "@SYSTEM_TITLE: PRINTL BEFORE; INPUT; @UNUSED_EDGE: IF 1; PRINTL BODY (no ENDIF)",
+          "fixtures_and_initial_state": "fresh matching ERB; Native isolated desktop with no input; public PyEmuera pyz launched separately under CPython 3.12.10",
+          "observation_points_and_comparison": "Native displays BEFORE before entering or reaching the malformed function; when called, Native diagnoses missing ENDIF at function body. PyEmuera rejects either fixture during loading before BEFORE.",
+          "limitations": "Native screenshot proves BEFORE visible in three captures but no input/terminal completion; only this uncalled malformed IF case. Other malformed constructs and broader lazy-load behavior remain unverified.",
+          "evidence_reference_count": 11,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "pilot/variants/P38UNUSED01/ERB/P38UNUSED01.ERB",
+              "sha256": "8eb897c52389359f310da749d2b439f51182953c4fa58b9463446a800cd89c04",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-710524b334bf415982ccbe0352feef8b/probe.json",
+              "sha256": "504fdd36e40827652f1c64e36f860c8288585bd1758d41ada016533bb876f7d4",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/p38unused01-python/stdout.bin",
+              "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+              "matches_registered": true
+            },
+            {
+              "path": "P38_UNREACHABLE_IF_REVIEW_ja.md",
+              "sha256": "6b802d7be748e048d2162038f0518badbe088d27196005c46ae4e5687a2fa483",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/P38-third-party-review-20261112/THIRD_PARTY_REVIEW_ja.md",
+              "sha256": "1facc48b623502fcdc545b16c930128b739ce514c606d72f02d74ea19441aa17",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "REPEAT",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "REPEAT"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "9545991c47fd26d22e848f2730a9ff57b29723a5de11502d6aa10b55c28b56db",
+      "remaining_conditions": [
+        {
+          "type": "finite_grouped_queue",
+          "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+          "target": {
+            "kind": "structural_syntax",
+            "name": "REPEAT"
+          },
+          "queue_ids": [],
+          "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+        }
+      ],
+      "examined_case_ids": [
+        "PILOTREPEAT16",
+        "REPEATNEXT01"
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "PILOTREPEAT16では0回・1回・入れ子の選択結果値は一致し、Nativeのみ入れ子警告を出す（診断差）。REPEATNEXT01では意図的なREPEAT/NEXT誤対応をNativeがREPEAT行で警告停止し、PyEmueraがNEXT行でE_SYNTAX停止する。独立Native再実行ログと同一補助fixtureの比較があり、差は診断／解析停止位置として再現。正常REPEAT/NEXTループの機能差としては扱わず、警告および不正ペア時の有限診断差だけ親受入可能。",
+      "cases": [
+        {
+          "case_id": "PILOTREPEAT16",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "PILOT_FLOW_INTENT_REVIEW_ja.md",
+          "invocation": "control-flow scenario in PILOTREPEAT16.ERB",
+          "fixtures_and_initial_state": "fresh separate ERB/csv directories, explicit branch and loop values",
+          "observation_points_and_comparison": "native warning absent from Py; numeric results match",
+          "limitations": "specific selected paths only; structural markers linked as syntax, not proof each marker handler executed",
+          "evidence_reference_count": 11,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "pilot/variants/PILOTREPEAT16/ERB/PILOTREPEAT16.ERB",
+              "sha256": "84aed6267a4912b1fa3f6e65d57690a541d47d7aa5d8737c9f59ee82ded81ebf",
+              "matches_registered": true
+            },
+            {
+              "path": "PILOT_FLOW_INTENT_REVIEW_ja.md",
+              "sha256": "8e721dba436d18c37354f6c4ef806684c464a31f81e2389667a03537477a3cb7",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/pilot-flow-python-c7366477/comparison.json",
+              "sha256": "ff0e7fa2af60f2c8fa95299aa44229c48ed20637c625f166b612fa4718b1306d",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-513fcdb157894f9abb6daf0533de8ce6/probe.json",
+              "sha256": "91bf1ea012a53748397b5bd2657919b0696dafd169ae84b4ab62bbc085384486",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/isolated-native-513fcdb157894f9abb6daf0533de8ce6/emuera.log",
+              "sha256": "23cf0af31a85aff8fe60f9dc2f5bef1c750fe1bd2e51310415b6cfe5cc6c0435",
+              "matches_registered": true
+            },
+            {
+              "path": "runs/pilot-flow-python-c7366477/PILOTREPEAT16/.pyemuera/logs/emuera.log",
+              "sha256": "c2ef44dbed234e3d368f1459761ed00589a8b9601e7b79c6003d4f2e2ed2787f",
+              "matches_registered": true
+            }
+          ]
+        },
+        {
+          "case_id": "REPEATNEXT01",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/repeat-next-20261113-87/CASE_REVIEW_ja.md",
+          "invocation": "REPEAT 3; body; NEXT (intentionally mismatched closer).",
+          "fixtures_and_initial_state": "Original case87 fixture 226b40077bf7f5413128dd29f31df507807d14cb22e5bd63339673c020047def; supplemental instrumented fixture 6da5e6936a74dcee6a70714287cffd889983f7447ac5069c72d81d33b9e2927d; public pyz 8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35.",
+          "observation_points_and_comparison": "Original Native/Py diagnostic difference repeated on an instrumented fixture: two independent Native logs warn unmatched NEXT/FOR and missing REPEAT/REND then stop at REPEAT line 4; Py exits 1 with E_SYNTAX Unmatched NEXT at line 8.",
+          "limitations": "Malformed pairing only; no valid REPEAT/NEXT loop behavior is inferred. REND is not executed. Native diagnostic logs repeat; process exit 0 is app exit after diagnostic handling.",
+          "evidence_reference_count": 41,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/repeat-next-20261113-87/CASE_REVIEW_ja.md",
+              "sha256": "130cbc0605c63a32c9a84ed478175f676b3201af5714f10461605151a5fde9e8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-20261113-87/COMPARISON.json",
+              "sha256": "281f39f1e34e80d211759c06e138383b069c728d7810adeef33e5c33c6a2f786",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-20261113-87/native-cases/REPEATNEXT01-bfd94a30/emuera.log",
+              "sha256": "839a8319271b1091a4957e93a71f4d3e53809332a6fba71d32accd05d85bd23e",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-20261113-87/native-cases/REPEATNEXT01-bfd94a30/ERB/REPEATNEXT01.ERB",
+              "sha256": "226b40077bf7f5413128dd29f31df507807d14cb22e5bd63339673c020047def",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-20261113-87/native-cases/REPEATNEXT01-bfd94a30/probe.json",
+              "sha256": "a65ddcddf1e9a6eb67972eacac0e6dbd65c95e61ae84ffc0f86db0fe3ecb53eb",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-20261113-87/variants/REPEATNEXT01/ERB/REPEATNEXT01.ERB",
+              "sha256": "226b40077bf7f5413128dd29f31df507807d14cb22e5bd63339673c020047def",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-crosspair-20261113-109/REPEATNEXT01.ERB",
+              "sha256": "6da5e6936a74dcee6a70714287cffd889983f7447ac5069c72d81d33b9e2927d",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-crosspair-20261113-109/SUPPLEMENTAL_REVIEW_ja.md",
+              "sha256": "b30efac84d13ab254c5ab92d1665248e55c92f1b48f69cbdc807bc1715c59c7e",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-crosspair-20261113-109/SUPPLEMENTAL_COMPARISON.json",
+              "sha256": "1a33f38238be53d74a9f6690d90b820fce0194d7164efdf077fc50df4191f14f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-crosspair-20261113-109/native-run1-fixture.ERB",
+              "sha256": "6da5e6936a74dcee6a70714287cffd889983f7447ac5069c72d81d33b9e2927d",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/repeat-next-crosspair-20261113-109/native-run2-fixture.ERB",
+              "sha256": "6da5e6936a74dcee6a70714287cffd889983f7447ac5069c72d81d33b9e2927d",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "COPYCHARA",
+      "target_key": {
+        "kind": "command_or_syntax",
+        "name": "COPYCHARA"
+      },
+      "current_status": "known_difference_documented",
+      "necessary_comparison_complete": false,
+      "current_row_canonical_sha256": "6c27b0f34c75d2e17e4b896b615dd5a93e30ad8b384f19a60d5242db7ff95b52",
+      "remaining_conditions": [
+        {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented COPYCHARA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "PARENT246_copychara-trailing"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 260,
+              "end_line": 260
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 1038,
+              "end_line": 1054
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 184,
+              "end_line": 194
+            }
+          ]
+        }
+      ],
+      "examined_case_ids": [
+        "ARGBOUND246_copychara-trailing"
+      ],
+      "recommendation": "partial",
+      "semantic_reason": "ARGBOUND246の通常形COPYCHARA 0,0はNative2回・Pyで後続STATE/DONEまで一致。末尾カンマ付きCOPYCHARA 0,0,はNative2回で後続STATE/DONEまで到達するが、PyEmueraは同じ行でE_TYPE(Integer required, got NoneType)となり、状態出力なし。fixture・生ログ・source contractとC# ReduceArguments抜粋があり、引数末尾空要素の有限な受理差を示す。コマンドは実行され得る位置で止まるため診断だけではないが、コピー後の全キャラクター状態は観測されていない。親受入には足るが「COPYCHARAの状態差」まで確定しない部分判定が適切。",
+      "cases": [
+        {
+          "case_id": "ARGBOUND246_copychara-trailing",
+          "registered_scenario_verdict": "different_scoped",
+          "case_review": "evidence/trailing-comma-parsers-20261113-246/REVIEW.md",
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "copychara-trailing: trailing_comma_native_ignored_public_missing_argument_rejected",
+          "observation_points_and_comparison": "copychara-trailing: trailing_comma_native_ignored_public_missing_argument_rejected",
+          "limitations": "Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+          "evidence_reference_count": 269,
+          "evidence_references_all_hash_match": true,
+          "evidence_reference_mismatches": [],
+          "examined_evidence_hashes": [
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/COMPARISON.json",
+              "sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/REVIEW.md",
+              "sha256": "c1a09322b31f3deef48ab1febf4e23cc176f0ae460a6d47a2922477cff9d8671",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/SOURCE_CONTRACT_CURRENT.json",
+              "sha256": "0ac9db387754fe2b5e0f823e256f787d91dff230dec73b93a7e466c96c5ff467",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/SOURCE_EXCERPTS.txt",
+              "sha256": "b24c315cbbc26a03230fa7077fc99782d49bc2ec97b1d8e894e7d35935da68a5",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/native-01/emuera.log",
+              "sha256": "838d0ee45f44504d5a4747af2d41becef38fb5d0e6fe8b217606018c3eb71416",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/native-01/probe.json",
+              "sha256": "235c5e7bd495ae14730f899d91c5fb4475ba58f74f5cd60cc9f53568557c2481",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/native-02/emuera.log",
+              "sha256": "838d0ee45f44504d5a4747af2d41becef38fb5d0e6fe8b217606018c3eb71416",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/native-02/probe.json",
+              "sha256": "a17001783dad6fd7aade913722bf57db10f681754fcd4fd2d9e19cf26c5eb30c",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/public/verified.stdout.bin",
+              "sha256": "ac30c60f323476ec1a1e5e3ae62edf31147e3fdf522b4d1793c6b4256b287dcd",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "1349786c5aa22af88064191f940a9d2d6a42d210c8a4adfb4f77747930dfd9b7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "1349786c5aa22af88064191f940a9d2d6a42d210c8a4adfb4f77747930dfd9b7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "1349786c5aa22af88064191f940a9d2d6a42d210c8a4adfb4f77747930dfd9b7",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-control/public/.pyemuera/logs/emuera.log",
+              "sha256": "838d0ee45f44504d5a4747af2d41becef38fb5d0e6fe8b217606018c3eb71416",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/native-01/emuera.log",
+              "sha256": "0abd5412341c33a666a2ccd1d4be1fa3374e8e7975f51f7a09f63f4278dbf6fb",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/native-01/probe.json",
+              "sha256": "30b313fddaee4b5148bbda86450e0d1811a23e6a0b87833e2a39eb3f069f827d",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/native-02/emuera.log",
+              "sha256": "0abd5412341c33a666a2ccd1d4be1fa3374e8e7975f51f7a09f63f4278dbf6fb",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/native-02/probe.json",
+              "sha256": "0b8912e94bfd241d113b4e4d0327cf4c2dc1b8d2ffed0cfe87ccdc6ac676d27b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/public/verified.stdout.bin",
+              "sha256": "147506b0abc2dee1ed755e4edbc518bc886cfa21247af98c887f393935f84eb8",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "b08280c4e8f97d8989f796de57c2bfb46d9ff8a446b21dc50202f5a1e0b440b0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "b08280c4e8f97d8989f796de57c2bfb46d9ff8a446b21dc50202f5a1e0b440b0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "b08280c4e8f97d8989f796de57c2bfb46d9ff8a446b21dc50202f5a1e0b440b0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/abs-trailing/public/.pyemuera/logs/emuera.log",
+              "sha256": "41d63fd65f320295ebe8c5cb8c13de5f5788b76d0378842c1f43c5d6dfde4620",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/emuera.log",
+              "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/probe.json",
+              "sha256": "c65a142b202ec8d451242a5a628addbbf2db539835d0bdfc602fc1f65541f09e",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/emuera.log",
+              "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/probe.json",
+              "sha256": "69a8b8653c24675ef0466349940057afa43724a06be8c32c9d66932f5ebaa05c",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/verified.stdout.bin",
+              "sha256": "a71b8bf21d57d41d79d355dfab7c9650492e00ae8f381c75f9c7d2e17c87750b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/.pyemuera/logs/emuera.log",
+              "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/emuera.log",
+              "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/probe.json",
+              "sha256": "8e5219db9396430440ca7ad0afb9ea6efa47fe2698dee4b94d87546ba46ec887",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/emuera.log",
+              "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/probe.json",
+              "sha256": "1ff8c1cab0331e3adc93fb6a30ecbac124561cd7c95e691a53cd3900e6619324",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/verified.stdout.bin",
+              "sha256": "1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/.pyemuera/logs/emuera.log",
+              "sha256": "d81bff7c90ecc65a7f2fce5f0125341bdd785a6a3721f39b6da90286dafe8418",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/native-01/emuera.log",
+              "sha256": "08c895c0ed3d69e653e0750535d3d256082d4799bbbfe56282c2725b744b8701",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/native-01/probe.json",
+              "sha256": "407db80d270ca83859c2539bc5966f65a0b8d1c25d78d6c8cbfedc2c95bbd076",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/native-02/emuera.log",
+              "sha256": "08c895c0ed3d69e653e0750535d3d256082d4799bbbfe56282c2725b744b8701",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/native-02/probe.json",
+              "sha256": "fc4769c48100e4777435b1ffeeea2a92874cdcf9e49fea55b9aa1470d68cbae4",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/public/verified.stdout.bin",
+              "sha256": "926a1bfbd1c1b31168d315b952d485d03c5a7897e91eb825e96b484abcbfd638",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "17204057f97159ebf56aba5d7aa466d677b06b5a66bfb9384fa5b2264c94e7fe",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "17204057f97159ebf56aba5d7aa466d677b06b5a66bfb9384fa5b2264c94e7fe",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "17204057f97159ebf56aba5d7aa466d677b06b5a66bfb9384fa5b2264c94e7fe",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-control/public/.pyemuera/logs/emuera.log",
+              "sha256": "08c895c0ed3d69e653e0750535d3d256082d4799bbbfe56282c2725b744b8701",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/native-01/emuera.log",
+              "sha256": "f8f6ab67bfac2e3e93a0f3a5068a173c0538b9004c9facb4c5bf379680d01a79",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/native-01/probe.json",
+              "sha256": "bd407910d5f29b09eb4564a0038f2a21586fe13afcb9f90d215774237d6fc0fb",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/native-02/emuera.log",
+              "sha256": "f8f6ab67bfac2e3e93a0f3a5068a173c0538b9004c9facb4c5bf379680d01a79",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/native-02/probe.json",
+              "sha256": "5f91f24f9f9ffcc889629cb8d0268003608ada0e19a15990a26160fa059e8226",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/public/verified.stdout.bin",
+              "sha256": "3eeee90ef29b71a4338d2ae83456491b6ba4901e1be1b68e5fbefd530703bb83",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "962ca5a69c5a93fb295f5d224cdbf3b0fc2a383307bebc07f494731633c26b19",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "962ca5a69c5a93fb295f5d224cdbf3b0fc2a383307bebc07f494731633c26b19",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "962ca5a69c5a93fb295f5d224cdbf3b0fc2a383307bebc07f494731633c26b19",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/max-trailing/public/.pyemuera/logs/emuera.log",
+              "sha256": "8cb2ab58ebe017283ae1c5255e5cc5eaad0b0af529054ab56c9c003fd9ae36e0",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/native-01/emuera.log",
+              "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/native-01/probe.json",
+              "sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/native-02/emuera.log",
+              "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/native-02/probe.json",
+              "sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/public/verified.stdout.bin",
+              "sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-control/public/.pyemuera/logs/emuera.log",
+              "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/native-01/emuera.log",
+              "sha256": "58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/native-01/probe.json",
+              "sha256": "8f509f559fde86073975e3da18a592439e80bca9d6ca8092f73d6f32933ee1fd",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/native-02/emuera.log",
+              "sha256": "58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/native-02/probe.json",
+              "sha256": "afa979f7bdf24c79392a1157af18dc33427820bc2560944ad521f32151c25d3f",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/public/verified.stdout.bin",
+              "sha256": "51db54e397abb263108cc277671b02b848d73be86646f486b82d5094fcc20c9b",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/public/ERB/SEARCHBOUND01.ERB",
+              "sha256": "30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce",
+              "matches_registered": true
+            },
+            {
+              "path": "evidence/trailing-comma-parsers-20261113-246/strlen-trailing/public/.pyemuera/logs/emuera.log",
+              "sha256": "58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29",
+              "matches_registered": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

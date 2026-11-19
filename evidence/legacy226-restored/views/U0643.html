@@ -1,0 +1,82 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0643 · SEARCHBOUND01.ERB</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0643 · SEARCHBOUND01.ERB</h1>
+<p>U0643: FORCEKANA 1/2/3とｱ・ｶﾞ・ｳﾞ・ABC123の12条件をK213マーカーで区切るPRINTKプローブ。CP932の半角濁点、モード順、最後のFORCEKANA 0を保持。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>03e067842a37e65ee07c399fd54e392124b527de28614135ad4727c68c34d841</code></p>
+<p><a href="../assets/U0643.ERB">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>03e067842a37e65ee07c399fd54e392124b527de28614135ad4727c68c34d841</code></p>
+<pre>@SYSTEM_TITLE
+FORCEKANA 1
+PRINTL K213_0_BEGIN
+PRINTK ｱ
+PRINTL &lt;END&gt;
+PRINTL K213_0_END
+FORCEKANA 2
+PRINTL K213_1_BEGIN
+PRINTK ｱ
+PRINTL &lt;END&gt;
+PRINTL K213_1_END
+FORCEKANA 3
+PRINTL K213_2_BEGIN
+PRINTK ｱ
+PRINTL &lt;END&gt;
+PRINTL K213_2_END
+FORCEKANA 1
+PRINTL K213_3_BEGIN
+PRINTK ｶﾞ
+PRINTL &lt;END&gt;
+PRINTL K213_3_END
+FORCEKANA 2
+PRINTL K213_4_BEGIN
+PRINTK ｶﾞ
+PRINTL &lt;END&gt;
+PRINTL K213_4_END
+FORCEKANA 3
+PRINTL K213_5_BEGIN
+PRINTK ｶﾞ
+PRINTL &lt;END&gt;
+PRINTL K213_5_END
+FORCEKANA 1
+PRINTL K213_6_BEGIN
+PRINTK ｳﾞ
+PRINTL &lt;END&gt;
+PRINTL K213_6_END
+FORCEKANA 2
+PRINTL K213_7_BEGIN
+PRINTK ｳﾞ
+PRINTL &lt;END&gt;
+PRINTL K213_7_END
+FORCEKANA 3
+PRINTL K213_8_BEGIN
+PRINTK ｳﾞ
+PRINTL &lt;END&gt;
+PRINTL K213_8_END
+FORCEKANA 1
+PRINTL K213_9_BEGIN
+PRINTK ABC123
+PRINTL &lt;END&gt;
+PRINTL K213_9_END
+FORCEKANA 2
+PRINTL K213_10_BEGIN
+PRINTK ABC123
+PRINTL &lt;END&gt;
+PRINTL K213_10_END
+FORCEKANA 3
+PRINTL K213_11_BEGIN
+PRINTK ABC123
+PRINTL &lt;END&gt;
+PRINTL K213_11_END
+FORCEKANA 0
+PRINTL DONE213
+OUTPUTLOG
+QUIT
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1830 · command_or_syntax:PRINTK · check</li>
+</ul></html>

@@ -1,0 +1,48 @@
+{
+  "fixture": "ORPHAN_DATAFORM_UNCALLED",
+  "mode": "native-02",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "-B",
+    "-I",
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "[WITHHELD_PRIVATE_REFERENCE]"
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "74094cfb0038d3baa0094c10edb099244230ca43ee23ee6bc515a06ed48bb7f8",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "started_utc": "2026-11-15T23:31:11.334902+00:00",
+  "preflight_sha256": "e54d158699b4cf79066422b7ba1ae9499ebca220a824c7fff566c7de009ff391",
+  "native_before": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "helper_sha256": "1da290d30be909648c58e03ed9772df2e5328ec188b2be48f6d85f049dad8ca9",
+  "returncode": 0,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "74094cfb0038d3baa0094c10edb099244230ca43ee23ee6bc515a06ed48bb7f8",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "ended_utc": "2026-11-15T23:31:16.522642+00:00",
+  "native_after": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "native_pid_after_cleanup": {
+    "pid": 20468,
+    "alive": false,
+    "exit_code": 1,
+    "image": null
+  },
+  "helper_returncode_is_not_native_natural_exit": true,
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "380098199e432939560a16f791a4047c3a51840889e4cfca5135b9ed51da45eb",
+    "emuera.log": "eb6b0a1059d56337758ae03f7a7e9bb2a5518757e9036e763a69b8cb52ec939a",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "e54d158699b4cf79066422b7ba1ae9499ebca220a824c7fff566c7de009ff391",
+    "probe.json": "1064d78398edfd7392bbf35a5e8c8e036aad839efe064bf7a86eb641600a6f2a",
+    "stderr.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.bin": "33a3144b7bc45d5fbcdb3f9dfd5dab435365236474e52eb3b542a67e04d11628"
+  }
+}

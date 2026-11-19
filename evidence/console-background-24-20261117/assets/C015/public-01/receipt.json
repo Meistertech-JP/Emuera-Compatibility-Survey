@@ -1,0 +1,22 @@
+{
+  "schema": "public-receipt-selected-fields-1",
+  "case_id": "UIQUERY236_cbgsetbuttonsprite-expr-direct",
+  "mode": "public-01",
+  "identity_basis": "CASE_PLAN_COMPARISON_AND_SOURCE_PATH_NOT_SOURCE_RECEIPT_ID",
+  "source_receipt_sha256": "ca699ece708116225b5aa11560cf0a920f6acb5448d387899f628ee46d0f741b",
+  "inputs_before": {
+    "ERB/SEARCHBOUND01.ERB": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "public_executable_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "public_executable_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "public_executable_sha256_expected": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "executable_included": false,
+  "recorded_returncode": 1,
+  "stdout_sha256": "6849786a600f9535f2c4550c6f88c96f21aec9d470da1a907acf5e3b491f63f5",
+  "stderr_sha256": "dc879153face7c237b98e0a0a5f5505ca7bcfcc98a5d0356c22381d8126558da"
+}

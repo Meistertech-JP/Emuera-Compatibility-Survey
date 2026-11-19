@@ -1,0 +1,4952 @@
+{
+  "schema": "api-gap-static-targets-v1",
+  "scope": "Static source and parent metadata only. native_registration identifies same-name Native FunctionMethodCreator.methodList function-method dictionary registration and signature; it does not establish command-syntax registration or routing. Rejection phases are reported by prior readbacks, not reverified from raw here.",
+  "targets": [
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgclear-expr-direct",
+          "case_register_pointer": "/records/1195",
+          "matrix_proof_pointer": "/rows/63/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/63/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/23",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGCLEAR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/63",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/418",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_001"
+        }
+      },
+      "native_registration": {
+        "class": "CBGClearMethod",
+        "registration_line": 196,
+        "signature_lines": [
+          3830,
+          3831
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGCLEAR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgclearbutton-expr-direct",
+          "case_register_pointer": "/records/1197",
+          "matrix_proof_pointer": "/rows/64/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/64/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/24",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGCLEARBUTTON",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/64",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/419",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_002"
+        }
+      },
+      "native_registration": {
+        "class": "CBGClearButtonMethod",
+        "registration_line": 198,
+        "signature_lines": [
+          3873,
+          3874
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGCLEARBUTTON"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgremovebmap-expr-direct",
+          "case_register_pointer": "/records/1201",
+          "matrix_proof_pointer": "/rows/66/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/66/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/26",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGREMOVEBMAP",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/66",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/421",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_003"
+        }
+      },
+      "native_registration": {
+        "class": "CBGRemoveBMapMethod",
+        "registration_line": 200,
+        "signature_lines": [
+          3892,
+          3893
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGREMOVEBMAP"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgremoverange-expr-direct",
+          "case_register_pointer": "/records/1199",
+          "matrix_proof_pointer": "/rows/65/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/65/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/25",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGREMOVERANGE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/65",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/420",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_004"
+        }
+      },
+      "native_registration": {
+        "class": "CBGRemoveRangeMethod",
+        "registration_line": 199,
+        "signature_lines": [
+          3850,
+          3851
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGREMOVERANGE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetbmapg-expr-direct",
+          "case_register_pointer": "/records/1203",
+          "matrix_proof_pointer": "/rows/67/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/67/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/27",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETBMAPG",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/67",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/422",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_005"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSetBMapGMethod",
+        "registration_line": 201,
+        "signature_lines": [
+          3940,
+          3941
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGSETBMAPG"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetbuttonsprite-expr-direct",
+          "case_register_pointer": "/records/1205",
+          "matrix_proof_pointer": "/rows/68/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/68/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "UIQUERY236_cbgsetbuttonsprite-expr-shortcircuit",
+          "case_register_pointer": "/records/1213",
+          "matrix_proof_pointer": "/rows/68/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/28",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETBUTTONSPRITE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/68",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/423",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_006"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSETButtonSpriteMethod",
+        "registration_line": 202,
+        "signature_lines": [
+          3996,
+          3997,
+          4000,
+          4003,
+          4005,
+          4007,
+          4010,
+          4038
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGSETBUTTONSPRITE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetg-expr-direct",
+          "case_register_pointer": "/records/1191",
+          "matrix_proof_pointer": "/rows/61/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/61/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "UIQUERY236_cbgsetg-expr-shortcircuit",
+          "case_register_pointer": "/records/1209",
+          "matrix_proof_pointer": "/rows/61/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/21",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETG",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/61",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/416",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_007"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSetGraphicsMethod",
+        "registration_line": 194,
+        "signature_lines": [
+          3911,
+          3912
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGSETG"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetsprite-expr-direct",
+          "case_register_pointer": "/records/1193",
+          "matrix_proof_pointer": "/rows/62/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-expr",
+          "case_register_pointer": "/records/1207",
+          "matrix_proof_pointer": "/rows/62/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "UIQUERY236_cbgsetsprite-expr-shortcircuit",
+          "case_register_pointer": "/records/1211",
+          "matrix_proof_pointer": "/rows/62/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/22",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETSPRITE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/62",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/417",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_008"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSetCIMGMethod",
+        "registration_line": 195,
+        "signature_lines": [
+          3965,
+          3966
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "CBGSETSPRITE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GMUTATE231_gclear-expr-missing",
+          "case_register_pointer": "/records/1109",
+          "matrix_proof_pointer": "/rows/50/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GMUTATE231_gclear-expr-positive",
+          "case_register_pointer": "/records/1110",
+          "matrix_proof_pointer": "/rows/50/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GMUTATE231_gclear-expr-missing-invalid-color",
+          "case_register_pointer": "/records/1117",
+          "matrix_proof_pointer": "/rows/50/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/10",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GCLEAR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/50",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/405",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_009"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsClearMethod",
+        "registration_line": 180,
+        "signature_lines": [
+          3500,
+          3501
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GCLEAR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS232_gcreatefromfile-expression-positive",
+          "case_register_pointer": "/records/1119",
+          "matrix_proof_pointer": "/rows/48/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS232_gcreatefromfile-expression-direct-missing",
+          "case_register_pointer": "/records/1120",
+          "matrix_proof_pointer": "/rows/48/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS232_gcreatefromfile-expression-invalid-id",
+          "case_register_pointer": "/records/1121",
+          "matrix_proof_pointer": "/rows/48/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/8",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GCREATEFROMFILE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/48",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/403",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_010"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsCreateFromFileMethod",
+        "registration_line": 178,
+        "signature_lines": [
+          3345,
+          3346
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GCREATEFROMFILE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GMUTATE231_gdispose-expr-missing",
+          "case_register_pointer": "/records/1105",
+          "matrix_proof_pointer": "/rows/49/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GMUTATE231_gdispose-expr-positive",
+          "case_register_pointer": "/records/1106",
+          "matrix_proof_pointer": "/rows/49/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/9",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDISPOSE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/49",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/404",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_011"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDisposeMethod",
+        "registration_line": 179,
+        "signature_lines": [
+          3392,
+          3393
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GDISPOSE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS235_gdrawg-expression-missing-dest",
+          "case_register_pointer": "/records/1173",
+          "matrix_proof_pointer": "/rows/54/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawg-expression-missing-source",
+          "case_register_pointer": "/records/1174",
+          "matrix_proof_pointer": "/rows/54/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawg-expression-positive",
+          "case_register_pointer": "/records/1175",
+          "matrix_proof_pointer": "/rows/54/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/14",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDRAWG",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/54",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/409",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_012"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDrawGMethod",
+        "registration_line": 184,
+        "signature_lines": [
+          3549,
+          3550,
+          3555,
+          3557,
+          3559,
+          3568,
+          3586,
+          3598
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GDRAWG"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS235_gdrawgwithmask-expression-missing-dest",
+          "case_register_pointer": "/records/1185",
+          "matrix_proof_pointer": "/rows/55/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawgwithmask-expression-missing-source",
+          "case_register_pointer": "/records/1186",
+          "matrix_proof_pointer": "/rows/55/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawgwithmask-expression-positive",
+          "case_register_pointer": "/records/1187",
+          "matrix_proof_pointer": "/rows/55/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/15",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDRAWGWITHMASK",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/55",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/410",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_013"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDrawGWithMaskMethod",
+        "registration_line": 185,
+        "signature_lines": [
+          3619,
+          3620
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GDRAWGWITHMASK"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS235_gdrawsprite-expression-missing-dest",
+          "case_register_pointer": "/records/1179",
+          "matrix_proof_pointer": "/rows/52/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawsprite-expression-missing-source",
+          "case_register_pointer": "/records/1180",
+          "matrix_proof_pointer": "/rows/52/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawsprite-expression-positive",
+          "case_register_pointer": "/records/1181",
+          "matrix_proof_pointer": "/rows/52/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/12",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDRAWSPRITE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/52",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/407",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_014"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDrawSpriteMethod",
+        "registration_line": 182,
+        "signature_lines": [
+          3660,
+          3661,
+          3666,
+          3668,
+          3670,
+          3672,
+          3675,
+          3683,
+          3703,
+          3708,
+          3716,
+          3722,
+          3731
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GDRAWSPRITE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gfillrectangle-expr-missing",
+          "case_register_pointer": "/records/1137",
+          "matrix_proof_pointer": "/rows/51/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS233_gfillrectangle-expr-positive",
+          "case_register_pointer": "/records/1138",
+          "matrix_proof_pointer": "/rows/51/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS233_gfillrectangle-expr-zero-width",
+          "case_register_pointer": "/records/1139",
+          "matrix_proof_pointer": "/rows/51/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/11",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GFILLRECTANGLE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/51",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/406",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_015"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsFillRectangleMethod",
+        "registration_line": 181,
+        "signature_lines": [
+          3524,
+          3525
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GFILLRECTANGLE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_ggetcolor-expression-missing",
+          "case_register_pointer": "/records/1095",
+          "matrix_proof_pointer": "/rows/45/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GQUERY230_graphics-expression-created",
+          "case_register_pointer": "/records/1097",
+          "matrix_proof_pointer": "/rows/45/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/6",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GGETCOLOR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/45",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/400",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_016"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsGetColorMethod",
+        "registration_line": 174,
+        "signature_lines": [
+          3083,
+          3084
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GGETCOLOR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_gheight-expression-missing",
+          "case_register_pointer": "/records/1094",
+          "matrix_proof_pointer": "/rows/44/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GQUERY230_graphics-expression-created",
+          "case_register_pointer": "/records/1097",
+          "matrix_proof_pointer": "/rows/44/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/5",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GHEIGHT",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/44",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/399",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_017"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsStateMethod",
+        "registration_line": 173,
+        "signature_lines": [
+          3055,
+          3056
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GHEIGHT"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS232_gload-expression-positive",
+          "case_register_pointer": "/records/1131",
+          "matrix_proof_pointer": "/rows/70/proof_cases/0",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS232_gload-expression-direct-missing",
+          "case_register_pointer": "/records/1132",
+          "matrix_proof_pointer": "/rows/70/proof_cases/1",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS232_gload-expression-invalid-id",
+          "case_register_pointer": "/records/1133",
+          "matrix_proof_pointer": "/rows/70/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/30",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GLOAD",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/70",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/425",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_018"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsLoadMethod",
+        "registration_line": 205,
+        "signature_lines": [
+          4284,
+          4285
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GLOAD"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS232_gsave-expression-positive",
+          "case_register_pointer": "/records/1125",
+          "matrix_proof_pointer": "/rows/69/proof_cases/0",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS232_gsave-expression-direct-missing",
+          "case_register_pointer": "/records/1126",
+          "matrix_proof_pointer": "/rows/69/proof_cases/1",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS232_gsave-expression-invalid-id",
+          "case_register_pointer": "/records/1127",
+          "matrix_proof_pointer": "/rows/69/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/29",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSAVE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/69",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/424",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_019"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSaveMethod",
+        "registration_line": 204,
+        "signature_lines": [
+          4248,
+          4249
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GSAVE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gsetbrush-expr-missing",
+          "case_register_pointer": "/records/1143",
+          "matrix_proof_pointer": "/rows/56/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS233_gsetbrush-expr-positive",
+          "case_register_pointer": "/records/1144",
+          "matrix_proof_pointer": "/rows/56/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/16",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETBRUSH",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/56",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/411",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_020"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetBrushMethod",
+        "registration_line": 187,
+        "signature_lines": [
+          3132,
+          3133
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GSETBRUSH"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GMUTATE231_gsetcolor-expr-missing",
+          "case_register_pointer": "/records/1113",
+          "matrix_proof_pointer": "/rows/53/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GMUTATE231_gsetcolor-expr-positive",
+          "case_register_pointer": "/records/1114",
+          "matrix_proof_pointer": "/rows/53/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/13",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETCOLOR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/53",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/408",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_021"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetColorMethod",
+        "registration_line": 183,
+        "signature_lines": [
+          3108,
+          3109
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GSETCOLOR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gsetfont-expr-missing",
+          "case_register_pointer": "/records/1147",
+          "matrix_proof_pointer": "/rows/57/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS233_gsetfont-expr-positive",
+          "case_register_pointer": "/records/1148",
+          "matrix_proof_pointer": "/rows/57/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/17",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETFONT",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/57",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/412",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_022"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetFontMethod",
+        "registration_line": 188,
+        "signature_lines": [
+          3152,
+          3153
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GSETFONT"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gsetpen-expr-missing",
+          "case_register_pointer": "/records/1151",
+          "matrix_proof_pointer": "/rows/58/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS233_gsetpen-expr-positive",
+          "case_register_pointer": "/records/1152",
+          "matrix_proof_pointer": "/rows/58/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS233_gsetpen-expr-arity3",
+          "case_register_pointer": "/records/1153",
+          "matrix_proof_pointer": "/rows/58/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/18",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETPEN",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/58",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/413",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_023"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetPenMethod",
+        "registration_line": 189,
+        "signature_lines": [
+          3184,
+          3185
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GSETPEN"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_gwidth-expression-missing",
+          "case_register_pointer": "/records/1093",
+          "matrix_proof_pointer": "/rows/43/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GQUERY230_graphics-expression-created",
+          "case_register_pointer": "/records/1097",
+          "matrix_proof_pointer": "/rows/43/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/4",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GWIDTH",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/43",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/398",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_024"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsStateMethod",
+        "registration_line": 172,
+        "signature_lines": [
+          3055,
+          3056
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "GWIDTH"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_mousex_expr_normal",
+          "case_register_pointer": "/records/1221",
+          "matrix_proof_pointer": "/rows/38/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/2",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/MOUSEX",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/38",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/392",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_025"
+        }
+      },
+      "native_registration": {
+        "class": "MousePosMethod",
+        "registration_line": 165,
+        "signature_lines": [
+          4079,
+          4080
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "MOUSEX"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_mousey_expr_normal",
+          "case_register_pointer": "/records/1223",
+          "matrix_proof_pointer": "/rows/39/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/3",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/MOUSEY",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/39",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/393",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_026"
+        }
+      },
+      "native_registration": {
+        "class": "MousePosMethod",
+        "registration_line": 166,
+        "signature_lines": [
+          4079,
+          4080
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "MOUSEY"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_setanimetimer-expression-direct",
+          "case_register_pointer": "/records/1161",
+          "matrix_proof_pointer": "/rows/73/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS234_timer-expression-outofrange",
+          "case_register_pointer": "/records/1163",
+          "matrix_proof_pointer": "/rows/73/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-expression-positive",
+          "case_register_pointer": "/records/1164",
+          "matrix_proof_pointer": "/rows/73/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/33",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SETANIMETIMER",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/73",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/428",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_027"
+        }
+      },
+      "native_registration": {
+        "class": "SetAnimeTimerMethod",
+        "registration_line": 210,
+        "signature_lines": [
+          4113,
+          4114
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SETANIMETIMER"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spriteanimeaddframe-expression-direct",
+          "case_register_pointer": "/records/1160",
+          "matrix_proof_pointer": "/rows/72/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS234_addframe-expression-missing",
+          "case_register_pointer": "/records/1162",
+          "matrix_proof_pointer": "/rows/72/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "reason_not_specified",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-expression-positive",
+          "case_register_pointer": "/records/1164",
+          "matrix_proof_pointer": "/rows/72/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/32",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEANIMEADDFRAME",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/72",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/427",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_028"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteAnimeAddFrameMethod",
+        "registration_line": 209,
+        "signature_lines": [
+          3789,
+          3790
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMEADDFRAME"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spriteanimecreate-expression-direct",
+          "case_register_pointer": "/records/1159",
+          "matrix_proof_pointer": "/rows/71/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-expression-positive",
+          "case_register_pointer": "/records/1164",
+          "matrix_proof_pointer": "/rows/71/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/31",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEANIMECREATE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/71",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/426",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_029"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteAnimeCreateMethod",
+        "registration_line": 208,
+        "signature_lines": [
+          3752,
+          3753
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMECREATE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spritecreate-expression-direct",
+          "case_register_pointer": "/records/1157",
+          "matrix_proof_pointer": "/rows/59/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-expression-positive",
+          "case_register_pointer": "/records/1164",
+          "matrix_proof_pointer": "/rows/59/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/19",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITECREATE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/59",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/414",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_030"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteCreateMethod",
+        "registration_line": 191,
+        "signature_lines": [
+          3415,
+          3416,
+          3419,
+          3422,
+          3424,
+          3426,
+          3428,
+          3434,
+          3436,
+          3438,
+          3462
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITECREATE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spritedispose-expression-direct",
+          "case_register_pointer": "/records/1158",
+          "matrix_proof_pointer": "/rows/60/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-expression-positive",
+          "case_register_pointer": "/records/1164",
+          "matrix_proof_pointer": "/rows/60/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "earlier_or_setup_stop",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/20",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEDISPOSE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/60",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/415",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_031"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteDisposeMethod",
+        "registration_line": 192,
+        "signature_lines": [
+          3477,
+          3478
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITEDISPOSE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_spritegetcolor-expression-missing",
+          "case_register_pointer": "/records/1096",
+          "matrix_proof_pointer": "/rows/46/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "GQUERY230_sprite-expression-existing",
+          "case_register_pointer": "/records/1098",
+          "matrix_proof_pointer": "/rows/46/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/7",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEGETCOLOR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/46",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/401",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_032"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteGetColorMethod",
+        "registration_line": 175,
+        "signature_lines": [
+          3265,
+          3266
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITEGETCOLOR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "SPRITEPOS221_spritemove-expression-existing",
+          "case_register_pointer": "/records/1022",
+          "matrix_proof_pointer": "/rows/34/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "SPRITEPOS221_spritemove-expression-missing",
+          "case_register_pointer": "/records/1023",
+          "matrix_proof_pointer": "/rows/34/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/0",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEMOVE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/34",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/384",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_033"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteSetPosMethod",
+        "registration_line": 155,
+        "signature_lines": [
+          3237,
+          3238
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITEMOVE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "SPRITEPOS221_spritesetpos-expression-existing",
+          "case_register_pointer": "/records/1026",
+          "matrix_proof_pointer": "/rows/35/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        },
+        {
+          "case_id": "SPRITEPOS221_spritesetpos-expression-missing",
+          "case_register_pointer": "/records/1027",
+          "matrix_proof_pointer": "/rows/35/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "runtime_unknown_function_resolution"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/1",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITESETPOS",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/35",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/385",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_034"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteSetPosMethod",
+        "registration_line": 156,
+        "signature_lines": [
+          3237,
+          3238
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "expression_function",
+        "name": "SPRITESETPOS"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgclear-method-direct",
+          "case_register_pointer": "/records/1196",
+          "matrix_proof_pointer": "/rows/138/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/138/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/66",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGCLEAR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/138",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/572",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_035"
+        }
+      },
+      "native_registration": {
+        "class": "CBGClearMethod",
+        "registration_line": 196,
+        "signature_lines": [
+          3830,
+          3831
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGCLEAR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgclearbutton-method-direct",
+          "case_register_pointer": "/records/1198",
+          "matrix_proof_pointer": "/rows/139/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/139/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/67",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGCLEARBUTTON",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/139",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/573",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_036"
+        }
+      },
+      "native_registration": {
+        "class": "CBGClearButtonMethod",
+        "registration_line": 198,
+        "signature_lines": [
+          3873,
+          3874
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGCLEARBUTTON"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgremovebmap-method-direct",
+          "case_register_pointer": "/records/1202",
+          "matrix_proof_pointer": "/rows/141/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/141/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/69",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGREMOVEBMAP",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/141",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/575",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_037"
+        }
+      },
+      "native_registration": {
+        "class": "CBGRemoveBMapMethod",
+        "registration_line": 200,
+        "signature_lines": [
+          3892,
+          3893
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGREMOVEBMAP"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgremoverange-method-direct",
+          "case_register_pointer": "/records/1200",
+          "matrix_proof_pointer": "/rows/140/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/140/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/68",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGREMOVERANGE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/140",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/574",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_038"
+        }
+      },
+      "native_registration": {
+        "class": "CBGRemoveRangeMethod",
+        "registration_line": 199,
+        "signature_lines": [
+          3850,
+          3851
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGREMOVERANGE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetbmapg-method-direct",
+          "case_register_pointer": "/records/1204",
+          "matrix_proof_pointer": "/rows/142/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/142/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/70",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETBMAPG",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/142",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/576",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_039"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSetBMapGMethod",
+        "registration_line": 201,
+        "signature_lines": [
+          3940,
+          3941
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGSETBMAPG"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetbuttonsprite-method-direct",
+          "case_register_pointer": "/records/1206",
+          "matrix_proof_pointer": "/rows/143/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/143/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_cbgsetbuttonsprite-method-shortcircuit",
+          "case_register_pointer": "/records/1214",
+          "matrix_proof_pointer": "/rows/143/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/71",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETBUTTONSPRITE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/143",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/577",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_040"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSETButtonSpriteMethod",
+        "registration_line": 202,
+        "signature_lines": [
+          3996,
+          3997,
+          4000,
+          4003,
+          4005,
+          4007,
+          4010,
+          4038
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGSETBUTTONSPRITE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetg-method-direct",
+          "case_register_pointer": "/records/1192",
+          "matrix_proof_pointer": "/rows/136/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/136/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_cbgsetg-method-shortcircuit",
+          "case_register_pointer": "/records/1210",
+          "matrix_proof_pointer": "/rows/136/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/64",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETG",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/136",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/570",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_041"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSetGraphicsMethod",
+        "registration_line": 194,
+        "signature_lines": [
+          3911,
+          3912
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGSETG"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY236_cbgsetsprite-method-direct",
+          "case_register_pointer": "/records/1194",
+          "matrix_proof_pointer": "/rows/137/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_lifecycle-method",
+          "case_register_pointer": "/records/1208",
+          "matrix_proof_pointer": "/rows/137/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "UIQUERY236_cbgsetsprite-method-shortcircuit",
+          "case_register_pointer": "/records/1212",
+          "matrix_proof_pointer": "/rows/137/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/65",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CBGSETSPRITE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/137",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/571",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_042"
+        }
+      },
+      "native_registration": {
+        "class": "CBGSetCIMGMethod",
+        "registration_line": 195,
+        "signature_lines": [
+          3965,
+          3966
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CBGSETSPRITE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "FONTCLIENT223_height-command",
+          "case_register_pointer": "/records/1059",
+          "matrix_proof_pointer": "/rows/109/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/41",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CLIENTHEIGHT",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/109",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/543",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_043"
+        }
+      },
+      "native_registration": {
+        "class": "ClientSizeMethod",
+        "registration_line": 161,
+        "signature_lines": [
+          3291,
+          3292
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CLIENTHEIGHT"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "FONTCLIENT223_client-command",
+          "case_register_pointer": "/records/1057",
+          "matrix_proof_pointer": "/rows/108/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/40",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/CLIENTWIDTH",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/108",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/542",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_044"
+        }
+      },
+      "native_registration": {
+        "class": "ClientSizeMethod",
+        "registration_line": 160,
+        "signature_lines": [
+          3291,
+          3292
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "CLIENTWIDTH"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GMUTATE231_gclear-method-missing",
+          "case_register_pointer": "/records/1111",
+          "matrix_proof_pointer": "/rows/125/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GMUTATE231_gclear-method-positive",
+          "case_register_pointer": "/records/1112",
+          "matrix_proof_pointer": "/rows/125/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "reason_not_specified",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GMUTATE231_gclear-method-missing-invalid-color",
+          "case_register_pointer": "/records/1118",
+          "matrix_proof_pointer": "/rows/125/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/53",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GCLEAR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/125",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/559",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_045"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsClearMethod",
+        "registration_line": 180,
+        "signature_lines": [
+          3500,
+          3501
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GCLEAR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS232_gcreatefromfile-method-positive",
+          "case_register_pointer": "/records/1122",
+          "matrix_proof_pointer": "/rows/123/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS232_gcreatefromfile-method-direct-missing",
+          "case_register_pointer": "/records/1123",
+          "matrix_proof_pointer": "/rows/123/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS232_gcreatefromfile-method-invalid-id",
+          "case_register_pointer": "/records/1124",
+          "matrix_proof_pointer": "/rows/123/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/51",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GCREATEFROMFILE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/123",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/557",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_046"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsCreateFromFileMethod",
+        "registration_line": 178,
+        "signature_lines": [
+          3345,
+          3346
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GCREATEFROMFILE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GMUTATE231_gdispose-method-missing",
+          "case_register_pointer": "/records/1107",
+          "matrix_proof_pointer": "/rows/124/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GMUTATE231_gdispose-method-positive",
+          "case_register_pointer": "/records/1108",
+          "matrix_proof_pointer": "/rows/124/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "reason_not_specified",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/52",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDISPOSE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/124",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/558",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_047"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDisposeMethod",
+        "registration_line": 179,
+        "signature_lines": [
+          3392,
+          3393
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GDISPOSE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS235_gdrawg-method-missing-dest",
+          "case_register_pointer": "/records/1176",
+          "matrix_proof_pointer": "/rows/129/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawg-method-missing-source",
+          "case_register_pointer": "/records/1177",
+          "matrix_proof_pointer": "/rows/129/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawg-method-positive",
+          "case_register_pointer": "/records/1178",
+          "matrix_proof_pointer": "/rows/129/proof_cases/2",
+          "readback_proof_pointer": "/proofs/2",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/57",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDRAWG",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/129",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/563",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_048"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDrawGMethod",
+        "registration_line": 184,
+        "signature_lines": [
+          3549,
+          3550,
+          3555,
+          3557,
+          3559,
+          3568,
+          3586,
+          3598
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GDRAWG"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS235_gdrawgwithmask-method-missing-dest",
+          "case_register_pointer": "/records/1188",
+          "matrix_proof_pointer": "/rows/130/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawgwithmask-method-missing-source",
+          "case_register_pointer": "/records/1189",
+          "matrix_proof_pointer": "/rows/130/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawgwithmask-method-positive",
+          "case_register_pointer": "/records/1190",
+          "matrix_proof_pointer": "/rows/130/proof_cases/2",
+          "readback_proof_pointer": "/proofs/2",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/58",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDRAWGWITHMASK",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/130",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/564",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_049"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDrawGWithMaskMethod",
+        "registration_line": 185,
+        "signature_lines": [
+          3619,
+          3620
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GDRAWGWITHMASK"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS235_gdrawsprite-method-missing-dest",
+          "case_register_pointer": "/records/1182",
+          "matrix_proof_pointer": "/rows/127/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawsprite-method-missing-source",
+          "case_register_pointer": "/records/1183",
+          "matrix_proof_pointer": "/rows/127/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS235_gdrawsprite-method-positive",
+          "case_register_pointer": "/records/1184",
+          "matrix_proof_pointer": "/rows/127/proof_cases/2",
+          "readback_proof_pointer": "/proofs/2",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/55",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GDRAWSPRITE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/127",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/561",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_050"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsDrawSpriteMethod",
+        "registration_line": 182,
+        "signature_lines": [
+          3660,
+          3661,
+          3666,
+          3668,
+          3670,
+          3672,
+          3675,
+          3683,
+          3703,
+          3708,
+          3716,
+          3722,
+          3731
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GDRAWSPRITE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_getkey_method_normal",
+          "case_register_pointer": "/records/1218",
+          "matrix_proof_pointer": "/rows/110/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/42",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GETKEY",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/110",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/544",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_051"
+        }
+      },
+      "native_registration": {
+        "class": "GetKeyStateMethod",
+        "registration_line": 163,
+        "signature_lines": [
+          4052,
+          4053
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GETKEY"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_getkeytriggered_method_normal",
+          "case_register_pointer": "/records/1220",
+          "matrix_proof_pointer": "/rows/111/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/43",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GETKEYTRIGGERED",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/111",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/545",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_052"
+        }
+      },
+      "native_registration": {
+        "class": "GetKeyStateMethod",
+        "registration_line": 164,
+        "signature_lines": [
+          4052,
+          4053
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GETKEYTRIGGERED"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gfillrectangle-method-missing",
+          "case_register_pointer": "/records/1140",
+          "matrix_proof_pointer": "/rows/126/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS233_gfillrectangle-method-positive",
+          "case_register_pointer": "/records/1141",
+          "matrix_proof_pointer": "/rows/126/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS233_gfillrectangle-method-zero-width",
+          "case_register_pointer": "/records/1142",
+          "matrix_proof_pointer": "/rows/126/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/54",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GFILLRECTANGLE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/126",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/560",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_053"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsFillRectangleMethod",
+        "registration_line": 181,
+        "signature_lines": [
+          3524,
+          3525
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GFILLRECTANGLE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_ggetcolor-method-missing",
+          "case_register_pointer": "/records/1101",
+          "matrix_proof_pointer": "/rows/120/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GQUERY230_graphics-method-created",
+          "case_register_pointer": "/records/1103",
+          "matrix_proof_pointer": "/rows/120/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/49",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GGETCOLOR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/120",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/554",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_054"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsGetColorMethod",
+        "registration_line": 174,
+        "signature_lines": [
+          3083,
+          3084
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GGETCOLOR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_gheight-method-missing",
+          "case_register_pointer": "/records/1100",
+          "matrix_proof_pointer": "/rows/119/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GQUERY230_graphics-method-created",
+          "case_register_pointer": "/records/1103",
+          "matrix_proof_pointer": "/rows/119/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/48",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GHEIGHT",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/119",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/553",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_055"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsStateMethod",
+        "registration_line": 173,
+        "signature_lines": [
+          3055,
+          3056
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GHEIGHT"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS232_gload-method-positive",
+          "case_register_pointer": "/records/1134",
+          "matrix_proof_pointer": "/rows/145/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS232_gload-method-direct-missing",
+          "case_register_pointer": "/records/1135",
+          "matrix_proof_pointer": "/rows/145/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS232_gload-method-invalid-id",
+          "case_register_pointer": "/records/1136",
+          "matrix_proof_pointer": "/rows/145/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/73",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GLOAD",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/145",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/579",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_056"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsLoadMethod",
+        "registration_line": 205,
+        "signature_lines": [
+          4284,
+          4285
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GLOAD"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS232_gsave-method-positive",
+          "case_register_pointer": "/records/1128",
+          "matrix_proof_pointer": "/rows/144/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS232_gsave-method-direct-missing",
+          "case_register_pointer": "/records/1129",
+          "matrix_proof_pointer": "/rows/144/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS232_gsave-method-invalid-id",
+          "case_register_pointer": "/records/1130",
+          "matrix_proof_pointer": "/rows/144/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/72",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSAVE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/144",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/578",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_057"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSaveMethod",
+        "registration_line": 204,
+        "signature_lines": [
+          4248,
+          4249
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GSAVE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gsetbrush-method-missing",
+          "case_register_pointer": "/records/1145",
+          "matrix_proof_pointer": "/rows/131/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS233_gsetbrush-method-positive",
+          "case_register_pointer": "/records/1146",
+          "matrix_proof_pointer": "/rows/131/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/59",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETBRUSH",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/131",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/565",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_058"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetBrushMethod",
+        "registration_line": 187,
+        "signature_lines": [
+          3132,
+          3133
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GSETBRUSH"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GMUTATE231_gsetcolor-method-missing",
+          "case_register_pointer": "/records/1115",
+          "matrix_proof_pointer": "/rows/128/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GMUTATE231_gsetcolor-method-positive",
+          "case_register_pointer": "/records/1116",
+          "matrix_proof_pointer": "/rows/128/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "reason_not_specified",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/56",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETCOLOR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/128",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/562",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_059"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetColorMethod",
+        "registration_line": 183,
+        "signature_lines": [
+          3108,
+          3109
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GSETCOLOR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gsetfont-method-missing",
+          "case_register_pointer": "/records/1149",
+          "matrix_proof_pointer": "/rows/132/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS233_gsetfont-method-positive",
+          "case_register_pointer": "/records/1150",
+          "matrix_proof_pointer": "/rows/132/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/60",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETFONT",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/132",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/566",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_060"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetFontMethod",
+        "registration_line": 188,
+        "signature_lines": [
+          3152,
+          3153
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GSETFONT"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS233_gsetpen-method-missing",
+          "case_register_pointer": "/records/1154",
+          "matrix_proof_pointer": "/rows/133/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS233_gsetpen-method-positive",
+          "case_register_pointer": "/records/1155",
+          "matrix_proof_pointer": "/rows/133/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "reason_not_specified",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS233_gsetpen-method-arity3",
+          "case_register_pointer": "/records/1156",
+          "matrix_proof_pointer": "/rows/133/proof_cases/2",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/61",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GSETPEN",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/133",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/567",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_061"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsSetPenMethod",
+        "registration_line": 189,
+        "signature_lines": [
+          3184,
+          3185
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GSETPEN"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_gwidth-method-missing",
+          "case_register_pointer": "/records/1099",
+          "matrix_proof_pointer": "/rows/118/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GQUERY230_graphics-method-created",
+          "case_register_pointer": "/records/1103",
+          "matrix_proof_pointer": "/rows/118/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/47",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/GWIDTH",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/118",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/552",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_062"
+        }
+      },
+      "native_registration": {
+        "class": "GraphicsStateMethod",
+        "registration_line": 172,
+        "signature_lines": [
+          3055,
+          3056
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "GWIDTH"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "HTMLBUFFER219_METHOD_HTML_GETPRINTEDSTR",
+          "case_register_pointer": "/records/999",
+          "matrix_proof_pointer": "/rows/100/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/36",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/HTML_GETPRINTEDSTR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/100",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/531",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_063"
+        }
+      },
+      "native_registration": {
+        "class": "HtmlGetPrintedStrMethod",
+        "registration_line": 145,
+        "signature_lines": [
+          2850,
+          2851,
+          2855,
+          2858,
+          2860,
+          2869
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "HTML_GETPRINTEDSTR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "HTMLBUFFER219_METHOD_HTML_POPPRINTINGSTR",
+          "case_register_pointer": "/records/1000",
+          "matrix_proof_pointer": "/rows/101/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/37",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/HTML_POPPRINTINGSTR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/101",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/532",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_064"
+        }
+      },
+      "native_registration": {
+        "class": "HtmlPopPrintingStrMethod",
+        "registration_line": 146,
+        "signature_lines": [
+          2884,
+          2885
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "HTML_POPPRINTINGSTR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_isactive_method_normal",
+          "case_register_pointer": "/records/1226",
+          "matrix_proof_pointer": "/rows/114/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/46",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/ISACTIVE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/114",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/548",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_065"
+        }
+      },
+      "native_registration": {
+        "class": "IsActiveMethod",
+        "registration_line": 167,
+        "signature_lines": [
+          4099,
+          4100
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": true
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "ISACTIVE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_mousex_method_normal",
+          "case_register_pointer": "/records/1222",
+          "matrix_proof_pointer": "/rows/112/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/44",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/MOUSEX",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/112",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/546",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_066"
+        }
+      },
+      "native_registration": {
+        "class": "MousePosMethod",
+        "registration_line": 165,
+        "signature_lines": [
+          4079,
+          4080
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "MOUSEX"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "UIQUERY237_mousey_method_normal",
+          "case_register_pointer": "/records/1224",
+          "matrix_proof_pointer": "/rows/113/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/45",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/MOUSEY",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/113",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/547",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_067"
+        }
+      },
+      "native_registration": {
+        "class": "MousePosMethod",
+        "registration_line": 166,
+        "signature_lines": [
+          4079,
+          4080
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "MOUSEY"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_setanimetimer-method-direct",
+          "case_register_pointer": "/records/1169",
+          "matrix_proof_pointer": "/rows/148/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS234_timer-method-outofrange",
+          "case_register_pointer": "/records/1171",
+          "matrix_proof_pointer": "/rows/148/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "diagnostic_boundary_or_shortcircuit_only",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-method-positive",
+          "case_register_pointer": "/records/1172",
+          "matrix_proof_pointer": "/rows/148/proof_cases/2",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/76",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SETANIMETIMER",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/148",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/582",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_068"
+        }
+      },
+      "native_registration": {
+        "class": "SetAnimeTimerMethod",
+        "registration_line": 210,
+        "signature_lines": [
+          4113,
+          4114
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SETANIMETIMER"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spriteanimeaddframe-method-direct",
+          "case_register_pointer": "/records/1168",
+          "matrix_proof_pointer": "/rows/147/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS234_addframe-method-missing",
+          "case_register_pointer": "/records/1170",
+          "matrix_proof_pointer": "/rows/147/proof_cases/1",
+          "readback_proof_pointer": null,
+          "reason": "reason_not_specified",
+          "role": "parent_candidate_not_selected",
+          "source_reported_rejection_phase": null
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-method-positive",
+          "case_register_pointer": "/records/1172",
+          "matrix_proof_pointer": "/rows/147/proof_cases/2",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/75",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEANIMEADDFRAME",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/147",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/581",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_069"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteAnimeAddFrameMethod",
+        "registration_line": 209,
+        "signature_lines": [
+          3789,
+          3790
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMEADDFRAME"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spriteanimecreate-method-direct",
+          "case_register_pointer": "/records/1167",
+          "matrix_proof_pointer": "/rows/146/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-method-positive",
+          "case_register_pointer": "/records/1172",
+          "matrix_proof_pointer": "/rows/146/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/74",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEANIMECREATE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/146",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/580",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_070"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteAnimeCreateMethod",
+        "registration_line": 208,
+        "signature_lines": [
+          3752,
+          3753
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMECREATE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spritecreate-method-direct",
+          "case_register_pointer": "/records/1165",
+          "matrix_proof_pointer": "/rows/134/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-method-positive",
+          "case_register_pointer": "/records/1172",
+          "matrix_proof_pointer": "/rows/134/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/62",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITECREATE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/134",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/568",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_071"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteCreateMethod",
+        "registration_line": 191,
+        "signature_lines": [
+          3415,
+          3416,
+          3419,
+          3422,
+          3424,
+          3426,
+          3428,
+          3434,
+          3436,
+          3438,
+          3462
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITECREATE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GRAPHICS234_spritedispose-method-direct",
+          "case_register_pointer": "/records/1166",
+          "matrix_proof_pointer": "/rows/135/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GRAPHICS234_lifecycle-method-positive",
+          "case_register_pointer": "/records/1172",
+          "matrix_proof_pointer": "/rows/135/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/63",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEDISPOSE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/135",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/569",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_072"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteDisposeMethod",
+        "registration_line": 192,
+        "signature_lines": [
+          3477,
+          3478
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITEDISPOSE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "GQUERY230_spritegetcolor-method-missing",
+          "case_register_pointer": "/records/1102",
+          "matrix_proof_pointer": "/rows/121/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "GQUERY230_sprite-method-existing",
+          "case_register_pointer": "/records/1104",
+          "matrix_proof_pointer": "/rows/121/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/50",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEGETCOLOR",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/121",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/555",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_073"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteGetColorMethod",
+        "registration_line": 175,
+        "signature_lines": [
+          3265,
+          3266
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITEGETCOLOR"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "SPRITEPOS221_spritemove-command-existing",
+          "case_register_pointer": "/records/1024",
+          "matrix_proof_pointer": "/rows/104/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "SPRITEPOS221_spritemove-command-missing",
+          "case_register_pointer": "/records/1025",
+          "matrix_proof_pointer": "/rows/104/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/38",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITEMOVE",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/104",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/538",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_074"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteSetPosMethod",
+        "registration_line": 155,
+        "signature_lines": [
+          3237,
+          3238
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITEMOVE"
+      }
+    },
+    {
+      "case_roles": [
+        {
+          "case_id": "SPRITEPOS221_spritesetpos-command-existing",
+          "case_register_pointer": "/records/1028",
+          "matrix_proof_pointer": "/rows/105/proof_cases/0",
+          "readback_proof_pointer": "/proofs/0",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        },
+        {
+          "case_id": "SPRITEPOS221_spritesetpos-command-missing",
+          "case_register_pointer": "/records/1029",
+          "matrix_proof_pointer": "/rows/105/proof_cases/1",
+          "readback_proof_pointer": "/proofs/1",
+          "reason": "selected_by_readback",
+          "role": "selected_by_typed_readback",
+          "source_reported_rejection_phase": "load_unrecognized_exact_target_line"
+        }
+      ],
+      "lineage": {
+        "adapter": {
+          "pointer": "/rows/39",
+          "source_id": "adapter"
+        },
+        "contract": {
+          "pointer": "/contracts/SPRITESETPOS",
+          "source_id": "contracts"
+        },
+        "matrix": {
+          "pointer": "/rows/105",
+          "source_id": "matrix"
+        },
+        "target_ledger": {
+          "pointer": "/rows/539",
+          "source_id": "target_ledger"
+        },
+        "typed_readback": {
+          "pointer": "",
+          "source_id": "readback_075"
+        }
+      },
+      "native_registration": {
+        "class": "SpriteSetPosMethod",
+        "registration_line": 156,
+        "signature_lines": [
+          3237,
+          3238
+        ],
+        "status": "source_registered"
+      },
+      "parent_outcome": "documented_difference",
+      "public_spec_presence": {
+        "command": false,
+        "function": false
+      },
+      "runtime_verification": "not_reverified_raw_not_included",
+      "target": {
+        "kind": "method_as_command",
+        "name": "SPRITESETPOS"
+      }
+    }
+  ]
+}

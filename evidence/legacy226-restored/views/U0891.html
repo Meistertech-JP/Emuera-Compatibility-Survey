@@ -1,0 +1,26 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0891 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0891 · CASE_REVIEW_ja.md</h1>
+<p>PRINTKLのかな出力と改行を示す視覚比較レビューで、CP932 fixture値と原実行ハッシュを原文収録する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>546d99c8aab453c6c7db646d4df362020797d00a0cb0cdbbe679c3ca13be2ec3</code></p>
+<p><a href="../assets/U0891.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>546d99c8aab453c6c7db646d4df362020797d00a0cb0cdbbe679c3ca13be2ec3</code></p>
+<pre># PRINTKL のかな出力・改行比較（PRINTKL01）
+
+Native Emuera1824+v24 と公開PyEmuera 3.0.0 pyz（SHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`）を同一fixture（CP932、SHA-256 `6fb07ed0d17092f3bc9b7f5bd0b8c1022f5e8dca0c769ebc36ecc7b198054572`）で比較した。元バイトとCP932復号結果は`FIXTURE_CP932_REPLAY.txt`にASCII形式で記録した。PyはCPython 3.12.10、source tree importなし。
+
+`FORCEKANA 0`の後に`PRINTKL あアｱ A`、`PRINTFORML &lt;PRINTKL_END&gt;`、`INPUT`を実行する。Pyは保存入力42とQUITまで進み終了コード0。標準出力のCP932復号結果は`Now Loading...\r\n\u3042\u30a2\uff71 A\r\n&lt;PRINTKL_END&gt;\r\n42\r\n`で、PRINTKLの直後に改行して次の印字行へ移る。
+
+Nativeは独立PID・デスクトップで2回実行。各probeには、その実行固有の出力クロップパス・SHA・寸法が直接JSONで記録され、fixture/exe/config前後SHAも一致した。各保持画像は420x130で、画面の該当出力領域だけを切り出し、`Now Loading`からかな行と`&lt;PRINTKL_END&gt;`行までを含む。
+
+**判定: `matched_scoped`** — FORCEKANA 0のこの混在文字列に対するPRINTKL出力、および改行後に次の印字命令へ進む範囲。Native出力は視覚比較でありOUTPUTLOG原票とのバイト比較ではない。別かなモード、文字クラス網羅、式引数、折返し・幅・色・待機は未検証。製品コード変更なし。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1876 · command_or_syntax:PRINTKL · check</li>
+</ul></html>

@@ -1,0 +1,186 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0340 · SEARCHBOUND01.ERB</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0340 · SEARCHBOUND01.ERB</h1>
+<p>U0340: selector=2、@TRACE(ARGS)のqueue-unavailable条件。COM_ABLE1のRETURN 0とCALLTRAIN COUNTARGの組合せを保持。 初期条件はADDCHARA 0、TARGET=MASTER=0、A=2、E=N=S=H=0、RESULT=701、SELECTCOM 99/0/1。関連CSVはNO=0/NAME=Case220とTRAIN 0=TrainZero/1=TrainOne。COUNTARG/PICK、イベント呼出し、状態値81..85を確認。 合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93</code></p>
+<p><a href="../assets/U0340.ERB">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93</code></p>
+<pre>@SYSTEM_TITLE
+ADDCHARA 0
+TARGET = 0
+MASTER = 0
+A = 2
+E = 0
+N = 0
+S = 0
+H = 0
+RESULT = 701
+PRINTL CASE220_START
+BEGIN TRAIN
+PRINTL UNREACHED_TITLE
+QUIT
+
+@COUNTARG()
+#FUNCTION
+E += 1
+RETURNF A
+
+@PICK()
+#FUNCTION
+E += 1
+RETURNF A - 1
+
+@TRACE(ARGS)
+B = ISSKIP()
+NOSKIP
+PRINTFORML T|%ARGS%|N={N}|S={S}|H={H}|E={E}|SEL={SELECTCOM}|P={PREVCOM}|NEXT={NEXTCOM}|R={RESULT}|SKIP={B}|UP={UP:0}|DOWN={DOWN:0}|CUP={CUP:0:0}|NOW={NOWEX:0:0}|SRC={SOURCE:0:0}
+ENDNOSKIP
+RETURN 0
+
+@FINISH
+SKIPDISP 0
+PRINTL CASE220_DONE
+OUTPUTLOG
+QUIT
+
+@EVENTTRAIN
+CALL TRACE(&quot;EVENTTRAIN&quot;)
+SELECTCOM:0 = 99
+SELECTCOM:1 = 0
+SELECTCOM:2 = 1
+IF 2 &lt;= 3
+ CALLTRAIN COUNTARG()
+ SELECTCOM:1 = 1
+ SELECTCOM:2 = 0
+ CALL TRACE(&quot;AFTER_CALLTRAIN&quot;)
+ELSEIF 2 == 4
+ STOPCALLTRAIN
+ CALL TRACE(&quot;STOP_INACTIVE&quot;)
+ DOTRAIN PICK()
+ PRINTL UNREACHED_DOT_EVENTTRAIN
+ELSEIF 2 == 5
+ DOTRAIN PICK()
+ PRINTL UNREACHED_DOT_EVENTTRAIN
+ELSEIF 2 == 8
+ DOTRAIN 0
+ PRINTL UNREACHED_DOT_EVENTTRAIN
+ENDIF
+RETURN 0
+
+@SHOW_STATUS
+S += 1
+CALL TRACE(&quot;SHOW_STATUS&quot;)
+PRINTL ORDINARY_STATUS
+IF S &gt; 4
+ PRINTL GUARD_LIMIT
+ CALL FINISH
+ENDIF
+IF 2 == 6
+ UP:0 = 81
+ DOWN:0 = 82
+ CUP:0:0 = 83
+ NOWEX:0:0 = 84
+ SOURCE:0:0 = 85
+ DOTRAIN PICK()
+ PRINTL UNREACHED_DOT_STATUS
+ENDIF
+RETURN 0
+
+@COM_ABLE0
+RETURN 1
+
+@COM_ABLE1
+IF 2 == 2
+ RETURN 0
+ENDIF
+RETURN 1
+
+@SHOW_USERCOM
+CALL TRACE(&quot;SHOW_USERCOM&quot;)
+PRINTL ORDINARY_USERCOM
+IF 2 == 7
+ UP:0 = 81
+ DOWN:0 = 82
+ CUP:0:0 = 83
+ NOWEX:0:0 = 84
+ SOURCE:0:0 = 85
+ DOTRAIN PICK()
+ PRINTL UNREACHED_DOT_USERCOM
+ENDIF
+IF 2 &lt;= 3
+ UP:0 = 81
+ DOWN:0 = 82
+ CUP:0:0 = 83
+ NOWEX:0:0 = 84
+ SOURCE:0:0 = 85
+ENDIF
+RETURN 0
+
+@EVENTCOM
+CALL TRACE(&quot;EVENTCOM&quot;)
+RETURN 0
+
+@COM0
+N += 1
+CALL TRACE(&quot;COM0&quot;)
+IF 2 == 3
+ STOPCALLTRAIN
+ CALL TRACE(&quot;STOP_RESUMED&quot;)
+ CALL FINISH
+ENDIF
+IF 2 == 8
+ SOURCE:0:0 = 91
+ RETURN 1
+ENDIF
+RETURN 0
+
+@COM1
+N += 1
+CALL TRACE(&quot;COM1&quot;)
+IF 2 &gt;= 4
+ CALL FINISH
+ENDIF
+RETURN 0
+
+@USERCOM
+N += 1
+CALL TRACE(&quot;USERCOM&quot;)
+RETURN 0
+
+@SOURCE_CHECK
+CALL TRACE(&quot;SOURCE_CHECK&quot;)
+RETURN 0
+
+@EVENTCOMEND
+CALL TRACE(&quot;EVENTCOMEND&quot;)
+IF 2 == 8
+ UP:0 = 81
+ DOWN:0 = 82
+ CUP:0:0 = 83
+ NOWEX:0:0 = 84
+ SOURCE:0:0 = 85
+ DOTRAIN PICK()
+ PRINTL UNREACHED_DOT_COMEND
+ENDIF
+CALL FINISH
+
+@CALLTRAINEND
+H += 1
+CALL TRACE(&quot;CALLTRAINEND&quot;)
+IF 2 &lt;= 2
+ CALL FINISH
+ENDIF
+RETURN 0
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0256 · command_or_syntax:COPYCHARA · check</li>
+<li>L0687 · command_or_syntax:COPYCHARA · check</li>
+<li>L1042 · command_or_syntax:CALLTRAIN · check</li>
+<li>L1473 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

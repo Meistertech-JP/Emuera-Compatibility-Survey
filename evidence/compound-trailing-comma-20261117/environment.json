@@ -1,0 +1,21 @@
+{
+  "schema": "operator265-engine-identification.v1",
+  "native": {
+    "name": "Emuera1824+v24",
+    "executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "archive_exe_member": "Emuera1824+v24/Emuera1824+v24.exe",
+    "version_scope": "Archive and executable hashes identify the retained bytes; no source-to-build identity claimed.",
+    "runtime": "Windows 10 interactive desktop, .NET Framework; exact minimum version not established."
+  },
+  "public": {
+    "name": "PyEmuera",
+    "version": "3.0.0",
+    "artifact": "PyEmuera-3.0.0.pyz",
+    "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "recorded_python": "CPython 3.12.10 64-bit",
+    "recorded_platform": "Windows 10 19045",
+    "recorded_invocation": "python -I PYZ --debug ."
+  },
+  "scope": "Recorded inputs and output only; hashes identify artifacts, not authenticity, build origin, or universal behavior."
+}

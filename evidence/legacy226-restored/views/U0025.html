@@ -1,0 +1,49 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0025 · PARENT_ACCEPTANCE_LOADVAR_PARSER_20261115.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0025 · PARENT_ACCEPTANCE_LOADVAR_PARSER_20261115.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE_LOADVAR_PARSER_20261115.json; 参照対象=command_or_syntax:LOADVAR。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;LOADVAR&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>3e8d2a8f86e19650b9b313b9ed882d523a5041b097707d8330aadcd2893ebfe4</code></p>
+<p><a href="../assets/U0025.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3e8d2a8f86e19650b9b313b9ed882d523a5041b097707d8330aadcd2893ebfe4</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-comparison-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T16:59:50.237513+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;LOADVAR&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;VARSAVE207_LOADVAR_STOP&quot;,
+    &quot;VARSAVE207_UNREACHED_PLAN&quot;,
+    &quot;LOADVAR_PARSER_OMITTED_20261115&quot;,
+    &quot;LOADVAR_PARSER_NUMERIC_20261115&quot;,
+    &quot;LOADVAR_DYNAMIC_NOT_EVALUATED_20261115&quot;
+  ],
+  &quot;basis&quot;: [
+    &quot;Native argument builder is STR_EXPRESSION. Omitted and numeric arguments were run and produce distinct Native argument diagnostics at the command line; the public source_only handler instead stops with E_SOURCE_UNIMPLEMENTED.&quot;,
+    &quot;A well-formed dynamic string expression with a division-by-zero term reaches Native NotImplCodeEE and public E_SOURCE_UNIMPLEMENTED without evaluating the term; AFTER_LOADVAR is unreachable in both.&quot;,
+    &quot;The existing case207 valid literal form remains a scoped unsupported-handler stop; its planned save/load and post-command observations remain unreachable, not passes.&quot;
+  ],
+  &quot;limitations&quot;: [
+    &quot;No LOADVAR file lookup, valid roundtrip, RESULT/RESULTS update, or post-command state is claimed; the native command handler is an unconditional NotImplCodeEE stub.&quot;,
+    &quot;Only omitted, numeric, dynamic-expression, and existing valid-literal forms are compared; other malformed syntax and filesystem conditions are excluded.&quot;,
+    &quot;Native process natural exit and graphical diagnostic rendering were not observed. Native output evidence is the fresh per-run emuera.log; RichEdit GetWindowText returned empty.&quot;,
+    &quot;The candidate is finite-scope target completion, not complete LOADVAR functionality or universal compatibility.&quot;
+  ],
+  &quot;product_modified&quot;: false,
+  &quot;public_release_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1776 · command_or_syntax:LOADVAR · acceptance</li>
+<li>L1777 · command_or_syntax:LOADVAR · check</li>
+<li>L1779 · command_or_syntax:LOADVAR · check</li>
+</ul></html>

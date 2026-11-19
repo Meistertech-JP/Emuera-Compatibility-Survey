@@ -1,0 +1,25 @@
+{
+  "source_condition_id": "CSVABL_EXPR_SIZE",
+  "mode": "public-01",
+  "fixture_inputs_before": {
+    "ERB/MAIN.ERB": "0567fceca45ec00c3d4863e391f827c2f52f4f85f54d52c8234d15325abb4892",
+    "csv/CHARA10.CSV": "c4699a6a0e30cd621cf9b0adcb0ff3fb3a312b35fddd90611d9ed418a4093d5f",
+    "emuera.config": "b2a753dee3820126d56cd380e5b696e145811f721dc80e9147b3a8670cfdd4f4"
+  },
+  "fixture_inputs_after": {
+    "ERB/MAIN.ERB": "0567fceca45ec00c3d4863e391f827c2f52f4f85f54d52c8234d15325abb4892",
+    "csv/CHARA10.CSV": "c4699a6a0e30cd621cf9b0adcb0ff3fb3a312b35fddd90611d9ed418a4093d5f",
+    "emuera.config": "b2a753dee3820126d56cd380e5b696e145811f721dc80e9147b3a8670cfdd4f4"
+  },
+  "case_fatal_isolated_process": true,
+  "sp_enabled_gate": false,
+  "recorded_returncode": 1,
+  "recorded_status": "completed",
+  "recorded_integrity_ok": true,
+  "native_probe_selected": null,
+  "native_natural_exit": "not_applicable",
+  "selected_raw": {
+    "sha256": "c0e0e077ac99bb0fcc8bb867ccfbf91b97961430ca6c193abc0d4cca3b6c9964",
+    "binding_basis": "case_record_and_group_manifest_and_saved_raw_readback"
+  }
+}

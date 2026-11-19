@@ -1,0 +1,1553 @@
+{
+  "schema": "semantic-parent-review-assignment-1",
+  "created_date_local": "2026-11-15",
+  "scope": "Read-only semantic review of assigned slice of existing-evidence candidates; no runtime execution and no authoritative ledger/register/count changes.",
+  "input_hashes": {
+    "parent_review_proposal": {
+      "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-existing-review-audit-20261115\\PARENT_EXISTING_REVIEW_AUDIT_PROPOSAL.json",
+      "sha256": "0d75cf4337aa949cbdb8134ed896f96cba598dd03e81e8bad747a0b59674aa67",
+      "size_bytes": 6517649
+    },
+    "target_comparison_review_current": {
+      "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\TARGET_COMPARISON_REVIEW_CURRENT.json",
+      "sha256": "56fd2f32b1a705cfa76ab9789ff9336306b592496656f484fb534e90ba01a171",
+      "size_bytes": 22369983
+    },
+    "case_scenario_register": {
+      "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\CASE_SCENARIO_REGISTER.json",
+      "sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+      "size_bytes": 69105917
+    },
+    "native_source_archive": {
+      "path": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "size_bytes": 672455
+    },
+    "public_pyz": {
+      "path": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "size_bytes": 668438
+    }
+  },
+  "evidence_reference_integrity": {
+    "references_checked_within_assigned_candidates": 2600,
+    "unique_paths": 893,
+    "missing_paths": [],
+    "sha256_mismatches": [],
+    "all_pass": true
+  },
+  "targets": [
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "NOSKIP"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented NOSKIP difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "NOSKIPC01",
+        "NOSKIPU01"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "NOSKIPC01",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "NOSKIP"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "NOSKIP"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "ENDNOSKIP"
+            }
+          ],
+          "invocation": "The same malformed @UNUSED_BAD function is called after BEFORE; body contains NOSKIP without ENDNOSKIP.",
+          "fixtures_and_initial_state": "evidence/noskip-uncalled-native-py-20261112-01/pilot/variants/NOSKIPC01/ERB/NOSKIPC01.ERB; isolated Native v24 no input; published pyz under Python 3.12.10.",
+          "observation_points_and_comparison": "Native reaches the call and reports a runtime NOSKIP error with call stack; Py stops during load with E_SYNTAX NOSKIP without ENDNOSKIP before BEFORE. Scoped mismatch.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "One malformed block and one call path. Native natural exit, alternate structural forms and broader parser behavior remain unverified.",
+          "review": "evidence/noskip-uncalled-native-py-20261112-01/COMPARISON_ja.md"
+        },
+        {
+          "case_id": "NOSKIPU01",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "NOSKIP"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "NOSKIP"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "ENDNOSKIP"
+            }
+          ],
+          "invocation": "A function @UNUSED_BAD contains NOSKIP then PRINTL BODY without ENDNOSKIP; main flow prints BEFORE and does not call the function.",
+          "fixtures_and_initial_state": "evidence/noskip-uncalled-native-py-20261112-01/pilot/variants/NOSKIPU01/ERB/NOSKIPU01.ERB; isolated Native v24 no input; published pyz under Python 3.12.10.",
+          "observation_points_and_comparison": "Native crop shows BEFORE and process remained alive at 6 seconds; Py stops during load with E_SYNTAX NOSKIP without ENDNOSKIP before BEFORE. Scoped mismatch in this fixture.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Native input-wait state, natural exit and warning emission are unobserved. One uncalled function and one malformed block only; no general warning contract inferred.",
+          "review": "evidence/noskip-uncalled-native-py-20261112-01/COMPARISON_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "behavior_and_error_phase",
+      "semantic_finding": "同一の未閉鎖NOSKIP関数について、未呼出し時はNativeがBEFOREまで進み、PyEmueraはロード時点でE_SYNTAX停止。呼出し時もNativeはBEFORE後の実行時エラー、PyEmueraはBEFORE前のロードエラー。診断文だけでなく、到達命令と検出時点が異なる有限差分を支持する。",
+      "caveats": "未呼出しNativeのINPUT待ち状態・警告生成/保存・自然終了は未観測。1つの不正構造と呼出し形だけ。全構造構文へ一般化しない。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/noskip-uncalled-native-py-20261112-01/COMPARISON_ja.md",
+          "sha256": "86186382de1942235a6492642dd136af1fa324947308e28057f22ef341212379"
+        },
+        {
+          "path": "evidence/noskip-uncalled-native-py-20261112-01/SOURCE_EXCERPTS.txt",
+          "sha256": "31903a3b2b72f414167142ef1cac56c93e5da7c1caed224fff5c46c847536245"
+        },
+        {
+          "path": "evidence/noskip-uncalled-native-py-20261112-01/pilot/variants/NOSKIPC01/ERB/NOSKIPC01.ERB",
+          "sha256": "76706a5c5e4e183c5ecc994d11526c381bda4da4334a2e2e65a5cc45f1ef65e0"
+        },
+        {
+          "path": "evidence/noskip-uncalled-native-py-20261112-01/runs/isolated-native-327d66c54a1648d28a41a0a8607c7bb7/probe.json",
+          "sha256": "bc15d7fa5c2d2842f910fca58406701b67bc5f6320d4f99c60cd12d106a13d70"
+        },
+        {
+          "path": "evidence/noskip-uncalled-native-py-20261112-01/pilot/variants/NOSKIPU01/ERB/NOSKIPU01.ERB",
+          "sha256": "1d4acd09c10a7feb54fb53e1e66c4c1fda0a602a6a3458df2cc3539f68d94063"
+        },
+        {
+          "path": "evidence/noskip-uncalled-native-py-20261112-01/runs/isolated-native-b3e346a023924d5a90e050238185aa7c/probe.json",
+          "sha256": "f7adc33762ee048ebdbd9c8ac0015b47f693e0f878459dde8ae83e5d7a46a89b"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "ARRAYSHIFT"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented ARRAYSHIFT difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "ARRAYMUTATION180_ARRAYSHIFT",
+        "ARRAYSHIFTEFFECT181_fill_after_start",
+        "ARRAYSHIFTEFFECT181_zero_count_bad_fill",
+        "ARRAYSHIFTEFFECT181_zero_shift_bad_fill"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "ARRAYMUTATION180_ARRAYSHIFT",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ARRAYSHIFT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Array values agree; helper order/early-return evaluation differ Native12453/Py12345.",
+          "observation_points_and_comparison": "Array values agree; helper order/early-return evaluation differ Native12453/Py12345.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "1D integer/string arrays, valid fixed ranges and helper index0. SHIFT positive/negative/0, count0/window; REMOVE positive/zero count; COPY shorter source to longer destination with literal/dynamic names. No aliases/rank changes/REF/LOCAL/charas, invalid indices/types/names, overflow, truncated source/destination, exception timing or full source-array preservation checks in COPY. Native alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/array-mutation-20261113-180/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "ARRAYSHIFTEFFECT181_fill_after_start",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ARRAYSHIFT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Order-dependent filled value or Native skipped bad fill versus Py E_ARITH at helper line30; see per-case raw logs/receipts.",
+          "observation_points_and_comparison": "Order-dependent filled value or Native skipped bad fill versus Py E_ARITH at helper line30; see per-case raw logs/receipts.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Three scalar integer-array cases with dynamic helper side effects and deferred 1/C failure; valid fixed indices/window only. No alternative exception type, nonzero invalid ranges, aliases/REF/LOCAL/character arrays, string fill mutation or full SHIFT contract. Py failure leaves a BEFORE log from pre-call OUTPUTLOG; no post-error counter/array snapshot is claimed. Native alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/arrayshift-order-effects-20261113-181/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "ARRAYSHIFTEFFECT181_zero_count_bad_fill",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ARRAYSHIFT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Order-dependent filled value or Native skipped bad fill versus Py E_ARITH at helper line30; see per-case raw logs/receipts.",
+          "observation_points_and_comparison": "Order-dependent filled value or Native skipped bad fill versus Py E_ARITH at helper line30; see per-case raw logs/receipts.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Three scalar integer-array cases with dynamic helper side effects and deferred 1/C failure; valid fixed indices/window only. No alternative exception type, nonzero invalid ranges, aliases/REF/LOCAL/character arrays, string fill mutation or full SHIFT contract. Py failure leaves a BEFORE log from pre-call OUTPUTLOG; no post-error counter/array snapshot is claimed. Native alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/arrayshift-order-effects-20261113-181/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "ARRAYSHIFTEFFECT181_zero_shift_bad_fill",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ARRAYSHIFT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Order-dependent filled value or Native skipped bad fill versus Py E_ARITH at helper line30; see per-case raw logs/receipts.",
+          "observation_points_and_comparison": "Order-dependent filled value or Native skipped bad fill versus Py E_ARITH at helper line30; see per-case raw logs/receipts.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Three scalar integer-array cases with dynamic helper side effects and deferred 1/C failure; valid fixed indices/window only. No alternative exception type, nonzero invalid ranges, aliases/REF/LOCAL/character arrays, string fill mutation or full SHIFT contract. Py failure leaves a BEFORE log from pre-call OUTPUTLOG; no post-error counter/array snapshot is claimed. Native alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/arrayshift-order-effects-20261113-181/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "behavior_state_and_evaluation_order",
+      "semantic_finding": "Nativeの引数評価順12453に対しPyEmueraは12345。動的ヘルパーが変更したCを埋め値側が読むため、通常移動で配列値が異なる。移動量0/要素数0ではNativeが未使用埋め値式を評価せず続行する一方、PyEmueraはその式でE_ARITH停止。状態/副作用/停止の差があり診断差だけではない。v24ソースの遅延評価/早期分岐と整合する。",
+      "caveats": "固定1D配列と有効範囲中心。失敗後のPy VM状態は未取得で、先行BEFOREログを成功/後状態の証拠にしない。別名・REF/LOCAL・文字/キャラクター配列・不正範囲等は未検証。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/array-mutation-20261113-180/CASE_REVIEW_ja.md",
+          "sha256": "bf87177e9b15ea169e645682ea1a58ce254c80fdf01a6d263cde2ec5b4580ef0"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/COMPARISON.json",
+          "sha256": "bf7493a26e7b9d68969882f5caf1ce51d45da28ea53f07505fd369cd9db583fd"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "4aad4fddb542e9ae90830c2051828eba7a8a53ce969a271bfa0d238bdeb92b7f"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/native-01/probe.json",
+          "sha256": "83243515662de69810bb621ced42d1f1ceaa1bad98f78c8839bbc48755c5471e"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/native-02/probe.json",
+          "sha256": "7d2c6c6d383e721ab5cac817a26c4afe13e99fd6b24aced339c927874195fe57"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/py/verified.stdout.bin",
+          "sha256": "7387d5258b05e477b926e0a5b95aed59afdac6415bf537d3f9ac8d62b07f5b35"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/native-01/ERB/ARRAY180.ERH",
+          "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "9dcb43b683089e05424e48762406fb76a15d50b5e718a129f720105924a007b7"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/native-02/ERB/ARRAY180.ERH",
+          "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "9dcb43b683089e05424e48762406fb76a15d50b5e718a129f720105924a007b7"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/py/ERB/ARRAY180.ERH",
+          "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4"
+        },
+        {
+          "path": "evidence/array-mutation-20261113-180/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "9dcb43b683089e05424e48762406fb76a15d50b5e718a129f720105924a007b7"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/CASE_REVIEW_ja.md",
+          "sha256": "f03a0ab8dc724b4ca5861f810e5214d25c90dcbecf0956fac7d6aa8143d4f710"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/COMPARISON.json",
+          "sha256": "a0d537bd76a1b4e0edb436616679930de04900ff127b95b7e4856300b5c88dde"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "4aad4fddb542e9ae90830c2051828eba7a8a53ce969a271bfa0d238bdeb92b7f"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/native-01/probe.json",
+          "sha256": "c96c7112c2d9f7f638b5cec48478a25ec93e8ca2895161350b2d161d2d97a8a7"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/native-02/probe.json",
+          "sha256": "ffef1e10539c5d92c5d566314b59afadc04146e660afcd08d4128765ba2aa3f8"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/py/verified.stdout.bin",
+          "sha256": "b3a4ab8b0e7e39718895089e8159aec26813903407ed302e313eb7dd657f802f"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/native-01/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "375a472099fc8fae01b5c3c380f8b6a6ea380b695ac0e238869331b4f872f0a3"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/native-02/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "375a472099fc8fae01b5c3c380f8b6a6ea380b695ac0e238869331b4f872f0a3"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/py/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/fill_after_start/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "375a472099fc8fae01b5c3c380f8b6a6ea380b695ac0e238869331b4f872f0a3"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/native-01/probe.json",
+          "sha256": "35d1eb4efa508b859dcae6e2804f32df6331fac2bd7b98ae7eb0cbf9372a4bde"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/native-02/probe.json",
+          "sha256": "45ad8744e1dd40c77e03b531a052aabf5052f9bfa46b4e50d2eeea6b2d4ec9b4"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/py/verified.stdout.bin",
+          "sha256": "5b7538dba5513b16e88f14f01ff2649c3cd1c1ee3e58f18db3bde1b465fd1d55"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/native-01/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "1e4ec9bccbc534a974cb1855bc55dc8a48fe4f35553e1a3549e1c1863b7431c5"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/native-02/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "1e4ec9bccbc534a974cb1855bc55dc8a48fe4f35553e1a3549e1c1863b7431c5"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/py/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_count_bad_fill/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "1e4ec9bccbc534a974cb1855bc55dc8a48fe4f35553e1a3549e1c1863b7431c5"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/native-01/probe.json",
+          "sha256": "8ebb353d9cc5250e4ab0ae107b0c344d1a96ce8c1e0298643b0f5627e5149da1"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/native-02/probe.json",
+          "sha256": "0cdb791f0c3ef3c7e6526d52ce21d2f6040ad3c398a6552f932060dc44565bdc"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/py/verified.stdout.bin",
+          "sha256": "5b7538dba5513b16e88f14f01ff2649c3cd1c1ee3e58f18db3bde1b465fd1d55"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/native-01/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "8718936b59c8a9873eefc76582763de71aff869dd6ffaa662db94f31b1c2b9e3"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/native-02/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "8718936b59c8a9873eefc76582763de71aff869dd6ffaa662db94f31b1c2b9e3"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/py/ERB/ARRAY181.ERH",
+          "sha256": "f6a0c5169240aed9bb0107e79cd6f50ebdfebfa1e2fc5d4be527e0e54bf8598a"
+        },
+        {
+          "path": "evidence/arrayshift-order-effects-20261113-181/zero_shift_bad_fill/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "8718936b59c8a9873eefc76582763de71aff869dd6ffaa662db94f31b1c2b9e3"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "DEBUGCLEAR"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented DEBUGCLEAR difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "DEBUGOUTPUT218_DEBUGCLEAR"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "DEBUGOUTPUT218_DEBUGCLEAR",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "DEBUGCLEAR"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Selected final buffer removes pre-clear strings in Native, public append-only stderr retains pre-clear strings; CLEAR counter unchanged. Separate transports, not same-time GUI observation.",
+          "observation_points_and_comparison": "Selected final buffer removes pre-clear strings in Native, public append-only stderr retains pre-clear strings; CLEAR counter unchanged. Separate transports, not same-time GUI observation.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Enabled Native twice/public --debug once, plus single Native-disabled reference with counters0; public-disabled not run and no enabled result generalized to disabled. Developer export obtained by own isolated-desktop/PID-only WM_CLOSE; ordinary text162bytes and final developer55bytes repeated exactly. No natural Native exit, same-time GUI snapshots, fonts/wrapping, malformed debug expressions/errors or whole-debug closure. Native final mutable debug buffer versus append-only public stderr not equated; OUTPUTLOG warning retained.",
+          "review": "evidence/debug-output-20261113-218/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "developer_diagnostic_buffer_behavior",
+      "semantic_finding": "選定debug有効fixtureでNative DEBUGCLEAR後に保存された開発者バッファはクリア前文字列を含まず、public --debug stderrにはクリア前の文字列も残る。Native専用ログの後半はpublicの対応部分と一致し、通常ログ/評価カウンターは同一。GUI見た目の主張ではなく、記録された開発者出力バッファの差として支持する。",
+      "caveats": "Native有効は1回、public有効1回で反復性なし。Native無効とpublic無効は対照同等でなく、自然終了/画面レイアウトも未検証。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/debug-output-20261113-218/CASE_REVIEW_ja.md",
+          "sha256": "10db7c858593f232026ee1d9fabbc26a0ea1edd50a4261ce093d998e01044923"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/COMPARISON.json",
+          "sha256": "fd92b29b3d57add6fc221a232d246aec23f315d364f6ff6185005cb71b05d80c"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/SOURCE_CONTRACT.md",
+          "sha256": "76b7d9500ef8aa536e294a5393d0c351120e5955521505a6f0fc4de6388a1b82"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/native-01-disabled/probe.json",
+          "sha256": "e8925818c75502a24994199662b467c35e6aa7eff65baeecaca6b78c789c43ea"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/native-02-enabled/probe.json",
+          "sha256": "24ea551b97b2d1eac4015894461f0e8a05a759693461e41cd46ee9d86716ec31"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/public-01-enabled/verified.stdout.bin",
+          "sha256": "8f04a8f17a2120bef95055663f736453d082772c1de097a280ae373b1b596fef"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/native-01-disabled/ERB/DEBUG218.ERB",
+          "sha256": "9fe200d004ad9002f52d3ee0db77f6e3718bf2a34c8075986c78b7da1a55f964"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/native-02-enabled/debug/console.log",
+          "sha256": "db7ab813b46a9efde52786f03fdb44289ed54a9cfeb08b4599396e755fb9d8dd"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/native-02-enabled/ERB/DEBUG218.ERB",
+          "sha256": "9fe200d004ad9002f52d3ee0db77f6e3718bf2a34c8075986c78b7da1a55f964"
+        },
+        {
+          "path": "evidence/debug-output-20261113-218/public-01-enabled/ERB/DEBUG218.ERB",
+          "sha256": "9fe200d004ad9002f52d3ee0db77f6e3718bf2a34c8075986c78b7da1a55f964"
+        },
+        {
+          "path": "evidence/debug-output-repeat-20261113-218b/CASE_REVIEW_ja.md",
+          "sha256": "04aa6f063c03a40a02bc207a14b51c04233249c272ec2c8533eff3d0ccb95c17"
+        },
+        {
+          "path": "evidence/debug-output-repeat-20261113-218b/COMPARISON.json",
+          "sha256": "020d6f4e87d0fb715b0528a94c990a4a70aba1cf459d60d35bc853ccc13c3e5d"
+        },
+        {
+          "path": "evidence/debug-output-repeat-20261113-218b/SOURCE_CONTRACT.md",
+          "sha256": "76b7d9500ef8aa536e294a5393d0c351120e5955521505a6f0fc4de6388a1b82"
+        },
+        {
+          "path": "evidence/debug-output-repeat-20261113-218b/native-03-enabled/probe.json",
+          "sha256": "2924cd855ccf56bfb64626a540ef0409f33ee395014925288d4a09137b30c888"
+        },
+        {
+          "path": "evidence/debug-output-repeat-20261113-218b/native-03-enabled/debug/console.log",
+          "sha256": "db7ab813b46a9efde52786f03fdb44289ed54a9cfeb08b4599396e755fb9d8dd"
+        },
+        {
+          "path": "evidence/debug-output-repeat-20261113-218b/native-03-enabled/ERB/DEBUG218.ERB",
+          "sha256": "9fe200d004ad9002f52d3ee0db77f6e3718bf2a34c8075986c78b7da1a55f964"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "ASSERT"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented ASSERT difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "ASSERT02"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "ASSERT02",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ASSERT"
+            }
+          ],
+          "invocation": "DEBUGPRINTFORML before; ASSERT 0; DEBUGPRINTFORML after; QUIT.",
+          "fixtures_and_initial_state": "Two fixed ERB fixtures, identical Native exe/config and public pyz, debug enabled on both engines; CPython 3.12.10; Native input @DEBUG was sent only to isolated desktop.",
+          "observation_points_and_comparison": "Native logs twice: before, ASSERT 0 diagnostic, no after. Py stderr has before and E_ASSERT, no after; stop position matches but diagnostic differs.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Only debug-enabled ASSERT 1 and 0. Native diagnostic wording differs from Py for zero. Non-debug Native run did not leave title surface and is excluded; expression side effects and other malformed/boundary cases untested.",
+          "review": "evidence/assert-command-20261113-111/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "diagnostic_only_with_same_stop",
+      "semantic_finding": "ASSERT 0でNative/publicともTRACE_BEFORE後に停止し、TRACE_AFTERへ進まない。Native debug logの診断表現とpublicのE_ASSERT文言/終了表示が異なるという、選定条件の診断差を支持する。ASSERT 1の別ケースは後続到達一致。",
+      "caveats": "debug有効の0/1のみ。非debugのNative試行は命令実行に到達しておらず根拠に含めない。式副作用や他境界は未検証。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/assert-command-20261113-111/CASE_REVIEW_ja.md",
+          "sha256": "3721158c49778f45869e029ba5d6217246d651dc49c87be211927de3a158d41f"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/COMPARISON.json",
+          "sha256": "ead836ef7078996ffc276439366115e6f2cdcbc3630da3b5de5200ffd1e15ff2"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/SOURCE_EXCERPTS.txt",
+          "sha256": "b37c030d8cda05f148fc1a54c1e9dde0d2fbd97688d5605cf1c01d057c977003"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/variants/ASSERT02/ERB/ASSERT02.ERB",
+          "sha256": "9c166f53b1dc89494303d7b792c8c48698f3e38aed09a628cdf96603b34b7e48"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/native-cases/ASSERT02-956905b2/probe.json",
+          "sha256": "1b41c22774fea539863b1ae3e6958cc4034862984924883e7eddbb98cd3db76f"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/native-cases/ASSERT02-956905b2/debug/console.log",
+          "sha256": "c9866f2649918ead9e3c842008de408c2bd45b678977ce1378a07eb7d7860ced"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/native-cases/ASSERT02-ccfe5ddd/probe.json",
+          "sha256": "1954bb65a34ff92d04b1a60c7c1de76dc9ffdaf65731f6d1197863b3769badc7"
+        },
+        {
+          "path": "evidence/assert-command-20261113-111/native-cases/ASSERT02-ccfe5ddd/debug/console.log",
+          "sha256": "c9866f2649918ead9e3c842008de408c2bd45b678977ce1378a07eb7d7860ced"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "THROW"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented THROW difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "THROW01"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "THROW01",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "THROW"
+            }
+          ],
+          "invocation": "@SYSTEM_TITLE prints BEFORE_THROW; THROW \"THROW_MARKER\"; then would print AFTER_THROW. No input.",
+          "fixtures_and_initial_state": "Same ERB SHA-256 62cf9e4ea6109e686a52af4917563781401aa71d427b21d5fda4a968fee35eaf and fresh state for Native Emuera1824+v24 and public PyEmuera 3.0.0 pyz SHA-256 8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35; isolated Native desktop and separate Py CLI.",
+          "observation_points_and_comparison": "Both stop at ERB line 3 after BEFORE_THROW and before AFTER_THROW; both expose THROW_MARKER. Native presents Japanese GUI diagnostic; Py returns 1 and writes E_SCRIPT to stderr.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "One string argument in @SYSTEM_TITLE. Error presentation differs and is documented; other argument/context forms and post-dialog behavior untested. Native GUI error stayed open at observation and was closed by harness. No product code changed.",
+          "review": "evidence/throw-stop-20261113-62/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "diagnostic_only_with_same_stop",
+      "semantic_finding": "同一の文字列引数fixtureで、Native/publicともBEFORE_THROWを出し、THROW行で停止し、AFTER_THROWへ進まない。両方にTHROW_MARKERが含まれるが、NativeのGUIエラー表示とpublicのE_SCRIPT/終了コード1の表現が異なる。有限の診断提示差として裏付けられる。",
+      "caveats": "@SYSTEM_TITLEからの文字列引数1条件。引数式、空/別型、文脈違い、エラー画面後の操作/継続は未検証。Native画面は自然終了ではなく観測後にハーネスが閉じた。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/throw-stop-20261113-62/CASE_REVIEW_ja.md",
+          "sha256": "a99e22b98a84cf26527a00af81d5b8d03007b6465d79052341501527889b9a5f"
+        },
+        {
+          "path": "evidence/throw-stop-20261113-62/COMPARISON.json",
+          "sha256": "f2253b7553e4c3b9d69476b299dc8baf28d776265289cbe3f9f75c468852a95d"
+        },
+        {
+          "path": "evidence/throw-stop-20261113-62/native-cases/THROW01-da9aec77/probe.json",
+          "sha256": "385678a2d285a046d74693932c0adf9a73a7834b0394770099118be2fd85ebca"
+        },
+        {
+          "path": "evidence/throw-stop-20261113-62/native-cases/THROW01-da9aec77/ERB/THROW01.ERB",
+          "sha256": "62cf9e4ea6109e686a52af4917563781401aa71d427b21d5fda4a968fee35eaf"
+        },
+        {
+          "path": "evidence/throw-stop-20261113-62/variants/THROW01/ERB/THROW01.ERB",
+          "sha256": "62cf9e4ea6109e686a52af4917563781401aa71d427b21d5fda4a968fee35eaf"
+        },
+        {
+          "path": "evidence/throw-stop-20261113-62/py/THROW01/ERB/THROW01.ERB",
+          "sha256": "62cf9e4ea6109e686a52af4917563781401aa71d427b21d5fda4a968fee35eaf"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLED"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented PRINTSINGLED difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "PRINTKD212_C212_80"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "PRINTKD212_C212_80",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "PRINTSINGLED"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "PRINTSINGLED FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "observation_points_and_comparison": "PRINTSINGLED FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "serialized_output_row_structure",
+      "semantic_finding": "C212_80の空リテラルでNativeは前後マーカーの間に空行を作らず、publicは空白1個を含む出力行を作る。生ブロックは1行対3行で不一致、state/evaluationは一致。正規化後の文字列一致だけで差を捨てていない。",
+      "caveats": "空引数・選定表示履歴の行構造差のみ。色/GUIレイアウトや他引数条件への一般化なし。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md",
+          "sha256": "074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/COMPARISON.json",
+          "sha256": "5c1bed948225fb74734e2b07b19950f51823feaea331997d55552949b87e9520"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/probe.json",
+          "sha256": "779e1f549d0b26813761d8a6be4272d57c15183e1bc03dbbb81647a793538c1c"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/probe.json",
+          "sha256": "08ca89fbcc89651447c9e14c0148f61c53b37b9830dfff3b2e938b10251d3f47"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/verified.stdout.bin",
+          "sha256": "f1ee9c7089258917e163db2e1a3a9a1715067dc66ed8e5c3153e96e1d9c39b79"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEVD"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented PRINTSINGLEVD difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "PRINTKD212_C212_81"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "PRINTKD212_C212_81",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "PRINTSINGLEVD"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "PRINTSINGLEVD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "observation_points_and_comparison": "PRINTSINGLEVD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "serialized_output_row_structure",
+      "semantic_finding": "C212_81の空文字V引数でNativeは空出力行なし、publicは空白1個の出力行あり。生ブロック行数1対3で、state/evaluation一致。",
+      "caveats": "空文字の当該引数だけ。Dの描画色やGUI表示は観測していない。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md",
+          "sha256": "074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/COMPARISON.json",
+          "sha256": "5c1bed948225fb74734e2b07b19950f51823feaea331997d55552949b87e9520"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/probe.json",
+          "sha256": "779e1f549d0b26813761d8a6be4272d57c15183e1bc03dbbb81647a793538c1c"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/probe.json",
+          "sha256": "08ca89fbcc89651447c9e14c0148f61c53b37b9830dfff3b2e938b10251d3f47"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/verified.stdout.bin",
+          "sha256": "f1ee9c7089258917e163db2e1a3a9a1715067dc66ed8e5c3153e96e1d9c39b79"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLESD"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented PRINTSINGLESD difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "PRINTKD212_C212_82"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "PRINTKD212_C212_82",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "PRINTSINGLESD"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "PRINTSINGLESD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "observation_points_and_comparison": "PRINTSINGLESD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "serialized_output_row_structure",
+      "semantic_finding": "C212_82の空文字S引数でNativeは空出力行なし、publicは空白1個の出力行あり。生ブロック行数1対3で、state/evaluation一致。",
+      "caveats": "空文字の当該引数だけ。Dの描画色やGUI表示は観測していない。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md",
+          "sha256": "074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/COMPARISON.json",
+          "sha256": "5c1bed948225fb74734e2b07b19950f51823feaea331997d55552949b87e9520"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/probe.json",
+          "sha256": "779e1f549d0b26813761d8a6be4272d57c15183e1bc03dbbb81647a793538c1c"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/probe.json",
+          "sha256": "08ca89fbcc89651447c9e14c0148f61c53b37b9830dfff3b2e938b10251d3f47"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/verified.stdout.bin",
+          "sha256": "f1ee9c7089258917e163db2e1a3a9a1715067dc66ed8e5c3153e96e1d9c39b79"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORMD"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented PRINTSINGLEFORMD difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "PRINTKD212_C212_83"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "PRINTKD212_C212_83",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "PRINTSINGLEFORMD"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "PRINTSINGLEFORMD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "observation_points_and_comparison": "PRINTSINGLEFORMD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "serialized_output_row_structure",
+      "semantic_finding": "C212_83の空FORM引数でNativeは空出力行なし、publicは空白1個の出力行あり。生ブロック行数1対3で、state/evaluation一致。",
+      "caveats": "空FORMの当該条件だけ。FORM一般、Dの描画色、GUI表示は未検証。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md",
+          "sha256": "074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/COMPARISON.json",
+          "sha256": "5c1bed948225fb74734e2b07b19950f51823feaea331997d55552949b87e9520"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/probe.json",
+          "sha256": "779e1f549d0b26813761d8a6be4272d57c15183e1bc03dbbb81647a793538c1c"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/probe.json",
+          "sha256": "08ca89fbcc89651447c9e14c0148f61c53b37b9830dfff3b2e938b10251d3f47"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/verified.stdout.bin",
+          "sha256": "f1ee9c7089258917e163db2e1a3a9a1715067dc66ed8e5c3153e96e1d9c39b79"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORMSD"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented PRINTSINGLEFORMSD difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "PRINTKD212_C212_84"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "PRINTKD212_C212_84",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "PRINTSINGLEFORMSD"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "PRINTSINGLEFORMSD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "observation_points_and_comparison": "PRINTSINGLEFORMSD FORCEKANA=0 empty=True skip=False: empty_single_serialized_line_lifecycle. Helpers/count/order and result sentinels match; D emitted color unobserved.",
+          "scenario_verdict": "different_scoped",
+          "limitations": "88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved.",
+          "review": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "serialized_output_row_structure",
+      "semantic_finding": "C212_84の空FORMS引数でNativeは空出力行なし、publicは空白1個の出力行あり。生ブロック行数1対3で、state/evaluation一致。",
+      "caveats": "空FORMSの当該条件だけ。Dの描画色やGUI表示は観測していない。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md",
+          "sha256": "074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/COMPARISON.json",
+          "sha256": "5c1bed948225fb74734e2b07b19950f51823feaea331997d55552949b87e9520"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/probe.json",
+          "sha256": "779e1f549d0b26813761d8a6be4272d57c15183e1bc03dbbb81647a793538c1c"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/probe.json",
+          "sha256": "08ca89fbcc89651447c9e14c0148f61c53b37b9830dfff3b2e938b10251d3f47"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/verified.stdout.bin",
+          "sha256": "f1ee9c7089258917e163db2e1a3a9a1715067dc66ed8e5c3153e96e1d9c39b79"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        },
+        {
+          "path": "evidence/print-kd-variants-20261113-212/py/ERB/SEARCHBOUND01.ERB",
+          "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "HTML_PRINT"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented HTML_PRINT difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "HTMLPRINT224_br",
+        "HTMLPRINT224_empty_pending",
+        "HTMLPRINT224_lf"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "HTMLPRINT224_br",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "HTML_PRINT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "two explicit physical rows and logical-row serialization; LF versus br stripped-plain distinction; axes={'raw_export_bytes_equal': False, 'layout_physical_rows_equal': False, 'payload_physical_rows_equal': True, 'selected_markup_and_plain_fields_equal': False, 'state_eval_lines_equal': True, 'error': 'none observed through DONE', 'GUI': 'not observed; no screenshot/input; no rendering/interaction claim'}; selected Native/public fields={'native': {'HTML': \"<p align='left'><nobr>BR_A224<br>BR_B224</nobr></p>\", 'READBACK_PLAIN': 'BR_A224BR_B224', 'INPUT_PLAIN': 'BR_A224BR_B224'}, 'public': {'HTML': \"<p align='left'><nobr>BR_B224</nobr></p>\", 'READBACK_PLAIN': 'BR_B224', 'INPUT_PLAIN': 'BR_A224BR_B224'}}",
+          "observation_points_and_comparison": "two explicit physical rows and logical-row serialization; LF versus br stripped-plain distinction; axes={'raw_export_bytes_equal': False, 'layout_physical_rows_equal': False, 'payload_physical_rows_equal': True, 'selected_markup_and_plain_fields_equal': False, 'state_eval_lines_equal': True, 'error': 'none observed through DONE', 'GUI': 'not observed; no screenshot/input; no rendering/interaction claim'}; selected Native/public fields={'native': {'HTML': \"<p align='left'><nobr>BR_A224<br>BR_B224</nobr></p>\", 'READBACK_PLAIN': 'BR_A224BR_B224', 'INPUT_PLAIN': 'BR_A224BR_B224'}, 'public': {'HTML': \"<p align='left'><nobr>BR_B224</nobr></p>\", 'READBACK_PLAIN': 'BR_B224', 'INPUT_PLAIN': 'BR_A224BR_B224'}}",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Ten valid short HTML fixtures Native2/public1; markup field wrapping joined only for known serializer fields, raw bytes and physical rows retained; LF plain fields preserved. GUI font/pixels/button interaction, malformed HTML/argument boundaries, all styles/assets and full HTML closure unobserved. Empty control labels do not certify removed commands. Native20 alive5s then own cleanup,natural exit unobserved. Public stdout separate from history. No product changes.",
+          "review": "evidence/html-print-text-20261113-224/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "HTMLPRINT224_empty_pending",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "HTML_PRINT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "empty HTML must not flush, nonempty flush before HTML, following PRINT remains pending; axes={'raw_export_bytes_equal': False, 'layout_physical_rows_equal': False, 'payload_physical_rows_equal': False, 'selected_markup_and_plain_fields_equal': False, 'state_eval_lines_equal': True, 'error': 'none observed through DONE', 'GUI': 'not observed; no screenshot/input; no rendering/interaction claim'}; selected Native/public fields={'native': {'AFTER_EMPTY': \"<p align='left'><nobr>ANCHOR224</nobr></p>\", 'LAST': \"<p align='left'><nobr>VISIBLE224</nobr></p>\", 'FLUSHED': \"<p align='left'><nobr>PENDING224</nobr></p>\", 'WHILE_PENDING': \"<p align='left'><nobr>VISIBLE224</nobr></p>\"}, 'public': {'AFTER_EMPTY': \"<p align='left'><nobr></nobr></p>\", 'LAST': \"<p align='left'><nobr>VISIBLE224</nobr></p>\", 'FLUSHED': \"<p align='left'><nobr></nobr></p>\", 'WHILE_PENDING': \"<p align='left'><nobr>VISIBLE224</nobr></p>\"}}",
+          "observation_points_and_comparison": "empty HTML must not flush, nonempty flush before HTML, following PRINT remains pending; axes={'raw_export_bytes_equal': False, 'layout_physical_rows_equal': False, 'payload_physical_rows_equal': False, 'selected_markup_and_plain_fields_equal': False, 'state_eval_lines_equal': True, 'error': 'none observed through DONE', 'GUI': 'not observed; no screenshot/input; no rendering/interaction claim'}; selected Native/public fields={'native': {'AFTER_EMPTY': \"<p align='left'><nobr>ANCHOR224</nobr></p>\", 'LAST': \"<p align='left'><nobr>VISIBLE224</nobr></p>\", 'FLUSHED': \"<p align='left'><nobr>PENDING224</nobr></p>\", 'WHILE_PENDING': \"<p align='left'><nobr>VISIBLE224</nobr></p>\"}, 'public': {'AFTER_EMPTY': \"<p align='left'><nobr></nobr></p>\", 'LAST': \"<p align='left'><nobr>VISIBLE224</nobr></p>\", 'FLUSHED': \"<p align='left'><nobr></nobr></p>\", 'WHILE_PENDING': \"<p align='left'><nobr>VISIBLE224</nobr></p>\"}}",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Ten valid short HTML fixtures Native2/public1; markup field wrapping joined only for known serializer fields, raw bytes and physical rows retained; LF plain fields preserved. GUI font/pixels/button interaction, malformed HTML/argument boundaries, all styles/assets and full HTML closure unobserved. Empty control labels do not certify removed commands. Native20 alive5s then own cleanup,natural exit unobserved. Public stdout separate from history. No product changes.",
+          "review": "evidence/html-print-text-20261113-224/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "HTMLPRINT224_lf",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "HTML_PRINT"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "two explicit physical rows and logical-row serialization; LF versus br stripped-plain distinction; axes={'raw_export_bytes_equal': False, 'layout_physical_rows_equal': False, 'payload_physical_rows_equal': True, 'selected_markup_and_plain_fields_equal': False, 'state_eval_lines_equal': True, 'error': 'none observed through DONE', 'GUI': 'not observed; no screenshot/input; no rendering/interaction claim'}; selected Native/public fields={'native': {'HTML': \"<p align='left'><nobr>LF_A224<br>LF_B224</nobr></p>\", 'READBACK_PLAIN': 'LF_A224LF_B224', 'INPUT_PLAIN': 'LF_A224\\nLF_B224'}, 'public': {'HTML': \"<p align='left'><nobr>LF_B224</nobr></p>\", 'READBACK_PLAIN': 'LF_B224', 'INPUT_PLAIN': 'LF_A224\\nLF_B224'}}",
+          "observation_points_and_comparison": "two explicit physical rows and logical-row serialization; LF versus br stripped-plain distinction; axes={'raw_export_bytes_equal': False, 'layout_physical_rows_equal': False, 'payload_physical_rows_equal': True, 'selected_markup_and_plain_fields_equal': False, 'state_eval_lines_equal': True, 'error': 'none observed through DONE', 'GUI': 'not observed; no screenshot/input; no rendering/interaction claim'}; selected Native/public fields={'native': {'HTML': \"<p align='left'><nobr>LF_A224<br>LF_B224</nobr></p>\", 'READBACK_PLAIN': 'LF_A224LF_B224', 'INPUT_PLAIN': 'LF_A224\\nLF_B224'}, 'public': {'HTML': \"<p align='left'><nobr>LF_B224</nobr></p>\", 'READBACK_PLAIN': 'LF_B224', 'INPUT_PLAIN': 'LF_A224\\nLF_B224'}}",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Ten valid short HTML fixtures Native2/public1; markup field wrapping joined only for known serializer fields, raw bytes and physical rows retained; LF plain fields preserved. GUI font/pixels/button interaction, malformed HTML/argument boundaries, all styles/assets and full HTML closure unobserved. Empty control labels do not certify removed commands. Native20 alive5s then own cleanup,natural exit unobserved. Public stdout separate from history. No product changes.",
+          "review": "evidence/html-print-text-20261113-224/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "accept",
+      "difference_class": "output_history_and_readback_behavior",
+      "semantic_finding": "HTMLPRINT224_empty_pendingでは空HTML後の保留PENDING行をNativeはflushせず、publicは空の履歴行を追加。br/LF条件では実テキスト行は一致する一方、HTML_GETPRINTEDSTR読戻しがNativeは全行をbr/LF付きで返し、publicは末尾行だけを返す。原exportと物理行を保ち、これらを整形差だけとして扱っていない。",
+      "caveats": "有効な短いfixtureと選定readbackのみ。GUI画素/フォント・ボタン操作・不正HTML/引数・全styleは未検証。bcolorソース記述とdonor実exe観測の不一致は記録に残るが、ここで受け入れる差分根拠には用いていない。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/html-print-text-20261113-224/CASE_REVIEW_ja.md",
+          "sha256": "1c5876a27e00b4c5334242ee8e0e33b51db9555f82630822df061015b8437c32"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/COMPARISON.json",
+          "sha256": "d1dbad2d126f89d65265e9597d2d3a15ea43427960180463c9d06c32772f2ab2"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/SOURCE_CONTRACT_ja.md",
+          "sha256": "dfc23caf6de86839d02f8157cb2eb9ab24f70099ad8c1b4225b805019ba5ff38"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/SOURCE_EXCERPTS_V24.txt",
+          "sha256": "b568435ef66337110aab373bc41e5da00c98123e592b8cc296fc4ea503bef9b8"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/bold/native-01/probe.json",
+          "sha256": "d3a07963b98b44e6dd6472dcc483e1d5d80fba119e51c4ddba2de3995a4633e2"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/bold/native-02/probe.json",
+          "sha256": "b46dbfb73a070b0a44d65fc7fde788e9d1d7a892d97aefe02bb9d532aadd7248"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/bold/public/verified.stdout.bin",
+          "sha256": "8b954826b85d8b280ebaa0982e811cb48ff3707d19e1800d1f1b48f1ae7e3536"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/bold/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "18ab481fb2999946a2e8d71ea8281ae67be74e14a49e59bb625c5b7784cba6a9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/bold/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "18ab481fb2999946a2e8d71ea8281ae67be74e14a49e59bb625c5b7784cba6a9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/bold/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "18ab481fb2999946a2e8d71ea8281ae67be74e14a49e59bb625c5b7784cba6a9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/br/native-01/probe.json",
+          "sha256": "195036b4aa6f393c4c3d6832d31d11deb4e744a82e7954eff20bacf5ac0a986d"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/br/native-02/probe.json",
+          "sha256": "878d03e7d5ebf0ea8094587bce9801654afe6df2048eb014a3dc07a979e8ad78"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/br/public/verified.stdout.bin",
+          "sha256": "f54677aeab307fcab451fa2ebd90212819f7555c6b374de994d418162e69dcf4"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/br/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "f5462b91117743de5f9e7914d77dcf5aa1517f85293fc09a6b49982f563b1be5"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/br/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "f5462b91117743de5f9e7914d77dcf5aa1517f85293fc09a6b49982f563b1be5"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/br/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "f5462b91117743de5f9e7914d77dcf5aa1517f85293fc09a6b49982f563b1be5"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_escaped/native-01/probe.json",
+          "sha256": "79844dae6a200eb7f42428ba206a7d2b0c5e23eb4b0393f0d48922cbede22d5c"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_escaped/native-02/probe.json",
+          "sha256": "a890a3cc86b3e727259b1d1cb6c22134787abf498a84afe969f8034720b64eb7"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_escaped/public/verified.stdout.bin",
+          "sha256": "504bd45462baddaab71b0efb50388db1451c6360cac3e04d4aa872d4c13b3037"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_escaped/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "cb13359a25a640197191c7ab5956cbaea3f1ce8f0deebcabe476e20e3e8ef879"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_escaped/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "cb13359a25a640197191c7ab5956cbaea3f1ce8f0deebcabe476e20e3e8ef879"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_escaped/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "cb13359a25a640197191c7ab5956cbaea3f1ce8f0deebcabe476e20e3e8ef879"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_integer/native-01/probe.json",
+          "sha256": "e8835a36fd8a6bbbc4fc0541cf56ecb75de8054808ef6ef7a5eb3ad0d1584895"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_integer/native-02/probe.json",
+          "sha256": "8715d77aaba519766951d61b6b6ae175475a1b707a352ea233950250c264de06"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_integer/public/verified.stdout.bin",
+          "sha256": "d69957d8a0c96ca8143ec200e1a2f8d20629fb4228cedf6fe8b8059fe1fed5f0"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_integer/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "680f12c70940f472bb37d599ed53351493b25451e1fc97e522cfc301ed17eb0f"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_integer/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "680f12c70940f472bb37d599ed53351493b25451e1fc97e522cfc301ed17eb0f"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/button_integer/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "680f12c70940f472bb37d599ed53351493b25451e1fc97e522cfc301ed17eb0f"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/dynamic_skip/native-01/probe.json",
+          "sha256": "3b1e34b35c74488da61e72c6779bb7d96ce2089796e7130c44547b0121022407"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/dynamic_skip/native-02/probe.json",
+          "sha256": "9912e7fd0f8bfe5f9ffe5e40f062f3165dc6756f3b847dd727a8842f5d287150"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/dynamic_skip/public/verified.stdout.bin",
+          "sha256": "bca0a78a8b0007805e39bdee684a45d8a45ebb206dabcc328fb4137c4e826d57"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/dynamic_skip/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "e22b1bff565d0b1a0ada3d0b4c3d5e8677e98e988bf7f13e51f2c7bb78b0f044"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/dynamic_skip/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "e22b1bff565d0b1a0ada3d0b4c3d5e8677e98e988bf7f13e51f2c7bb78b0f044"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/dynamic_skip/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "e22b1bff565d0b1a0ada3d0b4c3d5e8677e98e988bf7f13e51f2c7bb78b0f044"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/empty_pending/native-01/probe.json",
+          "sha256": "993988b782eb7d9c983c1cb189b7ebb29743732ad63439b3b58668c0a552224c"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/empty_pending/native-02/probe.json",
+          "sha256": "0cdf0f1d75f0c407fe03b8377c346327b167bf6bd96faa546777abc95e06686a"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/empty_pending/public/verified.stdout.bin",
+          "sha256": "d6d2219ecf8f258ad9a9d7e43ee3d815710c2d461930abc25c3e265c34a7802b"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/empty_pending/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "93b171a95b2ec4731defa75fdd2b6ffc945915ab21cc37092642f2c0ee9e1214"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/empty_pending/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "93b171a95b2ec4731defa75fdd2b6ffc945915ab21cc37092642f2c0ee9e1214"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/empty_pending/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "93b171a95b2ec4731defa75fdd2b6ffc945915ab21cc37092642f2c0ee9e1214"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/font/native-01/probe.json",
+          "sha256": "95363d03775b471e85e494c162a1b80e912f48b7b95bfcb1668cad1cfc9b1ace"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/font/native-02/probe.json",
+          "sha256": "a170c30a3d7d60781e7022082e45e4c9974edd2f9972a5b7c3de29e805bad48f"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/font/public/verified.stdout.bin",
+          "sha256": "8ff5a10a66024a4e42832b8c3c8fdf17ffbfe8500247c07c571f0c0c21081f1e"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/font/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "e819ed305bbec9c8c3ae44fde22394bb001aec8e6a0e4cf4ebd72a3e95fb4f10"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/font/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "e819ed305bbec9c8c3ae44fde22394bb001aec8e6a0e4cf4ebd72a3e95fb4f10"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/font/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "e819ed305bbec9c8c3ae44fde22394bb001aec8e6a0e4cf4ebd72a3e95fb4f10"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/lf/native-01/probe.json",
+          "sha256": "82c9c5cf68078e33c60bf4f57a229f135a96e11619d4f4b294a1a2cbdf4e55cb"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/lf/native-02/probe.json",
+          "sha256": "e53985d5df888877a6890c0e3c8a31ebf31eddea5d1b02025937943cf3c790c2"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/lf/public/verified.stdout.bin",
+          "sha256": "c58f5ac9b3f5f606f93a9ffc7fd124730fd028bfff32a0ea5abd7f1932a87618"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/lf/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "67b2f058cf3373db0372547f03596bac965d8bc8b054cd095077bb605fc2dd18"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/lf/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "67b2f058cf3373db0372547f03596bac965d8bc8b054cd095077bb605fc2dd18"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/lf/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "67b2f058cf3373db0372547f03596bac965d8bc8b054cd095077bb605fc2dd18"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/nonempty_pending_control/native-01/probe.json",
+          "sha256": "b8bf2719db7def58a68420f29bf3fd5b6863d827211e82c325d541a94cffc0a9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/nonempty_pending_control/native-02/probe.json",
+          "sha256": "0751092a57b9ba0e1f350a5326ad8c8effcb051deb78bd90c8061e52ae759230"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/nonempty_pending_control/public/verified.stdout.bin",
+          "sha256": "1662b7ffb75638a42bf4090bfbfd71f80eeed812f79578aa485dbad58dc502f9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/nonempty_pending_control/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "1e2c9435024c054d9c27112316aaaa018be3f717767293dc5be5196b5852659d"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/nonempty_pending_control/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "1e2c9435024c054d9c27112316aaaa018be3f717767293dc5be5196b5852659d"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/nonempty_pending_control/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "1e2c9435024c054d9c27112316aaaa018be3f717767293dc5be5196b5852659d"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/plain/native-01/probe.json",
+          "sha256": "7e44165159d7f1aa3180d947f66ad9b7eccfc1d52086d404ca23862f1b61510d"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/plain/native-02/probe.json",
+          "sha256": "3ef900ecb80f478fbe39537263feae3ab61ded64edc006d8ec30947b0cc77575"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/plain/public/verified.stdout.bin",
+          "sha256": "1d46f91be4bbbb3ef63c5ed9d784ee8757f85f2a41aaca7453137f3579c8b8b3"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/plain/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "bde5634d316e50750b04af7e6a65e04dec636cfd0d8952fde259b503746db6e9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/plain/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "bde5634d316e50750b04af7e6a65e04dec636cfd0d8952fde259b503746db6e9"
+        },
+        {
+          "path": "evidence/html-print-text-20261113-224/plain/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "bde5634d316e50750b04af7e6a65e04dec636cfd0d8952fde259b503746db6e9"
+        }
+      ]
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "INPUTMOUSEKEY"
+      },
+      "current_status": "known_difference_documented",
+      "candidate_status": "known_difference_documented",
+      "remaining_conditions": [
+        "Parent confirm the documented INPUTMOUSEKEY difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required."
+      ],
+      "proposal_case_ids": [
+        "UIQUERY239_evaluation-error",
+        "UIQUERY239_timeout100",
+        "UIQUERY239_timeout100-skip",
+        "UIQUERY239_timeout100-skip-presnapshot"
+      ],
+      "registered_case_records": [
+        {
+          "case_id": "UIQUERY239_evaluation-error",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "INPUTMOUSEKEY"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "evaluation-error: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "observation_points_and_comparison": "evaluation-error: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Only no-input timeout, no-timeout checkpoint and expression error. SKIPDISP0 overwrites RESULT0; original skipped fixture sampled after that statement; extra fixture snapshots RESULT0=4 before SKIPDISP0 and observes0 after. No key/mouse events, modifiers, focus transitions, coordinate mapping or exact latency assertion. Timeout duration100ms is requested value, not a measured elapsed time. Native five-second observation and own termination are distinct from natural exit. Product and originals unchanged.",
+          "review": "evidence/inputmousekey-timeout-20261113-239/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "UIQUERY239_timeout100",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "INPUTMOUSEKEY"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "timeout100: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "observation_points_and_comparison": "timeout100: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Only no-input timeout, no-timeout checkpoint and expression error. SKIPDISP0 overwrites RESULT0; original skipped fixture sampled after that statement; extra fixture snapshots RESULT0=4 before SKIPDISP0 and observes0 after. No key/mouse events, modifiers, focus transitions, coordinate mapping or exact latency assertion. Timeout duration100ms is requested value, not a measured elapsed time. Native five-second observation and own termination are distinct from natural exit. Product and originals unchanged.",
+          "review": "evidence/inputmousekey-timeout-20261113-239/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "UIQUERY239_timeout100-skip",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "INPUTMOUSEKEY"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "timeout100-skip: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "observation_points_and_comparison": "timeout100-skip: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Only no-input timeout, no-timeout checkpoint and expression error. SKIPDISP0 overwrites RESULT0; original skipped fixture sampled after that statement; extra fixture snapshots RESULT0=4 before SKIPDISP0 and observes0 after. No key/mouse events, modifiers, focus transitions, coordinate mapping or exact latency assertion. Timeout duration100ms is requested value, not a measured elapsed time. Native five-second observation and own termination are distinct from natural exit. Product and originals unchanged.",
+          "review": "evidence/inputmousekey-timeout-20261113-239/CASE_REVIEW_ja.md"
+        },
+        {
+          "case_id": "UIQUERY239_timeout100-skip-presnapshot",
+          "targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "INPUTMOUSEKEY"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "timeout100-skip-presnapshot: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "observation_points_and_comparison": "timeout100-skip-presnapshot: Native selected timeout/result/order or expression-error vs public direct loader rejection",
+          "scenario_verdict": "different_scoped",
+          "limitations": "Only no-input timeout, no-timeout checkpoint and expression error. SKIPDISP0 overwrites RESULT0; original skipped fixture sampled after that statement; extra fixture snapshots RESULT0=4 before SKIPDISP0 and observes0 after. No key/mouse events, modifiers, focus transitions, coordinate mapping or exact latency assertion. Timeout duration100ms is requested value, not a measured elapsed time. Native five-second observation and own termination are distinct from natural exit. Product and originals unchanged.",
+          "review": "evidence/inputmousekey-timeout-20261113-239/CASE_REVIEW_ja.md"
+        }
+      ],
+      "recommendation": "partial",
+      "difference_class": "command_availability_and_selected_timeout_behavior",
+      "semantic_finding": "Nativeソース/実行記録はINPUTMOUSEKEYの登録と正数timeout経路を示すが、public pyzは同命令行をロード時E_LOADで拒否し、実行時比較に入らない。この限定された利用可否差と、Nativeの無入力timeout条件で後続へ到達した選定結果は記録されている。",
+      "caveats": "キー/マウスイベント、修飾キー、座標、フォーカス、実測遅延は未試験。0/負timeoutケースはunverifiedなので差分の根拠に加えない。timeout100は指定値であり100ms計測値ではない。Nativeの5秒観測後はハーネス終了。",
+      "inspected_evidence_hashes": [
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/CASE_REVIEW_ja.md",
+          "sha256": "e3d35da6ca8bacdfbea6a5b5abe9bd678ecc5567136c55d2f960d4f0a2b2ba76"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/COMPARISON.json",
+          "sha256": "18e8bf6a6551f38b666928353c7d7a512ac60b94f8ede03b175a8efd188c982c"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/SOURCE_CONTRACT.json",
+          "sha256": "4ee3b38cf767443eb81e4d5584b980fa2cc935eb3925cec51c9031f20c3044e5"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/SOURCE_EXCERPTS.txt",
+          "sha256": "ef47844767522b9dedc1bc7e7c4a2c3fea325a098bcc74ad8a892a0746be63ae"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/evaluation-error/native-01/probe.json",
+          "sha256": "9a835315a77e5de86d79cb5c6eb7b7c1a9390e2f10d526e1fe97f5874d3f1c29"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/evaluation-error/native-02/probe.json",
+          "sha256": "b2ff21563f2b57798fc66ad21a68a06a59e4ec15599bc1713264c6fa92d30b13"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/evaluation-error/public/verified.stdout.bin",
+          "sha256": "64b277fe72758c36aee707b3ffcde1438cc2165a8fc73ec143dbd6feb06735d2"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/evaluation-error/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "11683b77df3c84b5ce483b076ae041b9dd17505008db72d29b26b147b87eb9e4"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/evaluation-error/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "11683b77df3c84b5ce483b076ae041b9dd17505008db72d29b26b147b87eb9e4"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/evaluation-error/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "11683b77df3c84b5ce483b076ae041b9dd17505008db72d29b26b147b87eb9e4"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-negative/native-01/probe.json",
+          "sha256": "3135f3351f20d29b32275fed54aa33d33b9bf69cad0e8d4198a1c7924dda7038"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-negative/native-02/probe.json",
+          "sha256": "4ee55fa0822cc94ba930e329e9792992ad7fa95c08530fbd48f969b73e475ee4"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-negative/public/verified.stdout.bin",
+          "sha256": "be3ab0534855f636fb4336e2c70be32ec371792497b891fb33e1fb874dc67a25"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-negative/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "ce90e5b1b551b1e649ac5bc8e4f36e9a81d7c33c28ffef8e933fd54911dc22af"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-negative/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "ce90e5b1b551b1e649ac5bc8e4f36e9a81d7c33c28ffef8e933fd54911dc22af"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-negative/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "ce90e5b1b551b1e649ac5bc8e4f36e9a81d7c33c28ffef8e933fd54911dc22af"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-zero/native-01/probe.json",
+          "sha256": "8a07a5ff23358cec12a7bbc19f5df12c5e98e3d1d3bcbd990317d3ad2a2ea8a9"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-zero/native-02/probe.json",
+          "sha256": "eba426e3e17f2b8c8816806d75cf775e4176109c5bd42537ffc2bf443dad3d6e"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-zero/public/verified.stdout.bin",
+          "sha256": "51e3c2619b752b629bf61e6d1a5358fef10b42acd49ce788651b211bbc0c8879"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-zero/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "fac47d252ddded61223e6f53ce4dd9e70255dc45e31794c6b2e9f8410dab10bf"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-zero/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "fac47d252ddded61223e6f53ce4dd9e70255dc45e31794c6b2e9f8410dab10bf"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/no-timeout-zero/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "fac47d252ddded61223e6f53ce4dd9e70255dc45e31794c6b2e9f8410dab10bf"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100/native-01/probe.json",
+          "sha256": "b947080f59ed9570ffbe54b101bf264cb2e3873108c3b34ff057349a320d1beb"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100/native-02/probe.json",
+          "sha256": "c995991df54798747bcd7e1cfe7f4cf0c7b8d892f243d6dc471e5c7bdd95a320"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100/public/verified.stdout.bin",
+          "sha256": "05f9f8c08140d711ee76627cbbae0fe731890c5b00260b55a67b9d7439f71f33"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "32814f0202cd4ce83cb50d8ed351057335521b98480ec7ff9f9c247df757d5ea"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "32814f0202cd4ce83cb50d8ed351057335521b98480ec7ff9f9c247df757d5ea"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "32814f0202cd4ce83cb50d8ed351057335521b98480ec7ff9f9c247df757d5ea"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip/native-01/probe.json",
+          "sha256": "e3b8124085273d5ede2da90c556fc3203462902278e8705c1a06707d423796b1"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip/native-02/probe.json",
+          "sha256": "00511f8487476e4397c408fdced49d54252c32d8a7c7b700e0b8071ed2e8728a"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip/public/verified.stdout.bin",
+          "sha256": "4dd14a0721d48cb8e8bc4fe1d8fbf12033d4faa3594cb5c79b76129648964872"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "8bc06dd24bbdd97e0bae7ec45ebacc3f59102dfa3b5ad4d777a9d65aad221331"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "8bc06dd24bbdd97e0bae7ec45ebacc3f59102dfa3b5ad4d777a9d65aad221331"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "8bc06dd24bbdd97e0bae7ec45ebacc3f59102dfa3b5ad4d777a9d65aad221331"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip-presnapshot/native-01/probe.json",
+          "sha256": "da16987a570d951407e70635752b518901ac3c13797dffaa2c1b81884017bc6d"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip-presnapshot/native-02/probe.json",
+          "sha256": "419b6ee554fce70b2b3a3b7397af983f93b7af4e3070ef22e1d4d375dcd2afc4"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip-presnapshot/public/verified.stdout.bin",
+          "sha256": "4dd14a0721d48cb8e8bc4fe1d8fbf12033d4faa3594cb5c79b76129648964872"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip-presnapshot/native-01/ERB/SEARCHBOUND01.ERB",
+          "sha256": "d528085bae6210f7949963c5292ea3f3e362ea7cc087911407f5559ea163cb88"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip-presnapshot/native-02/ERB/SEARCHBOUND01.ERB",
+          "sha256": "d528085bae6210f7949963c5292ea3f3e362ea7cc087911407f5559ea163cb88"
+        },
+        {
+          "path": "evidence/inputmousekey-timeout-20261113-239/timeout100-skip-presnapshot/public/ERB/SEARCHBOUND01.ERB",
+          "sha256": "d528085bae6210f7949963c5292ea3f3e362ea7cc087911407f5559ea163cb88"
+        }
+      ]
+    }
+  ]
+}

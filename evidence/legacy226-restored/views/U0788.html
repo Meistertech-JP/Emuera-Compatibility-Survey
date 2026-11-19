@@ -1,0 +1,28 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0788 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0788 · CASE_REVIEW_ja.md</h1>
+<p>PRINT K/Dの88条件で一致・かな差・空SINGLE差を分離した比較票で、全数値と空白行の意味を保持して原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0</code></p>
+<p><a href="../assets/U0788.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0</code></p>
+<pre># PRINT K/D形式（212）
+
+33個の非待機命令を88条件、本家2回/公開pyz1回で比較。Native反復ログは原バイト一致。64条件は原ブロック一致、FORCEKANA2のK14条件は半角カナｱの変換差、SINGLE空文字10条件は行構成差。評価回数・順序、RESULT/RESULTSは全88条件で一致。
+
+本家はFORCEKANA2でHiraganaのみ指定しWideを指定しない。入力「あアｱ」は「ああｱ」となるが公開版は「あああ」。KのC列形式で生じる1桁のパディング差もこの幅変化に伴う観測で、同条件の他モードは一致。モード3はHiragana|WideでASCII全角化も起き、選定条件は一致。FORM/FORMS/V/S/リテラルの段階と副作用を保持して比較した。
+
+DフラグはC#で出力色の選択を変えるが、今回のOUTPUTLOGでは色を観測しない。Dのテキスト/評価が一致してもGUI配色の一致とは扱わない。空SINGLEの余分な空白行も原文に残し、文字内容だけの抽出で一致へ付け替えない。
+
+88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1895 · command_or_syntax:PRINTCK · check</li>
+<li>L1933 · command_or_syntax:PRINTLCK · check</li>
+<li>L1971 · command_or_syntax:PRINTSINGLEK · check</li>
+</ul></html>

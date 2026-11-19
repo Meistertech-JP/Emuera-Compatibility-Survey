@@ -1,0 +1,21 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTKL"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_PRINTKL_EXISTING_20261115.json",
+  "acceptance_sha256": "ee3d9703ad7931893bfec3950fdd92c11d91df9d43494423f4bf3514250d1dfc",
+  "registered_case_ids": [
+    "KANALOG02",
+    "PRINTKL01"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "evidence_reference_hashes_validated": true,
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "global_completion": false
+}

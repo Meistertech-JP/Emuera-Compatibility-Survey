@@ -1,0 +1,383 @@
+{
+  "schema": "pyemuera-parent-evidence-adjudication-v3",
+  "draft": false,
+  "bundles": [
+    {
+      "path": "automation-v2/v3/runs/82c41fc0cad138d3fe2505d63b5f014fcb17fe6ca0c1898a0e48957690c37059/attempt-20261113T232032-cf31087b063a",
+      "manifest_sha256": "656ceb695516c7dbe686c0b30f6adce8fae42a3d60619590e7d8b0f293cf8cc5"
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "expression_function",
+      "name": "STRFINDU",
+      "accepted": true,
+      "review_row_sha256": "2c715f7b44806a5e77822438bca20f418422a5bead92d8a84315bad85d4d8c9f",
+      "outcome": "documented_difference",
+      "scope": "Finite expression_function:STRFINDU conditions AあBA × A/empty × UTF16start -1,0,4,5; returning observations plus public runtime stops and retained157 helper proof. No method-form or postfatal-state claim.",
+      "completion_review": "Finite STRFINDU expression comparison accepted: all eight mixed-width AあBA/A-or-empty/start -1,0,4,5 conditions covered. Four normal conditions supply return/sentinel/continuation observations (three selected matches, one selected difference). Four separately classified singleton stops preserve Native return -1 versus public rc1 E_INDEX at emitted line9, with public postfatal state UNOBSERVED and original v3 failure artifacts unchanged. Retained case157 supplies own-form helper order/default/normal witnesses. No method-form, all-string-domain, postfatal-state or natural-exit claim.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "exact_v24_registration_signature_form",
+          "original_requirement": {
+            "axis": "exact_v24_registration_signature_form",
+            "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+            "evidence_state": "source_inspected",
+            "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/STRFINDU",
+            "binary_registration": {
+              "name": "STRFINDU",
+              "ldstr_il_offset": "05A3",
+              "set_item_il_offset": "05AE"
+            },
+            "form": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them."
+          },
+          "original_requirement_sha256": "1a6e5fabe9850a3a8f489b2afc5fc9cf7634fc7f8feacb81aed82df489754213",
+          "case_ids": [
+            "STRINGINVOKE_STRFINDUEXPR"
+          ],
+          "finding": "Source inspected: STRFINDU=new StrfindMethod(true), Int64 return, two required string operands plus optional Int64 start; custom CheckArgumentType2237-2251. Expression returns directly. Static signature proof does not claim new invalid-arity/type runtime executions.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFINDU"
+          },
+          "normal_evidence_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "fatal_evidence_refs": [],
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "actual_target_reach_or_independent_public_availability_gap",
+          "original_requirement": {
+            "axis": "actual_target_reach_or_independent_public_availability_gap",
+            "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+            "evidence_state": "scoped_executions_require_per_case_readback",
+            "case_ids": [
+              "STRFINDUBASE01",
+              "STRFINDU_EMPTY_END01",
+              "SEARCHBOUND01",
+              "SEARCHRANGE_UNEG",
+              "SEARCHRANGE_UOVER",
+              "STRINGINVOKE_STRFINDUEXPR"
+            ],
+            "independent_gap_case_ids": []
+          },
+          "original_requirement_sha256": "38791f0ea7e2dd115e94c0d9df7c021e12b60f00c9df9a009aa5cd4d0dd723c5",
+          "case_ids": [
+            "SEARCH02_STRFINDU_A_0",
+            "SEARCH02_STRFINDU_A_4",
+            "SEARCH02_STRFINDU_EMPTY_0",
+            "SEARCH02_STRFINDU_EMPTY_4",
+            "STRINGINVOKE_STRFINDUEXPR"
+          ],
+          "finding": "All4 returning dynamic mixed-width own-form calls reached Native2/public1 with selected output and DONE. Retained157 expression helpers reached too. Fatal4 are reached runtime target errors at fixture line9, not name/load/setup rejection.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFINDU"
+          },
+          "normal_evidence_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "fatal_evidence_refs": [],
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "original_requirement": {
+            "axis": "selected_normal_output_state_control",
+            "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+            "evidence_state": "selected_scoped_evidence_present",
+            "matching_case_ids": [
+              "STRFINDUBASE01"
+            ]
+          },
+          "original_requirement_sha256": "c47a40c0ee224586ca16b214e0cfae7e72c02b5ee9ecdede5a6eed89f647e006",
+          "case_ids": [
+            "SEARCH02_STRFINDU_A_0",
+            "SEARCH02_STRFINDU_A_4",
+            "SEARCH02_STRFINDU_EMPTY_0",
+            "SEARCH02_STRFINDU_EMPTY_4",
+            "STRINGINVOKE_STRFINDUEXPR"
+          ],
+          "finding": "NormalU4:3 matched/1 different; selected returns and independent RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT retained on all3 routes. Retained157 STR40/42 default-start normal/no-match and STR44/46/48/50 explicit-start/empty/mixed-width return with helper count/order and DONE.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFINDU"
+          },
+          "normal_evidence_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "fatal_evidence_refs": [],
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": {
+            "axis": "applicable_boundary_error_evaluation_side_effect",
+            "requirement": "For \"AあBA\"/\"A\" use start -1,0,length,length+1 and empty search string; review128 raw UTF16 positions before adding supplementary/regex-invalid \"[\" if regex branch applies.",
+            "finite_source_branches": [
+              {
+                "line": 2237,
+                "text": "if (arguments.Length < 2)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2238,
+                "text": "return name + \"関数には少なくとも2つの引数が必要です\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2239,
+                "text": "if (arguments.Length > 3)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2240,
+                "text": "return name + \"関数の引数が多すぎます\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2241,
+                "text": "if (arguments[0] == null)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2242,
+                "text": "return name + \"関数の1番目の引数は省略できません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2243,
+                "text": "if (arguments[0].GetOperandType() != typeof(string))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2244,
+                "text": "return name + \"関数の1番目の引数の型が正しくありません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2245,
+                "text": "if (arguments[1] == null)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2246,
+                "text": "return name + \"関数の2番目の引数は省略できません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2247,
+                "text": "if (arguments[1].GetOperandType() != typeof(string))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2248,
+                "text": "return name + \"関数の2番目の引数の型が正しくありません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2250,
+                "text": "if ((arguments.Length >= 3) && (arguments[2] != null) && (arguments[2].GetOperandType() != typeof(Int64)))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2251,
+                "text": "return name + \"関数の3番目の引数の型が正しくありません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2252,
+                "text": "return null;",
+                "classification": "active_source"
+              },
+              {
+                "line": 2257,
+                "text": "string target = arguments[0].GetStrValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2258,
+                "text": "string word = arguments[1].GetStrValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2260,
+                "text": "if ((arguments.Length >= 3) && (arguments[2] != null))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2262,
+                "text": "if (unicode)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2264,
+                "text": "UFTstart = (int)arguments[2].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2266,
+                "text": "else",
+                "classification": "active_source"
+              },
+              {
+                "line": 2268,
+                "text": "UFTstart = LangManager.GetUFTIndex(target, (int)arguments[2].GetIntValue(exm));",
+                "classification": "active_source"
+              },
+              {
+                "line": 2271,
+                "text": "if (UFTstart < 0 || UFTstart >= target.Length)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2272,
+                "text": "return (-1);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2274,
+                "text": "if (index > 0 && !unicode)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2279,
+                "text": "return (index);",
+                "classification": "active_source"
+              }
+            ],
+            "evidence_state": "selected_documented_difference",
+            "difference_case_ids": [
+              "STRFINDU_EMPTY_END01",
+              "SEARCHBOUND01",
+              "SEARCHRANGE_UNEG",
+              "SEARCHRANGE_UOVER",
+              "STRINGINVOKE_STRFINDUEXPR"
+            ]
+          },
+          "original_requirement_sha256": "7c841200f04f9fd389e73c88b3f1d16d1134814ca1a1df7fea412a1553565b98",
+          "case_ids": [
+            "SEARCH02_STRFINDU_A_0",
+            "SEARCH02_STRFINDU_A_4",
+            "SEARCH02_STRFINDU_EMPTY_0",
+            "SEARCH02_STRFINDU_EMPTY_4",
+            "SEARCH02_STRFINDU_A_NEG1",
+            "SEARCH02_STRFINDU_A_5",
+            "SEARCH02_STRFINDU_EMPTY_NEG1",
+            "SEARCH02_STRFINDU_EMPTY_5",
+            "STRINGINVOKE_STRFINDUEXPR"
+          ],
+          "finding": "All finite8 conditions AあBA × A/empty × UTF16start -1,0,4,5 are observed. Normal4 cover0/end4, fatal4 cover-1/over5. Native direct UTF16 bounds return-1; public inclusive0..4 accepts end4 but raises E_INDEX outside. Retained157 STR44/46/48/50 COUNT3 ORDER123 proves target/needle/start once left-to-right; STR50 positive result2 is UTF16, not width3. No regex branch: [ is literal. No helper rerun required.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFINDU"
+          },
+          "normal_evidence_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "fatal_evidence_refs": [
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-1.json",
+              "sha256": "5ee8c6a977068bd04b4c103771a28c6ee40c21bad3d1f03c069887d066fb2477",
+              "pointer": ""
+            },
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-2.json",
+              "sha256": "b1e5368efcb7616539a8cc9b6ab2f7ee96bfc7d84e5416107f67391f75f41aa2",
+              "pointer": ""
+            },
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-3.json",
+              "sha256": "f6bc68192283085ff774c141d516ba477042590c66219bddc8f54023d4d7b6d0",
+              "pointer": ""
+            },
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-4.json",
+              "sha256": "6bbfe902086e8017c0f36d98977737c9c563d0b013501e2a078c5eb500aa421b",
+              "pointer": ""
+            }
+          ],
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "result_routing_and_stop_location",
+          "original_requirement": {
+            "axis": "result_routing_and_stop_location",
+            "requirement": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.",
+            "source_ref": "Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment",
+            "evidence_state": "per_case_input_and_raw_readbacks_cited"
+          },
+          "original_requirement_sha256": "c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390",
+          "case_ids": [
+            "SEARCH02_STRFINDU_A_0",
+            "SEARCH02_STRFINDU_A_4",
+            "SEARCH02_STRFINDU_EMPTY_0",
+            "SEARCH02_STRFINDU_EMPTY_4",
+            "SEARCH02_STRFINDU_A_NEG1",
+            "SEARCH02_STRFINDU_A_5",
+            "SEARCH02_STRFINDU_EMPTY_NEG1",
+            "SEARCH02_STRFINDU_EMPTY_5"
+          ],
+          "finding": "Normal4 return to ZZAV0 and preserve independent sentinels then END/DONE. Fatal4 Native returns-1 and preserves701/702/AUTO_SENT; public exits1 with E_INDEX at ERB/SEARCHBOUND01.ERB:9 before markers. Public postfatal values UNOBSERVED. Keep original v3 failure/single_vs_batch_gate_failed unchanged; secondary different_scoped_stop is bounded diagnostic evidence, not overwritten v3 success or natural exit.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFINDU"
+          },
+          "normal_evidence_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "fatal_evidence_refs": [
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-1.json",
+              "sha256": "5ee8c6a977068bd04b4c103771a28c6ee40c21bad3d1f03c069887d066fb2477",
+              "pointer": ""
+            },
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-2.json",
+              "sha256": "b1e5368efcb7616539a8cc9b6ab2f7ee96bfc7d84e5416107f67391f75f41aa2",
+              "pointer": ""
+            },
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-3.json",
+              "sha256": "f6bc68192283085ff774c141d516ba477042590c66219bddc8f54023d4d7b6d0",
+              "pointer": ""
+            },
+            {
+              "path": "automation-v2/fatal-log-path-review/reports-live-01/comparison-4.json",
+              "sha256": "6bbfe902086e8017c0f36d98977737c9c563d0b013501e2a078c5eb500aa421b",
+              "pointer": ""
+            }
+          ],
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "original_remaining": {
+            "type": "finite_evidence_adjudication",
+            "source": "evidence\\parent-implemented-function-review-20261113\\MATRIX.json",
+            "target": {
+              "kind": "expression_function",
+              "name": "STRFINDU"
+            },
+            "requirements": [
+              "Missing the finite mixed-width AあBA/A start -1,0,length,length+1 and empty needle readbacks in this form, with relevant helper order. ASCII abc/ABABCDE samples and selected string157 helpers do not prove mixed-width conversion at all named boundaries."
+            ],
+            "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+          },
+          "original_remaining_sha256": "88be0d994f27a58a91b737e1b3ce7325c59df1bced5929c87b50b797aa7ab879",
+          "case_ids": [
+            "SEARCH02_STRFINDU_A_0",
+            "SEARCH02_STRFINDU_A_4",
+            "SEARCH02_STRFINDU_EMPTY_0",
+            "SEARCH02_STRFINDU_EMPTY_4",
+            "SEARCH02_STRFINDU_A_NEG1",
+            "SEARCH02_STRFINDU_A_5",
+            "SEARCH02_STRFINDU_EMPTY_NEG1",
+            "SEARCH02_STRFINDU_EMPTY_5",
+            "STRINGINVOKE_STRFINDUEXPR"
+          ],
+          "finding": "Finite mixed-width8 discharged by normal4 plus independently raw-checked secondary fatal4; retained157 supplies helper order. No additional engine execution required."
+        }
+      ]
+    }
+  ]
+}

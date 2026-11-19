@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0922 · PARENT_ACCEPTANCE.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0922 · PARENT_ACCEPTANCE.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE.json; 参照対象=command_or_syntax:RESTART。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;RESTART&quot;}; comparison_outcome=&quot;matched_in_finite_scope&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を1個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>0642b415ecb8abc360bb2122446cb7da378e0e1acf153a2c31abda7a39d16cad</code></p>
+<p><a href="../assets/U0922.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>1467112019584dbd8963dd5b3d42360b64865e240d4b42aee327f6490372558d</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;RESTART&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;case_ids&quot;: [
+    &quot;RESTART_BUILTIN_COUNT_REINITIALIZATION_20261115&quot;
+  ],
+  &quot;accepted_scope&quot;: &quot;COUNT directly observed: callee entries37,1,1; REPEAT reinitializes0; RESTART at COUNT1 with bounded FLAG guard; final and caller COUNT3, RETURN result88; Native2/public1 exact markers match. Original target_RESTART missing COUNT obligation now fulfilled.&quot;,
+  &quot;discharged_original_remaining&quot;: [
+    {
+      &quot;type&quot;: &quot;finite_original_obligation_restored&quot;,
+      &quot;obligation_ids&quot;: [
+        &quot;target_RESTART&quot;
+      ],
+      &quot;requirement&quot;: &quot;Read back built-in COUNT initialization/preservation in a bounded restarted loop, or document exact source branch as unreachable. A/LOCAL counters are not COUNT.&quot;,
+      &quot;source&quot;: &quot;evidence/parent-command-evidence-review-20261113/REVIEW.json&quot;,
+      &quot;retained_partial_case_ids&quot;: [
+        &quot;CALLJUMP206_restart&quot;
+      ]
+    }
+  ],
+  &quot;evidence_manifest_path&quot;: &quot;evidence/restart-count-boundary-20261115/MANIFEST.json&quot;,
+  &quot;evidence_manifest_sha256&quot;: &quot;eb81e390ac8f239a57b8759441bf1f8bc03cc165e97a001826b5eb0b15e43280&quot;,
+  &quot;source_refs&quot;: {
+    &quot;archive&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+    &quot;archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+    &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+    &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+    &quot;ranges&quot;: [
+      [
+        1757,
+        1785
+      ],
+      [
+        2082,
+        2093
+      ],
+      [
+        2176,
+        2201
+      ]
+    ]
+  },
+  &quot;limits&quot;: [
+    &quot;Native natural process exit unobserved&quot;,
+    &quot;Other restart contexts outside original finite acceptance&quot;
+  ],
+  &quot;product_modified&quot;: false,
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0125 · command_or_syntax:RESTART · acceptance</li>
+<li>L0126 · command_or_syntax:RESTART · check</li>
+</ul></html>

@@ -1,0 +1,221 @@
+{
+  "schema": "native-public-target-comparison-1",
+  "generated_utc": "2026-11-14T20:17:50.803280+00:00",
+  "target": {
+    "kind": "structural_syntax",
+    "name": "BREAK"
+  },
+  "classification": "different_scoped",
+  "case_ids": [
+    "BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115",
+    "BREAK_OUTSIDE_LINE_TIMING_20261115"
+  ],
+  "findings": {
+    "nested_nearest_loop": {
+      "native_repeat_logs_identical": true,
+      "public_log_matches_native_markers": true,
+      "observed": [
+        "BEFORE",
+        "WHILE_BODY I=1 J=1",
+        "OUTER_CONTINUE I=1 J=1",
+        "FOR_SKIPPED",
+        "WHILE_BODY I=2 J=1",
+        "OUTER_CONTINUE I=2 J=1",
+        "FINAL I=3",
+        "AFTER"
+      ],
+      "interpretation": "The first BREAK exits only WHILE, skips WHILE_SKIPPED, then continues the enclosing FOR. BREAK in the second counted FOR iteration skips FOR_SKIPPED; both implementations leave OUTERIDX=3."
+    },
+    "outside_loop": {
+      "native_repeat_logs_identical": true,
+      "native": "Native warns at load, reaches BEFORE, then reports BREAK at ERB line 3 and stops before AFTER.",
+      "public": "Public pyz returns 1 with E_SYNTAX at ERB/SEARCHBOUND01.ERB:3 during compilation; BEFORE is absent.",
+      "interpretation": "Same invalid line and no AFTER, but stop phase and diagnostic differ: Native reaches runtime after BEFORE, public rejects before execution."
+    },
+    "excluded_invalid_fixture": {
+      "path": "break-nested/native-01 and native-02",
+      "reason": "The first draft used #DIM I and #DIM J, names reserved by Emuera; Native rejected the ERB before BREAK execution. These attempts are preserved but excluded from behavioral comparison."
+    }
+  },
+  "runs": {
+    "nested_native": [
+      {
+        "mode": "native-01",
+        "invocation": {
+          "returncode": 0,
+          "argv": [
+            "python",
+            "-B",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\run_native.py",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-nested-corrected\\native-01"
+          ],
+          "python": "Python 3.12.10"
+        },
+        "process_exited_after_5s": false,
+        "cleanup_terminate_ok": true,
+        "fixture_sha256": "afcc555771d70d15821ce880531b99ef2ae1f3657df7be72a29dee833403e1fd",
+        "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "emuera_log_sha256": "89a2e4c0126fd968768361d16cfa19c7a8a47582aec5ec63248b770a3a569340",
+        "observed_log": "Now Loading...\r\nBEFORE\r\nWHILE_BODY I=1 J=1\r\nOUTER_CONTINUE I=1 J=1\r\nFOR_SKIPPED\r\nWHILE_BODY I=2 J=1\r\nOUTER_CONTINUE I=2 J=1\r\nFINAL I=3\r\nAFTER\r\n"
+      },
+      {
+        "mode": "native-02",
+        "invocation": {
+          "returncode": 0,
+          "argv": [
+            "python",
+            "-B",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\run_native.py",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-nested-corrected\\native-02"
+          ],
+          "python": "Python 3.12.10"
+        },
+        "process_exited_after_5s": false,
+        "cleanup_terminate_ok": true,
+        "fixture_sha256": "afcc555771d70d15821ce880531b99ef2ae1f3657df7be72a29dee833403e1fd",
+        "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "emuera_log_sha256": "89a2e4c0126fd968768361d16cfa19c7a8a47582aec5ec63248b770a3a569340",
+        "observed_log": "Now Loading...\r\nBEFORE\r\nWHILE_BODY I=1 J=1\r\nOUTER_CONTINUE I=1 J=1\r\nFOR_SKIPPED\r\nWHILE_BODY I=2 J=1\r\nOUTER_CONTINUE I=2 J=1\r\nFINAL I=3\r\nAFTER\r\n"
+      }
+    ],
+    "nested_public": {
+      "mode": "py",
+      "invocation": {
+        "returncode": 0,
+        "python": "Python 3.12.10",
+        "argv": [
+          "python",
+          "-B",
+          "[SURVEY_ROOT]\\work\\command-coverage-20261111\\run_public_pyz_verified.py",
+          "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-nested-corrected\\py"
+        ]
+      },
+      "receipt": {
+        "started_utc": "2026-11-14T20:14:10.950980+00:00",
+        "finished_utc": "2026-11-14T20:14:12.079509+00:00",
+        "public_pyz": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+        "sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "sha256_expected": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "unchanged": true,
+        "argv": [
+          "[USER_HOME]\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-I",
+          "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+          "--debug",
+          "."
+        ],
+        "cwd": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-nested-corrected\\py",
+        "returncode": 0,
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-10-10.0.19045-SP0",
+        "inputs": {
+          "ERB/SEARCHBOUND01.ERB": "afcc555771d70d15821ce880531b99ef2ae1f3657df7be72a29dee833403e1fd",
+          "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        "inputs_after": {
+          "ERB/SEARCHBOUND01.ERB": "afcc555771d70d15821ce880531b99ef2ae1f3657df7be72a29dee833403e1fd",
+          "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        "stdout_sha256": "800728b42cc0fef11883cd3b8b0effc129f35a6a9d51f48e1bd11b0d8b2eefc8",
+        "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+        "log_sha256": "89a2e4c0126fd968768361d16cfa19c7a8a47582aec5ec63248b770a3a569340"
+      },
+      "stdout_sha256": "800728b42cc0fef11883cd3b8b0effc129f35a6a9d51f48e1bd11b0d8b2eefc8",
+      "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    "outside_native": [
+      {
+        "mode": "native-01",
+        "invocation": {
+          "python": "Python 3.12.10",
+          "returncode": 0,
+          "argv": [
+            "python",
+            "-B",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\run_native.py",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-outside\\native-01"
+          ]
+        },
+        "process_exited_after_5s": false,
+        "cleanup_terminate_ok": true,
+        "fixture_sha256": "da96e558514a672e9ebc72dad5e8b5f67fee0e3529b4fd45fd41eb1b89fb2fdf",
+        "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "emuera_log_sha256": "2a1341fb60adfb4248309eb6ad1a6845af0736a666cc59c8ec3414912662990a",
+        "observed_log": "Now Loading...\r\n警告Lv2:SEARCHBOUND01.ERB:3行目:REPEAT, FOR, WHILE, DOの中以外でBREAK文が使われました\r\nBREAK\r\nBEFORE\r\nSEARCHBOUND01.ERBの3行目でエラーが発生しました:Emuera1824+v24\r\nBREAK\r\nエラー内容：REPEAT, FOR, WHILE, DOの中以外でBREAK文が使われました\r\n現在の関数：@SYSTEM_TITLE（SEARCHBOUND01.ERBの1行目）\r\n関数呼び出しスタック：\r\n"
+      },
+      {
+        "mode": "native-02",
+        "invocation": {
+          "python": "Python 3.12.10",
+          "returncode": 0,
+          "argv": [
+            "python",
+            "-B",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\run_native.py",
+            "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-outside\\native-02"
+          ]
+        },
+        "process_exited_after_5s": false,
+        "cleanup_terminate_ok": true,
+        "fixture_sha256": "da96e558514a672e9ebc72dad5e8b5f67fee0e3529b4fd45fd41eb1b89fb2fdf",
+        "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "emuera_log_sha256": "2a1341fb60adfb4248309eb6ad1a6845af0736a666cc59c8ec3414912662990a",
+        "observed_log": "Now Loading...\r\n警告Lv2:SEARCHBOUND01.ERB:3行目:REPEAT, FOR, WHILE, DOの中以外でBREAK文が使われました\r\nBREAK\r\nBEFORE\r\nSEARCHBOUND01.ERBの3行目でエラーが発生しました:Emuera1824+v24\r\nBREAK\r\nエラー内容：REPEAT, FOR, WHILE, DOの中以外でBREAK文が使われました\r\n現在の関数：@SYSTEM_TITLE（SEARCHBOUND01.ERBの1行目）\r\n関数呼び出しスタック：\r\n"
+      }
+    ],
+    "outside_public": {
+      "mode": "py",
+      "invocation": {
+        "returncode": 1,
+        "python": "Python 3.12.10",
+        "argv": [
+          "python",
+          "-B",
+          "[SURVEY_ROOT]\\work\\command-coverage-20261111\\run_public_pyz_verified.py",
+          "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-outside\\py"
+        ]
+      },
+      "receipt": {
+        "started_utc": "2026-11-14T20:14:15.357273+00:00",
+        "finished_utc": "2026-11-14T20:14:15.640956+00:00",
+        "public_pyz": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+        "sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "sha256_expected": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "unchanged": true,
+        "argv": [
+          "[USER_HOME]\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-I",
+          "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+          "--debug",
+          "."
+        ],
+        "cwd": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\break-transfer-20261115\\break-outside\\py",
+        "returncode": 1,
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "platform": "Windows-10-10.0.19045-SP0",
+        "inputs": {
+          "ERB/SEARCHBOUND01.ERB": "da96e558514a672e9ebc72dad5e8b5f67fee0e3529b4fd45fd41eb1b89fb2fdf",
+          "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        "inputs_after": {
+          "ERB/SEARCHBOUND01.ERB": "da96e558514a672e9ebc72dad5e8b5f67fee0e3529b4fd45fd41eb1b89fb2fdf",
+          "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        "stdout_sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+        "stderr_sha256": "2554bdfe98516775577d7f1db99d67a0bfa158b0c88f9ef6d563d70ea1e348f5"
+      },
+      "stdout_sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+      "stderr_sha256": "2554bdfe98516775577d7f1db99d67a0bfa158b0c88f9ef6d563d70ea1e348f5"
+    }
+  },
+  "limitations": [
+    "Finite witness covers nested WHILE plus counted FOR, not REPEAT or DO.",
+    "Native natural process exit was not observed; the isolated runner terminated each GUI process after five seconds. The completed output/error logs were captured before cleanup.",
+    "Only the selected outside-loop diagnostic/timing path is compared; no generalized malformed-control-flow claim."
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "drive_originals_modified": false
+}

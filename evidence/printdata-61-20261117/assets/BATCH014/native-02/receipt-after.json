@@ -1,0 +1,48 @@
+{
+  "fixture": "CHOICE_BAD_PRINTDATAKL",
+  "mode": "native-02",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "-B",
+    "-I",
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "[WITHHELD_PRIVATE_REFERENCE]"
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "fd01037e8f584f34172c0d257e2ac57e26fdee1b2d779859a4f04ebda1bc3b0a",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "started_utc": "2026-11-15T23:30:08.540980+00:00",
+  "preflight_sha256": "5e92dedfa704ccf59926d4c6bf1583c6de77416d73b471fc1e7d5adca905d625",
+  "native_before": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "helper_sha256": "1da290d30be909648c58e03ed9772df2e5328ec188b2be48f6d85f049dad8ca9",
+  "returncode": 0,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "fd01037e8f584f34172c0d257e2ac57e26fdee1b2d779859a4f04ebda1bc3b0a",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "ended_utc": "2026-11-15T23:30:13.727566+00:00",
+  "native_after": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "native_pid_after_cleanup": {
+    "pid": 34580,
+    "alive": false,
+    "exit_code": 1,
+    "image": null
+  },
+  "helper_returncode_is_not_native_natural_exit": true,
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "4987febb0c9f86a5b45b2d722d3ec0c00d146768dbd07131d73047435b06612a",
+    "emuera.log": "4799dcd206a4b387b978ba78a864be911a2382ff70a3c5826f8e549bf5343c5c",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "5e92dedfa704ccf59926d4c6bf1583c6de77416d73b471fc1e7d5adca905d625",
+    "probe.json": "00eca4fb69ec1e02be8a7dc714b7eb66faf1c7bf67444c23e36509ecd4d38ed3",
+    "stderr.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.bin": "22098731433e83e093351d2caff7ae211b7949af23af69a2dfe8adf7a60119be"
+  }
+}

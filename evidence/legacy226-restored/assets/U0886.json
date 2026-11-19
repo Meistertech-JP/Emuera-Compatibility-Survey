@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "[USER_HOME]\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-I",
+    "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+    "--debug",
+    "--inputs",
+    "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\printk-command-20261113-114\\inputs.txt",
+    "."
+  ],
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "fixture_sha256": "2ba39d69e455e3277c2486d7ab9316ca19fd258ba23184cbf9816b25d7eeeb01",
+  "inputs_sha256": "9e4c59bb9e5ca6ca840eb57555c3f45692474ff6c1379d3579eec60e18667cbe",
+  "returncode": 0,
+  "stdout_hex": "4e6f77204c6f6164696e672e2e2e0d0a82a08341b120413c5052494e544b5f454e443e0d0a34320d0a",
+  "stderr_hex": "5b5079456d75657261207761726e696e675d2054657874206c61796f757420757365732061206c6f676963616c2063656c6c20677269643b20666f6e747320616e6420706978656c20706f736974696f6e696e6720617265206e6f7420726570726f64756365642e0d0a54524143455f4245464f52455f5052494e544b0d0a54524143455f41465445525f5052494e544b0d0a",
+  "stdout_cp932_escape": "Now Loading...\\r\\n\\u3042\\u30a2\\uff71 A<PRINTK_END>\\r\\n42\\r\\n",
+  "stderr_cp932_escape": "[PyEmuera warning] Text layout uses a logical cell grid; fonts and pixel positioning are not reproduced.\\r\\nTRACE_BEFORE_PRINTK\\r\\nTRACE_AFTER_PRINTK\\r\\n",
+  "source_tree_imported": false
+}

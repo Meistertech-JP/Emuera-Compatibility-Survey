@@ -1,0 +1,52 @@
+{
+  "schema": "parent-finite-command-acceptance-1",
+  "decision": "necessary_comparison_complete",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "TRYCCALL"
+  },
+  "obligation_id": "target_TRYCCALL",
+  "original_obligation": "One supplied/default argument binding and counted operand trace on its literal TRYCCALL constructor; no catch-all-exception inference.",
+  "accepted_case_ids": [
+    "TRYTRANSFER285_TRYCCALL_supplied",
+    "TRYTRANSFER285_TRYCCALL_default"
+  ],
+  "accepted_requirements": [
+    {
+      "id": "target_TRYCCALL",
+      "basis": "The literal TRYCCALL supplied-operand case binds the helper result 41 and observes its counted evaluation exactly once; an independently reset literal TRYCCALL with the operand omitted selects default ARG=73 and records COUNT=0. Native ran twice per condition and the pinned public pyz once; all selected state and continuation markers match.",
+      "case_ids": [
+        "TRYTRANSFER285_TRYCCALL_supplied",
+        "TRYTRANSFER285_TRYCCALL_default"
+      ]
+    }
+  ],
+  "comparison_sha256": "8f342fd455f6d830fad7efa379d11c83633db4a88fa612ca85c2968afd8dc44d",
+  "manifest_sha256": "15ae3422111726e2be641f50d1d7cc31ba6a9a875810405376cd009dacd1591f",
+  "review_sha256": "7c6074a8379e595b608ce331abca2f60c2163d1598c769e7a6e6ace3c7359a2c",
+  "execution_readback_sha256": "83b5fc820db3454147413165af489fd6dc7014569818dc976ae72437847c0cef",
+  "registered_evidence_sha256": "6003c2a5328eb4f7defc8798c417ac2482214d681184905af8ed85615620c58b",
+  "source_fixture_sha256": "08eae3157708554dc3d9073e4d6710cafd2e34bdbb58c057bc3ea8570c571ad3",
+  "condition_results": [
+    {
+      "id": "TRYCCALL_default",
+      "classification": "MATCH_NORMAL_SCOPE",
+      "native_repeat_equal": true,
+      "markers_equal": true
+    },
+    {
+      "id": "TRYCCALL_supplied",
+      "classification": "MATCH_NORMAL_SCOPE",
+      "native_repeat_equal": true,
+      "markers_equal": true
+    }
+  ],
+  "retained_limits": [
+    "Acceptance is limited to the finite command_or_syntax TRYCCALL obligation; structural_syntax TRYCCALL remains open.",
+    "No catch-all exception behavior is inferred.",
+    "Native natural exit was unobserved; no post-fatal state is claimed.",
+    "This does not close TRYCALL, TRYJUMP, or other TRY-family forms."
+  ],
+  "global_completion": false,
+  "product_changes": false
+}

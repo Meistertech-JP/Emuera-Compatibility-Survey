@@ -1,0 +1,46 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0627 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0627 · REVIEW_ja.md</h1>
+<p>#DEFINEの空置換・重複・不正形式を比較した票で、実行とソース記述の食違いを保持したまま原文公開できる。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>4c2c3c8095b42a01333b21ec513a32253b4447aca505ef51b26e772ceb98cb48</code></p>
+<p><a href="../assets/U0627.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>4c2c3c8095b42a01333b21ec513a32253b4447aca505ef51b26e772ceb98cb48</code></p>
+<pre># `#DEFINE` 有限比較レビュー
+
+## 結果
+
+判定は **different_scoped**。有効なオブジェクト形式の通常展開では空置換の式評価が一致しました。一方、重複定義ではNativeが先の値を保持して警告するのに対して公開pyzは後の値を使用し、識別子のない宣言でも観測結果が分かれました。関数形式と不正な引数形式は両方で停止しますが、診断の粒度・時点が異なります。
+
+## 比較範囲
+
+既存の`DECLBASIC_DEFINE`正常系（演算子優先順位、実行時変数、関数式の再評価）に、今回の重複名、空置換、識別子欠落、引数区切り不正、閉じ括弧欠落を追加しました。関数形式宣言は`NATIVE_V24_PARSER_MECHANISM_SUPPLEMENT.json`の`MACROFUNC01`と、その該当箇所クロップを再利用しています。
+
+| 条件 | Emuera1824+v24 | PyEmuera 3.0.0 | 判定 |
+|---|---|---|---|
+| 空置換を式中で使う | `1 + DDEF_EMPTY 2`が`3`、後続到達 | 同じ値と後続到達 | 一致 |
+| 同名を2回定義し、値を参照 | 2行目に重複警告、先の値`1`を保持 | 後の値`2`を使用。重複警告なし | 不一致 |
+| `#DEFINE`のみ | 後続sentinelを観測。記録ログに診断なし | ERH 1行目で`E_SYNTAX: Invalid #DEFINE`、停止 | 不一致 |
+| 関数形式 `#DEFINE SUM(X) X+1` | 宣言を拒否 | `E_UNSUPPORTED`で停止 | 診断差あり |
+| 引数区切り不正 `#DEFINE DDEF_BAD(A,) A` | 形式不正を警告し、ERH読込を停止 | `E_UNSUPPORTED`で停止 | 診断粒度差 |
+| 閉じ括弧欠落 `#DEFINE DDEF_BAD(A` | 対応する`)`がない診断、ERH読込停止 | `E_UNSUPPORTED`で停止 | 診断粒度差 |
+
+Nativeは各新規条件で2回実行し、各ペアの`emuera.log` SHA-256が一致しました。GUIは5秒時点で待機中だったため、専用デスクトップ上の当該プロセスだけを終了しました。キー送信はありません。公開pyzの実行は前後SHAを照合し、全件で固定ハッシュを維持しました。
+
+## 根拠と制限
+
+v24の`HeaderFileLoader.cs`は識別子読取、重複検査、空置換登録、引数形式解析、関数形式宣言拒否を行います。`IdentifierDictionary.cs`は既存UserMacro名を重複として報告し、`LexicalAnalyzer.cs`はマクロ名トークンを除去して置換トークンを挿入します。行範囲・原本SHAは`SOURCE_HASHES.json`を参照してください。
+
+とくに識別子欠落は、ソース上の例外分岐とNative実行時の後続到達が食い違って見えます。これは観測どおり不一致として残し、ソース記述だけで実行結果を上書きしません。Nativeの自然終了、再帰展開、展開上限、文字列置換、予約名衝突、全宣言状況は未確認です。全体互換性を意味しません。
+
+不完全な初期fixtureと取得スクリプトの失敗は`EXCLUDED_ATTEMPTS.json`に残し、合否集計から除外しました。製品コード、公開原本、GitHub、Driveは変更していません。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2439 · declaration:#DEFINE · check</li>
+<li>L2442 · declaration:#DEFINE · check</li>
+</ul></html>

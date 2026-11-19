@@ -1,0 +1,220 @@
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Function/Creator.cs
+140: 
+141:                 ["GETCONFIG"] = new GetConfigMethod(true),
+142:                 ["GETCONFIGS"] = new GetConfigMethod(false),
+143: 
+144:                 //html系
+145:                 ["HTML_GETPRINTEDSTR"] = new HtmlGetPrintedStrMethod(),
+146:                 ["HTML_POPPRINTINGSTR"] = new HtmlPopPrintingStrMethod(),
+147:                 ["HTML_TOPLAINTEXT"] = new HtmlToPlainTextMethod(),
+148:                 ["HTML_ESCAPE"] = new HtmlEscapeMethod(),
+149: 
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Function/Creator.Method.cs
+2911: 		private sealed class HtmlEscapeMethod : FunctionMethod
+2912: 		{
+2913: 			public HtmlEscapeMethod()
+2914: 			{
+2915: 				ReturnType = typeof(string);
+2916:                 argumentTypeArray = new Type[] { typeof(string) };
+2917: 				CanRestructure = false;
+2918: 			}
+2919: 			public override string GetStrValue(ExpressionMediator exm, IOperandTerm[] arguments)
+2920: 			{
+2921: 				return HtmlManager.Escape(arguments[0].GetStrValue(exm));
+2922: 			}
+2923: 		}
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs
+78: 		static FunctionIdentifier()
+79: 		{
+80: 			Dictionary<FunctionArgType, ArgumentBuilder> argb = ArgumentParser.GetArgumentBuilderDictionary();
+81: 			methodArgumentBuilder = argb[FunctionArgType.METHOD];
+82: 			methodInstruction = new METHOD_Instruction();
+83: 			setFunc = new FunctionIdentifier("SET", FunctionCode.SET, new SET_Instruction());//代入文
+370: 			addFunction(FunctionCode.HTML_PRINT, new HTML_PRINT_Instruction());
+371: 			addFunction(FunctionCode.HTML_TAGSPLIT, new HTML_TAGSPLIT_Instruction());
+391: 			Dictionary<string, FunctionMethod> methodList = FunctionMethodCreator.GetMethodList();
+392: 			foreach (KeyValuePair<string, FunctionMethod> pair in methodList)
+393: 			{
+394: 				string key = pair.Key;
+395: 				if (!funcDic.ContainsKey(key))
+396: 				{
+397: 					funcDic.Add(key, new FunctionIdentifier(key, pair.Value, methodInstruction));
+398: 				}
+399: 			}
+490: 		private FunctionIdentifier(string methodName, FunctionMethod method, AbstractInstruction instruction)
+491: 		{
+492: 			this.code = FunctionCode.__NULL__;
+493: 			this.arg = instruction.ArgBuilder;
+494: 			this.flag = instruction.Flag;
+495: 			this.method = method;
+496: 			Name = methodName;
+497: 			Instruction = instruction;
+498: 		}
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs
+847: 		private sealed class METHOD_ArgumentBuilder : ArgumentBuilder
+848: 		{
+849: 			public override Argument CreateArgument(InstructionLine line, ExpressionMediator exm)
+850: 			{
+851: 				IOperandTerm[] args = popTerms(line);
+852: 				string errmes = line.Function.Method.CheckArgumentType(line.Function.Name, args);
+853: 				if (errmes != null)
+854: 					throw new CodeEE(errmes);
+855: 				IOperandTerm mTerm = new FunctionMethodTerm(line.Function.Method, args);
+856: 				return new MethodArgument(mTerm.Restructure(exm));
+857: 			}
+1527: 		private sealed class SP_HTMLSPLIT_ArgumentBuilder : ArgumentBuilder
+1528: 		{
+1529: 			public SP_HTMLSPLIT_ArgumentBuilder()
+1530: 			{
+1531: 				argumentTypeArray = new Type[] { typeof(string), typeof(string), typeof(Int64) };
+1532: 				minArg = 1;
+1533: 			}
+1534: 			public override Argument CreateArgument(InstructionLine line, ExpressionMediator exm)
+1535: 			{
+1536: 				IOperandTerm[] terms = popTerms(line);
+1537: 				if (!checkArgumentType(line, exm, terms))
+1538: 					return null;
+1539: 				VariableToken destVar;
+1540: 				VariableTerm destVarTerm = null;
+1541: 				VariableTerm term = null;
+1542: 				if (terms.Length >= 2)
+1543: 					destVarTerm = getChangeableVariable(terms, 2, line);
+1544: 				if (destVarTerm != null)
+1545: 					destVar = destVarTerm.Identifier;
+1546: 				else
+1547: 					destVar = GlobalStatic.VariableData.GetSystemVariableToken("RESULTS");
+1548: 				if (!destVar.IsArray1D || destVar.IsCharacterData)
+1549: 				{ warn("第２引数は非キャラ型の1次元配列変数でなければなりません", line, 2, false); return null; }
+1550: 				if (terms.Length >= 3)
+1551: 					term = getChangeableVariable(terms, 3, line);
+1552: 				if (term == null)
+1553: 				{
+1554:                     VariableToken varToken = GlobalStatic.VariableData.GetSystemVariableToken("RESULT");
+1555:                     term = new VariableTerm(varToken, new IOperandTerm[] { new SingleTerm(0) });
+1556: 				}
+1557: 				return new SpHtmlSplitArgument(terms[0], destVar, term);
+1558: 			}
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs
+259: 		private sealed class HTML_TAGSPLIT_Instruction : AbstractInstruction
+260: 		{
+261: 			public HTML_TAGSPLIT_Instruction()
+262: 			{
+263: 				flag = EXTENDED | METHOD_SAFE;
+264: 				ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.SP_HTMLSPLIT);
+265: 			}
+266: 
+267: 			public override void DoInstruction(ExpressionMediator exm, InstructionLine func, ProcessState state)
+268: 			{
+269: 				SpHtmlSplitArgument spSplitArg = (SpHtmlSplitArgument)func.Argument;
+270: 				string str = spSplitArg.TargetStr.GetStrValue(exm);
+271: 				string[] strs = MinorShift.Emuera.GameView.HtmlManager.HtmlTagSplit(str);
+272: 				
+273: 				if (strs == null)
+274: 				{
+275: 					spSplitArg.Num.SetValue(-1, exm);
+276: 					return;
+277: 				}
+278: 				
+279: 				spSplitArg.Num.SetValue(strs.Length, exm);
+280: 				string[] output = (string[])spSplitArg.Var.GetArray();
+281: 				int outputlength = Math.Min(output.Length, strs.Length);
+282: 				Array.Copy(strs, output, outputlength);
+283: 			}
+284: 		}
+423: 		private sealed class METHOD_Instruction : AbstractInstruction
+424: 		{
+425: 			public METHOD_Instruction()
+426: 			{
+427: 				ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.METHOD);
+428: 				flag = METHOD_SAFE | EXTENDED;
+429: 			}
+430: 			public override void DoInstruction(ExpressionMediator exm, InstructionLine func, ProcessState state)
+431: 			{
+432: 				IOperandTerm term = ((MethodArgument)func.Argument).MethodTerm;
+433: 				//Type type = term.GetOperandType();
+434: 				if (term.GetOperandType() == typeof(Int64))
+435: 					exm.VEvaluator.RESULT = term.GetIntValue(exm);
+436: 				else// if (func.Argument.MethodTerm.GetOperandType() == typeof(string))
+437: 					exm.VEvaluator.RESULTS = term.GetStrValue(exm);
+438: 				//これら以外の型は現状ない
+439: 				//else
+440: 				//	throw new ExeEE(func.Function.Name + "命令の型が不明");
+441: 			}
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/HtmlManager.cs
+30: 	 * html から ConsoleDisplayLine[] を経て html //表示を行わずに改行が入る位置のチェックができるかも
+31: 	 * html から PlainText(非エスケープ)//
+32: 	 * Text から エスケープ済Text
+33: 	 */
+34: 	/// <summary>
+35: 	/// EmueraConsoleのなんちゃってHtml解決用クラス
+36: 	/// </summary>
+37: 	internal static class HtmlManager
+38: 	{
+39: 		static HtmlManager()
+40: 		{
+41: 			repDic.Add('&', "&amp;");
+42: 			repDic.Add('>', "&gt;");
+43: 			repDic.Add('<', "&lt;");
+44: 			repDic.Add('\"', "&quot;");
+45: 			repDic.Add('\'', "&apos;");
+46: 		}
+47: 		static readonly char[] rep = new char[] { '&', '>', '<', '\"', '\'' };
+48: 		static readonly Dictionary<char, string> repDic = new Dictionary<char, string>();
+229: 		public static string[] HtmlTagSplit(string str)
+230: 		{
+231: 			List<string> strList = new List<string>();
+232: 			StringStream st = new StringStream(str);
+233: 			int found;
+234: 			while (!st.EOS)
+235: 			{
+236: 				found = st.Find('<');
+237: 				if (found < 0)
+238: 				{
+239: 					strList.Add(st.Substring());
+240: 					break;
+241: 				}
+242: 				else if (found > 0)
+243: 				{
+244: 					strList.Add(st.Substring(st.CurrentPosition, found));
+245: 					st.CurrentPosition += found;
+246: 				}
+247: 				found = st.Find('>');
+248: 				if(found < 0)
+249: 					return null;
+250: 				found++;
+251: 				strList.Add(st.Substring(st.CurrentPosition, found));
+252: 				st.CurrentPosition += found;
+253: 			}
+254: 			string[] ret = new string[strList.Count];
+255: 			strList.CopyTo(ret);
+256: 			return ret;
+257: 		}
+374: 		public static string Escape(string str)
+375: 		{
+376: 			//Net4.5では便利なクラスがあるらしい
+377: 			//return System.Web.HttpUtility.HtmlEncode(str);
+378: 
+379: 			int index = 0;
+380: 			int found;
+381: 			StringBuilder b = new StringBuilder();
+382: 			while (index < str.Length)
+383: 			{
+384: 				found = str.IndexOfAny(rep, index);
+385: 				if (found < 0)//見つからなければ以降を追加して終了
+386: 				{
+387: 					b.Append(str.Substring(index));
+388: 					break;
+389: 				}
+390: 				if (found > index)//間に非エスケープ文字があるなら追加しておく
+391: 					b.Append(str.Substring(index, found - index));
+392: 				string repnew = repDic[str[found]];
+393: 				b.Append(repnew);
+394: 				index = found + 1;
+395: 			}
+396: 			return b.ToString();
+397: 		}

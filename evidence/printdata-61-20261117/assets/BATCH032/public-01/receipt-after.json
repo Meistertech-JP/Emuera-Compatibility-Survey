@@ -1,0 +1,38 @@
+{
+  "fixture": "STRDATA_MISSING_ENDLIST_REACHED",
+  "mode": "public-01",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "-B",
+    "-I",
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "."
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "9c559d9ca9c4bc99172b916b497e721813690eed5fb804bf8603c32b288f11c2",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "started_utc": "2026-11-15T23:29:43.646849+00:00",
+  "preflight_sha256": "5f04377f0604544aa0a788cebedd375f31aac0b8cce3dfbda6686b8deac15230",
+  "native_before": null,
+  "helper_sha256": null,
+  "returncode": 1,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "9c559d9ca9c4bc99172b916b497e721813690eed5fb804bf8603c32b288f11c2",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "ended_utc": "2026-11-15T23:29:43.973618+00:00",
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "e9238af4a39fb6e0602d48f64232d9e4a7df0570bcb5ef4c775922cbb45049c9",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "5f04377f0604544aa0a788cebedd375f31aac0b8cce3dfbda6686b8deac15230",
+    "stderr.bin": "614944cf32d0a4d4a3dc68a6dad87899c7183ce706ce76649a7e4c5d5a27a962",
+    "stdout.bin": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+  }
+}

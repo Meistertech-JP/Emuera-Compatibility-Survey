@@ -1,0 +1,101 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0002 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0002 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=expression_function:SQRT。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;SQRT&quot;}; outcome=&quot;different_scoped&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>bdfe1bbee3dddc4f0e016072517f45c2af91c697165322994acc6f2d52c41137</code></p>
+<p><a href="../assets/U0002.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>bdfe1bbee3dddc4f0e016072517f45c2af91c697165322994acc6f2d52c41137</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;native-public-expression-comparison-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T12:24:33.987541+00:00&quot;,
+  &quot;case_id&quot;: &quot;SQRTNEGFAULT01&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;SQRT&quot;
+  },
+  &quot;invocation&quot;: &quot;SQRT(ZZ_NEG())&quot;,
+  &quot;native_runs&quot;: [
+    {
+      &quot;run_id&quot;: &quot;isolated-native-4e68783a62e1401088622b55ee826871&quot;,
+      &quot;pid&quot;: 21040,
+      &quot;probe_path&quot;: &quot;runs/isolated-native-4e68783a62e1401088622b55ee826871/probe.json&quot;,
+      &quot;probe_sha256&quot;: &quot;d22fb926f5a20eff51ca2ad4044becc455b994109dea193612a496d3edc1bf81&quot;,
+      &quot;log_path&quot;: &quot;runs/isolated-native-4e68783a62e1401088622b55ee826871/emuera.log&quot;,
+      &quot;log_sha256&quot;: &quot;e6e28481a4587ca1ff6a410c7cc8b1ee41c5d058ce22802591fe1d4348c037b4&quot;,
+      &quot;crop_path&quot;: &quot;native-error-crop-01.png&quot;,
+      &quot;crop_sha256&quot;: &quot;0c3e69414f21bf1a32ff5422fd365ddf9448be3d87721aca5766d186da0e5cae&quot;,
+      &quot;helper_marker_count&quot;: 1,
+      &quot;stop_line&quot;: 6,
+      &quot;after_reached&quot;: false,
+      &quot;natural_exit_observed&quot;: false,
+      &quot;exit_code_observed&quot;: false,
+      &quot;cleanup&quot;: &quot;harness terminated owned process after capture&quot;,
+      &quot;synthetic_input&quot;: false
+    },
+    {
+      &quot;run_id&quot;: &quot;isolated-native-f9353aa2efb74a169af6ee80cdf286b7&quot;,
+      &quot;pid&quot;: 35620,
+      &quot;probe_path&quot;: &quot;runs/isolated-native-f9353aa2efb74a169af6ee80cdf286b7/probe.json&quot;,
+      &quot;probe_sha256&quot;: &quot;6688e8e3b1ec702778f4436a8a872813cef985a45ca95ea5e8d292d0af5aba44&quot;,
+      &quot;log_path&quot;: &quot;runs/isolated-native-f9353aa2efb74a169af6ee80cdf286b7/emuera.log&quot;,
+      &quot;log_sha256&quot;: &quot;e6e28481a4587ca1ff6a410c7cc8b1ee41c5d058ce22802591fe1d4348c037b4&quot;,
+      &quot;crop_path&quot;: &quot;native-error-crop-02.png&quot;,
+      &quot;crop_sha256&quot;: &quot;0c3e69414f21bf1a32ff5422fd365ddf9448be3d87721aca5766d186da0e5cae&quot;,
+      &quot;helper_marker_count&quot;: 1,
+      &quot;stop_line&quot;: 6,
+      &quot;after_reached&quot;: false,
+      &quot;natural_exit_observed&quot;: false,
+      &quot;exit_code_observed&quot;: false,
+      &quot;cleanup&quot;: &quot;harness terminated owned process after capture&quot;,
+      &quot;synthetic_input&quot;: false
+    }
+  ],
+  &quot;public_run&quot;: {
+    &quot;path&quot;: &quot;PY_RUN.json&quot;,
+    &quot;sha256&quot;: &quot;de8153dd0f1b9a842242f191c0ef2adf97f53ea82d28f7e7b6cd9f3b13252480&quot;,
+    &quot;pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+    &quot;returncode&quot;: 1,
+    &quot;stdout_sha256&quot;: &quot;abd4ccdfe0e8813a3994cd0a01a3e4665034bfa75c4cf6ce12dfcc592527d8f8&quot;,
+    &quot;stderr_sha256&quot;: &quot;14f72039b70fdb733497cff05e68e2336dd736de41d468751f13fb04d0cba290&quot;
+  },
+  &quot;observations&quot;: {
+    &quot;native&quot;: {
+      &quot;helper_evaluations_per_run&quot;: 1,
+      &quot;stop_line&quot;: 6,
+      &quot;negative_argument_error&quot;: true,
+      &quot;after_not_reached&quot;: true
+    },
+    &quot;public&quot;: {
+      &quot;helper_evaluations&quot;: 1,
+      &quot;stop_line&quot;: 6,
+      &quot;error_code&quot;: &quot;E_ARITH&quot;,
+      &quot;after_not_reached&quot;: true
+    }
+  },
+  &quot;outcome&quot;: &quot;different_scoped&quot;,
+  &quot;interpretation&quot;: &quot;Both engines evaluate the argument helper exactly once, reach the SQRT(-1) negative-domain stop at ERB line 6, and do not continue. Native emits its Japanese CodeEE diagnostic; public pyz emits E_ARITH with its runtime message. This selected case confirms negative-domain guard, helper count, and stop position; it is not strict diagnostic equality.&quot;,
+  &quot;matched_conditions&quot;: [
+    &quot;same fixture bytes&quot;,
+    &quot;same Native config SHA&quot;,
+    &quot;Native replicas identical&quot;,
+    &quot;pinned public pyz unchanged before/after&quot;,
+    &quot;no synthetic keyboard input&quot;
+  ],
+  &quot;limits&quot;: [
+    &quot;only SQRT(-1) via one helper&quot;,
+    &quot;Native natural exit and process exit code unobserved&quot;,
+    &quot;no other arity/types/domain or post-error state equality claimed&quot;
+  ],
+  &quot;product_code_changed&quot;: false,
+  &quot;public_artifacts_changed&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2193 · expression_function:SQRT · check</li>
+</ul></html>

@@ -1,0 +1,98 @@
+{
+  "case_id": "ARGBOUND245_hole_middle",
+  "case_verdict": "different_scoped",
+  "comparison_classification": "different_diagnostic_body_only_selected_state_stop_equal",
+  "comparison_limits": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.",
+  "condition": {
+    "arguments": "0,,0",
+    "dead": false,
+    "fixture_sha256": "6cf3aee2cdb154756209e9da543233b936a7de4c9e9bf1f928e740da63d73e42",
+    "name": "hole_middle",
+    "target_line": 9
+  },
+  "configuration_contents_disclosed": false,
+  "dead_branch_only": false,
+  "fixture_path": "cases/ARGBOUND245_hole_middle/fixture/SEARCHBOUND01.ERB",
+  "group": "diagnostic_difference",
+  "legacy_case_id": "PARENT245_hole_middle",
+  "necessary_comparison_complete": true,
+  "non_disclosure_limit": "Full configuration, original receipts, and original ledgers are not in this projection. Hash equality does not prove full execution condition or engine identity.",
+  "original_receipts_disclosed": false,
+  "parent_review": {
+    "case_relation": "case_listed",
+    "decision": "accepted",
+    "scope": "Selected parent source only; other target evidence is not included."
+  },
+  "public_stderr_path": "cases/ARGBOUND245_hole_middle/raw/public-stderr.bin",
+  "public_stderr_sha256": "e319a40132558220daae96f0c76a93a7f7ef47601c7d87eb797fbcaa5a08b32b",
+  "requirement_ids": [
+    "normal_output_state_control",
+    "finite_boundary_error",
+    "evaluation_and_side_effects"
+  ],
+  "runs": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": {
+        "body": "ADDCOPYCHARA命令:第2引数を認識できません",
+        "line": 9
+      },
+      "fixture_sha256": "6cf3aee2cdb154756209e9da543233b936a7de4c9e9bf1f928e740da63d73e42",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_hole_middle/raw/native-01-emuera.log",
+      "raw_sha256": "a9dbc5de8f2d05e0dcac33e9fe1f76ad68994b5a20c3519890da50fca470dfb2",
+      "selected_lines": [
+        "BEGIN245 hole_middle",
+        "BEFORE245 N=1 R=701"
+      ]
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": {
+        "body": "ADDCOPYCHARA命令:第2引数を認識できません",
+        "line": 9
+      },
+      "fixture_sha256": "6cf3aee2cdb154756209e9da543233b936a7de4c9e9bf1f928e740da63d73e42",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_hole_middle/raw/native-02-emuera.log",
+      "raw_sha256": "a9dbc5de8f2d05e0dcac33e9fe1f76ad68994b5a20c3519890da50fca470dfb2",
+      "selected_lines": [
+        "BEGIN245 hole_middle",
+        "BEFORE245 N=1 R=701"
+      ]
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "error": {
+        "body": "Integer required, got NoneType",
+        "code": "E_TYPE",
+        "line": 9
+      },
+      "fixture_config_pre_post_equal": true,
+      "fixture_sha256": "6cf3aee2cdb154756209e9da543233b936a7de4c9e9bf1f928e740da63d73e42",
+      "raw_path": "cases/ARGBOUND245_hole_middle/raw/public-stdout.bin",
+      "raw_sha256": "168675858b9f3d19dbce84840cf79295150b42d49f5355350010f3aa0cc82f7b",
+      "returncode": 1,
+      "selected_lines": [
+        "BEGIN245 hole_middle",
+        "BEFORE245 N=1 R=701"
+      ]
+    }
+  },
+  "selected_checkpoints_equal": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ADDCOPYCHARA"
+  },
+  "target_outcome": "different_scoped",
+  "target_runtime_entered": true
+}

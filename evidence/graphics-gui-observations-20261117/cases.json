@@ -1,0 +1,445 @@
+{
+  "schema": "native-gui-finite-observations.v1",
+  "case_count": 9,
+  "cases": [
+    {
+      "case_id": "gui-cbgsetg-01",
+      "fixture": {
+        "path": "cases/gui-cbgsetg-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "17d477622ab31432f10ab0c9b02dbab81a290a872e4f63e56790d93dc2fc4ce4",
+        "size": 239
+      },
+      "config": {
+        "path": "cases/gui-cbgsetg-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-cbgsetg-01/native-history.bin",
+        "sha256": "04c383b6da52cb36fa91c867f4adb6ac28a4aac435c283296d0afd21f95ef989",
+        "size": 194
+      },
+      "selected_history_lines": [
+        "GUI_CBG_CREATE=1",
+        "GUI_CBG_CLEAR=1",
+        "GUI_CBG_SET=1",
+        "GUI_CBG_READY"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-cbgsetg-01/images/gui-client-crop.png",
+          "sha256": "2a3961e3f616fdbdc4f5cb0d0ec768fc9cfe54e756a70f14a6301039e3bf0461",
+          "size": 10291,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "64×48画像を生成・単色化しCBGSETGを呼んだ記録。黒い画面下端に細い赤色部分が見えるが、画像だけではその出所や全矩形を確定できない。",
+      "english_summary": "The log records creation, clearing and CBGSETG for a 64×48 image. A thin red area appears at the bottom; the crop alone does not establish its origin or the whole rectangle."
+    },
+    {
+      "case_id": "gui-sprite-paint-01",
+      "fixture": {
+        "path": "cases/gui-sprite-paint-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "7ec5f3fbb6180ea0b3f98d96b5e4c691c7ac6b7377cef585b1d5df773a5c4a24",
+        "size": 446
+      },
+      "config": {
+        "path": "cases/gui-sprite-paint-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-sprite-paint-01/native-history.bin",
+        "sha256": "29ede9f3a547c2977bea81d9afdfead006d64d4842aafd124a30f953bdd92716",
+        "size": 290
+      },
+      "selected_history_lines": [
+        "GUI_CREATE=1",
+        "GUI_CLEAR=1",
+        "GUI_BRUSH=1",
+        "GUI_FILL=1",
+        "GUI_SPRITE_CREATE=1",
+        "GUI_SPRITE_SHOW=1",
+        "GUI_SPRITE_READY"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-sprite-paint-01/images/gui-image-crop.png",
+          "sha256": "f190dbc729cf5f58ceefee1ac14e3a34d56e2dc04d97222a559786c3a9587298",
+          "size": 1618,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "画像作成・青の塗りつぶし・赤のブラシと矩形描画・sprite作成・背景への配置が各1。クロップには青い領域とその内側の赤い領域が見える。厳密な画面座標や全画素の比較ではない。",
+      "english_summary": "The image creation, blue clear, red brush and rectangle, sprite creation and background placement each returned 1. The crop shows a blue area with a red area inside; exact screen coordinates and all pixels are not established."
+    },
+    {
+      "case_id": "gui-background-clear-01",
+      "fixture": {
+        "path": "cases/gui-background-clear-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "cdd28f150feea3b06cef5d8c70fa1ed4f8f55a4fb5b4fda4a2f4c1914bb2f18d",
+        "size": 619
+      },
+      "config": {
+        "path": "cases/gui-background-clear-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-background-clear-01/native-history.bin",
+        "sha256": "ba0308ce7d07167a35a0a6afae8ad64239c3ce044c47b216d82ef5151cd306c1",
+        "size": 532
+      },
+      "selected_history_lines": [
+        "CREATE_RED=1",
+        "FILL_RED=1",
+        "CREATE_GREEN=1",
+        "FILL_GREEN=1",
+        "SPRITE_GREEN=1",
+        "SET_RED=1",
+        "SET_GREEN=1",
+        "GUI_PHASE_1",
+        "REMOVE_RED=1",
+        "GUI_PHASE_2",
+        "CLEAR_ALL=1",
+        "GUI_PHASE_3"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-background-clear-01/images/phase1-crop.png",
+          "sha256": "2927c6a2cac8906c933fa74a57809c788cedd0ef73c529730966b88fc6db3c44",
+          "size": 4101,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        },
+        {
+          "path": "cases/gui-background-clear-01/images/phase2-crop.png",
+          "sha256": "ab0f44f3b70775c8cbfd12357ab2a609898980ce418b00c5a53d94635b6104ae",
+          "size": 5192,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        },
+        {
+          "path": "cases/gui-background-clear-01/images/phase3-crop.png",
+          "sha256": "41f50d480d89578f5e7bf33a81308fbe238d5aea16debe470086a0e9ef9aebd5",
+          "size": 5040,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "履歴に二つの画像の設定、範囲除去、全消去が記録される。保存画像には赤緑、緑のみ、どちらも見えない領域がある。各画像に取得receiptはなく、画像名だけで取得phase・順序・PID・時刻を確定できない。",
+      "english_summary": "The history records two image placements, range removal and clearing. The saved crops show red and green, green only, and neither color. No individual capture receipts bind those images to phases, sequence, process or time."
+    },
+    {
+      "case_id": "gui-button-01",
+      "fixture": {
+        "path": "cases/gui-button-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "c5bf03a435d5518f4c8274e35fa044bd59ae97e2744ab4b7dc23ad2a8bc42af1",
+        "size": 603
+      },
+      "config": {
+        "path": "cases/gui-button-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-button-01/native-history.bin",
+        "sha256": "2f74652a11ec3bbcb6c585f93e06ffb2866c76ddd6bc359a495e932616eb19b5",
+        "size": 240
+      },
+      "selected_history_lines": [
+        "BUTTON_SPRITE_NORMAL=1",
+        "BUTTON_SPRITE_HOVER=1",
+        "BUTTON_MAP=1",
+        "BUTTON_SET=1",
+        "BUTTON_READY"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-button-01/images/button-hover-crop.png",
+          "sha256": "2bc2b5bd968edb8d599d1851b5e4a15889764fd1beb034a522e8e6c3284f24d2",
+          "size": 1473,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "ボタン素材とmap・ボタン設定の履歴があり、クロップはマゼンタ色の領域を示す。画像に取得receiptやカーソル／入力の記録はなく、名前だけでhover・クリック成立は確定できない。BUTTON_RESULTと後続行は履歴にない。",
+      "english_summary": "The history records the button sprites, map and button setup. The crop shows a magenta area, but lacks a capture receipt or recorded cursor/input; its filename does not prove hover or a click. BUTTON_RESULT and the following marker are absent."
+    },
+    {
+      "case_id": "gui-button-mousekey-01",
+      "fixture": {
+        "path": "cases/gui-button-mousekey-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "c9192c19a6c00f85e1b86bb5ab55d723ab2f55c7270a14b49c8f45f82c516389",
+        "size": 597
+      },
+      "config": {
+        "path": "cases/gui-button-mousekey-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-button-mousekey-01/native-history.bin",
+        "sha256": "e504055f579b85bcbed5cf53b05fb3c312dcb8a1c6fcc172a2a8be94a9ebe6d6",
+        "size": 342
+      },
+      "selected_history_lines": [
+        "BUTTON_MAP=1",
+        "BUTTON_SET=1",
+        "BUTTON_MOUSE_READY",
+        "BUTTON_EVENT=1,1048576,62,-176,7",
+        "BUTTON_MOUSE_AFTER"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-button-mousekey-01/images/button-click-crop.png",
+          "sha256": "e8a011ce3b10162122e4ceca1d850d7d0904d057f8a15fd914e6510af67bdb53",
+          "size": 2309,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "INPUTMOUSEKEYの保存結果はRESULT:0〜:4が1,1048576,62,-176,7で、後続markerにも到達。マゼンタの画像は取得receiptがなく、操作主体・時刻や画像との同時性は確定しない。通常INPUTの結果とは別。",
+      "english_summary": "The INPUTMOUSEKEY history records RESULT:0–:4 as 1,1048576,62,-176,7 and reaches the following marker. The magenta crop has no capture receipt; its simultaneity with a specific operation, actor or time is unconfirmed. Ordinary INPUT is separate."
+    },
+    {
+      "case_id": "gui-button-clear-01",
+      "fixture": {
+        "path": "cases/gui-button-clear-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "72a7102df748885b364dbe3f44deae0bfc95af53ebe11ca90857f922329f1d27",
+        "size": 531
+      },
+      "config": {
+        "path": "cases/gui-button-clear-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-button-clear-01/native-history.bin",
+        "sha256": "f394f073ff850a70065f1e8ee26eb5e830bd02419e26735103c62eca2c314043",
+        "size": 414
+      },
+      "selected_history_lines": [
+        "MAP_SET=1",
+        "BUTTON_SET=1",
+        "CLEAR_PHASE_1",
+        "MAP_REMOVE=1",
+        "CLEAR_PHASE_2",
+        "BUTTON_CLEAR=1",
+        "CLEAR_PHASE_3"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-button-clear-01/images/phase1-crop.png",
+          "sha256": "b028e51edab89cdd846fb653119ebb2605b08b69c05d46943dbecb67393ce3a1",
+          "size": 256,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        },
+        {
+          "path": "cases/gui-button-clear-01/images/phase2-crop.png",
+          "sha256": "50bfd74d3794b8cf7c95e716112f6b23b320fdb0999427d16740aacd2d1f59ee",
+          "size": 2824,
+          "capture": {
+            "state": "recorded",
+            "phase": "CLEAR_PHASE_2",
+            "utc_before": "2026-11-17T02:25:17.270Z",
+            "utc_after": "2026-11-17T02:25:18.498Z",
+            "scope": "Saved capture record; not a retrospective operating-system authentication or input-event timestamp."
+          }
+        },
+        {
+          "path": "cases/gui-button-clear-01/images/phase3-crop.png",
+          "sha256": "8658e92bc0b1a83b019a6a5ab1f73353889314c96cc553ba06e60d06d9ae1eea",
+          "size": 3080,
+          "capture": {
+            "state": "recorded",
+            "phase": "CLEAR_PHASE_3",
+            "utc_before": "2026-11-17T02:26:11.643Z",
+            "utc_after": "2026-11-17T02:26:12.824Z",
+            "scope": "Saved capture record; not a retrospective operating-system authentication or input-event timestamp."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "履歴はmap除去とbutton消去の返値1を記録。画像1・2に緑、画像3に緑は見えない。画像2・3にはphase・取得時刻幅・SHAの記録、画像1には個別receiptがない。別のEmuera名プロセスの一時目撃が報告され、由来と時間的重複は未確定。",
+      "english_summary": "The history records return 1 for map removal and button clearing. Green appears in crops 1 and 2, but not 3. Crops 2 and 3 have phase, capture-time bracket and SHA records; crop 1 lacks an individual receipt. Another Emuera-named process was reported briefly; its origin and temporal overlap are unconfirmed."
+    },
+    {
+      "case_id": "gui-sprite-position-01",
+      "fixture": {
+        "path": "cases/gui-sprite-position-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "d649e555316c543eae4fa0e41c9c8dbe968a453d1b3511ff429bf5d98338580a",
+        "size": 669
+      },
+      "config": {
+        "path": "cases/gui-sprite-position-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-sprite-position-01/native-history.bin",
+        "sha256": "6b4aa72dd2757513829b7871c835d44ccbac65b1c28eaf50b48304df23173c7d",
+        "size": 220
+      },
+      "selected_history_lines": [
+        "SPRITE_CREATE=1",
+        "POSITION_SET1=1 X=0 Y=0",
+        "POSITION_SHOW=1",
+        "POSITION_PHASE_1"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-sprite-position-01/images/phase1-crop.png",
+          "sha256": "e00bce995025a1ff25396363c3caa5d96bbb4023432ff5f18f0bd9e6b60b8191",
+          "size": 952,
+          "capture": {
+            "state": "recorded",
+            "phase": "POSITION_PHASE_1",
+            "utc_before": "2026-11-17T02:30:59.187Z",
+            "utc_after": "2026-11-17T02:31:05.962Z",
+            "scope": "Saved capture record; not a retrospective operating-system authentication or input-event timestamp."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "sprite初期位置(0,0)の記録と赤い領域。fixture内の後続SPRITEMOVE・再設定は履歴に到達markerがなく、移動後・位置変更後は未観測。",
+      "english_summary": "The history records sprite initial position (0,0), and the crop shows a red area. The later SPRITEMOVE and position reset in the fixture have no reached marker in the retained history; the later positions are unobserved."
+    },
+    {
+      "case_id": "gui-draw-copy-mask-01",
+      "fixture": {
+        "path": "cases/gui-draw-copy-mask-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "aa4dc203c8beb8a22f3226c4d8badc35829d3928a5af3a73f8e543382301c474",
+        "size": 838
+      },
+      "config": {
+        "path": "cases/gui-draw-copy-mask-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-draw-copy-mask-01/native-history.bin",
+        "sha256": "eaebcfe230ae94256b1f7b794bba8633392c48ed38deb90aeac29c184e889a7a",
+        "size": 358
+      },
+      "selected_history_lines": [
+        "DRAW_G=1",
+        "DRAW_SPRITE_CREATE=1",
+        "DRAW_SPRITE=1",
+        "DRAW_MASK=1",
+        "SET_COLOR=1",
+        "PIXELS=4294901760,4278255360,4278190335,4294967295",
+        "DRAW_SHOW=1",
+        "DRAW_READY"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-draw-copy-mask-01/images/draw-crop.png",
+          "sha256": "3d72c40a51bbe60bd4f5839ab6b3885074126b9fe602cb665d569cf0877596df",
+          "size": 1856,
+          "capture": {
+            "state": "recorded",
+            "phase": "DRAW_READY",
+            "utc_before": "2026-11-17T02:28:34.240Z",
+            "utc_after": "2026-11-17T02:28:35.448Z",
+            "scope": "Saved capture record; not a retrospective operating-system authentication or input-event timestamp."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "GDRAWG、GDRAWSPRITE、白マスクのGDRAWGWITHMASKとGSETCOLORは各1。履歴の4点は画像内部値で、縮小クロップの赤・緑・青領域とは観測軸が別。白い1点、全画素、透明度境界は画面から確定しない。",
+      "english_summary": "GDRAWG, GDRAWSPRITE, GDRAWGWITHMASK with a white mask, and GSETCOLOR each returned 1. The four values in the history are internal image samples, distinct from the red, green and blue visible regions in the reduced crop. The white point, all pixels and transparency boundaries are not established by the crop."
+    },
+    {
+      "case_id": "gui-animation-01",
+      "fixture": {
+        "path": "cases/gui-animation-01/ERB/SEARCHBOUND01.ERB",
+        "sha256": "05ed8eb8fffa189a9478cf9bf42ba0ff3c2b81565d2ae846ff51fb5c597b9785",
+        "size": 530
+      },
+      "config": {
+        "path": "cases/gui-animation-01/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "native_history": {
+        "path": "cases/gui-animation-01/native-history.bin",
+        "sha256": "38699884cd3262c9832c87ad9ef4bd9e5751affe382a6794b4540536e511161f",
+        "size": 242
+      },
+      "selected_history_lines": [
+        "ANIM_CREATE=1",
+        "FRAME_ONE=1",
+        "FRAME_TWO=1",
+        "TIMER_ENABLE=1",
+        "ANIM_SHOW=1",
+        "ANIMATION_READY"
+      ],
+      "images": [
+        {
+          "path": "cases/gui-animation-01/images/frame-a-crop.png",
+          "sha256": "c32d19a01aec67cf64ff70fd00562b688aba6a8467a0e0d1731ac4e75aa010d1",
+          "size": 2434,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        },
+        {
+          "path": "cases/gui-animation-01/images/frame-b-crop.png",
+          "sha256": "c32d19a01aec67cf64ff70fd00562b688aba6a8467a0e0d1731ac4e75aa010d1",
+          "size": 2434,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        },
+        {
+          "path": "cases/gui-animation-01/images/frame-c-crop.png",
+          "sha256": "1cb27f21e86f238ff2480685e06ec8500305caad15c3692df33ce055de63bb46",
+          "size": 2433,
+          "capture": {
+            "state": "not_recorded",
+            "scope": "No per-image capture receipt; source, PID, time and phase are not established by filename."
+          }
+        }
+      ],
+      "natural_exit": "not_observed",
+      "py_comparison": "not_tested_in_this_run",
+      "japanese_summary": "アニメ作成・2 frame追加・timer・背景設定の返値は1。保存画像にはシアンと黄色の領域があるが、個別receiptはなく、同一processでの連続性・切替順序・周期・正確な撮影時刻は画像だけでは確定しない。",
+      "english_summary": "The history records return 1 for animation creation, two added frames, timer and placement. Saved crops show cyan and yellow areas but have no individual receipts; continuity in one process, switching order, period and exact capture times are not established by the images."
+    }
+  ]
+}

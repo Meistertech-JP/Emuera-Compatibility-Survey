@@ -1,0 +1,63 @@
+{
+  "schema": "wait-release-observations-v1",
+  "native_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "records": [
+    {
+      "command": "PRINTVKW",
+      "input": "empty Return",
+      "argument": 42,
+      "selected_markers": [
+        "BEFORE_PRINTVKW",
+        "42",
+        "AFTER_PRINTVKW",
+        "STATE_PRINTVKW A=0 R=701 RS=[SENTINEL]"
+      ],
+      "history_sha256": "76b74ed09eef01b6ea6b062537224ae8e0e0e7a9ce50c0578723b3f6ac4c59df",
+      "native": {
+        "before_crop": "PRINTVKW/before.bmp",
+        "after_crop": "PRINTVKW/after.bmp",
+        "history": "PRINTVKW/native-history.bin",
+        "natural_exit": "not_observed_process_terminated_after_observation"
+      },
+      "py": {
+        "history": "PRINTVKW/py-history.bin",
+        "returncode": 0,
+        "stdin": "one_empty_line_at_start"
+      },
+      "limitations": [
+        "one_argument_and_input_condition",
+        "gui_pixels_not_compared_between_engines",
+        "input_timing_not_compared"
+      ]
+    },
+    {
+      "command": "PRINTVDW",
+      "input": "empty Return",
+      "argument": 42,
+      "selected_markers": [
+        "BEFORE_PRINTVDW",
+        "42",
+        "AFTER_PRINTVDW",
+        "STATE_PRINTVDW A=0 R=701 RS=[SENTINEL]"
+      ],
+      "history_sha256": "c65305e023f4ba136a22c8b7b5bb3856256e6cf8df63b66cd9be9152e500d267",
+      "native": {
+        "before_crop": "PRINTVDW/before.bmp",
+        "after_crop": "PRINTVDW/after.bmp",
+        "history": "PRINTVDW/native-history.bin",
+        "natural_exit": "not_observed_process_terminated_after_observation"
+      },
+      "py": {
+        "history": "PRINTVDW/py-history.bin",
+        "returncode": 0,
+        "stdin": "one_empty_line_at_start"
+      },
+      "limitations": [
+        "one_argument_and_input_condition",
+        "gui_pixels_not_compared_between_engines",
+        "input_timing_not_compared"
+      ]
+    }
+  ]
+}

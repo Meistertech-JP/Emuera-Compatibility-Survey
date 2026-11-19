@@ -1,0 +1,267 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>GameProc/LabelDictionary.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>GameProc/LabelDictionary.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/LabelDictionary.cs</p><p>SHA-256 (original member bytes): ad6317ad519202a5aa0edf8f009b1d2e0c375f3bd4ac5b8ec015a89a04358489</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using System;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System.Collections.Generic;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Text;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using System.Windows.Forms;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> using MinorShift.Emuera.Sub;</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> using MinorShift.Emuera.GameData;</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> using MinorShift.Emuera.GameData.Variable;</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> </span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> namespace MinorShift.Emuera.GameProc</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> {</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> 	//1.713 LogicalLine.csから分割</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> 	/// &lt;summary&gt;</span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> 	/// ラベルのジャンプ先の辞書。Erbファイル読み込み時に作成</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> 	/// &lt;/summary&gt;</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> 	internal sealed class LabelDictionary</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> 	{</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> 		public LabelDictionary()</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 		{</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> 			Initialized = false;</span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> 		}</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 		/// &lt;summary&gt;</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 		/// 本体。全てのFunctionLabelLineを記録</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 		/// &lt;/summary&gt;</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> 		Dictionary&lt;string, List&lt;FunctionLabelLine&gt;&gt; labelAtDic = new Dictionary&lt;string, List&lt;FunctionLabelLine&gt;&gt;();</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a> 		List&lt;FunctionLabelLine&gt; invalidList = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 		List&lt;GotoLabelLine&gt; labelDollarList = new List&lt;GotoLabelLine&gt;();</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 		int count;</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> </span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		Dictionary&lt;string, int&gt; loadedFileDic = new Dictionary&lt;string, int&gt;();</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 		int currentFileCount = 0;</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 		int totalFileCount = 0;</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> </span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> 		public int Count { get { return count; } }</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> </span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 		/// &lt;summary&gt;</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> 		/// これがfalseである間は式中関数は呼べない</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> 		/// （つまり関数宣言の初期値として式中関数は使えない）</span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 		/// &lt;/summary&gt;</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 		public bool Initialized { get; set; }</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 		#region Initialized 前用</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 		public FunctionLabelLine GetSameNameLabel(FunctionLabelLine point)</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 		{</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 			string id = point.LabelName;</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 			if (!labelAtDic.ContainsKey(id))</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> 				return null;</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a> 			if (point.IsError)</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a> 				return null;</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> 			List&lt;FunctionLabelLine&gt; labelList = labelAtDic[id];</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> 			if (labelList.Count &lt;= 1)</span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 				return null;</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 			return labelList[0];</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 		}</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a> </span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a> </span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> 		Dictionary&lt;string, List&lt;FunctionLabelLine&gt;[]&gt; eventLabelDic = new Dictionary&lt;string, List&lt;FunctionLabelLine&gt;[]&gt;();</span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> 		Dictionary&lt;string, FunctionLabelLine&gt; noneventLabelDic = new Dictionary&lt;string, FunctionLabelLine&gt;();</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a> </span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> 		public void SortLabels()</span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 		{</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 			foreach (KeyValuePair&lt;string, List&lt;FunctionLabelLine&gt;[]&gt; pair in eventLabelDic)</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 				foreach (List&lt;FunctionLabelLine&gt; list in pair.Value)</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 					list.Clear();</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 			eventLabelDic.Clear();</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 			noneventLabelDic.Clear();</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 			foreach (KeyValuePair&lt;string, List&lt;FunctionLabelLine&gt;&gt; pair in labelAtDic)</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 			{</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> 				string key = pair.Key;</span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 				List&lt;FunctionLabelLine&gt; list = pair.Value;</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 				if(list.Count &gt; 1)</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a> 					list.Sort();</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a> 				if (!list[0].IsEvent)</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 				{</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> 					noneventLabelDic.Add(key, list[0]);</span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a>                     GlobalStatic.IdentifierDictionary.resizeLocalVars(&quot;ARG&quot;, list[0].LabelName, list[0].ArgLength);</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a>                     GlobalStatic.IdentifierDictionary.resizeLocalVars(&quot;ARGS&quot;, list[0].LabelName, list[0].ArgsLength);</span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a> 					continue;</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a> 				}</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 				//1810alpha010 オプションによりイベント関数をイベント関数でないかのように呼び出すことを許可</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a> 				//eramaker仕様 - #PRI #LATER #SINGLE等を無視し、最先に定義された関数1つのみを呼び出す</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a> 				if (Config.CompatiCallEvent)</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a> 					noneventLabelDic.Add(key, list[0]);</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a> 				List&lt;FunctionLabelLine&gt;[] eventLabels = new List&lt;FunctionLabelLine&gt;[4];</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a>                 List&lt;FunctionLabelLine&gt; onlylist = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 				List&lt;FunctionLabelLine&gt; prilist = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a> 				List&lt;FunctionLabelLine&gt; normallist = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a> 				List&lt;FunctionLabelLine&gt; laterlist = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a>                 int localMax = 0;</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a>                 int localsMax = 0;</span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a> 				for (int i = 0; i &lt; list.Count; i++)</span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a> 				{</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a>                     if (list[i].LocalLength &gt; localMax)</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a>                         localMax = list[i].LocalLength;</span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a>                     if (list[i].LocalsLength &gt; localsMax)</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a>                         localsMax = list[i].LocalsLength;</span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a>                     if (list[i].IsOnly)</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a>                         onlylist.Add(list[i]);</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 					if (list[i].IsPri)</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 						prilist.Add(list[i]);</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 					if (list[i].IsLater)</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> 						laterlist.Add(list[i]);//#PRIかつ#LATERなら二重に登録する。eramakerの仕様</span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> 					if ((!list[i].IsPri) &amp;&amp; (!list[i].IsLater))</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> 						normallist.Add(list[i]);</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 				}</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a>                 if (localMax &lt; GlobalStatic.IdentifierDictionary.getLocalDefaultSize(&quot;LOCAL&quot;))</span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a>                     localMax = GlobalStatic.IdentifierDictionary.getLocalDefaultSize(&quot;LOCAL&quot;);</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a>                 if (localsMax &lt; GlobalStatic.IdentifierDictionary.getLocalDefaultSize(&quot;LOCALS&quot;))</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a>                     localsMax = GlobalStatic.IdentifierDictionary.getLocalDefaultSize(&quot;LOCALS&quot;);</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a>                 eventLabels[0] = onlylist;</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a> 				eventLabels[1] = prilist;</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a> 				eventLabels[2] = normallist;</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a> 				eventLabels[3] = laterlist;</span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a>                 for (int i = 0; i &lt; 4; i++)</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a>                 {</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a>                     for (int j = 0; j &lt; eventLabels[i].Count; j++)</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a>                     {</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a>                         eventLabels[i][j].LocalLength = localMax;</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a>                         eventLabels[i][j].LocalsLength = localsMax;</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a>                     }</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a>                 }</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a>                 eventLabelDic.Add(key, eventLabels);</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a> 			}</span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a> 		}</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a> </span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a> 		public void RemoveAll()</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a> 		{</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a> 			Initialized = false;</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a> 			count = 0;</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> 			foreach (KeyValuePair&lt;string, List&lt;FunctionLabelLine&gt;[]&gt; pair in eventLabelDic)</span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 				foreach (List&lt;FunctionLabelLine&gt; list in pair.Value)</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 					list.Clear();</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a> 			eventLabelDic.Clear();</span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a> 			noneventLabelDic.Clear();</span>
+<span id="L133"><a href="#L133" aria-label="line 133">  133</a> </span>
+<span id="L134"><a href="#L134" aria-label="line 134">  134</a> 			foreach (KeyValuePair&lt;string, List&lt;FunctionLabelLine&gt;&gt; pair in labelAtDic)</span>
+<span id="L135"><a href="#L135" aria-label="line 135">  135</a> 				pair.Value.Clear();</span>
+<span id="L136"><a href="#L136" aria-label="line 136">  136</a> 			labelAtDic.Clear();</span>
+<span id="L137"><a href="#L137" aria-label="line 137">  137</a> 			labelDollarList.Clear();</span>
+<span id="L138"><a href="#L138" aria-label="line 138">  138</a> 			loadedFileDic.Clear();</span>
+<span id="L139"><a href="#L139" aria-label="line 139">  139</a> 			invalidList.Clear();</span>
+<span id="L140"><a href="#L140" aria-label="line 140">  140</a> 			currentFileCount = 0;</span>
+<span id="L141"><a href="#L141" aria-label="line 141">  141</a> 			totalFileCount = 0;</span>
+<span id="L142"><a href="#L142" aria-label="line 142">  142</a> 		}</span>
+<span id="L143"><a href="#L143" aria-label="line 143">  143</a> </span>
+<span id="L144"><a href="#L144" aria-label="line 144">  144</a> 		public void RemoveLabelWithPath(string fname)</span>
+<span id="L145"><a href="#L145" aria-label="line 145">  145</a> 		{</span>
+<span id="L146"><a href="#L146" aria-label="line 146">  146</a> 			List&lt;FunctionLabelLine&gt; labelLines;</span>
+<span id="L147"><a href="#L147" aria-label="line 147">  147</a> 			List&lt;FunctionLabelLine&gt; removeLine = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L148"><a href="#L148" aria-label="line 148">  148</a> 			List&lt;string&gt; removeKey = new List&lt;string&gt;();</span>
+<span id="L149"><a href="#L149" aria-label="line 149">  149</a> 			foreach (KeyValuePair&lt;string, List&lt;FunctionLabelLine&gt;&gt; pair in labelAtDic)</span>
+<span id="L150"><a href="#L150" aria-label="line 150">  150</a> 			{</span>
+<span id="L151"><a href="#L151" aria-label="line 151">  151</a> 				string key = pair.Key;</span>
+<span id="L152"><a href="#L152" aria-label="line 152">  152</a> 				labelLines = pair.Value;</span>
+<span id="L153"><a href="#L153" aria-label="line 153">  153</a> 				foreach (FunctionLabelLine labelLine in labelLines)</span>
+<span id="L154"><a href="#L154" aria-label="line 154">  154</a> 				{</span>
+<span id="L155"><a href="#L155" aria-label="line 155">  155</a> 					if (string.Equals(labelLine.Position.Filename, fname, Config.SCIgnoreCase))</span>
+<span id="L156"><a href="#L156" aria-label="line 156">  156</a> 						removeLine.Add(labelLine);</span>
+<span id="L157"><a href="#L157" aria-label="line 157">  157</a> 				}</span>
+<span id="L158"><a href="#L158" aria-label="line 158">  158</a> 				foreach (FunctionLabelLine remove in removeLine)</span>
+<span id="L159"><a href="#L159" aria-label="line 159">  159</a> 				{</span>
+<span id="L160"><a href="#L160" aria-label="line 160">  160</a> 					labelLines.Remove(remove);</span>
+<span id="L161"><a href="#L161" aria-label="line 161">  161</a> 					if (labelLines.Count == 0)</span>
+<span id="L162"><a href="#L162" aria-label="line 162">  162</a> 						removeKey.Add(key);</span>
+<span id="L163"><a href="#L163" aria-label="line 163">  163</a> 				}</span>
+<span id="L164"><a href="#L164" aria-label="line 164">  164</a> 				removeLine.Clear();</span>
+<span id="L165"><a href="#L165" aria-label="line 165">  165</a> 			}</span>
+<span id="L166"><a href="#L166" aria-label="line 166">  166</a> 			foreach (string rKey in removeKey)</span>
+<span id="L167"><a href="#L167" aria-label="line 167">  167</a> 			{</span>
+<span id="L168"><a href="#L168" aria-label="line 168">  168</a> 				labelAtDic.Remove(rKey);</span>
+<span id="L169"><a href="#L169" aria-label="line 169">  169</a> 			}</span>
+<span id="L170"><a href="#L170" aria-label="line 170">  170</a> 			for (int i = 0; i &lt; invalidList.Count; i++)</span>
+<span id="L171"><a href="#L171" aria-label="line 171">  171</a> 			{</span>
+<span id="L172"><a href="#L172" aria-label="line 172">  172</a> 				if (string.Equals(invalidList[i].Position.Filename, fname, Config.SCIgnoreCase))</span>
+<span id="L173"><a href="#L173" aria-label="line 173">  173</a> 				{</span>
+<span id="L174"><a href="#L174" aria-label="line 174">  174</a> 					invalidList.RemoveAt(i);</span>
+<span id="L175"><a href="#L175" aria-label="line 175">  175</a> 					i--;</span>
+<span id="L176"><a href="#L176" aria-label="line 176">  176</a> 				}</span>
+<span id="L177"><a href="#L177" aria-label="line 177">  177</a> 			}</span>
+<span id="L178"><a href="#L178" aria-label="line 178">  178</a> 		}</span>
+<span id="L179"><a href="#L179" aria-label="line 179">  179</a> </span>
+<span id="L180"><a href="#L180" aria-label="line 180">  180</a> </span>
+<span id="L181"><a href="#L181" aria-label="line 181">  181</a> 		public void AddFilename(string filename)</span>
+<span id="L182"><a href="#L182" aria-label="line 182">  182</a> 		{</span>
+<span id="L183"><a href="#L183" aria-label="line 183">  183</a>             if (loadedFileDic.TryGetValue(filename, out int curCount))</span>
+<span id="L184"><a href="#L184" aria-label="line 184">  184</a>             {</span>
+<span id="L185"><a href="#L185" aria-label="line 185">  185</a>                 currentFileCount = curCount;</span>
+<span id="L186"><a href="#L186" aria-label="line 186">  186</a>                 RemoveLabelWithPath(filename);</span>
+<span id="L187"><a href="#L187" aria-label="line 187">  187</a>                 return;</span>
+<span id="L188"><a href="#L188" aria-label="line 188">  188</a>             }</span>
+<span id="L189"><a href="#L189" aria-label="line 189">  189</a>             totalFileCount++;</span>
+<span id="L190"><a href="#L190" aria-label="line 190">  190</a> 			currentFileCount = totalFileCount;</span>
+<span id="L191"><a href="#L191" aria-label="line 191">  191</a> 			loadedFileDic.Add(filename, totalFileCount);</span>
+<span id="L192"><a href="#L192" aria-label="line 192">  192</a> 		}</span>
+<span id="L193"><a href="#L193" aria-label="line 193">  193</a> 		public void AddLabel(FunctionLabelLine point)</span>
+<span id="L194"><a href="#L194" aria-label="line 194">  194</a> 		{</span>
+<span id="L195"><a href="#L195" aria-label="line 195">  195</a> 			point.Index = count;</span>
+<span id="L196"><a href="#L196" aria-label="line 196">  196</a> 			point.FileIndex = currentFileCount;</span>
+<span id="L197"><a href="#L197" aria-label="line 197">  197</a> 			count++;</span>
+<span id="L198"><a href="#L198" aria-label="line 198">  198</a> 			string id = point.LabelName;</span>
+<span id="L199"><a href="#L199" aria-label="line 199">  199</a> 			if (labelAtDic.ContainsKey(id))</span>
+<span id="L200"><a href="#L200" aria-label="line 200">  200</a> 			{</span>
+<span id="L201"><a href="#L201" aria-label="line 201">  201</a> 				labelAtDic[id].Add(point);</span>
+<span id="L202"><a href="#L202" aria-label="line 202">  202</a> 			}</span>
+<span id="L203"><a href="#L203" aria-label="line 203">  203</a> 			else</span>
+<span id="L204"><a href="#L204" aria-label="line 204">  204</a> 			{</span>
+<span id="L205"><a href="#L205" aria-label="line 205">  205</a> 				List&lt;FunctionLabelLine&gt; labelList = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L206"><a href="#L206" aria-label="line 206">  206</a> 				labelList.Add(point);</span>
+<span id="L207"><a href="#L207" aria-label="line 207">  207</a> 				labelAtDic.Add(id, labelList);</span>
+<span id="L208"><a href="#L208" aria-label="line 208">  208</a> 			}</span>
+<span id="L209"><a href="#L209" aria-label="line 209">  209</a> 		}</span>
+<span id="L210"><a href="#L210" aria-label="line 210">  210</a> </span>
+<span id="L211"><a href="#L211" aria-label="line 211">  211</a> 		public bool AddLabelDollar(GotoLabelLine point)</span>
+<span id="L212"><a href="#L212" aria-label="line 212">  212</a> 		{</span>
+<span id="L213"><a href="#L213" aria-label="line 213">  213</a> 			string id = point.LabelName;</span>
+<span id="L214"><a href="#L214" aria-label="line 214">  214</a> 			foreach (GotoLabelLine label in labelDollarList)</span>
+<span id="L215"><a href="#L215" aria-label="line 215">  215</a> 			{</span>
+<span id="L216"><a href="#L216" aria-label="line 216">  216</a> 				if (label.LabelName == id &amp;&amp; label.ParentLabelLine == point.ParentLabelLine)</span>
+<span id="L217"><a href="#L217" aria-label="line 217">  217</a> 					return false;</span>
+<span id="L218"><a href="#L218" aria-label="line 218">  218</a> 			}</span>
+<span id="L219"><a href="#L219" aria-label="line 219">  219</a> 			labelDollarList.Add(point);</span>
+<span id="L220"><a href="#L220" aria-label="line 220">  220</a> 			return true;</span>
+<span id="L221"><a href="#L221" aria-label="line 221">  221</a> 		}</span>
+<span id="L222"><a href="#L222" aria-label="line 222">  222</a> </span>
+<span id="L223"><a href="#L223" aria-label="line 223">  223</a> 		#endregion</span>
+<span id="L224"><a href="#L224" aria-label="line 224">  224</a> </span>
+<span id="L225"><a href="#L225" aria-label="line 225">  225</a> 		</span>
+<span id="L226"><a href="#L226" aria-label="line 226">  226</a> 		public List&lt;FunctionLabelLine&gt;[] GetEventLabels(string key)</span>
+<span id="L227"><a href="#L227" aria-label="line 227">  227</a> 		{</span>
+<span id="L228"><a href="#L228" aria-label="line 228">  228</a>             if (eventLabelDic.TryGetValue(key, out List&lt;FunctionLabelLine&gt;[] ret))</span>
+<span id="L229"><a href="#L229" aria-label="line 229">  229</a>                 return ret;</span>
+<span id="L230"><a href="#L230" aria-label="line 230">  230</a>             else</span>
+<span id="L231"><a href="#L231" aria-label="line 231">  231</a>                 return null;</span>
+<span id="L232"><a href="#L232" aria-label="line 232">  232</a>         }</span>
+<span id="L233"><a href="#L233" aria-label="line 233">  233</a> </span>
+<span id="L234"><a href="#L234" aria-label="line 234">  234</a> 		public FunctionLabelLine GetNonEventLabel(string key)</span>
+<span id="L235"><a href="#L235" aria-label="line 235">  235</a> 		{</span>
+<span id="L236"><a href="#L236" aria-label="line 236">  236</a>             if (noneventLabelDic.TryGetValue(key, out FunctionLabelLine ret))</span>
+<span id="L237"><a href="#L237" aria-label="line 237">  237</a>                 return ret;</span>
+<span id="L238"><a href="#L238" aria-label="line 238">  238</a>             else</span>
+<span id="L239"><a href="#L239" aria-label="line 239">  239</a>                 return null;</span>
+<span id="L240"><a href="#L240" aria-label="line 240">  240</a>         }</span>
+<span id="L241"><a href="#L241" aria-label="line 241">  241</a> </span>
+<span id="L242"><a href="#L242" aria-label="line 242">  242</a> 		public List&lt;FunctionLabelLine&gt; GetAllLabels(bool getInvalidList)</span>
+<span id="L243"><a href="#L243" aria-label="line 243">  243</a> 		{</span>
+<span id="L244"><a href="#L244" aria-label="line 244">  244</a> 			List&lt;FunctionLabelLine&gt; ret = new List&lt;FunctionLabelLine&gt;();</span>
+<span id="L245"><a href="#L245" aria-label="line 245">  245</a> 			foreach (List&lt;FunctionLabelLine&gt; list in labelAtDic.Values)</span>
+<span id="L246"><a href="#L246" aria-label="line 246">  246</a> 				ret.AddRange(list);</span>
+<span id="L247"><a href="#L247" aria-label="line 247">  247</a> 			if(getInvalidList)</span>
+<span id="L248"><a href="#L248" aria-label="line 248">  248</a> 				ret.AddRange(invalidList);</span>
+<span id="L249"><a href="#L249" aria-label="line 249">  249</a> 			return ret;</span>
+<span id="L250"><a href="#L250" aria-label="line 250">  250</a> 		}</span>
+<span id="L251"><a href="#L251" aria-label="line 251">  251</a> </span>
+<span id="L252"><a href="#L252" aria-label="line 252">  252</a> 		public GotoLabelLine GetLabelDollar(string key, FunctionLabelLine labelAtLine)</span>
+<span id="L253"><a href="#L253" aria-label="line 253">  253</a> 		{</span>
+<span id="L254"><a href="#L254" aria-label="line 254">  254</a> 			foreach (GotoLabelLine label in labelDollarList)</span>
+<span id="L255"><a href="#L255" aria-label="line 255">  255</a> 			{</span>
+<span id="L256"><a href="#L256" aria-label="line 256">  256</a> 				if ((label.LabelName == key) &amp;&amp; (label.ParentLabelLine == labelAtLine))</span>
+<span id="L257"><a href="#L257" aria-label="line 257">  257</a> 					return label;</span>
+<span id="L258"><a href="#L258" aria-label="line 258">  258</a> 			}</span>
+<span id="L259"><a href="#L259" aria-label="line 259">  259</a> 			return null;</span>
+<span id="L260"><a href="#L260" aria-label="line 260">  260</a> 		}</span>
+<span id="L261"><a href="#L261" aria-label="line 261">  261</a> 		</span>
+<span id="L262"><a href="#L262" aria-label="line 262">  262</a> 		internal void AddInvalidLabel(FunctionLabelLine invalidLabelLine)</span>
+<span id="L263"><a href="#L263" aria-label="line 263">  263</a> 		{</span>
+<span id="L264"><a href="#L264" aria-label="line 264">  264</a> 			invalidList.Add(invalidLabelLine);</span>
+<span id="L265"><a href="#L265" aria-label="line 265">  265</a> 		}</span>
+<span id="L266"><a href="#L266" aria-label="line 266">  266</a>     }</span>
+<span id="L267"><a href="#L267" aria-label="line 267">  267</a> }</span></pre></html>

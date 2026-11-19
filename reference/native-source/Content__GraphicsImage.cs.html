@@ -1,0 +1,515 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Content/GraphicsImage.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>Content/GraphicsImage.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/Content/GraphicsImage.cs</p><p>SHA-256 (original member bytes): b91126ec163ef355fd22b279f5fc706f1e9c70b7322a3cdfa0f3967afb3d4c57</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using MinorShift._Library;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Collections.Generic;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using System.Drawing;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> using System.Drawing.Imaging;</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> using System.Linq;</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> using System.Runtime.InteropServices;</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> using System.Text;</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> using System.Threading.Tasks;</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> </span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> namespace MinorShift.Emuera.Content</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> {</span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> 	internal sealed class GraphicsImage : AbstractImage</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> 	{</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> 		//public Bitmap Bitmap;</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> 		//public IntPtr GDIhDC { get; protected set; }</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> 		//protected Graphics g;</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 		//protected IntPtr hBitmap;</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> 		//protected IntPtr hDefaultImg;</span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> </span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 		public GraphicsImage(int id)</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 		{</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 			ID = id;</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> 			g = null;</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a> 			Bitmap = null;</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 			//created = false;</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 			//locked = false;</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 		}</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		public readonly int ID;</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 		Size size;</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 		Brush brush = null;</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> 		Pen pen = null;</span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> 		Font font = null;</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> 		//Bitmap b;</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 		//Graphics g;</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> </span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> </span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 		////bool created;</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 		////bool locked;</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 		//public void LockGraphics()</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 		//{</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 		//	//if (locked)</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 		//	//	return;</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 		//	//g = Graphics.FromImage(b);</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> 		//	//locked = true;</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a> 		//}</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a> 		//public void UnlockGraphics()</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> 		//{</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> 		//	//if (!locked)</span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 		//	//	return;</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 		//	//g.Dispose();</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 		//	//g = null;</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a> 		//	//locked = false;</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a> 		//}</span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> </span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> #region Bitmap書き込み・作成</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a> </span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> 		/// &lt;summary&gt;</span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 		/// GCREATE(int ID, int width, int height)</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 		/// Graphicsの基礎となるBitmapを作成する。エラーチェックは呼び出し元でのみ行う</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 		/// &lt;/summary&gt;</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 		public void GCreate(int x, int y, bool useGDI)</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 		{</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 			if (useGDI)</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 				throw new NotImplementedException();</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 			this.GDispose();</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> 			Bitmap = new Bitmap(x, y, System.Drawing.Imaging.PixelFormat.Format32bppArgb);</span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 			size = new Size(x, y);</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 			g = Graphics.FromImage(Bitmap);</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a>             //こうしないとbmpファイルの拡縮が綺麗に出ない</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a>             g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.Half;</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 			g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bicubic;</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> </span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a>         }</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a> </span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a>         internal void GCreateFromF(Bitmap bmp, bool useGDI)</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a> 		{</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 			if (useGDI)</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a> 				throw new NotImplementedException();</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a> 			this.GDispose();</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a> 			Bitmap = new Bitmap(bmp.Width, bmp.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb);</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a> 			size = new Size(bmp.Width, bmp.Height);</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a> 			g = Graphics.FromImage(Bitmap);</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 			g.DrawImage(bmp, 0, 0, bmp.Width, bmp.Height);</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a>             //こうしないとbmpファイルの拡縮が綺麗に出ない</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a>             g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.Half;</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a>             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Bicubic;</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a>         }</span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a> </span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a>         /// &lt;summary&gt;</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a>         /// GCLEAR(int ID, int cARGB)</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a>         /// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a>         /// &lt;/summary&gt;</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a>         public void GClear(Color c)</span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a> 		{</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a> 			if (g == null)</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 				throw new NullReferenceException();</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 			g.Clear(c);</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 		}</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> </span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> 		/// &lt;summary&gt;</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> 		/// GDRAWTEXTGDRAWTEXT int ID, str text, int x, int y</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a> 		/// &lt;/summary&gt;</span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a> 		public void GDrawString(string text, int x, int y)</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a> 		{</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a> 			if (g == null)</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a> 				throw new NullReferenceException();</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a> 			Font usingFont = font;</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a> 			if (usingFont == null)</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a> 				usingFont = Config.Font;</span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a> 			if (brush != null)</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a> 			{</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a> 				g.DrawString(text, usingFont, brush, x, y);</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a> 			}</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a> 			else</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a> 			{</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a> 				using (SolidBrush b = new SolidBrush(Config.ForeColor))</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a> 					g.DrawString(text, usingFont, b, x, y);</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a> 			}</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a> 		}</span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a> 		/// &lt;summary&gt;</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a> 		/// GDRAWTEXTGDRAWTEXT int ID, str text, int x, int y, int width, int height</span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a> 		/// &lt;/summary&gt;</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a> 		public void GDrawString(string text, int x, int y, int width, int height)</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a> 		{</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> 			if (g == null)</span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 				throw new NullReferenceException();</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 			Font usingFont = font;</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a> 			if (usingFont == null)</span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a> 				usingFont = Config.Font;</span>
+<span id="L133"><a href="#L133" aria-label="line 133">  133</a> 			if (brush != null)</span>
+<span id="L134"><a href="#L134" aria-label="line 134">  134</a> 			{</span>
+<span id="L135"><a href="#L135" aria-label="line 135">  135</a> 				g.DrawString(text, usingFont, brush, new RectangleF(x,y,width,height));</span>
+<span id="L136"><a href="#L136" aria-label="line 136">  136</a> 			}</span>
+<span id="L137"><a href="#L137" aria-label="line 137">  137</a> 			else</span>
+<span id="L138"><a href="#L138" aria-label="line 138">  138</a> 			{</span>
+<span id="L139"><a href="#L139" aria-label="line 139">  139</a> 				using (SolidBrush b = new SolidBrush(Config.ForeColor))</span>
+<span id="L140"><a href="#L140" aria-label="line 140">  140</a> 					g.DrawString(text, usingFont, b, new RectangleF(x, y, width, height));</span>
+<span id="L141"><a href="#L141" aria-label="line 141">  141</a> 			}</span>
+<span id="L142"><a href="#L142" aria-label="line 142">  142</a> 		}</span>
+<span id="L143"><a href="#L143" aria-label="line 143">  143</a> </span>
+<span id="L144"><a href="#L144" aria-label="line 144">  144</a> 		/// &lt;summary&gt;</span>
+<span id="L145"><a href="#L145" aria-label="line 145">  145</a> 		/// GDRAWRECTANGLE(int ID, int x, int y, int width, int height)</span>
+<span id="L146"><a href="#L146" aria-label="line 146">  146</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L147"><a href="#L147" aria-label="line 147">  147</a> 		/// &lt;/summary&gt;</span>
+<span id="L148"><a href="#L148" aria-label="line 148">  148</a> 		public void GDrawRectangle(Rectangle rect)</span>
+<span id="L149"><a href="#L149" aria-label="line 149">  149</a> 		{</span>
+<span id="L150"><a href="#L150" aria-label="line 150">  150</a> 			if (g == null)</span>
+<span id="L151"><a href="#L151" aria-label="line 151">  151</a> 				throw new NullReferenceException();</span>
+<span id="L152"><a href="#L152" aria-label="line 152">  152</a> 			if (pen != null)</span>
+<span id="L153"><a href="#L153" aria-label="line 153">  153</a> 			{</span>
+<span id="L154"><a href="#L154" aria-label="line 154">  154</a> 				g.DrawRectangle(pen, rect);</span>
+<span id="L155"><a href="#L155" aria-label="line 155">  155</a> 			}</span>
+<span id="L156"><a href="#L156" aria-label="line 156">  156</a> 			else</span>
+<span id="L157"><a href="#L157" aria-label="line 157">  157</a> 			{</span>
+<span id="L158"><a href="#L158" aria-label="line 158">  158</a> 				using (Pen p = new Pen(Config.ForeColor))</span>
+<span id="L159"><a href="#L159" aria-label="line 159">  159</a> 					g.DrawRectangle(p, rect);</span>
+<span id="L160"><a href="#L160" aria-label="line 160">  160</a> 			}</span>
+<span id="L161"><a href="#L161" aria-label="line 161">  161</a> 		}</span>
+<span id="L162"><a href="#L162" aria-label="line 162">  162</a> </span>
+<span id="L163"><a href="#L163" aria-label="line 163">  163</a> 		/// &lt;summary&gt;</span>
+<span id="L164"><a href="#L164" aria-label="line 164">  164</a> 		/// GFILLRECTANGLE(int ID, int x, int y, int width, int height)</span>
+<span id="L165"><a href="#L165" aria-label="line 165">  165</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L166"><a href="#L166" aria-label="line 166">  166</a> 		/// &lt;/summary&gt;</span>
+<span id="L167"><a href="#L167" aria-label="line 167">  167</a> 		public void GFillRectangle(Rectangle rect)</span>
+<span id="L168"><a href="#L168" aria-label="line 168">  168</a> 		{</span>
+<span id="L169"><a href="#L169" aria-label="line 169">  169</a> 			if (g == null)</span>
+<span id="L170"><a href="#L170" aria-label="line 170">  170</a> 				throw new NullReferenceException();</span>
+<span id="L171"><a href="#L171" aria-label="line 171">  171</a> 			if (brush != null)</span>
+<span id="L172"><a href="#L172" aria-label="line 172">  172</a> 			{</span>
+<span id="L173"><a href="#L173" aria-label="line 173">  173</a> 				g.FillRectangle(brush, rect);</span>
+<span id="L174"><a href="#L174" aria-label="line 174">  174</a> 			}</span>
+<span id="L175"><a href="#L175" aria-label="line 175">  175</a> 			else</span>
+<span id="L176"><a href="#L176" aria-label="line 176">  176</a> 			{</span>
+<span id="L177"><a href="#L177" aria-label="line 177">  177</a> 				using (SolidBrush b = new SolidBrush(Config.BackColor))</span>
+<span id="L178"><a href="#L178" aria-label="line 178">  178</a> 					g.FillRectangle(b, rect);</span>
+<span id="L179"><a href="#L179" aria-label="line 179">  179</a> 			}</span>
+<span id="L180"><a href="#L180" aria-label="line 180">  180</a> 		}</span>
+<span id="L181"><a href="#L181" aria-label="line 181">  181</a> </span>
+<span id="L182"><a href="#L182" aria-label="line 182">  182</a> 		/// &lt;summary&gt;</span>
+<span id="L183"><a href="#L183" aria-label="line 183">  183</a> 		/// GDRAWCIMG(int ID, str imgName, int destX, int destY, int destWidth, int destHeight)</span>
+<span id="L184"><a href="#L184" aria-label="line 184">  184</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L185"><a href="#L185" aria-label="line 185">  185</a> 		/// &lt;/summary&gt;</span>
+<span id="L186"><a href="#L186" aria-label="line 186">  186</a> 		public void GDrawCImg(ASprite img, Rectangle destRect)</span>
+<span id="L187"><a href="#L187" aria-label="line 187">  187</a> 		{</span>
+<span id="L188"><a href="#L188" aria-label="line 188">  188</a> 			if (g == null)</span>
+<span id="L189"><a href="#L189" aria-label="line 189">  189</a> 				throw new NullReferenceException();</span>
+<span id="L190"><a href="#L190" aria-label="line 190">  190</a> 			img.GraphicsDraw(g, destRect);</span>
+<span id="L191"><a href="#L191" aria-label="line 191">  191</a> 		}</span>
+<span id="L192"><a href="#L192" aria-label="line 192">  192</a> </span>
+<span id="L193"><a href="#L193" aria-label="line 193">  193</a> 		/// &lt;summary&gt;</span>
+<span id="L194"><a href="#L194" aria-label="line 194">  194</a> 		/// GDRAWCIMG(int ID, str imgName, int destX, int destY, int destWidth, int destHeight, float[][] cm)</span>
+<span id="L195"><a href="#L195" aria-label="line 195">  195</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L196"><a href="#L196" aria-label="line 196">  196</a> 		/// &lt;/summary&gt;</span>
+<span id="L197"><a href="#L197" aria-label="line 197">  197</a> 		public void GDrawCImg(ASprite img, Rectangle destRect, float[][] cm)</span>
+<span id="L198"><a href="#L198" aria-label="line 198">  198</a> 		{</span>
+<span id="L199"><a href="#L199" aria-label="line 199">  199</a> 			if (g == null)</span>
+<span id="L200"><a href="#L200" aria-label="line 200">  200</a> 				throw new NullReferenceException();</span>
+<span id="L201"><a href="#L201" aria-label="line 201">  201</a> 			ImageAttributes imageAttributes = new ImageAttributes();</span>
+<span id="L202"><a href="#L202" aria-label="line 202">  202</a> 			ColorMatrix colorMatrix = new ColorMatrix(cm);</span>
+<span id="L203"><a href="#L203" aria-label="line 203">  203</a> 			imageAttributes.SetColorMatrix(colorMatrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);</span>
+<span id="L204"><a href="#L204" aria-label="line 204">  204</a> </span>
+<span id="L205"><a href="#L205" aria-label="line 205">  205</a> 			img.GraphicsDraw(g, destRect, imageAttributes);</span>
+<span id="L206"><a href="#L206" aria-label="line 206">  206</a> 		}</span>
+<span id="L207"><a href="#L207" aria-label="line 207">  207</a> </span>
+<span id="L208"><a href="#L208" aria-label="line 208">  208</a> 		/// &lt;summary&gt;</span>
+<span id="L209"><a href="#L209" aria-label="line 209">  209</a> 		/// GDRAWG(int ID, int srcID, int destX, int destY, int destWidth, int destHeight, int srcX, int srcY, int srcWidth, int srcHeight)</span>
+<span id="L210"><a href="#L210" aria-label="line 210">  210</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L211"><a href="#L211" aria-label="line 211">  211</a> 		/// &lt;/summary&gt;</span>
+<span id="L212"><a href="#L212" aria-label="line 212">  212</a> 		public void GDrawG(GraphicsImage srcGra, Rectangle destRect, Rectangle srcRect)</span>
+<span id="L213"><a href="#L213" aria-label="line 213">  213</a> 		{</span>
+<span id="L214"><a href="#L214" aria-label="line 214">  214</a> 			if (g == null)</span>
+<span id="L215"><a href="#L215" aria-label="line 215">  215</a> 				throw new NullReferenceException();</span>
+<span id="L216"><a href="#L216" aria-label="line 216">  216</a> 			Bitmap src = srcGra.GetBitmap();</span>
+<span id="L217"><a href="#L217" aria-label="line 217">  217</a> 			g.DrawImage(src, destRect, srcRect, GraphicsUnit.Pixel);</span>
+<span id="L218"><a href="#L218" aria-label="line 218">  218</a> 		}</span>
+<span id="L219"><a href="#L219" aria-label="line 219">  219</a> </span>
+<span id="L220"><a href="#L220" aria-label="line 220">  220</a> </span>
+<span id="L221"><a href="#L221" aria-label="line 221">  221</a> 		/// &lt;summary&gt;</span>
+<span id="L222"><a href="#L222" aria-label="line 222">  222</a> 		/// GDRAWG(int ID, int srcID, int destX, int destY, int destWidth, int destHeight, int srcX, int srcY, int srcWidth, int srcHeight, float[][] cm)</span>
+<span id="L223"><a href="#L223" aria-label="line 223">  223</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L224"><a href="#L224" aria-label="line 224">  224</a> 		/// &lt;/summary&gt;</span>
+<span id="L225"><a href="#L225" aria-label="line 225">  225</a> 		public void GDrawG(GraphicsImage srcGra, Rectangle destRect, Rectangle srcRect, float[][] cm)</span>
+<span id="L226"><a href="#L226" aria-label="line 226">  226</a> 		{</span>
+<span id="L227"><a href="#L227" aria-label="line 227">  227</a> 			if (g == null)</span>
+<span id="L228"><a href="#L228" aria-label="line 228">  228</a> 				throw new NullReferenceException();</span>
+<span id="L229"><a href="#L229" aria-label="line 229">  229</a> 			Bitmap src = srcGra.GetBitmap();</span>
+<span id="L230"><a href="#L230" aria-label="line 230">  230</a> 			ImageAttributes imageAttributes = new ImageAttributes();</span>
+<span id="L231"><a href="#L231" aria-label="line 231">  231</a> 			ColorMatrix colorMatrix = new ColorMatrix(cm);</span>
+<span id="L232"><a href="#L232" aria-label="line 232">  232</a> 			imageAttributes.SetColorMatrix(colorMatrix, ColorMatrixFlag.Default,ColorAdjustType.Bitmap);</span>
+<span id="L233"><a href="#L233" aria-label="line 233">  233</a> 			//g.DrawImage(img.Bitmap, destRect, srcRect, GraphicsUnit.Pixel, imageAttributes);なんでこのパターンないのさ</span>
+<span id="L234"><a href="#L234" aria-label="line 234">  234</a> 			g.DrawImage(src, destRect, srcRect.X, srcRect.Y, srcRect.Width, srcRect.Height, GraphicsUnit.Pixel, imageAttributes);</span>
+<span id="L235"><a href="#L235" aria-label="line 235">  235</a> </span>
+<span id="L236"><a href="#L236" aria-label="line 236">  236</a> 		}</span>
+<span id="L237"><a href="#L237" aria-label="line 237">  237</a> </span>
+<span id="L238"><a href="#L238" aria-label="line 238">  238</a> </span>
+<span id="L239"><a href="#L239" aria-label="line 239">  239</a> 		/// &lt;summary&gt;</span>
+<span id="L240"><a href="#L240" aria-label="line 240">  240</a> 		/// GDRAWGWITHMASK(int ID, int srcID, int maskID, int destX, int destY)</span>
+<span id="L241"><a href="#L241" aria-label="line 241">  241</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L242"><a href="#L242" aria-label="line 242">  242</a> 		/// &lt;/summary&gt;</span>
+<span id="L243"><a href="#L243" aria-label="line 243">  243</a> 		public void GDrawGWithMask(GraphicsImage srcGra, GraphicsImage maskGra, Point destPoint)</span>
+<span id="L244"><a href="#L244" aria-label="line 244">  244</a> 		{</span>
+<span id="L245"><a href="#L245" aria-label="line 245">  245</a> 			if (g == null)</span>
+<span id="L246"><a href="#L246" aria-label="line 246">  246</a> 				throw new NullReferenceException();</span>
+<span id="L247"><a href="#L247" aria-label="line 247">  247</a> 			Bitmap destImg = this.GetBitmap();</span>
+<span id="L248"><a href="#L248" aria-label="line 248">  248</a> 			byte[] srcBytes = BytesFromBitmap(srcGra.GetBitmap());</span>
+<span id="L249"><a href="#L249" aria-label="line 249">  249</a> 			byte[] srcMaskBytes = BytesFromBitmap(maskGra.GetBitmap());</span>
+<span id="L250"><a href="#L250" aria-label="line 250">  250</a> 			//Rectangle destRect = new Rectangle(destPoint.X, destPoint.Y, srcGra.Width, srcGra.Height);</span>
+<span id="L251"><a href="#L251" aria-label="line 251">  251</a> </span>
+<span id="L252"><a href="#L252" aria-label="line 252">  252</a> 			System.Drawing.Imaging.BitmapData bmpData =</span>
+<span id="L253"><a href="#L253" aria-label="line 253">  253</a> 				destImg.LockBits(new Rectangle(0,0, destImg.Width,destImg.Height),</span>
+<span id="L254"><a href="#L254" aria-label="line 254">  254</a> 				System.Drawing.Imaging.ImageLockMode.ReadWrite,</span>
+<span id="L255"><a href="#L255" aria-label="line 255">  255</a> 				PixelFormat.Format32bppArgb);</span>
+<span id="L256"><a href="#L256" aria-label="line 256">  256</a> 			try</span>
+<span id="L257"><a href="#L257" aria-label="line 257">  257</a> 			{</span>
+<span id="L258"><a href="#L258" aria-label="line 258">  258</a> 				IntPtr ptr = bmpData.Scan0;</span>
+<span id="L259"><a href="#L259" aria-label="line 259">  259</a> 				byte[] pixels = new byte[bmpData.Stride * destImg.Height];</span>
+<span id="L260"><a href="#L260" aria-label="line 260">  260</a> 				System.Runtime.InteropServices.Marshal.Copy(ptr, pixels, 0, pixels.Length);</span>
+<span id="L261"><a href="#L261" aria-label="line 261">  261</a> </span>
+<span id="L262"><a href="#L262" aria-label="line 262">  262</a> </span>
+<span id="L263"><a href="#L263" aria-label="line 263">  263</a> 				for (int y = 0; y &lt; srcGra.Height; y++)</span>
+<span id="L264"><a href="#L264" aria-label="line 264">  264</a> 				{</span>
+<span id="L265"><a href="#L265" aria-label="line 265">  265</a> </span>
+<span id="L266"><a href="#L266" aria-label="line 266">  266</a> 					int destIndex = ((destPoint.Y + y) * destImg.Width + destPoint.X) * 4;</span>
+<span id="L267"><a href="#L267" aria-label="line 267">  267</a> 					int srcIndex = ((0 + y) * srcGra.Width + 0) * 4;</span>
+<span id="L268"><a href="#L268" aria-label="line 268">  268</a> 					for (int x = 0; x &lt; srcGra.Width; x++)</span>
+<span id="L269"><a href="#L269" aria-label="line 269">  269</a> 					{</span>
+<span id="L270"><a href="#L270" aria-label="line 270">  270</a> 						if (srcMaskBytes[srcIndex] == 255)//完全不透明</span>
+<span id="L271"><a href="#L271" aria-label="line 271">  271</a> 						{</span>
+<span id="L272"><a href="#L272" aria-label="line 272">  272</a> 							pixels[destIndex++] = srcBytes[srcIndex++];</span>
+<span id="L273"><a href="#L273" aria-label="line 273">  273</a> 							pixels[destIndex++] = srcBytes[srcIndex++];</span>
+<span id="L274"><a href="#L274" aria-label="line 274">  274</a> 							pixels[destIndex++] = srcBytes[srcIndex++];</span>
+<span id="L275"><a href="#L275" aria-label="line 275">  275</a> 							pixels[destIndex++] = srcBytes[srcIndex++];</span>
+<span id="L276"><a href="#L276" aria-label="line 276">  276</a> 						}</span>
+<span id="L277"><a href="#L277" aria-label="line 277">  277</a> 						else if (srcMaskBytes[srcIndex] == 0)//完全透明</span>
+<span id="L278"><a href="#L278" aria-label="line 278">  278</a> 						{</span>
+<span id="L279"><a href="#L279" aria-label="line 279">  279</a> 							destIndex += 4;</span>
+<span id="L280"><a href="#L280" aria-label="line 280">  280</a> 							srcIndex += 4;</span>
+<span id="L281"><a href="#L281" aria-label="line 281">  281</a> 						}</span>
+<span id="L282"><a href="#L282" aria-label="line 282">  282</a> 						else//半透明 alpha/255ではなく（alpha+1）/256で計算しているがたぶん誤差</span>
+<span id="L283"><a href="#L283" aria-label="line 283">  283</a> 						{</span>
+<span id="L284"><a href="#L284" aria-label="line 284">  284</a> 							int mask = srcMaskBytes[srcIndex]; mask++;</span>
+<span id="L285"><a href="#L285" aria-label="line 285">  285</a> 							pixels[destIndex] = (byte)((srcBytes[srcIndex] * mask + pixels[destIndex] * (256 - mask)) &gt;&gt; 8); srcIndex++; destIndex++;</span>
+<span id="L286"><a href="#L286" aria-label="line 286">  286</a> 							pixels[destIndex] = (byte)((srcBytes[srcIndex] * mask + pixels[destIndex] * (256 - mask)) &gt;&gt; 8); srcIndex++; destIndex++;</span>
+<span id="L287"><a href="#L287" aria-label="line 287">  287</a> 							pixels[destIndex] = (byte)((srcBytes[srcIndex] * mask + pixels[destIndex] * (256 - mask)) &gt;&gt; 8); srcIndex++; destIndex++;</span>
+<span id="L288"><a href="#L288" aria-label="line 288">  288</a> 							pixels[destIndex] = (byte)((srcBytes[srcIndex] * mask + pixels[destIndex] * (256 - mask)) &gt;&gt; 8); srcIndex++; destIndex++;</span>
+<span id="L289"><a href="#L289" aria-label="line 289">  289</a> 						}</span>
+<span id="L290"><a href="#L290" aria-label="line 290">  290</a> 					}</span>
+<span id="L291"><a href="#L291" aria-label="line 291">  291</a> 				}</span>
+<span id="L292"><a href="#L292" aria-label="line 292">  292</a> </span>
+<span id="L293"><a href="#L293" aria-label="line 293">  293</a> 				// Bitmapへコピー</span>
+<span id="L294"><a href="#L294" aria-label="line 294">  294</a> 				System.Runtime.InteropServices.Marshal.Copy(pixels, 0, ptr, pixels.Length);</span>
+<span id="L295"><a href="#L295" aria-label="line 295">  295</a> 			}</span>
+<span id="L296"><a href="#L296" aria-label="line 296">  296</a> 			finally</span>
+<span id="L297"><a href="#L297" aria-label="line 297">  297</a> 			{</span>
+<span id="L298"><a href="#L298" aria-label="line 298">  298</a> 				destImg.UnlockBits(bmpData);</span>
+<span id="L299"><a href="#L299" aria-label="line 299">  299</a> 			}</span>
+<span id="L300"><a href="#L300" aria-label="line 300">  300</a> 		}</span>
+<span id="L301"><a href="#L301" aria-label="line 301">  301</a> </span>
+<span id="L302"><a href="#L302" aria-label="line 302">  302</a> 		public void GSetFont(Font r)</span>
+<span id="L303"><a href="#L303" aria-label="line 303">  303</a> 		{</span>
+<span id="L304"><a href="#L304" aria-label="line 304">  304</a> 			if (font != null)</span>
+<span id="L305"><a href="#L305" aria-label="line 305">  305</a> 				font.Dispose();</span>
+<span id="L306"><a href="#L306" aria-label="line 306">  306</a> 			font = r;</span>
+<span id="L307"><a href="#L307" aria-label="line 307">  307</a> 		}</span>
+<span id="L308"><a href="#L308" aria-label="line 308">  308</a> 		public void GSetBrush(Brush r)</span>
+<span id="L309"><a href="#L309" aria-label="line 309">  309</a> 		{</span>
+<span id="L310"><a href="#L310" aria-label="line 310">  310</a> 			if (brush != null)</span>
+<span id="L311"><a href="#L311" aria-label="line 311">  311</a> 				brush.Dispose();</span>
+<span id="L312"><a href="#L312" aria-label="line 312">  312</a> 			brush = r;</span>
+<span id="L313"><a href="#L313" aria-label="line 313">  313</a> 		}</span>
+<span id="L314"><a href="#L314" aria-label="line 314">  314</a> 		public void GSetPen(Pen r)</span>
+<span id="L315"><a href="#L315" aria-label="line 315">  315</a> 		{</span>
+<span id="L316"><a href="#L316" aria-label="line 316">  316</a> 			if (pen != null)</span>
+<span id="L317"><a href="#L317" aria-label="line 317">  317</a> 				pen.Dispose();</span>
+<span id="L318"><a href="#L318" aria-label="line 318">  318</a> 			pen = r;</span>
+<span id="L319"><a href="#L319" aria-label="line 319">  319</a> 		}</span>
+<span id="L320"><a href="#L320" aria-label="line 320">  320</a> </span>
+<span id="L321"><a href="#L321" aria-label="line 321">  321</a> </span>
+<span id="L322"><a href="#L322" aria-label="line 322">  322</a> </span>
+<span id="L323"><a href="#L323" aria-label="line 323">  323</a> </span>
+<span id="L324"><a href="#L324" aria-label="line 324">  324</a> 		private static byte[] BytesFromBitmap(Bitmap bmp)</span>
+<span id="L325"><a href="#L325" aria-label="line 325">  325</a> 		{</span>
+<span id="L326"><a href="#L326" aria-label="line 326">  326</a> 			BitmapData bmpData = bmp.LockBits(</span>
+<span id="L327"><a href="#L327" aria-label="line 327">  327</a> 			  new Rectangle(0, 0, bmp.Width, bmp.Height),</span>
+<span id="L328"><a href="#L328" aria-label="line 328">  328</a> 			  ImageLockMode.ReadOnly,  // 書き込むときはReadAndWriteで</span>
+<span id="L329"><a href="#L329" aria-label="line 329">  329</a> 			  PixelFormat.Format32bppArgb</span>
+<span id="L330"><a href="#L330" aria-label="line 330">  330</a> 			);</span>
+<span id="L331"><a href="#L331" aria-label="line 331">  331</a> 			if (bmpData.Stride &lt; 0)</span>
+<span id="L332"><a href="#L332" aria-label="line 332">  332</a> 				throw new Exception();//変な形式のが送られてくることはありえないはずだが一応</span>
+<span id="L333"><a href="#L333" aria-label="line 333">  333</a> 			byte[] pixels = new byte[bmpData.Stride * bmp.Height];</span>
+<span id="L334"><a href="#L334" aria-label="line 334">  334</a> 			try</span>
+<span id="L335"><a href="#L335" aria-label="line 335">  335</a> 			{ </span>
+<span id="L336"><a href="#L336" aria-label="line 336">  336</a> 				IntPtr ptr = bmpData.Scan0;</span>
+<span id="L337"><a href="#L337" aria-label="line 337">  337</a> 				System.Runtime.InteropServices.Marshal.Copy(ptr, pixels, 0, pixels.Length);</span>
+<span id="L338"><a href="#L338" aria-label="line 338">  338</a> 			}</span>
+<span id="L339"><a href="#L339" aria-label="line 339">  339</a> 			finally</span>
+<span id="L340"><a href="#L340" aria-label="line 340">  340</a> 			{</span>
+<span id="L341"><a href="#L341" aria-label="line 341">  341</a> 				bmp.UnlockBits(bmpData);</span>
+<span id="L342"><a href="#L342" aria-label="line 342">  342</a> </span>
+<span id="L343"><a href="#L343" aria-label="line 343">  343</a> 			}</span>
+<span id="L344"><a href="#L344" aria-label="line 344">  344</a> 			return pixels;</span>
+<span id="L345"><a href="#L345" aria-label="line 345">  345</a> 		}</span>
+<span id="L346"><a href="#L346" aria-label="line 346">  346</a> </span>
+<span id="L347"><a href="#L347" aria-label="line 347">  347</a> 		/// &lt;summary&gt;</span>
+<span id="L348"><a href="#L348" aria-label="line 348">  348</a> 		/// GTOARRAY int ID, var array</span>
+<span id="L349"><a href="#L349" aria-label="line 349">  349</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L350"><a href="#L350" aria-label="line 350">  350</a> 		/// &lt;returns&gt;&lt;/returns&gt;</span>
+<span id="L351"><a href="#L351" aria-label="line 351">  351</a> 		public bool GBitmapToInt64Array(Int64[,] array, int xstart, int ystart)</span>
+<span id="L352"><a href="#L352" aria-label="line 352">  352</a> 		{</span>
+<span id="L353"><a href="#L353" aria-label="line 353">  353</a> 			if (g == null || Bitmap == null)</span>
+<span id="L354"><a href="#L354" aria-label="line 354">  354</a> 				throw new NullReferenceException();</span>
+<span id="L355"><a href="#L355" aria-label="line 355">  355</a> 			int w = Bitmap.Width;</span>
+<span id="L356"><a href="#L356" aria-label="line 356">  356</a> 			int h = Bitmap.Height;</span>
+<span id="L357"><a href="#L357" aria-label="line 357">  357</a> 			if (xstart + w &gt; array.GetLength(0) || ystart + h &gt; array.GetLength(1))</span>
+<span id="L358"><a href="#L358" aria-label="line 358">  358</a> 				return false;</span>
+<span id="L359"><a href="#L359" aria-label="line 359">  359</a> 			Rectangle rect = new Rectangle(0, 0, w, h);</span>
+<span id="L360"><a href="#L360" aria-label="line 360">  360</a> 			System.Drawing.Imaging.BitmapData bmpData =</span>
+<span id="L361"><a href="#L361" aria-label="line 361">  361</a> 				Bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadOnly,</span>
+<span id="L362"><a href="#L362" aria-label="line 362">  362</a> 				PixelFormat.Format32bppArgb);</span>
+<span id="L363"><a href="#L363" aria-label="line 363">  363</a> 			IntPtr ptr = bmpData.Scan0;</span>
+<span id="L364"><a href="#L364" aria-label="line 364">  364</a> 			byte[] rgbValues = new byte[w * h * 4];</span>
+<span id="L365"><a href="#L365" aria-label="line 365">  365</a> 			Marshal.Copy(ptr, rgbValues, 0, rgbValues.Length);</span>
+<span id="L366"><a href="#L366" aria-label="line 366">  366</a> 			Bitmap.UnlockBits(bmpData);</span>
+<span id="L367"><a href="#L367" aria-label="line 367">  367</a> 			int i = 0;</span>
+<span id="L368"><a href="#L368" aria-label="line 368">  368</a> 			for (int y = 0; y &lt; h; y++)</span>
+<span id="L369"><a href="#L369" aria-label="line 369">  369</a> 			{</span>
+<span id="L370"><a href="#L370" aria-label="line 370">  370</a> 				for (int x = 0; x &lt; w; x++)</span>
+<span id="L371"><a href="#L371" aria-label="line 371">  371</a> 				{</span>
+<span id="L372"><a href="#L372" aria-label="line 372">  372</a> 					array[x + xstart, y + ystart] =</span>
+<span id="L373"><a href="#L373" aria-label="line 373">  373</a> 					rgbValues[i++] + //B</span>
+<span id="L374"><a href="#L374" aria-label="line 374">  374</a> 					(((Int64)rgbValues[i++]) &lt;&lt; 8) + //G</span>
+<span id="L375"><a href="#L375" aria-label="line 375">  375</a> 					(((Int64)rgbValues[i++]) &lt;&lt; 16) + //R</span>
+<span id="L376"><a href="#L376" aria-label="line 376">  376</a> 					(((Int64)rgbValues[i++]) &lt;&lt; 24);  //A</span>
+<span id="L377"><a href="#L377" aria-label="line 377">  377</a> 				}</span>
+<span id="L378"><a href="#L378" aria-label="line 378">  378</a> 			}</span>
+<span id="L379"><a href="#L379" aria-label="line 379">  379</a> 			return true;</span>
+<span id="L380"><a href="#L380" aria-label="line 380">  380</a> 		}</span>
+<span id="L381"><a href="#L381" aria-label="line 381">  381</a> </span>
+<span id="L382"><a href="#L382" aria-label="line 382">  382</a> </span>
+<span id="L383"><a href="#L383" aria-label="line 383">  383</a> 		/// &lt;summary&gt;</span>
+<span id="L384"><a href="#L384" aria-label="line 384">  384</a> 		/// GFROMARRAY int ID, var array</span>
+<span id="L385"><a href="#L385" aria-label="line 385">  385</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L386"><a href="#L386" aria-label="line 386">  386</a> 		/// &lt;returns&gt;&lt;/returns&gt;</span>
+<span id="L387"><a href="#L387" aria-label="line 387">  387</a> 		public bool GByteArrayToBitmap(Int64[,] array, int xstart, int ystart)</span>
+<span id="L388"><a href="#L388" aria-label="line 388">  388</a> 		{</span>
+<span id="L389"><a href="#L389" aria-label="line 389">  389</a> 			if (g == null || Bitmap == null)</span>
+<span id="L390"><a href="#L390" aria-label="line 390">  390</a> 				throw new NullReferenceException();</span>
+<span id="L391"><a href="#L391" aria-label="line 391">  391</a> 			int w = Bitmap.Width;</span>
+<span id="L392"><a href="#L392" aria-label="line 392">  392</a> 			int h = Bitmap.Height;</span>
+<span id="L393"><a href="#L393" aria-label="line 393">  393</a> 			if (xstart + w &gt; array.GetLength(0) || ystart + h &gt; array.GetLength(1))</span>
+<span id="L394"><a href="#L394" aria-label="line 394">  394</a> 				return false;</span>
+<span id="L395"><a href="#L395" aria-label="line 395">  395</a> </span>
+<span id="L396"><a href="#L396" aria-label="line 396">  396</a> 			byte[] rgbValues = new byte[w * h * 4];</span>
+<span id="L397"><a href="#L397" aria-label="line 397">  397</a> 			int i = 0;</span>
+<span id="L398"><a href="#L398" aria-label="line 398">  398</a> 			for (int y = 0; y &lt; h; y++)</span>
+<span id="L399"><a href="#L399" aria-label="line 399">  399</a> 			{</span>
+<span id="L400"><a href="#L400" aria-label="line 400">  400</a> 				for (int x = 0; x &lt; w; x++)</span>
+<span id="L401"><a href="#L401" aria-label="line 401">  401</a> 				{</span>
+<span id="L402"><a href="#L402" aria-label="line 402">  402</a> 					Int64 c = array[x + xstart, y + ystart];</span>
+<span id="L403"><a href="#L403" aria-label="line 403">  403</a> 					rgbValues[i++] = (byte)(c &amp; 0xFF);//B</span>
+<span id="L404"><a href="#L404" aria-label="line 404">  404</a> 					rgbValues[i++] = (byte)((c &gt;&gt; 8) &amp; 0xFF);//G</span>
+<span id="L405"><a href="#L405" aria-label="line 405">  405</a> 					rgbValues[i++] = (byte)((c &gt;&gt; 16) &amp; 0xFF);//R</span>
+<span id="L406"><a href="#L406" aria-label="line 406">  406</a> 					rgbValues[i++] = (byte)((c &gt;&gt; 24) &amp; 0xFF);//A</span>
+<span id="L407"><a href="#L407" aria-label="line 407">  407</a> 				}</span>
+<span id="L408"><a href="#L408" aria-label="line 408">  408</a> 			}</span>
+<span id="L409"><a href="#L409" aria-label="line 409">  409</a> 			Rectangle rect = new Rectangle(0, 0, w, h);</span>
+<span id="L410"><a href="#L410" aria-label="line 410">  410</a> 			System.Drawing.Imaging.BitmapData bmpData =</span>
+<span id="L411"><a href="#L411" aria-label="line 411">  411</a> 				Bitmap.LockBits(rect, System.Drawing.Imaging.ImageLockMode.WriteOnly,</span>
+<span id="L412"><a href="#L412" aria-label="line 412">  412</a> 				PixelFormat.Format32bppArgb);</span>
+<span id="L413"><a href="#L413" aria-label="line 413">  413</a> 			IntPtr ptr = bmpData.Scan0;</span>
+<span id="L414"><a href="#L414" aria-label="line 414">  414</a> 			Marshal.Copy(rgbValues, 0, ptr, rgbValues.Length);</span>
+<span id="L415"><a href="#L415" aria-label="line 415">  415</a> 			Bitmap.UnlockBits(bmpData);</span>
+<span id="L416"><a href="#L416" aria-label="line 416">  416</a> 			return true;</span>
+<span id="L417"><a href="#L417" aria-label="line 417">  417</a> 		}</span>
+<span id="L418"><a href="#L418" aria-label="line 418">  418</a> #endregion</span>
+<span id="L419"><a href="#L419" aria-label="line 419">  419</a> #region Bitmap読み込み・削除</span>
+<span id="L420"><a href="#L420" aria-label="line 420">  420</a> 		/// &lt;summary&gt;</span>
+<span id="L421"><a href="#L421" aria-label="line 421">  421</a> 		/// 未作成ならエラー</span>
+<span id="L422"><a href="#L422" aria-label="line 422">  422</a> 		/// &lt;/summary&gt;</span>
+<span id="L423"><a href="#L423" aria-label="line 423">  423</a> 		public Bitmap GetBitmap()</span>
+<span id="L424"><a href="#L424" aria-label="line 424">  424</a> 		{</span>
+<span id="L425"><a href="#L425" aria-label="line 425">  425</a> 			if (Bitmap == null)</span>
+<span id="L426"><a href="#L426" aria-label="line 426">  426</a> 				throw new NullReferenceException();</span>
+<span id="L427"><a href="#L427" aria-label="line 427">  427</a> 			//UnlockGraphics();</span>
+<span id="L428"><a href="#L428" aria-label="line 428">  428</a> 			return Bitmap;</span>
+<span id="L429"><a href="#L429" aria-label="line 429">  429</a> 		}</span>
+<span id="L430"><a href="#L430" aria-label="line 430">  430</a> 		/// &lt;summary&gt;</span>
+<span id="L431"><a href="#L431" aria-label="line 431">  431</a> 		/// GSETCOLOR(int ID, int cARGB, int x, int y)</span>
+<span id="L432"><a href="#L432" aria-label="line 432">  432</a> 		/// エラーチェックは呼び出し元でのみ行う</span>
+<span id="L433"><a href="#L433" aria-label="line 433">  433</a> 		/// &lt;/summary&gt;</span>
+<span id="L434"><a href="#L434" aria-label="line 434">  434</a> 		public void GSetColor(Color c, int x, int y)</span>
+<span id="L435"><a href="#L435" aria-label="line 435">  435</a> 		{</span>
+<span id="L436"><a href="#L436" aria-label="line 436">  436</a> 			if (Bitmap == null)</span>
+<span id="L437"><a href="#L437" aria-label="line 437">  437</a> 				throw new NullReferenceException();</span>
+<span id="L438"><a href="#L438" aria-label="line 438">  438</a> 			//UnlockGraphics();</span>
+<span id="L439"><a href="#L439" aria-label="line 439">  439</a> 			Bitmap.SetPixel(x, y, c);</span>
+<span id="L440"><a href="#L440" aria-label="line 440">  440</a> 		}</span>
+<span id="L441"><a href="#L441" aria-label="line 441">  441</a> </span>
+<span id="L442"><a href="#L442" aria-label="line 442">  442</a> 		/// &lt;summary&gt;</span>
+<span id="L443"><a href="#L443" aria-label="line 443">  443</a> 		/// GGETCOLOR(int ID, int x, int y)</span>
+<span id="L444"><a href="#L444" aria-label="line 444">  444</a> 		/// エラーチェックは呼び出し元でのみ行う。特に画像範囲内であるかどうかチェックすること</span>
+<span id="L445"><a href="#L445" aria-label="line 445">  445</a> 		/// &lt;/summary&gt;</span>
+<span id="L446"><a href="#L446" aria-label="line 446">  446</a> 		public Color GGetColor(int x, int y)</span>
+<span id="L447"><a href="#L447" aria-label="line 447">  447</a> 		{</span>
+<span id="L448"><a href="#L448" aria-label="line 448">  448</a> 			if (Bitmap == null)</span>
+<span id="L449"><a href="#L449" aria-label="line 449">  449</a> 				throw new NullReferenceException();</span>
+<span id="L450"><a href="#L450" aria-label="line 450">  450</a> 			//UnlockGraphics();</span>
+<span id="L451"><a href="#L451" aria-label="line 451">  451</a> 			return Bitmap.GetPixel(x, y);</span>
+<span id="L452"><a href="#L452" aria-label="line 452">  452</a> 		}</span>
+<span id="L453"><a href="#L453" aria-label="line 453">  453</a> </span>
+<span id="L454"><a href="#L454" aria-label="line 454">  454</a> </span>
+<span id="L455"><a href="#L455" aria-label="line 455">  455</a> 		/// &lt;summary&gt;</span>
+<span id="L456"><a href="#L456" aria-label="line 456">  456</a> 		/// GDISPOSE(int ID)</span>
+<span id="L457"><a href="#L457" aria-label="line 457">  457</a> 		/// &lt;/summary&gt;</span>
+<span id="L458"><a href="#L458" aria-label="line 458">  458</a> 		public void GDispose()</span>
+<span id="L459"><a href="#L459" aria-label="line 459">  459</a> 		{</span>
+<span id="L460"><a href="#L460" aria-label="line 460">  460</a> 			size = new Size(0, 0);</span>
+<span id="L461"><a href="#L461" aria-label="line 461">  461</a> 			if (Bitmap == null)</span>
+<span id="L462"><a href="#L462" aria-label="line 462">  462</a> 				return;</span>
+<span id="L463"><a href="#L463" aria-label="line 463">  463</a> 			if (gdi)</span>
+<span id="L464"><a href="#L464" aria-label="line 464">  464</a> 			{</span>
+<span id="L465"><a href="#L465" aria-label="line 465">  465</a> 				GDI.SelectObject(GDIhDC, hDefaultImg);</span>
+<span id="L466"><a href="#L466" aria-label="line 466">  466</a> 				GDI.DeleteObject(hBitmap);</span>
+<span id="L467"><a href="#L467" aria-label="line 467">  467</a> 				g.ReleaseHdc(GDIhDC);</span>
+<span id="L468"><a href="#L468" aria-label="line 468">  468</a> 			}</span>
+<span id="L469"><a href="#L469" aria-label="line 469">  469</a> 			if (g != null)</span>
+<span id="L470"><a href="#L470" aria-label="line 470">  470</a> 				g.Dispose();</span>
+<span id="L471"><a href="#L471" aria-label="line 471">  471</a> 			if (Bitmap != null)</span>
+<span id="L472"><a href="#L472" aria-label="line 472">  472</a> 				Bitmap.Dispose();</span>
+<span id="L473"><a href="#L473" aria-label="line 473">  473</a> 			if (brush != null)</span>
+<span id="L474"><a href="#L474" aria-label="line 474">  474</a> 				brush.Dispose();</span>
+<span id="L475"><a href="#L475" aria-label="line 475">  475</a> 			if (pen != null)</span>
+<span id="L476"><a href="#L476" aria-label="line 476">  476</a> 				pen.Dispose();</span>
+<span id="L477"><a href="#L477" aria-label="line 477">  477</a> 			if (font != null)</span>
+<span id="L478"><a href="#L478" aria-label="line 478">  478</a> 				font.Dispose();</span>
+<span id="L479"><a href="#L479" aria-label="line 479">  479</a> 			g = null;</span>
+<span id="L480"><a href="#L480" aria-label="line 480">  480</a> 			Bitmap = null;</span>
+<span id="L481"><a href="#L481" aria-label="line 481">  481</a> 			brush = null;</span>
+<span id="L482"><a href="#L482" aria-label="line 482">  482</a> 			pen = null;</span>
+<span id="L483"><a href="#L483" aria-label="line 483">  483</a> 			font = null;</span>
+<span id="L484"><a href="#L484" aria-label="line 484">  484</a> 		}</span>
+<span id="L485"><a href="#L485" aria-label="line 485">  485</a> </span>
+<span id="L486"><a href="#L486" aria-label="line 486">  486</a> 		public override void Dispose()</span>
+<span id="L487"><a href="#L487" aria-label="line 487">  487</a> 		{</span>
+<span id="L488"><a href="#L488" aria-label="line 488">  488</a> 			this.GDispose();</span>
+<span id="L489"><a href="#L489" aria-label="line 489">  489</a> 		}</span>
+<span id="L490"><a href="#L490" aria-label="line 490">  490</a> </span>
+<span id="L491"><a href="#L491" aria-label="line 491">  491</a>         ~GraphicsImage()</span>
+<span id="L492"><a href="#L492" aria-label="line 492">  492</a>         {</span>
+<span id="L493"><a href="#L493" aria-label="line 493">  493</a>             Dispose();</span>
+<span id="L494"><a href="#L494" aria-label="line 494">  494</a>         }</span>
+<span id="L495"><a href="#L495" aria-label="line 495">  495</a> #endregion</span>
+<span id="L496"><a href="#L496" aria-label="line 496">  496</a> </span>
+<span id="L497"><a href="#L497" aria-label="line 497">  497</a> #region 状態判定（Bitmap読み書きを伴わない）</span>
+<span id="L498"><a href="#L498" aria-label="line 498">  498</a> 		public override bool IsCreated { get { return g != null; } }</span>
+<span id="L499"><a href="#L499" aria-label="line 499">  499</a> 		/// &lt;summary&gt;</span>
+<span id="L500"><a href="#L500" aria-label="line 500">  500</a> 		/// int GWIDTH(int ID)</span>
+<span id="L501"><a href="#L501" aria-label="line 501">  501</a> 		/// &lt;/summary&gt;</span>
+<span id="L502"><a href="#L502" aria-label="line 502">  502</a> 		public int Width { get { return size.Width; } }</span>
+<span id="L503"><a href="#L503" aria-label="line 503">  503</a> 		/// &lt;summary&gt;</span>
+<span id="L504"><a href="#L504" aria-label="line 504">  504</a> 		/// int GHEIGHT(int ID)</span>
+<span id="L505"><a href="#L505" aria-label="line 505">  505</a> 		/// &lt;/summary&gt;</span>
+<span id="L506"><a href="#L506" aria-label="line 506">  506</a> 		public int Height { get { return size.Height; } }</span>
+<span id="L507"><a href="#L507" aria-label="line 507">  507</a> </span>
+<span id="L508"><a href="#L508" aria-label="line 508">  508</a> </span>
+<span id="L509"><a href="#L509" aria-label="line 509">  509</a> </span>
+<span id="L510"><a href="#L510" aria-label="line 510">  510</a> </span>
+<span id="L511"><a href="#L511" aria-label="line 511">  511</a> #endregion</span>
+<span id="L512"><a href="#L512" aria-label="line 512">  512</a> </span>
+<span id="L513"><a href="#L513" aria-label="line 513">  513</a> </span>
+<span id="L514"><a href="#L514" aria-label="line 514">  514</a> 	}</span>
+<span id="L515"><a href="#L515" aria-label="line 515">  515</a> }</span></pre></html>

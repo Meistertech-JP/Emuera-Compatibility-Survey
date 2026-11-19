@@ -1,0 +1,27 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:08.350763+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "TRYJUMPFORM"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "9a4a87dc5ac5e49bf524974a5d3058c482ecf866a1c200a6c8a5983c111f907e",
+  "case_ids": [
+    "TRYJUMPFORM02"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "TRYJUMPFORM02: Literal diagnostic suffix differs; dynamic targets, arguments, try-catch, and process lifetime untested."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "813d5b794879e24646770fa4433f3ae090a9489e9f1fc9f72dea863919b02d2e",
+  "independent_semantic_review_sha256": "b99f614fe95e9a92b9463c660267def0ac1915b7f643bd61a1e4a6fe4bfa971e",
+  "independent_semantic_results_sha256": "522daae4bf8457a4967a76902ac676c13e54dd485538a0ac570baf5d8e26e5b3",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

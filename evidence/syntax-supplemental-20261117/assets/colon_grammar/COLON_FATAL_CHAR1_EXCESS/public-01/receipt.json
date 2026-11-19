@@ -1,0 +1,42 @@
+{
+  "fixture": "COLON_FATAL_CHAR1_EXCESS",
+  "mode": "public-01",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "877c79280be5c1e2c77b22be1ca820fa339043703a67387f17f7239aa57b1567",
+    "csv/CHARA0.CSV": "3bf86609096dfdd169d7aa377de7952b1e624d471524a9703f3c0195d0990596",
+    "csv/CHARA10.CSV": "d1264c3020cc3f186177e89ff432a195d39a09f791887ca66cdd58c1fee3848f",
+    "csv/CHARA20.CSV": "664213a7ba486a8ffc2810722b8834c7ed7950f02a771b89716f69dce476cacf",
+    "csv/CHARA30.CSV": "1d1c4bc5d66bb95d157adf10c8ca51ec0b69ad91c846692b824679e8cfa2bbcc",
+    "csv/FLAG.CSV": "56cb1b37302bf872d7544095348d8830e51715c5d0391580f4f41ede6fbb1855",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/MAIN.ERB": "877c79280be5c1e2c77b22be1ca820fa339043703a67387f17f7239aa57b1567",
+    "csv/CHARA0.CSV": "3bf86609096dfdd169d7aa377de7952b1e624d471524a9703f3c0195d0990596",
+    "csv/CHARA10.CSV": "d1264c3020cc3f186177e89ff432a195d39a09f791887ca66cdd58c1fee3848f",
+    "csv/CHARA20.CSV": "664213a7ba486a8ffc2810722b8834c7ed7950f02a771b89716f69dce476cacf",
+    "csv/CHARA30.CSV": "1d1c4bc5d66bb95d157adf10c8ca51ec0b69ad91c846692b824679e8cfa2bbcc",
+    "csv/FLAG.CSV": "56cb1b37302bf872d7544095348d8830e51715c5d0391580f4f41ede6fbb1855",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [
+    "CHARA0.CSV",
+    "CHARA10.CSV",
+    "CHARA20.CSV",
+    "CHARA30.CSV",
+    "FLAG.CSV"
+  ],
+  "CSV_after": [
+    "CHARA0.CSV",
+    "CHARA10.CSV",
+    "CHARA20.CSV",
+    "CHARA30.CSV",
+    "FLAG.CSV"
+  ],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "native_before": null,
+  "helper_sha256": null,
+  "returncode": 1
+}

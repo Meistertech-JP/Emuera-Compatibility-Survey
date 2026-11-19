@@ -1,0 +1,344 @@
+{
+  "schema": "parent-finite-command-acceptance-readback-1",
+  "valid": true,
+  "validator": "adjudicate_tryccall_case285.py",
+  "validator_sha256": "b47bb7766f799557b7f6c79349487ecdda2752ebcb6fdcddb318e9705b06570e",
+  "acceptance_sha256": "3af30e748f08d485e9064f470340553735abb91a393d0fd83d9ee2061d70236f",
+  "checks": 81,
+  "check_results": [
+    {
+      "check": "review authority hash pinned",
+      "ok": true
+    },
+    {
+      "check": "original obligation literal target",
+      "ok": true
+    },
+    {
+      "check": "original obligation is supplied/default binding with counted operand trace",
+      "ok": true
+    },
+    {
+      "check": "original review had this finite gap",
+      "ok": true
+    },
+    {
+      "check": "sealed execution readback valid",
+      "ok": true
+    },
+    {
+      "check": "readback pins exact comparison",
+      "ok": true
+    },
+    {
+      "check": "readback pins frozen manifest",
+      "ok": true
+    },
+    {
+      "check": "execution frozen and released",
+      "ok": true
+    },
+    {
+      "check": "frozen file count and run counts",
+      "ok": true
+    },
+    {
+      "check": "registration added four observations without closure",
+      "ok": true
+    },
+    {
+      "check": "comparison is for case 285",
+      "ok": true
+    },
+    {
+      "check": "fixture uses literal supplied TRYCCALL",
+      "ok": true
+    },
+    {
+      "check": "fixture uses literal omitted-operand TRYCCALL",
+      "ok": true
+    },
+    {
+      "check": "counting helper body is present",
+      "ok": true
+    },
+    {
+      "check": "both exact conditions exist",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default is literal TRYCCALL",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default matched its finite scope",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default Native repeats agree",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default Native/public markers agree",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default helper credit scope is correct",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_HITS",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_ARG",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_COUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_ORDER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_CATCHCOUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_RESULT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DEFAULT_AFTER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-01 ZZ285_DONE",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_HITS",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_ARG",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_COUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_ORDER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_CATCHCOUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_RESULT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DEFAULT_AFTER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default native-02 ZZ285_DONE",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_HITS",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_ARG",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_COUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_ORDER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_CATCHCOUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_RESULT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DEFAULT_AFTER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default public-01 ZZ285_DONE",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default Native and public runs are represented",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_default three observed marker states agree",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied is literal TRYCCALL",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied matched its finite scope",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied Native repeats agree",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied Native/public markers agree",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied helper credit scope is correct",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_HITS",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_ARG",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_COUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_ORDER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_CATCHCOUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_RESULT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_SUPPLIED_AFTER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-01 ZZ285_DONE",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_HITS",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_ARG",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_COUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_ORDER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_CATCHCOUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_RESULT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_SUPPLIED_AFTER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied native-02 ZZ285_DONE",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_HITS",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_ARG",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_COUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_ORDER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_CATCHCOUNT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_RESULT",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_SUPPLIED_AFTER",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied public-01 ZZ285_DONE",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied Native and public runs are represented",
+      "ok": true
+    },
+    {
+      "check": "TRYCCALL_supplied three observed marker states agree",
+      "ok": true
+    },
+    {
+      "check": "TRYTRANSFER285_TRYCCALL_supplied is registered to command target",
+      "ok": true
+    },
+    {
+      "check": "TRYTRANSFER285_TRYCCALL_supplied does not claim structural syntax",
+      "ok": true
+    },
+    {
+      "check": "TRYTRANSFER285_TRYCCALL_default is registered to command target",
+      "ok": true
+    },
+    {
+      "check": "TRYTRANSFER285_TRYCCALL_default does not claim structural syntax",
+      "ok": true
+    }
+  ],
+  "failed": [],
+  "comparison_sha256": "8f342fd455f6d830fad7efa379d11c83633db4a88fa612ca85c2968afd8dc44d",
+  "manifest_sha256": "15ae3422111726e2be641f50d1d7cc31ba6a9a875810405376cd009dacd1591f",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "TRYCCALL"
+  },
+  "decision": "necessary_comparison_complete",
+  "global_completion": false,
+  "product_changes": false
+}

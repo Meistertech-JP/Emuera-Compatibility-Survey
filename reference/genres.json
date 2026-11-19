@@ -1,0 +1,149 @@
+{
+ "schema": "survey-genres/1",
+ "genres": [
+  {
+   "id": "display",
+   "ja": "表示・書式",
+   "en": "Display & Formatting",
+   "description_ja": "PRINT系・行構成・色・フォントなど、画面への表示と書式",
+   "description_en": "PRINT-family output, line layout, colors, fonts, and other on-screen formatting",
+   "order": 1
+  },
+  {
+   "id": "input",
+   "ja": "入力・待機",
+   "en": "Input & Waiting",
+   "description_ja": "INPUT・WAIT・TWAITなど、入力の取得と待機、入力状態の確認",
+   "description_en": "INPUT, WAIT, TWAIT, and other input reading, waiting, and input-state checks",
+   "order": 2
+  },
+  {
+   "id": "math",
+   "ja": "数値演算・数学関数",
+   "en": "Numeric Operations & Math",
+   "description_ja": "ABS・MAX・SQRTなど数値演算、算術演算子、数値の集計",
+   "description_en": "ABS, MAX, SQRT, arithmetic operators, and numeric aggregation",
+   "order": 3
+  },
+  {
+   "id": "random",
+   "ja": "乱数・確率",
+   "en": "Randomness & Probability",
+   "description_ja": "RAND・RANDOMIZEなど乱数の生成と制御",
+   "description_en": "RAND, RANDOMIZE, and other random-number generation and control",
+   "order": 4
+  },
+  {
+   "id": "string",
+   "ja": "文字列処理",
+   "en": "String Processing",
+   "description_ja": "SUBSTRING・STRFINDなど文字列の検索・変換・結合・書式化",
+   "description_en": "SUBSTRING, STRFIND, and other string search, conversion, joining, and formatting",
+   "order": 5
+  },
+  {
+   "id": "variable",
+   "ja": "変数・配列操作",
+   "en": "Variables & Array Operations",
+   "description_ja": "代入構文・VARSET・ARRAYSORTなど変数と配列の操作・検索",
+   "description_en": "Assignment syntax, VARSET, ARRAYSORT, and other variable and array operations",
+   "order": 6
+  },
+  {
+   "id": "character",
+   "ja": "キャラクターデータ",
+   "en": "Character Data",
+   "description_ja": "ADDCHARA・GETCHARAなどキャラクターの追加・削除・検索",
+   "description_en": "ADDCHARA, GETCHARA, and other character addition, removal, and lookup",
+   "order": 7
+  },
+  {
+   "id": "control_flow",
+   "ja": "条件分岐・比較",
+   "en": "Conditionals & Comparison",
+   "description_ja": "IF・SELECTCASEと比較・論理演算子",
+   "description_en": "IF, SELECTCASE, comparison operators, and logical operators",
+   "order": 8
+  },
+  {
+   "id": "loop",
+   "ja": "ループ・実行制御",
+   "en": "Loops & Execution Control",
+   "description_ja": "FOR・WHILE・GOTOなどループと実行の流れの制御",
+   "description_en": "FOR, WHILE, GOTO, and other loops and execution-flow control",
+   "order": 9
+  },
+  {
+   "id": "function",
+   "ja": "関数・サブルーチン",
+   "en": "Functions & Subroutines",
+   "description_ja": "CALL・RETURN・FUNCなど関数の定義・呼出し・復帰",
+   "description_en": "CALL, RETURN, FUNC, and other function definition, invocation, and return",
+   "order": 10
+  },
+  {
+   "id": "csv_data",
+   "ja": "CSV・ゲームデータ",
+   "en": "CSV & Game Data",
+   "description_ja": "CSV参照関数とDATA定義構文などゲーム定義データ",
+   "description_en": "CSV reference functions and DATA definition syntax for game-defined data",
+   "order": 11
+  },
+  {
+   "id": "file_io",
+   "ja": "ファイル・保存・読込",
+   "en": "Files, Saving & Loading",
+   "description_ja": "SAVE・LOAD・SAVETEXTなどセーブとファイル入出力",
+   "description_en": "SAVE, LOAD, SAVETEXT, and other saving, loading, and file input/output",
+   "order": 12
+  },
+  {
+   "id": "graphics",
+   "ja": "画像・グラフィック",
+   "en": "Images & Graphics",
+   "description_ja": "GCREATE・SPRITE*・CBG*など画像・スプライト・描画",
+   "description_en": "GCREATE, SPRITE*, CBG*, and other image, sprite, and drawing operations",
+   "order": 13
+  },
+  {
+   "id": "system",
+   "ja": "システム・設定",
+   "en": "System & Configuration",
+   "description_ja": "GETCONFIG・GETTIMEなど設定・環境・時刻・システム情報",
+   "description_en": "GETCONFIG, GETTIME, and other configuration, environment, clock, and system information",
+   "order": 14
+  },
+  {
+   "id": "debug",
+   "ja": "デバッグ・診断",
+   "en": "Debug & Diagnostics",
+   "description_ja": "DEBUGPRINT系・ASSERTなどデバッグ出力と診断",
+   "description_en": "DEBUGPRINT-family output, ASSERT, and other debug and diagnostic features",
+   "order": 15
+  },
+  {
+   "id": "declaration",
+   "ja": "宣言・修飾子",
+   "en": "Declarations & Modifiers",
+   "description_ja": "#DIM・#FUNCTION・CONSTなど宣言と宣言修飾子",
+   "description_en": "#DIM, #FUNCTION, CONST, and other declarations and declaration modifiers",
+   "order": 16
+  },
+  {
+   "id": "operator",
+   "ja": "演算子・式構文",
+   "en": "Operators & Expression Syntax",
+   "description_ja": "演算子・式構文（副ジャンルとして主に使用）",
+   "description_en": "Operators and expression syntax (mainly used as a secondary genre)",
+   "order": 17
+  },
+  {
+   "id": "internal",
+   "ja": "内部処理・その他",
+   "en": "Internal & Other",
+   "description_ja": "一般ERBから直接使わない内部要素や追跡のみの対象名",
+   "description_en": "Internal elements not used directly from ordinary ERB, and tracked-only names",
+   "order": 18
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+{
+  "purpose": "Selected source SHA-256 and role correspondence; source files not included.",
+  "case_id": "DOLOOP259_BREAK_SUPPRESSION",
+  "source_case_pointer": "/records/1412",
+  "original_verdict": "matched_scoped",
+  "freeze_inventory_sha256": "0fad84890d7c84e3c15c31d4412d12c665743f1049e8fb4d114787c928c97eae",
+  "frozen_readback": "selected sources all match inventory; hash baseline is not immutable storage",
+  "sources": [
+    {
+      "source_id": "CASE_SCENARIO_REGISTER.json",
+      "sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195",
+      "bytes": 80538288,
+      "freeze_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195"
+    },
+    {
+      "source_id": "conditions.json",
+      "sha256": "dfe747789558653b0a5fd913bf0c8f1e4624e8b70503464bdfba82a4431a75c2",
+      "bytes": 1245,
+      "freeze_sha256": "dfe747789558653b0a5fd913bf0c8f1e4624e8b70503464bdfba82a4431a75c2"
+    },
+    {
+      "source_id": "fixture.ERB",
+      "sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0",
+      "bytes": 1687,
+      "freeze_sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0"
+    },
+    {
+      "source_id": "fixture.ERH",
+      "sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4",
+      "bytes": 108,
+      "freeze_sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4"
+    },
+    {
+      "source_id": "COMPARE.initial.json",
+      "sha256": "3c75fdcce67024ea3cb6f916300162c435d362c844775c878d47c78c98d80a5b",
+      "bytes": 6145,
+      "freeze_sha256": "3c75fdcce67024ea3cb6f916300162c435d362c844775c878d47c78c98d80a5b"
+    },
+    {
+      "source_id": "SEMANTIC_COMPARE.json",
+      "sha256": "d88040059c22439c66db13bba7894ba937d48f6d6c29397a8803d6edcbf259ff",
+      "bytes": 14562,
+      "freeze_sha256": "d88040059c22439c66db13bba7894ba937d48f6d6c29397a8803d6edcbf259ff"
+    },
+    {
+      "source_id": "CORRECTION_HISTORY.json",
+      "sha256": "99a964032fd9ffaa4981e730c539e597e6bd1f75eedaa688c54c13750e50f58b",
+      "bytes": 1376,
+      "freeze_sha256": "99a964032fd9ffaa4981e730c539e597e6bd1f75eedaa688c54c13750e50f58b"
+    },
+    {
+      "source_id": "SUMMARY.md",
+      "sha256": "9f4f9f65340bf4f8e23491e95f9c27838a424dd20ade237275edafd41b5681a6",
+      "bytes": 2736,
+      "freeze_sha256": "9f4f9f65340bf4f8e23491e95f9c27838a424dd20ade237275edafd41b5681a6"
+    },
+    {
+      "source_id": "FINAL_REPORT.json",
+      "sha256": "65d7ef70623d252bc221a669c2d18729a9189b7aeb1cc6f1252855a171371f81",
+      "bytes": 1293,
+      "freeze_sha256": "65d7ef70623d252bc221a669c2d18729a9189b7aeb1cc6f1252855a171371f81"
+    },
+    {
+      "source_id": "native-01:ZZ259.ERB",
+      "sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0",
+      "bytes": 1687,
+      "freeze_sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0"
+    },
+    {
+      "source_id": "native-01:ZZ259.ERH",
+      "sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4",
+      "bytes": 108,
+      "freeze_sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4"
+    },
+    {
+      "source_id": "native-01:emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "bytes": 2164,
+      "freeze_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "source_id": "native-01:emuera.log",
+      "sha256": "89f881e6a2ec7557771a1b2a1205a1cb6dafe2009c5117f88f555de2e21aa6cc",
+      "bytes": 1258,
+      "freeze_sha256": "89f881e6a2ec7557771a1b2a1205a1cb6dafe2009c5117f88f555de2e21aa6cc"
+    },
+    {
+      "source_id": "native-01:probe.json",
+      "sha256": "58509a70eac1ff9069df8d80f613e2ac53bd8c786ea5a3b91ccbd820e9dd1047",
+      "bytes": 3917,
+      "freeze_sha256": "58509a70eac1ff9069df8d80f613e2ac53bd8c786ea5a3b91ccbd820e9dd1047"
+    },
+    {
+      "source_id": "native-02:ZZ259.ERB",
+      "sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0",
+      "bytes": 1687,
+      "freeze_sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0"
+    },
+    {
+      "source_id": "native-02:ZZ259.ERH",
+      "sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4",
+      "bytes": 108,
+      "freeze_sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4"
+    },
+    {
+      "source_id": "native-02:emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "bytes": 2164,
+      "freeze_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "source_id": "native-02:emuera.log",
+      "sha256": "89f881e6a2ec7557771a1b2a1205a1cb6dafe2009c5117f88f555de2e21aa6cc",
+      "bytes": 1258,
+      "freeze_sha256": "89f881e6a2ec7557771a1b2a1205a1cb6dafe2009c5117f88f555de2e21aa6cc"
+    },
+    {
+      "source_id": "native-02:probe.json",
+      "sha256": "8bef1d275b141b322305cf41df92c529e72c6ae285904ae1604a2ba13ff18aae",
+      "bytes": 3916,
+      "freeze_sha256": "8bef1d275b141b322305cf41df92c529e72c6ae285904ae1604a2ba13ff18aae"
+    },
+    {
+      "source_id": "public-01:ZZ259.ERB",
+      "sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0",
+      "bytes": 1687,
+      "freeze_sha256": "421e48e72567c33e19d1f9502de92dfb2948a497695d0963a6143af8c9a89ae0"
+    },
+    {
+      "source_id": "public-01:ZZ259.ERH",
+      "sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4",
+      "bytes": 108,
+      "freeze_sha256": "1fa2be3fa3ba55e95244811130636397569a0234adeb32761fa3dba79e3046c4"
+    },
+    {
+      "source_id": "public-01:emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "bytes": 2164,
+      "freeze_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "source_id": "public-01:emuera.log",
+      "sha256": "89f881e6a2ec7557771a1b2a1205a1cb6dafe2009c5117f88f555de2e21aa6cc",
+      "bytes": 1258,
+      "freeze_sha256": "89f881e6a2ec7557771a1b2a1205a1cb6dafe2009c5117f88f555de2e21aa6cc"
+    },
+    {
+      "source_id": "public-01:verified-public-pyz.json",
+      "sha256": "eed4a5ca4b1a9eab6f4765e49450d48fbb9abef4c01e9f92b03c18d703be98fe",
+      "bytes": 2518,
+      "freeze_sha256": "eed4a5ca4b1a9eab6f4765e49450d48fbb9abef4c01e9f92b03c18d703be98fe"
+    },
+    {
+      "source_id": "public-01:verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "bytes": 110,
+      "freeze_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    }
+  ],
+  "mapping": {
+    "roles_and_verdict": [
+      "CASE_SCENARIO_REGISTER.json record 1412"
+    ],
+    "fixture_conditions": [
+      "conditions.json",
+      "fixture.ERB",
+      "fixture.ERH"
+    ],
+    "observed_values": [
+      "native-01:emuera.log",
+      "native-02:emuera.log",
+      "public-01:emuera.log",
+      "SEMANTIC_COMPARE.json"
+    ],
+    "termination": [
+      "native-01:probe.json",
+      "native-02:probe.json",
+      "public-01:verified-public-pyz.json"
+    ],
+    "verdict_history": [
+      "COMPARE.initial.json",
+      "SEMANTIC_COMPARE.json",
+      "CORRECTION_HISTORY.json"
+    ]
+  },
+  "nonduplication": "Candidate 9470 files scanned for C259_BREAK_JUMP_BEFORE ASCII/UTF-16LE and full history SHA; no matches. Register and 694 trace retain case reference, not this detailed projection.",
+  "limitations": "Only selected source paths were read and checked; hash equality is not proof of authenticity or publication rights; no independent review or rerun."
+}

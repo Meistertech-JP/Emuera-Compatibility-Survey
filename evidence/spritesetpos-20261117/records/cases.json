@@ -1,0 +1,368 @@
+[
+  {
+    "case_id": "SPRITEPOS221_spritesetpos-expression-existing",
+    "case_register_pointer": "/records/1026",
+    "case_verdict": "different_scoped",
+    "configuration_contents_disclosed": false,
+    "configuration_pins": [
+      {
+        "mode": "public",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0015"
+      },
+      {
+        "mode": "native-01",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0017"
+      },
+      {
+        "mode": "native-02",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0023"
+      }
+    ],
+    "fixture_path": "cases/SPRITEPOS221_spritesetpos-expression-existing/fixture/SEARCHBOUND01.ERB",
+    "fixture_sha256": "1429b5c0c31fee8008fc16c98e1728f194fc58efe8a97e091c805c4bae22bffe",
+    "limits": "Positive public values and post-resolution state are unobserved. Full config and sprite resources withheld; complete rerun not provided.",
+    "matrix_proof_pointer": "/rows/35/proof_cases/0",
+    "native_natural_exit_observed": false,
+    "native_selected_observations": [
+      {
+        "RESULTS": "sentinel221",
+        "id": "O01",
+        "state": {
+          "BEFORE_EXISTS": 1,
+          "BEFORE_X": 10,
+          "BEFORE_Y": -20,
+          "EXISTS": 1,
+          "ORDER": 123,
+          "R": 701,
+          "RET": 1,
+          "X": 3,
+          "Y": -4
+        }
+      },
+      {
+        "RESULTS": "sentinel221",
+        "id": "O02",
+        "state": {
+          "BEFORE_EXISTS": 1,
+          "BEFORE_X": 3,
+          "BEFORE_Y": -4,
+          "EXISTS": 1,
+          "ORDER": 123,
+          "R": 701,
+          "RET": 1,
+          "X": 3,
+          "Y": -4
+        }
+      },
+      {
+        "RESULTS": "sentinel221",
+        "id": "O03",
+        "state": {
+          "BEFORE_EXISTS": 1,
+          "BEFORE_X": 3,
+          "BEFORE_Y": -4,
+          "EXISTS": 1,
+          "ORDER": 123,
+          "R": 701,
+          "RET": 1,
+          "X": -16,
+          "Y": 28
+        }
+      }
+    ],
+    "native_selected_observations_origin": "Selected from the case register at creation; the verifier reconstructs and compares the retained Native raw observations.",
+    "pixels_observed": false,
+    "public_rejection_code": "E_FUNCTION",
+    "public_rejection_phase": "runtime_unknown_function_resolution",
+    "public_runtime_success": false,
+    "raw_paths": {
+      "native-01": "cases/SPRITEPOS221_spritesetpos-expression-existing/raw/native-01.log",
+      "native-02": "cases/SPRITEPOS221_spritesetpos-expression-existing/raw/native-02.log",
+      "public-stderr": "cases/SPRITEPOS221_spritesetpos-expression-existing/raw/public-stderr.bin",
+      "public-stdout": "cases/SPRITEPOS221_spritesetpos-expression-existing/raw/public-stdout.bin"
+    },
+    "readback_proof_pointer": "/proofs/0",
+    "readback_source_id": "S0012",
+    "sprite_assets_disclosed": false,
+    "target": {
+      "kind": "expression_function",
+      "name": "SPRITESETPOS"
+    },
+    "withheld_resources": [
+      {
+        "mode": "native-01",
+        "name": "PIX221.BMP",
+        "sha256": "38ed6e6bf1c90a869cffed28a65fcf7b14c8eb6f0ae95762219f073e05ca5210",
+        "source_id": "S0019"
+      },
+      {
+        "mode": "native-01",
+        "name": "SPRITES221.csv",
+        "sha256": "2b5c1538d4666231b72be770341d73dae3d577e81f3447572de2207ed63e3141",
+        "source_id": "S0020"
+      },
+      {
+        "mode": "native-02",
+        "name": "PIX221.BMP",
+        "sha256": "38ed6e6bf1c90a869cffed28a65fcf7b14c8eb6f0ae95762219f073e05ca5210",
+        "source_id": "S0025"
+      },
+      {
+        "mode": "native-02",
+        "name": "SPRITES221.csv",
+        "sha256": "2b5c1538d4666231b72be770341d73dae3d577e81f3447572de2207ed63e3141",
+        "source_id": "S0026"
+      }
+    ]
+  },
+  {
+    "case_id": "SPRITEPOS221_spritesetpos-expression-missing",
+    "case_register_pointer": "/records/1027",
+    "case_verdict": "different_scoped",
+    "configuration_contents_disclosed": false,
+    "configuration_pins": [
+      {
+        "mode": "public",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0032"
+      },
+      {
+        "mode": "native-01",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0034"
+      },
+      {
+        "mode": "native-02",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0038"
+      }
+    ],
+    "fixture_path": "cases/SPRITEPOS221_spritesetpos-expression-missing/fixture/SEARCHBOUND01.ERB",
+    "fixture_sha256": "31cf73db636d569a4f7b02bc414cc0bf4957e8cff162f1e1fa657d37a392cc03",
+    "limits": "Positive public values and post-resolution state are unobserved. Full config and sprite resources withheld; complete rerun not provided.",
+    "matrix_proof_pointer": "/rows/35/proof_cases/1",
+    "native_natural_exit_observed": false,
+    "native_selected_observations": [
+      {
+        "RESULTS": "sentinel221",
+        "id": "O01",
+        "state": {
+          "BEFORE_EXISTS": 0,
+          "BEFORE_X": 0,
+          "BEFORE_Y": 0,
+          "EXISTS": 0,
+          "ORDER": 1,
+          "R": 701,
+          "RET": 0,
+          "X": 0,
+          "Y": 0
+        }
+      }
+    ],
+    "native_selected_observations_origin": "Selected from the case register at creation; the verifier reconstructs and compares the retained Native raw observations.",
+    "pixels_observed": false,
+    "public_rejection_code": "E_FUNCTION",
+    "public_rejection_phase": "runtime_unknown_function_resolution",
+    "public_runtime_success": false,
+    "raw_paths": {
+      "native-01": "cases/SPRITEPOS221_spritesetpos-expression-missing/raw/native-01.log",
+      "native-02": "cases/SPRITEPOS221_spritesetpos-expression-missing/raw/native-02.log",
+      "public-stderr": "cases/SPRITEPOS221_spritesetpos-expression-missing/raw/public-stderr.bin",
+      "public-stdout": "cases/SPRITEPOS221_spritesetpos-expression-missing/raw/public-stdout.bin"
+    },
+    "readback_proof_pointer": "/proofs/1",
+    "readback_source_id": "S0012",
+    "sprite_assets_disclosed": false,
+    "target": {
+      "kind": "expression_function",
+      "name": "SPRITESETPOS"
+    },
+    "withheld_resources": []
+  },
+  {
+    "case_id": "SPRITEPOS221_spritesetpos-command-existing",
+    "case_register_pointer": "/records/1028",
+    "case_verdict": "different_scoped",
+    "configuration_contents_disclosed": false,
+    "configuration_pins": [
+      {
+        "mode": "public",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0046"
+      },
+      {
+        "mode": "native-01",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0048"
+      },
+      {
+        "mode": "native-02",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0054"
+      }
+    ],
+    "fixture_path": "cases/SPRITEPOS221_spritesetpos-command-existing/fixture/SEARCHBOUND01.ERB",
+    "fixture_sha256": "7bb14299335cb9a751e4b00cc346f863a093b1d97cfa5aa6ad20443e695854cc",
+    "limits": "Positive public values and post-resolution state are unobserved. Full config and sprite resources withheld; complete rerun not provided.",
+    "matrix_proof_pointer": "/rows/105/proof_cases/0",
+    "native_natural_exit_observed": false,
+    "native_selected_observations": [
+      {
+        "RESULTS": "sentinel221",
+        "id": "O01",
+        "state": {
+          "BEFORE_EXISTS": 1,
+          "BEFORE_X": 10,
+          "BEFORE_Y": -20,
+          "EXISTS": 1,
+          "ORDER": 123,
+          "R": 1,
+          "RET": 1,
+          "X": 3,
+          "Y": -4
+        }
+      },
+      {
+        "RESULTS": "sentinel221",
+        "id": "O02",
+        "state": {
+          "BEFORE_EXISTS": 1,
+          "BEFORE_X": 3,
+          "BEFORE_Y": -4,
+          "EXISTS": 1,
+          "ORDER": 123,
+          "R": 1,
+          "RET": 1,
+          "X": 3,
+          "Y": -4
+        }
+      },
+      {
+        "RESULTS": "sentinel221",
+        "id": "O03",
+        "state": {
+          "BEFORE_EXISTS": 1,
+          "BEFORE_X": 3,
+          "BEFORE_Y": -4,
+          "EXISTS": 1,
+          "ORDER": 123,
+          "R": 1,
+          "RET": 1,
+          "X": -16,
+          "Y": 28
+        }
+      }
+    ],
+    "native_selected_observations_origin": "Selected from the case register at creation; the verifier reconstructs and compares the retained Native raw observations.",
+    "pixels_observed": false,
+    "public_rejection_code": "E_LOAD",
+    "public_rejection_phase": "load_unrecognized_exact_target_line",
+    "public_runtime_success": false,
+    "raw_paths": {
+      "native-01": "cases/SPRITEPOS221_spritesetpos-command-existing/raw/native-01.log",
+      "native-02": "cases/SPRITEPOS221_spritesetpos-command-existing/raw/native-02.log",
+      "public-stderr": "cases/SPRITEPOS221_spritesetpos-command-existing/raw/public-stderr.bin",
+      "public-stdout": "cases/SPRITEPOS221_spritesetpos-command-existing/raw/public-stdout.bin"
+    },
+    "readback_proof_pointer": "/proofs/0",
+    "readback_source_id": "S0043",
+    "sprite_assets_disclosed": false,
+    "target": {
+      "kind": "method_as_command",
+      "name": "SPRITESETPOS"
+    },
+    "withheld_resources": [
+      {
+        "mode": "native-01",
+        "name": "PIX221.BMP",
+        "sha256": "38ed6e6bf1c90a869cffed28a65fcf7b14c8eb6f0ae95762219f073e05ca5210",
+        "source_id": "S0050"
+      },
+      {
+        "mode": "native-01",
+        "name": "SPRITES221.csv",
+        "sha256": "2b5c1538d4666231b72be770341d73dae3d577e81f3447572de2207ed63e3141",
+        "source_id": "S0051"
+      },
+      {
+        "mode": "native-02",
+        "name": "PIX221.BMP",
+        "sha256": "38ed6e6bf1c90a869cffed28a65fcf7b14c8eb6f0ae95762219f073e05ca5210",
+        "source_id": "S0056"
+      },
+      {
+        "mode": "native-02",
+        "name": "SPRITES221.csv",
+        "sha256": "2b5c1538d4666231b72be770341d73dae3d577e81f3447572de2207ed63e3141",
+        "source_id": "S0057"
+      }
+    ]
+  },
+  {
+    "case_id": "SPRITEPOS221_spritesetpos-command-missing",
+    "case_register_pointer": "/records/1029",
+    "case_verdict": "different_scoped",
+    "configuration_contents_disclosed": false,
+    "configuration_pins": [
+      {
+        "mode": "public",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0063"
+      },
+      {
+        "mode": "native-01",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0065"
+      },
+      {
+        "mode": "native-02",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "source_id": "S0069"
+      }
+    ],
+    "fixture_path": "cases/SPRITEPOS221_spritesetpos-command-missing/fixture/SEARCHBOUND01.ERB",
+    "fixture_sha256": "a896ce2ca11cd23848a3f4c1b8a15ad639c19ac83e985d810c6ac9d7fe834c98",
+    "limits": "Positive public values and post-resolution state are unobserved. Full config and sprite resources withheld; complete rerun not provided.",
+    "matrix_proof_pointer": "/rows/105/proof_cases/1",
+    "native_natural_exit_observed": false,
+    "native_selected_observations": [
+      {
+        "RESULTS": "sentinel221",
+        "id": "O01",
+        "state": {
+          "BEFORE_EXISTS": 0,
+          "BEFORE_X": 0,
+          "BEFORE_Y": 0,
+          "EXISTS": 0,
+          "ORDER": 1,
+          "R": 0,
+          "RET": 0,
+          "X": 0,
+          "Y": 0
+        }
+      }
+    ],
+    "native_selected_observations_origin": "Selected from the case register at creation; the verifier reconstructs and compares the retained Native raw observations.",
+    "pixels_observed": false,
+    "public_rejection_code": "E_LOAD",
+    "public_rejection_phase": "load_unrecognized_exact_target_line",
+    "public_runtime_success": false,
+    "raw_paths": {
+      "native-01": "cases/SPRITEPOS221_spritesetpos-command-missing/raw/native-01.log",
+      "native-02": "cases/SPRITEPOS221_spritesetpos-command-missing/raw/native-02.log",
+      "public-stderr": "cases/SPRITEPOS221_spritesetpos-command-missing/raw/public-stderr.bin",
+      "public-stdout": "cases/SPRITEPOS221_spritesetpos-command-missing/raw/public-stdout.bin"
+    },
+    "readback_proof_pointer": "/proofs/1",
+    "readback_source_id": "S0043",
+    "sprite_assets_disclosed": false,
+    "target": {
+      "kind": "method_as_command",
+      "name": "SPRITESETPOS"
+    },
+    "withheld_resources": []
+  }
+]

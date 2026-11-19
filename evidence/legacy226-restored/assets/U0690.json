@@ -1,0 +1,408 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "FORCEKANA"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "KANALOG01",
+    "KANALOG02",
+    "PARFORCE01",
+    "PRINTKD212_FORCEKANA_INTERACTION",
+    "KANALITERAL213_K213_0",
+    "KANALITERAL213_K213_1",
+    "KANALITERAL213_K213_2",
+    "KANALITERAL213_K213_3",
+    "KANALITERAL213_K213_4",
+    "KANALITERAL213_K213_5",
+    "KANALITERAL213_K213_6",
+    "KANALITERAL213_K213_7",
+    "KANALITERAL213_K213_8",
+    "KANALITERAL213_K213_9",
+    "KANALITERAL213_K213_10",
+    "KANALITERAL213_K213_11",
+    "KANALITERAL213_STANDALONE"
+  ],
+  "accepted_scope": {
+    "kind": "command_or_syntax",
+    "name": "FORCEKANA",
+    "current_shared_status": "known_difference_documented",
+    "current_shared_necessary_comparison_complete": false,
+    "decision": "accept_known_difference_documented_for_exact_pending_review",
+    "adjudicated_necessary_comparison_complete": true,
+    "shared_ledger_updated": false,
+    "pending_condition_mapping": [
+      {
+        "index": 0,
+        "original_condition": {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented FORCEKANA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "KANALOG01",
+            "KANALOG02",
+            "PARFORCE01",
+            "PRINTKD212_FORCEKANA_INTERACTION",
+            "KANALITERAL213_K213_1",
+            "KANALITERAL213_K213_4",
+            "KANALITERAL213_K213_7",
+            "KANALITERAL213_K213_8",
+            "KANALITERAL213_STANDALONE"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 312,
+              "end_line": 312
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+              "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+              "start_line": 551,
+              "end_line": 557
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+              "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+              "start_line": 171,
+              "end_line": 181
+            }
+          ]
+        },
+        "disposition": "accepted_existing_documented_difference",
+        "raw_fixture_confirmation": "Verified against actual retained fixture/log bytes and at-run receipts; see raw_observations, identity_verification and hash_checks.",
+        "source_branch_confirmation": "Verified archive member hashes and exact selected builder/handler/conversion branches; see requirement_mapping.",
+        "behavior_vs_diagnostic_layout": "Output conversion interaction plus separate -1 diagnostic presentation",
+        "implementation_or_repeat_required": false,
+        "mandatory_gaps_moved_to_limits": []
+      }
+    ],
+    "requirement_mapping": [
+      {
+        "id": "registration_form",
+        "original_requirement": "Exact v24 FORCEKANA command registration and constructor arguments, not expression or method-as-command homonym.",
+        "current_requirement": "Exact v24 FORCEKANA command registration and constructor arguments, not expression or method-as-command homonym.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "FunctionIdentifier.cs:312 selects INT_EXPRESSION with METHOD_SAFE|EXTENDED; existing binary registration records code182 and builder3. Archive executable bytes match the retained at-run executables.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "signature_parser",
+        "original_requirement": "FORCEKANA: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "current_requirement": "FORCEKANA: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "ArgumentBuilder.cs:48-96/120-124,175,909-960: actual INT_EXPRESSION(false), Int64 type, minArg0, checkArgumentType before use; no terms supplies integer0 with warning, not a mandatory-argument rejection. Wrong first type or null first term is rejected; extra arguments warn (level1) and first term is selected, so minArg alone is not a signature. Public display_commands.py:85-89 evaluates its supplied expression without defaulting omission. Prior E56B omitted-argument continuation/rejection is retained as historical parser/control evidence, not recertified as a fresh run. No dynamic FORCEKANA-helper equivalence is inferred from PRINT helper counts.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "normal_output_state_control",
+        "original_requirement": "Selected literal conversion modes0..3 and invalid/bounds behavior; source half/fullwidth conversion.",
+        "current_requirement": "Selected literal conversion modes0..3 and invalid/bounds behavior; source half/fullwidth conversion.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Raw KANALOG01 selected modes0/1/3 agree; mode2 [ああｱ A] vs [あああ A]. KANALOG02 and independently executed six-line KANALITERAL213_STANDALONE retain Native U+FF71 vs public U+3042. Twelve literal conditions have eight matches and four differences. This is observable output-conversion interaction, not independent flag/setter state misassignment or Japanese input behavior.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "finite_boundary_error",
+        "original_requirement": "Case213 standalone retains halfwidth Native but public converts mode2; mode3 legacy VU codepoint mismatch.",
+        "current_requirement": "Case213 standalone retains halfwidth Native but public converts mode2; mode3 legacy VU codepoint mismatch.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "K213_1/4/7 mode2: ｱ,ｶﾞ,ｳﾞ remain halfwidth Native, public あ,が,ゔ. K213_8 mode3 ｳﾞ: Native ヴ U+30F4 vs public ゔ U+3094. PARFORCE01 -1: both stop line3 before AFTER; diagnostic presentation differs. Source rejects <0 or >3 before setting flags. Historical E56 positive4/string/omission evidence remains separately scoped.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "evaluation_and_side_effects",
+        "original_requirement": "No broad Unicode-normalization demand; document exact strings/codepoints and mode-specific source branch.",
+        "current_requirement": "No broad Unicode-normalization demand; document exact strings/codepoints and mode-specific source branch.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Native ExpressionMediator.cs:36-42 sets flags,67-80 converts with Japanese LCID0x0411; mode2 Hiragana only, mode3 Hiragana|Wide. Public printing.py mode2 and3 normalize halfwidth runs with NFKC then map kana. PRINTK literals remove helper/FORM dependencies; 212 corroborates output interaction and preserves helper/state observations. No universal Unicode/glyph claim or setter-only attribution.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      }
+    ],
+    "mandatory_gaps": [],
+    "remaining_conditions": [],
+    "unknowns": [
+      "Independent FORCEKANA setter misassignment is not demonstrated.",
+      "Japanese input/IME behavior, GUI glyph rendering, full Unicode conversion, all dynamic argument side effects and natural Native exit are not established.",
+      "E56 historical missing/type/positive-boundary evidence is retained with its original coverage; no new engine run recertifies it."
+    ],
+    "closure_scope": "Exact review_existing condition and original finite documented-difference requirements only; no command-wide compatibility assertion."
+  },
+  "original_remaining": [
+    {
+      "action": "review_existing",
+      "condition": "Parent confirm the documented FORCEKANA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+      "case_ids": [
+        "KANALOG01",
+        "KANALOG02",
+        "PARFORCE01",
+        "PRINTKD212_FORCEKANA_INTERACTION",
+        "KANALITERAL213_K213_1",
+        "KANALITERAL213_K213_4",
+        "KANALITERAL213_K213_7",
+        "KANALITERAL213_K213_8",
+        "KANALITERAL213_STANDALONE"
+      ],
+      "source_refs": [
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+          "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+          "start_line": 312,
+          "end_line": 312
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+          "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+          "start_line": 551,
+          "end_line": 557
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+          "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+          "start_line": 171,
+          "end_line": 181
+        }
+      ]
+    }
+  ],
+  "proof": {
+    "report_path": "evidence/kana-mouse-existing-review-20261115/REPORT.json",
+    "report_sha256": "138294520e0db3b71c29b3f4540d831e673f466ca3878d4135ea606096da9e37",
+    "requirement_mapping": [
+      {
+        "id": "registration_form",
+        "original_requirement": "Exact v24 FORCEKANA command registration and constructor arguments, not expression or method-as-command homonym.",
+        "current_requirement": "Exact v24 FORCEKANA command registration and constructor arguments, not expression or method-as-command homonym.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "FunctionIdentifier.cs:312 selects INT_EXPRESSION with METHOD_SAFE|EXTENDED; existing binary registration records code182 and builder3. Archive executable bytes match the retained at-run executables.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "signature_parser",
+        "original_requirement": "FORCEKANA: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "current_requirement": "FORCEKANA: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "ArgumentBuilder.cs:48-96/120-124,175,909-960: actual INT_EXPRESSION(false), Int64 type, minArg0, checkArgumentType before use; no terms supplies integer0 with warning, not a mandatory-argument rejection. Wrong first type or null first term is rejected; extra arguments warn (level1) and first term is selected, so minArg alone is not a signature. Public display_commands.py:85-89 evaluates its supplied expression without defaulting omission. Prior E56B omitted-argument continuation/rejection is retained as historical parser/control evidence, not recertified as a fresh run. No dynamic FORCEKANA-helper equivalence is inferred from PRINT helper counts.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "normal_output_state_control",
+        "original_requirement": "Selected literal conversion modes0..3 and invalid/bounds behavior; source half/fullwidth conversion.",
+        "current_requirement": "Selected literal conversion modes0..3 and invalid/bounds behavior; source half/fullwidth conversion.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Raw KANALOG01 selected modes0/1/3 agree; mode2 [ああｱ A] vs [あああ A]. KANALOG02 and independently executed six-line KANALITERAL213_STANDALONE retain Native U+FF71 vs public U+3042. Twelve literal conditions have eight matches and four differences. This is observable output-conversion interaction, not independent flag/setter state misassignment or Japanese input behavior.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "finite_boundary_error",
+        "original_requirement": "Case213 standalone retains halfwidth Native but public converts mode2; mode3 legacy VU codepoint mismatch.",
+        "current_requirement": "Case213 standalone retains halfwidth Native but public converts mode2; mode3 legacy VU codepoint mismatch.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "K213_1/4/7 mode2: ｱ,ｶﾞ,ｳﾞ remain halfwidth Native, public あ,が,ゔ. K213_8 mode3 ｳﾞ: Native ヴ U+30F4 vs public ゔ U+3094. PARFORCE01 -1: both stop line3 before AFTER; diagnostic presentation differs. Source rejects <0 or >3 before setting flags. Historical E56 positive4/string/omission evidence remains separately scoped.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      },
+      {
+        "id": "evaluation_and_side_effects",
+        "original_requirement": "No broad Unicode-normalization demand; document exact strings/codepoints and mode-specific source branch.",
+        "current_requirement": "No broad Unicode-normalization demand; document exact strings/codepoints and mode-specific source branch.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Native ExpressionMediator.cs:36-42 sets flags,67-80 converts with Japanese LCID0x0411; mode2 Hiragana only, mode3 Hiragana|Wide. Public printing.py mode2 and3 normalize halfwidth runs with NFKC then map kana. PRINTK literals remove helper/FORM dependencies; 212 corroborates output interaction and preserves helper/state observations. No universal Unicode/glyph claim or setter-only attribution.",
+        "evidence_case_ids": [
+          "KANALOG01",
+          "KANALOG02",
+          "PARFORCE01",
+          "PRINTKD212_FORCEKANA_INTERACTION",
+          "KANALITERAL213_K213_0",
+          "KANALITERAL213_K213_1",
+          "KANALITERAL213_K213_2",
+          "KANALITERAL213_K213_3",
+          "KANALITERAL213_K213_4",
+          "KANALITERAL213_K213_5",
+          "KANALITERAL213_K213_6",
+          "KANALITERAL213_K213_7",
+          "KANALITERAL213_K213_8",
+          "KANALITERAL213_K213_9",
+          "KANALITERAL213_K213_10",
+          "KANALITERAL213_K213_11",
+          "KANALITERAL213_STANDALONE"
+        ]
+      }
+    ]
+  },
+  "product_modified": false,
+  "global_completion": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "accepted-target-revocation-resolution-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "FONTSTYLE"
+  },
+  "decision": "necessary_comparison_complete",
+  "classification": "different_scoped",
+  "revocation_source": "evidence/coverage-gap-audit-20261115/FONTSTYLE_REOPEN.json",
+  "revocation_sha256": "dbf51da6daabdede315e3e6fd99fc260e8e5e9f3374472f626e51504acc34557",
+  "fulfilled_requirement_ids": [
+    "normal_output_state_control",
+    "evaluation_and_side_effects"
+  ],
+  "new_case_ids": [
+    "FONTSTYLE_OMITTED_CURRENT_20261115",
+    "FONTSTYLE_DYNAMIC_HELPER_CURRENT_20261115"
+  ],
+  "evidence": {
+    "comparison": {
+      "path": "evidence/fontstyle-required-observations-20261115/COMPARISON.json",
+      "sha256": "4df74deb0a41820b4d9f1262e8e27c2931410c9aeaa9a4d80c8fe3c2e30ecb9a"
+    },
+    "manifest": {
+      "path": "evidence/fontstyle-required-observations-20261115/MANIFEST.json",
+      "sha256": "edbd19b2f0df1f71a31926f820734333c5e330f9f7fe9369ca7330beccefe228"
+    },
+    "source": {
+      "path": "evidence/fontstyle-required-observations-20261115/SOURCE_MAP.json",
+      "sha256": "bb9ba38692be11cc13c7ad725b8c5c7d3e830b828c01892c2c1453a95e9a0198"
+    }
+  },
+  "observations": {
+    "normal_output_state_control": "Native omitted argument maps to0 via nullable builder, style15->0, numeric/string sentinels unchanged, DONE; public E_ARGUMENT target line9 after BEFORE, no AFTER.",
+    "evaluation_and_side_effects": "Both Native repeats and public: dynamic numeric helper invoked once, style13, unchanged RESULT777/RESULTS SENTINEL, DONE; raw logs identical."
+  },
+  "original_finite_requirements": "Registration/parser inspected; literal1 normal retained, -1/16 documented difference retained; missing omitted/helper requirements now actually executed.",
+  "remaining": [],
+  "limitations": [
+    "Stored style, helper count, numeric/string sentinels and continuation only; font pixels are not compared",
+    "Native runner owns isolated desktops and cleans exact created process; natural exit not inferred",
+    "Historical mask -1/16 differences are not erased by these cases"
+  ],
+  "product_modified": false,
+  "global_completion": false
+}

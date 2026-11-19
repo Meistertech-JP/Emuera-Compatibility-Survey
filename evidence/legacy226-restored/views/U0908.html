@@ -1,0 +1,39 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0908 · CONDITIONS_TABLE.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0908 · CONDITIONS_TABLE.md</h1>
+<p>20条件のPRINTPLAIN/SINGLE比較表で、5空SINGLEのDIFFERENTを保持した原票を公開できる。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>028c4ce2c73f1009a7683dc81e500128794afbb5675d9313b7d49d002802a8ca</code></p>
+<p><a href="../assets/U0908.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>028c4ce2c73f1009a7683dc81e500128794afbb5675d9313b7d49d002802a8ca</code></p>
+<pre>| ID | Command | Argument | SKIP | raw/layout | content/state/eval |
+| --- | --- | --- | --- | --- | --- |
+| C196_01 | PRINTPLAIN | `p{ZZ196H(1)}` | False | match | match |
+| C196_02 | PRINTPLAINFORM | `f{ZZ196H(1)}/{ZZ196H(2)}` | False | match | match |
+| C196_03 | PRINTSINGLE | `s{ZZ196H(1)}` | False | match | match |
+| C196_04 | PRINTSINGLEV | `ZZ196H(1),&quot;/&quot;,ZZ196H(2)` | False | match | match |
+| C196_05 | PRINTSINGLES | `ZZ196T(1)` | False | match | match |
+| C196_06 | PRINTSINGLEFORM | `f{ZZ196H(1)}/{ZZ196H(2)}` | False | match | match |
+| C196_07 | PRINTSINGLEFORMS | `ZZ196T(1)` | False | match | match |
+| C196_08 | PRINTLC | `lc` | False | match | match |
+| C196_09 | PRINTFORMLC | `c{ZZ196H(1)}/{ZZ196H(2)}` | False | match | match |
+| C196_10 | PRINTPLAIN | `(omitted nullable empty)` | False | match | match |
+| C196_11 | PRINTPLAINFORM | `(omitted nullable empty)` | False | match | match |
+| C196_12 | PRINTSINGLE | `(omitted nullable empty)` | False | DIFFERENT | match |
+| C196_13 | PRINTSINGLEV | `&quot;&quot;` | False | DIFFERENT | match |
+| C196_14 | PRINTSINGLES | `&quot;&quot;` | False | DIFFERENT | match |
+| C196_15 | PRINTSINGLEFORM | `(omitted nullable empty)` | False | DIFFERENT | match |
+| C196_16 | PRINTSINGLEFORMS | `&quot;&quot;` | False | DIFFERENT | match |
+| C196_17 | PRINTPLAINFORM | `f{ZZ196H(1)}` | True | match | match |
+| C196_18 | PRINTSINGLEV | `ZZ196H(1),ZZ196H(2)` | True | match | match |
+| C196_19 | PRINTSINGLEFORMS | `ZZ196T(1)` | True | match | match |
+| C196_20 | PRINTFORMLC | `c{ZZ196H(1)}` | True | match | match |
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0844 · command_or_syntax:PRINTSINGLE · check</li>
+</ul></html>

@@ -1,0 +1,23 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTCK"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_PRINTCK_EXISTING_20261115.json",
+  "acceptance_sha256": "6bb8fbeb031669b1d89539bce3080362732eaf2649fa5a83483514b9d01e1a33",
+  "registered_case_ids": [
+    "PRINTKD212_C212_20",
+    "PRINTKD212_C212_21",
+    "PRINTKD212_C212_22",
+    "PRINTKD212_C212_23"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "evidence_reference_hashes_validated": true,
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "global_completion": false
+}

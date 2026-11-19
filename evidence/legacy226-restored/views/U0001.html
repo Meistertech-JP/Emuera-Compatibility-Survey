@@ -1,0 +1,107 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0001 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0001 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=expression_function:COLOR_FROMRGB。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;COLOR_FROMRGB&quot;}; outcome=&quot;different_scoped&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>3de177a9cd1230d55625aacad764347575f27e87e3efcbf5bf2d46e81c3d2869</code></p>
+<p><a href="../assets/U0001.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3de177a9cd1230d55625aacad764347575f27e87e3efcbf5bf2d46e81c3d2869</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;native-public-expression-order-comparison-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T12:07:29.938397+00:00&quot;,
+  &quot;case_id&quot;: &quot;COLORNEGFAULT01&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;COLOR_FROMRGB&quot;
+  },
+  &quot;expression&quot;: &quot;COLOR_FROMRGB(-1,ZZ_FAULT(),0)&quot;,
+  &quot;condition&quot;: &quot;first component is -1; second argument helper emits FAULT_HELPER_EVAL and then divides by zero using RESULT:0&quot;,
+  &quot;native_runs&quot;: [
+    {
+      &quot;run_id&quot;: &quot;isolated-native-e5d160b4968d4c60a6d3b4370a57fbef&quot;,
+      &quot;pid&quot;: 30448,
+      &quot;probe_path&quot;: &quot;runs/isolated-native-e5d160b4968d4c60a6d3b4370a57fbef/probe.json&quot;,
+      &quot;probe_sha256&quot;: &quot;9486dbe7e9e00dca3c543468c4ebef41ac7d5c6f6dba3eaebb87b2c94dad1587&quot;,
+      &quot;emuera_log_path&quot;: &quot;runs/isolated-native-e5d160b4968d4c60a6d3b4370a57fbef/emuera.log&quot;,
+      &quot;emuera_log_sha256&quot;: &quot;3b43e03e904dc89dd213b99d4df68f8ac2cc8cfc0ad5dea9540d1723531b287d&quot;,
+      &quot;screenshot_crop_path&quot;: &quot;native-error-crop.png&quot;,
+      &quot;screenshot_crop_sha256&quot;: &quot;7515aa6be34bc3b97ff1476aa8811058dc181aff7545aa55226cc14abe739cb2&quot;,
+      &quot;marker_before_target&quot;: true,
+      &quot;native_first_argument_error&quot;: true,
+      &quot;later_helper_marker_observed&quot;: false,
+      &quot;after_target_observed&quot;: false,
+      &quot;synthetic_input_sent&quot;: false,
+      &quot;native_exit_code_observed&quot;: false,
+      &quot;natural_exit_observed&quot;: false,
+      &quot;process_cleanup&quot;: &quot;owned process terminated after error dialog capture&quot;
+    },
+    {
+      &quot;run_id&quot;: &quot;isolated-native-8e76b55ca1dc4ce386b7310a36a217f7&quot;,
+      &quot;pid&quot;: 37084,
+      &quot;probe_path&quot;: &quot;runs/isolated-native-8e76b55ca1dc4ce386b7310a36a217f7/probe.json&quot;,
+      &quot;probe_sha256&quot;: &quot;cf40bc47bffe8c480d6f857b82a4660bf78ba0009d832510569fd00b4e16f201&quot;,
+      &quot;emuera_log_path&quot;: &quot;runs/isolated-native-8e76b55ca1dc4ce386b7310a36a217f7/emuera.log&quot;,
+      &quot;emuera_log_sha256&quot;: &quot;3b43e03e904dc89dd213b99d4df68f8ac2cc8cfc0ad5dea9540d1723531b287d&quot;,
+      &quot;screenshot_crop_path&quot;: &quot;native-error-crop-02.png&quot;,
+      &quot;screenshot_crop_sha256&quot;: &quot;7515aa6be34bc3b97ff1476aa8811058dc181aff7545aa55226cc14abe739cb2&quot;,
+      &quot;marker_before_target&quot;: true,
+      &quot;native_first_argument_error&quot;: true,
+      &quot;later_helper_marker_observed&quot;: false,
+      &quot;after_target_observed&quot;: false,
+      &quot;synthetic_input_sent&quot;: false,
+      &quot;native_exit_code_observed&quot;: false,
+      &quot;natural_exit_observed&quot;: false,
+      &quot;process_cleanup&quot;: &quot;owned process terminated after error dialog capture&quot;
+    }
+  ],
+  &quot;py_run&quot;: {
+    &quot;path&quot;: &quot;PY_RUN_FINAL.json&quot;,
+    &quot;sha256&quot;: &quot;f380586e73cd937cc17214daaa5d8cb451635b892f448788f516fc62a3c5f3b6&quot;,
+    &quot;returncode&quot;: 1,
+    &quot;stdout_sha256&quot;: &quot;2760cad9a06a5c67423888951effe7722cd818f4549bbcc8679a5ce46fcccd6f&quot;,
+    &quot;stderr_sha256&quot;: &quot;1ca349d4f287f7272fdf9c7256b8e54c1e32dc7458e3b79eb00ee13d2b6bd171&quot;,
+    &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+  },
+  &quot;native_observation&quot;: {
+    &quot;before_marker&quot;: true,
+    &quot;first_component_range_error&quot;: true,
+    &quot;fault_helper_marker&quot;: false,
+    &quot;after_marker&quot;: false,
+    &quot;exit_code_observed&quot;: false,
+    &quot;natural_exit_observed&quot;: false
+  },
+  &quot;py_observation&quot;: {
+    &quot;before_marker&quot;: true,
+    &quot;first_component_range_error&quot;: false,
+    &quot;fault_helper_marker&quot;: true,
+    &quot;arithmetic_error_at_line&quot;: 13,
+    &quot;after_marker&quot;: false,
+    &quot;returncode&quot;: 1
+  },
+  &quot;outcome&quot;: &quot;different_scoped&quot;,
+  &quot;interpretation&quot;: &quot;For this input, Native validates the first component before evaluating the later helper; the pinned public pyz evaluates the later helper first. The values and diagnostics after the first failure are not claimed identical.&quot;,
+  &quot;matched_conditions&quot;: [
+    &quot;same ERB fixture bytes&quot;,
+    &quot;same emuera.config SHA-256&quot;,
+    &quot;same pinned Native executable/config across two runs&quot;,
+    &quot;same pinned public pyz before and after&quot;,
+    &quot;no synthetic keyboard input&quot;
+  ],
+  &quot;limitations&quot;: [
+    &quot;one negative value at first component only&quot;,
+    &quot;does not cover negative/out-of-range values at every component position, third component, arity, all conversions, or all expressions&quot;,
+    &quot;Native natural exit and process exit code unobserved&quot;,
+    &quot;initial Py run without matched config excluded&quot;
+  ],
+  &quot;product_code_changed&quot;: false,
+  &quot;public_artifacts_changed&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2175 · expression_function:COLOR_FROMRGB · check</li>
+</ul></html>

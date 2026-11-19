@@ -1,0 +1,485 @@
+{
+  "schema": "function-family276-original-obligation-review/v1",
+  "proposal_only": true,
+  "applied": false,
+  "rows": [
+    {
+      "kind": "expression_function",
+      "name": "STRLENS",
+      "accepted": true,
+      "proposed_necessary_comparison_complete": true,
+      "comparison_outcome": "documented_difference",
+      "behavioral_equivalence": false,
+      "acceptance_scope": "Original finite necessary-comparison requirements only; not all-value behavior, all-Unicode compatibility, error-equivalence certification or global adoption.",
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/0/requirements/0",
+          "disposition": "SATISFIED_EXACT_SOURCE_AND_STATIC_DEFAULT_GUARDS_WITH_OWN_NORMAL",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0",
+            "case276/COMPARISON.json#/rows/0"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/0/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_NORMAL_OLD_AND_FRESH276",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0",
+            "case276/COMPARISON.json#/rows/0"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_missing_proof",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/0/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_FINITE_CLAUSE_WITH_MATCH_OR_DOCUMENTED_DIFFERENCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0",
+            "case276/COMPARISON.json#/rows/0"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/0/requirements/3",
+          "disposition": "SATISFIED_EXACT_FORM_COMMIT_PLUS_ALL3_PRINTED_INDEPENDENT_SENTINELS",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0",
+            "case276/COMPARISON.json#/rows/0"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/0/requirements/4",
+          "disposition": "RETAINED_LEGACY_GAP_NOT_RETROFILLED_FRESH276_SEPARATELY_PINNED",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0",
+            "case276/COMPARISON.json#/rows/0"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        }
+      ],
+      "original_finite_clauses": [
+        {
+          "original_requirement": "Independent supplementary-codepoint unit count and expression/method sentinel routing for STRLENS; existing empty/space and selected UTF16 STRLENSU189/219 remain proof only of those inputs.",
+          "disposition": "DISCHARGED_IN_STATED_FINITE_SCOPE",
+          "evidence": "OWN_NORMAL_REVIEW.json#/0/fresh_own_normal"
+        }
+      ],
+      "source_branch_requirements": [
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2106-2106",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0"
+          ]
+        },
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2107-2107",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/0"
+          ]
+        }
+      ],
+      "own_normal_review": "OWN_NORMAL_REVIEW.json#/0",
+      "shared_path_ref": "S709acac974762907",
+      "shared_reuse_policy": "Only default-fixed1string source path may be reused; each form has its own direct276 normal. No runtime borrowed from other functions.",
+      "new_case_id": "FUNCTION276_F276_01",
+      "historical_cases": [
+        "P36EMPTY02",
+        "P36SPACE02",
+        "STRLENS01",
+        "STRLENSU01"
+      ],
+      "finite_remainder": [],
+      "remaining": [],
+      "retained_legacy_public_identity": {
+        "case_ids": [
+          "P36EMPTY02",
+          "P36SPACE02",
+          "STRLENS01",
+          "STRLENSU01"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "legacy_gap_blocks_this_finite_closure": false,
+      "parent_must_apply": true
+    },
+    {
+      "kind": "expression_function",
+      "name": "STRLENSU",
+      "accepted": true,
+      "proposed_necessary_comparison_complete": true,
+      "comparison_outcome": "matched_in_finite_scope",
+      "behavioral_equivalence": null,
+      "acceptance_scope": "Original finite necessary-comparison requirements only; not all-value behavior, all-Unicode compatibility, error-equivalence certification or global adoption.",
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/1/requirements/0",
+          "disposition": "SATISFIED_EXACT_SOURCE_AND_STATIC_DEFAULT_GUARDS_WITH_OWN_NORMAL",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1",
+            "case276/COMPARISON.json#/rows/1"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/1/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_NORMAL_OLD_AND_FRESH276",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1",
+            "case276/COMPARISON.json#/rows/1"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_missing_proof",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/1/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_FINITE_CLAUSE_WITH_MATCH_OR_DOCUMENTED_DIFFERENCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1",
+            "case276/COMPARISON.json#/rows/1"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/1/requirements/3",
+          "disposition": "SATISFIED_EXACT_FORM_COMMIT_PLUS_ALL3_PRINTED_INDEPENDENT_SENTINELS",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1",
+            "case276/COMPARISON.json#/rows/1"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/1/requirements/4",
+          "disposition": "RETAINED_LEGACY_GAP_NOT_RETROFILLED_FRESH276_SEPARATELY_PINNED",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1",
+            "case276/COMPARISON.json#/rows/1"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        }
+      ],
+      "original_finite_clauses": [
+        {
+          "original_requirement": "Supplementary UTF16 unit-count and independent helper/destination coverage beyond the selected189/219 witnesses; no demand to test every Unicode value.",
+          "disposition": "DISCHARGED_IN_STATED_FINITE_SCOPE",
+          "evidence": "OWN_NORMAL_REVIEW.json#/1/fresh_own_normal"
+        }
+      ],
+      "source_branch_requirements": [
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2121-2121",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1"
+          ]
+        },
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2122-2122",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/1"
+          ]
+        }
+      ],
+      "own_normal_review": "OWN_NORMAL_REVIEW.json#/1",
+      "shared_path_ref": "S5c92c382161ee9d6",
+      "shared_reuse_policy": "Only default-fixed1string source path may be reused; each form has its own direct276 normal. No runtime borrowed from other functions.",
+      "new_case_id": "FUNCTION276_F276_02",
+      "historical_cases": [
+        "STRLENSUBASE01",
+        "STRLENSU01"
+      ],
+      "finite_remainder": [],
+      "remaining": [],
+      "retained_legacy_public_identity": {
+        "case_ids": [
+          "STRLENSUBASE01",
+          "STRLENSU01"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "legacy_gap_blocks_this_finite_closure": false,
+      "parent_must_apply": true
+    },
+    {
+      "kind": "method_as_command",
+      "name": "STRLENS",
+      "accepted": true,
+      "proposed_necessary_comparison_complete": true,
+      "comparison_outcome": "documented_difference",
+      "behavioral_equivalence": false,
+      "acceptance_scope": "Original finite necessary-comparison requirements only; not all-value behavior, all-Unicode compatibility, error-equivalence certification or global adoption.",
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/2/requirements/0",
+          "disposition": "SATISFIED_EXACT_SOURCE_AND_STATIC_DEFAULT_GUARDS_WITH_OWN_NORMAL",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2",
+            "case276/COMPARISON.json#/rows/2"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/2/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_NORMAL_OLD_AND_FRESH276",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2",
+            "case276/COMPARISON.json#/rows/2"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_missing_proof",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/2/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_FINITE_CLAUSE_WITH_MATCH_OR_DOCUMENTED_DIFFERENCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2",
+            "case276/COMPARISON.json#/rows/2"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/2/requirements/3",
+          "disposition": "SATISFIED_EXACT_FORM_COMMIT_PLUS_ALL3_PRINTED_INDEPENDENT_SENTINELS",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2",
+            "case276/COMPARISON.json#/rows/2"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/2/requirements/4",
+          "disposition": "RETAINED_LEGACY_GAP_NOT_RETROFILLED_FRESH276_SEPARATELY_PINNED",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2",
+            "case276/COMPARISON.json#/rows/2"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        }
+      ],
+      "original_finite_clauses": [
+        {
+          "original_requirement": "Independent supplementary-codepoint unit count and expression/method sentinel routing for STRLENS; existing empty/space and selected UTF16 STRLENSU189/219 remain proof only of those inputs.",
+          "disposition": "DISCHARGED_IN_STATED_FINITE_SCOPE",
+          "evidence": "OWN_NORMAL_REVIEW.json#/2/fresh_own_normal"
+        }
+      ],
+      "source_branch_requirements": [
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2106-2106",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2"
+          ]
+        },
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2107-2107",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/2"
+          ]
+        }
+      ],
+      "own_normal_review": "OWN_NORMAL_REVIEW.json#/2",
+      "shared_path_ref": "S25b39cc415dc440e",
+      "shared_reuse_policy": "Only default-fixed1string source path may be reused; each form has its own direct276 normal. No runtime borrowed from other functions.",
+      "new_case_id": "FUNCTION276_F276_03",
+      "historical_cases": [
+        "METHODCONVERT_STRLENS"
+      ],
+      "finite_remainder": [],
+      "remaining": [],
+      "retained_legacy_public_identity": {
+        "case_ids": [
+          "METHODCONVERT_STRLENS"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "legacy_gap_blocks_this_finite_closure": false,
+      "parent_must_apply": true
+    },
+    {
+      "kind": "method_as_command",
+      "name": "STRLENSU",
+      "accepted": true,
+      "proposed_necessary_comparison_complete": true,
+      "comparison_outcome": "matched_in_finite_scope",
+      "behavioral_equivalence": null,
+      "acceptance_scope": "Original finite necessary-comparison requirements only; not all-value behavior, all-Unicode compatibility, error-equivalence certification or global adoption.",
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/3/requirements/0",
+          "disposition": "SATISFIED_EXACT_SOURCE_AND_STATIC_DEFAULT_GUARDS_WITH_OWN_NORMAL",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3",
+            "case276/COMPARISON.json#/rows/3"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/3/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_NORMAL_OLD_AND_FRESH276",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3",
+            "case276/COMPARISON.json#/rows/3"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_missing_proof",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/3/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_FINITE_CLAUSE_WITH_MATCH_OR_DOCUMENTED_DIFFERENCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3",
+            "case276/COMPARISON.json#/rows/3"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/3/requirements/3",
+          "disposition": "SATISFIED_EXACT_FORM_COMMIT_PLUS_ALL3_PRINTED_INDEPENDENT_SENTINELS",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3",
+            "case276/COMPARISON.json#/rows/3"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_ref": "case276/SELECTION.json#/original_parent_rows/3/requirements/4",
+          "disposition": "RETAINED_LEGACY_GAP_NOT_RETROFILLED_FRESH276_SEPARATELY_PINNED",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3",
+            "case276/COMPARISON.json#/rows/3"
+          ],
+          "runtime_error_guard_execution_claimed": false
+        }
+      ],
+      "original_finite_clauses": [
+        {
+          "original_requirement": "Supplementary UTF16 unit-count and independent helper/destination coverage beyond the selected189/219 witnesses; no demand to test every Unicode value.",
+          "disposition": "DISCHARGED_IN_STATED_FINITE_SCOPE",
+          "evidence": "OWN_NORMAL_REVIEW.json#/3/fresh_own_normal"
+        }
+      ],
+      "source_branch_requirements": [
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2121-2121",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3"
+          ]
+        },
+        {
+          "original_source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2122-2122",
+          "original_obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only.",
+          "disposition": "String read once followed by configured byte-count/UTF16 return is source-linked to this direct276 call; actual selected return, helper event and continuation observed on all3routes.",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "OWN_NORMAL_REVIEW.json#/3"
+          ]
+        }
+      ],
+      "own_normal_review": "OWN_NORMAL_REVIEW.json#/3",
+      "shared_path_ref": "Sb3d515a1aeb9e756",
+      "shared_reuse_policy": "Only default-fixed1string source path may be reused; each form has its own direct276 normal. No runtime borrowed from other functions.",
+      "new_case_id": "FUNCTION276_F276_04",
+      "historical_cases": [
+        "METHODCONVERT_STRLENSU"
+      ],
+      "finite_remainder": [],
+      "remaining": [],
+      "retained_legacy_public_identity": {
+        "case_ids": [
+          "METHODCONVERT_STRLENSU"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "legacy_gap_blocks_this_finite_closure": false,
+      "parent_must_apply": true
+    }
+  ],
+  "accepted": 4,
+  "rejected": 0,
+  "target_closure_applied": false,
+  "source_only_runtime_credit": false,
+  "engines_launched": 0,
+  "root_writes": 0
+}

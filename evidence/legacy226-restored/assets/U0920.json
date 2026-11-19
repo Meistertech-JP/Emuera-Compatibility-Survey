@@ -1,0 +1,178 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "REND"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "REND_GOTO_ZERO_NESTED_NORMAL_20261115"
+  ],
+  "accepted_scope": {
+    "target_REND": {
+      "status": "finite_observation_complete",
+      "evidence": "normal/*: RG_ZERO_PRE/POST, RG_OUTER_PRE, RG_INNER, RG_INNER_POST, RG_NEST_POST",
+      "result": "Zero bound helper executes once; body suppressed; COUNT37 ->0. Inner COUNT0 ->1, outer uses shared1 then increments2; old37 and outer-entry0 are not restored. The obligation word restoration was tested without assuming restoration must occur."
+    },
+    "runtime_identity_REND": {
+      "status": "new_original_receipts_complete",
+      "evidence": "normal/*/invocation.json + native probe.json + original verified-public-pyz.json",
+      "historical_identity": "unknown; no backfill"
+    },
+    "registration_form": {
+      "status": "source_bound",
+      "evidence": [
+        "C00856",
+        "C00857",
+        "C00859"
+      ],
+      "result": "Own REND registered VOID; structural role through exact REPEAT/REND, no invented standalone success."
+    },
+    "signature_parser": {
+      "status": "scoped_source_and_runtime",
+      "evidence": [
+        "C00833",
+        "C00834",
+        "C00768",
+        "C00860"
+      ],
+      "result": "Bare paired REND, numeric bounds with declared #FUNCTION helpers, built-in COUNT/FLAG/RESULT/RESULTS."
+    },
+    "normal_output_state_control": {
+      "status": "matched",
+      "evidence": "normal RG_POS, RG_POS_POST and RG_DONE; all3 runs"
+    },
+    "finite_boundary_error": {
+      "status": "requested_boundary_matched",
+      "evidence": "normal RG_ZERO_POST",
+      "remaining": "Unmatched/wrong closer, negative bounds and inactive-loop entry not executed; no universal invalid syntax claim."
+    },
+    "evaluation_and_side_effects": {
+      "status": "matched_scoped",
+      "evidence": "normal helper counter H=0->1->2->3; O=1 I=1; R=701 S=RG_SENTINEL throughout",
+      "remaining": "Helper-induced COUNT mutation, overflow, BREAK/CONTINUE combinations and recursion not executed."
+    },
+    "current_original_scope": {
+      "positive_loop": "3 iterations COUNT0,1,2; post3",
+      "zero_count": "matched",
+      "nested": "matched shared COUNT; no restoration",
+      "control_transfer": "GOTO inside REPEAT reaches local label then own REND twice",
+      "side_effects": "counted bound helpers, skipped-body flag and RESULT/RESULTS sentinels",
+      "remaining": "Other control transfers, invalid pairings, broader state cases remain outside finite scope."
+    },
+    "current_required_work_mapping": [
+      {
+        "condition": "verify native registration and intended contract",
+        "result": "SOURCE_PINS.json, source/C*.excerpt.txt; original registration bound to runtime pin"
+      },
+      {
+        "condition": "verify linked evidence actually executes this target and preserves conditions",
+        "result": "new reached normal markers and exact input/runtime beforeafter receipts; historical receipts remain unknown"
+      },
+      {
+        "condition": "plan normal, boundary, invalid, and state or side effect cases as applicable",
+        "result": "PREFLIGHT.json and per-axis results above; unexecuted axes explicitly remaining"
+      },
+      {
+        "condition": "compare native executable and PyEmuera with isolated inputs and retain observations",
+        "result": "2 native +1 public per fixture; raw retained; marker match with diagnostic differences below"
+      }
+    ]
+  },
+  "original_remaining": [
+    {
+      "type": "finite_command_obligation",
+      "source": "evidence\\parent-command-evidence-review-20261113\\REVIEW.json",
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "REND"
+      },
+      "obligation_ids": [
+        "target_REND",
+        "runtime_identity_REND"
+      ],
+      "note": "Read exact obligation source and existing own-target observations before execution; no cross-target normal-credit transfer."
+    }
+  ],
+  "proof": {
+    "original_missing_obligations": {
+      "target_REND": {
+        "status": "finite_observation_complete",
+        "evidence": "normal/*: RG_ZERO_PRE/POST, RG_OUTER_PRE, RG_INNER, RG_INNER_POST, RG_NEST_POST",
+        "result": "Zero bound helper executes once; body suppressed; COUNT37 ->0. Inner COUNT0 ->1, outer uses shared1 then increments2; old37 and outer-entry0 are not restored. The obligation word restoration was tested without assuming restoration must occur."
+      },
+      "runtime_identity_REND": {
+        "status": "new_original_receipts_complete",
+        "evidence": "normal/*/invocation.json + native probe.json + original verified-public-pyz.json",
+        "historical_identity": "unknown; no backfill"
+      },
+      "registration_form": {
+        "status": "source_bound",
+        "evidence": [
+          "C00856",
+          "C00857",
+          "C00859"
+        ],
+        "result": "Own REND registered VOID; structural role through exact REPEAT/REND, no invented standalone success."
+      },
+      "signature_parser": {
+        "status": "scoped_source_and_runtime",
+        "evidence": [
+          "C00833",
+          "C00834",
+          "C00768",
+          "C00860"
+        ],
+        "result": "Bare paired REND, numeric bounds with declared #FUNCTION helpers, built-in COUNT/FLAG/RESULT/RESULTS."
+      },
+      "normal_output_state_control": {
+        "status": "matched",
+        "evidence": "normal RG_POS, RG_POS_POST and RG_DONE; all3 runs"
+      },
+      "finite_boundary_error": {
+        "status": "requested_boundary_matched",
+        "evidence": "normal RG_ZERO_POST",
+        "remaining": "Unmatched/wrong closer, negative bounds and inactive-loop entry not executed; no universal invalid syntax claim."
+      },
+      "evaluation_and_side_effects": {
+        "status": "matched_scoped",
+        "evidence": "normal helper counter H=0->1->2->3; O=1 I=1; R=701 S=RG_SENTINEL throughout",
+        "remaining": "Helper-induced COUNT mutation, overflow, BREAK/CONTINUE combinations and recursion not executed."
+      },
+      "current_original_scope": {
+        "positive_loop": "3 iterations COUNT0,1,2; post3",
+        "zero_count": "matched",
+        "nested": "matched shared COUNT; no restoration",
+        "control_transfer": "GOTO inside REPEAT reaches local label then own REND twice",
+        "side_effects": "counted bound helpers, skipped-body flag and RESULT/RESULTS sentinels",
+        "remaining": "Other control transfers, invalid pairings, broader state cases remain outside finite scope."
+      },
+      "current_required_work_mapping": [
+        {
+          "condition": "verify native registration and intended contract",
+          "result": "SOURCE_PINS.json, source/C*.excerpt.txt; original registration bound to runtime pin"
+        },
+        {
+          "condition": "verify linked evidence actually executes this target and preserves conditions",
+          "result": "new reached normal markers and exact input/runtime beforeafter receipts; historical receipts remain unknown"
+        },
+        {
+          "condition": "plan normal, boundary, invalid, and state or side effect cases as applicable",
+          "result": "PREFLIGHT.json and per-axis results above; unexecuted axes explicitly remaining"
+        },
+        {
+          "condition": "compare native executable and PyEmuera with isolated inputs and retain observations",
+          "result": "2 native +1 public per fixture; raw retained; marker match with diagnostic differences below"
+        }
+      ]
+    },
+    "diagnostic_differences": [
+      "Native nested REPEAT emits load warningLv1; public has no corresponding warning.",
+      "Native missing literal GOTO emits load warningLv2, marks line error and halts when line7 is reached; public reports E_FUNCTION on stderr at line7 without equivalent load warning.",
+      "Native error is in UTF16 emuera.log; public OUTPUTLOG snapshot precedes error, whose bytes are retained in verified.stderr.bin."
+    ]
+  },
+  "product_modified": false,
+  "global_completion": false
+}

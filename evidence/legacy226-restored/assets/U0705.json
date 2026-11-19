@@ -1,0 +1,31 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "method_as_command",
+    "name": "TOHALF"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "METHOD_TOHALF_NUMERIC_RESULT_SENTINEL_20261115"
+  ],
+  "accepted_scope": "Original unrelated numeric RESULT sentinel requirement fulfilled: RESULT initialized777 immediately before empty/mixed-width statement calls and read777 after each; RESULTS output/helper count1/DONE matched Native2/public1, raw logs byte-identical.",
+  "discharged_original_remaining": [
+    {
+      "type": "finite_original_obligation_restored",
+      "axis": "result_routing_and_stop_location",
+      "requirement": "Set and read unrelated numeric RESULT sentinel around this statement-form string-return call. Retain existing RESULTS destination/helper-count/output evidence.",
+      "case_ids": [
+        "METHODSTYLE_TOHALF"
+      ],
+      "source": "evidence/target-closure-review-20261113/functions/MATRIX.json"
+    }
+  ],
+  "retained_prior_differences": "METHODSTYLECHECK_PINNED_* Native-Debug vs public-check diagnostic coverage difference remains; new sentinel case is normal-runtime matching only.",
+  "prior_acceptance_path": "PARENT_ACCEPTANCE_METHOD_STYLE_TOHALF_20261115.json",
+  "prior_acceptance_sha256": "9f1b0e8b4db115cb8d6845a79420efec04d07cd8284386f4f37aab6774aa8c07",
+  "manifest_path": "evidence/method-style-result-sentinel-20261115/MANIFEST.json",
+  "manifest_sha256": "729a2d06f02df2b983666f1d834295f9320d6689a6e174c9a363ee50f6c2eb5a",
+  "product_modified": false,
+  "global_completion": false
+}

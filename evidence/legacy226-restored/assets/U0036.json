@@ -1,0 +1,275 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "decision_authority": "Codex parent review of retained Native/public evidence; not owner sign-off.",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTLCK"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "PRINTKD212_C212_24",
+    "PRINTKD212_C212_25",
+    "PRINTKD212_C212_26",
+    "PRINTKD212_C212_27"
+  ],
+  "accepted_scope": "Direct per-command Case 212 rows for PRINTLCK under FORCEKANA 0–3. Selected raw output matches in modes 0, 1 and 3 and differs in mode 2 due to the recorded kana conversion. Selected helper order/count and RESULT/RESULTS agree in each exact-command row.",
+  "accepted_finite_requirements": [
+    {
+      "id": "registration_and_exact_command_reach",
+      "state": "source_pinned_target_reached",
+      "case_ids": [
+        "PRINTKD212_C212_24",
+        "PRINTKD212_C212_25",
+        "PRINTKD212_C212_26",
+        "PRINTKD212_C212_27"
+      ],
+      "basis": "Case 212 names this exact instruction in each row; v24 registration and shared PRINT_Instruction parsing path are pinned."
+    },
+    {
+      "id": "selected_kana_modes",
+      "state": "mode_two_scoped_difference_recorded",
+      "case_ids": [
+        "PRINTKD212_C212_24",
+        "PRINTKD212_C212_25",
+        "PRINTKD212_C212_26",
+        "PRINTKD212_C212_27"
+      ],
+      "basis": "Two Native runs and one public pyz record exact-command output for FORCEKANA modes 0–3."
+    },
+    {
+      "id": "selected_evaluation_and_state",
+      "state": "matched_for_recorded_rows",
+      "case_ids": [
+        "PRINTKD212_C212_24",
+        "PRINTKD212_C212_25",
+        "PRINTKD212_C212_26",
+        "PRINTKD212_C212_27"
+      ],
+      "basis": "Per-row helper evaluation order/count and RESULT/RESULTS equality are explicitly recorded."
+    }
+  ],
+  "selected_case212_rows": [
+    {
+      "condition_id": "C212_24",
+      "forcekana": 0,
+      "argtype": "literal",
+      "empty": false,
+      "skip": false,
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition_id": "C212_25",
+      "forcekana": 1,
+      "argtype": "literal",
+      "empty": false,
+      "skip": false,
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition_id": "C212_26",
+      "forcekana": 2,
+      "argtype": "literal",
+      "empty": false,
+      "skip": false,
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition_id": "C212_27",
+      "forcekana": 3,
+      "argtype": "literal",
+      "empty": false,
+      "skip": false,
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    }
+  ],
+  "source_refs": [
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "lines": [
+        [
+          17,
+          148
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "lines": [
+        [
+          85,
+          165
+        ]
+      ]
+    }
+  ],
+  "evidence_paths": [
+    {
+      "path": "evidence/print-kd-variants-20261113-212/CASE_REVIEW_ja.md",
+      "sha256": "074ca7ba9e746a1a7128642c04577e62bdc2fdabea152192da5a2548bd5cf1f0"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/COMPARISON.json",
+      "sha256": "5c1bed948225fb74734e2b07b19950f51823feaea331997d55552949b87e9520"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/conditions.json",
+      "sha256": "96b92740d2b26c236541a9dbae31146dc38eab6a21810d7a5c55f01c7d41eb29"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/MANIFEST.json",
+      "sha256": "345ac734946b786a364940e857c9b2bf7023456c6d492a08d4e5db6859079324"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/run_native.py",
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/SOURCE.json",
+      "sha256": "8475d0a5505c69cef6f3d50664dae2e71dc529795e97318ad2944e9ce33f47a7"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/SOURCE_EXCERPTS_V24.txt",
+      "sha256": "43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/emuera.log",
+      "sha256": "e01284195c3df616213ed8fad31d2e9c79b5a5fd2f51a03cb6ddeffa698950a6"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/invocation.json",
+      "sha256": "3377d89c872090f188818df044254f35ef2f926a5a2df56be046310797430342"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/probe.json",
+      "sha256": "779e1f549d0b26813761d8a6be4272d57c15183e1bc03dbbb81647a793538c1c"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/runner.stdout.bin",
+      "sha256": "d38e3acf974b6b6538132026c23aff1f543f4e9fc3f46ff86be67414495bf017"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/emuera.log",
+      "sha256": "e01284195c3df616213ed8fad31d2e9c79b5a5fd2f51a03cb6ddeffa698950a6"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/invocation.json",
+      "sha256": "2378fbb8c0334d389a55488db223682b3fbaa7efbd20eba4b8f45cc9d5c0947b"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/probe.json",
+      "sha256": "08ca89fbcc89651447c9e14c0148f61c53b37b9830dfff3b2e938b10251d3f47"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/runner.stdout.bin",
+      "sha256": "f0ecf12070c65a25a36c19da9d942a327c781a6e87fa77f5eb798de18628fef6"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/invocation.json",
+      "sha256": "2867d51b8589be2713e77f0650d8f5260b4424f43bc27f8320c0098823100af8"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/verified-public-pyz.json",
+      "sha256": "07ceb251ffc1bdcca770673cdef07e2493c8d1b14b6b743bf01b07b36004cdec"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/verified.stderr.bin",
+      "sha256": "49916b75eb2a189dc542a2e6fbb65977a5cb944ec4ff8afdc54925a0a4f8b560"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/verified.stdout.bin",
+      "sha256": "f1ee9c7089258917e163db2e1a3a9a1715067dc66ed8e5c3153e96e1d9c39b79"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "79b8b8a562ce0ccdc25ab1abcfdbd3ba6bcb268b6e3399ebb7928e9797063cdb"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/.pyemuera/logs/emuera.log",
+      "sha256": "f7ca554efaf8f73d9b738b555c9038b1a665c78b0365cf770bf92c792ead8531"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/.pyemuera/logs/output-20261113-125839-703422.txt",
+      "sha256": "a6bb1abaa75540ef4b28c1a127e0d29a6ebebf22dc8bb67a1cc820c770a30e42"
+    },
+    {
+      "path": "evidence/print-kd-variants-20261113-212/py/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "604a6a5d6409f48f7bc0037ca3974c3ff59fca626418be58d1670c141f923242"
+    }
+  ],
+  "finite_remainder": [],
+  "retained_limits": [
+    "Only recorded arguments, kana inputs and config are covered; full Unicode, errors, configuration and command-family coverage are not claimed.",
+    "No GUI color, font, pixel or click behavior is claimed; D style/color is unobserved in plain history.",
+    "Case 212 natural Native process exit was not observed."
+  ],
+  "product_code_modified": false,
+  "published_artifacts_modified": false,
+  "global_completion": false,
+  "prior_plan_state": "individual_case_attribution_pending",
+  "prior_ledger_state": "different_scoped",
+  "generated_utc": "2026-11-14T22:03:25.289511+00:00",
+  "integration_note": "Parent ledgers were updated from this adjudication; the case register and underlying comparison evidence were not modified."
+}

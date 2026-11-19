@@ -1,0 +1,148 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0777 · SEARCHBOUND01.ERB</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0777 · SEARCHBOUND01.ERB</h1>
+<p>U0777: D:0=9,D:1=99、LOCALS PREFIX/OTHER、A=B=0を初期化し、数値/文字列の=、==、文字列代入と空文字の7条件でZZI/ZZR評価順を測る。WORD/空文字/数値6とA/B副作用を保持。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f</code></p>
+<p><a href="../assets/U0777.ERB">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f</code></p>
+<pre>@SYSTEM_TITLE
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+D:ZZI0() = ZZR0()
+PRINTFORML PLAIN0 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+D:ZZI1() == ZZR1()
+PRINTFORML PLAIN1 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+LOCALS:ZZI2() &#x27;= ZZR2()
+PRINTFORML PLAIN2 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+LOCALS:ZZI3() = %ZZR3()%
+PRINTFORML PLAIN3 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+LOCALS:ZZI4() == %ZZR4()%
+PRINTFORML PLAIN4 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+LOCALS:ZZI5() &#x27;= ZZR5()
+PRINTFORML PLAIN5 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+D:0=9
+D:1=99
+LOCALS:0=PREFIX
+LOCALS:1=OTHER
+A=0
+B=0
+LOCALS:ZZI6() = %ZZR6()%
+PRINTFORML PLAIN6 NUMBER={D:0} TEXT=[%LOCALS:0%] OTHERNUM={D:1} OTHERTEXT=[%LOCALS:1%] COUNT={A} ORDER={B}
+PRINTL DONE
+OUTPUTLOG
+QUIT
+@ZZI0
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR0
+#FUNCTION
+A += 1
+B = B*10+2
+RETURNF 6
+@ZZI1
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR1
+#FUNCTION
+A += 1
+B = B*10+2
+RETURNF 6
+@ZZI2
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR2
+#FUNCTIONS
+A += 1
+B = B*10+2
+RETURNF &quot;WORD&quot;
+@ZZI3
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR3
+#FUNCTIONS
+A += 1
+B = B*10+2
+RETURNF &quot;WORD&quot;
+@ZZI4
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR4
+#FUNCTIONS
+A += 1
+B = B*10+2
+RETURNF &quot;WORD&quot;
+@ZZI5
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR5
+#FUNCTIONS
+A += 1
+B = B*10+2
+RETURNF &quot;&quot;
+@ZZI6
+#FUNCTION
+A += 1
+B = B*10+1
+RETURNF 0
+@ZZR6
+#FUNCTIONS
+A += 1
+B = B*10+2
+RETURNF &quot;&quot;
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2369 · operator:= · check</li>
+<li>L2402 · operator:&#x27;= · check</li>
+</ul></html>

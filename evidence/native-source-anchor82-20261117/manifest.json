@@ -1,0 +1,30 @@
+{
+  "schema": "selected-file-set.v1",
+  "roots": [
+    "evidence"
+  ],
+  "manifest_location": {
+    "root": "evidence",
+    "path": "manifest.json"
+  },
+  "files": [
+    {
+      "root": "evidence",
+      "path": "README.ja.md",
+      "size": 3090,
+      "sha256": "15a3110c4cf08dbb6a83fe1a45ef3a492b8619b81d05617efd9932cd5830cc35"
+    },
+    {
+      "root": "evidence",
+      "path": "README.md",
+      "size": 2948,
+      "sha256": "59c08a3f4cdcf1433e7b63b8c438f173e9da2aa1f2978ac9a8c689ed4445d94c"
+    },
+    {
+      "root": "evidence",
+      "path": "targets.jsonl",
+      "size": 72004,
+      "sha256": "9eecd83944d4876a62ba68a8a4a840796c0c16660df0ab54e09b2728270e8046"
+    }
+  ]
+}

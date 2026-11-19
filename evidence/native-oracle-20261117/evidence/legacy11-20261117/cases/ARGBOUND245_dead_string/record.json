@@ -1,0 +1,100 @@
+{
+  "case_id": "ARGBOUND245_dead_string",
+  "case_verdict": "matched_scoped",
+  "comparison_classification": "matched_selected_state_and_continuation",
+  "comparison_limits": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.",
+  "condition": {
+    "arguments": "\"0\"",
+    "dead": true,
+    "fixture_sha256": "7e780127e06587d794d85aad5d90233fb4ad61f4dd2bb66cdd492b99bf0be42a",
+    "name": "dead_string",
+    "target_line": 10
+  },
+  "configuration_contents_disclosed": false,
+  "dead_branch_only": true,
+  "fixture_path": "cases/ARGBOUND245_dead_string/fixture/SEARCHBOUND01.ERB",
+  "group": "skipped_match",
+  "legacy_case_id": "PARENT245_dead_string",
+  "necessary_comparison_complete": true,
+  "non_disclosure_limit": "Full configuration, original receipts, and original ledgers are not in this projection. Hash equality does not prove full execution condition or engine identity.",
+  "original_receipts_disclosed": false,
+  "parent_review": {
+    "case_relation": "not_listed_in_selected_parent_case_ids",
+    "decision": "accepted",
+    "scope": "Selected parent source only; other target evidence is not included."
+  },
+  "public_stderr_path": "cases/ARGBOUND245_dead_string/raw/public-stderr.bin",
+  "public_stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+  "requirement_ids": [
+    "normal_output_state_control",
+    "finite_boundary_error",
+    "evaluation_and_side_effects"
+  ],
+  "runs": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "7e780127e06587d794d85aad5d90233fb4ad61f4dd2bb66cdd492b99bf0be42a",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_dead_string/raw/native-01-emuera.log",
+      "raw_sha256": "0a19f9f2df982f35c3a1631750adf6af4580c3577bd2bbf46804d057140c74ab",
+      "selected_lines": [
+        "BEGIN245 dead_string",
+        "BEFORE245 N=1 R=701",
+        "AFTER245 N=1 R=701",
+        "FIRST245 F=173 NAME=[SRC245]",
+        "LAST245 F=173 NAME=[SRC245]",
+        "DONE245"
+      ]
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "7e780127e06587d794d85aad5d90233fb4ad61f4dd2bb66cdd492b99bf0be42a",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_dead_string/raw/native-02-emuera.log",
+      "raw_sha256": "0a19f9f2df982f35c3a1631750adf6af4580c3577bd2bbf46804d057140c74ab",
+      "selected_lines": [
+        "BEGIN245 dead_string",
+        "BEFORE245 N=1 R=701",
+        "AFTER245 N=1 R=701",
+        "FIRST245 F=173 NAME=[SRC245]",
+        "LAST245 F=173 NAME=[SRC245]",
+        "DONE245"
+      ]
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "error": null,
+      "fixture_config_pre_post_equal": true,
+      "fixture_sha256": "7e780127e06587d794d85aad5d90233fb4ad61f4dd2bb66cdd492b99bf0be42a",
+      "raw_path": "cases/ARGBOUND245_dead_string/raw/public-stdout.bin",
+      "raw_sha256": "9a08f50099c0a68133a1db240996cdae7774a45d28aacb9b3fcc9321dd2646df",
+      "returncode": 0,
+      "selected_lines": [
+        "BEGIN245 dead_string",
+        "BEFORE245 N=1 R=701",
+        "AFTER245 N=1 R=701",
+        "FIRST245 F=173 NAME=[SRC245]",
+        "LAST245 F=173 NAME=[SRC245]",
+        "DONE245"
+      ]
+    }
+  },
+  "selected_checkpoints_equal": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ADDCOPYCHARA"
+  },
+  "target_outcome": "different_scoped",
+  "target_runtime_entered": false
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-15T05:30:34.300245+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ENDIF"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "scope": "P1 selected-arm and P2 no-match ENDIF continuation for the directly mapped Native v24 command, Native twice/public once, byte-identical selected logs.",
+  "case_ids": [
+    "IFCHAIN269_P1",
+    "IFCHAIN269_P2"
+  ],
+  "comparison_sha256": "0e3e478dc63931161676962206a4bc5ed7b63d0883e7927bddb729aabdf7c544",
+  "source_pins_sha256": "8b3616ac7f6a90a73cb17ca35f6edad032e2bba72d8f1057563d2c139b3f6b08",
+  "exported_log_sha256": "38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "registered_evidence_files_rehashed": 74,
+  "native_natural_exit_observed": false,
+  "public_exit_code": 0,
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_modified": false
+}

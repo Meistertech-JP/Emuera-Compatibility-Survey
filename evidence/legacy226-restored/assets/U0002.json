@@ -1,0 +1,84 @@
+{
+  "schema": "native-public-expression-comparison-1",
+  "generated_utc": "2026-11-14T12:24:33.987541+00:00",
+  "case_id": "SQRTNEGFAULT01",
+  "target": {
+    "kind": "expression_function",
+    "name": "SQRT"
+  },
+  "invocation": "SQRT(ZZ_NEG())",
+  "native_runs": [
+    {
+      "run_id": "isolated-native-4e68783a62e1401088622b55ee826871",
+      "pid": 21040,
+      "probe_path": "runs/isolated-native-4e68783a62e1401088622b55ee826871/probe.json",
+      "probe_sha256": "d22fb926f5a20eff51ca2ad4044becc455b994109dea193612a496d3edc1bf81",
+      "log_path": "runs/isolated-native-4e68783a62e1401088622b55ee826871/emuera.log",
+      "log_sha256": "e6e28481a4587ca1ff6a410c7cc8b1ee41c5d058ce22802591fe1d4348c037b4",
+      "crop_path": "native-error-crop-01.png",
+      "crop_sha256": "0c3e69414f21bf1a32ff5422fd365ddf9448be3d87721aca5766d186da0e5cae",
+      "helper_marker_count": 1,
+      "stop_line": 6,
+      "after_reached": false,
+      "natural_exit_observed": false,
+      "exit_code_observed": false,
+      "cleanup": "harness terminated owned process after capture",
+      "synthetic_input": false
+    },
+    {
+      "run_id": "isolated-native-f9353aa2efb74a169af6ee80cdf286b7",
+      "pid": 35620,
+      "probe_path": "runs/isolated-native-f9353aa2efb74a169af6ee80cdf286b7/probe.json",
+      "probe_sha256": "6688e8e3b1ec702778f4436a8a872813cef985a45ca95ea5e8d292d0af5aba44",
+      "log_path": "runs/isolated-native-f9353aa2efb74a169af6ee80cdf286b7/emuera.log",
+      "log_sha256": "e6e28481a4587ca1ff6a410c7cc8b1ee41c5d058ce22802591fe1d4348c037b4",
+      "crop_path": "native-error-crop-02.png",
+      "crop_sha256": "0c3e69414f21bf1a32ff5422fd365ddf9448be3d87721aca5766d186da0e5cae",
+      "helper_marker_count": 1,
+      "stop_line": 6,
+      "after_reached": false,
+      "natural_exit_observed": false,
+      "exit_code_observed": false,
+      "cleanup": "harness terminated owned process after capture",
+      "synthetic_input": false
+    }
+  ],
+  "public_run": {
+    "path": "PY_RUN.json",
+    "sha256": "de8153dd0f1b9a842242f191c0ef2adf97f53ea82d28f7e7b6cd9f3b13252480",
+    "pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "returncode": 1,
+    "stdout_sha256": "abd4ccdfe0e8813a3994cd0a01a3e4665034bfa75c4cf6ce12dfcc592527d8f8",
+    "stderr_sha256": "14f72039b70fdb733497cff05e68e2336dd736de41d468751f13fb04d0cba290"
+  },
+  "observations": {
+    "native": {
+      "helper_evaluations_per_run": 1,
+      "stop_line": 6,
+      "negative_argument_error": true,
+      "after_not_reached": true
+    },
+    "public": {
+      "helper_evaluations": 1,
+      "stop_line": 6,
+      "error_code": "E_ARITH",
+      "after_not_reached": true
+    }
+  },
+  "outcome": "different_scoped",
+  "interpretation": "Both engines evaluate the argument helper exactly once, reach the SQRT(-1) negative-domain stop at ERB line 6, and do not continue. Native emits its Japanese CodeEE diagnostic; public pyz emits E_ARITH with its runtime message. This selected case confirms negative-domain guard, helper count, and stop position; it is not strict diagnostic equality.",
+  "matched_conditions": [
+    "same fixture bytes",
+    "same Native config SHA",
+    "Native replicas identical",
+    "pinned public pyz unchanged before/after",
+    "no synthetic keyboard input"
+  ],
+  "limits": [
+    "only SQRT(-1) via one helper",
+    "Native natural exit and process exit code unobserved",
+    "no other arity/types/domain or post-error state equality claimed"
+  ],
+  "product_code_changed": false,
+  "public_artifacts_changed": false
+}

@@ -1,0 +1,612 @@
+{
+  "schema": "selected-file-set.v1",
+  "roots": [
+    "bundle"
+  ],
+  "manifest_location": {
+    "root": "bundle",
+    "path": "manifest.json"
+  },
+  "files": [
+    {
+      "root": "bundle",
+      "path": "OBSERVATIONS_en.md",
+      "size": 18183,
+      "sha256": "b9814204d9afadfd10077fa28858f07a5f2482bdb301d0fca1137f6d5608fa1a"
+    },
+    {
+      "root": "bundle",
+      "path": "OBSERVATIONS_ja.md",
+      "size": 18232,
+      "sha256": "77ae9bc303989d7b9c29e6eafdbb46289889fd9c2ff7c66cdf538174e998af86"
+    },
+    {
+      "root": "bundle",
+      "path": "README_en.md",
+      "size": 797,
+      "sha256": "93cf14b8acc02aaff8b570aa2606ee6b2060b65007a140d115ab693da5b134a5"
+    },
+    {
+      "root": "bundle",
+      "path": "README_ja.md",
+      "size": 783,
+      "sha256": "cd9c72d9c18e37dc64063346c1412f1c50e15a5e4585fd520ce5695b9f623b01"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C001/MAIN.ERB",
+      "size": 86,
+      "sha256": "7e531612c105600a836d8e38aa0a001c262e774aaf6a993a1f3f58780ad3120b"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C001/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C002/MAIN.ERB",
+      "size": 88,
+      "sha256": "7ec5eb44be9d99f35af369dfabbbd075ba25a41530b56aa461b9f44b80423c6a"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C002/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C003/MAIN.ERB",
+      "size": 88,
+      "sha256": "0ddc4e97d0c25c75723bea8a8707a336c904e084f857d8ef1e6d294d05ed88e2"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C003/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C004/MAIN.ERB",
+      "size": 82,
+      "sha256": "63cface42b2e01cfe6bfb5e0b5907b2163f092532e2408d6789c36f7633a2c1c"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C004/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C005/MAIN.ERB",
+      "size": 67,
+      "sha256": "b19a3484af22629e72d137359887a9e76daced76fa2a13f65666b5ad732858a0"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C005/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C005/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C006/MAIN.ERB",
+      "size": 69,
+      "sha256": "ed7e3aaffbaf8d1527308b533f126e5cdf58c454ff1f28723bfb57f6c9993adc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C006/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C006/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C007/MAIN.ERB",
+      "size": 58,
+      "sha256": "2b7b8a9c098ed06cfba18ac88ed8deea5f17710806e7c1f7bc69d1093e9106b8"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C007/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C007/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C008/MAIN.ERB",
+      "size": 78,
+      "sha256": "dc854535e09acbfe7f5ef1d6228d91a4166f3edbd079ed1fa035e806b2026866"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C008/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C008/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C009/MAIN.ERB",
+      "size": 78,
+      "sha256": "56f6d2d31e6573d82b61ae0dbeaf451492a6d84664f4d2b3b9ccf3af3fc2d4fb"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C009/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C009/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C010/MAIN.ERB",
+      "size": 74,
+      "sha256": "f469b45a954084271a0cdd6431a1f6da0b1ba9bec85c312c7c4cdb3773db148c"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C010/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C010/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C011/MAIN.ERB",
+      "size": 59,
+      "sha256": "9a1d8fbdc673407045cc73c180499be6229309e397bd2a649801d3f71077f564"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C011/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C011/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C012/MAIN.ERB",
+      "size": 65,
+      "sha256": "dcd280ce0888ced00aa1d94a62cd7c9e2bd767309b90e8e0cd943e4b6ba47fd5"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C012/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C012/input.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C013/MAIN.ERB",
+      "size": 93,
+      "sha256": "8b645d6e2859b0848e5ed5918c3042def9e9cec5db5664ea38b1ed8b94073364"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C013/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C014/MAIN.ERB",
+      "size": 92,
+      "sha256": "dc2be1aa3360e36725bc4bfcdd26194520eee7527f11ed1fec0f4dec1a250490"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C014/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C015/MAIN.ERB",
+      "size": 209,
+      "sha256": "de0e6f09197eb4a1a690c9c924cf072fe7ee56f37e6061082cb1433c10a93335"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C015/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C016/MAIN.ERB",
+      "size": 189,
+      "sha256": "752b6c0d74ba600a6e9172663448b96c501c5480f9f916516a799f7f594a7188"
+    },
+    {
+      "root": "bundle",
+      "path": "fixtures/C016/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C001/native/emuera.log",
+      "size": 66,
+      "sha256": "e413a8a49d91e71b50235cd9d3e6235d948fc0dc6619eccecc6a3a8ef9f10cd9"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C001/public/output.log",
+      "size": 66,
+      "sha256": "e413a8a49d91e71b50235cd9d3e6235d948fc0dc6619eccecc6a3a8ef9f10cd9"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C002/native/emuera.log",
+      "size": 66,
+      "sha256": "e413a8a49d91e71b50235cd9d3e6235d948fc0dc6619eccecc6a3a8ef9f10cd9"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C002/public/output.log",
+      "size": 66,
+      "sha256": "e413a8a49d91e71b50235cd9d3e6235d948fc0dc6619eccecc6a3a8ef9f10cd9"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C003/native/emuera.log",
+      "size": 68,
+      "sha256": "39a92a201c30e1a5d7e60d1942cc358070df1a81fc3e1254051017ea1d5228ff"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C003/public/output.log",
+      "size": 68,
+      "sha256": "39a92a201c30e1a5d7e60d1942cc358070df1a81fc3e1254051017ea1d5228ff"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C004/native/emuera.log",
+      "size": 68,
+      "sha256": "92bf83bdec3615c91594bbedd5649becea1dec8ed1b2c8c3c0c2637e10d21c71"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C004/public/output.log",
+      "size": 68,
+      "sha256": "92bf83bdec3615c91594bbedd5649becea1dec8ed1b2c8c3c0c2637e10d21c71"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C005/native/emuera.log",
+      "size": 96,
+      "sha256": "82b0d38ce8dac733bf8832ea2500b63f4321110e2291ab08ffe94ca76bd03b63"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C005/public/output_log.bin",
+      "size": 117,
+      "sha256": "cfbc3c87adccf248d10a73eb0b2498bf2f8ada15a63477d2e5c865c8bc6db71f"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C005/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C005/public/stdout.bin",
+      "size": 108,
+      "sha256": "2847ca9aae37590bd4d7fb014591a499859c286334e863d5835602d42ad5f36b"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C006/native/emuera.log",
+      "size": 60,
+      "sha256": "a11c0af48bc6d2af07e413bbbf427c242ce642c05c537ff7328491049ec77835"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C006/public/output_log.bin",
+      "size": 99,
+      "sha256": "b43124bc1001dd5843f3117d89469f6db09026f5a332f9c527e2bcffecc44cb3"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C006/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C006/public/stdout.bin",
+      "size": 90,
+      "sha256": "c0e91b5913b015b2a0abba504cb468c28b6ddf07a3abb6726ad27167e8132b6c"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C007/native/emuera.log",
+      "size": 52,
+      "sha256": "38f8651d16f66644a1824ca4440b1458108b2ed6d3a60dc7ba7e89b50a1d6e29"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C007/public/output_log.bin",
+      "size": 95,
+      "sha256": "e261ab9bedae1ada47c398172ce42ff721ce49a1cc9b0f47205be0ed77965487"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C007/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C007/public/stdout.bin",
+      "size": 86,
+      "sha256": "739e130deac7e5489a0320228396faac7b24c17c22f2d830dd0d31feee5d68bd"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C008/native/emuera.log",
+      "size": 80,
+      "sha256": "14f12aaa59f3908b96bd79be734a56700ff7c57e7064b50647dcef402d1564bb"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C008/public/output_log.bin",
+      "size": 109,
+      "sha256": "9e0974350457056368bfd8d87f7d8b4eb01fab86fa8d6579ef39454eb244b763"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C008/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C008/public/stdout.bin",
+      "size": 100,
+      "sha256": "9db9d4f3ff35695f95231aef364e8da833e855f46d8b68e5b2af5a63324f64e1"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C009/native/emuera.log",
+      "size": 92,
+      "sha256": "dc59339fe23bfe2c980c49693b04bc1a794368abda331acbf140cd2f8b16ad4f"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C009/public/output_log.bin",
+      "size": 111,
+      "sha256": "04641a0471f9adddb0639b44ae5707ec63501da21c7d96702297d651c5748e0f"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C009/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C009/public/stdout.bin",
+      "size": 100,
+      "sha256": "819744f516f83b2f0a83540df4be24ad0c29787326eba10d17755def6324df67"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C010/native/emuera.log",
+      "size": 90,
+      "sha256": "38589f08cc438b1e701b7fba1d0caf2b42df389ac0922b5b0cba27f878c4bb35"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C010/public/output_log.bin",
+      "size": 110,
+      "sha256": "df5fd06bf13d66450a1b2700fea0371a66dac0b56bff1fa933a60a9b73067f8a"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C010/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C010/public/stdout.bin",
+      "size": 99,
+      "sha256": "6c0b444d121ba98867a73655d65c96f97aa9c47ed2ca80f6c782df218a61a44d"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C011/native/emuera.log",
+      "size": 70,
+      "sha256": "24f16f858038c1d522806d31989de30deb2a134e905c7359682a5a6b47c34b1f"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C011/public/output_log.bin",
+      "size": 104,
+      "sha256": "ae7326024141fedf7a80aedc91923de5e522eed4680effb3b3c08d77d53ae87b"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C011/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C011/public/stdout.bin",
+      "size": 95,
+      "sha256": "67519a8f53ecb328a4bc8620f7c2a22202dcfe7d4d0ac1f7609d8a539f77e60e"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C012/native/emuera.log",
+      "size": 60,
+      "sha256": "571bcacba42e1776870d4e4d01307b183059d67f5e2e8a5a30d35e610e41e4cd"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C012/public/output_log.bin",
+      "size": 98,
+      "sha256": "5965a5f479502590cd2db6b613542a9addc1bdcd12fdbda9e1caee5c0ae4a220"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C012/public/stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C012/public/stdout.bin",
+      "size": 90,
+      "sha256": "806f9aeec093284f119d23e1861d50d13d6f30662c72951438f1c64258b7012a"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C013/native/emuera.log",
+      "size": 434,
+      "sha256": "c7ea9d5c8981ffe908382d9cf5484d140667bb51f4324dc93ea38677d212ece1"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C013/public/stderr.bin",
+      "size": 123,
+      "sha256": "f361851ac6a5169bc3e0cb9b8bb32ad624b4729dffd2eb3dd5f24ed2235a81b0"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C013/public/stdout.bin",
+      "size": 16,
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C014/native/emuera.log",
+      "size": 452,
+      "sha256": "77d2dbb4e8774a231d4d71acdadd88bf2269f7cb2086ce09206d9b3f628101ad"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C014/public/stderr.bin",
+      "size": 117,
+      "sha256": "1eb27ef88ed1cdb4398c635489562ebf47c12e4199de99a6d8a636c7e672daba"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C014/public/stdout.bin",
+      "size": 16,
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C015/native-01/emuera.log",
+      "size": 344,
+      "sha256": "3b43e03e904dc89dd213b99d4df68f8ac2cc8cfc0ad5dea9540d1723531b287d"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C015/native-02/emuera.log",
+      "size": 344,
+      "sha256": "3b43e03e904dc89dd213b99d4df68f8ac2cc8cfc0ad5dea9540d1723531b287d"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C015/public/stderr.bin",
+      "size": 122,
+      "sha256": "1ca349d4f287f7272fdf9c7256b8e54c1e32dc7458e3b79eb00ee13d2b6bd171"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C015/public/stdout.bin",
+      "size": 43,
+      "sha256": "2760cad9a06a5c67423888951effe7722cd818f4549bbcc8679a5ce46fcccd6f"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C016/native-01/emuera.log",
+      "size": 366,
+      "sha256": "e6e28481a4587ca1ff6a410c7cc8b1ee41c5d058ce22802591fe1d4348c037b4"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C016/native-02/emuera.log",
+      "size": 366,
+      "sha256": "e6e28481a4587ca1ff6a410c7cc8b1ee41c5d058ce22802591fe1d4348c037b4"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C016/public/stderr.bin",
+      "size": 82,
+      "sha256": "14f72039b70fdb733497cff05e68e2336dd736de41d468751f13fb04d0cba290"
+    },
+    {
+      "root": "bundle",
+      "path": "raw/C016/public/stdout.bin",
+      "size": 47,
+      "sha256": "abd4ccdfe0e8813a3994cd0a01a3e4665034bfa75c4cf6ce12dfcc592527d8f8"
+    },
+    {
+      "root": "bundle",
+      "path": "records.json",
+      "size": 50442,
+      "sha256": "f69d73cb83607eb1ed1e5b95de3863ff17035ce9a7f9cc431e6dc1d859f3cfb8"
+    },
+    {
+      "root": "bundle",
+      "path": "verify.py",
+      "size": 5022,
+      "sha256": "d35b15684923e1905048cfa69319f8a8c7c17d3d269fc51f78d5467b397ea43c"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "target-comparison-adjudication-1",
+  "generated_utc": "2026-11-14T17:28:38.788023+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "RANDOMIZE"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "case_ids": [
+    "RANDROUNDTRIP197_command_or_syntax_RANDOMIZE",
+    "RANDOMIZE_OMIT_DYNAMIC_20261115"
+  ],
+  "basis": [
+    "Native and public logs for omitted RANDOMIZE are byte-identical to their existing literal RANDOMIZE 0 references across two repeated runs, including the complete 625-slot state dump.",
+    "A dynamic helper returns seed 1234 exactly once in each engine/run; after the RNG is disturbed, reinitialization restores all 625 state elements to the pre-disturbance state. Native/public logs are byte-identical in both runs.",
+    "The source registration, nullable integer-expression builder, runtime handler and seed-to-generator handoff were checked against fixed v24 source member hashes."
+  ],
+  "limitations": [
+    "Only omitted seed equivalence to literal zero and one dynamic helper returning existing seed 1234 are covered; this is not a proof over all seeds, invalid expressions, or parser forms.",
+    "Native process natural exit was not observed; the owned isolated-desktop runner cleaned up each process.",
+    "The separate RAND expression, RANDOM method-as-command, DUMPRAND and INITRAND targets retain their own scope and statuses."
+  ],
+  "product_modified": false,
+  "public_release_modified": false
+}

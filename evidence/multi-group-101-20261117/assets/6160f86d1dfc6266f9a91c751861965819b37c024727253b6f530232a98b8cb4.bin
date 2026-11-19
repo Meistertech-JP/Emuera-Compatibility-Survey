@@ -1,0 +1,52 @@
+Now Loading...
+BEGIN_PRINT_ABL_zero
+ 
+END_PRINT_ABL_zero
+BEGIN_PRINT_TALENT_zero
+ 
+END_PRINT_TALENT_zero
+BEGIN_PRINT_MARK_zero
+ 
+END_PRINT_MARK_zero
+BEGIN_PRINT_EXP_zero
+ 
+END_PRINT_EXP_zero
+BEGIN_PRINT_PALAM_zero
+PalZero[..........]     0 PalOne[..........]     0 PalTwo[..........]     0
+  Pal99[..........]     0
+END_PRINT_PALAM_zero
+BEGIN_PRINT_ITEM_zero
+所持アイテム：なし
+END_PRINT_ITEM_zero
+BEGIN_PRINT_SHOPITEM_zero
+END_PRINT_SHOPITEM_zero
+BEGIN_PRINT_ABL_mixed
+ABLOneLV3 ABLTwoLV-2 
+END_PRINT_ABL_mixed
+BEGIN_PRINT_TALENT_mixed
+[TALENTOne][TALENTTwo]
+END_PRINT_TALENT_mixed
+BEGIN_PRINT_MARK_mixed
+MARKOneLV3 MARKTwoLV-2 
+END_PRINT_MARK_mixed
+BEGIN_PRINT_EXP_mixed
+EXPOne3 EXPTwo-2 
+END_PRINT_EXP_mixed
+BEGIN_PRINT_PALAM_mixed
+PalZero[..........]     0 PalOne[-----.....]    50 PalTwo[..........]    -2
+       [--........]    25  Pal99[..........]     3
+END_PRINT_PALAM_mixed
+BEGIN_PRINT_ITEM_mixed
+所持アイテム：ItemOne(3) ItemTwo(-2) (9) 
+END_PRINT_ITEM_mixed
+BEGIN_PRINT_SHOPITEM_mixed
+[1] ItemOne($120)         [2] ItemTwo($-45)         [3] ($333)                
+END_PRINT_SHOPITEM_mixed
+BEGIN_helper_once
+ABLOneLV3 ABLTwoLV-2 
+END_helper_once
+STATE_BEFORE_SKIP=A1;TARGET0;RESULT777;NO0,10
+STATE_AFTER_SKIP=A1;TARGET0;ABL7,3,-2,9;ITEM3,-2,9;PRICE0,120,-45
+DONE
+※※※ログファイルをemuera.logに出力しました※※※
+

@@ -1,0 +1,61 @@
+{
+  "schema": "survey-neutral-validation-v1",
+  "offline_verification": {
+    "status": "PASS",
+    "typed_targets": 694,
+    "main_scenarios": 2898,
+    "supplemental_items": 16,
+    "supplemental_modes": 83,
+    "grammar_cases": 114,
+    "grammar_modes": 342,
+    "difference_main": 1071,
+    "difference_grammar": 65,
+    "difference_supplemental_modes": 48,
+    "non_main_target_edges": 1,
+    "evidence_reproducibility": "not_established"
+  },
+  "negative_controls": {
+    "status": "PASS",
+    "controls": [
+      {
+        "control": "isolated_offline",
+        "pass": true,
+        "diagnostic": ""
+      },
+      {
+        "control": "altered_hash",
+        "pass": true,
+        "diagnostic": "FAIL: file hash/size: results/survey.json"
+      },
+      {
+        "control": "resealed_wrong_verdict_count",
+        "pass": true,
+        "diagnostic": "FAIL: main scenario outcomes"
+      },
+      {
+        "control": "resealed_duplicate_case",
+        "pass": true,
+        "diagnostic": "FAIL: duplicate case_id"
+      },
+      {
+        "control": "resealed_difference_missing",
+        "pass": true,
+        "diagnostic": "FAIL: main_scenarios difference coverage"
+      },
+      {
+        "control": "resealed_private_path",
+        "pass": true,
+        "diagnostic": "FAIL: unsafe text value"
+      }
+    ]
+  },
+  "source_projection_audit": {
+    "status": "PASS",
+    "frozen_source_files_rehashed": 13,
+    "output_files_rehashed": 2,
+    "source_pointer_records_compared": 4989,
+    "scope": "Projection fields and original source pointers; not all original evidence or runtime semantics"
+  },
+  "privacy_screen_scope": "Controlled fields and bounded pattern scan of survey.json and catalog.json; not a complete publication or secrets audit",
+  "reproduction": "not_established"
+}

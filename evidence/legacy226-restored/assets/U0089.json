@@ -1,0 +1,28 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:09.214686+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "DEBUGCLEAR"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "c4cb0c9ad73fe2083020bda6a5548f6e096d010d08d3bdf49a089b969d6675d7",
+  "case_ids": [
+    "DEBUGOUTPUT218_DEBUGCLEAR"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "Native有効は1回、public有効1回で反復性なし。Native無効とpublic無効は対照同等でなく、自然終了/画面レイアウトも未検証。",
+    "DEBUGOUTPUT218_DEBUGCLEAR: Enabled Native twice/public --debug once, plus single Native-disabled reference with counters0; public-disabled not run and no enabled result generalized to disabled. Developer export obtained by own isolated-desktop/PID-only WM_CLOSE; ordinary text162bytes and final developer55bytes repeated exactly. No natural Native exit, same-time GUI snapshots, fonts/wrapping, malformed debug expressions/errors or whole-debug closure. Native final mutable debug buffer versus append-only public stderr not equated; OUTPUTLOG warning retained."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "3708bbf469b0362836ec31c337c15217eb9a6314a6b4aacea66060d5e463dff5",
+  "independent_semantic_review_sha256": "89618fd78615da015a550f5b0918b5987d9483c2afbecf8dc2f9f2e97715adab",
+  "independent_semantic_results_sha256": "d61de0670ddd02bb9193d6241eef095b46a917f1787b2e9ea6ba192365884a5a",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

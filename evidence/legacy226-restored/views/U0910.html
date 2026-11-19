@@ -1,0 +1,77 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0910 · REVIEW.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0910 · REVIEW.md</h1>
+<p>PRINTPLAIN/SINGLEの20有効観測と実行完了判断を保存し、L30の私的原ZIP絶対パスとL51末尾のfreeze/拡張禁止という内部手順指示だけを除いた派生票にする。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>c98e0d8d121274056e1f4bd832f8485d265ef0ebcc8aa2c5983f096f8496c336</code></p>
+<p><a href="../assets/U0910.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>e4effaab3cb264af03ebe5f7cf48664d8a1438208a7c538b614d6983eaf72abd</code></p>
+<pre>&gt; 公開用派生資料 `U0910`（公開用編集日: 2026-11-18）。原票全文の技術観測・判定・制限を保持し、指定箇所だけを編集した。
+&gt; 原票ファイルSHA-256: `c98e0d8d121274056e1f4bd832f8485d265ef0ebcc8aa2c5983f096f8496c336`。これは原票の識別値であり、派生物のハッシュや元実行のsealを新たに発行するものではない。
+&gt; 本文中の旧相対パス・ファイル名・nonce・PID・実行時刻・fixture値・hash/seal・「現行/現在」は原票作成/実行当時の参照と記録。今回のstage構成・新規実行・現行状態を示さない。
+&gt; Copyright (c) 2026 Meistertech-JP — MIT（独自の説明・編集部分、LICENSE.txt）。エンジン由来の診断・表現はLICENSES/とvendor/emuera/NOTICEの個別条件を維持する。
+&gt; 原票が記す準備・レポート作成時の失敗と、有効な製品実行/診断の観測は別の記録であり、前者を理由に後者を棄却していない。
+
+# Case196 PRINTPLAIN / PRINTSINGLE bounded review
+
+20 observations in one instrumented fixture; Native twice, pinned public pyz once. Native raw logs reproduce byte-for-byte. Public comparison: raw/layout match 15/20; observable content, measured state, and helper evaluation count/order match 20/20. Five empty SINGLE cases show a real serialized line-lifecycle difference. This is not closure for all PRINT commands.
+
+## Finding
+
+C196_12-16: PRINTSINGLE with omitted nullable argument, PRINTSINGLEV &quot;&quot;, PRINTSINGLES &quot;&quot;, PRINTSINGLEFORM with omitted nullable argument, PRINTSINGLEFORMS &quot;&quot;.
+
+- Native body: `P&gt;&lt;T\r\n`
+- public body: `P&gt;\r\n \r\n&lt;T\r\n` (the middle line contains one ASCII space).
+
+Native EmueraConsole.Print.cs:297-307 returns on null/empty before flushing the pending prefix. For nonempty SINGLE, it flushes pending text, appends a single display line, then refreshes. Both engines serialize prefix / target / tail as three lines for the five nonempty SINGLE conditions. For the empty conditions Native leaves prefix pending to join the tail, while public serializes the prefix, a blank-space line and the tail separately. This is a log-level lifecycle observation, not evidence about temporary-line replacement, input lifecycle, timing, glyphs, or actual paint.
+
+PLAIN/PLAINFORM ordinary and empty examples agree on prefix/tail joining. PRINTLC/PRINTFORMLC short ASCII examples agree including padding: `lc` has 24 following spaces; `c1/2` has 22. This is specific to the copied configuration and font measurement environment, not a general column-width guarantee.
+
+## Conditions and separate comparison axes
+
+See conditions.json, CONDITIONS_TABLE.md and fixture.ERB. Nine ordinary cases cover all nine assigned commands, seven empty cases cover PLAIN and SINGLE families, four selected SKIPDISP cases cover PLAINFORM, SINGLEV, SINGLEFORMS and FORMLC. Each resets A/B, RESULT=701, RESULTS:0=sentinel, prints a pending `P&gt;` prefix, executes the target, prints `&lt;T` with PRINTL, then records state. SKIP conditions bracket only the target with SKIPDISP 1 / SKIPDISP 0.
+
+COMPARISON.json retains each engine&#x27;s raw condition block, exact layout rows including whitespace, observable content/value observations, state, and evaluation as separate fields.
+
+- Raw: original BOM-bearing UTF-16LE logs retained; no line-ending/whitespace normalization. Segment hashes are explicitly UTF-16LE without a segment BOM. Complete log hashes include BOM.
+- Layout: exact serialized rows and spaces, not a GUI layout capture.
+- Value/content: observable target text after separating prefix/tail and CRLF. LC trailing ASCII padding is excluded only on this axis. Empty cases record absence of nonwhitespace content and record structural spaces separately. Internal argument values were not independently captured, so this axis cannot erase the empty SINGLE raw/layout difference.
+- State: A, B, RESULT, RESULTS:0 only. Normal cases retain RESULT=701; SKIP cases show RESULT=0 after SKIPDISP 0, whose own side effect prevents attributing that change to PRINT. RESULTS:0 stays sentinel throughout.
+- Evaluation: helper count A and digit-encoded order B. H(1),H(2) produce A=2/B=12. SINGLES T(1) gives A=1/B=1 and prints its returned `{ZZ196H(2)}` literally; SINGLEFORMS T(1) gives A=2/B=12 and expands it. Literal PLAIN/SINGLE preserve braces without calling helpers. All four selected SKIP cases show A=0/B=0 and no target output.
+
+## Actual archive source and argument/flag contracts
+
+SOURCE.json records full archive/member SHA-256, size and excerpt ranges; SOURCE_EXCERPTS_V24.txt records line-numbered excerpts. Only the specified archive `Emuera1824+v24.zip`, prefix `Emuera1824+v24/src1824+v24/src1824/Emuera/`, was used. Archive SHA-256 is `fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a`. UTF-8-SIG decoding preserves existing garbled source comments. The supplied exe was not rebuilt or independently proven identical to a compilation of the archive.
+
+- FunctionIdentifier.cs:15-30,130-174: PLAIN uses STR_NULLABLE, PLAINFORM uses FORM_STR_NULLABLE. Both register METHOD_SAFE|EXTENDED, without IS_PRINT. Their dedicated Process.ScriptProc.cs:143-153 branch explicitly checks skipPrint before evaluating the term and calling PrintPlain.
+- Instraction.Child.cs:25-59,83-109: SINGLE uses IS_PRINT|PRINT_SINGLE|EXTENDED|METHOD_SAFE. SINGLEV uses SP_PRINTV, SINGLES and SINGLEFORMS use STR_EXPRESSION, SINGLEFORM uses FORM_STR_NULLABLE, bare SINGLE uses STR_NULLABLE. SINGLE does not acquire PRINT_NEWLINE or PRINT_WAITINPUT; it routes to a distinct single-line function rather than merely aliasing PRINTL.
+- ArgumentBuilder.cs:230-245,339-424,1029-1084: nullable literal/form omission yields empty string. V builds expression terms and rejects null omitted elements; S/FORMS require a string expression. Empty V/S/FORMS conditions use explicit empty-string expressions, not missing arguments. Invalid syntax/type combinations were not exercised.
+- Instraction.Child.cs:115-146: V traverses terms in order, converting integer values or fetching string values for concatenation. FORMS first evaluates the string expression, then CheckEscape / AnalyseFormattedString / GetString. FORM uses the prebuilt formatted-string term. LC/FORMLC use IS_PRINT|EXTENDED|METHOD_SAFE and PrintC(str,false), with no newline/wait flag; LC is not a newline suffix.
+- ExpressionMediator.cs:50-63: SINGLE routes to PrintSingleLine(str,false); other ordinary print routes use Print plus the indicated newline/wait flags. No wait commands used here.
+- EmueraConsole.Print.cs:297-307,361-451,453-505: empty SINGLE/Plain/C early returns, Plain&#x27;s AppendPlainText, LC padding and flush contracts. Process.ScriptProc.cs:44 and the shared PRINT implementation:108 skip the print family; PLAIN uses its dedicated skip check. SKIPDISP and its RESULT side effect are at Process.ScriptProc.cs:551-565.
+
+## Execution, attempts, preservation and limits
+
+Native exe/config copied from the assigned strfind-boundaries-20261113-128/native-01; run_native.py copied byte-for-byte from its parent. PREPARATION.json records runner provenance. The old SEARCHBOUND01.ERB filename is retained for harness compatibility; its contents are this case&#x27;s fixture. Each Native launch has its own lock-check.json for 3.0.0/NATIVE_LOCK.json and MEASURE_LOCK.json: both absent immediately before launch. No lock files were changed, and no unrelated processes operated on.
+
+Native uses only the supplied CreateDesktopW isolated desktop harness. No normal-desktop input, screenshots or keys. Both Native processes remained alive after 5 seconds, had no observed exit code, and received successful owned-process cleanup; desktops closed successfully. Runner returncode 0 means harness completion, not Native natural exit. Natural-exit equivalence is unobserved.
+
+Public ran through root/run_public_pyz_verified.py, expected SHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35` verified unchanged before/after, returncode 0. The public harness passes --debug; Native has no -DEBUG argument. Exact argv and environment are in receipts. Fixture has no DEBUG-specific instructions.
+
+All three runs have identical ERB/config inputs and empty csv directories; inputs remained unchanged. Native exe SHA-256 `14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964`; config SHA-256 `f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc`; fixture SHA-256 `60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3`. All 20 BEGIN/STATE/END markers and final DONE are present in all logs. No runtime fixture retry or discarded fixture; logs show no runtime diagnostic. This is not a general absence-of-errors claim.
+
+ATTEMPTS.json distinguishes the preexecution cp932 source-decoding failure and report-authoring wrapper failure from product execution or bad fixtures. All actual runtime attempts and their raw stdout/stderr, logs, input files, receipts, hashes, scripts and source evidence are retained. Native stdout is harness JSON and is not compared directly to public application stdout.
+
+Not tested: GUI glyphs/paint, styling/color/button semantics, long lines/wrapping, multiple columns, font/config variants, LC empty text, full SKIP combinations, METHOD_SAFE execution inside functions, invalid arguments, wait/key variants, all internal variables/buffers, errors/post-error state, or natural termination. These are sequential instrumented observations within one process per run, not 20 independent process initializations. No product fixes, shared ledger/integration changes, GitHub or Drive actions. All written files are within the assigned Case196 evidence folder. Execution is complete.
+
+VERIFICATION.json records bounded checks. MANIFEST.json hashes every retained file except itself and FROZEN.json; FROZEN.json records the manifest hash.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0838 · command_or_syntax:PRINTSINGLE · check</li>
+<li>L0841 · command_or_syntax:PRINTSINGLE · check</li>
+</ul></html>

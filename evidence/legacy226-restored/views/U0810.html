@@ -1,0 +1,98 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0810 · conditions.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0810 · conditions.json</h1>
+<p>原票種別=conditions.json; 参照対象=command_or_syntax:PRINT_IMG, command_or_syntax:PRINT_RECT, command_or_syntax:PRINT_SPACE。配列要素数=9; 先頭要素=[{&quot;id&quot;: &quot;space_valid&quot;, &quot;command&quot;: &quot;PRINT_SPACE&quot;, &quot;ops&quot;: [&quot;PRINT_SPACE 0&quot;, &quot;PRINT_SPACE 100&quot;, &quot;PRINT_SPACE ZZ229N(1,25)&quot;, &quot;PRINT_SPACE ZZ229N(2,25)&quot;]}]。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>a7c25ba7a0f1ac36da45dc168be6f1787e0b706ae544099f6ffd5b007ca081ea</code></p>
+<p><a href="../assets/U0810.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a7c25ba7a0f1ac36da45dc168be6f1787e0b706ae544099f6ffd5b007ca081ea</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>[
+  {
+    &quot;id&quot;: &quot;space_valid&quot;,
+    &quot;command&quot;: &quot;PRINT_SPACE&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_SPACE 0&quot;,
+      &quot;PRINT_SPACE 100&quot;,
+      &quot;PRINT_SPACE ZZ229N(1,25)&quot;,
+      &quot;PRINT_SPACE ZZ229N(2,25)&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;rect_valid&quot;,
+    &quot;command&quot;: &quot;PRINT_RECT&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_RECT 100&quot;,
+      &quot;PRINT_RECT ZZ229N(1,0),ZZ229N(2,0),ZZ229N(3,100),ZZ229N(4,100)&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;image_existing&quot;,
+    &quot;command&quot;: &quot;PRINT_IMG&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_IMG \&quot;ZZ229\&quot;&quot;,
+      &quot;PRINT_IMG ZZ229S()&quot;
+    ],
+    &quot;resource&quot;: true
+  },
+  {
+    &quot;id&quot;: &quot;image_missing&quot;,
+    &quot;command&quot;: &quot;PRINT_IMG&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_IMG \&quot;MISSING229\&quot;&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;space_negative&quot;,
+    &quot;command&quot;: &quot;PRINT_SPACE&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_SPACE ZZ229N(1,-1)&quot;
+    ],
+    &quot;error&quot;: true
+  },
+  {
+    &quot;id&quot;: &quot;space_high&quot;,
+    &quot;command&quot;: &quot;PRINT_SPACE&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_SPACE ZZ229N(1,2147483648)&quot;
+    ],
+    &quot;error&quot;: true
+  },
+  {
+    &quot;id&quot;: &quot;rect_first_invalid&quot;,
+    &quot;command&quot;: &quot;PRINT_RECT&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_RECT ZZ229N(1,-1),ZZ229FAULT(),100,100&quot;
+    ],
+    &quot;error&quot;: true
+  },
+  {
+    &quot;id&quot;: &quot;rect_shape_fallback&quot;,
+    &quot;command&quot;: &quot;PRINT_RECT&quot;,
+    &quot;ops&quot;: [
+      &quot;PRINT_RECT 0&quot;,
+      &quot;PRINT_RECT 1,2,3&quot;
+    ]
+  },
+  {
+    &quot;id&quot;: &quot;skip_all&quot;,
+    &quot;command&quot;: &quot;PRINT_SPACE PRINT_RECT PRINT_IMG&quot;,
+    &quot;ops&quot;: [
+      &quot;SKIPDISP 1&quot;,
+      &quot;PRINT_SPACE ZZ229FAULT()&quot;,
+      &quot;PRINT_RECT ZZ229FAULT(),0,100,100&quot;,
+      &quot;PRINT_IMG ZZ229BADSTR()&quot;,
+      &quot;SKIPDISP 0&quot;
+    ]
+  }
+]</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2138 · command_or_syntax:PRINT_IMG · check</li>
+<li>L2152 · command_or_syntax:PRINT_RECT · check</li>
+<li>L2166 · command_or_syntax:PRINT_SPACE · check</li>
+</ul></html>

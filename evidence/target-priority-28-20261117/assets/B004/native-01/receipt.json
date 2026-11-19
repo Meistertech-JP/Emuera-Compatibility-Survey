@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_CALLFORM_MISSING_20261116",
+  "mode": "native-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "be9200c3d26c55e5c4ff569f73c3361ef9dc97a94f120189bcecbc48024d9d4d",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "be9200c3d26c55e5c4ff569f73c3361ef9dc97a94f120189bcecbc48024d9d4d",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "4cf83b8346f93773ad986edcdc807ed2a85ea57f26bce39c3d5ece9c04ac8888",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt",
+  "source_condition_id": "CALLFORM_MISSING",
+  "source_declared_mode": "native-01"
+}

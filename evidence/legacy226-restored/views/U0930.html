@@ -1,0 +1,38 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0930 · PARENT_SCOPE_ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0930 · PARENT_SCOPE_ADJUDICATION.json</h1>
+<p>原票種別=PARENT_SCOPE_ADJUDICATION.json; 参照対象=expression_function:SPRITECREATED。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;SPRITECREATED&quot;}; comparison_outcome=&quot;documented_difference&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>a43d0a3c96a6542b2f658d1dc1c55fd593208d8617ff8e2c14df52517519c948</code></p>
+<p><a href="../assets/U0930.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a43d0a3c96a6542b2f658d1dc1c55fd593208d8617ff8e2c14df52517519c948</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;SPRITECREATED&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;documented_difference&quot;,
+  &quot;basis&quot;: [
+    &quot;Pinned public pyz source documents that active resource declarations require an unsupported image backend and stops before SPRITECREATED.&quot;,
+    &quot;Same-input Native positive-resource execution returns 1 twice; public execution reaches the explicit pre-target E_UNSUPPORTED gate.&quot;,
+    &quot;Existing empty-catalog case directly observes the supported Native/public return value 0 with matching raw output log.&quot;,
+    &quot;Independent review accepts this as the bounded source-plus-actual-supported-return alternative recorded in the parent requirement.&quot;
+  ],
+  &quot;limits&quot;: [
+    &quot;Public positive-resource SPRITECREATED return remains unobserved.&quot;,
+    &quot;No graphics rendering equivalence claim.&quot;,
+    &quot;Separate command-form SPRITECREATED target remains independent and is not closed by this decision.&quot;
+  ],
+  &quot;evidence&quot;: &quot;INDEPENDENT_REVIEW_20261113.md and COMPARISON.json&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2290 · expression_function:SPRITECREATED · acceptance</li>
+<li>L2291 · expression_function:SPRITECREATED · check</li>
+</ul></html>

@@ -1,0 +1,25 @@
+{
+  "case_id": "AGGMETHOD_MAXARRAY_END_OVERRUN_20261116",
+  "mode": "public-01",
+  "identity_basis": "explicit_case_evidence_and_source_path_plus_receipt_case_and_mode",
+  "inputs_before": {
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "ERB/ARRAYMSORT176.ERH": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+    "ERB/CASE.ERB": "def5704bb5ebb9eb1b6385b8f5c826f418787e70dbf43a054c32d9297745664b",
+    "ERB/ENDPOINT_READBACK.ERH": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412"
+  },
+  "inputs_after": {
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "ERB/ARRAYMSORT176.ERH": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+    "ERB/CASE.ERB": "def5704bb5ebb9eb1b6385b8f5c826f418787e70dbf43a054c32d9297745664b",
+    "ERB/ENDPOINT_READBACK.ERH": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "fc4dbc63d0a6bb87941f3dd6c9b239150b3e9698990304718c7355cba294b72b",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "MAXARRAY_END_OVERRUN",
+  "recorded_timeout": false
+}

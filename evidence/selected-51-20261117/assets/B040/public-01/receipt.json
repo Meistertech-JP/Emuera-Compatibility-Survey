@@ -1,0 +1,27 @@
+{
+  "case_id": "CSVSTR_CURRENT_CSVNAME_CMD_ON_FAULT_20261115",
+  "mode": "public-01",
+  "identity_basis": "explicit_case_evidence_and_source_path",
+  "inputs_before": {
+    "ERB/SEARCHBOUND01.ERB": "0ebc94646f34fb4a566ed60d6b50e51f12af700b37f4f780436fd276afadadba",
+    "csv/CHARA10S0.CSV": "ef95aa857828937ac035632145d85b8c686ecf3176b8e5ca633c31c9c0958f9a",
+    "csv/CHARA10S1.CSV": "8e916fdf52be226283d0e64f2b0fcaa105d31f8f08d8f1062bdc4990c42e098a",
+    "csv/CHARA20S0.CSV": "3b0d8eed33925e3f8beab7a4a96e984baa7f4d660c90c7963855a740d6889582",
+    "csv/CHARA30S1.CSV": "a7adb5dc2832f010352f5f37ec55a40c5b70a53e9b92ecfa8a85e20da1245f69",
+    "emuera.config": "6be6ce0c0b05d3b7b0b5de7968977013ded76d0d82f59f77c83ce48061c9ad24"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "0ebc94646f34fb4a566ed60d6b50e51f12af700b37f4f780436fd276afadadba",
+    "csv/CHARA10S0.CSV": "ef95aa857828937ac035632145d85b8c686ecf3176b8e5ca633c31c9c0958f9a",
+    "csv/CHARA10S1.CSV": "8e916fdf52be226283d0e64f2b0fcaa105d31f8f08d8f1062bdc4990c42e098a",
+    "csv/CHARA20S0.CSV": "3b0d8eed33925e3f8beab7a4a96e984baa7f4d660c90c7963855a740d6889582",
+    "csv/CHARA30S1.CSV": "a7adb5dc2832f010352f5f37ec55a40c5b70a53e9b92ecfa8a85e20da1245f69",
+    "emuera.config": "6be6ce0c0b05d3b7b0b5de7968977013ded76d0d82f59f77c83ce48061c9ad24"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "23fc98446c290b837c2d84bf09883b4d1d2cc5d66259f0f506ad74371a14af56",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable"
+}

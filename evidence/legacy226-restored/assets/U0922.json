@@ -1,0 +1,54 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "RESTART"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "case_ids": [
+    "RESTART_BUILTIN_COUNT_REINITIALIZATION_20261115"
+  ],
+  "accepted_scope": "COUNT directly observed: callee entries37,1,1; REPEAT reinitializes0; RESTART at COUNT1 with bounded FLAG guard; final and caller COUNT3, RETURN result88; Native2/public1 exact markers match. Original target_RESTART missing COUNT obligation now fulfilled.",
+  "discharged_original_remaining": [
+    {
+      "type": "finite_original_obligation_restored",
+      "obligation_ids": [
+        "target_RESTART"
+      ],
+      "requirement": "Read back built-in COUNT initialization/preservation in a bounded restarted loop, or document exact source branch as unreachable. A/LOCAL counters are not COUNT.",
+      "source": "evidence/parent-command-evidence-review-20261113/REVIEW.json",
+      "retained_partial_case_ids": [
+        "CALLJUMP206_restart"
+      ]
+    }
+  ],
+  "evidence_manifest_path": "evidence/restart-count-boundary-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "eb81e390ac8f239a57b8759441bf1f8bc03cc165e97a001826b5eb0b15e43280",
+  "source_refs": {
+    "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+    "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+    "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+    "ranges": [
+      [
+        1757,
+        1785
+      ],
+      [
+        2082,
+        2093
+      ],
+      [
+        2176,
+        2201
+      ]
+    ]
+  },
+  "limits": [
+    "Native natural process exit unobserved",
+    "Other restart contexts outside original finite acceptance"
+  ],
+  "product_modified": false,
+  "global_completion": false
+}

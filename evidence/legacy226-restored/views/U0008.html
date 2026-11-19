@@ -1,0 +1,139 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0008 · PARENT_ACCEPTANCE_BREAK_FINITE_20261115.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0008 · PARENT_ACCEPTANCE_BREAK_FINITE_20261115.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE_BREAK_FINITE_20261115.json; 参照対象=structural_syntax:BREAK。対象={&quot;kind&quot;: &quot;structural_syntax&quot;, &quot;name&quot;: &quot;BREAK&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>f824fccc68e1f384be366ebe7e77fbd399e76c9a95f80f3b4890ec46ea7aef3f</code></p>
+<p><a href="../assets/U0008.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>f824fccc68e1f384be366ebe7e77fbd399e76c9a95f80f3b4890ec46ea7aef3f</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T20:19:31.359075+00:00&quot;,
+  &quot;decision_authority&quot;: &quot;Codex evidence review within active Phase 2 work; not owner release sign-off.&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;structural_syntax&quot;,
+    &quot;name&quot;: &quot;BREAK&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;PILOTFLOW18&quot;,
+    &quot;BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115&quot;,
+    &quot;BREAK_OUTSIDE_LINE_TIMING_20261115&quot;
+  ],
+  &quot;accepted_scope&quot;: &quot;Native/public comparison of nearest-loop transfer in nested WHILE plus counted FOR, counter after counted BREAK, outer continuation and skipped-body sentinels; plus one outside-loop BREAK timing/diagnostic path. Existing PILOTFLOW18 REPEAT case retained.&quot;,
+  &quot;accepted_finite_requirements&quot;: [
+    {
+      &quot;id&quot;: &quot;registration_form&quot;,
+      &quot;state&quot;: &quot;source_reviewed_and_reached&quot;,
+      &quot;basis&quot;: &quot;Native v24 registers BREAK as void control flow; ErbLoader binds nearest enclosing loop and BREAK_Instruction jumps after it. Public program.py binds _BREAK to nearest active loop.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;normal_control&quot;,
+      &quot;state&quot;: &quot;compared&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115&quot;
+      ],
+      &quot;basis&quot;: &quot;Native repeat logs identical; public marker sequence matches. Inner WHILE break continues outer FOR; counted FOR break leaves final counter 3 and skips remaining body.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;timing_boundary&quot;,
+      &quot;state&quot;: &quot;compared_with_scoped_difference&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BREAK_OUTSIDE_LINE_TIMING_20261115&quot;
+      ],
+      &quot;basis&quot;: &quot;Both stop at line 3 before AFTER. Native executes BEFORE then stops at runtime after load warning; public pyz rejects at compile with E_SYNTAX before BEFORE.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;effects_lifetime&quot;,
+      &quot;state&quot;: &quot;compared&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115&quot;
+      ],
+      &quot;basis&quot;: &quot;WHILE_SKIPPED and second-iteration FOR_SKIPPED are absent; OUTER_CONTINUE is reached; final counted-loop variable is 3.&quot;
+    }
+  ],
+  &quot;source_refs&quot;: [
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs&quot;,
+      &quot;sha256&quot;: &quot;00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab&quot;,
+      &quot;lines&quot;: &quot;1035-1055&quot;
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+      &quot;sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+      &quot;lines&quot;: &quot;241-248&quot;
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+      &quot;sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+      &quot;lines&quot;: &quot;2095-2117&quot;
+    },
+    {
+      &quot;member&quot;: &quot;pyemuera/program.py&quot;,
+      &quot;sha256&quot;: &quot;bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95&quot;,
+      &quot;lines&quot;: &quot;886-890&quot;
+    },
+    {
+      &quot;member&quot;: &quot;pyemuera/runtime.py&quot;,
+      &quot;sha256&quot;: &quot;cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d&quot;,
+      &quot;lines&quot;: &quot;1234-1239,1293-1299&quot;
+    }
+  ],
+  &quot;artifacts&quot;: {
+    &quot;native_source_archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+    &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+    &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+  },
+  &quot;comparison_path&quot;: &quot;evidence/break-transfer-20261115/COMPARISON.json&quot;,
+  &quot;comparison_sha256&quot;: &quot;0f9a0a77ff74f615d36d4b931032c99529fd765f124fd11c58deb3931c09edc4&quot;,
+  &quot;evidence_manifest_path&quot;: &quot;evidence/break-transfer-20261115/MANIFEST.json&quot;,
+  &quot;evidence_manifest_sha256&quot;: &quot;3448b2658e494f351a74ae09ebc57ed2e8a70ebcb7ab682f81e7871cea1592a1&quot;,
+  &quot;review_path&quot;: &quot;evidence/break-transfer-20261115/REVIEW_ja.md&quot;,
+  &quot;review_sha256&quot;: &quot;3d685710a2e9ae121a22148a44278aa9f9ed9ed3aee164563a3dd9849c7a7478&quot;,
+  &quot;source_hashes_path&quot;: &quot;evidence/break-transfer-20261115/SOURCE_HASHES.json&quot;,
+  &quot;source_hashes_sha256&quot;: &quot;0ec134739bce04bc56eed9aaec615a234801c9fcd47b536154816194c07ac38f&quot;,
+  &quot;evidence_paths&quot;: [
+    {
+      &quot;path&quot;: &quot;evidence/break-transfer-20261115/COMPARISON.json&quot;,
+      &quot;sha256&quot;: &quot;0f9a0a77ff74f615d36d4b931032c99529fd765f124fd11c58deb3931c09edc4&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/break-transfer-20261115/REVIEW_ja.md&quot;,
+      &quot;sha256&quot;: &quot;3d685710a2e9ae121a22148a44278aa9f9ed9ed3aee164563a3dd9849c7a7478&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/break-transfer-20261115/SOURCE_HASHES.json&quot;,
+      &quot;sha256&quot;: &quot;0ec134739bce04bc56eed9aaec615a234801c9fcd47b536154816194c07ac38f&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/break-transfer-20261115/MANIFEST.json&quot;,
+      &quot;sha256&quot;: &quot;3448b2658e494f351a74ae09ebc57ed2e8a70ebcb7ab682f81e7871cea1592a1&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/break-transfer-20261115/SEAL.json&quot;,
+      &quot;sha256&quot;: &quot;efe431ab9a55c8023b1c663ef6e99e30dca8a4f49798dc8df949ee80738dad29&quot;
+    }
+  ],
+  &quot;finite_remainder&quot;: [],
+  &quot;retained_limits&quot;: [
+    &quot;Finite witness covers nested WHILE plus counted FOR, not REPEAT or DO.&quot;,
+    &quot;Native natural process exit was not observed; the isolated runner terminated each GUI process after five seconds. The completed output/error logs were captured before cleanup.&quot;,
+    &quot;Only the selected outside-loop diagnostic/timing path is compared; no generalized malformed-control-flow claim.&quot;,
+    &quot;The first invalid #DIM I/J setup is explicitly excluded from the comparison.&quot;
+  ],
+  &quot;product_code_modified&quot;: false,
+  &quot;public_release_modified&quot;: false,
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2414 · structural_syntax:BREAK · acceptance</li>
+<li>L2415 · structural_syntax:BREAK · check</li>
+<li>L2417 · structural_syntax:BREAK · check</li>
+</ul></html>

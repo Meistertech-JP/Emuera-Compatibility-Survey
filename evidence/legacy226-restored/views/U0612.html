@@ -1,0 +1,57 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0612 · SEARCHBOUND01.ERB</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0612 · SEARCHBOUND01.ERB</h1>
+<p>U0612: ADDCHARA 0,10,20、CFLAG:0:1=701、COPYCHARA 0,2、元フラグを901へ変更し独立性を調べる。関連CSVのN0/N10/N20とフラグ100/110/120も確認。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>cd83f12b8767d4e6b064eeba0786fbe491c11e38d7d6b8f468d70a9df3f20aff</code></p>
+<p><a href="../assets/U0612.ERB">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>cd83f12b8767d4e6b064eeba0786fbe491c11e38d7d6b8f468d70a9df3f20aff</code></p>
+<pre>@SYSTEM_TITLE
+PRINTL CASE COPYCHARA
+ADDCHARA 0,10,20
+CFLAG:0:1=701
+PRINTFORML B N={CHARANUM}
+PRINTFORML B I=0 NO={NO:0}
+PRINTFORML B I=0 NAME=[%NAME:0%]
+PRINTFORML B I=0 F1={CFLAG:0:1}
+PRINTFORML B I=1 NO={NO:1}
+PRINTFORML B I=1 NAME=[%NAME:1%]
+PRINTFORML B I=1 F1={CFLAG:1:1}
+PRINTFORML B I=2 NO={NO:2}
+PRINTFORML B I=2 NAME=[%NAME:2%]
+PRINTFORML B I=2 F1={CFLAG:2:1}
+COPYCHARA 0,2
+PRINTFORML A N={CHARANUM}
+PRINTFORML A I=0 NO={NO:0}
+PRINTFORML A I=0 NAME=[%NAME:0%]
+PRINTFORML A I=0 F1={CFLAG:0:1}
+PRINTFORML A I=1 NO={NO:1}
+PRINTFORML A I=1 NAME=[%NAME:1%]
+PRINTFORML A I=1 F1={CFLAG:1:1}
+PRINTFORML A I=2 NO={NO:2}
+PRINTFORML A I=2 NAME=[%NAME:2%]
+PRINTFORML A I=2 F1={CFLAG:2:1}
+CFLAG:0:1=901
+PRINTFORML M N={CHARANUM}
+PRINTFORML M I=0 NO={NO:0}
+PRINTFORML M I=0 NAME=[%NAME:0%]
+PRINTFORML M I=0 F1={CFLAG:0:1}
+PRINTFORML M I=1 NO={NO:1}
+PRINTFORML M I=1 NAME=[%NAME:1%]
+PRINTFORML M I=1 F1={CFLAG:1:1}
+PRINTFORML M I=2 NO={NO:2}
+PRINTFORML M I=2 NAME=[%NAME:2%]
+PRINTFORML M I=2 F1={CFLAG:2:1}
+PRINTL DONE
+OUTPUTLOG
+QUIT
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0446 · command_or_syntax:COPYCHARA · check</li>
+<li>L1232 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

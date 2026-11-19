@@ -1,0 +1,176 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>GameView/ConsoleImagePart.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>GameView/ConsoleImagePart.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/ConsoleImagePart.cs</p><p>SHA-256 (original member bytes): e2ca2e56b770e899045e7f1ec57ebf102ff3593eaa06942a26ad06aa8480e81e</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using MinorShift._Library;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using MinorShift.Emuera.Content;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using System.Collections.Generic;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> using System.Drawing;</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> using System.Drawing.Imaging;</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> using System.Text;</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> namespace MinorShift.Emuera.GameView</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> {</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> 	class ConsoleImagePart : AConsoleDisplayPart</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> 	{</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> </span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> 		public ConsoleImagePart(string resName, string resNameb, int raw_height, int raw_width, int raw_ypos)</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> 		{</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> 			top = 0;</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> 			bottom = Config.FontSize;</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> 			Str = &quot;&quot;;</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 			ResourceName = resName ?? &quot;&quot;;</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> 			ButtonResourceName = resNameb;</span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> 			StringBuilder sb = new StringBuilder();</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 			sb.Append(&quot;&lt;img src=&#x27;&quot;);</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 			sb.Append(ResourceName);</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 			if(ButtonResourceName != null)</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> 			{</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a> 				sb.Append(&quot;&#x27; srcb=&#x27;&quot;);</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 				sb.Append(ButtonResourceName);</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 			}</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 			if(raw_height != 0)</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 			{</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 				sb.Append(&quot;&#x27; height=&#x27;&quot;);</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 				sb.Append(raw_height.ToString());</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> 			}</span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> 			if(raw_width != 0)</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> 			{</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 				sb.Append(&quot;&#x27; width=&#x27;&quot;);</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> 				sb.Append(raw_width.ToString());</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> 			}</span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 			if(raw_ypos != 0)</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 			{</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 				sb.Append(&quot;&#x27; ypos=&#x27;&quot;);</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 				sb.Append(raw_ypos.ToString());</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 			}</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 			sb.Append(&quot;&#x27;&gt;&quot;);</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 			AltText = sb.ToString();</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> 			cImage = AppContents.GetSprite(ResourceName);</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a> 			//if (cImage != null &amp;&amp; !cImage.IsCreated)</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a> 			//	cImage = null;</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> 			if (cImage == null)</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> 			{</span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 				Str = AltText;</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 				return;</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 			}</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a> 			int height;</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a> 			if (raw_height == 0)//HTMLで高さが指定されていない又は0が指定された場合、フォントサイズをそのまま高さ(px単位)として使用する。</span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> 				height = Config.FontSize;</span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> 			else//HTMLで高さが指定された場合、フォントサイズの100分率と解釈する。</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a> 				height = Config.FontSize * raw_height / 100;</span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> 			//幅が指定されていない又は0が指定された場合、元画像の縦横比を維持するように幅(px単位)を設定する。1未満は端数としてXsubpixelに記録。</span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 			//負の値が指定される可能性があるが、最終的なWidthは正の値になるようにあとで調整する。</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 			if (raw_width == 0)</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 			{</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 				Width = cImage.DestBaseSize.Width * height / cImage.DestBaseSize.Height;</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 				XsubPixel = ((float)cImage.DestBaseSize.Width * height) / cImage.DestBaseSize.Height - Width;</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 			}</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 			else</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 			{</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> 				Width = Config.FontSize * raw_width / 100;</span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 				XsubPixel = ((float)Config.FontSize * raw_width / 100f) - Width;</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 			}</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a> 			top = raw_ypos * Config.FontSize / 100;</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a> 			destRect = new Rectangle(0, top, Width, height);</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 			if (destRect.Width &lt; 0)</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> 			{</span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a> 				destRect.X = -destRect.Width;</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a> 				Width = -destRect.Width;</span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a> 			}</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a> 			if (destRect.Height &lt; 0)</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 			{</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a> 				destRect.Y = destRect.Y - destRect.Height;</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a> 				height = -destRect.Height;</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a> 			}</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a> 			bottom = top + height;</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a> 			//if(top &gt; 0)</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 			//	top = 0;</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a> 			//if(bottom &lt; Config.FontSize)</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a> 			//	bottom = Config.FontSize;</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a> 			if (ButtonResourceName != null)</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a> 			{</span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a> 				cImageB = AppContents.GetSprite(ButtonResourceName);</span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a> 				//if (cImageB != null &amp;&amp; !cImageB.IsCreated)</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a> 				//	cImageB = null;</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a> 			}</span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a> 		}</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a> </span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a> 		private readonly ASprite cImage;</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a> 		private readonly ASprite cImageB;</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 		private readonly int top;</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 		private readonly int bottom;</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 		private readonly Rectangle destRect;</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> //#pragma warning disable CS0649 // フィールド &#x27;ConsoleImagePart.ia&#x27; は割り当てられません。常に既定値 null を使用します。</span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> //		private readonly ImageAttributes ia;</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> //#pragma warning restore CS0649 // フィールド &#x27;ConsoleImagePart.ia&#x27; は割り当てられません。常に既定値 null を使用します。</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 		public readonly string ResourceName;</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a> 		public readonly string ButtonResourceName;</span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a> 		public override int Top { get { return top; } }</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a> 		public override int Bottom { get { return bottom; } }</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a> 		</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a> 		public override bool CanDivide { get { return false; } }</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a> 		public override void SetWidth(StringMeasure sm, float subPixel)</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a> 		{</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a> 			if (this.Error)</span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a> 			{</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a> 				Width = 0;</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a> 				return;</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a> 			}</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a> 			if (cImage != null)</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a> 				return;</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a> 			Width = sm.GetDisplayLength(Str, Config.Font);</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a> 			XsubPixel = subPixel;</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a> 		}</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a> </span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a> 		public override string ToString()</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a> 		{</span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a> 			if (AltText == null)</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a> 				return &quot;&quot;;</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a> 			return AltText;</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a> 		}</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> </span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 		public override void DrawTo(Graphics graph, int pointY, bool isSelecting, bool isBackLog, TextDrawingMode mode)</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 		{</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a> 			if (this.Error)</span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a> 				return;</span>
+<span id="L133"><a href="#L133" aria-label="line 133">  133</a> 			ASprite img = cImage;</span>
+<span id="L134"><a href="#L134" aria-label="line 134">  134</a> 			if (isSelecting &amp;&amp; cImageB != null)</span>
+<span id="L135"><a href="#L135" aria-label="line 135">  135</a> 				img = cImageB;</span>
+<span id="L136"><a href="#L136" aria-label="line 136">  136</a> </span>
+<span id="L137"><a href="#L137" aria-label="line 137">  137</a> 			if (img != null &amp;&amp; img.IsCreated)</span>
+<span id="L138"><a href="#L138" aria-label="line 138">  138</a> 			{</span>
+<span id="L139"><a href="#L139" aria-label="line 139">  139</a> 				Rectangle rect = destRect;</span>
+<span id="L140"><a href="#L140" aria-label="line 140">  140</a> 				//PointX微調整</span>
+<span id="L141"><a href="#L141" aria-label="line 141">  141</a> 				rect.X = destRect.X + PointX + Config.DrawingParam_ShapePositionShift;</span>
+<span id="L142"><a href="#L142" aria-label="line 142">  142</a> 				rect.Y = destRect.Y + pointY;</span>
+<span id="L143"><a href="#L143" aria-label="line 143">  143</a> 				img.GraphicsDraw(graph, rect);</span>
+<span id="L144"><a href="#L144" aria-label="line 144">  144</a> 			}</span>
+<span id="L145"><a href="#L145" aria-label="line 145">  145</a> 			else</span>
+<span id="L146"><a href="#L146" aria-label="line 146">  146</a> 			{</span>
+<span id="L147"><a href="#L147" aria-label="line 147">  147</a> 				if (mode == TextDrawingMode.GRAPHICS)</span>
+<span id="L148"><a href="#L148" aria-label="line 148">  148</a> 					graph.DrawString(AltText, Config.Font, new SolidBrush(Config.ForeColor), new Point(PointX, pointY));</span>
+<span id="L149"><a href="#L149" aria-label="line 149">  149</a> 				else</span>
+<span id="L150"><a href="#L150" aria-label="line 150">  150</a> 					System.Windows.Forms.TextRenderer.DrawText(graph, AltText, Config.Font, new Point(PointX, pointY), Config.ForeColor, System.Windows.Forms.TextFormatFlags.NoPrefix);</span>
+<span id="L151"><a href="#L151" aria-label="line 151">  151</a> 			}</span>
+<span id="L152"><a href="#L152" aria-label="line 152">  152</a> 		}</span>
+<span id="L153"><a href="#L153" aria-label="line 153">  153</a> </span>
+<span id="L154"><a href="#L154" aria-label="line 154">  154</a> 		public override void GDIDrawTo(int pointY, bool isSelecting, bool isBackLog)</span>
+<span id="L155"><a href="#L155" aria-label="line 155">  155</a> 		{</span>
+<span id="L156"><a href="#L156" aria-label="line 156">  156</a> 			if (this.Error)</span>
+<span id="L157"><a href="#L157" aria-label="line 157">  157</a> 				return;</span>
+<span id="L158"><a href="#L158" aria-label="line 158">  158</a> 			SpriteF img = cImage as SpriteF;//Graphicsから作成したImageはGDI対象外</span>
+<span id="L159"><a href="#L159" aria-label="line 159">  159</a> 			if (isSelecting &amp;&amp; cImageB != null)</span>
+<span id="L160"><a href="#L160" aria-label="line 160">  160</a> 				img = cImageB as SpriteF;</span>
+<span id="L161"><a href="#L161" aria-label="line 161">  161</a> 			if (img != null &amp;&amp; img.IsCreated)</span>
+<span id="L162"><a href="#L162" aria-label="line 162">  162</a> 			{</span>
+<span id="L163"><a href="#L163" aria-label="line 163">  163</a> 				int x = PointX + destRect.X;</span>
+<span id="L164"><a href="#L164" aria-label="line 164">  164</a> 				int y = pointY + destRect.Y;</span>
+<span id="L165"><a href="#L165" aria-label="line 165">  165</a> 				if (!img.DestBasePosition.IsEmpty)</span>
+<span id="L166"><a href="#L166" aria-label="line 166">  166</a> 				{</span>
+<span id="L167"><a href="#L167" aria-label="line 167">  167</a> 					x = x + img.DestBasePosition.X * destRect.Width / img.SrcRectangle.Width;</span>
+<span id="L168"><a href="#L168" aria-label="line 168">  168</a> 					y = y + img.DestBasePosition.Y * destRect.Height / img.SrcRectangle.Height;</span>
+<span id="L169"><a href="#L169" aria-label="line 169">  169</a> 				}</span>
+<span id="L170"><a href="#L170" aria-label="line 170">  170</a> 				GDI.DrawImage(x, y, Width, destRect.Height, img.BaseImage.GDIhDC, img.SrcRectangle);</span>
+<span id="L171"><a href="#L171" aria-label="line 171">  171</a> 			}</span>
+<span id="L172"><a href="#L172" aria-label="line 172">  172</a> 			else</span>
+<span id="L173"><a href="#L173" aria-label="line 173">  173</a> 				GDI.TabbedTextOutFull(Config.Font, Config.ForeColor, AltText, PointX, pointY);</span>
+<span id="L174"><a href="#L174" aria-label="line 174">  174</a> 		}</span>
+<span id="L175"><a href="#L175" aria-label="line 175">  175</a> 	}</span>
+<span id="L176"><a href="#L176" aria-label="line 176">  176</a> }</span></pre></html>

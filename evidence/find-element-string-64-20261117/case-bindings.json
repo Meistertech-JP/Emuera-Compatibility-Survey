@@ -1,0 +1,2374 @@
+{
+  "schema": "find-element-case-bindings.v1",
+  "scope": "Recorded case, fixture and mode bindings; not proof of original execution or acceptance.",
+  "cases": [
+    {
+      "id": "C001",
+      "source_marker": "GATE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_GATE_0",
+      "fixture": "F001",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C002",
+      "source_marker": "GATE_1",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_GATE_1",
+      "fixture": "F001",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C003",
+      "source_marker": "GATE_2",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_GATE_2",
+      "fixture": "F001",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C004",
+      "source_marker": "GATE_3",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_GATE_3",
+      "fixture": "F001",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C005",
+      "source_marker": "R0_REGEX_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_REGEX_A_0",
+      "fixture": "F002",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C006",
+      "source_marker": "R0_EXACT_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_EXACT_A_0",
+      "fixture": "F003",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C007",
+      "source_marker": "R0_REGEX_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_REGEX_ANCHOR_0",
+      "fixture": "F004",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C008",
+      "source_marker": "R0_EXACT_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_EXACT_ANCHOR_0",
+      "fixture": "F005",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C009",
+      "source_marker": "R0_EMPTY_VALUE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_EMPTY_VALUE_0",
+      "fixture": "F006",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C010",
+      "source_marker": "R0_EMPTY_RANGE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_EMPTY_RANGE_0",
+      "fixture": "F007",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C011",
+      "source_marker": "R0_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_REVERSE_0",
+      "fixture": "F008",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C012",
+      "source_marker": "R0_START_NEG_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_START_NEG_0",
+      "fixture": "F009",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C013",
+      "source_marker": "R0_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_END5_0",
+      "fixture": "F010",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C014",
+      "source_marker": "R0_BAD_REGEX_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_BAD_REGEX_0",
+      "fixture": "F011",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C015",
+      "source_marker": "R0_BAD_EXACT_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_BAD_EXACT_0",
+      "fixture": "F012",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C016",
+      "source_marker": "R0_BAD_EMPTY_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_BAD_EMPTY_0",
+      "fixture": "F013",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C017",
+      "source_marker": "R0_BAD_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_BAD_REVERSE_0",
+      "fixture": "F014",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C018",
+      "source_marker": "R0_BAD_START_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_BAD_START_0",
+      "fixture": "F015",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C019",
+      "source_marker": "R0_BAD_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R0_BAD_END5_0",
+      "fixture": "F016",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C020",
+      "source_marker": "R1_REGEX_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_REGEX_A_0",
+      "fixture": "F017",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C021",
+      "source_marker": "R1_EXACT_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_EXACT_A_0",
+      "fixture": "F018",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C022",
+      "source_marker": "R1_REGEX_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_REGEX_ANCHOR_0",
+      "fixture": "F019",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C023",
+      "source_marker": "R1_EXACT_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_EXACT_ANCHOR_0",
+      "fixture": "F020",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C024",
+      "source_marker": "R1_EMPTY_VALUE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_EMPTY_VALUE_0",
+      "fixture": "F021",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C025",
+      "source_marker": "R1_EMPTY_RANGE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_EMPTY_RANGE_0",
+      "fixture": "F022",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C026",
+      "source_marker": "R1_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_REVERSE_0",
+      "fixture": "F023",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C027",
+      "source_marker": "R1_START_NEG_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_START_NEG_0",
+      "fixture": "F024",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C028",
+      "source_marker": "R1_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_END5_0",
+      "fixture": "F025",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C029",
+      "source_marker": "R1_BAD_REGEX_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_BAD_REGEX_0",
+      "fixture": "F026",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C030",
+      "source_marker": "R1_BAD_EXACT_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_BAD_EXACT_0",
+      "fixture": "F027",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C031",
+      "source_marker": "R1_BAD_EMPTY_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_BAD_EMPTY_0",
+      "fixture": "F028",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C032",
+      "source_marker": "R1_BAD_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_BAD_REVERSE_0",
+      "fixture": "F029",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C033",
+      "source_marker": "R1_BAD_START_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_BAD_START_0",
+      "fixture": "F030",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C034",
+      "source_marker": "R1_BAD_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R1_BAD_END5_0",
+      "fixture": "F031",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C035",
+      "source_marker": "R2_REGEX_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_REGEX_A_0",
+      "fixture": "F032",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C036",
+      "source_marker": "R2_EXACT_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_EXACT_A_0",
+      "fixture": "F033",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C037",
+      "source_marker": "R2_REGEX_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_REGEX_ANCHOR_0",
+      "fixture": "F034",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C038",
+      "source_marker": "R2_EXACT_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_EXACT_ANCHOR_0",
+      "fixture": "F035",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C039",
+      "source_marker": "R2_EMPTY_VALUE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_EMPTY_VALUE_0",
+      "fixture": "F036",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C040",
+      "source_marker": "R2_EMPTY_RANGE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_EMPTY_RANGE_0",
+      "fixture": "F037",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C041",
+      "source_marker": "R2_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_REVERSE_0",
+      "fixture": "F038",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C042",
+      "source_marker": "R2_START_NEG_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_START_NEG_0",
+      "fixture": "F039",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C043",
+      "source_marker": "R2_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_END5_0",
+      "fixture": "F040",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C044",
+      "source_marker": "R2_BAD_REGEX_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_BAD_REGEX_0",
+      "fixture": "F041",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C045",
+      "source_marker": "R2_BAD_EXACT_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_BAD_EXACT_0",
+      "fixture": "F042",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C046",
+      "source_marker": "R2_BAD_EMPTY_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_BAD_EMPTY_0",
+      "fixture": "F043",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C047",
+      "source_marker": "R2_BAD_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_BAD_REVERSE_0",
+      "fixture": "F044",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C048",
+      "source_marker": "R2_BAD_START_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_BAD_START_0",
+      "fixture": "F045",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C049",
+      "source_marker": "R2_BAD_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R2_BAD_END5_0",
+      "fixture": "F046",
+      "target": {
+        "kind": "expression_function",
+        "name": "FINDLASTELEMENT",
+        "form": "EXPR"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C050",
+      "source_marker": "R3_REGEX_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_REGEX_A_0",
+      "fixture": "F047",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C051",
+      "source_marker": "R3_EXACT_A_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_EXACT_A_0",
+      "fixture": "F048",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C052",
+      "source_marker": "R3_REGEX_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_REGEX_ANCHOR_0",
+      "fixture": "F049",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C053",
+      "source_marker": "R3_EXACT_ANCHOR_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_EXACT_ANCHOR_0",
+      "fixture": "F050",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C054",
+      "source_marker": "R3_EMPTY_VALUE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_EMPTY_VALUE_0",
+      "fixture": "F051",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C055",
+      "source_marker": "R3_EMPTY_RANGE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_EMPTY_RANGE_0",
+      "fixture": "F052",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C056",
+      "source_marker": "R3_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_REVERSE_0",
+      "fixture": "F053",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C057",
+      "source_marker": "R3_START_NEG_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_START_NEG_0",
+      "fixture": "F054",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C058",
+      "source_marker": "R3_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_END5_0",
+      "fixture": "F055",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C059",
+      "source_marker": "R3_BAD_REGEX_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_BAD_REGEX_0",
+      "fixture": "F056",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C060",
+      "source_marker": "R3_BAD_EXACT_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_BAD_EXACT_0",
+      "fixture": "F057",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C061",
+      "source_marker": "R3_BAD_EMPTY_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_BAD_EMPTY_0",
+      "fixture": "F058",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C062",
+      "source_marker": "R3_BAD_REVERSE_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_BAD_REVERSE_0",
+      "fixture": "F059",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C063",
+      "source_marker": "R3_BAD_START_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_BAD_START_0",
+      "fixture": "F060",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "C064",
+      "source_marker": "R3_BAD_END5_0",
+      "registered_case_id": "FIND_ELEMENT_STRING_PARENT_20261116_R3_BAD_END5_0",
+      "fixture": "F061",
+      "target": {
+        "kind": "method_as_command",
+        "name": "FINDLASTELEMENT",
+        "form": "CMD"
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "native-02",
+          "termination": {
+            "exit_observed": false,
+            "exit_code": null,
+            "exited_after_5s": false,
+            "cleanup_terminate_ok": true
+          }
+        },
+        {
+          "mode": "public-01",
+          "termination": {
+            "process_returncode": 1
+          }
+        }
+      ]
+    }
+  ]
+}

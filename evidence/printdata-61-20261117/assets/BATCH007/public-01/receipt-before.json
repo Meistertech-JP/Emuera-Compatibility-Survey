@@ -1,0 +1,23 @@
+{
+  "fixture": "CHOICE_GOOD_PRINTDATAD",
+  "mode": "public-01",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "-B",
+    "-I",
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "."
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "f8381515ab54b51810b78ab65c0c504a610db4709217537677f64fa73c7a51f4",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "started_utc": "2026-11-15T23:29:40.219277+00:00",
+  "preflight_sha256": "a24a96c6bfda03889068b3a8971773dc05cb38e0455a714dd62a2476197c7ae7",
+  "native_before": null,
+  "helper_sha256": null
+}

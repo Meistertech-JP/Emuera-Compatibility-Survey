@@ -1,0 +1,2229 @@
+{
+  "schema": "opcont268-selected-observations-v1",
+  "source_status": "projection of recorded selected fields; original fixture and raw are not included",
+  "run_scope": {
+    "native_runs": 2,
+    "pyemuera_runs": 1,
+    "shared_fixture": true,
+    "conditions_in_fixture": 35,
+    "selected_cases": 33,
+    "additional_controls": 2,
+    "counting": "33 conditions within 3 shared runs, not 99 independent case executions",
+    "native_natural_exit": "unobserved; both terminated during cleanup",
+    "pyemuera_exit_code": 0,
+    "pyemuera_stderr_warning": "OUTPUTLOG writes bounded text history under .pyemuera/logs."
+  },
+  "engine_recorded_sha256": {
+    "Emuera1824_v24_executable": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "PyEmuera_3_0_0_pyz": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "fixture_recorded_sha256": {
+    "ERB": "43ac1896429d9d7c9b5d84273f5ea153f504ec1a3881084f714a954362388069",
+    "ERH": "4561155315b212c08dbae23d7440bd6884c156bd86e61ae473dd16d09bdfd28a",
+    "config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "cases": [
+    {
+      "case_id": "OPCONT268_repeat-str-int-0",
+      "condition_id": "repeat-str-int-0",
+      "ordinal_in_shared_batch": 3,
+      "condition_ja": "文字列 ab を0回繰り返す。回数はhelperから取得。",
+      "condition_en": "Repeat string ab zero times; the count comes from a helper.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "*"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "*",
+          "role": "string_int_repetition"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=0",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=0",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=0",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_repeat-str-int-2",
+      "condition_id": "repeat-str-int-2",
+      "ordinal_in_shared_batch": 4,
+      "condition_ja": "文字列 ab を2回繰り返す。回数はhelperから取得。",
+      "condition_en": "Repeat string ab twice; the count comes from a helper.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "*"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "*",
+          "role": "string_int_repetition"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=4",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=4",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=4",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_repeat-str-int-9999",
+      "condition_id": "repeat-str-int-9999",
+      "ordinal_in_shared_batch": 5,
+      "condition_ja": "文字列 ab を9999回繰り返し、長さ・先頭・末尾を記録。",
+      "condition_en": "Repeat string ab 9999 times; record length and endpoints.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "*"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "*",
+          "role": "string_int_repetition"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=19998",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "SLEN=19998",
+            "HEAD=[ab]",
+            "TAIL=[ab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=19998",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "SLEN=19998",
+            "HEAD=[ab]",
+            "TAIL=[ab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=19998",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "SLEN=19998",
+            "HEAD=[ab]",
+            "TAIL=[ab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_strcmp-eq",
+      "condition_id": "strcmp-eq",
+      "ordinal_in_shared_batch": 6,
+      "condition_ja": "文字列 ab 同士、続いて空文字と ab の == 比較。",
+      "condition_en": "Compare ab with ab, then empty string with ab using ==.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "=="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "==",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "EQ C=1 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "EQ C=1 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "EQ C=1 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_strcmp-ne",
+      "condition_id": "strcmp-ne",
+      "ordinal_in_shared_batch": 7,
+      "condition_ja": "文字列 ab 同士、続いて空文字と ab の != 比較。",
+      "condition_en": "Compare ab with ab, then empty string with ab using !=.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "!="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "!=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_strcmp-gt",
+      "condition_id": "strcmp-gt",
+      "ordinal_in_shared_batch": 8,
+      "condition_ja": "文字列 ab 同士、続いて空文字と ab の > 比較。",
+      "condition_en": "Compare ab with ab, then empty string with ab using >.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": ">"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": ">",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_strcmp-lt",
+      "condition_id": "strcmp-lt",
+      "ordinal_in_shared_batch": 9,
+      "condition_ja": "文字列 ab 同士、続いて空文字と ab の < 比較。",
+      "condition_en": "Compare ab with ab, then empty string with ab using <.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "<"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "<",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_strcmp-ge",
+      "condition_id": "strcmp-ge",
+      "ordinal_in_shared_batch": 10,
+      "condition_ja": "文字列 ab 同士、続いて空文字と ab の >= 比較。",
+      "condition_en": "Compare ab with ab, then empty string with ab using >=.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": ">="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": ">=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "different_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "EQ C=1 A=2 B=12",
+            "C=0",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_strcmp-le",
+      "condition_id": "strcmp-le",
+      "ordinal_in_shared_batch": 11,
+      "condition_ja": "文字列 ab 同士、続いて空文字と ab の <= 比較。",
+      "condition_en": "Compare ab with ab, then empty string with ab using <=.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "<="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "<=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "different_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "EQ C=0 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "EQ C=1 A=2 B=12",
+            "C=1",
+            "A=3 B=121",
+            "D0=6",
+            "D1=99",
+            "S=[]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12",
+            "EVENT STRLEFT A=3 B=121"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_unary-effect-not",
+      "condition_id": "unary-effect-not",
+      "ordinal_in_shared_batch": 12,
+      "condition_ja": "helperから -1 を受け取り論理否定 ! を評価。",
+      "condition_en": "Apply logical ! to -1 returned by a helper.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "!"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "!",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=0",
+            "A=1 B=1",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=0",
+            "A=1 B=1",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=0",
+            "A=1 B=1",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_unary-effect-complement",
+      "condition_id": "unary-effect-complement",
+      "ordinal_in_shared_batch": 13,
+      "condition_ja": "helperから -1 を受け取りビット反転 ~ を評価。",
+      "condition_en": "Apply bitwise ~ to -1 returned by a helper.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "~"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "~",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=0",
+            "A=1 B=1",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=0",
+            "A=1 B=1",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=0",
+            "A=1 B=1",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_shift-narrow-left",
+      "condition_id": "shift-narrow-left",
+      "ordinal_in_shared_batch": 14,
+      "condition_ja": "1 を 2147483648 だけ左シフト。",
+      "condition_en": "Shift 1 left by 2147483648.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "<<"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "<<="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "<<",
+          "role": "binary_narrowing_shift"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [
+        {
+          "kind": "assignment_syntax",
+          "name": "<<="
+        }
+      ],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_shift-narrow-right",
+      "condition_id": "shift-narrow-right",
+      "ordinal_in_shared_batch": 15,
+      "condition_ja": "1 を 2147483648 だけ右シフト。",
+      "condition_en": "Shift 1 right by 2147483648.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": ">>"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": ">>="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": ">>",
+          "role": "binary_narrowing_shift"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [
+        {
+          "kind": "assignment_syntax",
+          "name": ">>="
+        }
+      ],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_ternary-nested",
+      "condition_id": "ternary-nested",
+      "ordinal_in_shared_batch": 16,
+      "condition_ja": "外側が0、内側が1の入れ子条件式。選択branchは7を返すhelper。",
+      "condition_en": "Nested conditional: outer condition 0, inner condition 1; selected helper returns 7.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "?"
+        },
+        {
+          "kind": "operator",
+          "name": "#"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "?",
+          "role": "direct_tested_input"
+        },
+        {
+          "kind": "operator",
+          "name": "#",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=7",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT RIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=7",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT RIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=7",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT RIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_inc-edge-pre",
+      "condition_id": "inc-edge-pre",
+      "ordinal_in_shared_batch": 17,
+      "condition_ja": "配列0番に最大64bit整数を置き、前置++の式値と単独実行後を別に記録。",
+      "condition_en": "Set element 0 to the maximum signed 64-bit integer; record prefix ++ return and a separate standalone operation.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "++"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "++",
+          "role": "expression_and_standalone_own_witness"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "++",
+          "role": "expression_and_standalone_own_witness"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "RETURN C=-9223372036854775808 D0=-9223372036854775808",
+            "C=-9223372036854775808",
+            "A=1 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "RETURN C=-9223372036854775808 D0=-9223372036854775808",
+            "C=-9223372036854775808",
+            "A=1 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "RETURN C=-9223372036854775808 D0=-9223372036854775808",
+            "C=-9223372036854775808",
+            "A=1 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_inc-edge-post",
+      "condition_id": "inc-edge-post",
+      "ordinal_in_shared_batch": 18,
+      "condition_ja": "配列0番に最大64bit整数を置き、後置++の式値と単独実行後を別に記録。",
+      "condition_en": "Set element 0 to the maximum signed 64-bit integer; record postfix ++ return and a separate standalone operation.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "++"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "++",
+          "role": "expression_and_standalone_own_witness"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "++",
+          "role": "expression_and_standalone_own_witness"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "RETURN C=9223372036854775807 D0=-9223372036854775808",
+            "C=9223372036854775807",
+            "A=1 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "RETURN C=9223372036854775807 D0=-9223372036854775808",
+            "C=9223372036854775807",
+            "A=1 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "RETURN C=9223372036854775807 D0=-9223372036854775808",
+            "C=9223372036854775807",
+            "A=1 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_dec-edge-pre",
+      "condition_id": "dec-edge-pre",
+      "ordinal_in_shared_batch": 19,
+      "condition_ja": "配列0番に最小64bit整数を置き、前置--の式値と単独実行後を別に記録。",
+      "condition_en": "Set element 0 to the minimum signed 64-bit integer; record prefix -- return and a separate standalone operation.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "--"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "--"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "--",
+          "role": "expression_and_standalone_own_witness"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "--",
+          "role": "expression_and_standalone_own_witness"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "RETURN C=9223372036854775807 D0=9223372036854775807",
+            "C=9223372036854775807",
+            "A=1 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "RETURN C=9223372036854775807 D0=9223372036854775807",
+            "C=9223372036854775807",
+            "A=1 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "RETURN C=9223372036854775807 D0=9223372036854775807",
+            "C=9223372036854775807",
+            "A=1 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_dec-edge-post",
+      "condition_id": "dec-edge-post",
+      "ordinal_in_shared_batch": 20,
+      "condition_ja": "配列0番に最小64bit整数を置き、後置--の式値と単独実行後を別に記録。",
+      "condition_en": "Set element 0 to the minimum signed 64-bit integer; record postfix -- return and a separate standalone operation.",
+      "typed_keys": [
+        {
+          "kind": "operator",
+          "name": "--"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "--"
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "operator",
+          "name": "--",
+          "role": "expression_and_standalone_own_witness"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "--",
+          "role": "expression_and_standalone_own_witness"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "RETURN C=-9223372036854775808 D0=9223372036854775807",
+            "C=-9223372036854775808",
+            "A=1 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "RETURN C=-9223372036854775808 D0=9223372036854775807",
+            "C=-9223372036854775808",
+            "A=1 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "RETURN C=-9223372036854775808 D0=9223372036854775807",
+            "C=-9223372036854775808",
+            "A=1 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT INDEX A=1",
+            "EVENT INDEX A=1"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_vector-num-0",
+      "condition_id": "vector-num-0",
+      "ordinal_in_shared_batch": 21,
+      "condition_ja": "２要素数値配列にhelperが返す11と22を代入。",
+      "condition_en": "Assign helper-returned 11 and 22 to a two-element numeric array.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "VECTOR 11,22",
+            "C=701",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "VECTOR 11,22",
+            "C=701",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "VECTOR 11,22",
+            "C=701",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_vector-num-constant",
+      "condition_id": "vector-num-constant",
+      "ordinal_in_shared_batch": 22,
+      "condition_ja": "２要素数値配列に定数7と7を代入。",
+      "condition_en": "Assign literal 7 and 7 to a two-element numeric array.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "VECTOR 7,7",
+            "C=701",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "VECTOR 7,7",
+            "C=701",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "VECTOR 7,7",
+            "C=701",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_vector-str-0",
+      "condition_id": "vector-str-0",
+      "ordinal_in_shared_batch": 23,
+      "condition_ja": "２要素文字列配列に２つのhelperが返す ab を代入。",
+      "condition_en": "Assign ab returned by two helpers to a two-element string array.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "'="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "'=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "VECTOR [ab],[ab]",
+            "C=701",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "VECTOR [ab],[ab]",
+            "C=701",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "VECTOR [ab],[ab]",
+            "C=701",
+            "A=2 B=12",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [
+            "EVENT STRLEFT A=1 B=1",
+            "EVENT STRRIGHT A=2 B=12"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_vector-str-constant",
+      "condition_id": "vector-str-constant",
+      "ordinal_in_shared_batch": 24,
+      "condition_ja": "２要素文字列配列に定数 ab と ab を代入。",
+      "condition_en": "Assign literal ab and ab to a two-element string array.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "'="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "'=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "VECTOR [ab],[ab]",
+            "C=701",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "VECTOR [ab],[ab]",
+            "C=701",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "VECTOR [ab],[ab]",
+            "C=701",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_raw-form-comma",
+      "condition_id": "raw-form-comma",
+      "ordinal_in_shared_batch": 25,
+      "condition_ja": "文字列へ FORM の ab, を代入し長さを記録。",
+      "condition_en": "Assign the FORM text ab, to a string and record its length.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "=",
+          "role": "direct_tested_input"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=3",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab,]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=3",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab,]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=3",
+            "A=0 B=0",
+            "D0=6",
+            "D1=99",
+            "S=[ab,]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-add",
+      "condition_id": "compound-edge-add",
+      "ordinal_in_shared_batch": 26,
+      "condition_ja": "配列0番の最大64bit整数に += 1。",
+      "condition_en": "Apply += 1 to element 0 containing the maximum signed 64-bit integer.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "+="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "+=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=-9223372036854775808",
+            "A=0 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=-9223372036854775808",
+            "A=0 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=-9223372036854775808",
+            "A=0 B=0",
+            "D0=-9223372036854775808",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-sub",
+      "condition_id": "compound-edge-sub",
+      "ordinal_in_shared_batch": 27,
+      "condition_ja": "配列0番の最小64bit整数に -= 1。",
+      "condition_en": "Apply -= 1 to element 0 containing the minimum signed 64-bit integer.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "-="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "-=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=9223372036854775807",
+            "A=0 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=9223372036854775807",
+            "A=0 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=9223372036854775807",
+            "A=0 B=0",
+            "D0=9223372036854775807",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-mul",
+      "condition_id": "compound-edge-mul",
+      "ordinal_in_shared_batch": 28,
+      "condition_ja": "配列0番の最大64bit整数に *= 2。",
+      "condition_en": "Apply *= 2 to element 0 containing the maximum signed 64-bit integer.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=-2",
+            "A=0 B=0",
+            "D0=-2",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=-2",
+            "A=0 B=0",
+            "D0=-2",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=-2",
+            "A=0 B=0",
+            "D0=-2",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-shl",
+      "condition_id": "compound-edge-shl",
+      "ordinal_in_shared_batch": 29,
+      "condition_ja": "配列0番の1に <<= 64。",
+      "condition_en": "Apply <<= 64 to element 0 containing 1.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "<<="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "<<=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-shr",
+      "condition_id": "compound-edge-shr",
+      "ordinal_in_shared_batch": 30,
+      "condition_ja": "配列0番の -8 に >>= 64。",
+      "condition_en": "Apply >>= 64 to element 0 containing -8.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": ">>="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": ">>=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=-8",
+            "A=0 B=0",
+            "D0=-8",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=-8",
+            "A=0 B=0",
+            "D0=-8",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=-8",
+            "A=0 B=0",
+            "D0=-8",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-or",
+      "condition_id": "compound-edge-or",
+      "ordinal_in_shared_batch": 31,
+      "condition_ja": "配列0番の -1 に |= 1。",
+      "condition_en": "Apply |= 1 to element 0 containing -1.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "|="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "|=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=-1",
+            "A=0 B=0",
+            "D0=-1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=-1",
+            "A=0 B=0",
+            "D0=-1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=-1",
+            "A=0 B=0",
+            "D0=-1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-and",
+      "condition_id": "compound-edge-and",
+      "ordinal_in_shared_batch": 32,
+      "condition_ja": "配列0番の -1 に &= 1。",
+      "condition_en": "Apply &= 1 to element 0 containing -1.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "&="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "&=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=1",
+            "A=0 B=0",
+            "D0=1",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-edge-xor",
+      "condition_id": "compound-edge-xor",
+      "ordinal_in_shared_batch": 33,
+      "condition_ja": "配列0番の -1 に ^= 1。",
+      "condition_en": "Apply ^= 1 to element 0 containing -1.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "^="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "^=",
+          "role": "direct_compound_boundary"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=-2",
+            "A=0 B=0",
+            "D0=-2",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=-2",
+            "A=0 B=0",
+            "D0=-2",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=-2",
+            "A=0 B=0",
+            "D0=-2",
+            "D1=99",
+            "S=[ab]"
+          ],
+          "helper_events": [],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-string-add",
+      "condition_id": "compound-string-add",
+      "ordinal_in_shared_batch": 34,
+      "condition_ja": "文字列 ab にhelperが返す ab を +=。",
+      "condition_en": "Apply += with helper-returned ab to string ab.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "+="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "+=",
+          "role": "direct_string_compound"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=4",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT STRRIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=4",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT STRRIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=4",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT STRRIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        }
+      }
+    },
+    {
+      "case_id": "OPCONT268_compound-string-mul",
+      "condition_id": "compound-string-mul",
+      "ordinal_in_shared_batch": 35,
+      "condition_ja": "文字列 ab にhelperが返す2を *=。",
+      "condition_en": "Apply *= with helper-returned 2 to string ab.",
+      "typed_keys": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*="
+        }
+      ],
+      "observed_own_roles": [
+        {
+          "kind": "assignment_syntax",
+          "name": "*=",
+          "role": "direct_string_compound"
+        }
+      ],
+      "other_shared_roles_not_directly_credited": [],
+      "recorded_verdict": "matched_scoped",
+      "modes": {
+        "native-01": {
+          "measurements": [
+            "C=4",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT RIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        },
+        "native-02": {
+          "measurements": [
+            "C=4",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT RIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        },
+        "public-01": {
+          "measurements": [
+            "C=4",
+            "A=1 B=2",
+            "D0=6",
+            "D1=99",
+            "S=[abab]"
+          ],
+          "helper_events": [
+            "EVENT RIGHT A=1 B=2"
+          ],
+          "before_done_observed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0024 · PARENT_ACCEPTANCE_LOADGLOBAL_CORRUPT_20261115.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0024 · PARENT_ACCEPTANCE_LOADGLOBAL_CORRUPT_20261115.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE_LOADGLOBAL_CORRUPT_20261115.json; 参照対象=command_or_syntax:LOADGLOBAL。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;LOADGLOBAL&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>580091b0eb456a45cb0536d43fa77e9497288e68acab31eab42bc43a354c6953</code></p>
+<p><a href="../assets/U0024.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>580091b0eb456a45cb0536d43fa77e9497288e68acab31eab42bc43a354c6953</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T16:25:38.130178+00:00&quot;,
+  &quot;decision_authority&quot;: &quot;Codex evidence review within the active Phase 2 work; not owner release sign-off.&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;LOADGLOBAL&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;GLOBAL03&quot;,
+    &quot;GLOBALSAVE205_LOADGLOBAL&quot;,
+    &quot;LOADGLOBAL_CORRUPT_TRUNCATION_20261115&quot;,
+    &quot;LOADGLOBAL_CORRUPT_SECOND_VALUE_20261115&quot;
+  ],
+  &quot;accepted_scope&quot;: &quot;Native registration as zero-argument LOADGLOBAL; existing missing/success/repeated valid save-load cases plus two isolated own-format malformed-save cases. Both malformed cases return RESULT=0 and continue. Partial live-state mutation and diagnostics differ as recorded; the mismatch is preserved as a scoped difference.&quot;,
+  &quot;source_refs&quot;: [
+    {
+      &quot;archive&quot;: &quot;Emuera1824+v24.zip&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+      &quot;sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+      &quot;ranges&quot;: [
+        [
+          225,
+          225
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;Emuera1824+v24.zip&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+      &quot;sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+      &quot;ranges&quot;: [
+        [
+          1325,
+          1340
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;Emuera1824+v24.zip&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Variable/VariableEvaluator.cs&quot;,
+      &quot;sha256&quot;: &quot;bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582&quot;,
+      &quot;ranges&quot;: [
+        [
+          2259,
+          2313
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;Emuera1824+v24.zip&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/Sub/EraDataStream.cs&quot;,
+      &quot;sha256&quot;: &quot;a1e1f8bcfdefaeaf7c9f39a344ecfff4a464ee210c5dc60d073be2f65d77c1e6&quot;,
+      &quot;ranges&quot;: [
+        [
+          76,
+          100
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;PyEmuera-3.0.0.pyz&quot;,
+      &quot;member&quot;: &quot;pyemuera/save_commands.py&quot;,
+      &quot;sha256&quot;: &quot;eb64b1274a279b3cc1321ba184d19a9f2894047eb0d67bcb60675cb109087e7d&quot;,
+      &quot;ranges&quot;: [
+        [
+          20,
+          32
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;PyEmuera-3.0.0.pyz&quot;,
+      &quot;member&quot;: &quot;pyemuera/persistence.py&quot;,
+      &quot;sha256&quot;: &quot;d2b90a2e0f40b42c0394b231bbf90af0867016a5368b4e9cce2d43c879a8c7e9&quot;,
+      &quot;ranges&quot;: [
+        [
+          170,
+          218
+        ]
+      ]
+    }
+  ],
+  &quot;evidence&quot;: [
+    &quot;RUN_COMPARISON.json&quot;,
+    &quot;REVIEW_ja.md&quot;,
+    &quot;SOURCE_IDENTITY.json&quot;,
+    &quot;SOURCE_EXCERPTS.txt&quot;,
+    &quot;MANIFEST.json&quot;
+  ],
+  &quot;out_of_scope_limits&quot;: [
+    &quot;permissions/read-only failures&quot;,
+    &quot;wrong game identity and version mismatch&quot;,
+    &quot;cross-format loading&quot;,
+    &quot;all persisted variable fields and shapes&quot;,
+    &quot;GUI warning rendering and screenshots&quot;,
+    &quot;natural Native exit&quot;,
+    &quot;saving behavior and SAVEGLOBAL return value&quot;
+  ],
+  &quot;product_code_modified&quot;: false,
+  &quot;public_release_modified&quot;: false,
+  &quot;global_compatibility_claim&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1668 · command_or_syntax:LOADGLOBAL · acceptance</li>
+<li>L1669 · command_or_syntax:LOADGLOBAL · check</li>
+<li>L1671 · command_or_syntax:LOADGLOBAL · check</li>
+</ul></html>

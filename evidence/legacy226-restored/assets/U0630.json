@@ -1,0 +1,38 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-15T06:40:32.959926+00:00",
+  "decision_authority": "Finite evidence adjudication within the active command-coverage survey; not release sign-off.",
+  "target": {
+    "kind": "structural_syntax",
+    "name": "DO"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "DO_CONTINUE_FAILING_HELPER_20261115"
+  ],
+  "accepted_scope": "DO-first body entry plus CONTINUE-triggered bottom condition with reached side-effecting failing helper; prior loop and initially-false condition evidence remains scoped as recorded.",
+  "source_refs": [
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "lines": "245-246",
+      "finding": "DO is registered as ENDIF_Instruction; LOOP is registered as LOOP_Instruction."
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "lines": "2159-2169",
+      "finding": "CONTINUE finds the paired LOOP and evaluates its condition; reached expression errors occur while executing CONTINUE in Native."
+    }
+  ],
+  "comparison": "evidence/do-finite-20261115/ACTUAL_COMPARISON.json",
+  "limitations": [
+    "Native natural exit and exit code unobserved.",
+    "Other loop forms, malformed nesting and unrelated errors not covered."
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "drive_modified": false,
+  "global_completion": false
+}

@@ -1,0 +1,5294 @@
+{
+  "case": "PRINTKD212",
+  "commands": 33,
+  "conditions": 88,
+  "rows": [
+    {
+      "condition": {
+        "id": "C212_0",
+        "command": "PRINTVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>1/あアｱ<T\r\nC212_0_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>1/あアｱ<T\r\nC212_0_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>1/あアｱ<T\r\nC212_0_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/あアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_1",
+        "command": "PRINTVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>1/アアｱ<T\r\nC212_1_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/アアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/アアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>1/アアｱ<T\r\nC212_1_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/アアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/アアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>1/アアｱ<T\r\nC212_1_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/アアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/アアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/アアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_2",
+        "command": "PRINTVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>1/ああｱ<T\r\nC212_2_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/ああｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/ああｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>1/ああｱ<T\r\nC212_2_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/ああｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/ああｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>1/あああ<T\r\nC212_2_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あああ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/ああｱ",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_3",
+        "command": "PRINTVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>１／あああ<T\r\nC212_3_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>１／あああ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "１／あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>１／あああ<T\r\nC212_3_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>１／あああ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "１／あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>１／あああ<T\r\nC212_3_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>１／あああ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "１／あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "１／あああ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_4",
+        "command": "PRINTSK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}<T\r\nC212_4_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}<T\r\nC212_4_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}<T\r\nC212_4_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_5",
+        "command": "PRINTSK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>アアｱ{ZZ212N(2)}<T\r\nC212_5_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>アアｱ{ZZ212N(2)}<T\r\nC212_5_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>アアｱ{ZZ212N(2)}<T\r\nC212_5_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_6",
+        "command": "PRINTSK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>ああｱ{ZZ212N(2)}<T\r\nC212_6_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>ああｱ{ZZ212N(2)}<T\r\nC212_6_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ{ZZ212N(2)}<T\r\nC212_6_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ{ZZ212N(2)}",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_7",
+        "command": "PRINTSK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（２）｝<T\r\nC212_7_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（２）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（２）｝<T\r\nC212_7_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（２）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（２）｝<T\r\nC212_7_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（２）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ｛ＺＺ２１２Ｎ（２）｝",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_8",
+        "command": "PRINTSKL",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}\r\n<T\r\nC212_8_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}\r\n<T\r\nC212_8_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}\r\n<T\r\nC212_8_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_9",
+        "command": "PRINTSKL",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>アアｱ{ZZ212N(2)}\r\n<T\r\nC212_9_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>アアｱ{ZZ212N(2)}\r\n<T\r\nC212_9_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>アアｱ{ZZ212N(2)}\r\n<T\r\nC212_9_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_10",
+        "command": "PRINTSKL",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>ああｱ{ZZ212N(2)}\r\n<T\r\nC212_10_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>ああｱ{ZZ212N(2)}\r\n<T\r\nC212_10_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ{ZZ212N(2)}\r\n<T\r\nC212_10_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ{ZZ212N(2)}",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_11",
+        "command": "PRINTSKL",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\nC212_11_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\nC212_11_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\nC212_11_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ｛ＺＺ２１２Ｎ（２）｝",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_12",
+        "command": "PRINTFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ2<T\r\nC212_12_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ2<T\r\nC212_12_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ2<T\r\nC212_12_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_13",
+        "command": "PRINTFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>アアｱ2<T\r\nC212_13_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>アアｱ2<T\r\nC212_13_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>アアｱ2<T\r\nC212_13_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_14",
+        "command": "PRINTFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>ああｱ2<T\r\nC212_14_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>ああｱ2<T\r\nC212_14_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ2<T\r\nC212_14_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ2",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_15",
+        "command": "PRINTFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ２<T\r\nC212_15_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ２<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ２<T\r\nC212_15_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ２<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ２<T\r\nC212_15_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ２<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ２",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_16",
+        "command": "PRINTFORMSKL",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ2\r\n<T\r\nC212_16_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ2\r\n<T\r\nC212_16_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ2\r\n<T\r\nC212_16_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_17",
+        "command": "PRINTFORMSKL",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>アアｱ2\r\n<T\r\nC212_17_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>アアｱ2\r\n<T\r\nC212_17_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>アアｱ2\r\n<T\r\nC212_17_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_18",
+        "command": "PRINTFORMSKL",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>ああｱ2\r\n<T\r\nC212_18_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "ああｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>ああｱ2\r\n<T\r\nC212_18_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "ああｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ2\r\n<T\r\nC212_18_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ2",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_19",
+        "command": "PRINTFORMSKL",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ２\r\n<T\r\nC212_19_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ２\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ２\r\n<T\r\nC212_19_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ２\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ２\r\n<T\r\nC212_19_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ２\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ２",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_20",
+        "command": "PRINTCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>         あアｱ{ZZ212N(1)}<T\r\nC212_20_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>         あアｱ{ZZ212N(1)}<T\r\nC212_20_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>         あアｱ{ZZ212N(1)}<T\r\nC212_20_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_21",
+        "command": "PRINTCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>         アアｱ{ZZ212N(1)}<T\r\nC212_21_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         アアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>         アアｱ{ZZ212N(1)}<T\r\nC212_21_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         アアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>         アアｱ{ZZ212N(1)}<T\r\nC212_21_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         アアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_22",
+        "command": "PRINTCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>         ああｱ{ZZ212N(1)}<T\r\nC212_22_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         ああｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>         ああｱ{ZZ212N(1)}<T\r\nC212_22_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         ああｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>        あああ{ZZ212N(1)}<T\r\nC212_22_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>        あああ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ{ZZ212N(1)}",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_23",
+        "command": "PRINTCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\nC212_23_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\nC212_23_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\nC212_23_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ｛ＺＺ２１２Ｎ（１）｝",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_24",
+        "command": "PRINTLCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}          <T\r\nC212_24_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}          <T\r\nC212_24_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}          <T\r\nC212_24_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_25",
+        "command": "PRINTLCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>アアｱ{ZZ212N(1)}          <T\r\nC212_25_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>アアｱ{ZZ212N(1)}          <T\r\nC212_25_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>アアｱ{ZZ212N(1)}          <T\r\nC212_25_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_26",
+        "command": "PRINTLCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>ああｱ{ZZ212N(1)}          <T\r\nC212_26_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>ああｱ{ZZ212N(1)}          <T\r\nC212_26_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ{ZZ212N(1)}         <T\r\nC212_26_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ{ZZ212N(1)}         <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ{ZZ212N(1)}",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_27",
+        "command": "PRINTLCK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\nC212_27_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\nC212_27_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\nC212_27_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ｛ＺＺ２１２Ｎ（１）｝<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ｛ＺＺ２１２Ｎ（１）｝",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_28",
+        "command": "PRINTFORMCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>                   あアｱ1<T\r\nC212_28_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>                   あアｱ1<T\r\nC212_28_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>                   あアｱ1<T\r\nC212_28_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_29",
+        "command": "PRINTFORMCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>                   アアｱ1<T\r\nC212_29_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   アアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>                   アアｱ1<T\r\nC212_29_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   アアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>                   アアｱ1<T\r\nC212_29_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   アアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_30",
+        "command": "PRINTFORMCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>                   ああｱ1<T\r\nC212_30_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   ああｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>                   ああｱ1<T\r\nC212_30_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   ああｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>                  あああ1<T\r\nC212_30_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                  あああ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ1",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_31",
+        "command": "PRINTFORMCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>                 あああ１<T\r\nC212_31_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                 あああ１<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>                 あああ１<T\r\nC212_31_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                 あああ１<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>                 あああ１<T\r\nC212_31_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                 あああ１<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ１",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_32",
+        "command": "PRINTFORMLCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ1                    <T\r\nC212_32_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ1                    <T\r\nC212_32_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ1                    <T\r\nC212_32_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_33",
+        "command": "PRINTFORMLCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>アアｱ1                    <T\r\nC212_33_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>アアｱ1                    <T\r\nC212_33_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>アアｱ1                    <T\r\nC212_33_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>アアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_34",
+        "command": "PRINTFORMLCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>ああｱ1                    <T\r\nC212_34_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>ああｱ1                    <T\r\nC212_34_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>ああｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "ああｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ1                   <T\r\nC212_34_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ1                   <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ1",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_35",
+        "command": "PRINTFORMLCK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あああ１                  <T\r\nC212_35_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ１                  <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あああ１                  <T\r\nC212_35_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ１                  <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あああ１                  <T\r\nC212_35_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あああ１                  <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ１",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_36",
+        "command": "PRINTSINGLEK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\nC212_36_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\nC212_36_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\nC212_36_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_37",
+        "command": "PRINTSINGLEK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nアアｱ{ZZ212N(1)}\r\n<T\r\nC212_37_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nアアｱ{ZZ212N(1)}\r\n<T\r\nC212_37_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nアアｱ{ZZ212N(1)}\r\n<T\r\nC212_37_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_38",
+        "command": "PRINTSINGLEK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nああｱ{ZZ212N(1)}\r\n<T\r\nC212_38_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nああｱ{ZZ212N(1)}\r\n<T\r\nC212_38_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ{ZZ212N(1)}\r\n<T\r\nC212_38_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ{ZZ212N(1)}",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_39",
+        "command": "PRINTSINGLEK",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあああ｛ＺＺ２１２Ｎ（１）｝\r\n<T\r\nC212_39_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ｛ＺＺ２１２Ｎ（１）｝\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあああ｛ＺＺ２１２Ｎ（１）｝\r\n<T\r\nC212_39_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ｛ＺＺ２１２Ｎ（１）｝\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ｛ＺＺ２１２Ｎ（１）｝\r\n<T\r\nC212_39_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ｛ＺＺ２１２Ｎ（１）｝\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（１）｝",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ｛ＺＺ２１２Ｎ（１）｝",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_40",
+        "command": "PRINTSINGLEVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\n1/あアｱ\r\n<T\r\nC212_40_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\n1/あアｱ\r\n<T\r\nC212_40_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n1/あアｱ\r\n<T\r\nC212_40_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/あアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_41",
+        "command": "PRINTSINGLEVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\n1/アアｱ\r\n<T\r\nC212_41_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/アアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/アアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\n1/アアｱ\r\n<T\r\nC212_41_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/アアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/アアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n1/アアｱ\r\n<T\r\nC212_41_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/アアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/アアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/アアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_42",
+        "command": "PRINTSINGLEVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\n1/ああｱ\r\n<T\r\nC212_42_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/ああｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/ああｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\n1/ああｱ\r\n<T\r\nC212_42_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/ああｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/ああｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n1/あああ\r\n<T\r\nC212_42_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あああ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/ああｱ",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_43",
+        "command": "PRINTSINGLEVK",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\n１／あああ\r\n<T\r\nC212_43_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n１／あああ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "１／あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\n１／あああ\r\n<T\r\nC212_43_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n１／あああ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "１／あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n１／あああ\r\n<T\r\nC212_43_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n１／あああ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "１／あああ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "１／あああ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_44",
+        "command": "PRINTSINGLESK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\nC212_44_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\nC212_44_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\nC212_44_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_45",
+        "command": "PRINTSINGLESK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nアアｱ{ZZ212N(2)}\r\n<T\r\nC212_45_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nアアｱ{ZZ212N(2)}\r\n<T\r\nC212_45_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nアアｱ{ZZ212N(2)}\r\n<T\r\nC212_45_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_46",
+        "command": "PRINTSINGLESK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nああｱ{ZZ212N(2)}\r\n<T\r\nC212_46_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nああｱ{ZZ212N(2)}\r\n<T\r\nC212_46_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ{ZZ212N(2)}\r\n<T\r\nC212_46_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ{ZZ212N(2)}",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_47",
+        "command": "PRINTSINGLESK",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\nC212_47_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\nC212_47_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\nC212_47_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ｛ＺＺ２１２Ｎ（２）｝\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ｛ＺＺ２１２Ｎ（２）｝",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ｛ＺＺ２１２Ｎ（２）｝",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_48",
+        "command": "PRINTSINGLEFORMK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ1\r\n<T\r\nC212_48_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ1\r\n<T\r\nC212_48_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ1\r\n<T\r\nC212_48_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_49",
+        "command": "PRINTSINGLEFORMK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nアアｱ1\r\n<T\r\nC212_49_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nアアｱ1\r\n<T\r\nC212_49_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nアアｱ1\r\n<T\r\nC212_49_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_50",
+        "command": "PRINTSINGLEFORMK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nああｱ1\r\n<T\r\nC212_50_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nああｱ1\r\n<T\r\nC212_50_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ1\r\n<T\r\nC212_50_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ1",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_51",
+        "command": "PRINTSINGLEFORMK",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあああ１\r\n<T\r\nC212_51_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ１\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあああ１\r\n<T\r\nC212_51_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ１\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ１\r\n<T\r\nC212_51_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ１\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ１",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ１",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_52",
+        "command": "PRINTSINGLEFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ2\r\n<T\r\nC212_52_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ2\r\n<T\r\nC212_52_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ2\r\n<T\r\nC212_52_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_53",
+        "command": "PRINTSINGLEFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 1,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nアアｱ2\r\n<T\r\nC212_53_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nアアｱ2\r\n<T\r\nC212_53_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nアアｱ2\r\n<T\r\nC212_53_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nアアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "アアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "アアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_54",
+        "command": "PRINTSINGLEFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 2,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nああｱ2\r\n<T\r\nC212_54_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nああｱ2\r\n<T\r\nC212_54_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nああｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "ああｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ2\r\n<T\r\nC212_54_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "ああｱ2",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_55",
+        "command": "PRINTSINGLEFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあああ２\r\n<T\r\nC212_55_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ２\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあああ２\r\n<T\r\nC212_55_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ２\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあああ２\r\n<T\r\nC212_55_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあああ２\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あああ２",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あああ２",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_56",
+        "command": "PRINTD",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}<T\r\nC212_56_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}<T\r\nC212_56_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}<T\r\nC212_56_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_57",
+        "command": "PRINTDL",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}\r\n<T\r\nC212_57_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}\r\n<T\r\nC212_57_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}\r\n<T\r\nC212_57_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_58",
+        "command": "PRINTVD",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>1/あアｱ<T\r\nC212_58_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>1/あアｱ<T\r\nC212_58_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>1/あアｱ<T\r\nC212_58_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/あアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_59",
+        "command": "PRINTVDL",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>1/あアｱ\r\n<T\r\nC212_59_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>1/あアｱ\r\n<T\r\nC212_59_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>1/あアｱ\r\n<T\r\nC212_59_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>1/あアｱ\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/あアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_60",
+        "command": "PRINTSD",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}<T\r\nC212_60_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}<T\r\nC212_60_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}<T\r\nC212_60_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_61",
+        "command": "PRINTSDL",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}\r\n<T\r\nC212_61_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}\r\n<T\r\nC212_61_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(2)}\r\n<T\r\nC212_61_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_62",
+        "command": "PRINTFORMD",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ1<T\r\nC212_62_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ1<T\r\nC212_62_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ1<T\r\nC212_62_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_63",
+        "command": "PRINTFORMDL",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ1\r\n<T\r\nC212_63_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ1\r\n<T\r\nC212_63_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ1\r\n<T\r\nC212_63_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_64",
+        "command": "PRINTFORMSD",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ2<T\r\nC212_64_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ2<T\r\nC212_64_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ2<T\r\nC212_64_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_65",
+        "command": "PRINTFORMSDL",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ2\r\n<T\r\nC212_65_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ2\r\n<T\r\nC212_65_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ2\r\n<T\r\nC212_65_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ2\r\n<T\r\n",
+          "row_count": 2,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_66",
+        "command": "PRINTCD",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>         あアｱ{ZZ212N(1)}<T\r\nC212_66_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>         あアｱ{ZZ212N(1)}<T\r\nC212_66_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>         あアｱ{ZZ212N(1)}<T\r\nC212_66_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>         あアｱ{ZZ212N(1)}<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_67",
+        "command": "PRINTLCD",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}          <T\r\nC212_67_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}          <T\r\nC212_67_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ{ZZ212N(1)}          <T\r\nC212_67_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ{ZZ212N(1)}          <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_68",
+        "command": "PRINTFORMCD",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>                   あアｱ1<T\r\nC212_68_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>                   あアｱ1<T\r\nC212_68_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>                   あアｱ1<T\r\nC212_68_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>                   あアｱ1<T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_69",
+        "command": "PRINTFORMLCD",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>あアｱ1                    <T\r\nC212_69_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>あアｱ1                    <T\r\nC212_69_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>あアｱ1                    <T\r\nC212_69_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>あアｱ1                    <T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_70",
+        "command": "PRINTSINGLED",
+        "argtype": "literal",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\nC212_70_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\nC212_70_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\nC212_70_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(1)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(1)}",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(1)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_71",
+        "command": "PRINTSINGLEVD",
+        "argtype": "v",
+        "argument": "ZZ212N(1),\"/\",ZZ212S(2)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\n1/あアｱ\r\n<T\r\nC212_71_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\n1/あアｱ\r\n<T\r\nC212_71_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n1/あアｱ\r\n<T\r\nC212_71_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n1/あアｱ\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "1/あアｱ",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "1/あアｱ",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_72",
+        "command": "PRINTSINGLESD",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\nC212_72_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\nC212_72_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\nC212_72_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ{ZZ212N(2)}\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ{ZZ212N(2)}",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ{ZZ212N(2)}",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_73",
+        "command": "PRINTSINGLEFORMD",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 1,
+        "helper_order_expected": 1,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ1\r\n<T\r\nC212_73_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ1\r\n<T\r\nC212_73_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ1\r\n<T\r\nC212_73_STATE A=1 B=1 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ1\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ1",
+          "state": {
+            "A": 1,
+            "B": 1,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ1",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_74",
+        "command": "PRINTSINGLEFORMSD",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 0,
+        "empty": false,
+        "skip": false,
+        "helper_count_expected": 2,
+        "helper_order_expected": 12,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P>\r\nあアｱ2\r\n<T\r\nC212_74_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P>\r\nあアｱ2\r\n<T\r\nC212_74_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\nあアｱ2\r\n<T\r\nC212_74_STATE A=2 B=12 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\nあアｱ2\r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "あアｱ2",
+          "state": {
+            "A": 2,
+            "B": 12,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "あアｱ2",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_75",
+        "command": "PRINTSINGLEK",
+        "argtype": "literal",
+        "argument": "",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_75_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_75_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_75_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_76",
+        "command": "PRINTSINGLEVK",
+        "argtype": "v",
+        "argument": "\"\"",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_76_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_76_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_76_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_77",
+        "command": "PRINTSINGLESK",
+        "argtype": "s",
+        "argument": "\"\"",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_77_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_77_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_77_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_78",
+        "command": "PRINTSINGLEFORMK",
+        "argtype": "form",
+        "argument": "",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_78_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_78_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_78_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_79",
+        "command": "PRINTSINGLEFORMSK",
+        "argtype": "forms",
+        "argument": "\"\"",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_79_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_79_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_79_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_80",
+        "command": "PRINTSINGLED",
+        "argtype": "literal",
+        "argument": "",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_80_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_80_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_80_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_81",
+        "command": "PRINTSINGLEVD",
+        "argtype": "v",
+        "argument": "\"\"",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_81_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_81_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_81_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_82",
+        "command": "PRINTSINGLESD",
+        "argtype": "s",
+        "argument": "\"\"",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_82_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_82_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_82_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_83",
+        "command": "PRINTSINGLEFORMD",
+        "argtype": "form",
+        "argument": "",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_83_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_83_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_83_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_84",
+        "command": "PRINTSINGLEFORMSD",
+        "argtype": "forms",
+        "argument": "\"\"",
+        "forcekana": 0,
+        "empty": true,
+        "skip": false,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 701,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_84_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_84_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P>\r\n \r\n<T\r\nC212_84_STATE A=0 B=0 R=701 S=[sentinel]\r\n",
+          "serialized_body": "P>\r\n \r\n<T\r\n",
+          "row_count": 3,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 701,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": false,
+      "state_evaluation_equal": true,
+      "category": "empty_single_serialized_line_lifecycle",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_85",
+        "command": "PRINTFORMSK",
+        "argtype": "forms",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": true,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 0,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_85_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_85_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P><T\r\nC212_85_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_86",
+        "command": "PRINTFORMDL",
+        "argtype": "form",
+        "argument": "あアｱ{ZZ212N(1)}",
+        "forcekana": 3,
+        "empty": false,
+        "skip": true,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 0,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_86_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_86_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P><T\r\nC212_86_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "C212_87",
+        "command": "PRINTSINGLESD",
+        "argtype": "s",
+        "argument": "ZZ212T(1)",
+        "forcekana": 3,
+        "empty": false,
+        "skip": true,
+        "helper_count_expected": 0,
+        "helper_order_expected": 0,
+        "expected_result": 0,
+        "pending_prefix": "P>",
+        "selected_color": 16711680,
+        "D_printed_color_observation": "unobserved_in_plain_history"
+      },
+      "observed": {
+        "native-01": {
+          "raw_block": "P><T\r\nC212_87_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "native-02": {
+          "raw_block": "P><T\r\nC212_87_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        },
+        "py": {
+          "raw_block": "P><T\r\nC212_87_STATE A=0 B=0 R=0 S=[sentinel]\r\n",
+          "serialized_body": "P><T\r\n",
+          "row_count": 1,
+          "serialized_target_text_without_known_padding": "",
+          "state": {
+            "A": 0,
+            "B": 0,
+            "R": 0,
+            "RESULTS0": "sentinel"
+          }
+        }
+      },
+      "source_expected_target_text": "",
+      "raw_equal": true,
+      "state_evaluation_equal": true,
+      "category": "exact_selected_text_state_match",
+      "verdict": "matched_scoped"
+    }
+  ],
+  "counts": {
+    "exact_selected_text_state_match": 64,
+    "forcekana2_unexpected_halfwidth_normalization": 14,
+    "empty_single_serialized_line_lifecycle": 10
+  },
+  "state_evaluation_matches": 88,
+  "limitations": "88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved."
+}

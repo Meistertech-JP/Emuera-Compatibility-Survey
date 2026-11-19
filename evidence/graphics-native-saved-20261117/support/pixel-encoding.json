@@ -1,0 +1,59 @@
+{
+  "ggetcolor_fill": "GCLEAR 0xFF112233 = 4279312947; GGETCOLOR unsigned ToArgb agrees at (0,0) and (3,2)",
+  "sprite_source": "Creator.Method.cs 3283",
+  "sprite_pixels": [
+    {
+      "logical_xy": [
+        0,
+        0
+      ],
+      "BMP_bottom_up_storage_row": 2,
+      "ARGB_components": [
+        255,
+        52,
+        166,
+        0
+      ],
+      "ordinary_unsigned_ARGB": 4281640448,
+      "source_shift_counts": [
+        76,
+        182,
+        8
+      ],
+      "masked_shift_counts": [
+        12,
+        54,
+        8
+      ],
+      "source_encoded_value": 0,
+      "native_observed_value": 0
+    },
+    {
+      "logical_xy": [
+        3,
+        2
+      ],
+      "BMP_bottom_up_storage_row": 0,
+      "ARGB_components": [
+        255,
+        87,
+        0,
+        141
+      ],
+      "ordinary_unsigned_ARGB": 4283891853,
+      "source_shift_counts": [
+        111,
+        16,
+        149
+      ],
+      "masked_shift_counts": [
+        47,
+        16,
+        21
+      ],
+      "source_encoded_value": 0,
+      "native_observed_value": 0
+    }
+  ],
+  "limitation": "pixel components derived from frozen deterministic BMP bytes and loader/source mapping; getter output 0 is the actual Native return, not a claim of black pixels or an independent GUI pixel capture"
+}

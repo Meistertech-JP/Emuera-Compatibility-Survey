@@ -1,0 +1,1602 @@
+{
+  "cases": [
+    {
+      "case_id": "METHOD_BOUNDARY_INRANGE_INRANGE_FAULT_1_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "INRANGE"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command, counted argument helpers; Native two modes and PyEmuera one mode.",
+        "condition": {
+          "fixture_vector_label": {
+            "x": 4,
+            "min": 4,
+            "max": 8
+          },
+          "faulting_helper_slot": 1,
+          "fault": "C=0; the selected helper divides 1 by C before returning",
+          "qualification": "The label describes fixture parameters; the faulting argument does not return and not all arguments necessarily reach the command."
+        },
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 19,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "native-02",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 19,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "py",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "E_ARITH",
+            "diagnostic_excerpt": "E_ARITH: 0による除算が行なわれました",
+            "reported_fixture_line": 19,
+            "after_or_done_observed": false
+          }
+        ],
+        "comparison": "Selected helper markers agree across saved modes; Native diagnoses division by zero and PyEmuera reports E_ARITH. Diagnostic formats differ.",
+        "unobserved": "The command result, post-error RESULT/RESULTS and any unreached helper are not inferred. Native natural exit is unobserved; parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/8e53d7ca4f54a80176ba06cbbeff77aa79da4de37ab6e7f447fca52cdd105976.bin",
+              "raw_sha256": "8e53d7ca4f54a80176ba06cbbeff77aa79da4de37ab6e7f447fca52cdd105976",
+              "raw_size": 598,
+              "readable_path": "text/8e53d7ca4f54a80176ba06cbbeff77aa79da4de37ab6e7f447fca52cdd105976.utf8.txt",
+              "readable_sha256": "f806166310683c07c55c480fc083c7a0a0007d5614d19041b47bd8e1b250513b",
+              "readable_size": 426,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "b6ddda4465e15605aae8458fd635c13ec31e07505ca2708ccfdd83988a91f1b5",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/8e53d7ca4f54a80176ba06cbbeff77aa79da4de37ab6e7f447fca52cdd105976.bin",
+              "raw_sha256": "8e53d7ca4f54a80176ba06cbbeff77aa79da4de37ab6e7f447fca52cdd105976",
+              "raw_size": 598,
+              "readable_path": "text/8e53d7ca4f54a80176ba06cbbeff77aa79da4de37ab6e7f447fca52cdd105976.utf8.txt",
+              "readable_sha256": "f806166310683c07c55c480fc083c7a0a0007d5614d19041b47bd8e1b250513b",
+              "readable_size": 426,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "b6ddda4465e15605aae8458fd635c13ec31e07505ca2708ccfdd83988a91f1b5",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/bc41250efc17cbc089ce1053c738b682a3ad47d14cdbc71448d7f289a2484ad0.bin",
+              "raw_sha256": "bc41250efc17cbc089ce1053c738b682a3ad47d14cdbc71448d7f289a2484ad0",
+              "raw_size": 120,
+              "readable_path": "text/bc41250efc17cbc089ce1053c738b682a3ad47d14cdbc71448d7f289a2484ad0.utf8.txt",
+              "readable_sha256": "bc41250efc17cbc089ce1053c738b682a3ad47d14cdbc71448d7f289a2484ad0",
+              "readable_size": 120,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/55c4541d636cc8001408cc5739e61e07460dfc507c48a3aa9285614c8b831610.bin",
+              "raw_sha256": "55c4541d636cc8001408cc5739e61e07460dfc507c48a3aa9285614c8b831610",
+              "raw_size": 146,
+              "readable_path": "text/55c4541d636cc8001408cc5739e61e07460dfc507c48a3aa9285614c8b831610.utf8.txt",
+              "readable_sha256": "863bdc44d45fc36942d4af78c47cff1a8508b683e2dc4287fd3fb3f51c75520f",
+              "readable_size": 159,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "b6ddda4465e15605aae8458fd635c13ec31e07505ca2708ccfdd83988a91f1b5",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_INRANGE_INRANGE_FAULT_2_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "INRANGE"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command, counted argument helpers; Native two modes and PyEmuera one mode.",
+        "condition": {
+          "fixture_vector_label": {
+            "x": 4,
+            "min": 4,
+            "max": 8
+          },
+          "faulting_helper_slot": 2,
+          "fault": "C=0; the selected helper divides 1 by C before returning",
+          "qualification": "The label describes fixture parameters; the faulting argument does not return and not all arguments necessarily reach the command."
+        },
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 25,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "native-02",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 25,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "py",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "E_ARITH",
+            "diagnostic_excerpt": "E_ARITH: 0による除算が行なわれました",
+            "reported_fixture_line": 25,
+            "after_or_done_observed": false
+          }
+        ],
+        "comparison": "Selected helper markers agree across saved modes; Native diagnoses division by zero and PyEmuera reports E_ARITH. Diagnostic formats differ.",
+        "unobserved": "The command result, post-error RESULT/RESULTS and any unreached helper are not inferred. Native natural exit is unobserved; parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/7a5170af201f5f044cd496d059cb57b3b1b9c4be290f65ace51e30af44093813.bin",
+              "raw_sha256": "7a5170af201f5f044cd496d059cb57b3b1b9c4be290f65ace51e30af44093813",
+              "raw_size": 750,
+              "readable_path": "text/7a5170af201f5f044cd496d059cb57b3b1b9c4be290f65ace51e30af44093813.utf8.txt",
+              "readable_sha256": "1c9eec66c1bf846df068d5af2faeb3a343753f580c21a9e3fa164c24da26b800",
+              "readable_size": 502,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "7d5d02277ba3df3d652e04785bc4d34075d9ecf76ad8c954e6ec3a267b63fe98",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/7a5170af201f5f044cd496d059cb57b3b1b9c4be290f65ace51e30af44093813.bin",
+              "raw_sha256": "7a5170af201f5f044cd496d059cb57b3b1b9c4be290f65ace51e30af44093813",
+              "raw_size": 750,
+              "readable_path": "text/7a5170af201f5f044cd496d059cb57b3b1b9c4be290f65ace51e30af44093813.utf8.txt",
+              "readable_sha256": "1c9eec66c1bf846df068d5af2faeb3a343753f580c21a9e3fa164c24da26b800",
+              "readable_size": 502,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "7d5d02277ba3df3d652e04785bc4d34075d9ecf76ad8c954e6ec3a267b63fe98",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/b33a39fa51749e3fd624eac8b5e2538e45ef444d0c19ec11dd933a2689067d5e.bin",
+              "raw_sha256": "b33a39fa51749e3fd624eac8b5e2538e45ef444d0c19ec11dd933a2689067d5e",
+              "raw_size": 196,
+              "readable_path": "text/b33a39fa51749e3fd624eac8b5e2538e45ef444d0c19ec11dd933a2689067d5e.utf8.txt",
+              "readable_sha256": "b33a39fa51749e3fd624eac8b5e2538e45ef444d0c19ec11dd933a2689067d5e",
+              "readable_size": 196,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/2b8aa370afa68b3c7cb1fb4f5f46328063346ebc2b1709acfe9f15f3820ee481.bin",
+              "raw_sha256": "2b8aa370afa68b3c7cb1fb4f5f46328063346ebc2b1709acfe9f15f3820ee481",
+              "raw_size": 146,
+              "readable_path": "text/2b8aa370afa68b3c7cb1fb4f5f46328063346ebc2b1709acfe9f15f3820ee481.utf8.txt",
+              "readable_sha256": "f819e2a9f87bceb6f09707968a4078c4f8df027265e9ffd311f5b32f77f9566a",
+              "readable_size": 159,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "7d5d02277ba3df3d652e04785bc4d34075d9ecf76ad8c954e6ec3a267b63fe98",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_INRANGE_INRANGE_FAULT_3_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "INRANGE"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command, counted argument helpers; Native two modes and PyEmuera one mode.",
+        "condition": {
+          "fixture_vector_label": {
+            "x": 4,
+            "min": 4,
+            "max": 8
+          },
+          "faulting_helper_slot": 3,
+          "fault": "C=0; the selected helper divides 1 by C before returning",
+          "qualification": "The label describes fixture parameters; the faulting argument does not return and not all arguments necessarily reach the command."
+        },
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=3 COUNT=3 ORDER=123 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 31,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "native-02",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=3 COUNT=3 ORDER=123 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 31,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "py",
+            "selected_helper_markers": [
+              "HELPER INRANGE_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER INRANGE_4_4_8 SLOT=3 COUNT=3 ORDER=123 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "E_ARITH",
+            "diagnostic_excerpt": "E_ARITH: 0による除算が行なわれました",
+            "reported_fixture_line": 31,
+            "after_or_done_observed": false
+          }
+        ],
+        "comparison": "Selected helper markers agree across saved modes; Native diagnoses division by zero and PyEmuera reports E_ARITH. Diagnostic formats differ.",
+        "unobserved": "The command result, post-error RESULT/RESULTS and any unreached helper are not inferred. Native natural exit is unobserved; parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/a7450dd52f5afdaed27cf2add08ec67ba5eb754892b0908fdffd06c20273ee3d.bin",
+              "raw_sha256": "a7450dd52f5afdaed27cf2add08ec67ba5eb754892b0908fdffd06c20273ee3d",
+              "raw_size": 904,
+              "readable_path": "text/a7450dd52f5afdaed27cf2add08ec67ba5eb754892b0908fdffd06c20273ee3d.utf8.txt",
+              "readable_sha256": "32799d40cad6e166a7d673d9c82b7aa76b3345c4fa9530391379cafd59e43902",
+              "readable_size": 579,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "cee6a80513e2cf521203b9f436771fd456b5507d7aed053e44efefba25465cdc",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/a7450dd52f5afdaed27cf2add08ec67ba5eb754892b0908fdffd06c20273ee3d.bin",
+              "raw_sha256": "a7450dd52f5afdaed27cf2add08ec67ba5eb754892b0908fdffd06c20273ee3d",
+              "raw_size": 904,
+              "readable_path": "text/a7450dd52f5afdaed27cf2add08ec67ba5eb754892b0908fdffd06c20273ee3d.utf8.txt",
+              "readable_sha256": "32799d40cad6e166a7d673d9c82b7aa76b3345c4fa9530391379cafd59e43902",
+              "readable_size": 579,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "cee6a80513e2cf521203b9f436771fd456b5507d7aed053e44efefba25465cdc",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/14bae250f8f9bb4bb2719092b57fae910c1d09ab53ee34c8eb5e183928e9233c.bin",
+              "raw_sha256": "14bae250f8f9bb4bb2719092b57fae910c1d09ab53ee34c8eb5e183928e9233c",
+              "raw_size": 273,
+              "readable_path": "text/14bae250f8f9bb4bb2719092b57fae910c1d09ab53ee34c8eb5e183928e9233c.utf8.txt",
+              "readable_sha256": "14bae250f8f9bb4bb2719092b57fae910c1d09ab53ee34c8eb5e183928e9233c",
+              "readable_size": 273,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/90e7280a1f9dfe4f281102b47f007debe54ebe8edd71992201748d69d09f8a89.bin",
+              "raw_sha256": "90e7280a1f9dfe4f281102b47f007debe54ebe8edd71992201748d69d09f8a89",
+              "raw_size": 146,
+              "readable_path": "text/90e7280a1f9dfe4f281102b47f007debe54ebe8edd71992201748d69d09f8a89.utf8.txt",
+              "readable_sha256": "1fef693a9605ae64f13799d7236eefbebaa5cf327ccc460acbe2ff448147448a",
+              "readable_size": 159,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "cee6a80513e2cf521203b9f436771fd456b5507d7aed053e44efefba25465cdc",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_INRANGE_NORMAL_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "INRANGE"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command; one shared INRANGE/LIMIT fixture and three saved mode records. Only this case target is projected.",
+        "condition": "Each vector starts with A=0, B=0, RESULT=777 and RESULTS=SENTINEL; x/min/max use counted helpers.",
+        "vectors_and_results": [
+          {
+            "x": 3,
+            "min": 4,
+            "max": 8,
+            "native_result": 0,
+            "pyemuera_result": 0
+          },
+          {
+            "x": 4,
+            "min": 4,
+            "max": 8,
+            "native_result": 1,
+            "pyemuera_result": 1
+          },
+          {
+            "x": 8,
+            "min": 4,
+            "max": 8,
+            "native_result": 1,
+            "pyemuera_result": 1
+          },
+          {
+            "x": 9,
+            "min": 4,
+            "max": 8,
+            "native_result": 0,
+            "pyemuera_result": 0
+          },
+          {
+            "x": 3,
+            "min": 8,
+            "max": 4,
+            "native_result": 0,
+            "pyemuera_result": 0
+          },
+          {
+            "x": 4,
+            "min": 8,
+            "max": 4,
+            "native_result": 0,
+            "pyemuera_result": 0
+          },
+          {
+            "x": 8,
+            "min": 8,
+            "max": 4,
+            "native_result": 0,
+            "pyemuera_result": 0
+          },
+          {
+            "x": 9,
+            "min": 8,
+            "max": 4,
+            "native_result": 0,
+            "pyemuera_result": 0
+          }
+        ],
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_after_markers": [
+              "AFTER INRANGE_3_4_8 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_4_4_8 COUNT=3 ORDER=123 RESULT=1 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_8_4_8 COUNT=3 ORDER=123 RESULT=1 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_9_4_8 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_3_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_4_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_8_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_9_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]"
+            ],
+            "done_observed": true
+          },
+          {
+            "mode": "native-02",
+            "selected_after_markers": [
+              "AFTER INRANGE_3_4_8 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_4_4_8 COUNT=3 ORDER=123 RESULT=1 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_8_4_8 COUNT=3 ORDER=123 RESULT=1 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_9_4_8 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_3_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_4_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_8_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_9_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]"
+            ],
+            "done_observed": true
+          },
+          {
+            "mode": "py",
+            "selected_after_markers": [
+              "AFTER INRANGE_3_4_8 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_4_4_8 COUNT=3 ORDER=123 RESULT=1 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_8_4_8 COUNT=3 ORDER=123 RESULT=1 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_9_4_8 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_3_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_4_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_8_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]",
+              "AFTER INRANGE_9_8_4 COUNT=3 ORDER=123 RESULT=0 RESULTS=[SENTINEL]"
+            ],
+            "done_observed": true
+          }
+        ],
+        "comparison": "All eight INRANGE vectors match.",
+        "unobserved": "Native natural exit and exit code; full target compatibility. Parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.bin",
+              "raw_sha256": "f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239",
+              "raw_size": 10044,
+              "readable_path": "text/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.utf8.txt",
+              "readable_sha256": "db22975d699ea82ddbf4df13613d2392347d5727e494166f4a140648875e84a6",
+              "readable_size": 5021,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "ebec44e313b72494dc39f4520efeacd4d7d9e04b94d801eaa698a4915da16058",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.bin",
+              "raw_sha256": "f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239",
+              "raw_size": 10044,
+              "readable_path": "text/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.utf8.txt",
+              "readable_sha256": "db22975d699ea82ddbf4df13613d2392347d5727e494166f4a140648875e84a6",
+              "readable_size": 5021,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "ebec44e313b72494dc39f4520efeacd4d7d9e04b94d801eaa698a4915da16058",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/58b874e53b84bf355f766b1bf96827e401d55a4e7bb8c45b1887a4b6608c5779.bin",
+              "raw_sha256": "58b874e53b84bf355f766b1bf96827e401d55a4e7bb8c45b1887a4b6608c5779",
+              "raw_size": 5079,
+              "readable_path": "text/58b874e53b84bf355f766b1bf96827e401d55a4e7bb8c45b1887a4b6608c5779.utf8.txt",
+              "readable_sha256": "2fcc8efdeca24e557cf1c2359d4e328f764d3b8c67cec12f5c0a266bcbebd36a",
+              "readable_size": 5099,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.bin",
+              "raw_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "raw_size": 110,
+              "readable_path": "text/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.utf8.txt",
+              "readable_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "readable_size": 110,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "ebec44e313b72494dc39f4520efeacd4d7d9e04b94d801eaa698a4915da16058",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_LIMIT_LIMIT_FAULT_1_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "LIMIT"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command, counted argument helpers; Native two modes and PyEmuera one mode.",
+        "condition": {
+          "fixture_vector_label": {
+            "x": 4,
+            "min": 4,
+            "max": 8
+          },
+          "faulting_helper_slot": 1,
+          "fault": "C=0; the selected helper divides 1 by C before returning",
+          "qualification": "The label describes fixture parameters; the faulting argument does not return and not all arguments necessarily reach the command."
+        },
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 19,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "native-02",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 19,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "py",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "E_ARITH",
+            "diagnostic_excerpt": "E_ARITH: 0による除算が行なわれました",
+            "reported_fixture_line": 19,
+            "after_or_done_observed": false
+          }
+        ],
+        "comparison": "Selected helper markers agree across saved modes; Native diagnoses division by zero and PyEmuera reports E_ARITH. Diagnostic formats differ.",
+        "unobserved": "The command result, post-error RESULT/RESULTS and any unreached helper are not inferred. Native natural exit is unobserved; parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/fb9c76e76e556fdd310036d1b9f028255a57cb21d5c1510c4928c2ee9085f898.bin",
+              "raw_sha256": "fb9c76e76e556fdd310036d1b9f028255a57cb21d5c1510c4928c2ee9085f898",
+              "raw_size": 590,
+              "readable_path": "text/fb9c76e76e556fdd310036d1b9f028255a57cb21d5c1510c4928c2ee9085f898.utf8.txt",
+              "readable_sha256": "12938561205a98491e1fb6f8ae0a927a1223dc6a0e16ca56cfa9700f4259bd48",
+              "readable_size": 422,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "6c36cef994796a9641608a4d06b96a0572a8642350ca763ccc6de573d39b359a",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/fb9c76e76e556fdd310036d1b9f028255a57cb21d5c1510c4928c2ee9085f898.bin",
+              "raw_sha256": "fb9c76e76e556fdd310036d1b9f028255a57cb21d5c1510c4928c2ee9085f898",
+              "raw_size": 590,
+              "readable_path": "text/fb9c76e76e556fdd310036d1b9f028255a57cb21d5c1510c4928c2ee9085f898.utf8.txt",
+              "readable_sha256": "12938561205a98491e1fb6f8ae0a927a1223dc6a0e16ca56cfa9700f4259bd48",
+              "readable_size": 422,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "6c36cef994796a9641608a4d06b96a0572a8642350ca763ccc6de573d39b359a",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/ebdb0f8cbb24bcf596bd7dc16a34820b889b89746d5a034da97a5c4ed4bd7459.bin",
+              "raw_sha256": "ebdb0f8cbb24bcf596bd7dc16a34820b889b89746d5a034da97a5c4ed4bd7459",
+              "raw_size": 116,
+              "readable_path": "text/ebdb0f8cbb24bcf596bd7dc16a34820b889b89746d5a034da97a5c4ed4bd7459.utf8.txt",
+              "readable_sha256": "ebdb0f8cbb24bcf596bd7dc16a34820b889b89746d5a034da97a5c4ed4bd7459",
+              "readable_size": 116,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/55c4541d636cc8001408cc5739e61e07460dfc507c48a3aa9285614c8b831610.bin",
+              "raw_sha256": "55c4541d636cc8001408cc5739e61e07460dfc507c48a3aa9285614c8b831610",
+              "raw_size": 146,
+              "readable_path": "text/55c4541d636cc8001408cc5739e61e07460dfc507c48a3aa9285614c8b831610.utf8.txt",
+              "readable_sha256": "863bdc44d45fc36942d4af78c47cff1a8508b683e2dc4287fd3fb3f51c75520f",
+              "readable_size": 159,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "6c36cef994796a9641608a4d06b96a0572a8642350ca763ccc6de573d39b359a",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_LIMIT_LIMIT_FAULT_2_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "LIMIT"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command, counted argument helpers; Native two modes and PyEmuera one mode.",
+        "condition": {
+          "fixture_vector_label": {
+            "x": 4,
+            "min": 4,
+            "max": 8
+          },
+          "faulting_helper_slot": 2,
+          "fault": "C=0; the selected helper divides 1 by C before returning",
+          "qualification": "The label describes fixture parameters; the faulting argument does not return and not all arguments necessarily reach the command."
+        },
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 25,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "native-02",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 25,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "py",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "E_ARITH",
+            "diagnostic_excerpt": "E_ARITH: 0による除算が行なわれました",
+            "reported_fixture_line": 25,
+            "after_or_done_observed": false
+          }
+        ],
+        "comparison": "Selected helper markers agree across saved modes; Native diagnoses division by zero and PyEmuera reports E_ARITH. Diagnostic formats differ.",
+        "unobserved": "The command result, post-error RESULT/RESULTS and any unreached helper are not inferred. Native natural exit is unobserved; parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/1747ae9d7971d430336a6ab273dcf962a98339417f4d793ac924084afff777cc.bin",
+              "raw_sha256": "1747ae9d7971d430336a6ab273dcf962a98339417f4d793ac924084afff777cc",
+              "raw_size": 738,
+              "readable_path": "text/1747ae9d7971d430336a6ab273dcf962a98339417f4d793ac924084afff777cc.utf8.txt",
+              "readable_sha256": "85743a4925d1cd97560113024d5b54b6c035e7ad6fa0f1cf9477f0368dd6a633",
+              "readable_size": 496,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "1c29a4bf493b69100690655f34ee89d1cb9a539c0ce0b5542ce22d2d8b5962c8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/1747ae9d7971d430336a6ab273dcf962a98339417f4d793ac924084afff777cc.bin",
+              "raw_sha256": "1747ae9d7971d430336a6ab273dcf962a98339417f4d793ac924084afff777cc",
+              "raw_size": 738,
+              "readable_path": "text/1747ae9d7971d430336a6ab273dcf962a98339417f4d793ac924084afff777cc.utf8.txt",
+              "readable_sha256": "85743a4925d1cd97560113024d5b54b6c035e7ad6fa0f1cf9477f0368dd6a633",
+              "readable_size": 496,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "1c29a4bf493b69100690655f34ee89d1cb9a539c0ce0b5542ce22d2d8b5962c8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/84212bbc3c80de4a83da2feec83ae99be2249d12a354c36daefa6d3cbbb0cb7b.bin",
+              "raw_sha256": "84212bbc3c80de4a83da2feec83ae99be2249d12a354c36daefa6d3cbbb0cb7b",
+              "raw_size": 190,
+              "readable_path": "text/84212bbc3c80de4a83da2feec83ae99be2249d12a354c36daefa6d3cbbb0cb7b.utf8.txt",
+              "readable_sha256": "84212bbc3c80de4a83da2feec83ae99be2249d12a354c36daefa6d3cbbb0cb7b",
+              "readable_size": 190,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/2b8aa370afa68b3c7cb1fb4f5f46328063346ebc2b1709acfe9f15f3820ee481.bin",
+              "raw_sha256": "2b8aa370afa68b3c7cb1fb4f5f46328063346ebc2b1709acfe9f15f3820ee481",
+              "raw_size": 146,
+              "readable_path": "text/2b8aa370afa68b3c7cb1fb4f5f46328063346ebc2b1709acfe9f15f3820ee481.utf8.txt",
+              "readable_sha256": "f819e2a9f87bceb6f09707968a4078c4f8df027265e9ffd311f5b32f77f9566a",
+              "readable_size": 159,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "1c29a4bf493b69100690655f34ee89d1cb9a539c0ce0b5542ce22d2d8b5962c8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_LIMIT_LIMIT_FAULT_3_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "LIMIT"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Direct method-as-command, counted argument helpers; Native two modes and PyEmuera one mode.",
+        "condition": {
+          "fixture_vector_label": {
+            "x": 4,
+            "min": 4,
+            "max": 8
+          },
+          "faulting_helper_slot": 3,
+          "fault": "C=0; the selected helper divides 1 by C before returning",
+          "qualification": "The label describes fixture parameters; the faulting argument does not return and not all arguments necessarily reach the command."
+        },
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=3 COUNT=3 ORDER=123 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 31,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "native-02",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=3 COUNT=3 ORDER=123 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "division by zero",
+            "diagnostic_excerpt": "エラー内容：0による除算が行なわれました",
+            "reported_fixture_line": 31,
+            "after_or_done_observed": false
+          },
+          {
+            "mode": "py",
+            "selected_helper_markers": [
+              "HELPER LIMIT_4_4_8 SLOT=1 COUNT=1 ORDER=1 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=2 COUNT=2 ORDER=12 RESULT=777 RESULTS=[SENTINEL]",
+              "HELPER LIMIT_4_4_8 SLOT=3 COUNT=3 ORDER=123 RESULT=777 RESULTS=[SENTINEL]"
+            ],
+            "diagnostic": "E_ARITH",
+            "diagnostic_excerpt": "E_ARITH: 0による除算が行なわれました",
+            "reported_fixture_line": 31,
+            "after_or_done_observed": false
+          }
+        ],
+        "comparison": "Selected helper markers agree across saved modes; Native diagnoses division by zero and PyEmuera reports E_ARITH. Diagnostic formats differ.",
+        "unobserved": "The command result, post-error RESULT/RESULTS and any unreached helper are not inferred. Native natural exit is unobserved; parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/2ec36fae65ba43c498f2b54d146b6fc6dbc15a95ad9a89fd2376d26278b0b88c.bin",
+              "raw_sha256": "2ec36fae65ba43c498f2b54d146b6fc6dbc15a95ad9a89fd2376d26278b0b88c",
+              "raw_size": 888,
+              "readable_path": "text/2ec36fae65ba43c498f2b54d146b6fc6dbc15a95ad9a89fd2376d26278b0b88c.utf8.txt",
+              "readable_sha256": "5766f435417a6e7aa0572e60889867482adf82457ccd4a2a2a1d926052027bc5",
+              "readable_size": 571,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "666439f073955336ba8087248a4fe9b84fe59361059b02e021397392e76819ac",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/2ec36fae65ba43c498f2b54d146b6fc6dbc15a95ad9a89fd2376d26278b0b88c.bin",
+              "raw_sha256": "2ec36fae65ba43c498f2b54d146b6fc6dbc15a95ad9a89fd2376d26278b0b88c",
+              "raw_size": 888,
+              "readable_path": "text/2ec36fae65ba43c498f2b54d146b6fc6dbc15a95ad9a89fd2376d26278b0b88c.utf8.txt",
+              "readable_sha256": "5766f435417a6e7aa0572e60889867482adf82457ccd4a2a2a1d926052027bc5",
+              "readable_size": 571,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "666439f073955336ba8087248a4fe9b84fe59361059b02e021397392e76819ac",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/936659b52150e05ddd064328bd607fea7068172fbde05589fc6bc19214c6be0d.bin",
+              "raw_sha256": "936659b52150e05ddd064328bd607fea7068172fbde05589fc6bc19214c6be0d",
+              "raw_size": 265,
+              "readable_path": "text/936659b52150e05ddd064328bd607fea7068172fbde05589fc6bc19214c6be0d.utf8.txt",
+              "readable_sha256": "936659b52150e05ddd064328bd607fea7068172fbde05589fc6bc19214c6be0d",
+              "readable_size": 265,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/90e7280a1f9dfe4f281102b47f007debe54ebe8edd71992201748d69d09f8a89.bin",
+              "raw_sha256": "90e7280a1f9dfe4f281102b47f007debe54ebe8edd71992201748d69d09f8a89",
+              "raw_size": 146,
+              "readable_path": "text/90e7280a1f9dfe4f281102b47f007debe54ebe8edd71992201748d69d09f8a89.utf8.txt",
+              "readable_sha256": "1fef693a9605ae64f13799d7236eefbebaa5cf327ccc460acbe2ff448147448a",
+              "readable_size": 159,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "666439f073955336ba8087248a4fe9b84fe59361059b02e021397392e76819ac",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "METHOD_BOUNDARY_LIMIT_NORMAL_20261115",
+      "targets": [
+        {
+          "kind": "method_as_command",
+          "name": "LIMIT"
+        }
+      ],
+      "scenario_verdict": "different_scoped",
+      "observation": {
+        "scope": "Direct method-as-command; one shared INRANGE/LIMIT fixture and three saved mode records. Only this case target is projected.",
+        "condition": "Each vector starts with A=0, B=0, RESULT=777 and RESULTS=SENTINEL; x/min/max use counted helpers.",
+        "vectors_and_results": [
+          {
+            "x": 3,
+            "min": 4,
+            "max": 8,
+            "native_result": 4,
+            "pyemuera_result": 4
+          },
+          {
+            "x": 4,
+            "min": 4,
+            "max": 8,
+            "native_result": 4,
+            "pyemuera_result": 4
+          },
+          {
+            "x": 8,
+            "min": 4,
+            "max": 8,
+            "native_result": 8,
+            "pyemuera_result": 8
+          },
+          {
+            "x": 9,
+            "min": 4,
+            "max": 8,
+            "native_result": 8,
+            "pyemuera_result": 8
+          },
+          {
+            "x": 3,
+            "min": 8,
+            "max": 4,
+            "native_result": 8,
+            "pyemuera_result": 8
+          },
+          {
+            "x": 4,
+            "min": 8,
+            "max": 4,
+            "native_result": 8,
+            "pyemuera_result": 8
+          },
+          {
+            "x": 8,
+            "min": 8,
+            "max": 4,
+            "native_result": 4,
+            "pyemuera_result": 8
+          },
+          {
+            "x": 9,
+            "min": 8,
+            "max": 4,
+            "native_result": 4,
+            "pyemuera_result": 8
+          }
+        ],
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_after_markers": [
+              "AFTER LIMIT_3_4_8 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_4_4_8 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_8_4_8 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_9_4_8 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_3_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_4_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_8_8_4 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_9_8_4 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]"
+            ],
+            "done_observed": true
+          },
+          {
+            "mode": "native-02",
+            "selected_after_markers": [
+              "AFTER LIMIT_3_4_8 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_4_4_8 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_8_4_8 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_9_4_8 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_3_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_4_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_8_8_4 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_9_8_4 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]"
+            ],
+            "done_observed": true
+          },
+          {
+            "mode": "py",
+            "selected_after_markers": [
+              "AFTER LIMIT_3_4_8 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_4_4_8 COUNT=3 ORDER=123 RESULT=4 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_8_4_8 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_9_4_8 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_3_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_4_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_8_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]",
+              "AFTER LIMIT_9_8_4 COUNT=3 ORDER=123 RESULT=8 RESULTS=[SENTINEL]"
+            ],
+            "done_observed": true
+          }
+        ],
+        "comparison": "For LIMIT with min=8 and max=4, x=8 and x=9 produce Native RESULT=4 and PyEmuera RESULT=8; the other six selected vectors match.",
+        "unobserved": "Native natural exit and exit code; full target compatibility. Parent acceptance was pending in the original record.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.bin",
+              "raw_sha256": "f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239",
+              "raw_size": 10044,
+              "readable_path": "text/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.utf8.txt",
+              "readable_sha256": "db22975d699ea82ddbf4df13613d2392347d5727e494166f4a140648875e84a6",
+              "readable_size": 5021,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "ebec44e313b72494dc39f4520efeacd4d7d9e04b94d801eaa698a4915da16058",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.bin",
+              "raw_sha256": "f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239",
+              "raw_size": 10044,
+              "readable_path": "text/f9ac29b8764700f2e606748b9a9f2987a776db12afe1be2b22612d6d26de6239.utf8.txt",
+              "readable_sha256": "db22975d699ea82ddbf4df13613d2392347d5727e494166f4a140648875e84a6",
+              "readable_size": 5021,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "ebec44e313b72494dc39f4520efeacd4d7d9e04b94d801eaa698a4915da16058",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        },
+        {
+          "mode": "py",
+          "materials": [
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/58b874e53b84bf355f766b1bf96827e401d55a4e7bb8c45b1887a4b6608c5779.bin",
+              "raw_sha256": "58b874e53b84bf355f766b1bf96827e401d55a4e7bb8c45b1887a4b6608c5779",
+              "raw_size": 5079,
+              "readable_path": "text/58b874e53b84bf355f766b1bf96827e401d55a4e7bb8c45b1887a4b6608c5779.utf8.txt",
+              "readable_sha256": "2fcc8efdeca24e557cf1c2359d4e328f764d3b8c67cec12f5c0a266bcbebd36a",
+              "readable_size": 5099,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.bin",
+              "raw_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "raw_size": 110,
+              "readable_path": "text/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.utf8.txt",
+              "readable_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "readable_size": 110,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "ebec44e313b72494dc39f4520efeacd4d7d9e04b94d801eaa698a4915da16058",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            },
+            "supplemental_erh": {
+              "sha256": "4dd362dcaf4ff8c57cff979af0fb77108d447a663207b5ef5d3eedb85145add4",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    },
+    {
+      "case_id": "PRINTVWPOSTWAITTRACE01",
+      "targets": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTVW"
+        }
+      ],
+      "scenario_verdict": "matched_scoped",
+      "observation": {
+        "scope": "Selected PRINTVW wait/resume and one helper evaluation; saved logs only.",
+        "condition": "PRINTVW ZZVWAIT(); Native receives one Return in an empty RichEdit; PyEmuera receives one LF empty line. The helper increments A and sets RESULT=9 and RESULTS=AFTER before returning 17.",
+        "modes": [
+          {
+            "mode": "native-01",
+            "selected_lines": [
+              "BEFORE_PRINTVW A=0 RESULT=5 RESULTS=\"BEFORE\"",
+              "17",
+              "AFTER_PRINTVW A=1 RESULT=9 RESULTS=\"AFTER\""
+            ]
+          },
+          {
+            "mode": "native-02",
+            "selected_lines": [
+              "BEFORE_PRINTVW A=0 RESULT=5 RESULTS=\"BEFORE\"",
+              "17",
+              "AFTER_PRINTVW A=1 RESULT=9 RESULTS=\"AFTER\""
+            ]
+          },
+          {
+            "mode": "public-01",
+            "selected_lines": [
+              "BEFORE_PRINTVW A=0 RESULT=5 RESULTS=\"BEFORE\"",
+              "17",
+              "AFTER_PRINTVW A=1 RESULT=9 RESULTS=\"AFTER\""
+            ]
+          },
+          {
+            "mode": "public-02",
+            "selected_lines": [
+              "BEFORE_PRINTVW A=0 RESULT=5 RESULTS=\"BEFORE\"",
+              "17",
+              "AFTER_PRINTVW A=1 RESULT=9 RESULTS=\"AFTER\""
+            ]
+          }
+        ],
+        "comparison": "All four saved emuera.log files have identical SHA-256 and contain the selected before, 17 and after lines once.",
+        "unobserved": "Native natural exit and exit code; GUI pixels and other PRINTV forms.",
+        "material_availability": "Selected raw outputs listed under modes are included byte-for-byte. The original register, fixtures, configuration and receipts are not included."
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.bin",
+              "raw_sha256": "47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e",
+              "raw_size": 222,
+              "readable_path": "text/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.utf8.txt",
+              "readable_sha256": "3caedf2cb8a096c939282753a9846a56aa6fefe26ea99e5a496814e11606892c",
+              "readable_size": 110,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "340a477519fa251b181dac41748003542c3416cb46134046288cc84ce1ddf1d8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "materials": [
+            {
+              "role": "native_emuera_log",
+              "raw_path": "raw/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.bin",
+              "raw_sha256": "47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e",
+              "raw_size": 222,
+              "readable_path": "text/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.utf8.txt",
+              "readable_sha256": "3caedf2cb8a096c939282753a9846a56aa6fefe26ea99e5a496814e11606892c",
+              "readable_size": 110,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "340a477519fa251b181dac41748003542c3416cb46134046288cc84ce1ddf1d8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "materials": [
+            {
+              "role": "public_emuera_log",
+              "raw_path": "raw/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.bin",
+              "raw_sha256": "47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e",
+              "raw_size": 222,
+              "readable_path": "text/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.utf8.txt",
+              "readable_sha256": "3caedf2cb8a096c939282753a9846a56aa6fefe26ea99e5a496814e11606892c",
+              "readable_size": 110,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/018d0ed07de83b4e6c2cc7db7d85a2f7f57c4230e12e9a2ab00bd7e94c88aece.bin",
+              "raw_sha256": "018d0ed07de83b4e6c2cc7db7d85a2f7f57c4230e12e9a2ab00bd7e94c88aece",
+              "raw_size": 170,
+              "readable_path": "text/018d0ed07de83b4e6c2cc7db7d85a2f7f57c4230e12e9a2ab00bd7e94c88aece.utf8.txt",
+              "readable_sha256": "3591600054f94f19a86490949ccd5a38793e71c19ec8f2cbda93b4707520d55e",
+              "readable_size": 190,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.bin",
+              "raw_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "raw_size": 110,
+              "readable_path": "text/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.utf8.txt",
+              "readable_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "readable_size": 110,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "340a477519fa251b181dac41748003542c3416cb46134046288cc84ce1ddf1d8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            }
+          }
+        },
+        {
+          "mode": "public-02",
+          "materials": [
+            {
+              "role": "public_emuera_log",
+              "raw_path": "raw/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.bin",
+              "raw_sha256": "47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e",
+              "raw_size": 222,
+              "readable_path": "text/47d92d0274d091d9a3efef772675c6b3f87e2700dfaca6fa1c97b87eb142360e.utf8.txt",
+              "readable_sha256": "3caedf2cb8a096c939282753a9846a56aa6fefe26ea99e5a496814e11606892c",
+              "readable_size": 110,
+              "decode": "utf-16 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stdout",
+              "raw_path": "raw/018d0ed07de83b4e6c2cc7db7d85a2f7f57c4230e12e9a2ab00bd7e94c88aece.bin",
+              "raw_sha256": "018d0ed07de83b4e6c2cc7db7d85a2f7f57c4230e12e9a2ab00bd7e94c88aece",
+              "raw_size": 170,
+              "readable_path": "text/018d0ed07de83b4e6c2cc7db7d85a2f7f57c4230e12e9a2ab00bd7e94c88aece.utf8.txt",
+              "readable_sha256": "3591600054f94f19a86490949ccd5a38793e71c19ec8f2cbda93b4707520d55e",
+              "readable_size": 190,
+              "decode": "cp932 strict to UTF-8; no Unicode or newline normalization"
+            },
+            {
+              "role": "public_process_stderr",
+              "raw_path": "raw/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.bin",
+              "raw_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "raw_size": 110,
+              "readable_path": "text/59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc.utf8.txt",
+              "readable_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+              "readable_size": 110,
+              "decode": "utf-8 strict to UTF-8; no Unicode or newline normalization"
+            }
+          ],
+          "inputs": {
+            "fixture": {
+              "sha256": "340a477519fa251b181dac41748003542c3416cb46134046288cc84ce1ddf1d8",
+              "status": "NOT_INCLUDED_AUTHORSHIP_AND_LICENSE_UNRESOLVED"
+            },
+            "configuration": {
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "status": "NOT_INCLUDED_REVIEW_REQUIRED"
+            }
+          }
+        }
+      ],
+      "scope": "Saved observations only; private evidence review draft; not independent execution or publication approval."
+    }
+  ]
+}

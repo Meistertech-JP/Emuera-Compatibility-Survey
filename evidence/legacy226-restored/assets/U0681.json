@@ -1,0 +1,593 @@
+{
+  "case": 280,
+  "family": "TOUPPER/TOLOWER casing function forms",
+  "proposal_only": true,
+  "applied": false,
+  "accepted": 4,
+  "rejected": 0,
+  "rows": [
+    {
+      "kind": "expression_function",
+      "name": "TOLOWER",
+      "accepted": true,
+      "comparison_outcome": "matched_in_finite_scope",
+      "necessary_comparison_complete_proposed": true,
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/58/requirements/0",
+          "disposition": "SATISFIED_EXACT_CONSTRUCTOR_FIXED_SIGNATURE_ACTIVE_SOURCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/58/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_CALL_WITH_THREE_ROUTE_SELECTED_RAW",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_source_and_selected_evidence_reviewed",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/58/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_ALREADY_REVIEWED_FINITE_SCOPE_EMPTY_NONEMPTY; no additional generic error/culture axes",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/58/requirements/3",
+          "disposition": "SATISFIED_SOURCE_PLUS_SELECTED_OWN_RETURN_SCOPE; expression sentinels unobserved, method RESULTS/RESULT777/helper1 printed",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/58/requirements/4",
+          "disposition": "RETAINED_LEGACY_PUBLIC_IDENTITY_GAP_NOT_RETROFILLED; independent of original finite condition gap",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        }
+      ],
+      "original_finite_missing_conditions": [],
+      "original_source_branches": [
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2421-2421",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2422-2422",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2423-2423",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2427-2427",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2429-2429",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2431-2431",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2433-2433",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2435-2435",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        }
+      ],
+      "constructor_branch_dispositions": "SOURCE_REVIEW.json#/constructor_applicability",
+      "own_normal": {
+        "raw_suite": 130,
+        "selected_lines": [
+          {
+            "line": 5,
+            "text": "TOLOWER0=[]"
+          },
+          {
+            "line": 6,
+            "text": "TOLOWER1=[az αβγ]"
+          },
+          {
+            "line": 7,
+            "text": "TOLOWER2=[ ａｚ！ ]"
+          }
+        ],
+        "all_three_routes_identical": true,
+        "registered_case_ids": [
+          "TOLOWERBASE01",
+          "STYLEBOUND_TOLOWER"
+        ]
+      },
+      "exact_shared_path_ref": "S9f7efcbbcff2cbc5",
+      "remaining": [],
+      "finite_remainder": [],
+      "historical_identity": {
+        "case_ids": [
+          "TOLOWERBASE01",
+          "STYLEBOUND_TOLOWER"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "historical_gap_retrofilled": false,
+      "correlator_metadata_review": {
+        "original_false_equal_flags": 1,
+        "disposition": "Original flags preserved. Exact target marker extraction from identical complete three-route logs is used instead of treating old selected_equal=false flags as engine mismatches; cause of old correlation flag not inferred."
+      },
+      "no_runtime_borrowing": "133/135 cover TOHALF/FULL; not credited as own TOUPPER/LOWER helper or negative executions. METHODCMD13 pilot and unrelated observers not used.",
+      "limitations": [
+        "Expression130 independent RESULT/RESULTS sentinel snapshots unobserved; source nonwriting path only.",
+        "Native natural exit unobserved; cleanup distinct.",
+        "Historical public runtime identity receipt gap retained.",
+        "No universal culture/Unicode equivalence or negative parser execution claim."
+      ],
+      "parent_must_apply": true
+    },
+    {
+      "kind": "expression_function",
+      "name": "TOUPPER",
+      "accepted": true,
+      "comparison_outcome": "matched_in_finite_scope",
+      "necessary_comparison_complete_proposed": true,
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/60/requirements/0",
+          "disposition": "SATISFIED_EXACT_CONSTRUCTOR_FIXED_SIGNATURE_ACTIVE_SOURCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/60/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_CALL_WITH_THREE_ROUTE_SELECTED_RAW",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_source_and_selected_evidence_reviewed",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/60/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_ALREADY_REVIEWED_FINITE_SCOPE_EMPTY_NONEMPTY; no additional generic error/culture axes",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/60/requirements/3",
+          "disposition": "SATISFIED_SOURCE_PLUS_SELECTED_OWN_RETURN_SCOPE; expression sentinels unobserved, method RESULTS/RESULT777/helper1 printed",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/60/requirements/4",
+          "disposition": "RETAINED_LEGACY_PUBLIC_IDENTITY_GAP_NOT_RETROFILLED; independent of original finite condition gap",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/0"
+          ],
+          "runtime_source_only_credit": false
+        }
+      ],
+      "original_finite_missing_conditions": [],
+      "original_source_branches": [
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2421-2421",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2422-2422",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2423-2423",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2427-2427",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2429-2429",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2431-2431",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2433-2433",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2435-2435",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        }
+      ],
+      "constructor_branch_dispositions": "SOURCE_REVIEW.json#/constructor_applicability",
+      "own_normal": {
+        "raw_suite": 130,
+        "selected_lines": [
+          {
+            "line": 2,
+            "text": "TOUPPER0=[]"
+          },
+          {
+            "line": 3,
+            "text": "TOUPPER1=[AZ ΑΒΓ]"
+          },
+          {
+            "line": 4,
+            "text": "TOUPPER2=[ ＡＺ！ ]"
+          }
+        ],
+        "all_three_routes_identical": true,
+        "registered_case_ids": [
+          "TOUPPERBASE01",
+          "STYLEBOUND_TOUPPER"
+        ]
+      },
+      "exact_shared_path_ref": "S44f100c27d16e225",
+      "remaining": [],
+      "finite_remainder": [],
+      "historical_identity": {
+        "case_ids": [
+          "TOUPPERBASE01",
+          "STYLEBOUND_TOUPPER"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "historical_gap_retrofilled": false,
+      "correlator_metadata_review": {
+        "original_false_equal_flags": 1,
+        "disposition": "Original flags preserved. Exact target marker extraction from identical complete three-route logs is used instead of treating old selected_equal=false flags as engine mismatches; cause of old correlation flag not inferred."
+      },
+      "no_runtime_borrowing": "133/135 cover TOHALF/FULL; not credited as own TOUPPER/LOWER helper or negative executions. METHODCMD13 pilot and unrelated observers not used.",
+      "limitations": [
+        "Expression130 independent RESULT/RESULTS sentinel snapshots unobserved; source nonwriting path only.",
+        "Native natural exit unobserved; cleanup distinct.",
+        "Historical public runtime identity receipt gap retained.",
+        "No universal culture/Unicode equivalence or negative parser execution claim."
+      ],
+      "parent_must_apply": true
+    },
+    {
+      "kind": "method_as_command",
+      "name": "TOLOWER",
+      "accepted": true,
+      "comparison_outcome": "matched_in_finite_scope",
+      "necessary_comparison_complete_proposed": true,
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/123/requirements/0",
+          "disposition": "SATISFIED_EXACT_CONSTRUCTOR_FIXED_SIGNATURE_ACTIVE_SOURCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/123/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_CALL_WITH_THREE_ROUTE_SELECTED_RAW",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_source_and_selected_evidence_reviewed",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/123/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_ALREADY_REVIEWED_FINITE_SCOPE_EMPTY_NONEMPTY; no additional generic error/culture axes",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/123/requirements/3",
+          "disposition": "SATISFIED_SOURCE_PLUS_SELECTED_OWN_RETURN_SCOPE; expression sentinels unobserved, method RESULTS/RESULT777/helper1 printed",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/123/requirements/4",
+          "disposition": "RETAINED_LEGACY_PUBLIC_IDENTITY_GAP_NOT_RETROFILLED; independent of original finite condition gap",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        }
+      ],
+      "original_finite_missing_conditions": [],
+      "original_source_branches": [
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2421-2421",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2422-2422",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2423-2423",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2427-2427",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2429-2429",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2431-2431",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2433-2433",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2435-2435",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        }
+      ],
+      "constructor_branch_dispositions": "SOURCE_REVIEW.json#/constructor_applicability",
+      "own_normal": {
+        "raw_suite": 134,
+        "selected_lines": [
+          {
+            "line": 4,
+            "text": "TOLOWER0 COUNT=1 RESULT=777 RESULTS=[azあ]"
+          },
+          {
+            "line": 5,
+            "text": "TOLOWER1 COUNT=1 RESULT=777 RESULTS=[]"
+          }
+        ],
+        "all_three_routes_identical": true,
+        "registered_case_ids": [
+          "METHODCMD13",
+          "METHODCONVERT_TOLOWER"
+        ]
+      },
+      "exact_shared_path_ref": "S6d306137ca843804",
+      "remaining": [],
+      "finite_remainder": [],
+      "historical_identity": {
+        "case_ids": [
+          "METHODCMD13",
+          "METHODCONVERT_TOLOWER"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "historical_gap_retrofilled": false,
+      "correlator_metadata_review": {
+        "original_false_equal_flags": 0,
+        "disposition": "Original flags preserved. Exact target marker extraction from identical complete three-route logs is used instead of treating old selected_equal=false flags as engine mismatches; cause of old correlation flag not inferred."
+      },
+      "no_runtime_borrowing": "133/135 cover TOHALF/FULL; not credited as own TOUPPER/LOWER helper or negative executions. METHODCMD13 pilot and unrelated observers not used.",
+      "limitations": [
+        "Expression130 independent RESULT/RESULTS sentinel snapshots unobserved; source nonwriting path only.",
+        "Native natural exit unobserved; cleanup distinct.",
+        "Historical public runtime identity receipt gap retained.",
+        "No universal culture/Unicode equivalence or negative parser execution claim."
+      ],
+      "parent_must_apply": true
+    },
+    {
+      "kind": "method_as_command",
+      "name": "TOUPPER",
+      "accepted": true,
+      "comparison_outcome": "matched_in_finite_scope",
+      "necessary_comparison_complete_proposed": true,
+      "requirements": [
+        {
+          "axis": "exact_signature_dispatch",
+          "original_state": "source_compared",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/125/requirements/0",
+          "disposition": "SATISFIED_EXACT_CONSTRUCTOR_FIXED_SIGNATURE_ACTIVE_SOURCE",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "normal",
+          "original_state": "own_reached_selected_observation",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/125/requirements/1",
+          "disposition": "SATISFIED_OWN_DIRECT_CALL_WITH_THREE_ROUTE_SELECTED_RAW",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "finite_boundary_sideeffect_error",
+          "original_state": "finite_source_and_selected_evidence_reviewed",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/125/requirements/2",
+          "disposition": "SATISFIED_ORIGINAL_ALREADY_REVIEWED_FINITE_SCOPE_EMPTY_NONEMPTY; no additional generic error/culture axes",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "form_result_routing",
+          "original_state": "source_compared_with_selected_raw_only",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/125/requirements/3",
+          "disposition": "SATISFIED_SOURCE_PLUS_SELECTED_OWN_RETURN_SCOPE; expression sentinels unobserved, method RESULTS/RESULT777/helper1 printed",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        },
+        {
+          "axis": "historical_public_runtime_identity",
+          "original_state": "legacy_receipt_gap",
+          "original_requirement_pointer": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-function-evidence-review-20261113\\MATRIX.json#/rows/125/requirements/4",
+          "disposition": "RETAINED_LEGACY_PUBLIC_IDENTITY_GAP_NOT_RETROFILLED; independent of original finite condition gap",
+          "evidence": [
+            "SOURCE_REVIEW.json",
+            "RAW_REVIEW.json#/1"
+          ],
+          "runtime_source_only_credit": false
+        }
+      ],
+      "original_finite_missing_conditions": [],
+      "original_source_branches": [
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2421-2421",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2422-2422",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2423-2423",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2427-2427",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2429-2429",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2431-2431",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2433-2433",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        },
+        {
+          "source_branch": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08:2435-2435",
+          "obligation": "Compare the finite branch and its operand-read/return/error placement; credited runtime selections are the explicit own witnesses only."
+        }
+      ],
+      "constructor_branch_dispositions": "SOURCE_REVIEW.json#/constructor_applicability",
+      "own_normal": {
+        "raw_suite": 134,
+        "selected_lines": [
+          {
+            "line": 2,
+            "text": "TOUPPER0 COUNT=1 RESULT=777 RESULTS=[AZあ]"
+          },
+          {
+            "line": 3,
+            "text": "TOUPPER1 COUNT=1 RESULT=777 RESULTS=[]"
+          }
+        ],
+        "all_three_routes_identical": true,
+        "registered_case_ids": [
+          "METHODCMD13",
+          "METHODCONVERT_TOUPPER"
+        ]
+      },
+      "exact_shared_path_ref": "S3484bcd59db12af6",
+      "remaining": [],
+      "finite_remainder": [],
+      "historical_identity": {
+        "case_ids": [
+          "METHODCMD13",
+          "METHODCONVERT_TOUPPER"
+        ],
+        "retrofilled": false,
+        "independent_of_runtime_condition_gap": true
+      },
+      "historical_gap_retrofilled": false,
+      "correlator_metadata_review": {
+        "original_false_equal_flags": 0,
+        "disposition": "Original flags preserved. Exact target marker extraction from identical complete three-route logs is used instead of treating old selected_equal=false flags as engine mismatches; cause of old correlation flag not inferred."
+      },
+      "no_runtime_borrowing": "133/135 cover TOHALF/FULL; not credited as own TOUPPER/LOWER helper or negative executions. METHODCMD13 pilot and unrelated observers not used.",
+      "limitations": [
+        "Expression130 independent RESULT/RESULTS sentinel snapshots unobserved; source nonwriting path only.",
+        "Native natural exit unobserved; cleanup distinct.",
+        "Historical public runtime identity receipt gap retained.",
+        "No universal culture/Unicode equivalence or negative parser execution claim."
+      ],
+      "parent_must_apply": true
+    }
+  ],
+  "new_execution_required": false,
+  "new_conditions": 0,
+  "new_fixtures": 0,
+  "new_native": 0,
+  "new_public": 0,
+  "root_changes": 0,
+  "new_registration_records": 0
+}

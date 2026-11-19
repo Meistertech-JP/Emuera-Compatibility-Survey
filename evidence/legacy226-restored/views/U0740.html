@@ -1,0 +1,80 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0740 · ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0740 · ADJUDICATION.json</h1>
+<p>原票種別=ADJUDICATION.json; 参照対象=command_or_syntax:IF。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;IF&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;; native_natural_exit_observed=false。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>cf30ef7e60f27856813dda0aeded652db679717e25efb94174d0f9aec58da043</code></p>
+<p><a href="../assets/U0740.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>cf30ef7e60f27856813dda0aeded652db679717e25efb94174d0f9aec58da043</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;parent-target-finite-scope-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-15T05:37:39.779212+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;IF&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;scope&quot;: &quot;Observed branch evaluation for case269 P1/P2 and the execution-progress difference in three recorded unclosed-IF cases P38B/P38UNUSED01/P38CALL01; other IF forms excluded.&quot;,
+  &quot;case_ids&quot;: [
+    &quot;P38B&quot;,
+    &quot;PILOTIF13&quot;,
+    &quot;P38UNUSED01&quot;,
+    &quot;P38CALL01&quot;,
+    &quot;ELSEENDIF01&quot;,
+    &quot;ELSEIF01&quot;,
+    &quot;IFCHAIN269_P1&quot;,
+    &quot;IFCHAIN269_P2&quot;
+  ],
+  &quot;p38_source_members&quot;: {
+    &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/Program.cs&quot;: {
+      &quot;sha256&quot;: &quot;6ffff0de0673243a19081ad59bf82f4943db8dad1a3c707c1411f82bef7140e1&quot;,
+      &quot;size&quot;: 6217
+    },
+    &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.cs&quot;: {
+      &quot;sha256&quot;: &quot;ef8ecc12e0321091127f600e581932986a50d2bd94b22fc4acae82921507e362&quot;,
+      &quot;size&quot;: 18725
+    },
+    &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs&quot;: {
+      &quot;sha256&quot;: &quot;00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab&quot;,
+      &quot;size&quot;: 62268
+    },
+    &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/ParserMediator.cs&quot;: {
+      &quot;sha256&quot;: &quot;9531ddcff5adb7543ff26db818962d8bae8dfad139039497aa0454cbf2670cf1&quot;,
+      &quot;size&quot;: 5632
+    },
+    &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs&quot;: {
+      &quot;sha256&quot;: &quot;fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb&quot;,
+      &quot;size&quot;: 37245
+    }
+  },
+  &quot;p38_audit_sha256&quot;: &quot;cc06e3a59273687081014df53c08cbe215f346108dbc4befdecc40d0541f061f&quot;,
+  &quot;p38_third_party_review_sha256&quot;: &quot;1facc48b623502fcdc545b16c930128b739ce514c606d72f02d74ea19441aa17&quot;,
+  &quot;case269_comparison_sha256&quot;: &quot;0e3e478dc63931161676962206a4bc5ed7b63d0883e7927bddb729aabdf7c544&quot;,
+  &quot;case269_log_sha256&quot;: &quot;38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad&quot;,
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+  &quot;v24_archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+  &quot;registered_evidence_files_rehashed&quot;: 146,
+  &quot;historical_provenance_limitations&quot;: [
+    &quot;P38B Native executable hash absent&quot;,
+    &quot;P38B public before/after runtime receipt absent&quot;,
+    &quot;P38UNUSED01 and P38CALL01 public receipts contain single hash only&quot;,
+    &quot;P38UNUSED01 Native run has three saved captures but no input or terminal completion&quot;
+  ],
+  &quot;native_natural_exit_observed&quot;: false,
+  &quot;new_engine_execution&quot;: false,
+  &quot;product_modified&quot;: false,
+  &quot;published_artifacts_modified&quot;: false,
+  &quot;drive_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0090 · command_or_syntax:IF · acceptance</li>
+<li>L0091 · command_or_syntax:IF · check</li>
+</ul></html>

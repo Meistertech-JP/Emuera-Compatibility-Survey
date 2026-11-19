@@ -1,0 +1,92 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0688 · ZZ269.ERB</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0688 · ZZ269.ERB</h1>
+<p>U0688: IF/ELSEIFの短絡・評価順。C1/C2/C3/ORDER/ZERO=0、RET2=1、DEST=79から開始し未評価BADに1/ZEROを置く。第2段階RET2=RET3=0。ZZ269.ERHの8変数宣言を読取確認。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>b0511f825d4dfeaa76f514f5dadce429f393d957ea3c9a0e75cf06793662cb42</code></p>
+<p><a href="../assets/U0688.ERB">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>b0511f825d4dfeaa76f514f5dadce429f393d957ea3c9a0e75cf06793662cb42</code></p>
+<pre>@SYSTEM_TITLE
+ZZ269_C1 = 0
+ZZ269_C2 = 0
+ZZ269_C3 = 0
+ZZ269_ORDER = 0
+ZZ269_ZERO = 0
+ZZ269_RET2 = 1
+ZZ269_DEST = 79
+PRINTL ZZ269_P1_BEFORE=1
+OUTPUTLOG
+IF ZZ269_FIRST()
+    ZZ269_DEST = 11
+ELSEIF ZZ269_SECOND()
+    ZZ269_DEST = 22
+ELSEIF ZZ269_BAD()
+    ZZ269_DEST = 33
+ELSE
+    ZZ269_DEST = 44
+ENDIF
+PRINTFORML ZZ269_P1_DEST={ZZ269_DEST}
+PRINTFORML ZZ269_P1_C1={ZZ269_C1}
+PRINTFORML ZZ269_P1_C2={ZZ269_C2}
+PRINTFORML ZZ269_P1_C3={ZZ269_C3}
+PRINTFORML ZZ269_P1_ORDER={ZZ269_ORDER}
+PRINTL ZZ269_P1_AFTER=1
+OUTPUTLOG
+ZZ269_C1 = 0
+ZZ269_C2 = 0
+ZZ269_C3 = 0
+ZZ269_ORDER = 0
+ZZ269_RET2 = 0
+ZZ269_RET3 = 0
+ZZ269_DEST = 79
+PRINTL ZZ269_P2_BEFORE=1
+OUTPUTLOG
+IF ZZ269_FIRST()
+    ZZ269_DEST = 11
+ELSEIF ZZ269_SECOND()
+    ZZ269_DEST = 22
+ELSEIF ZZ269_THIRD()
+    ZZ269_DEST = 33
+ENDIF
+PRINTFORML ZZ269_P2_DEST={ZZ269_DEST}
+PRINTFORML ZZ269_P2_C1={ZZ269_C1}
+PRINTFORML ZZ269_P2_C2={ZZ269_C2}
+PRINTFORML ZZ269_P2_C3={ZZ269_C3}
+PRINTFORML ZZ269_P2_ORDER={ZZ269_ORDER}
+PRINTL ZZ269_P2_AFTER=1
+OUTPUTLOG
+QUIT
+
+@ZZ269_FIRST
+#FUNCTION
+ZZ269_C1 += 1
+ZZ269_ORDER = ZZ269_ORDER * 10 + 1
+RETURNF 0
+
+@ZZ269_SECOND
+#FUNCTION
+ZZ269_C2 += 1
+ZZ269_ORDER = ZZ269_ORDER * 10 + 2
+RETURNF ZZ269_RET2
+
+@ZZ269_BAD
+#FUNCTION
+ZZ269_C3 += 1
+ZZ269_ORDER = ZZ269_ORDER * 10 + 3
+RETURNF 1 / ZZ269_ZERO
+
+@ZZ269_THIRD
+#FUNCTION
+ZZ269_C3 += 1
+ZZ269_ORDER = ZZ269_ORDER * 10 + 3
+RETURNF ZZ269_RET3
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0098 · command_or_syntax:ELSEIF · check</li>
+<li>L0100 · command_or_syntax:ELSEIF · check</li>
+</ul></html>

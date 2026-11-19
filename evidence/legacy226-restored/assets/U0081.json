@@ -1,0 +1,24 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_RECT"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_PRINT_RECT_EXISTING_20261115.json",
+  "acceptance_sha256": "fed4c2f8a6a598360b24a942834d2954f4ea7cbafc960848bf86a1f8e59d2349",
+  "evidence_manifest_path": "evidence/print-shapes-images-20261113-229/MANIFEST.json",
+  "evidence_manifest_sha256": "3094a1eced7fc6ad1a97fe01353ec22ca95eda2cc5d5cce0c7518e9a682fc99c",
+  "registered_case_ids": [
+    "SHAPEIMG229_rect_valid",
+    "SHAPEIMG229_rect_first_invalid",
+    "SHAPEIMG229_rect_shape_fallback",
+    "SHAPEIMG229_skip_all",
+    "SHAPEIMG229_minimal-order"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

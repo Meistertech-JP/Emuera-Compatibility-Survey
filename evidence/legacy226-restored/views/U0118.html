@@ -1,0 +1,70 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0118 · PARENT_TRYCCALL_CASE285_ACCEPTANCE.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0118 · PARENT_TRYCCALL_CASE285_ACCEPTANCE.json</h1>
+<p>原票種別=PARENT_TRYCCALL_CASE285_ACCEPTANCE.json; 参照対象=command_or_syntax:TRYCCALL。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;TRYCCALL&quot;}; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>3af30e748f08d485e9064f470340553735abb91a393d0fd83d9ee2061d70236f</code></p>
+<p><a href="../assets/U0118.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3af30e748f08d485e9064f470340553735abb91a393d0fd83d9ee2061d70236f</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;parent-finite-command-acceptance-1&quot;,
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;TRYCCALL&quot;
+  },
+  &quot;obligation_id&quot;: &quot;target_TRYCCALL&quot;,
+  &quot;original_obligation&quot;: &quot;One supplied/default argument binding and counted operand trace on its literal TRYCCALL constructor; no catch-all-exception inference.&quot;,
+  &quot;accepted_case_ids&quot;: [
+    &quot;TRYTRANSFER285_TRYCCALL_supplied&quot;,
+    &quot;TRYTRANSFER285_TRYCCALL_default&quot;
+  ],
+  &quot;accepted_requirements&quot;: [
+    {
+      &quot;id&quot;: &quot;target_TRYCCALL&quot;,
+      &quot;basis&quot;: &quot;The literal TRYCCALL supplied-operand case binds the helper result 41 and observes its counted evaluation exactly once; an independently reset literal TRYCCALL with the operand omitted selects default ARG=73 and records COUNT=0. Native ran twice per condition and the pinned public pyz once; all selected state and continuation markers match.&quot;,
+      &quot;case_ids&quot;: [
+        &quot;TRYTRANSFER285_TRYCCALL_supplied&quot;,
+        &quot;TRYTRANSFER285_TRYCCALL_default&quot;
+      ]
+    }
+  ],
+  &quot;comparison_sha256&quot;: &quot;8f342fd455f6d830fad7efa379d11c83633db4a88fa612ca85c2968afd8dc44d&quot;,
+  &quot;manifest_sha256&quot;: &quot;15ae3422111726e2be641f50d1d7cc31ba6a9a875810405376cd009dacd1591f&quot;,
+  &quot;review_sha256&quot;: &quot;7c6074a8379e595b608ce331abca2f60c2163d1598c769e7a6e6ace3c7359a2c&quot;,
+  &quot;execution_readback_sha256&quot;: &quot;83b5fc820db3454147413165af489fd6dc7014569818dc976ae72437847c0cef&quot;,
+  &quot;registered_evidence_sha256&quot;: &quot;6003c2a5328eb4f7defc8798c417ac2482214d681184905af8ed85615620c58b&quot;,
+  &quot;source_fixture_sha256&quot;: &quot;08eae3157708554dc3d9073e4d6710cafd2e34bdbb58c057bc3ea8570c571ad3&quot;,
+  &quot;condition_results&quot;: [
+    {
+      &quot;id&quot;: &quot;TRYCCALL_default&quot;,
+      &quot;classification&quot;: &quot;MATCH_NORMAL_SCOPE&quot;,
+      &quot;native_repeat_equal&quot;: true,
+      &quot;markers_equal&quot;: true
+    },
+    {
+      &quot;id&quot;: &quot;TRYCCALL_supplied&quot;,
+      &quot;classification&quot;: &quot;MATCH_NORMAL_SCOPE&quot;,
+      &quot;native_repeat_equal&quot;: true,
+      &quot;markers_equal&quot;: true
+    }
+  ],
+  &quot;retained_limits&quot;: [
+    &quot;Acceptance is limited to the finite command_or_syntax TRYCCALL obligation; structural_syntax TRYCCALL remains open.&quot;,
+    &quot;No catch-all exception behavior is inferred.&quot;,
+    &quot;Native natural exit was unobserved; no post-fatal state is claimed.&quot;,
+    &quot;This does not close TRYCALL, TRYJUMP, or other TRY-family forms.&quot;
+  ],
+  &quot;global_completion&quot;: false,
+  &quot;product_changes&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1603 · command_or_syntax:TRYCCALL · acceptance</li>
+<li>L1604 · command_or_syntax:TRYCCALL · check</li>
+</ul></html>

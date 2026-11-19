@@ -1,0 +1,2142 @@
+{
+  "case": 196,
+  "observation_count": 20,
+  "fixture_count": 1,
+  "native_runs": 2,
+  "public_runs": 1,
+  "summary": {
+    "native_repeat_equal": 20,
+    "raw_equal": 15,
+    "layout_equal": 15,
+    "observable_content_equal": 20,
+    "state_equal": 20,
+    "evaluation_equal": 20
+  },
+  "raw_logs": {
+    "native-01": {
+      "path": "native-01/emuera.log",
+      "sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+      "size": 3252
+    },
+    "native-02": {
+      "path": "native-02/emuera.log",
+      "sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+      "size": 3252
+    },
+    "public-01": {
+      "path": "public-01/.pyemuera/logs/emuera.log",
+      "sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+      "size": 3302
+    }
+  },
+  "rows": [
+    {
+      "condition": {
+        "id": "C196_01",
+        "command": "PRINTPLAIN",
+        "argument": "p{ZZ196H(1)}",
+        "kind": "literal",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "2785ccd14503ea5dae269491b5a2d1d93fac8217b7f7bb58645ddd9047031721",
+          "raw_block": "C196_01_BEGIN\r\nP>p{ZZ196H(1)}<T\r\nC196_01_STATE A=0 B=0 R=701 S=sentinel\r\nC196_01_END\r\n",
+          "layout_body": "P>p{ZZ196H(1)}<T\r\n",
+          "layout_rows": [
+            "P>p{ZZ196H(1)}<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "p{ZZ196H(1)}"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "2785ccd14503ea5dae269491b5a2d1d93fac8217b7f7bb58645ddd9047031721",
+          "raw_block": "C196_01_BEGIN\r\nP>p{ZZ196H(1)}<T\r\nC196_01_STATE A=0 B=0 R=701 S=sentinel\r\nC196_01_END\r\n",
+          "layout_body": "P>p{ZZ196H(1)}<T\r\n",
+          "layout_rows": [
+            "P>p{ZZ196H(1)}<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "p{ZZ196H(1)}"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "2785ccd14503ea5dae269491b5a2d1d93fac8217b7f7bb58645ddd9047031721",
+          "raw_block": "C196_01_BEGIN\r\nP>p{ZZ196H(1)}<T\r\nC196_01_STATE A=0 B=0 R=701 S=sentinel\r\nC196_01_END\r\n",
+          "layout_body": "P>p{ZZ196H(1)}<T\r\n",
+          "layout_rows": [
+            "P>p{ZZ196H(1)}<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "p{ZZ196H(1)}"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_02",
+        "command": "PRINTPLAINFORM",
+        "argument": "f{ZZ196H(1)}/{ZZ196H(2)}",
+        "kind": "form",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "06083815bef88e1ef910edd3c47a535d31ddf99488a8f2eaa90ffa342a9d9d08",
+          "raw_block": "C196_02_BEGIN\r\nP>f1/2<T\r\nC196_02_STATE A=2 B=12 R=701 S=sentinel\r\nC196_02_END\r\n",
+          "layout_body": "P>f1/2<T\r\n",
+          "layout_rows": [
+            "P>f1/2<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "f1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "06083815bef88e1ef910edd3c47a535d31ddf99488a8f2eaa90ffa342a9d9d08",
+          "raw_block": "C196_02_BEGIN\r\nP>f1/2<T\r\nC196_02_STATE A=2 B=12 R=701 S=sentinel\r\nC196_02_END\r\n",
+          "layout_body": "P>f1/2<T\r\n",
+          "layout_rows": [
+            "P>f1/2<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "f1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "06083815bef88e1ef910edd3c47a535d31ddf99488a8f2eaa90ffa342a9d9d08",
+          "raw_block": "C196_02_BEGIN\r\nP>f1/2<T\r\nC196_02_STATE A=2 B=12 R=701 S=sentinel\r\nC196_02_END\r\n",
+          "layout_body": "P>f1/2<T\r\n",
+          "layout_rows": [
+            "P>f1/2<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "f1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_03",
+        "command": "PRINTSINGLE",
+        "argument": "s{ZZ196H(1)}",
+        "kind": "literal",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "06759631f4d02940ce92b8ffec0ca4e898e3fd45bfb0b2cb66bec63af9e58ac2",
+          "raw_block": "C196_03_BEGIN\r\nP>\r\ns{ZZ196H(1)}\r\n<T\r\nC196_03_STATE A=0 B=0 R=701 S=sentinel\r\nC196_03_END\r\n",
+          "layout_body": "P>\r\ns{ZZ196H(1)}\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s{ZZ196H(1)}",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s{ZZ196H(1)}"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "06759631f4d02940ce92b8ffec0ca4e898e3fd45bfb0b2cb66bec63af9e58ac2",
+          "raw_block": "C196_03_BEGIN\r\nP>\r\ns{ZZ196H(1)}\r\n<T\r\nC196_03_STATE A=0 B=0 R=701 S=sentinel\r\nC196_03_END\r\n",
+          "layout_body": "P>\r\ns{ZZ196H(1)}\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s{ZZ196H(1)}",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s{ZZ196H(1)}"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "06759631f4d02940ce92b8ffec0ca4e898e3fd45bfb0b2cb66bec63af9e58ac2",
+          "raw_block": "C196_03_BEGIN\r\nP>\r\ns{ZZ196H(1)}\r\n<T\r\nC196_03_STATE A=0 B=0 R=701 S=sentinel\r\nC196_03_END\r\n",
+          "layout_body": "P>\r\ns{ZZ196H(1)}\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s{ZZ196H(1)}",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s{ZZ196H(1)}"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_04",
+        "command": "PRINTSINGLEV",
+        "argument": "ZZ196H(1),\"/\",ZZ196H(2)",
+        "kind": "expressions",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "8ed515b5fb4d9708c879f93e225f26bfffe6c1bc594e4b3e7da6404e8d8b5427",
+          "raw_block": "C196_04_BEGIN\r\nP>\r\n1/2\r\n<T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n",
+          "layout_body": "P>\r\n1/2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "1/2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "8ed515b5fb4d9708c879f93e225f26bfffe6c1bc594e4b3e7da6404e8d8b5427",
+          "raw_block": "C196_04_BEGIN\r\nP>\r\n1/2\r\n<T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n",
+          "layout_body": "P>\r\n1/2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "1/2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "8ed515b5fb4d9708c879f93e225f26bfffe6c1bc594e4b3e7da6404e8d8b5427",
+          "raw_block": "C196_04_BEGIN\r\nP>\r\n1/2\r\n<T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n",
+          "layout_body": "P>\r\n1/2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "1/2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_05",
+        "command": "PRINTSINGLES",
+        "argument": "ZZ196T(1)",
+        "kind": "string-expression",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "0a440809bb82c9b026264d5324f4b39585ecbe4a33538bc5e91224f2f88b1fcd",
+          "raw_block": "C196_05_BEGIN\r\nP>\r\ns{ZZ196H(2)}\r\n<T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n",
+          "layout_body": "P>\r\ns{ZZ196H(2)}\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s{ZZ196H(2)}",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s{ZZ196H(2)}"
+          },
+          "state": {
+            "A": 1,
+            "B": 1,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_order_B": 1
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "0a440809bb82c9b026264d5324f4b39585ecbe4a33538bc5e91224f2f88b1fcd",
+          "raw_block": "C196_05_BEGIN\r\nP>\r\ns{ZZ196H(2)}\r\n<T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n",
+          "layout_body": "P>\r\ns{ZZ196H(2)}\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s{ZZ196H(2)}",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s{ZZ196H(2)}"
+          },
+          "state": {
+            "A": 1,
+            "B": 1,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_order_B": 1
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "0a440809bb82c9b026264d5324f4b39585ecbe4a33538bc5e91224f2f88b1fcd",
+          "raw_block": "C196_05_BEGIN\r\nP>\r\ns{ZZ196H(2)}\r\n<T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n",
+          "layout_body": "P>\r\ns{ZZ196H(2)}\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s{ZZ196H(2)}",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s{ZZ196H(2)}"
+          },
+          "state": {
+            "A": 1,
+            "B": 1,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_order_B": 1
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_06",
+        "command": "PRINTSINGLEFORM",
+        "argument": "f{ZZ196H(1)}/{ZZ196H(2)}",
+        "kind": "form",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "41b57b55ee8aae2bdea5554333133a189c45f314a76ef0b512c658b82c0bdab4",
+          "raw_block": "C196_06_BEGIN\r\nP>\r\nf1/2\r\n<T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n",
+          "layout_body": "P>\r\nf1/2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "f1/2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "f1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "41b57b55ee8aae2bdea5554333133a189c45f314a76ef0b512c658b82c0bdab4",
+          "raw_block": "C196_06_BEGIN\r\nP>\r\nf1/2\r\n<T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n",
+          "layout_body": "P>\r\nf1/2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "f1/2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "f1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "41b57b55ee8aae2bdea5554333133a189c45f314a76ef0b512c658b82c0bdab4",
+          "raw_block": "C196_06_BEGIN\r\nP>\r\nf1/2\r\n<T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n",
+          "layout_body": "P>\r\nf1/2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "f1/2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "f1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_07",
+        "command": "PRINTSINGLEFORMS",
+        "argument": "ZZ196T(1)",
+        "kind": "runtime-form",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "32d4a7f73eb65e14bf9c29b2302812f731d67edfb4fdcffb4b9a6376b0d69d62",
+          "raw_block": "C196_07_BEGIN\r\nP>\r\ns2\r\n<T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n",
+          "layout_body": "P>\r\ns2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "32d4a7f73eb65e14bf9c29b2302812f731d67edfb4fdcffb4b9a6376b0d69d62",
+          "raw_block": "C196_07_BEGIN\r\nP>\r\ns2\r\n<T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n",
+          "layout_body": "P>\r\ns2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "32d4a7f73eb65e14bf9c29b2302812f731d67edfb4fdcffb4b9a6376b0d69d62",
+          "raw_block": "C196_07_BEGIN\r\nP>\r\ns2\r\n<T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n",
+          "layout_body": "P>\r\ns2\r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            "s2",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "s2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_08",
+        "command": "PRINTLC",
+        "argument": "lc",
+        "kind": "literal",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "704fc74f6b6cdf2ecbb1a7cae24d61ec5d3d7ac8f1c1564e2cb42a324dfa9123",
+          "raw_block": "C196_08_BEGIN\r\nP>lc                        <T\r\nC196_08_STATE A=0 B=0 R=701 S=sentinel\r\nC196_08_END\r\n",
+          "layout_body": "P>lc                        <T\r\n",
+          "layout_rows": [
+            "P>lc                        <T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "lc"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "704fc74f6b6cdf2ecbb1a7cae24d61ec5d3d7ac8f1c1564e2cb42a324dfa9123",
+          "raw_block": "C196_08_BEGIN\r\nP>lc                        <T\r\nC196_08_STATE A=0 B=0 R=701 S=sentinel\r\nC196_08_END\r\n",
+          "layout_body": "P>lc                        <T\r\n",
+          "layout_rows": [
+            "P>lc                        <T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "lc"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "704fc74f6b6cdf2ecbb1a7cae24d61ec5d3d7ac8f1c1564e2cb42a324dfa9123",
+          "raw_block": "C196_08_BEGIN\r\nP>lc                        <T\r\nC196_08_STATE A=0 B=0 R=701 S=sentinel\r\nC196_08_END\r\n",
+          "layout_body": "P>lc                        <T\r\n",
+          "layout_rows": [
+            "P>lc                        <T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "lc"
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_09",
+        "command": "PRINTFORMLC",
+        "argument": "c{ZZ196H(1)}/{ZZ196H(2)}",
+        "kind": "form",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "071735931ebcf595d0e1ab006095ca538056d45380da266f133f44e3e3d9a0ae",
+          "raw_block": "C196_09_BEGIN\r\nP>c1/2                      <T\r\nC196_09_STATE A=2 B=12 R=701 S=sentinel\r\nC196_09_END\r\n",
+          "layout_body": "P>c1/2                      <T\r\n",
+          "layout_rows": [
+            "P>c1/2                      <T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "c1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "071735931ebcf595d0e1ab006095ca538056d45380da266f133f44e3e3d9a0ae",
+          "raw_block": "C196_09_BEGIN\r\nP>c1/2                      <T\r\nC196_09_STATE A=2 B=12 R=701 S=sentinel\r\nC196_09_END\r\n",
+          "layout_body": "P>c1/2                      <T\r\n",
+          "layout_rows": [
+            "P>c1/2                      <T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "c1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "071735931ebcf595d0e1ab006095ca538056d45380da266f133f44e3e3d9a0ae",
+          "raw_block": "C196_09_BEGIN\r\nP>c1/2                      <T\r\nC196_09_STATE A=2 B=12 R=701 S=sentinel\r\nC196_09_END\r\n",
+          "layout_body": "P>c1/2                      <T\r\n",
+          "layout_rows": [
+            "P>c1/2                      <T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": "c1/2"
+          },
+          "state": {
+            "A": 2,
+            "B": 12,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_order_B": 12
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_10",
+        "command": "PRINTPLAIN",
+        "argument": "",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "1d1f7ba66ba3f21b4815245a4ad2634586dac114eb9162aee377c946fc42205d",
+          "raw_block": "C196_10_BEGIN\r\nP><T\r\nC196_10_STATE A=0 B=0 R=701 S=sentinel\r\nC196_10_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "1d1f7ba66ba3f21b4815245a4ad2634586dac114eb9162aee377c946fc42205d",
+          "raw_block": "C196_10_BEGIN\r\nP><T\r\nC196_10_STATE A=0 B=0 R=701 S=sentinel\r\nC196_10_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "1d1f7ba66ba3f21b4815245a4ad2634586dac114eb9162aee377c946fc42205d",
+          "raw_block": "C196_10_BEGIN\r\nP><T\r\nC196_10_STATE A=0 B=0 R=701 S=sentinel\r\nC196_10_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_11",
+        "command": "PRINTPLAINFORM",
+        "argument": "",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "65e07db81ffff6f0d7d8358f51854d514bb854879ce696beb46be2e3651e5063",
+          "raw_block": "C196_11_BEGIN\r\nP><T\r\nC196_11_STATE A=0 B=0 R=701 S=sentinel\r\nC196_11_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "65e07db81ffff6f0d7d8358f51854d514bb854879ce696beb46be2e3651e5063",
+          "raw_block": "C196_11_BEGIN\r\nP><T\r\nC196_11_STATE A=0 B=0 R=701 S=sentinel\r\nC196_11_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "65e07db81ffff6f0d7d8358f51854d514bb854879ce696beb46be2e3651e5063",
+          "raw_block": "C196_11_BEGIN\r\nP><T\r\nC196_11_STATE A=0 B=0 R=701 S=sentinel\r\nC196_11_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_12",
+        "command": "PRINTSINGLE",
+        "argument": "",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "752da6c099dfde697e4e66447eb8238012eb25fc8f03fa72f3e0a75b463de461",
+          "raw_block": "C196_12_BEGIN\r\nP><T\r\nC196_12_STATE A=0 B=0 R=701 S=sentinel\r\nC196_12_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "752da6c099dfde697e4e66447eb8238012eb25fc8f03fa72f3e0a75b463de461",
+          "raw_block": "C196_12_BEGIN\r\nP><T\r\nC196_12_STATE A=0 B=0 R=701 S=sentinel\r\nC196_12_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "a0422e22810695dd47740876b7ff426d9b45234483288e4c5b944111177872f4",
+          "raw_block": "C196_12_BEGIN\r\nP>\r\n \r\n<T\r\nC196_12_STATE A=0 B=0 R=701 S=sentinel\r\nC196_12_END\r\n",
+          "layout_body": "P>\r\n \r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            " ",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 1
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE"
+    },
+    {
+      "condition": {
+        "id": "C196_13",
+        "command": "PRINTSINGLEV",
+        "argument": "\"\"",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "6a34dc7fbc2b91e750bc65d97e649a93c36555dd486d186ce4ee74616ef097ce",
+          "raw_block": "C196_13_BEGIN\r\nP><T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "6a34dc7fbc2b91e750bc65d97e649a93c36555dd486d186ce4ee74616ef097ce",
+          "raw_block": "C196_13_BEGIN\r\nP><T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "ff252446bc138eb693d00a660d2c1a9f83ddef485c9d823550782e90b750c726",
+          "raw_block": "C196_13_BEGIN\r\nP>\r\n \r\n<T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n",
+          "layout_body": "P>\r\n \r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            " ",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 1
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE"
+    },
+    {
+      "condition": {
+        "id": "C196_14",
+        "command": "PRINTSINGLES",
+        "argument": "\"\"",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "f1d75bc43f27764caac912860dca59d6090ee8ee8fa4550bbb7797dbcc67c943",
+          "raw_block": "C196_14_BEGIN\r\nP><T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "f1d75bc43f27764caac912860dca59d6090ee8ee8fa4550bbb7797dbcc67c943",
+          "raw_block": "C196_14_BEGIN\r\nP><T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "9d7777b4146b5e0588f28974f71124811afa13b6f359d62c151a5eb3b872deee",
+          "raw_block": "C196_14_BEGIN\r\nP>\r\n \r\n<T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n",
+          "layout_body": "P>\r\n \r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            " ",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 1
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE"
+    },
+    {
+      "condition": {
+        "id": "C196_15",
+        "command": "PRINTSINGLEFORM",
+        "argument": "",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "a271666269a96f09f28c92ecb40bc1444e087ea8d8a67630aa7d06435f3a0de2",
+          "raw_block": "C196_15_BEGIN\r\nP><T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "a271666269a96f09f28c92ecb40bc1444e087ea8d8a67630aa7d06435f3a0de2",
+          "raw_block": "C196_15_BEGIN\r\nP><T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "f3dd207724775501801cbef3f3a3348b5e747acbbed8e6f8621d8f2f6f28d480",
+          "raw_block": "C196_15_BEGIN\r\nP>\r\n \r\n<T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n",
+          "layout_body": "P>\r\n \r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            " ",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 1
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE"
+    },
+    {
+      "condition": {
+        "id": "C196_16",
+        "command": "PRINTSINGLEFORMS",
+        "argument": "\"\"",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "4f935d93f8a2eae761981f66daa9d33d770beb3c6486793a35c78b1daf3b1a31",
+          "raw_block": "C196_16_BEGIN\r\nP><T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "4f935d93f8a2eae761981f66daa9d33d770beb3c6486793a35c78b1daf3b1a31",
+          "raw_block": "C196_16_BEGIN\r\nP><T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 0
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "929137e4d082615f03fff0edd17489a7fc6710789dca15d471fb5e66814d39d6",
+          "raw_block": "C196_16_BEGIN\r\nP>\r\n \r\n<T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n",
+          "layout_body": "P>\r\n \r\n<T\r\n",
+          "layout_rows": [
+            "P>",
+            " ",
+            "<T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "intended_argument": "",
+            "nonwhitespace_content": "",
+            "structural_ascii_spaces": 1
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 701,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE"
+    },
+    {
+      "condition": {
+        "id": "C196_17",
+        "command": "PRINTPLAINFORM",
+        "argument": "f{ZZ196H(1)}",
+        "kind": "helper-suppression",
+        "skipdisp": true,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "b0c6a94a3b67f75834a968a11641c1173cce4d113f6efb1d02c9533617bd8da9",
+          "raw_block": "C196_17_BEGIN\r\nP><T\r\nC196_17_STATE A=0 B=0 R=0 S=sentinel\r\nC196_17_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "b0c6a94a3b67f75834a968a11641c1173cce4d113f6efb1d02c9533617bd8da9",
+          "raw_block": "C196_17_BEGIN\r\nP><T\r\nC196_17_STATE A=0 B=0 R=0 S=sentinel\r\nC196_17_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "b0c6a94a3b67f75834a968a11641c1173cce4d113f6efb1d02c9533617bd8da9",
+          "raw_block": "C196_17_BEGIN\r\nP><T\r\nC196_17_STATE A=0 B=0 R=0 S=sentinel\r\nC196_17_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_18",
+        "command": "PRINTSINGLEV",
+        "argument": "ZZ196H(1),ZZ196H(2)",
+        "kind": "helper-suppression",
+        "skipdisp": true,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "0b1087b854566ab502664d65fb22cbedf96df7ab0bc11d72abd9b33b7c83030d",
+          "raw_block": "C196_18_BEGIN\r\nP><T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "0b1087b854566ab502664d65fb22cbedf96df7ab0bc11d72abd9b33b7c83030d",
+          "raw_block": "C196_18_BEGIN\r\nP><T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "0b1087b854566ab502664d65fb22cbedf96df7ab0bc11d72abd9b33b7c83030d",
+          "raw_block": "C196_18_BEGIN\r\nP><T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_19",
+        "command": "PRINTSINGLEFORMS",
+        "argument": "ZZ196T(1)",
+        "kind": "helper-suppression",
+        "skipdisp": true,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "759e9c253023ea82201e5a30a0da87f465431a166cc26643452a61fe5fabda93",
+          "raw_block": "C196_19_BEGIN\r\nP><T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "759e9c253023ea82201e5a30a0da87f465431a166cc26643452a61fe5fabda93",
+          "raw_block": "C196_19_BEGIN\r\nP><T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "759e9c253023ea82201e5a30a0da87f465431a166cc26643452a61fe5fabda93",
+          "raw_block": "C196_19_BEGIN\r\nP><T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    },
+    {
+      "condition": {
+        "id": "C196_20",
+        "command": "PRINTFORMLC",
+        "argument": "c{ZZ196H(1)}",
+        "kind": "helper-suppression",
+        "skipdisp": true,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "observed": {
+        "native-01": {
+          "raw_block_sha256_utf16le": "bd506d5677617ccdf1d8a5073453aa7b765c79f4303629b8ce00bc615ff4df4c",
+          "raw_block": "C196_20_BEGIN\r\nP><T\r\nC196_20_STATE A=0 B=0 R=0 S=sentinel\r\nC196_20_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "native-02": {
+          "raw_block_sha256_utf16le": "bd506d5677617ccdf1d8a5073453aa7b765c79f4303629b8ce00bc615ff4df4c",
+          "raw_block": "C196_20_BEGIN\r\nP><T\r\nC196_20_STATE A=0 B=0 R=0 S=sentinel\r\nC196_20_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        },
+        "public-01": {
+          "raw_block_sha256_utf16le": "bd506d5677617ccdf1d8a5073453aa7b765c79f4303629b8ce00bc615ff4df4c",
+          "raw_block": "C196_20_BEGIN\r\nP><T\r\nC196_20_STATE A=0 B=0 R=0 S=sentinel\r\nC196_20_END\r\n",
+          "layout_body": "P><T\r\n",
+          "layout_rows": [
+            "P><T"
+          ],
+          "content_value": {
+            "internal_argument_value": "UNOBSERVED",
+            "observable_target_text": ""
+          },
+          "state": {
+            "A": 0,
+            "B": 0,
+            "RESULT": 0,
+            "RESULTS:0": "sentinel"
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_order_B": 0
+          }
+        }
+      },
+      "comparison": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "classification": "MATCH_OBSERVED_AXES"
+    }
+  ],
+  "limits": [
+    "Value axis captures observable content, not internal argument values; empty SINGLE structural spaces remain in raw/layout.",
+    "RESULT=0 in SKIP conditions includes SKIPDISP 0 side effect.",
+    "No screenshots, normal desktop input, waits, keys, glyph or paint validation.",
+    "Native alive at 5s then owned-process cleanup, not natural exit."
+  ]
+}

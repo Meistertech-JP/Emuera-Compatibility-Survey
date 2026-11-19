@@ -1,0 +1,2817 @@
+{
+  "schema": "evidence-discovery-26-v1",
+  "groups": {
+    "platform_input_16": {
+      "records": {
+        "path": "evidence/platform-input-16-20261117/records.json",
+        "sha256": "0c0d434b6878b7bf6a2c6f4eea21f24a310b82c40ea9cb9395061e114fc3cd9a"
+      },
+      "readmes": [
+        {
+          "path": "evidence/platform-input-16-20261117/README.ja.md",
+          "sha256": "7a7f6d1cc8762dd8048f18b76e426d3df204b2a02815e69b779cf0003ca316e5"
+        },
+        {
+          "path": "evidence/platform-input-16-20261117/README.md",
+          "sha256": "e82e0dc5febf3f219657486612f6d7a5c37ec549155b72b6afa060c942e9f0a2"
+        }
+      ],
+      "scope_limits": [
+        "Seven case verdicts are unverified; comparison verdicts are distinct.",
+        "Key and mouse interaction and GUI equivalence are not observed.",
+        "Native natural exit was not observed; cleanup is separate.",
+        "Original receipts are not included.",
+        "Original PyEmuera fixture/config execution-time before/after SHA fields are not included; executable hashes are a separate matter."
+      ],
+      "detail_fields": {
+        "scenario_verdict": "scenario_verdict",
+        "comparison_verdict": "comparison_verdict",
+        "unverified": "unverified",
+        "comparison_scope": "comparison_scope"
+      }
+    },
+    "compound_assignment_10": {
+      "records": {
+        "path": "evidence/compound-assignment-10-20261117/records.json",
+        "sha256": "c743de9716e845daf8937efbec5fe4b585e94541926dc3db141446a544c034ed"
+      },
+      "readmes": [
+        {
+          "path": "evidence/compound-assignment-10-20261117/README.ja.md",
+          "sha256": "18e601d5f022489b6f878b218a3fa89a40dd02d04f53487ac03763a38d888f0f"
+        },
+        {
+          "path": "evidence/compound-assignment-10-20261117/README.md",
+          "sha256": "2493246a4fe167825bc6d61c44f0428bfb6138ae7aadd526a52780150f87d93b"
+        }
+      ],
+      "scope_limits": [
+        "Ten cases refer to one shared batch, not ten independent case executions.",
+        "Original receipts are not included.",
+        "First PyEmuera execution-time before/after input SHA was not recorded.",
+        "Native natural exit was not observed; cleanup is separate.",
+        "Matched outcomes are limited to selected numeric conditions.",
+        "Second PyEmuera fixture/config before/after SHA values were recorded in the original receipt, but that receipt and those fields are not included; executable hashes are separate."
+      ],
+      "detail_fields": {
+        "verdict_recorded": "verdict_recorded",
+        "execution": "execution",
+        "condition_markers": "condition_markers"
+      }
+    },
+    "multi_group_101": {
+      "records": {
+        "path": "evidence/multi-group-101-20261117/index.json",
+        "sha256": "27193a76166965d737eb219bb9417de556496d9e1f416d58d27d86e6895cde1e"
+      },
+      "readmes": [
+        {
+          "path": "evidence/multi-group-101-20261117/README.ja.md",
+          "sha256": "36d2712f9c3d798d5d897e789a87b76118915e58686e38b09ca9d83bc584b225"
+        },
+        {
+          "path": "evidence/multi-group-101-20261117/README.md",
+          "sha256": "9e27dd0cd3d6e8a04e73a9c1568b4c2a16364e48d032459d0cee7d96afb0736d"
+        }
+      ],
+      "scope_limits": [
+        "Cases may share batches and mode records; case count does not imply independent executions.",
+        "Some public histories are unavailable: 14 history assets were not present in the saved source; this alone does not mean whole modes, stdout, or stderr are absent.",
+        "SELECTCASE group 108 includes only supplemental SELECTNEST01; original fixture and screenshot are not included, and CASEELSE was not selected.",
+        "Original receipts, comparison records and parent registers are not included."
+      ],
+      "detail_fields": {
+        "verdict": "verdict"
+      },
+      "case_array_pointers": [
+        "/batches/0/cases",
+        "/batches/1/cases",
+        "/batches/2/cases",
+        "/batches/3/cases",
+        "/batches/4/cases",
+        "/batches/5/cases",
+        "/batches/6/cases",
+        "/batches/7/cases",
+        "/batches/8/cases",
+        "/batches/9/cases",
+        "/batches/10/cases",
+        "/batches/11/cases",
+        "/batches/12/cases",
+        "/batches/13/cases",
+        "/batches/14/cases",
+        "/batches/15/cases",
+        "/batches/16/cases",
+        "/batches/17/cases",
+        "/batches/18/cases",
+        "/batches/19/cases",
+        "/batches/20/cases",
+        "/batches/21/cases",
+        "/batches/22/cases",
+        "/batches/23/cases",
+        "/batches/24/cases",
+        "/batches/25/cases",
+        "/batches/26/cases",
+        "/batches/27/cases",
+        "/batches/28/cases",
+        "/batches/29/cases",
+        "/batches/30/cases",
+        "/batches/31/cases",
+        "/batches/32/cases",
+        "/batches/33/cases",
+        "/batches/34/cases",
+        "/batches/35/cases",
+        "/batches/36/cases",
+        "/batches/37/cases",
+        "/batches/38/cases",
+        "/batches/39/cases",
+        "/batches/40/cases",
+        "/batches/41/cases",
+        "/batches/42/cases",
+        "/batches/43/cases",
+        "/batches/44/cases",
+        "/batches/45/cases",
+        "/batches/46/cases",
+        "/batches/47/cases",
+        "/batches/48/cases",
+        "/batches/49/cases",
+        "/batches/50/cases",
+        "/batches/51/cases",
+        "/batches/52/cases",
+        "/batches/53/cases",
+        "/batches/54/cases",
+        "/batches/55/cases",
+        "/batches/56/cases",
+        "/batches/57/cases",
+        "/batches/58/cases",
+        "/batches/59/cases",
+        "/batches/60/cases",
+        "/batches/61/cases",
+        "/batches/62/cases"
+      ]
+    },
+    "lineisempty_acceptance": {
+      "records": {
+        "path": "evidence/lineisempty-acceptance-20261117/record.json",
+        "sha256": "e1c647ce0cb505c4a37f42e121e5783ee2b45ebb73f163b3f0a360b25224759e"
+      },
+      "readmes": [
+        {
+          "path": "evidence/lineisempty-acceptance-20261117/README.ja.md",
+          "sha256": "6ccdf62818da30b52bb408055d49a1cbd35654b98027071a716d81b95b8a7f78"
+        },
+        {
+          "path": "evidence/lineisempty-acceptance-20261117/README.md",
+          "sha256": "ed67e30eca616199f1bcf45bffe74d07ed2df015fadf240d8b2282cc8964db08"
+        }
+      ],
+      "scope_limits": [
+        "Three individual old acceptance pins disagree with currently retained observation, review and manifest bytes; old bytes were not found in the checked inventories.",
+        "Original acceptance and session text are not included; no source execution or acceptance authenticity is proven.",
+        "Only native-01, native-02 and public-01 for the button case are included; the other cases in the acceptance are not included as raw.",
+        "The distinct expression-form PRINT_SPACE difference must not be attributed to this method-form case.",
+        "Native natural exit, rendering, clicking and full transcript equivalence are not established."
+      ],
+      "detail_fields": {
+        "original_parent_decision": "original_parent_decision",
+        "acceptance_pin_discrepancy": "acceptance_pin_discrepancy",
+        "publication_status": "publication_status"
+      },
+      "root_case": true
+    },
+    "multi_group_second_72": {
+      "records": {
+        "path": "evidence/multi-group-second-72-20261117/index.json",
+        "sha256": "5e6d5bf4cc105b4253bd71400c364d90fd5a2c5ff4d308bdf211585620f92c9d"
+      },
+      "readmes": [
+        {
+          "path": "evidence/multi-group-second-72-20261117/README.ja.md",
+          "sha256": "2facd073f5d0550899a2324a622c9c90777a84107bc372cf5f76a6b0dccb94a9"
+        },
+        {
+          "path": "evidence/multi-group-second-72-20261117/README.md",
+          "sha256": "bad47bc13f13a1023a8c5630b6d8a77f3227d1a3ac72bd698f01fee272b97591"
+        }
+      ],
+      "scope_limits": [
+        "Twenty of the 72 registered case verdicts are unverified; case verdict is not target-wide acceptance.",
+        "Some public histories are unavailable: 19 history assets were not present in the saved source; this alone does not mean whole modes, stdout, or stderr are absent.",
+        "Two other candidate groups are withheld for reasons recorded in the linked withheld_groups record; no cases or observations are inferred for them.",
+        "Cases may share a fixture or batch; case counts do not imply independent runs.",
+        "For group 240, Native targeted Return after each wait while public received eight empty lines at startup; interactive timing and GUI pixels were not compared and UI event records are not included.",
+        "Original receipts, comparison records and parent registers are not included."
+      ],
+      "detail_fields": {
+        "verdict": "verdict"
+      },
+      "case_array_pointers": [
+        "/batches/0/cases",
+        "/batches/1/cases",
+        "/batches/2/cases",
+        "/batches/3/cases",
+        "/batches/4/cases",
+        "/batches/5/cases",
+        "/batches/6/cases",
+        "/batches/7/cases",
+        "/batches/8/cases",
+        "/batches/9/cases",
+        "/batches/10/cases",
+        "/batches/11/cases",
+        "/batches/12/cases",
+        "/batches/13/cases",
+        "/batches/14/cases",
+        "/batches/15/cases",
+        "/batches/16/cases",
+        "/batches/17/cases",
+        "/batches/18/cases",
+        "/batches/19/cases",
+        "/batches/20/cases",
+        "/batches/21/cases",
+        "/batches/22/cases",
+        "/batches/23/cases",
+        "/batches/24/cases",
+        "/batches/25/cases",
+        "/batches/26/cases",
+        "/batches/27/cases",
+        "/batches/28/cases",
+        "/batches/29/cases",
+        "/batches/30/cases",
+        "/batches/31/cases",
+        "/batches/32/cases",
+        "/batches/33/cases",
+        "/batches/34/cases",
+        "/batches/35/cases"
+      ],
+      "references": {
+        "withheld_groups": "/withheld_groups"
+      }
+    },
+    "nine_saved_observations": {
+      "records": {
+        "path": "evidence/nine-saved-observations-20261117/data/records.json",
+        "sha256": "5f8e71be3a9a1861c515e1ad0ec992612d26c2319b37dd26b8bce5a46433e016"
+      },
+      "readmes": [
+        {
+          "path": "evidence/nine-saved-observations-20261117/README.ja.md",
+          "sha256": "a93efc0937a4c663a12cf6707cc68f8cab63284494ede659e937a0ba9d29f38d"
+        },
+        {
+          "path": "evidence/nine-saved-observations-20261117/README.md",
+          "sha256": "e696eb76401f01595e7d075a5269a633cd31cef1712de42e183f879570202398"
+        }
+      ],
+      "scope_limits": [
+        "Native and PyEmuera observations refer to selected recorded conditions; shared fixtures are not independent executions.",
+        "Native natural exit was not observed.",
+        "Original fixtures, configuration, receipts and executables are not included; independent reexecution requires those materials.",
+        "Raw and UTF-8 readable paths in modes are relative to this evidence bundle."
+      ],
+      "detail_fields": {
+        "scenario_verdict": "scenario_verdict",
+        "observation": "observation",
+        "modes": "modes"
+      }
+    }
+  },
+  "entries": [
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_mouseskip_expr_normal",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "MOUSESKIP"
+      },
+      "record_pointer": "/cases/0",
+      "role_pointer": "/cases/0/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_mouseskip_method_normal",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "MOUSESKIP"
+      },
+      "record_pointer": "/cases/1",
+      "role_pointer": "/cases/1/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkey_expr_normal",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GETKEY"
+      },
+      "record_pointer": "/cases/2",
+      "role_pointer": "/cases/2/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkey_method_normal",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETKEY"
+      },
+      "record_pointer": "/cases/3",
+      "role_pointer": "/cases/3/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkeytriggered_expr_normal",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GETKEYTRIGGERED"
+      },
+      "record_pointer": "/cases/4",
+      "role_pointer": "/cases/4/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkeytriggered_method_normal",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETKEYTRIGGERED"
+      },
+      "record_pointer": "/cases/5",
+      "role_pointer": "/cases/5/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_mousex_expr_normal",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "MOUSEX"
+      },
+      "record_pointer": "/cases/6",
+      "role_pointer": "/cases/6/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_mousex_method_normal",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "MOUSEX"
+      },
+      "record_pointer": "/cases/7",
+      "role_pointer": "/cases/7/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_mousey_expr_normal",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "MOUSEY"
+      },
+      "record_pointer": "/cases/8",
+      "role_pointer": "/cases/8/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_mousey_method_normal",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "MOUSEY"
+      },
+      "record_pointer": "/cases/9",
+      "role_pointer": "/cases/9/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_isactive_expr_normal",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "ISACTIVE"
+      },
+      "record_pointer": "/cases/10",
+      "role_pointer": "/cases/10/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_isactive_method_normal",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "ISACTIVE"
+      },
+      "record_pointer": "/cases/11",
+      "role_pointer": "/cases/11/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkey_expr_range_-1",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GETKEY"
+      },
+      "record_pointer": "/cases/12",
+      "role_pointer": "/cases/12/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkey_expr_range_256",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GETKEY"
+      },
+      "record_pointer": "/cases/13",
+      "role_pointer": "/cases/13/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkeytriggered_expr_range_-1",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GETKEYTRIGGERED"
+      },
+      "record_pointer": "/cases/14",
+      "role_pointer": "/cases/14/typed_targets/0"
+    },
+    {
+      "collection": "platform_input_16",
+      "case_id": "UIQUERY237_getkeytriggered_expr_range_256",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GETKEYTRIGGERED"
+      },
+      "record_pointer": "/cases/15",
+      "role_pointer": "/cases/15/typed_targets/0"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_0",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "+="
+      },
+      "record_pointer": "/cases/0",
+      "role_pointer": "/cases/0/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_1",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "-="
+      },
+      "record_pointer": "/cases/1",
+      "role_pointer": "/cases/1/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_2",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "*="
+      },
+      "record_pointer": "/cases/2",
+      "role_pointer": "/cases/2/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_3",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "/="
+      },
+      "record_pointer": "/cases/3",
+      "role_pointer": "/cases/3/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_4",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "%="
+      },
+      "record_pointer": "/cases/4",
+      "role_pointer": "/cases/4/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_5",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "<<="
+      },
+      "record_pointer": "/cases/5",
+      "role_pointer": "/cases/5/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_6",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": ">>="
+      },
+      "record_pointer": "/cases/6",
+      "role_pointer": "/cases/6/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_7",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "|="
+      },
+      "record_pointer": "/cases/7",
+      "role_pointer": "/cases/7/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_8",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "&="
+      },
+      "record_pointer": "/cases/8",
+      "role_pointer": "/cases/8/typed_target"
+    },
+    {
+      "collection": "compound_assignment_10",
+      "case_id": "COMPOUNDASSIGN_9",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "^="
+      },
+      "record_pointer": "/cases/9",
+      "role_pointer": "/cases/9/typed_target"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_setanimetimer-expression-direct",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SETANIMETIMER"
+      },
+      "record_pointer": "/batches/0/cases/0",
+      "role_pointer": "/batches/0/cases/0/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_timer-expression-outofrange",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SETANIMETIMER"
+      },
+      "record_pointer": "/batches/1/cases/0",
+      "role_pointer": "/batches/1/cases/0/roles/0",
+      "batch_pointer": "/batches/1"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SETANIMETIMER"
+      },
+      "record_pointer": "/batches/2/cases/0",
+      "role_pointer": "/batches/2/cases/0/roles/0",
+      "batch_pointer": "/batches/2"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMEADDFRAME"
+      },
+      "record_pointer": "/batches/2/cases/0",
+      "role_pointer": "/batches/2/cases/0/roles/1",
+      "batch_pointer": "/batches/2"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMECREATE"
+      },
+      "record_pointer": "/batches/2/cases/0",
+      "role_pointer": "/batches/2/cases/0/roles/2",
+      "batch_pointer": "/batches/2"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITECREATE"
+      },
+      "record_pointer": "/batches/2/cases/0",
+      "role_pointer": "/batches/2/cases/0/roles/3",
+      "batch_pointer": "/batches/2"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEDISPOSE"
+      },
+      "record_pointer": "/batches/2/cases/0",
+      "role_pointer": "/batches/2/cases/0/roles/4",
+      "batch_pointer": "/batches/2"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spriteanimeaddframe-expression-direct",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMEADDFRAME"
+      },
+      "record_pointer": "/batches/3/cases/0",
+      "role_pointer": "/batches/3/cases/0/roles/0",
+      "batch_pointer": "/batches/3"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_addframe-expression-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMEADDFRAME"
+      },
+      "record_pointer": "/batches/4/cases/0",
+      "role_pointer": "/batches/4/cases/0/roles/0",
+      "batch_pointer": "/batches/4"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spriteanimecreate-expression-direct",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEANIMECREATE"
+      },
+      "record_pointer": "/batches/5/cases/0",
+      "role_pointer": "/batches/5/cases/0/roles/0",
+      "batch_pointer": "/batches/5"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spritecreate-expression-direct",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITECREATE"
+      },
+      "record_pointer": "/batches/6/cases/0",
+      "role_pointer": "/batches/6/cases/0/roles/0",
+      "batch_pointer": "/batches/6"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spritedispose-expression-direct",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEDISPOSE"
+      },
+      "record_pointer": "/batches/7/cases/0",
+      "role_pointer": "/batches/7/cases/0/roles/0",
+      "batch_pointer": "/batches/7"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_setanimetimer-method-direct",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SETANIMETIMER"
+      },
+      "record_pointer": "/batches/8/cases/0",
+      "role_pointer": "/batches/8/cases/0/roles/0",
+      "batch_pointer": "/batches/8"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_timer-method-outofrange",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SETANIMETIMER"
+      },
+      "record_pointer": "/batches/9/cases/0",
+      "role_pointer": "/batches/9/cases/0/roles/0",
+      "batch_pointer": "/batches/9"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SETANIMETIMER"
+      },
+      "record_pointer": "/batches/10/cases/0",
+      "role_pointer": "/batches/10/cases/0/roles/0",
+      "batch_pointer": "/batches/10"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMEADDFRAME"
+      },
+      "record_pointer": "/batches/10/cases/0",
+      "role_pointer": "/batches/10/cases/0/roles/1",
+      "batch_pointer": "/batches/10"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMECREATE"
+      },
+      "record_pointer": "/batches/10/cases/0",
+      "role_pointer": "/batches/10/cases/0/roles/2",
+      "batch_pointer": "/batches/10"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITECREATE"
+      },
+      "record_pointer": "/batches/10/cases/0",
+      "role_pointer": "/batches/10/cases/0/roles/3",
+      "batch_pointer": "/batches/10"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_lifecycle-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEDISPOSE"
+      },
+      "record_pointer": "/batches/10/cases/0",
+      "role_pointer": "/batches/10/cases/0/roles/4",
+      "batch_pointer": "/batches/10"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spriteanimeaddframe-method-direct",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMEADDFRAME"
+      },
+      "record_pointer": "/batches/11/cases/0",
+      "role_pointer": "/batches/11/cases/0/roles/0",
+      "batch_pointer": "/batches/11"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_addframe-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMEADDFRAME"
+      },
+      "record_pointer": "/batches/12/cases/0",
+      "role_pointer": "/batches/12/cases/0/roles/0",
+      "batch_pointer": "/batches/12"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spriteanimecreate-method-direct",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEANIMECREATE"
+      },
+      "record_pointer": "/batches/13/cases/0",
+      "role_pointer": "/batches/13/cases/0/roles/0",
+      "batch_pointer": "/batches/13"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spritecreate-method-direct",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITECREATE"
+      },
+      "record_pointer": "/batches/14/cases/0",
+      "role_pointer": "/batches/14/cases/0/roles/0",
+      "batch_pointer": "/batches/14"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS234_spritedispose-method-direct",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEDISPOSE"
+      },
+      "record_pointer": "/batches/15/cases/0",
+      "role_pointer": "/batches/15/cases/0/roles/0",
+      "batch_pointer": "/batches/15"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEHEIGHTEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEHEIGHT"
+      },
+      "record_pointer": "/batches/16/cases/0",
+      "role_pointer": "/batches/16/cases/0/roles/0",
+      "batch_pointer": "/batches/16"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEPOSXEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEPOSX"
+      },
+      "record_pointer": "/batches/17/cases/0",
+      "role_pointer": "/batches/17/cases/0/roles/0",
+      "batch_pointer": "/batches/17"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEPOSYEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEPOSY"
+      },
+      "record_pointer": "/batches/18/cases/0",
+      "role_pointer": "/batches/18/cases/0/roles/0",
+      "batch_pointer": "/batches/18"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEWIDTHEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEWIDTH"
+      },
+      "record_pointer": "/batches/19/cases/0",
+      "role_pointer": "/batches/19/cases/0/roles/0",
+      "batch_pointer": "/batches/19"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITECREATEDCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITECREATED"
+      },
+      "record_pointer": "/batches/20/cases/0",
+      "role_pointer": "/batches/20/cases/0/roles/0",
+      "batch_pointer": "/batches/20"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEHEIGHTCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEHEIGHT"
+      },
+      "record_pointer": "/batches/21/cases/0",
+      "role_pointer": "/batches/21/cases/0/roles/0",
+      "batch_pointer": "/batches/21"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEPOSXCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEPOSX"
+      },
+      "record_pointer": "/batches/22/cases/0",
+      "role_pointer": "/batches/22/cases/0/roles/0",
+      "batch_pointer": "/batches/22"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEPOSYCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEPOSY"
+      },
+      "record_pointer": "/batches/23/cases/0",
+      "role_pointer": "/batches/23/cases/0/roles/0",
+      "batch_pointer": "/batches/23"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "SPRITEABSENT_SPRITEWIDTHCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEWIDTH"
+      },
+      "record_pointer": "/batches/24/cases/0",
+      "role_pointer": "/batches/24/cases/0/roles/0",
+      "batch_pointer": "/batches/24"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gfillrectangle-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GFILLRECTANGLE"
+      },
+      "record_pointer": "/batches/25/cases/0",
+      "role_pointer": "/batches/25/cases/0/roles/0",
+      "batch_pointer": "/batches/25"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gfillrectangle-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GFILLRECTANGLE"
+      },
+      "record_pointer": "/batches/26/cases/0",
+      "role_pointer": "/batches/26/cases/0/roles/0",
+      "batch_pointer": "/batches/26"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gfillrectangle-expr-zero-width",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GFILLRECTANGLE"
+      },
+      "record_pointer": "/batches/27/cases/0",
+      "role_pointer": "/batches/27/cases/0/roles/0",
+      "batch_pointer": "/batches/27"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetbrush-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETBRUSH"
+      },
+      "record_pointer": "/batches/28/cases/0",
+      "role_pointer": "/batches/28/cases/0/roles/0",
+      "batch_pointer": "/batches/28"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetbrush-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETBRUSH"
+      },
+      "record_pointer": "/batches/29/cases/0",
+      "role_pointer": "/batches/29/cases/0/roles/0",
+      "batch_pointer": "/batches/29"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetfont-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETFONT"
+      },
+      "record_pointer": "/batches/30/cases/0",
+      "role_pointer": "/batches/30/cases/0/roles/0",
+      "batch_pointer": "/batches/30"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetfont-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETFONT"
+      },
+      "record_pointer": "/batches/31/cases/0",
+      "role_pointer": "/batches/31/cases/0/roles/0",
+      "batch_pointer": "/batches/31"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetpen-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETPEN"
+      },
+      "record_pointer": "/batches/32/cases/0",
+      "role_pointer": "/batches/32/cases/0/roles/0",
+      "batch_pointer": "/batches/32"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetpen-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETPEN"
+      },
+      "record_pointer": "/batches/33/cases/0",
+      "role_pointer": "/batches/33/cases/0/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetpen-expr-arity3",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETPEN"
+      },
+      "record_pointer": "/batches/34/cases/0",
+      "role_pointer": "/batches/34/cases/0/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gfillrectangle-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GFILLRECTANGLE"
+      },
+      "record_pointer": "/batches/35/cases/0",
+      "role_pointer": "/batches/35/cases/0/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gfillrectangle-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GFILLRECTANGLE"
+      },
+      "record_pointer": "/batches/36/cases/0",
+      "role_pointer": "/batches/36/cases/0/roles/0",
+      "batch_pointer": "/batches/36"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gfillrectangle-method-zero-width",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GFILLRECTANGLE"
+      },
+      "record_pointer": "/batches/37/cases/0",
+      "role_pointer": "/batches/37/cases/0/roles/0",
+      "batch_pointer": "/batches/37"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetbrush-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETBRUSH"
+      },
+      "record_pointer": "/batches/38/cases/0",
+      "role_pointer": "/batches/38/cases/0/roles/0",
+      "batch_pointer": "/batches/38"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetbrush-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETBRUSH"
+      },
+      "record_pointer": "/batches/39/cases/0",
+      "role_pointer": "/batches/39/cases/0/roles/0",
+      "batch_pointer": "/batches/39"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetfont-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETFONT"
+      },
+      "record_pointer": "/batches/40/cases/0",
+      "role_pointer": "/batches/40/cases/0/roles/0",
+      "batch_pointer": "/batches/40"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetfont-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETFONT"
+      },
+      "record_pointer": "/batches/41/cases/0",
+      "role_pointer": "/batches/41/cases/0/roles/0",
+      "batch_pointer": "/batches/41"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetpen-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETPEN"
+      },
+      "record_pointer": "/batches/42/cases/0",
+      "role_pointer": "/batches/42/cases/0/roles/0",
+      "batch_pointer": "/batches/42"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetpen-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETPEN"
+      },
+      "record_pointer": "/batches/43/cases/0",
+      "role_pointer": "/batches/43/cases/0/roles/0",
+      "batch_pointer": "/batches/43"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GRAPHICS233_gsetpen-method-arity3",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETPEN"
+      },
+      "record_pointer": "/batches/44/cases/0",
+      "role_pointer": "/batches/44/cases/0/roles/0",
+      "batch_pointer": "/batches/44"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_ggetcolor-expression-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GGETCOLOR"
+      },
+      "record_pointer": "/batches/45/cases/0",
+      "role_pointer": "/batches/45/cases/0/roles/0",
+      "batch_pointer": "/batches/45"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_graphics-expression-created",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GGETCOLOR"
+      },
+      "record_pointer": "/batches/46/cases/0",
+      "role_pointer": "/batches/46/cases/0/roles/0",
+      "batch_pointer": "/batches/46"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_graphics-expression-created",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GHEIGHT"
+      },
+      "record_pointer": "/batches/46/cases/0",
+      "role_pointer": "/batches/46/cases/0/roles/1",
+      "batch_pointer": "/batches/46"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_graphics-expression-created",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GWIDTH"
+      },
+      "record_pointer": "/batches/46/cases/0",
+      "role_pointer": "/batches/46/cases/0/roles/2",
+      "batch_pointer": "/batches/46"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_gheight-expression-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GHEIGHT"
+      },
+      "record_pointer": "/batches/47/cases/0",
+      "role_pointer": "/batches/47/cases/0/roles/0",
+      "batch_pointer": "/batches/47"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_gwidth-expression-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GWIDTH"
+      },
+      "record_pointer": "/batches/48/cases/0",
+      "role_pointer": "/batches/48/cases/0/roles/0",
+      "batch_pointer": "/batches/48"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_spritegetcolor-expression-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEGETCOLOR"
+      },
+      "record_pointer": "/batches/49/cases/0",
+      "role_pointer": "/batches/49/cases/0/roles/0",
+      "batch_pointer": "/batches/49"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_sprite-expression-existing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SPRITEGETCOLOR"
+      },
+      "record_pointer": "/batches/50/cases/0",
+      "role_pointer": "/batches/50/cases/0/roles/0",
+      "batch_pointer": "/batches/50"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_ggetcolor-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GGETCOLOR"
+      },
+      "record_pointer": "/batches/51/cases/0",
+      "role_pointer": "/batches/51/cases/0/roles/0",
+      "batch_pointer": "/batches/51"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_graphics-method-created",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GGETCOLOR"
+      },
+      "record_pointer": "/batches/52/cases/0",
+      "role_pointer": "/batches/52/cases/0/roles/0",
+      "batch_pointer": "/batches/52"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_graphics-method-created",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GHEIGHT"
+      },
+      "record_pointer": "/batches/52/cases/0",
+      "role_pointer": "/batches/52/cases/0/roles/1",
+      "batch_pointer": "/batches/52"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_graphics-method-created",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GWIDTH"
+      },
+      "record_pointer": "/batches/52/cases/0",
+      "role_pointer": "/batches/52/cases/0/roles/2",
+      "batch_pointer": "/batches/52"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_gheight-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GHEIGHT"
+      },
+      "record_pointer": "/batches/53/cases/0",
+      "role_pointer": "/batches/53/cases/0/roles/0",
+      "batch_pointer": "/batches/53"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_gwidth-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GWIDTH"
+      },
+      "record_pointer": "/batches/54/cases/0",
+      "role_pointer": "/batches/54/cases/0/roles/0",
+      "batch_pointer": "/batches/54"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_spritegetcolor-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEGETCOLOR"
+      },
+      "record_pointer": "/batches/55/cases/0",
+      "role_pointer": "/batches/55/cases/0/roles/0",
+      "batch_pointer": "/batches/55"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "GQUERY230_sprite-method-existing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SPRITEGETCOLOR"
+      },
+      "record_pointer": "/batches/56/cases/0",
+      "role_pointer": "/batches/56/cases/0/roles/0",
+      "batch_pointer": "/batches/56"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_CBRTEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "CBRT"
+      },
+      "record_pointer": "/batches/57/cases/0",
+      "role_pointer": "/batches/57/cases/0/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_EXPONENTEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "EXPONENT"
+      },
+      "record_pointer": "/batches/57/cases/1",
+      "role_pointer": "/batches/57/cases/1/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_SQRTEXPR",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SQRT"
+      },
+      "record_pointer": "/batches/57/cases/2",
+      "role_pointer": "/batches/57/cases/2/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_CBRTCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "CBRT"
+      },
+      "record_pointer": "/batches/57/cases/3",
+      "role_pointer": "/batches/57/cases/3/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_EXPONENTCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "EXPONENT"
+      },
+      "record_pointer": "/batches/57/cases/4",
+      "role_pointer": "/batches/57/cases/4/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_LOGCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LOG"
+      },
+      "record_pointer": "/batches/57/cases/5",
+      "role_pointer": "/batches/57/cases/5/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_LOG10CMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LOG10"
+      },
+      "record_pointer": "/batches/57/cases/6",
+      "role_pointer": "/batches/57/cases/6/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "MATHINVOKE_SQRTCMD",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SQRT"
+      },
+      "record_pointer": "/batches/57/cases/7",
+      "role_pointer": "/batches/57/cases/7/roles/0",
+      "batch_pointer": "/batches/57"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_ABL_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ABL"
+      },
+      "record_pointer": "/batches/58/cases/0",
+      "role_pointer": "/batches/58/cases/0/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_ABL_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ABL"
+      },
+      "record_pointer": "/batches/58/cases/1",
+      "role_pointer": "/batches/58/cases/1/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_helper_once",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ABL"
+      },
+      "record_pointer": "/batches/58/cases/2",
+      "role_pointer": "/batches/58/cases/2/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ABL"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_EXP"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/1",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ITEM"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/2",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_MARK"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/3",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_PALAM"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/4",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_SHOPITEM"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/5",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_skip_all_seven",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_TALENT"
+      },
+      "record_pointer": "/batches/58/cases/3",
+      "role_pointer": "/batches/58/cases/3/roles/6",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_EXP_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_EXP"
+      },
+      "record_pointer": "/batches/58/cases/4",
+      "role_pointer": "/batches/58/cases/4/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_EXP_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_EXP"
+      },
+      "record_pointer": "/batches/58/cases/5",
+      "role_pointer": "/batches/58/cases/5/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_ITEM_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ITEM"
+      },
+      "record_pointer": "/batches/58/cases/6",
+      "role_pointer": "/batches/58/cases/6/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_ITEM_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ITEM"
+      },
+      "record_pointer": "/batches/58/cases/7",
+      "role_pointer": "/batches/58/cases/7/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_MARK_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_MARK"
+      },
+      "record_pointer": "/batches/58/cases/8",
+      "role_pointer": "/batches/58/cases/8/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_MARK_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_MARK"
+      },
+      "record_pointer": "/batches/58/cases/9",
+      "role_pointer": "/batches/58/cases/9/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_PALAM_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_PALAM"
+      },
+      "record_pointer": "/batches/58/cases/10",
+      "role_pointer": "/batches/58/cases/10/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_PALAM_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_PALAM"
+      },
+      "record_pointer": "/batches/58/cases/11",
+      "role_pointer": "/batches/58/cases/11/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_SHOPITEM_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_SHOPITEM"
+      },
+      "record_pointer": "/batches/58/cases/12",
+      "role_pointer": "/batches/58/cases/12/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_SHOPITEM_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_SHOPITEM"
+      },
+      "record_pointer": "/batches/58/cases/13",
+      "role_pointer": "/batches/58/cases/13/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_TALENT_zero",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_TALENT"
+      },
+      "record_pointer": "/batches/58/cases/14",
+      "role_pointer": "/batches/58/cases/14/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_PRINT_TALENT_mixed",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_TALENT"
+      },
+      "record_pointer": "/batches/58/cases/15",
+      "role_pointer": "/batches/58/cases/15/roles/0",
+      "batch_pointer": "/batches/58"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_guard_negative",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ABL"
+      },
+      "record_pointer": "/batches/59/cases/0",
+      "role_pointer": "/batches/59/cases/0/roles/0",
+      "batch_pointer": "/batches/59"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTLIST214_guard_count",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINT_ABL"
+      },
+      "record_pointer": "/batches/60/cases/0",
+      "role_pointer": "/batches/60/cases/0/roles/0",
+      "batch_pointer": "/batches/60"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTPLAIN"
+      },
+      "record_pointer": "/batches/61/cases/0",
+      "role_pointer": "/batches/61/cases/0/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_10",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTPLAIN"
+      },
+      "record_pointer": "/batches/61/cases/1",
+      "role_pointer": "/batches/61/cases/1/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_02",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTPLAINFORM"
+      },
+      "record_pointer": "/batches/61/cases/2",
+      "role_pointer": "/batches/61/cases/2/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_11",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTPLAINFORM"
+      },
+      "record_pointer": "/batches/61/cases/3",
+      "role_pointer": "/batches/61/cases/3/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_17",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTPLAINFORM"
+      },
+      "record_pointer": "/batches/61/cases/4",
+      "role_pointer": "/batches/61/cases/4/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_03",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLE"
+      },
+      "record_pointer": "/batches/61/cases/5",
+      "role_pointer": "/batches/61/cases/5/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_12",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLE"
+      },
+      "record_pointer": "/batches/61/cases/6",
+      "role_pointer": "/batches/61/cases/6/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_06",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORM"
+      },
+      "record_pointer": "/batches/61/cases/7",
+      "role_pointer": "/batches/61/cases/7/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_15",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORM"
+      },
+      "record_pointer": "/batches/61/cases/8",
+      "role_pointer": "/batches/61/cases/8/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_07",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORMS"
+      },
+      "record_pointer": "/batches/61/cases/9",
+      "role_pointer": "/batches/61/cases/9/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_16",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORMS"
+      },
+      "record_pointer": "/batches/61/cases/10",
+      "role_pointer": "/batches/61/cases/10/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_19",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEFORMS"
+      },
+      "record_pointer": "/batches/61/cases/11",
+      "role_pointer": "/batches/61/cases/11/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_05",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLES"
+      },
+      "record_pointer": "/batches/61/cases/12",
+      "role_pointer": "/batches/61/cases/12/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_14",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLES"
+      },
+      "record_pointer": "/batches/61/cases/13",
+      "role_pointer": "/batches/61/cases/13/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_04",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEV"
+      },
+      "record_pointer": "/batches/61/cases/14",
+      "role_pointer": "/batches/61/cases/14/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_13",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEV"
+      },
+      "record_pointer": "/batches/61/cases/15",
+      "role_pointer": "/batches/61/cases/15/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "PRINTPLAIN196_C196_18",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSINGLEV"
+      },
+      "record_pointer": "/batches/61/cases/16",
+      "role_pointer": "/batches/61/cases/16/roles/0",
+      "batch_pointer": "/batches/61"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CASE"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/0",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CASEELSE"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/1",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "ENDSELECT"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/2",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "SELECTCASE"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/3",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "structural_syntax",
+        "name": "CASE"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/4",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "structural_syntax",
+        "name": "CASEELSE"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/5",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "structural_syntax",
+        "name": "ENDSELECT"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/6",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "multi_group_101",
+      "case_id": "NESTEDSELECT01",
+      "typed_target": {
+        "kind": "structural_syntax",
+        "name": "SELECTCASE"
+      },
+      "record_pointer": "/batches/62/cases/0",
+      "role_pointer": "/batches/62/cases/0/roles/7",
+      "batch_pointer": "/batches/62"
+    },
+    {
+      "collection": "lineisempty_acceptance",
+      "case_id": "LINEBUF20261115_button_method",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LINEISEMPTY"
+      },
+      "record_pointer": "",
+      "role_pointer": "/typed_target"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "record_pointer": "/batches/0/cases/0",
+      "role_pointer": "/batches/0/cases/0/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_02",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "record_pointer": "/batches/0/cases/1",
+      "role_pointer": "/batches/0/cases/1/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_03",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "record_pointer": "/batches/0/cases/2",
+      "role_pointer": "/batches/0/cases/2/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_04",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "record_pointer": "/batches/0/cases/3",
+      "role_pointer": "/batches/0/cases/3/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_05",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "record_pointer": "/batches/0/cases/4",
+      "role_pointer": "/batches/0/cases/4/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_06",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARLINE"
+      },
+      "record_pointer": "/batches/0/cases/5",
+      "role_pointer": "/batches/0/cases/5/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_19",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CLEARTEXTBOX"
+      },
+      "record_pointer": "/batches/0/cases/6",
+      "role_pointer": "/batches/0/cases/6/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_17",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CUSTOMDRAWLINE"
+      },
+      "record_pointer": "/batches/0/cases/7",
+      "role_pointer": "/batches/0/cases/7/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_18",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "CUSTOMDRAWLINE"
+      },
+      "record_pointer": "/batches/0/cases/8",
+      "role_pointer": "/batches/0/cases/8/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_13",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "DRAWLINE"
+      },
+      "record_pointer": "/batches/0/cases/9",
+      "role_pointer": "/batches/0/cases/9/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_14",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "DRAWLINE"
+      },
+      "record_pointer": "/batches/0/cases/10",
+      "role_pointer": "/batches/0/cases/10/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_15",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "DRAWLINEFORM"
+      },
+      "record_pointer": "/batches/0/cases/11",
+      "role_pointer": "/batches/0/cases/11/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_16",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "DRAWLINEFORM"
+      },
+      "record_pointer": "/batches/0/cases/12",
+      "role_pointer": "/batches/0/cases/12/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_20",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "DRAWLINEFORM"
+      },
+      "record_pointer": "/batches/0/cases/13",
+      "role_pointer": "/batches/0/cases/13/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_07",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "record_pointer": "/batches/0/cases/14",
+      "role_pointer": "/batches/0/cases/14/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_08",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "record_pointer": "/batches/0/cases/15",
+      "role_pointer": "/batches/0/cases/15/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_09",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "record_pointer": "/batches/0/cases/16",
+      "role_pointer": "/batches/0/cases/16/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_10",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "record_pointer": "/batches/0/cases/17",
+      "role_pointer": "/batches/0/cases/17/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_11",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "record_pointer": "/batches/0/cases/18",
+      "role_pointer": "/batches/0/cases/18/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "DISPLAYLINES202_C202_12",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REUSELASTLINE"
+      },
+      "record_pointer": "/batches/0/cases/19",
+      "role_pointer": "/batches/0/cases/19/roles/0",
+      "batch_pointer": "/batches/0"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawg-expression-missing-dest",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWG"
+      },
+      "record_pointer": "/batches/1/cases/0",
+      "role_pointer": "/batches/1/cases/0/roles/0",
+      "batch_pointer": "/batches/1"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawg-expression-missing-source",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWG"
+      },
+      "record_pointer": "/batches/2/cases/0",
+      "role_pointer": "/batches/2/cases/0/roles/0",
+      "batch_pointer": "/batches/2"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawg-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWG"
+      },
+      "record_pointer": "/batches/3/cases/0",
+      "role_pointer": "/batches/3/cases/0/roles/0",
+      "batch_pointer": "/batches/3"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawgwithmask-expression-missing-dest",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWGWITHMASK"
+      },
+      "record_pointer": "/batches/4/cases/0",
+      "role_pointer": "/batches/4/cases/0/roles/0",
+      "batch_pointer": "/batches/4"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawgwithmask-expression-missing-source",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWGWITHMASK"
+      },
+      "record_pointer": "/batches/5/cases/0",
+      "role_pointer": "/batches/5/cases/0/roles/0",
+      "batch_pointer": "/batches/5"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawgwithmask-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWGWITHMASK"
+      },
+      "record_pointer": "/batches/6/cases/0",
+      "role_pointer": "/batches/6/cases/0/roles/0",
+      "batch_pointer": "/batches/6"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawsprite-expression-missing-dest",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWSPRITE"
+      },
+      "record_pointer": "/batches/7/cases/0",
+      "role_pointer": "/batches/7/cases/0/roles/0",
+      "batch_pointer": "/batches/7"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawsprite-expression-missing-source",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWSPRITE"
+      },
+      "record_pointer": "/batches/8/cases/0",
+      "role_pointer": "/batches/8/cases/0/roles/0",
+      "batch_pointer": "/batches/8"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawsprite-expression-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDRAWSPRITE"
+      },
+      "record_pointer": "/batches/9/cases/0",
+      "role_pointer": "/batches/9/cases/0/roles/0",
+      "batch_pointer": "/batches/9"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawg-method-missing-dest",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWG"
+      },
+      "record_pointer": "/batches/10/cases/0",
+      "role_pointer": "/batches/10/cases/0/roles/0",
+      "batch_pointer": "/batches/10"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawg-method-missing-source",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWG"
+      },
+      "record_pointer": "/batches/11/cases/0",
+      "role_pointer": "/batches/11/cases/0/roles/0",
+      "batch_pointer": "/batches/11"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawg-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWG"
+      },
+      "record_pointer": "/batches/12/cases/0",
+      "role_pointer": "/batches/12/cases/0/roles/0",
+      "batch_pointer": "/batches/12"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawgwithmask-method-missing-dest",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWGWITHMASK"
+      },
+      "record_pointer": "/batches/13/cases/0",
+      "role_pointer": "/batches/13/cases/0/roles/0",
+      "batch_pointer": "/batches/13"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawgwithmask-method-missing-source",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWGWITHMASK"
+      },
+      "record_pointer": "/batches/14/cases/0",
+      "role_pointer": "/batches/14/cases/0/roles/0",
+      "batch_pointer": "/batches/14"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawgwithmask-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWGWITHMASK"
+      },
+      "record_pointer": "/batches/15/cases/0",
+      "role_pointer": "/batches/15/cases/0/roles/0",
+      "batch_pointer": "/batches/15"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawsprite-method-missing-dest",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWSPRITE"
+      },
+      "record_pointer": "/batches/16/cases/0",
+      "role_pointer": "/batches/16/cases/0/roles/0",
+      "batch_pointer": "/batches/16"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawsprite-method-missing-source",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWSPRITE"
+      },
+      "record_pointer": "/batches/17/cases/0",
+      "role_pointer": "/batches/17/cases/0/roles/0",
+      "batch_pointer": "/batches/17"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GRAPHICS235_gdrawsprite-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDRAWSPRITE"
+      },
+      "record_pointer": "/batches/18/cases/0",
+      "role_pointer": "/batches/18/cases/0/roles/0",
+      "batch_pointer": "/batches/18"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gclear-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GCLEAR"
+      },
+      "record_pointer": "/batches/19/cases/0",
+      "role_pointer": "/batches/19/cases/0/roles/0",
+      "batch_pointer": "/batches/19"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gclear-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GCLEAR"
+      },
+      "record_pointer": "/batches/20/cases/0",
+      "role_pointer": "/batches/20/cases/0/roles/0",
+      "batch_pointer": "/batches/20"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gclear-expr-missing-invalid-color",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GCLEAR"
+      },
+      "record_pointer": "/batches/21/cases/0",
+      "role_pointer": "/batches/21/cases/0/roles/0",
+      "batch_pointer": "/batches/21"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gdispose-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDISPOSE"
+      },
+      "record_pointer": "/batches/22/cases/0",
+      "role_pointer": "/batches/22/cases/0/roles/0",
+      "batch_pointer": "/batches/22"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gdispose-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GDISPOSE"
+      },
+      "record_pointer": "/batches/23/cases/0",
+      "role_pointer": "/batches/23/cases/0/roles/0",
+      "batch_pointer": "/batches/23"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gsetcolor-expr-missing",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETCOLOR"
+      },
+      "record_pointer": "/batches/24/cases/0",
+      "role_pointer": "/batches/24/cases/0/roles/0",
+      "batch_pointer": "/batches/24"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gsetcolor-expr-positive",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "GSETCOLOR"
+      },
+      "record_pointer": "/batches/25/cases/0",
+      "role_pointer": "/batches/25/cases/0/roles/0",
+      "batch_pointer": "/batches/25"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gclear-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GCLEAR"
+      },
+      "record_pointer": "/batches/26/cases/0",
+      "role_pointer": "/batches/26/cases/0/roles/0",
+      "batch_pointer": "/batches/26"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gclear-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GCLEAR"
+      },
+      "record_pointer": "/batches/27/cases/0",
+      "role_pointer": "/batches/27/cases/0/roles/0",
+      "batch_pointer": "/batches/27"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gclear-method-missing-invalid-color",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GCLEAR"
+      },
+      "record_pointer": "/batches/28/cases/0",
+      "role_pointer": "/batches/28/cases/0/roles/0",
+      "batch_pointer": "/batches/28"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gdispose-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDISPOSE"
+      },
+      "record_pointer": "/batches/29/cases/0",
+      "role_pointer": "/batches/29/cases/0/roles/0",
+      "batch_pointer": "/batches/29"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gdispose-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GDISPOSE"
+      },
+      "record_pointer": "/batches/30/cases/0",
+      "role_pointer": "/batches/30/cases/0/roles/0",
+      "batch_pointer": "/batches/30"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gsetcolor-method-missing",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETCOLOR"
+      },
+      "record_pointer": "/batches/31/cases/0",
+      "role_pointer": "/batches/31/cases/0/roles/0",
+      "batch_pointer": "/batches/31"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "GMUTATE231_gsetcolor-method-positive",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GSETCOLOR"
+      },
+      "record_pointer": "/batches/32/cases/0",
+      "role_pointer": "/batches/32/cases/0/roles/0",
+      "batch_pointer": "/batches/32"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_BAR_matched_scoped",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "BAR"
+      },
+      "record_pointer": "/batches/33/cases/0",
+      "role_pointer": "/batches/33/cases/0/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_BAR_different_scoped",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "BAR"
+      },
+      "record_pointer": "/batches/33/cases/1",
+      "role_pointer": "/batches/33/cases/1/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_BARL_matched_scoped",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "BARL"
+      },
+      "record_pointer": "/batches/33/cases/2",
+      "role_pointer": "/batches/33/cases/2/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_BARL_different_scoped",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "BARL"
+      },
+      "record_pointer": "/batches/33/cases/3",
+      "role_pointer": "/batches/33/cases/3/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_expression_function_PRINTCLENGTH",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "PRINTCLENGTH"
+      },
+      "record_pointer": "/batches/33/cases/4",
+      "role_pointer": "/batches/33/cases/4/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_expression_function_PRINTCPERLINE",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "PRINTCPERLINE"
+      },
+      "record_pointer": "/batches/33/cases/5",
+      "role_pointer": "/batches/33/cases/5/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_expression_function_SAVENOS",
+      "typed_target": {
+        "kind": "expression_function",
+        "name": "SAVENOS"
+      },
+      "record_pointer": "/batches/33/cases/6",
+      "role_pointer": "/batches/33/cases/6/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "BARCONFIG194_method_as_command_PRINTCLENGTH",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "PRINTCLENGTH"
+      },
+      "record_pointer": "/batches/33/cases/7",
+      "role_pointer": "/batches/33/cases/7/roles/0",
+      "batch_pointer": "/batches/33"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "METHODNUMORDER_ABS",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "ABS"
+      },
+      "record_pointer": "/batches/34/cases/0",
+      "role_pointer": "/batches/34/cases/0/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "METHODNUMORDER_INRANGE",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "INRANGE"
+      },
+      "record_pointer": "/batches/34/cases/1",
+      "role_pointer": "/batches/34/cases/1/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "METHODNUMORDER_LIMIT",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LIMIT"
+      },
+      "record_pointer": "/batches/34/cases/2",
+      "role_pointer": "/batches/34/cases/2/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "METHODNUMORDER_MAX",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "MAX"
+      },
+      "record_pointer": "/batches/34/cases/3",
+      "role_pointer": "/batches/34/cases/3/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "METHODNUMORDER_MIN",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "MIN"
+      },
+      "record_pointer": "/batches/34/cases/4",
+      "role_pointer": "/batches/34/cases/4/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "METHODNUMORDER_SIGN",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "SIGN"
+      },
+      "record_pointer": "/batches/34/cases/5",
+      "role_pointer": "/batches/34/cases/5/roles/0",
+      "batch_pointer": "/batches/34"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "PRINTNORMAL240_PRINTDW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTDW"
+      },
+      "record_pointer": "/batches/35/cases/0",
+      "role_pointer": "/batches/35/cases/0/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "PRINTNORMAL240_PRINTFORMDW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTFORMDW"
+      },
+      "record_pointer": "/batches/35/cases/1",
+      "role_pointer": "/batches/35/cases/1/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "PRINTNORMAL240_PRINTFORMSDW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTFORMSDW"
+      },
+      "record_pointer": "/batches/35/cases/2",
+      "role_pointer": "/batches/35/cases/2/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "PRINTNORMAL240_PRINTFORMSKW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTFORMSKW"
+      },
+      "record_pointer": "/batches/35/cases/3",
+      "role_pointer": "/batches/35/cases/3/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "PRINTNORMAL240_PRINTSDW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSDW"
+      },
+      "record_pointer": "/batches/35/cases/4",
+      "role_pointer": "/batches/35/cases/4/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "multi_group_second_72",
+      "case_id": "PRINTNORMAL240_PRINTVDW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTVDW"
+      },
+      "record_pointer": "/batches/35/cases/5",
+      "role_pointer": "/batches/35/cases/5/roles/0",
+      "batch_pointer": "/batches/35"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_INRANGE_INRANGE_FAULT_1_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "INRANGE"
+      },
+      "record_pointer": "/cases/0",
+      "role_pointer": "/cases/0/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_INRANGE_INRANGE_FAULT_2_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "INRANGE"
+      },
+      "record_pointer": "/cases/1",
+      "role_pointer": "/cases/1/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_INRANGE_INRANGE_FAULT_3_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "INRANGE"
+      },
+      "record_pointer": "/cases/2",
+      "role_pointer": "/cases/2/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_INRANGE_NORMAL_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "INRANGE"
+      },
+      "record_pointer": "/cases/3",
+      "role_pointer": "/cases/3/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_LIMIT_LIMIT_FAULT_1_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LIMIT"
+      },
+      "record_pointer": "/cases/4",
+      "role_pointer": "/cases/4/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_LIMIT_LIMIT_FAULT_2_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LIMIT"
+      },
+      "record_pointer": "/cases/5",
+      "role_pointer": "/cases/5/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_LIMIT_LIMIT_FAULT_3_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LIMIT"
+      },
+      "record_pointer": "/cases/6",
+      "role_pointer": "/cases/6/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "METHOD_BOUNDARY_LIMIT_NORMAL_20261115",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LIMIT"
+      },
+      "record_pointer": "/cases/7",
+      "role_pointer": "/cases/7/targets/0"
+    },
+    {
+      "collection": "nine_saved_observations",
+      "case_id": "PRINTVWPOSTWAITTRACE01",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTVW"
+      },
+      "record_pointer": "/cases/8",
+      "role_pointer": "/cases/8/targets/0"
+    }
+  ]
+}

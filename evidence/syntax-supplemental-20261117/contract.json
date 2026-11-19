@@ -1,0 +1,911 @@
+{
+  "schema": "common-evidence-trusted-contract-v2",
+  "source_reviewed_manifest_sha256": "a3dde946a9796983529f5b6dade121791e775401787fb4d585aaa6382fcec142",
+  "source_reviewed_bindings_sha256": "aebeeaebdb5cc9c7231d8da170c27ab9f4ef67b71cce414989e308af1e5a4132",
+  "meaning": "Fixed expectations derived from the independently reviewed v2 snapshot with review-status wording updated; no authentication or publication grant.",
+  "scope_sha256": "fe5722d4bfce647a6e2ee612e54a555ba6ff6e9233f748beff6bd009604d9c74",
+  "limits_sha256": "272989d7f61cd3b1bd34c795c074fac068de7dcbd582177a364b748e03291d70",
+  "case_count": 24,
+  "family_counts": {
+    "colon_grammar": 16,
+    "supplemental_label": 8
+  },
+  "cases": [
+    {
+      "key": "colon_grammar:COLON_NORMAL_NO_NO",
+      "family": "colon_grammar",
+      "case_id": "COLON_NORMAL_NO_NO",
+      "source_case_id": "COLON_NORMAL_NO_NO",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "39878800713ab9890a7d29befd8681fad22ecfe43b41361b1217d6287079201e",
+      "binding_content_sha256": "ce43230f5801ce1bc506361f626ccf8e0031ab3a2bc90abe0faf202396e4f777",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_NORMAL_COMPAT_RAND_YES",
+      "family": "colon_grammar",
+      "case_id": "COLON_NORMAL_COMPAT_RAND_YES",
+      "source_case_id": "COLON_NORMAL_COMPAT_RAND_YES",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "be99f1f1c133f788d8c6c3308552196746bf53149e7e6a0d5c6f0d8e032d1e5f",
+      "binding_content_sha256": "fd85da69b92b70ae57d06773a0c3f6bd0930fee49174ac405200b6cb76b1a505",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_EMPTY",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_EMPTY",
+      "source_case_id": "COLON_FATAL_EMPTY",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "7fae9c4acbd4668604b17fba148679a8818974238be74dacda0922dd7bce7890",
+      "binding_content_sha256": "e936c63341cfae8741dd14be73a6e7518d8732a50079a2a59938db726fd804af",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_FOURTH",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_FOURTH",
+      "source_case_id": "COLON_FATAL_FOURTH",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "b119572ed2da05a551aae2011853bc32abb04193e39915db6856db88f3869539",
+      "binding_content_sha256": "5a96f0eb0808bcd4e16d38402d89e361b8abdb62471c9145dd1f6ff811b96a30",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_CHAR2_PARTIAL",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_CHAR2_PARTIAL",
+      "source_case_id": "COLON_FATAL_CHAR2_PARTIAL",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "dea7e43c05b7c3b43ec014f91045ddb38ff149087494409332b42fa80be9294a",
+      "binding_content_sha256": "249c148324451ec493987cc0e3261b1d6d025b34a522dd4d777e91c0840f5197",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_CHAR1_EXCESS",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_CHAR1_EXCESS",
+      "source_case_id": "COLON_FATAL_CHAR1_EXCESS",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "ae8c7d4e745cf2419b35621ab05d74627652f560b6365d6618960bf76bd63c66",
+      "binding_content_sha256": "03cdb7893a72214f498b1a657197f6b84779bdd7f6f2b28cedccfeb3155e7502",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_CHAR_SCALAR_EXCESS",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_CHAR_SCALAR_EXCESS",
+      "source_case_id": "COLON_FATAL_CHAR_SCALAR_EXCESS",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "ea63a7f8d8a6bbae6340be192341b0570e2521a203d5dd8d825d7d8c92022525",
+      "binding_content_sha256": "d19bdb30b32257261247dbe6614d45ed7fef5420ed429015654cff1ea4f271b4",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_GLOBAL3_PARTIAL",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_GLOBAL3_PARTIAL",
+      "source_case_id": "COLON_FATAL_GLOBAL3_PARTIAL",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "6a412520229cb697b911d8b50775e855903a87de4d73742c565e241a753912fc",
+      "binding_content_sha256": "2ce14371beb1a0ff4bf04b495d20e0ef4e2cc3f30f5689ecf2bf5394a1b292e4",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_GLOBAL2_PARTIAL_CLEAN_PAIR",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_GLOBAL2_PARTIAL_CLEAN_PAIR",
+      "source_case_id": "COLON_FATAL_GLOBAL2_PARTIAL_CLEAN_PAIR",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "da4ffcd4ff2e6952c0d1c095376220264749af1a24b3e87fd74ac0583d91866e",
+      "binding_content_sha256": "2b3a2a683a34d2ea1eb0bec3b62c2a382361b01d77f8bc38e0818d58605fc6fc",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_GLOBAL2_EXCESS",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_GLOBAL2_EXCESS",
+      "source_case_id": "COLON_FATAL_GLOBAL2_EXCESS",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "9e9150e9cf264825cda813c03d29567f9c4bcb15910e94a8e5c4a878efe3eb3c",
+      "binding_content_sha256": "014b3b43320c740a2e353b9e37fc2584b12d8250ed0dc85ab99bc38f935469f8",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_GLOBAL1_EXCESS",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_GLOBAL1_EXCESS",
+      "source_case_id": "COLON_FATAL_GLOBAL1_EXCESS",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "e8c49e9d36463c59f588f45005b3fd17f1efa17dd552638c8ca4deccf30c0f5b",
+      "binding_content_sha256": "00ab70fefde0457da0e422352be65fdef05cb33634cefc3efedba5d066c25f82",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_GLOBAL_SCALAR_INDEXED",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_GLOBAL_SCALAR_INDEXED",
+      "source_case_id": "COLON_FATAL_GLOBAL_SCALAR_INDEXED",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "1305cc9d49b1a58a3746513bd4e011c0acf344518be481f7a2ad775a3fb26af9",
+      "binding_content_sha256": "2df11c8673b6eb48889e702d469581708bd605f36c1aa39961c525a66c3cf621",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_CHAR1_PARTIAL_YES",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_CHAR1_PARTIAL_YES",
+      "source_case_id": "COLON_FATAL_CHAR1_PARTIAL_YES",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "0a1d79372e3be7abc3aee5ff20d822c99c22acd54cfd86f29536a170ead2795c",
+      "binding_content_sha256": "a591f087aa19fabf2f3bad83d21e9467764f15955713cc23ac08abe979800b71",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_RAND_BARE_NO",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_RAND_BARE_NO",
+      "source_case_id": "COLON_FATAL_RAND_BARE_NO",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "8b505c588f0ea1da1e798d60beecbf17edb136dd10d041e822452e25df2fe094",
+      "binding_content_sha256": "0c33d2bd5fa177db7584256dc8c697f642821e1b8ba68399cb3b56163f57d055",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_FATAL_RAND_ZERO_NO",
+      "family": "colon_grammar",
+      "case_id": "COLON_FATAL_RAND_ZERO_NO",
+      "source_case_id": "COLON_FATAL_RAND_ZERO_NO",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "1bdd66074ee08900ceed4b8e95608cf76a257eeb9896a5c43d28537d5ecb7b08",
+      "binding_content_sha256": "c5f628b3cf05e374f2739432ce3a276980da989273ce77c6b0e2b68f6bf1ad71",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "colon_grammar:COLON_RAND_ZERO_COMPAT_YES",
+      "family": "colon_grammar",
+      "case_id": "COLON_RAND_ZERO_COMPAT_YES",
+      "source_case_id": "COLON_RAND_ZERO_COMPAT_YES",
+      "parent_ids": [
+        "GRAMMAR-COLON-SHAPE-CONFIG"
+      ],
+      "case_content_sha256": "8cf0142997f4ac141fb8a0f07b5934aa6f103228ec6d510f00210cafa97a7802",
+      "binding_content_sha256": "f1baf6d2ec34a3991258fcc7bfbf0c6086b6229e6a54f2944da9bf2996c61431",
+      "unobserved_required": [
+        {
+          "pointer": "/source_context/postfatal_unprinted_state",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/native-02/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        },
+        {
+          "pointer": "/runs/public-01/observed/native_natural_exit",
+          "type": "string",
+          "value": "UNKNOWN"
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/public-01/observed/post_error_state"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_AT_DUPLICATE_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_AT_DUPLICATE_NO_20261115",
+      "source_case_id": "at-duplicate-NO",
+      "parent_ids": [
+        "SUP-LABEL-AT-DUPLICATE-01"
+      ],
+      "case_content_sha256": "cf2f35627f0d1f5978eff6535831b32ead19fd569cbda80cf19493baed521d1e",
+      "binding_content_sha256": "6d5d463b1287e5ed0b928406e56409bf19e843773a463546f8db239f1c000a4a",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_AT_DUPLICATE_YES_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_AT_DUPLICATE_YES_20261115",
+      "source_case_id": "at-duplicate-YES",
+      "parent_ids": [
+        "SUP-LABEL-AT-DUPLICATE-01"
+      ],
+      "case_content_sha256": "53dacb88d399348d94c2bd4e90869c5db9e81c1ccdaa5ebd947660471af9ed98",
+      "binding_content_sha256": "8b66fece20d41b889653aff906e86c93bec1dd1b68d480cdfebebfa3835f236e",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_AT_EMPTY_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_AT_EMPTY_NO_20261115",
+      "source_case_id": "at-empty-NO",
+      "parent_ids": [
+        "SUP-LABEL-AT-EMPTY-02"
+      ],
+      "case_content_sha256": "9d72e6aef880fe8dbb4522c246ca6c5c21295e8c7f3cea4cab8cae3c8e440a1c",
+      "binding_content_sha256": "6c5dd52b90f9852817c9ccbc95da11c35bf60505bb6f4c3afdd182df31f88014",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_DOLLAR_DUPLICATE_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_DOLLAR_DUPLICATE_NO_20261115",
+      "source_case_id": "dollar-duplicate-NO",
+      "parent_ids": [
+        "SUP-LABEL-DOLLAR-DUPLICATE-01"
+      ],
+      "case_content_sha256": "686d6e77d9d62a842b65f0331d306a57e242e9826dfab90bdf1484b4e908ceda",
+      "binding_content_sha256": "a7d65e0ff4e6ceb06cf498ff6dd2aac15448e1b6aab8ade7fb66058abad11581",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_DOLLAR_SEPARATE_CONTROL_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_DOLLAR_SEPARATE_CONTROL_NO_20261115",
+      "source_case_id": "dollar-separate-control-NO",
+      "parent_ids": [
+        "SUP-LABEL-DOLLAR-DUPLICATE-01"
+      ],
+      "case_content_sha256": "be9286982b64e27e0f43d034e0c2b54c894fead2b727bd779a83764f18b5f897",
+      "binding_content_sha256": "e68f62d36117b7f41392de89b9f702293cdc05b3872231ff7e15efa6a415cf20",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_DOLLAR_TRAILING_CONTROL_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_DOLLAR_TRAILING_CONTROL_NO_20261115",
+      "source_case_id": "dollar-trailing-control-NO",
+      "parent_ids": [
+        "SUP-LABEL-DOLLAR-TRAILING-01"
+      ],
+      "case_content_sha256": "a563cbf9a0b008011abfb00df2d7f07b62aa23fd4fe687053d5a57d1acd5f00d",
+      "binding_content_sha256": "1cb38bda682e4bb75b7ae859e4f7e0d9a7e7052e9f48e723b665d7c0726820c5",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_DOLLAR_TRAILING_NUMBER_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_DOLLAR_TRAILING_NUMBER_NO_20261115",
+      "source_case_id": "dollar-trailing-number-NO",
+      "parent_ids": [
+        "SUP-LABEL-DOLLAR-TRAILING-01"
+      ],
+      "case_content_sha256": "a885507277700b4afd032e19171a46c0d62a1c12f12f0e8845641333fe26d980",
+      "binding_content_sha256": "391d01d27fb965519d4af68baaf902dd1e19b7e236bb68f8268379d4f8756b9e",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    },
+    {
+      "key": "supplemental_label:SUP_LABEL_DOLLAR_TRAILING_UNCLOSED_NO_20261115",
+      "family": "supplemental_label",
+      "case_id": "SUP_LABEL_DOLLAR_TRAILING_UNCLOSED_NO_20261115",
+      "source_case_id": "dollar-trailing-unclosed-NO",
+      "parent_ids": [
+        "SUP-LABEL-DOLLAR-TRAILING-01"
+      ],
+      "case_content_sha256": "32fc112bcbf786fdce8d31b1c3c0f465593e814d01078cce18f4b3b52a24b815",
+      "binding_content_sha256": "cc42678096c45b04cd8db5762e1549f36c72d6d913b2998d1bc9ad4a3ecf1cde",
+      "unobserved_required": [
+        {
+          "pointer": "/runs/native-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/native-02/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "pointer": "/runs/public-01/observed/no_post_error_state",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      "unobserved_forbidden": [
+        "/runs/native-01/observed/post_error_state",
+        "/runs/native-01/observed/native_natural_exit",
+        "/runs/native-02/observed/post_error_state",
+        "/runs/native-02/observed/native_natural_exit",
+        "/runs/public-01/observed/post_error_state",
+        "/runs/public-01/observed/native_natural_exit"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "fixture": "CHOICE_GOOD_PRINTDATAW",
+  "mode": "native-01",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]"
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "9e9e3a453c442fdd823d2d9e13d1e77aeb5de30d42058d2a3dcbb779b7a7166b",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "native_before": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "started_utc": "2026-11-15T23:32:40.975443+00:00",
+  "controller_sha256": "87e03784caa7343225dc9fbbfe86e9148dba7ef7f71aa8a47de90bde66a08b19",
+  "desktop": "ordinary; exact owned process/window and Computer Use targeted Return required",
+  "not_private_desktop": true,
+  "returncode": 0,
+  "controller_returncode_not_native_natural_exit": true,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "9e9e3a453c442fdd823d2d9e13d1e77aeb5de30d42058d2a3dcbb779b7a7166b",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "native_after": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "ended_utc": "2026-11-15T23:35:41.066495+00:00",
+  "native_process_returncode": 1,
+  "normal_completion_observed": true,
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "f22d8bc69afad93cb5179ecbb69577d14055397859ccbc9a9b6029fa80ce8fe6",
+    "emuera.log": "2e90246e0025d78e8f005f3e8f4f82540b6bd8f5342ef35f87966e6a3f0da91a",
+    "INPUT_ACTION.json": "e1fc1c1b2d305200f9c3aa8d143df171b4282621f01706fc370584e17c31075d",
+    "INPUT_INTENT.json": "3d2f6a1a30b2ad5a7e2023f81b0e71d8984df3bc0aee193baf54d31085459868",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "1a5ddd238f77e28618bc2d3e296b4d71cf6e32089ef7b5936a647c858dfe0656",
+    "probe.json": "e2f7798335f6f43833fcd81067a2213e70b8720d6edb4193f60de152f4cf3caa",
+    "stderr.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "UI_BEFORE.json": "70ead0842d67c586b5a1c20cad75fa130c6a8997fa2623e30116d28d8255d39f",
+    "UI_BEFORE_VISUAL_VERIFICATION.json": "58bd0b0c4ff30d7763a995616537a5b98df2636183516a9abb487f530c0bc75b",
+    "WINDOWS_MCP_BEFORE_TEXT.txt": "a64cdab7aef8dab1706e0fb6a70882e7f0f9f7f478039c10ec0ef46a9bfe65ce"
+  }
+}

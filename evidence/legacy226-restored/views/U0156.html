@@ -1,0 +1,158 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0156 · SUMARRAY_PARENT_ACCEPTANCE.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0156 · SUMARRAY_PARENT_ACCEPTANCE.json</h1>
+<p>原票種別=SUMARRAY_PARENT_ACCEPTANCE.json; 参照対象=expression_function:SUMARRAY。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;SUMARRAY&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>d8559054c4a869aa44bbd8f3d7d7dd0770b22f010e61abfb98f82db9644c7799</code></p>
+<p><a href="../assets/U0156.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>d8559054c4a869aa44bbd8f3d7d7dd0770b22f010e61abfb98f82db9644c7799</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;SUMARRAY&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;ARRAY_BOUNDARY_NORMAL_CORRECTED_20261115&quot;,
+    &quot;ARRAY_BOUNDARY_SUMARRAY_END_OVERRUN_20261115&quot;,
+    &quot;ARRAY_BOUNDARY_SUMARRAY_NEGATIVE_START_20261115&quot;
+  ],
+  &quot;accepted_scope&quot;: &quot;Original size4 singleton[3,4), start-1 and end5 independent stops, and mutated-endpoint helper readbacks observed in exact expression form. Singleton9; mutations yield SUM23/MAX13/MIN2 with order231, endpoint4 and C2. Native/public selected state/control agree; diagnostic formats differ. Historical empty/reverse differences retained, not overwritten by new matches.&quot;,
+  &quot;original_remaining&quot;: [
+    {
+      &quot;type&quot;: &quot;finite_evidence_adjudication&quot;,
+      &quot;source&quot;: &quot;evidence\\parent-implemented-function-review-20261113\\MATRIX.json&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;expression_function&quot;,
+        &quot;name&quot;: &quot;SUMARRAY&quot;
+      },
+      &quot;requirements&quot;: [
+        &quot;Missing explicit size4 start=-1 and end5 independent stops, singleton[3,4) result and mutated endpoint-helper readbacks in this exact form. Existing normal[1,3), empty[1,1), reverse[2,1) do not discharge those endpoints/effects.&quot;
+      ],
+      &quot;note&quot;: &quot;Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls.&quot;
+    }
+  ],
+  &quot;original_requirement_mapping&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;SUMARRAY&quot;,
+    &quot;original_axes&quot;: [
+      {
+        &quot;axis&quot;: &quot;exact_v24_registration_signature_form&quot;,
+        &quot;original_requirement&quot;: {
+          &quot;axis&quot;: &quot;exact_v24_registration_signature_form&quot;,
+          &quot;requirement&quot;: &quot;Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.&quot;,
+          &quot;evidence_state&quot;: &quot;source_inspected&quot;,
+          &quot;source_contract_ref&quot;: &quot;SOURCE_CONTRACTS.json#/contracts/SUMARRAY&quot;,
+          &quot;binary_registration&quot;: {
+            &quot;name&quot;: &quot;SUMARRAY&quot;,
+            &quot;ldstr_il_offset&quot;: &quot;03E8&quot;,
+            &quot;set_item_il_offset&quot;: &quot;03F2&quot;
+          },
+          &quot;form&quot;: &quot;Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.&quot;
+        },
+        &quot;frozen_full_requirement_sha256&quot;: &quot;9c896d6c0e55c755f0764c84f1e31fe53f7f4a687144ff6ac279cde5aefb4013&quot;
+      },
+      {
+        &quot;axis&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+        &quot;original_requirement&quot;: {
+          &quot;axis&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+          &quot;requirement&quot;: &quot;Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.&quot;,
+          &quot;evidence_state&quot;: &quot;scoped_executions_require_per_case_readback&quot;,
+          &quot;case_ids&quot;: [
+            &quot;SUMARREMPTY&quot;,
+            &quot;SUMARRREVERSE&quot;,
+            &quot;ARRAYRANGENORMAL01&quot;
+          ],
+          &quot;independent_gap_case_ids&quot;: []
+        },
+        &quot;frozen_full_requirement_sha256&quot;: &quot;ce3c1a57b8fa8bc29add121b693275a5948a5d335f7b15bf995d6606f52aedac&quot;
+      },
+      {
+        &quot;axis&quot;: &quot;selected_normal_output_state_control&quot;,
+        &quot;original_requirement&quot;: {
+          &quot;axis&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.&quot;,
+          &quot;evidence_state&quot;: &quot;selected_scoped_evidence_present&quot;,
+          &quot;matching_case_ids&quot;: [
+            &quot;SUMARREMPTY&quot;,
+            &quot;ARRAYRANGENORMAL01&quot;
+          ]
+        },
+        &quot;frozen_full_requirement_sha256&quot;: &quot;06f5365dc22afe63fab29c3891157104f2d4ed58ed534c2a6d7d8b3ceb8df817&quot;
+      },
+      {
+        &quot;axis&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+        &quot;original_requirement&quot;: {
+          &quot;axis&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;requirement&quot;: &quot;Review existing normal/empty/reverse-range cases and C# VariableEvaluator delegation; with explicit size4 test start=-1 and end5 separately, one-element[3,4), mutated helper endpoints. CARRAY uses real characters0..2 and active TARGET guard.&quot;,
+          &quot;evidence_state&quot;: &quot;selected_documented_difference&quot;,
+          &quot;difference_case_ids&quot;: [
+            &quot;SUMARRREVERSE&quot;
+          ]
+        },
+        &quot;frozen_full_requirement_sha256&quot;: &quot;770aca37fce3c3f0963f29af670670c32ab88bdc146b26581b40883b7362cd1b&quot;
+      },
+      {
+        &quot;axis&quot;: &quot;result_routing_and_stop_location&quot;,
+        &quot;original_requirement&quot;: {
+          &quot;axis&quot;: &quot;result_routing_and_stop_location&quot;,
+          &quot;requirement&quot;: &quot;Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.&quot;,
+          &quot;source_ref&quot;: &quot;Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment&quot;,
+          &quot;evidence_state&quot;: &quot;per_case_input_and_raw_readbacks_cited&quot;
+        },
+        &quot;frozen_full_requirement_sha256&quot;: &quot;c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390&quot;
+      }
+    ],
+    &quot;new_obligation_mapping&quot;: {
+      &quot;negative-start&quot;: [
+        33,
+        34,
+        35
+      ],
+      &quot;end-overrun&quot;: [
+        30,
+        31,
+        32
+      ],
+      &quot;singleton&quot;: [
+        12,
+        18,
+        24
+      ],
+      &quot;mutated-endpoints&quot;: [
+        13,
+        19,
+        25
+      ]
+    },
+    &quot;retained_without_rerun&quot;: [
+      &quot;SUMARREMPTY/SUMARRREVERSE/ARRAYRANGENORMAL01 as applicable, original per-target row and ARRAY_RANGE_REVIEW_ja.md&quot;
+    ],
+    &quot;closure&quot;: &quot;requested four missing expression obligations now observed; no global semantic/full-branch compatibility claim&quot;
+  },
+  &quot;report_sha256&quot;: &quot;71ec57a61c04c2e421c575e081b6cec4ba0caef524647ff5a0b38e1a5475c4de&quot;,
+  &quot;manifest_path&quot;: &quot;evidence/array-aggregate-bounds-20261115/MANIFEST.json&quot;,
+  &quot;manifest_sha256&quot;: &quot;1167c367efc2360519b5f4324871a63fe4981b64692675a2411d534b964db062&quot;,
+  &quot;limitations&quot;: [
+    &quot;Known historical empty/reverse differences retained; no CARRAY or command-form execution.&quot;,
+    &quot;Six boundary cases: stop location matched; diagnostic wording differs.&quot;,
+    &quot;Mutation: both engines return 23/13/2, order 231, endpoint readback 4, C=2 and data[3]=13 for these exact expressions.&quot;,
+    &quot;Initial normal fixture failed at helper OUTPUTLOG; retained intact, corrected normal only was executed separately.&quot;,
+    &quot;Pre-existing Emuera PIDs 3352 and 24272 were observed before launch and left untouched; serialization proves this evidence run intervals and shared lock ownership, not absence of every legacy process.&quot;,
+    &quot;No keys/images; Native runner terminates its own still-running process after 5 seconds; natural exit not claimed.&quot;
+  ],
+  &quot;product_modified&quot;: false,
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2216 · expression_function:SUMARRAY · acceptance</li>
+<li>L2217 · expression_function:SUMARRAY · check</li>
+</ul></html>

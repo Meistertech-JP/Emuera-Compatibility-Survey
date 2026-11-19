@@ -1,0 +1,25 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "declaration",
+    "name": "#DEFINE"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_DEFINE_FINITE_20261115.json",
+  "acceptance_sha256": "df48c9d842e370cbd41cec43300c5de2958f7a2ce4469d5e9fae81b05d731abe",
+  "evidence_manifest_path": "evidence/define-edge-cases-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "427ef74001bbe2497054e6be3fb524f8cfc26afe793c5163ef58ce00f3ff181a",
+  "registered_case_ids": [
+    "DEFINE_DUPLICATE_NAME_20261115",
+    "DEFINE_EMPTY_EXPANSION_20261115",
+    "DEFINE_MISSING_IDENTIFIER_20261115",
+    "DEFINE_BAD_ARGUMENT_SEPARATOR_20261115",
+    "DEFINE_UNCLOSED_ARGUMENT_LIST_20261115",
+    "MACROFUNC01"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "public_release_modified": false
+}

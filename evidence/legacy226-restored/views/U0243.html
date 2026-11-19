@@ -1,0 +1,31 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0243 · emuera.log</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0243 · emuera.log</h1>
+<p>U0243 / runs/dot-cancel-queue/native-02。CALLTRAIN/STOPCALLTRAIN/DOTRAINの選択状態・継続マーカー・例外を区別。STOPCALLTRAIN後のNative例外も有効な観測として保持。出力9行、マーカー3種、診断候補0行を確認。例: CASE220_START, UNREACHED_DOT_EVENTTRAIN, CASE220_DONE。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140</code></p>
+<p><a href="../assets/U0243.log">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140</code></p>
+<pre>Now Loading...
+CASE220_START
+T|EVENTTRAIN|N=0|S=0|H=0|E=0|SEL=0|P=-1|NEXT=-1|R=701|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0
+|SRC=0
+UNREACHED_DOT_EVENTTRAIN
+T|EVENTCOM|N=0|S=0|H=0|E=2|SEL=1|P=-1|NEXT=-1|R=0|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0|SRC
+=85
+T|COM1|N=1|S=0|H=0|E=2|SEL=1|P=-1|NEXT=-1|R=0|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0|SRC=85
+CASE220_DONE
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0170 · command_or_syntax:COPYCHARA · check</li>
+<li>L0713 · command_or_syntax:COPYCHARA · check</li>
+<li>L0798 · command_or_syntax:COPYCHARA · check</li>
+<li>L0956 · command_or_syntax:CALLTRAIN · check</li>
+<li>L1499 · command_or_syntax:CALLTRAIN · check</li>
+<li>L1584 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

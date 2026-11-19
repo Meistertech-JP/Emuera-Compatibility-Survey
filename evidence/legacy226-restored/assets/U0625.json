@@ -1,0 +1,26 @@
+{
+  "schema": "define-excluded-attempts-1",
+  "attempts": [
+    {
+      "path": "empty-native-01 / empty-native-02 / empty-py",
+      "reason": "The first empty-macro probe placed the identifier in PRINTL text, where it remained literal. It did not test preprocessor expression expansion and is superseded by empty_expr; do not count it."
+    },
+    {
+      "path": "duplicate-native-cap-01 / missing_id-native-cap-01 / malformed_args-native-cap-01",
+      "reason": "PowerShell Copy-Item used LiteralPath with a wildcard, leaving ERB fixtures uncopied. These capture attempts are invalid setup and excluded."
+    },
+    {
+      "path": "missing_id-native-cap-02",
+      "reason": "The cap02 fixture bytes match, but cap03 is the designated retained visual capture; cap02 is redundant and not used."
+    },
+    {
+      "path": "malformed_args-native-cap-02",
+      "reason": "The second copy batch stopped on the existing directory, but post-run byte comparison proved its ERH/ERB exactly match the accepted fixture. The raw capture is valid and is included; the setup error itself is not counted as a run."
+    },
+    {
+      "path": "duplicate-native-cap-01",
+      "reason": "Initial screenshot helper raised on a Win32 handle conversion after creating an uncropped app-window image. The full image was replaced by its transcript crop; this attempt is not counted."
+    }
+  ],
+  "retention": "Raw attempts remain in the work folder for auditability. The accepted evidence manifest excludes these paths. The only retained screenshots are transcript/dialog crops, not full-screen captures."
+}

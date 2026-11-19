@@ -1,0 +1,140 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "expression_function",
+    "name": "MINARRAY"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "ARRAY_BOUNDARY_MINARRAY_END_OVERRUN_20261115",
+    "ARRAY_BOUNDARY_MINARRAY_NEGATIVE_START_20261115",
+    "ARRAY_BOUNDARY_NORMAL_CORRECTED_20261115"
+  ],
+  "accepted_scope": "Original size4 singleton[3,4), start-1 and end5 independent stops, and mutated-endpoint helper readbacks observed in exact expression form. Singleton9; mutations yield SUM23/MAX13/MIN2 with order231, endpoint4 and C2. Native/public selected state/control agree; diagnostic formats differ. Historical empty/reverse differences retained, not overwritten by new matches.",
+  "original_remaining": [
+    {
+      "type": "finite_evidence_adjudication",
+      "source": "evidence\\parent-implemented-function-review-20261113\\MATRIX.json",
+      "target": {
+        "kind": "expression_function",
+        "name": "MINARRAY"
+      },
+      "requirements": [
+        "Missing explicit size4 start=-1 and end5 independent stops, singleton[3,4) result and mutated endpoint-helper readbacks in this exact form. Existing normal[1,3), empty[1,1), reverse[2,1) do not discharge those endpoints/effects."
+      ],
+      "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+    }
+  ],
+  "original_requirement_mapping": {
+    "kind": "expression_function",
+    "name": "MINARRAY",
+    "original_axes": [
+      {
+        "axis": "exact_v24_registration_signature_form",
+        "original_requirement": {
+          "axis": "exact_v24_registration_signature_form",
+          "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+          "evidence_state": "source_inspected",
+          "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/MINARRAY",
+          "binary_registration": {
+            "name": "MINARRAY",
+            "ldstr_il_offset": "047B",
+            "set_item_il_offset": "0487"
+          },
+          "form": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them."
+        },
+        "frozen_full_requirement_sha256": "60edd04a727fd87ed0dd68ae885af06c26aeab2c8d2aace365905cd9090a935e"
+      },
+      {
+        "axis": "actual_target_reach_or_independent_public_availability_gap",
+        "original_requirement": {
+          "axis": "actual_target_reach_or_independent_public_availability_gap",
+          "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+          "evidence_state": "scoped_executions_require_per_case_readback",
+          "case_ids": [
+            "MINARREMPTY",
+            "MINARRREVERSE",
+            "ARRAYRANGENORMAL01"
+          ],
+          "independent_gap_case_ids": []
+        },
+        "frozen_full_requirement_sha256": "96be94e2818c354f720d7f282500a76310b38e8a1ce8c4c19fc526e3eef67693"
+      },
+      {
+        "axis": "selected_normal_output_state_control",
+        "original_requirement": {
+          "axis": "selected_normal_output_state_control",
+          "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+          "evidence_state": "selected_scoped_evidence_present",
+          "matching_case_ids": [
+            "ARRAYRANGENORMAL01"
+          ]
+        },
+        "frozen_full_requirement_sha256": "2920e64258b4170d7e36cfd991cccc11fd35efb2cb4ee9594cc72ae3321555f3"
+      },
+      {
+        "axis": "applicable_boundary_error_evaluation_side_effect",
+        "original_requirement": {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "requirement": "Review existing normal/empty/reverse-range cases and C# VariableEvaluator delegation; with explicit size4 test start=-1 and end5 separately, one-element[3,4), mutated helper endpoints. CARRAY uses real characters0..2 and active TARGET guard.",
+          "evidence_state": "selected_documented_difference",
+          "difference_case_ids": [
+            "MINARREMPTY",
+            "MINARRREVERSE"
+          ]
+        },
+        "frozen_full_requirement_sha256": "93e5eeb684969a9301ba08af59f6348f96ca4bbecffab00c5aed8178a72c1f3c"
+      },
+      {
+        "axis": "result_routing_and_stop_location",
+        "original_requirement": {
+          "axis": "result_routing_and_stop_location",
+          "requirement": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.",
+          "source_ref": "Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment",
+          "evidence_state": "per_case_input_and_raw_readbacks_cited"
+        },
+        "frozen_full_requirement_sha256": "c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390"
+      }
+    ],
+    "new_obligation_mapping": {
+      "negative-start": [
+        9,
+        10,
+        11
+      ],
+      "end-overrun": [
+        6,
+        7,
+        8
+      ],
+      "singleton": [
+        16,
+        22,
+        28
+      ],
+      "mutated-endpoints": [
+        17,
+        23,
+        29
+      ]
+    },
+    "retained_without_rerun": [
+      "SUMARREMPTY/SUMARRREVERSE/ARRAYRANGENORMAL01 as applicable, original per-target row and ARRAY_RANGE_REVIEW_ja.md"
+    ],
+    "closure": "requested four missing expression obligations now observed; no global semantic/full-branch compatibility claim"
+  },
+  "report_sha256": "71ec57a61c04c2e421c575e081b6cec4ba0caef524647ff5a0b38e1a5475c4de",
+  "manifest_path": "evidence/array-aggregate-bounds-20261115/MANIFEST.json",
+  "manifest_sha256": "1167c367efc2360519b5f4324871a63fe4981b64692675a2411d534b964db062",
+  "limitations": [
+    "Known historical empty/reverse differences retained; no CARRAY or command-form execution.",
+    "Six boundary cases: stop location matched; diagnostic wording differs.",
+    "Mutation: both engines return 23/13/2, order 231, endpoint readback 4, C=2 and data[3]=13 for these exact expressions.",
+    "Initial normal fixture failed at helper OUTPUTLOG; retained intact, corrected normal only was executed separately.",
+    "Pre-existing Emuera PIDs 3352 and 24272 were observed before launch and left untouched; serialization proves this evidence run intervals and shared lock ownership, not absence of every legacy process.",
+    "No keys/images; Native runner terminates its own still-running process after 5 seconds; natural exit not claimed."
+  ],
+  "product_modified": false,
+  "global_completion": false
+}

@@ -1,0 +1,25 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0620 · COMMAND_BOUNDARY_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0620 · COMMAND_BOUNDARY_REVIEW_ja.md</h1>
+<p>ループ外CONTINUEの診断時点と先行副作用の差を示す有効な境界証拠として原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>88d3397ddc7a9401e3dc4ddefdaaa376c77a0a3f1db7c251a0f08ed6c71fc9c8</code></p>
+<p><a href="../assets/U0620.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>88d3397ddc7a9401e3dc4ddefdaaa376c77a0a3f1db7c251a0f08ed6c71fc9c8</code></p>
+<pre># CONTINUE 命令境界の有限比較（2026-11-15）
+
+ループ外`CONTINUE`を本家v24で2回、公開PyEmuera 3.0.0 pyzで1回実行した。両Nativeログはバイト一致し、入力ERB/configは同じハッシュ。pyzは実行前後ともピンSHAと一致した。Nativeランナーはキー入力を送っていない。
+
+Nativeは読込時に3行目の警告を記録し、`CONTINUE_OUTSIDE_BEFORE`を実行後、3行目で実行時エラーとなり、`AFTER`へ進まなかった。公開pyzは同じ3行目をコンパイル時に`E_SYNTAX`として拒否し、`BEFORE`/`AFTER`とも出力しなかった。停止行は一致するが、実行段階と直前副作用に範囲限定の差があるため`different_scoped`とした。
+
+この1形式に限った結果であり、ループ内の正常CONTINUEや他の制御命令の一般化はしない。Native GUI自然終了、診断文のバイト同一性は確認していない。製品コード・公開配布物は変更していない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0113 · command_or_syntax:CONTINUE · check</li>
+<li>L0117 · command_or_syntax:CONTINUE · check</li>
+</ul></html>

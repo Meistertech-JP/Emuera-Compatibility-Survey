@@ -1,0 +1,48 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-15T05:23:20.659578+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ELSEIF"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "scope": [
+    "P1 selected middle ELSEIF condition and suppression of later faulting candidate",
+    "P2 all-false candidate evaluation order and continuation",
+    "Native v24 twice and pinned public pyz once on the same fixture; byte-identical logs and selected scalar states"
+  ],
+  "cases": [
+    {
+      "case_id": "IFCHAIN269_P1",
+      "comparison_path": "evidence/if-chain-finite-269-20261113/ACTUAL_RAW_COMPARISON.json",
+      "comparison_sha256": "0e3e478dc63931161676962206a4bc5ed7b63d0883e7927bddb729aabdf7c544",
+      "fixture_path": "evidence/if-chain-finite-269-20261113/fixtures/ZZ269_IF_CHAIN/ERB/ZZ269.ERB",
+      "fixture_sha256": "b0511f825d4dfeaa76f514f5dadce429f393d957ea3c9a0e75cf06793662cb42",
+      "registered_evidence_count": 37,
+      "registered_evidence_all_hash_valid": true,
+      "native_log_sha256": "38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad",
+      "public_log_sha256": "38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad"
+    },
+    {
+      "case_id": "IFCHAIN269_P2",
+      "comparison_path": "evidence/if-chain-finite-269-20261113/ACTUAL_RAW_COMPARISON.json",
+      "comparison_sha256": "0e3e478dc63931161676962206a4bc5ed7b63d0883e7927bddb729aabdf7c544",
+      "fixture_path": "evidence/if-chain-finite-269-20261113/fixtures/ZZ269_IF_CHAIN/ERB/ZZ269.ERB",
+      "fixture_sha256": "b0511f825d4dfeaa76f514f5dadce429f393d957ea3c9a0e75cf06793662cb42",
+      "registered_evidence_count": 37,
+      "registered_evidence_all_hash_valid": true,
+      "native_log_sha256": "38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad",
+      "public_log_sha256": "38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad"
+    }
+  ],
+  "source_pins_path": "evidence/if-chain-finite-269-20261113/SOURCE_PINS.json",
+  "source_pins_sha256": "8b3616ac7f6a90a73cb17ca35f6edad032e2bba72d8f1057563d2c139b3f6b08",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256_before_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "native_natural_exit_observed": false,
+  "public_natural_exit_observed": true,
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_modified": false
+}

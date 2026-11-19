@@ -1,0 +1,105 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-14T16:25:38.130178+00:00",
+  "decision_authority": "Codex evidence review within the active Phase 2 work; not owner release sign-off.",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "LOADGLOBAL"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "GLOBAL03",
+    "GLOBALSAVE205_LOADGLOBAL",
+    "LOADGLOBAL_CORRUPT_TRUNCATION_20261115",
+    "LOADGLOBAL_CORRUPT_SECOND_VALUE_20261115"
+  ],
+  "accepted_scope": "Native registration as zero-argument LOADGLOBAL; existing missing/success/repeated valid save-load cases plus two isolated own-format malformed-save cases. Both malformed cases return RESULT=0 and continue. Partial live-state mutation and diagnostics differ as recorded; the mismatch is preserved as a scoped difference.",
+  "source_refs": [
+    {
+      "archive": "Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "ranges": [
+        [
+          225,
+          225
+        ]
+      ]
+    },
+    {
+      "archive": "Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "ranges": [
+        [
+          1325,
+          1340
+        ]
+      ]
+    },
+    {
+      "archive": "Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Variable/VariableEvaluator.cs",
+      "sha256": "bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582",
+      "ranges": [
+        [
+          2259,
+          2313
+        ]
+      ]
+    },
+    {
+      "archive": "Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/Sub/EraDataStream.cs",
+      "sha256": "a1e1f8bcfdefaeaf7c9f39a344ecfff4a464ee210c5dc60d073be2f65d77c1e6",
+      "ranges": [
+        [
+          76,
+          100
+        ]
+      ]
+    },
+    {
+      "archive": "PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/save_commands.py",
+      "sha256": "eb64b1274a279b3cc1321ba184d19a9f2894047eb0d67bcb60675cb109087e7d",
+      "ranges": [
+        [
+          20,
+          32
+        ]
+      ]
+    },
+    {
+      "archive": "PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/persistence.py",
+      "sha256": "d2b90a2e0f40b42c0394b231bbf90af0867016a5368b4e9cce2d43c879a8c7e9",
+      "ranges": [
+        [
+          170,
+          218
+        ]
+      ]
+    }
+  ],
+  "evidence": [
+    "RUN_COMPARISON.json",
+    "REVIEW_ja.md",
+    "SOURCE_IDENTITY.json",
+    "SOURCE_EXCERPTS.txt",
+    "MANIFEST.json"
+  ],
+  "out_of_scope_limits": [
+    "permissions/read-only failures",
+    "wrong game identity and version mismatch",
+    "cross-format loading",
+    "all persisted variable fields and shapes",
+    "GUI warning rendering and screenshots",
+    "natural Native exit",
+    "saving behavior and SAVEGLOBAL return value"
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "global_compatibility_claim": false
+}

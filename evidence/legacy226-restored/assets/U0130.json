@@ -1,0 +1,1259 @@
+{
+  "schema": "pyemuera-parent-evidence-adjudication-v3",
+  "draft": false,
+  "bundles": [
+    {
+      "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4",
+      "manifest_sha256": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "expression_function",
+      "name": "LIMIT",
+      "accepted": true,
+      "review_row_sha256": "fb2a62d112487c789668045aedc81dd7d486f2cc42bbaba025e438ab92b8a854",
+      "outcome": "matched_in_finite_scope",
+      "scope": "Finite expression_function:LIMIT only: retained normal x=3,4,8,9 bounds[4,8], retained reversed x=6 bounds[8,4], new ordered numeric helpers, independent RESULT/RESULTS snapshots and continuation.",
+      "completion_review": "Parent accepted independent source/fixture/raw review: finite expression boundary, reversed-bound, evaluation-order and result-sentinel comparisons complete. Method form, exhaustive Int64 domain, invalid-call diagnostics and natural Native termination are outside this acceptance.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "exact_v24_registration_signature_form",
+          "original_requirement": {
+            "axis": "exact_v24_registration_signature_form",
+            "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+            "evidence_state": "source_inspected",
+            "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/LIMIT",
+            "binary_registration": {
+              "name": "LIMIT",
+              "ldstr_il_offset": "03D8",
+              "set_item_il_offset": "03E2"
+            },
+            "form": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them."
+          },
+          "original_requirement_sha256": "6d4fd44d791293fbb3e551512a12eb798dcb2172f6123941b98684c860adde93",
+          "case_ids": [
+            "MATH_HELPER03_01_LIMIT"
+          ],
+          "finding": "Creator.cs:87 registration GetLimitMethod; Creator.Method.cs:1182-1186 Int64 return and exactly three Int64 arguments;1190-1192 evaluate x/min/max before1194-1200 min-first clamp. Exact default fixed validator is source-inspected, not a new invalid-call observation. Only expression form is adjudicated.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/LIMIT"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json",
+              "sha256_current": "bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json",
+              "sha256_current": "cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json",
+              "sha256_current": "6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            }
+          ]
+        },
+        {
+          "id": "actual_target_reach_or_independent_public_availability_gap",
+          "original_requirement": {
+            "axis": "actual_target_reach_or_independent_public_availability_gap",
+            "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+            "evidence_state": "scoped_executions_require_per_case_readback",
+            "case_ids": [
+              "LIMITBASE01"
+            ],
+            "independent_gap_case_ids": []
+          },
+          "original_requirement_sha256": "ab1c2e0e1ac9dbd41cdbbe296786b036852c0c91a16287bac9a4fd536f9b4aaf",
+          "case_ids": [
+            "MATH_HELPER03_01_LIMIT"
+          ],
+          "finding": "Own helper expression reached on full-batch Native2/public1; own return observed between generated expression and following marker block. AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -> 4/4/8/8. AUTO010: x=6,bounds[8,4] ->8.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/LIMIT"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json",
+              "sha256_current": "bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json",
+              "sha256_current": "cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json",
+              "sha256_current": "6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            }
+          ]
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "original_requirement": {
+            "axis": "selected_normal_output_state_control",
+            "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+            "evidence_state": "selected_scoped_evidence_present",
+            "matching_case_ids": [
+              "LIMITBASE01"
+            ]
+          },
+          "original_requirement_sha256": "f01e22de07912336d97d8af138eb93c3cc6072110deb78e42e45a4ed2f257ecb",
+          "case_ids": [
+            "MATH_HELPER03_01_LIMIT"
+          ],
+          "finding": "MATH_HELPER03_01_LIMIT: observed value 4, helper_count3/helper_order123, RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT and END/final DONE in Native2/public1. Snapshot precedes all PRINT instructions. AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -> 4/4/8/8. AUTO010: x=6,bounds[8,4] ->8.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/LIMIT"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json",
+              "sha256_current": "bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json",
+              "sha256_current": "cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json",
+              "sha256_current": "6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            }
+          ]
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": {
+            "axis": "applicable_boundary_error_evaluation_side_effect",
+            "requirement": "For x=4 and bounds[4,8], test x=3,4,8,9 and reversed bounds[8,4], using helper-returned x/min/max with order readback. Distinguish inclusive comparisons from clamp behavior.",
+            "finite_source_branches": [
+              {
+                "line": 1190,
+                "text": "Int64 value = arguments[0].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 1191,
+                "text": "Int64 min = arguments[1].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 1192,
+                "text": "Int64 max = arguments[2].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 1194,
+                "text": "if (value < min)",
+                "classification": "active_source"
+              },
+              {
+                "line": 1196,
+                "text": "else if (value > max)",
+                "classification": "active_source"
+              },
+              {
+                "line": 1198,
+                "text": "else",
+                "classification": "active_source"
+              },
+              {
+                "line": 1200,
+                "text": "return (ret);",
+                "classification": "active_source"
+              }
+            ],
+            "evidence_state": "source_relevant_review_required",
+            "difference_case_ids": []
+          },
+          "original_requirement_sha256": "e8c8bcd69fb3e060d57c02cbd618faa9c998ce4fda61a7d6be373e5be1a9ab44",
+          "case_ids": [
+            "AUTO_V2_EXPR_006_LIMIT",
+            "AUTO_V2_EXPR_007_LIMIT",
+            "AUTO_V2_EXPR_008_LIMIT",
+            "AUTO_V2_EXPR_009_LIMIT",
+            "AUTO_V2_EXPR_010_LIMIT",
+            "MATH_HELPER03_01_LIMIT"
+          ],
+          "finding": "AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -> 4/4/8/8. AUTO010: x=6,bounds[8,4] ->8. Named numerical finite branches already observed; new helper case discharges ordered x/min/max effectful evaluation. Creator.cs:87 registration GetLimitMethod; Creator.Method.cs:1182-1186 Int64 return and exactly three Int64 arguments;1190-1192 evaluate x/min/max before1194-1200 min-first clamp. Because all operand reads precede every value branch, no duplicate boundary helper trial is needed. No new error or post-fatal state claim.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/LIMIT"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json",
+              "sha256_current": "bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json",
+              "sha256_current": "cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json",
+              "sha256_current": "6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            }
+          ]
+        },
+        {
+          "id": "result_routing_and_stop_location",
+          "original_requirement": {
+            "axis": "result_routing_and_stop_location",
+            "requirement": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.",
+            "source_ref": "Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment",
+            "evidence_state": "per_case_input_and_raw_readbacks_cited"
+          },
+          "original_requirement_sha256": "c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390",
+          "case_ids": [
+            "MATH_HELPER03_01_LIMIT"
+          ],
+          "finding": "Expression result assigned to independent ZZAV0; RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT saved before printing on every cited runtime path. Full-batch reaches END and ZZBATCH_DONE. Native forced cleanup remains explicit; no natural exit or method routing inference.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/LIMIT"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json",
+              "sha256_current": "bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json",
+              "sha256_current": "cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json",
+              "sha256_current": "6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            }
+          ]
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "original_remaining": {
+            "type": "finite_evidence_adjudication",
+            "source": "evidence\\parent-function-evidence-review-20261113\\MATRIX.json",
+            "target": {
+              "kind": "expression_function",
+              "name": "LIMIT"
+            },
+            "requirements": [
+              "Own reached normal proof has not been established by the bounded direct-call/marker correlator for these retained fixtures. Read the listed legacy raw/fixture candidates before requesting execution; skipped/dead/setup-stop cannot be promoted.",
+              "x=3,4,8,9 for[4,8] plus reversed[8,4], ordered x/min/max helpers; distinguish LIMIT clamp from INRANGE inclusive predicate."
+            ],
+            "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+          },
+          "case_ids": [
+            "AUTO_V2_EXPR_006_LIMIT",
+            "AUTO_V2_EXPR_007_LIMIT",
+            "AUTO_V2_EXPR_008_LIMIT",
+            "AUTO_V2_EXPR_009_LIMIT",
+            "AUTO_V2_EXPR_010_LIMIT",
+            "MATH_HELPER03_01_LIMIT"
+          ],
+          "finding": "Own reached normal, named normal/reversed output branches, independent expression routing and ordered helper evaluation are jointly established. AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -> 4/4/8/8. AUTO010: x=6,bounds[8,4] ->8. New MATH_HELPER03_01_LIMIT adds measured count3/order123. Finite source-evaluation path does not vary across the already observed value branches. No method or error credit.",
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json",
+              "sha256_current": "bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json",
+              "sha256_current": "cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json",
+              "sha256_current": "6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            },
+            {
+              "path": "automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "expression_function",
+      "name": "INRANGE",
+      "accepted": true,
+      "review_row_sha256": "052a70e02c82f7bd0927088154d9798c81c165f42191e28e0fcac0fc7f6516b2",
+      "outcome": "matched_in_finite_scope",
+      "scope": "Finite expression_function:INRANGE only: retained normal x=3,4,8,9 bounds[4,8], retained reversed x=6 bounds[8,4], new ordered numeric helpers, independent RESULT/RESULTS snapshots and continuation.",
+      "completion_review": "Parent accepted independent source/fixture/raw review: finite expression boundary, reversed-bound, evaluation-order and result-sentinel comparisons complete. Method form, exhaustive Int64 domain, invalid-call diagnostics and natural Native termination are outside this acceptance.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "exact_v24_registration_signature_form",
+          "original_requirement": {
+            "axis": "exact_v24_registration_signature_form",
+            "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+            "evidence_state": "source_inspected",
+            "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/INRANGE",
+            "binary_registration": {
+              "name": "INRANGE",
+              "ldstr_il_offset": "0501",
+              "set_item_il_offset": "050B"
+            },
+            "form": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them."
+          },
+          "original_requirement_sha256": "3a5af4b0708408036cdb3867217094482a856dd6c5aeaf58fd9e25968eff310d",
+          "case_ids": [
+            "MATH_HELPER03_02_INRANGE"
+          ],
+          "finding": "Creator.cs:107 registration InRangeMethod; Creator.Method.cs:1856-1860 Int64 return and exactly three Int64 arguments;1864-1866 evaluate x/min/max before1867 inclusive predicate. Boolean short circuit does not skip any helper. Exact default fixed validator is source-inspected, not a new invalid-call observation. Only expression form is adjudicated.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/INRANGE"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json",
+              "sha256_current": "07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json",
+              "sha256_current": "45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json",
+              "sha256_current": "a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            }
+          ]
+        },
+        {
+          "id": "actual_target_reach_or_independent_public_availability_gap",
+          "original_requirement": {
+            "axis": "actual_target_reach_or_independent_public_availability_gap",
+            "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+            "evidence_state": "scoped_executions_require_per_case_readback",
+            "case_ids": [
+              "INRANGEBASE01"
+            ],
+            "independent_gap_case_ids": []
+          },
+          "original_requirement_sha256": "5bb5143375a391e9306f247e89a0981af88d863d87c8251b6e42531a31c3631a",
+          "case_ids": [
+            "MATH_HELPER03_02_INRANGE"
+          ],
+          "finding": "Own helper expression reached on full-batch Native2/public1; own return observed between generated expression and following marker block. AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] ->0/1/1/0. AUTO015: x=6,bounds[8,4] ->0.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/INRANGE"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json",
+              "sha256_current": "07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json",
+              "sha256_current": "45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json",
+              "sha256_current": "a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            }
+          ]
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "original_requirement": {
+            "axis": "selected_normal_output_state_control",
+            "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+            "evidence_state": "selected_scoped_evidence_present",
+            "matching_case_ids": [
+              "INRANGEBASE01"
+            ]
+          },
+          "original_requirement_sha256": "1ac6f1fd0e8bf6010b53cd1fc10074232f0df8bcb4317ae95cb9635f36746d3e",
+          "case_ids": [
+            "MATH_HELPER03_02_INRANGE"
+          ],
+          "finding": "MATH_HELPER03_02_INRANGE: observed value 0, helper_count3/helper_order123, RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT and END/final DONE in Native2/public1. Snapshot precedes all PRINT instructions. AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] ->0/1/1/0. AUTO015: x=6,bounds[8,4] ->0.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/INRANGE"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json",
+              "sha256_current": "07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json",
+              "sha256_current": "45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json",
+              "sha256_current": "a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            }
+          ]
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": {
+            "axis": "applicable_boundary_error_evaluation_side_effect",
+            "requirement": "For x=4 and bounds[4,8], test x=3,4,8,9 and reversed bounds[8,4], using helper-returned x/min/max with order readback. Distinguish inclusive comparisons from clamp behavior.",
+            "finite_source_branches": [
+              {
+                "line": 1864,
+                "text": "Int64 value = arguments[0].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 1865,
+                "text": "Int64 min = arguments[1].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 1866,
+                "text": "Int64 max = arguments[2].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 1867,
+                "text": "return ((value >= min) && (value <= max)) ? 1L : 0L;",
+                "classification": "active_source"
+              }
+            ],
+            "evidence_state": "source_relevant_review_required",
+            "difference_case_ids": []
+          },
+          "original_requirement_sha256": "912a6bfca4d760c7fe57445e7530d19183ee7fc60be81093b28c2fedf0e7fb2a",
+          "case_ids": [
+            "AUTO_V2_EXPR_011_INRANGE",
+            "AUTO_V2_EXPR_012_INRANGE",
+            "AUTO_V2_EXPR_013_INRANGE",
+            "AUTO_V2_EXPR_014_INRANGE",
+            "AUTO_V2_EXPR_015_INRANGE",
+            "MATH_HELPER03_02_INRANGE"
+          ],
+          "finding": "AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] ->0/1/1/0. AUTO015: x=6,bounds[8,4] ->0. Named numerical finite branches already observed; new helper case discharges ordered x/min/max effectful evaluation. Creator.cs:107 registration InRangeMethod; Creator.Method.cs:1856-1860 Int64 return and exactly three Int64 arguments;1864-1866 evaluate x/min/max before1867 inclusive predicate. Boolean short circuit does not skip any helper. Because all operand reads precede every value branch, no duplicate boundary helper trial is needed. No new error or post-fatal state claim.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/INRANGE"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json",
+              "sha256_current": "07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json",
+              "sha256_current": "45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json",
+              "sha256_current": "a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            }
+          ]
+        },
+        {
+          "id": "result_routing_and_stop_location",
+          "original_requirement": {
+            "axis": "result_routing_and_stop_location",
+            "requirement": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.",
+            "source_ref": "Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment",
+            "evidence_state": "per_case_input_and_raw_readbacks_cited"
+          },
+          "original_requirement_sha256": "c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390",
+          "case_ids": [
+            "MATH_HELPER03_02_INRANGE"
+          ],
+          "finding": "Expression result assigned to independent ZZAV0; RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT saved before printing on every cited runtime path. Full-batch reaches END and ZZBATCH_DONE. Native forced cleanup remains explicit; no natural exit or method routing inference.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/INRANGE"
+          },
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json",
+              "sha256_current": "07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json",
+              "sha256_current": "45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json",
+              "sha256_current": "a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            }
+          ]
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "original_remaining": {
+            "type": "finite_evidence_adjudication",
+            "source": "evidence\\parent-function-evidence-review-20261113\\MATRIX.json",
+            "target": {
+              "kind": "expression_function",
+              "name": "INRANGE"
+            },
+            "requirements": [
+              "Own reached normal proof has not been established by the bounded direct-call/marker correlator for these retained fixtures. Read the listed legacy raw/fixture candidates before requesting execution; skipped/dead/setup-stop cannot be promoted.",
+              "x=3,4,8,9 for[4,8] plus reversed[8,4], ordered x/min/max helpers; distinguish LIMIT clamp from INRANGE inclusive predicate."
+            ],
+            "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+          },
+          "case_ids": [
+            "AUTO_V2_EXPR_011_INRANGE",
+            "AUTO_V2_EXPR_012_INRANGE",
+            "AUTO_V2_EXPR_013_INRANGE",
+            "AUTO_V2_EXPR_014_INRANGE",
+            "AUTO_V2_EXPR_015_INRANGE",
+            "MATH_HELPER03_02_INRANGE"
+          ],
+          "finding": "Own reached normal, named normal/reversed output branches, independent expression routing and ordered helper evaluation are jointly established. AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] ->0/1/1/0. AUTO015: x=6,bounds[8,4] ->0. New MATH_HELPER03_02_INRANGE adds measured count3/order123. Finite source-evaluation path does not vary across the already observed value branches. No method or error credit.",
+          "evidence": [
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json",
+              "sha256_current": "698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json",
+              "sha256_current": "216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json",
+              "sha256_current": "0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json",
+              "sha256_current": "83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json",
+              "sha256_current": "7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json",
+              "sha256_current": "273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json",
+              "sha256_current": "07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json",
+              "sha256_current": "45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json",
+              "sha256_current": "a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            },
+            {
+              "path": "automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0970 · UPCHECK_LENGTHS_ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0970 · UPCHECK_LENGTHS_ADJUDICATION.json</h1>
+<p>原票種別=UPCHECK_LENGTHS_ADJUDICATION.json; 参照対象=command_or_syntax:UPCHECK。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;UPCHECK&quot;}; decision=&quot;necessary_comparison_complete_in_finite_scope&quot;; native_natural_exit_observed=false。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を1個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>9b60a2853d20b3f049eda8d98e0d2abbdf86c0b51982a43baf0ff939dd3bc66b</code></p>
+<p><a href="../assets/U0970.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>c3f5b0b7e10b5fec56c782c93208591d7976c3c8178ff45caff6c7f5e7bfc72f</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;finite-target-adjudication-1&quot;,
+  &quot;created_utc&quot;: &quot;2026-11-13T21:02:30.653827+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;UPCHECK&quot;
+  },
+  &quot;obligation_id&quot;: &quot;length_checks&quot;,
+  &quot;decision&quot;: &quot;necessary_comparison_complete_in_finite_scope&quot;,
+  &quot;independent_review_agent&quot;: &quot;[INTERNAL_REVIEWER_01]&quot;,
+  &quot;reason&quot;: &quot;The literal requested combination cannot be a valid Native v24 configuration because UP and DOWN are global one-dimensional arrays and Native rejects lengths below 100. Do not claim the invalid size setup passed. The closest valid distinct-size boundary (PALAM/UP/DOWN=200/150/100) was compared Native/public twice for normal and SKIPDISP; raw logs and selected state match. This proves only the legal reachable boundary and does not infer post-error state.&quot;,
+  &quot;source_refs&quot;: [
+    {
+      &quot;archive&quot;: &quot;Emuera1824+v24.zip&quot;,
+      &quot;archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/ConstantData.cs&quot;,
+      &quot;member_sha256&quot;: &quot;fa855785b057f0886bd64b7d7ebc5089033876122db4787b378362ded6f0b824&quot;,
+      &quot;lines&quot;: &quot;287-291&quot;,
+      &quot;claim&quot;: &quot;nonlocal 1D size less than100 rejected&quot;
+    },
+    {
+      &quot;archive&quot;: &quot;Emuera1824+v24.zip&quot;,
+      &quot;archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Variable/VariableEvaluator.cs&quot;,
+      &quot;member_sha256&quot;: &quot;bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582&quot;,
+      &quot;lines&quot;: &quot;1528-1582&quot;,
+      &quot;claim&quot;: &quot;loop bound reduced from PALAM length to UP and then DOWN length; delta arrays cleared after loop&quot;
+    }
+  ],
+  &quot;evidence&quot;: &quot;evidence/upcheck-targets-skip-20261114/BOUNDARY_COMPARISON.json&quot;,
+  &quot;evidence_sha256&quot;: &quot;a914915e718e7d23c68c2bd4a21524c59cd7ff8db075e0cde065e12733a9e93a&quot;,
+  &quot;case_review&quot;: &quot;evidence/upcheck-targets-skip-20261114/CASE_REVIEW_ja.md&quot;,
+  &quot;case_review_sha256&quot;: &quot;05864c63f803ed4f80698d0ec13ccab96efef5f6f34723edc3eef2f233404dde&quot;,
+  &quot;original_invalid_configuration_claimed_pass&quot;: false,
+  &quot;post_error_state_inferred&quot;: false,
+  &quot;native_natural_exit_observed&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0037 · command_or_syntax:UPCHECK · acceptance</li>
+<li>L0038 · command_or_syntax:UPCHECK · check</li>
+</ul></html>

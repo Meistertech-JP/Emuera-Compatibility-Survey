@@ -1,0 +1,181 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "decision_authority": "Codex parent review of retained Native/public evidence; not owner sign-off.",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTKL"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "KANALOG02",
+    "PRINTKL01"
+  ],
+  "accepted_scope": "Direct PRINTKL cases: PRINTKL01 FORCEKANA 0 mixed kana/ASCII, newline and following marker; KANALOG02 FORCEKANA 2 half-width ｱ conversion difference.",
+  "accepted_finite_requirements": [
+    {
+      "id": "registration_and_direct_reach",
+      "state": "source_pinned_target_reached",
+      "case_ids": [
+        "KANALOG02",
+        "PRINTKL01",
+        "KANALOG02",
+        "PRINTKL01"
+      ],
+      "basis": "v24 registers PRINTKL; both fixtures directly execute it."
+    },
+    {
+      "id": "line_break_and_following_output",
+      "state": "mode_zero_selected_match",
+      "case_ids": [
+        "PRINTKL01"
+      ],
+      "basis": "Native crops and public stdout record the selected line break and following marker."
+    },
+    {
+      "id": "kana_conversion",
+      "state": "mode_two_difference_recorded",
+      "case_ids": [
+        "KANALOG02"
+      ],
+      "basis": "OUTPUTLOG code points record Native U+FF71 and public U+3042."
+    }
+  ],
+  "selected_case212_rows": [],
+  "source_refs": [
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "lines": [
+        [
+          17,
+          148
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "lines": [
+        [
+          85,
+          165
+        ]
+      ]
+    }
+  ],
+  "evidence_paths": [
+    {
+      "path": "pilot/variants/KANALOG02/ERB/KANALOG02.ERB",
+      "sha256": "ab5052153327ca3577dab899bd13780fe01bc7dfa1f14c4fe9b623809c4c35d5"
+    },
+    {
+      "path": "FORCEKANA_KANA_LOG_REVIEW_ja.md",
+      "sha256": "9fe754fe343ce050f9ce3e3d977bf535a7a5bfcf8f26cc9fb833da28a91347ae"
+    },
+    {
+      "path": "FORCEKANA_KANA_LOG_COMPARISON.json",
+      "sha256": "75090eb0b22492162b95f4bc44ead66748e18153af095dee569789c3a0d35473"
+    },
+    {
+      "path": "runs/isolated-native-dd4852e9900d4ad997f8162fd53d728a/probe.json",
+      "sha256": "8caf886cf3e6e417cbbe85f333aed5a0e1803f44f41c602a9354fdd1b15ee3a6"
+    },
+    {
+      "path": "runs/isolated-native-dd4852e9900d4ad997f8162fd53d728a/emuera.log",
+      "sha256": "81f6a29681f2a1794afe833deb5ea8260e197b6c932ba51541b093d1b886aee3"
+    },
+    {
+      "path": "runs/kanalog02-python-304b7ec2/run.json",
+      "sha256": "c34e9bfa1de90492a8d44ce56e80ee16185c5999bfa8790a1373a70993d58163"
+    },
+    {
+      "path": "runs/kanalog02-python-304b7ec2/game/.pyemuera/logs/emuera.log",
+      "sha256": "16704927b4bb7babf62046b0bc0e775493b0525d252cb9ac0fb68b8afb1bdcf1"
+    },
+    {
+      "path": "runs/native-fresh-KANALOG02-5166d550-display.bmp",
+      "sha256": "cab334ad87baedc891a851743371fa96821cdd504c363adbc34c16aff54f9027"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/COMPARISON.json",
+      "sha256": "97deecbd0cc9a2c2ceffdcd267e87f128f0bdbb7a9c3bc2dfdfb22328f490320"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/CASE_REVIEW_ja.md",
+      "sha256": "546d99c8aab453c6c7db646d4df362020797d00a0cb0cdbbe679c3ca13be2ec3"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/SOURCE_EXCERPTS.txt",
+      "sha256": "c9e922443753dec513a1c77371398daae930e5331d31035b55250d53b287bfbc"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/FIXTURE_CP932_REPLAY.txt",
+      "sha256": "0751581499cf2a7dbb9f6097cbb652dc104251f3411296e6f95916ac6ebdb7ed"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/py.result.json",
+      "sha256": "ddab61656dd916386884e4df22180808c4b5cafe06919a1e8ea8cadff8cbe6d8"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/py.stdout.bin",
+      "sha256": "e9c362c7f43b5b68e317f8be26de88d7ae02c22169c4bc37443dd6dfdefa6eb9"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/py.stderr.bin",
+      "sha256": "44d7dbed417cf87a31507e6e951700e23f0daad427aceb770c89ac9adce62ac5"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/variants/PRINTKL01/ERB/PRINTKL01.ERB",
+      "sha256": "6fb07ed0d17092f3bc9b7f5bd0b8c1022f5e8dca0c769ebc36ecc7b198054572"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/inputs.txt",
+      "sha256": "084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/run_native_printkl.py",
+      "sha256": "5bec7eb2561aa6f8b489b75f08798c297d1f0615c2c4e4ee3c201f75f1ab0989"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/capture_one.py",
+      "sha256": "40618c95c2bd71c2d74cc46848d036a28bf07d4b08c6c4bc31560271b50847d9"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/capture_crop_only.py",
+      "sha256": "80284f1c2ccf1d5e2b2afc1febb35b3048b64dfbef2843680dd0404fc5cff164"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/native-cases/PRINTKL01-2c98dd1e/probe.json",
+      "sha256": "d1dd67ab7726e79d1495e1d67a2b08ab8a8fb641faf97728e357d407a8bafe6c"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/native-cases/PRINTKL01-3978e85c/probe.json",
+      "sha256": "b07f544eb09507f8a478ee64a3cd83de22b91b8dd6472405e23a9f597cae991c"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/native-printkl-crop-isolated-PRINTKL01-584a3413.png",
+      "sha256": "0f3cb81370e43931c370f0ba531905ba00527fea75eadf4780f8595b6dac6b1b"
+    },
+    {
+      "path": "evidence/printkl-command-20261113-115/native-printkl-crop-isolated-PRINTKL01-e9f14c55.png",
+      "sha256": "0f3cb81370e43931c370f0ba531905ba00527fea75eadf4780f8595b6dac6b1b"
+    }
+  ],
+  "finite_remainder": [],
+  "retained_limits": [
+    "Modes 1 and 3, widths, colors and wait behavior are not covered.",
+    "Crops do not establish pixel or font equivalence."
+  ],
+  "product_code_modified": false,
+  "published_artifacts_modified": false,
+  "global_completion": false,
+  "prior_plan_state": "scoped_match_with_open_scenarios",
+  "prior_ledger_state": "matched_scoped",
+  "generated_utc": "2026-11-14T22:03:25.289511+00:00",
+  "integration_note": "Parent ledgers were updated from this adjudication; the case register and underlying comparison evidence were not modified."
+}

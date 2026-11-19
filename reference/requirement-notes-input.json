@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "policy": "Original English, translation and survey verdicts are unchanged; notes distinguish source-review correction candidates.",
+  "notes": [
+    {
+      "requirement_id": "REQ0593",
+      "typed_key": {
+        "kind": "command_or_syntax",
+        "name": "TRYCALLLIST"
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "この要件原文は不在時の続行先をCATCHと記しています。一方、同梱v24ソースではTRY*LISTの全候補が不在ならENDFUNCの後へ進み、CATCHはTRYC系の対応先です。下記の訳は原要件の記述を保持したもので、CATCHへの遷移を新たに実証した結果ではありません。元判定を変更せず、ソース確認による訂正候補として区別します。",
+      "en": "The historical requirement names CATCH as the no-hit continuation. In the bundled v24 source, an exhausted TRY*LIST continues after ENDFUNC; CATCH belongs to TRYC forms. The preserved requirement and translation are not a new observation of CATCH behavior. This is a source-based editorial correction candidate, not a changed survey verdict.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Process.ScriptProc.cs",
+          "start_line": 796,
+          "end_line": 847,
+          "note_ja": "リスト全件不在ではfunc.JumpToへ。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1370,
+          "end_line": 1379,
+          "note_ja": "リストのJumpToはENDFUNC。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1186,
+          "end_line": 1201,
+          "note_ja": "CATCHはTRYC系に対応。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ0598",
+      "typed_key": {
+        "kind": "command_or_syntax",
+        "name": "TRYJUMPLIST"
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "この要件原文は不在時の続行先をCATCHと記しています。一方、同梱v24ソースではTRY*LISTの全候補が不在ならENDFUNCの後へ進み、CATCHはTRYC系の対応先です。下記の訳は原要件の記述を保持したもので、CATCHへの遷移を新たに実証した結果ではありません。元判定を変更せず、ソース確認による訂正候補として区別します。",
+      "en": "The historical requirement names CATCH as the no-hit continuation. In the bundled v24 source, an exhausted TRY*LIST continues after ENDFUNC; CATCH belongs to TRYC forms. The preserved requirement and translation are not a new observation of CATCH behavior. This is a source-based editorial correction candidate, not a changed survey verdict.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Process.ScriptProc.cs",
+          "start_line": 796,
+          "end_line": 847,
+          "note_ja": "リスト全件不在ではfunc.JumpToへ。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1370,
+          "end_line": 1379,
+          "note_ja": "リストのJumpToはENDFUNC。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1186,
+          "end_line": 1201,
+          "note_ja": "CATCHはTRYC系に対応。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ0603",
+      "typed_key": {
+        "kind": "command_or_syntax",
+        "name": "TRYGOTOLIST"
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "この要件原文は不在時の続行先をCATCHと記しています。一方、同梱v24ソースではTRY*LISTの全候補が不在ならENDFUNCの後へ進み、CATCHはTRYC系の対応先です。下記の訳は原要件の記述を保持したもので、CATCHへの遷移を新たに実証した結果ではありません。元判定を変更せず、ソース確認による訂正候補として区別します。",
+      "en": "The historical requirement names CATCH as the no-hit continuation. In the bundled v24 source, an exhausted TRY*LIST continues after ENDFUNC; CATCH belongs to TRYC forms. The preserved requirement and translation are not a new observation of CATCH behavior. This is a source-based editorial correction candidate, not a changed survey verdict.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Process.ScriptProc.cs",
+          "start_line": 796,
+          "end_line": 847,
+          "note_ja": "リスト全件不在ではfunc.JumpToへ。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1370,
+          "end_line": 1379,
+          "note_ja": "リストのJumpToはENDFUNC。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1186,
+          "end_line": 1201,
+          "note_ja": "CATCHはTRYC系に対応。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ0608",
+      "typed_key": {
+        "kind": "command_or_syntax",
+        "name": "FUNC"
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "この要件原文は不在時の続行先をCATCHと記しています。一方、同梱v24ソースではTRY*LISTの全候補が不在ならENDFUNCの後へ進み、CATCHはTRYC系の対応先です。下記の訳は原要件の記述を保持したもので、CATCHへの遷移を新たに実証した結果ではありません。元判定を変更せず、ソース確認による訂正候補として区別します。",
+      "en": "The historical requirement names CATCH as the no-hit continuation. In the bundled v24 source, an exhausted TRY*LIST continues after ENDFUNC; CATCH belongs to TRYC forms. The preserved requirement and translation are not a new observation of CATCH behavior. This is a source-based editorial correction candidate, not a changed survey verdict.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Process.ScriptProc.cs",
+          "start_line": 796,
+          "end_line": 847,
+          "note_ja": "リスト全件不在ではfunc.JumpToへ。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1370,
+          "end_line": 1379,
+          "note_ja": "リストのJumpToはENDFUNC。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1186,
+          "end_line": 1201,
+          "note_ja": "CATCHはTRYC系に対応。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ0613",
+      "typed_key": {
+        "kind": "command_or_syntax",
+        "name": "ENDFUNC"
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "この要件原文は不在時の続行先をCATCHと記しています。一方、同梱v24ソースではTRY*LISTの全候補が不在ならENDFUNCの後へ進み、CATCHはTRYC系の対応先です。下記の訳は原要件の記述を保持したもので、CATCHへの遷移を新たに実証した結果ではありません。元判定を変更せず、ソース確認による訂正候補として区別します。",
+      "en": "The historical requirement names CATCH as the no-hit continuation. In the bundled v24 source, an exhausted TRY*LIST continues after ENDFUNC; CATCH belongs to TRYC forms. The preserved requirement and translation are not a new observation of CATCH behavior. This is a source-based editorial correction candidate, not a changed survey verdict.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Process.ScriptProc.cs",
+          "start_line": 796,
+          "end_line": 847,
+          "note_ja": "リスト全件不在ではfunc.JumpToへ。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1370,
+          "end_line": 1379,
+          "note_ja": "リストのJumpToはENDFUNC。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        },
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1186,
+          "end_line": 1201,
+          "note_ja": "CATCHはTRYC系に対応。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3048",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "*="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3052",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "/="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3056",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "%="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3060",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "<<="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3064",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": ">>="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3068",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "|="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3072",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "&="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3076",
+      "typed_key": {
+        "kind": "assignment_syntax",
+        "name": "^="
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件に定数増減の高速経路が含まれますが、同梱ソースでその専用分岐があるのは+=と-=です。この演算子に同じ経路が存在する、または実測済みであると読まず、対象別に該当性を確認する項目として参照してください。原要件と元判定は変更していません。",
+      "en": "The shared historical wording mentions a constant-increment fast path. The dedicated branch in the bundled source is limited to += and -=. It does not establish that this operator has that path or that it was observed. Treat applicability as target-specific; the original requirement and verdict remain unchanged.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/Function/ArgumentBuilder.cs",
+          "start_line": 754,
+          "end_line": 768,
+          "note_ja": "+=/-=のSingleTerm専用加算と、その他の二項演算経路。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ3272",
+      "typed_key": {
+        "kind": "structural_syntax",
+        "name": "TRYGOTOLIST"
+      },
+      "status": "SOURCE_REVIEW_CORRECTION_CANDIDATE",
+      "ja": "共通の原要件には候補の任意引数が記載されていますが、同梱v24ソースのTRYGOTOLISTは現在関数内の$ラベルを候補とし、FUNCの呼出引数と[...]指定を拒否します。関数リストとGOTOリストを区別するためのソース注記です。原要件・元判定の書換えや新規実機観測ではありません。",
+      "en": "The common historical requirement includes optional candidate arguments. In the bundled v24 source, TRYGOTOLIST targets local $ labels and rejects FUNC call arguments and [...] selectors. This source note distinguishes function lists from GOTO lists; it neither changes the historical requirement/verdict nor claims a new runtime observation.",
+      "source_refs": [
+        {
+          "source_id": "SRC-NATIVE-V24",
+          "path": "GameProc/ErbLoader.cs",
+          "start_line": 1354,
+          "end_line": 1364,
+          "note_ja": "GOTOリストはSubNamesとRowArgsを拒否。",
+          "evidence_class": "SOURCE_CONFIRMED",
+          "runtime_observation": false
+        }
+      ]
+    }
+  ]
+}

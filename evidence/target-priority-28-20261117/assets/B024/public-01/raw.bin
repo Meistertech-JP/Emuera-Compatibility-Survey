@@ -1,0 +1,15 @@
+Now Loading...
+BEGIN_PRINTFORMSD
+CONTROL_BEFORE
+X=11  Y=left  right
+NORMAL_PRINTFORMSD A=12 C=1 B=71 R=701 RS=[KEEP]
+SKIP_PRINTFORMSD A=12 C=1 B=71 R=0 RS=[KEEP]
+CONTROL_AFTER
+HTML_CONTROL_BEFORE_PRINTFORMSD
+<p align='left'><nobr><font color='#00FF00'>CONTROL_BEFORE</font></nobr></p>
+HTML_TARGET_PRINTFORMSD
+<p align='left'><nobr>X=11  Y=left  right</nobr></p>
+HTML_CONTROL_AFTER_PRINTFORMSD
+<p align='left'><nobr><font color='#00FF00'>CONTROL_AFTER</font></nobr></p>
+DONE_PRINTFORMSD
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 

@@ -1,0 +1,621 @@
+{
+  "schema": "parent-operator-two-independent-adjudication-1",
+  "generated_utc": "2026-11-13T08:07:05.216794+00:00",
+  "proposal_source": {
+    "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-operator-assignment-review-20261113\\REVIEW.json",
+    "sha256": "e66fd34f2b3dc90c24d20c7e50ce1a1c6e3bc154669da91aa4d9b9b224d506a9",
+    "bytes": 105940
+  },
+  "frozen_requirements_source": {
+    "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-operator-assignment-review-20261113\\SELECTED_FROZEN_ROWS.json",
+    "sha256": "ac6be0855e06eb4c8721b4fb4b45c299a0ed83d4d6f67cd8bcc093562f972d41",
+    "bytes": 1737827
+  },
+  "original_frozen_selector": {
+    "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\target-closure-review-20261113\\syntax\\MATRIX.json",
+    "sha256": "3cac76023a60bb150879c040762becfea16dfb42e0c0ee1c974d5b54ff7323ce",
+    "bytes": 4200262,
+    "parent_input_id": "I0001"
+  },
+  "scope": "Exactly the two necessary_comparison_complete proposals in the specified REVIEW.json.",
+  "pins": {
+    "native_zip": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "public_pyz": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "native_exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+  },
+  "archive_pins": [
+    {
+      "path": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "bytes": 672455
+    },
+    {
+      "path": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "bytes": 668438
+    }
+  ],
+  "counts": {
+    "adjudicated": 2,
+    "accepted": 2,
+    "rejected": 0
+  },
+  "rows": [
+    {
+      "kind": "operator",
+      "name": "=",
+      "accepted": true,
+      "comparison_outcome": "matched_assignment_token_role",
+      "requirements": [
+        {
+          "axis": "v24_registration_signature_form",
+          "requirement": "lexical assignment token; not an independently callable expression operator",
+          "frozen_remaining": [],
+          "satisfied": true,
+          "basis": "Exact ZIP OperatorCode.cs 14-18,50-51,89-90 registers this spelling without unary/binary/ternary flags; LexicalAnalyzer.cs 700-711 and LogicalLineParser.cs 445-477 route assignment statements to SET."
+        },
+        {
+          "axis": "actual_target_use",
+          "requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+          "frozen_remaining": [],
+          "satisfied": true,
+          "basis": "Actual reached case167 fixture and both Native process receipts plus pinned public receipt establish assignment-role execution. See raw_pins and RAW_READBACK.json; no validator or source-only execution credit."
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+          "frozen_remaining": [],
+          "satisfied": true,
+          "basis": "Original Native01, Native02 and public OUTPUTLOG bytes are identical. Per-spelling reached markers retain value, COUNT=2, ORDER=21 and unchanged neighbors; public verified stdout independently contains the same outputlog text."
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+          "frozen_remaining": [
+            "Review ExpressionParser handling of Assignment/AssignmentStr disallowed in an ordinary expression and compare C=(A=1) / string assignment token in expression only if that source branch is ambiguous. Do not invent expression support from dictionary membership."
+          ],
+          "satisfied": true,
+          "basis": "ExpressionParser.cs 375-379 permits Assignment only as an explicitly requested delimiter; ordinary expression use throws. This resolves the frozen conditional source review without needing a new expression-rejection run."
+        }
+      ],
+      "case_ids": [
+        "PLAINASSIGN_TOKENNUM"
+      ],
+      "raw_pins": [
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\CASE_REVIEW_ja.md",
+          "sha256": "c7fefd5a9dc81e219380021394fb7f26cd5f20698a198ff406359fe9d4326fc5",
+          "bytes": 1523,
+          "parent_input_id": "I1254",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\COMPARISON.json",
+          "sha256": "2a7de8ad77107f35f95acbc6d4b0c6f943e7c72e82c647eddf30c4cb86d2a5eb",
+          "bytes": 3457,
+          "parent_input_id": "I1255",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\conditions.json",
+          "sha256": "775c7ff2856420dbe7302421446c79a4fd5170b344ebfd73a50f27f6fbb4d169",
+          "bytes": 1032,
+          "parent_input_id": "I1256",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "parent_input_id": "I1257",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\emuera.log",
+          "sha256": "5d0867edd3d66a135ed940d049650af0123f84a0bc493f5b44c84e758ffd6277",
+          "bytes": 1102,
+          "parent_input_id": "I1258",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\ERB\\SEARCHBOUND01.ERB",
+          "sha256": "f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f",
+          "bytes": 2083,
+          "parent_input_id": "I1259",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\invocation.json",
+          "sha256": "a5b569a655fa0496a8238a8699d15b30cefee70a2f0244485d55703035f9aa17",
+          "bytes": 478,
+          "parent_input_id": "I1260",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\probe.json",
+          "sha256": "dd2690f3234e102cbe5651e62ea9c9f041dfe118bfc69c865dae43648abe44eb",
+          "bytes": 1534,
+          "parent_input_id": "I1261",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\runner.stderr.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1262",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\runner.stdout.bin",
+          "sha256": "91be6b1a3bc4a6c90f42699e07beb2c3c3220249bc89ed99c240c3d46c895134",
+          "bytes": 1346,
+          "parent_input_id": "I1263",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "parent_input_id": "I1264",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\emuera.log",
+          "sha256": "5d0867edd3d66a135ed940d049650af0123f84a0bc493f5b44c84e758ffd6277",
+          "bytes": 1102,
+          "parent_input_id": "I1265",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\ERB\\SEARCHBOUND01.ERB",
+          "sha256": "f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f",
+          "bytes": 2083,
+          "parent_input_id": "I1266",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\invocation.json",
+          "sha256": "ddc17f34247dc21114075a361af00554a173a6607b2d66ba8457a3107a796b4f",
+          "bytes": 478,
+          "parent_input_id": "I1267",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\probe.json",
+          "sha256": "0e78c19d0a3406cc2b6f05efe9d182d2a2e776085ea8fa97961a96207fc16a67",
+          "bytes": 1534,
+          "parent_input_id": "I1268",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\runner.stderr.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1269",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\runner.stdout.bin",
+          "sha256": "bb581490e55e3f3f9e450724a34a97c6a186cb4cf23465ec01a1669537227642",
+          "bytes": 1346,
+          "parent_input_id": "I1270",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\.pyemuera\\logs\\emuera.log",
+          "sha256": "5d0867edd3d66a135ed940d049650af0123f84a0bc493f5b44c84e758ffd6277",
+          "bytes": 1102,
+          "parent_input_id": "I1271",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\.pyemuera\\logs\\output-20261113-105618-165797.txt",
+          "sha256": "7dc5c8056217bc0deec8e25e021ff19e55f15f3f136df2cac0a4e0cebc712063",
+          "bytes": 613,
+          "parent_input_id": "I1272",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\.pyemuera\\logs\\outputlog-manifest.json",
+          "sha256": "59c07f2633ea9be6f8520e6a9e186e1c847b5643361bf361db37a8fd424f00e4",
+          "bytes": 362,
+          "parent_input_id": "I1273",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "parent_input_id": "I1274",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\ERB\\SEARCHBOUND01.ERB",
+          "sha256": "f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f",
+          "bytes": 2083,
+          "parent_input_id": "I1275",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\invocation.json",
+          "sha256": "1f6a0fb48bdf130e6d29e60dafe116fdc25b78fdf06e487d386c55349bb42e05",
+          "bytes": 443,
+          "parent_input_id": "I1276",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\runner.stderr.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1277",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\runner.stdout.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1278",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\verified-public-pyz.json",
+          "sha256": "8d6d570b235a6b860987e02762dd557b89165ae848b3eca540e5c1ac2f84615f",
+          "bytes": 1642,
+          "parent_input_id": "I1279",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\verified.stderr.bin",
+          "sha256": "8cb1a8b659dd68f6b522748ce28a7b987d3262071e308a4d2d3e85184cf64681",
+          "bytes": 320,
+          "parent_input_id": "I1280",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\verified.stdout.bin",
+          "sha256": "24a4452286d8f28fb355c59a5dafcc751b805d8a453d26f4b6bbdddce965afdb",
+          "bytes": 608,
+          "parent_input_id": "I1281",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\SOURCE_EXCERPTS_V24.txt",
+          "sha256": "845ef3d65e8b0f2fddf021d6b26ce5d90934e9fe9f7aa42b3594dcc5fc2239b6",
+          "bytes": 11400,
+          "parent_input_id": "I1282",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\Emuera1824+v24.exe",
+          "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "bytes": 761856
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\Emuera1824+v24.exe",
+          "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "bytes": 761856
+        }
+      ],
+      "source_refs": [
+        "N:OperatorCode.cs",
+        "N:LexicalAnalyzer.cs",
+        "N:ExpressionParser.cs",
+        "N:LogicalLineParser.cs",
+        "N:ArgumentBuilder.cs",
+        "N:Instraction.Child.cs",
+        "P:text.py",
+        "P:runtime.py",
+        "P:expr.py"
+      ],
+      "observations": [
+        {
+          "marker": "PLAIN0",
+          "log_line": 2,
+          "text": "PLAIN0 NUMBER=6 TEXT=[PREFIX] OTHERNUM=99 OTHERTEXT=[OTHER] COUNT=2 ORDER=21"
+        },
+        {
+          "marker": "PLAIN3",
+          "log_line": 5,
+          "text": "PLAIN3 NUMBER=9 TEXT=[WORD] OTHERNUM=99 OTHERTEXT=[OTHER] COUNT=2 ORDER=21"
+        },
+        {
+          "marker": "PLAIN6",
+          "log_line": 8,
+          "text": "PLAIN6 NUMBER=9 TEXT=[] OTHERNUM=99 OTHERTEXT=[OTHER] COUNT=2 ORDER=21"
+        }
+      ],
+      "remaining": [],
+      "scope_limit": "Finite operator-dictionary assignment-token role only. No assignment_syntax row closure, universal assignment semantics, expression rejection timing/diagnostic equality, GUI warning equality or Native natural-exit claim."
+    },
+    {
+      "kind": "operator",
+      "name": "'=",
+      "accepted": true,
+      "comparison_outcome": "matched_assignment_token_role",
+      "requirements": [
+        {
+          "axis": "v24_registration_signature_form",
+          "requirement": "lexical assignment token; not an independently callable expression operator",
+          "frozen_remaining": [],
+          "satisfied": true,
+          "basis": "Exact ZIP OperatorCode.cs 14-18,50-51,89-90 registers this spelling without unary/binary/ternary flags; LexicalAnalyzer.cs 700-711 and LogicalLineParser.cs 445-477 route assignment statements to SET."
+        },
+        {
+          "axis": "actual_target_use",
+          "requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+          "frozen_remaining": [],
+          "satisfied": true,
+          "basis": "Actual reached case167 fixture and both Native process receipts plus pinned public receipt establish assignment-role execution. See raw_pins and RAW_READBACK.json; no validator or source-only execution credit."
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+          "frozen_remaining": [],
+          "satisfied": true,
+          "basis": "Original Native01, Native02 and public OUTPUTLOG bytes are identical. Per-spelling reached markers retain value, COUNT=2, ORDER=21 and unchanged neighbors; public verified stdout independently contains the same outputlog text."
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+          "frozen_remaining": [
+            "Review ExpressionParser handling of Assignment/AssignmentStr disallowed in an ordinary expression and compare C=(A=1) / string assignment token in expression only if that source branch is ambiguous. Do not invent expression support from dictionary membership."
+          ],
+          "satisfied": true,
+          "basis": "LexicalAnalyzer.cs 946-961 allows the apostrophe-equals delimiter only while scanning a top-level assignment operator (ordinary expression flags reject it earlier). OperatorCode has no expression flags; TermStack 457-464,497-498 is a secondary invariant, not evidence that this ordinary lexical input reaches TermStack. This corrects the proposal rationale and resolves the conditional source review without a new run."
+        }
+      ],
+      "case_ids": [
+        "PLAINASSIGN_TOKENSTR"
+      ],
+      "raw_pins": [
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\CASE_REVIEW_ja.md",
+          "sha256": "c7fefd5a9dc81e219380021394fb7f26cd5f20698a198ff406359fe9d4326fc5",
+          "bytes": 1523,
+          "parent_input_id": "I1254",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\COMPARISON.json",
+          "sha256": "2a7de8ad77107f35f95acbc6d4b0c6f943e7c72e82c647eddf30c4cb86d2a5eb",
+          "bytes": 3457,
+          "parent_input_id": "I1255",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\conditions.json",
+          "sha256": "775c7ff2856420dbe7302421446c79a4fd5170b344ebfd73a50f27f6fbb4d169",
+          "bytes": 1032,
+          "parent_input_id": "I1256",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "parent_input_id": "I1257",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\emuera.log",
+          "sha256": "5d0867edd3d66a135ed940d049650af0123f84a0bc493f5b44c84e758ffd6277",
+          "bytes": 1102,
+          "parent_input_id": "I1258",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\ERB\\SEARCHBOUND01.ERB",
+          "sha256": "f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f",
+          "bytes": 2083,
+          "parent_input_id": "I1259",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\invocation.json",
+          "sha256": "a5b569a655fa0496a8238a8699d15b30cefee70a2f0244485d55703035f9aa17",
+          "bytes": 478,
+          "parent_input_id": "I1260",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\probe.json",
+          "sha256": "dd2690f3234e102cbe5651e62ea9c9f041dfe118bfc69c865dae43648abe44eb",
+          "bytes": 1534,
+          "parent_input_id": "I1261",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\runner.stderr.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1262",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\runner.stdout.bin",
+          "sha256": "91be6b1a3bc4a6c90f42699e07beb2c3c3220249bc89ed99c240c3d46c895134",
+          "bytes": 1346,
+          "parent_input_id": "I1263",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "parent_input_id": "I1264",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\emuera.log",
+          "sha256": "5d0867edd3d66a135ed940d049650af0123f84a0bc493f5b44c84e758ffd6277",
+          "bytes": 1102,
+          "parent_input_id": "I1265",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\ERB\\SEARCHBOUND01.ERB",
+          "sha256": "f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f",
+          "bytes": 2083,
+          "parent_input_id": "I1266",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\invocation.json",
+          "sha256": "ddc17f34247dc21114075a361af00554a173a6607b2d66ba8457a3107a796b4f",
+          "bytes": 478,
+          "parent_input_id": "I1267",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\probe.json",
+          "sha256": "0e78c19d0a3406cc2b6f05efe9d182d2a2e776085ea8fa97961a96207fc16a67",
+          "bytes": 1534,
+          "parent_input_id": "I1268",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\runner.stderr.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1269",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\runner.stdout.bin",
+          "sha256": "bb581490e55e3f3f9e450724a34a97c6a186cb4cf23465ec01a1669537227642",
+          "bytes": 1346,
+          "parent_input_id": "I1270",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\.pyemuera\\logs\\emuera.log",
+          "sha256": "5d0867edd3d66a135ed940d049650af0123f84a0bc493f5b44c84e758ffd6277",
+          "bytes": 1102,
+          "parent_input_id": "I1271",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\.pyemuera\\logs\\output-20261113-105618-165797.txt",
+          "sha256": "7dc5c8056217bc0deec8e25e021ff19e55f15f3f136df2cac0a4e0cebc712063",
+          "bytes": 613,
+          "parent_input_id": "I1272",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\.pyemuera\\logs\\outputlog-manifest.json",
+          "sha256": "59c07f2633ea9be6f8520e6a9e186e1c847b5643361bf361db37a8fd424f00e4",
+          "bytes": 362,
+          "parent_input_id": "I1273",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "parent_input_id": "I1274",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\ERB\\SEARCHBOUND01.ERB",
+          "sha256": "f8ca289d4862598f3e2f92b2a4ec6d80c57e4bc23d69ed1edc3b9bd678e12d1f",
+          "bytes": 2083,
+          "parent_input_id": "I1275",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\invocation.json",
+          "sha256": "1f6a0fb48bdf130e6d29e60dafe116fdc25b78fdf06e487d386c55349bb42e05",
+          "bytes": 443,
+          "parent_input_id": "I1276",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\runner.stderr.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1277",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\runner.stdout.bin",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "parent_input_id": "I1278",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\verified-public-pyz.json",
+          "sha256": "8d6d570b235a6b860987e02762dd557b89165ae848b3eca540e5c1ac2f84615f",
+          "bytes": 1642,
+          "parent_input_id": "I1279",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\verified.stderr.bin",
+          "sha256": "8cb1a8b659dd68f6b522748ce28a7b987d3262071e308a4d2d3e85184cf64681",
+          "bytes": 320,
+          "parent_input_id": "I1280",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\py\\verified.stdout.bin",
+          "sha256": "24a4452286d8f28fb355c59a5dafcc751b805d8a453d26f4b6bbdddce965afdb",
+          "bytes": 608,
+          "parent_input_id": "I1281",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\SOURCE_EXCERPTS_V24.txt",
+          "sha256": "845ef3d65e8b0f2fddf021d6b26ce5d90934e9fe9f7aa42b3594dcc5fc2239b6",
+          "bytes": 11400,
+          "parent_input_id": "I1282",
+          "original_matches_parent_blob": true
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-01\\Emuera1824+v24.exe",
+          "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "bytes": 761856
+        },
+        {
+          "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\plain-assignment-20261113-167\\native-02\\Emuera1824+v24.exe",
+          "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "bytes": 761856
+        }
+      ],
+      "source_refs": [
+        "N:OperatorCode.cs",
+        "N:LexicalAnalyzer.cs",
+        "N:ExpressionParser.cs",
+        "N:LogicalLineParser.cs",
+        "N:ArgumentBuilder.cs",
+        "N:Instraction.Child.cs",
+        "P:text.py",
+        "P:runtime.py",
+        "P:expr.py"
+      ],
+      "observations": [
+        {
+          "marker": "PLAIN2",
+          "log_line": 4,
+          "text": "PLAIN2 NUMBER=9 TEXT=[WORD] OTHERNUM=99 OTHERTEXT=[OTHER] COUNT=2 ORDER=21"
+        },
+        {
+          "marker": "PLAIN5",
+          "log_line": 7,
+          "text": "PLAIN5 NUMBER=9 TEXT=[] OTHERNUM=99 OTHERTEXT=[OTHER] COUNT=2 ORDER=21"
+        }
+      ],
+      "remaining": [],
+      "scope_limit": "Finite operator-dictionary assignment-token role only. No assignment_syntax row closure, universal assignment semantics, expression rejection timing/diagnostic equality, GUI warning equality or Native natural-exit claim."
+    }
+  ],
+  "semantic_basis": "Original raw Native/public outputs, runtime receipts, exact shipped source and individually resolved frozen finite requirements. Structural validator results were not used as semantic proof.",
+  "parent_integration": "Sidecar recommendations only; parent integrates other reviews independently.",
+  "new_engine_runs": 0,
+  "new_ui_actions": 0,
+  "shared_state_edited": false,
+  "product_edited": false,
+  "git_operations": false,
+  "drive_operations": false,
+  "write_scope": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-operator-two-adjudication-20261113"
+}

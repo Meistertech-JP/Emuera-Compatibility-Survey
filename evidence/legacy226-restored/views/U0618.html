@@ -1,0 +1,107 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0618 · PARENT_SCOPE_ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0618 · PARENT_SCOPE_ADJUDICATION.json</h1>
+<p>原票種別=PARENT_SCOPE_ADJUDICATION.json; 参照対象=expression_function:GETMILLISECOND, expression_function:GETSECOND, expression_function:GETTIME, expression_function:GETTIMES。対象=[{&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;GETTIME&quot;}, {&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;GETTIMES&quot;}, {&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;GETMILLISECON; comparison_outcome=&quot;matched_in_finite_scope&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を2個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>21a0db9690e19532d432c3272bd1c6692959ed2e8d8e8b742647c49b9399869e</code></p>
+<p><a href="../assets/U0618.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>5ce1f5d3d2aca671d711e9bb12c3834bb782c685b729a0ceea4822242d257eb4</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;decision_id&quot;: &quot;PARENT_CLOCK_EXPRESSION_SCOPE_20261113&quot;,
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;targets&quot;: [
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;GETTIME&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;GETTIMES&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;GETMILLISECOND&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;GETSECOND&quot;
+    }
+  ],
+  &quot;case_ids&quot;: [
+    &quot;CLOCKLIVE199_expression_function_GETTIME&quot;,
+    &quot;CLOCKLIVE199_expression_function_GETTIMES&quot;,
+    &quot;CLOCKLIVE199_expression_function_GETMILLISECOND&quot;,
+    &quot;CLOCKLIVE199_expression_function_GETSECOND&quot;
+  ],
+  &quot;basis&quot;: [
+    &quot;Native v24 and the pinned public 3.0.0 pyz ran the same fixture and config; the case records two isolated Native runs and one public run.&quot;,
+    &quot;Each target&#x27;s returned value was observed in its proper expression-result route and in the case&#x27;s required format/unit; all 24 recorded time samples fell within that run&#x27;s independently recorded host-time bracket.&quot;,
+    &quot;The exact Native registration, function bodies, local-time/epoch units, result routing, and corresponding public dispatch were reviewed in the pinned source evidence and the already read-back parent function matrix.&quot;,
+    &quot;Two target calls per function per process establish only the recorded normal-path observations; this decision is bounded to that finite evidence scope.&quot;
+  ],
+  &quot;not_claimed&quot;: [
+    &quot;No synchronized or exact cross-engine numeric equality: process clocks were not synchronized, and the different emitted timestamps are neither a mismatch nor proof of equality.&quot;,
+    &quot;No forced date/second rollover, timezone or DST variation, clock adjustment, culture variation, precision-boundary or rounding-edge coverage.&quot;,
+    &quot;No universal fixed-width promise for contemporary GETTIME output, and no universal culture-format promise for GETTIMES.&quot;,
+    &quot;Native natural process exit was not observed; this decision covers reached function behavior only.&quot;,
+    &quot;The GETTIME command target (seven-component command form) is separate and is not closed here.&quot;
+  ],
+  &quot;evidence&quot;: [
+    {
+      &quot;path&quot;: &quot;evidence/clock-expressions-live-20261113-199/COMPARISON.json&quot;,
+      &quot;sha256&quot;: &quot;568defa7a50593c2aef8a69553a6f9e0c2cab6b22ba1abe5803df6bc90835a97&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/clock-expressions-live-20261113-199/CASE_REVIEW.md&quot;,
+      &quot;sha256&quot;: &quot;ca551587aa3429f61c063e91145acb536ce4987ecc08b8c0076629b331bf68ca&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/clock-expressions-live-20261113-199/SOURCE_CHECKS.json&quot;,
+      &quot;sha256&quot;: &quot;411e2d04822c9da1078071c66737d74af652d59b9cf1a4bbabb2bd79812aa2e2&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/clock-expressions-live-20261113-199/PROVENANCE.json&quot;,
+      &quot;sha256&quot;: &quot;f102afc3603539bd70e4419a077f07090d54f6fdc1a487a022fdf3b905a75c3c&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/clock-expressions-live-20261113-199/IMMUTABILITY_READBACK.json&quot;,
+      &quot;sha256&quot;: &quot;922135198ea57b58ae598595ff2c9f1a48f565d3a1b22ce6e01614cee43a25db&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/parent-function-evidence-review-20261113/MATRIX.json&quot;,
+      &quot;sha256&quot;: &quot;8d15fe0e056e256347626f5fc2fa5b3acf664d583f1dc4934d6d19a15d144a7b&quot;
+    },
+    {
+      &quot;path&quot;: &quot;PARENT_READBACK_parent-function-evidence-review-20261113.json&quot;,
+      &quot;sha256&quot;: &quot;014549a67c3bb5e09bd7b669053e07709beb0171c6bfa409638320eb0e79bdb7&quot;
+    }
+  ],
+  &quot;parent_matrix_rows&quot;: {
+    &quot;GETTIME&quot;: &quot;finite_clock_scope_reviewed_environment_limited&quot;,
+    &quot;GETTIMES&quot;: &quot;finite_clock_scope_reviewed_environment_limited&quot;,
+    &quot;GETMILLISECOND&quot;: &quot;finite_clock_scope_reviewed_environment_limited&quot;,
+    &quot;GETSECOND&quot;: &quot;finite_clock_scope_reviewed_environment_limited&quot;
+  },
+  &quot;independent_reviewers&quot;: [
+    &quot;[INTERNAL_REVIEWER_01]: GETTIME&quot;,
+    &quot;[INTERNAL_REVIEWER_02]: GETTIMES, GETMILLISECOND, GETSECOND&quot;
+  ],
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2176 · expression_function:GETTIME · acceptance</li>
+<li>L2177 · expression_function:GETTIME · check</li>
+<li>L2178 · expression_function:GETTIMES · acceptance</li>
+<li>L2179 · expression_function:GETTIMES · check</li>
+<li>L2180 · expression_function:GETMILLISECOND · acceptance</li>
+<li>L2181 · expression_function:GETMILLISECOND · check</li>
+<li>L2182 · expression_function:GETSECOND · acceptance</li>
+<li>L2183 · expression_function:GETSECOND · check</li>
+</ul></html>

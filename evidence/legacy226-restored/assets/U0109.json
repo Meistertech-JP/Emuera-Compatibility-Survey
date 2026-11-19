@@ -1,0 +1,29 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:08.408864+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "STOPCALLTRAIN"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "525e9c923c81efd8cfaf145cd1a6ccd2282296f46eb0ee561168f2f88a27d934",
+  "case_ids": [
+    "TRAINLIFE220_stop-active",
+    "TRAINLIFE220_stop-active-guard"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "TRAINLIFE220_stop-active: Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+    "TRAINLIFE220_stop-active-guard: Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "0d1ca1d796ac8d906cf63edea22d4392f6c7410324b5de76e846cf0b9554e16c",
+  "independent_semantic_review_sha256": "b99f614fe95e9a92b9463c660267def0ac1915b7f643bd61a1e4a6fe4bfa971e",
+  "independent_semantic_results_sha256": "522daae4bf8457a4967a76902ac676c13e54dd485538a0ac570baf5d8e26e5b3",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T18:05:13.502448+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTW"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "resolved_parent_obligations": [
+    "raw_nullable_empty",
+    "runtime_identity_PRINTW"
+  ],
+  "comparison_path": "evidence/printw-empty-raw-20261114/COMPARISON.json",
+  "comparison_sha256": "6bb624c01790042bff203e7864bdb677fae0b3d4810f9ddc158c24174b800886",
+  "review_path": "evidence/printw-empty-raw-20261114/CASE_REVIEW_ja.md",
+  "finite_scope": [
+    "bare PRINTW with empty raw text",
+    "empty Enter wait/resume",
+    "pinned runtime/config/fixture/output receipts"
+  ],
+  "excluded": [
+    "other input methods",
+    "all other print variants",
+    "SKIPDISP",
+    "GUI layout",
+    "Native natural exit"
+  ],
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "no_product_or_release_modification": true
+}

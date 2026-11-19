@@ -1,0 +1,880 @@
+{
+  "artifacts": [
+    {
+      "derived_from": [
+        {
+          "source_id": "native-01_fixture",
+          "source_pointer": "",
+          "source_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23"
+        }
+      ],
+      "method": "byte-identical copy",
+      "omissions": [],
+      "path": "fixture/SEARCHBOUND01.ERB",
+      "review_class": "fixture",
+      "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "size": 231
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "native-01_raw",
+          "source_pointer": "",
+          "source_sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf"
+        }
+      ],
+      "method": "byte-identical copy",
+      "omissions": [],
+      "path": "raw/native-01-emuera.log",
+      "review_class": "engine_generated_observation",
+      "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+      "size": 238
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "native-02_raw",
+          "source_pointer": "",
+          "source_sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf"
+        }
+      ],
+      "method": "byte-identical copy",
+      "omissions": [],
+      "path": "raw/native-02-emuera.log",
+      "review_class": "engine_generated_observation",
+      "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+      "size": 238
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "public_stdout",
+          "source_pointer": "",
+          "source_sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b"
+        }
+      ],
+      "method": "byte-identical copy",
+      "omissions": [],
+      "path": "raw/public-stdout.bin",
+      "review_class": "engine_generated_observation",
+      "sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b",
+      "size": 202
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "public_stderr",
+          "source_pointer": "",
+          "source_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+        }
+      ],
+      "method": "byte-identical copy",
+      "omissions": [],
+      "path": "raw/public-stderr.bin",
+      "review_class": "engine_generated_observation",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "comparison",
+          "source_pointer": "/rows/2/fixture",
+          "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+        },
+        {
+          "source_id": "conditions",
+          "source_pointer": "/2",
+          "source_sha256": "b6714fdb32f484f630f22f5990275b9e9485ca9127c7ce842c585658c8fcf404"
+        }
+      ],
+      "field_lineage": [
+        {
+          "destination_pointer": "/name",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/name",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/target",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/target",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/kind",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/kind",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/variant",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/variant",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/call",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/call",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/fixture_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/fixture_sha256",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/target_line",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/fixture/target_line",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        }
+      ],
+      "method": "select one fixture object; deterministic JSON serialization",
+      "omissions": [
+        "Other fixture conditions excluded."
+      ],
+      "path": "records/condition.json",
+      "review_class": "derived_metadata",
+      "sha256": "59014b6e092dcb2a52afc305d5a3290c692ee6b5cb89970a8a9eecc21ade18a5",
+      "size": 244
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "target_ledger",
+          "source_pointer": "/rows/73",
+          "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+        },
+        {
+          "source_id": "case_register",
+          "source_pointer": "/records/1296",
+          "source_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195"
+        },
+        {
+          "source_id": "parent_review",
+          "source_pointer": "/rows/13",
+          "source_sha256": "e81ff85bbaa7778621b7beb0e159a6097f853ee86bb5387812760bfc33649370"
+        },
+        {
+          "source_id": "parent_readback",
+          "source_pointer": "/valid",
+          "source_sha256": "23757986ab7551016ef7d28b8f0b9454c27f6a5a34d0eb7c2ef8d3906feef195"
+        },
+        {
+          "source_id": "supplement_comparison",
+          "source_pointer": "",
+          "source_sha256": "45af823293fb7eb93b0c176c3a418c590bb36a18b633e29b242f562ef2ee53cb"
+        }
+      ],
+      "field_lineage": [
+        {
+          "destination_pointer": "/target/kind",
+          "operation": "exact",
+          "source": {
+            "source_id": "target_ledger",
+            "source_pointer": "/rows/73/kind",
+            "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+          }
+        },
+        {
+          "destination_pointer": "/target/name",
+          "operation": "exact",
+          "source": {
+            "source_id": "target_ledger",
+            "source_pointer": "/rows/73/name",
+            "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+          }
+        },
+        {
+          "destination_pointer": "/registered_case_id",
+          "operation": "exact",
+          "source": {
+            "source_id": "case_register",
+            "source_pointer": "/records/1296/case_id",
+            "source_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195"
+          }
+        },
+        {
+          "destination_pointer": "/legacy_case_id",
+          "operation": "exact",
+          "source": {
+            "source_id": "target_ledger",
+            "source_pointer": "/rows/73/case_id_aliases/0/candidate_case_id",
+            "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+          }
+        },
+        {
+          "destination_pointer": "/case_outcome",
+          "operation": "exact",
+          "source": {
+            "source_id": "case_register",
+            "source_pointer": "/records/1296/scenario_verdict",
+            "source_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195"
+          }
+        },
+        {
+          "destination_pointer": "/target_outcome",
+          "operation": "exact",
+          "source": {
+            "source_id": "target_ledger",
+            "source_pointer": "/rows/73/comparison_outcome",
+            "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+          }
+        },
+        {
+          "destination_pointer": "/historical_parent_review",
+          "operation": "exact",
+          "source": {
+            "source_id": "parent_review",
+            "source_pointer": "/rows/13/decision",
+            "source_sha256": "e81ff85bbaa7778621b7beb0e159a6097f853ee86bb5387812760bfc33649370"
+          }
+        },
+        {
+          "destination_pointer": "/historical_parent_review_readback_valid",
+          "operation": "exact",
+          "source": {
+            "source_id": "parent_readback",
+            "source_pointer": "/valid",
+            "source_sha256": "23757986ab7551016ef7d28b8f0b9454c27f6a5a34d0eb7c2ef8d3906feef195"
+          }
+        },
+        {
+          "destination_pointer": "/requirement_id",
+          "operation": "exact",
+          "source": {
+            "source_id": "target_ledger",
+            "source_pointer": "/rows/73/requirements/3/id",
+            "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+          }
+        },
+        {
+          "destination_pointer": "/case_semantic_closure",
+          "operation": "exact",
+          "source": {
+            "source_id": "case_register",
+            "source_pointer": "/records/1296/semantic_closure",
+            "source_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195"
+          }
+        }
+      ],
+      "method": "select and normalize case/target/review attributes",
+      "omissions": [
+        "Full requirements, other cases, full review, and later raw evidence excluded."
+      ],
+      "path": "records/relationship.json",
+      "review_class": "derived_metadata",
+      "sha256": "b2d317166ac3ac8869abaae71a1266da2750d45e00fd47b5a4348ea318005560",
+      "size": 721
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "comparison",
+          "source_pointer": "/rows/2",
+          "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+        }
+      ],
+      "field_lineage": [
+        {
+          "destination_pointer": "/verdict",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/verdict",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/classification",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/classification",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/state",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/0/state",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/error",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/0/error",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/limits",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/limits",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/done",
+          "operation": "all_true",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/0/done",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/done",
+          "operation": "all_true",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/1/done",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/done",
+          "operation": "all_true",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/2/done",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        }
+      ],
+      "method": "select case verdict, state and limits",
+      "omissions": [
+        "Full comparison, other conditions, detailed raw metadata excluded."
+      ],
+      "path": "records/result.json",
+      "review_class": "derived_metadata",
+      "sha256": "597023038e9d6f8b1af247ce6e0dbc43293d10b3e021a8a83e3fa90ddd62fd1e",
+      "size": 497
+    },
+    {
+      "derived_from": [
+        {
+          "source_id": "native-01_probe",
+          "source_pointer": "",
+          "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+        },
+        {
+          "source_id": "native-02_probe",
+          "source_pointer": "",
+          "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+        },
+        {
+          "source_id": "public_receipt",
+          "source_pointer": "",
+          "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+        },
+        {
+          "source_id": "comparison",
+          "source_pointer": "/rows/2",
+          "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+        },
+        {
+          "source_id": "native-01_fixture",
+          "source_pointer": "",
+          "source_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23"
+        },
+        {
+          "source_id": "native-02_fixture",
+          "source_pointer": "",
+          "source_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23"
+        },
+        {
+          "source_id": "public_fixture",
+          "source_pointer": "",
+          "source_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23"
+        },
+        {
+          "source_id": "native-01_config",
+          "source_pointer": "",
+          "source_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        {
+          "source_id": "native-02_config",
+          "source_pointer": "",
+          "source_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        {
+          "source_id": "public_config",
+          "source_pointer": "",
+          "source_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        {
+          "source_id": "native-01_raw",
+          "source_pointer": "",
+          "source_sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf"
+        },
+        {
+          "source_id": "native-02_raw",
+          "source_pointer": "",
+          "source_sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf"
+        },
+        {
+          "source_id": "public_stdout",
+          "source_pointer": "",
+          "source_sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b"
+        },
+        {
+          "source_id": "public_stderr",
+          "source_pointer": "",
+          "source_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+        }
+      ],
+      "field_lineage": [
+        {
+          "destination_pointer": "/modes/native-01/fixture_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/fixture_sha256",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/config_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/config_sha256",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/engine_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/native_exe_sha256",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/exit_code_observed",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/exit_code_observed",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/process_exited_after_5s",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/process_exited_after_5s",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/cleanup_terminate_ok",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/cleanup_terminate_ok",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/natural_exit_observed",
+          "operation": "not_observed_when_exit_code_unobserved",
+          "source": {
+            "source_id": "native-01_probe",
+            "source_pointer": "/exit_code_observed",
+            "source_sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/natural_exit_observed",
+          "operation": "native_exit_recorded_unobserved",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/0/native_exit_semantics",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-01/raw_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/0/raw_sha256",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/fixture_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/fixture_sha256",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/config_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/config_sha256",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/engine_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/native_exe_sha256",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/exit_code_observed",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/exit_code_observed",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/process_exited_after_5s",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/process_exited_after_5s",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/cleanup_terminate_ok",
+          "operation": "exact",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/cleanup_terminate_ok",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/natural_exit_observed",
+          "operation": "not_observed_when_exit_code_unobserved",
+          "source": {
+            "source_id": "native-02_probe",
+            "source_pointer": "/exit_code_observed",
+            "source_sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/natural_exit_observed",
+          "operation": "native_exit_recorded_unobserved",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/1/native_exit_semantics",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/modes/native-02/raw_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "comparison",
+            "source_pointer": "/rows/2/runs/1/raw_sha256",
+            "source_sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/fixture_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/inputs/ERB~1SEARCHBOUND01.ERB",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/config_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/inputs/emuera.config",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/engine_sha256_before",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/sha256_before",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/engine_sha256_after",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/sha256_after",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/raw_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/stdout_sha256",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/stdout_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/stdout_sha256",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/stderr_sha256",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/stderr_sha256",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/returncode",
+          "operation": "exact",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/returncode",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        },
+        {
+          "destination_pointer": "/modes/public/fixture_and_config_pre_post_hash_equal",
+          "operation": "inputs_equal_inputs_after",
+          "source": {
+            "source_id": "public_receipt",
+            "source_pointer": "/inputs",
+            "source_sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567"
+          }
+        }
+      ],
+      "method": "select non-path execution metadata and retain hash equality",
+      "omissions": [
+        "local_paths",
+        "command_arguments",
+        "process_ids",
+        "timestamps",
+        "desktop_identifiers",
+        "lock_records",
+        "full_configuration"
+      ],
+      "path": "records/execution.json",
+      "review_class": "derived_receipt",
+      "sha256": "96d1753bf76f1ed2ee0990c88d404cf8098d0eae62a7c181c2821a5089a54dac",
+      "size": 2224
+    },
+    {
+      "derived_from": [],
+      "method": "newly authored for this projection",
+      "omissions": [],
+      "path": "verify.py",
+      "review_class": "new_documentation_or_code",
+      "sha256": "47e95e688040f4f8e4b77b696ddd2329ec417a0157dea15bc68ddb0adf5eeccb",
+      "size": 4848
+    },
+    {
+      "derived_from": [],
+      "method": "newly authored for this projection",
+      "omissions": [],
+      "path": "test_negative.py",
+      "review_class": "new_documentation_or_code",
+      "sha256": "ff27f2e911a1f6cdaa93bfa717d862a7eed66f6f4c4aee12123d5591581faf94",
+      "size": 3407
+    },
+    {
+      "derived_from": [],
+      "method": "newly authored for this projection",
+      "omissions": [],
+      "path": "README.md",
+      "review_class": "new_documentation_or_code",
+      "sha256": "8b2481bce8fe98c8942f9e3b263880fe7019d01b7b980578116fa8953b6aba01",
+      "size": 3274
+    },
+    {
+      "derived_from": [],
+      "method": "newly authored for this projection",
+      "omissions": [],
+      "path": "README.ja.md",
+      "review_class": "new_documentation_or_code",
+      "sha256": "20cc6ebbd0f207eea6f2b1365e48bde2d31dc64caad9ba768df46bb8f5818744",
+      "size": 4024
+    }
+  ],
+  "schema": "strlen-control-projection-v1",
+  "scope": "One selected case; not a target-wide or 694-target validation.",
+  "source_reference_policy": "Original sources are withheld; their hashes and pointers identify inputs but are not independently verifiable from this package.",
+  "sources": {
+    "case_register": {
+      "availability": "withheld_private",
+      "description": "Scenario register",
+      "sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195",
+      "size": 80538288
+    },
+    "comparison": {
+      "availability": "withheld_private",
+      "description": "Original comparison record",
+      "sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c",
+      "size": 16704
+    },
+    "conditions": {
+      "availability": "withheld_private",
+      "description": "Original fixture condition register",
+      "sha256": "b6714fdb32f484f630f22f5990275b9e9485ca9127c7ce842c585658c8fcf404",
+      "size": 2169
+    },
+    "native-01_config": {
+      "availability": "withheld_private",
+      "description": "Mode-specific withheld configuration native-01",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    "native-01_fixture": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Mode-specific fixture native-01",
+      "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "size": 231
+    },
+    "native-01_probe": {
+      "availability": "withheld_private",
+      "description": "Native execution probe native-01",
+      "sha256": "20ac1c3d5852b231e8bae4c521fdeb9945eba93cabaf53c1d1a4ad6ab5c15b44",
+      "size": 1728
+    },
+    "native-01_raw": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Saved raw observation",
+      "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+      "size": 238
+    },
+    "native-02_config": {
+      "availability": "withheld_private",
+      "description": "Mode-specific withheld configuration native-02",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    "native-02_fixture": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Mode-specific fixture native-02",
+      "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "size": 231
+    },
+    "native-02_probe": {
+      "availability": "withheld_private",
+      "description": "Native execution probe native-02",
+      "sha256": "7de8fa2da1a05620171bb04e558afacf30dfc48d26243af5d5b807fbb0db5097",
+      "size": 1728
+    },
+    "native-02_raw": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Saved raw observation",
+      "sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf",
+      "size": 238
+    },
+    "parent_readback": {
+      "availability": "withheld_private",
+      "description": "Earlier parent review readback",
+      "sha256": "23757986ab7551016ef7d28b8f0b9454c27f6a5a34d0eb7c2ef8d3906feef195",
+      "size": 37520
+    },
+    "parent_review": {
+      "availability": "withheld_private",
+      "description": "Earlier parent review",
+      "sha256": "e81ff85bbaa7778621b7beb0e159a6097f853ee86bb5387812760bfc33649370",
+      "size": 610426
+    },
+    "public_config": {
+      "availability": "withheld_private",
+      "description": "Mode-specific withheld configuration public",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    "public_fixture": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Mode-specific fixture public",
+      "sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "size": 231
+    },
+    "public_receipt": {
+      "availability": "withheld_private",
+      "description": "PyEmuera execution receipt",
+      "sha256": "f981e014d2dfb972145b07cefdf81f5ce31aeb984d7cc50aa20a51f7d1e57567",
+      "size": 1668
+    },
+    "public_stderr": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Saved raw observation",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110
+    },
+    "public_stdout": {
+      "availability": "byte_identical_copy_in_package",
+      "description": "Saved raw observation",
+      "sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b",
+      "size": 202
+    },
+    "supplement_comparison": {
+      "availability": "withheld_private",
+      "description": "Later supplementary comparison",
+      "sha256": "45af823293fb7eb93b0c176c3a418c590bb36a18b633e29b242f562ef2ee53cb",
+      "size": 22110
+    },
+    "target_ledger": {
+      "availability": "withheld_private",
+      "description": "Final target ledger",
+      "sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c",
+      "size": 23054496
+    }
+  }
+}

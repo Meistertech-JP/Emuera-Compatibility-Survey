@@ -1,0 +1,537 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>GameProc/Process.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>GameProc/Process.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.cs</p><p>SHA-256 (original member bytes): ef8ecc12e0321091127f600e581932986a50d2bd94b22fc4acae82921507e362</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using System;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System.Collections.Generic;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Text;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using System.IO;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> using System.Windows.Forms;</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> using MinorShift.Emuera.GameData;</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> using MinorShift.Emuera.Sub;</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> using MinorShift.Emuera.GameView;</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> using MinorShift.Emuera.GameData.Expression;</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> using MinorShift.Emuera.GameData.Variable;</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> using MinorShift.Emuera.GameProc.Function;</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> using MinorShift.Emuera.GameData.Function;</span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> using System.Linq;</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> </span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> namespace MinorShift.Emuera.GameProc</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> {</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> </span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 	internal sealed partial class Process</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> 	{</span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> 		public Process(EmueraConsole view)</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 		{</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 			console = view;</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 		}</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> </span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a>         public LogicalLine getCurrentLine { get { return state.CurrentLine; } }</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> </span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 		/// &lt;summary&gt;</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 		/// @~~と$~~を集めたもの。CALL命令などで使う</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		/// 実行順序はLogicalLine自身が保持する。</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 		/// &lt;/summary&gt;</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 		LabelDictionary labelDic;</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> 		public LabelDictionary LabelDictionary { get { return labelDic; } }</span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> </span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> 		/// &lt;summary&gt;</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 		/// 変数全部。スクリプト中で必要になる変数は（ユーザーが直接触れないものも含め）この中にいれる</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> 		/// &lt;/summary&gt;</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> 		private VariableEvaluator vEvaluator;</span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 		public VariableEvaluator VEvaluator { get { return vEvaluator; } }</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 		private ExpressionMediator exm;</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 		private GameBase gamebase;</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 		readonly EmueraConsole console;</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 		private IdentifierDictionary idDic;</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 		ProcessState state;</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 		ProcessState originalState;//リセットする時のために</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a>         bool noError = false;</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a>         //色々あって復活させてみる</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a>         bool initialiing;</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a>         public bool inInitializeing { get { return initialiing;  } }</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> </span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a>         public bool Initialize()</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 		{</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 			LexicalAnalyzer.UseMacro = false;</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a>             state = new ProcessState(console);</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a>             originalState = state;</span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a>             initialiing = true;</span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a>             try</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a>             {</span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> 				ParserMediator.Initialize(console);</span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 				//コンフィグファイルに関するエラーの処理（コンフィグファイルはこの関数に入る前に読込済み）</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 				if (ParserMediator.HasWarning)</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 				{</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 					ParserMediator.FlushWarningList();</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 					if(MessageBox.Show(&quot;コンフィグファイルに異常があります\nEmueraを終了しますか&quot;,&quot;コンフィグエラー&quot;, MessageBoxButtons.YesNo)</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 						== DialogResult.Yes)</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 					{</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 						console.PrintSystemLine(&quot;コンフィグファイルに異常があり、終了が選択されたため処理を終了しました&quot;);</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> 						return false;</span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 					}</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 				}</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a> 				//リソースフォルダ読み込み</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a> 				if (!Content.AppContents.LoadContents())</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 				{</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> 					ParserMediator.FlushWarningList();</span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a> 					console.PrintSystemLine(&quot;リソースフォルダ読み込み中に異常が発見されたため処理を終了します&quot;);</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a> 					return false;</span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a> 				}</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a> 				ParserMediator.FlushWarningList();</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 				//キーマクロ読み込み</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a>                 if (Config.UseKeyMacro &amp;&amp; !Program.AnalysisMode)</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a>                 {</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a>                     if (File.Exists(Program.ExeDir + &quot;macro.txt&quot;))</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a>                     {</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a>                         if (Config.DisplayReport)</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 							console.PrintSystemLine(&quot;macro.txt読み込み中・・・&quot;);</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a>                         KeyMacro.LoadMacroFile(Program.ExeDir + &quot;macro.txt&quot;);</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a>                     }</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a> 				}</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a> 				//_replace.csv読み込み</span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a>                 if (Config.UseReplaceFile &amp;&amp; !Program.AnalysisMode)</span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a>                 {</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a> 					if (File.Exists(Program.CsvDir + &quot;_Replace.csv&quot;))</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a> 					{</span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a> 						if (Config.DisplayReport)</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a> 							console.PrintSystemLine(&quot;_Replace.csv読み込み中・・・&quot;);</span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a> 						ConfigData.Instance.LoadReplaceFile(Program.CsvDir + &quot;_Replace.csv&quot;);</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a> 						if (ParserMediator.HasWarning)</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 						{</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 							ParserMediator.FlushWarningList();</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 							if (MessageBox.Show(&quot;_Replace.csvに異常があります\nEmueraを終了しますか&quot;, &quot;_Replace.csvエラー&quot;, MessageBoxButtons.YesNo)</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> 								== DialogResult.Yes)</span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> 							{</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> 								console.PrintSystemLine(&quot;_Replace.csvに異常があり、終了が選択されたため処理を終了しました&quot;);</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 								return false;</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a> 							}</span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a> 						}</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a> 					}</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a>                 }</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a>                 Config.SetReplace(ConfigData.Instance);</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a>                 //ここでBARを設定すれば、いいことに気づいた予感</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a>                 console.setStBar(Config.DrawLineString);</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a> </span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a> 				//_rename.csv読み込み</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a> 				if (Config.UseRenameFile)</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a>                 {</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a> 					if (File.Exists(Program.CsvDir + &quot;_Rename.csv&quot;))</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a>                     {</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a>                         if (Config.DisplayReport || Program.AnalysisMode)</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a> 							console.PrintSystemLine(&quot;_Rename.csv読み込み中・・・&quot;);</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a> 						ParserMediator.LoadEraExRenameFile(Program.CsvDir + &quot;_Rename.csv&quot;);</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a>                     }</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a>                     else</span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a>                         console.PrintError(&quot;csv\\_Rename.csvが見つかりません&quot;);</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a>                 }</span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a>                 if (!Config.DisplayReport)</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a>                 {</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a>                     console.PrintSingleLine(Config.LoadLabel);</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a>                     console.RefreshStrings(true);</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> 				}</span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 				//gamebase.csv読み込み</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 				gamebase = new GameBase();</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a>                 if (!gamebase.LoadGameBaseCsv(Program.CsvDir + &quot;GAMEBASE.CSV&quot;))</span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a>                 {</span>
+<span id="L133"><a href="#L133" aria-label="line 133">  133</a> 					ParserMediator.FlushWarningList();</span>
+<span id="L134"><a href="#L134" aria-label="line 134">  134</a>                     console.PrintSystemLine(&quot;GAMEBASE.CSVの読み込み中に問題が発生したため処理を終了しました&quot;);</span>
+<span id="L135"><a href="#L135" aria-label="line 135">  135</a>                     return false;</span>
+<span id="L136"><a href="#L136" aria-label="line 136">  136</a>                 }</span>
+<span id="L137"><a href="#L137" aria-label="line 137">  137</a> 				console.SetWindowTitle(gamebase.ScriptWindowTitle);</span>
+<span id="L138"><a href="#L138" aria-label="line 138">  138</a> 				GlobalStatic.GameBaseData = gamebase;</span>
+<span id="L139"><a href="#L139" aria-label="line 139">  139</a> </span>
+<span id="L140"><a href="#L140" aria-label="line 140">  140</a> 				//前記以外のcsvを全て読み込み</span>
+<span id="L141"><a href="#L141" aria-label="line 141">  141</a> 				ConstantData constant = new ConstantData();</span>
+<span id="L142"><a href="#L142" aria-label="line 142">  142</a> 				constant.LoadData(Program.CsvDir, console, Config.DisplayReport);</span>
+<span id="L143"><a href="#L143" aria-label="line 143">  143</a> 				GlobalStatic.ConstantData = constant;</span>
+<span id="L144"><a href="#L144" aria-label="line 144">  144</a> 				TrainName = constant.GetCsvNameList(VariableCode.TRAINNAME);</span>
+<span id="L145"><a href="#L145" aria-label="line 145">  145</a> </span>
+<span id="L146"><a href="#L146" aria-label="line 146">  146</a>                 vEvaluator = new VariableEvaluator(gamebase, constant);</span>
+<span id="L147"><a href="#L147" aria-label="line 147">  147</a> 				GlobalStatic.VEvaluator = vEvaluator;</span>
+<span id="L148"><a href="#L148" aria-label="line 148">  148</a> </span>
+<span id="L149"><a href="#L149" aria-label="line 149">  149</a> 				idDic = new IdentifierDictionary(vEvaluator.VariableData);</span>
+<span id="L150"><a href="#L150" aria-label="line 150">  150</a> 				GlobalStatic.IdentifierDictionary = idDic;</span>
+<span id="L151"><a href="#L151" aria-label="line 151">  151</a> </span>
+<span id="L152"><a href="#L152" aria-label="line 152">  152</a> 				StrForm.Initialize();</span>
+<span id="L153"><a href="#L153" aria-label="line 153">  153</a> 				VariableParser.Initialize();</span>
+<span id="L154"><a href="#L154" aria-label="line 154">  154</a> </span>
+<span id="L155"><a href="#L155" aria-label="line 155">  155</a> 				exm = new ExpressionMediator(this, vEvaluator, console);</span>
+<span id="L156"><a href="#L156" aria-label="line 156">  156</a> 				GlobalStatic.EMediator = exm;</span>
+<span id="L157"><a href="#L157" aria-label="line 157">  157</a> </span>
+<span id="L158"><a href="#L158" aria-label="line 158">  158</a> 				labelDic = new LabelDictionary();</span>
+<span id="L159"><a href="#L159" aria-label="line 159">  159</a> 				GlobalStatic.LabelDictionary = labelDic;</span>
+<span id="L160"><a href="#L160" aria-label="line 160">  160</a> 				HeaderFileLoader hLoader = new HeaderFileLoader(console, idDic, this);</span>
+<span id="L161"><a href="#L161" aria-label="line 161">  161</a> </span>
+<span id="L162"><a href="#L162" aria-label="line 162">  162</a> 				LexicalAnalyzer.UseMacro = false;</span>
+<span id="L163"><a href="#L163" aria-label="line 163">  163</a> </span>
+<span id="L164"><a href="#L164" aria-label="line 164">  164</a> 				//ERH読込</span>
+<span id="L165"><a href="#L165" aria-label="line 165">  165</a> 				if (!hLoader.LoadHeaderFiles(Program.ErbDir, Config.DisplayReport))</span>
+<span id="L166"><a href="#L166" aria-label="line 166">  166</a> 				{</span>
+<span id="L167"><a href="#L167" aria-label="line 167">  167</a> 					ParserMediator.FlushWarningList();</span>
+<span id="L168"><a href="#L168" aria-label="line 168">  168</a> 					console.PrintSystemLine(&quot;ERHの読み込み中にエラーが発生したため処理を終了しました&quot;);</span>
+<span id="L169"><a href="#L169" aria-label="line 169">  169</a> 					return false;</span>
+<span id="L170"><a href="#L170" aria-label="line 170">  170</a> 				}</span>
+<span id="L171"><a href="#L171" aria-label="line 171">  171</a> 				LexicalAnalyzer.UseMacro = idDic.UseMacro();</span>
+<span id="L172"><a href="#L172" aria-label="line 172">  172</a> </span>
+<span id="L173"><a href="#L173" aria-label="line 173">  173</a> 				//TODO:ユーザー定義変数用のcsvの適用</span>
+<span id="L174"><a href="#L174" aria-label="line 174">  174</a> </span>
+<span id="L175"><a href="#L175" aria-label="line 175">  175</a> 				//ERB読込</span>
+<span id="L176"><a href="#L176" aria-label="line 176">  176</a> 				ErbLoader loader = new ErbLoader(console, exm, this);</span>
+<span id="L177"><a href="#L177" aria-label="line 177">  177</a>                 if (Program.AnalysisMode)</span>
+<span id="L178"><a href="#L178" aria-label="line 178">  178</a>                     noError = loader.loadErbs(Program.AnalysisFiles, labelDic);</span>
+<span id="L179"><a href="#L179" aria-label="line 179">  179</a>                 else</span>
+<span id="L180"><a href="#L180" aria-label="line 180">  180</a>                     noError = loader.LoadErbFiles(Program.ErbDir, Config.DisplayReport, labelDic);</span>
+<span id="L181"><a href="#L181" aria-label="line 181">  181</a>                 initSystemProcess();</span>
+<span id="L182"><a href="#L182" aria-label="line 182">  182</a>                 initialiing = false;</span>
+<span id="L183"><a href="#L183" aria-label="line 183">  183</a>             }</span>
+<span id="L184"><a href="#L184" aria-label="line 184">  184</a> 			catch (Exception e)</span>
+<span id="L185"><a href="#L185" aria-label="line 185">  185</a> 			{</span>
+<span id="L186"><a href="#L186" aria-label="line 186">  186</a>                 handleException(e, null, true);</span>
+<span id="L187"><a href="#L187" aria-label="line 187">  187</a> 				console.PrintSystemLine(&quot;初期化中に致命的なエラーが発生したため処理を終了しました&quot;);</span>
+<span id="L188"><a href="#L188" aria-label="line 188">  188</a> 				return false;</span>
+<span id="L189"><a href="#L189" aria-label="line 189">  189</a> 			}</span>
+<span id="L190"><a href="#L190" aria-label="line 190">  190</a> 			if (labelDic == null)</span>
+<span id="L191"><a href="#L191" aria-label="line 191">  191</a> 			{</span>
+<span id="L192"><a href="#L192" aria-label="line 192">  192</a> 				return false;</span>
+<span id="L193"><a href="#L193" aria-label="line 193">  193</a> 			}</span>
+<span id="L194"><a href="#L194" aria-label="line 194">  194</a> 			state.Begin(BeginType.TITLE);</span>
+<span id="L195"><a href="#L195" aria-label="line 195">  195</a> 			GC.Collect();</span>
+<span id="L196"><a href="#L196" aria-label="line 196">  196</a>             return true;</span>
+<span id="L197"><a href="#L197" aria-label="line 197">  197</a> 		}</span>
+<span id="L198"><a href="#L198" aria-label="line 198">  198</a> </span>
+<span id="L199"><a href="#L199" aria-label="line 199">  199</a> 		public void ReloadErb()</span>
+<span id="L200"><a href="#L200" aria-label="line 200">  200</a> 		{</span>
+<span id="L201"><a href="#L201" aria-label="line 201">  201</a> 			saveCurrentState(false);</span>
+<span id="L202"><a href="#L202" aria-label="line 202">  202</a> 			state.SystemState = SystemStateCode.System_Reloaderb;</span>
+<span id="L203"><a href="#L203" aria-label="line 203">  203</a> 			ErbLoader loader = new ErbLoader(console, exm, this);</span>
+<span id="L204"><a href="#L204" aria-label="line 204">  204</a>             loader.LoadErbFiles(Program.ErbDir, false, labelDic);</span>
+<span id="L205"><a href="#L205" aria-label="line 205">  205</a> 			console.ReadAnyKey();</span>
+<span id="L206"><a href="#L206" aria-label="line 206">  206</a> 		}</span>
+<span id="L207"><a href="#L207" aria-label="line 207">  207</a> </span>
+<span id="L208"><a href="#L208" aria-label="line 208">  208</a> 		public void ReloadPartialErb(List&lt;string&gt; path)</span>
+<span id="L209"><a href="#L209" aria-label="line 209">  209</a> 		{</span>
+<span id="L210"><a href="#L210" aria-label="line 210">  210</a> 			saveCurrentState(false);</span>
+<span id="L211"><a href="#L211" aria-label="line 211">  211</a> 			state.SystemState = SystemStateCode.System_Reloaderb;</span>
+<span id="L212"><a href="#L212" aria-label="line 212">  212</a> 			ErbLoader loader = new ErbLoader(console, exm, this);</span>
+<span id="L213"><a href="#L213" aria-label="line 213">  213</a> 			loader.loadErbs(path, labelDic);</span>
+<span id="L214"><a href="#L214" aria-label="line 214">  214</a> 			console.ReadAnyKey();</span>
+<span id="L215"><a href="#L215" aria-label="line 215">  215</a> 		}</span>
+<span id="L216"><a href="#L216" aria-label="line 216">  216</a> </span>
+<span id="L217"><a href="#L217" aria-label="line 217">  217</a> 		public void SetCommnds(Int64 count)</span>
+<span id="L218"><a href="#L218" aria-label="line 218">  218</a> 		{</span>
+<span id="L219"><a href="#L219" aria-label="line 219">  219</a> 			coms = new List&lt;long&gt;((int)count);</span>
+<span id="L220"><a href="#L220" aria-label="line 220">  220</a> 			isCTrain = true;</span>
+<span id="L221"><a href="#L221" aria-label="line 221">  221</a> 			Int64[] selectcom = vEvaluator.SELECTCOM_ARRAY;</span>
+<span id="L222"><a href="#L222" aria-label="line 222">  222</a> 			if (count &gt;= selectcom.Length)</span>
+<span id="L223"><a href="#L223" aria-label="line 223">  223</a> 			{</span>
+<span id="L224"><a href="#L224" aria-label="line 224">  224</a> 				throw new CodeEE(&quot;CALLTRAIN命令の引数の値がSELECTCOMの要素数を超えています&quot;);</span>
+<span id="L225"><a href="#L225" aria-label="line 225">  225</a> 			}</span>
+<span id="L226"><a href="#L226" aria-label="line 226">  226</a> 			for (int i = 0; i &lt; (int)count; i++)</span>
+<span id="L227"><a href="#L227" aria-label="line 227">  227</a> 			{</span>
+<span id="L228"><a href="#L228" aria-label="line 228">  228</a> 				coms.Add(selectcom[i + 1]);</span>
+<span id="L229"><a href="#L229" aria-label="line 229">  229</a> 			}</span>
+<span id="L230"><a href="#L230" aria-label="line 230">  230</a> 		}</span>
+<span id="L231"><a href="#L231" aria-label="line 231">  231</a> </span>
+<span id="L232"><a href="#L232" aria-label="line 232">  232</a>         public bool ClearCommands()</span>
+<span id="L233"><a href="#L233" aria-label="line 233">  233</a>         {</span>
+<span id="L234"><a href="#L234" aria-label="line 234">  234</a>             coms.Clear();</span>
+<span id="L235"><a href="#L235" aria-label="line 235">  235</a>             count = 0;</span>
+<span id="L236"><a href="#L236" aria-label="line 236">  236</a>             isCTrain = false;</span>
+<span id="L237"><a href="#L237" aria-label="line 237">  237</a>             skipPrint = true;</span>
+<span id="L238"><a href="#L238" aria-label="line 238">  238</a>             return (callFunction(&quot;CALLTRAINEND&quot;, false, false));</span>
+<span id="L239"><a href="#L239" aria-label="line 239">  239</a>         }</span>
+<span id="L240"><a href="#L240" aria-label="line 240">  240</a> </span>
+<span id="L241"><a href="#L241" aria-label="line 241">  241</a> 		public void InputResult5(int r0, int r1, int r2, int r3, int r4)</span>
+<span id="L242"><a href="#L242" aria-label="line 242">  242</a> 		{</span>
+<span id="L243"><a href="#L243" aria-label="line 243">  243</a> 			long[] result = vEvaluator.RESULT_ARRAY;</span>
+<span id="L244"><a href="#L244" aria-label="line 244">  244</a> 			result[0] = r0;</span>
+<span id="L245"><a href="#L245" aria-label="line 245">  245</a> 			result[1] = r1;</span>
+<span id="L246"><a href="#L246" aria-label="line 246">  246</a> 			result[2] = r2;</span>
+<span id="L247"><a href="#L247" aria-label="line 247">  247</a> 			result[3] = r3;</span>
+<span id="L248"><a href="#L248" aria-label="line 248">  248</a> 			result[4] = r4;</span>
+<span id="L249"><a href="#L249" aria-label="line 249">  249</a> 		}</span>
+<span id="L250"><a href="#L250" aria-label="line 250">  250</a> 		public void InputInteger(Int64 i)</span>
+<span id="L251"><a href="#L251" aria-label="line 251">  251</a> 		{</span>
+<span id="L252"><a href="#L252" aria-label="line 252">  252</a> 			vEvaluator.RESULT = i;</span>
+<span id="L253"><a href="#L253" aria-label="line 253">  253</a> 		}</span>
+<span id="L254"><a href="#L254" aria-label="line 254">  254</a> 		public void InputSystemInteger(Int64 i)</span>
+<span id="L255"><a href="#L255" aria-label="line 255">  255</a> 		{</span>
+<span id="L256"><a href="#L256" aria-label="line 256">  256</a> 			systemResult = i;</span>
+<span id="L257"><a href="#L257" aria-label="line 257">  257</a> 		}</span>
+<span id="L258"><a href="#L258" aria-label="line 258">  258</a> 		public void InputString(string s)</span>
+<span id="L259"><a href="#L259" aria-label="line 259">  259</a> 		{</span>
+<span id="L260"><a href="#L260" aria-label="line 260">  260</a> 			vEvaluator.RESULTS = s;</span>
+<span id="L261"><a href="#L261" aria-label="line 261">  261</a> 		}</span>
+<span id="L262"><a href="#L262" aria-label="line 262">  262</a> </span>
+<span id="L263"><a href="#L263" aria-label="line 263">  263</a> 		private uint startTime = 0;</span>
+<span id="L264"><a href="#L264" aria-label="line 264">  264</a> 		</span>
+<span id="L265"><a href="#L265" aria-label="line 265">  265</a> 		public void DoScript()</span>
+<span id="L266"><a href="#L266" aria-label="line 266">  266</a> 		{</span>
+<span id="L267"><a href="#L267" aria-label="line 267">  267</a> 			startTime = _Library.WinmmTimer.TickCount;</span>
+<span id="L268"><a href="#L268" aria-label="line 268">  268</a> 			state.lineCount = 0;</span>
+<span id="L269"><a href="#L269" aria-label="line 269">  269</a> 			bool systemProcRunning = true;</span>
+<span id="L270"><a href="#L270" aria-label="line 270">  270</a> 			try</span>
+<span id="L271"><a href="#L271" aria-label="line 271">  271</a> 			{</span>
+<span id="L272"><a href="#L272" aria-label="line 272">  272</a> 				while (true)</span>
+<span id="L273"><a href="#L273" aria-label="line 273">  273</a> 				{</span>
+<span id="L274"><a href="#L274" aria-label="line 274">  274</a> 					methodStack = 0;</span>
+<span id="L275"><a href="#L275" aria-label="line 275">  275</a> 					systemProcRunning = true;</span>
+<span id="L276"><a href="#L276" aria-label="line 276">  276</a> 					while (state.ScriptEnd &amp;&amp; console.IsRunning)</span>
+<span id="L277"><a href="#L277" aria-label="line 277">  277</a> 						runSystemProc();</span>
+<span id="L278"><a href="#L278" aria-label="line 278">  278</a> 					if (!console.IsRunning)</span>
+<span id="L279"><a href="#L279" aria-label="line 279">  279</a> 						break;</span>
+<span id="L280"><a href="#L280" aria-label="line 280">  280</a> 					systemProcRunning = false;</span>
+<span id="L281"><a href="#L281" aria-label="line 281">  281</a> 					runScriptProc();</span>
+<span id="L282"><a href="#L282" aria-label="line 282">  282</a> 				}</span>
+<span id="L283"><a href="#L283" aria-label="line 283">  283</a> 			}</span>
+<span id="L284"><a href="#L284" aria-label="line 284">  284</a> 			catch (Exception ec)</span>
+<span id="L285"><a href="#L285" aria-label="line 285">  285</a> 			{</span>
+<span id="L286"><a href="#L286" aria-label="line 286">  286</a> 				LogicalLine currentLine = state.ErrorLine;</span>
+<span id="L287"><a href="#L287" aria-label="line 287">  287</a> 				if (currentLine != null &amp;&amp; currentLine is NullLine)</span>
+<span id="L288"><a href="#L288" aria-label="line 288">  288</a> 					currentLine = null;</span>
+<span id="L289"><a href="#L289" aria-label="line 289">  289</a> 				if (systemProcRunning)</span>
+<span id="L290"><a href="#L290" aria-label="line 290">  290</a> 					handleExceptionInSystemProc(ec, currentLine, true);</span>
+<span id="L291"><a href="#L291" aria-label="line 291">  291</a> 				else</span>
+<span id="L292"><a href="#L292" aria-label="line 292">  292</a> 					handleException(ec, currentLine, true);</span>
+<span id="L293"><a href="#L293" aria-label="line 293">  293</a> 			}</span>
+<span id="L294"><a href="#L294" aria-label="line 294">  294</a> 		}</span>
+<span id="L295"><a href="#L295" aria-label="line 295">  295</a> 		</span>
+<span id="L296"><a href="#L296" aria-label="line 296">  296</a> 		public void BeginTitle()</span>
+<span id="L297"><a href="#L297" aria-label="line 297">  297</a> 		{</span>
+<span id="L298"><a href="#L298" aria-label="line 298">  298</a> 			vEvaluator.ResetData();</span>
+<span id="L299"><a href="#L299" aria-label="line 299">  299</a> 			state = originalState;</span>
+<span id="L300"><a href="#L300" aria-label="line 300">  300</a> 			state.Begin(BeginType.TITLE);</span>
+<span id="L301"><a href="#L301" aria-label="line 301">  301</a> 		}</span>
+<span id="L302"><a href="#L302" aria-label="line 302">  302</a> </span>
+<span id="L303"><a href="#L303" aria-label="line 303">  303</a> 		public void UpdateCheckInfiniteLoopState()</span>
+<span id="L304"><a href="#L304" aria-label="line 304">  304</a> 		{</span>
+<span id="L305"><a href="#L305" aria-label="line 305">  305</a> 			startTime = _Library.WinmmTimer.TickCount;</span>
+<span id="L306"><a href="#L306" aria-label="line 306">  306</a> 			state.lineCount = 0;</span>
+<span id="L307"><a href="#L307" aria-label="line 307">  307</a> 		}</span>
+<span id="L308"><a href="#L308" aria-label="line 308">  308</a> </span>
+<span id="L309"><a href="#L309" aria-label="line 309">  309</a> 		private void checkInfiniteLoop()</span>
+<span id="L310"><a href="#L310" aria-label="line 310">  310</a> 		{</span>
+<span id="L311"><a href="#L311" aria-label="line 311">  311</a> 			//うまく動かない。BEEP音が鳴るのを止められないのでこの処理なかったことに（1.51）</span>
+<span id="L312"><a href="#L312" aria-label="line 312">  312</a> 			////フリーズ防止。処理中でも履歴を見たりできる</span>
+<span id="L313"><a href="#L313" aria-label="line 313">  313</a> 			//System.Windows.Forms.Application.DoEvents();</span>
+<span id="L314"><a href="#L314" aria-label="line 314">  314</a> 			////System.Threading.Thread.Sleep(0);</span>
+<span id="L315"><a href="#L315" aria-label="line 315">  315</a> </span>
+<span id="L316"><a href="#L316" aria-label="line 316">  316</a> 			//if (!console.Enabled)</span>
+<span id="L317"><a href="#L317" aria-label="line 317">  317</a> 			//{</span>
+<span id="L318"><a href="#L318" aria-label="line 318">  318</a> 			//    //DoEvents()の間にウインドウが閉じられたらおしまい。</span>
+<span id="L319"><a href="#L319" aria-label="line 319">  319</a> 			//    console.ReadAnyKey();</span>
+<span id="L320"><a href="#L320" aria-label="line 320">  320</a> 			//    return;</span>
+<span id="L321"><a href="#L321" aria-label="line 321">  321</a> 			//}</span>
+<span id="L322"><a href="#L322" aria-label="line 322">  322</a> 			uint time = _Library.WinmmTimer.TickCount - startTime;</span>
+<span id="L323"><a href="#L323" aria-label="line 323">  323</a> 			if (time &lt; Config.InfiniteLoopAlertTime)</span>
+<span id="L324"><a href="#L324" aria-label="line 324">  324</a> 				return;</span>
+<span id="L325"><a href="#L325" aria-label="line 325">  325</a> 			LogicalLine currentLine = state.CurrentLine;</span>
+<span id="L326"><a href="#L326" aria-label="line 326">  326</a> 			if ((currentLine == null) || (currentLine is NullLine))</span>
+<span id="L327"><a href="#L327" aria-label="line 327">  327</a> 				return;//現在の行が特殊な状態ならスルー</span>
+<span id="L328"><a href="#L328" aria-label="line 328">  328</a> 			if (!console.Enabled)</span>
+<span id="L329"><a href="#L329" aria-label="line 329">  329</a> 				return;//クローズしてるとMessageBox.Showができないので。</span>
+<span id="L330"><a href="#L330" aria-label="line 330">  330</a> 			string caption = string.Format(&quot;無限ループの可能性があります&quot;);</span>
+<span id="L331"><a href="#L331" aria-label="line 331">  331</a> 			string text = string.Format(</span>
+<span id="L332"><a href="#L332" aria-label="line 332">  332</a> 				&quot;現在、{0}の{1}行目を実行中です。\n最後の入力から{3}ミリ秒経過し{2}行が実行されました。\n処理を中断し強制終了しますか？&quot;,</span>
+<span id="L333"><a href="#L333" aria-label="line 333">  333</a> 				currentLine.Position.Filename, currentLine.Position.LineNo, state.lineCount, time);</span>
+<span id="L334"><a href="#L334" aria-label="line 334">  334</a> 			DialogResult result = MessageBox.Show(text, caption, MessageBoxButtons.YesNo);</span>
+<span id="L335"><a href="#L335" aria-label="line 335">  335</a> 			if (result == DialogResult.Yes)</span>
+<span id="L336"><a href="#L336" aria-label="line 336">  336</a> 			{</span>
+<span id="L337"><a href="#L337" aria-label="line 337">  337</a> 				throw new CodeEE(&quot;無限ループの疑いにより強制終了が選択されました&quot;);</span>
+<span id="L338"><a href="#L338" aria-label="line 338">  338</a> 			}</span>
+<span id="L339"><a href="#L339" aria-label="line 339">  339</a> 			else</span>
+<span id="L340"><a href="#L340" aria-label="line 340">  340</a> 			{</span>
+<span id="L341"><a href="#L341" aria-label="line 341">  341</a> 				state.lineCount = 0;</span>
+<span id="L342"><a href="#L342" aria-label="line 342">  342</a> 				startTime = _Library.WinmmTimer.TickCount;</span>
+<span id="L343"><a href="#L343" aria-label="line 343">  343</a> 			}</span>
+<span id="L344"><a href="#L344" aria-label="line 344">  344</a> 		}</span>
+<span id="L345"><a href="#L345" aria-label="line 345">  345</a> </span>
+<span id="L346"><a href="#L346" aria-label="line 346">  346</a> 		int methodStack = 0;</span>
+<span id="L347"><a href="#L347" aria-label="line 347">  347</a> 		public SingleTerm GetValue(SuperUserDefinedMethodTerm udmt)</span>
+<span id="L348"><a href="#L348" aria-label="line 348">  348</a> 		{</span>
+<span id="L349"><a href="#L349" aria-label="line 349">  349</a> 			methodStack++;</span>
+<span id="L350"><a href="#L350" aria-label="line 350">  350</a>             if (methodStack &gt; 100)</span>
+<span id="L351"><a href="#L351" aria-label="line 351">  351</a>             {</span>
+<span id="L352"><a href="#L352" aria-label="line 352">  352</a>                 //StackOverflowExceptionはcatchできない上に再現性がないので発生前に一定数で打ち切る。</span>
+<span id="L353"><a href="#L353" aria-label="line 353">  353</a>                 //環境によっては100以前にStackOverflowExceptionがでるかも？</span>
+<span id="L354"><a href="#L354" aria-label="line 354">  354</a>                 throw new CodeEE(&quot;関数の呼び出しスタックが溢れました(無限に再帰呼び出しされていませんか？)&quot;);</span>
+<span id="L355"><a href="#L355" aria-label="line 355">  355</a>             }</span>
+<span id="L356"><a href="#L356" aria-label="line 356">  356</a>             SingleTerm ret = null;</span>
+<span id="L357"><a href="#L357" aria-label="line 357">  357</a>             int temp_current = state.currentMin;</span>
+<span id="L358"><a href="#L358" aria-label="line 358">  358</a>             state.currentMin = state.functionCount;</span>
+<span id="L359"><a href="#L359" aria-label="line 359">  359</a>             udmt.Call.updateRetAddress(state.CurrentLine);</span>
+<span id="L360"><a href="#L360" aria-label="line 360">  360</a>             try</span>
+<span id="L361"><a href="#L361" aria-label="line 361">  361</a>             {</span>
+<span id="L362"><a href="#L362" aria-label="line 362">  362</a> 				state.IntoFunction(udmt.Call, udmt.Argument, exm);</span>
+<span id="L363"><a href="#L363" aria-label="line 363">  363</a>                 //do whileの中でthrow されたエラーはここではキャッチされない。</span>
+<span id="L364"><a href="#L364" aria-label="line 364">  364</a> 				//#functionを全て抜けてDoScriptでキャッチされる。</span>
+<span id="L365"><a href="#L365" aria-label="line 365">  365</a>     			runScriptProc();</span>
+<span id="L366"><a href="#L366" aria-label="line 366">  366</a>                 ret = state.MethodReturnValue;</span>
+<span id="L367"><a href="#L367" aria-label="line 367">  367</a> 			}</span>
+<span id="L368"><a href="#L368" aria-label="line 368">  368</a> 			finally</span>
+<span id="L369"><a href="#L369" aria-label="line 369">  369</a> 			{</span>
+<span id="L370"><a href="#L370" aria-label="line 370">  370</a> 				if (udmt.Call.TopLabel.hasPrivDynamicVar)</span>
+<span id="L371"><a href="#L371" aria-label="line 371">  371</a> 					udmt.Call.TopLabel.Out();</span>
+<span id="L372"><a href="#L372" aria-label="line 372">  372</a>                 //1756beta2+v3:こいつらはここにないとデバッグコンソールで式中関数が事故った時に大事故になる</span>
+<span id="L373"><a href="#L373" aria-label="line 373">  373</a>                 state.currentMin = temp_current;</span>
+<span id="L374"><a href="#L374" aria-label="line 374">  374</a>                 methodStack--;</span>
+<span id="L375"><a href="#L375" aria-label="line 375">  375</a>             }</span>
+<span id="L376"><a href="#L376" aria-label="line 376">  376</a> 			return ret;</span>
+<span id="L377"><a href="#L377" aria-label="line 377">  377</a> 		}</span>
+<span id="L378"><a href="#L378" aria-label="line 378">  378</a> </span>
+<span id="L379"><a href="#L379" aria-label="line 379">  379</a>         public void clearMethodStack()</span>
+<span id="L380"><a href="#L380" aria-label="line 380">  380</a>         {</span>
+<span id="L381"><a href="#L381" aria-label="line 381">  381</a>             methodStack = 0;</span>
+<span id="L382"><a href="#L382" aria-label="line 382">  382</a>         }</span>
+<span id="L383"><a href="#L383" aria-label="line 383">  383</a> </span>
+<span id="L384"><a href="#L384" aria-label="line 384">  384</a>         public int MethodStack()</span>
+<span id="L385"><a href="#L385" aria-label="line 385">  385</a>         {</span>
+<span id="L386"><a href="#L386" aria-label="line 386">  386</a>             return methodStack;</span>
+<span id="L387"><a href="#L387" aria-label="line 387">  387</a>         }</span>
+<span id="L388"><a href="#L388" aria-label="line 388">  388</a> </span>
+<span id="L389"><a href="#L389" aria-label="line 389">  389</a> 		public ScriptPosition GetRunningPosition()</span>
+<span id="L390"><a href="#L390" aria-label="line 390">  390</a> 		{</span>
+<span id="L391"><a href="#L391" aria-label="line 391">  391</a> 			LogicalLine line = state.ErrorLine;</span>
+<span id="L392"><a href="#L392" aria-label="line 392">  392</a> 			if (line == null)</span>
+<span id="L393"><a href="#L393" aria-label="line 393">  393</a> 				return null;</span>
+<span id="L394"><a href="#L394" aria-label="line 394">  394</a> 			return line.Position;</span>
+<span id="L395"><a href="#L395" aria-label="line 395">  395</a> 		}</span>
+<span id="L396"><a href="#L396" aria-label="line 396">  396</a> /*</span>
+<span id="L397"><a href="#L397" aria-label="line 397">  397</a> 		private readonly string scaningScope = null;</span>
+<span id="L398"><a href="#L398" aria-label="line 398">  398</a> 		private string GetScaningScope()</span>
+<span id="L399"><a href="#L399" aria-label="line 399">  399</a> 		{</span>
+<span id="L400"><a href="#L400" aria-label="line 400">  400</a> 			if (scaningScope != null)</span>
+<span id="L401"><a href="#L401" aria-label="line 401">  401</a> 				return scaningScope;</span>
+<span id="L402"><a href="#L402" aria-label="line 402">  402</a> 			return state.Scope;</span>
+<span id="L403"><a href="#L403" aria-label="line 403">  403</a> 		}</span>
+<span id="L404"><a href="#L404" aria-label="line 404">  404</a> */</span>
+<span id="L405"><a href="#L405" aria-label="line 405">  405</a> 		public LogicalLine scaningLine = null;</span>
+<span id="L406"><a href="#L406" aria-label="line 406">  406</a> 		internal LogicalLine GetScaningLine()</span>
+<span id="L407"><a href="#L407" aria-label="line 407">  407</a> 		{</span>
+<span id="L408"><a href="#L408" aria-label="line 408">  408</a> 			if (scaningLine != null)</span>
+<span id="L409"><a href="#L409" aria-label="line 409">  409</a> 				return scaningLine;</span>
+<span id="L410"><a href="#L410" aria-label="line 410">  410</a> 			LogicalLine line = state.ErrorLine;</span>
+<span id="L411"><a href="#L411" aria-label="line 411">  411</a> 			if (line == null)</span>
+<span id="L412"><a href="#L412" aria-label="line 412">  412</a> 				return null;</span>
+<span id="L413"><a href="#L413" aria-label="line 413">  413</a> 			return line;</span>
+<span id="L414"><a href="#L414" aria-label="line 414">  414</a> 		}</span>
+<span id="L415"><a href="#L415" aria-label="line 415">  415</a> 		</span>
+<span id="L416"><a href="#L416" aria-label="line 416">  416</a> 		</span>
+<span id="L417"><a href="#L417" aria-label="line 417">  417</a> 		private void handleExceptionInSystemProc(Exception exc, LogicalLine current, bool playSound)</span>
+<span id="L418"><a href="#L418" aria-label="line 418">  418</a> 		{</span>
+<span id="L419"><a href="#L419" aria-label="line 419">  419</a> 			console.ThrowError(playSound);</span>
+<span id="L420"><a href="#L420" aria-label="line 420">  420</a> 			if (exc is CodeEE)</span>
+<span id="L421"><a href="#L421" aria-label="line 421">  421</a> 			{</span>
+<span id="L422"><a href="#L422" aria-label="line 422">  422</a> 				console.PrintError(&quot;関数の終端でエラーが発生しました:&quot; + Program.ExeName);</span>
+<span id="L423"><a href="#L423" aria-label="line 423">  423</a> 				console.PrintError(exc.Message);</span>
+<span id="L424"><a href="#L424" aria-label="line 424">  424</a> 			}</span>
+<span id="L425"><a href="#L425" aria-label="line 425">  425</a> 			else if (exc is ExeEE)</span>
+<span id="L426"><a href="#L426" aria-label="line 426">  426</a> 			{</span>
+<span id="L427"><a href="#L427" aria-label="line 427">  427</a> 				console.PrintError(&quot;関数の終端でEmueraのエラーが発生しました:&quot; + Program.ExeName);</span>
+<span id="L428"><a href="#L428" aria-label="line 428">  428</a> 				console.PrintError(exc.Message);</span>
+<span id="L429"><a href="#L429" aria-label="line 429">  429</a> 			}</span>
+<span id="L430"><a href="#L430" aria-label="line 430">  430</a> 			else</span>
+<span id="L431"><a href="#L431" aria-label="line 431">  431</a> 			{</span>
+<span id="L432"><a href="#L432" aria-label="line 432">  432</a> 				console.PrintError(&quot;関数の終端で予期しないエラーが発生しました:&quot; + Program.ExeName);</span>
+<span id="L433"><a href="#L433" aria-label="line 433">  433</a> 				console.PrintError(exc.GetType().ToString() + &quot;:&quot; + exc.Message);</span>
+<span id="L434"><a href="#L434" aria-label="line 434">  434</a> 				string[] stack = exc.StackTrace.Split(&#x27;\n&#x27;);</span>
+<span id="L435"><a href="#L435" aria-label="line 435">  435</a> 				for (int i = 0; i &lt; stack.Length; i++)</span>
+<span id="L436"><a href="#L436" aria-label="line 436">  436</a> 				{</span>
+<span id="L437"><a href="#L437" aria-label="line 437">  437</a> 					console.PrintError(stack[i]);</span>
+<span id="L438"><a href="#L438" aria-label="line 438">  438</a> 				}</span>
+<span id="L439"><a href="#L439" aria-label="line 439">  439</a> 			}</span>
+<span id="L440"><a href="#L440" aria-label="line 440">  440</a> 		}</span>
+<span id="L441"><a href="#L441" aria-label="line 441">  441</a> 		</span>
+<span id="L442"><a href="#L442" aria-label="line 442">  442</a> 		private void handleException(Exception exc, LogicalLine current, bool playSound)</span>
+<span id="L443"><a href="#L443" aria-label="line 443">  443</a> 		{</span>
+<span id="L444"><a href="#L444" aria-label="line 444">  444</a> 			console.ThrowError(playSound);</span>
+<span id="L445"><a href="#L445" aria-label="line 445">  445</a> 			ScriptPosition position = null;</span>
+<span id="L446"><a href="#L446" aria-label="line 446">  446</a>             if ((exc is EmueraException ee) &amp;&amp; (ee.Position != null))</span>
+<span id="L447"><a href="#L447" aria-label="line 447">  447</a>                 position = ee.Position;</span>
+<span id="L448"><a href="#L448" aria-label="line 448">  448</a>             else if ((current != null) &amp;&amp; (current.Position != null))</span>
+<span id="L449"><a href="#L449" aria-label="line 449">  449</a>                 position = current.Position;</span>
+<span id="L450"><a href="#L450" aria-label="line 450">  450</a>             string posString = &quot;&quot;;</span>
+<span id="L451"><a href="#L451" aria-label="line 451">  451</a> 			if (position != null)</span>
+<span id="L452"><a href="#L452" aria-label="line 452">  452</a> 			{</span>
+<span id="L453"><a href="#L453" aria-label="line 453">  453</a> 				if (position.LineNo &gt;= 0)</span>
+<span id="L454"><a href="#L454" aria-label="line 454">  454</a> 					posString = position.Filename + &quot;の&quot; + position.LineNo.ToString() + &quot;行目で&quot;;</span>
+<span id="L455"><a href="#L455" aria-label="line 455">  455</a> 				else</span>
+<span id="L456"><a href="#L456" aria-label="line 456">  456</a> 					posString = position.Filename + &quot;で&quot;;</span>
+<span id="L457"><a href="#L457" aria-label="line 457">  457</a> 					</span>
+<span id="L458"><a href="#L458" aria-label="line 458">  458</a> 			}</span>
+<span id="L459"><a href="#L459" aria-label="line 459">  459</a> 			if (exc is CodeEE)</span>
+<span id="L460"><a href="#L460" aria-label="line 460">  460</a> 			{</span>
+<span id="L461"><a href="#L461" aria-label="line 461">  461</a>                 if (position != null)</span>
+<span id="L462"><a href="#L462" aria-label="line 462">  462</a> 				{</span>
+<span id="L463"><a href="#L463" aria-label="line 463">  463</a>                     if (current is InstructionLine procline &amp;&amp; procline.FunctionCode == FunctionCode.THROW)</span>
+<span id="L464"><a href="#L464" aria-label="line 464">  464</a>                     {</span>
+<span id="L465"><a href="#L465" aria-label="line 465">  465</a>                         console.PrintErrorButton(posString + &quot;THROWが発生しました&quot;, position);</span>
+<span id="L466"><a href="#L466" aria-label="line 466">  466</a>                         printRawLine(position);</span>
+<span id="L467"><a href="#L467" aria-label="line 467">  467</a>                         console.PrintError(&quot;THROW内容：&quot; + exc.Message);</span>
+<span id="L468"><a href="#L468" aria-label="line 468">  468</a>                     }</span>
+<span id="L469"><a href="#L469" aria-label="line 469">  469</a>                     else</span>
+<span id="L470"><a href="#L470" aria-label="line 470">  470</a>                     {</span>
+<span id="L471"><a href="#L471" aria-label="line 471">  471</a>                         console.PrintErrorButton(posString + &quot;エラーが発生しました:&quot; + Program.ExeName, position);</span>
+<span id="L472"><a href="#L472" aria-label="line 472">  472</a> 						printRawLine(position);</span>
+<span id="L473"><a href="#L473" aria-label="line 473">  473</a> 						console.PrintError(&quot;エラー内容：&quot; + exc.Message);</span>
+<span id="L474"><a href="#L474" aria-label="line 474">  474</a>                     }</span>
+<span id="L475"><a href="#L475" aria-label="line 475">  475</a>                     console.PrintError(&quot;現在の関数：@&quot; + current.ParentLabelLine.LabelName + &quot;（&quot; + current.ParentLabelLine.Position.Filename + &quot;の&quot; + current.ParentLabelLine.Position.LineNo.ToString() + &quot;行目）&quot;);</span>
+<span id="L476"><a href="#L476" aria-label="line 476">  476</a>                     console.PrintError(&quot;関数呼び出しスタック：&quot;);</span>
+<span id="L477"><a href="#L477" aria-label="line 477">  477</a>                     LogicalLine parent;</span>
+<span id="L478"><a href="#L478" aria-label="line 478">  478</a>                     int depth = 0;</span>
+<span id="L479"><a href="#L479" aria-label="line 479">  479</a>                     while ((parent = state.GetReturnAddressSequensial(depth++)) != null)</span>
+<span id="L480"><a href="#L480" aria-label="line 480">  480</a>                     {</span>
+<span id="L481"><a href="#L481" aria-label="line 481">  481</a>                         if (parent.Position != null)</span>
+<span id="L482"><a href="#L482" aria-label="line 482">  482</a>                         {</span>
+<span id="L483"><a href="#L483" aria-label="line 483">  483</a>                             console.PrintErrorButton(&quot;↑&quot; + parent.Position.Filename + &quot;の&quot; + parent.Position.LineNo.ToString() + &quot;行目（関数@&quot; + parent.ParentLabelLine.LabelName + &quot;内）&quot;, parent.Position);</span>
+<span id="L484"><a href="#L484" aria-label="line 484">  484</a>                         }</span>
+<span id="L485"><a href="#L485" aria-label="line 485">  485</a>                     } </span>
+<span id="L486"><a href="#L486" aria-label="line 486">  486</a> 				}</span>
+<span id="L487"><a href="#L487" aria-label="line 487">  487</a> 				else</span>
+<span id="L488"><a href="#L488" aria-label="line 488">  488</a> 				{</span>
+<span id="L489"><a href="#L489" aria-label="line 489">  489</a> 					console.PrintError(posString + &quot;エラーが発生しました:&quot; + Program.ExeName);</span>
+<span id="L490"><a href="#L490" aria-label="line 490">  490</a> 					console.PrintError(exc.Message);</span>
+<span id="L491"><a href="#L491" aria-label="line 491">  491</a> 				}</span>
+<span id="L492"><a href="#L492" aria-label="line 492">  492</a> 			}</span>
+<span id="L493"><a href="#L493" aria-label="line 493">  493</a> 			else if (exc is ExeEE)</span>
+<span id="L494"><a href="#L494" aria-label="line 494">  494</a> 			{</span>
+<span id="L495"><a href="#L495" aria-label="line 495">  495</a> 				console.PrintError(posString + &quot;Emueraのエラーが発生しました:&quot; + Program.ExeName);</span>
+<span id="L496"><a href="#L496" aria-label="line 496">  496</a> 				console.PrintError(exc.Message);</span>
+<span id="L497"><a href="#L497" aria-label="line 497">  497</a> 			}</span>
+<span id="L498"><a href="#L498" aria-label="line 498">  498</a> 			else</span>
+<span id="L499"><a href="#L499" aria-label="line 499">  499</a>             {</span>
+<span id="L500"><a href="#L500" aria-label="line 500">  500</a> 				console.PrintError(posString + &quot;予期しないエラーが発生しました:&quot; + Program.ExeName);</span>
+<span id="L501"><a href="#L501" aria-label="line 501">  501</a> 				console.PrintError(exc.GetType().ToString() + &quot;:&quot; + exc.Message);</span>
+<span id="L502"><a href="#L502" aria-label="line 502">  502</a> 				string[] stack = exc.StackTrace.Split(&#x27;\n&#x27;);</span>
+<span id="L503"><a href="#L503" aria-label="line 503">  503</a> 				for (int i = 0; i &lt; stack.Length; i++)</span>
+<span id="L504"><a href="#L504" aria-label="line 504">  504</a> 				{</span>
+<span id="L505"><a href="#L505" aria-label="line 505">  505</a> 					console.PrintError(stack[i]);</span>
+<span id="L506"><a href="#L506" aria-label="line 506">  506</a> 				}</span>
+<span id="L507"><a href="#L507" aria-label="line 507">  507</a> 			}</span>
+<span id="L508"><a href="#L508" aria-label="line 508">  508</a> 		}</span>
+<span id="L509"><a href="#L509" aria-label="line 509">  509</a> </span>
+<span id="L510"><a href="#L510" aria-label="line 510">  510</a> 		public void printRawLine(ScriptPosition position)</span>
+<span id="L511"><a href="#L511" aria-label="line 511">  511</a> 		{</span>
+<span id="L512"><a href="#L512" aria-label="line 512">  512</a> 			string str = getRawTextFormFilewithLine(position);</span>
+<span id="L513"><a href="#L513" aria-label="line 513">  513</a> 			if (str != &quot;&quot;)</span>
+<span id="L514"><a href="#L514" aria-label="line 514">  514</a> 				console.PrintError(str);</span>
+<span id="L515"><a href="#L515" aria-label="line 515">  515</a> 		}</span>
+<span id="L516"><a href="#L516" aria-label="line 516">  516</a> </span>
+<span id="L517"><a href="#L517" aria-label="line 517">  517</a> 		public string getRawTextFormFilewithLine(ScriptPosition position)</span>
+<span id="L518"><a href="#L518" aria-label="line 518">  518</a>         {</span>
+<span id="L519"><a href="#L519" aria-label="line 519">  519</a> 			string extents = position.Filename.Substring(position.Filename.Length - 4).ToLower();</span>
+<span id="L520"><a href="#L520" aria-label="line 520">  520</a> 			if (extents == &quot;.erb&quot;)</span>
+<span id="L521"><a href="#L521" aria-label="line 521">  521</a> 			{</span>
+<span id="L522"><a href="#L522" aria-label="line 522">  522</a> 				return File.Exists(Program.ErbDir + position.Filename)</span>
+<span id="L523"><a href="#L523" aria-label="line 523">  523</a> 					? position.LineNo &gt; 0 ? File.ReadLines(Program.ErbDir + position.Filename, Config.Encode).Skip(position.LineNo - 1).First() : &quot;&quot;</span>
+<span id="L524"><a href="#L524" aria-label="line 524">  524</a> 					: &quot;&quot;;</span>
+<span id="L525"><a href="#L525" aria-label="line 525">  525</a> 			}</span>
+<span id="L526"><a href="#L526" aria-label="line 526">  526</a> 			else if (extents == &quot;.csv&quot;)</span>
+<span id="L527"><a href="#L527" aria-label="line 527">  527</a> 			{</span>
+<span id="L528"><a href="#L528" aria-label="line 528">  528</a> 				return File.Exists(Program.CsvDir + position.Filename)</span>
+<span id="L529"><a href="#L529" aria-label="line 529">  529</a> 					? position.LineNo &gt; 0 ? File.ReadLines(Program.CsvDir + position.Filename, Config.Encode).Skip(position.LineNo - 1).First() : &quot;&quot;</span>
+<span id="L530"><a href="#L530" aria-label="line 530">  530</a> 					: &quot;&quot;;</span>
+<span id="L531"><a href="#L531" aria-label="line 531">  531</a> 			}</span>
+<span id="L532"><a href="#L532" aria-label="line 532">  532</a> 			else</span>
+<span id="L533"><a href="#L533" aria-label="line 533">  533</a> 				return &quot;&quot;;</span>
+<span id="L534"><a href="#L534" aria-label="line 534">  534</a> 		}</span>
+<span id="L535"><a href="#L535" aria-label="line 535">  535</a> </span>
+<span id="L536"><a href="#L536" aria-label="line 536">  536</a> 	}</span>
+<span id="L537"><a href="#L537" aria-label="line 537">  537</a> }</span></pre></html>

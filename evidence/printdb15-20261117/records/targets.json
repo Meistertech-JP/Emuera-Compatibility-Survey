@@ -1,0 +1,30 @@
+[
+  {
+    "acceptance_source_id": "S004",
+    "case_id": "PRINTDB15",
+    "case_role": "original_explicit_target_role",
+    "ledger_pointer": "/rows/162",
+    "ledger_source_id": "S001",
+    "readback_case_pointer": "/old_own_case_ids/1",
+    "readback_source_id": "S005",
+    "target": {
+      "kind": "command_or_syntax",
+      "name": "PRINTDATA"
+    },
+    "target_outcome": "documented_difference"
+  },
+  {
+    "acceptance_source_id": "S006",
+    "case_id": "PRINTDB15",
+    "case_role": "original_explicit_target_role",
+    "ledger_pointer": "/rows/651",
+    "ledger_source_id": "S001",
+    "readback_case_pointer": "/old_own_case_ids/1",
+    "readback_source_id": "S007",
+    "target": {
+      "kind": "structural_syntax",
+      "name": "PRINTDATA"
+    },
+    "target_outcome": "documented_difference"
+  }
+]

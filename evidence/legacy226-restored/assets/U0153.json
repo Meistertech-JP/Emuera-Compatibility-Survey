@@ -1,0 +1,1608 @@
+{
+  "algorithm": "SHA256",
+  "excluded": [
+    "MANIFEST.json"
+  ],
+  "files": [
+    {
+      "path": "compare.py",
+      "bytes": 11584,
+      "sha256": "7e7681571223ce31359da94b80be3af9a2e5046a7e575286a74d6d9cdfe47a4e"
+    },
+    {
+      "path": "CORRECTED_NORMAL_PREFLIGHT.json",
+      "bytes": 1109,
+      "sha256": "74a165c7758d364d30f4c7c7a960ba7b587d684004b0ef9684eb0c6e12bef337"
+    },
+    {
+      "path": "Creator.cs",
+      "bytes": 11160,
+      "sha256": "b2e5f60c5457741208ba99b991cced5106b22834b00347876dea411a3e0dd36a"
+    },
+    {
+      "path": "Creator.Method.cs",
+      "bytes": 183051,
+      "sha256": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08"
+    },
+    {
+      "path": "execute.py",
+      "bytes": 5128,
+      "sha256": "e464f207f99d851f7b8b3afe4a431f8d121f66ebfe1e0de6c695a043145bae98"
+    },
+    {
+      "path": "FROZEN_ORIGINAL_REQUIREMENTS.json",
+      "bytes": 150575,
+      "sha256": "a51aa02ce00b0b4414401c3626cabb523ad4c7d6d85a3dce897f449682f90da4"
+    },
+    {
+      "path": "INITIAL_LOCK_HISTORY.json",
+      "bytes": 694,
+      "sha256": "96e171e3f9551ef0219a15efd8d0594de81c39c3a1334daff5dfbe65158549e9"
+    },
+    {
+      "path": "LOCK_HISTORY.json",
+      "bytes": 11379,
+      "sha256": "e84a872deee06a7bd73c9de30645303796a610d9b6460025026792a068262ca9"
+    },
+    {
+      "path": "maxarray-end-overrun/conditions.json",
+      "bytes": 382,
+      "sha256": "40f6b423a6446e2327d71feefc8424433c530b5d8a7953cb05bc3e4817646842"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/emuera.log",
+      "bytes": 672,
+      "sha256": "7252fdfa5c640bf2d900eaca899d0cd1709ab29309f6eeec424cd3d469dd9f49"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "0bfd61816a382aefc9d146e6a3fc93e261f1157f82af0bdb55acc5a357b6ea76"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/invocation.json",
+      "bytes": 3419,
+      "sha256": "2b644a5e910a693080d0ef4015be580c39ff2bf7269258bd70a71d6b88fe9426"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/LAUNCH_STARTED.json",
+      "bytes": 2203,
+      "sha256": "e2d5a4de908108aae934f300b408165bb4e86d81879e91559c4c11b42d7acb37"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/probe.json",
+      "bytes": 1896,
+      "sha256": "b436cd14534d492d4552fe5cd996b5c2bce2a5392054e8080a1fe721511116b8"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-end-overrun/native-01/runner.stdout.bin",
+      "bytes": 1642,
+      "sha256": "c802adf00b5cb54a944a84b8625ae88dfda471d6a9a1e5ed453deedcee23f0ad"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/emuera.log",
+      "bytes": 672,
+      "sha256": "7252fdfa5c640bf2d900eaca899d0cd1709ab29309f6eeec424cd3d469dd9f49"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "0bfd61816a382aefc9d146e6a3fc93e261f1157f82af0bdb55acc5a357b6ea76"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/invocation.json",
+      "bytes": 3419,
+      "sha256": "01b2f03e637dbacb86cb19a14feae1999ec2244ec17e3857b9f97128d6c38243"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/LAUNCH_STARTED.json",
+      "bytes": 2203,
+      "sha256": "21107c4486863421a36e2660717fb51fcf6df9a8c03bee67278064578e63ce4f"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/probe.json",
+      "bytes": 1896,
+      "sha256": "071350696e0e52ba9a98790eb2055acc91067b80821a3da8b1d742862b9d2c10"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-end-overrun/native-02/runner.stdout.bin",
+      "bytes": 1642,
+      "sha256": "4265e2a9eea3d53a2c66e00e7dd92f86a6df6e9f660bf0d42a3ce453ad061b5c"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 180,
+      "sha256": "ea42ed4d4ceaea0e11b44fce34ddff65096051c9754bdca179fcfb18d22334f4"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/.pyemuera/logs/output-20261115-172408-611771.txt",
+      "bytes": 158,
+      "sha256": "5aeb3d8be73aeb0106b9edca3891e9bc6eab8412853a054915498bcf148908af"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "8845fdb2ebf562b40291dab77731ca7027db300c9e819337d0223fe2974ca15f"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "0bfd61816a382aefc9d146e6a3fc93e261f1157f82af0bdb55acc5a357b6ea76"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/invocation.json",
+      "bytes": 2913,
+      "sha256": "63ed5a4bdb06cc715cff9651be03d68e3cad4723f4ae2625305b75d4c86b5697"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/LAUNCH_STARTED.json",
+      "bytes": 1935,
+      "sha256": "abd8d0f6a40b90e141ebbf10e54a12344bc1283c7aba831e13a5acc051db926a"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/verified-public-pyz.json",
+      "bytes": 1869,
+      "sha256": "6bfeed80c6beab07f3c6d63975b23e227fd004e33ca497a391e85098970648ea"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/verified.stderr.bin",
+      "bytes": 219,
+      "sha256": "a11b32d844239773f75fb1356d68674c2f0de7e0e40579cf4c03c510985f4f24"
+    },
+    {
+      "path": "maxarray-end-overrun/public-01/verified.stdout.bin",
+      "bytes": 147,
+      "sha256": "24ff594f1ac6084d710fbb39edec415bbcb0396bb9a2c405b6f56e12f77a01bf"
+    },
+    {
+      "path": "maxarray-negative-start/conditions.json",
+      "bytes": 392,
+      "sha256": "ccd98e7add4772ed07656e353d794ea3d6218a984f3913e5e6f95e680ab7907f"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/emuera.log",
+      "bytes": 688,
+      "sha256": "d0fdf74acdf558da38196e68eb1066ef9ff861a545b04b8690260d33ac70a485"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "9ae210b6f21598ff160a07632434f98476eb6612a457c6e3e840d584962b46f5"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/invocation.json",
+      "bytes": 3449,
+      "sha256": "4bb74a41dec048f79c854e6fa3387699bdb4a859f52ef61e3585dd359a4012c6"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/LAUNCH_STARTED.json",
+      "bytes": 2221,
+      "sha256": "450dae7cfb116b3ab81c57386a943457e1f236dfbafc4a1e13f7003a87ee148c"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/probe.json",
+      "bytes": 1902,
+      "sha256": "309e468989ded70b6f816673e5272ac10861d972c5f0ffacae046edce3eaf3f7"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-negative-start/native-01/runner.stdout.bin",
+      "bytes": 1648,
+      "sha256": "fa39fdf00935ddc9d45645f33b62d7ca16e0d3aa2273433534e1f81bb9dc5ccc"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/emuera.log",
+      "bytes": 688,
+      "sha256": "d0fdf74acdf558da38196e68eb1066ef9ff861a545b04b8690260d33ac70a485"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "9ae210b6f21598ff160a07632434f98476eb6612a457c6e3e840d584962b46f5"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/invocation.json",
+      "bytes": 3449,
+      "sha256": "f2c485a1bcb3a5928a708a255c7059a85fc9042abe5f5f79a1d9ff2d56578b64"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/LAUNCH_STARTED.json",
+      "bytes": 2221,
+      "sha256": "43350c0e231c9db27876abe4cbc8c7acfd3ab91d3ec1a91a3b93331cd3e0e3ee"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/probe.json",
+      "bytes": 1902,
+      "sha256": "a8c8d737ed852d8d419052c6605767987d80357c1c11d8d2dc473b3ee22fa7b7"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-negative-start/native-02/runner.stdout.bin",
+      "bytes": 1648,
+      "sha256": "446c2b146cfe2e3be9adfb2526276068941bf65819c66c24f4eeb0871f444145"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 186,
+      "sha256": "f0856d72c069ba2cd89101c77dea68cbf9e77fe7e2e2c70aa82894e81e991371"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/.pyemuera/logs/output-20261115-172426-796019.txt",
+      "bytes": 161,
+      "sha256": "1904b0c0592ddf7871d5f6ac9cb3b73428be7c6ef0422df0da84d1cd42c4eae4"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "3ad75ff6780dbab3b2c4b903a3d6e970c717509f0f0a1111fcd3949588b527af"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "9ae210b6f21598ff160a07632434f98476eb6612a457c6e3e840d584962b46f5"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/invocation.json",
+      "bytes": 2937,
+      "sha256": "2316d94e64fd41ada32d755601f3311543e449f370c78300cbb867b517a6c3ab"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/LAUNCH_STARTED.json",
+      "bytes": 1950,
+      "sha256": "3702b29b0c9d05eb7d1b2b3f4df698e100f189bbcba35f0188b347ee659ce0f9"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/verified-public-pyz.json",
+      "bytes": 1872,
+      "sha256": "ac829ae5e1283f2fc8e6cf954c3e25403b0e2eb641fd548b6b382a8fa5614aa6"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/verified.stderr.bin",
+      "bytes": 220,
+      "sha256": "9e9f04430cf28ccdaf5d30d320c968f1a6a05793af2a0b43dc86acbbb10db54e"
+    },
+    {
+      "path": "maxarray-negative-start/public-01/verified.stdout.bin",
+      "bytes": 150,
+      "sha256": "a6409fab9196f773f2c2ab532d5327cba1c4d9d88e4ffeae3419829363f15dda"
+    },
+    {
+      "path": "minarray-end-overrun/conditions.json",
+      "bytes": 382,
+      "sha256": "9cab6f201a299c45a25ace28c3e68f19603e611d6fb4e25e1e40656451fcbd79"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/emuera.log",
+      "bytes": 672,
+      "sha256": "abdc9432f68ffccf5b6b2a1f383ca75563583fd431ea52e790f4b2288e6c84c3"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "21b42329e563b9f871cdbe3e77485aebf2c391ec83181c5a50d8243b349aeff7"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/invocation.json",
+      "bytes": 3419,
+      "sha256": "0fe0b47241369f376193b9107447dd0d261f21699d5389327f1ae4ece8461fc2"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/LAUNCH_STARTED.json",
+      "bytes": 2203,
+      "sha256": "fa649900aa10c51df247ed4320b6a7f19ed6cb6cac32499413977e8c0eea4d1d"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/probe.json",
+      "bytes": 1896,
+      "sha256": "53820c1d558d2f86b0f7096fa1020d7bad91879038d86c70d19cce17eaff4b33"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-end-overrun/native-01/runner.stdout.bin",
+      "bytes": 1642,
+      "sha256": "eb3ef5243182372ab713e725e82bd0a09e36bd9255382fa366723f702b05a591"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/emuera.log",
+      "bytes": 672,
+      "sha256": "abdc9432f68ffccf5b6b2a1f383ca75563583fd431ea52e790f4b2288e6c84c3"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "21b42329e563b9f871cdbe3e77485aebf2c391ec83181c5a50d8243b349aeff7"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/invocation.json",
+      "bytes": 3419,
+      "sha256": "b780956511d8210eb956651b3e24a659e9371419644d2df0f48a3b242b282e8d"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/LAUNCH_STARTED.json",
+      "bytes": 2203,
+      "sha256": "5149c2bd4362b587742e75ec582480a32635d2c621743ed7ec7cf231270cc5e3"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/probe.json",
+      "bytes": 1896,
+      "sha256": "85552e7d960124590455ca4b7f405e72664a3314498848d24e2cb383c4e8a942"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-end-overrun/native-02/runner.stdout.bin",
+      "bytes": 1642,
+      "sha256": "2539b443904fe7e0f48bf93a983e624d354e50f29192f5db3d65694c681b9723"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 180,
+      "sha256": "589a86a5716ef5691d1b960b452633d8826c630efb97b59ede9859e5c7c4a227"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/.pyemuera/logs/output-20261115-172444-278260.txt",
+      "bytes": 158,
+      "sha256": "605592e89321af0340919cfab989d0453f0b681e191e29a63156e364befd9bce"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "1dd3202687b913befbbe102d4a1d92b470ab5e1999296af6875b21ef204a75dd"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "21b42329e563b9f871cdbe3e77485aebf2c391ec83181c5a50d8243b349aeff7"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/invocation.json",
+      "bytes": 2913,
+      "sha256": "0bce472c80c15b7c21e44f838e05e42b4c6b31466c14165c6be1fc10d3075b8d"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/LAUNCH_STARTED.json",
+      "bytes": 1935,
+      "sha256": "94213a80c8f3cdd330e8a8f23cd7d2da94c4b92f26253a84f6ab92b0963e420c"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/verified-public-pyz.json",
+      "bytes": 1869,
+      "sha256": "103925403292d4abb27d4783743d1f56121ad2337d4d88023c3d97e35c28cb37"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/verified.stderr.bin",
+      "bytes": 219,
+      "sha256": "dbeedc5e9831b94a93a43098bd31510baa577672799c1d28ba71d0996fb0d132"
+    },
+    {
+      "path": "minarray-end-overrun/public-01/verified.stdout.bin",
+      "bytes": 147,
+      "sha256": "361152fbf5c61671220a22904866ec3e6bb3288569ed66c9ec3eed1e4e46b9a9"
+    },
+    {
+      "path": "minarray-negative-start/conditions.json",
+      "bytes": 392,
+      "sha256": "83c14cc18a527c7998ae125177e511e294502caed1c67f7fefe2f36d96c5d06e"
+    },
+    {
+      "path": "minarray-negative-start/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "minarray-negative-start/native-01/emuera.log",
+      "bytes": 688,
+      "sha256": "39d4f45c57518b000aa52268f18210c13e6aa462aba5759082f8827a2d113428"
+    },
+    {
+      "path": "minarray-negative-start/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "minarray-negative-start/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "minarray-negative-start/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "8db56f44f11040db8512124ac96a0ce112665fd783174b328e37e4e19c47bcce"
+    },
+    {
+      "path": "minarray-negative-start/native-01/invocation.json",
+      "bytes": 3449,
+      "sha256": "84f8f72d33b423925b6228da5586398f8a17560f5929ea75c6edeeace3776a3d"
+    },
+    {
+      "path": "minarray-negative-start/native-01/LAUNCH_STARTED.json",
+      "bytes": 2221,
+      "sha256": "39ec750ea640befe73b7b841a52b2081dd1bc68d32d5008c05ab53affc202a6b"
+    },
+    {
+      "path": "minarray-negative-start/native-01/probe.json",
+      "bytes": 1901,
+      "sha256": "fb42a6b16a9e96ce2fddd8c474ff25a2b77bead0bf2c56820777b75cf92b1df8"
+    },
+    {
+      "path": "minarray-negative-start/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-negative-start/native-01/runner.stdout.bin",
+      "bytes": 1647,
+      "sha256": "26490dbd45bb34a9c79cc8c57e24f5bc535cee4483d78514314ce5a0837b7ddb"
+    },
+    {
+      "path": "minarray-negative-start/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "minarray-negative-start/native-02/emuera.log",
+      "bytes": 688,
+      "sha256": "39d4f45c57518b000aa52268f18210c13e6aa462aba5759082f8827a2d113428"
+    },
+    {
+      "path": "minarray-negative-start/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "minarray-negative-start/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "minarray-negative-start/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "8db56f44f11040db8512124ac96a0ce112665fd783174b328e37e4e19c47bcce"
+    },
+    {
+      "path": "minarray-negative-start/native-02/invocation.json",
+      "bytes": 3449,
+      "sha256": "65795f98401cba2a5ced67fdbe029a8ea78434280fdd09b4c98213f270dfd273"
+    },
+    {
+      "path": "minarray-negative-start/native-02/LAUNCH_STARTED.json",
+      "bytes": 2221,
+      "sha256": "6a74ad5fb6665bc2e20a8ba1b97f2059aac64d8b89109385217aa81106971633"
+    },
+    {
+      "path": "minarray-negative-start/native-02/probe.json",
+      "bytes": 1902,
+      "sha256": "a3182cafafb466b486956a314a7e9c54b5fee9d55d38ee350ab4c82c2e5158af"
+    },
+    {
+      "path": "minarray-negative-start/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-negative-start/native-02/runner.stdout.bin",
+      "bytes": 1648,
+      "sha256": "72943017c7c555c5ae4acd0a41b0b73025d7adb06074f8ccae3d9af6671d3dd7"
+    },
+    {
+      "path": "minarray-negative-start/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 186,
+      "sha256": "ca7b70441cba4f73fef4c3fa26c0ce99a541a04b94c34c3425c4b3cbaf160e95"
+    },
+    {
+      "path": "minarray-negative-start/public-01/.pyemuera/logs/output-20261115-172500-712560.txt",
+      "bytes": 161,
+      "sha256": "690f8508a5772620d7e4b7590613c171fdcd86cad414224c2ba054e05ad277a1"
+    },
+    {
+      "path": "minarray-negative-start/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "04ef53a58b2d6a5e12fa2a300c7a9591902486e0dd0f4a889e273bbf265a5761"
+    },
+    {
+      "path": "minarray-negative-start/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "minarray-negative-start/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "minarray-negative-start/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "8db56f44f11040db8512124ac96a0ce112665fd783174b328e37e4e19c47bcce"
+    },
+    {
+      "path": "minarray-negative-start/public-01/invocation.json",
+      "bytes": 2937,
+      "sha256": "f9556489ef747f134a64d67fb733c20b0721a2822a5bcb42a768acc4b25a3a24"
+    },
+    {
+      "path": "minarray-negative-start/public-01/LAUNCH_STARTED.json",
+      "bytes": 1950,
+      "sha256": "73d5578abcdc84821c7ac2f51b1e74ebc7c15199800e333a44fdb77f2d6b3f49"
+    },
+    {
+      "path": "minarray-negative-start/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-negative-start/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "minarray-negative-start/public-01/verified-public-pyz.json",
+      "bytes": 1872,
+      "sha256": "4a97dd95770c06d004f7e64400dd47453c81bc3b5738d49e7b93438637f26475"
+    },
+    {
+      "path": "minarray-negative-start/public-01/verified.stderr.bin",
+      "bytes": 220,
+      "sha256": "ec52602bf63292c8fe9a6e95d50a3f58d82fb778e2f695d3764a5a64b2259d0c"
+    },
+    {
+      "path": "minarray-negative-start/public-01/verified.stdout.bin",
+      "bytes": 150,
+      "sha256": "55f65591f9e4a7d8972d5fae70ea0e7062093583887da4d10801493ec114d9ae"
+    },
+    {
+      "path": "normal/conditions.json",
+      "bytes": 2402,
+      "sha256": "95ee81a26d57d25c8de2c2e3bc47957716ca0d5b55494a02e374868f87ad82f0"
+    },
+    {
+      "path": "normal/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "normal/native-01/emuera.log",
+      "bytes": 2758,
+      "sha256": "43bc66a49a3f986a7958e5109e13cc3bcadd797191733001565a5b9a4521e7ed"
+    },
+    {
+      "path": "normal/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "normal/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "normal/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 4742,
+      "sha256": "0d82ca936b95b04a59ef53b36723f1be09d96e17017f6f5f709be542eeb27213"
+    },
+    {
+      "path": "normal/native-01/invocation.json",
+      "bytes": 3279,
+      "sha256": "2861639090afd4bce23c5c5b1544f54031dc11548e08efc2c69c3078b649008b"
+    },
+    {
+      "path": "normal/native-01/LAUNCH_STARTED.json",
+      "bytes": 2119,
+      "sha256": "ec0d8ca749bdb41d11dfbe35c506a2bca0b80960f8ab9c505c59f01517527222"
+    },
+    {
+      "path": "normal/native-01/probe.json",
+      "bytes": 1870,
+      "sha256": "f424cb96fe10ce3d0e38f88eb5b046ac7cf9b696dca48d4232ad519b192d40cc"
+    },
+    {
+      "path": "normal/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal/native-01/runner.stdout.bin",
+      "bytes": 1616,
+      "sha256": "be1bc0aa08716963ab0f3add106d15816aaee058fc0b14966ce4a7129127113b"
+    },
+    {
+      "path": "normal/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "normal/native-02/emuera.log",
+      "bytes": 2758,
+      "sha256": "43bc66a49a3f986a7958e5109e13cc3bcadd797191733001565a5b9a4521e7ed"
+    },
+    {
+      "path": "normal/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "normal/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "normal/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 4742,
+      "sha256": "0d82ca936b95b04a59ef53b36723f1be09d96e17017f6f5f709be542eeb27213"
+    },
+    {
+      "path": "normal/native-02/invocation.json",
+      "bytes": 3279,
+      "sha256": "609811da004129799b2028b6789bb3f0ee66491c402bb539cd390c17a733c1d4"
+    },
+    {
+      "path": "normal/native-02/LAUNCH_STARTED.json",
+      "bytes": 2119,
+      "sha256": "c3fee702adb17a90d8c5c9e752458d942f8d0f5989ccb99588f5f69e9ea2a9ed"
+    },
+    {
+      "path": "normal/native-02/probe.json",
+      "bytes": 1870,
+      "sha256": "e0c61a58b9133150a5e9916a3b0ca066f9908c5f2bf2e6ba7b7b2100d680b4f5"
+    },
+    {
+      "path": "normal/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal/native-02/runner.stdout.bin",
+      "bytes": 1616,
+      "sha256": "3aa976c25d29ffc5783b875712c70548d2bda8d3f9999c3febca2ffa0b94a3cc"
+    },
+    {
+      "path": "normal/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 2070,
+      "sha256": "eaa0fcd1310423d35ca2d5c67322dcfc6157328b5aee21678b54162612d59fa3"
+    },
+    {
+      "path": "normal/public-01/.pyemuera/logs/output-20261115-172518-964298.txt",
+      "bytes": 1164,
+      "sha256": "6ac5ac3ba7f2af1cd764cab6183dd907ceb7eaee07a15f0d6e1d55f8be285b0d"
+    },
+    {
+      "path": "normal/public-01/.pyemuera/logs/output-20261115-172518-994299.txt",
+      "bytes": 1360,
+      "sha256": "71a050fce73cbe63ce8f700858842725480691c0fcf378ef28a0c0bc136c9976"
+    },
+    {
+      "path": "normal/public-01/.pyemuera/logs/output-20261115-172519-025298.txt",
+      "bytes": 1502,
+      "sha256": "37da11f6c6c35e38f990728857061f55a84c82f13bd4e86b9c74beb7076cfbc8"
+    },
+    {
+      "path": "normal/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 958,
+      "sha256": "3efec0811b079fd5b6adc987e0d9f2136d52bd965284073dc6fcb936e9706628"
+    },
+    {
+      "path": "normal/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "normal/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "normal/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 4742,
+      "sha256": "0d82ca936b95b04a59ef53b36723f1be09d96e17017f6f5f709be542eeb27213"
+    },
+    {
+      "path": "normal/public-01/invocation.json",
+      "bytes": 2801,
+      "sha256": "b856e98d3e29f633ba0a55c7e105e04a109464ba5ff06601933764c0a2a933dd"
+    },
+    {
+      "path": "normal/public-01/LAUNCH_STARTED.json",
+      "bytes": 1865,
+      "sha256": "c102d836068c41c5b31b53378bb8f20c20a6a064d3684521a9f36d31dc3fdf8f"
+    },
+    {
+      "path": "normal/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal/public-01/verified-public-pyz.json",
+      "bytes": 1855,
+      "sha256": "d4708aced30dc7cf6e2a1898a145c55f6a8f3ca8a893a29560cc0d9f37355275"
+    },
+    {
+      "path": "normal/public-01/verified.stderr.bin",
+      "bytes": 294,
+      "sha256": "c28066a4bad5831d4a2a1e6c8d8e5758b3c357f46db42e917033be3aa193f378"
+    },
+    {
+      "path": "normal/public-01/verified.stdout.bin",
+      "bytes": 1420,
+      "sha256": "bf469f1b2c560122b6ebeaf12edc620663f4a6bd1c49454d0e66c784a654e83a"
+    },
+    {
+      "path": "normal-corrected/conditions.json",
+      "bytes": 2402,
+      "sha256": "95ee81a26d57d25c8de2c2e3bc47957716ca0d5b55494a02e374868f87ad82f0"
+    },
+    {
+      "path": "normal-corrected/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "normal-corrected/native-01/emuera.log",
+      "bytes": 5254,
+      "sha256": "f14b1cc964cd8f07af6a31314d2c192d15c9e9d14e0cb2ec36db5e66a208d863"
+    },
+    {
+      "path": "normal-corrected/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "normal-corrected/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "normal-corrected/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 4643,
+      "sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe"
+    },
+    {
+      "path": "normal-corrected/native-01/invocation.json",
+      "bytes": 3379,
+      "sha256": "f766b23b8d66aacdbd0b9674e84c1afc41be4635109be4091eee494a58ebc21e"
+    },
+    {
+      "path": "normal-corrected/native-01/LAUNCH_STARTED.json",
+      "bytes": 2179,
+      "sha256": "76f0139c9ace64c5bd628683926895e96af95b54163c7eca4e4dbd292d9485f5"
+    },
+    {
+      "path": "normal-corrected/native-01/probe.json",
+      "bytes": 1890,
+      "sha256": "5388c22ac6fc132b2cbdd03fcbe2ed5914e46d5d86c66c219e691832922444d7"
+    },
+    {
+      "path": "normal-corrected/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal-corrected/native-01/runner.stdout.bin",
+      "bytes": 1636,
+      "sha256": "f702c9cb48f90c6a3ce0eb2908370e92fac09e223b5b2e89d80f8736ba83f396"
+    },
+    {
+      "path": "normal-corrected/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "normal-corrected/native-02/emuera.log",
+      "bytes": 5254,
+      "sha256": "f14b1cc964cd8f07af6a31314d2c192d15c9e9d14e0cb2ec36db5e66a208d863"
+    },
+    {
+      "path": "normal-corrected/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "normal-corrected/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "normal-corrected/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 4643,
+      "sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe"
+    },
+    {
+      "path": "normal-corrected/native-02/invocation.json",
+      "bytes": 3379,
+      "sha256": "6dcf1009b90e4e789fc557e0f8df285d6788642921cd4d6c2d4f2d76e690f34a"
+    },
+    {
+      "path": "normal-corrected/native-02/LAUNCH_STARTED.json",
+      "bytes": 2179,
+      "sha256": "f09ed0679e3c0452990ccfc1b0469ac450fd990872f436a3198c8414f8799651"
+    },
+    {
+      "path": "normal-corrected/native-02/probe.json",
+      "bytes": 1890,
+      "sha256": "1bb6fa415683561f22d5dabae197783f7fef6d58612014cf03e38645631e152b"
+    },
+    {
+      "path": "normal-corrected/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal-corrected/native-02/runner.stdout.bin",
+      "bytes": 1636,
+      "sha256": "a45b73a99682d3860e8b6abd17a4980d098c790831b811c1b75b303c9f8fdc99"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 5194,
+      "sha256": "60b3a2b00d9a3f340af0ceb17897144e09cfb9143b4187b768fd8ba4c1f02845"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172816-876818.txt",
+      "bytes": 156,
+      "sha256": "a7b16ed1ee2a1c7dd5f2aa36e144904f2ec416e4c2707db37750d3930e6bcc42"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172816-952242.txt",
+      "bytes": 352,
+      "sha256": "4e05fef7d7f9d59973edb0bf11d351529a1132ab044b937cc63db3312d517605"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-008759.txt",
+      "bytes": 494,
+      "sha256": "77780d8d560649334feedeb5ff941a5616dfdf41dfdf860bac7c279d8fe0564a"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-060779.txt",
+      "bytes": 1025,
+      "sha256": "895529a73a3cab873aaec2bc33988929cbafc55a5f7ec2b8780037eebb543455"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-121780.txt",
+      "bytes": 1159,
+      "sha256": "d756940c42ebe9432901fe21621d3dd5702b5b174e9bc5c52063f6a147294d6e"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-160779.txt",
+      "bytes": 1355,
+      "sha256": "b9b3a8273d2344aec3053625beddc898cc5c5577625f592fb121ea85dc37d616"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-191780.txt",
+      "bytes": 1497,
+      "sha256": "0e8095ac8a4a7349cd086f8fc1f92be901d152bae98db9d58392e982d49c42bb"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-223780.txt",
+      "bytes": 2028,
+      "sha256": "a1d80b32dbf624f6fbd4a8e5fdd066babc052d8800bfbe77c37730938ae4ab73"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-269779.txt",
+      "bytes": 2162,
+      "sha256": "2b64ac21b4b62af3e0c9013f0f16f3f0b4bae362418bf696183d876bccd7071c"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-303525.txt",
+      "bytes": 2358,
+      "sha256": "13d913836dbf621f47487254e6b77ad69a4f5512d0de761fc38e8e7397256377"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-343525.txt",
+      "bytes": 2500,
+      "sha256": "349f4006ede70cf6d9c4fc99a0fe982ad248f941c75eaca75b59138f4c826e7e"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-402526.txt",
+      "bytes": 3030,
+      "sha256": "1482e452c4c9f93f9d3f3dff05405fe55adda89ce185c947816d8eb0d9f07dbb"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/output-20261115-172817-464525.txt",
+      "bytes": 3106,
+      "sha256": "a7cc65b69c8f3a5ef425f55ddca8fdbe6a64d2a6f4de24619ee70a0678712370"
+    },
+    {
+      "path": "normal-corrected/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 3946,
+      "sha256": "8bbdde619629f03518ef05d4b72cd7ce1fa011ea27f68e0bb272350f453a1304"
+    },
+    {
+      "path": "normal-corrected/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "normal-corrected/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "normal-corrected/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 4643,
+      "sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe"
+    },
+    {
+      "path": "normal-corrected/public-01/invocation.json",
+      "bytes": 2881,
+      "sha256": "1fa27bbfe3446de7044be629202949b314d8a1dc2f10d3d19de1fa7716b53af9"
+    },
+    {
+      "path": "normal-corrected/public-01/LAUNCH_STARTED.json",
+      "bytes": 1915,
+      "sha256": "950a6ce0c4ce2a7382309362e5d6586fd42ee65113b98784b27cad4c6361ca1f"
+    },
+    {
+      "path": "normal-corrected/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal-corrected/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "normal-corrected/public-01/verified-public-pyz.json",
+      "bytes": 1865,
+      "sha256": "66d6179489ef1a0935bf17b2404e6ceb7007a496e0146748a26f14e5c0a5a8fe"
+    },
+    {
+      "path": "normal-corrected/public-01/verified.stderr.bin",
+      "bytes": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "normal-corrected/public-01/verified.stdout.bin",
+      "bytes": 2966,
+      "sha256": "2e2685beaa846fcd39d3dde2e27ae941b836938942e1740173214de9f8b703cc"
+    },
+    {
+      "path": "ORIGINAL_GUARD_EXCERPT.txt",
+      "bytes": 54271,
+      "sha256": "a2eb51f8a858f9b6726caa2e50a5be697f1a88c40a2dee8141fe12366d16dbf4"
+    },
+    {
+      "path": "POSTPROCESSING_COMPARE_FAILURE.json",
+      "bytes": 393,
+      "sha256": "dd868a0d8fef52354db03280827a95a989a5ed558cf56b879ae104ad2c1adf25"
+    },
+    {
+      "path": "POSTPROCESSING_COMPARE_FAILURE_VALUE_ASSUMPTION.json",
+      "bytes": 393,
+      "sha256": "dd868a0d8fef52354db03280827a95a989a5ed558cf56b879ae104ad2c1adf25"
+    },
+    {
+      "path": "POSTPROCESSING_FAILURES.json",
+      "bytes": 1066,
+      "sha256": "32be7dfa96674c654939542c7ceeaade3af5fe863dfd7c9e8b2c04c8214bfdb5"
+    },
+    {
+      "path": "PREFLIGHT.json",
+      "bytes": 16032,
+      "sha256": "a2c3a3ac78994a3e687dd450b154d3102e8bbdf0930d8342c9fb8da03ccd8ebb"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 6487,
+      "sha256": "0abbed41e1edb0714f516934778808003d8e6f734838296d2f240b5e29d85a4c"
+    },
+    {
+      "path": "public_runner_original.py",
+      "bytes": 1835,
+      "sha256": "7b40f716f18436786694557d986e56a2da711a916e5434fc588e19ee43733ec3"
+    },
+    {
+      "path": "REPORT.json",
+      "bytes": 44295,
+      "sha256": "71ec57a61c04c2e421c575e081b6cec4ba0caef524647ff5a0b38e1a5475c4de"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 3656,
+      "sha256": "250098ba451ded2ca0103a84d0b6765995a16aed6029dcba2b718b798d1da6d0"
+    },
+    {
+      "path": "retained-existing/ARRAY_RANGE_CASE_PLAN.json",
+      "bytes": 6848,
+      "sha256": "f580e285011dcad68e552debcdb2c0aac149c27d3b6b611d94fdae802da1c63d"
+    },
+    {
+      "path": "retained-existing/ARRAY_RANGE_EVIDENCE.json",
+      "bytes": 1809,
+      "sha256": "918ab4a367aa7877abc428f23294325b91a39eb34f5bca94de0abfe642b52b87"
+    },
+    {
+      "path": "retained-existing/ARRAY_RANGE_REVIEW_ja.md",
+      "bytes": 1984,
+      "sha256": "ac3e87b5f2edd6bfbf170995be7c3e6290a355c02900479a392c478309167ebf"
+    },
+    {
+      "path": "retained-existing/ARRAYRANGENORMAL01/ERB/ARRAYRANGENORMAL01.ERB",
+      "bytes": 433,
+      "sha256": "d8318a4528411b4288c129708ff93c8b713385ad61fcf4bea5979eeff082c6c4"
+    },
+    {
+      "path": "retained-existing/REUSE_RECEIPTS.json",
+      "bytes": 1466,
+      "sha256": "5ef6e7924f13a50437b4b90932ae36512af5bfd83c63d37c4f938d035c9785c9"
+    },
+    {
+      "path": "retained-existing/SUMARREMPTY/ERB/SUMARREMPTY.ERB",
+      "bytes": 140,
+      "sha256": "44c918faf89ce2682c4046db201ae75b480688c1c93fdbd63b7c5eb3efda8297"
+    },
+    {
+      "path": "retained-existing/SUMARRREVERSE/ERB/SUMARRREVERSE.ERB",
+      "bytes": 140,
+      "sha256": "72718532e7fa85023e84ba3b1e51aaa357a4019fe54b3a6cd8d81e70ddcf3053"
+    },
+    {
+      "path": "REUSE.json",
+      "bytes": 1351,
+      "sha256": "62142dc8214f8ac62582d0b1edf9ab42744239a12c1ec8d750ef9ee6a9d24b77"
+    },
+    {
+      "path": "run_native.py",
+      "bytes": 2927,
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 1015,
+      "sha256": "2d6852e5beb6b67daf190a4ea1d3fd0314f1e177534b08a18a2720e569ab2dd2"
+    },
+    {
+      "path": "successful-expression-original.ERB.txt",
+      "bytes": 433,
+      "sha256": "d8318a4528411b4288c129708ff93c8b713385ad61fcf4bea5979eeff082c6c4"
+    },
+    {
+      "path": "sumarray-end-overrun/conditions.json",
+      "bytes": 382,
+      "sha256": "3c7b29f24737e4d01ee8a4a5b9e07cd72c9242ce39617708ac9b1ce3ecc0f113"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/emuera.log",
+      "bytes": 672,
+      "sha256": "d9a5fa5f72882b5b18d0d39e4a70181dd4ef7a838d8199d606fb9ca8768adab9"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "05ec84ec762667264c605255fb64202322b9474e09114ea7c73d1b7cb073087f"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/invocation.json",
+      "bytes": 3419,
+      "sha256": "42e679a2c0395373d00ff5f77131df0f0608c4da49960006001188fd3ce5c7a7"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/LAUNCH_STARTED.json",
+      "bytes": 2203,
+      "sha256": "c51a422ac7a040060c64679b59d97c42cca3a9db756d5ac5f835d8e5bba13f1a"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/probe.json",
+      "bytes": 1896,
+      "sha256": "c048dd770a33ef821915980ce1ece86cf6f04f3c018a7f3a074ac331d2e72a46"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-end-overrun/native-01/runner.stdout.bin",
+      "bytes": 1642,
+      "sha256": "fd11d75db117923c6e12b5bcbaa8a7e03510285168a7eaedfe38df477c123d1b"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/emuera.log",
+      "bytes": 672,
+      "sha256": "d9a5fa5f72882b5b18d0d39e4a70181dd4ef7a838d8199d606fb9ca8768adab9"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "05ec84ec762667264c605255fb64202322b9474e09114ea7c73d1b7cb073087f"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/invocation.json",
+      "bytes": 3419,
+      "sha256": "95590b7677e59d670058a1574256cf931876381bee624a3244005dc779ac725f"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/LAUNCH_STARTED.json",
+      "bytes": 2203,
+      "sha256": "c0277cf6f5408a6f3bfc1a9d92aba1eb66707314503a8a37b6f1977820bf510a"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/probe.json",
+      "bytes": 1896,
+      "sha256": "98d4301d150e8169b080ece20e476c3f108c5a8f52c5e9bd7c9c171a8d6ae3b9"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-end-overrun/native-02/runner.stdout.bin",
+      "bytes": 1642,
+      "sha256": "09e1b51f8b967b0bb4882d0d7a0b2ac76452c0c9643075078af248aeab8e5a6b"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 180,
+      "sha256": "cae23c75804bbcb9a03a3c3cff5fc2499ef97460df4265568e6112e155a5202a"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/.pyemuera/logs/output-20261115-172539-698994.txt",
+      "bytes": 158,
+      "sha256": "86971a717ea71b4b8a77913d0fe8a14185ffb3ecf06e84ab8e12a81cc0e31888"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "e855bd045c0bc2caeb7b8de31734f173c178cac1bdbb436a085633d968567a41"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 501,
+      "sha256": "05ec84ec762667264c605255fb64202322b9474e09114ea7c73d1b7cb073087f"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/invocation.json",
+      "bytes": 2913,
+      "sha256": "6ab463eb28c26b860541ba83a63746d032d9c875a528663faaef6b27a5771370"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/LAUNCH_STARTED.json",
+      "bytes": 1935,
+      "sha256": "fffc9a6245886ed99c3d70a8c2c74e83c5b77d40b9b3cf12001a7bf24a102fba"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/verified-public-pyz.json",
+      "bytes": 1869,
+      "sha256": "f42486a16f4335aab8e158dcbe3ad5be20120145f91ded110df71aa683b6bf76"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/verified.stderr.bin",
+      "bytes": 219,
+      "sha256": "3a4055c767b653cced81e0d0e650e2bd094654a023363962161b527ec9a475fb"
+    },
+    {
+      "path": "sumarray-end-overrun/public-01/verified.stdout.bin",
+      "bytes": 147,
+      "sha256": "ccd32f98d919b35ad9111e51f9c9d449580021ea79692702480e9e26d71a82e1"
+    },
+    {
+      "path": "sumarray-negative-start/conditions.json",
+      "bytes": 392,
+      "sha256": "0893c2445f24212ea06033d423ca38f4b5eb97eee0ea1b8a6f2a7472b1de48bc"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/emuera.log",
+      "bytes": 688,
+      "sha256": "742061a5cbead7ab26ff3ff94e645629291ace572e74e96c3ffdb348ea0c4674"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "247608813ddef0dcf9dee321cee6a7470d51418899a2b144639b4242b8306ed8"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/invocation.json",
+      "bytes": 3449,
+      "sha256": "efb7f9945b77079fa75a9cfc7ef22758c062802280471ff80c07c6290320f03f"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/LAUNCH_STARTED.json",
+      "bytes": 2221,
+      "sha256": "33ad6c32add7e329bf695c14195eb55564d79111ea4b48dd109a14e977650af5"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/probe.json",
+      "bytes": 1902,
+      "sha256": "7e982a07d4725775356ad238b1d6e44c2f8d151bd54737803879e3316746ebe0"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-negative-start/native-01/runner.stdout.bin",
+      "bytes": 1648,
+      "sha256": "f1ff2d4986f22ad93be166c988353795a27fbf5c7f54645c01d45a4f0c47f942"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/emuera.log",
+      "bytes": 688,
+      "sha256": "742061a5cbead7ab26ff3ff94e645629291ace572e74e96c3ffdb348ea0c4674"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "247608813ddef0dcf9dee321cee6a7470d51418899a2b144639b4242b8306ed8"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/invocation.json",
+      "bytes": 3449,
+      "sha256": "1923727d1d6f8c4af4a59d5892e34b5da61c79de8ad0a1440069e9df27990878"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/LAUNCH_STARTED.json",
+      "bytes": 2221,
+      "sha256": "ced48b5ccf0f95ce5030b259eabcb4ec5379daf6783abe014843341689520666"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/probe.json",
+      "bytes": 1902,
+      "sha256": "d3e78b01813423155fa42debf7748b701da2f7997654b9bf02ba006b1baf02b9"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-negative-start/native-02/runner.stdout.bin",
+      "bytes": 1648,
+      "sha256": "220d02e2615ed8bb30ecd4fe176584f5db7103384be3d419948febc600823fbb"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/.pyemuera/logs/emuera.log",
+      "bytes": 186,
+      "sha256": "58ec822ab93472cc43a1ee02fc77e3675314a5db8cfc09894c6c2b6e4926cccf"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/.pyemuera/logs/output-20261115-172558-958928.txt",
+      "bytes": 161,
+      "sha256": "dbf76e42cec572971c2fc51539d452885ed5ec73f3599cb4ce4f26531735ea6e"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "85b5122db3ad0258c7e579be0862df798abeb9dce315b9474f4e28adfcfbdc39"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/ERB/ARRAYMSORT176.ERH",
+      "bytes": 89,
+      "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/ERB/SEARCHBOUND01.ERB",
+      "bytes": 511,
+      "sha256": "247608813ddef0dcf9dee321cee6a7470d51418899a2b144639b4242b8306ed8"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/invocation.json",
+      "bytes": 2937,
+      "sha256": "b22e002f41d2accdd2b3804f59eddaa43847b7d134ea80f2a509980920a7e875"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/LAUNCH_STARTED.json",
+      "bytes": 1950,
+      "sha256": "5b82743f356d90790154d59cfa797713ddcfc099d80711d537479ba07bfb14fb"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/runner.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/runner.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/verified-public-pyz.json",
+      "bytes": 1872,
+      "sha256": "97c766fcb1d8c6a4d2a7f76615c80acb50ecf93225a2a4d17d58f944d1e91fc1"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/verified.stderr.bin",
+      "bytes": 220,
+      "sha256": "5c4575e27901ec9bd86b4f46c8c90d4260ad2b8b12a2aebd527dc7cb366792a5"
+    },
+    {
+      "path": "sumarray-negative-start/public-01/verified.stdout.bin",
+      "bytes": 150,
+      "sha256": "56d806acab8eb0a4014223547b881650653faa1cad75ccc19034477dec5e35d3"
+    },
+    {
+      "path": "V24_ARRAYRANGE_GetArraySum_IL.txt",
+      "bytes": 4457,
+      "sha256": "3292d6c835a1b7617e5a5137b56e1b7dd02c39a391da585cacd5ad1e4488ef4d"
+    },
+    {
+      "path": "V24_ARRAYRANGE_GetMaxArray_IL.txt",
+      "bytes": 2011,
+      "sha256": "49bc49ac6765b824c6b65be48aa70c9bb35a14adc19d22c122948ef75c53539a"
+    },
+    {
+      "path": "V24_ARRAYRANGE_MaxArrayMethod_IL.txt",
+      "bytes": 3312,
+      "sha256": "d0ded704e9675378e5436fea87dcd1c568cc72db58a04b3b42baa1361a74df7c"
+    },
+    {
+      "path": "V24_ARRAYRANGE_SumArrayMethod_IL.txt",
+      "bytes": 3094,
+      "sha256": "4ab02d23274a8db3c42995e303be24dee27c56e68c5e8d3d45976c55e93c90ba"
+    },
+    {
+      "path": "VariableEvaluator.cs",
+      "bytes": 86023,
+      "sha256": "bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582"
+    },
+    {
+      "path": "VariableTerm.cs",
+      "bytes": 14482,
+      "sha256": "bfb5bc5f7f21a8487b11bb9bcdbda105d0d78a9cfdeb7769009219a4750875a9"
+    }
+  ]
+}

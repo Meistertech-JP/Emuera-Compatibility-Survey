@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emuera互換性調査</title>
+<style>
+:root {font: 16px/1.55 system-ui, sans-serif; color:#182a3a; background:#f2f5f8}
+body {max-width: 68rem; margin:auto; padding:1rem}
+a, summary {color:#07568f}
+button,input,select {font:inherit; padding:.35rem .55rem}
+button,summary {cursor:pointer}
+#topControls {position:fixed;top:.4rem;right:.5rem;z-index:60;display:flex;gap:.35rem;align-items:flex-start}
+#topControls button {padding:.28rem .55rem;background:#fff;border:1px solid #7999b3;border-radius:.3rem}
+#topControls #menuPin {font-size:12.5px}
+@media (max-width:640px) {#topControls {flex-direction:column;align-items:flex-end}}
+@media (max-width:1431px) and (min-width:641px) {body.menu-fixed #tabs {padding-right:180px}}
+@media (max-width:640px) {body.menu-fixed #tabs {padding-right:104px}}
+main {padding-top:var(--controls-clearance,2.6rem)}
+nav, .filters {display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; margin:.75rem 0}
+nav button[aria-pressed=true] {color:white; background:#124a70; border:2px solid #124a70}
+input[type=search] {width:min(100%,30rem)}
+article {background:white; border:1px solid #c6d3df; border-radius:.5rem; padding:.8rem 1rem; margin:.65rem 0; overflow-wrap:anywhere}
+article article {background:#f7fafd; border-left:.25rem solid #5c829e}
+h1 {font-size:1.55rem} h2 {font-size:1.13rem} h3 {font-size:1rem}
+pre {white-space:pre-wrap; overflow-wrap:anywhere; max-height:32rem; overflow:auto; background:#e8eff5; padding:.65rem}
+img {max-width:100%; height:auto}
+details {margin:.45rem 0} summary {font-weight:600} .note {color:#3d5161}
+.badge {background:#e4edf6; border-radius:.3rem; padding:.15rem .4rem}
+.example {border-left:.25rem solid #4d8b75; padding:.2rem 1rem; margin:1rem 0}
+.requirement {border-top:1px solid #c6d3df; margin-top:1rem}
+.source-note {background:#fff6dc;border-left:.25rem solid #aa7b1a;padding:.3rem 1rem;margin:.5rem 0}
+.comparison-case {border-top:1px solid #c6d3df;padding:.3rem 0}.comparison-digest table {border-collapse:collapse;width:100%;font-size:.92rem}.comparison-digest th,.comparison-digest td {border:1px solid #b6c8d6;padding:.4rem;text-align:left;vertical-align:top}
+.target-detail > h3 {border-bottom:1px solid #d3dfe8; margin-top:1.5rem; font-size:1.13rem}
+.target-detail h4 {margin-bottom:.3rem}
+[hidden] {display:none !important}
+label[hidden] {display:none !important}
+#pinPanel {position:fixed; top:var(--pin-top,2.9rem); right:.75rem; width:min(26rem,40vw); max-height:calc(100vh - var(--pin-top,2.9rem) - 1rem); overflow:auto; background:#fff; border:1px solid #7999b3; border-radius:.5rem; padding:.6rem .75rem; z-index:40; box-shadow:0 .25rem 1.2rem rgba(0,0,0,.18)}
+#pinPanel img {display:block; max-width:100%; max-height:40vh; object-fit:contain; margin:auto; background:#f2f5f8}
+#pinPanel header {display:flex; flex-wrap:wrap; align-items:center; gap:.4rem; margin-bottom:.35rem}
+#pinPanel header strong {flex:1 1 auto; overflow-wrap:anywhere}
+#pinPanel .pin-tools {display:flex; flex-wrap:wrap; align-items:center; gap:.5rem; margin-top:.35rem}
+#pinPanel.collapsed .pin-body {display:none}
+.pin-actions {margin:.25rem 0}
+body.menu-fixed #searchBar {position:sticky; top:0; z-index:30; background:#f2f5f8; padding:.15rem .1rem .3rem; border-bottom:1px solid #c6d3df}
+body.pin-open {margin-right:min(28.5rem,45vw)}
+@media (max-width: 72rem) {
+    #pinPanel {top:auto; bottom:0; left:0; right:0; width:auto; max-height:45vh; border-radius:.5rem .5rem 0 0}
+    #pinPanel img {max-height:32vh}
+    body.pin-open {margin-right:auto; padding-bottom:min(26rem,50vh)}
+}
+</style>
+</head>
+<body><main>
+<div id="topControls">
+<button type="button" id="menuPin"></button>
+<button type="button" id="language">English</button>
+</div>
+<h1 id="title">Emuera互換性調査</h1>
+<p id="intro"></p><p class="note" id="scope"></p>
+<p id="coverage"></p>
+<p><a id="referenceHelp" href="../reference/README.ja.md">使い方</a> · <a id="glossary" href="../reference/glossary.html">用語集</a></p>
+<div id="searchBar">
+<nav id="tabs"></nav>
+<div class="filters">
+<label><span id="searchLabel">検索</span> <input id="search" type="search"></label>
+<label><span id="verdictLabel">判定</span> <select id="verdict"></select></label>
+<label id="kindLabel"><span id="kindText">対象種別</span> <select id="kind"></select></label>
+<label id="genreLabel"><span id="genreText">機能ジャンル</span> <select id="genre"></select></label>
+<output id="count" aria-live="polite"></output>
+</div>
+</div>
+<aside id="pinPanel" hidden>
+<header>
+<strong id="pinTitle"></strong>
+<button type="button" id="pinToggle"></button>
+<button type="button" id="pinClose"></button>
+</header>
+<div class="pin-body">
+<img id="pinImage" alt="">
+<p id="pinMeta"></p>
+<p id="pinFile"></p>
+<div class="pin-tools">
+<button type="button" id="pinLocate"></button>
+<label><span id="pinZoomLabel"></span> <input id="pinZoom" type="range" min="30" max="100" value="100"></label>
+</div>
+</div>
+</aside>
+<div id="results"></div><button type="button" id="more" hidden></button>
+<noscript>閲覧にはJavaScriptを有効にしてください。 Enable JavaScript to browse the survey.</noscript>
+</main>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+__JS__
+</script>
+</body></html>

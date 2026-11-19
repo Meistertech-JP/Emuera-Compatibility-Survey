@@ -1,0 +1,47 @@
+{
+  "case": "RESULT_WRITE",
+  "capture_status": "observed",
+  "input": null,
+  "native_outcome": "forced_termination",
+  "native_natural_exit": "unobserved",
+  "desktop_created": true,
+  "desktop_closed": true,
+  "input_sent": false,
+  "native_processes_after_empty": true,
+  "py_returncode": 0,
+  "inputs_unchanged": true,
+  "fixture_sha256": "5b7dd97209c2594152be804bde404db831759eb37473dbcf056711a6cda3461a",
+  "lock_released": true,
+  "native_crop": "not taken",
+  "visual_assessment": "not applicable",
+  "native_observations": {
+    "encoding": {
+      "encoding": "utf-16",
+      "rule": "utf16_bom",
+      "errors": "strict"
+    },
+    "markers": {
+      "BEFORE_RESULT=[701]": 1,
+      "BEFORE_RESULTS=[AUTO_SENT]": 1,
+      "AFTER_RESULT=[42]": 1,
+      "AFTER_RESULTS=[123]": 1,
+      "OBSERVATIONS_DONE": 1
+    },
+    "ordered": true
+  },
+  "py_observations": {
+    "encoding": {
+      "encoding": "utf-16",
+      "rule": "utf16_bom",
+      "errors": "strict"
+    },
+    "markers": {
+      "BEFORE_RESULT=[701]": 1,
+      "BEFORE_RESULTS=[AUTO_SENT]": 1,
+      "AFTER_RESULT=[42]": 1,
+      "AFTER_RESULTS=[123]": 1,
+      "OBSERVATIONS_DONE": 1
+    },
+    "ordered": true
+  }
+}

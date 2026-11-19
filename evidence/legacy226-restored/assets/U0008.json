@@ -1,0 +1,120 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-14T20:19:31.359075+00:00",
+  "decision_authority": "Codex evidence review within active Phase 2 work; not owner release sign-off.",
+  "target": {
+    "kind": "structural_syntax",
+    "name": "BREAK"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "PILOTFLOW18",
+    "BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115",
+    "BREAK_OUTSIDE_LINE_TIMING_20261115"
+  ],
+  "accepted_scope": "Native/public comparison of nearest-loop transfer in nested WHILE plus counted FOR, counter after counted BREAK, outer continuation and skipped-body sentinels; plus one outside-loop BREAK timing/diagnostic path. Existing PILOTFLOW18 REPEAT case retained.",
+  "accepted_finite_requirements": [
+    {
+      "id": "registration_form",
+      "state": "source_reviewed_and_reached",
+      "basis": "Native v24 registers BREAK as void control flow; ErbLoader binds nearest enclosing loop and BREAK_Instruction jumps after it. Public program.py binds _BREAK to nearest active loop."
+    },
+    {
+      "id": "normal_control",
+      "state": "compared",
+      "case_ids": [
+        "BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115"
+      ],
+      "basis": "Native repeat logs identical; public marker sequence matches. Inner WHILE break continues outer FOR; counted FOR break leaves final counter 3 and skips remaining body."
+    },
+    {
+      "id": "timing_boundary",
+      "state": "compared_with_scoped_difference",
+      "case_ids": [
+        "BREAK_OUTSIDE_LINE_TIMING_20261115"
+      ],
+      "basis": "Both stop at line 3 before AFTER. Native executes BEFORE then stops at runtime after load warning; public pyz rejects at compile with E_SYNTAX before BEFORE."
+    },
+    {
+      "id": "effects_lifetime",
+      "state": "compared",
+      "case_ids": [
+        "BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115"
+      ],
+      "basis": "WHILE_SKIPPED and second-iteration FOR_SKIPPED are absent; OUTER_CONTINUE is reached; final counted-loop variable is 3."
+    }
+  ],
+  "source_refs": [
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs",
+      "sha256": "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab",
+      "lines": "1035-1055"
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "lines": "241-248"
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "lines": "2095-2117"
+    },
+    {
+      "member": "pyemuera/program.py",
+      "sha256": "bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95",
+      "lines": "886-890"
+    },
+    {
+      "member": "pyemuera/runtime.py",
+      "sha256": "cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d",
+      "lines": "1234-1239,1293-1299"
+    }
+  ],
+  "artifacts": {
+    "native_source_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+  },
+  "comparison_path": "evidence/break-transfer-20261115/COMPARISON.json",
+  "comparison_sha256": "0f9a0a77ff74f615d36d4b931032c99529fd765f124fd11c58deb3931c09edc4",
+  "evidence_manifest_path": "evidence/break-transfer-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "3448b2658e494f351a74ae09ebc57ed2e8a70ebcb7ab682f81e7871cea1592a1",
+  "review_path": "evidence/break-transfer-20261115/REVIEW_ja.md",
+  "review_sha256": "3d685710a2e9ae121a22148a44278aa9f9ed9ed3aee164563a3dd9849c7a7478",
+  "source_hashes_path": "evidence/break-transfer-20261115/SOURCE_HASHES.json",
+  "source_hashes_sha256": "0ec134739bce04bc56eed9aaec615a234801c9fcd47b536154816194c07ac38f",
+  "evidence_paths": [
+    {
+      "path": "evidence/break-transfer-20261115/COMPARISON.json",
+      "sha256": "0f9a0a77ff74f615d36d4b931032c99529fd765f124fd11c58deb3931c09edc4"
+    },
+    {
+      "path": "evidence/break-transfer-20261115/REVIEW_ja.md",
+      "sha256": "3d685710a2e9ae121a22148a44278aa9f9ed9ed3aee164563a3dd9849c7a7478"
+    },
+    {
+      "path": "evidence/break-transfer-20261115/SOURCE_HASHES.json",
+      "sha256": "0ec134739bce04bc56eed9aaec615a234801c9fcd47b536154816194c07ac38f"
+    },
+    {
+      "path": "evidence/break-transfer-20261115/MANIFEST.json",
+      "sha256": "3448b2658e494f351a74ae09ebc57ed2e8a70ebcb7ab682f81e7871cea1592a1"
+    },
+    {
+      "path": "evidence/break-transfer-20261115/SEAL.json",
+      "sha256": "efe431ab9a55c8023b1c663ef6e99e30dca8a4f49798dc8df949ee80738dad29"
+    }
+  ],
+  "finite_remainder": [],
+  "retained_limits": [
+    "Finite witness covers nested WHILE plus counted FOR, not REPEAT or DO.",
+    "Native natural process exit was not observed; the isolated runner terminated each GUI process after five seconds. The completed output/error logs were captured before cleanup.",
+    "Only the selected outside-loop diagnostic/timing path is compared; no generalized malformed-control-flow claim.",
+    "The first invalid #DIM I/J setup is explicitly excluded from the comparison."
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "global_completion": false
+}

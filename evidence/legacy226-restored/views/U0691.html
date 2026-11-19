@@ -1,0 +1,283 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0691 · INPUTMOUSEKEY_PARENT_ACCEPTANCE.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0691 · INPUTMOUSEKEY_PARENT_ACCEPTANCE.json</h1>
+<p>原票種別=INPUTMOUSEKEY_PARENT_ACCEPTANCE.json; 参照対象=command_or_syntax:INPUTMOUSEKEY。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;INPUTMOUSEKEY&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>83428a0382fbe20a62943395df94f0dfd74c5d4a185e91cf21fec8a44d7a02f1</code></p>
+<p><a href="../assets/U0691.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>83428a0382fbe20a62943395df94f0dfd74c5d4a185e91cf21fec8a44d7a02f1</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;INPUTMOUSEKEY&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;UIQUERY239_timeout100&quot;,
+    &quot;UIQUERY239_timeout100-skip&quot;,
+    &quot;UIQUERY239_no-timeout-zero&quot;,
+    &quot;UIQUERY239_no-timeout-negative&quot;,
+    &quot;UIQUERY239_evaluation-error&quot;,
+    &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+  ],
+  &quot;accepted_scope&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;INPUTMOUSEKEY&quot;,
+    &quot;current_shared_status&quot;: &quot;known_difference_documented&quot;,
+    &quot;current_shared_necessary_comparison_complete&quot;: false,
+    &quot;decision&quot;: &quot;accept_known_difference_documented_for_exact_pending_review&quot;,
+    &quot;adjudicated_necessary_comparison_complete&quot;: true,
+    &quot;shared_ledger_updated&quot;: false,
+    &quot;pending_condition_mapping&quot;: [
+      {
+        &quot;index&quot;: 0,
+        &quot;original_condition&quot;: {
+          &quot;action&quot;: &quot;review_existing&quot;,
+          &quot;condition&quot;: &quot;Parent confirm the documented INPUTMOUSEKEY difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.&quot;,
+          &quot;case_ids&quot;: [
+            &quot;UIQUERY239_timeout100&quot;,
+            &quot;UIQUERY239_timeout100-skip&quot;,
+            &quot;UIQUERY239_evaluation-error&quot;,
+            &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+          ],
+          &quot;source_refs&quot;: [
+            {
+              &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+              &quot;member_sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+              &quot;start_line&quot;: 380,
+              &quot;end_line&quot;: 380
+            },
+            {
+              &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+              &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+              &quot;start_line&quot;: 1661,
+              &quot;end_line&quot;: 1684
+            }
+          ]
+        },
+        &quot;disposition&quot;: &quot;accepted_existing_documented_difference&quot;,
+        &quot;raw_fixture_confirmation&quot;: &quot;Verified against actual retained fixture/log bytes and at-run receipts; see raw_observations, identity_verification and hash_checks.&quot;,
+        &quot;source_branch_confirmation&quot;: &quot;Verified archive member hashes and exact selected builder/handler/conversion branches; see requirement_mapping.&quot;,
+        &quot;behavior_vs_diagnostic_layout&quot;: &quot;Availability/load-vs-runtime terminal gap; selected Native timeout/results only, public has no equivalent runtime result&quot;,
+        &quot;implementation_or_repeat_required&quot;: false,
+        &quot;mandatory_gaps_moved_to_limits&quot;: []
+      }
+    ],
+    &quot;requirement_mapping&quot;: [
+      {
+        &quot;id&quot;: &quot;registration_form&quot;,
+        &quot;original_requirement&quot;: &quot;Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+        &quot;current_requirement&quot;: &quot;Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;FunctionIdentifier.cs:380 registers INPUTMOUSEKEY_Instruction (binary code266). Instraction.Child.cs:1661-1683 is EXTENDED only, explicitly not IS_PRINT/IS_INPUT; direct target is executable Native and rejected at load by public.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;signature_parser&quot;,
+        &quot;original_requirement&quot;: &quot;INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+        &quot;current_requirement&quot;: &quot;INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;Constructor selects GetNormalArgumentBuilder(\&quot;I\&quot;,0), not a raw string parser. ArgumentBuilder.cs:148-169,48-96,1926-1940 performs popTerms/type guards then ExpressionsArgument. Absent argument produces empty array; handler defaults time0. Null/wrong first type rejects; extra argument count warns and the handler reads only the first value. Positive time casts to Int32 and sets Timelimit; &lt;=0 sets none. These are inspected source rules, not claims that every malformed input was run.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;normal_output_state_control&quot;,
+        &quot;original_requirement&quot;: &quot;Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.&quot;,
+        &quot;current_requirement&quot;: &quot;Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;timeout100 twice reaches OBS239/DONE239, A=1,R0..4=4,0,0,0,0,R5=706,RS=sentinel239. Public rejects the actual INPUTMOUSEKEY line with E_LOAD, rc1 before runtime. This establishes command availability/control-path divergence, not equivalent timeout or event behavior.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;finite_boundary_error&quot;,
+        &quot;original_requirement&quot;: &quot;Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.&quot;,
+        &quot;current_requirement&quot;: &quot;Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;Zero/negative cases preserve only BEGIN239 and no continuation in the bounded5s window; their runtime verdict remains unverified. evaluation-error Native executes argument expression and reports division by zero at line12; public E_LOAD prevents any expression/runtime comparison. This is load-vs-runtime phase divergence, not just different wording for an equivalent error.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+        &quot;original_requirement&quot;: &quot;SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.&quot;,
+        &quot;current_requirement&quot;: &quot;SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;timeout100-skip evaluates helper once and continues. Original R0=0 sample is after SKIPDISP0. Independent presnapshot saves C=RESULT immediately after INPUTMOUSEKEY: BEFORE_SKIP_R0=4, later R0=0. Process.ScriptProc.cs:558-564 explains SKIPDISP&#x27;s RESULT write. Public never reaches the helper. No click/pixel/active-input parity is required by this original availability-gap requirement.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      }
+    ],
+    &quot;mandatory_gaps&quot;: [],
+    &quot;remaining_conditions&quot;: [],
+    &quot;unknowns&quot;: [
+      &quot;Zero/negative indefinite-wait behavior, after-state and event receipt remain unverified; no continuation observed only for5s.&quot;,
+      &quot;No actual key/mouse event, modifiers, focus, coordinates or active-input parity observed.&quot;,
+      &quot;100ms is a requested argument, not measured latency; Native alive after5s then owned termination, not natural exit.&quot;
+    ],
+    &quot;closure_scope&quot;: &quot;Exact review_existing condition and original finite documented-difference requirements only; no command-wide compatibility assertion.&quot;
+  },
+  &quot;original_remaining&quot;: [
+    {
+      &quot;action&quot;: &quot;review_existing&quot;,
+      &quot;condition&quot;: &quot;Parent confirm the documented INPUTMOUSEKEY difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.&quot;,
+      &quot;case_ids&quot;: [
+        &quot;UIQUERY239_timeout100&quot;,
+        &quot;UIQUERY239_timeout100-skip&quot;,
+        &quot;UIQUERY239_evaluation-error&quot;,
+        &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+      ],
+      &quot;source_refs&quot;: [
+        {
+          &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+          &quot;member_sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+          &quot;start_line&quot;: 380,
+          &quot;end_line&quot;: 380
+        },
+        {
+          &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+          &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+          &quot;start_line&quot;: 1661,
+          &quot;end_line&quot;: 1684
+        }
+      ]
+    }
+  ],
+  &quot;proof&quot;: {
+    &quot;report_path&quot;: &quot;evidence/kana-mouse-existing-review-20261115/REPORT.json&quot;,
+    &quot;report_sha256&quot;: &quot;138294520e0db3b71c29b3f4540d831e673f466ca3878d4135ea606096da9e37&quot;,
+    &quot;requirement_mapping&quot;: [
+      {
+        &quot;id&quot;: &quot;registration_form&quot;,
+        &quot;original_requirement&quot;: &quot;Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+        &quot;current_requirement&quot;: &quot;Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;FunctionIdentifier.cs:380 registers INPUTMOUSEKEY_Instruction (binary code266). Instraction.Child.cs:1661-1683 is EXTENDED only, explicitly not IS_PRINT/IS_INPUT; direct target is executable Native and rejected at load by public.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;signature_parser&quot;,
+        &quot;original_requirement&quot;: &quot;INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+        &quot;current_requirement&quot;: &quot;INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;Constructor selects GetNormalArgumentBuilder(\&quot;I\&quot;,0), not a raw string parser. ArgumentBuilder.cs:148-169,48-96,1926-1940 performs popTerms/type guards then ExpressionsArgument. Absent argument produces empty array; handler defaults time0. Null/wrong first type rejects; extra argument count warns and the handler reads only the first value. Positive time casts to Int32 and sets Timelimit; &lt;=0 sets none. These are inspected source rules, not claims that every malformed input was run.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;normal_output_state_control&quot;,
+        &quot;original_requirement&quot;: &quot;Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.&quot;,
+        &quot;current_requirement&quot;: &quot;Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;timeout100 twice reaches OBS239/DONE239, A=1,R0..4=4,0,0,0,0,R5=706,RS=sentinel239. Public rejects the actual INPUTMOUSEKEY line with E_LOAD, rc1 before runtime. This establishes command availability/control-path divergence, not equivalent timeout or event behavior.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;finite_boundary_error&quot;,
+        &quot;original_requirement&quot;: &quot;Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.&quot;,
+        &quot;current_requirement&quot;: &quot;Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;Zero/negative cases preserve only BEGIN239 and no continuation in the bounded5s window; their runtime verdict remains unverified. evaluation-error Native executes argument expression and reports division by zero at line12; public E_LOAD prevents any expression/runtime comparison. This is load-vs-runtime phase divergence, not just different wording for an equivalent error.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+        &quot;original_requirement&quot;: &quot;SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.&quot;,
+        &quot;current_requirement&quot;: &quot;SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.&quot;,
+        &quot;wording_unchanged&quot;: true,
+        &quot;disposition&quot;: &quot;satisfied_for_documented_difference_scope&quot;,
+        &quot;adjudication&quot;: &quot;timeout100-skip evaluates helper once and continues. Original R0=0 sample is after SKIPDISP0. Independent presnapshot saves C=RESULT immediately after INPUTMOUSEKEY: BEFORE_SKIP_R0=4, later R0=0. Process.ScriptProc.cs:558-564 explains SKIPDISP&#x27;s RESULT write. Public never reaches the helper. No click/pixel/active-input parity is required by this original availability-gap requirement.&quot;,
+        &quot;evidence_case_ids&quot;: [
+          &quot;UIQUERY239_timeout100&quot;,
+          &quot;UIQUERY239_timeout100-skip&quot;,
+          &quot;UIQUERY239_no-timeout-zero&quot;,
+          &quot;UIQUERY239_no-timeout-negative&quot;,
+          &quot;UIQUERY239_evaluation-error&quot;,
+          &quot;UIQUERY239_timeout100-skip-presnapshot&quot;
+        ]
+      }
+    ]
+  },
+  &quot;product_modified&quot;: false,
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2167 · command_or_syntax:INPUTMOUSEKEY · acceptance</li>
+<li>L2168 · command_or_syntax:INPUTMOUSEKEY · check</li>
+</ul></html>

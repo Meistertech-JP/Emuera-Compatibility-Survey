@@ -1,0 +1,149 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0003 · FORCEKANA_KANA_LOG_COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0003 · FORCEKANA_KANA_LOG_COMPARISON.json</h1>
+<p>原票種別=FORCEKANA_KANA_LOG_COMPARISON.json; 参照対象=command_or_syntax:PRINTKL。scope=&quot;Exact UTF-16 OUTPUTLOG comparison for the specified fixture and settings only; screen images alone cannot establish characters. No whole-program compatibility 。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>75090eb0b22492162b95f4bc44ead66748e18153af095dee569789c3a0d35473</code></p>
+<p><a href="../assets/U0003.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>75090eb0b22492162b95f4bc44ead66748e18153af095dee569789c3a0d35473</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;generated_utc&quot;: &quot;2026-11-11T22:56:05.497040+00:00&quot;,
+  &quot;scope&quot;: &quot;Exact UTF-16 OUTPUTLOG comparison for the specified fixture and settings only; screen images alone cannot establish characters. No whole-program compatibility claim.&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;case&quot;: &quot;KANALOG01&quot;,
+      &quot;native_probe&quot;: &quot;runs/isolated-native-0e566c4aecfc42ef929615e03dbd0837/probe.json&quot;,
+      &quot;py_dir&quot;: &quot;runs/kanalog-python-7c053302&quot;,
+      &quot;native_capture&quot;: &quot;runs/native-fresh-KANALOG01-3315bada-display.bmp&quot;,
+      &quot;erb_sha256&quot;: &quot;3056ab9e9d763647a3e7ffd9928fef208b5061c8a90ad6ae33c5be11b4ffd631&quot;,
+      &quot;native_log&quot;: &quot;runs/isolated-native-0e566c4aecfc42ef929615e03dbd0837/emuera.log&quot;,
+      &quot;native_log_sha256&quot;: &quot;0bcb67219e8180d29f347f3f2602c4e26b6d1a3cfc944bf61b69634b7716eee9&quot;,
+      &quot;py_log&quot;: &quot;runs/kanalog-python-7c053302/game/.pyemuera/logs/emuera.log&quot;,
+      &quot;py_log_sha256&quot;: &quot;819abc8ca1db0cd34c60537ff17d5792f7c7784ed39b470cf9ad91e58dc4c9f1&quot;,
+      &quot;native_log_text&quot;: &quot;Now Loading...\r\nBEGIN\r\nMODE0\r\n[あアｱ A]\r\nMODE1\r\n[アアｱ A]\r\nMODE2\r\n[ああｱ A]\r\nMODE3\r\n［あああ　Ａ］\r\n&quot;,
+      &quot;py_log_text&quot;: &quot;Now Loading...\r\nBEGIN\r\nMODE0\r\n[あアｱ A]\r\nMODE1\r\n[アアｱ A]\r\nMODE2\r\n[あああ A]\r\nMODE3\r\n［あああ　Ａ］\r\n&quot;,
+      &quot;mode_results&quot;: [
+        {
+          &quot;mode&quot;: 0,
+          &quot;native_line&quot;: &quot;[あアｱ A]&quot;,
+          &quot;py_line&quot;: &quot;[あアｱ A]&quot;,
+          &quot;text_equal&quot;: true,
+          &quot;native_codepoints&quot;: [
+            &quot;U+005B&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+30A2&quot;,
+            &quot;U+FF71&quot;,
+            &quot;U+0020&quot;,
+            &quot;U+0041&quot;,
+            &quot;U+005D&quot;
+          ],
+          &quot;py_codepoints&quot;: [
+            &quot;U+005B&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+30A2&quot;,
+            &quot;U+FF71&quot;,
+            &quot;U+0020&quot;,
+            &quot;U+0041&quot;,
+            &quot;U+005D&quot;
+          ]
+        },
+        {
+          &quot;mode&quot;: 1,
+          &quot;native_line&quot;: &quot;[アアｱ A]&quot;,
+          &quot;py_line&quot;: &quot;[アアｱ A]&quot;,
+          &quot;text_equal&quot;: true,
+          &quot;native_codepoints&quot;: [
+            &quot;U+005B&quot;,
+            &quot;U+30A2&quot;,
+            &quot;U+30A2&quot;,
+            &quot;U+FF71&quot;,
+            &quot;U+0020&quot;,
+            &quot;U+0041&quot;,
+            &quot;U+005D&quot;
+          ],
+          &quot;py_codepoints&quot;: [
+            &quot;U+005B&quot;,
+            &quot;U+30A2&quot;,
+            &quot;U+30A2&quot;,
+            &quot;U+FF71&quot;,
+            &quot;U+0020&quot;,
+            &quot;U+0041&quot;,
+            &quot;U+005D&quot;
+          ]
+        },
+        {
+          &quot;mode&quot;: 2,
+          &quot;native_line&quot;: &quot;[ああｱ A]&quot;,
+          &quot;py_line&quot;: &quot;[あああ A]&quot;,
+          &quot;text_equal&quot;: false,
+          &quot;native_codepoints&quot;: [
+            &quot;U+005B&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+FF71&quot;,
+            &quot;U+0020&quot;,
+            &quot;U+0041&quot;,
+            &quot;U+005D&quot;
+          ],
+          &quot;py_codepoints&quot;: [
+            &quot;U+005B&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+0020&quot;,
+            &quot;U+0041&quot;,
+            &quot;U+005D&quot;
+          ]
+        },
+        {
+          &quot;mode&quot;: 3,
+          &quot;native_line&quot;: &quot;［あああ　Ａ］&quot;,
+          &quot;py_line&quot;: &quot;［あああ　Ａ］&quot;,
+          &quot;text_equal&quot;: true,
+          &quot;native_codepoints&quot;: [
+            &quot;U+FF3B&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3000&quot;,
+            &quot;U+FF21&quot;,
+            &quot;U+FF3D&quot;
+          ],
+          &quot;py_codepoints&quot;: [
+            &quot;U+FF3B&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3042&quot;,
+            &quot;U+3000&quot;,
+            &quot;U+FF21&quot;,
+            &quot;U+FF3D&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;case&quot;: &quot;KANALOG02&quot;,
+      &quot;native_probe&quot;: &quot;runs/isolated-native-dd4852e9900d4ad997f8162fd53d728a/probe.json&quot;,
+      &quot;py_dir&quot;: &quot;runs/kanalog02-python-304b7ec2&quot;,
+      &quot;native_capture&quot;: &quot;runs/native-fresh-KANALOG02-5166d550-display.bmp&quot;,
+      &quot;erb_sha256&quot;: &quot;ab5052153327ca3577dab899bd13780fe01bc7dfa1f14c4fe9b623809c4c35d5&quot;,
+      &quot;native_log&quot;: &quot;runs/isolated-native-dd4852e9900d4ad997f8162fd53d728a/emuera.log&quot;,
+      &quot;native_log_sha256&quot;: &quot;81f6a29681f2a1794afe833deb5ea8260e197b6c932ba51541b093d1b886aee3&quot;,
+      &quot;py_log&quot;: &quot;runs/kanalog02-python-304b7ec2/game/.pyemuera/logs/emuera.log&quot;,
+      &quot;py_log_sha256&quot;: &quot;16704927b4bb7babf62046b0bc0e775493b0525d252cb9ac0fb68b8afb1bdcf1&quot;,
+      &quot;native_log_text&quot;: &quot;Now Loading...\r\nBEFORE\r\nｱ\r\n&quot;,
+      &quot;py_log_text&quot;: &quot;Now Loading...\r\nBEFORE\r\nあ\r\n&quot;,
+      &quot;native_character&quot;: &quot;U+FF71&quot;,
+      &quot;py_character&quot;: &quot;U+3042&quot;
+    }
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1869 · command_or_syntax:PRINTKL · check</li>
+</ul></html>

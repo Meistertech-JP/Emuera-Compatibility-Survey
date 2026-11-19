@@ -1,0 +1,110 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0632 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0632 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:FONTSTYLE。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>4df74deb0a41820b4d9f1262e8e27c2931410c9aeaa9a4d80c8fe3c2e30ecb9a</code></p>
+<p><a href="../assets/U0632.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>4df74deb0a41820b4d9f1262e8e27c2931410c9aeaa9a4d80c8fe3c2e30ecb9a</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;results&quot;: [
+    {
+      &quot;case&quot;: &quot;omitted&quot;,
+      &quot;verdict&quot;: &quot;different_scoped&quot;,
+      &quot;runs&quot;: [
+        {
+          &quot;case&quot;: &quot;omitted&quot;,
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;markers&quot;: [
+            &quot;FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_AFTER STYLE=0 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_DONE&quot;
+          ],
+          &quot;raw_log_exists&quot;: true,
+          &quot;raw_sha256&quot;: &quot;da2c7745c3d7763be5b9a4958b2a6d69c3ce8e267032e6b1929cbc040e0807c6&quot;,
+          &quot;returncode&quot;: 0
+        },
+        {
+          &quot;case&quot;: &quot;omitted&quot;,
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;markers&quot;: [
+            &quot;FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_AFTER STYLE=0 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_DONE&quot;
+          ],
+          &quot;raw_log_exists&quot;: true,
+          &quot;raw_sha256&quot;: &quot;da2c7745c3d7763be5b9a4958b2a6d69c3ce8e267032e6b1929cbc040e0807c6&quot;,
+          &quot;returncode&quot;: 0
+        },
+        {
+          &quot;case&quot;: &quot;omitted&quot;,
+          &quot;mode&quot;: &quot;public-01&quot;,
+          &quot;markers&quot;: [
+            &quot;FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]&quot;
+          ],
+          &quot;raw_log_exists&quot;: true,
+          &quot;raw_sha256&quot;: &quot;c233a3924f0215f3c5983147ac6533c242b46ffa55403927ea2119e61de0814e&quot;,
+          &quot;returncode&quot;: 1
+        }
+      ],
+      &quot;native_repeat_markers_equal&quot;: true
+    },
+    {
+      &quot;case&quot;: &quot;dynamic-helper&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;,
+      &quot;runs&quot;: [
+        {
+          &quot;case&quot;: &quot;dynamic-helper&quot;,
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;markers&quot;: [
+            &quot;FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_AFTER STYLE=13 C=1 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_DONE&quot;
+          ],
+          &quot;raw_log_exists&quot;: true,
+          &quot;raw_sha256&quot;: &quot;3b6b25cbee9176067a58740c95e67337c070c41fac5a363356bfc98d03fb2af2&quot;,
+          &quot;returncode&quot;: 0
+        },
+        {
+          &quot;case&quot;: &quot;dynamic-helper&quot;,
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;markers&quot;: [
+            &quot;FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_AFTER STYLE=13 C=1 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_DONE&quot;
+          ],
+          &quot;raw_log_exists&quot;: true,
+          &quot;raw_sha256&quot;: &quot;3b6b25cbee9176067a58740c95e67337c070c41fac5a363356bfc98d03fb2af2&quot;,
+          &quot;returncode&quot;: 0
+        },
+        {
+          &quot;case&quot;: &quot;dynamic-helper&quot;,
+          &quot;mode&quot;: &quot;public-01&quot;,
+          &quot;markers&quot;: [
+            &quot;FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_AFTER STYLE=13 C=1 R=777 S=[SENTINEL]&quot;,
+            &quot;FS_DONE&quot;
+          ],
+          &quot;raw_log_exists&quot;: true,
+          &quot;raw_sha256&quot;: &quot;3b6b25cbee9176067a58740c95e67337c070c41fac5a363356bfc98d03fb2af2&quot;,
+          &quot;returncode&quot;: 0
+        }
+      ],
+      &quot;native_repeat_markers_equal&quot;: true
+    }
+  ],
+  &quot;limitations&quot;: [
+    &quot;Stored style, helper count, numeric/string sentinels and continuation only; font pixels are not compared&quot;,
+    &quot;Native runner owns isolated desktops and cleans exact created process; natural exit not inferred&quot;,
+    &quot;Historical mask -1/16 differences are not erased by these cases&quot;
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1631 · command_or_syntax:FONTSTYLE · check</li>
+</ul></html>

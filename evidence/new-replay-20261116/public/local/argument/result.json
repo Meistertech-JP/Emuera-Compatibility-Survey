@@ -1,0 +1,16 @@
+{
+  "case": "ARGUMENT",
+  "runner_status": "visual_review_required",
+  "visual_review": "conducted; crop included; visual interpretation remains manual",
+  "native_observation": "BEFORE, then argument-count error at line 3",
+  "py_observation": "BEFORE, then E_ARGUMENT at line 3",
+  "py_returncode": 1,
+  "native_outcome": "forced_termination",
+  "native_natural_exit": "unobserved",
+  "lock_released": true,
+  "fixture_sha256": "7c5a43f6c64d4f89168987eb3a26872abd5dc28a351c6c3fe3021e2249af37a6",
+  "raw_native_diagnostic": "included: native-diagnostic.log",
+  "native_crop": "included: native/crop-before.bmp",
+  "raw_py_diagnostic": "included: py-stderr.bin",
+  "verification_limit": "original private process receipt and seal are not included; visual interpretation remains manual"
+}

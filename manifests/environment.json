@@ -1,0 +1,35 @@
+{
+  "schema": "emuera-survey-environment-v1",
+  "purpose": "Pinned reference and comparison artifacts for the finite survey; requirements are scoped to the described harness.",
+  "native": {
+    "name": "Emuera1824+v24",
+    "executable": "Emuera1824+v24.exe",
+    "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "retained_archive": "Emuera1824+v24.zip",
+    "retained_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "notice_bundle": "vendor/emuera/Emuera1824-v24-with-notices.zip",
+    "notice_bundle_sha256": "b0c2bd639868728e8b0b591c3da3d323a4537209300fb74d3829def4837cea85",
+    "runtime": "Windows interactive session and .NET Framework; exact minimum runtime not established. The included project targets .NET Framework 4.8, while the included readme mentions 4.5.",
+    "license_notice": "vendor/emuera/NOTICE.en.md"
+  },
+  "comparison_engine": {
+    "name": "PyEmuera",
+    "version": "3.0.0",
+    "artifact": "PyEmuera-3.0.0.pyz",
+    "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "release": "https://github.com/Meistertech-JP/PyEmuera/releases/tag/v3.0.0",
+    "included": false,
+    "python_minimum_for_game": "3.10"
+  },
+  "harness": {
+    "python_minimum": "3.10",
+    "external_python_packages": [],
+    "native_execution_platform": "Windows interactive desktop with private-desktop and process-handle support",
+    "offline_validation_platform": "Python; no Native process or network required",
+    "tested_environment": {"os": "Windows 10 19045", "python": "CPython 3.12.10 64-bit"},
+    "other_platforms_tested": false,
+    "input_template": "harness/fixtures/emuera.config",
+    "input_template_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "scope": "Recorded observations are bounded. A hash pins bytes but does not establish universal behavior or origin."
+}

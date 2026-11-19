@@ -1,0 +1,118 @@
+{
+  "schema": "parent-target-finite-acceptance-1",
+  "generated_utc": "2026-11-14T06:19:11.344583+00:00",
+  "target": {
+    "kind": "method_as_command",
+    "name": "HTML_ESCAPE"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "accepted_finite_requirements": [
+    {
+      "id": "registration_and_command_routing",
+      "state": "source_reviewed",
+      "basis": "Pinned v24 registration, METHOD builder, and string-result routing reviewed in exact hashed source members."
+    },
+    {
+      "id": "reached_command_inputs",
+      "state": "compared",
+      "case_ids": [
+        "HTMLTEXT201_C201_02",
+        "HTMLTEXT201_C201_04",
+        "HTMLTEXT201_C201_06",
+        "HTMLTEXT201_C201_08",
+        "HTMLTEXT201_C201_10"
+      ]
+    },
+    {
+      "id": "selected_output_state_and_evaluation",
+      "state": "compared",
+      "case_ids": [
+        "HTMLTEXT201_C201_02",
+        "HTMLTEXT201_C201_04",
+        "HTMLTEXT201_C201_06",
+        "HTMLTEXT201_C201_08",
+        "HTMLTEXT201_C201_10"
+      ],
+      "basis": "RESULTS destination, independent variable and numeric sentinels, helper once/order, and post-command continuation read back."
+    },
+    {
+      "id": "ampersand_first_escape_boundary",
+      "state": "compared",
+      "case_ids": [
+        "HTMLTEXT201_C201_08"
+      ],
+      "basis": "The reached method-command input contains the pre-escaped entity `&amp;` followed by `&`; output demonstrates ampersand-first repeated escaping."
+    }
+  ],
+  "case_results": [
+    {
+      "case_id": "HTMLTEXT201_C201_02",
+      "classification": "matched_scoped",
+      "scope": "Paired Case 201 HTML_ESCAPE method-as-command condition; the same frozen fixture/config and sequential process set were used for Native x2 and pinned public x1.",
+      "comparison_path": "evidence/html-string-processing-20261113-201/COMPARISON.json",
+      "comparison_sha256": "d219cbd5262898392b58aa7b05c18b50b32a7051b225312b3db50b497d54540f"
+    },
+    {
+      "case_id": "HTMLTEXT201_C201_04",
+      "classification": "matched_scoped",
+      "scope": "Paired Case 201 HTML_ESCAPE method-as-command condition; the same frozen fixture/config and sequential process set were used for Native x2 and pinned public x1.",
+      "comparison_path": "evidence/html-string-processing-20261113-201/COMPARISON.json",
+      "comparison_sha256": "d219cbd5262898392b58aa7b05c18b50b32a7051b225312b3db50b497d54540f"
+    },
+    {
+      "case_id": "HTMLTEXT201_C201_06",
+      "classification": "matched_scoped",
+      "scope": "Paired Case 201 HTML_ESCAPE method-as-command condition; the same frozen fixture/config and sequential process set were used for Native x2 and pinned public x1.",
+      "comparison_path": "evidence/html-string-processing-20261113-201/COMPARISON.json",
+      "comparison_sha256": "d219cbd5262898392b58aa7b05c18b50b32a7051b225312b3db50b497d54540f"
+    },
+    {
+      "case_id": "HTMLTEXT201_C201_08",
+      "classification": "matched_scoped",
+      "scope": "Paired Case 201 HTML_ESCAPE method-as-command condition; the same frozen fixture/config and sequential process set were used for Native x2 and pinned public x1.",
+      "comparison_path": "evidence/html-string-processing-20261113-201/COMPARISON.json",
+      "comparison_sha256": "d219cbd5262898392b58aa7b05c18b50b32a7051b225312b3db50b497d54540f"
+    },
+    {
+      "case_id": "HTMLTEXT201_C201_10",
+      "classification": "matched_scoped",
+      "scope": "Paired Case 201 HTML_ESCAPE method-as-command condition; the same frozen fixture/config and sequential process set were used for Native x2 and pinned public x1.",
+      "comparison_path": "evidence/html-string-processing-20261113-201/COMPARISON.json",
+      "comparison_sha256": "d219cbd5262898392b58aa7b05c18b50b32a7051b225312b3db50b497d54540f"
+    }
+  ],
+  "existing_case_ids": [],
+  "registered_case_ids": [
+    "HTMLTEXT201_C201_02",
+    "HTMLTEXT201_C201_04",
+    "HTMLTEXT201_C201_06",
+    "HTMLTEXT201_C201_08",
+    "HTMLTEXT201_C201_10"
+  ],
+  "source_artifacts": [
+    {
+      "path": "evidence/html-string-processing-20261113-201/SOURCE.json",
+      "sha256": "f18308e10ca685cd7ebffe268674b94bf2b0128b9bff01a667c863593d63baed"
+    },
+    {
+      "path": "evidence/html-string-processing-20261113-201/SOURCE_EXCERPTS_V24.txt",
+      "sha256": "582ed40e27e2a61c0acd1559d4ce6ffb8a666fadb4ad0f35bf6aaa5067b4108d"
+    },
+    {
+      "path": "evidence/html-string-processing-20261113-201/REVIEW.md",
+      "sha256": "9bc6caf9802f3a8ca110546b91819ee57f5419051ec41cc0f75ac78496f11d73"
+    }
+  ],
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "finite_remainder": [],
+  "retained_limits": [
+    "Five selected input classes only; no arbitrary invalid inputs, nulls, or complete arity/type error matrix.",
+    "Native natural exit and exit code are unobserved; harness completed captured in-process comparison and performed owned-process cleanup.",
+    "No GUI rendering, visual equivalence, or other HTML method contract is claimed."
+  ],
+  "parent_review_path": "evidence/parent-html-escape-command-adjudication-20261114/REVIEW_ja.md",
+  "product_changes": false,
+  "global_completion": false
+}

@@ -1,0 +1,83 @@
+{
+  "decision_id": "PARENT_CLOCK_EXPRESSION_SCOPE_20261113",
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "targets": [
+    {
+      "kind": "expression_function",
+      "name": "GETTIME"
+    },
+    {
+      "kind": "expression_function",
+      "name": "GETTIMES"
+    },
+    {
+      "kind": "expression_function",
+      "name": "GETMILLISECOND"
+    },
+    {
+      "kind": "expression_function",
+      "name": "GETSECOND"
+    }
+  ],
+  "case_ids": [
+    "CLOCKLIVE199_expression_function_GETTIME",
+    "CLOCKLIVE199_expression_function_GETTIMES",
+    "CLOCKLIVE199_expression_function_GETMILLISECOND",
+    "CLOCKLIVE199_expression_function_GETSECOND"
+  ],
+  "basis": [
+    "Native v24 and the pinned public 3.0.0 pyz ran the same fixture and config; the case records two isolated Native runs and one public run.",
+    "Each target's returned value was observed in its proper expression-result route and in the case's required format/unit; all 24 recorded time samples fell within that run's independently recorded host-time bracket.",
+    "The exact Native registration, function bodies, local-time/epoch units, result routing, and corresponding public dispatch were reviewed in the pinned source evidence and the already read-back parent function matrix.",
+    "Two target calls per function per process establish only the recorded normal-path observations; this decision is bounded to that finite evidence scope."
+  ],
+  "not_claimed": [
+    "No synchronized or exact cross-engine numeric equality: process clocks were not synchronized, and the different emitted timestamps are neither a mismatch nor proof of equality.",
+    "No forced date/second rollover, timezone or DST variation, clock adjustment, culture variation, precision-boundary or rounding-edge coverage.",
+    "No universal fixed-width promise for contemporary GETTIME output, and no universal culture-format promise for GETTIMES.",
+    "Native natural process exit was not observed; this decision covers reached function behavior only.",
+    "The GETTIME command target (seven-component command form) is separate and is not closed here."
+  ],
+  "evidence": [
+    {
+      "path": "evidence/clock-expressions-live-20261113-199/COMPARISON.json",
+      "sha256": "568defa7a50593c2aef8a69553a6f9e0c2cab6b22ba1abe5803df6bc90835a97"
+    },
+    {
+      "path": "evidence/clock-expressions-live-20261113-199/CASE_REVIEW.md",
+      "sha256": "ca551587aa3429f61c063e91145acb536ce4987ecc08b8c0076629b331bf68ca"
+    },
+    {
+      "path": "evidence/clock-expressions-live-20261113-199/SOURCE_CHECKS.json",
+      "sha256": "411e2d04822c9da1078071c66737d74af652d59b9cf1a4bbabb2bd79812aa2e2"
+    },
+    {
+      "path": "evidence/clock-expressions-live-20261113-199/PROVENANCE.json",
+      "sha256": "f102afc3603539bd70e4419a077f07090d54f6fdc1a487a022fdf3b905a75c3c"
+    },
+    {
+      "path": "evidence/clock-expressions-live-20261113-199/IMMUTABILITY_READBACK.json",
+      "sha256": "922135198ea57b58ae598595ff2c9f1a48f565d3a1b22ce6e01614cee43a25db"
+    },
+    {
+      "path": "evidence/parent-function-evidence-review-20261113/MATRIX.json",
+      "sha256": "8d15fe0e056e256347626f5fc2fa5b3acf664d583f1dc4934d6d19a15d144a7b"
+    },
+    {
+      "path": "PARENT_READBACK_parent-function-evidence-review-20261113.json",
+      "sha256": "014549a67c3bb5e09bd7b669053e07709beb0171c6bfa409638320eb0e79bdb7"
+    }
+  ],
+  "parent_matrix_rows": {
+    "GETTIME": "finite_clock_scope_reviewed_environment_limited",
+    "GETTIMES": "finite_clock_scope_reviewed_environment_limited",
+    "GETMILLISECOND": "finite_clock_scope_reviewed_environment_limited",
+    "GETSECOND": "finite_clock_scope_reviewed_environment_limited"
+  },
+  "independent_reviewers": [
+    "[INTERNAL_REVIEWER_01]: GETTIME",
+    "[INTERNAL_REVIEWER_02]: GETTIMES, GETMILLISECOND, GETSECOND"
+  ],
+  "global_completion": false
+}

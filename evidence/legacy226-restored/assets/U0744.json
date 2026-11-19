@@ -1,0 +1,47 @@
+{
+  "schema": "parent-target-adjudication-1",
+  "generated_utc": "2026-11-14T13:36:06.413790+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "LOG"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "finite_remainder": [],
+  "finite_scope": "Pinned v24 LOG expression registration/signature and Math.E default; existing positive helper/LOG(1), existing LOG(2)->0 and LOG(3)->1 truncation and additional positive controls; separate 0/-1 effectful helper guards (Native x2/public x1 each), one helper call and independent RESULT/RESULTS sentinels, line-8 stop; positive helper LOG(3)=1 and continuation (Native x2/public x1). Native and Py domain diagnostic difference explicitly retained.",
+  "case_results": [
+    {
+      "case_id": "LOGEXPRDOMAINZERO01",
+      "comparison_path": "evidence/log-domain-boundary-20261114/COMPARISON.json",
+      "comparison_sha256": "1daec0c7b3ef47f0dafd5eaec3224e518a01787330d760494b9ad453a39f4d5e"
+    },
+    {
+      "case_id": "LOGEXPRDOMAINNEG01",
+      "comparison_path": "evidence/log-domain-boundary-20261114/COMPARISON.json",
+      "comparison_sha256": "1daec0c7b3ef47f0dafd5eaec3224e518a01787330d760494b9ad453a39f4d5e"
+    },
+    {
+      "case_id": "LOGEXPRTHRESHOLD03",
+      "comparison_path": "evidence/log-domain-boundary-20261114/COMPARISON.json",
+      "comparison_sha256": "1daec0c7b3ef47f0dafd5eaec3224e518a01787330d760494b9ad453a39f4d5e"
+    }
+  ],
+  "source_artifacts": [
+    {
+      "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+      "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8"
+    },
+    {
+      "path": "evidence/log-domain-boundary-20261114/SOURCE_SCOPE.md",
+      "sha256": "24e77fd19add5e9d2a24b8052b0c58ac1fa3333485e2bad589f8a6aad21e29a2"
+    }
+  ],
+  "limitations": [
+    "No post-error state or C assignment observed.",
+    "Native natural exit and exit code not observed; harness terminates owned Native process after capture.",
+    "Expression form only; method_as_command:LOG is separate.",
+    "No whole-function compatibility claim."
+  ],
+  "product_modified": false,
+  "public_artifacts_modified": false
+}

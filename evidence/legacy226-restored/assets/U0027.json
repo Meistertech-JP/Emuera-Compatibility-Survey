@@ -1,0 +1,589 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-15T07:22:03.976765+00:00",
+  "decision_authority": "Codex evidence adjudication within active Phase 2 survey; not owner sign-off.",
+  "target": {
+    "kind": "method_as_command",
+    "name": "TOHALF"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "METHODSTYLE_TOHALF",
+    "METHODSTYLECHECK_PINNED_TOHALFTYPE_20261115",
+    "METHODSTYLECHECK_PINNED_TOHALFMISSING_20261115"
+  ],
+  "accepted_scope": "有限受入: TOHALF/TOFULLそれぞれの空文字・混在幅文字列の通常コマンド呼び出しでは、引数ヘルパーが1回呼ばれ、文字列戻り値がRESULTSに保存されて後続へ到達した。Native 2回と固定公開pyz 1回のraw logが一致。加えてtype不一致・引数不足の各2つの静的診断fixtureで、Native -Debugは警告し、今回再実行した固定公開pyzの--checkは0 known issuesを返した。この差は解析/診断範囲に限定し、実行時挙動差へ一般化しない。",
+  "accepted_finite_requirements": {
+    "exact_v24_registration_signature_form": {
+      "evidence_state": "source dictionary constructor, string signature and command return routing inspected",
+      "case_ids": [
+        "METHODSTYLE_TOHALF",
+        "METHODSTYLECHECK_PINNED_TOHALFTYPE_20261115",
+        "METHODSTYLECHECK_PINNED_TOHALFMISSING_20261115"
+      ],
+      "accepted_scope": "有限受入: TOHALF/TOFULLそれぞれの空文字・混在幅文字列の通常コマンド呼び出しでは、引数ヘルパーが1回呼ばれ、文字列戻り値がRESULTSに保存されて後続へ到達した。Native 2回と固定公開pyz 1回のraw logが一致。加えてtype不一致・引数不足の各2つの静的診断fixtureで、Native -Debugは警告し、今回再実行した固定公開pyzの--checkは0 known issuesを返した。この差は解析/診断範囲に限定し、実行時挙動差へ一般化しない。",
+      "remaining_limitations": [
+        "通常実行は各メソッドの空文字と混在幅文字列の2条件のみ。",
+        "type/missingの差は--checkとNative -Debugの静的解析比較であり、ゲーム実行時の拒否位置を示さない。",
+        "ヘルパー例外、他設定、全文化行列、全引数形式は未確認。",
+        "Native自然終了は未観測。"
+      ]
+    },
+    "actual_target_reach_or_independent_public_availability_gap": {
+      "evidence_state": "normal Native/public invocation reached; four malformed forms were separately compared in static diagnostic mode",
+      "case_ids": [
+        "METHODSTYLE_TOHALF",
+        "METHODSTYLECHECK_PINNED_TOHALFTYPE_20261115",
+        "METHODSTYLECHECK_PINNED_TOHALFMISSING_20261115"
+      ],
+      "accepted_scope": "有限受入: TOHALF/TOFULLそれぞれの空文字・混在幅文字列の通常コマンド呼び出しでは、引数ヘルパーが1回呼ばれ、文字列戻り値がRESULTSに保存されて後続へ到達した。Native 2回と固定公開pyz 1回のraw logが一致。加えてtype不一致・引数不足の各2つの静的診断fixtureで、Native -Debugは警告し、今回再実行した固定公開pyzの--checkは0 known issuesを返した。この差は解析/診断範囲に限定し、実行時挙動差へ一般化しない。",
+      "remaining_limitations": [
+        "通常実行は各メソッドの空文字と混在幅文字列の2条件のみ。",
+        "type/missingの差は--checkとNative -Debugの静的解析比較であり、ゲーム実行時の拒否位置を示さない。",
+        "ヘルパー例外、他設定、全文化行列、全引数形式は未確認。",
+        "Native自然終了は未観測。"
+      ]
+    },
+    "selected_normal_output_state_control": {
+      "evidence_state": "empty/mixed-width return, helper count, RESULTS destination and continuation matched",
+      "case_ids": [
+        "METHODSTYLE_TOHALF",
+        "METHODSTYLECHECK_PINNED_TOHALFTYPE_20261115",
+        "METHODSTYLECHECK_PINNED_TOHALFMISSING_20261115"
+      ],
+      "accepted_scope": "有限受入: TOHALF/TOFULLそれぞれの空文字・混在幅文字列の通常コマンド呼び出しでは、引数ヘルパーが1回呼ばれ、文字列戻り値がRESULTSに保存されて後続へ到達した。Native 2回と固定公開pyz 1回のraw logが一致。加えてtype不一致・引数不足の各2つの静的診断fixtureで、Native -Debugは警告し、今回再実行した固定公開pyzの--checkは0 known issuesを返した。この差は解析/診断範囲に限定し、実行時挙動差へ一般化しない。",
+      "remaining_limitations": [
+        "通常実行は各メソッドの空文字と混在幅文字列の2条件のみ。",
+        "type/missingの差は--checkとNative -Debugの静的解析比較であり、ゲーム実行時の拒否位置を示さない。",
+        "ヘルパー例外、他設定、全文化行列、全引数形式は未確認。",
+        "Native自然終了は未観測。"
+      ]
+    },
+    "applicable_boundary_error_evaluation_side_effect": {
+      "evidence_state": "empty/mixed normal inputs and type/missing static diagnostic scopes reviewed; no runtime rejection claim",
+      "case_ids": [
+        "METHODSTYLE_TOHALF",
+        "METHODSTYLECHECK_PINNED_TOHALFTYPE_20261115",
+        "METHODSTYLECHECK_PINNED_TOHALFMISSING_20261115"
+      ],
+      "accepted_scope": "有限受入: TOHALF/TOFULLそれぞれの空文字・混在幅文字列の通常コマンド呼び出しでは、引数ヘルパーが1回呼ばれ、文字列戻り値がRESULTSに保存されて後続へ到達した。Native 2回と固定公開pyz 1回のraw logが一致。加えてtype不一致・引数不足の各2つの静的診断fixtureで、Native -Debugは警告し、今回再実行した固定公開pyzの--checkは0 known issuesを返した。この差は解析/診断範囲に限定し、実行時挙動差へ一般化しない。",
+      "remaining_limitations": [
+        "通常実行は各メソッドの空文字と混在幅文字列の2条件のみ。",
+        "type/missingの差は--checkとNative -Debugの静的解析比較であり、ゲーム実行時の拒否位置を示さない。",
+        "ヘルパー例外、他設定、全文化行列、全引数形式は未確認。",
+        "Native自然終了は未観測。"
+      ]
+    },
+    "result_routing_and_stop_location": {
+      "evidence_state": "string method return to RESULTS verified in source and normal invocation readback",
+      "case_ids": [
+        "METHODSTYLE_TOHALF",
+        "METHODSTYLECHECK_PINNED_TOHALFTYPE_20261115",
+        "METHODSTYLECHECK_PINNED_TOHALFMISSING_20261115"
+      ],
+      "accepted_scope": "有限受入: TOHALF/TOFULLそれぞれの空文字・混在幅文字列の通常コマンド呼び出しでは、引数ヘルパーが1回呼ばれ、文字列戻り値がRESULTSに保存されて後続へ到達した。Native 2回と固定公開pyz 1回のraw logが一致。加えてtype不一致・引数不足の各2つの静的診断fixtureで、Native -Debugは警告し、今回再実行した固定公開pyzの--checkは0 known issuesを返した。この差は解析/診断範囲に限定し、実行時挙動差へ一般化しない。",
+      "remaining_limitations": [
+        "通常実行は各メソッドの空文字と混在幅文字列の2条件のみ。",
+        "type/missingの差は--checkとNative -Debugの静的解析比較であり、ゲーム実行時の拒否位置を示さない。",
+        "ヘルパー例外、他設定、全文化行列、全引数形式は未確認。",
+        "Native自然終了は未観測。"
+      ]
+    }
+  },
+  "source_contract": {
+    "registration": {
+      "line": 126,
+      "text": "[\"TOHALF\"] = new StrChangeStyleMethod(StrFormType.Half),",
+      "class": "StrChangeStyleMethod",
+      "constructor_arguments": "StrFormType.Half",
+      "commented": false
+    },
+    "binary_literal_registration": {
+      "name": "TOHALF",
+      "ldstr_il_offset": "0606",
+      "set_item_il_offset": "0611"
+    },
+    "member": "GameData/Function/Creator.Method.cs",
+    "class": "StrChangeStyleMethod",
+    "line_start": 2402,
+    "line_end": 2438,
+    "signature_and_return": [
+      {
+        "line": 2407,
+        "text": "ReturnType = typeof(string);"
+      },
+      {
+        "line": 2408,
+        "text": "argumentTypeArray = new Type[] { typeof(string) };"
+      },
+      {
+        "line": 2414,
+        "text": "ReturnType = typeof(string);"
+      },
+      {
+        "line": 2415,
+        "text": "argumentTypeArray = new Type[] { typeof(string) };"
+      }
+    ],
+    "branches_and_evaluation": [
+      {
+        "line": 2421,
+        "text": "string str = arguments[0].GetStrValue(exm);",
+        "classification": "active_source"
+      },
+      {
+        "line": 2422,
+        "text": "if (str == null || str == \"\")",
+        "classification": "active_source"
+      },
+      {
+        "line": 2423,
+        "text": "return (\"\");",
+        "classification": "active_source"
+      },
+      {
+        "line": 2427,
+        "text": "return (str.ToUpper());",
+        "classification": "active_source"
+      },
+      {
+        "line": 2429,
+        "text": "return (str.ToLower());",
+        "classification": "active_source"
+      },
+      {
+        "line": 2431,
+        "text": "return (Strings.StrConv(str, VbStrConv.Narrow, Config.Language));",
+        "classification": "active_source"
+      },
+      {
+        "line": 2433,
+        "text": "return (Strings.StrConv(str, VbStrConv.Wide, Config.Language));",
+        "classification": "active_source"
+      },
+      {
+        "line": 2435,
+        "text": "return (\"\");",
+        "classification": "active_source"
+      }
+    ],
+    "comment_context_not_required_branches": [],
+    "full_source_excerpt": "2402:         private sealed class StrChangeStyleMethod : FunctionMethod\n2403:         {\n2404:             readonly StrFormType strType;\n2405:             public StrChangeStyleMethod()\n2406:             {\n2407:                 ReturnType = typeof(string);\n2408:                 argumentTypeArray = new Type[] { typeof(string) };\n2409:                 strType = StrFormType.Upper;\n2410:                 CanRestructure = true;\n2411:             }\n2412:             public StrChangeStyleMethod(StrFormType type)\n2413:             {\n2414:                 ReturnType = typeof(string);\n2415:                 argumentTypeArray = new Type[] { typeof(string) };\n2416:                 strType = type;\n2417:                 CanRestructure = true;\n2418:             }\n2419:             public override string GetStrValue(ExpressionMediator exm, IOperandTerm[] arguments)\n2420:             {\n2421:                 string str = arguments[0].GetStrValue(exm);\n2422:                 if (str == null || str == \"\")\n2423:                     return (\"\");\n2424:                 switch (strType)\n2425:                 {\n2426:                     case StrFormType.Upper:\n2427:                         return (str.ToUpper());\n2428:                     case StrFormType.Lower:\n2429:                         return (str.ToLower());\n2430:                     case StrFormType.Half:\n2431:                         return (Strings.StrConv(str, VbStrConv.Narrow, Config.Language));\n2432:                     case StrFormType.Full:\n2433:                         return (Strings.StrConv(str, VbStrConv.Wide, Config.Language));\n2434:                 }\n2435:                 return (\"\");\n2436:             }\n2437:         }\n2438: "
+  },
+  "source_refs": [],
+  "artifacts": {
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "evidence_manifest_path": "evidence/method-style-pycheck-pinned-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "be5178e4cf1c9db7f5ae2ab2dc32790001468cc02f6d98e67621062b65ef3f09",
+  "evidence": [
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/COMPARISON.json",
+      "size": 1587,
+      "sha256": "e93a64e48b6f9f568634748586808a3e38abf5e9919ab39cbee6398b292443d1"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/native-01/Analysis.log",
+      "size": 854,
+      "sha256": "a561d23c2fe1127c8bdca0222082819e4e838381e0dc5863992fa744ecfcfd5a"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 43,
+      "sha256": "a9413b9bd7a0e66a50d4a662b6cff4a53978c538305fb949bd76ef7c692add6a"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/native-01/probe.json",
+      "size": 1733,
+      "sha256": "aac7079dd9d89157434c361e38baf7249cd1a8fab1f6b31d36c3b5e3a627be23"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/native-02/Analysis.log",
+      "size": 854,
+      "sha256": "776a6390b15dfb007a65856b5c138e5039196d5651e8e98db075d045c075471c"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLMISSING/native-02/probe.json",
+      "size": 1733,
+      "sha256": "92ec612e4291303b81e66d059394cdf6e2e6f07dc9cd8cf94b7522d5e2a78932"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/COMPARISON.json",
+      "size": 1588,
+      "sha256": "fc69cfd17a717c83ed2f58f6d147bbd2e6e886f94884ee82c4315915a522df9c"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/native-01/Analysis.log",
+      "size": 846,
+      "sha256": "8201c9f3790ae274a5362f2e11a522767783931d80c71867e509f85a5d8d407d"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 45,
+      "sha256": "f46c5edd60e9f70d86cca3cd6848a031fb0f22cd172436212b67c2c357837746"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/native-01/probe.json",
+      "size": 1724,
+      "sha256": "ba457b38a9e69ff4901f156d6ea9b2d3367a3b7765318325415a963b512e8f56"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/native-02/Analysis.log",
+      "size": 846,
+      "sha256": "998d306e20f9bffd2ac9c4fc63f233ca53d000df28178ec000bdfbf7aaefc8a3"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOFULLTYPE/native-02/probe.json",
+      "size": 1723,
+      "sha256": "ea87abf1ecc2b66b1a8f0a0467dd467fd48387f178fc96bb61328853da2d0059"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/COMPARISON.json",
+      "size": 1587,
+      "sha256": "8d5bd789de5797ec1e21498110bb9f42de536b4f69de563526b9a8c6a070d7aa"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/native-01/Analysis.log",
+      "size": 854,
+      "sha256": "7344c13d9b8b0da551a148b29a6c5098eff8c0086492b46320aaa76bec4520a7"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 43,
+      "sha256": "fc08a1d1013bae906261296ac916eccda40d43fda282bbfc7111fd9eb4ab4d0a"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/native-01/probe.json",
+      "size": 1733,
+      "sha256": "57c9517b1110809ef71096040ca9f8d67a5d9b347c17e4d548fd595b612444fd"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/native-02/Analysis.log",
+      "size": 854,
+      "sha256": "5619bb175a729034d00066341923b3788007ba3100d32bd6aad2141d10fa1aa6"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFMISSING/native-02/probe.json",
+      "size": 1733,
+      "sha256": "d8d0a15c1390375b315aa2685123e59cf40f7de43591d4687578688fd76aef43"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/COMPARISON.json",
+      "size": 1588,
+      "sha256": "3cb0677404c0094610e4a1f6c91965eec028a7d028ca73f6acf47e4c012b77c6"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/native-01/Analysis.log",
+      "size": 846,
+      "sha256": "474cbc7f21544113532cc6162f95607e49ed2d152ca91ec7e0a94e0159c91969"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 45,
+      "sha256": "158b6309af0bb080678013fab897e1c135512e8d970cf0389b5fbc27cecdbf18"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/native-01/probe.json",
+      "size": 1724,
+      "sha256": "3b927e9a3d104a384c2b7c766690ea92e6e0c2100fc468b6bcf7ce0c03cb01fc"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/native-02/Analysis.log",
+      "size": 846,
+      "sha256": "4114f03893f64fcda07a15eb731591a79668ab8a9aa124574a69f689b8c07465"
+    },
+    {
+      "path": "evidence/method-style-diagnostics-20261113-135/TOHALFTYPE/native-02/probe.json",
+      "size": 1724,
+      "sha256": "92e2bf18bc47128d76e07a46149d2f3d31da5799e8826071c975e0ec0650c1c4"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/CASE_REVIEW_ja.md",
+      "size": 1173,
+      "sha256": "f60fd83e5f93dc6d38b8cd53d79e92647fb070104a12b8a8c87ebe08fc2f95ae"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/COMPARISON.json",
+      "size": 1907,
+      "sha256": "ad3d2381971d5652b49e44adaeb791e9dbeaa2de91046eef50ffe5bd58f99f78"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/conditions.json",
+      "size": 371,
+      "sha256": "c12a12c61812720d925d73dde06d5224b6f10b56b17761e58d047e4a6d2b87aa"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/execute.py",
+      "size": 1759,
+      "sha256": "20b959124c2e5ad76236a32b2d01ca6c19751640e735f7c852c1ee5278b943a6"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/emuera.log",
+      "size": 310,
+      "sha256": "4c9e77780421e3e407202b306d3845c1974f9fd22f11a7d9b48c81b270aa7426"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 518,
+      "sha256": "54e8b2d69955e93afb3a621ab5e756b192a78bd5ea8f2d05914d3c4f87ec492b"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/invocation.json",
+      "size": 486,
+      "sha256": "b1086c65ed8ec216886c16c67506b4b4da6f624e476d2371a468943692f832a2"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/probe.json",
+      "size": 1541,
+      "sha256": "593790ece2ed65be576512f74cf8c547ac4e82b71f49d38d2e3b432a4bc6d30c"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/runner.stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-01/runner.stdout.bin",
+      "size": 1353,
+      "sha256": "3b32c45c69490151c387259dac04eca1a59ee41702529d67ac37a49dffe52880"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/emuera.log",
+      "size": 310,
+      "sha256": "4c9e77780421e3e407202b306d3845c1974f9fd22f11a7d9b48c81b270aa7426"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 518,
+      "sha256": "54e8b2d69955e93afb3a621ab5e756b192a78bd5ea8f2d05914d3c4f87ec492b"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/invocation.json",
+      "size": 486,
+      "sha256": "9a8dbed18970f07ee231fe8edeff30f1ed07ff44e1121ed5407edbd3e1e692b6"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/probe.json",
+      "size": 1541,
+      "sha256": "fc431b8097f9c543a6b8e28de9a0d4de51b5a758e3c71cbb1266309a50fd6c7e"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/runner.stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/native-02/runner.stdout.bin",
+      "size": 1353,
+      "sha256": "1d1c0509b554cfdb7e4f6b7f4742e152e3fec341bd548fd437e9474cfd549d7e"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/.pyemuera/logs/emuera.log",
+      "size": 310,
+      "sha256": "4c9e77780421e3e407202b306d3845c1974f9fd22f11a7d9b48c81b270aa7426"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/.pyemuera/logs/output-20261113-083327-937581.txt",
+      "size": 238,
+      "sha256": "d9fed429e863d6c80b7380483ca4d28334edd55de9871550015db6afa3481d0f"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/.pyemuera/logs/outputlog-manifest.json",
+      "size": 361,
+      "sha256": "bc497b93fd7ef519505f9ce830f33d0bbcec712e2c5f26cd7cb9492ef26f700f"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/ERB/SEARCHBOUND01.ERB",
+      "size": 518,
+      "sha256": "54e8b2d69955e93afb3a621ab5e756b192a78bd5ea8f2d05914d3c4f87ec492b"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/invocation.json",
+      "size": 320,
+      "sha256": "4f8e132f7e91ee820571cfc4515defeeb24e7bb0422255af6fe2987f60166ad4"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/runner.stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/py/runner.stdout.bin",
+      "size": 217,
+      "sha256": "4ce0a5561d251fa04ebd6bb6e7a987084c7816c0a1120279e8d2322397aeaabc"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/run_native.py",
+      "size": 2927,
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "evidence/method-style-effects-20261113-133/SOURCE_EXCERPTS.txt",
+      "size": 490,
+      "sha256": "8d98c7fd9a07d877972f26dcc51fddaeaaaafc2ec2d850d0a73375651ea73198"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLMISSING/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLMISSING/ERB/SEARCHBOUND01.ERB",
+      "size": 43,
+      "sha256": "a9413b9bd7a0e66a50d4a662b6cff4a53978c538305fb949bd76ef7c692add6a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLMISSING/receipt.json",
+      "size": 1496,
+      "sha256": "98899b90bce848496541662ac064b4dc1827bf3e4daf41fffe436906d927c78a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLMISSING/stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLMISSING/stdout.bin",
+      "size": 371,
+      "sha256": "76747feaf32136e46e9ca8fe428e734a3f1356f3401d911b5f09d7047462ef3a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLTYPE/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLTYPE/ERB/SEARCHBOUND01.ERB",
+      "size": 45,
+      "sha256": "f46c5edd60e9f70d86cca3cd6848a031fb0f22cd172436212b67c2c357837746"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLTYPE/receipt.json",
+      "size": 1490,
+      "sha256": "80190a90e8f54d563cf20e25d236a4bf4e3dd8ef0d5fd78d1901f28dc5b2aee2"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLTYPE/stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOFULLTYPE/stdout.bin",
+      "size": 371,
+      "sha256": "76747feaf32136e46e9ca8fe428e734a3f1356f3401d911b5f09d7047462ef3a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFMISSING/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFMISSING/ERB/SEARCHBOUND01.ERB",
+      "size": 43,
+      "sha256": "fc08a1d1013bae906261296ac916eccda40d43fda282bbfc7111fd9eb4ab4d0a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFMISSING/receipt.json",
+      "size": 1496,
+      "sha256": "f6a9c9f9ec84b5e930e1efa21b6975f470f70a2689375e92c2a8bf1e6efa78c5"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFMISSING/stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFMISSING/stdout.bin",
+      "size": 371,
+      "sha256": "76747feaf32136e46e9ca8fe428e734a3f1356f3401d911b5f09d7047462ef3a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFTYPE/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFTYPE/ERB/SEARCHBOUND01.ERB",
+      "size": 45,
+      "sha256": "158b6309af0bb080678013fab897e1c135512e8d970cf0389b5fbc27cecdbf18"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFTYPE/receipt.json",
+      "size": 1490,
+      "sha256": "80f04eacd17b5a8c76ab0548a935e807ee9f5937441899aae3aa35521bf5a51d"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFTYPE/stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/attempt-02/TOHALFTYPE/stdout.bin",
+      "size": 371,
+      "sha256": "76747feaf32136e46e9ca8fe428e734a3f1356f3401d911b5f09d7047462ef3a"
+    },
+    {
+      "path": "evidence/method-style-pycheck-pinned-20261115/COMPARISON.json",
+      "size": 11479,
+      "sha256": "b53f33b88e9b83d8cb248e3b598dbc01b48fa2be206a676726883cb7b002c145"
+    }
+  ],
+  "finite_remainder": [
+    "通常実行は各メソッドの空文字と混在幅文字列の2条件のみ。",
+    "type/missingの差は--checkとNative -Debugの静的解析比較であり、ゲーム実行時の拒否位置を示さない。",
+    "ヘルパー例外、他設定、全文化行列、全引数形式は未確認。",
+    "Native自然終了は未観測。"
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "drive_modified": false,
+  "global_completion": false
+}

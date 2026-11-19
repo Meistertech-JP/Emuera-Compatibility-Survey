@@ -1,0 +1,2404 @@
+{
+  "schema": "semantic-slice-review-1",
+  "reviewed_local_date": "2026-11-15",
+  "scope": "Read-only semantic audit of the 13 assigned command_or_syntax rows among the 49 existing-evidence candidates. No Native/public execution and no authoritative ledger/register/count edits.",
+  "inputs": {
+    "PARENT_EXISTING_REVIEW_AUDIT_PROPOSAL.json": {
+      "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-existing-review-audit-20261115\\PARENT_EXISTING_REVIEW_AUDIT_PROPOSAL.json",
+      "sha256": "0d75cf4337aa949cbdb8134ed896f96cba598dd03e81e8bad747a0b59674aa67"
+    },
+    "TARGET_COMPARISON_REVIEW_CURRENT.json": {
+      "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\TARGET_COMPARISON_REVIEW_CURRENT.json",
+      "sha256": "56fd2f32b1a705cfa76ab9789ff9336306b592496656f484fb534e90ba01a171"
+    },
+    "CASE_SCENARIO_REGISTER.json": {
+      "path": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\CASE_SCENARIO_REGISTER.json",
+      "sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da"
+    },
+    "PyEmuera-3.0.0.pyz": {
+      "path": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+    },
+    "Emuera1824+v24.zip": {
+      "sha256_pinned_by_proposal": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "live_archive_rehashed": false,
+      "note": "当該ZIP原本はこの作業ツリー内にない。各ケースの保存済みソース抜粋・メンバーSHAと提案監査のピンを参照。"
+    }
+  },
+  "current_summary_snapshot": {
+    "necessary_comparison_complete": 338,
+    "targets": 694,
+    "registered_scenarios": 1889,
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "integrity_checks": {
+    "proposal_case_records": 29,
+    "unique_evidence_path_sha_pairs": 2686,
+    "unique_evidence_hashes_verified": 2686,
+    "missing_or_mismatched_refs": 0,
+    "case_registration_matches_proposal_verdicts": true,
+    "current_review_rows_exact_kind_name_resolved": true,
+    "case_aliases": [
+      {
+        "candidate_case_id": "PARENT245_empty",
+        "registered_case_id": "ARGBOUND245_empty",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_single",
+        "registered_case_id": "ARGBOUND245_single",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_triple",
+        "registered_case_id": "ARGBOUND245_triple",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_hole_middle",
+        "registered_case_id": "ARGBOUND245_hole_middle",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_string_numeric",
+        "registered_case_id": "ARGBOUND245_string_numeric",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_trailing_hole",
+        "registered_case_id": "ARGBOUND245_trailing_hole",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_dead_string",
+        "registered_case_id": "ARGBOUND245_dead_string",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      },
+      {
+        "candidate_case_id": "PARENT245_dead_hole",
+        "registered_case_id": "ARGBOUND245_dead_hole",
+        "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+        "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+        "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+      }
+    ]
+  },
+  "native_source_authority": {
+    "archive_sha256_pinned_by_parent_proposal": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "archive_live_path": "not available in this worktree; archive itself not rehashed in this review",
+    "source_excerpt_artifacts": [
+      {
+        "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE.json",
+        "sha256": "8300fab75b4b921f1983f068038fbe289d24cf4d6acc9453842b3adde369a2ed"
+      },
+      {
+        "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CORRECTION.json",
+        "sha256": "d2c784090b79c44fe64927013a3096f2780b1701ab1d2f5977e9e6ec5477e846"
+      },
+      {
+        "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CURRENT.json",
+        "sha256": "759239827e459b0fda640ff3cae3f5a33f890150de5d628f5319061d126f5730"
+      },
+      {
+        "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_EXCERPTS.txt",
+        "sha256": "da7ad2fe805ebe1519811051baa2313bf738f4949e1336f98f8b37b6fb1d87fe"
+      },
+      {
+        "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_TRAILING_COMMA_ADDENDUM.json",
+        "sha256": "40c24fa2ab51982bf51a2f09714c2a709f7f9052fcea0225921644d1e3273220"
+      },
+      {
+        "path": "evidence/character-copy-delete-boundaries-20261113-241/SOURCE.json",
+        "sha256": "46a5d9d959059f683e4e73aac9d2e6e4625908d475724da7855101eb8b1cf5ab"
+      },
+      {
+        "path": "evidence/addcopy-multi-minimal-20261113-244/PUBLIC_SOURCE.json",
+        "sha256": "eb2e81735961f6714b535c3e5fb815ae3177538addf18cc71bde54d3413c182c"
+      },
+      {
+        "path": "evidence/addcopy-multi-minimal-20261113-244/SOURCE.json",
+        "sha256": "776097a4bb9dc78ecd87eac7a0b9a45d959f8adeb6fea6b3178fb5aeb8c8ba0a"
+      },
+      {
+        "path": "evidence/save-io-boundaries-20261113-204/SOURCE.json",
+        "sha256": "b84513498fd68328f74e139789d3d552d56568c4fe60e1486b65cd1bb4148e25"
+      },
+      {
+        "path": "evidence/save-io-boundaries-20261113-204/SOURCE_EXCERPTS_V24.txt",
+        "sha256": "b0bdcd44b6f972f768da60c3473bc31c7d3609d8d178b788d2fb7694bf558887"
+      },
+      {
+        "path": "evidence/dynamic-transfer-boundaries-20261113-242/SOURCE.json",
+        "sha256": "d01049dc0983a43dadf669c7d7eaeff697d2778615789825df2557a74183aec7"
+      },
+      {
+        "path": "evidence/dynamic-transfer-boundaries-20261113-242/SOURCE_EXCERPTS_V24.txt",
+        "sha256": "b0d174cfe5bf7c6a4c67dd5cee6097ce013d8ac15b1a867b95b3f76805dc2c58"
+      },
+      {
+        "path": "evidence/tryjumpform-valid-20261113-82/PY_TRYJUMPFORM_source.txt",
+        "sha256": "ed5603520358087409ef385aca17202d4c40a04102643e1ecc6a2bf246657846"
+      },
+      {
+        "path": "evidence/tryjumpform-valid-20261113-82/V24_TRYJUMPFORM_source.txt",
+        "sha256": "f7190c88bcef4d07899548c5031b8e7570b172133f3ee4e09841d9a723f13abf"
+      },
+      {
+        "path": "evidence/calltrain-lifecycle-20261113-220/source-provenance.json",
+        "sha256": "a964a09a63d9ee8443ce83729369be19a7b48af9fda4b20f7443d7dc11c8cf47"
+      },
+      {
+        "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+        "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+      },
+      {
+        "path": "evidence/trycgoto-command-20261113-113/SOURCE_EXCERPTS.txt",
+        "sha256": "22188551143f0192f3942469c604287655996cd9cf747f1721f1b371788812a1"
+      },
+      {
+        "path": "evidence/trycgotoform-catch-missing-20261113-90/PY_TRYCGOTOFORM_CATCH_source.txt",
+        "sha256": "669e14e632b28ed8642a5f78efa07d3e610bd791dc3327526fe13df5116ec855"
+      },
+      {
+        "path": "evidence/trycgotoform-catch-missing-20261113-90/V24_TRYCGOTOFORM_CATCH_source.txt",
+        "sha256": "011bc4c31ca3031df2b5595b7f1bd5f786bb08c67c20373940e1727a8f6700f0"
+      },
+      {
+        "path": "evidence/trycgotoform-catch-literal-20261113-91/PY_TRYCGOTOFORM_CATCH_source.txt",
+        "sha256": "669e14e632b28ed8642a5f78efa07d3e610bd791dc3327526fe13df5116ec855"
+      },
+      {
+        "path": "evidence/trycgotoform-catch-literal-20261113-91/V24_TRYCGOTOFORM_CATCH_source.txt",
+        "sha256": "011bc4c31ca3031df2b5595b7f1bd5f786bb08c67c20373940e1727a8f6700f0"
+      },
+      {
+        "path": "evidence/trycalllist-unverified-20261113-97/SOURCE_EXCERPTS.txt",
+        "sha256": "0d8d26451c40577ce4bd7330c4a3d28cb5a6063894c7c692e68f62d1be9e815d"
+      },
+      {
+        "path": "evidence/trycalllist-debug-replay-20261113-106/SOURCE_EXCERPTS.txt",
+        "sha256": "025903e3f6dfec92a02db96f5bb75c9988198a6a9247ecea47372c5ee16772e5"
+      }
+    ]
+  },
+  "targets": [
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "ADDCOPYCHARA"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "CHARLIFE183_ADDCOPYCHARA",
+          "BOUNDARY241_addcopy_dynamic_growth_retry",
+          "BOUNDARY241_addcopy_valid_then_invalid_retry",
+          "BOUNDARY241_addcopy_invalid_then_helper_retry",
+          "BOUNDARY244_minimal_multiple_sources",
+          "ARGBOUND245_empty",
+          "ARGBOUND245_single",
+          "ARGBOUND245_triple",
+          "ARGBOUND245_hole_middle",
+          "ARGBOUND245_string_numeric",
+          "ARGBOUND245_trailing_hole",
+          "ARGBOUND245_dead_string",
+          "ARGBOUND245_dead_hole"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented ADDCOPYCHARA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "BOUNDARY241_addcopy_dynamic_growth_retry",
+              "BOUNDARY241_addcopy_valid_then_invalid_retry",
+              "BOUNDARY241_addcopy_invalid_then_helper_retry",
+              "BOUNDARY244_minimal_multiple_sources",
+              "PARENT245_empty",
+              "PARENT245_triple",
+              "PARENT245_hole_middle",
+              "PARENT245_string_numeric",
+              "PARENT245_trailing_hole"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 261,
+                "end_line": 261
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 1055,
+                "end_line": 1070
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 212,
+                "end_line": 222
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 975,
+                "end_line": 1003
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [
+          {
+            "candidate_case_id": "PARENT245_empty",
+            "registered_case_id": "ARGBOUND245_empty",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_single",
+            "registered_case_id": "ARGBOUND245_single",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_triple",
+            "registered_case_id": "ARGBOUND245_triple",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_hole_middle",
+            "registered_case_id": "ARGBOUND245_hole_middle",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_string_numeric",
+            "registered_case_id": "ARGBOUND245_string_numeric",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_trailing_hole",
+            "registered_case_id": "ARGBOUND245_trailing_hole",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_dead_string",
+            "registered_case_id": "ARGBOUND245_dead_string",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          },
+          {
+            "candidate_case_id": "PARENT245_dead_hole",
+            "registered_case_id": "ARGBOUND245_dead_hole",
+            "basis": "Same fixture name, registered target and pinned comparison; candidate audit predated final registration IDs. Frozen candidate preserved.",
+            "comparison": "evidence\\addcopy-argument-boundaries-20261113-245\\COMPARISON.json",
+            "comparison_sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+          }
+        ],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "ARGBOUND245_empty",
+        "ARGBOUND245_hole_middle",
+        "ARGBOUND245_string_numeric",
+        "ARGBOUND245_trailing_hole",
+        "ARGBOUND245_triple",
+        "BOUNDARY241_addcopy_dynamic_growth_retry",
+        "BOUNDARY241_addcopy_invalid_then_helper_retry",
+        "BOUNDARY241_addcopy_valid_then_invalid_retry",
+        "BOUNDARY244_minimal_multiple_sources"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "ARGBOUND245_empty",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "empty: different_diagnostic_body_only_selected_state_stop_equal",
+          "observation_points_and_comparison": "empty: different_diagnostic_body_only_selected_state_stop_equal",
+          "limitations": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+          "review_path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+          "review_sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "982663b350156df002c9accd15fab1af0b2c501ef5523401b7d843e26b5bd809",
+          "evidence_refs_count": 262,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/COMPARISON.json",
+              "sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+              "sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CURRENT.json",
+              "sha256": "759239827e459b0fda640ff3cae3f5a33f890150de5d628f5319061d126f5730"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_EXCERPTS.txt",
+              "sha256": "da7ad2fe805ebe1519811051baa2313bf738f4949e1336f98f8b37b6fb1d87fe"
+            }
+          ]
+        },
+        {
+          "case_id": "ARGBOUND245_hole_middle",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "hole_middle: different_diagnostic_body_only_selected_state_stop_equal",
+          "observation_points_and_comparison": "hole_middle: different_diagnostic_body_only_selected_state_stop_equal",
+          "limitations": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+          "review_path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+          "review_sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "982663b350156df002c9accd15fab1af0b2c501ef5523401b7d843e26b5bd809",
+          "evidence_refs_count": 262,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/COMPARISON.json",
+              "sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+              "sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CURRENT.json",
+              "sha256": "759239827e459b0fda640ff3cae3f5a33f890150de5d628f5319061d126f5730"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_EXCERPTS.txt",
+              "sha256": "da7ad2fe805ebe1519811051baa2313bf738f4949e1336f98f8b37b6fb1d87fe"
+            }
+          ]
+        },
+        {
+          "case_id": "ARGBOUND245_string_numeric",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "string_numeric: different_diagnostic_body_only_selected_state_stop_equal",
+          "observation_points_and_comparison": "string_numeric: different_diagnostic_body_only_selected_state_stop_equal",
+          "limitations": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+          "review_path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+          "review_sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "982663b350156df002c9accd15fab1af0b2c501ef5523401b7d843e26b5bd809",
+          "evidence_refs_count": 262,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/COMPARISON.json",
+              "sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+              "sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CURRENT.json",
+              "sha256": "759239827e459b0fda640ff3cae3f5a33f890150de5d628f5319061d126f5730"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_EXCERPTS.txt",
+              "sha256": "da7ad2fe805ebe1519811051baa2313bf738f4949e1336f98f8b37b6fb1d87fe"
+            }
+          ]
+        },
+        {
+          "case_id": "ARGBOUND245_trailing_hole",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "trailing_hole: different_accepted_arguments_and_continuation",
+          "observation_points_and_comparison": "trailing_hole: different_accepted_arguments_and_continuation",
+          "limitations": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+          "review_path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+          "review_sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "982663b350156df002c9accd15fab1af0b2c501ef5523401b7d843e26b5bd809",
+          "evidence_refs_count": 262,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/COMPARISON.json",
+              "sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+              "sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CURRENT.json",
+              "sha256": "759239827e459b0fda640ff3cae3f5a33f890150de5d628f5319061d126f5730"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_EXCERPTS.txt",
+              "sha256": "da7ad2fe805ebe1519811051baa2313bf738f4949e1336f98f8b37b6fb1d87fe"
+            }
+          ]
+        },
+        {
+          "case_id": "ARGBOUND245_triple",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "triple: different_accepted_arguments_and_continuation",
+          "observation_points_and_comparison": "triple: different_accepted_arguments_and_continuation",
+          "limitations": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+          "review_path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+          "review_sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "982663b350156df002c9accd15fab1af0b2c501ef5523401b7d843e26b5bd809",
+          "evidence_refs_count": 262,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/COMPARISON.json",
+              "sha256": "733da01e779296536ab51a2d7e9aefb53d948f369be4de25926e280d286ab0a6"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/REVIEW.md",
+              "sha256": "dc08d21f28f1f0a55bcd21d1688b46ae0509e15bbd290482d76670cb82a613cf"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_CONTRACT_CURRENT.json",
+              "sha256": "759239827e459b0fda640ff3cae3f5a33f890150de5d628f5319061d126f5730"
+            },
+            {
+              "path": "evidence/addcopy-argument-boundaries-20261113-245/SOURCE_EXCERPTS.txt",
+              "sha256": "da7ad2fe805ebe1519811051baa2313bf738f4949e1336f98f8b37b6fb1d87fe"
+            }
+          ]
+        },
+        {
+          "case_id": "BOUNDARY241_addcopy_dynamic_growth_retry",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "second source derived from live CHARANUM after first append",
+          "observation_points_and_comparison": "second source derived from live CHARANUM after first append",
+          "limitations": "Selected NO, NAME, CFLAG[1], CSTR[0], CHARANUM, RESULT, TARGET/MASTER/ASSI and helper counters only. Error post-state is unobserved unless a helper checkpoint precedes it. No GUI, natural-exit parity or universal semantics claim. Native row returncode0 is controller exit, not natural engine success; own process probe defines lifecycle.",
+          "review_path": "evidence/character-copy-delete-boundaries-20261113-241/REVIEW.md",
+          "review_sha256": "f4f5e8d324cd2061215fdab2856a46240e18f9954b554253640a3df9eba35c05",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "fe24648cc611a1309c7d859aa4ee5ce99551e9181a115982de2d942b1e4532a0",
+          "evidence_refs_count": 912,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/character-copy-delete-boundaries-20261113-241/COMPARISON.json",
+              "sha256": "77969fde6bea5a69fa426677819bfcfc6f8488c2cbce8ffcca59331e41a9fc8b"
+            },
+            {
+              "path": "evidence/character-copy-delete-boundaries-20261113-241/REVIEW.md",
+              "sha256": "f4f5e8d324cd2061215fdab2856a46240e18f9954b554253640a3df9eba35c05"
+            }
+          ]
+        },
+        {
+          "case_id": "BOUNDARY241_addcopy_invalid_then_helper_retry",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "invalid first index suppresses later helper and append",
+          "observation_points_and_comparison": "invalid first index suppresses later helper and append",
+          "limitations": "Selected NO, NAME, CFLAG[1], CSTR[0], CHARANUM, RESULT, TARGET/MASTER/ASSI and helper counters only. Error post-state is unobserved unless a helper checkpoint precedes it. No GUI, natural-exit parity or universal semantics claim. Native row returncode0 is controller exit, not natural engine success; own process probe defines lifecycle.",
+          "review_path": "evidence/character-copy-delete-boundaries-20261113-241/REVIEW.md",
+          "review_sha256": "f4f5e8d324cd2061215fdab2856a46240e18f9954b554253640a3df9eba35c05",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "fe24648cc611a1309c7d859aa4ee5ce99551e9181a115982de2d942b1e4532a0",
+          "evidence_refs_count": 912,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/character-copy-delete-boundaries-20261113-241/COMPARISON.json",
+              "sha256": "77969fde6bea5a69fa426677819bfcfc6f8488c2cbce8ffcca59331e41a9fc8b"
+            },
+            {
+              "path": "evidence/character-copy-delete-boundaries-20261113-241/REVIEW.md",
+              "sha256": "f4f5e8d324cd2061215fdab2856a46240e18f9954b554253640a3df9eba35c05"
+            }
+          ]
+        },
+        {
+          "case_id": "BOUNDARY241_addcopy_valid_then_invalid_retry",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "first append visible before second invalid index exactly new CHARANUM",
+          "observation_points_and_comparison": "first append visible before second invalid index exactly new CHARANUM",
+          "limitations": "Selected NO, NAME, CFLAG[1], CSTR[0], CHARANUM, RESULT, TARGET/MASTER/ASSI and helper counters only. Error post-state is unobserved unless a helper checkpoint precedes it. No GUI, natural-exit parity or universal semantics claim. Native row returncode0 is controller exit, not natural engine success; own process probe defines lifecycle.",
+          "review_path": "evidence/character-copy-delete-boundaries-20261113-241/REVIEW.md",
+          "review_sha256": "f4f5e8d324cd2061215fdab2856a46240e18f9954b554253640a3df9eba35c05",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "fe24648cc611a1309c7d859aa4ee5ce99551e9181a115982de2d942b1e4532a0",
+          "evidence_refs_count": 912,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/character-copy-delete-boundaries-20261113-241/COMPARISON.json",
+              "sha256": "77969fde6bea5a69fa426677819bfcfc6f8488c2cbce8ffcca59331e41a9fc8b"
+            },
+            {
+              "path": "evidence/character-copy-delete-boundaries-20261113-241/REVIEW.md",
+              "sha256": "f4f5e8d324cd2061215fdab2856a46240e18f9954b554253640a3df9eba35c05"
+            }
+          ]
+        },
+        {
+          "case_id": "BOUNDARY244_minimal_multiple_sources",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "ADDCOPYCHARA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "8-line CSV-free minimal ADDCOPYCHARA0,0: Native initial1->3 and continuation; public E_ARGUMENT atline5 and no AFTER.",
+          "observation_points_and_comparison": "8-line CSV-free minimal ADDCOPYCHARA0,0: Native initial1->3 and continuation; public E_ARGUMENT atline5 and no AFTER.",
+          "limitations": "Only arity/continuation/count minimal witness; no helper order/post-error state claimed from this minimal fixture. See case241 for independent helper state/evaluation witness. No product fix.",
+          "review_path": "evidence/addcopy-multi-minimal-20261113-244/REVIEW.md",
+          "review_sha256": "4871ac38a9d5b2151e9ba362630a41563e3962e952a3cc405808255f5bf8586d",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "069f8a189e0a4a79e69d6d116063e1c984e31872ea79e699dbec5cc19250560b",
+          "evidence_refs_count": 44,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/addcopy-multi-minimal-20261113-244/COMPARISON.json",
+              "sha256": "57f8eb5d55138f796276587dbfa4a2ee112fd4fa522a93202e69f48cdfd5b1de"
+            },
+            {
+              "path": "evidence/addcopy-multi-minimal-20261113-244/REVIEW.md",
+              "sha256": "4871ac38a9d5b2151e9ba362630a41563e3962e952a3cc405808255f5bf8586d"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "accept",
+      "semantic_reason": "限定差分を受入推奨。通常の選択状態・停止行が同じで診断本文だけ異なるケースがある一方、3引数はNativeでコピーして継続/Pyは引数数エラー、末尾カンマはNativeでコピーして継続/PyはE_TYPE停止という実動作差が原比較にある。case241もCHARANUMの動的増加、無効インデックス時の後続helper抑止と追加順を選定観測している。これは当該builder/入力だけの有限範囲。case245のcandidate IDと登録IDは同一比較JSON・同じfixture名で結ばれる別名。例外後の隠れた状態、全builderへの一般化、自然終了は未確認。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "SAVEDATA"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "SAVELOADDELETE203_command_or_syntax_SAVEDATA",
+          "SAVEIO204_save_directory_collision",
+          "SAVEIO204_save_negative_before_caption"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented SAVEDATA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "SAVEIO204_save_directory_collision",
+              "SAVEIO204_save_negative_before_caption"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 221,
+                "end_line": 221
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+                "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+                "start_line": 308,
+                "end_line": 325
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 186,
+                "end_line": 196
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "SAVEIO204_save_directory_collision",
+        "SAVEIO204_save_negative_before_caption"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "SAVEIO204_save_directory_collision",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "SAVEDATA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "save_io_error_continuation_difference: Native AFTER=[True, True]; public AFTER=False exit=1. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "observation_points_and_comparison": "save_io_error_continuation_difference: Native AFTER=[True, True]; public AFTER=False exit=1. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "limitations": "Four isolated fault fixtures: directory collision and readonly file mapped to each engine-own slot3 path, not identical literal FS trees; same ERB/config. Readonly file has deliberate probe bytes, no corrupt-file validity inference. Missing load/negative slot errors and one caption exception only; no full I/O failure taxonomy, disk-full/permissions/share races or recovery. Native readonly raw logs differ by own run path; only this path substitution repeats exactly. Public saved log is pre-command snapshot on errors, mutable VM after-state unobserved. Native8 processes alive5s then cleanup, natural exit unobserved.",
+          "review_path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+          "review_sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "b523b6212ac636816eed8029624873935250ef2273d2bb1d595cde4dbbd1a404",
+          "evidence_refs_count": 144,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+              "sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/COMPARISON.json",
+              "sha256": "10326456489921840a7653033a6a39d7f80b37958e9de8ec60e0679a3ad05d5b"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "b0bdcd44b6f972f768da60c3473bc31c7d3609d8d178b788d2fb7694bf558887"
+            }
+          ]
+        },
+        {
+          "case_id": "SAVEIO204_save_negative_before_caption",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "SAVEDATA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "negative_save_slot_validated_after_caption_effect: Native AFTER=[False, False]; public AFTER=False exit=1. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "observation_points_and_comparison": "negative_save_slot_validated_after_caption_effect: Native AFTER=[False, False]; public AFTER=False exit=1. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "limitations": "Four isolated fault fixtures: directory collision and readonly file mapped to each engine-own slot3 path, not identical literal FS trees; same ERB/config. Readonly file has deliberate probe bytes, no corrupt-file validity inference. Missing load/negative slot errors and one caption exception only; no full I/O failure taxonomy, disk-full/permissions/share races or recovery. Native readonly raw logs differ by own run path; only this path substitution repeats exactly. Public saved log is pre-command snapshot on errors, mutable VM after-state unobserved. Native8 processes alive5s then cleanup, natural exit unobserved.",
+          "review_path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+          "review_sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "b523b6212ac636816eed8029624873935250ef2273d2bb1d595cde4dbbd1a404",
+          "evidence_refs_count": 144,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+              "sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/COMPARISON.json",
+              "sha256": "10326456489921840a7653033a6a39d7f80b37958e9de8ec60e0679a3ad05d5b"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "b0bdcd44b6f972f768da60c3473bc31c7d3609d8d178b788d2fb7694bf558887"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [
+        {
+          "kind": "declaration_modifier",
+          "status": "known_difference_documented",
+          "necessary_comparison_complete": false,
+          "remaining": [
+            {
+              "type": "finite_grouped_queue",
+              "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+              "target": {
+                "kind": "declaration_modifier",
+                "name": "SAVEDATA"
+              },
+              "queue_ids": [],
+              "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+            }
+          ]
+        }
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "限定差分を受入推奨。保存先ディレクトリー衝突ではNativeがエラー後AFTERへ続行し、公開版はE_SAVE_IOで停止する。負スロットでは最初に出る失敗が異なり、Nativeの範囲エラーに対し公開版は見出し式(0除算)へ進む。比較は独立故障fixtureだが保存パスはエンジン固有に対応付けられ、同一の物理ファイルツリーではない。例外後VM状態、I/O失敗全般、自然終了は未確認。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "LOADDATA"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "SAVELOADDELETE203_command_or_syntax_LOADDATA",
+          "SAVEIO204_load_missing"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented LOADDATA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "SAVEIO204_load_missing"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 222,
+                "end_line": 222
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+                "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+                "start_line": 776,
+                "end_line": 795
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 171,
+                "end_line": 181
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "SAVEIO204_load_missing"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "SAVEIO204_load_missing",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "LOADDATA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "missing_load_continues_in_public: Native AFTER=[False, False]; public AFTER=True exit=0. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "observation_points_and_comparison": "missing_load_continues_in_public: Native AFTER=[False, False]; public AFTER=True exit=0. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "limitations": "Four isolated fault fixtures: directory collision and readonly file mapped to each engine-own slot3 path, not identical literal FS trees; same ERB/config. Readonly file has deliberate probe bytes, no corrupt-file validity inference. Missing load/negative slot errors and one caption exception only; no full I/O failure taxonomy, disk-full/permissions/share races or recovery. Native readonly raw logs differ by own run path; only this path substitution repeats exactly. Public saved log is pre-command snapshot on errors, mutable VM after-state unobserved. Native8 processes alive5s then cleanup, natural exit unobserved.",
+          "review_path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+          "review_sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "b523b6212ac636816eed8029624873935250ef2273d2bb1d595cde4dbbd1a404",
+          "evidence_refs_count": 144,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+              "sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/COMPARISON.json",
+              "sha256": "10326456489921840a7653033a6a39d7f80b37958e9de8ec60e0679a3ad05d5b"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "b0bdcd44b6f972f768da60c3473bc31c7d3609d8d178b788d2fb7694bf558887"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "accept",
+      "semantic_reason": "限定差分を受入推奨。未作成slotの同一ERBでNativeはエラー停止しAFTERなし、公開版は終了コード0でAFTERへ到達。選定された継続差で、全ロード形式・全破損条件への一般化はしない。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "DELDATA"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "SAVELOADDELETE203_command_or_syntax_DELDATA",
+          "SAVEIO204_delete_readonly"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented DELDATA difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "SAVEIO204_delete_readonly"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 223,
+                "end_line": 223
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 1474,
+                "end_line": 1494
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 171,
+                "end_line": 181
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "SAVEIO204_delete_readonly"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "SAVEIO204_delete_readonly",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "DELDATA"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "readonly_delete_unhandled_os_error: Native AFTER=[False, False]; public AFTER=False exit=1. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "observation_points_and_comparison": "readonly_delete_unhandled_os_error: Native AFTER=[False, False]; public AFTER=False exit=1. Same ERB/config with explicit engine-own fault-path mapping; raw outputs/source/fault metadata retained.",
+          "limitations": "Four isolated fault fixtures: directory collision and readonly file mapped to each engine-own slot3 path, not identical literal FS trees; same ERB/config. Readonly file has deliberate probe bytes, no corrupt-file validity inference. Missing load/negative slot errors and one caption exception only; no full I/O failure taxonomy, disk-full/permissions/share races or recovery. Native readonly raw logs differ by own run path; only this path substitution repeats exactly. Public saved log is pre-command snapshot on errors, mutable VM after-state unobserved. Native8 processes alive5s then cleanup, natural exit unobserved.",
+          "review_path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+          "review_sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "b523b6212ac636816eed8029624873935250ef2273d2bb1d595cde4dbbd1a404",
+          "evidence_refs_count": 144,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/CASE_REVIEW_ja.md",
+              "sha256": "a7b9633c5c5b977085107652431d878355c33bb5fb7344b832c8afcd471b3b1a"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/COMPARISON.json",
+              "sha256": "10326456489921840a7653033a6a39d7f80b37958e9de8ec60e0679a3ad05d5b"
+            },
+            {
+              "path": "evidence/save-io-boundaries-20261113-204/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "b0bdcd44b6f972f768da60c3473bc31c7d3609d8d178b788d2fb7694bf558887"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "accept",
+      "semantic_reason": "限定差分を受入推奨。ただし観測差は継続・ファイル結果ではなく例外境界/診断。読み取り専用slotで両方AFTER不在・行5停止だが、Nativeは明示CodeEE、公開版はPermissionError由来のE_INTERNAL。試験ファイル属性と原バイトを保持。ファイルシステム全エラー分類や回復は未確認。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "GOTOFORM"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "CALLJUMP206_gotoform",
+          "BOUNDARY242_gotoform_missing",
+          "BOUNDARY242_gotoform_foreign_label"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented GOTOFORM difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "BOUNDARY242_gotoform_missing",
+              "BOUNDARY242_gotoform_foreign_label"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 342,
+                "end_line": 342
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 2407,
+                "end_line": 2481
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 190,
+                "end_line": 200
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 192,
+                "end_line": 202
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "BOUNDARY242_gotoform_foreign_label",
+        "BOUNDARY242_gotoform_missing"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "BOUNDARY242_gotoform_foreign_label",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "GOTOFORM"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "label exists only in another routine; lookup must be current-function scoped",
+          "observation_points_and_comparison": "label exists only in another routine; lookup must be current-function scoped",
+          "limitations": "{'selected_helper_state_result_and_continuation': 'matched', 'native_raw_repeat': 'exact', 'stop_line_equal': True, 'error_body_equal': False, 'full_raw_output': 'different_exporter_receipt_layout_not_semantic_state', 'error_code_taxonomy': 'Native has no matching EraError code taxonomy'}; SYSTEM_TITLE before checkpoint reached; error if present is observed during execution, not load termination. Static missing dead branch completes.; selected transfer/failure boundaries only, no universal closure.",
+          "review_path": "evidence/dynamic-transfer-boundaries-20261113-242/REVIEW.md",
+          "review_sha256": "c22600f69ddf10d722a0df53f6181057f16a75a67977b1e0167a8105d362417b",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "44325db8d64077e22c74a4b7aa0f2196db7c820df953ba132d8eec294ba139d7",
+          "evidence_refs_count": 603,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/dynamic-transfer-boundaries-20261113-242/COMPARISON.json",
+              "sha256": "4262e8bf6c7b1f5b4b17b2487948b900933fbafb57971a8b314546a02d3850fa"
+            },
+            {
+              "path": "evidence/dynamic-transfer-boundaries-20261113-242/REVIEW.md",
+              "sha256": "c22600f69ddf10d722a0df53f6181057f16a75a67977b1e0167a8105d362417b"
+            },
+            {
+              "path": "evidence/dynamic-transfer-boundaries-20261113-242/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "b0d174cfe5bf7c6a4c67dd5cee6097ce013d8ac15b1a867b95b3f76805dc2c58"
+            }
+          ]
+        },
+        {
+          "case_id": "BOUNDARY242_gotoform_missing",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "GOTOFORM"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "dynamic undefined label name helper and stop boundary",
+          "observation_points_and_comparison": "dynamic undefined label name helper and stop boundary",
+          "limitations": "{'selected_helper_state_result_and_continuation': 'matched', 'native_raw_repeat': 'exact', 'stop_line_equal': True, 'error_body_equal': False, 'full_raw_output': 'different_exporter_receipt_layout_not_semantic_state', 'error_code_taxonomy': 'Native has no matching EraError code taxonomy'}; SYSTEM_TITLE before checkpoint reached; error if present is observed during execution, not load termination. Static missing dead branch completes.; selected transfer/failure boundaries only, no universal closure.",
+          "review_path": "evidence/dynamic-transfer-boundaries-20261113-242/REVIEW.md",
+          "review_sha256": "c22600f69ddf10d722a0df53f6181057f16a75a67977b1e0167a8105d362417b",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "44325db8d64077e22c74a4b7aa0f2196db7c820df953ba132d8eec294ba139d7",
+          "evidence_refs_count": 603,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/dynamic-transfer-boundaries-20261113-242/COMPARISON.json",
+              "sha256": "4262e8bf6c7b1f5b4b17b2487948b900933fbafb57971a8b314546a02d3850fa"
+            },
+            {
+              "path": "evidence/dynamic-transfer-boundaries-20261113-242/REVIEW.md",
+              "sha256": "c22600f69ddf10d722a0df53f6181057f16a75a67977b1e0167a8105d362417b"
+            },
+            {
+              "path": "evidence/dynamic-transfer-boundaries-20261113-242/SOURCE_EXCERPTS_V24.txt",
+              "sha256": "b0d174cfe5bf7c6a4c67dd5cee6097ce013d8ac15b1a867b95b3f76805dc2c58"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "accept",
+      "semantic_reason": "診断差のみの限定受入を推奨。未定義/他routineにだけあるlabelの2条件で、選定helper状態・RESULT・停止行・制御境界は一致し、エラー本文のみ不一致。ログ全体はexporter配置差があり、Nativeに対応するPyのEraError code分類もない。これを制御動作差と誤記しない。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "TRYJUMPFORM"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRYJUMPFORM01",
+          "TRYJUMPFORM02",
+          "TRYJUMPFORM03"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented TRYJUMPFORM difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRYJUMPFORM02"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 330,
+                "end_line": 330
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 2278,
+                "end_line": 2376
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 190,
+                "end_line": 200
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 192,
+                "end_line": 202
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRYJUMPFORM02"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRYJUMPFORM02",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYJUMPFORM"
+            }
+          ],
+          "invocation": "有効なTRYJUMPFORMのルート呼び出し",
+          "fixtures_and_initial_state": "ERB SHA-256 dd2fc0cc446fd13ffd1f7719ae203f3ed225b1ec9c7e7d154eee430a3af6bb77; Native isolated desktop, no keyboard input; public pyz SHA-256 8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35.",
+          "observation_points_and_comparison": "Both engines displayed the same two markers and error body, but Native first-line suffix :Emuera1824+v24 differs from Py :Emuera.",
+          "limitations": "Literal diagnostic suffix differs; dynamic targets, arguments, try-catch, and process lifetime untested.",
+          "review_path": "evidence/tryjumpform-valid-20261113-82/CASE_REVIEW_ja.md",
+          "review_sha256": "7139e5bc0434b9e2c431ab7737f57bbf3d3a91bd04a95d1d8f2b87bf9c200b0a",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "51d1ab8f1112e0c37d18b1cbb4b1a41ab0b3e0eb265c1dd9a0c2f421a8bbffc0",
+          "evidence_refs_count": 22,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/tryjumpform-valid-20261113-82/CASE_REVIEW_ja.md",
+              "sha256": "7139e5bc0434b9e2c431ab7737f57bbf3d3a91bd04a95d1d8f2b87bf9c200b0a"
+            },
+            {
+              "path": "evidence/tryjumpform-valid-20261113-82/COMPARISON.json",
+              "sha256": "b945cebeadc06f554a6704b402567e759c5c95d18bf3fc4f041eaf6adf22118c"
+            },
+            {
+              "path": "evidence/tryjumpform-valid-20261113-82/native-cases/TRYJUMPFORM02-a0aa4723/ERB/TRYJUMPFORM02.ERB",
+              "sha256": "dd2fc0cc446fd13ffd1f7719ae203f3ed225b1ec9c7e7d154eee430a3af6bb77"
+            },
+            {
+              "path": "evidence/tryjumpform-valid-20261113-82/V24_TRYJUMPFORM_source.txt",
+              "sha256": "f7190c88bcef4d07899548c5031b8e7570b172133f3ee4e09841d9a723f13abf"
+            },
+            {
+              "path": "evidence/tryjumpform-valid-20261113-82/variants/TRYJUMPFORM02/ERB/TRYJUMPFORM02.ERB",
+              "sha256": "dd2fc0cc446fd13ffd1f7719ae203f3ed225b1ec9c7e7d154eee430a3af6bb77"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "accept",
+      "semantic_reason": "診断表示差のみを限定受入推奨。有効な転送で双方が同じマーカー順・同じ予期しない終端で停止し、診断2行目の本文も同じ。差は1行目の製品名suffix `:Emuera1824+v24` と `:Emuera`。有効先のこの1経路のみ。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "CALLTRAIN"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRAINLIFE220_queue-copy",
+          "TRAINLIFE220_queue-unavailable",
+          "TRAINLIFE220_stop-active",
+          "TRAINLIFE220_stop-active-guard",
+          "TRAINLIFE220_dot-cancel-queue"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented CALLTRAIN difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRAINLIFE220_queue-copy",
+              "TRAINLIFE220_queue-unavailable",
+              "TRAINLIFE220_stop-active",
+              "TRAINLIFE220_stop-active-guard",
+              "TRAINLIFE220_dot-cancel-queue"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 290,
+                "end_line": 290
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+                "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+                "start_line": 849,
+                "end_line": 855
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 171,
+                "end_line": 181
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRAINLIFE220_dot-cancel-queue",
+        "TRAINLIFE220_queue-copy",
+        "TRAINLIFE220_queue-unavailable",
+        "TRAINLIFE220_stop-active",
+        "TRAINLIFE220_stop-active-guard"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRAINLIFE220_dot-cancel-queue",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "DOTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Count and DOT selector each once E2, selected onlyCOM1 before explicit finish N1,S0,H0;Native following-DOT marker/public immediate switch;CUP0/83 differs;later automatic callback unobserved.",
+          "observation_points_and_comparison": "Count and DOT selector each once E2, selected onlyCOM1 before explicit finish N1,S0,H0;Native following-DOT marker/public immediate switch;CUP0/83 differs;later automatic callback unobserved.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        },
+        {
+          "case_id": "TRAINLIFE220_queue-copy",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Dynamic count once; queued SELECTCOM snapshot COM0 thenCOM1 despite live array swap;1/2 then2/2;H1,N2,S2; skip selected SHOW_STATUS/SHOW_USERCOM only. Native sampled CUP reset0/public retains83;progress Unicode differs.",
+          "observation_points_and_comparison": "Dynamic count once; queued SELECTCOM snapshot COM0 thenCOM1 despite live array swap;1/2 then2/2;H1,N2,S2; skip selected SHOW_STATUS/SHOW_USERCOM only. Native sampled CUP reset0/public retains83;progress Unicode differs.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        },
+        {
+          "case_id": "TRAINLIFE220_queue-unavailable",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Disabled queued slot routes USERCOM; next COM0 and completion reached. Source snapshot/progress/skip observed; Native CUP reset0/public83;progress Unicode differs.",
+          "observation_points_and_comparison": "Disabled queued slot routes USERCOM; next COM0 and completion reached. Source snapshot/progress/skip observed; Native CUP reset0/public83;progress Unicode differs.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        },
+        {
+          "case_id": "TRAINLIFE220_stop-active",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "STOPCALLTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Both reach CALLTRAINEND H1,N1; returning handler causes Native NullReferenceException with no STOP_RESUMED or DONE, public resumes and finishes. Native CUP0/public83 also observed; no Native continuation credit.",
+          "observation_points_and_comparison": "Both reach CALLTRAINEND H1,N1; returning handler causes Native NullReferenceException with no STOP_RESUMED or DONE, public resumes and finishes. Native CUP0/public83 also observed; no Native continuation credit.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        },
+        {
+          "case_id": "TRAINLIFE220_stop-active-guard",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "STOPCALLTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Both active-stop end handlers finish explicitly H1,N1; does not certify return/resumption or fix Native exception from other fixture. CUP0/83 differs.",
+          "observation_points_and_comparison": "Both active-stop end handlers finish explicitly H1,N1; does not certify return/resumption or fix Native exception from other fixture. CUP0/83 differs.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "partial",
+      "semantic_reason": "現状では単独命令の差分として親受入を保留推奨。選択キュー・評価回数・進捗・完了の多くは一致。CUP=0/83差は比較JSONで最初のEVENTTRAIN checkpointから既に存在し、CALLTRAIN自身の効果に帰属できない。dot-cancel-queueの後続marker差はDOTRAINも同じケースに含む。stop-activeの明確なNative例外/Py復帰はSTOPCALLTRAINにより直接結び付く。レビュー本文の「progress Unicode differs」と登録comparison_axesの`progress_unicode_equal=true`も不整合だが、保存comparisonの実progress_linesは一致。この記述訂正と、CALLTRAIN単独帰属を明確化するまでは部分判定。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "STOPCALLTRAIN"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRAINLIFE220_stop-active",
+          "TRAINLIFE220_stop-active-guard",
+          "TRAINLIFE220_STOP_INACTIVE_CHECKPOINT"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented STOPCALLTRAIN difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRAINLIFE220_stop-active",
+              "TRAINLIFE220_stop-active-guard"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 291,
+                "end_line": 291
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+                "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+                "start_line": 856,
+                "end_line": 864
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 170,
+                "end_line": 180
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRAINLIFE220_stop-active",
+        "TRAINLIFE220_stop-active-guard"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRAINLIFE220_stop-active",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "STOPCALLTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Both reach CALLTRAINEND H1,N1; returning handler causes Native NullReferenceException with no STOP_RESUMED or DONE, public resumes and finishes. Native CUP0/public83 also observed; no Native continuation credit.",
+          "observation_points_and_comparison": "Both reach CALLTRAINEND H1,N1; returning handler causes Native NullReferenceException with no STOP_RESUMED or DONE, public resumes and finishes. Native CUP0/public83 also observed; no Native continuation credit.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        },
+        {
+          "case_id": "TRAINLIFE220_stop-active-guard",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "CALLTRAIN"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "STOPCALLTRAIN"
+            }
+          ],
+          "invocation": "Native twice on isolated desktops; public pyz with pre/post hash receipt.",
+          "fixtures_and_initial_state": "Both active-stop end handlers finish explicitly H1,N1; does not certify return/resumption or fix Native exception from other fixture. CUP0/83 differs.",
+          "observation_points_and_comparison": "Both active-stop end handlers finish explicitly H1,N1; does not certify return/resumption or fix Native exception from other fixture. CUP0/83 differs.",
+          "limitations": "Ten final source-backed training fixtures Native2/public1, plus preserved missing TRACE-ARGS and premature-DOT guard attempts excluded from coverage. Nine complete across all3;active STOP Native throws after handler, public resumes.14 selected numeric fields per trace, not full arrays. Every initial EVENTTRAIN Native R701/public0 is prior BEGIN209 difference, not isolated mutation by these targets; later TRACE RETURN0 instrumentation deliberate. No numeric-input/ordinary UI, invalid states/count boundaries/arbitrary active restart/missing callback/NEXTCOM/nested NOSKIP or whole training closure. Native24 including attempts alive5s then own cleanup, natural exit unobserved. Raw wrapping and progress Unicode differences saved separately. No product changes.",
+          "review_path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+          "review_sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "052df9c8182c30318b588237ce48a8d6461ed0f54baf101872d0e92834da259e",
+          "evidence_refs_count": 614,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+              "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/REVIEW.md",
+              "sha256": "bb3fb2a693cda9163f3b5c564dd418fe9b912150574950c18fb9d4b02966cc18"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_CONTRACT.md",
+              "sha256": "c695d02be5284fe9980485f2c87e3bf88c79bbb2c1457cace90d7db584e9d38c"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/SOURCE_EXCERPTS.txt",
+              "sha256": "4b5325851dc706a9c17808ff8ee1aa099cbe7b224342069a006df149e41cdaa6"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/begin-train-shop-20261113-209/CASE_REVIEW_ja.md",
+              "sha256": "ba67f0832da6e7b27f81af42728c73e30bf32aae09e0bc567bedba7ec7e4e3ce"
+            },
+            {
+              "path": "evidence/calltrain-lifecycle-20261113-220/prior-reviews/training-update-checks-20261113-211/REVIEW.md",
+              "sha256": "77108ffd9178aa7f3582bfd3ddd53be69be8d033f4f45fff0ab6269cfd80746e"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [],
+      "recommendation": "accept",
+      "semantic_reason": "限定的な実動作差の受入を推奨。stop-activeをNative2回/public1回で観測し、双方CALLTRAINENDへ到達後、戻るhandlerでNativeはNullReferenceExceptionとなりSTOP_RESUMED/DONEなし、Pyは復帰して完了。stop-active-guardでは明示完了handlerが両方正常終了し、例外が全STOP経路の必然ではない点を示す。選定active-stop条件に限定。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "CATCH"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRYCJUMPFORM01",
+          "TRYCGOTO01"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented CATCH difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRYCGOTO01"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 348,
+                "end_line": 348
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 2068,
+                "end_line": 2081
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 170,
+                "end_line": 180
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRYCGOTO01"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRYCGOTO01",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYCGOTO"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "TRYCGOTO"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "CATCH"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "CATCH"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "ENDCATCH"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "ENDCATCH"
+            }
+          ],
+          "invocation": "TRYCGOTO MISSING_TARGET; CATCH block with catch marker; ENDCATCH; final marker. Debug markers bracket each route.",
+          "fixtures_and_initial_state": "Same fixed ERB, same Native exe/config and public pyz, Native -Debug and Py --debug, CPython 3.12.10, -I. Native automation only sent isolated @DEBUG.",
+          "observation_points_and_comparison": "Native independent logs both show BEFORE, AFTER_TRYCGOTO, AFTER_ENDCATCH; Py shows BEFORE, CATCH_BODY, AFTER_ENDCATCH. Different branch after a missing literal target.",
+          "limitations": "One missing literal label. Defined/dynamic targets, formatted variant, nested and malformed blocks, and other catch-bearing commands untested.",
+          "review_path": "evidence/trycgoto-command-20261113-113/CASE_REVIEW_ja.md",
+          "review_sha256": "cb13c55bbbd07836d2381d5105e605d809319d6fab02baa02874a5d147a68e8e",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "9d83207e9f9c29159fda798ca765aa1e72f94a38c8d0d4cf8c1c757044cbe25b",
+          "evidence_refs_count": 12,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/trycgoto-command-20261113-113/CASE_REVIEW_ja.md",
+              "sha256": "cb13c55bbbd07836d2381d5105e605d809319d6fab02baa02874a5d147a68e8e"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/COMPARISON.json",
+              "sha256": "f377f28149b378231f46cfee495f4660f55831b6cb1f0df855775e66550bc455"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/SOURCE_EXCERPTS.txt",
+              "sha256": "22188551143f0192f3942469c604287655996cd9cf747f1721f1b371788812a1"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/variants/TRYCGOTO01/ERB/TRYCGOTO01.ERB",
+              "sha256": "f2ef17bb447978ecb2b6aae16f2ce33d0f95a295bebcbe0befb099ed03aae605"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.result.json",
+              "sha256": "47918c1e0085375cd017a0fec08bb87de85bdfdcd37d94513d85e52609dd4609"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.stdout.bin",
+              "sha256": "18ffe3008dbb1d3912abb935cbec29edab1bbf153e49c826a333249555223aef"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.stderr.bin",
+              "sha256": "4c8948c6f9fa81bbc9f6259c32e8e34c7ad6620a49afd4b0a4be96369dfab949"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [
+        {
+          "kind": "structural_syntax",
+          "status": "known_difference_documented",
+          "necessary_comparison_complete": false,
+          "remaining": [
+            {
+              "type": "finite_grouped_queue",
+              "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+              "target": {
+                "kind": "structural_syntax",
+                "name": "CATCH"
+              },
+              "queue_ids": [],
+              "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+            }
+          ]
+        }
+      ],
+      "recommendation": "partial",
+      "semantic_reason": "TRYCGOTO未定義リテラル1条件との相互作用としてのみ差がある。Nativeは通常側marker、PyはCATCH_BODYへ進む。差をCATCH単体の一般仕様や通常例外捕捉と帰属できない。command_or_syntax行は限定的親判定候補だが、同名structural_syntax行は別条件`finite_grouped_queue`が残り、部分判定。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "ENDCATCH"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRYCJUMPFORM01",
+          "TRYCGOTO01"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented ENDCATCH difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRYCGOTO01"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 349,
+                "end_line": 349
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 1863,
+                "end_line": 1874
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 170,
+                "end_line": 180
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRYCGOTO01"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRYCGOTO01",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYCGOTO"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "TRYCGOTO"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "CATCH"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "CATCH"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "ENDCATCH"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "ENDCATCH"
+            }
+          ],
+          "invocation": "TRYCGOTO MISSING_TARGET; CATCH block with catch marker; ENDCATCH; final marker. Debug markers bracket each route.",
+          "fixtures_and_initial_state": "Same fixed ERB, same Native exe/config and public pyz, Native -Debug and Py --debug, CPython 3.12.10, -I. Native automation only sent isolated @DEBUG.",
+          "observation_points_and_comparison": "Native independent logs both show BEFORE, AFTER_TRYCGOTO, AFTER_ENDCATCH; Py shows BEFORE, CATCH_BODY, AFTER_ENDCATCH. Different branch after a missing literal target.",
+          "limitations": "One missing literal label. Defined/dynamic targets, formatted variant, nested and malformed blocks, and other catch-bearing commands untested.",
+          "review_path": "evidence/trycgoto-command-20261113-113/CASE_REVIEW_ja.md",
+          "review_sha256": "cb13c55bbbd07836d2381d5105e605d809319d6fab02baa02874a5d147a68e8e",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "9d83207e9f9c29159fda798ca765aa1e72f94a38c8d0d4cf8c1c757044cbe25b",
+          "evidence_refs_count": 12,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/trycgoto-command-20261113-113/CASE_REVIEW_ja.md",
+              "sha256": "cb13c55bbbd07836d2381d5105e605d809319d6fab02baa02874a5d147a68e8e"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/COMPARISON.json",
+              "sha256": "f377f28149b378231f46cfee495f4660f55831b6cb1f0df855775e66550bc455"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/SOURCE_EXCERPTS.txt",
+              "sha256": "22188551143f0192f3942469c604287655996cd9cf747f1721f1b371788812a1"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/variants/TRYCGOTO01/ERB/TRYCGOTO01.ERB",
+              "sha256": "f2ef17bb447978ecb2b6aae16f2ce33d0f95a295bebcbe0befb099ed03aae605"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.result.json",
+              "sha256": "47918c1e0085375cd017a0fec08bb87de85bdfdcd37d94513d85e52609dd4609"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.stdout.bin",
+              "sha256": "18ffe3008dbb1d3912abb935cbec29edab1bbf153e49c826a333249555223aef"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.stderr.bin",
+              "sha256": "4c8948c6f9fa81bbc9f6259c32e8e34c7ad6620a49afd4b0a4be96369dfab949"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [
+        {
+          "kind": "structural_syntax",
+          "status": "known_difference_documented",
+          "necessary_comparison_complete": false,
+          "remaining": [
+            {
+              "type": "finite_grouped_queue",
+              "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+              "target": {
+                "kind": "structural_syntax",
+                "name": "ENDCATCH"
+              },
+              "queue_ids": [],
+              "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+            }
+          ]
+        }
+      ],
+      "recommendation": "partial",
+      "semantic_reason": "TRYCGOTO未定義リテラル1条件の後続markerまでの観測のみ。ENDCATCHを通過した終端markerは両方で観測されるが、相違はTRYCGOTOのmissからどの経路でCATCH領域に入るか。ENDCATCH自体の単独差は示さない。同名structural_syntax行は`finite_grouped_queue`が残る。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "TRYCGOTO"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRYCGOTO01"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented TRYCGOTO difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRYCGOTO01"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 344,
+                "end_line": 344
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 2407,
+                "end_line": 2481
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 190,
+                "end_line": 200
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 192,
+                "end_line": 202
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRYCGOTO01"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRYCGOTO01",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYCGOTO"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "TRYCGOTO"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "CATCH"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "CATCH"
+            },
+            {
+              "kind": "command_or_syntax",
+              "name": "ENDCATCH"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "ENDCATCH"
+            }
+          ],
+          "invocation": "TRYCGOTO MISSING_TARGET; CATCH block with catch marker; ENDCATCH; final marker. Debug markers bracket each route.",
+          "fixtures_and_initial_state": "Same fixed ERB, same Native exe/config and public pyz, Native -Debug and Py --debug, CPython 3.12.10, -I. Native automation only sent isolated @DEBUG.",
+          "observation_points_and_comparison": "Native independent logs both show BEFORE, AFTER_TRYCGOTO, AFTER_ENDCATCH; Py shows BEFORE, CATCH_BODY, AFTER_ENDCATCH. Different branch after a missing literal target.",
+          "limitations": "One missing literal label. Defined/dynamic targets, formatted variant, nested and malformed blocks, and other catch-bearing commands untested.",
+          "review_path": "evidence/trycgoto-command-20261113-113/CASE_REVIEW_ja.md",
+          "review_sha256": "cb13c55bbbd07836d2381d5105e605d809319d6fab02baa02874a5d147a68e8e",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "9d83207e9f9c29159fda798ca765aa1e72f94a38c8d0d4cf8c1c757044cbe25b",
+          "evidence_refs_count": 12,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/trycgoto-command-20261113-113/CASE_REVIEW_ja.md",
+              "sha256": "cb13c55bbbd07836d2381d5105e605d809319d6fab02baa02874a5d147a68e8e"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/COMPARISON.json",
+              "sha256": "f377f28149b378231f46cfee495f4660f55831b6cb1f0df855775e66550bc455"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/SOURCE_EXCERPTS.txt",
+              "sha256": "22188551143f0192f3942469c604287655996cd9cf747f1721f1b371788812a1"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/variants/TRYCGOTO01/ERB/TRYCGOTO01.ERB",
+              "sha256": "f2ef17bb447978ecb2b6aae16f2ce33d0f95a295bebcbe0befb099ed03aae605"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.result.json",
+              "sha256": "47918c1e0085375cd017a0fec08bb87de85bdfdcd37d94513d85e52609dd4609"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.stdout.bin",
+              "sha256": "18ffe3008dbb1d3912abb935cbec29edab1bbf153e49c826a333249555223aef"
+            },
+            {
+              "path": "evidence/trycgoto-command-20261113-113/py.stderr.bin",
+              "sha256": "4c8948c6f9fa81bbc9f6259c32e8e34c7ad6620a49afd4b0a4be96369dfab949"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [
+        {
+          "kind": "structural_syntax",
+          "status": "known_difference_documented",
+          "necessary_comparison_complete": false,
+          "remaining": [
+            {
+              "type": "finite_grouped_queue",
+              "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+              "target": {
+                "kind": "structural_syntax",
+                "name": "TRYCGOTO"
+              },
+              "queue_ids": [],
+              "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+            }
+          ]
+        }
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "限定された制御フロー差を受入推奨。未定義リテラルlabelでNativeはAFTER_TRYCGOTOを出しCATCH_BODYを飛ばす一方、PyはCATCH_BODYへ進み、その後ENDCATCH後markerへ到達。Nativeログ2回一致。本家ソースの未定義try target処理がJumpToEndCatchへ送る実装と整合。定義済み/動的/形式違い/ネストは未確認。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "TRYCGOTOFORM"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRYCGOTOFORM01",
+          "TRYCGOTOFORM02"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented TRYCGOTOFORM difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRYCGOTOFORM01",
+              "TRYCGOTOFORM02"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 345,
+                "end_line": 345
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+                "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+                "start_line": 2407,
+                "end_line": 2481
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 190,
+                "end_line": 200
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 192,
+                "end_line": 202
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRYCGOTOFORM01",
+        "TRYCGOTOFORM02"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRYCGOTOFORM01",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYCGOTOFORM"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "TRYCGOTOFORM"
+            }
+          ],
+          "invocation": "TRYCGOTOFORM MISSING{1} inside CATCH/ENDCATCH in @MAIN.",
+          "fixtures_and_initial_state": "Fixture SHA-256 58aa557bd2c87de378c051edf6257507269380bb7bf32c4561090a0e5f7dcd77; 2 isolated Native run(s), no input; public pyz 8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35.",
+          "observation_points_and_comparison": "Native continued after TRY and did not show CATCH_BODY; Py entered CATCH_BODY and printed AFTER_ENDCATCH.",
+          "limitations": "One missing target with catch pair only; valid targets and dynamic names untested; process lifetime excluded.",
+          "review_path": "evidence/trycgotoform-catch-missing-20261113-90/CASE_REVIEW_ja.md",
+          "review_sha256": "b0597df68fa4c824536986cb8d377caf5c307dc15fb54955bc53197c630eb301",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "c0f86de010c10924b996f512c93ef283432efa4479174ae0f5ba3f07424367ab",
+          "evidence_refs_count": 25,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/CASE_REVIEW_ja.md",
+              "sha256": "b0597df68fa4c824536986cb8d377caf5c307dc15fb54955bc53197c630eb301"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/COMPARISON.json",
+              "sha256": "2407df5ca8e4a359901876329de86d58562fcd8c7d0b26c68151ae18a5a75c45"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/native-cases/TRYCGOTOFORM01-12d303ff/ERB/TRYCGOTOFORM01.ERB",
+              "sha256": "58aa557bd2c87de378c051edf6257507269380bb7bf32c4561090a0e5f7dcd77"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/native-cases/TRYCGOTOFORM01-76d56169/ERB/TRYCGOTOFORM01.ERB",
+              "sha256": "58aa557bd2c87de378c051edf6257507269380bb7bf32c4561090a0e5f7dcd77"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/TRYCGOTOFORM01.result.json",
+              "sha256": "1542de8761ac64fc26456e8bdf0296e7ec934dd996f475d9c6b115da37d14c31"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/V24_TRYCGOTOFORM_CATCH_source.txt",
+              "sha256": "011bc4c31ca3031df2b5595b7f1bd5f786bb08c67c20373940e1727a8f6700f0"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-missing-20261113-90/variants/TRYCGOTOFORM01/ERB/TRYCGOTOFORM01.ERB",
+              "sha256": "58aa557bd2c87de378c051edf6257507269380bb7bf32c4561090a0e5f7dcd77"
+            }
+          ]
+        },
+        {
+          "case_id": "TRYCGOTOFORM02",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYCGOTOFORM"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "TRYCGOTOFORM"
+            }
+          ],
+          "invocation": "TRYCGOTOFORM MISSING inside CATCH/ENDCATCH in @MAIN.",
+          "fixtures_and_initial_state": "Fixture SHA-256 07b8860e94c68bad33212c3bc6bbe11a67c19c2ba5090225e7aed8c0945566dc; 1 isolated Native run(s), no input; public pyz 8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35.",
+          "observation_points_and_comparison": "Native continued after TRY and did not show CATCH_BODY; Py entered CATCH_BODY and printed AFTER_ENDCATCH.",
+          "limitations": "One missing target with catch pair only; valid targets and dynamic names untested; process lifetime excluded.",
+          "review_path": "evidence/trycgotoform-catch-literal-20261113-91/CASE_REVIEW_ja.md",
+          "review_sha256": "108e8ece9e7ce15feadf886bb40fc9c3f94ff4a291c3967c8e5b89c89ed8767f",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "795d5dd7137906f9e3449e0594a77fa080324176ca1c9aff07d88e0df1a29d89",
+          "evidence_refs_count": 21,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/trycgotoform-catch-literal-20261113-91/CASE_REVIEW_ja.md",
+              "sha256": "108e8ece9e7ce15feadf886bb40fc9c3f94ff4a291c3967c8e5b89c89ed8767f"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-literal-20261113-91/COMPARISON.json",
+              "sha256": "599c5a53f09ca663b35aa8d25e99a37d83787b93ea282a4f7b355aa1103b47c4"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-literal-20261113-91/native-cases/TRYCGOTOFORM02-43fa0591/ERB/TRYCGOTOFORM02.ERB",
+              "sha256": "07b8860e94c68bad33212c3bc6bbe11a67c19c2ba5090225e7aed8c0945566dc"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-literal-20261113-91/TRYCGOTOFORM02.result.json",
+              "sha256": "a82162f85a2f3def70df08e5f676781bc400cb543cb74890cf145b2192247623"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-literal-20261113-91/V24_TRYCGOTOFORM_CATCH_source.txt",
+              "sha256": "011bc4c31ca3031df2b5595b7f1bd5f786bb08c67c20373940e1727a8f6700f0"
+            },
+            {
+              "path": "evidence/trycgotoform-catch-literal-20261113-91/variants/TRYCGOTOFORM02/ERB/TRYCGOTOFORM02.ERB",
+              "sha256": "07b8860e94c68bad33212c3bc6bbe11a67c19c2ba5090225e7aed8c0945566dc"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [
+        {
+          "kind": "structural_syntax",
+          "status": "known_difference_documented",
+          "necessary_comparison_complete": false,
+          "remaining": [
+            {
+              "type": "finite_grouped_queue",
+              "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+              "target": {
+                "kind": "structural_syntax",
+                "name": "TRYCGOTOFORM"
+              },
+              "queue_ids": [],
+              "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+            }
+          ]
+        }
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "限定された制御フロー差を受入推奨。`MISSING{1}`と`MISSING`の2fixtureでNativeは通常側AFTER、PyはCATCH_BODYへ進む。Nativeは独立2run/1runで保持され、Pyは同一pyz。形式先の定数経路とCATCH対応のソース抜粋は説明と整合するが、Nativeの内部IsConstを直接観測したわけではない。定義済み・動的先・異常構造・寿命は未確認。同名structural_syntax行は別途finite_grouped_queueが残る。"
+    },
+    {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "TRYCALLLIST"
+      },
+      "current_row": {
+        "candidate_status": "known_difference_documented",
+        "status": "known_difference_documented",
+        "necessary_comparison_complete": false,
+        "case_ids": [
+          "TRYCALLLIST01",
+          "CALLLISTCATCH186_command_or_syntax_TRYCALLLIST"
+        ],
+        "remaining": [
+          {
+            "action": "review_existing",
+            "condition": "Parent confirm the documented TRYCALLLIST difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+            "case_ids": [
+              "TRYCALLLIST01"
+            ],
+            "source_refs": [
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+                "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+                "start_line": 350,
+                "end_line": 350
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+                "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+                "start_line": 796,
+                "end_line": 827
+              },
+              {
+                "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+                "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+                "start_line": 170,
+                "end_line": 180
+              }
+            ]
+          }
+        ],
+        "case_id_aliases": [],
+        "comparison_outcome": null
+      },
+      "proposal_case_ids_examined": [
+        "TRYCALLLIST01"
+      ],
+      "proposal_case_records": [
+        {
+          "case_id": "TRYCALLLIST01",
+          "scenario_verdict": "different_scoped",
+          "registered_targets": [
+            {
+              "kind": "command_or_syntax",
+              "name": "TRYCALLLIST"
+            },
+            {
+              "kind": "structural_syntax",
+              "name": "TRYCALLLIST"
+            }
+          ],
+          "invocation": "TRYCALLLIST with FUNC GOOD and a single @GOOD body (same ERB for Native/Py).",
+          "fixtures_and_initial_state": "Instrumented fixture SHA-256 87364a8b1955d0cb9fb4e47ea1aa89a695c7e879d690085e3a7b6f8693389f53; isolated Native -Debug (two independent runs, @DEBUG only); published pyz 8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35; CPython 3.12.10, python -I.",
+          "observation_points_and_comparison": "Native debug/console.log repeated identically: GOOD body then after-list marker. Py exits 1 with E_UNCALLED at @GOOD entry before body.",
+          "limitations": "One defined FUNC GOOD candidate only. Missing-then-defined fallback, multiple candidates, args, nesting and other TRY list forms not covered. Earlier case97 image discrepancy remains historical; repeated debug logs supersede its verdict.",
+          "review_path": "evidence/trycalllist-debug-replay-20261113-106/CASE_REVIEW_ja.md",
+          "review_sha256": "360dead284d6e555e0e7f9974b80e7c4aabbbf649c7c2d33259a182bbc8deb79",
+          "evidence_refs_hash_verified": true,
+          "evidence_refs_sha256": "3fad25abe669db34ca3812aa13dd29c235342ea48a03d8719f1348ae9b5a2653",
+          "evidence_refs_count": 27,
+          "primary_evidence_refs": [
+            {
+              "path": "evidence/trycalllist-unverified-20261113-97/CASE_REVIEW_ja.md",
+              "sha256": "0bbb5ed0312138c7dd5f3b0eb53b67e4350eeec883d907435e51acdd5367073d"
+            },
+            {
+              "path": "evidence/trycalllist-unverified-20261113-97/COMPARISON.json",
+              "sha256": "a63bfc2ea8c771a4f1b226949823552b842b3bac64397d01d6b9ae0b1dac4a82"
+            },
+            {
+              "path": "evidence/trycalllist-unverified-20261113-97/SOURCE_EXCERPTS.txt",
+              "sha256": "0d8d26451c40577ce4bd7330c4a3d28cb5a6063894c7c692e68f62d1be9e815d"
+            },
+            {
+              "path": "evidence/trycalllist-unverified-20261113-97/py.result.json",
+              "sha256": "571ec2ee90e40341825da24b999e3cf4201369272f0050c0b7fa63cdec3d404f"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/CASE_REVIEW_ja.md",
+              "sha256": "360dead284d6e555e0e7f9974b80e7c4aabbbf649c7c2d33259a182bbc8deb79"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/COMPARISON.json",
+              "sha256": "529d58f20ad1891ea3218533789f95795917545526172e8855ef7e0b654391ab"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/SOURCE_EXCERPTS.txt",
+              "sha256": "025903e3f6dfec92a02db96f5bb75c9988198a6a9247ecea47372c5ee16772e5"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/native-run1-console.log",
+              "sha256": "6f56265fece9b4ad01fe7dbfabc61197127532edf06c2bafcc308bfd3c3bccc3"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/native-run2-console.log",
+              "sha256": "6f56265fece9b4ad01fe7dbfabc61197127532edf06c2bafcc308bfd3c3bccc3"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/py.stdout.bin",
+              "sha256": "3b338d59074d61e6637618f66f06da51cefd3af867fe64c1d911b045b3ee602a"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/py.stderr.bin",
+              "sha256": "ddbe8d62ef413e8ac04b668e9c82425eaee26ac5819b8db0b08e558c97290086"
+            },
+            {
+              "path": "evidence/trycalllist-debug-replay-20261113-106/py.result.json",
+              "sha256": "5bcd072566b1028c866c3e61677beea54ad4cd3d6c7f5abdcb1ea53e5deb2616"
+            }
+          ]
+        }
+      ],
+      "same_name_other_kind_rows": [
+        {
+          "kind": "structural_syntax",
+          "status": "known_difference_documented",
+          "necessary_comparison_complete": false,
+          "remaining": [
+            {
+              "type": "finite_grouped_queue",
+              "source": "evidence\\parent-structural-declaration-review-20261113\\REVIEW.json",
+              "target": {
+                "kind": "structural_syntax",
+                "name": "TRYCALLLIST"
+              },
+              "queue_ids": [],
+              "note": "Use exact per-target source and grouped queue; subtract completed case248 conditions; normal/scoped evidence remains preserved. Do not treat source-only or uncalled forms as normal invocation."
+            }
+          ]
+        }
+      ],
+      "recommendation": "accept",
+      "semantic_reason": "限定された実動作差の受入を推奨。単一定義済みFUNC GOODの同一fixtureでNative debugログ2回はGOOD本体→後続marker、Pyは@GOOD入口でE_UNCALLEDとなり本体に入らず終了。旧case97の不一致画像は根拠にせず、case106の反復ログを主証拠とする。欠落候補との混在、複数候補順、引数・ネスト等は未確認。同名structural_syntax行は別途finite_grouped_queueが残る。"
+    }
+  ],
+  "overall": "Recommendations apply only to documented finite cases. Even an accept recommendation is not a target completion decision. Several same-name structural_syntax/declaration_modifier rows retain separate finite_grouped_queue work; global completion/count is unchanged."
+}

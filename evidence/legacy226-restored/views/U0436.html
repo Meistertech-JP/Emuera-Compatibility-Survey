@@ -1,0 +1,73 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0436 · runner.stdout.bin</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0436 · runner.stdout.bin</h1>
+<p>U0436 / addcopy_dynamic_growth/native-01。キャラクターコピー/削除の境界・評価順。ADDCOPYCHARA複数引数の部分更新と公開版arity診断の差を保持。 この原試行は#FUNCTION内OUTPUTLOGの計測違反で対象前停止。retryとは分けて保持。実行レシートのfiles 7件とPID/desktop/fixture値/hashを保持。exit_code_observed=false・exit_code=nullは自然終了未観測のまま。 私的実行環境パスのみ置換した派生物として公開可。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>830c9474a1d5e194f858b4f3b45eab0568f41ef3bfb89c4bdde32281c844ea08</code></p>
+<p><a href="../assets/U0436.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>5da35d44a636236500b73ed74488d733443057ed9f97ad6cf75a24159a8441a4</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;desktop&quot;: &quot;PyEmueraNative_CHAR241_native-01_1794549249&quot;,
+  &quot;desktop_created&quot;: true,
+  &quot;process_created&quot;: true,
+  &quot;pid&quot;: 28160,
+  &quot;command_line&quot;: &quot;&lt;RUN_DIR&gt;\\Emuera1824+v24.exe&quot;,
+  &quot;cwd&quot;: &quot;&lt;RUN_DIR&gt;&quot;,
+  &quot;synthetic_keyboard_events_sent&quot;: false,
+  &quot;fixture_sha256&quot;: &quot;cf5a8049ca500000dd3971c7ff6cda5c00c04e169934294ef1a8183e8ab61919&quot;,
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+  &quot;process_exited_after_5s&quot;: false,
+  &quot;exit_code_observed&quot;: false,
+  &quot;exit_code&quot;: null,
+  &quot;cleanup_terminate_ok&quot;: true,
+  &quot;owned_process_terminal_after_cleanup&quot;: true,
+  &quot;files&quot;: [
+    {
+      &quot;path&quot;: &quot;csv/CHARA0.CSV&quot;,
+      &quot;size&quot;: 28,
+      &quot;sha256&quot;: &quot;e694bdaaa9374205bab9dc42fa158bfe0f0abe99768abd3023a65f0f957121e7&quot;
+    },
+    {
+      &quot;path&quot;: &quot;csv/CHARA10.CSV&quot;,
+      &quot;size&quot;: 30,
+      &quot;sha256&quot;: &quot;4995c7b08ebe83596c0621e97c61b9b53a323cff880f03206fa3f04c9e9676b5&quot;
+    },
+    {
+      &quot;path&quot;: &quot;csv/CHARA20.CSV&quot;,
+      &quot;size&quot;: 30,
+      &quot;sha256&quot;: &quot;03f288443413702a3f013c6b281ad15994557e04f326e10763cbd5ce3600e489&quot;
+    },
+    {
+      &quot;path&quot;: &quot;emuera.config&quot;,
+      &quot;size&quot;: 2164,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;emuera.log&quot;,
+      &quot;size&quot;: 1862,
+      &quot;sha256&quot;: &quot;d20a0314b5ecbf67034a099ead4f9133763c87f6ee069dcc1d67db0fdd9cf5d3&quot;
+    },
+    {
+      &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+      &quot;size&quot;: 761856,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;size&quot;: 1537,
+      &quot;sha256&quot;: &quot;cf5a8049ca500000dd3971c7ff6cda5c00c04e169934294ef1a8183e8ab61919&quot;
+    }
+  ],
+  &quot;desktop_closed&quot;: true
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0484 · command_or_syntax:COPYCHARA · check</li>
+<li>L1270 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

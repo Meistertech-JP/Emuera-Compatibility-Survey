@@ -1,0 +1,153 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-14T20:49:13.411330+00:00",
+  "decision_authority": "Codex evidence review within active Phase 2 work; not owner release sign-off.",
+  "target": {
+    "kind": "declaration",
+    "name": "#DEFINE"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "DECLBASIC_DEFINE",
+    "DEFINE_DUPLICATE_NAME_20261115",
+    "DEFINE_EMPTY_EXPANSION_20261115",
+    "DEFINE_MISSING_IDENTIFIER_20261115",
+    "DEFINE_BAD_ARGUMENT_SEPARATOR_20261115",
+    "DEFINE_UNCLOSED_ARGUMENT_LIST_20261115",
+    "MACROFUNC01"
+  ],
+  "accepted_scope": "Finite #DEFINE comparison for object-like expression replacement, duplicate identifier policy, missing identifier, function-style rejection, malformed argument separators, and unclosed argument list; includes the previously accepted normal expansion/function-expression case.",
+  "accepted_finite_requirements": [
+    {
+      "id": "registration_and_expansion",
+      "state": "source_reviewed_and_compared",
+      "case_ids": [
+        "DECLBASIC_DEFINE",
+        "DEFINE_EMPTY_EXPANSION_20261115",
+        "MACROFUNC01"
+      ],
+      "basis": "HeaderFileLoader and LexicalAnalyzer source reviewed; normal macro behavior remains scoped, empty expansion evaluates to 3 in both, and function-style declarations are rejected with diagnostic differences."
+    },
+    {
+      "id": "duplicate_name",
+      "state": "compared_with_scoped_difference",
+      "case_ids": [
+        "DEFINE_DUPLICATE_NAME_20261115"
+      ],
+      "basis": "Native repeats agree: duplicate warning and first value 1 retained. Public pyz uses second value 2 without a duplicate warning."
+    },
+    {
+      "id": "missing_identifier",
+      "state": "compared_with_scoped_difference",
+      "case_ids": [
+        "DEFINE_MISSING_IDENTIFIER_20261115"
+      ],
+      "basis": "Native transcript/log reaches sentinel; public pyz stops at header line 1 with E_SYNTAX. Native observation is retained despite source branch expectation."
+    },
+    {
+      "id": "argument_list_errors",
+      "state": "compared_with_scoped_diagnostic_differences",
+      "case_ids": [
+        "DEFINE_BAD_ARGUMENT_SEPARATOR_20261115",
+        "DEFINE_UNCLOSED_ARGUMENT_LIST_20261115"
+      ],
+      "basis": "Native distinguishes malformed separator from missing closing parenthesis; PyEmuera rejects both with E_UNSUPPORTED. Native repeat logs agree per case."
+    }
+  ],
+  "source_refs": [
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/HeaderFileLoader.cs",
+      "member_sha256": "72fb531f7eaa267f09878b083cd2ec6b164fdb9a40cb55e714a3691c5b29d32c",
+      "lines": [
+        [
+          147,
+          210
+        ],
+        [
+          213,
+          247
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/IdentifierDictionary.cs",
+      "member_sha256": "f08f454def3847ce33cf396a42c1e6cb83354ad586df439916aa881e6d9977e9",
+      "lines": [
+        [
+          317,
+          356
+        ],
+        [
+          430,
+          440
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/Sub/LexicalAnalyzer.cs",
+      "member_sha256": "710388d067a0e6297fb01ba578c5ee85d03fd1d48707f02b1f06213eff72cc44",
+      "lines": [
+        [
+          1041,
+          1080
+        ]
+      ]
+    }
+  ],
+  "artifacts": {
+    "native_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "public_source_zip_sha256": "c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "comparison_path": "evidence/define-edge-cases-20261115/COMPARISON.json",
+  "comparison_sha256": "57371e2b542f2b636cb2fd2a9b1b8a208fa70295f981f1f9cf07aad7c1e2adb5",
+  "evidence_manifest_path": "evidence/define-edge-cases-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "427ef74001bbe2497054e6be3fb524f8cfc26afe793c5163ef58ce00f3ff181a",
+  "review_path": "evidence/define-edge-cases-20261115/REVIEW_ja.md",
+  "review_sha256": "4c2c3c8095b42a01333b21ec513a32253b4447aca505ef51b26e772ceb98cb48",
+  "source_hashes_path": "evidence/define-edge-cases-20261115/SOURCE_HASHES.json",
+  "source_hashes_sha256": "5cda2a055570fa7e6c0ec5761c8348bba6a6c9f41e78fc7f56a7cede13cf1746",
+  "evidence_paths": [
+    {
+      "path": "evidence/define-edge-cases-20261115/COMPARISON.json",
+      "sha256": "57371e2b542f2b636cb2fd2a9b1b8a208fa70295f981f1f9cf07aad7c1e2adb5"
+    },
+    {
+      "path": "evidence/define-edge-cases-20261115/REVIEW_ja.md",
+      "sha256": "4c2c3c8095b42a01333b21ec513a32253b4447aca505ef51b26e772ceb98cb48"
+    },
+    {
+      "path": "evidence/define-edge-cases-20261115/SOURCE_HASHES.json",
+      "sha256": "5cda2a055570fa7e6c0ec5761c8348bba6a6c9f41e78fc7f56a7cede13cf1746"
+    },
+    {
+      "path": "evidence/define-edge-cases-20261115/MANIFEST.json",
+      "sha256": "427ef74001bbe2497054e6be3fb524f8cfc26afe793c5163ef58ce00f3ff181a"
+    },
+    {
+      "path": "evidence/define-edge-cases-20261115/SEAL.json",
+      "sha256": "fbb37705c4ba475bed3372c2b621dca46c29b0b5cb970404931ea99d03869706"
+    },
+    {
+      "path": "evidence/define-edge-cases-20261115/EXCLUDED_ATTEMPTS.json",
+      "sha256": "a7052e233dc15fcecc2c3a7ab27061fd4685ddaa00a8481db86ed7ce39bbb5dd"
+    }
+  ],
+  "finite_remainder": [],
+  "retained_limits": [
+    "No recursion/expansion limit, string-valued replacement, reserved-name collisions, case-folding variants, or function-like call expansion beyond the cited rejection case.",
+    "Missing-identifier Native behavior conflicts with the inspected source branch's expected exception; the observed result is preserved as runtime evidence and not normalized to the source expectation.",
+    "Native GUI processes were not observed to exit naturally; termination was controlled after the fixed observation window."
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "global_completion": false
+}

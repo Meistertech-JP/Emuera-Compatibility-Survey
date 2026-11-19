@@ -1,0 +1,224 @@
+{
+  "algorithm": "sha256",
+  "excluded": [
+    "MANIFEST.json",
+    "FROZEN.json"
+  ],
+  "files": [
+    {
+      "path": "ATTEMPTS.json",
+      "size": 1206,
+      "sha256": "fbe6d70d289bec5763c2eb34a28d17a439990ab4c73024031261765522d34cd9"
+    },
+    {
+      "path": "COMPARISON.json",
+      "size": 67387,
+      "sha256": "cf12c082a07f6898fdc16f94cf6e92af74dc82aa2dc49f052d3242d0e2b7c96e"
+    },
+    {
+      "path": "conditions.json",
+      "size": 8197,
+      "sha256": "9b76a48906012a1d572c7826b0db5b6eac7857104edf399256693aad028b4b29"
+    },
+    {
+      "path": "CONDITIONS_TABLE.md",
+      "size": 1569,
+      "sha256": "028c4ce2c73f1009a7683dc81e500128794afbb5675d9313b7d49d002802a8ca"
+    },
+    {
+      "path": "execute.py",
+      "size": 1993,
+      "sha256": "34953ff91c83781ede963d065c56e299356cce7a65762355285821fd5921060a"
+    },
+    {
+      "path": "finalize.py",
+      "size": 7452,
+      "sha256": "128e98985f582ac4e5d3b0d61bc5fcfa2fc37ed99bf021c9ec3175dcbdf01291"
+    },
+    {
+      "path": "fixture.ERB",
+      "size": 4134,
+      "sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3"
+    },
+    {
+      "path": "native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "native-01/emuera.log",
+      "size": 3252,
+      "sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b"
+    },
+    {
+      "path": "native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 4134,
+      "sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3"
+    },
+    {
+      "path": "native-01/invocation.json",
+      "size": 921,
+      "sha256": "2669bc9a4a1f212074b5da22448e47027c139f1527376ee9ba757eb992a0ce94"
+    },
+    {
+      "path": "native-01/lock-check.json",
+      "size": 341,
+      "sha256": "13c959c3308ac840a67b43e9e752f37a51252ab7acf168c693cd68a2d0dbbfe5"
+    },
+    {
+      "path": "native-01/probe.json",
+      "size": 1689,
+      "sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+    },
+    {
+      "path": "native-01/runner.stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native-01/runner.stdout.bin",
+      "size": 1468,
+      "sha256": "08d49c99f7204c587fe7a018bfa1af75f2a2153d6803694036199c7259d647eb"
+    },
+    {
+      "path": "native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "native-02/emuera.log",
+      "size": 3252,
+      "sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b"
+    },
+    {
+      "path": "native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 4134,
+      "sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3"
+    },
+    {
+      "path": "native-02/invocation.json",
+      "size": 921,
+      "sha256": "6e908951e7afeebc4d9a8427f3d6ed66d3b8e1b4da99ddfda774d7b67498985d"
+    },
+    {
+      "path": "native-02/lock-check.json",
+      "size": 341,
+      "sha256": "4eaf9ef6136ad525a1b25ecc310454b4592cec62c8c9d5a47a15e5c3dbd6a110"
+    },
+    {
+      "path": "native-02/probe.json",
+      "size": 1689,
+      "sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+    },
+    {
+      "path": "native-02/runner.stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native-02/runner.stdout.bin",
+      "size": 1468,
+      "sha256": "2df31131c04f4b82cf0160d6522c82f4f3b1e2b9133347cd3f9f962f035d1620"
+    },
+    {
+      "path": "PREPARATION.json",
+      "size": 819,
+      "sha256": "9ba635df31bfd44a85cc5cec915859f3aef04dc229ce92e2bc601b13e651ddfd"
+    },
+    {
+      "path": "prepare.py",
+      "size": 4489,
+      "sha256": "e245a0f92801f6d91e4989a016fdb68788a8a23d2c8fa99e5005d921afea7b47"
+    },
+    {
+      "path": "public-01/.pyemuera/logs/emuera.log",
+      "size": 3302,
+      "sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b"
+    },
+    {
+      "path": "public-01/.pyemuera/logs/output-20261113-121403-499131.txt",
+      "size": 1620,
+      "sha256": "84f424becd8c43d16924b665cf1c5a3750829bf04e0f06ecfe78680e27818295"
+    },
+    {
+      "path": "public-01/.pyemuera/logs/outputlog-manifest.json",
+      "size": 364,
+      "sha256": "02fda27b2d0955485405e018f06a279f71538babd925fb5b342617edc5cca037"
+    },
+    {
+      "path": "public-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "public-01/ERB/SEARCHBOUND01.ERB",
+      "size": 4134,
+      "sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3"
+    },
+    {
+      "path": "public-01/invocation.json",
+      "size": 892,
+      "sha256": "015118c1b6787e05e1a521081caface282ede73e2c7a48105c46f2d8d7f01523"
+    },
+    {
+      "path": "public-01/runner.stderr.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "public-01/runner.stdout.bin",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "public-01/verified-public-pyz.json",
+      "size": 1650,
+      "sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+    },
+    {
+      "path": "public-01/verified.stderr.bin",
+      "size": 202,
+      "sha256": "bfd79f1298e9dca2cd4ca5fdbb245f009df74b6f4bb3ff31ef078ee760cb90b5"
+    },
+    {
+      "path": "public-01/verified.stdout.bin",
+      "size": 1703,
+      "sha256": "e5950bb6ccce4e9609363830d1b7f624a2643c614bf1439b7c38acd759fd0aab"
+    },
+    {
+      "path": "REVIEW.md",
+      "size": 8934,
+      "sha256": "c98e0d8d121274056e1f4bd832f8485d265ef0ebcc8aa2c5983f096f8496c336"
+    },
+    {
+      "path": "run_native.py",
+      "size": 2927,
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "SOURCE.json",
+      "size": 2934,
+      "sha256": "b0cdca3a091289b74d9d49f145b606b47b664e93a82d8be3a3833b62b746b6a8"
+    },
+    {
+      "path": "SOURCE_EXCERPTS_V24.txt",
+      "size": 27518,
+      "sha256": "2aae077cfc34be968871925c7324a3fc0f1cd93005214e7ea621694786c2d9ca"
+    },
+    {
+      "path": "VERIFICATION.json",
+      "size": 643,
+      "sha256": "d73ecbc2db83f2959a5163fb63d2ff5d86d1b4d39330ee9bc6856c79b16e3733"
+    }
+  ]
+}

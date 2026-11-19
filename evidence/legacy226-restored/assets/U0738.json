@@ -1,0 +1,38 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T15:58:46.836844+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "HTML_GETPRINTEDSTR"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "scope": "Reached expression queries for selected nonnegative history indices, including a positive out-of-range 999; empty return, selected history behavior, and continuation only.",
+  "source": {
+    "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+    "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "source_json": "evidence/html-buffer-queries-20261113-219/SOURCE.json",
+    "source_json_sha256": "891cd2567d898dc9b3238624afabde3e2f3eda48ae3fded9823cf0440e83cdb2",
+    "method_member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Function/Creator.Method.cs",
+    "method_sha256": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08",
+    "console_member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/EmueraConsole.Print.cs",
+    "console_sha256": "6b9a9b360a25d0064e37563b13fd1afa832ee5c2f88192f752347d54498e4e53"
+  },
+  "case": {
+    "case_id": "HTMLBUFFER219_EXPR_HTML_GETPRINTEDSTR",
+    "case_path": "evidence/html-buffer-queries-20261113-219",
+    "comparison_sha256": "67bb17d25a6150702df1035ec5dd5e4978eefc0eb01d569dd6c2fb472f753ebd",
+    "case_review_sha256": "571bece948577925bc925471d004d8ee0a14f3286d03fc0578e46301aa8db125",
+    "fixture_control": "printed_html_expr_control/CONTROL.json",
+    "fixture_sha256": "a9c9a2c2afa00abd92f3c6aa9e96f7eac4f4364553a7a11abb18e32fe3e6c77e",
+    "raw_log_sha256": "d55c3769e16371dd04da5996330603cc676709e06d55b57408845ccc4a58d732",
+    "all_three_raw_log_files_byte_identical": true,
+    "public_receipt_sha256": "c602d6c724e7f433ade0a68ae05a959f4da33fd508c7d5bfb91d1f291491d30a",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "native_exit_observed": false,
+    "native_desktop_label_anomaly": "Labels include inherited STRLENSU text; identity is corroborated by per-run cwd, executable and fixture hashes, and raw log files."
+  },
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

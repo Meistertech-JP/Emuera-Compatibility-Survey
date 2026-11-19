@@ -1,0 +1,29 @@
+{
+  "valid": true,
+  "validator_sha256": "017e3544b04ade7fce1b818638bf28396c05f88c3173b5369dd9e1a5c521f10d",
+  "acceptance_sha256": "90a267c69ef30db69289beec4375ce83b2c9c1ab6b443180da5d80251660fac9",
+  "comparison_sha256": "af36f4dfa2793cf6b41d091385075ea3e45480550a39247bd8e3d2132b68aa30",
+  "manifest_sha256": "e3894dff17cb951607bc09fc666fcbc7a233763cd00fb90bb1f08775fd5797a6",
+  "seal_matches_manifest": true,
+  "case_ids_registered_for_exact_target": [
+    "PRINTDWEMPTY01",
+    "PRINTDWSPACE01"
+  ],
+  "native_public_raw_log_sha_equal": true,
+  "public_returncodes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "native_final_replicates": 4,
+  "all_final_native_return_events_posted_to_owned_child": true,
+  "native_natural_exit_observed": false,
+  "screenshot_policy": {
+    "final_capture": false,
+    "retained_full_screenshots": false,
+    "retained_crops_only_for_excluded_attempts": true
+  },
+  "case_register_sha256": "a0d0449918af20082808c406746f0d0837602c9177daa2dcc3b90168aa45a7d9",
+  "no_product_or_public_artifact_changes": true
+}

@@ -1,0 +1,120 @@
+{
+  "status": "completed_with_forced_native_cleanup",
+  "case_results": [
+    {
+      "case_id": "AUTO_V2_EXPR_001_ABS",
+      "typed_key": "expression_function:ABS",
+      "scope": {
+        "description": "finite pure-expression observation"
+      },
+      "native": {
+        "status": "observed",
+        "observations": {
+          "value": "7",
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT"
+        }
+      },
+      "py": {
+        "status": "observed",
+        "observations": {
+          "value": "7",
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT"
+        }
+      },
+      "status": "matched_scoped"
+    },
+    {
+      "case_id": "AUTO_V2_ACCEPT_STRFINDU_EMPTY_END",
+      "typed_key": "expression_function:STRFINDU",
+      "scope": {
+        "description": "finite pure-expression observation"
+      },
+      "native": {
+        "status": "observed",
+        "observations": {
+          "value": "-1",
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT"
+        }
+      },
+      "py": {
+        "status": "observed",
+        "observations": {
+          "value": "3",
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT"
+        }
+      },
+      "status": "different"
+    },
+    {
+      "case_id": "AUTO_V2_ACCEPT_STRFIND_EMPTY_END",
+      "typed_key": "expression_function:STRFIND",
+      "scope": {
+        "description": "finite pure-expression observation"
+      },
+      "native": {
+        "status": "observed",
+        "observations": {
+          "value": "-1",
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT"
+        }
+      },
+      "py": {
+        "status": "observed",
+        "observations": {
+          "value": "3",
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT"
+        }
+      },
+      "status": "different"
+    }
+  ],
+  "native_repeats": 2,
+  "stages": [
+    {
+      "name": "single",
+      "native_outcomes": [
+        "forced_termination",
+        "forced_termination"
+      ],
+      "desktop_closed": [
+        true,
+        true
+      ],
+      "native_processes_after_empty": [
+        true,
+        true
+      ],
+      "py_returncode": 0
+    },
+    {
+      "name": "batch",
+      "native_outcomes": [
+        "forced_termination",
+        "forced_termination"
+      ],
+      "desktop_closed": [
+        true,
+        true
+      ],
+      "native_processes_after_empty": [
+        true,
+        true
+      ],
+      "py_returncode": 0
+    }
+  ],
+  "lock_released": true,
+  "source_semantic_replay": "not asserted by the seal"
+}

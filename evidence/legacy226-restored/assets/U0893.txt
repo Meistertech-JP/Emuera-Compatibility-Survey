@@ -1,0 +1,5 @@
+PRINTKL source cross-reference (version pinned)
+
+Native v24 registers PRINTKL in the print-function family in `FunctionIdentifier.cs`; common printing implementation is in `Instraction.Child.cs`. PyEmuera public `commands.json` defines PRINTKL as kana=true, newline=true, wait=false; `printing.py` implements kana output.
+
+Fixture explicitly uses `FORCEKANA 0`, followed by PRINTFORML so the newline boundary is visible.

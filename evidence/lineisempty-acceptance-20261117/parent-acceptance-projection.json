@@ -1,0 +1,122 @@
+{
+  "schema": "privacy-neutral-parent-acceptance-projection.v1",
+  "source_status": "PRIVATE_SOURCE_NOT_INCLUDED",
+  "historical_fields_warning": "sha256_current and recorded readback are historical values, not a current verification; three old pins disagree with saved files. See record.json#/acceptance_pin_discrepancy.",
+  "original_acceptance_sha256": "a88f2640f7199ad4b20065b216c5afe78c22cd1880a4026c00c31c006c58bc19",
+  "original_readback_sha256": "6241f8189d78561a42c59d2c9e6894b186c332c666db417341b009d63c7afe09",
+  "typed_target": {
+    "kind": "method_as_command",
+    "name": "LINEISEMPTY"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "case_ids": [
+    "DISPLAYSTATE_LINEISEMPTY",
+    "LINESTATE249_method",
+    "LINEBUF20261115_button_method"
+  ],
+  "accepted_scope": "Finite LINEISEMPTY method-as-command scope accepted across completed-line empty state, pending ordinary text/space, empty-string and flush transitions in case249, plus one pending PRINTBUTTON. The correct zero-argument command form is bare LINEISEMPTY. Selected return values and RESULT/RESULTS sentinels are recorded. A distinct PRINT_SPACE 0 difference belongs to expression_function:LINEISEMPTY and is not transferred to this invocation-form target. HTML-rendered display content, clicks, layout, invalid arguments, and full transcript equality are not asserted.",
+  "accepted_finite_requirements": {
+    "exact_v24_registration_signature_form": {
+      "evidence_state": "source_binary_signature_and_statement_form_verified",
+      "case_ids": [
+        "DISPLAYSTATE_LINEISEMPTY",
+        "LINESTATE249_method",
+        "LINEBUF20261115_button_method"
+      ],
+      "accepted_scope": "Zero-argument Int64 LINEISEMPTY is registered; the exercised statement form is the bare LINEISEMPTY command, without parentheses or METHOD prefix."
+    },
+    "actual_target_reach_or_independent_public_availability_gap": {
+      "evidence_state": "valid_target_reached_in_both_engines",
+      "case_ids": [
+        "DISPLAYSTATE_LINEISEMPTY",
+        "LINESTATE249_method",
+        "LINEBUF20261115_button_method"
+      ],
+      "accepted_scope": "Selected complete-line, pending-text, flush, and pending-button states reached in Native and public runtime."
+    },
+    "selected_normal_output_state_control": {
+      "evidence_state": "selected_values_sentinels_and_continuation_reviewed",
+      "case_ids": [
+        "DISPLAYSTATE_LINEISEMPTY",
+        "LINESTATE249_method",
+        "LINEBUF20261115_button_method"
+      ],
+      "accepted_scope": "The six case249 states and the new empty/button states capture the selected return and independent RESULT/RESULTS sentinels before display output; DONE is reached. Full output bytes are not asserted."
+    },
+    "applicable_boundary_error_evaluation_side_effect": {
+      "evidence_state": "finite_buffer_states_and_source_scope_reviewed",
+      "case_ids": [
+        "DISPLAYSTATE_LINEISEMPTY",
+        "LINESTATE249_method",
+        "LINEBUF20261115_button_method"
+      ],
+      "accepted_scope": "Completed/empty, pending ordinary text, empty string, space, flush transitions, and one pending button. Source review shows HTML display lines are not entries in this print buffer; HTML rendering is outside the accepted runtime observations. No invalid-argument diagnostic boundary is claimed."
+    },
+    "result_routing_and_stop_location": {
+      "evidence_state": "integer_result_route_and_sentinels_verified",
+      "case_ids": [
+        "LINESTATE249_method",
+        "LINEBUF20261115_button_method"
+      ],
+      "accepted_scope": "Bare command invocation updates RESULT:0 with the selected Int64 result; RESULT:1=702 and RESULTS=SENTINEL are preserved in the selected observations."
+    }
+  },
+  "finite_remainder": [],
+  "documented_difference": null,
+  "limitations": [
+    "Only selected method-as-command results and sentinels; expression-form PRINT_SPACE 0 difference remains under its own target.",
+    "HTML display/layout, clicks, invalid arguments and complete transcript equality are not asserted.",
+    "Native process natural exit is unobserved; each run was cleaned up by its harness after 5 seconds."
+  ],
+  "source_contract_sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+  "evidence_manifest_sha256_field": "22841f9cc6245237bfdd4aa2d31c8d3c2d41e8b0992d0a42cca5a912dceb7263",
+  "individual_evidence_pins": [
+    {
+      "entry_index": 0,
+      "document_name": "FOLLOWUP_OBSERVATIONS.json",
+      "sha256": "9f1bf5dfb963e44a896fb96deef2f23937bfa7e1cd5edc1ee93af8a1a11d343c",
+      "sha256_current_recorded": "9f1bf5dfb963e44a896fb96deef2f23937bfa7e1cd5edc1ee93af8a1a11d343c"
+    },
+    {
+      "entry_index": 1,
+      "document_name": "FOLLOWUP_REVIEW_ja.md",
+      "sha256": "2e0ab7ec60e3890e3417b88fcef7a7fbca0fd9ee12ca1473ec53d9973ebebb65",
+      "sha256_current_recorded": "2e0ab7ec60e3890e3417b88fcef7a7fbca0fd9ee12ca1473ec53d9973ebebb65"
+    },
+    {
+      "entry_index": 2,
+      "document_name": "MANIFEST.json",
+      "sha256": "363fe27aa6d04d2967e476a151efcd8071429ce807b2e80ebb7d002a2e243b83",
+      "sha256_current_recorded": "363fe27aa6d04d2967e476a151efcd8071429ce807b2e80ebb7d002a2e243b83"
+    },
+    {
+      "entry_index": 3,
+      "document_name": "COMPARISON.json",
+      "sha256": "fefce106f987ef9fd03ea579afd3137500ac4b52b8c8c884b9540c94df2dd118",
+      "sha256_current_recorded": "fefce106f987ef9fd03ea579afd3137500ac4b52b8c8c884b9540c94df2dd118"
+    },
+    {
+      "entry_index": 4,
+      "document_name": "COMPARISON.json",
+      "sha256": "8ee08637c8f91cc4c4dc17b12f42e0d4b3fdee9e9a297347d9cd1604aced59d8",
+      "sha256_current_recorded": "8ee08637c8f91cc4c4dc17b12f42e0d4b3fdee9e9a297347d9cd1604aced59d8"
+    },
+    {
+      "entry_index": 5,
+      "document_name": "SOURCE_CONTRACTS.json",
+      "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+      "sha256_current_recorded": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8"
+    }
+  ],
+  "recorded_readback": {
+    "valid": true,
+    "accepted": true,
+    "acceptance_sha256": "a88f2640f7199ad4b20065b216c5afe78c22cd1880a4026c00c31c006c58bc19",
+    "evidence_manifest_sha256": "22841f9cc6245237bfdd4aa2d31c8d3c2d41e8b0992d0a42cca5a912dceb7263",
+    "evidence_refs_all_match": true
+  },
+  "independent_verification_limit": "This projection contains original declared fields, not the original acceptance bytes. Its source SHA cannot independently reveal or authenticate the withheld source.",
+  "privacy_transform": "Allowlisted fields only; source paths, full source excerpts, generated timestamp and producer or internal history excluded.",
+  "review_status": "PRIVATE_STAGING_RIGHTS_AND_PRIVACY_REVIEW_PENDING"
+}

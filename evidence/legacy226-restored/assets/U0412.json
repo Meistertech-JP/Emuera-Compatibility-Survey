@@ -1,0 +1,54 @@
+{
+  "desktop": "PyEmueraNative_STRLENSU_native-02_1794544597",
+  "desktop_created": true,
+  "process_created": true,
+  "pid": 3960,
+  "command_line": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\calltrain-lifecycle-20261113-220\\runs\\stop-active\\native-02\\Emuera1824+v24.exe",
+  "cwd": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\calltrain-lifecycle-20261113-220\\runs\\stop-active\\native-02",
+  "synthetic_keyboard_events_sent": false,
+  "fixture_sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+  "process_exited_after_5s": false,
+  "exit_code_observed": false,
+  "exit_code": null,
+  "cleanup_terminate_ok": true,
+  "files": [
+    {
+      "path": "csv/CHARA0.CSV",
+      "size": 20,
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "csv/TRAIN.CSV",
+      "size": 25,
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "emuera.log",
+      "size": 1818,
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "ERB/SEARCHBOUND01.ERB",
+      "size": 2373,
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "prelaunch.json",
+      "size": 599,
+      "sha256": "cbfd39f3b1251a41745c3fd41c6f1e0d5cec0085e6496185dd759219ae0308e7"
+    }
+  ],
+  "desktop_closed": true
+}

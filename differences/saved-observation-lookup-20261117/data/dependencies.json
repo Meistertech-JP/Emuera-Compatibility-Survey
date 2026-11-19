@@ -1,0 +1,46 @@
+{
+  "schema": "p2-explicit-dependencies-v2",
+  "candidate_root_relative_to_stage": "../../candidate",
+  "dependencies": {
+    "differences/catalog.json": {
+      "sha256": "5a67e49af3008b671d37b27f5fbac746fb7677d9d1cdc982b9d278ced38b4754",
+      "bytes": 294971,
+      "purpose": "base catalog equality and original verdict/case bindings"
+    },
+    "evidence/console-background-24-20261117/records.json": {
+      "sha256": "60a149511f6d4ae84175234842132908cfc101be5a7264688d4b4fbec1b6ce30",
+      "bytes": 171563,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    },
+    "evidence/observation-adapter-183-20261117/data/cases.jsonl": {
+      "sha256": "1bea5c6cf6cc593a0c150f195477a25da9d233a5d97170d4c5b0371d294e5581",
+      "bytes": 1794271,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    },
+    "evidence/operator-264-20261117/observations.json": {
+      "sha256": "8bbc41564ece329c7dfc3209d9398f1c0e4d75e44d6b8e72ee7fc7fa0cbd3028",
+      "bytes": 161114,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    },
+    "evidence/platform-input-16-20261117/records.json": {
+      "sha256": "0c0d434b6878b7bf6a2c6f4eea21f24a310b82c40ea9cb9395061e114fc3cd9a",
+      "bytes": 80867,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    },
+    "evidence/printdata-61-20261117/index.json": {
+      "sha256": "1de16534bf1ee8a309e93793819e409d91da1283864d4f1aac60fdee36cfe4b6",
+      "bytes": 1125670,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    },
+    "evidence/remaining-96-20261117/index.json": {
+      "sha256": "3ff63149c473b3d9b6d92b42eea8e027c984d18c60dc0ad403df9c0a0b149543",
+      "bytes": 1698134,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    },
+    "evidence/selected-51-20261117/index.json": {
+      "sha256": "6cfec22ae99e607990d150b6281ae271fa7c30b1219b79afa1785f83e13b5f75",
+      "bytes": 682196,
+      "purpose": "resolve the exact P2-linked JSON/JSONL fields and role pointers"
+    }
+  }
+}

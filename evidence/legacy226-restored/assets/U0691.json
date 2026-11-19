@@ -1,0 +1,265 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "INPUTMOUSEKEY"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "UIQUERY239_timeout100",
+    "UIQUERY239_timeout100-skip",
+    "UIQUERY239_no-timeout-zero",
+    "UIQUERY239_no-timeout-negative",
+    "UIQUERY239_evaluation-error",
+    "UIQUERY239_timeout100-skip-presnapshot"
+  ],
+  "accepted_scope": {
+    "kind": "command_or_syntax",
+    "name": "INPUTMOUSEKEY",
+    "current_shared_status": "known_difference_documented",
+    "current_shared_necessary_comparison_complete": false,
+    "decision": "accept_known_difference_documented_for_exact_pending_review",
+    "adjudicated_necessary_comparison_complete": true,
+    "shared_ledger_updated": false,
+    "pending_condition_mapping": [
+      {
+        "index": 0,
+        "original_condition": {
+          "action": "review_existing",
+          "condition": "Parent confirm the documented INPUTMOUSEKEY difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+          "case_ids": [
+            "UIQUERY239_timeout100",
+            "UIQUERY239_timeout100-skip",
+            "UIQUERY239_evaluation-error",
+            "UIQUERY239_timeout100-skip-presnapshot"
+          ],
+          "source_refs": [
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+              "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+              "start_line": 380,
+              "end_line": 380
+            },
+            {
+              "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+              "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+              "start_line": 1661,
+              "end_line": 1684
+            }
+          ]
+        },
+        "disposition": "accepted_existing_documented_difference",
+        "raw_fixture_confirmation": "Verified against actual retained fixture/log bytes and at-run receipts; see raw_observations, identity_verification and hash_checks.",
+        "source_branch_confirmation": "Verified archive member hashes and exact selected builder/handler/conversion branches; see requirement_mapping.",
+        "behavior_vs_diagnostic_layout": "Availability/load-vs-runtime terminal gap; selected Native timeout/results only, public has no equivalent runtime result",
+        "implementation_or_repeat_required": false,
+        "mandatory_gaps_moved_to_limits": []
+      }
+    ],
+    "requirement_mapping": [
+      {
+        "id": "registration_form",
+        "original_requirement": "Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.",
+        "current_requirement": "Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "FunctionIdentifier.cs:380 registers INPUTMOUSEKEY_Instruction (binary code266). Instraction.Child.cs:1661-1683 is EXTENDED only, explicitly not IS_PRINT/IS_INPUT; direct target is executable Native and rejected at load by public.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "signature_parser",
+        "original_requirement": "INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "current_requirement": "INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Constructor selects GetNormalArgumentBuilder(\"I\",0), not a raw string parser. ArgumentBuilder.cs:148-169,48-96,1926-1940 performs popTerms/type guards then ExpressionsArgument. Absent argument produces empty array; handler defaults time0. Null/wrong first type rejects; extra argument count warns and the handler reads only the first value. Positive time casts to Int32 and sets Timelimit; <=0 sets none. These are inspected source rules, not claims that every malformed input was run.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "normal_output_state_control",
+        "original_requirement": "Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.",
+        "current_requirement": "Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "timeout100 twice reaches OBS239/DONE239, A=1,R0..4=4,0,0,0,0,R5=706,RS=sentinel239. Public rejects the actual INPUTMOUSEKEY line with E_LOAD, rc1 before runtime. This establishes command availability/control-path divergence, not equivalent timeout or event behavior.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "finite_boundary_error",
+        "original_requirement": "Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.",
+        "current_requirement": "Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Zero/negative cases preserve only BEGIN239 and no continuation in the bounded5s window; their runtime verdict remains unverified. evaluation-error Native executes argument expression and reports division by zero at line12; public E_LOAD prevents any expression/runtime comparison. This is load-vs-runtime phase divergence, not just different wording for an equivalent error.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "evaluation_and_side_effects",
+        "original_requirement": "SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.",
+        "current_requirement": "SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "timeout100-skip evaluates helper once and continues. Original R0=0 sample is after SKIPDISP0. Independent presnapshot saves C=RESULT immediately after INPUTMOUSEKEY: BEFORE_SKIP_R0=4, later R0=0. Process.ScriptProc.cs:558-564 explains SKIPDISP's RESULT write. Public never reaches the helper. No click/pixel/active-input parity is required by this original availability-gap requirement.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      }
+    ],
+    "mandatory_gaps": [],
+    "remaining_conditions": [],
+    "unknowns": [
+      "Zero/negative indefinite-wait behavior, after-state and event receipt remain unverified; no continuation observed only for5s.",
+      "No actual key/mouse event, modifiers, focus, coordinates or active-input parity observed.",
+      "100ms is a requested argument, not measured latency; Native alive after5s then owned termination, not natural exit."
+    ],
+    "closure_scope": "Exact review_existing condition and original finite documented-difference requirements only; no command-wide compatibility assertion."
+  },
+  "original_remaining": [
+    {
+      "action": "review_existing",
+      "condition": "Parent confirm the documented INPUTMOUSEKEY difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+      "case_ids": [
+        "UIQUERY239_timeout100",
+        "UIQUERY239_timeout100-skip",
+        "UIQUERY239_evaluation-error",
+        "UIQUERY239_timeout100-skip-presnapshot"
+      ],
+      "source_refs": [
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+          "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+          "start_line": 380,
+          "end_line": 380
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+          "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+          "start_line": 1661,
+          "end_line": 1684
+        }
+      ]
+    }
+  ],
+  "proof": {
+    "report_path": "evidence/kana-mouse-existing-review-20261115/REPORT.json",
+    "report_sha256": "138294520e0db3b71c29b3f4540d831e673f466ca3878d4135ea606096da9e37",
+    "requirement_mapping": [
+      {
+        "id": "registration_form",
+        "original_requirement": "Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.",
+        "current_requirement": "Exact v24 INPUTMOUSEKEY command registration and constructor arguments, not expression or method-as-command homonym.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "FunctionIdentifier.cs:380 registers INPUTMOUSEKEY_Instruction (binary code266). Instraction.Child.cs:1661-1683 is EXTENDED only, explicitly not IS_PRINT/IS_INPUT; direct target is executable Native and rejected at load by public.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "signature_parser",
+        "original_requirement": "INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "current_requirement": "INPUTMOUSEKEY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Constructor selects GetNormalArgumentBuilder(\"I\",0), not a raw string parser. ArgumentBuilder.cs:148-169,48-96,1926-1940 performs popTerms/type guards then ExpressionsArgument. Absent argument produces empty array; handler defaults time0. Null/wrong first type rejects; extra argument count warns and the handler reads only the first value. Positive time casts to Int32 and sets Timelimit; <=0 sets none. These are inspected source rules, not claims that every malformed input was run.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "normal_output_state_control",
+        "original_requirement": "Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.",
+        "current_requirement": "Native100ms timeout target reaches AFTER with RESULT0..4=4,0,0,0,0; public direct command E_LOAD establishes availability gap.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "timeout100 twice reaches OBS239/DONE239, A=1,R0..4=4,0,0,0,0,R5=706,RS=sentinel239. Public rejects the actual INPUTMOUSEKEY line with E_LOAD, rc1 before runtime. This establishes command availability/control-path divergence, not equivalent timeout or event behavior.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "finite_boundary_error",
+        "original_requirement": "Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.",
+        "current_requirement": "Case239 zero/negative waits are limited-window observations only; timed helper divzero executes Native target path but public is unsupported.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "Zero/negative cases preserve only BEGIN239 and no continuation in the bounded5s window; their runtime verdict remains unverified. evaluation-error Native executes argument expression and reports division by zero at line12; public E_LOAD prevents any expression/runtime comparison. This is load-vs-runtime phase divergence, not just different wording for an equivalent error.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      },
+      {
+        "id": "evaluation_and_side_effects",
+        "original_requirement": "SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.",
+        "current_requirement": "SKIPDISP does not bypass target; pre-reset RESULT snapshot4 vs after SKIPDISP0 value0. No click/pixel/active-input equivalence required for unavailable public API.",
+        "wording_unchanged": true,
+        "disposition": "satisfied_for_documented_difference_scope",
+        "adjudication": "timeout100-skip evaluates helper once and continues. Original R0=0 sample is after SKIPDISP0. Independent presnapshot saves C=RESULT immediately after INPUTMOUSEKEY: BEFORE_SKIP_R0=4, later R0=0. Process.ScriptProc.cs:558-564 explains SKIPDISP's RESULT write. Public never reaches the helper. No click/pixel/active-input parity is required by this original availability-gap requirement.",
+        "evidence_case_ids": [
+          "UIQUERY239_timeout100",
+          "UIQUERY239_timeout100-skip",
+          "UIQUERY239_no-timeout-zero",
+          "UIQUERY239_no-timeout-negative",
+          "UIQUERY239_evaluation-error",
+          "UIQUERY239_timeout100-skip-presnapshot"
+        ]
+      }
+    ]
+  },
+  "product_modified": false,
+  "global_completion": false
+}

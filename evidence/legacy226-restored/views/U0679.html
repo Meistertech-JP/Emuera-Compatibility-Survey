@@ -1,0 +1,103 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0679 · SOURCES.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0679 · SOURCES.json</h1>
+<p>原票種別=SOURCES.json; 参照対象=declaration:#FUNCTION, declaration:#FUNCTIONS。members件数=6。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を2個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>61a44b258b287e97b929ac829fdd76cc9938dbdfa0d2c54461b3703d6b0360ea</code></p>
+<p><a href="../assets/U0679.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>dfe15dcccb58677d8aaf2bca1b163f8126ea750987d2805b519aa082718bc6e2</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;native_archive&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+  &quot;native_archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+  &quot;public_pyz&quot;: &quot;[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz&quot;,
+  &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+  &quot;members&quot;: [
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/LogicalLineParser.cs&quot;,
+      &quot;sha256&quot;: &quot;2d692440105be3a860470367c66827406ac05a5dcb874241295f6cdd5577c0cb&quot;,
+      &quot;size&quot;: 19061,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start_line&quot;: 144,
+          &quot;end_line&quot;: 197,
+          &quot;text&quot;: &quot;144: \t\t\t\t\tcase \&quot;FUNCTION\&quot;:\n145: \t\t\t\t\tcase \&quot;FUNCTIONS\&quot;:\n146: \t\t\t\t\t\tif (!string.IsNullOrEmpty(label.LabelName) &amp;&amp; char.IsDigit(label.LabelName[0]))\n147: \t\t\t\t\t\t{\n148: \t\t\t\t\t\t\tParserMediator.Warn(\&quot;#\&quot; + token + \&quot;属性は関数名が数字で始まる関数には指定できません\&quot;, position, 1);\n149: \t\t\t\t\t\t\tlabel.IsError = true;\n150: \t\t\t\t\t\t\tlabel.ErrMes = \&quot;関数名が数字で始まっています\&quot;;\n151: \t\t\t\t\t\t\tbreak;\n152: \t\t\t\t\t\t}\n153: \t\t\t\t\t\tif (label.IsMethod)\n154: \t\t\t\t\t\t{\n155: \t\t\t\t\t\t\tif ((label.MethodType == typeof(Int64) &amp;&amp; token == \&quot;FUNCTION\&quot;) || (label.MethodType == typeof(string) &amp;&amp; token == \&quot;FUNCTIONS\&quot;))\n156: \t\t\t\t\t\t\t{\n157: \t\t\t\t\t\t\t\tParserMediator.Warn(\&quot;関数\&quot; + label.LabelName + \&quot;にはすでに#\&quot; + token + \&quot;が宣言されています(この行は無視されます)\&quot;, position, 1);\n158: \t\t\t\t\t\t\t\treturn false;\n159: \t\t\t\t\t\t\t}\n160: \t\t\t\t\t\t\tif (label.MethodType == typeof(Int64) &amp;&amp; token == \&quot;FUNCTIONS\&quot;)\n161: \t\t\t\t\t\t\t\tParserMediator.Warn(\&quot;関数\&quot; + label.LabelName + \&quot;にはすでに#FUNCTIONが宣言されています\&quot;, position, 2);\n162: \t\t\t\t\t\t\telse if (label.MethodType == typeof(string) &amp;&amp; token == \&quot;FUNCTION\&quot;)\n163: \t\t\t\t\t\t\t\tParserMediator.Warn(\&quot;関数\&quot; + label.LabelName + \&quot;にはすでに#FUNCTIONSが宣言されています\&quot;, position, 2);\n164: \t\t\t\t\t\t\treturn false;\n165: \t\t\t\t\t\t}\n166: \t\t\t\t\t\tif (label.Depth == 0)\n167: \t\t\t\t\t\t{\n168: \t\t\t\t\t\t\tParserMediator.Warn(\&quot;システム関数に#\&quot; + token + \&quot;が指定されています\&quot;, position, 2);\n169: \t\t\t\t\t\t\treturn false;\n170: \t\t\t\t\t\t}\n171: \t\t\t\t\t\tlabel.IsMethod = true;\n172: \t\t\t\t\t\tlabel.Depth = 0;\n173: \t\t\t\t\t\tif (token == \&quot;FUNCTIONS\&quot;)\n174: \t\t\t\t\t\t\tlabel.MethodType = typeof(string);\n175: \t\t\t\t\t\telse\n176: \t\t\t\t\t\t\tlabel.MethodType = typeof(Int64);\n177: \t\t\t\t\t\tif (label.IsPri)\n178: \t\t\t\t\t\t{\n179: \t\t\t\t\t\t\tParserMediator.Warn(\&quot;式中関数では#PRIは機能しません\&quot;, position, 1);\n180: \t\t\t\t\t\t\tlabel.IsPri = false;\n181: \t\t\t\t\t\t}\n182: \t\t\t\t\t\tif (label.IsLater)\n183: \t\t\t\t\t\t{\n184: \t\t\t\t\t\t\tParserMediator.Warn(\&quot;式中関数では#LATERは機能しません\&quot;, position, 1);\n185: \t\t\t\t\t\t\tlabel.IsLater = false;\n186: \t\t\t\t\t\t}\n187: \t\t\t\t\t\tif (label.IsSingle)\n188: \t\t\t\t\t\t{\n189: \t\t\t\t\t\t\tParserMediator.Warn(\&quot;式中関数では#SINGLEは機能しません\&quot;, position, 1);\n190: \t\t\t\t\t\t\tlabel.IsSingle = false;\n191: \t\t\t\t\t\t}\n192: \t\t\t\t\t\tif (label.IsOnly)\n193: \t\t\t\t\t\t{\n194: \t\t\t\t\t\t\tParserMediator.Warn(\&quot;式中関数では#ONLYは機能しません\&quot;, position, 1);\n195: \t\t\t\t\t\t\tlabel.IsOnly = false;\n196: \t\t\t\t\t\t}\n197: \t\t\t\t\t\tbreak;&quot;
+        }
+      ]
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs&quot;,
+      &quot;sha256&quot;: &quot;00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab&quot;,
+      &quot;size&quot;: 62268,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start_line&quot;: 852,
+          &quot;end_line&quot;: 869,
+          &quot;text&quot;: &quot;852: \t\t\tbool inMethod = label.IsMethod;\n853: \t\t\twhile (true)\n854: \t\t\t{\n855: \t\t\t\tnextLine = nextLine.NextLine;\n856: \t\t\t\tparentProcess.scaningLine = nextLine;\n857:                 if (!(nextLine is InstructionLine func))\n858:                 {\n859:                     if ((nextLine is NullLine) || (nextLine is FunctionLabelLine))\n860:                         break;\n861:                     continue;\n862:                 }\n863:                 if (inMethod)\n864: \t\t\t\t{\n865: \t\t\t\t\tif (!func.Function.IsMethodSafe())\n866: \t\t\t\t\t{\n867: \t\t\t\t\t\tParserMediator.Warn(func.Function.Name + \&quot;命令は#FUNCTION中で使うことはできません\&quot;, nextLine, 2, true, false);\n868: \t\t\t\t\t\tcontinue;\n869: \t\t\t\t\t}&quot;
+        }
+      ]
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+      &quot;sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+      &quot;size&quot;: 31302,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start_line&quot;: 16,
+          &quot;end_line&quot;: 16,
+          &quot;text&quot;: &quot;16: \t\tpublic const int METHOD_SAFE = 0x00004;//#Function中で呼び出してよい命令。WAITなど入力を伴うもの、CALLなど関数呼び出しを伴うものは不可。&quot;
+        },
+        {
+          &quot;start_line&quot;: 190,
+          &quot;end_line&quot;: 190,
+          &quot;text&quot;: &quot;190: \t\t\taddFunction(FunctionCode.INPUT, new INPUT_Instruction());&quot;
+        },
+        {
+          &quot;start_line&quot;: 215,
+          &quot;end_line&quot;: 215,
+          &quot;text&quot;: &quot;215: \t\t\taddFunction(FunctionCode.OUTPUTLOG, argb[FunctionArgType.VOID]);&quot;
+        },
+        {
+          &quot;start_line&quot;: 547,
+          &quot;end_line&quot;: 550,
+          &quot;text&quot;: &quot;547: \t\tinternal bool IsMethodSafe()\n548: \t\t{\n549: \t\t\treturn ((flag &amp; METHOD_SAFE) == METHOD_SAFE);\n550: \t\t}&quot;
+        }
+      ]
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+      &quot;sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+      &quot;size&quot;: 82505,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start_line&quot;: 654,
+          &quot;end_line&quot;: 676,
+          &quot;text&quot;: &quot;654: \t\t\tpublic INPUT_Instruction()\n655: \t\t\t{\n656: \t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.SP_INPUT);\n657: \t\t\t\tflag = IS_PRINT | IS_INPUT;\n658: \t\t\t}\n659: \n660: \t\t\tpublic override void DoInstruction(ExpressionMediator exm, InstructionLine func, ProcessState state)\n661: \t\t\t{\n662: \t\t\t\tExpressionArgument arg = (ExpressionArgument)func.Argument;\n663: \t\t\t\tInputRequest req = new InputRequest();\n664: \t\t\t\treq.InputType = InputType.IntValue;\n665: \t\t\t\tif (arg.Term != null)\n666: \t\t\t\t{\n667: \t\t\t\t\tInt64 def;\n668: \t\t\t\t\tif (arg.IsConst)\n669: \t\t\t\t\t\tdef = arg.ConstInt;\n670: \t\t\t\t\telse\n671: \t\t\t\t\t\tdef = arg.Term.GetIntValue(exm);\n672: \t\t\t\t\treq.HasDefValue = true;\n673: \t\t\t\t\treq.DefIntValue = def;\n674: \t\t\t\t}\n675: \t\t\t\texm.Console.WaitInput(req);\n676: \t\t\t}&quot;
+        }
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;PyEmuera-3.0.0.pyz&quot;,
+      &quot;member&quot;: &quot;pyemuera/specs/commands.json&quot;,
+      &quot;sha256&quot;: &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+      &quot;size&quot;: 485672,
+      &quot;note&quot;: &quot;Public executable member; exact source archive member pinned in the originating runtime receipt.&quot;
+    },
+    {
+      &quot;archive&quot;: &quot;PyEmuera-3.0.0.pyz&quot;,
+      &quot;member&quot;: &quot;pyemuera/runtime.py&quot;,
+      &quot;sha256&quot;: &quot;cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d&quot;,
+      &quot;size&quot;: 59965,
+      &quot;note&quot;: &quot;Public executable member; exact source archive member pinned in the originating runtime receipt.&quot;
+    }
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2460 · declaration:#FUNCTION · check</li>
+<li>L2475 · declaration:#FUNCTIONS · check</li>
+</ul></html>

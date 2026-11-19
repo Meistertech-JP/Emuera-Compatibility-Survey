@@ -1,0 +1,104 @@
+{
+  "schema": "loadglobal-truncation-saved.v1",
+  "case_id": "LOADGLOBAL_CORRUPT_TRUNCATION_20261115",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "LOADGLOBAL"
+  },
+  "scenario_verdict": "different_scoped",
+  "condition": {
+    "native": "own global.sav: 163 of 273 bytes",
+    "pyemuera": "own global.json: 441 of 557 bytes",
+    "cross_format": false,
+    "same_corruption_bytes": false
+  },
+  "mode_counts": "one recorded run per engine; no new run",
+  "engine_hashes": {
+    "native_exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "pyemuera_pyz": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "observed": {
+    "native": {
+      "selected_output": {
+        "CORRUPT_RESULT": "0",
+        "CORRUPT_GLOBAL0": "50",
+        "CORRUPT_GLOBAL1": "-51",
+        "CORRUPT_GLOBALS0": "[BUILTIN0]",
+        "CORRUPT_GLOBALS1": "[BUILTIN1]",
+        "CORRUPT_USER0": "901",
+        "CORRUPT_USER1": "902",
+        "CORRUPT_USER2": "903",
+        "CORRUPT_USERS0": "[MUT0]",
+        "CORRUPT_USERS1": "[MUT1]"
+      },
+      "continuation_marker": true,
+      "process_exited_after_5s": false,
+      "cleanup_terminate_ok": true,
+      "cleanup_wait_result": "unobserved",
+      "natural_exit": "unobserved",
+      "exit_code": "unobserved",
+      "gui_diagnostics": "unobserved"
+    },
+    "pyemuera": {
+      "selected_output": {
+        "CORRUPT_RESULT": "0",
+        "CORRUPT_GLOBAL0": "900",
+        "CORRUPT_GLOBAL1": "901",
+        "CORRUPT_GLOBALS0": "[SENTINEL0]",
+        "CORRUPT_GLOBALS1": "[SENTINEL1]",
+        "CORRUPT_USER0": "901",
+        "CORRUPT_USER1": "902",
+        "CORRUPT_USER2": "903",
+        "CORRUPT_USERS0": "[MUT0]",
+        "CORRUPT_USERS1": "[MUT1]"
+      },
+      "continuation_marker": true,
+      "returncode": 0,
+      "stderr_diagnostic": "E_SAVE: Invalid save: Expecting value: line 1 column 442 (char 441)"
+    }
+  },
+  "evidence_files": [
+    {
+      "path": "fixture/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "fixture/ERB/GLOBAL205.ERH",
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "fixture/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "fixture/native/global.sav",
+      "sha256": "0350f7dde4d161714a29785b825b9bc96937ec9baf0075b5a6b9c8df2ad82539"
+    },
+    {
+      "path": "fixture/public/global.json",
+      "sha256": "991f88eb242fefbe97358d1bbf027332d437c9fe25de5f0593626c9fd00daca9"
+    },
+    {
+      "path": "observed/native/emuera.log",
+      "sha256": "a7f28042801bb4a6cae0776ac4de444d042c0aaa3d5ed4476852563216c6e1a3"
+    },
+    {
+      "path": "observed/public/emuera.log",
+      "sha256": "32d3593789b109d6fe1a143c874236ca0bdff35d2a444b60cc19063ad539945b"
+    },
+    {
+      "path": "observed/public/stdout.bin",
+      "sha256": "422cc2d837c9e9f8a3b91b05dd35e38e279e5db3892385fdf7848599dbe80d17"
+    },
+    {
+      "path": "observed/public/stderr.bin",
+      "sha256": "ab89c40cb61d25b9371d3af1172e5c999669766e99c86ea0a9b6e2c72854cf88"
+    }
+  ],
+  "limitations": [
+    "original comparison, receipts and engines not included",
+    "Native natural exit and GUI diagnostics unobserved",
+    "only specified own-format corruptions; no cross-format comparison",
+    "seed and truncation source binding is recorded, not proof of historical execution authenticity"
+  ]
+}

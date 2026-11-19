@@ -1,0 +1,302 @@
+{
+  "schema": "pyemuera.fatal-comparison.v1",
+  "valid": true,
+  "case_id": "SEARCH02_STRFINDU_A_5",
+  "typed_key": "expression_function:STRFINDU",
+  "classification": "different_scoped_stop",
+  "expression": "STRFINDU((RESULT:0 == 701 ? \"AあBA\" # \"BAD_SENT\"),\"A\",5)",
+  "attempt": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\automation-v2\\v3\\runs\\a2b71b9f5a4d937bd78d18707964f49debb2489738213c7b9bec675d2f7a5a7f\\attempt-20261113T232820-a64f723648b2",
+  "run_key": "a2b71b9f5a4d937bd78d18707964f49debb2489738213c7b9bec675d2f7a5a7f",
+  "plan_sha256": "79076e79ff80697ea5c230460245b2b36be23332d6a469a3aaf677991cf1c5d5",
+  "source_result_sha256": "099688673c46f0425953bd1e7ad393110782c5e44a8336cf4f4a779618078cfe",
+  "manifest_sha256": "7878a7b631bf41dbc67a1dcedd20bbc66b9e1d5edc3c6ab4b09753bf7060100c",
+  "original_v3": {
+    "status": "failure",
+    "error": "single_vs_batch_gate_failed",
+    "case_status": "failure",
+    "sha256": "099688673c46f0425953bd1e7ad393110782c5e44a8336cf4f4a779618078cfe",
+    "unchanged": true
+  },
+  "native": {
+    "return": "-1",
+    "complete_markers": true,
+    "repeat_native": 2,
+    "all_four_stage_logs_equal": true,
+    "observations": {
+      "value": "-1",
+      "result0": "701",
+      "result1": "702",
+      "results": "AUTO_SENT"
+    }
+  },
+  "stages": [
+    {
+      "name": "single-01",
+      "native_process_outcomes": [
+        "forced_termination",
+        "forced_termination"
+      ],
+      "public": {
+        "source": "ERB/SEARCHBOUND01.ERB",
+        "line": 9,
+        "error_code": "E_INDEX",
+        "returncode": 1,
+        "aftermarkers_present": false,
+        "postfatalvalues": "UNOBSERVED"
+      }
+    },
+    {
+      "name": "batch",
+      "native_process_outcomes": [
+        "forced_termination",
+        "forced_termination"
+      ],
+      "public": {
+        "source": "ERB/SEARCHBOUND01.ERB",
+        "line": 9,
+        "error_code": "E_INDEX",
+        "returncode": 1,
+        "aftermarkers_present": false,
+        "postfatalvalues": "UNOBSERVED"
+      }
+    }
+  ],
+  "public_postfatalvalues": "UNOBSERVED",
+  "postfatalvalues": "UNOBSERVED",
+  "fullrawmatch": false,
+  "fulltargetclosure": false,
+  "natural_native_exit_claim": false,
+  "rawpins": [
+    {
+      "path": "MANIFEST.json",
+      "sha256": "7878a7b631bf41dbc67a1dcedd20bbc66b9e1d5edc3c6ab4b09753bf7060100c"
+    },
+    {
+      "path": "REQUEST.json",
+      "sha256": "5299d50e3a6b5e3dd1a2f60e148595ba6eb8fb656a7e7d3158ea01ea6ff4d0ae"
+    },
+    {
+      "path": "RESULT.json",
+      "sha256": "099688673c46f0425953bd1e7ad393110782c5e44a8336cf4f4a779618078cfe"
+    },
+    {
+      "path": "SEAL.json",
+      "sha256": "99419b7dd5766c578bd2592103b28b84a530ae45cc52a1880347228b5b5f878b"
+    },
+    {
+      "path": "batch/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "11539d7abe313e6191ba54c56c0297714124c823ec8f83034e01d890098b5ecd"
+    },
+    {
+      "path": "batch/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "batch/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "batch/native-01/emuera.log",
+      "sha256": "4ce3f97cc0356b7cb2b137635c51ccf9aa4ccda0ac7a3cab109c0d7e83430566"
+    },
+    {
+      "path": "batch/native-01/native-settlement.json",
+      "sha256": "f38b1ef80ef73f44c94a1ca5c58b884e81ff80bb5bea7654defcb3ae5b9cb2bd"
+    },
+    {
+      "path": "batch/native-01/probe.json",
+      "sha256": "00c3574c3cb2bf91fb43b6278465942b0be0926978cb07c131b88accc6adccd0"
+    },
+    {
+      "path": "batch/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "batch/native-01/runner.stdout.bin",
+      "sha256": "196c9ec625b7ee77b38ab3d39c8f4297f9ae48aaadbf06f8a89c22756c6bed46"
+    },
+    {
+      "path": "batch/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "11539d7abe313e6191ba54c56c0297714124c823ec8f83034e01d890098b5ecd"
+    },
+    {
+      "path": "batch/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "batch/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "batch/native-02/emuera.log",
+      "sha256": "4ce3f97cc0356b7cb2b137635c51ccf9aa4ccda0ac7a3cab109c0d7e83430566"
+    },
+    {
+      "path": "batch/native-02/native-settlement.json",
+      "sha256": "090369f7952a9fcbb31a779126adce9e9a75628af3609370f96b78fa4d4e2e97"
+    },
+    {
+      "path": "batch/native-02/probe.json",
+      "sha256": "17e67732f679c70f869aad9d9be9bc63441ebf9be18a8e72daad5e73cd0b1c5b"
+    },
+    {
+      "path": "batch/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "batch/native-02/runner.stdout.bin",
+      "sha256": "718314d586db739d25ca967bcf36f83ddb6b7e037c9c9bde6beecd4418c0b2ad"
+    },
+    {
+      "path": "batch/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "11539d7abe313e6191ba54c56c0297714124c823ec8f83034e01d890098b5ecd"
+    },
+    {
+      "path": "batch/py/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "batch/py/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "batch/py/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "batch/py/verified-public-pyz.json",
+      "sha256": "44361ea8faebfaf235eb956c588959ddda470c74a332b3e19b41c16d6cf09fdd"
+    },
+    {
+      "path": "batch/py/verified.stderr.bin",
+      "sha256": "3b1b27140b62d45aefe615d173778e7a43d2fea2d854a528367f50b0ef084499"
+    },
+    {
+      "path": "batch/py/verified.stdout.bin",
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    },
+    {
+      "path": "scope-sources/63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8.json",
+      "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8"
+    },
+    {
+      "path": "scope-sources/e973ebacf2e9751a5dec04d4454066e2923c1f6e17a3c3b3b56f1ee195889a94.json",
+      "sha256": "e973ebacf2e9751a5dec04d4454066e2923c1f6e17a3c3b3b56f1ee195889a94"
+    },
+    {
+      "path": "single-01/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "11539d7abe313e6191ba54c56c0297714124c823ec8f83034e01d890098b5ecd"
+    },
+    {
+      "path": "single-01/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "single-01/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "single-01/native-01/emuera.log",
+      "sha256": "4ce3f97cc0356b7cb2b137635c51ccf9aa4ccda0ac7a3cab109c0d7e83430566"
+    },
+    {
+      "path": "single-01/native-01/native-settlement.json",
+      "sha256": "717faa0bd69f7b1706be43d32a43a0f9f644c2eb45468601e9ab821cd4914636"
+    },
+    {
+      "path": "single-01/native-01/probe.json",
+      "sha256": "5815120e195cdf5bef40efe2394d698a5f2afc3f225d3791276dba2c82d656ba"
+    },
+    {
+      "path": "single-01/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "single-01/native-01/runner.stdout.bin",
+      "sha256": "b99cfc5cd573b375f5c268902c9d83781255e7381be28592db6e084c6b748049"
+    },
+    {
+      "path": "single-01/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "11539d7abe313e6191ba54c56c0297714124c823ec8f83034e01d890098b5ecd"
+    },
+    {
+      "path": "single-01/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "single-01/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "single-01/native-02/emuera.log",
+      "sha256": "4ce3f97cc0356b7cb2b137635c51ccf9aa4ccda0ac7a3cab109c0d7e83430566"
+    },
+    {
+      "path": "single-01/native-02/native-settlement.json",
+      "sha256": "710bcd05936c9f6e28c05aba6bd5f2b6133748690f05e382452413073c1b70b4"
+    },
+    {
+      "path": "single-01/native-02/probe.json",
+      "sha256": "6b4b6769b842daaf43fb7ba83781f5377a3e5aef02e54bf62209280771e2868c"
+    },
+    {
+      "path": "single-01/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "single-01/native-02/runner.stdout.bin",
+      "sha256": "d83c0da4b9440062b013d62690190d62f3f0b62b8011e66f415937e39668615f"
+    },
+    {
+      "path": "single-01/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "11539d7abe313e6191ba54c56c0297714124c823ec8f83034e01d890098b5ecd"
+    },
+    {
+      "path": "single-01/py/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "single-01/py/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "single-01/py/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "single-01/py/verified-public-pyz.json",
+      "sha256": "e27e856975b870fb1bddde0534176fefe2990c1552994a3bd64d96d4b052c4bb"
+    },
+    {
+      "path": "single-01/py/verified.stderr.bin",
+      "sha256": "3b1b27140b62d45aefe615d173778e7a43d2fea2d854a528367f50b0ef084499"
+    },
+    {
+      "path": "single-01/py/verified.stdout.bin",
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    },
+    {
+      "path": "tools/native-helper.py",
+      "sha256": "4b21ca3dd42e2d8f5ba2614f70ecc36c5b2a81251ff3d738841b0137b163a1b5"
+    },
+    {
+      "path": "tools/public-helper.py",
+      "sha256": "7b40f716f18436786694557d986e56a2da711a916e5434fc588e19ee43733ec3"
+    },
+    {
+      "path": "tools/runner.py",
+      "sha256": "fdaa272ff1db2221bcf2ef82d74ca7202cb40cfe10b4a7b3ae18152286b2a0ae"
+    },
+    {
+      "path": "tools/validator.py",
+      "sha256": "5a03132d0c525d3450f6f4b0f2b11d0f6c0416e8b01afa5cdbc0ade466dd3fb9"
+    }
+  ],
+  "raw_format_references": {
+    "evidence/strfind-range-20261113-129/UNEG/py/runner.stderr.bin": "9486b17167f3a23e7d4219213e58d2cd90018ea0f83598668a292e4fa5c60e3e",
+    "evidence/strfind-range-20261113-129/UNEG/py/runner.stdout.bin": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+    "evidence/strfindu-empty-boundary-20261113-127/py.stderr.bin": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+  },
+  "classifier_sha256": "00ed14e347f01495c7628bbc1e64d2e64e226daa0669133bba06bd7aa9049c0c",
+  "scope": "Exact singleton Native returning observations versus public E_INDEX stop only; no postfatal variable or whole-target closure."
+}

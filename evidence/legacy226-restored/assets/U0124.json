@@ -1,0 +1,367 @@
+{
+  "schema": "pyemuera-parent-evidence-adjudication-v3",
+  "draft": false,
+  "bundles": [
+    {
+      "path": "automation-v2/v3/runs/82c41fc0cad138d3fe2505d63b5f014fcb17fe6ca0c1898a0e48957690c37059/attempt-20261113T232032-cf31087b063a",
+      "manifest_sha256": "656ceb695516c7dbe686c0b30f6adce8fae42a3d60619590e7d8b0f293cf8cc5"
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "expression_function",
+      "name": "STRFIND",
+      "accepted": true,
+      "review_row_sha256": "2e401d2ba0a628010faab22a859240539b089a7a9f19cdce2315662160e1f26a",
+      "outcome": "documented_difference",
+      "scope": "Finite expression_function:STRFIND source-required comparisons: retained157 plus SEARCH12 eight STRFIND conditions. No method or STRFINDU completion credit.",
+      "completion_review": "Finite STRFIND expression comparison accepted: all eight mixed-width AあBA/A-or-empty/start -1,0,5,6 conditions observed Native2/public1 with independent RESULT/RESULTS preservation and continuation. Four selected return differences retained. Existing case157 supplies own-form helper order/default-start/normal/no-match witnesses; exact source guards reviewed. Updated row pin after linking the audited partial evidence; requirement IDs and remaining contents unchanged. No method-form, all-string-domain or natural-exit claim.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "exact_v24_registration_signature_form",
+          "original_requirement": {
+            "axis": "exact_v24_registration_signature_form",
+            "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+            "evidence_state": "source_inspected",
+            "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/STRFIND",
+            "binary_registration": {
+              "name": "STRFIND",
+              "ldstr_il_offset": "0592",
+              "set_item_il_offset": "059D"
+            },
+            "form": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them."
+          },
+          "original_requirement_sha256": "30be128bf43962cbd1ab865c75bb5d1069feaf83a039bb9f294aab145af00f80",
+          "review_state": "Source signature inspected; no new invalid-call executions claimed.",
+          "case_ids": [
+            "STRINGINVOKE_STRFINDEXPR"
+          ],
+          "finding": "Creator registration STRFIND = new StrfindMethod(false); Int64 return. Two required string operands; optional third Int64 start; no custom regex contract. Explicit CheckArgumentType guards2237-2251 are statically reviewed. Expression GetIntValue returns a value; method dispatch is a different typed target.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFIND"
+          },
+          "native_source_lines": [
+            2223,
+            2252
+          ],
+          "new8_raw_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "actual_target_reach_or_independent_public_availability_gap",
+          "original_requirement": {
+            "axis": "actual_target_reach_or_independent_public_availability_gap",
+            "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+            "evidence_state": "scoped_executions_require_per_case_readback",
+            "case_ids": [
+              "STRFINDBASE01",
+              "SEARCHBOUND01",
+              "SEARCHRANGE_FNEG",
+              "SEARCHRANGE_FOVER",
+              "STRINGINVOKE_STRFINDEXPR"
+            ],
+            "independent_gap_case_ids": []
+          },
+          "original_requirement_sha256": "3e7087a6b9e475db02bc04f8d187121fdf42fb3e49522ea96b30bc07012a63df",
+          "review_state": "Reached",
+          "case_ids": [
+            "SEARCH02_STRFIND_A_NEG1",
+            "SEARCH02_STRFIND_A_0",
+            "SEARCH02_STRFIND_A_5",
+            "SEARCH02_STRFIND_A_6",
+            "SEARCH02_STRFIND_EMPTY_NEG1",
+            "SEARCH02_STRFIND_EMPTY_0",
+            "SEARCH02_STRFIND_EMPTY_5",
+            "SEARCH02_STRFIND_EMPTY_6",
+            "STRINGINVOKE_STRFINDEXPR"
+          ],
+          "finding": "All8 dynamic AあBA expression calls reached on Native2/public1 with BEGIN/value/END/final DONE. Case157 own-form helpers also reached; no skip-only or setup-stop credit.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFIND"
+          },
+          "native_source_lines": [
+            2254,
+            2279
+          ],
+          "new8_raw_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "original_requirement": {
+            "axis": "selected_normal_output_state_control",
+            "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+            "evidence_state": "selected_scoped_evidence_present",
+            "matching_case_ids": [
+              "STRFINDBASE01",
+              "SEARCHRANGE_FOVER"
+            ]
+          },
+          "original_requirement_sha256": "3faa6975beb055b1f0dad1f9ea09d190a1034d933f92153ee01c66ad1550a5e9",
+          "review_state": "Observed",
+          "case_ids": [
+            "SEARCH02_STRFIND_A_NEG1",
+            "SEARCH02_STRFIND_A_0",
+            "SEARCH02_STRFIND_A_5",
+            "SEARCH02_STRFIND_A_6",
+            "SEARCH02_STRFIND_EMPTY_NEG1",
+            "SEARCH02_STRFIND_EMPTY_0",
+            "SEARCH02_STRFIND_EMPTY_5",
+            "SEARCH02_STRFIND_EMPTY_6",
+            "STRINGINVOKE_STRFINDEXPR"
+          ],
+          "finding": "All8 return values are observed:4 matched/4 different. Independent result0=701/result1=702/results=AUTO_SENT snapshots preserved on all3 routes. Retained157 STR28/30 default-start normal/no-match and STR32/34/36/38 explicit-start/empty/mixed-width helpers retain counts/order and DONE.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFIND"
+          },
+          "native_source_lines": [
+            2257,
+            2279
+          ],
+          "new8_raw_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": {
+            "axis": "applicable_boundary_error_evaluation_side_effect",
+            "requirement": "For \"AあBA\"/\"A\" use start -1,0,length,length+1 and empty search string; review128 raw UTF16 positions before adding supplementary/regex-invalid \"[\" if regex branch applies.",
+            "finite_source_branches": [
+              {
+                "line": 2237,
+                "text": "if (arguments.Length < 2)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2238,
+                "text": "return name + \"関数には少なくとも2つの引数が必要です\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2239,
+                "text": "if (arguments.Length > 3)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2240,
+                "text": "return name + \"関数の引数が多すぎます\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2241,
+                "text": "if (arguments[0] == null)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2242,
+                "text": "return name + \"関数の1番目の引数は省略できません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2243,
+                "text": "if (arguments[0].GetOperandType() != typeof(string))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2244,
+                "text": "return name + \"関数の1番目の引数の型が正しくありません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2245,
+                "text": "if (arguments[1] == null)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2246,
+                "text": "return name + \"関数の2番目の引数は省略できません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2247,
+                "text": "if (arguments[1].GetOperandType() != typeof(string))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2248,
+                "text": "return name + \"関数の2番目の引数の型が正しくありません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2250,
+                "text": "if ((arguments.Length >= 3) && (arguments[2] != null) && (arguments[2].GetOperandType() != typeof(Int64)))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2251,
+                "text": "return name + \"関数の3番目の引数の型が正しくありません\";",
+                "classification": "active_source"
+              },
+              {
+                "line": 2252,
+                "text": "return null;",
+                "classification": "active_source"
+              },
+              {
+                "line": 2257,
+                "text": "string target = arguments[0].GetStrValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2258,
+                "text": "string word = arguments[1].GetStrValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2260,
+                "text": "if ((arguments.Length >= 3) && (arguments[2] != null))",
+                "classification": "active_source"
+              },
+              {
+                "line": 2262,
+                "text": "if (unicode)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2264,
+                "text": "UFTstart = (int)arguments[2].GetIntValue(exm);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2266,
+                "text": "else",
+                "classification": "active_source"
+              },
+              {
+                "line": 2268,
+                "text": "UFTstart = LangManager.GetUFTIndex(target, (int)arguments[2].GetIntValue(exm));",
+                "classification": "active_source"
+              },
+              {
+                "line": 2271,
+                "text": "if (UFTstart < 0 || UFTstart >= target.Length)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2272,
+                "text": "return (-1);",
+                "classification": "active_source"
+              },
+              {
+                "line": 2274,
+                "text": "if (index > 0 && !unicode)",
+                "classification": "active_source"
+              },
+              {
+                "line": 2279,
+                "text": "return (index);",
+                "classification": "active_source"
+              }
+            ],
+            "evidence_state": "selected_documented_difference",
+            "difference_case_ids": [
+              "SEARCHBOUND01",
+              "SEARCHRANGE_FNEG",
+              "STRINGINVOKE_STRFINDEXPR"
+            ]
+          },
+          "original_requirement_sha256": "0ba8f2a4f451eff9e40c2522979f87bd748ba25c926b6882f66f9423c75aa940",
+          "review_state": "Finite remaining discharged",
+          "case_ids": [
+            "SEARCH02_STRFIND_A_NEG1",
+            "SEARCH02_STRFIND_A_0",
+            "SEARCH02_STRFIND_A_5",
+            "SEARCH02_STRFIND_A_6",
+            "SEARCH02_STRFIND_EMPTY_NEG1",
+            "SEARCH02_STRFIND_EMPTY_0",
+            "SEARCH02_STRFIND_EMPTY_5",
+            "SEARCH02_STRFIND_EMPTY_6",
+            "STRINGINVOKE_STRFINDEXPR"
+          ],
+          "finding": "Exact AあBA × needle A/empty × start -1,0,5,6 covers all8 requested STRFIND conditions. LangManager CP932 length5 controls end/overrun. Source false unicode conversion/guard/literal IndexOf are covered by new8; retained STR38 AあB/B returns width3 (positive-result conversion), STR28/30 cover omitted start. STR32/34/36/38 prove3 helpers evaluated once left-to-right; no rerun needed. [ is literal text: malformed-regex scope is inapplicable. Signature error branches remain source-reviewed, not newly executed.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFIND"
+          },
+          "native_source_lines": [
+            2237,
+            2279
+          ],
+          "new8_raw_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        },
+        {
+          "id": "result_routing_and_stop_location",
+          "original_requirement": {
+            "axis": "result_routing_and_stop_location",
+            "requirement": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.",
+            "source_ref": "Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment",
+            "evidence_state": "per_case_input_and_raw_readbacks_cited"
+          },
+          "original_requirement_sha256": "c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390",
+          "review_state": "Observed return and continuation",
+          "case_ids": [
+            "SEARCH02_STRFIND_A_NEG1",
+            "SEARCH02_STRFIND_A_0",
+            "SEARCH02_STRFIND_A_5",
+            "SEARCH02_STRFIND_A_6",
+            "SEARCH02_STRFIND_EMPTY_NEG1",
+            "SEARCH02_STRFIND_EMPTY_0",
+            "SEARCH02_STRFIND_EMPTY_5",
+            "SEARCH02_STRFIND_EMPTY_6"
+          ],
+          "finding": "Return captured in ZZAV0 before independent RESULT0/1/RESULTS snapshots, then per-case END and ZZBATCH_DONE. All8 STRFIND calls return; no fatal branch among these finite conditions. Native forced-cleanup status preserved: no natural-exit claim. STRFINDU public-fatal stop location belongs to another typed target.",
+          "source_contract_ref": {
+            "path": "evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json",
+            "sha256": "63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8",
+            "pointer": "/contracts/STRFIND"
+          },
+          "native_source_lines": [
+            2254,
+            2279
+          ],
+          "new8_raw_ref": "LIVE_NORMAL_REVIEW_ja.json#/independent_stage_reparse/2/cases",
+          "retained_helper_ref": "RECONCILIATION.json#/alreadyfulfilled_helper_order"
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "original_remaining": {
+            "type": "finite_evidence_adjudication",
+            "source": "evidence\\parent-implemented-function-review-20261113\\MATRIX.json",
+            "target": {
+              "kind": "expression_function",
+              "name": "STRFIND"
+            },
+            "requirements": [
+              "Missing the finite mixed-width AあBA/A start -1,0,length,length+1 and empty needle readbacks in this form, with relevant helper order. ASCII abc/ABABCDE samples and selected string157 helpers do not prove mixed-width conversion at all named boundaries."
+            ],
+            "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+          },
+          "original_remaining_sha256": "7aa1d7b5cef0e2a6a04d0dd3f21fa12c144125fef8d31140631ef5e48b3a40c0",
+          "case_ids": [
+            "SEARCH02_STRFIND_A_NEG1",
+            "SEARCH02_STRFIND_A_0",
+            "SEARCH02_STRFIND_A_5",
+            "SEARCH02_STRFIND_A_6",
+            "SEARCH02_STRFIND_EMPTY_NEG1",
+            "SEARCH02_STRFIND_EMPTY_0",
+            "SEARCH02_STRFIND_EMPTY_5",
+            "SEARCH02_STRFIND_EMPTY_6",
+            "STRINGINVOKE_STRFINDEXPR"
+          ],
+          "finding": "Fully discharged for expression_function:STRFIND only: all8 finite mixed-width/empty-needle boundaries observed and independent routing snapshots supplied by SEARCH12; helper order already proved in retained157. STRFINDU fatal4 is not this target remainder."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0730 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0730 · REVIEW_ja.md</h1>
+<p>13対象の意味審査とCALLTRAIN等の部分判定を記す原文を収録する。担当表示・親判定という審査文脈は私信や秘密値ではなく、直接の作業依頼もないため、それだけを理由に編集しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>b99f614fe95e9a92b9463c660267def0ac1915b7f643bd61a1e4a6fe4bfa971e</code></p>
+<p><a href="../assets/U0730.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>b99f614fe95e9a92b9463c660267def0ac1915b7f643bd61a1e4a6fe4bfa971e</code></p>
+<pre># 既存証拠の意味レビュー（担当分）
+
+- 対象: `command_or_syntax` の13行。ケース登録簿から提案ケース29件を照合。
+- 入力: 提案JSON `0d75cf4337aa949cbdb8134ed896f96cba598dd03e81e8bad747a0b59674aa67`、現行レビュー `56fd2f32b1a705cfa76ab9789ff9336306b592496656f484fb534e90ba01a171`、ケース登録簿 `7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da`、公開pyz `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`。
+- 提案ケースの証拠参照は一意path/SHA組 2686 件を現物再ハッシュし、欠落・不一致0。ケースID・登録先・判定・レビュー原文を照合した。
+- NativeソースZIPのピンは `fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a`。ZIP原本自体はこの作業ツリーにないため再ハッシュしていない。保存済みソース抜粋とメンバーSHAを根拠にした。
+- 実行は行っていない。推奨は記録済み有限範囲の親判定案であり、対象の必要比較完了・件数加算を意味しない。
+
+## 対象別判定
+
+### ADDCOPYCHARA — accept
+
+限定差分を受入推奨。通常の選択状態・停止行が同じで診断本文だけ異なるケースがある一方、3引数はNativeでコピーして継続/Pyは引数数エラー、末尾カンマはNativeでコピーして継続/PyはE_TYPE停止という実動作差が原比較にある。case241もCHARANUMの動的増加、無効インデックス時の後続helper抑止と追加順を選定観測している。これは当該builder/入力だけの有限範囲。case245のcandidate IDと登録IDは同一比較JSON・同じfixture名で結ばれる別名。例外後の隠れた状態、全builderへの一般化、自然終了は未確認。
+
+**確認ケース:** `ARGBOUND245_empty`, `ARGBOUND245_hole_middle`, `ARGBOUND245_string_numeric`, `ARGBOUND245_trailing_hole`, `ARGBOUND245_triple`, `BOUNDARY241_addcopy_dynamic_growth_retry`, `BOUNDARY241_addcopy_invalid_then_helper_retry`, `BOUNDARY241_addcopy_valid_then_invalid_retry`, `BOUNDARY244_minimal_multiple_sources`.
+
+### SAVEDATA — accept
+
+限定差分を受入推奨。保存先ディレクトリー衝突ではNativeがエラー後AFTERへ続行し、公開版はE_SAVE_IOで停止する。負スロットでは最初に出る失敗が異なり、Nativeの範囲エラーに対し公開版は見出し式(0除算)へ進む。比較は独立故障fixtureだが保存パスはエンジン固有に対応付けられ、同一の物理ファイルツリーではない。例外後VM状態、I/O失敗全般、自然終了は未確認。
+
+**確認ケース:** `SAVEIO204_save_directory_collision`, `SAVEIO204_save_negative_before_caption`.
+**同名の別種別行:** `declaration_modifier`行は別条件が残存（status=known_difference_documented、remaining=1件）.
+
+### LOADDATA — accept
+
+限定差分を受入推奨。未作成slotの同一ERBでNativeはエラー停止しAFTERなし、公開版は終了コード0でAFTERへ到達。選定された継続差で、全ロード形式・全破損条件への一般化はしない。
+
+**確認ケース:** `SAVEIO204_load_missing`.
+
+### DELDATA — accept
+
+限定差分を受入推奨。ただし観測差は継続・ファイル結果ではなく例外境界/診断。読み取り専用slotで両方AFTER不在・行5停止だが、Nativeは明示CodeEE、公開版はPermissionError由来のE_INTERNAL。試験ファイル属性と原バイトを保持。ファイルシステム全エラー分類や回復は未確認。
+
+**確認ケース:** `SAVEIO204_delete_readonly`.
+
+### GOTOFORM — accept
+
+診断差のみの限定受入を推奨。未定義/他routineにだけあるlabelの2条件で、選定helper状態・RESULT・停止行・制御境界は一致し、エラー本文のみ不一致。ログ全体はexporter配置差があり、Nativeに対応するPyのEraError code分類もない。これを制御動作差と誤記しない。
+
+**確認ケース:** `BOUNDARY242_gotoform_foreign_label`, `BOUNDARY242_gotoform_missing`.
+
+### TRYJUMPFORM — accept
+
+診断表示差のみを限定受入推奨。有効な転送で双方が同じマーカー順・同じ予期しない終端で停止し、診断2行目の本文も同じ。差は1行目の製品名suffix `:Emuera1824+v24` と `:Emuera`。有効先のこの1経路のみ。
+
+**確認ケース:** `TRYJUMPFORM02`.
+
+### CALLTRAIN — partial
+
+現状では単独命令の差分として親受入を保留推奨。選択キュー・評価回数・進捗・完了の多くは一致。CUP=0/83差は比較JSONで最初のEVENTTRAIN checkpointから既に存在し、CALLTRAIN自身の効果に帰属できない。dot-cancel-queueの後続marker差はDOTRAINも同じケースに含む。stop-activeの明確なNative例外/Py復帰はSTOPCALLTRAINにより直接結び付く。レビュー本文の「progress Unicode differs」と登録comparison_axesの`progress_unicode_equal=true`も不整合だが、保存comparisonの実progress_linesは一致。この記述訂正と、CALLTRAIN単独帰属を明確化するまでは部分判定。
+
+**確認ケース:** `TRAINLIFE220_dot-cancel-queue`, `TRAINLIFE220_queue-copy`, `TRAINLIFE220_queue-unavailable`, `TRAINLIFE220_stop-active`, `TRAINLIFE220_stop-active-guard`.
+
+### STOPCALLTRAIN — accept
+
+限定的な実動作差の受入を推奨。stop-activeをNative2回/public1回で観測し、双方CALLTRAINENDへ到達後、戻るhandlerでNativeはNullReferenceExceptionとなりSTOP_RESUMED/DONEなし、Pyは復帰して完了。stop-active-guardでは明示完了handlerが両方正常終了し、例外が全STOP経路の必然ではない点を示す。選定active-stop条件に限定。
+
+**確認ケース:** `TRAINLIFE220_stop-active`, `TRAINLIFE220_stop-active-guard`.
+
+### CATCH — partial
+
+TRYCGOTO未定義リテラル1条件との相互作用としてのみ差がある。Nativeは通常側marker、PyはCATCH_BODYへ進む。差をCATCH単体の一般仕様や通常例外捕捉と帰属できない。command_or_syntax行は限定的親判定候補だが、同名structural_syntax行は別条件`finite_grouped_queue`が残り、部分判定。
+
+**確認ケース:** `TRYCGOTO01`.
+**同名の別種別行:** `structural_syntax`行は別条件が残存（status=known_difference_documented、remaining=1件）.
+
+### ENDCATCH — partial
+
+TRYCGOTO未定義リテラル1条件の後続markerまでの観測のみ。ENDCATCHを通過した終端markerは両方で観測されるが、相違はTRYCGOTOのmissからどの経路でCATCH領域に入るか。ENDCATCH自体の単独差は示さない。同名structural_syntax行は`finite_grouped_queue`が残る。
+
+**確認ケース:** `TRYCGOTO01`.
+**同名の別種別行:** `structural_syntax`行は別条件が残存（status=known_difference_documented、remaining=1件）.
+
+### TRYCGOTO — accept
+
+限定された制御フロー差を受入推奨。未定義リテラルlabelでNativeはAFTER_TRYCGOTOを出しCATCH_BODYを飛ばす一方、PyはCATCH_BODYへ進み、その後ENDCATCH後markerへ到達。Nativeログ2回一致。本家ソースの未定義try target処理がJumpToEndCatchへ送る実装と整合。定義済み/動的/形式違い/ネストは未確認。
+
+**確認ケース:** `TRYCGOTO01`.
+**同名の別種別行:** `structural_syntax`行は別条件が残存（status=known_difference_documented、remaining=1件）.
+
+### TRYCGOTOFORM — accept
+
+限定された制御フロー差を受入推奨。`MISSING{1}`と`MISSING`の2fixtureでNativeは通常側AFTER、PyはCATCH_BODYへ進む。Nativeは独立2run/1runで保持され、Pyは同一pyz。形式先の定数経路とCATCH対応のソース抜粋は説明と整合するが、Nativeの内部IsConstを直接観測したわけではない。定義済み・動的先・異常構造・寿命は未確認。同名structural_syntax行は別途finite_grouped_queueが残る。
+
+**確認ケース:** `TRYCGOTOFORM01`, `TRYCGOTOFORM02`.
+**同名の別種別行:** `structural_syntax`行は別条件が残存（status=known_difference_documented、remaining=1件）.
+
+### TRYCALLLIST — accept
+
+限定された実動作差の受入を推奨。単一定義済みFUNC GOODの同一fixtureでNative debugログ2回はGOOD本体→後続marker、Pyは@GOOD入口でE_UNCALLEDとなり本体に入らず終了。旧case97の不一致画像は根拠にせず、case106の反復ログを主証拠とする。欠落候補との混在、複数候補順、引数・ネスト等は未確認。同名structural_syntax行は別途finite_grouped_queueが残る。
+
+**確認ケース:** `TRYCALLLIST01`.
+**同名の別種別行:** `structural_syntax`行は別条件が残存（status=known_difference_documented、remaining=1件）.
+
+## 横断所見
+
+- `different_scoped`は意味的根拠として単独採用せず、各登録記録の観測内容とレビュー、fixture、保存ソース抜粋を確認した。
+- 出力ログの配置/改行差やエンジン名suffixは、選択状態・停止行・分岐・継続が一致する場合、動作差として扱わず診断/表示差に分類した。
+- ADDCOPYCHARA、SAVEDATA、LOADDATA、TRYCGOTO系、TRYCALLLISTには選定入力で制御・継続または受理差がある。DELDATAとGOTOFORM、TRYJUMPFORMは今回の根拠では主に例外/診断表示差。
+- CALLTRAINは保留。CUP差が最初のEVENTTRAIN観測時点ですでに存在し、DOTRAIN複合fixtureもある。登録レコードの`progress_unicode_equal=true`とレビュー本文の「progress Unicode differs」は食い違うが、保存comparisonの実値は一致する。証拠は破棄せず、記述と因果帰属を直してから親判定が妥当。
+- CATCH/ENDCATCHはTRYCGOTO未定義先との組合せ差だけで、独立したCATCH/ENDCATCH動作差を示さない。これらとTRYCALLLIST、TRYCGOTO、TRYCGOTOFORMの同名`structural_syntax`行、およびSAVEDATAの`declaration_modifier`行は、現行台帳に別の`finite_grouped_queue`残件があるため今回の親候補判定では部分扱い。
+
+## 完了件数・変更範囲
+
+- 現行値 338/694。この読み取り専用レビューで件数は変更していない。
+- 変更したファイルはこのフォルダーの`REVIEW_ja.md`と`RESULTS.json`のみ。製品、公開物、Git、Drive、親台帳、ケース登録簿は変更していない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0815 · command_or_syntax:ADDCOPYCHARA · check</li>
+<li>L0893 · command_or_syntax:SAVEDATA · check</li>
+<li>L0898 · command_or_syntax:LOADDATA · check</li>
+<li>L0903 · command_or_syntax:DELDATA · check</li>
+<li>L0910 · command_or_syntax:GOTOFORM · check</li>
+<li>L0915 · command_or_syntax:TRYJUMPFORM · check</li>
+<li>L1601 · command_or_syntax:STOPCALLTRAIN · check</li>
+<li>L1609 · command_or_syntax:TRYCGOTO · check</li>
+<li>L1614 · command_or_syntax:TRYCGOTOFORM · check</li>
+<li>L1619 · command_or_syntax:TRYCALLLIST · check</li>
+</ul></html>

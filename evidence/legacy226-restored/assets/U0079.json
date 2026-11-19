@@ -1,0 +1,21 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLE"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_PRINTSINGLE_EXISTING_20261115.json",
+  "acceptance_sha256": "dcba2081ff0e9213a10d6c683950bd5403a7ef0fc4c03f35da2265c32f7c8767",
+  "evidence_manifest_path": "evidence/printplain-single-20261113-196/MANIFEST.json",
+  "evidence_manifest_sha256": "95cec63c5ca07ecfdd65ea8a57901cec99165cad02e0e188f117326c8574be70",
+  "registered_case_ids": [
+    "PRINTPLAIN196_C196_03",
+    "PRINTPLAIN196_C196_12"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

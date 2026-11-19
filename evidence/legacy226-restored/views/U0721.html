@@ -1,0 +1,24 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0721 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0721 · REVIEW_ja.md</h1>
+<p>COLOR_FROMRGBの負第1成分と後続faultの優先順位差を確定した票で、原判定different_scopedを維持して収録する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>0ba16eaf792f9ad8719a80c5065fbed24549b6c9fe03243ed4ce695e25077ce1</code></p>
+<p><a href="../assets/U0721.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>0ba16eaf792f9ad8719a80c5065fbed24549b6c9fe03243ed4ce695e25077ce1</code></p>
+<pre># COLOR_FROMRGB finite-scope adjudication
+
+Accept `expression_function:COLOR_FROMRGB` as necessary-comparison complete for its reviewed finite scope with outcome `different_scoped`. The exact previously missing witness is now directly recorded: first component `-1`, followed by a second argument helper that faults. Native v24 x2 rejects the first component before entering the helper; pinned public PyEmuera 3.0.0 evaluates the helper and stops with E_ARITH. The identical Native logs, config and fixture hashes, public pyz hashes, and lack of synthetic input are recorded in the linked evidence.
+
+This acceptance preserves the incompatibility; it does not call it a match or change product code. The finite scope also relies on the existing active-source registration/signature review, normal valid tuple/state controls from COLORRGBVALID01, and scoped order observations in COLORORDER01/02. It proves the specific missing negative-first-component/fault-precedence condition.
+
+Excluded: negative or above-255 boundaries at all component positions (including third component), missing/extra arity, every conversion type, all values, full post-error state equality, and general expression-function compatibility. Native natural process exit and exit code are unobserved. The initial Py attempt without the matched Native config remains excluded.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2174 · expression_function:COLOR_FROMRGB · check</li>
+</ul></html>

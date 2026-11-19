@@ -1,0 +1,374 @@
+{
+  "schema": "stopped-state-observations-1",
+  "scope": "Four previously captured conditions only; this bundle adds no engine run or GUI action.",
+  "engine_identities": {
+    "native": {
+      "name": "Emuera1824+v24",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    "pyemuera": {
+      "name": "PyEmuera 3.0.0 public pyz",
+      "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+    }
+  },
+  "cases": [
+    {
+      "case_id": "SWAP_STOPPED_STATE_DIRECT_READBACK_20261116",
+      "targets": [
+        {
+          "kind": "command_or_syntax",
+          "name": "SWAP"
+        }
+      ],
+      "source_case_ids": [
+        "BITPOWERSWAP184_SWAP",
+        "SWAP_TYPE_MISMATCH_AND_SECOND_INDEX_GUARD_20261115"
+      ],
+      "condition": "normal-control",
+      "input_sha256_by_role": {
+        "ERB/SEARCHBOUND01.ERB": "0ebff2772ee66e1a62a8317363dcb620d9048829340f604a07807fc361f3eb38",
+        "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+      },
+      "native": {
+        "mode": "interactive -Debug",
+        "before": [
+          11,
+          22
+        ],
+        "after": [
+          22,
+          11
+        ],
+        "observer": "built-in debug console literal D:0/D:1, retained UIA text",
+        "processes": 1
+      },
+      "pyemuera": {
+        "mode": "pinned public pyz; PDB; --no-wait",
+        "before": [
+          11,
+          22
+        ],
+        "after": [
+          22,
+          11
+        ],
+        "observer": "PDB storage-map snapshot; no saved direct per-cell get command",
+        "processes": 1,
+        "before_observation_method": "execution output before-marker (not PDB storage snapshot)",
+        "after_observation_method": "PDB storage-map snapshot with explicit entries",
+        "storage_snapshots_after": [
+          {
+            "shape": [
+              1000
+            ],
+            "sparse_values": {
+              "(0,)": 22,
+              "(1,)": 11
+            },
+            "default": 0
+          },
+          {
+            "shape": [
+              1000
+            ],
+            "sparse_values": {
+              "(0,)": 22,
+              "(1,)": 11
+            },
+            "default": 0
+          }
+        ]
+      },
+      "interpretation": "Normal control; Native and PyEmuera execution modes differ."
+    },
+    {
+      "case_id": "SWAP_STOPPED_STATE_DIRECT_READBACK_20261116",
+      "targets": [
+        {
+          "kind": "command_or_syntax",
+          "name": "SWAP"
+        }
+      ],
+      "source_case_ids": [
+        "SWAP_TYPE_MISMATCH_AND_SECOND_INDEX_GUARD_20261115"
+      ],
+      "condition": "invalid-second-index-stop",
+      "input_sha256_by_role": {
+        "ERB/SEARCHBOUND01.ERB": "5473faedb9686320f64e79c99a5653e73b2dfc81a34dd413e00b953d337ddf8a",
+        "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+      },
+      "stop": {
+        "line": 5,
+        "second_index": 1000000,
+        "helpers_observed": [
+          "FIRST_INDEX_EVALUATED",
+          "SECOND_INDEX_EVALUATED"
+        ],
+        "after_marker": false
+      },
+      "native": {
+        "mode": "interactive -Debug",
+        "before": [
+          11,
+          22
+        ],
+        "after_read_1": [
+          11,
+          22
+        ],
+        "after_read_2": [
+          11,
+          22
+        ],
+        "observer": "same stopped process built-in debug console literal D:0/D:1 via UIA text",
+        "processes": 1,
+        "natural_exit": "UNOBSERVED"
+      },
+      "pyemuera": {
+        "mode": "pinned public pyz; PDB; --no-wait",
+        "before": [
+          11,
+          22
+        ],
+        "observer": "PDB storage-map snapshot; no saved direct per-cell get command",
+        "processes": 1,
+        "natural_exit": "UNOBSERVED",
+        "storage_snapshots_after": [
+          {
+            "shape": [
+              1000
+            ],
+            "sparse_values": {
+              "(0,)": 11,
+              "(1,)": 22
+            },
+            "default": 0
+          },
+          {
+            "shape": [
+              1000
+            ],
+            "sparse_values": {
+              "(0,)": 11,
+              "(1,)": 22
+            },
+            "default": 0
+          }
+        ],
+        "observed_repeatedly": "storage map snapshot in same stopped VM; not per-cell get"
+      },
+      "interpretation": "Repeated reads in one stopped process/VM per engine; not two independent runs. No full-state or transient setter claim.",
+      "diagnostics": {
+        "category": "array_index_out_of_range",
+        "native": {
+          "summary": "Native built-in Debug console reported that D index 1,000,000 is outside the 1,000-element array range at line 5.",
+          "source_pin_id": "swap-error-native-uia",
+          "source_sha256": "efdfe0c3a132fe6c89affd64f04ff6344f39e04f966d027452021ad2c1de32c1"
+        },
+        "pyemuera": {
+          "code": "E_INDEX",
+          "line": 5,
+          "summary": "D(1000000,) is outside dimension (1000,).",
+          "source_pin_id": "swap-error-py-error-json",
+          "source_sha256": "ef9bc01618888d8936dac9c1e77f6fe9f09c09a176069989c93eb22ba1935e8b"
+        },
+        "comparison_scope": "Diagnostic summaries from separate engine records; wording and observer methods differ. Does not assert identical errors or natural exit."
+      }
+    },
+    {
+      "case_id": "NUM_ASSIGN_STOPPED_STATE_CONTROL_20261116",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "source_case_ids": [
+        "OPISOLATED265_plain-num-badindex",
+        "OPCONT268_vector-num-0"
+      ],
+      "condition": "normal-control",
+      "input_sha256_by_role": {
+        "ERB/REVIEW.ERB": "20be838b08a00be8f1adf1a84297d1454d319be8d47517418f6d47176950ca75",
+        "ERB/REVIEW.ERH": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+        "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+      },
+      "native": {
+        "mode": "interactive -Debug",
+        "before": [
+          31,
+          47
+        ],
+        "after": [
+          7,
+          9
+        ],
+        "observer": "same-process built-in debug console literal global reads via UIA text",
+        "processes": 1,
+        "natural_exit": "UNOBSERVED"
+      },
+      "pyemuera": {
+        "mode": "pinned public pyz; PDB; --no-wait",
+        "observer": "PDB storage-map snapshot; explicit entries (0,):7 and (1,):9; no individual cell get command",
+        "processes": 1,
+        "storage_snapshots_after": [
+          {
+            "shape": [
+              2
+            ],
+            "sparse_values": {
+              "(0,)": 7,
+              "(1,)": 9
+            },
+            "default": 0
+          },
+          {
+            "shape": [
+              2
+            ],
+            "sparse_values": {
+              "(0,)": 7,
+              "(1,)": 9
+            },
+            "default": 0
+          }
+        ],
+        "observation_status": "explicit map entries observed twice in the same stopped public VM"
+      },
+      "interpretation": "Normal positive control for the assignment error observation."
+    },
+    {
+      "case_id": "NUM_ASSIGN_STOPPED_STATE_BADINDEX_20261116",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "source_case_ids": [
+        "OPISOLATED265_plain-num-badindex"
+      ],
+      "condition": "bad-index-stop",
+      "input_sha256_by_role": {
+        "ERB/REVIEW.ERB": "4f4f212738369913decd8ed88fab352fc27c871c0683e0e670e97e0241d7ee53",
+        "ERB/REVIEW.ERH": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+        "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+      },
+      "stop": {
+        "line": 14,
+        "expression": "ZZV:ZZIDX() = ZZL()",
+        "native_pid_withheld": true,
+        "after_marker": false
+      },
+      "native": {
+        "mode": "interactive -Debug",
+        "selected_cells": [
+          "ZZV:0",
+          "ZZV:1"
+        ],
+        "after_read_1": [
+          0,
+          0
+        ],
+        "after_read_2": [
+          0,
+          0
+        ],
+        "observer": "same stopped process built-in debug console; pure DEBUGPRINTFORML literal reads",
+        "other_native_globals_observed": {
+          "A": 2,
+          "B": 1,
+          "C": 701,
+          "E": 11,
+          "F": 2
+        },
+        "processes": 1,
+        "natural_exit": "UNOBSERVED"
+      },
+      "pyemuera": {
+        "mode": "pinned public pyz; PDB; --no-wait",
+        "storage_shape": [
+          2
+        ],
+        "sparse_values": {},
+        "default_value": 0,
+        "observer": "PDB storage snapshot only; no saved direct get of ZZV:0 or ZZV:1",
+        "processes": 1,
+        "natural_exit": "UNOBSERVED",
+        "storage_snapshots_after": [
+          {
+            "shape": [
+              2
+            ],
+            "sparse_values": {},
+            "default": 0
+          },
+          {
+            "shape": [
+              2
+            ],
+            "sparse_values": {},
+            "default": 0
+          }
+        ],
+        "observation_status": "shape, sparse map, and default observed twice in the same stopped public VM; effective selected cell values inferred from pinned implementation",
+        "inferred_effective_cells": {
+          "ZZV:0": 0,
+          "ZZV:1": 0
+        },
+        "inference_basis": "Pinned pyz pyemuera/data.py get() uses values.get(tuple(key), default) after bounds validation; this is source-based inference, not saved per-cell reads."
+      },
+      "interpretation": "Native directly read ZZV:0 and ZZV:1 twice in the same stopped process and observed 0,0. PyEmuera saved two PDB storage snapshots: shape [2], sparse values {}, default 0. No per-cell get was recorded in Py PDB; effective values ZZV:0=0 and ZZV:1=0 are inferred from the pinned implementation. The two engines used different observation methods; repeated observations are within one stopped execution, not independent runs.",
+      "diagnostics": {
+        "category": "array_index_out_of_range",
+        "native": {
+          "summary": "Native built-in Debug console reported that ZZV index 2 is outside the 2-element array range at line 14.",
+          "source_pin_id": "numeric-error-native-uia",
+          "source_sha256": "844ccb79c65cccd61d06c9a9f869ea144190e67dea20358cc4e26eded493079a"
+        },
+        "pyemuera": {
+          "code": "E_INDEX",
+          "line": 14,
+          "summary": "ZZV(2,) is outside dimension (2,).",
+          "source_pin_id": "numeric-error-py-error-json",
+          "source_sha256": "d4a6edc78164afe43772a51bf80dcc412deecb78f124567bf2b95327d5440b96"
+        },
+        "comparison_scope": "Diagnostic summaries from separate engine records; wording and observer methods differ. Py cell values remain source-inferred from shape/map/default snapshots, not direct cell reads."
+      },
+      "source_scope_binding": {
+        "source_case_id": "OPISOLATED265_plain-num-badindex",
+        "source_register_targets": [
+          {
+            "kind": "assignment_syntax",
+            "name": "="
+          },
+          {
+            "kind": "assignment_syntax",
+            "name": "=="
+          }
+        ],
+        "observed_target_roles": [
+          {
+            "kind": "assignment_syntax",
+            "name": "="
+          }
+        ],
+        "related_but_not_observed_targets": [
+          {
+            "kind": "assignment_syntax",
+            "name": "=="
+          }
+        ],
+        "scope_note": "The source register associates this case ID with both targets; this stopped-state fixture executes and observes only the = role. The == role is not observed by this condition."
+      }
+    }
+  ],
+  "limits": [
+    "Only selected globals/cells listed above.",
+    "Native -Debug and public --no-wait/PDB execution modes are not identical.",
+    "No retained screenshots; UIA text and raw observer records only.",
+    "No natural-exit claim for stopped error conditions.",
+    "No full-state, all-global, LOCAL/REF, all-array, or transient setter claim.",
+    "Old runs without post-fatal reads remain historically unobserved."
+  ]
+}

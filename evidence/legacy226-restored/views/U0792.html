@@ -1,0 +1,285 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0792 · SOURCE_EXCERPTS_V24.txt</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0792 · SOURCE_EXCERPTS_V24.txt</h1>
+<p>U0792 / source-scope。PRINT K/D系の88条件、かな変換・評価値・空SINGLEの行構成。パディング/空白行を原票のまま保持。原アーカイブ/参照ソースとの番号付き行照合262行一致。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35</code></p>
+<p><a href="../assets/U0792.txt">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>43b6cbff83bae901bd8bbce94f529208edbe9bcc743f54d8c27a6b4a596bfc35</code></p>
+<pre>Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs
+17: 		private sealed class PRINT_Instruction : AbstractInstruction
+18: 		{
+19: 			public PRINT_Instruction(string name)
+20: 			{
+21: 				//PRINT(|V|S|FORM|FORMS)(|K)(|D)(|L|W) コレと
+22: 				//PRINTSINGLE(|V|S|FORM|FORMS)(|K)(|D) コレと
+23: 				//PRINT(|FORM)(C|LC)(|K)(|D) コレ
+24: 				//PRINTDATA(|K)(|D)(|L|W) ←は別クラス
+25: 				flag = IS_PRINT;
+26: 				StringStream st = new StringStream(name);
+27: 				st.Jump(5);//PRINT
+28: 				if (st.CurrentEqualTo(&quot;SINGLE&quot;))
+29: 				{
+30: 					flag |= PRINT_SINGLE | EXTENDED;
+31: 					st.Jump(6);
+32: 				}
+33: 
+34: 				if (st.CurrentEqualTo(&quot;V&quot;))
+35: 				{
+36: 					ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.SP_PRINTV);
+37: 					isPrintV = true;
+38: 					st.Jump(1);
+39: 				}
+40: 				else if (st.CurrentEqualTo(&quot;S&quot;))
+41: 				{
+42: 					ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.STR_EXPRESSION);
+43: 					st.Jump(1);
+44: 				}
+45: 				else if (st.CurrentEqualTo(&quot;FORMS&quot;))
+46: 				{
+47: 					ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.STR_EXPRESSION);
+48: 					isForms = true;
+49: 					st.Jump(5);
+50: 				}
+51: 				else if (st.CurrentEqualTo(&quot;FORM&quot;))
+52: 				{
+53: 					ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.FORM_STR_NULLABLE);
+54: 					st.Jump(4);
+55: 				}
+56: 				else
+57: 				{
+58: 					ArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.STR_NULLABLE);
+59: 				}
+60: 				if (st.CurrentEqualTo(&quot;LC&quot;))
+61: 				{
+62: 					flag |= EXTENDED;
+63: 					isLC = true;
+64: 					st.Jump(2);
+65: 				}
+66: 				else if (st.CurrentEqualTo(&quot;C&quot;))
+67: 				{
+68: 					if (name == &quot;PRINTFORMC&quot;)
+69: 						flag |= EXTENDED;
+70: 					isC = true;
+71: 					st.Jump(1);
+72: 				}
+73: 				if (st.CurrentEqualTo(&quot;K&quot;))
+74: 				{
+75: 					flag |= ISPRINTKFUNC | EXTENDED;
+76: 					st.Jump(1);
+77: 				}
+78: 				if (st.CurrentEqualTo(&quot;D&quot;))
+79: 				{
+80: 					flag |= ISPRINTDFUNC | EXTENDED;
+81: 					st.Jump(1);
+82: 				}
+83: 				if (st.CurrentEqualTo(&quot;L&quot;))
+84: 				{
+85: 					flag |= PRINT_NEWLINE;
+86: 					flag |= METHOD_SAFE;
+87: 					st.Jump(1);
+88: 				}
+89: 				else if (st.CurrentEqualTo(&quot;W&quot;))
+90: 				{
+91: 					flag |= PRINT_NEWLINE | PRINT_WAITINPUT;
+92: 					st.Jump(1);
+93: 				}
+94: 				else
+95: 				{
+96: 					flag |= METHOD_SAFE;
+97: 				}
+98: 				if ((ArgBuilder == null) || (!st.EOS))
+99: 					throw new ExeEE(&quot;PRINT異常&quot;);
+100: 			}
+101: 
+102: 			readonly bool isPrintV;
+103: 			readonly bool isLC;
+104: 			readonly bool isC;
+105: 			readonly bool isForms;
+106: 			public override void DoInstruction(ExpressionMediator exm, InstructionLine func, ProcessState state)
+107: 			{
+108:                 if (GlobalStatic.Process.SkipPrint)
+109:                     return;
+110: 				exm.Console.UseUserStyle = true;
+111: 				exm.Console.UseSetColorStyle = !func.Function.IsPrintDFunction();
+112: 				string str;
+113: 				if (func.Argument.IsConst)
+114: 					str = func.Argument.ConstStr;
+115: 				else if (isPrintV)
+116: 				{
+117: 					StringBuilder builder = new StringBuilder();
+118: 					IOperandTerm[] terms = ((SpPrintVArgument)func.Argument).Terms;
+119: 					foreach (IOperandTerm termV in terms)
+120: 					{
+121: 						if (termV.GetOperandType() == typeof(Int64))
+122: 							builder.Append(termV.GetIntValue(exm).ToString());
+123: 						else
+124: 							builder.Append(termV.GetStrValue(exm));
+125: 					}
+126: 					str = builder.ToString();
+127: 				}
+128: 				else
+129: 				{
+130: 					str = ((ExpressionArgument)func.Argument).Term.GetStrValue(exm);
+131: 					if (isForms)
+132: 					{
+133: 						str = exm.CheckEscape(str);
+134: 						StrFormWord wt = LexicalAnalyzer.AnalyseFormattedString(new StringStream(str), FormStrEndWith.EoL, false);
+135: 						StrForm strForm = StrForm.FromWordToken(wt);
+136: 						str = strForm.GetString(exm);
+137: 					}
+138: 				}
+139: 				if (func.Function.IsPrintKFunction())
+140: 					str = exm.ConvertStringType(str);
+141: 				if (isC)
+142: 					exm.Console.PrintC(str, true);
+143: 				else if (isLC)
+144: 					exm.Console.PrintC(str, false);
+145: 				else
+146: 					exm.OutputToConsole(str, func.Function);
+147: 				exm.Console.UseSetColorStyle = true;
+148: 			}
+149: 		}
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs
+85: 			addPrintFunction(FunctionCode.PRINT);
+86: 			addPrintFunction(FunctionCode.PRINTL);
+87: 			addPrintFunction(FunctionCode.PRINTW);
+88: 			addPrintFunction(FunctionCode.PRINTV);
+89: 			addPrintFunction(FunctionCode.PRINTVL);
+90: 			addPrintFunction(FunctionCode.PRINTVW);
+91: 			addPrintFunction(FunctionCode.PRINTS);
+92: 			addPrintFunction(FunctionCode.PRINTSL);
+93: 			addPrintFunction(FunctionCode.PRINTSW);
+94: 			addPrintFunction(FunctionCode.PRINTFORM);
+95: 			addPrintFunction(FunctionCode.PRINTFORML);
+96: 			addPrintFunction(FunctionCode.PRINTFORMW);
+97: 			addPrintFunction(FunctionCode.PRINTFORMS);
+98: 			addPrintFunction(FunctionCode.PRINTFORMSL);
+99: 			addPrintFunction(FunctionCode.PRINTFORMSW);
+100: 			addPrintFunction(FunctionCode.PRINTK);
+101: 			addPrintFunction(FunctionCode.PRINTKL);
+102: 			addPrintFunction(FunctionCode.PRINTKW);
+103: 			addPrintFunction(FunctionCode.PRINTVK);
+104: 			addPrintFunction(FunctionCode.PRINTVKL);
+105: 			addPrintFunction(FunctionCode.PRINTVKW);
+106: 			addPrintFunction(FunctionCode.PRINTSK);
+107: 			addPrintFunction(FunctionCode.PRINTSKL);
+108: 			addPrintFunction(FunctionCode.PRINTSKW);
+109: 			addPrintFunction(FunctionCode.PRINTFORMK);
+110: 			addPrintFunction(FunctionCode.PRINTFORMKL);
+111: 			addPrintFunction(FunctionCode.PRINTFORMKW);
+112: 			addPrintFunction(FunctionCode.PRINTFORMSK);
+113: 			addPrintFunction(FunctionCode.PRINTFORMSKL);
+114: 			addPrintFunction(FunctionCode.PRINTFORMSKW);
+115: 			addPrintFunction(FunctionCode.PRINTD);
+116: 			addPrintFunction(FunctionCode.PRINTDL);
+117: 			addPrintFunction(FunctionCode.PRINTDW);
+118: 			addPrintFunction(FunctionCode.PRINTVD);
+119: 			addPrintFunction(FunctionCode.PRINTVDL);
+120: 			addPrintFunction(FunctionCode.PRINTVDW);
+121: 			addPrintFunction(FunctionCode.PRINTSD);
+122: 			addPrintFunction(FunctionCode.PRINTSDL);
+123: 			addPrintFunction(FunctionCode.PRINTSDW);
+124: 			addPrintFunction(FunctionCode.PRINTFORMD);
+125: 			addPrintFunction(FunctionCode.PRINTFORMDL);
+126: 			addPrintFunction(FunctionCode.PRINTFORMDW);
+127: 			addPrintFunction(FunctionCode.PRINTFORMSD);
+128: 			addPrintFunction(FunctionCode.PRINTFORMSDL);
+129: 			addPrintFunction(FunctionCode.PRINTFORMSDW);
+130: 			addPrintFunction(FunctionCode.PRINTSINGLE);
+131: 			addPrintFunction(FunctionCode.PRINTSINGLEV);
+132: 			addPrintFunction(FunctionCode.PRINTSINGLES);
+133: 			addPrintFunction(FunctionCode.PRINTSINGLEFORM);
+134: 			addPrintFunction(FunctionCode.PRINTSINGLEFORMS);
+135: 			addPrintFunction(FunctionCode.PRINTSINGLEK);
+136: 			addPrintFunction(FunctionCode.PRINTSINGLEVK);
+137: 			addPrintFunction(FunctionCode.PRINTSINGLESK);
+138: 			addPrintFunction(FunctionCode.PRINTSINGLEFORMK);
+139: 			addPrintFunction(FunctionCode.PRINTSINGLEFORMSK);
+140: 			addPrintFunction(FunctionCode.PRINTSINGLED);
+141: 			addPrintFunction(FunctionCode.PRINTSINGLEVD);
+142: 			addPrintFunction(FunctionCode.PRINTSINGLESD);
+143: 			addPrintFunction(FunctionCode.PRINTSINGLEFORMD);
+144: 			addPrintFunction(FunctionCode.PRINTSINGLEFORMSD);
+145: 
+146: 			addPrintFunction(FunctionCode.PRINTC);
+147: 			addPrintFunction(FunctionCode.PRINTLC);
+148: 			addPrintFunction(FunctionCode.PRINTFORMC);
+149: 			addPrintFunction(FunctionCode.PRINTFORMLC);
+150: 			addPrintFunction(FunctionCode.PRINTCK);
+151: 			addPrintFunction(FunctionCode.PRINTLCK);
+152: 			addPrintFunction(FunctionCode.PRINTFORMCK);
+153: 			addPrintFunction(FunctionCode.PRINTFORMLCK);
+154: 			addPrintFunction(FunctionCode.PRINTCD);
+155: 			addPrintFunction(FunctionCode.PRINTLCD);
+156: 			addPrintFunction(FunctionCode.PRINTFORMCD);
+157: 			addPrintFunction(FunctionCode.PRINTFORMLCD);
+158: 			addPrintDataFunction(FunctionCode.PRINTDATA);
+159: 			addPrintDataFunction(FunctionCode.PRINTDATAL);
+160: 			addPrintDataFunction(FunctionCode.PRINTDATAW);
+161: 			addPrintDataFunction(FunctionCode.PRINTDATAK);
+162: 			addPrintDataFunction(FunctionCode.PRINTDATAKL);
+163: 			addPrintDataFunction(FunctionCode.PRINTDATAKW);
+164: 			addPrintDataFunction(FunctionCode.PRINTDATAD);
+165: 			addPrintDataFunction(FunctionCode.PRINTDATADL);
+166: 			addPrintDataFunction(FunctionCode.PRINTDATADW);
+167: 
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Expression/ExpressionMediator.cs
+36: 		public void ForceKana(Int64 flag)
+37: 		{
+38: 			if (flag &lt; 0 || flag &gt; 3)
+39: 				throw new CodeEE(&quot;命令FORCEKANAの引数が指定可能な範囲(0～3)を超えています&quot;);
+40: 			forceKatakana = (flag == 1) ? true : false;
+41: 			forceHiragana = (flag &gt; 1) ? true : false;
+42: 			halftoFull = (flag == 3) ? true : false;
+43: 		}
+44: 		
+45: 		public bool ForceKana()
+46: 		{
+47: 			return (forceHiragana | forceKatakana | halftoFull);
+48: 		}
+49: 
+50: 		public void OutputToConsole(string str, FunctionIdentifier func)
+51: 		{
+52: 			if (func.IsPrintSingle())
+53: 				Console.PrintSingleLine(str, false);
+54: 			else
+55: 			{
+56: 				Console.Print(str);
+57: 				if (func.IsNewLine() || func.IsWaitInput())
+58: 				{
+59: 					Console.NewLine();
+60: 					if (func.IsWaitInput())
+61: 						Console.ReadAnyKey();
+62: 				}
+63: 			}
+64: 			Console.UseSetColorStyle = true;
+65: 		}
+66: 
+67: 		public string ConvertStringType(string str)
+68: 		{
+69: 			if (!(forceHiragana | forceKatakana | halftoFull))
+70: 				return str;
+71: 			if (forceKatakana)
+72:                 return Strings.StrConv(str, VbStrConv.Katakana, 0x0411);
+73: 			else if (forceHiragana)
+74: 			{
+75: 				if (halftoFull)
+76:                     return Strings.StrConv(str, VbStrConv.Hiragana | VbStrConv.Wide, 0x0411);
+77: 				else
+78:                     return Strings.StrConv(str, VbStrConv.Hiragana, 0x0411);
+79: 			}
+80: 			return str;
+81: 		}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1901 · command_or_syntax:PRINTCK · check</li>
+<li>L1939 · command_or_syntax:PRINTLCK · check</li>
+<li>L1977 · command_or_syntax:PRINTSINGLEK · check</li>
+</ul></html>

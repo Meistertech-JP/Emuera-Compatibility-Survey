@@ -1,0 +1,82 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0684 · REVIEW.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0684 · REVIEW.md</h1>
+<p>HTML文字列処理20条件の有効な比較・原票の有限完了判断を保存し、L25の私的絶対パスだけを原ZIPラベルに置換した派生票を公開する。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>9bc6caf9802f3a8ca110546b91819ee57f5419051ec41cc0f75ac78496f11d73</code></p>
+<p><a href="../assets/U0684.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>d7b40af976476284ef25e3539fa47f6b9f61aecf6f02a37da42ce2a222d4bb7f</code></p>
+<pre>&gt; 公開用派生資料 `U0684`（公開用編集日: 2026-11-18）。原票全文の技術観測・判定・制限を保持し、指定箇所だけを編集した。
+&gt; 原票ファイルSHA-256: `9bc6caf9802f3a8ca110546b91819ee57f5419051ec41cc0f75ac78496f11d73`。これは原票の識別値であり、派生物のハッシュや元実行のsealを新たに発行するものではない。
+&gt; 本文中の旧相対パス・ファイル名・nonce・PID・実行時刻・fixture値・hash/seal・「現行/現在」は原票作成/実行当時の参照と記録。今回のstage構成・新規実行・現行状態を示さない。
+&gt; Copyright (c) 2026 Meistertech-JP — MIT（独自の説明・編集部分、LICENSE.txt）。エンジン由来の診断・表現はLICENSES/とvendor/emuera/NOTICEの個別条件を維持する。
+&gt; 原票が記す準備・レポート作成時の失敗と、有効な製品実行/診断の観測は別の記録であり、前者を理由に後者を棄却していない。
+
+# Case201 HTML_ESCAPE / HTML_TAGSPLIT text contract
+
+20 bounded conditions completed using identical fixture/config/empty-csv inputs: Native twice through the supplied CreateDesktopW harness; public once through root/run_public_pyz_verified.py. All 20 conditions match on raw, serialized layout, value, selected state and helper evaluation. The three complete BOM-bearing UTF-16LE application logs are byte-identical. This closes only the observed text contract in this fixture, not HTML GUI rendering or the complete command family.
+
+## Observations
+
+HTML_ESCAPE expression and method-as-command are paired for ordinary ASCII, empty, angle brackets, existing ampersand/entity text, and Japanese plus both quote characters (C201_01-10). Expression syntax is `ZZ201V &#x27;= HTML_ESCAPE(ZZ201S(1))`; method-as-command syntax is `HTML_ESCAPE ZZ201S(1)` without call parentheses. Expression returns into the assigned string variable and leaves RESULTS:0 unchanged. Method-as-command writes RESULTS:0 and leaves the separate value variable unchanged. Both preserve RESULT:0=701, RESULT:1=702, RESULT:2=703 and C=704 in these cases. The helper runs exactly once (A=1/B=1), including the empty input.
+
+Observed escapes: `&lt;a&gt;` -&gt; `&amp;lt;a&amp;gt;`; `&amp;amp;&amp;` -&gt; `&amp;amp;amp;&amp;amp;`; Japanese stays Japanese, double quote -&gt; `&amp;quot;`, apostrophe -&gt; `&amp;apos;`. Existing entities are escaped again, not decoded.
+
+HTML_TAGSPLIT C201_11-20:
+
+- Ordinary Japanese/ASCII containing a lone `&gt;` is a single unchanged token. Empty input returns count=0 and preserves all sampled destination slots.
+- `pre&lt;b&gt;中&lt;/b&gt;&lt;br&gt;tail` separates into `pre`, `&lt;b&gt;`, `中`, `&lt;/b&gt;`, `&lt;br&gt;`, `tail`, count=6. Adjacent actual tags introduce no empty text token.
+- `&amp;lt;b&amp;gt;&amp;amp;` remains one unchanged text token. Entities are neither decoded nor treated as actual angle brackets.
+- `a&lt;x q=&quot;&gt;&quot;&gt;b` separates into `a`, `&lt;x q=&quot;&gt;`, `&quot;&gt;b`, count=3: the first `&gt;` terminates a token even inside quotes. This is lexical separation, with no validation of HTML tag names or attributes claimed.
+- `pre&lt;b&gt;ok&lt;bad` sets RESULT:0=-1 and preserves sampled RESULTS:0-5. It does not partially copy the tokens preceding the unclosed `&lt;`. The following STATE/END markers, later conditions and C201_DONE are present: this input did not stop execution in any run.
+- A two-slot destination for `a&lt;b&gt;c&lt;/b&gt;d` receives only `a`, `&lt;b&gt;`, while explicit C receives full count=5; RESULT:0 remains 701.
+- `HTML_TAGSPLIT ZZ201S(3), ZZ201D:ZZ201N(2), RESULT:ZZ201N(1)` writes ZZ201D from element zero, preserves D3-D5, sets RESULT:1=3 and leaves RESULT:0=701. A=2/B=31 proves the source helper then the count-index helper ran, and the destination-index helper was omitted. No arbitrary index/side-effect behavior beyond this selected expression is claimed.
+- Explicit count `RESULT:0` receives count=3 with a custom output array, matching the default count location while RESULTS:0-5 remain sentinel values.
+- Source/output alias `HTML_TAGSPLIT RESULTS:0` reads the original `a&lt;b&gt;c` before overwriting RESULTS:0-2 with its tokens. RESULT:0 becomes 3; no helper runs. This is the tested string-source alias, not arbitrary reference aliases.
+
+## Exact local source contract
+
+SOURCE.json records archive/member hashes and excerpt ranges; source-raw retains the exact member bytes and SOURCE_EXCERPTS_V24.txt contains line-numbered UTF-8-SIG excerpts. Only `Emuera1824+v24.zip` with prefix `Emuera1824+v24/src1824+v24/src1824/Emuera/` was used. The supplied native exe also equals the exe member of this archive byte-for-byte; no rebuild was performed, so build-from-source equivalence is unproven.
+
+- Creator.cs:148 and Creator.Method.cs:2911-2923 register HTML_ESCAPE with one string argument, string result, CanRestructure=false, and delegate to HtmlManager.Escape.
+- HtmlManager.cs:30-48,374-397 defines the five replacement characters and appends each replacement once while traversing the original string.
+- FunctionIdentifier.cs:78-83,391-399,490-498 registers methods as commands. ArgumentBuilder.cs:847-857 constructs the method term. Instraction.Child.cs:423-441 sends a string method result to RESULTS and an integer method result to RESULT.
+- ArgumentBuilder.cs:1527-1558 defines HTML_TAGSPLIT as string source, optional changeable noncharacter one-dimensional string array (default RESULTS), optional changeable integer count (default RESULT:0). It retains the destination VariableToken, discarding the supplied element term; it retains the count VariableTerm, including its index expression.
+- Instraction.Child.cs:259-284 evaluates source, splits, sets count=-1 and returns on null, otherwise sets full count before copying min(array length, token count) elements starting at zero. Tail elements remain unchanged.
+- HtmlManager.cs:229-257 finds `&lt;`, preserves preceding text, then finds the next `&gt;` without quote awareness. Missing closing `&gt;` returns null, empty source produces an empty array. This is source-backed text processing; no HTML_PRINT, HTML_GETPRINTEDSTR or GUI rendering was invoked.
+
+## Separate comparison axes and limits
+
+COMPARISON.json retains every condition&#x27;s expected state and all three observed blocks. Raw means exact condition block and SHA-256 over its UTF-16LE bytes without a segment BOM; full log hashes include BOM. Layout preserves exact serialized rows/CRLF and delimiters; it is not pixel layout. Value captures escaped result or observed count/stored tokens. State separately contains numeric RESULT:0-2/C, the value variable, RESULTS:0-5/9, D0-D5 and T0-T1. Evaluation separately captures helper count A and digit-encoded call order B. These are post-instruction instrumented snapshots, not every internal variable or every array slot. Value/state are read back through ordinary text PRINTFORML, not direct native memory inspection.
+
+All conditions reset sampled state within one sequential process per engine run. No independent process per condition, arbitrary invalid syntax/type matrix, null strings, HTML validity, GUI styling, entity decoding, other configurations, overflow/index exceptions, stop/error matrix, rendering or natural-exit equivalence was tested. No explicit error-inducing file access was necessary for these two string APIs. Missing runner/source-member probes during preparation are listed in ATTEMPTS.json; actual output-log existence and all BEGIN/END/DONE markers were observed, not assumed. No missing output log or fixture file occurred during runtime.
+
+## Execution, attempts and preservation
+
+Native executable/config were copied from the assigned strfind-boundaries-20261113-128/native-01. run_native.py was copied byte-for-byte from its parent and retains SEARCHBOUND01.ERB solely as its required fixture filename. PREPARATION.json records provenance and hashes. Each actual Native launch has a separate lock-check.json: both 3.0.0/NATIVE_LOCK.json and MEASURE_LOCK.json were absent immediately before launch. No lock file was created or modified.
+
+Both Native processes remained alive after the 5-second wait, had no observed exit code, received successful owned-handle TerminateProcess cleanup and closed their isolated desktops. Runner rc=0 means harness completion, not Native natural exit. Read-only cleanup verification subsequently queried only the two recorded PIDs; OpenProcess returned invalid parameter (87) for both, consistent with the owned processes no longer existing. No normal-desktop keys, screenshots, synthetic keyboard events or unrelated process cleanup.
+
+Public executed once through the root verified runner, with pinned SHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35` unchanged before/after and rc=0. Its --debug invocation differs from the Native no-DEBUG argv, as in the approved harnesses; the fixture uses no debug-only instructions. Public stderr contains exactly its OUTPUTLOG bounded-history warning, retained in verified.stderr.bin. No runtime error was observed in the complete application logs; the warning is explicitly retained, not suppressed or treated as a product failure.
+
+Exactly three runtime attempts, no retries, no discarded fixture or failure. ATTEMPTS.json also records read-only preparation failures and two report-finalization failures. The first report attempt used the Windows default cp932 to read UTF-8 JSON and failed; the second incorrectly required empty public stderr and failed on the expected OUTPUTLOG warning. Both attempted scripts and stdout/stderr are retained. Finalization was corrected to explicit UTF-8-SIG and an exact warning assertion; no product input or runtime rerun was needed. The final report parser also uses the correct 21 split rows per condition block (including final empty row).
+
+protected-before.json / protected-after.json show unchanged hashes for original archive, public pyz/source/runtime archives, FORMAL_RELEASE_ACCEPTANCE.json, original native exe/config/harness and root verified public runner. Writes were confined to this assigned Case201 evidence folder. Product fixes, shared ledgers/integration, public originals, GitHub and Drive were untouched. VERIFICATION.json records bounded verification. MANIFEST.json hashes every retained file except itself and FROZEN.json; FROZEN.json pins the manifest. No further Native run is required for this bounded case.
+
+## Pinned hashes
+
+- source archive: `fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a`
+- Native exe: `14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964`
+- config: `f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc`
+- fixture: `47d9c11b8e72c2cf502a7ebb139063299eb30f88a0c11488e4ced433ad1b2b23`
+- supplied runner: `66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793`
+- complete application log (all three): `30d21c97eba0814ee24d98e7b442b5e40ad5d6bc3232993e83c9c2b58b7af0b8`
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2331 · method_as_command:HTML_ESCAPE · check</li>
+</ul></html>

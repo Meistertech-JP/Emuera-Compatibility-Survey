@@ -1,0 +1,51 @@
+Now Loading...
+BEGIN GATE
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GBE
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GBE SLOT=1 COUNT=1 ORDER=1
+ARG GBE SLOT=2 COUNT=2 ORDER=12
+ARG GBE SLOT=3 COUNT=3 ORDER=123
+AFTER GBE R=777 SK=1 OK=0 ON=7 SN=8
+EVAL GBE COUNT=3 ORDER=123
+VALUE GBE OUT=[[*....]] STR=[SENTINEL]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GHE
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GHE SLOT=1 COUNT=1 ORDER=1
+AFTER GHE R=777 SK=1 OK=0 ON=0 SN=8
+EVAL GHE COUNT=1 ORDER=1
+VALUE GHE OUT=[] STR=[SENTINEL]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GBM
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GBM SLOT=1 COUNT=1 ORDER=1
+ARG GBM SLOT=2 COUNT=2 ORDER=12
+ARG GBM SLOT=3 COUNT=3 ORDER=123
+AFTER GBM R=777 SK=0 OK=1 ON=12 SN=7
+EVAL GBM COUNT=3 ORDER=123
+VALUE GBM OUT=[OUT_SENTINEL] STR=[[*....]]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GHM
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GHM SLOT=1 COUNT=1 ORDER=1
+AFTER GHM R=777 SK=0 OK=1 ON=12 SN=0
+EVAL GHM COUNT=1 ORDER=1
+VALUE GHM OUT=[OUT_SENTINEL] STR=[]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GHBR
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GHBR SLOT=1 COUNT=1 ORDER=1
+AFTER GHBR R=777 SK=0 OK=1 ON=12 SN=2
+EVAL GHBR COUNT=1 ORDER=1
+VALUE GHBR OUT=[OUT_SENTINEL] STR=[ab]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GHENT
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GHENT SLOT=1 COUNT=1 ORDER=1
+AFTER GHENT R=777 SK=0 OK=1 ON=12 SN=1
+EVAL GHENT COUNT=1 ORDER=1
+VALUE GHENT OUT=[OUT_SENTINEL] STR=[&]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+DONE GATE
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 

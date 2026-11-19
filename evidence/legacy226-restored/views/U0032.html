@@ -1,0 +1,189 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0032 · PARENT_ACCEPTANCE_PRINTBUTTON_EXISTING_20261115.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0032 · PARENT_ACCEPTANCE_PRINTBUTTON_EXISTING_20261115.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE_PRINTBUTTON_EXISTING_20261115.json; 参照対象=command_or_syntax:PRINTBUTTON。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;PRINTBUTTON&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を3個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>a3234f0dd74abedb29ba71a7e8a0d0f86853d9cfe68973365577606477bc580a</code></p>
+<p><a href="../assets/U0032.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>c867a4bd4a92b2addcbce1b6beab5557b9259be456cd60a2cdba8892480f0a63</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T21:48:39.429295+00:00&quot;,
+  &quot;decision_authority&quot;: &quot;Codex evidence review of retained Native/public comparison evidence; not owner release sign-off.&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;PRINTBUTTON&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;BUTTONGET216_B216_0&quot;,
+    &quot;BUTTONGET216_B216_1&quot;,
+    &quot;BUTTONGET216_B216_2&quot;,
+    &quot;BUTTONGET216_B216_3&quot;,
+    &quot;BUTTONGET216_B216_4&quot;,
+    &quot;BUTTONGET216_B216_5&quot;,
+    &quot;BUTTONGET216_B216_6&quot;
+  ],
+  &quot;accepted_scope&quot;: &quot;PRINTBUTTON: selected labeled numeric/string button text and state/effect cases, empty/nonempty labels, LF/CR serialization, and SKIPDISP suppression from Case 216. Six selected conditions match; the CR condition is a scoped serialization difference with selected state/helper effects matching. This does not establish click/input binding, GUI focus/hit testing, or pixel rendering.&quot;,
+  &quot;accepted_finite_requirements&quot;: [
+    {
+      &quot;id&quot;: &quot;registration_and_signature&quot;,
+      &quot;state&quot;: &quot;source_pinned_and_target_reached&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BUTTONGET216_B216_0&quot;,
+        &quot;BUTTONGET216_B216_1&quot;,
+        &quot;BUTTONGET216_B216_2&quot;,
+        &quot;BUTTONGET216_B216_3&quot;,
+        &quot;BUTTONGET216_B216_4&quot;,
+        &quot;BUTTONGET216_B216_5&quot;,
+        &quot;BUTTONGET216_B216_6&quot;
+      ],
+      &quot;basis&quot;: &quot;Case 216 pins the v24 registration, SP_BUTTON builder and selected parser/guard source; each exact command spelling is exercised.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;ordinary_output_and_selected_state&quot;,
+      &quot;state&quot;: &quot;six_selected_conditions_match&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BUTTONGET216_B216_0&quot;,
+        &quot;BUTTONGET216_B216_1&quot;,
+        &quot;BUTTONGET216_B216_2&quot;,
+        &quot;BUTTONGET216_B216_3&quot;,
+        &quot;BUTTONGET216_B216_4&quot;,
+        &quot;BUTTONGET216_B216_6&quot;
+      ],
+      &quot;basis&quot;: &quot;Native repeats and public pyz agree on selected serialized content, RESULT, and A/B helper state for numeric, negative, string, empty, LF, and skip conditions excluding CR.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;cr_serialization_boundary&quot;,
+      &quot;state&quot;: &quot;compared_with_scoped_difference&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BUTTONGET216_B216_5&quot;
+      ],
+      &quot;basis&quot;: &quot;Native preserves CR in selected serialized content while public output removes it; selected RESULT and helper state remain equal.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;helper_order_and_skip&quot;,
+      &quot;state&quot;: &quot;selected_observations_match&quot;,
+      &quot;case_ids&quot;: [
+        &quot;BUTTONGET216_B216_0&quot;,
+        &quot;BUTTONGET216_B216_1&quot;,
+        &quot;BUTTONGET216_B216_2&quot;,
+        &quot;BUTTONGET216_B216_3&quot;,
+        &quot;BUTTONGET216_B216_4&quot;,
+        &quot;BUTTONGET216_B216_5&quot;,
+        &quot;BUTTONGET216_B216_6&quot;
+      ],
+      &quot;basis&quot;: &quot;Case 216 records label/value helper state and the target-specific SKIPDISP zero-effect condition; skip-only evidence is not used as normal reach proof.&quot;
+    }
+  ],
+  &quot;source_refs&quot;: [
+    {
+      &quot;archive&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+      &quot;archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs&quot;,
+      &quot;member_sha256&quot;: &quot;fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb&quot;,
+      &quot;lines&quot;: [
+        [
+          109,
+          142
+        ],
+        [
+          539,
+          550
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+      &quot;archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+      &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+      &quot;lines&quot;: [
+        [
+          1452,
+          1465
+        ],
+        [
+          1561,
+          1583
+        ]
+      ]
+    },
+    {
+      &quot;archive&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+      &quot;archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+      &quot;member_sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+      &quot;lines&quot;: [
+        [
+          169,
+          174
+        ],
+        [
+          384,
+          387
+        ]
+      ]
+    }
+  ],
+  &quot;artifacts&quot;: {
+    &quot;native_archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+    &quot;comparison_sha256&quot;: &quot;312622eb51fbaae1d3aa96f618f1ac8e38721fab38e2a9a898ece9ffa94fe4e9&quot;,
+    &quot;manifest_sha256&quot;: &quot;306e1999ed21a8ca7a05107d56165b2e2e4a72bb9cc52f0d224bb53a90960a4f&quot;
+  },
+  &quot;comparison_path&quot;: &quot;evidence/buttons-printcperline-20261113-216/COMPARISON.json&quot;,
+  &quot;comparison_sha256&quot;: &quot;312622eb51fbaae1d3aa96f618f1ac8e38721fab38e2a9a898ece9ffa94fe4e9&quot;,
+  &quot;evidence_manifest_path&quot;: &quot;evidence/buttons-printcperline-20261113-216/MANIFEST.json&quot;,
+  &quot;evidence_manifest_sha256&quot;: &quot;306e1999ed21a8ca7a05107d56165b2e2e4a72bb9cc52f0d224bb53a90960a4f&quot;,
+  &quot;review_path&quot;: &quot;evidence/buttons-printcperline-20261113-216/CASE_REVIEW_ja.md&quot;,
+  &quot;review_sha256&quot;: &quot;e75f1294eb9544dcd1d0669044fbc7ef787b4b3f3285040a115153c42c835d82&quot;,
+  &quot;source_hashes_path&quot;: &quot;evidence/buttons-printcperline-20261113-216/SOURCE.json&quot;,
+  &quot;source_hashes_sha256&quot;: &quot;e4493bf74beb56b39709c7934cd9f9feadee31bdd070c63ff5e3b6d3adb8f7bb&quot;,
+  &quot;evidence_paths&quot;: [
+    {
+      &quot;path&quot;: &quot;evidence/buttons-printcperline-20261113-216/COMPARISON.json&quot;,
+      &quot;sha256&quot;: &quot;312622eb51fbaae1d3aa96f618f1ac8e38721fab38e2a9a898ece9ffa94fe4e9&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/buttons-printcperline-20261113-216/CASE_REVIEW_ja.md&quot;,
+      &quot;sha256&quot;: &quot;e75f1294eb9544dcd1d0669044fbc7ef787b4b3f3285040a115153c42c835d82&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/buttons-printcperline-20261113-216/SOURCE.json&quot;,
+      &quot;sha256&quot;: &quot;e4493bf74beb56b39709c7934cd9f9feadee31bdd070c63ff5e3b6d3adb8f7bb&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/buttons-printcperline-20261113-216/MANIFEST.json&quot;,
+      &quot;sha256&quot;: &quot;306e1999ed21a8ca7a05107d56165b2e2e4a72bb9cc52f0d224bb53a90960a4f&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/buttons-printcperline-20261113-216/conditions.json&quot;,
+      &quot;sha256&quot;: &quot;cc299ccf10e942cf06a26e162233be0c47ea82e1008ac4b531a802e9f07eb8c5&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/buttons-printcperline-20261113-216/SOURCE_EXCERPTS_V24.txt&quot;,
+      &quot;sha256&quot;: &quot;16244591af577f2312f8c93f5700b8e3d0605e884a39446f078ddefc0a7bae2b&quot;
+    }
+  ],
+  &quot;finite_remainder&quot;: [],
+  &quot;retained_limits&quot;: [
+    &quot;The evidence is for selected text/state/effect and serialization paths only; button click return, binding storage, GUI focus, and hit testing were not observed.&quot;,
+    &quot;No pixel-rendering equivalence is claimed; Native natural exit was not observed and owned Native processes were terminated after the fixed observation window.&quot;,
+    &quot;Only the recorded SP_BUTTON argument/label conditions are included; invalid argument forms, arbitrary geometry and full button/getter closure remain outside this acceptance.&quot;
+  ],
+  &quot;product_code_modified&quot;: false,
+  &quot;published_artifacts_modified&quot;: false,
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0845 · command_or_syntax:PRINTBUTTON · acceptance</li>
+<li>L0846 · command_or_syntax:PRINTBUTTON · check</li>
+<li>L0848 · command_or_syntax:PRINTBUTTON · check</li>
+</ul></html>

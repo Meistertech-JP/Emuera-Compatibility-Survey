@@ -1,0 +1,26 @@
+{
+  "schema": "saved-observation-receipt-projection.v1",
+  "case_id": "LINEBUF20261115_button_method",
+  "mode": "native-02",
+  "source_receipt_sha256": "6dddefe4d155347c00ddf289e5419cc842dee4f15b51276ead6d58465b9d1071",
+  "recorded": {
+    "desktop_created": true,
+    "process_created": true,
+    "synthetic_keyboard_events_sent": false,
+    "fixture_sha256": "f5fb64c3921f9683ca49e32ecb16bf5dfc0e591d72fb93374220ca77dabf1708",
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "process_exited_after_5s": false,
+    "exit_code_observed": false,
+    "exit_code": null,
+    "cleanup_terminate_ok": true,
+    "desktop_closed": true,
+    "natural_exit": "UNOBSERVED",
+    "raw_history_sha256": "4abc66ed241e7b1b8a9bc1c785e3f5bf6467ce310494995ed9036bc687775d73"
+  },
+  "privacy_transform": "Allowlisted recorded fields only; local paths, process/desktop identifiers, argv, timestamps and host details are omitted.",
+  "limitations": [
+    "historical saved record; no reexecution",
+    "not proof of publication permission"
+  ]
+}

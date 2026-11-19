@@ -1,0 +1,17 @@
+{
+  "case_outcome": "matched_scoped",
+  "case_semantic_closure": false,
+  "coverage": "selected strlen-control only",
+  "historical_parent_review": "finite_remaining_proof",
+  "historical_parent_review_readback_valid": true,
+  "later_target_basis": "Final target outcome incorporates supplementary observations outside this package.",
+  "legacy_case_id": "PARENT246_strlen-control",
+  "registered_case_id": "ARGBOUND246_strlen-control",
+  "requirement_id": "finite_boundary_error",
+  "requirement_scope": "The target requirement also includes other cases and conditions not verified in this package.",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "STRLEN"
+  },
+  "target_outcome": "documented_difference"
+}

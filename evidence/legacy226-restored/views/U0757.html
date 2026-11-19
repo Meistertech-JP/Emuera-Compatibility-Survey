@@ -1,0 +1,50 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0757 · ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0757 · ADJUDICATION.json</h1>
+<p>原票種別=ADJUDICATION.json; 参照対象=expression_function:SQRT。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;SQRT&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>e5e233a45c82a633cbcf287f0a4474f372c11a1bf2a817adbe0c60833dff14ca</code></p>
+<p><a href="../assets/U0757.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>e5e233a45c82a633cbcf287f0a4474f372c11a1bf2a817adbe0c60833dff14ca</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;parent-target-finite-scope-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T12:24:37.973351+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;SQRT&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;SQRTBASE01&quot;,
+    &quot;MATHINVOKE_SQRTEXPR&quot;,
+    &quot;MATHBOUNDARY200_expression_function_SQRT&quot;,
+    &quot;SQRTNEGFAULT01&quot;
+  ],
+  &quot;finite_scope&quot;: &quot;Active v24 registration/signature; selected normal and helper controls; case200 0/1 and large-double rounding; and SQRT(-1) through an argument helper, with Native x2/public pyz x1 helper count and stop line compared. Error diagnostic difference is explicitly documented.&quot;,
+  &quot;review&quot;: &quot;REVIEW_ja.md&quot;,
+  &quot;review_sha256&quot;: &quot;ed872a32e94ded2a4fc47cbcfc8e268fcb23cb4444f3313c4d7d79607d8dfaa4&quot;,
+  &quot;case_review&quot;: &quot;../../evidence/phase2-sqrt-negative-helper-20261114/CASE_REVIEW_ja.md&quot;,
+  &quot;case_review_sha256&quot;: &quot;b0e0ba639c3d9635bcada72f815e3f8d317199f0052d2bbcb52c71dc8f723b23&quot;,
+  &quot;comparison&quot;: &quot;../../evidence/phase2-sqrt-negative-helper-20261114/COMPARISON.json&quot;,
+  &quot;comparison_sha256&quot;: &quot;bdfe1bbee3dddc4f0e016072517f45c2af91c697165322994acc6f2d52c41137&quot;,
+  &quot;excluded&quot;: [
+    &quot;all other values&quot;,
+    &quot;arity/type matrix&quot;,
+    &quot;complete floating-point domain/overflow&quot;,
+    &quot;post-error state equality&quot;,
+    &quot;Native natural exit/exit code&quot;
+  ],
+  &quot;product_code_changed&quot;: false,
+  &quot;public_artifacts_changed&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2190 · expression_function:SQRT · acceptance</li>
+<li>L2191 · expression_function:SQRT · check</li>
+</ul></html>

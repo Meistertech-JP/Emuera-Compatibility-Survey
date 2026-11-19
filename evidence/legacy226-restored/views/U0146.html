@@ -1,0 +1,24 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0146 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0146 · CASE_REVIEW_ja.md</h1>
+<p>ADDDEFCHARAのCHARA0欠落時フォールバックという中立fixtureの有限比較で、具体値と制限を原文収録する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>cff04919533d13163bc36003ba8a3a77df155cf4a15b9c0c9750a766d7ebaee7</code></p>
+<p><a href="../assets/U0146.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>cff04919533d13163bc36003ba8a3a77df155cf4a15b9c0c9750a766d7ebaee7</code></p>
+<pre># ADDDEFCHARA 欠落テンプレート比較 — ADDDEFCHARA_MISSING_CSV0_20261113
+
+本家Emuera1824+v24を2回、固定公開PyEmuera 3.0.0を1回、同じERB・CSV・設定の別コピーで実行しました。
+
+- 条件: CHARA0=なし、GAMEBASE.CSV DefaultCharacter=0、CHARA10=あり。
+- 結果: Native反復ログと公開pyzログがバイト一致。AFTER N=1。代替テンプレート時はNO=0、空NAME、CFLAG1=0を観測しました。
+- 制限: `AddCharacterFromCsvNo` の欠落番号フォールバックをこの2条件で確認した範囲だけです。自然終了・終了コードは未観測（Nativeは5秒時点で生存し、隔離runnerが終了）。全フィールドの初期値や他の欠落番号までは主張しません。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0067 · command_or_syntax:ADDDEFCHARA · check</li>
+</ul></html>

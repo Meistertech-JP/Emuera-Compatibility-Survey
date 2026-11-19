@@ -1,0 +1,17 @@
+{
+  "schema": "native-probe-selected-fields-1",
+  "case_id": "UIQUERY236_cbgsetg-method-shortcircuit",
+  "mode": "native-01",
+  "identity_basis": "CASE_PLAN_COMPARISON_AND_SOURCE_PATH_NOT_SOURCE_RECEIPT_ID",
+  "source_receipt_sha256": "687ff925fbfef823733a539c636550c990a098e1ff784b580fa233f2a1bec32e",
+  "fixture_sha256_probe_declared": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+  "config_sha256_probe_declared": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+  "input_before_after": "NOT_CAPTURED_BY_THIS_PROBE",
+  "selected_native_log_sha256": "3280261b10fde4a5e492541d4297568342bb08cf2b1f28b98a0ad47888ccf637",
+  "process_created": true,
+  "process_exited_after_5s": false,
+  "exit_code_observed": false,
+  "exit_code": null,
+  "cleanup_terminate_ok": true,
+  "native_natural_exit": "NOT_OBSERVED_CLEANUP_SEPARATE"
+}

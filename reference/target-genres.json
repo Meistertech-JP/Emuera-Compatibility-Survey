@@ -1,0 +1,7251 @@
+{
+ "schema": "survey-target-genres/1",
+ "targets": [
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "%="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "剰余代入",
+   "rationale_en": "Remainder assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "&="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "ビットAND代入",
+   "rationale_en": "Bitwise AND assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "'="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator",
+    "string"
+   ],
+   "rationale": "文字列代入",
+   "rationale_en": "String assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "*="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "乗算代入",
+   "rationale_en": "Multiplication assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "++"
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "インクリメント代入",
+   "rationale_en": "Increment assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "+="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "加算代入",
+   "rationale_en": "Addition assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "--"
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "デクリメント代入",
+   "rationale_en": "Decrement assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "-="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "減算代入",
+   "rationale_en": "Subtraction assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "/="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "除算代入",
+   "rationale_en": "Division assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "<<="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "左シフト代入",
+   "rationale_en": "Left-shift assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "代入",
+   "rationale_en": "Assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "=="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "歴史的な代入表記（警告のうえ=として処理）",
+   "rationale_en": "Legacy assignment spelling; warns and then behaves as =."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": ">>="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "右シフト代入",
+   "rationale_en": "Right-shift assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "^="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "べき乗代入",
+   "rationale_en": "Power assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "assignment_syntax",
+    "name": "|="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "ビットOR代入",
+   "rationale_en": "Bitwise OR assignment."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ADDCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ADDCOPYCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ADDDEFCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ADDSPCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ADDVOIDCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ALIGNMENT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ARRAYCOPY"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ARRAYREMOVE"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ARRAYSHIFT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ARRAYSORT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ASSERT"
+   },
+   "primary": "debug",
+   "secondary": [],
+   "rationale": "デバッグ出力・診断",
+   "rationale_en": "Debug output and diagnostics."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "AWAIT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "BAR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "BARL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "BEGIN"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "BREAK"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CALL"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CALLEVENT"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CALLF"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CALLFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CALLFORMF"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CALLTRAIN"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "自動調教の実行キューを組み、実行の流れを制御する",
+   "rationale_en": "Builds or stops the automated train execution queue and controls execution flow."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CASE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CASEELSE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CATCH"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CLEARBIT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CLEARLINE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CLEARTEXTBOX"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CONTINUE"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "COPYCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CUPCHECK"
+   },
+   "primary": "character",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "CUP/CDOWN・UP/DOWNをPALAMへ反映するキャラクターデータ操作",
+   "rationale_en": "Character-data operation that applies CUP/CDOWN or shared UP/DOWN into PALAM."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CUSTOMDRAWLINE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "CVARSET"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DATA"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DATAFORM"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DATALIST"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DEBUGCLEAR"
+   },
+   "primary": "debug",
+   "secondary": [],
+   "rationale": "デバッグ出力・診断",
+   "rationale_en": "Debug output and diagnostics."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DEBUGPRINT"
+   },
+   "primary": "debug",
+   "secondary": [],
+   "rationale": "デバッグ出力・診断",
+   "rationale_en": "Debug output and diagnostics."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DEBUGPRINTFORM"
+   },
+   "primary": "debug",
+   "secondary": [],
+   "rationale": "デバッグ出力・診断",
+   "rationale_en": "Debug output and diagnostics."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DEBUGPRINTFORML"
+   },
+   "primary": "debug",
+   "secondary": [],
+   "rationale": "デバッグ出力・診断",
+   "rationale_en": "Debug output and diagnostics."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DEBUGPRINTL"
+   },
+   "primary": "debug",
+   "secondary": [],
+   "rationale": "デバッグ出力・診断",
+   "rationale_en": "Debug output and diagnostics."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DELALLCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DELCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DELDATA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DO"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DOTRAIN"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "自動調教の実行キューを組み、実行の流れを制御する",
+   "rationale_en": "Builds or stops the automated train execution queue and controls execution flow."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DRAWLINE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DRAWLINEFORM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "DUMPRAND"
+   },
+   "primary": "random",
+   "secondary": [],
+   "rationale": "乱数の生成・初期化・状態確認",
+   "rationale_en": "Generates, reseeds, or inspects random numbers."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ELSE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ELSEIF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENCODETOUNI"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDCATCH"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDDATA"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDFUNC"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDIF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDLIST"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDNOSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ENDSELECT"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FONTBOLD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FONTITALIC"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FONTREGULAR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FONTSTYLE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FOR"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FORCEKANA"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FORCEWAIT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "FUNC"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "GETTIME"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "GOTO"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "GOTOFORM"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "HTML_PRINT"
+   },
+   "primary": "display",
+   "secondary": [
+    "graphics"
+   ],
+   "rationale": "HTML形式の本文を表示する",
+   "rationale_en": "Displays an HTML-formatted text line."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "HTML_TAGSPLIT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "IF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "INITRAND"
+   },
+   "primary": "random",
+   "secondary": [],
+   "rationale": "乱数の生成・初期化・状態確認",
+   "rationale_en": "Generates, reseeds, or inspects random numbers."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "INPUT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "INPUTMOUSEKEY"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "INPUTS"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "INVERTBIT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "JUMP"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "JUMPFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "LOADCHARA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "LOADDATA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "LOADGAME"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "LOADGLOBAL"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "LOADVAR"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "LOOP"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "NEXT"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "NOSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ONEINPUT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "ONEINPUTS"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "OUTPUTLOG"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PICKUPCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "POWER"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTBUTTON"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "ボタンを画面へ表示し、選択入力に使う",
+   "rationale_en": "Displays a button on screen for selection input."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTBUTTONC"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "ボタンを画面へ表示し、選択入力に使う",
+   "rationale_en": "Displays a button on screen for selection input."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTBUTTONLC"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "ボタンを画面へ表示し、選択入力に使う",
+   "rationale_en": "Displays a button on screen for selection input."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTC"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTCD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTCK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTCPERLINE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATA"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATAD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATADL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATADW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATAK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATAKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATAKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATAL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDATAW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTDW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMC"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMCD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMCK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMDL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMDW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORML"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMLC"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMLCD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMLCK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMS"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSDL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSDW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMSW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTFORMW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTLC"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTLCD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTLCK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTPLAIN"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTPLAINFORM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTS"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSDL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSDW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLED"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEFORM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEFORMD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEFORMK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEFORMS"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEFORMSD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEFORMSK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLES"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLESD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLESK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEV"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEVD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLEVK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTV"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVDL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVDW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTVW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINTW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_ABL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_EXP"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_IMG"
+   },
+   "primary": "display",
+   "secondary": [
+    "graphics"
+   ],
+   "rationale": "画像・矩形を本文行に表示する",
+   "rationale_en": "Displays an image or rectangle in a text line."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_ITEM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_MARK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_PALAM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_RECT"
+   },
+   "primary": "display",
+   "secondary": [
+    "graphics"
+   ],
+   "rationale": "画像・矩形を本文行に表示する",
+   "rationale_en": "Displays an image or rectangle in a text line."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_SHOPITEM"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_SPACE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "本文行にフォント相対幅の不可視スペーサーを追加する",
+   "rationale_en": "Appends an invisible inline spacer sized relative to the font."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_TALENT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "PUTFORM"
+   },
+   "primary": "file_io",
+   "secondary": [
+    "string"
+   ],
+   "rationale": "セーブ説明文へ文字列を追記する",
+   "rationale_en": "Appends text to the save-data description."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "QUIT"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RANDOMIZE"
+   },
+   "primary": "random",
+   "secondary": [],
+   "rationale": "乱数の生成・初期化・状態確認",
+   "rationale_en": "Generates, reseeds, or inspects random numbers."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "REDRAW"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "REF"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "REFBYNAME"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "REND"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "REPEAT"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RESETBGCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RESETCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RESETDATA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RESETGLOBAL"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RESET_STAIN"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RESTART"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RETURN"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RETURNF"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "RETURNFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "REUSELASTLINE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SAVECHARA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SAVEDATA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SAVEGAME"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SAVEGLOBAL"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SAVENOS"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SAVEVAR"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SELECTCASE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SET"
+   },
+   "primary": "variable",
+   "secondary": [],
+   "rationale": "代入文の内部識別子（参照資料で内部命令と明示）",
+   "rationale_en": "Internal assignment identifier; the reference marks it as an internal command."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SETBGCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SETBGCOLORBYNAME"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SETBIT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SETCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SETCOLORBYNAME"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SETFONT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SIF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SKIPDISP"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SORTCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SPLIT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "STOPCALLTRAIN"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "自動調教の実行キューを組み、実行の流れを制御する",
+   "rationale_en": "Builds or stops the automated train execution queue and controls execution flow."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "STRDATA"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "STRLEN"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "STRLENFORM"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "STRLENFORMU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "STRLENU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SWAP"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "SWAPCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "THROW"
+   },
+   "primary": "loop",
+   "secondary": [
+    "debug"
+   ],
+   "rationale": "FORM本文で実行時エラーを発生させ実行を中断する",
+   "rationale_en": "Raises a runtime error with a FORM message and interrupts execution."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TIMES"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TINPUT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TINPUTS"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TONEINPUT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TONEINPUTS"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TOOLTIP_SETCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TOOLTIP_SETDELAY"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TOOLTIP_SETDURATION"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCALL"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCALLFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCALLLIST"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCCALL"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCCALLFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCGOTO"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCGOTOFORM"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCJUMP"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYCJUMPFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYGOTO"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYGOTOFORM"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYGOTOLIST"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYJUMP"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYJUMPFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TRYJUMPLIST"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "TWAIT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "UPCHECK"
+   },
+   "primary": "character",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "CUP/CDOWN・UP/DOWNをPALAMへ反映するキャラクターデータ操作",
+   "rationale_en": "Character-data operation that applies CUP/CDOWN or shared UP/DOWN into PALAM."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "VARSET"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "VARSIZE"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "WAIT"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "WAITANYKEY"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "WEND"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "command_or_syntax",
+    "name": "WHILE"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#DEFINE"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "マクロ定義",
+   "rationale_en": "Macro definition."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#DIM"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "整数変数宣言",
+   "rationale_en": "Integer variable declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#DIMS"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "文字列変数宣言",
+   "rationale_en": "String variable declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#FUNCTION"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "関数型の宣言",
+   "rationale_en": "Function-type declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#FUNCTIONS"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "文字列関数型の宣言",
+   "rationale_en": "String-function-type declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#LATER"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "関数呼出し優先度の宣言",
+   "rationale_en": "Function call priority declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#LOCALSIZE"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "ローカル変数サイズ宣言",
+   "rationale_en": "Local variable size declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#LOCALSSIZE"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "ローカル文字列変数サイズ宣言",
+   "rationale_en": "Local string variable size declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#ONLY"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "#ONLY宣言",
+   "rationale_en": "#ONLY declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#PRI"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "関数呼出し優先度の宣言",
+   "rationale_en": "Function call priority declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration",
+    "name": "#SINGLE"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "単一実行宣言",
+   "rationale_en": "Single-execution declaration."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "CHARADATA"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "キャラ変数の宣言修飾子",
+   "rationale_en": "Character-variable declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "CONST"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "定数宣言修飾子",
+   "rationale_en": "Constant declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "DYNAMIC"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "動的変数宣言修飾子",
+   "rationale_en": "Dynamic variable declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "GLOBAL"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "大域変数宣言修飾子",
+   "rationale_en": "Global variable declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "REF"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "参照変数宣言修飾子",
+   "rationale_en": "Reference variable declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "SAVEDATA"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "セーブ対象宣言修飾子",
+   "rationale_en": "Saved-variable declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "declaration_modifier",
+    "name": "STATIC"
+   },
+   "primary": "declaration",
+   "secondary": [],
+   "rationale": "静的変数宣言修飾子",
+   "rationale_en": "Static variable declaration modifier."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ABS"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ALLSAMES"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ARRAYMSORT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "BARSTR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGCLEAR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGCLEARBUTTON"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGREMOVEBMAP"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGREMOVERANGE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGSETBMAPG"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGSETBUTTONSPRITE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGSETG"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBGSETSPRITE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CBRT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CHARATU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CHKCHARADATA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CHKDATA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CHKFONT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CHKGLOBALDATA"
+   },
+   "primary": "internal",
+   "secondary": [],
+   "rationale": "bundled v24ソースでは有効な組み込みではない追跡対象名",
+   "rationale_en": "Tracked name that is not an active built-in in the bundled v24 source."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CHKVARDATA"
+   },
+   "primary": "internal",
+   "secondary": [],
+   "rationale": "bundled v24ソースでは有効な組み込みではない追跡対象名",
+   "rationale_en": "Tracked name that is not an active built-in in the bundled v24 source."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CLIENTHEIGHT"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CLIENTWIDTH"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CMATCH"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "COLOR_FROMNAME"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "COLOR_FROMRGB"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CONVERT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVABL"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVBASE"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVCALLNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVCFLAG"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVCSTR"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVEQUIP"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVEXP"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVJUEL"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVMARK"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVMASTERNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVNICKNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVRELATION"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CSVTALENT"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CURRENTALIGN"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "CURRENTREDRAW"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ENCODETOUNI"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ESCAPE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "EXISTCSV"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "EXPONENT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "FINDCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "FINDELEMENT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "FINDLASTCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "FINDLASTELEMENT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "FIND_CHARADATA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "FIND_VARDATA"
+   },
+   "primary": "internal",
+   "secondary": [],
+   "rationale": "bundled v24ソースでは有効な組み込みではない追跡対象名",
+   "rationale_en": "Tracked name that is not an active built-in in the bundled v24 source."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GCLEAR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GCREATE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GCREATED"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GCREATEFROMFILE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GDISPOSE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GDRAWG"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GDRAWGWITHMASK"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GDRAWSPRITE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETBGCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETBIT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETCONFIG"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETCONFIGS"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETDEFBGCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETDEFCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETEXPLV"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETFOCUSCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETFONT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETKEY"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETKEYTRIGGERED"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETLINESTR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETMILLISECOND"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETNUM"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETNUMB"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETPALAMLV"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETSECOND"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETSPCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETSTYLE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "現在の文字装飾フラグなど表示状態の取得",
+   "rationale_en": "Reads display state such as the current text decoration flags."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETTIME"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GETTIMES"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GFILLRECTANGLE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GGETCOLOR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GHEIGHT"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GLOAD"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GROUPMATCH"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GSAVE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GSETBRUSH"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GSETCOLOR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GSETFONT"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GSETPEN"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "GWIDTH"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "HTML_ESCAPE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "HTML_GETPRINTEDSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "HTML_POPPRINTINGSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "HTML_TOPLAINTEXT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "INRANGE"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "INRANGEARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "INRANGECARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ISACTIVE"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ISNUMERIC"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "ISSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "LIMIT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "LINEISEMPTY"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "LOADTEXT"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "LOG"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "LOG10"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MATCH"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MAX"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MAXARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MAXCARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MESSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MIN"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MINARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MINCARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MONEYSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MOUSESKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MOUSEX"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "MOUSEY"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "NOSAMES"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "POWER"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "PRINTCLENGTH"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "PRINTCPERLINE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "RAND"
+   },
+   "primary": "random",
+   "secondary": [],
+   "rationale": "乱数の生成・初期化・状態確認",
+   "rationale_en": "Generates, reseeds, or inspects random numbers."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "REPLACE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SAVENOS"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SAVETEXT"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SETANIMETIMER"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SIGN"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEANIMEADDFRAME"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEANIMECREATE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITECREATE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITECREATED"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEDISPOSE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEGETCOLOR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEHEIGHT"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEMOVE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEPOSX"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEPOSY"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITESETPOS"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SPRITEWIDTH"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SQRT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRCOUNT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRFIND"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRFINDU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRFORM"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRJOIN"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRLENS"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "STRLENSU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SUBSTRING"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SUBSTRINGU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SUMARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "SUMCARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "TOFULL"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "TOHALF"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "TOINT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "TOLOWER"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "TOSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "TOUPPER"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "UNICODE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "UNICODEBYTE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "expression_function",
+    "name": "VARSIZE"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ABS"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ALLSAMES"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ARRAYMSORT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "BARSTR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGCLEAR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGCLEARBUTTON"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGREMOVEBMAP"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGREMOVERANGE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGSETBMAPG"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGSETBUTTONSPRITE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGSETG"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBGSETSPRITE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CBRT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CHARATU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CHKCHARADATA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CHKDATA"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CHKFONT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CLIENTHEIGHT"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CLIENTWIDTH"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CMATCH"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "COLOR_FROMNAME"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "COLOR_FROMRGB"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CONVERT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVABL"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVBASE"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVCALLNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVCFLAG"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVCSTR"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVEQUIP"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVEXP"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVJUEL"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVMARK"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVMASTERNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVNICKNAME"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVRELATION"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CSVTALENT"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CURRENTALIGN"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "CURRENTREDRAW"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ESCAPE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "EXISTCSV"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "EXPONENT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "FINDCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "FINDELEMENT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "FINDLASTCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "FINDLASTELEMENT"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "FIND_CHARADATA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GCLEAR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GCREATE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GCREATED"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GCREATEFROMFILE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GDISPOSE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GDRAWG"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GDRAWGWITHMASK"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GDRAWSPRITE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETBGCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETBIT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETCONFIG"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETCONFIGS"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETDEFBGCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETDEFCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETEXPLV"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETFOCUSCOLOR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示色の設定・取得",
+   "rationale_en": "Sets or queries display colors."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETFONT"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "表示フォントの設定・確認",
+   "rationale_en": "Sets or checks the display font."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETKEY"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETKEYTRIGGERED"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETLINESTR"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETMILLISECOND"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETNUM"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETNUMB"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETPALAMLV"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETSECOND"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETSPCHARA"
+   },
+   "primary": "character",
+   "secondary": [],
+   "rationale": "キャラクターの追加・削除・検索・並べ替え",
+   "rationale_en": "Adds, removes, finds, or reorders characters."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETSTYLE"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "現在の文字装飾フラグなど表示状態の取得",
+   "rationale_en": "Reads display state such as the current text decoration flags."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GETTIMES"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GFILLRECTANGLE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GGETCOLOR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GHEIGHT"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GLOAD"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GROUPMATCH"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GSAVE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GSETBRUSH"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GSETCOLOR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GSETFONT"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GSETPEN"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "GWIDTH"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "HTML_ESCAPE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "HTML_GETPRINTEDSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "HTML_POPPRINTINGSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "HTML_TOPLAINTEXT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "INRANGE"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "INRANGEARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "INRANGECARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ISACTIVE"
+   },
+   "primary": "system",
+   "secondary": [],
+   "rationale": "設定・環境・時刻・システム情報の取得",
+   "rationale_en": "Reads configuration, environment, clock, and system information."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ISNUMERIC"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "ISSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "LIMIT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "LINEISEMPTY"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "LOADTEXT"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "LOG"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "LOG10"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MATCH"
+   },
+   "primary": "variable",
+   "secondary": [
+    "math"
+   ],
+   "rationale": "変数・配列への代入・操作・検索（ビット操作・積算を含む）",
+   "rationale_en": "Assigns to, manipulates, or searches variables and arrays, including bit operations and scaling."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MAX"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MAXARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MAXCARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MESSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MIN"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MINARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MINCARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MONEYSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MOUSESKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MOUSEX"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "MOUSEY"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "NOSAMES"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "PRINTCLENGTH"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "画面表示・行構成・書式の制御",
+   "rationale_en": "Controls screen display, line composition, and formatting."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "RAND"
+   },
+   "primary": "random",
+   "secondary": [],
+   "rationale": "乱数の生成・初期化・状態確認",
+   "rationale_en": "Generates, reseeds, or inspects random numbers."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "REPLACE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SAVETEXT"
+   },
+   "primary": "file_io",
+   "secondary": [],
+   "rationale": "セーブ・ロード・ファイル入出力",
+   "rationale_en": "Saving, loading, and file input/output."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SETANIMETIMER"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SIGN"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEANIMEADDFRAME"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEANIMECREATE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITECREATE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITECREATED"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEDISPOSE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEGETCOLOR"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEHEIGHT"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEMOVE"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEPOSX"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEPOSY"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITESETPOS"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SPRITEWIDTH"
+   },
+   "primary": "graphics",
+   "secondary": [],
+   "rationale": "画像・スプライト・グラフィックの作成と描画",
+   "rationale_en": "Creates and draws images, sprites, and graphics."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SQRT"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRCOUNT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRFIND"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRFINDU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRFORM"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRJOIN"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRLENS"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "STRLENSU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SUBSTRING"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SUBSTRINGU"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SUMARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "SUMCARRAY"
+   },
+   "primary": "math",
+   "secondary": [],
+   "rationale": "数値演算・数学関数・数値の集計",
+   "rationale_en": "Numeric operations, math functions, and aggregation."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "TOFULL"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "TOHALF"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "TOINT"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "TOLOWER"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "TOSTR"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "TOUPPER"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "UNICODE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "method_as_command",
+    "name": "UNICODEBYTE"
+   },
+   "primary": "string",
+   "secondary": [],
+   "rationale": "文字列の検索・変換・結合・書式化",
+   "rationale_en": "Searches, converts, joins, or formats strings."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "!"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "論理NOT",
+   "rationale_en": "Logical NOT operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "!&"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "非共通ビット比較",
+   "rationale_en": "Non-common bit comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "!="
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "不等比較",
+   "rationale_en": "Inequality comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "!|"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "排他ビット比較",
+   "rationale_en": "Exclusive bit comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "#"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "三項選択演算子の選択肢区切り",
+   "rationale_en": "Alternative separator of the conditional-selection operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "%"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "剰余演算子",
+   "rationale_en": "Remainder operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "&"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "ビットAND",
+   "rationale_en": "Bitwise AND operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "&&"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "論理AND",
+   "rationale_en": "Logical AND operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "'="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator",
+    "string"
+   ],
+   "rationale": "文字列代入演算子",
+   "rationale_en": "String assignment operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "*"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "乗算演算子",
+   "rationale_en": "Multiplication operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "+"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "加算演算子",
+   "rationale_en": "Addition operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "++"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "インクリメント演算子",
+   "rationale_en": "Increment operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "-"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "減算演算子",
+   "rationale_en": "Subtraction operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "--"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "デクリメント演算子",
+   "rationale_en": "Decrement operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "/"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "除算演算子",
+   "rationale_en": "Division operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "<"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "未満比較",
+   "rationale_en": "Less-than comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "<<"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "左シフト",
+   "rationale_en": "Left-shift operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "<="
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "以下比較",
+   "rationale_en": "Less-or-equal comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "="
+   },
+   "primary": "variable",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "代入演算子",
+   "rationale_en": "Assignment operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "=="
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "等価比較",
+   "rationale_en": "Equality comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": ">"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "超過比較",
+   "rationale_en": "Greater-than comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": ">="
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "以上比較",
+   "rationale_en": "Greater-or-equal comparison."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": ">>"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "右シフト",
+   "rationale_en": "Right-shift operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "?"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "三項選択演算子の条件部",
+   "rationale_en": "Condition part of the conditional-selection operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "^"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "べき乗演算子",
+   "rationale_en": "Power operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "^^"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "論理XOR",
+   "rationale_en": "Logical XOR operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "|"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "ビットOR",
+   "rationale_en": "Bitwise OR operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "||"
+   },
+   "primary": "control_flow",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "論理OR",
+   "rationale_en": "Logical OR operator."
+  },
+  {
+   "typed_key": {
+    "kind": "operator",
+    "name": "~"
+   },
+   "primary": "math",
+   "secondary": [
+    "operator"
+   ],
+   "rationale": "ビットNOT",
+   "rationale_en": "Bitwise NOT operator."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "BREAK"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "CASE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "CASEELSE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "CATCH"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "CONTINUE"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "DATA"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "DATAFORM"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "DATALIST"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "DO"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ELSE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ELSEIF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDCATCH"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDDATA"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDFUNC"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDIF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDLIST"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDNOSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "ENDSELECT"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "FOR"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "FUNC"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "IF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "LOOP"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "NEXT"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "NOSKIP"
+   },
+   "primary": "input",
+   "secondary": [],
+   "rationale": "入力の取得・待機・入力状態の確認",
+   "rationale_en": "Reads input, waits, or checks input state."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATA"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATAD"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATADL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATADW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATAK"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATAKL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATAKW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATAL"
+   },
+   "primary": "display",
+   "secondary": [],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "PRINTDATAW"
+   },
+   "primary": "display",
+   "secondary": [
+    "input"
+   ],
+   "rationale": "PRINT系・出力補助で画面へ表示する",
+   "rationale_en": "PRINT-family output helpers that display text on screen."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "REND"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "REPEAT"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "SELECTCASE"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "SIF"
+   },
+   "primary": "control_flow",
+   "secondary": [],
+   "rationale": "条件分岐構文",
+   "rationale_en": "Conditional branching syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "STRDATA"
+   },
+   "primary": "csv_data",
+   "secondary": [
+    "display"
+   ],
+   "rationale": "CSV参照・ゲーム定義データ・データ定義構文",
+   "rationale_en": "CSV references, game-defined data, and data-definition syntax."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCALLLIST"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCCALL"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCCALLFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCGOTO"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCGOTOFORM"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCJUMP"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYCJUMPFORM"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYGOTOLIST"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "TRYJUMPLIST"
+   },
+   "primary": "function",
+   "secondary": [],
+   "rationale": "関数・サブルーチンの定義・呼出し・復帰",
+   "rationale_en": "Defines, invokes, or returns from functions and subroutines."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "WEND"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  },
+  {
+   "typed_key": {
+    "kind": "structural_syntax",
+    "name": "WHILE"
+   },
+   "primary": "loop",
+   "secondary": [],
+   "rationale": "ループ・ジャンプ・実行の流れの制御",
+   "rationale_en": "Loops, jumps, and execution-flow control."
+  }
+ ]
+}

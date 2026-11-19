@@ -1,0 +1,40 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0623 · SOURCE_HASHES.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0623 · SOURCE_HASHES.json</h1>
+<p>原票種別=SOURCE_HASHES.json; 参照対象=command_or_syntax:CONTINUE。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を2個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>882d2e3315e4d02e618a1d63babe9beacf2d16d7e5ea52fce388a4d1056d730a</code></p>
+<p><a href="../assets/U0623.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>f97faf92fbc99d6b15812b691bfa497c5f1d82b0448e3c8472b49313644c5d14</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;native_archive&quot;: {
+    &quot;path&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+    &quot;sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;
+  },
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;public_pyz&quot;: {
+    &quot;path&quot;: &quot;[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz&quot;,
+    &quot;sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+    &quot;expected_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;
+  },
+  &quot;native_source_member&quot;: {
+    &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+    &quot;sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+    &quot;lines&quot;: [
+      2120,
+      2171
+    ],
+    &quot;relevant_behavior&quot;: &quot;CONTINUE in the innermost DO branch evaluates the associated LOOP condition immediately; false resumes after LOOP, true transfers to the DO body; condition exceptions propagate at that instruction location.&quot;
+  },
+  &quot;source_excerpt_path&quot;: &quot;evidence/continue-finite-20261115/source_excerpt_Instraction_Child.txt&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0114 · command_or_syntax:CONTINUE · check</li>
+<li>L0118 · command_or_syntax:CONTINUE · check</li>
+</ul></html>

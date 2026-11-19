@@ -1,0 +1,357 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "CUSTOMDRAWLINE"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "DISPLAYLINES202_C202_17",
+    "DISPLAYLINES202_C202_18",
+    "LINE_PARSER_CUSTOMDRAWLINE_OMITTED_20261115"
+  ],
+  "accepted_scope": "Original existing serialized-output/state difference reviewed with raw checks, plus separately observed omitted-argument before/stop line7. Font/pixel parity explicitly nonapplicable to published CLI frontend under source/doc mapping; graphical endpoints remain unobserved, never matched.",
+  "discharged_remaining": [
+    {
+      "action": "review_existing",
+      "condition": "Parent confirm the documented CUSTOMDRAWLINE difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+      "case_ids": [
+        "DISPLAYLINES202_C202_17",
+        "DISPLAYLINES202_C202_18"
+      ],
+      "source_refs": [
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+          "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+          "start_line": 276,
+          "end_line": 276
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+          "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+          "start_line": 351,
+          "end_line": 384
+        }
+      ]
+    },
+    {
+      "type": "explicit_original_scope_gate",
+      "id": "layout_visual_applicability",
+      "requirement": "Resolve original layout_native_vs_terminal/endpoint proof applicability to CLI before whole-target acceptance; either provide demanded native graphical observation or source-backed nonapplicability rationale. New omitted-argument stop comparison discharges parser-only gap.",
+      "evidence": "evidence/line-draw-existing-review-20261115/REPORT.json"
+    }
+  ],
+  "existing_review_path": "evidence/line-draw-existing-review-20261115/REPORT.json",
+  "existing_review_sha256": "0edb2dd3d130b498d70cf5b98f28ed9d34760d38e744baf04421c9d824a50f9f",
+  "omitted_argument_comparison_path": "evidence/line-draw-parser-gaps-20261115/COMPARISON.json",
+  "omitted_argument_comparison_sha256": "9ac5bc22ccba13980860dae9f430b8d08dcf4dbc104e0e8e73e127c726938ad0",
+  "applicability_path": "evidence/line-draw-applicability-20261115/SOURCE_APPLICABILITY.json",
+  "applicability_sha256": "d274ac0666137f895adc39df44b67bc02ebc1aa3225b8a103bd1749c4e2fe6ed",
+  "source_refs": [
+    {
+      "archive": "public pyz",
+      "archive_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "member": "COMPATIBILITY_ja.md",
+      "sha256": "7764bc43787f9d7b255202a817e75ca4ef6c1fad47b1300635d62975bb9037ad",
+      "ranges": [
+        [
+          85,
+          85
+        ]
+      ],
+      "excerpts": [
+        {
+          "line": 85,
+          "text": "- 本家GUI固有の画像・音声・マウス操作・フォント描画は扱いません。端末自体のフォント設定は利用できます。"
+        }
+      ]
+    },
+    {
+      "archive": "public pyz",
+      "archive_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "member": "README_ja.md",
+      "sha256": "4f604cd6616f45d03bdb32637cff02405f1a109ccec831c93e973ff7a3dfc9a5",
+      "ranges": [
+        [
+          6,
+          10
+        ],
+        [
+          38,
+          38
+        ]
+      ],
+      "excerpts": [
+        {
+          "line": 6,
+          "text": "現時点では、画像・音声・マウス操作・フォント描画は扱いません。"
+        },
+        {
+          "line": 7,
+          "text": ""
+        },
+        {
+          "line": 8,
+          "text": "Emuera専用バリアントが動くeramakerだと思ってください。"
+        },
+        {
+          "line": 9,
+          "text": ""
+        },
+        {
+          "line": 10,
+          "text": "フォント描画は本家GUI固有の機能を指し、端末そのもののフォント設定は利用できます。ERHにも対応し、本家 Emuera と同じ評価順序・状態変化・保存・文字出力になることを目標にしています。"
+        },
+        {
+          "line": 38,
+          "text": "本家 GUI の画像・音声・マウス操作・フォントの描画は対象外です。PyEmuera は文字の論理出力と端末への表示を扱います。"
+        }
+      ]
+    },
+    {
+      "archive": "public pyz",
+      "archive_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "member": "pyemuera/printing.py",
+      "sha256": "a545be79b25d62bf2c9cc519c7c3c8a0306c698866ddd7ff4418afcc3a816ad7",
+      "ranges": [
+        [
+          150,
+          161
+        ]
+      ],
+      "excerpts": [
+        {
+          "line": 150,
+          "text": "    elif mode in ('rule', 'rule_raw', 'rule_default'):"
+        },
+        {
+          "line": 151,
+          "text": "        from .compat1824 import rule_string"
+        },
+        {
+          "line": 152,
+          "text": ""
+        },
+        {
+          "line": 153,
+          "text": "        # DRAWLINE/CUSTOMDRAWLINE always start on a fresh logical line."
+        },
+        {
+          "line": 154,
+          "text": "        if console.current:"
+        },
+        {
+          "line": 155,
+          "text": "            console.write('', True)"
+        },
+        {
+          "line": 156,
+          "text": "        pattern = ("
+        },
+        {
+          "line": 157,
+          "text": "            vm.get('DRAWLINESTR')"
+        },
+        {
+          "line": 158,
+          "text": "            if mode == 'rule_default'"
+        },
+        {
+          "line": 159,
+          "text": "            else arg if mode == 'rule_raw' else vm.format(arg)"
+        },
+        {
+          "line": 160,
+          "text": "        )"
+        },
+        {
+          "line": 161,
+          "text": "        text = rule_string(vm, pattern)"
+        }
+      ]
+    },
+    {
+      "archive": "public pyz",
+      "archive_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "member": "pyemuera/compat1824.py",
+      "sha256": "be30fed62ce65ce9be35f5ceb0829eae9e1d681d9f1a74564c42e79d5b0e6552",
+      "ranges": [
+        [
+          57,
+          64
+        ]
+      ],
+      "excerpts": [
+        {
+          "line": 57,
+          "text": "def rule_string(vm, pattern):"
+        },
+        {
+          "line": 58,
+          "text": "    pattern = string(pattern)"
+        },
+        {
+          "line": 59,
+          "text": "    if not pattern or display_width(pattern) <= 0:"
+        },
+        {
+          "line": 60,
+          "text": "        raise error('GETLINESTR関数の引数が空文字列です')"
+        },
+        {
+          "line": 61,
+          "text": "    width = getattr(vm.console, 'columns', 100)"
+        },
+        {
+          "line": 62,
+          "text": "    return legacy_substring("
+        },
+        {
+          "line": 63,
+          "text": "        pattern * (width // max(1, display_width(pattern)) + 1), 0, width"
+        },
+        {
+          "line": 64,
+          "text": "    )"
+        }
+      ]
+    },
+    {
+      "archive": "Native v24 source",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/EmueraConsole.Print.cs",
+      "sha256": "6b9a9b360a25d0064e37563b13fd1afa832ee5c2f88192f752347d54498e4e53",
+      "ranges": [
+        [
+          527,
+          555
+        ]
+      ],
+      "excerpts": [
+        {
+          "line": 527,
+          "text": "\t\tpublic void printCustomBar(string barStr, bool isConst)"
+        },
+        {
+          "line": 528,
+          "text": "\t\t{"
+        },
+        {
+          "line": 529,
+          "text": "\t\t\tif (string.IsNullOrEmpty(barStr))"
+        },
+        {
+          "line": 530,
+          "text": "\t\t\t\tthrow new CodeEE(\"空文字列によるDRAWLINEが行われました\");"
+        },
+        {
+          "line": 531,
+          "text": "\t\t\tStringStyle ss = userStyle;"
+        },
+        {
+          "line": 532,
+          "text": "\t\t\tuserStyle.FontStyle = FontStyle.Regular;"
+        },
+        {
+          "line": 533,
+          "text": "            if (isConst)"
+        },
+        {
+          "line": 534,
+          "text": "                Print(barStr);"
+        },
+        {
+          "line": 535,
+          "text": "            else"
+        },
+        {
+          "line": 536,
+          "text": "                Print(getStBar(barStr));"
+        },
+        {
+          "line": 537,
+          "text": "            userStyle = ss;"
+        },
+        {
+          "line": 538,
+          "text": "\t\t}"
+        },
+        {
+          "line": 539,
+          "text": ""
+        },
+        {
+          "line": 540,
+          "text": "\t\tpublic string getDefStBar()"
+        },
+        {
+          "line": 541,
+          "text": "\t\t{"
+        },
+        {
+          "line": 542,
+          "text": "\t\t\treturn stBar;"
+        },
+        {
+          "line": 543,
+          "text": "\t\t}"
+        },
+        {
+          "line": 544,
+          "text": ""
+        },
+        {
+          "line": 545,
+          "text": "\t\tpublic string getStBar(string barStr)"
+        },
+        {
+          "line": 546,
+          "text": "\t\t{"
+        },
+        {
+          "line": 547,
+          "text": "\t\t\tStringBuilder bar = new StringBuilder();"
+        },
+        {
+          "line": 548,
+          "text": "\t\t\tbar.Append(barStr);"
+        },
+        {
+          "line": 549,
+          "text": "\t\t\tint width = 0;"
+        },
+        {
+          "line": 550,
+          "text": "\t\t\tFont font = Config.Font;"
+        },
+        {
+          "line": 551,
+          "text": "\t\t\twhile (width < Config.DrawableWidth)"
+        },
+        {
+          "line": 552,
+          "text": "\t\t\t{//境界を越えるまで一文字ずつ増やす"
+        },
+        {
+          "line": 553,
+          "text": "\t\t\t\tbar.Append(barStr);"
+        },
+        {
+          "line": 554,
+          "text": "\t\t\t\twidth = stringMeasure.GetDisplayLength(bar.ToString(), font);"
+        },
+        {
+          "line": 555,
+          "text": "\t\t\t}"
+        }
+      ]
+    }
+  ],
+  "unobserved": [
+    "Native graphical endpoints and equal-font pixel equality remain unproved",
+    "Other widths/fonts/Unicode patterns not exhaustively compared"
+  ],
+  "product_modified": false,
+  "global_completion": false
+}

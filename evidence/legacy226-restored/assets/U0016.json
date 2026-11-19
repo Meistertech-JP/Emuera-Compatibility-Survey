@@ -1,0 +1,54 @@
+{
+  "schema": "phase2-target-parent-acceptance/v1",
+  "generated_utc": "2026-11-14T12:50:13.617613+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "ENCODETOUNI"
+  },
+  "accepted": true,
+  "case_ids": [
+    "ENCODEUNIHELPER190_length_nonempty_boundary",
+    "ENCODEUNIHELPER190_negative_nonempty_boundary"
+  ],
+  "discharged_requirements": [
+    {
+      "id": "nonempty_helper_negative_and_length_boundaries",
+      "condition": "For nonempty \"A\", the index helper executes once for -1 and index==length; independent RESULT/RESULTS sentinel values are read inside the helper; both engines stop at the target line. Diagnostics are compared and difference retained."
+    }
+  ],
+  "basis": {
+    "prior_target_review_sha256": "3c8cad4e1b468cf7750609d02a257edcbf3fdbc54c53517771443686a61939da",
+    "prior_target_remaining": [
+      {
+        "type": "finite_evidence_adjudication",
+        "source": "evidence\\parent-implemented-function-review-20261113\\MATRIX.json",
+        "target": {
+          "kind": "expression_function",
+          "name": "ENCODETOUNI"
+        },
+        "requirements": [
+          "Missing nonempty index-helper fault precedence at the named -1/length boundary and independent RESULT/RESULTS sentinel readback. Literal surrogate0/1 and negative/length records plus empty-helper short circuit190 do not establish the required nonempty faulting-helper execution."
+        ],
+        "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+      }
+    ],
+    "comparison_sha256": "63ba669dad55caffe9fcf5f7d1dc095aa60483a23c18a59962425139d4ef9962",
+    "case_manifest_sha256": "602cb9e13d7e6c893d838ca37692259b9577585e35206963c84872d1465b928d",
+    "case_seal_sha256": "e6a02cc398de8a87198bf754462c461bd6555b267fd7a5ec383bf075eba25ac2",
+    "case_register_sha256_after_addition": "16c473479ca1795d1b4379b3f1a13b315cba69d23049ee18736edbf851ccfbbc",
+    "master_ledger_sha256_after_addition": "102a919790b4d6737e83060916e63fbf6b23f99a088b3f17b3139ca5b8f11176",
+    "case_plan_sha256_after_addition": "f104e36f1b8715d7854cb6c12807e66d850799acce11e7c7965f8ae3e5a1e0b8",
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "image_crop_reconciliation_sha256": "22b80ca0469dc535a20cbf2b3085bf6b6a56bcb8e1daa3a72cbc4bd09f1d79bb"
+  },
+  "limitations": [
+    "Native/Py diagnostic text differs and is retained as different_scoped.",
+    "No post-error state or return assignment C is observed.",
+    "Native natural exit and exit code are unobserved; the isolated harness ends the owned process after capture.",
+    "This closes only the finite missing helper-boundary requirement in combination with existing accepted evidence. It does not claim full ENCODETOUNI equivalence.",
+    "The separate command_or_syntax:ENCODETOUNI target and the existing empty-string evaluation-order difference are unchanged."
+  ],
+  "product_modified": false,
+  "public_artifacts_modified": false
+}

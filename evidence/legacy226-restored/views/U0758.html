@@ -1,0 +1,24 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0758 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0758 · REVIEW_ja.md</h1>
+<p>SQRT(−1)の有効なガード診断比較であり、different_scopedを保った原文を公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>ed872a32e94ded2a4fc47cbcfc8e268fcb23cb4444f3313c4d7d79607d8dfaa4</code></p>
+<p><a href="../assets/U0758.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>ed872a32e94ded2a4fc47cbcfc8e268fcb23cb4444f3313c4d7d79607d8dfaa4</code></p>
+<pre># SQRT finite-scope adjudication
+
+Accept `expression_function:SQRT` as necessary-comparison complete for the reviewed finite scope with outcome `different_scoped`. The required `-1` guard witness is now present: two Native v24 runs and one pinned public pyz run evaluated the argument helper exactly once, stopped on ERB line 6, and did not reach continuation. The Native replicas&#x27; logs are byte-identical. The selected error diagnostic differs (Native Japanese CodeEE text versus public `E_ARITH`), so this is not classified as strict output equality.
+
+The acceptance retains the existing source/signature review, valid normal controls, helper routing and the case200 0/1 plus large-double-rounding observations. The Native method checks `ret &lt; 0` before `Math.Sqrt`; the public pyz maps `math.sqrt` domain failure to E_ARITH. No engine code was modified.
+
+Excluded: all other values, argument arities and types, complete floating-point domain/overflow behavior, post-error state equality, and Native natural exit/exit code. The Native UI was harness-terminated after capture.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2192 · expression_function:SQRT · check</li>
+</ul></html>

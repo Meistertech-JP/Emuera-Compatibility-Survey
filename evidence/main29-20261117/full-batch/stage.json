@@ -1,0 +1,1057 @@
+{
+  "cases": [
+    "CASE001",
+    "CASE002",
+    "CASE003",
+    "CASE004",
+    "CASE005",
+    "CASE006",
+    "CASE007",
+    "CASE008",
+    "CASE009",
+    "CASE010",
+    "CASE011",
+    "CASE012",
+    "CASE013",
+    "CASE014",
+    "CASE015",
+    "CASE016",
+    "CASE017",
+    "CASE018",
+    "CASE019",
+    "CASE020",
+    "CASE021",
+    "CASE022",
+    "CASE023",
+    "CASE024",
+    "CASE025",
+    "CASE026",
+    "CASE027",
+    "CASE028",
+    "CASE029"
+  ],
+  "modes": [
+    "native-01",
+    "native-02",
+    "py"
+  ],
+  "name": "full-batch",
+  "rows": [
+    {
+      "case_id": "CASE001",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "7"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:ABS"
+    },
+    {
+      "case_id": "CASE002",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "7"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:MIN"
+    },
+    {
+      "case_id": "CASE003",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "-9223372036854775808"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "-9223372036854775808"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "-9223372036854775808"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:MIN"
+    },
+    {
+      "case_id": "CASE004",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "7"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:MAX"
+    },
+    {
+      "case_id": "CASE005",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "9223372036854775807"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "9223372036854775807"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "9223372036854775807"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:MAX"
+    },
+    {
+      "case_id": "CASE006",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "4"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "4"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "4"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LIMIT"
+    },
+    {
+      "case_id": "CASE007",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "4"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "4"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "4"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LIMIT"
+    },
+    {
+      "case_id": "CASE008",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "8"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "8"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "8"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LIMIT"
+    },
+    {
+      "case_id": "CASE009",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "8"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "8"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "8"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LIMIT"
+    },
+    {
+      "case_id": "CASE010",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:INRANGE"
+    },
+    {
+      "case_id": "CASE011",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:INRANGE"
+    },
+    {
+      "case_id": "CASE012",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:INRANGE"
+    },
+    {
+      "case_id": "CASE013",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:INRANGE"
+    },
+    {
+      "case_id": "CASE014",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG"
+    },
+    {
+      "case_id": "CASE015",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG"
+    },
+    {
+      "case_id": "CASE016",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG"
+    },
+    {
+      "case_id": "CASE017",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "2"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "2"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "2"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG"
+    },
+    {
+      "case_id": "CASE018",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG10"
+    },
+    {
+      "case_id": "CASE019",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG10"
+    },
+    {
+      "case_id": "CASE020",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG10"
+    },
+    {
+      "case_id": "CASE021",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "2"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "2"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "2"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:LOG10"
+    },
+    {
+      "case_id": "CASE022",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:STRCOUNT"
+    },
+    {
+      "case_id": "CASE023",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "2"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "2"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "2"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:STRCOUNT"
+    },
+    {
+      "case_id": "CASE024",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "aXbaX"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "aXbaX"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "aXbaX"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:REPLACE"
+    },
+    {
+      "case_id": "CASE025",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "aba"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "aba"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "aba"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:REPLACE"
+    },
+    {
+      "case_id": "CASE026",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "-0015"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "-0015"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "-0015"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:TOSTR"
+    },
+    {
+      "case_id": "CASE027",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "FFFFFFFFFFFFFFF1"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "FFFFFFFFFFFFFFF1"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "FFFFFFFFFFFFFFF1"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:TOSTR"
+    },
+    {
+      "case_id": "CASE028",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0000"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0000"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0000"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:TOSTR"
+    },
+    {
+      "case_id": "CASE029",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "0"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "0"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:TOSTR"
+    }
+  ],
+  "schema": "neutral-legacy-expression-stage.v1"
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "native-public-finite-command-comparison-1",
+  "generated_utc": "2026-11-13T17:55:33.706378+00:00",
+  "case_ids": [
+    "PRINTLEMPTY01_20261114"
+  ],
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTL"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "source_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "public_source_zip_sha256": "c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2",
+  "fixture": {
+    "path": "pilot/variants/PRINTLEMPTY01/ERB/PRINTLEMPTY01.ERB",
+    "sha256": "fc0d0fe759589be62558d9639e11efa5da5126dcccaf3d248cb594732a62b9f8"
+  },
+  "runs": {
+    "accepted-native-01": {
+      "receipt": "accepted-native-01/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "fc0d0fe759589be62558d9639e11efa5da5126dcccaf3d248cb594732a62b9f8",
+      "outputlog_sha256": "b2fd1b2382eb1798a9006ebf7c46a6aa7d3028dbf954735eda514444d6d0dfb2",
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTL",
+        "<AFTER_EMPTY_PRINTL>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTL>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ],
+      "desktop": "PyEmueraProbe_0606ea020712460f94c986caee14228d",
+      "pid": 29460,
+      "process_signaled_after_wait": false,
+      "natural_exit_observed": false,
+      "screenshot_or_global_keyboard_events": false
+    },
+    "accepted-native-02": {
+      "receipt": "accepted-native-02/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "fc0d0fe759589be62558d9639e11efa5da5126dcccaf3d248cb594732a62b9f8",
+      "outputlog_sha256": "b2fd1b2382eb1798a9006ebf7c46a6aa7d3028dbf954735eda514444d6d0dfb2",
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTL",
+        "<AFTER_EMPTY_PRINTL>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTL>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ],
+      "desktop": "PyEmueraProbe_9191009fbdb341b5bfe72638300d097f",
+      "pid": 19708,
+      "process_signaled_after_wait": false,
+      "natural_exit_observed": false,
+      "screenshot_or_global_keyboard_events": false
+    },
+    "accepted-public-01": {
+      "receipt": "accepted-public-01/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "fc0d0fe759589be62558d9639e11efa5da5126dcccaf3d248cb594732a62b9f8",
+      "outputlog_sha256": "5e6567388de5b58d40f248cf694777afc7135b337601b2d8f4db1a8e532572c5",
+      "returncode": 0,
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTL",
+        "<AFTER_EMPTY_PRINTL>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTL>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ]
+    },
+    "accepted-public-02": {
+      "receipt": "accepted-public-02/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "fc0d0fe759589be62558d9639e11efa5da5126dcccaf3d248cb594732a62b9f8",
+      "outputlog_sha256": "5e6567388de5b58d40f248cf694777afc7135b337601b2d8f4db1a8e532572c5",
+      "returncode": 0,
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTL",
+        "<AFTER_EMPTY_PRINTL>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTL>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ]
+    }
+  },
+  "selected_semantic_lines": [
+    "Now Loading...",
+    "BEFORE_EMPTY_PRINTL",
+    "<AFTER_EMPTY_PRINTL>",
+    "X  Y",
+    "<AFTER_SPACES_PRINTL>",
+    "RESULT=77;RESULTS=[\"KEEP\"]"
+  ],
+  "observations": [
+    "PRINT BEFORE_EMPTY_PRINTL is followed by a bare PRINTL and then <AFTER_EMPTY_PRINTL>; all four selected outputs place the after marker on the next line.",
+    "PRINTL X  Y preserves the two internal spaces and the following marker appears on a separate line in all four runs.",
+    "RESULT=77 and RESULTS=[\"KEEP\"] remain visible after the selected PRINTL calls.",
+    "The two Native raw output logs are identical to each other; the two public OUTPUTLOG files are identical to each other. Selected semantic lines match across engines after line-ending normalization."
+  ],
+  "raw_logs_equal_across_engines": false,
+  "raw_log_equality_explanation": "Native emuera.log is UTF-16 with CRLF; public OUTPUTLOG is UTF-8 with LF and adds its generic host notice. This is not byte-equivalence or GUI layout evidence.",
+  "native_natural_exit_observed": false,
+  "native_exit_code_observed": false,
+  "public_returncodes": [
+    0,
+    0
+  ],
+  "screenshots_taken": false,
+  "global_keyboard_events": false,
+  "scoped_outcome": "matched_in_finite_scope",
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_originals_modified": false
+}

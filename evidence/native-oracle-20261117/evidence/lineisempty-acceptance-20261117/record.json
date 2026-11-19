@@ -1,0 +1,184 @@
+{
+  "schema": "lineisempty-button-finite-evidence.v1",
+  "publication_status": "PRIVATE_STAGING_REVIEW_REQUIRED",
+  "typed_target": {
+    "kind": "method_as_command",
+    "name": "LINEISEMPTY"
+  },
+  "case_id": "LINEBUF20261115_button_method",
+  "original_parent_decision": {
+    "decision": "necessary_comparison_complete",
+    "comparison_outcome": "matched_in_finite_scope",
+    "scope": "finite parent acceptance; not release approval",
+    "other_cases_in_same_decision": [
+      "DISPLAYSTATE_LINEISEMPTY",
+      "LINESTATE249_method"
+    ],
+    "other_case_raw_included": false,
+    "original_acceptance_included": false,
+    "provenance_status": "PRIVATE_SOURCE_NOT_IN_BUNDLE",
+    "acceptance_projection": {
+      "path": "parent-acceptance-projection.json",
+      "sha256": "7368475d039624e6760c36040d5ed5383a0601a1878979ac3124e211cbc7c620",
+      "size": 6776
+    },
+    "source_acceptance_sha256": "a88f2640f7199ad4b20065b216c5afe78c22cd1880a4026c00c31c006c58bc19",
+    "source_readback_sha256": "6241f8189d78561a42c59d2c9e6894b186c332c666db417341b009d63c7afe09"
+  },
+  "condition": "After a completed line, observe the bare zero-argument LINEISEMPTY statement; add one pending nonempty PRINTBUTTON and observe again.",
+  "recorded_selected_lines": [
+    "EMPTY=1 R1=702 S=SENTINEL",
+    "BUTTON=0 R1=702 S=SENTINEL",
+    "DONE"
+  ],
+  "modes": [
+    {
+      "mode": "native-01",
+      "fixture": {
+        "path": "modes/native-01/inputs/SEARCHBOUND01.ERB",
+        "sha256": "f5fb64c3921f9683ca49e32ecb16bf5dfc0e591d72fb93374220ca77dabf1708",
+        "size": 466
+      },
+      "config": {
+        "path": "modes/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "history": {
+        "path": "modes/native-01/raw/history.bin",
+        "sha256": "4abc66ed241e7b1b8a9bc1c785e3f5bf6467ce310494995ed9036bc687775d73",
+        "size": 198
+      },
+      "receipt": {
+        "path": "modes/native-01/receipt.json",
+        "sha256": "f449cee28838e5128bd5b17ab15412c5d1cc14bd0b4ba3bdf5f7ec2304c6d186",
+        "size": 1163
+      }
+    },
+    {
+      "mode": "native-02",
+      "fixture": {
+        "path": "modes/native-02/inputs/SEARCHBOUND01.ERB",
+        "sha256": "f5fb64c3921f9683ca49e32ecb16bf5dfc0e591d72fb93374220ca77dabf1708",
+        "size": 466
+      },
+      "config": {
+        "path": "modes/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "history": {
+        "path": "modes/native-02/raw/history.bin",
+        "sha256": "4abc66ed241e7b1b8a9bc1c785e3f5bf6467ce310494995ed9036bc687775d73",
+        "size": 198
+      },
+      "receipt": {
+        "path": "modes/native-02/receipt.json",
+        "sha256": "4225f92988761862c5823045ee23e130b5cdf5272fa79626f03230297710776f",
+        "size": 1163
+      }
+    },
+    {
+      "mode": "public-01",
+      "fixture": {
+        "path": "modes/public-01/inputs/SEARCHBOUND01.ERB",
+        "sha256": "f5fb64c3921f9683ca49e32ecb16bf5dfc0e591d72fb93374220ca77dabf1708",
+        "size": 466
+      },
+      "config": {
+        "path": "modes/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164
+      },
+      "stdout": {
+        "path": "modes/public-01/raw/stdout.bin",
+        "sha256": "420e19d77221afa684828e74be374b006d5f1698759f5221fcee2f940d445804",
+        "size": 156
+      },
+      "stderr": {
+        "path": "modes/public-01/raw/stderr.bin",
+        "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+        "size": 110
+      },
+      "history": {
+        "path": "modes/public-01/raw/history.bin",
+        "sha256": "4abc66ed241e7b1b8a9bc1c785e3f5bf6467ce310494995ed9036bc687775d73",
+        "size": 198
+      },
+      "receipt": {
+        "path": "modes/public-01/receipt.json",
+        "sha256": "55b0c433c2277ec98263a3f11f5659394d5686f1ab4d510cb1d3c792074cf9ba",
+        "size": 1510
+      }
+    }
+  ],
+  "comparison": {
+    "native_histories_byte_equal": true,
+    "selected_lines_match_across_all_modes": true,
+    "full_transcript_equality_claimed": false,
+    "independent_physical_observation_roles": "Two separately recorded Native roles and one public role; equal bytes do not merge roles.",
+    "native_natural_exit": "UNOBSERVED"
+  },
+  "acceptance_pin_discrepancy": {
+    "old_vs_retained": [
+      {
+        "acceptance_pointer": "/evidence/0",
+        "document_name": "FOLLOWUP_OBSERVATIONS.json",
+        "declared_old_sha256": "9f1bf5dfb963e44a896fb96deef2f23937bfa7e1cd5edc1ee93af8a1a11d343c",
+        "retained_current_sha256": "6469fd46e2017b71f8590b1015f5b0d98750f8fd90bedc7bc2d20531fafed336",
+        "bytes_equal": false,
+        "old_bytes": "NOT_FOUND_IN_CHECKED_INVENTORIES"
+      },
+      {
+        "acceptance_pointer": "/evidence/1",
+        "document_name": "FOLLOWUP_REVIEW_ja.md",
+        "declared_old_sha256": "2e0ab7ec60e3890e3417b88fcef7a7fbca0fd9ee12ca1473ec53d9973ebebb65",
+        "retained_current_sha256": "57256136755f5b5414dba20c79ecb8a8a74cfc1159b4949e26e69b5374f6af35",
+        "bytes_equal": false,
+        "old_bytes": "NOT_FOUND_IN_CHECKED_INVENTORIES"
+      },
+      {
+        "acceptance_pointer": "/evidence/2",
+        "document_name": "MANIFEST.json",
+        "declared_old_sha256": "363fe27aa6d04d2967e476a151efcd8071429ce807b2e80ebb7d002a2e243b83",
+        "retained_current_sha256": "22841f9cc6245237bfdd4aa2d31c8d3c2d41e8b0992d0a42cca5a912dceb7263",
+        "bytes_equal": false,
+        "old_bytes": "NOT_FOUND_IN_CHECKED_INVENTORIES"
+      }
+    ],
+    "acceptance_manifest_field_current_sha256": "22841f9cc6245237bfdd4aa2d31c8d3c2d41e8b0992d0a42cca5a912dceb7263",
+    "readback_evidence_refs_all_match": true,
+    "readback_flag_consistent_with_three_old_pins": false,
+    "timeline_hypothesis": "Saved correction history supports stale individual pins after document/manifest updates; old bytes are unavailable, so exact previous-byte identity and every possible explanation are not proven.",
+    "session_original": "PRIVATE_NOT_INCLUDED",
+    "no_original_pin_changed": true
+  },
+  "separate_expression_case": {
+    "typed_target": {
+      "kind": "expression_function",
+      "name": "LINEISEMPTY"
+    },
+    "case_id": "LINEBUF20261114_space_zero",
+    "recorded_difference": {
+      "native": 0,
+      "public": 1
+    },
+    "relation": "separate expression-form case, not transferred to this statement-form comparison",
+    "case_raw_included": false
+  },
+  "scope_limits": [
+    "one selected case from the parent acceptance",
+    "no HTML rendering, clicks, invalid-argument contract or full transcript equivalence",
+    "Native natural exit unobserved",
+    "original acceptance and session history not included",
+    "no new engine execution"
+  ],
+  "rights_and_privacy_status": "NOT_CLEARED; rights, source provenance and privacy review required for config, fixture, raw output, receipt projections, included notices and tool",
+  "candidate_references": {
+    "status": "OUTSIDE_BUNDLE_NOT_PINNED_MAY_CHANGE",
+    "target": "results/survey.json#/targets/518",
+    "case": "results/survey.json#/main_scenarios/1960",
+    "case_record": "evidence/case-register-2898-20261117/cases.jsonl:1961"
+  },
+  "reproducibility": "Preserved fixture/config and saved observations can be inspected and hashes checked; no executable, public runtime or original acceptance is bundled, so engine execution and original decision cannot be independently reproduced from this bundle alone."
+}

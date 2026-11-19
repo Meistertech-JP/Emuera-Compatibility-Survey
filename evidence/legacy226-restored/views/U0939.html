@@ -1,0 +1,382 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0939 · PUBLIC_text.py.txt</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0939 · PUBLIC_text.py.txt</h1>
+<p>U0939 / source-scope。COPYCHARA等の末尾カンマ対照と固定公開Pythonソース。正常対照・停止差・STRLENのraw文字列契約を区別。固定pyz内pyemuera/text.pyと全バイト一致、静的AST解析成功。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>0bd28a2589888140c38df35e83c57113efb4e0d55073d5ffb2db7dea64eb82ca</code></p>
+<p><a href="../assets/U0939.txt">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>0bd28a2589888140c38df35e83c57113efb4e0d55073d5ffb2db7dea64eb82ca</code></p>
+<pre>from __future__ import annotations
+from pathlib import Path
+from functools import lru_cache
+from .errors import EraError
+
+
+def read_text(path: Path, encoding: str = &quot;auto&quot;) -&gt; tuple[str, str]:
+    data = path.read_bytes()
+    if encoding != &quot;auto&quot;:
+        try:
+            return data.decode(encoding).lstrip(&quot;\ufeff&quot;), encoding
+        except (UnicodeError, LookupError) as e:
+            raise EraError(
+                f&quot;Cannot decode {path} as {encoding}: {e}&quot;, code=&quot;E_ENCODING&quot;
+            ) from e
+    from .source_encoding import decode_source
+
+    return decode_source(data)
+
+
+def strip_comment(text: str) -&gt; str:
+    &quot;&quot;&quot;Semicolons outside quoted strings end a logical line; ;!; enables it.&quot;&quot;&quot;
+    if text.lstrip().startswith(&#x27;;!;&#x27;):
+        text = text[: len(text) - len(text.lstrip())] + text.lstrip()[3:]
+    quoted = escaped = False
+    for i, c in enumerate(text):
+        if escaped:
+            escaped = False
+        elif c == &#x27;\\&#x27;:
+            escaped = True
+        elif c == &#x27;&quot;&#x27;:
+            quoted = not quoted
+        elif c == &#x27;;&#x27; and not quoted:
+            return text[:i]
+    return text
+
+
+def quoted_end(text: str, start: int, formatted=False, level=0) -&gt; int:
+    &quot;&quot;&quot;Return the end *after* a quoted token, respecting expressions in FORM.&quot;&quot;&quot;
+    if level &gt; 64:
+        raise EraError(&#x27;String nesting limit&#x27;, code=&#x27;E_LIMIT&#x27;)
+    i = start + (2 if formatted else 1)
+    while i &lt; len(text):
+        if formatted and text.startswith(&#x27;\\@&#x27;, i):
+            i = conditional_end(text, i, level + 1)
+            continue
+        if text[i] == &#x27;\\&#x27;:
+            i += 2
+            continue
+        if text[i] == &#x27;&quot;&#x27;:
+            return i + 1
+        if formatted and text[i] in &#x27;{%&#x27;:
+            i = (
+                placeholder_end(text, i + 1, &#x27;}&#x27; if text[i] == &#x27;{&#x27; else &#x27;%&#x27;, level + 1)
+                + 1
+            )
+            continue
+        i += 1
+    raise EraError(&#x27;Unclosed quoted string&#x27;, code=&#x27;E_SYNTAX&#x27;)
+
+
+def placeholder_end(text: str, start: int, close: str, level=0) -&gt; int:
+    if level &gt; 64:
+        raise EraError(&#x27;String nesting limit&#x27;, code=&#x27;E_LIMIT&#x27;)
+    i = start
+    depth = 0
+    while i &lt; len(text):
+        if text.startswith(&#x27;@&quot;&#x27;, i):
+            i = quoted_end(text, i, True, level + 1)
+            continue
+        if text[i] == &#x27;&quot;&#x27;:
+            i = quoted_end(text, i, False, level + 1)
+            continue
+        if text.startswith(&#x27;\\@&#x27;, i):
+            i = conditional_end(text, i, level + 1)
+            continue
+        c = text[i]
+        if c == &#x27;\\&#x27;:
+            i += 2
+            continue
+        if c == &#x27;(&#x27;:
+            depth += 1
+        elif c == &#x27;)&#x27;:
+            depth -= 1
+        elif c == close and depth == 0:
+            return i
+        i += 1
+    raise EraError(
+        &quot;&#x27;&quot;
+        + (&#x27;{&#x27; if close == &#x27;}&#x27; else &#x27;%&#x27;)
+        + &quot;&#x27;が使われましたが対応する&#x27;&quot;
+        + close
+        + &quot;&#x27;が見つかりません&quot;,
+        code=&#x27;E_FORMAT&#x27;,
+    )
+
+
+def conditional_end(text: str, start: int, level=0) -&gt; int:
+    # A bare conditional is a single string expression. Placeholders can contain
+    # further quoted/conditional expressions; those are skipped recursively.
+    if level &gt; 64:
+        raise EraError(&#x27;String nesting limit&#x27;, code=&#x27;E_LIMIT&#x27;)
+    i = start + 2
+    branch = False
+    depth = 0
+    while i &lt; len(text):
+        if text.startswith(&#x27;\\@&#x27;, i):
+            return i + 2
+        c = text[i]
+        if c == &#x27;\\&#x27;:
+            i += 2
+            continue
+        if not branch:
+            if text.startswith(&#x27;@&quot;&#x27;, i):
+                i = quoted_end(text, i, True, level + 1)
+                continue
+            if c == &#x27;&quot;&#x27;:
+                i = quoted_end(text, i, False, level + 1)
+                continue
+            if c == &#x27;(&#x27;:
+                depth += 1
+            elif c == &#x27;)&#x27;:
+                depth -= 1
+            elif c == &#x27;?&#x27; and depth == 0:
+                branch = True
+        elif c in &#x27;{%&#x27;:
+            i = placeholder_end(text, i + 1, &#x27;}&#x27; if c == &#x27;{&#x27; else &#x27;%&#x27;, level + 1) + 1
+            continue
+        i += 1
+    raise EraError(&#x27;Unclosed FORM conditional&#x27;, code=&#x27;E_FORMAT&#x27;)
+
+
+def split_args(text: str, sep: str = &#x27;,&#x27;) -&gt; list[str]:
+    &quot;&quot;&quot;Split expression arguments, retaining nested quoted FORM tokens.&quot;&quot;&quot;
+    out = []
+    start = 0
+    depth = 0
+    i = 0
+    while i &lt; len(text):
+        if text.startswith(&#x27;@&quot;&#x27;, i):
+            i = quoted_end(text, i, True)
+            continue
+        if text.startswith(&#x27;\\@&#x27;, i):
+            i = conditional_end(text, i)
+            continue
+        c = text[i]
+        if c == &#x27;&quot;&#x27;:
+            i = quoted_end(text, i)
+            continue
+        if c == &#x27;\\&#x27;:
+            i += 2
+            continue
+        if c in &#x27;({[&#x27;:
+            depth += 1
+        elif c in &#x27;)}]&#x27;:
+            depth -= 1
+            if depth &lt; 0:
+                raise EraError(&#x27;Unbalanced delimiters: &#x27; + text, code=&#x27;E_SYNTAX&#x27;)
+        elif c == sep and depth == 0:
+            out.append(text[start:i].strip())
+            start = i + 1
+        i += 1
+    if depth:
+        raise EraError(&#x27;Unclosed delimiter: &#x27; + text, code=&#x27;E_SYNTAX&#x27;)
+    out.append(text[start:].strip())
+    return out
+
+
+def split_form_args(text: str) -&gt; list[str]:
+    out, start, depth, percent, quote, escape = [], 0, 0, False, False, False
+    for i, c in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if c == &#x27;\\&#x27;:
+            escape = True
+            continue
+        if c == &#x27;&quot;&#x27;:
+            quote = not quote
+        if quote:
+            continue
+        if c in &#x27;({&#x27;:
+            depth += 1
+        elif c in &#x27;)}&#x27;:
+            depth -= 1
+        elif c == &#x27;%&#x27; and not depth:
+            percent = not percent
+        elif c == &#x27;,&#x27; and depth == 0 and not percent:
+            out.append(text[start:i].strip())
+            start = i + 1
+    out.append(text[start:].strip())
+    return out
+
+
+def find_assignment(
+    text: str, *, legacy: bool = False, preserve_rhs: bool = False
+):
+    if &#x27;=&#x27; not in text:
+        return None
+    quote, escape, depth = False, False, 0
+    operators = (
+        &quot;&lt;&lt;=&quot;,
+        &quot;&gt;&gt;=&quot;,
+        &quot;&#x27;=&quot;,
+        &quot;+=&quot;,
+        &quot;-=&quot;,
+        &quot;*=&quot;,
+        &quot;/=&quot;,
+        &quot;%=&quot;,
+        &quot;&amp;=&quot;,
+        &quot;|=&quot;,
+        &quot;^=&quot;,
+        &quot;=&quot;,
+    )
+    if legacy:
+        operators = (&quot;==&quot;,) + operators
+    for i, c in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if c == &#x27;\\&#x27;:
+            escape = True
+            continue
+        if c == &#x27;&quot;&#x27;:
+            quote = not quote
+        if quote:
+            continue
+        if c in &#x27;({&#x27;:
+            depth += 1
+        elif c in &#x27;)}&#x27;:
+            depth -= 1
+        if depth:
+            continue
+        for op in operators:
+            if text.startswith(op, i):
+                if op == &quot;==&quot; and (
+                    text[i : i + 3] == &quot;===&quot; or (i and text[i - 1] in &quot;!&lt;&gt;=\&#x27;&quot;)
+                ):
+                    continue
+                if op == &#x27;=&#x27; and (
+                    text[i : i + 2] == &#x27;==&#x27; or (i and text[i - 1] in &quot;!&lt;&gt;=+&#x27;-*/%&amp;|^&quot;)
+                ):
+                    continue
+                rhs = text[i + len(op) :]
+                # Native raw &#x27;=&#x27; skips ASCII space/TAB, not Unicode space.
+                rhs = rhs.lstrip(&#x27; \t&#x27;) if preserve_rhs else rhs.lstrip()
+                return text[:i].strip(), op, rhs
+    return None
+
+
+def display_width(text: str) -&gt; int:
+    # Legacy Emuera string widths are CP932 byte counts (not Unicode graphemes).
+    return len(text.encode(&#x27;cp932&#x27;, errors=&#x27;replace&#x27;))
+
+
+def legacy_substring(text: str, start: int, length: int = -1) -&gt; str:
+    from .substring_utf16 import substring
+
+    return substring(text, start, length)
+
+
+def load_config(
+    root: Path, encoding=&#x27;auto&#x27;, reader=None, warnings=None, *, analysis_mode=False
+):
+    &quot;&quot;&quot;Native CSV default → user → CSV fixed, typed parsing and row locks.&quot;&quot;&quot;
+    from .config1824 import load
+
+    return load(root, encoding, reader, warnings, analysis_mode=analysis_mode)
+
+
+def split_printv(text: str) -&gt; list[tuple[bool, str]]:
+    &quot;&quot;&quot;Legacy leading apostrophe is a raw field, not a quoted string.&quot;&quot;&quot;
+    result = []
+    i = 0
+    while i &lt; len(text):
+        while i &lt; len(text) and text[i].isspace():
+            i += 1
+        literal = i &lt; len(text) and text[i] == &quot;&#x27;&quot;
+        if literal:
+            start = i + 1
+            end = text.find(&#x27;,&#x27;, start)
+            if end &lt; 0:
+                end = len(text)
+        else:
+            start = i
+            end = i
+            quote = False
+            escape = False
+            depth = 0
+            while end &lt; len(text):
+                c = text[end]
+                if escape:
+                    escape = False
+                elif c == &#x27;\\&#x27;:
+                    escape = True
+                elif c == &#x27;&quot;&#x27;:
+                    quote = not quote
+                elif not quote:
+                    if c == &#x27;(&#x27;:
+                        depth += 1
+                    elif c == &#x27;)&#x27;:
+                        depth -= 1
+                    elif c == &#x27;,&#x27; and depth == 0:
+                        break
+                end += 1
+        field = text[start:end]
+        if not literal:
+            field = field.strip()
+        if not literal and not field:
+            raise EraError(&#x27;Empty PRINTV expression&#x27;, code=&#x27;E_SYNTAX&#x27;)
+        result.append((literal, field))
+        i = end + 1
+    return result
+
+
+def split_dynamic_call(text: str) -&gt; list[str]:
+    &quot;&quot;&quot;Separate a FORM target from expression arguments before formatting it.
+
+    Supports both CALLFORM TARGET_{X}, expr and TARGET_{X}(expr). Parentheses
+    inside {functions(...)} / %strings% belong to the name expression. Argument
+    string literals must never be formatted as part of the dynamic name.
+    &quot;&quot;&quot;
+    text = text.strip()
+    i = 0
+    while i &lt; len(text):
+        if text.startswith(&#x27;\\@&#x27;, i):
+            i = conditional_end(text, i)
+            continue
+        ch = text[i]
+        if ch in &#x27;{%&#x27;:
+            i = placeholder_end(text, i + 1, &#x27;}&#x27; if ch == &#x27;{&#x27; else &#x27;%&#x27;) + 1
+            continue
+        if ch == &#x27;\\&#x27;:
+            i += 2
+            continue
+        if ch == &#x27;,&#x27;:
+            return [text[:i].strip()] + split_args(text[i + 1 :])
+        if ch == &#x27;(&#x27;:
+            if not text.endswith(&#x27;)&#x27;):
+                raise EraError(&#x27;Unclosed parenthesized dynamic call&#x27;, code=&#x27;E_SYNTAX&#x27;)
+            tail = text[i + 1 : -1].strip()
+            return [text[:i].strip()] + (split_args(tail) if tail else [])
+        i += 1
+    return [text]
+
+
+def split_case_args(text):
+    &quot;&quot;&quot;ExpressionParser.ReduceCaseExpressions stops after comma at EOL.
+
+    Omitted interior CASE values remain an error; no blanket empty filtering.
+    &quot;&quot;&quot;
+    return list(_case_arguments(text))
+
+
+@lru_cache(maxsize=8192)
+def _case_arguments(text):
+    # Only immutable syntax is cached. Never retain evaluated values, variable
+    # bindings or RNG results. The public splitter still returns a fresh list.
+    parts = split_args(text)
+    if parts and not parts[-1].strip() and text.rstrip().endswith(&#x27;,&#x27;):
+        parts = parts[:-1]
+    if not parts or any(not part.strip() for part in parts):
+        raise EraError(&#x27;CASEの引数は省略できません&#x27;, code=&#x27;E_SYNTAX&#x27;)
+    return tuple(parts)
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0437 · command_or_syntax:COPYCHARA · check</li>
+<li>L1223 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

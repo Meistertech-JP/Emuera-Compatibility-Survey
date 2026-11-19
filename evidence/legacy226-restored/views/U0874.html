@@ -1,0 +1,847 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0874 · PARENT_ACCEPTANCE_PRINTDW_20261114.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0874 · PARENT_ACCEPTANCE_PRINTDW_20261114.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE_PRINTDW_20261114.json; 参照対象=command_or_syntax:PRINTDW。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;PRINTDW&quot;}; accepted=true。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を81個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>90a267c69ef30db69289beec4375ce83b2c9c1ab6b443180da5d80251660fac9</code></p>
+<p><a href="../assets/U0874.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a99377c2a18156a876c9ba1acab0d8147bd946e9a11947af5975b7c2664cde7b</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;phase2-target-parent-acceptance/v1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T09:14:21.796234+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;PRINTDW&quot;
+  },
+  &quot;accepted&quot;: true,
+  &quot;case_ids&quot;: [
+    &quot;PRINTDWEMPTY01&quot;,
+    &quot;PRINTDWSPACE01&quot;
+  ],
+  &quot;discharged_requirements&quot;: [
+    {
+      &quot;id&quot;: &quot;empty_wait&quot;,
+      &quot;condition&quot;: &quot;Non-skipped bare PRINTDW; ARM and OUTPUTLOG checkpoint precede wait; one empty Return; following marker once; default output log bytes compare.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;raw_space&quot;,
+      &quot;condition&quot;: &quot;Normal PRINTDW X  Y preserves exactly two internal spaces; one Return releases wait; following marker once.&quot;
+    }
+  ],
+  &quot;basis&quot;: {
+    &quot;prior_target_review_sha256&quot;: &quot;188623da0276867b8f3fbb52c766ff9b3f1c2a0c816b43b90ad6181d16a8d585&quot;,
+    &quot;prior_target_requirements&quot;: [
+      {
+        &quot;id&quot;: &quot;registration_form&quot;,
+        &quot;requirement&quot;: &quot;Exact v24 PRINTDW command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+        &quot;finding&quot;: &quot;source_and_binary_registration_inspected&quot;,
+        &quot;source_refs&quot;: [
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+            &quot;member_sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+            &quot;start_line&quot;: 117,
+            &quot;end_line&quot;: 117
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;start_line&quot;: 17,
+            &quot;end_line&quot;: 150
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 178,
+            &quot;end_line&quot;: 188
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 179,
+            &quot;end_line&quot;: 189
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 173,
+            &quot;end_line&quot;: 183
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 176,
+            &quot;end_line&quot;: 186
+          }
+        ],
+        &quot;binary_record&quot;: {
+          &quot;name&quot;: &quot;PRINTDW&quot;,
+          &quot;enum_value&quot;: 233,
+          &quot;code_load_il_offset&quot;: &quot;0167&quot;,
+          &quot;registration_call_il_offset&quot;: &quot;016C&quot;,
+          &quot;registration_call&quot;: &quot;Void addPrintFunction(MinorShift.Emuera.GameProc.Function.FunctionCode)&quot;
+        },
+        &quot;dependent_source_refs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;signature_parser&quot;,
+        &quot;requirement&quot;: &quot;PRINTDW: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+        &quot;finding&quot;: &quot;source_form_and_recorded_fixture_inspected; parser sufficiency remains parent review&quot;,
+        &quot;selected_builder_or_exact_factory&quot;: &quot;STR_NULLABLE raw text&quot;,
+        &quot;complete_argument_guard_source&quot;: &quot;SOURCE_SIGNATURE_DETAILS.json: base_argument_guards/builders/argument_parser_factory; conditionals apply per selected constructor&quot;,
+        &quot;registration_text&quot;: [
+          {
+            &quot;line&quot;: 117,
+            &quot;text&quot;: &quot;addPrintFunction(FunctionCode.PRINTDW);&quot;
+          }
+        ],
+        &quot;handler_classes&quot;: [
+          &quot;PRINT_Instruction&quot;
+        ],
+        &quot;argument_builder_leads_not_signature&quot;: [
+          &quot;FORM_STR_NULLABLE&quot;,
+          &quot;SP_PRINTV&quot;,
+          &quot;STR_EXPRESSION&quot;,
+          &quot;STR_NULLABLE&quot;
+        ],
+        &quot;source_refs&quot;: [
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+            &quot;member_sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+            &quot;start_line&quot;: 117,
+            &quot;end_line&quot;: 117
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;start_line&quot;: 17,
+            &quot;end_line&quot;: 150
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 178,
+            &quot;end_line&quot;: 188
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 179,
+            &quot;end_line&quot;: 189
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 173,
+            &quot;end_line&quot;: 183
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 176,
+            &quot;end_line&quot;: 186
+          }
+        ],
+        &quot;fixture_witness_refs&quot;: [
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\native-01\\ERB\\SEARCHBOUND01.ERB&quot;,
+            &quot;sha256&quot;: &quot;67bfc43d82da523146b5240b684a8c658166aeb223ea65354ae05bde93d3c051&quot;,
+            &quot;command_lines&quot;: [
+              12
+            ]
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\native-02\\ERB\\SEARCHBOUND01.ERB&quot;,
+            &quot;sha256&quot;: &quot;67bfc43d82da523146b5240b684a8c658166aeb223ea65354ae05bde93d3c051&quot;,
+            &quot;command_lines&quot;: [
+              12
+            ]
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\py\\ERB\\SEARCHBOUND01.ERB&quot;,
+            &quot;sha256&quot;: &quot;67bfc43d82da523146b5240b684a8c658166aeb223ea65354ae05bde93d3c051&quot;,
+            &quot;command_lines&quot;: [
+              12
+            ]
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\native-01\\ERB\\SEARCHBOUND01.ERB&quot;,
+            &quot;sha256&quot;: &quot;4eed9730d71f108112368cb6f7bced9a5ae28eab25359c002d41685c220ff133&quot;,
+            &quot;command_lines&quot;: [
+              38,
+              45,
+              47
+            ]
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\native-02\\ERB\\SEARCHBOUND01.ERB&quot;,
+            &quot;sha256&quot;: &quot;4eed9730d71f108112368cb6f7bced9a5ae28eab25359c002d41685c220ff133&quot;,
+            &quot;command_lines&quot;: [
+              38,
+              45,
+              47
+            ]
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\public\\ERB\\SEARCHBOUND01.ERB&quot;,
+            &quot;sha256&quot;: &quot;4eed9730d71f108112368cb6f7bced9a5ae28eab25359c002d41685c220ff133&quot;,
+            &quot;command_lines&quot;: [
+              38,
+              45,
+              47
+            ]
+          }
+        ],
+        &quot;builder_identity_scope&quot;: &quot;Selected source constructor/form; full CreateArgument guard bodies in SOURCE_SIGNATURE_DETAILS. Historical a7/a8 fields are leads only.&quot;
+      },
+      {
+        &quot;id&quot;: &quot;normal_output_state_control&quot;,
+        &quot;requirement&quot;: &quot;PRINTDW X  Y: actual non-skipped normal use of STR_NULLABLE raw literal; preserve internal double spaces and selected output/state.&quot;,
+        &quot;finding&quot;: &quot;selected_observations_inspected_not_universal&quot;,
+        &quot;case_observations&quot;: [
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;observed&quot;: &quot;SKIPDISP 1 selected state, helper non-evaluation, RNG continuation, completion&quot;,
+            &quot;limitations&quot;: &quot;[&#x27;normal display&#x27;, &#x27;color and kana conversion&#x27;, &#x27;wait start&#x27;, &#x27;wait release&#x27;, &#x27;full RNG state (only next-value reset comparison observed)&#x27;]; normal W rendering, style and wait start/release unverified. Non-W control does not certify W waiting. Natural exit distinguished from owned cleanup.&quot;,
+            &quot;registered_verdict_is_not_closure&quot;: &quot;matched_scoped&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;observed&quot;: &quot;PRINTDW: selected normal W output, helper/evaluation order, RESULT/RESULTS/choice index and printed HTML match; whole exported UTF16 log3970bytes identical inNative2/public1. TwoNative runs each8 uniquely targeted Return events with matching pre/post raw-log prefix SHAs. K selectedmode andD setcolor behavior observed.&quot;,
+            &quot;limitations&quot;: &quot;Selected normal paths only, one FORCEKANA mode and SETCOLOR value, one deterministic two-choice DATA list. No GUI pixel/font rasterization, physical input latency, key repeat/mouse cancel/IME/scroll transitions, all RNG seeds or format-error boundary closure. Native ordinary desktop operated only via unique returned owned window and focused RichEdit; not private desktop. Public uses scripted stdin, no assertion of synchronized interaction timing. Native completion QUIT window terminated by own controller; not natural exit0. No screenshots or product/original changes.&quot;,
+            &quot;registered_verdict_is_not_closure&quot;: &quot;matched_scoped&quot;
+          }
+        ],
+        &quot;raw_inspection_index&quot;: &quot;CASE_EVIDENCE_INSPECTION.json#cases; PARENT_245_246_READBACK.json for supplements&quot;,
+        &quot;raw_refs&quot;: [
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;fb947a994341912aec2d653ea4ed937bcfe746d7e93dcda7b13ea4425fd79963&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;bf199725bf535ff50a98413d675b0710bf8c40365fa6f85e335b9e001cda3066&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;fb947a994341912aec2d653ea4ed937bcfe746d7e93dcda7b13ea4425fd79963&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;9d6b8de87bdfe2d519ff4816bf000832cf71e724ca57b2aa616a05e1477a0852&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;e4d25e6f5f08fe325475beb9547121b98e1297291afe376d215b6c1d525adf28&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATADW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;fb947a994341912aec2d653ea4ed937bcfe746d7e93dcda7b13ea4425fd79963&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;2d358971dc710662208b65250989c96611c1563e6c1e6e654e02735cbb611d3b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;dd2f8cae765ad773ccdd04e6809783aa14c4cf5071b9e47ffc8a1440e0f43ce6&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;2d358971dc710662208b65250989c96611c1563e6c1e6e654e02735cbb611d3b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;fe0220b02ab16c6e321b6cf5191fe4f2fca52f010649b82fb1b1e52d816b928a&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;f0e84c7ed205fae16e69518e17bba95276e06609de68a95648ca9593af7a99fa&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\control-PRINTDATAKW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;2d358971dc710662208b65250989c96611c1563e6c1e6e654e02735cbb611d3b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;056b29f51c5b0bbc196b831e225b5ec53c3626c106f98b42d88cb14ae7b5b67e&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;2b42547513ac4a05f558d0fa6cf18c61a66be663435b6a94d8e03b5ab49e0a3b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;056b29f51c5b0bbc196b831e225b5ec53c3626c106f98b42d88cb14ae7b5b67e&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;57acef32584ebf3f4d48aeb882532b33acca799efded20c6c02bb9fcc1e99d1f&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;c50f1cfd98e4706356db3fd69ca21a3e33f7a2054594ea964cee10328484753b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATADW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;056b29f51c5b0bbc196b831e225b5ec53c3626c106f98b42d88cb14ae7b5b67e&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;5dfd2c12ff4f32b8aac1e6737eeb34b69e8762a2bc839bb2a81d92d30f0639a1&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;9b01dcb9dfeb0a201cb3531f73000c84f349166fc731033a9beaf8e0571baf4a&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;5dfd2c12ff4f32b8aac1e6737eeb34b69e8762a2bc839bb2a81d92d30f0639a1&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;9ae766dea52307cc88970f1bc2df8b2c76f9b9f72732debf972414c552f2f01c&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;c782ec4a6a02ea31496feb65cc61752c2b103df7a246bffc558d9f3b82aec21e&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDATAKW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;5dfd2c12ff4f32b8aac1e6737eeb34b69e8762a2bc839bb2a81d92d30f0639a1&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6554a9763bf624b8e2401ee81f6f6823b13071680563da9e0ad3921d607fcb72&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;b1a0e4dd1071e0e1e409cc6f1f01d69c717bc5e8dff13de221042225e4c94887&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6554a9763bf624b8e2401ee81f6f6823b13071680563da9e0ad3921d607fcb72&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;18b18c5da113ee632a0d78b264db408e5a57c5ea996aed23ffa861c9f34b3dc0&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;4904cdc363cf33d6147b135890cf12f37511526850eb825685b1f7d6428a909f&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTDW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6554a9763bf624b8e2401ee81f6f6823b13071680563da9e0ad3921d607fcb72&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;cc00e50e97e603f39a33f6031ed861d81558a1ee8d57d7f28e91888736d5ab26&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;e3c7280204577505274bd3a3223111ed07a446d7ca26bcb568186b6ce1f2cfd0&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;cc00e50e97e603f39a33f6031ed861d81558a1ee8d57d7f28e91888736d5ab26&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;9ff0fee8bd9af30f08b354b784840de8d6333039eb7a5a0040d8838bf9e61f67&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;a4b3ca063dcef1411dcb1602a48d859bba3e34217fe8906d12c69125ce036925&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMDW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;cc00e50e97e603f39a33f6031ed861d81558a1ee8d57d7f28e91888736d5ab26&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;f117948bd0a7b74f39c57ce8a29e4a2d172796c31456d6c09af531e90422ad0b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;7da7ffaaa90c5cd3671e03ac0290f775bb82860da274ae062322d11296d0bb69&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;f117948bd0a7b74f39c57ce8a29e4a2d172796c31456d6c09af531e90422ad0b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;6c4da42f5e497ce33b5f82dc87d8768c9e5f1b6b8b7ddb7c02f8ee534d659995&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;20289521b6924d56b0e09647e2bfd17c565ba7b0363c5e215adc2348355ddee6&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSDW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;f117948bd0a7b74f39c57ce8a29e4a2d172796c31456d6c09af531e90422ad0b&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;958a7fb709bad6bd28eab7dd760484767c992bf33a24968f3dc9645843549ecf&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;ae16720c50d4d91ef519b5f01eba2485dbecfeffd4180c6481dead3341182ca8&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;958a7fb709bad6bd28eab7dd760484767c992bf33a24968f3dc9645843549ecf&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;a1fff2ae3268f5ae11cb4d64ac821f4c0758e55d5a574cd19738af64753d6007&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;4c8ebd6796f268c65d08cc7d3921d88ec8001ba1ee3ce8960ffe2053df663de8&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTFORMSKW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;958a7fb709bad6bd28eab7dd760484767c992bf33a24968f3dc9645843549ecf&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6ffeecc299dfdc0935642c235c69acfeeb3d848152ddc26f00d4f58c6676d0cd&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;f90221b374986ceb66cb2e15bd7635f3bdc7c43dd45ce441878ff9e7d2122eca&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6ffeecc299dfdc0935642c235c69acfeeb3d848152ddc26f00d4f58c6676d0cd&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;9d7d7ad209fde39ea1ddaaf311a0646a80ca3f20f3994c1fceaa78bf7e5391fe&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;0b3d640d741f111520c30fe35157920d13877deb4328bb8586d40152915a4ba6&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTSDW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6ffeecc299dfdc0935642c235c69acfeeb3d848152ddc26f00d4f58c6676d0cd&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;466308c008b89f7e7b0b34c0c185ee5ee8d1fc27cbd74025350039b0d1075525&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\native-01\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;d8f5c732727996824838705e2c52cdda9c713cd3bd9d2bc56e0f845179fcaadf&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;466308c008b89f7e7b0b34c0c185ee5ee8d1fc27cbd74025350039b0d1075525&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\native-02\\runner.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;f74be59f90b45637fbc5b3e51108d05c25fad6493b92c7f8dfb48ce8dcc87fd7&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\py\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\py\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;b3fd377730a269851667e12d872801394ff4f6e3a5f8bdaec860a93e32ba3974&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTSKIP238_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-skip-20261113-238\\PRINTVDW\\py\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;466308c008b89f7e7b0b34c0c185ee5ee8d1fc27cbd74025350039b0d1075525&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\native-01\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6b3d88ae42c07478829b28af3a49b89c364e267deb5246a576e92d6c01d5d0c9&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\native-02\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6b3d88ae42c07478829b28af3a49b89c364e267deb5246a576e92d6c01d5d0c9&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\public\\verified.stderr.bin&quot;,
+            &quot;sha256&quot;: &quot;6364bc30d3a39c423d8f13d2eee49b594877a7d32d01d38a227983bb3df6c8ee&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\public\\verified.stdout.bin&quot;,
+            &quot;sha256&quot;: &quot;7d09a5f4363fd812343d1cf4c13db440a583246ee18569c807153e2ca7b94545&quot;
+          },
+          {
+            &quot;case_id&quot;: &quot;PRINTNORMAL240_PRINTDW&quot;,
+            &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\print-wait-normal-20261113-240\\public\\.pyemuera\\logs\\emuera.log&quot;,
+            &quot;sha256&quot;: &quot;6b3d88ae42c07478829b28af3a49b89c364e267deb5246a576e92d6c01d5d0c9&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;finite_boundary_error&quot;,
+        &quot;requirement&quot;: &quot;PRINTDW empty text by omitted raw/FORM text; Read serialized emitted style with nondefault SETCOLOR; plain text equality alone does not prove D style. One Enter resumes exactly once; retain before/after checkpoints,not exact input latency. &quot;,
+        &quot;finding&quot;: &quot;selected_boundary_sufficiency_for_parent_review&quot;,
+        &quot;case_ids&quot;: [
+          &quot;PRINTSKIP238_PRINTDW&quot;,
+          &quot;PRINTNORMAL240_PRINTDW&quot;
+        ],
+        &quot;source_refs&quot;: [
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs&quot;,
+            &quot;member_sha256&quot;: &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+            &quot;start_line&quot;: 117,
+            &quot;end_line&quot;: 117
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;start_line&quot;: 17,
+            &quot;end_line&quot;: 150
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 178,
+            &quot;end_line&quot;: 188
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 179,
+            &quot;end_line&quot;: 189
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 173,
+            &quot;end_line&quot;: 183
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs&quot;,
+            &quot;member_sha256&quot;: &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+            &quot;start_line&quot;: 176,
+            &quot;end_line&quot;: 186
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+        &quot;requirement&quot;: &quot;SKIPDISP1 must suppress argument/helper evaluation; normal calls retain RESULT/RESULTS and helper order.&quot;,
+        &quot;finding&quot;: &quot;inspect exact helper/guard readbacks listed in case_observations; skip/dead-only evidence never promotes normal reach&quot;,
+        &quot;case_ids&quot;: [
+          &quot;PRINTSKIP238_PRINTDW&quot;,
+          &quot;PRINTNORMAL240_PRINTDW&quot;
+        ],
+        &quot;source_branches&quot;: [
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;28: \t\t\t\tif (st.CurrentEqualTo(\&quot;SINGLE\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;34: \t\t\t\tif (st.CurrentEqualTo(\&quot;V\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;36: \t\t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.SP_PRINTV);&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;40: \t\t\t\telse if (st.CurrentEqualTo(\&quot;S\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;42: \t\t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.STR_EXPRESSION);&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;45: \t\t\t\telse if (st.CurrentEqualTo(\&quot;FORMS\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;47: \t\t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.STR_EXPRESSION);&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;51: \t\t\t\telse if (st.CurrentEqualTo(\&quot;FORM\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;53: \t\t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.FORM_STR_NULLABLE);&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;56: \t\t\t\telse&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;58: \t\t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.STR_NULLABLE);&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;60: \t\t\t\tif (st.CurrentEqualTo(\&quot;LC\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;66: \t\t\t\telse if (st.CurrentEqualTo(\&quot;C\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;68: \t\t\t\t\tif (name == \&quot;PRINTFORMC\&quot;)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;73: \t\t\t\tif (st.CurrentEqualTo(\&quot;K\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;78: \t\t\t\tif (st.CurrentEqualTo(\&quot;D\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;83: \t\t\t\tif (st.CurrentEqualTo(\&quot;L\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;89: \t\t\t\telse if (st.CurrentEqualTo(\&quot;W\&quot;))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;94: \t\t\t\telse&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;98: \t\t\t\tif ((ArgBuilder == null) || (!st.EOS))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;99: \t\t\t\t\tthrow new ExeEE(\&quot;PRINT異常\&quot;);&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;108:                 if (GlobalStatic.Process.SkipPrint)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;113: \t\t\t\tif (func.Argument.IsConst)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;115: \t\t\t\telse if (isPrintV)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;119: \t\t\t\t\tforeach (IOperandTerm termV in terms)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;121: \t\t\t\t\t\tif (termV.GetOperandType() == typeof(Int64))&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;123: \t\t\t\t\t\telse&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;128: \t\t\t\telse&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;131: \t\t\t\t\tif (isForms)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;139: \t\t\t\tif (func.Function.IsPrintKFunction())&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;141: \t\t\t\tif (isC)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;143: \t\t\t\telse if (isLC)&quot;
+          },
+          {
+            &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs&quot;,
+            &quot;member_sha256&quot;: &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+            &quot;line_text&quot;: &quot;145: \t\t\t\telse&quot;
+          }
+        ]
+      }
+    ],
+    &quot;comparison_sha256&quot;: &quot;af36f4dfa2793cf6b41d091385075ea3e45480550a39247bd8e3d2132b68aa30&quot;,
+    &quot;case_manifest_sha256&quot;: &quot;e3894dff17cb951607bc09fc666fcbc7a233763cd00fb90bb1f08775fd5797a6&quot;,
+    &quot;case_seal_sha256&quot;: &quot;fb0583e29d9d43f0422fe02a8f8b4c29a53575b1706684ef3bcd814b8e378675&quot;,
+    &quot;case_register_sha256_after_addition&quot;: &quot;a0d0449918af20082808c406746f0d0837602c9177daa2dcc3b90168aa45a7d9&quot;,
+    &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+    &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;
+  },
+  &quot;limitations&quot;: [
+    &quot;Native natural exit and exit code were not observed.&quot;,
+    &quot;No GUI pixel, font rasterization, latency, or other PRINT-family behavior is asserted.&quot;,
+    &quot;Four initial A-echo attempts were excluded; their full screenshots were cropped and removed, with only relevant crops retained.&quot;
+  ],
+  &quot;product_modified&quot;: false,
+  &quot;public_artifacts_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2005 · command_or_syntax:PRINTDW · acceptance</li>
+<li>L2006 · command_or_syntax:PRINTDW · check</li>
+</ul></html>

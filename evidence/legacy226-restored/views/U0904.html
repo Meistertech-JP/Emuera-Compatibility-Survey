@@ -1,0 +1,333 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0904 · run_native_printkl.py</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0904 · run_native_printkl.py</h1>
+<p>U0904: PRINTKL用Windows本家runner。PRINTK版のRichEdit全文読出し12行が存在しない版で、所有窓・入力・クロップ・前後SHA採取を含む。LOADREAD01の私的供給元絶対パスだけ中立化し測定方法・待機・分岐を保持。  私的な供給元絶対パスのみを除いた局所派生として公開可能。原本の診断・評価値・入力条件・測定手順を保持し、新規実行や元sealとの同一性を主張しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>5bec7eb2561aa6f8b489b75f08798c297d1f0615c2c4e4ee3c201f75f1ab0989</code></p>
+<p><a href="../assets/U0904.py">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>379ecb87ccdba6e7ab087f8353cd6ac625fe9280cc752c7f9c5119cb64bc2902</code></p>
+<pre>import ctypes as c
+import hashlib
+from ctypes import wintypes as w
+import json
+import subprocess
+import shutil
+import sys
+import time
+import uuid
+from pathlib import Path
+
+u = c.WinDLL(&quot;user32&quot;, use_last_error=True)
+k = c.WinDLL(&quot;kernel32&quot;, use_last_error=True)
+class STARTUPINFO(c.Structure):
+    _fields_ = [(&quot;cb&quot;, w.DWORD), (&quot;reserved&quot;, w.LPWSTR), (&quot;desktop&quot;, w.LPWSTR),
+                (&quot;title&quot;, w.LPWSTR), (&quot;x&quot;, w.DWORD), (&quot;y&quot;, w.DWORD),
+                (&quot;xsize&quot;, w.DWORD), (&quot;ysize&quot;, w.DWORD), (&quot;xcount&quot;, w.DWORD),
+                (&quot;ycount&quot;, w.DWORD), (&quot;fill&quot;, w.DWORD), (&quot;flags&quot;, w.DWORD),
+                (&quot;show&quot;, w.WORD), (&quot;reserved2count&quot;, w.WORD), (&quot;reserved2&quot;, c.c_void_p),
+                (&quot;stdin&quot;, w.HANDLE), (&quot;stdout&quot;, w.HANDLE), (&quot;stderr&quot;, w.HANDLE)]
+class PROCESSINFO(c.Structure):
+    _fields_ = [(&quot;process&quot;, w.HANDLE), (&quot;thread&quot;, w.HANDLE), (&quot;pid&quot;, w.DWORD), (&quot;tid&quot;, w.DWORD)]
+u.CreateDesktopW.argtypes = [w.LPCWSTR, w.LPCWSTR, c.c_void_p, w.DWORD, w.DWORD, c.c_void_p]
+u.CreateDesktopW.restype = w.HANDLE
+u.CloseDesktop.argtypes = [w.HANDLE]
+k.CreateProcessW.argtypes = [w.LPCWSTR, w.LPWSTR, c.c_void_p, c.c_void_p, w.BOOL, w.DWORD,
+                             c.c_void_p, w.LPCWSTR, c.POINTER(STARTUPINFO), c.POINTER(PROCESSINFO)]
+k.CreateProcessW.restype = w.BOOL
+k.TerminateProcess.argtypes = [w.HANDLE, w.UINT]
+k.WaitForSingleObject.argtypes = [w.HANDLE, w.DWORD]
+k.CloseHandle.argtypes = [w.HANDLE]
+CALLBACK = c.WINFUNCTYPE(w.BOOL, w.HWND, w.LPARAM)
+u.EnumDesktopWindows.argtypes = [w.HANDLE, CALLBACK, w.LPARAM]
+u.GetWindowThreadProcessId.argtypes = [w.HWND, c.POINTER(w.DWORD)]
+u.GetClassNameW.argtypes = [w.HWND, w.LPWSTR, c.c_int]
+u.GetWindowTextW.argtypes = [w.HWND, w.LPWSTR, c.c_int]
+u.EnumChildWindows.argtypes = [w.HWND, CALLBACK, w.LPARAM]
+u.SendMessageTimeoutW.argtypes = [w.HWND, w.UINT, w.WPARAM, w.LPARAM, w.UINT, w.UINT, c.POINTER(c.c_size_t)]
+u.SendMessageTimeoutW.restype = w.LPARAM
+u.PostMessageW.argtypes = [w.HWND, w.UINT, w.WPARAM, w.LPARAM]
+name = &quot;PyEmueraProbe_&quot; + uuid.uuid4().hex
+root = Path(__file__).resolve().parent
+evidence_root = root
+case_dir = evidence_root / &quot;native-cases&quot;
+native = &quot;--native&quot; in sys.argv
+# Explicit generic case selection: reject ambiguous or unsafe names before creating a process.
+import re
+input_options = [arg for arg in sys.argv[1:] if arg.startswith(&quot;--input-text-hex=&quot;)]
+if len(input_options) &gt; 1:
+    raise SystemExit(&quot;Specify at most one --input-text-hex=HEX&quot;)
+input_text = None
+if input_options:
+    raw_hex = input_options[0].split(&quot;=&quot;, 1)[1]
+    if not re.fullmatch(r&quot;[0-9a-fA-F]{0,512}&quot;, raw_hex) or len(raw_hex) % 2:
+        raise SystemExit(&quot;Input text must be bounded even-length UTF-8 hex&quot;)
+    try:
+        input_text = bytes.fromhex(raw_hex).decode(&quot;utf-8&quot;, errors=&quot;strict&quot;)
+    except UnicodeDecodeError:
+        raise SystemExit(&quot;Input text must be valid UTF-8&quot;)
+    if any(ch in input_text for ch in (&quot;\0&quot;, &quot;\r&quot;, &quot;\n&quot;)):
+        raise SystemExit(&quot;Input text must not contain NUL or line breaks&quot;)
+    if not native or &quot;--send-input&quot; not in sys.argv or not any(arg.startswith(&quot;--case=&quot;) for arg in sys.argv[1:]):
+        raise SystemExit(&quot;Explicit input requires --native, --send-input, and --case=NAME&quot;)
+    if &quot;--japanese&quot; in sys.argv or &quot;--invalid-first&quot; in sys.argv:
+        raise SystemExit(&quot;Explicit input cannot be combined with preset inputs&quot;)
+sample_options = [arg for arg in sys.argv[1:] if arg.startswith(&quot;--capture-samples=&quot;)]
+if len(sample_options) &gt; 1:
+    raise SystemExit(&quot;Specify at most one --capture-samples=N&quot;)
+sample_text = sample_options[0].split(&quot;=&quot;, 1)[1] if sample_options else &quot;1&quot;
+if not re.fullmatch(r&quot;[1-5]&quot;, sample_text):
+    raise SystemExit(&quot;Capture sample count must be an integer from 1 to 5&quot;)
+sample_count = int(sample_text)
+if sample_options and not native:
+    raise SystemExit(&quot;Capture samples require --native&quot;)
+case_options = [arg for arg in sys.argv[1:] if arg.startswith(&quot;--case=&quot;)]
+if len(case_options) &gt; 1:
+    raise SystemExit(&quot;Specify at most one --case=NAME&quot;)
+case_arg = case_options[0][len(&quot;--case=&quot;):] if case_options else None
+if case_arg is not None:
+    if not re.fullmatch(r&quot;[A-Z][A-Z0-9]{0,31}&quot;, case_arg):
+        raise SystemExit(&quot;Invalid case name; use uppercase letters and digits only&quot;)
+    fixture = evidence_root / &quot;variants&quot; / case_arg
+    if not (fixture / &quot;ERB&quot;).is_dir() or not (fixture / &quot;csv&quot;).is_dir() or not any((fixture / &quot;ERB&quot;).glob(&quot;*.ERB&quot;)):
+        raise SystemExit(&quot;Unknown or incomplete case: &quot; + case_arg)
+    selector_line = next(line for line in Path(__file__).read_text(encoding=&quot;utf-8&quot;).splitlines() if line.startswith(&quot;case = &quot;))
+    flags = set(re.findall(r&#x27;&quot;(--[a-z0-9]+)&quot; in sys\.argv&#x27;, selector_line))
+    flags.add(&quot;--p35&quot;)
+    if any(flag in sys.argv for flag in flags):
+        raise SystemExit(&quot;Do not mix --case=NAME with legacy case-selection flags&quot;)
+case = case_arg if case_arg is not None else &quot;PRINTDATAW01&quot; if &quot;--printdataw01&quot; in sys.argv else &quot;E12B&quot; if &quot;--e12b&quot; in sys.argv else &quot;E12&quot; if &quot;--e12&quot; in sys.argv else &quot;E143F&quot; if &quot;--e143f&quot; in sys.argv else &quot;UNIMP05&quot; if &quot;--unimp05&quot; in sys.argv else &quot;UNIMP06&quot; if &quot;--unimp06&quot; in sys.argv else &quot;UNIMP03&quot; if &quot;--unimp03&quot; in sys.argv else &quot;UNIMP04&quot; if &quot;--unimp04&quot; in sys.argv else &quot;UNIMP01&quot; if &quot;--unimp01&quot; in sys.argv else &quot;UNIMP02&quot; if &quot;--unimp02&quot; in sys.argv else &quot;PRINT02&quot; if &quot;--print02&quot; in sys.argv else &quot;PRINT01&quot; if &quot;--print01&quot; in sys.argv else &quot;PRINTW01&quot; if &quot;--printw01&quot; in sys.argv else &quot;LOCAL01&quot; if &quot;--local01&quot; in sys.argv else &quot;GLOBAL03&quot; if &quot;--global03&quot; in sys.argv else &quot;TERNARY01&quot; if &quot;--ternary01&quot; in sys.argv else &quot;TARGET01&quot; if &quot;--target01&quot; in sys.argv else &quot;UNARY03&quot; if &quot;--unary03&quot; in sys.argv else &quot;UNARY02&quot; if &quot;--unary02&quot; in sys.argv else &quot;UNARY01&quot; if &quot;--unary01&quot; in sys.argv else &quot;ORDER02&quot; if &quot;--order02&quot; in sys.argv else &quot;ORDER03&quot; if &quot;--order03&quot; in sys.argv else &quot;ORDER01&quot; if &quot;--order01&quot; in sys.argv else &quot;E143E&quot; if &quot;--e143e&quot; in sys.argv else &quot;LOGFILE02&quot; if &quot;--logfile02&quot; in sys.argv else &quot;LOGFILE01&quot; if &quot;--logfile01&quot; in sys.argv else &quot;CHARA01&quot; if &quot;--chara01&quot; in sys.argv else &quot;LOGIC03&quot; if &quot;--logic03&quot; in sys.argv else &quot;LOGIC02&quot; if &quot;--logic02&quot; in sys.argv else &quot;LOGIC01&quot; if &quot;--logic01&quot; in sys.argv else &quot;P38B&quot; if &quot;--p38b&quot; in sys.argv else &quot;DECL30&quot; if &quot;--decl30&quot; in sys.argv else &quot;DECL29&quot; if &quot;--decl29&quot; in sys.argv else &quot;E143D&quot; if &quot;--e143d&quot; in sys.argv else &quot;DECL28&quot; if &quot;--decl28&quot; in sys.argv else &quot;DECL27&quot; if &quot;--decl27&quot; in sys.argv else &quot;DECL26&quot; if &quot;--decl26&quot; in sys.argv else &quot;DECL25&quot; if &quot;--decl25&quot; in sys.argv else &quot;DECL24&quot; if &quot;--decl24&quot; in sys.argv else &quot;DECL23&quot; if &quot;--decl23&quot; in sys.argv else &quot;RANDOM02&quot; if &quot;--random02&quot; in sys.argv else &quot;RANDOM01&quot; if &quot;--random01&quot; in sys.argv else &quot;DECL22&quot; if &quot;--decl22&quot; in sys.argv else &quot;DECL19&quot; if &quot;--decl19&quot; in sys.argv else &quot;DECL20&quot; if &quot;--decl20&quot; in sys.argv else &quot;DECL21&quot; if &quot;--decl21&quot; in sys.argv else &quot;DECL18&quot; if &quot;--decl18&quot; in sys.argv else &quot;DECL17&quot; if &quot;--decl17&quot; in sys.argv else &quot;DECL15&quot; if &quot;--decl15&quot; in sys.argv else &quot;DECL16&quot; if &quot;--decl16&quot; in sys.argv else &quot;DECL12&quot; if &quot;--decl12&quot; in sys.argv else &quot;DECL13&quot; if &quot;--decl13&quot; in sys.argv else &quot;DECL14&quot; if &quot;--decl14&quot; in sys.argv else &quot;DECL11&quot; if &quot;--decl11&quot; in sys.argv else &quot;DECL09&quot; if &quot;--decl09&quot; in sys.argv else &quot;DECL10&quot; if &quot;--decl10&quot; in sys.argv else &quot;DECL08&quot; if &quot;--decl08&quot; in sys.argv else &quot;DECL07&quot; if &quot;--decl07&quot; in sys.argv else &quot;DECL06&quot; if &quot;--decl06&quot; in sys.argv else &quot;DECL05&quot; if &quot;--decl05&quot; in sys.argv else &quot;DECL03&quot; if &quot;--decl03&quot; in sys.argv else &quot;DECL04&quot; if &quot;--decl04&quot; in sys.argv else &quot;DECL01&quot; if &quot;--decl01&quot; in sys.argv else &quot;DECL02&quot; if &quot;--decl02&quot; in sys.argv else &quot;METHODCMD10&quot; if &quot;--methodcmd10&quot; in sys.argv else &quot;METHODCMD11&quot; if &quot;--methodcmd11&quot; in sys.argv else &quot;METHODCMD12&quot; if &quot;--methodcmd12&quot; in sys.argv else &quot;METHODCMD09&quot; if &quot;--methodcmd09&quot; in sys.argv else &quot;GLOBAL02&quot; if &quot;--global02&quot; in sys.argv else &quot;GLOBAL01&quot; if &quot;--global01&quot; in sys.argv else &quot;E56C&quot; if &quot;--e56c&quot; in sys.argv else &quot;E56D&quot; if &quot;--e56d&quot; in sys.argv else &quot;E56E&quot; if &quot;--e56e&quot; in sys.argv else &quot;E56F&quot; if &quot;--e56f&quot; in sys.argv else &quot;E56G&quot; if &quot;--e56g&quot; in sys.argv else &quot;E56B&quot; if &quot;--e56b&quot; in sys.argv else &quot;E10&quot; if &quot;--e10&quot; in sys.argv else &quot;E52&quot; if &quot;--e52&quot; in sys.argv else &quot;E53&quot; if &quot;--e53&quot; in sys.argv else &quot;E56&quot; if &quot;--e56&quot; in sys.argv else &quot;METHODCMD08&quot; if &quot;--methodcmd08&quot; in sys.argv else &quot;METHODCMD07&quot; if &quot;--methodcmd07&quot; in sys.argv else &quot;METHODCMD05&quot; if &quot;--methodcmd05&quot; in sys.argv else &quot;METHODCMD06&quot; if &quot;--methodcmd06&quot; in sys.argv else &quot;METHODCMD04&quot; if &quot;--methodcmd04&quot; in sys.argv else &quot;METHODCMD03&quot; if &quot;--methodcmd03&quot; in sys.argv else &quot;METHODCMD02&quot; if &quot;--methodcmd02&quot; in sys.argv else &quot;METHODCMD01&quot; if &quot;--methodcmd01&quot; in sys.argv else &quot;ASSIGN02&quot; if &quot;--assign02&quot; in sys.argv else &quot;ASSIGN01&quot; if &quot;--assign01&quot; in sys.argv else &quot;E165B&quot; if &quot;--e165b&quot; in sys.argv else &quot;E165C&quot; if &quot;--e165c&quot; in sys.argv else &quot;E134B&quot; if &quot;--e134b&quot; in sys.argv else &quot;E135B&quot; if &quot;--e135b&quot; in sys.argv else &quot;P31&quot; if &quot;--p31&quot; in sys.argv else &quot;P32&quot; if &quot;--p32&quot; in sys.argv else &quot;GETCONFIG03&quot; if &quot;--getconfig03&quot; in sys.argv else &quot;GETCONFIG02&quot; if &quot;--getconfig02&quot; in sys.argv else &quot;GETCONFIG01&quot; if &quot;--getconfig01&quot; in sys.argv else &quot;POWER05&quot; if &quot;--power05&quot; in sys.argv else &quot;POWER04&quot; if &quot;--power04&quot; in sys.argv else &quot;POWER03&quot; if &quot;--power03&quot; in sys.argv else &quot;POWER02&quot; if &quot;--power02&quot; in sys.argv else &quot;POWER01&quot; if &quot;--power01&quot; in sys.argv else &quot;E55&quot; if &quot;--e55&quot; in sys.argv else &quot;LOOP04&quot; if &quot;--loop04&quot; in sys.argv else &quot;LOOP03&quot; if &quot;--loop03&quot; in sys.argv else &quot;LOOP02&quot; if &quot;--loop02&quot; in sys.argv else &quot;LOOP01&quot; if &quot;--loop01&quot; in sys.argv else &quot;E11B&quot; if &quot;--e11b&quot; in sys.argv else &quot;E143C&quot; if &quot;--e143c&quot; in sys.argv else &quot;E143B&quot; if &quot;--e143b&quot; in sys.argv else &quot;E117&quot; if &quot;--e117&quot; in sys.argv else &quot;P36&quot; if &quot;--p36&quot; in sys.argv else &quot;P35&quot;
+case_dir = evidence_root / &quot;native-cases&quot; / (case + &quot;-&quot; + uuid.uuid4().hex[:8])
+# Refuse mistyped case flags instead of silently running the default P35.
+import re
+known_flags = set(re.findall(r&#x27;&quot;(--[a-z0-9]+)&quot; in sys\.argv&#x27;, Path(__file__).read_text(encoding=&quot;utf-8&quot;)))
+known_flags.update({&quot;--printdataw01&quot;, &quot;--native&quot;, &quot;--send-input&quot;, &quot;--p35&quot;, &quot;--japanese&quot;, &quot;--invalid-first&quot;, &quot;--send-second&quot;})
+unknown_flags = [x for x in sys.argv[1:] if x.startswith(&quot;--&quot;) and x not in known_flags and x not in case_options and x not in sample_options and x not in input_options]
+if unknown_flags:
+    raise SystemExit(&quot;Unrecognized option(s): &quot; + &quot;, &quot;.join(unknown_flags))
+if native and case_arg is None:
+    selector_line = next(line for line in Path(__file__).read_text(encoding=&quot;utf-8&quot;).splitlines() if line.startswith(&quot;case = &quot;))
+    selectors = set(re.findall(r&#x27;&quot;(--[a-z0-9]+)&quot; in sys\.argv&#x27;, selector_line)) | {&quot;--p35&quot;, &quot;--printdataw01&quot;}
+    if not any(flag in sys.argv for flag in selectors):
+        raise SystemExit(&quot;Specify --case=NAME or an explicit legacy case flag&quot;)
+send_input = &quot;--send-input&quot; in sys.argv
+if native:
+    case_dir.mkdir()
+    template = evidence_root / &quot;raw&quot;
+    for filename in (&quot;Emuera1824+v24.exe&quot;, &quot;emuera.config&quot;):
+        shutil.copy2(template / filename, case_dir / filename)
+    shutil.copytree(evidence_root / &quot;variants&quot; / case / &quot;ERB&quot;, case_dir / &quot;ERB&quot;)
+    shutil.copytree(evidence_root / &quot;variants&quot; / case / &quot;csv&quot;, case_dir / &quot;csv&quot;)
+    if case == &quot;LOGFILE02&quot;:
+        (case_dir / &quot;emuera.log&quot;).mkdir()
+    if case == &quot;DECL28&quot;:
+        config_path = case_dir / &quot;emuera.config&quot;
+        data = config_path.read_bytes()
+        old_setting = &quot;セーブデータをバイナリ形式で保存する:NO&quot;.encode(&quot;cp932&quot;)
+        new_setting = &quot;セーブデータをバイナリ形式で保存する:YES&quot;.encode(&quot;cp932&quot;)
+        assert data.count(old_setting) == 1
+        config_path.write_bytes(data.replace(old_setting, new_setting))
+    if case == &quot;LOADREAD01&quot;:
+        shutil.copy2(root / &quot;inputs&quot; / &quot;LOADREAD01&quot; / &quot;save00.sav&quot;, case_dir / &quot;save00.sav&quot;)  # Public derivative: relocated seed; preserve its original bytes.
+    if case == &quot;GLOBAL02&quot;:
+        prior = json.loads((root / &quot;runs&quot; / &quot;global-01&quot; / &quot;comparison.json&quot;).read_text(encoding=&quot;utf-8&quot;))
+        seed = (root / prior[&quot;native_probe&quot;]).parent / &quot;global.sav&quot;
+        expected = prior[&quot;native_candidate_save_files&quot;][&quot;global.sav&quot;]
+        assert hashlib.sha256(seed.read_bytes()).hexdigest() == expected
+        shutil.copy2(seed, case_dir / &quot;global.sav&quot;)
+        assert hashlib.sha256((case_dir / &quot;global.sav&quot;).read_bytes()).hexdigest() == expected
+def input_manifest():
+    return {str(f.relative_to(case_dir)).replace(&quot;\\&quot;, &quot;/&quot;): hashlib.sha256(f.read_bytes()).hexdigest()
+            for folder in (&quot;ERB&quot;, &quot;csv&quot;) for f in sorted((case_dir / folder).rglob(&quot;*&quot;)) if f.is_file()}
+before_manifest = input_manifest() if native else None
+desk = u.CreateDesktopW(name, None, None, 0, 0x01FF, None)
+info = PROCESSINFO()
+report = {&quot;desktop&quot;: name, &quot;desktop_created&quot;: bool(desk), &quot;no_input_sent&quot;: True}
+def native_artifact_hashes():
+    return {filename: hashlib.sha256((case_dir / filename).read_bytes()).hexdigest()
+            for filename in (&quot;Emuera1824+v24.exe&quot;, &quot;emuera.config&quot;)}
+if native:
+    report[&quot;native_artifact_sha256_before&quot;] = native_artifact_hashes()
+try:
+    if not desk:
+        report[&quot;desktop_error&quot;] = c.get_last_error()
+    else:
+        startup = STARTUPINFO()
+        startup.cb = c.sizeof(startup)
+        startup.desktop = &quot;WinSta0\\&quot; + name
+        application = str(case_dir / &quot;Emuera1824+v24.exe&quot;) if native else sys.executable
+        args = [application, &quot;-Debug&quot;] if native else [application, &quot;-c&quot;, &quot;import tkinter as t; w=t.Tk(); w.title(&#x27;isolated probe&#x27;); w.mainloop()&quot;]
+        report[&quot;mode&quot;] = &quot;native&quot; if native else &quot;tk_test&quot;
+        command = c.create_unicode_buffer(subprocess.list2cmdline(args))
+        ok = k.CreateProcessW(application, command, None, None, False, 0, None, str(case_dir) if native else None, c.byref(startup), c.byref(info))
+        report[&quot;create_process_ok&quot;] = bool(ok)
+        if not ok:
+            report[&quot;process_error&quot;] = c.get_last_error()
+        else:
+            report[&quot;pid&quot;] = info.pid
+            time.sleep(6)
+            found = []
+            @CALLBACK
+            def visit(hwnd, unused):
+                pid = w.DWORD()
+                u.GetWindowThreadProcessId(hwnd, c.byref(pid))
+                found.append({&quot;hwnd&quot;: int(hwnd), &quot;pid&quot;: pid.value})
+                return True
+            report[&quot;enumeration_ok&quot;] = bool(u.EnumDesktopWindows(desk, visit, 0))
+            report[&quot;windows&quot;] = found
+            report[&quot;own_windows&quot;] = [x for x in found if x[&quot;pid&quot;] == info.pid]
+            if native:
+                children = []
+                @CALLBACK
+                def child_visit(hwnd, unused):
+                    cls = c.create_unicode_buffer(256)
+                    title = c.create_unicode_buffer(512)
+                    u.GetClassNameW(hwnd, cls, len(cls))
+                    u.GetWindowTextW(hwnd, title, len(title))
+                    pid = w.DWORD()
+                    u.GetWindowThreadProcessId(hwnd, c.byref(pid))
+                    children.append({&quot;hwnd&quot;: int(hwnd), &quot;pid&quot;: pid.value, &quot;class&quot;: cls.value, &quot;title&quot;: title.value})
+                    return True
+                parent_of = {}
+                for window in report[&quot;own_windows&quot;]:
+                    before = len(children)
+                    u.EnumChildWindows(window[&quot;hwnd&quot;], child_visit, 0)
+                    for child in children[before:]:
+                        parent_of[child[&quot;hwnd&quot;]] = window[&quot;hwnd&quot;]
+                report[&quot;children&quot;] = children
+                editors = [x for x in children if &quot;RICHEDIT&quot; in x[&quot;class&quot;] and x[&quot;pid&quot;] == info.pid]
+                if native and case == &quot;LOGFILE02&quot;:
+                    failure = [x for x in children if x[&quot;pid&quot;] == info.pid and x[&quot;class&quot;] == &quot;Static&quot; and x[&quot;title&quot;] == &quot;ログの出力に失敗しました&quot;]
+                    buttons = [x for x in children if x[&quot;pid&quot;] == info.pid and x[&quot;class&quot;] == &quot;Button&quot; and x[&quot;title&quot;] == &quot;OK&quot;]
+                    if len(failure) == 1 and len(buttons) == 1 and parent_of[failure[0][&quot;hwnd&quot;]] == parent_of[buttons[0][&quot;hwnd&quot;]]:
+                        dialog = parent_of[buttons[0][&quot;hwnd&quot;]]
+                        cap_dialog = subprocess.run([sys.executable, str(root / &quot;capture_dialog.py&quot;), &quot;dialog-&quot; + case + &quot;-&quot; + name[-8:], str(dialog), name], capture_output=True, text=True, timeout=15)
+                        report[&quot;dialog_capture_returncode&quot;] = cap_dialog.returncode
+                        report[&quot;dialog_capture_output&quot;] = cap_dialog.stdout + cap_dialog.stderr
+                        report[&quot;owned_dialog_button_posted&quot;] = bool(u.PostMessageW(buttons[0][&quot;hwnd&quot;], 0x00F5, 0, 0))
+                        if report[&quot;owned_dialog_button_posted&quot;]:
+                            report[&quot;no_input_sent&quot;] = False
+                        time.sleep(2)
+                if native and (case_arg is not None or case in (&quot;E12B&quot;, &quot;E12&quot;, &quot;E143F&quot;, &quot;UNIMP05&quot;, &quot;UNIMP06&quot;, &quot;UNIMP03&quot;, &quot;UNIMP04&quot;, &quot;UNIMP01&quot;, &quot;UNIMP02&quot;, &quot;PRINT02&quot;, &quot;PRINT01&quot;, &quot;PRINTW01&quot;, &quot;LOCAL01&quot;, &quot;GLOBAL03&quot;, &quot;TERNARY01&quot;, &quot;TARGET01&quot;, &quot;UNARY03&quot;, &quot;UNARY01&quot;, &quot;UNARY02&quot;, &quot;ORDER02&quot;, &quot;ORDER03&quot;, &quot;ORDER01&quot;, &quot;E143E&quot;, &quot;LOGFILE02&quot;, &quot;LOGFILE01&quot;, &quot;CHARA01&quot;, &quot;LOGIC03&quot;, &quot;LOGIC02&quot;, &quot;LOGIC01&quot;, &quot;P38B&quot;, &quot;DECL30&quot;, &quot;DECL29&quot;, &quot;E143D&quot;, &quot;DECL28&quot;, &quot;DECL27&quot;, &quot;DECL26&quot;, &quot;DECL25&quot;, &quot;DECL24&quot;, &quot;DECL23&quot;, &quot;RANDOM02&quot;, &quot;RANDOM01&quot;, &quot;DECL22&quot;, &quot;DECL19&quot;, &quot;DECL20&quot;, &quot;DECL21&quot;, &quot;DECL18&quot;, &quot;DECL17&quot;, &quot;DECL15&quot;, &quot;DECL16&quot;, &quot;DECL12&quot;, &quot;DECL13&quot;, &quot;DECL14&quot;, &quot;DECL11&quot;, &quot;DECL09&quot;, &quot;DECL10&quot;, &quot;DECL08&quot;, &quot;DECL07&quot;, &quot;DECL06&quot;, &quot;DECL05&quot;, &quot;DECL03&quot;, &quot;DECL04&quot;, &quot;DECL01&quot;, &quot;DECL02&quot;, &quot;METHODCMD10&quot;, &quot;METHODCMD11&quot;, &quot;METHODCMD12&quot;, &quot;METHODCMD09&quot;, &quot;GLOBAL02&quot;, &quot;GLOBAL01&quot;, &quot;E56C&quot;, &quot;E56D&quot;, &quot;E56E&quot;, &quot;E56F&quot;, &quot;E56G&quot;, &quot;E56B&quot;, &quot;E10&quot;, &quot;E52&quot;, &quot;E53&quot;, &quot;E56&quot;, &quot;METHODCMD08&quot;, &quot;METHODCMD07&quot;, &quot;METHODCMD05&quot;, &quot;METHODCMD06&quot;, &quot;METHODCMD04&quot;, &quot;METHODCMD03&quot;, &quot;METHODCMD02&quot;, &quot;METHODCMD01&quot;, &quot;ASSIGN02&quot;, &quot;ASSIGN01&quot;, &quot;E165B&quot;, &quot;E165C&quot;, &quot;E134B&quot;, &quot;E135B&quot;, &quot;P31&quot;, &quot;P32&quot;, &quot;E117&quot;, &quot;E143B&quot;, &quot;E143C&quot;, &quot;E11B&quot;, &quot;E55&quot;, &quot;POWER01&quot;, &quot;POWER02&quot;, &quot;POWER03&quot;, &quot;POWER04&quot;, &quot;POWER05&quot;, &quot;LOOP01&quot;, &quot;LOOP02&quot;, &quot;LOOP03&quot;, &quot;LOOP04&quot;, &quot;GETCONFIG01&quot;, &quot;GETCONFIG02&quot;, &quot;GETCONFIG03&quot;)) and len(editors) == 1:
+                    parent = parent_of[editors[0][&quot;hwnd&quot;]]
+                    cap = subprocess.run([sys.executable, str(root / &quot;capture_one.py&quot;), &quot;fresh-&quot; + case + &quot;-&quot; + name[-8:], str(parent), name], capture_output=True, text=True, timeout=15)
+                    report[&quot;capture_returncode&quot;] = cap.returncode
+                    report[&quot;capture_output&quot;] = cap.stdout + cap.stderr
+                    report[&quot;capture_samples&quot;] = [{&quot;sample&quot;: 1, &quot;returncode&quot;: cap.returncode, &quot;output&quot;: cap.stdout + cap.stderr}]
+                    for sample in range(2, sample_count + 1):
+                        time.sleep(1)
+                        sample_tag = &quot;fresh-&quot; + case + &quot;-sample&quot; + str(sample) + &quot;-&quot; + name[-8:]
+                        sampled = subprocess.run([sys.executable, str(root / &quot;capture_one.py&quot;), sample_tag, str(parent), name], capture_output=True, text=True, timeout=15)
+                        report[&quot;capture_samples&quot;].append({&quot;sample&quot;: sample, &quot;returncode&quot;: sampled.returncode, &quot;output&quot;: sampled.stdout + sampled.stderr})
+                if send_input and len(editors) == 1:
+                    editor = editors[0][&quot;hwnd&quot;]
+                    parent = parent_of[editor]
+                    invalid_probe = &quot;--invalid-first&quot; in sys.argv and case == &quot;P35&quot;
+                    value = input_text if input_text is not None else &quot;ABC&quot; if invalid_probe else &quot;42&quot; if case == &quot;P35&quot; else &quot;日本語テスト&quot; if &quot;--japanese&quot; in sys.argv else &quot;ABC&quot;
+                    if input_options:
+                        report[&quot;requested_input_utf8_hex&quot;] = raw_hex.lower()
+                    buf = c.create_unicode_buffer(value)
+                    result = c.c_size_t()
+                    ok_text = bool(u.SendMessageTimeoutW(editor, 0x000C, 0, c.cast(buf, c.c_void_p).value, 2, 3000, c.byref(result)))
+                    report[&quot;set_text_ok&quot;] = ok_text
+                    report[&quot;set_text_result&quot;] = result.value
+                    if ok_text and result.value:
+                        report[&quot;keydown_posted&quot;] = bool(u.PostMessageW(editor, 0x0100, 13, 0x001C0001))
+                        report[&quot;keyup_posted&quot;] = bool(u.PostMessageW(editor, 0x0101, 13, 0xC01C0001))
+                        if case == &quot;PRINTDATAW01&quot;:
+                            time.sleep(2)
+                            early_log = case_dir / &quot;debug&quot; / &quot;console.log&quot;
+                            report[&quot;wait_phase_log_before_resume&quot;] = early_log.read_bytes().decode(&quot;cp932&quot;, errors=&quot;replace&quot;) if early_log.is_file() else None
+                            report[&quot;wait_phase_process_alive&quot;] = k.WaitForSingleObject(info.process, 0) != 0
+                            crop_path = root / &quot;native-wait-crop.png&quot;
+                            crop_run = subprocess.run([sys.executable, str(root / &quot;capture_crop_only.py&quot;), &quot;PRINTDATAW01-midwait&quot;, str(parent), name, str(crop_path)], capture_output=True, text=True, timeout=20)
+                            report[&quot;wait_crop_capture_returncode&quot;] = crop_run.returncode
+                            report[&quot;wait_crop_capture_output&quot;] = crop_run.stdout + crop_run.stderr
+                            report[&quot;wait_crop_file&quot;] = str(crop_path) if crop_path.is_file() else None
+                            report[&quot;wait_resume_keydown&quot;] = bool(u.PostMessageW(editor, 0x0100, 13, 0x001C0001))
+                            report[&quot;wait_resume_keyup&quot;] = bool(u.PostMessageW(editor, 0x0101, 13, 0xC01C0001))
+                            time.sleep(2)
+                            report[&quot;wait_phase_log_after_resume&quot;] = early_log.read_bytes().decode(&quot;cp932&quot;, errors=&quot;replace&quot;) if early_log.is_file() else None
+                        if case == &quot;LOADREAD01&quot; and &quot;--send-second&quot; in sys.argv:
+                            time.sleep(2)
+                            buf_second = c.create_unicode_buffer(&quot;100&quot;)
+                            result_second = c.c_size_t()
+                            report[&quot;second_set_text_ok&quot;] = bool(u.SendMessageTimeoutW(editor, 0x000C, 0, c.cast(buf_second, c.c_void_p).value, 2, 3000, c.byref(result_second)))
+                            report[&quot;second_set_text_result&quot;] = result_second.value
+                            if report[&quot;second_set_text_ok&quot;] and result_second.value:
+                                report[&quot;second_keydown_posted&quot;] = bool(u.PostMessageW(editor, 0x0100, 13, 0x001C0001))
+                                report[&quot;second_keyup_posted&quot;] = bool(u.PostMessageW(editor, 0x0101, 13, 0xC01C0001))
+                        report[&quot;no_input_sent&quot;] = False
+                        time.sleep(10)
+                        if invalid_probe:
+                            mid = subprocess.run([sys.executable, str(root / &quot;capture_one.py&quot;), &quot;invalid-P35-&quot; + name[-8:], str(parent), name], capture_output=True, text=True, timeout=15)
+                            report[&quot;invalid_capture_returncode&quot;] = mid.returncode
+                            report[&quot;invalid_capture_output&quot;] = mid.stdout + mid.stderr
+                            buf2 = c.create_unicode_buffer(&quot;42&quot;)
+                            result2 = c.c_size_t()
+                            ok2 = bool(u.SendMessageTimeoutW(editor, 0x000C, 0, c.cast(buf2, c.c_void_p).value, 2, 3000, c.byref(result2)))
+                            report[&quot;second_set_ok&quot;] = ok2 and bool(result2.value)
+                            if report[&quot;second_set_ok&quot;]:
+                                report[&quot;second_keydown_posted&quot;] = bool(u.PostMessageW(editor, 0x0100, 13, 0x001C0001))
+                                report[&quot;second_keyup_posted&quot;] = bool(u.PostMessageW(editor, 0x0101, 13, 0xC01C0001))
+                                time.sleep(3)
+                        cap = subprocess.run([sys.executable, str(root / &quot;capture_one.py&quot;), &quot;isolated-&quot; + case + &quot;-&quot; + name[-8:], str(parent), name], capture_output=True, text=True, timeout=15)
+                        report[&quot;capture_returncode&quot;] = cap.returncode
+                        report[&quot;capture_output&quot;] = cap.stdout + cap.stderr
+                if native and case in (&quot;DEBUGPRINT01&quot;, &quot;PRINTDATAW01&quot;):
+                    time.sleep(1)
+                    debug_tops = []
+                    @CALLBACK
+                    def debug_top_visit(hwnd, unused):
+                        pid = w.DWORD()
+                        u.GetWindowThreadProcessId(hwnd, c.byref(pid))
+                        title = c.create_unicode_buffer(512)
+                        u.GetWindowTextW(hwnd, title, len(title))
+                        if pid.value == info.pid:
+                            debug_tops.append({&quot;hwnd&quot;: int(hwnd), &quot;title&quot;: title.value})
+                        return True
+                    u.EnumDesktopWindows(desk, debug_top_visit, 0)
+                    report[&quot;debug_toplevel_windows&quot;] = debug_tops
+                    closing = [x for x in debug_tops if &quot;デバッグ&quot; in x[&quot;title&quot;] or &quot;Debug&quot; in x[&quot;title&quot;]]
+                    report[&quot;debug_dialog_close_posted&quot;] = [bool(u.PostMessageW(x[&quot;hwnd&quot;], 0x0010, 0, 0)) for x in closing]
+                    time.sleep(2)
+                    log_path = case_dir / &quot;debug&quot; / &quot;console.log&quot;
+                    report[&quot;debug_console_log_exists&quot;] = log_path.is_file()
+                    if log_path.is_file():
+                        report[&quot;debug_console_log&quot;] = log_path.read_text(encoding=&quot;cp932&quot;, errors=&quot;replace&quot;)
+finally:
+    if info.process:
+        wait_state = k.WaitForSingleObject(info.process, 0)
+        report[&quot;process_signaled_before_cleanup&quot;] = wait_state == 0
+        exit_code = w.DWORD()
+        if wait_state == 0 and hasattr(k, &quot;GetExitCodeProcess&quot;):
+            k.GetExitCodeProcess.argtypes = [w.HANDLE, c.POINTER(w.DWORD)]
+            k.GetExitCodeProcess.restype = w.BOOL
+            report[&quot;process_exit_code_observed&quot;] = bool(k.GetExitCodeProcess(info.process, c.byref(exit_code)))
+            report[&quot;process_exit_code&quot;] = exit_code.value
+        if wait_state != 0:
+            k.TerminateProcess(info.process, 0)
+        k.WaitForSingleObject(info.process, 5000)
+        k.CloseHandle(info.thread)
+        k.CloseHandle(info.process)
+    if desk:
+        report[&quot;closed_desktop&quot;] = bool(u.CloseDesktop(desk))
+    if native:
+        report[&quot;input_sha256_before&quot;] = before_manifest
+        report[&quot;input_sha256_after&quot;] = input_manifest()
+        report[&quot;native_artifact_sha256_after&quot;] = native_artifact_hashes()
+    (case_dir / &quot;probe.json&quot; if native else root / &quot;DESKTOP_CREATEPROCESS_PROBE.json&quot;).write_text(json.dumps(report, indent=2) + &quot;\n&quot;, encoding=&quot;utf-8&quot;)
+print(json.dumps(report))
+
+
+
+
+
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1884 · command_or_syntax:PRINTKL · check</li>
+</ul></html>

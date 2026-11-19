@@ -1,0 +1,29 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:08.116287+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "SAVEDATA"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "8806a208e713f7c2a59cf40c23abd112afbf9ab95b48630316f3a57d2a14a7b2",
+  "case_ids": [
+    "SAVEIO204_save_directory_collision",
+    "SAVEIO204_save_negative_before_caption"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "SAVEIO204_save_directory_collision: Four isolated fault fixtures: directory collision and readonly file mapped to each engine-own slot3 path, not identical literal FS trees; same ERB/config. Readonly file has deliberate probe bytes, no corrupt-file validity inference. Missing load/negative slot errors and one caption exception only; no full I/O failure taxonomy, disk-full/permissions/share races or recovery. Native readonly raw logs differ by own run path; only this path substitution repeats exactly. Public saved log is pre-command snapshot on errors, mutable VM after-state unobserved. Native8 processes alive5s then cleanup, natural exit unobserved.",
+    "SAVEIO204_save_negative_before_caption: Four isolated fault fixtures: directory collision and readonly file mapped to each engine-own slot3 path, not identical literal FS trees; same ERB/config. Readonly file has deliberate probe bytes, no corrupt-file validity inference. Missing load/negative slot errors and one caption exception only; no full I/O failure taxonomy, disk-full/permissions/share races or recovery. Native readonly raw logs differ by own run path; only this path substitution repeats exactly. Public saved log is pre-command snapshot on errors, mutable VM after-state unobserved. Native8 processes alive5s then cleanup, natural exit unobserved."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "d0b2dea13af99cebd7a25909758e89e7dfec692b8da61f2756c1433faba5d2fc",
+  "independent_semantic_review_sha256": "b99f614fe95e9a92b9463c660267def0ac1915b7f643bd61a1e4a6fe4bfa971e",
+  "independent_semantic_results_sha256": "522daae4bf8457a4967a76902ac676c13e54dd485538a0ac570baf5d8e26e5b3",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

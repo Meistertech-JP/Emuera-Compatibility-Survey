@@ -1,0 +1,26 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0876 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0876 · CASE_REVIEW_ja.md</h1>
+<p>PRINTKの混在かなと直後印字の視覚比較票で、ピンハッシュと入力操作の事実を保存して原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>3b75b5ffae65dff3e071f5d15328f79bc01dd76f6ff74107a579cbaba06976bb</code></p>
+<p><a href="../assets/U0876.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3b75b5ffae65dff3e071f5d15328f79bc01dd76f6ff74107a579cbaba06976bb</code></p>
+<pre># PRINTK のかな出力・連結比較（PRINTK01）
+
+Native Emuera1824+v24 と公開PyEmuera 3.0.0 pyz（SHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`）を同一fixture（CP932、SHA-256 `2ba39d69e455e3277c2486d7ab9316ca19fd258ba23184cbf9816b25d7eeeb01`）で比較した。fixtureのCP932復号結果は`FIXTURE_CP932_REPLAY.txt`に、バイト列とUnicode escapeで保存した。PyはCPython 3.12.10の隔離実行で、source tree importなし。
+
+fixtureは`FORCEKANA 0`、`PRINTK あアｱ A`、直後に`PRINTFORML &lt;PRINTK_END&gt;`を実行し、続く`INPUT`で待機する。Pyは保存入力42とQUITまで実行して終了コード0。CP932復号後の標準出力は`Now Loading...\r\n\u3042\u30a2\uff71 A&lt;PRINTK_END&gt;\r\n42\r\n`。
+
+Nativeは同一fixtureを独立PID・デスクトップで実行した。各プローブの`capture_output`にはその実行から取得した一意クロップのパス、SHA-256、サイズ、寸法が記録され、比較JSONも同じ値を参照する。各回とも隔離入力として送った文字列は`@DEBUG`のみで、続けてWait解除用Enterキーを送った、対象行を表示した状態でプロセスが待機中だった。fixture・exe・configの前後ハッシュは一致。保持画像は対象行の250x27クロップのみで、2クロップはピクセル内容が同一。
+
+**判定: `matched_scoped`** — `FORCEKANA 0`のこの混在文字列、および次の印字命令との連結表示。Native側は別々の実行に結び付いた画面クロップで視覚比較したもので、OUTPUTLOGのコードポイント単位比較ではない。モード1〜3、かな文字クラス網羅、式引数、空引数、折返し・色は未検証。製品コード変更なし。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1786 · command_or_syntax:PRINTK · check</li>
+</ul></html>

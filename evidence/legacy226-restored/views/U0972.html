@@ -1,0 +1,37 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0972 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0972 · REVIEW_ja.md</h1>
+<p>VARSIZEの3D結果とスカラー診断、RESULT不足fixtureを作れない根拠を区別した技術票を原文収録する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>612d2e1c6412dc4dbcbbcd97c226525044dfd99d380473e77ef9037821e0e58b</code></p>
+<p><a href="../assets/U0972.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>612d2e1c6412dc4dbcbbcd97c226525044dfd99d380473e77ef9037821e0e58b</code></p>
+<pre># VARSIZE 3次元・スカラー・RESULT境界の比較
+
+## 実行結果
+
+本家Emuera1824+v24を隔離デスクトップで各ケース2回、公開PyEmuera 3.0.0 pyzを1回実行しました。Nativeの合成キー入力はありません。
+
+`#DIM RF_DIM3,2,3,4`に対する`VARSIZE RF_DIM3`は、`RESULT,100`の設定で両エンジンとも`[2,3,4]`を書き、後続へ進みました。
+
+スカラーの組み込み変数`RAND`を指定すると、両エンジンともERB 3行目で止まり、後続マーカーはありません。NativeはVARSIZEの非配列引数エラー、公開pyzは`E_VARIABLE: Unknown variable RAND`でした。同じ停止位置ですが、診断原因と文面は一致しません。`DAY`と寸法未指定の`#DIM`はスカラー証拠ではなく、比較対象から除外しました。
+
+## RESULT不足条件を試せない根拠
+
+`VariableSize.CSV`へ`RESULT,2`を与えた試行では、NativeがRESULTのサイズ変更を拒否しました。C#の`ConstantData.changeVariableSizeData`は、非ローカル1D配列の長さを100未満にできない条件を実装しています（287–290行）。RESULTは非ローカル1D配列です。そのためCSV設定は適用されず、短いRESULTへの書き込み境界を作れませんでした。この試行は境界比較として扱わず、元のログは`evidence/varsize-result-bounds-20261115/`に保全しました。有効な`RESULT,100`では3次元値の出力を比較しています。
+
+## 判定と制限
+
+有限範囲では、3D寸法結果は一致し、RANDスカラーは同じ行で拒否されるものの理由表記が異なりました。短いRESULT条件はNativeのCSV制約により作れないことを出典と実行ログで記録し、未観測の部分書込み結果は主張しません。診断文全体、RESULT長を別手段で短縮した状態、他のスカラー・配列種別、全入力域の互換性は対象外です。製品・公開物は変更していません。
+
+`conditions.json`、`COMPARISON.json`、`SOURCE_HASHES.json`および各実行ディレクトリに入力・出力・実行レシートを保存しています。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0824 · command_or_syntax:VARSIZE · check</li>
+<li>L0827 · command_or_syntax:VARSIZE · check</li>
+</ul></html>

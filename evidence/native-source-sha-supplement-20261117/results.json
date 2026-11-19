@@ -1,0 +1,45 @@
+{
+  "schema": "native-source-registration-sha-supplement.v1",
+  "kind": "expression_function",
+  "source_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "source_archive_root": "Emuera1824+v24/src1824+v24/src1824/Emuera/",
+  "source_file": "GameData/Function/Creator.cs",
+  "source_file_sha256": "b2e5f60c5457741208ba99b991cced5106b22834b00347876dea411a3e0dd36a",
+  "retained_generator": "reference_contracts.py",
+  "retained_generator_sha256": "bdb2837519e499908e48af065ea4f1b8ef43c8d649f239691303361a818b12e4",
+  "scope": "Reproduction with retained generator; historical execution and actual code authenticity are not established.",
+  "contract_input": "Original decoded source from registration start through the character before LF, encoded as UTF-8; includes original comment and CR, excludes leading indentation and LF.",
+  "display_input": "Same range after comments and CR are replaced with spaces, encoded as UTF-8, including trailing spaces.",
+  "targets": [
+    {
+      "name": "GCREATED",
+      "source_line": 171,
+      "contract_sha256": "63aee4d35c0444cee4e06ee292f691e768246b8673db9919ea0af407e1ccd660",
+      "display_text_utf8_sha256": "e40541b2e9829f720873c61115f638a92d847e8aa8f0324fbe6c0fe12544115d",
+      "contract_input_bytes": 58,
+      "includes_comment": true,
+      "includes_cr": true,
+      "includes_lf": false
+    },
+    {
+      "name": "GWIDTH",
+      "source_line": 172,
+      "contract_sha256": "471ccf05062354021044d22fedbb2ca7d72acc19aa58a2c53aec5acfb6c510eb",
+      "display_text_utf8_sha256": "83ebe1e884c7c4e81c5b8fc1c28353a6093de4195efbe92568171e31747b4d73",
+      "contract_input_bytes": 53,
+      "includes_comment": true,
+      "includes_cr": true,
+      "includes_lf": false
+    },
+    {
+      "name": "GHEIGHT",
+      "source_line": 173,
+      "contract_sha256": "5bfab797a278a3c5065d6c2478c7ce7a2c508014b9d674e33581206b0e6efd6c",
+      "display_text_utf8_sha256": "976c26bf693ad4ede9a2781b5086970bd34de732eabfadefcd62cc47a28f5d6e",
+      "contract_input_bytes": 55,
+      "includes_comment": true,
+      "includes_cr": true,
+      "includes_lf": false
+    }
+  ]
+}

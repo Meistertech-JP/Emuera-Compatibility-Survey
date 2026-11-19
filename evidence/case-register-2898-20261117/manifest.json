@@ -1,0 +1,29 @@
+{
+  "schema": "case-register-neutral-screened-draft-v2",
+  "candidate_survey_sha256": "499652bad50c7e39576df8cbbc7d718d2aabd23d3c79298c8dfbdfd6dca4501f",
+  "candidate_trace_sha256": "de4aba6030a6c67c4266c726691e1f0326c741cac9b4b3a42d634158bcac283b",
+  "existing_printdata_61_index_sha256": "1de16534bf1ee8a309e93793819e409d91da1283864d4f1aac60fdee36cfe4b6",
+  "source_register_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195",
+  "survey_cases": 2898,
+  "records": 2898,
+  "trace_registered_aliases": 2847,
+  "scope": "Finite screened case projection; 68 historical records retain their registered verdicts and limits, with acquisition procedure summaries shortened; no new execution or verdict change. Selected preparation-history wording in 86 additional cases is shortened with case observations and verdicts retained.",
+  "files": {
+    "README.ja.md": {
+      "sha256": "4e473cfaadcd97bac230cb05ebfd502cbbac9bb6c59865e3bf8f087bc20b14c2",
+      "size": 2214
+    },
+    "README.md": {
+      "sha256": "050516046252bd2c3dd51e5dc84c315f2a81f8b7e1ce0a4af7479282a8079442",
+      "size": 2115
+    },
+    "cases.jsonl": {
+      "sha256": "8d3a3dd1b3e87403df8e518461fbe12439bd1810195c29d4eb2747fd9e8efb94",
+      "size": 7869477
+    },
+    "core.jsonl": {
+      "sha256": "c504c99806036be2b092ecdf9c22a29cfd9f78d8f5de8b58a9ad44fb05970903",
+      "size": 1079489
+    }
+  }
+}

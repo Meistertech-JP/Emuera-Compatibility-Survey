@@ -1,0 +1,52 @@
+{
+  "schema": "pyemuera.batch-plan.v1",
+  "approved_pure_expressions": [
+    "ABS((-7 + (RESULT:0 - 701)))",
+    "STRFINDU(\"abc\",\"\",(3 + (RESULT:0 - 701)))",
+    "STRFIND(\"abc\",\"\",(3 + (RESULT:0 - 701)))"
+  ],
+  "cases": [
+    {
+      "case_id": "AUTO_V2_EXPR_001_ABS",
+      "typed_key": "expression_function:ABS",
+      "expression": "ABS((-7 + (RESULT:0 - 701)))",
+      "scope": {
+        "description": "finite pure-expression observation"
+      },
+      "observations": [
+        {
+          "name": "value",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "case_id": "AUTO_V2_ACCEPT_STRFINDU_EMPTY_END",
+      "typed_key": "expression_function:STRFINDU",
+      "expression": "STRFINDU(\"abc\",\"\",(3 + (RESULT:0 - 701)))",
+      "scope": {
+        "description": "finite pure-expression observation"
+      },
+      "observations": [
+        {
+          "name": "value",
+          "type": "numeric"
+        }
+      ]
+    },
+    {
+      "case_id": "AUTO_V2_ACCEPT_STRFIND_EMPTY_END",
+      "typed_key": "expression_function:STRFIND",
+      "expression": "STRFIND(\"abc\",\"\",(3 + (RESULT:0 - 701)))",
+      "scope": {
+        "description": "finite pure-expression observation"
+      },
+      "observations": [
+        {
+          "name": "value",
+          "type": "numeric"
+        }
+      ]
+    }
+  ]
+}

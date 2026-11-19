@@ -1,0 +1,32 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T18:18:56.349534+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTV"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "resolved_parent_obligations": [
+    "printv_empty_and_fault",
+    "runtime_identity_PRINTV"
+  ],
+  "comparison_path": "evidence/printv-empty-fault-20261114/COMPARISON.json",
+  "comparison_sha256": "9bca76fdfa55fb886c0028a3e8c91aeecbbf7c51c518cf4c66655cda8b128c1d",
+  "review_path": "evidence/printv-empty-fault-20261114/CASE_REVIEW_ja.md",
+  "finite_scope": [
+    "PRINTV helper returning empty string",
+    "SKIPDISP1 helper suppression with RESULT sentinel",
+    "first term side effect before second-term divide-by-zero",
+    "pinned runtime/config/fixture/output identities"
+  ],
+  "excluded": [
+    "all PRINTV term types and array paths",
+    "Unicode and all output styles",
+    "exact Native/public diagnostics equivalence",
+    "Native natural exit and exit code"
+  ],
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "no_product_or_release_modification": true
+}

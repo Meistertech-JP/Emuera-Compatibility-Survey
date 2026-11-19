@@ -1,0 +1,193 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0919 · GOTO_PARENT_ACCEPTANCE.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0919 · GOTO_PARENT_ACCEPTANCE.json</h1>
+<p>原票種別=GOTO_PARENT_ACCEPTANCE.json; 参照対象=command_or_syntax:GOTO。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;GOTO&quot;}; comparison_outcome=&quot;different_scoped&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>989125101584ed2fc0da9481e5909be4819a7db77dbb27376b9b12e17811078d</code></p>
+<p><a href="../assets/U0919.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>989125101584ed2fc0da9481e5909be4819a7db77dbb27376b9b12e17811078d</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-finite-comparison-adjudication-1&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;GOTO&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;REND_GOTO_ZERO_NESTED_NORMAL_20261115&quot;,
+    &quot;GOTO_MISSING_LOCAL_LABEL_20261115&quot;
+  ],
+  &quot;accepted_scope&quot;: {
+    &quot;target_GOTO&quot;: {
+      &quot;status&quot;: &quot;finite_observation_complete&quot;,
+      &quot;evidence&quot;: &quot;goto-missing-local/*: RG_MISSING_PRE, exact SEARCHBOUND01.ERB:7 error, no BAD markers&quot;,
+      &quot;result&quot;: &quot;Same-named label in @RG_OTHER does not satisfy lookup in @SYSTEM_TITLE. Native load warning then reaches pre and stops at marked-error line; public raises E_FUNCTION at reached line. Diagnostic timing/text/transport differ.&quot;
+    },
+    &quot;runtime_identity_GOTO&quot;: {
+      &quot;status&quot;: &quot;new_original_receipts_complete&quot;,
+      &quot;evidence&quot;: &quot;normal/*/invocation.json + native probe.json + original verified-public-pyz.json&quot;,
+      &quot;historical_identity&quot;: &quot;unknown; no backfill&quot;
+    },
+    &quot;registration_form&quot;: {
+      &quot;status&quot;: &quot;source_bound&quot;,
+      &quot;evidence&quot;: [
+        &quot;C00874&quot;,
+        &quot;C00875&quot;,
+        &quot;C00880&quot;
+      ],
+      &quot;result&quot;: &quot;Exact GOTO(false,false,false), not procedure JUMP or GOTOFORM.&quot;
+    },
+    &quot;signature_parser&quot;: {
+      &quot;status&quot;: &quot;scoped_source_and_runtime&quot;,
+      &quot;evidence&quot;: [
+        &quot;C00876&quot;,
+        &quot;C00877&quot;,
+        &quot;C00878&quot;,
+        &quot;C00884&quot;
+      ],
+      &quot;result&quot;: &quot;Literal local target through SP_CALL(false,false); native constant local lookup at load and public runtime lookup recorded.&quot;
+    },
+    &quot;normal_output_state_control&quot;: {
+      &quot;status&quot;: &quot;matched&quot;,
+      &quot;evidence&quot;: &quot;normal RG_GOTO_PRE/HIT, RG_LOOP_HIT twice, suppressed BAD&quot;
+    },
+    &quot;finite_boundary_error&quot;: {
+      &quot;status&quot;: &quot;requested_error_matched_in_control_outcome&quot;,
+      &quot;evidence&quot;: &quot;goto-missing-local native emuera.log and public verified.stderr.bin&quot;,
+      &quot;remaining&quot;: &quot;Diagnostics not identical; malformed/empty target and extra arguments not executed.&quot;
+    },
+    &quot;evaluation_and_side_effects&quot;: {
+      &quot;status&quot;: &quot;matched_scoped&quot;,
+      &quot;evidence&quot;: &quot;normal B=3 and R=701 S=RG_SENTINEL across jump; missing pre B=41 and later increment suppressed&quot;,
+      &quot;remaining&quot;: &quot;State after fatal error cannot be read back; only pre-state and suppressed continuation are observed. No dynamic/form expression evaluation axis for this literal target.&quot;
+    },
+    &quot;current_original_scope&quot;: {
+      &quot;valid_local_label&quot;: &quot;matched&quot;,
+      &quot;skipped_sentinel&quot;: &quot;matched&quot;,
+      &quot;parser_supplement&quot;: &quot;SP_CALL source retained; no extra syntax cases credited&quot;,
+      &quot;remaining&quot;: &quot;Full parser invalid-form and other control-context equivalence not claimed.&quot;
+    },
+    &quot;current_required_work_mapping&quot;: [
+      {
+        &quot;condition&quot;: &quot;verify native registration and intended contract&quot;,
+        &quot;result&quot;: &quot;SOURCE_PINS.json, source/C*.excerpt.txt; original registration bound to runtime pin&quot;
+      },
+      {
+        &quot;condition&quot;: &quot;verify linked evidence actually executes this target and preserves conditions&quot;,
+        &quot;result&quot;: &quot;new reached normal markers and exact input/runtime beforeafter receipts; historical receipts remain unknown&quot;
+      },
+      {
+        &quot;condition&quot;: &quot;plan normal, boundary, invalid, and state or side effect cases as applicable&quot;,
+        &quot;result&quot;: &quot;PREFLIGHT.json and per-axis results above; unexecuted axes explicitly remaining&quot;
+      },
+      {
+        &quot;condition&quot;: &quot;compare native executable and PyEmuera with isolated inputs and retain observations&quot;,
+        &quot;result&quot;: &quot;2 native +1 public per fixture; raw retained; marker match with diagnostic differences below&quot;
+      }
+    ]
+  },
+  &quot;original_remaining&quot;: [
+    {
+      &quot;type&quot;: &quot;finite_command_obligation&quot;,
+      &quot;source&quot;: &quot;evidence\\parent-command-evidence-review-20261113\\REVIEW.json&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;command_or_syntax&quot;,
+        &quot;name&quot;: &quot;GOTO&quot;
+      },
+      &quot;obligation_ids&quot;: [
+        &quot;target_GOTO&quot;,
+        &quot;runtime_identity_GOTO&quot;
+      ],
+      &quot;note&quot;: &quot;Read exact obligation source and existing own-target observations before execution; no cross-target normal-credit transfer.&quot;
+    }
+  ],
+  &quot;proof&quot;: {
+    &quot;original_missing_obligations&quot;: {
+      &quot;target_GOTO&quot;: {
+        &quot;status&quot;: &quot;finite_observation_complete&quot;,
+        &quot;evidence&quot;: &quot;goto-missing-local/*: RG_MISSING_PRE, exact SEARCHBOUND01.ERB:7 error, no BAD markers&quot;,
+        &quot;result&quot;: &quot;Same-named label in @RG_OTHER does not satisfy lookup in @SYSTEM_TITLE. Native load warning then reaches pre and stops at marked-error line; public raises E_FUNCTION at reached line. Diagnostic timing/text/transport differ.&quot;
+      },
+      &quot;runtime_identity_GOTO&quot;: {
+        &quot;status&quot;: &quot;new_original_receipts_complete&quot;,
+        &quot;evidence&quot;: &quot;normal/*/invocation.json + native probe.json + original verified-public-pyz.json&quot;,
+        &quot;historical_identity&quot;: &quot;unknown; no backfill&quot;
+      },
+      &quot;registration_form&quot;: {
+        &quot;status&quot;: &quot;source_bound&quot;,
+        &quot;evidence&quot;: [
+          &quot;C00874&quot;,
+          &quot;C00875&quot;,
+          &quot;C00880&quot;
+        ],
+        &quot;result&quot;: &quot;Exact GOTO(false,false,false), not procedure JUMP or GOTOFORM.&quot;
+      },
+      &quot;signature_parser&quot;: {
+        &quot;status&quot;: &quot;scoped_source_and_runtime&quot;,
+        &quot;evidence&quot;: [
+          &quot;C00876&quot;,
+          &quot;C00877&quot;,
+          &quot;C00878&quot;,
+          &quot;C00884&quot;
+        ],
+        &quot;result&quot;: &quot;Literal local target through SP_CALL(false,false); native constant local lookup at load and public runtime lookup recorded.&quot;
+      },
+      &quot;normal_output_state_control&quot;: {
+        &quot;status&quot;: &quot;matched&quot;,
+        &quot;evidence&quot;: &quot;normal RG_GOTO_PRE/HIT, RG_LOOP_HIT twice, suppressed BAD&quot;
+      },
+      &quot;finite_boundary_error&quot;: {
+        &quot;status&quot;: &quot;requested_error_matched_in_control_outcome&quot;,
+        &quot;evidence&quot;: &quot;goto-missing-local native emuera.log and public verified.stderr.bin&quot;,
+        &quot;remaining&quot;: &quot;Diagnostics not identical; malformed/empty target and extra arguments not executed.&quot;
+      },
+      &quot;evaluation_and_side_effects&quot;: {
+        &quot;status&quot;: &quot;matched_scoped&quot;,
+        &quot;evidence&quot;: &quot;normal B=3 and R=701 S=RG_SENTINEL across jump; missing pre B=41 and later increment suppressed&quot;,
+        &quot;remaining&quot;: &quot;State after fatal error cannot be read back; only pre-state and suppressed continuation are observed. No dynamic/form expression evaluation axis for this literal target.&quot;
+      },
+      &quot;current_original_scope&quot;: {
+        &quot;valid_local_label&quot;: &quot;matched&quot;,
+        &quot;skipped_sentinel&quot;: &quot;matched&quot;,
+        &quot;parser_supplement&quot;: &quot;SP_CALL source retained; no extra syntax cases credited&quot;,
+        &quot;remaining&quot;: &quot;Full parser invalid-form and other control-context equivalence not claimed.&quot;
+      },
+      &quot;current_required_work_mapping&quot;: [
+        {
+          &quot;condition&quot;: &quot;verify native registration and intended contract&quot;,
+          &quot;result&quot;: &quot;SOURCE_PINS.json, source/C*.excerpt.txt; original registration bound to runtime pin&quot;
+        },
+        {
+          &quot;condition&quot;: &quot;verify linked evidence actually executes this target and preserves conditions&quot;,
+          &quot;result&quot;: &quot;new reached normal markers and exact input/runtime beforeafter receipts; historical receipts remain unknown&quot;
+        },
+        {
+          &quot;condition&quot;: &quot;plan normal, boundary, invalid, and state or side effect cases as applicable&quot;,
+          &quot;result&quot;: &quot;PREFLIGHT.json and per-axis results above; unexecuted axes explicitly remaining&quot;
+        },
+        {
+          &quot;condition&quot;: &quot;compare native executable and PyEmuera with isolated inputs and retain observations&quot;,
+          &quot;result&quot;: &quot;2 native +1 public per fixture; raw retained; marker match with diagnostic differences below&quot;
+        }
+      ]
+    },
+    &quot;diagnostic_differences&quot;: [
+      &quot;Native nested REPEAT emits load warningLv1; public has no corresponding warning.&quot;,
+      &quot;Native missing literal GOTO emits load warningLv2, marks line error and halts when line7 is reached; public reports E_FUNCTION on stderr at line7 without equivalent load warning.&quot;,
+      &quot;Native error is in UTF16 emuera.log; public OUTPUTLOG snapshot precedes error, whose bytes are retained in verified.stderr.bin.&quot;
+    ]
+  },
+  &quot;product_modified&quot;: false,
+  &quot;global_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0123 · command_or_syntax:GOTO · acceptance</li>
+<li>L0124 · command_or_syntax:GOTO · check</li>
+</ul></html>

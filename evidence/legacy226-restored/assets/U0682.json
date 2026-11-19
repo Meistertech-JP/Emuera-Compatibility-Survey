@@ -1,0 +1,642 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "expression_function",
+    "name": "GETNUM"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "case_ids": [
+    "GETNUM222_N222_0",
+    "GETNUM222_N222_2",
+    "GETNUM222_N222_10"
+  ],
+  "accepted_scope": "GETNUM expression named ABL keyword returns2, missing returns-1, dynamic key returns2 once while VariableTerm index helper is not evaluated; RESULT0 stays701, RESULTS sentinel preserved. Exact argument/type/index structure source-bound; GETNUMB dynamic string-name rejection is a different function and not a GETNUM missing obligation. Native2/public1 raw logs and original receipts bound to pinned runtime.",
+  "original_remaining": [
+    {
+      "type": "finite_evidence_adjudication",
+      "source": "evidence\\parent-implemented-function-review-20261113\\MATRIX.json",
+      "target": {
+        "kind": "expression_function",
+        "name": "GETNUM"
+      },
+      "requirements": [],
+      "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+    }
+  ],
+  "source_contract": {
+    "registration": {
+      "line": 102,
+      "text": "[\"GETNUM\"] = new GetnumMethod(),",
+      "class": "GetnumMethod",
+      "constructor_arguments": "",
+      "commented": false
+    },
+    "binary_literal_registration": {
+      "name": "GETNUM",
+      "ldstr_il_offset": "04AF",
+      "set_item_il_offset": "04B9"
+    },
+    "member": "GameData/Function/Creator.Method.cs",
+    "class": "GetnumMethod",
+    "line_start": 1633,
+    "line_end": 1672,
+    "signature_and_return": [
+      {
+        "line": 1637,
+        "text": "ReturnType = typeof(Int64);"
+      },
+      {
+        "line": 1638,
+        "text": "argumentTypeArray = null;"
+      },
+      {
+        "line": 1642,
+        "text": "public override string CheckArgumentType(string name, IOperandTerm[] arguments)"
+      },
+      {
+        "line": 1644,
+        "text": "if (arguments.Length != 2)"
+      },
+      {
+        "line": 1646,
+        "text": "if (arguments[0] == null)"
+      },
+      {
+        "line": 1650,
+        "text": "if (arguments[1] == null)"
+      }
+    ],
+    "branches_and_evaluation": [
+      {
+        "line": 1644,
+        "text": "if (arguments.Length != 2)",
+        "classification": "active_source"
+      },
+      {
+        "line": 1645,
+        "text": "return name + \"関数には2つの引数が必要です\";",
+        "classification": "active_source"
+      },
+      {
+        "line": 1646,
+        "text": "if (arguments[0] == null)",
+        "classification": "active_source"
+      },
+      {
+        "line": 1647,
+        "text": "return name + \"関数の1番目の引数は省略できません\";",
+        "classification": "active_source"
+      },
+      {
+        "line": 1648,
+        "text": "if (!(arguments[0] is VariableTerm))",
+        "classification": "active_source"
+      },
+      {
+        "line": 1649,
+        "text": "return name + \"関数の1番目の引数の型が正しくありません\";",
+        "classification": "active_source"
+      },
+      {
+        "line": 1650,
+        "text": "if (arguments[1] == null)",
+        "classification": "active_source"
+      },
+      {
+        "line": 1651,
+        "text": "return name + \"関数の2番目の引数は省略できません\";",
+        "classification": "active_source"
+      },
+      {
+        "line": 1652,
+        "text": "if (arguments[1].GetOperandType() != typeof(string))",
+        "classification": "active_source"
+      },
+      {
+        "line": 1653,
+        "text": "return name + \"関数の2番目の引数の型が正しくありません\";",
+        "classification": "active_source"
+      },
+      {
+        "line": 1654,
+        "text": "return null;",
+        "classification": "active_source"
+      },
+      {
+        "line": 1660,
+        "text": "string key = arguments[1].GetStrValue(exm);",
+        "classification": "active_source"
+      },
+      {
+        "line": 1661,
+        "text": "if (exm.VEvaluator.Constant.TryKeywordToInteger(out int ret, varCode, key, -1))",
+        "classification": "active_source"
+      },
+      {
+        "line": 1662,
+        "text": "return ret;",
+        "classification": "active_source"
+      },
+      {
+        "line": 1663,
+        "text": "else",
+        "classification": "active_source"
+      },
+      {
+        "line": 1664,
+        "text": "return -1;",
+        "classification": "active_source"
+      },
+      {
+        "line": 1669,
+        "text": "return arguments[1] is SingleTerm;",
+        "classification": "active_source"
+      }
+    ],
+    "comment_context_not_required_branches": [],
+    "full_source_excerpt": "1633:         private sealed class GetnumMethod : FunctionMethod\n1634:         {\n1635:             public GetnumMethod()\n1636:             {\n1637:                 ReturnType = typeof(Int64);\n1638:                 argumentTypeArray = null;\n1639:                 CanRestructure = true;\n1640:                 HasUniqueRestructure = true;\n1641:             }\n1642:             public override string CheckArgumentType(string name, IOperandTerm[] arguments)\n1643:             {\n1644:                 if (arguments.Length != 2)\n1645:                     return name + \"関数には2つの引数が必要です\";\n1646:                 if (arguments[0] == null)\n1647:                     return name + \"関数の1番目の引数は省略できません\";\n1648:                 if (!(arguments[0] is VariableTerm))\n1649:                     return name + \"関数の1番目の引数の型が正しくありません\";\n1650:                 if (arguments[1] == null)\n1651:                     return name + \"関数の2番目の引数は省略できません\";\n1652:                 if (arguments[1].GetOperandType() != typeof(string))\n1653:                     return name + \"関数の2番目の引数の型が正しくありません\";\n1654:                 return null;\n1655:             }\n1656:             public override Int64 GetIntValue(ExpressionMediator exm, IOperandTerm[] arguments)\n1657:             {\n1658:                 VariableTerm vToken = (VariableTerm)arguments[0];\n1659:                 VariableCode varCode = vToken.Identifier.Code;\n1660:                 string key = arguments[1].GetStrValue(exm);\n1661:                 if (exm.VEvaluator.Constant.TryKeywordToInteger(out int ret, varCode, key, -1))\n1662:                     return ret;\n1663:                 else\n1664:                     return -1;\n1665:             }\n1666:             public override bool UniqueRestructure(ExpressionMediator exm, IOperandTerm[] arguments)\n1667:             {\n1668:                 arguments[1] = arguments[1].Restructure(exm);\n1669:                 return arguments[1] is SingleTerm;\n1670:             }\n1671:         }\n1672: "
+  },
+  "applicability_basis": [
+    {
+      "source": "evidence\\parent-implemented-function-review-20261113\\MATRIX.json",
+      "sha256": "ff7e51e1d30364a595d758cefa88a7dd77aea6f6fc625daed1d8c588a8eb98d9",
+      "target": {
+        "kind": "expression_function",
+        "name": "GETNUM"
+      },
+      "classification": "selected-matchonly",
+      "parent_readback": "PARENT_READBACK_parent-implemented-function-review-20261113.json",
+      "requirements": [
+        {
+          "axis": "exact_v24_registration_signature_form",
+          "original_requirement": {
+            "axis": "exact_v24_registration_signature_form",
+            "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+            "evidence_state": "source_inspected",
+            "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/GETNUM",
+            "binary_registration": {
+              "name": "GETNUM",
+              "ldstr_il_offset": "04AF",
+              "set_item_il_offset": "04B9"
+            },
+            "form": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them."
+          },
+          "frozen_full_requirement_sha256": "d9d442e6e09562b82fa0a4468d3470dc7435785e37a00a4e77cbbf9c4f2099a1",
+          "original_source_branch_citations": [],
+          "review_state": "source_inspected",
+          "native_source_citations": [
+            "C01322",
+            "C01323"
+          ],
+          "public_source_citations": [
+            "C00001",
+            "C00002",
+            "C00009",
+            "C00010",
+            "C00012",
+            "C00030",
+            "C00036",
+            "C00040",
+            "C00042",
+            "C00048",
+            "C00061",
+            "C00062",
+            "C01615"
+          ],
+          "common_form_citations": [
+            "C00094",
+            "C00095",
+            "C00096",
+            "C00097",
+            "C01593",
+            "C01594",
+            "C01595",
+            "C01596",
+            "C01597"
+          ],
+          "retained_case_refs": [
+            "GETNUMBASE01",
+            "GETNUMCASE01",
+            "GETNUM222_N222_0",
+            "GETNUM222_N222_2",
+            "GETNUM222_N222_10"
+          ],
+          "retained_candidate_citations": [
+            "C00557",
+            "C00559",
+            "C00560",
+            "C00561",
+            "C00562",
+            "C00563",
+            "C00568",
+            "C00574",
+            "C00581",
+            "C00172",
+            "C00567",
+            "C00101",
+            "C00569",
+            "C00570",
+            "C00572",
+            "C00573",
+            "C00575",
+            "C00576",
+            "C00580",
+            "C00582",
+            "C00583",
+            "C00168",
+            "C00585",
+            "C00571",
+            "C00577",
+            "C00584",
+            "C00586",
+            "C00587",
+            "C00588",
+            "C00589",
+            "C00590",
+            "C00591"
+          ],
+          "interpretation": "Candidate references are read context, not proof of target reach. Only explicitly adjudicated witnesses receive closure credit. Full original requirements including branch texts are preserved in the hash-pinned frozen matrix, identified by target key and axis. Source passages are represented by globally deduplicated range citations."
+        },
+        {
+          "axis": "actual_target_reach_or_independent_public_availability_gap",
+          "original_requirement": {
+            "axis": "actual_target_reach_or_independent_public_availability_gap",
+            "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+            "evidence_state": "scoped_executions_require_per_case_readback",
+            "case_ids": [
+              "GETNUMBASE01",
+              "GETNUMCASE01",
+              "GETNUM222_N222_0",
+              "GETNUM222_N222_2",
+              "GETNUM222_N222_10"
+            ],
+            "independent_gap_case_ids": []
+          },
+          "frozen_full_requirement_sha256": "575578a71e45ddd75e410a19f2fe0573ab65e4f873b1889397b2d1f4722764d4",
+          "original_source_branch_citations": [],
+          "review_state": "selected_observations_only",
+          "native_source_citations": [
+            "C01322",
+            "C01323"
+          ],
+          "public_source_citations": [
+            "C00001",
+            "C00002",
+            "C00009",
+            "C00010",
+            "C00012",
+            "C00030",
+            "C00036",
+            "C00040",
+            "C00042",
+            "C00048",
+            "C00061",
+            "C00062",
+            "C01615"
+          ],
+          "common_form_citations": [
+            "C00094",
+            "C00095",
+            "C00096",
+            "C00097",
+            "C01593",
+            "C01594",
+            "C01595",
+            "C01596",
+            "C01597"
+          ],
+          "retained_case_refs": [
+            "GETNUMBASE01",
+            "GETNUMCASE01",
+            "GETNUM222_N222_0",
+            "GETNUM222_N222_2",
+            "GETNUM222_N222_10"
+          ],
+          "retained_candidate_citations": [
+            "C00557",
+            "C00559",
+            "C00560",
+            "C00561",
+            "C00562",
+            "C00563",
+            "C00568",
+            "C00574",
+            "C00581",
+            "C00172",
+            "C00567",
+            "C00101",
+            "C00569",
+            "C00570",
+            "C00572",
+            "C00573",
+            "C00575",
+            "C00576",
+            "C00580",
+            "C00582",
+            "C00583",
+            "C00168",
+            "C00585",
+            "C00571",
+            "C00577",
+            "C00584",
+            "C00586",
+            "C00587",
+            "C00588",
+            "C00589",
+            "C00590",
+            "C00591"
+          ],
+          "interpretation": "Candidate references are read context, not proof of target reach. Only explicitly adjudicated witnesses receive closure credit. Full original requirements including branch texts are preserved in the hash-pinned frozen matrix, identified by target key and axis. Source passages are represented by globally deduplicated range citations."
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "original_requirement": {
+            "axis": "selected_normal_output_state_control",
+            "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+            "evidence_state": "selected_scoped_evidence_present",
+            "matching_case_ids": [
+              "GETNUMBASE01",
+              "GETNUM222_N222_0",
+              "GETNUM222_N222_2",
+              "GETNUM222_N222_10"
+            ]
+          },
+          "frozen_full_requirement_sha256": "3b4eecd907e54f7de5a16af1fe10f3c6860baae434dcba2b7f5be792da7ff5e8",
+          "original_source_branch_citations": [],
+          "review_state": "selected_observations_only",
+          "native_source_citations": [
+            "C01322",
+            "C01323"
+          ],
+          "public_source_citations": [
+            "C00001",
+            "C00002",
+            "C00009",
+            "C00010",
+            "C00012",
+            "C00030",
+            "C00036",
+            "C00040",
+            "C00042",
+            "C00048",
+            "C00061",
+            "C00062",
+            "C01615"
+          ],
+          "common_form_citations": [
+            "C00094",
+            "C00095",
+            "C00096",
+            "C00097",
+            "C01593",
+            "C01594",
+            "C01595",
+            "C01596",
+            "C01597"
+          ],
+          "retained_case_refs": [
+            "GETNUMBASE01",
+            "GETNUMCASE01",
+            "GETNUM222_N222_0",
+            "GETNUM222_N222_2",
+            "GETNUM222_N222_10"
+          ],
+          "retained_candidate_citations": [
+            "C00557",
+            "C00559",
+            "C00560",
+            "C00561",
+            "C00562",
+            "C00563",
+            "C00568",
+            "C00574",
+            "C00581",
+            "C00172",
+            "C00567",
+            "C00101",
+            "C00569",
+            "C00570",
+            "C00572",
+            "C00573",
+            "C00575",
+            "C00576",
+            "C00580",
+            "C00582",
+            "C00583",
+            "C00168",
+            "C00585",
+            "C00571",
+            "C00577",
+            "C00584",
+            "C00586",
+            "C00587",
+            "C00588",
+            "C00589",
+            "C00590",
+            "C00591"
+          ],
+          "interpretation": "Candidate references are read context, not proof of target reach. Only explicitly adjudicated witnesses receive closure credit. Full original requirements including branch texts are preserved in the hash-pinned frozen matrix, identified by target key and axis. Source passages are represented by globally deduplicated range citations."
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": {
+            "axis": "applicable_boundary_error_evaluation_side_effect",
+            "requirement": "Review case222 dynamic name invalid/valid operand and ignored first-index helper, CSV ABL slots0/2. Check exact constructor/name mapping and source twice-evaluated invalid-name branch before requiring any additional CSV namespace sample.",
+            "evidence_state": "selected_documented_difference",
+            "difference_case_ids": [
+              "GETNUMCASE01"
+            ]
+          },
+          "frozen_full_requirement_sha256": "37daef27a4571b2a3c16d7569e61b1f677ad949f36ef17d6caac471a5115de47",
+          "original_source_branch_citations": [
+            "C01324",
+            "C01325",
+            "C01326",
+            "C01327",
+            "C01328",
+            "C01329",
+            "C01330",
+            "C01331",
+            "C01332",
+            "C01333",
+            "C01334",
+            "C01335",
+            "C01336",
+            "C01337",
+            "C01338",
+            "C01339",
+            "C01340"
+          ],
+          "review_state": "finite_source_and_selected_evidence_reviewed",
+          "native_source_citations": [
+            "C01322",
+            "C01323"
+          ],
+          "public_source_citations": [
+            "C00001",
+            "C00002",
+            "C00009",
+            "C00010",
+            "C00012",
+            "C00030",
+            "C00036",
+            "C00040",
+            "C00042",
+            "C00048",
+            "C00061",
+            "C00062",
+            "C01615"
+          ],
+          "common_form_citations": [
+            "C00094",
+            "C00095",
+            "C00096",
+            "C00097",
+            "C01593",
+            "C01594",
+            "C01595",
+            "C01596",
+            "C01597"
+          ],
+          "retained_case_refs": [
+            "GETNUMBASE01",
+            "GETNUMCASE01",
+            "GETNUM222_N222_0",
+            "GETNUM222_N222_2",
+            "GETNUM222_N222_10"
+          ],
+          "retained_candidate_citations": [
+            "C00557",
+            "C00559",
+            "C00560",
+            "C00561",
+            "C00562",
+            "C00563",
+            "C00568",
+            "C00574",
+            "C00581",
+            "C00172",
+            "C00567",
+            "C00101",
+            "C00569",
+            "C00570",
+            "C00572",
+            "C00573",
+            "C00575",
+            "C00576",
+            "C00580",
+            "C00582",
+            "C00583",
+            "C00168",
+            "C00585",
+            "C00571",
+            "C00577",
+            "C00584",
+            "C00586",
+            "C00587",
+            "C00588",
+            "C00589",
+            "C00590",
+            "C00591"
+          ],
+          "interpretation": "Candidate references are read context, not proof of target reach. Only explicitly adjudicated witnesses receive closure credit. Full original requirements including branch texts are preserved in the hash-pinned frozen matrix, identified by target key and axis. Source passages are represented by globally deduplicated range citations."
+        },
+        {
+          "axis": "result_routing_and_stop_location",
+          "original_requirement": {
+            "axis": "result_routing_and_stop_location",
+            "requirement": "Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.",
+            "source_ref": "Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment",
+            "evidence_state": "per_case_input_and_raw_readbacks_cited"
+          },
+          "frozen_full_requirement_sha256": "c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390",
+          "original_source_branch_citations": [],
+          "review_state": "selected_observations_only",
+          "native_source_citations": [
+            "C01322",
+            "C01323"
+          ],
+          "public_source_citations": [
+            "C00001",
+            "C00002",
+            "C00009",
+            "C00010",
+            "C00012",
+            "C00030",
+            "C00036",
+            "C00040",
+            "C00042",
+            "C00048",
+            "C00061",
+            "C00062",
+            "C01615"
+          ],
+          "common_form_citations": [
+            "C00094",
+            "C00095",
+            "C00096",
+            "C00097",
+            "C01593",
+            "C01594",
+            "C01595",
+            "C01596",
+            "C01597"
+          ],
+          "retained_case_refs": [
+            "GETNUMBASE01",
+            "GETNUMCASE01",
+            "GETNUM222_N222_0",
+            "GETNUM222_N222_2",
+            "GETNUM222_N222_10"
+          ],
+          "retained_candidate_citations": [
+            "C00557",
+            "C00559",
+            "C00560",
+            "C00561",
+            "C00562",
+            "C00563",
+            "C00568",
+            "C00574",
+            "C00581",
+            "C00172",
+            "C00567",
+            "C00101",
+            "C00569",
+            "C00570",
+            "C00572",
+            "C00573",
+            "C00575",
+            "C00576",
+            "C00580",
+            "C00582",
+            "C00583",
+            "C00168",
+            "C00585",
+            "C00571",
+            "C00577",
+            "C00584",
+            "C00586",
+            "C00587",
+            "C00588",
+            "C00589",
+            "C00590",
+            "C00591"
+          ],
+          "interpretation": "Candidate references are read context, not proof of target reach. Only explicitly adjudicated witnesses receive closure credit. Full original requirements including branch texts are preserved in the hash-pinned frozen matrix, identified by target key and axis. Source passages are represented by globally deduplicated range citations."
+        }
+      ],
+      "finite_missing_proof": [],
+      "applicability_correction": "Dynamic variable-name-string rejection and twice-evaluated invalid-name branch belong to GETNUMB, not GETNUM. Exact GETNUM signature requires VariableTerm. No extra CSV namespace is required to close the named ABL0/2 contract."
+    }
+  ],
+  "evidence_manifest": "evidence\\getnum-command-queries-20261113-222\\MANIFEST.json",
+  "manifest_sha256": "ade07927be3356b71b5373e1689a75a38fea8c3163f058ef5ff6ed2633724223",
+  "limits": [
+    "ABL slots0/2 selected; other namespaces/duplicates/casefolding/typeparser matrix not established",
+    "Native natural process exit unobserved"
+  ],
+  "product_modified": false,
+  "global_completion": false
+}

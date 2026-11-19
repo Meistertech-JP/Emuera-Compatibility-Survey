@@ -1,0 +1,34 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T17:44:43.024529+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINT"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "resolved_parent_obligations": [
+    "raw_nullable_empty",
+    "runtime_identity_PRINT"
+  ],
+  "comparison_path": "evidence/print-empty-raw-20261114/COMPARISON.json",
+  "comparison_sha256": "2626ca034e3c4577300be09881a8bfbbff49d87ff66f168d5b4ac07bec1ad425",
+  "review_path": "evidence/print-empty-raw-20261114/CASE_REVIEW_ja.md",
+  "finite_scope": [
+    "unsuffixed PRINT STR_NULLABLE omitted raw input",
+    "selected trailing and internal spaces",
+    "RESULT/RESULTS retained in selected ordinary calls",
+    "SKIPDISP 1 suppresses output and SKIPDISP 0 resumes",
+    "Native/public runtime and fixture identity receipts"
+  ],
+  "excluded": [
+    "PRINTFORM and PRINTS",
+    "GUI pixel/layout parity",
+    "all Unicode and wrapping conditions",
+    "all skip-helper combinations",
+    "Native natural exit and exit code"
+  ],
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "no_product_or_release_modification": true
+}

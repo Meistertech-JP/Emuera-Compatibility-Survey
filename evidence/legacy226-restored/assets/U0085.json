@@ -1,0 +1,34 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:09.156569+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ARRAYSHIFT"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "80dd8637e6e7f3a5707cdbacdea6a9781a4883962252eebd9acfe6b07a64eae3",
+  "case_ids": [
+    "ARRAYMUTATION180_ARRAYSHIFT",
+    "ARRAYSHIFTEFFECT181_fill_after_start",
+    "ARRAYSHIFTEFFECT181_zero_count_bad_fill",
+    "ARRAYSHIFTEFFECT181_zero_shift_bad_fill"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "固定1D配列と有効範囲中心。失敗後のPy VM状態は未取得で、先行BEFOREログを成功/後状態の証拠にしない。別名・REF/LOCAL・文字/キャラクター配列・不正範囲等は未検証。",
+    "ARRAYMUTATION180_ARRAYSHIFT: 1D integer/string arrays, valid fixed ranges and helper index0. SHIFT positive/negative/0, count0/window; REMOVE positive/zero count; COPY shorter source to longer destination with literal/dynamic names. No aliases/rank changes/REF/LOCAL/charas, invalid indices/types/names, overflow, truncated source/destination, exception timing or full source-array preservation checks in COPY. Native alive5s then cleanup, natural exit unobserved.",
+    "ARRAYSHIFTEFFECT181_fill_after_start: Three scalar integer-array cases with dynamic helper side effects and deferred 1/C failure; valid fixed indices/window only. No alternative exception type, nonzero invalid ranges, aliases/REF/LOCAL/character arrays, string fill mutation or full SHIFT contract. Py failure leaves a BEFORE log from pre-call OUTPUTLOG; no post-error counter/array snapshot is claimed. Native alive5s then cleanup, natural exit unobserved.",
+    "ARRAYSHIFTEFFECT181_zero_count_bad_fill: Three scalar integer-array cases with dynamic helper side effects and deferred 1/C failure; valid fixed indices/window only. No alternative exception type, nonzero invalid ranges, aliases/REF/LOCAL/character arrays, string fill mutation or full SHIFT contract. Py failure leaves a BEFORE log from pre-call OUTPUTLOG; no post-error counter/array snapshot is claimed. Native alive5s then cleanup, natural exit unobserved.",
+    "ARRAYSHIFTEFFECT181_zero_shift_bad_fill: Three scalar integer-array cases with dynamic helper side effects and deferred 1/C failure; valid fixed indices/window only. No alternative exception type, nonzero invalid ranges, aliases/REF/LOCAL/character arrays, string fill mutation or full SHIFT contract. Py failure leaves a BEFORE log from pre-call OUTPUTLOG; no post-error counter/array snapshot is claimed. Native alive5s then cleanup, natural exit unobserved."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "ee00f1abfe017d41a10724639299c846a0073625407cd6d0767ace8eb02a58c0",
+  "independent_semantic_review_sha256": "89618fd78615da015a550f5b0918b5987d9483c2afbecf8dc2f9f2e97715adab",
+  "independent_semantic_results_sha256": "d61de0670ddd02bb9193d6241eef095b46a917f1787b2e9ea6ba192365884a5a",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

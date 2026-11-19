@@ -1,0 +1,100 @@
+{
+  "case_id": "ARGBOUND245_trailing_hole",
+  "case_verdict": "different_scoped",
+  "comparison_classification": "different_accepted_arguments_and_continuation",
+  "comparison_limits": "No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.",
+  "condition": {
+    "arguments": "0,",
+    "dead": false,
+    "fixture_sha256": "4236e45bb951ab339b6046a75a015040c9835e5b207b7167f1450b0d6d452cfd",
+    "name": "trailing_hole",
+    "target_line": 9
+  },
+  "configuration_contents_disclosed": false,
+  "dead_branch_only": false,
+  "fixture_path": "cases/ARGBOUND245_trailing_hole/fixture/SEARCHBOUND01.ERB",
+  "group": "continuation_difference",
+  "legacy_case_id": "PARENT245_trailing_hole",
+  "necessary_comparison_complete": true,
+  "non_disclosure_limit": "Full configuration, original receipts, and original ledgers are not in this projection. Hash equality does not prove full execution condition or engine identity.",
+  "original_receipts_disclosed": false,
+  "parent_review": {
+    "case_relation": "case_listed",
+    "decision": "accepted",
+    "scope": "Selected parent source only; other target evidence is not included."
+  },
+  "public_stderr_path": "cases/ARGBOUND245_trailing_hole/raw/public-stderr.bin",
+  "public_stderr_sha256": "e319a40132558220daae96f0c76a93a7f7ef47601c7d87eb797fbcaa5a08b32b",
+  "requirement_ids": [
+    "normal_output_state_control",
+    "finite_boundary_error",
+    "evaluation_and_side_effects"
+  ],
+  "runs": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "4236e45bb951ab339b6046a75a015040c9835e5b207b7167f1450b0d6d452cfd",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_trailing_hole/raw/native-01-emuera.log",
+      "raw_sha256": "f9037bfc4a090299fa882cf4b1df526c7091cfa99742c00f57dac71c5be89db1",
+      "selected_lines": [
+        "BEGIN245 trailing_hole",
+        "BEFORE245 N=1 R=701",
+        "AFTER245 N=2 R=701",
+        "FIRST245 F=173 NAME=[SRC245]",
+        "LAST245 F=173 NAME=[SRC245]",
+        "DONE245"
+      ]
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "4236e45bb951ab339b6046a75a015040c9835e5b207b7167f1450b0d6d452cfd",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND245_trailing_hole/raw/native-02-emuera.log",
+      "raw_sha256": "f9037bfc4a090299fa882cf4b1df526c7091cfa99742c00f57dac71c5be89db1",
+      "selected_lines": [
+        "BEGIN245 trailing_hole",
+        "BEFORE245 N=1 R=701",
+        "AFTER245 N=2 R=701",
+        "FIRST245 F=173 NAME=[SRC245]",
+        "LAST245 F=173 NAME=[SRC245]",
+        "DONE245"
+      ]
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "error": {
+        "body": "Integer required, got NoneType",
+        "code": "E_TYPE",
+        "line": 9
+      },
+      "fixture_config_pre_post_equal": true,
+      "fixture_sha256": "4236e45bb951ab339b6046a75a015040c9835e5b207b7167f1450b0d6d452cfd",
+      "raw_path": "cases/ARGBOUND245_trailing_hole/raw/public-stdout.bin",
+      "raw_sha256": "9d10d49ea5d5655922cfd8cfe563de2f23decb6730958c12d7761f551a8554e3",
+      "returncode": 1,
+      "selected_lines": [
+        "BEGIN245 trailing_hole",
+        "BEFORE245 N=1 R=701"
+      ]
+    }
+  },
+  "selected_checkpoints_equal": false,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ADDCOPYCHARA"
+  },
+  "target_outcome": "different_scoped",
+  "target_runtime_entered": true
+}

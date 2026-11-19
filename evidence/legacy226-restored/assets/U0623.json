@@ -1,0 +1,22 @@
+{
+  "native_archive": {
+    "path": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+    "sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz": {
+    "path": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+    "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "expected_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "native_source_member": {
+    "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+    "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+    "lines": [
+      2120,
+      2171
+    ],
+    "relevant_behavior": "CONTINUE in the innermost DO branch evaluates the associated LOOP condition immediately; false resumes after LOOP, true transfers to the DO body; condition exceptions propagate at that instruction location."
+  },
+  "source_excerpt_path": "evidence/continue-finite-20261115/source_excerpt_Instraction_Child.txt"
+}

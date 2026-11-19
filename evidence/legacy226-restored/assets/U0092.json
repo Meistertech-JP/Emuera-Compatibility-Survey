@@ -1,0 +1,25 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T12:52:38.827800+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "ENCODETOUNI"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "c37ef25f609dc1dc8f2ad487cabac5b44563236a29411b0fc674a0db16489a8d",
+  "case_manifest_sha256": "602cb9e13d7e6c893d838ca37692259b9577585e35206963c84872d1465b928d",
+  "case_seal_sha256": "e6a02cc398de8a87198bf754462c461bd6555b267fd7a5ec383bf075eba25ac2",
+  "case_ids": [
+    "ENCODEUNIHELPER190_length_nonempty_boundary",
+    "ENCODEUNIHELPER190_negative_nonempty_boundary"
+  ],
+  "limitations": [
+    "Native/Py diagnostic text differs and is retained as different_scoped.",
+    "No post-error state or return assignment C is observed.",
+    "Native natural exit and exit code are unobserved; the isolated harness ends the owned process after capture.",
+    "This closes only the finite missing helper-boundary requirement in combination with existing accepted evidence. It does not claim full ENCODETOUNI equivalence.",
+    "The separate command_or_syntax:ENCODETOUNI target and the existing empty-string evaluation-order difference are unchanged."
+  ],
+  "case_plan_sha256": "f104e36f1b8715d7854cb6c12807e66d850799acce11e7c7965f8ae3e5a1e0b8",
+  "image_crop_reconciliation_sha256": "22b80ca0469dc535a20cbf2b3085bf6b6a56bcb8e1daa3a72cbc4bd09f1d79bb"
+}

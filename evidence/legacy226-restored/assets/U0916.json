@@ -1,0 +1,126 @@
+{
+  "schema": "native-public-finite-command-comparison-1",
+  "generated_utc": "2026-11-13T18:05:13.485448+00:00",
+  "case_ids": [
+    "PRINTWEMPTYRAW01_20261114"
+  ],
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTW"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "source_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "public_source_zip_sha256": "c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2",
+  "fixture": {
+    "path": "pilot/variants/PRINTWEMPTY01/ERB/PRINTWEMPTY01.ERB",
+    "sha256": "6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611"
+  },
+  "runs": {
+    "native-01": {
+      "receipt": "native-01/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256": "6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611",
+      "outputlog_sha256": "ebf8d146c1ec9aa082cdf7a60eb93971e28a34b99953b3fbd3f7d37ece719398",
+      "selected_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTW",
+        "<AFTER_EMPTY_PRINTW>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTW>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ],
+      "desktop": "PyEmueraProbe_3a585d5451494154b615f5106404b5dc",
+      "pid": 20680,
+      "input": "empty text + Enter posted to editor on private desktop",
+      "screenshots": false,
+      "natural_exit": false,
+      "exit_code": null
+    },
+    "native-02": {
+      "receipt": "native-02/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256": "6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611",
+      "outputlog_sha256": "ebf8d146c1ec9aa082cdf7a60eb93971e28a34b99953b3fbd3f7d37ece719398",
+      "selected_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTW",
+        "<AFTER_EMPTY_PRINTW>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTW>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ],
+      "desktop": "PyEmueraProbe_5c0c7da3c45f4d18b8b6a6313f0ae637",
+      "pid": 30092,
+      "input": "empty text + Enter posted to editor on private desktop",
+      "screenshots": false,
+      "natural_exit": false,
+      "exit_code": null
+    },
+    "public-01": {
+      "receipt": "public-01/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256": "6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611",
+      "outputlog_sha256": "32645012e9d5a18c0b1b2cbc6f7163ba4328c7026aef15d5843672c29766cdc9",
+      "selected_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTW",
+        "<AFTER_EMPTY_PRINTW>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTW>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ],
+      "returncode": 0,
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "input": "one empty stdin line"
+    },
+    "public-02": {
+      "receipt": "public-02/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256": "6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611",
+      "outputlog_sha256": "32645012e9d5a18c0b1b2cbc6f7163ba4328c7026aef15d5843672c29766cdc9",
+      "selected_lines": [
+        "Now Loading...",
+        "BEFORE_EMPTY_PRINTW",
+        "<AFTER_EMPTY_PRINTW>",
+        "X  Y",
+        "<AFTER_SPACES_PRINTW>",
+        "RESULT=77;RESULTS=[\"KEEP\"]"
+      ],
+      "returncode": 0,
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "input": "one empty stdin line"
+    }
+  },
+  "selected_semantic_lines": [
+    "Now Loading...",
+    "BEFORE_EMPTY_PRINTW",
+    "<AFTER_EMPTY_PRINTW>",
+    "X  Y",
+    "<AFTER_SPACES_PRINTW>",
+    "RESULT=77;RESULTS=[\"KEEP\"]"
+  ],
+  "observations": [
+    "Bare PRINTW after BEFORE_EMPTY_PRINTW resumed after empty Enter and reached the following-line marker in each run.",
+    "PRINTL X  Y retained two internal spaces; RESULT and RESULTS sentinels matched."
+  ],
+  "input_path_difference": "Native used empty WM_SETTEXT and Enter keydown/up on the editor in a private desktop; public pyz received one empty stdin line. Both resumed the same wait path, though the input methods differ.",
+  "raw_logs_equal_across_engines": false,
+  "raw_log_equality_explanation": "Native UTF-16/CRLF; public UTF-8/LF plus generic host notice. No byte-equivalence or GUI-layout claim.",
+  "native_natural_exit_observed": false,
+  "native_exit_code_observed": false,
+  "public_returncodes": [
+    0,
+    0
+  ],
+  "screenshots_taken": false,
+  "global_keyboard_events": false,
+  "scoped_outcome": "matched_in_finite_scope",
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_originals_modified": false
+}

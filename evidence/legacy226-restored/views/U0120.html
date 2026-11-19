@@ -1,0 +1,96 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0120 · ABS_PARENT_DECISION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0120 · ABS_PARENT_DECISION.json</h1>
+<p>原票種別=ABS_PARENT_DECISION.json; 参照対象=expression_function:ABS。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>719295d347719588758638f740455a8e789b541c90a8de8f76d5835fff0fd42b</code></p>
+<p><a href="../assets/U0120.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>719295d347719588758638f740455a8e789b541c90a8de8f76d5835fff0fd42b</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;pyemuera-parent-integration-decision-v2&quot;,
+  &quot;draft&quot;: false,
+  &quot;review_note&quot;: &quot;Parent inspected sealed paired routing readbacks plus retained case200/246 reviews; finite ABS expression scope accepted. Existing differences retained.&quot;,
+  &quot;batch_manifest_sha256&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;,
+  &quot;decisions&quot;: [
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;ABS&quot;,
+      &quot;accepted&quot;: true,
+      &quot;review_row_sha256&quot;: &quot;5b4e7ec68a0b328f0c89b90729d57d8087066c12c2bb17ca2f9311f39351c1b8&quot;,
+      &quot;outcome&quot;: &quot;documented_difference&quot;,
+      &quot;scope&quot;: &quot;Finite ABS expression-form review: existing case200 selected normal integer boundaries/helper count and MinValue call-line stop; existing case246 control and trailing-comma acceptance difference; new AUTO_V2_EXPR_001_ABS selected result and independent RESULT:0/RESULT:1/RESULTS sentinel readback. No method-as-command credit, exhaustive integer/type domain, post-fatal state or Native natural-exit inference.&quot;,
+      &quot;completion_review&quot;: &quot;Finite ABS expression comparison accepted: retained case200 normal integer boundaries and helper once, MinValue call-line4 stop with diagnostic difference, retained case246 trailing-comma difference, and new Native2/public1 independent return7/RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT. Selected normal expression routing is now observed. No method-form, exhaustive domain, post-fatal state, full GUI equivalence or natural-exit claim.&quot;,
+      &quot;finite_remainder&quot;: [],
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;exact_v24_registration_signature_form&quot;,
+          &quot;case_ids&quot;: [
+            &quot;ARGBOUND246_abs-control&quot;,
+            &quot;ARGBOUND246_abs-trailing&quot;
+          ],
+          &quot;finding&quot;: &quot;Existing exact ABS expression registration/signature and final-comma parser observations retained. Native trailing comma is accepted/ignored; public rejects a missing argument. This decision does not redefine either parser or grant method-as-command coverage.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATHBOUNDARY200_expression_function_ABS&quot;,
+            &quot;ARGBOUND246_abs-control&quot;,
+            &quot;AUTO_V2_EXPR_001_ABS&quot;
+          ],
+          &quot;finding&quot;: &quot;Retained normal case200 and246 plus dynamic ABS((-7+(RESULT:0-701))) reach in the emitted sealed main fixture: Native2/public1 value7 and ordered case markers.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATHBOUNDARY200_expression_function_ABS&quot;,
+            &quot;ARGBOUND246_abs-control&quot;,
+            &quot;AUTO_V2_EXPR_001_ABS&quot;
+          ],
+          &quot;finding&quot;: &quot;Case200 selected normal boundaries/helper once and246 control retained; new expression value7/r0=701/r1=702/RESULTS=AUTO_SENT are independently captured before display in Native2/public1.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATHBOUNDARY200_expression_function_ABS&quot;,
+            &quot;MATHBOUNDARY200_ABS_MIN_expression_function&quot;,
+            &quot;ARGBOUND246_abs-control&quot;,
+            &quot;ARGBOUND246_abs-trailing&quot;
+          ],
+          &quot;finding&quot;: &quot;Retain case200 normal boundaries and once-only helper evidence, and MinValue call-line4 error/AFTER-absent stop scope. Native diagnostic and public E_ARITH differ; after-fatal state is unobserved. Case246 trailing-comma difference is observed evidence: Native ignores/continues, public rejects. No request to repeat these witnesses or extend to every integer.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;result_routing_and_stop_location&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_001_ABS&quot;,
+            &quot;MATHBOUNDARY200_ABS_MIN_expression_function&quot;,
+            &quot;ARGBOUND246_abs-trailing&quot;
+          ],
+          &quot;finding&quot;: &quot;New selected expression result7 and all independent routing sentinels remain701/702/AUTO_SENT in Native2/public1; existing fatal/error stop scopes retained without post-fatal state claims.&quot;
+        }
+      ],
+      &quot;remaining&quot;: [
+        {
+          &quot;index&quot;: 0,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_001_ABS&quot;,
+            &quot;MATHBOUNDARY200_expression_function_ABS&quot;,
+            &quot;MATHBOUNDARY200_ABS_MIN_expression_function&quot;,
+            &quot;ARGBOUND246_abs-control&quot;,
+            &quot;ARGBOUND246_abs-trailing&quot;
+          ],
+          &quot;finding&quot;: &quot;The only outstanding normal-expression RESULTS-preservation observation is directly established together with RESULT0/RESULT1 by AUTO_V2_EXPR_001_ABS, with retained case200/246 boundary/helper/parser/stop proofs. Known differences remain documented.&quot;
+        }
+      ]
+    }
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2188 · expression_function:ABS · acceptance</li>
+<li>L2189 · expression_function:ABS · check</li>
+</ul></html>

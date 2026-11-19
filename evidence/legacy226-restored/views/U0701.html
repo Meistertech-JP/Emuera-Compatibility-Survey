@@ -1,0 +1,63 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0701 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0701 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=expression_function:LOG10。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;LOG10&quot;}; comparison_outcome=&quot;different_scoped&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>899518e262105ea4c3b7c86a46536de63e77474ad72079f9826ca6b90c8b12c3</code></p>
+<p><a href="../assets/U0701.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>899518e262105ea4c3b7c86a46536de63e77474ad72079f9826ca6b90c8b12c3</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-comparison-1&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;LOG10&quot;
+  },
+  &quot;comparison_outcome&quot;: &quot;different_scoped&quot;,
+  &quot;scope&quot;: &quot;Separate 0 and -1 helper results, call-order and stop location; existing positive 1 and LOG10(9)/LOG10(10) threshold controls reused.&quot;,
+  &quot;cases&quot;: [
+    {
+      &quot;case_id&quot;: &quot;LOG10ZERO01&quot;,
+      &quot;helper_return&quot;: 0,
+      &quot;native_replicates&quot;: 2,
+      &quot;native_replicates_byte_identical&quot;: true,
+      &quot;native_log_sha256&quot;: &quot;9ad18f3d4c9e1241cda96809b4f2f9bd9dfcbe0ea81c5a4855670a7c86c0b2bd&quot;,
+      &quot;native_observation&quot;: &quot;one helper call; all four sentinels read; stops at ERB line 8 with nonpositive LOG10 diagnostic; no continuation&quot;,
+      &quot;pyz_returncode&quot;: 1,
+      &quot;pyz_observation&quot;: &quot;one helper call; all four sentinels read; E_ARITH at ERB line 8; no continuation&quot;,
+      &quot;diagnostics&quot;: &quot;Native localized domain diagnostic and PyEmuera E_ARITH differ; both reject after argument helper&quot;,
+      &quot;fixture_sha256&quot;: &quot;a033b5ce6153325b6e1d2c8fbaadba29869318bd70228138625350563f6ec15b&quot;,
+      &quot;public_fixture_sha256&quot;: &quot;a033b5ce6153325b6e1d2c8fbaadba29869318bd70228138625350563f6ec15b&quot;
+    },
+    {
+      &quot;case_id&quot;: &quot;LOG10NEG01&quot;,
+      &quot;helper_return&quot;: -1,
+      &quot;native_replicates&quot;: 2,
+      &quot;native_replicates_byte_identical&quot;: true,
+      &quot;native_log_sha256&quot;: &quot;9ad18f3d4c9e1241cda96809b4f2f9bd9dfcbe0ea81c5a4855670a7c86c0b2bd&quot;,
+      &quot;native_observation&quot;: &quot;one helper call; all four sentinels read; stops at ERB line 8 with nonpositive LOG10 diagnostic; no continuation&quot;,
+      &quot;pyz_returncode&quot;: 1,
+      &quot;pyz_observation&quot;: &quot;one helper call; all four sentinels read; E_ARITH at ERB line 8; no continuation&quot;,
+      &quot;diagnostics&quot;: &quot;Native localized domain diagnostic and PyEmuera E_ARITH differ; both reject after argument helper&quot;,
+      &quot;fixture_sha256&quot;: &quot;fb9d8b7f1b896a1ddf582e5b230794ed76c780c9aaa6ece2370e900829207cff&quot;,
+      &quot;public_fixture_sha256&quot;: &quot;fb9d8b7f1b896a1ddf582e5b230794ed76c780c9aaa6ece2370e900829207cff&quot;
+    }
+  ],
+  &quot;source_order&quot;: &quot;Native v24 evaluates its argument at Creator.Method.cs:1121 before nonpositive guard lines 1122-1123. Both engines evaluate ZZ_ARG once before reporting the error.&quot;,
+  &quot;diagnostic_difference&quot;: &quot;Native localized log: 対数関数の引数に0以下の値が指定されました. PyEmuera: E_ARITH: Math domain error. Both point to MAIN.ERB line 8.&quot;,
+  &quot;limitations&quot;: [
+    &quot;No post-error state or assignment to C is observed.&quot;,
+    &quot;Native process is harness-terminated after capture; natural exit and exit code not claimed.&quot;,
+    &quot;Evidence covers expression_function:LOG10 finite scope only; method_as_command:LOG10 remains separate.&quot;,
+    &quot;No whole-function compatibility claim.&quot;
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2203 · expression_function:LOG10 · check</li>
+<li>L2204 · expression_function:LOG10 · check</li>
+</ul></html>

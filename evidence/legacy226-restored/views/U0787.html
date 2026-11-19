@@ -1,0 +1,143 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0787 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0787 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:PRINT。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;PRINT&quot;}; native_natural_exit_observed=false; fixture件数=3。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>2626ca034e3c4577300be09881a8bfbbff49d87ff66f168d5b4ac07bec1ad425</code></p>
+<p><a href="../assets/U0787.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>2626ca034e3c4577300be09881a8bfbbff49d87ff66f168d5b4ac07bec1ad425</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;native-public-command-comparison-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-13T17:44:42.982530+00:00&quot;,
+  &quot;case_ids&quot;: [
+    &quot;PRINTEMPTYRAW01_20261114&quot;
+  ],
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;PRINT&quot;
+  },
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+  &quot;source_archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+  &quot;public_source_zip_sha256&quot;: &quot;c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2&quot;,
+  &quot;fixture&quot;: {
+    &quot;path&quot;: &quot;pilot/variants/PRINTEMPTY01/ERB/PRINTEMPTY01.ERB&quot;,
+    &quot;sha256&quot;: &quot;4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766&quot;,
+    &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+  },
+  &quot;runs&quot;: {
+    &quot;native-final-01&quot;: {
+      &quot;receipt&quot;: &quot;native-final-01/receipt.json&quot;,
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256_before_after&quot;: &quot;4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766&quot;,
+      &quot;outputlog_sha256&quot;: &quot;cfd029ba4a57efd09bc3a60175121f5f2cd9272faef53deb1506eb95c9550488&quot;,
+      &quot;selected_lines&quot;: [
+        &quot;&lt;AFTER_EMPTY&gt;&quot;,
+        &quot;  &lt;AFTER_TRAILING_SPACES&gt;&quot;,
+        &quot;X  Y&lt;AFTER_INTERNAL_SPACES&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;,
+        &quot;RESUMED_TOKEN&lt;AFTER_SKIP&gt;&quot;
+      ],
+      &quot;desktop&quot;: &quot;PyEmueraProbe_c59be1ce136b4607a8cb80daac733fd7&quot;,
+      &quot;pid&quot;: 32560,
+      &quot;process_signaled_after_wait&quot;: false,
+      &quot;natural_exit_observed&quot;: false,
+      &quot;screenshot&quot;: false,
+      &quot;global_keyboard_events&quot;: false
+    },
+    &quot;native-final-02&quot;: {
+      &quot;receipt&quot;: &quot;native-final-02/receipt.json&quot;,
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256_before_after&quot;: &quot;4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766&quot;,
+      &quot;outputlog_sha256&quot;: &quot;cfd029ba4a57efd09bc3a60175121f5f2cd9272faef53deb1506eb95c9550488&quot;,
+      &quot;selected_lines&quot;: [
+        &quot;&lt;AFTER_EMPTY&gt;&quot;,
+        &quot;  &lt;AFTER_TRAILING_SPACES&gt;&quot;,
+        &quot;X  Y&lt;AFTER_INTERNAL_SPACES&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;,
+        &quot;RESUMED_TOKEN&lt;AFTER_SKIP&gt;&quot;
+      ],
+      &quot;desktop&quot;: &quot;PyEmueraProbe_4fa5a99a902d440faf63c78cf52ebedd&quot;,
+      &quot;pid&quot;: 24788,
+      &quot;process_signaled_after_wait&quot;: false,
+      &quot;natural_exit_observed&quot;: false,
+      &quot;screenshot&quot;: false,
+      &quot;global_keyboard_events&quot;: false
+    },
+    &quot;public-receipted-01&quot;: {
+      &quot;receipt&quot;: &quot;public-receipted-01/receipt.json&quot;,
+      &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;python&quot;: &quot;3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]&quot;,
+      &quot;config_sha256_before_after&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256_before_after&quot;: &quot;4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766&quot;,
+      &quot;outputlog_sha256&quot;: &quot;b886d5ae58bb5cf62ec54590aa4bbfee8e72a06058e32897bfe201a46f66d549&quot;,
+      &quot;returncode&quot;: 0,
+      &quot;selected_lines&quot;: [
+        &quot;&lt;AFTER_EMPTY&gt;&quot;,
+        &quot;  &lt;AFTER_TRAILING_SPACES&gt;&quot;,
+        &quot;X  Y&lt;AFTER_INTERNAL_SPACES&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;,
+        &quot;RESUMED_TOKEN&lt;AFTER_SKIP&gt;&quot;
+      ],
+      &quot;stderr_sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+    },
+    &quot;public-receipted-02&quot;: {
+      &quot;receipt&quot;: &quot;public-receipted-02/receipt.json&quot;,
+      &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;python&quot;: &quot;3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]&quot;,
+      &quot;config_sha256_before_after&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256_before_after&quot;: &quot;4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766&quot;,
+      &quot;outputlog_sha256&quot;: &quot;b886d5ae58bb5cf62ec54590aa4bbfee8e72a06058e32897bfe201a46f66d549&quot;,
+      &quot;returncode&quot;: 0,
+      &quot;selected_lines&quot;: [
+        &quot;&lt;AFTER_EMPTY&gt;&quot;,
+        &quot;  &lt;AFTER_TRAILING_SPACES&gt;&quot;,
+        &quot;X  Y&lt;AFTER_INTERNAL_SPACES&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;,
+        &quot;RESUMED_TOKEN&lt;AFTER_SKIP&gt;&quot;
+      ],
+      &quot;stderr_sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+    }
+  },
+  &quot;selected_semantic_lines&quot;: [
+    &quot;&lt;AFTER_EMPTY&gt;&quot;,
+    &quot;  &lt;AFTER_TRAILING_SPACES&gt;&quot;,
+    &quot;X  Y&lt;AFTER_INTERNAL_SPACES&gt;&quot;,
+    &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;,
+    &quot;RESUMED_TOKEN&lt;AFTER_SKIP&gt;&quot;
+  ],
+  &quot;observations&quot;: {
+    &quot;omitted_raw_argument&quot;: &quot;PRINT with no raw text emitted zero characters; following marker reached&quot;,
+    &quot;trailing_whitespace&quot;: &quot;the three-space raw command line yielded two spaces before the following marker in both engines&quot;,
+    &quot;internal_whitespace&quot;: &quot;PRINT X  Y preserved two internal spaces in both engines&quot;,
+    &quot;state&quot;: &quot;RESULT=77 and RESULTS=[\&quot;KEEP\&quot;] retained across PRINT output&quot;,
+    &quot;skipdisp&quot;: &quot;SUPPRESSED_TOKEN absent while SKIPDISP=1; RESUMED_TOKEN appeared after SKIPDISP=0&quot;,
+    &quot;continuation&quot;: &quot;AFTER_SKIP reached&quot;,
+    &quot;replicates_identical_per_engine&quot;: true
+  },
+  &quot;raw_logs_equal_across_engines&quot;: false,
+  &quot;raw_log_equality_explanation&quot;: &quot;Native output file is UTF-16LE with BOM and CRLF; public OUTPUTLOG is UTF-8/LF and appends the generic OUTPUTLOG notice. The five selected semantic lines match exactly after newline normalization and excluding only startup and host-specific OUTPUTLOG notice.&quot;,
+  &quot;native_natural_exit_observed&quot;: false,
+  &quot;native_exit_code_observed&quot;: false,
+  &quot;public_returncodes&quot;: [
+    0,
+    0
+  ],
+  &quot;screenshots_taken&quot;: false,
+  &quot;global_keyboard_events&quot;: false,
+  &quot;scoped_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;product_modified&quot;: false,
+  &quot;published_artifacts_modified&quot;: false,
+  &quot;drive_originals_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0003 · command_or_syntax:PRINT · check</li>
+</ul></html>

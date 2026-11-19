@@ -1,0 +1,45 @@
+Now Loading...
+BEGIN GATE
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GATE_0
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GATE_0 SLOT=2 COUNT=1 ORDER=2
+ARG GATE_0 SLOT=3 COUNT=2 ORDER=23
+ARG GATE_0 SLOT=4 COUNT=3 ORDER=234
+ARG GATE_0 SLOT=5 COUNT=4 ORDER=2345
+AFTER GATE_0 R=777 SK=1 OUT=0
+EVAL GATE_0 COUNT=4 ORDER=2345
+ARRAY GATE_0 [ab|a|ab|]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GATE_1
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GATE_1 SLOT=2 COUNT=1 ORDER=2
+ARG GATE_1 SLOT=3 COUNT=2 ORDER=23
+ARG GATE_1 SLOT=4 COUNT=3 ORDER=234
+ARG GATE_1 SLOT=5 COUNT=4 ORDER=2345
+AFTER GATE_1 R=0 SK=1 OUT=888
+EVAL GATE_1 COUNT=4 ORDER=2345
+ARRAY GATE_1 [ab|a|ab|]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GATE_2
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GATE_2 SLOT=2 COUNT=1 ORDER=2
+ARG GATE_2 SLOT=3 COUNT=2 ORDER=23
+ARG GATE_2 SLOT=4 COUNT=3 ORDER=234
+ARG GATE_2 SLOT=5 COUNT=4 ORDER=2345
+AFTER GATE_2 R=777 SK=1 OUT=2
+EVAL GATE_2 COUNT=4 ORDER=2345
+ARRAY GATE_2 [ab|a|ab|]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+BEFORE GATE_3
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+ARG GATE_3 SLOT=2 COUNT=1 ORDER=2
+ARG GATE_3 SLOT=3 COUNT=2 ORDER=23
+ARG GATE_3 SLOT=4 COUNT=3 ORDER=234
+ARG GATE_3 SLOT=5 COUNT=4 ORDER=2345
+AFTER GATE_3 R=2 SK=1 OUT=888
+EVAL GATE_3 COUNT=4 ORDER=2345
+ARRAY GATE_3 [ab|a|ab|]
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 
+DONE GATE
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 

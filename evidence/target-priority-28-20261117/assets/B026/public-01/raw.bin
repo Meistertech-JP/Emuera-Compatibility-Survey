@@ -1,0 +1,15 @@
+Now Loading...
+BEGIN_PRINTSD
+CONTROL_BEFORE
+left  right
+NORMAL_PRINTSD A=0 C=1 B=71 R=701 RS=[KEEP]
+SKIP_PRINTSD A=0 C=1 B=71 R=0 RS=[KEEP]
+CONTROL_AFTER
+HTML_CONTROL_BEFORE_PRINTSD
+<p align='left'><nobr><font color='#00FF00'>CONTROL_BEFORE</font></nobr></p>
+HTML_TARGET_PRINTSD
+<p align='left'><nobr>left  right</nobr></p>
+HTML_CONTROL_AFTER_PRINTSD
+<p align='left'><nobr><font color='#00FF00'>CONTROL_AFTER</font></nobr></p>
+DONE_PRINTSD
+※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ 

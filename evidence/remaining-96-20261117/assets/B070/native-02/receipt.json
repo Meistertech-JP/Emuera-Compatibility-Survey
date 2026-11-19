@@ -1,0 +1,19 @@
+{
+  "fixture_id": "CHARATU_INDEX_FAULT_EMPTY_CMD",
+  "mode": "native-02",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "98a1310b6558be1aea8b1875a47ccad508e2bcb18b06e96a258af087f20132d6",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/MAIN.ERB": "98a1310b6558be1aea8b1875a47ccad508e2bcb18b06e96a258af087f20132d6",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "f3708164fccbf9a75219747790109876e41ec8f0cc929f5d66d51daba57bdfd9",
+    "binding_basis": "source_receipt_outputs_and_case_reference"
+  },
+  "native_natural_exit": "not_established_from_receipt",
+  "helper_returncode_is_not_native_natural_exit": true
+}

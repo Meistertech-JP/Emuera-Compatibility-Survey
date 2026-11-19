@@ -1,0 +1,80 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0629 · SOURCE_HASHES.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0629 · SOURCE_HASHES.json</h1>
+<p>原票種別=SOURCE_HASHES.json; 参照対象=declaration:#DEFINE。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を3個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>5cda2a055570fa7e6c0ec5761c8348bba6a6c9f41e78fc7f56a7cede13cf1746</code></p>
+<p><a href="../assets/U0629.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>93d8cce0d42683513263c0741ddcf10c25d2c5b4f4610360e55a699cef85b6b7</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;native_archive&quot;: {
+    &quot;path&quot;: &quot;[PROJECT_ROOT]\\Emuera1824+v24.zip&quot;,
+    &quot;sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;
+  },
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;public_source_zip&quot;: {
+    &quot;path&quot;: &quot;[SURVEY_ROOT]\\PyEmuera-3.0.0-source.zip&quot;,
+    &quot;sha256&quot;: &quot;c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2&quot;
+  },
+  &quot;public_pyz&quot;: {
+    &quot;path&quot;: &quot;[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz&quot;,
+    &quot;sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;
+  },
+  &quot;public_pyz_expected_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+  &quot;native_source_members&quot;: [
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/HeaderFileLoader.cs&quot;,
+      &quot;sha256&quot;: &quot;72fb531f7eaa267f09878b083cd2ec6b164fdb9a40cb55e714a3691c5b29d32c&quot;,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start&quot;: 147,
+          &quot;end&quot;: 210,
+          &quot;text&quot;: &quot;147: \t\tprivate void analyzeSharpDefine(StringStream st, ScriptPosition position)\n148: \t\t{\n149: \t\t\t//LexicalAnalyzer.SkipWhiteSpace(st);呼び出し前に行う。\n150: \t\t\tstring srcID = LexicalAnalyzer.ReadSingleIdentifier(st);\n151: \t\t\tif (srcID == null)\n152: \t\t\t\tthrow new CodeEE(\&quot;置換元の識別子がありません\&quot;, position);\n153: \t\t\tif (Config.ICVariable)\n154: \t\t\t\tsrcID = srcID.ToUpper();\n155: \n156:             //ここで名称重複判定しないと、大変なことになる\n157:             string errMes = \&quot;\&quot;;\n158:             int errLevel = -1;\n159:             idDic.CheckUserMacroName(ref errMes, ref errLevel, srcID);\n160:             if (errLevel &gt;= 0)\n161:             {\n162:                 ParserMediator.Warn(errMes, position, errLevel);\n163:                 if (errLevel &gt;= 2)\n164:                 {\n165:                     noError = false;\n166:                     return;\n167:                 }\n168:             }\n169:             \n170:             bool hasArg = st.Current == &#x27;(&#x27;;//引数を指定する場合には直後に(が続いていなければならない。ホワイトスペースも禁止。\n171: \t\t\t//1808a3 代入演算子許可（関数宣言用）\n172: \t\t\tWordCollection wc = LexicalAnalyzer.Analyse(st, LexEndWith.EoL, LexAnalyzeFlag.AllowAssignment);\n173: \t\t\tif (wc.EOL)\n174: \t\t\t{\n175: \t\t\t\t//throw new CodeEE(\&quot;置換先の式がありません\&quot;, position);\n176: \t\t\t\t//1808a3 空マクロの許可\n177: \t\t\t\tDefineMacro nullmac = new DefineMacro(srcID, new WordCollection(), 0);\n178: \t\t\t\tidDic.AddMacro(nullmac);\n179: \t\t\t\treturn;\n180: \t\t\t}\n181: \n182: \t\t\tList&lt;string&gt; argID = new List&lt;string&gt;();\n183: \t\t\tif (hasArg)//関数型マクロの引数解析\n184: \t\t\t{\n185: \t\t\t\twc.ShiftNext();//&#x27;(&#x27;を読み飛ばす\n186: \t\t\t\tif (wc.Current.Type == &#x27;)&#x27;)\n187: \t\t\t\t\tthrow new CodeEE(\&quot;関数型マクロの引数を0個にすることはできません\&quot;, position);\n188: \t\t\t\twhile (!wc.EOL)\n189: \t\t\t\t{\n190: \t\t\t\t\tIdentifierWord word = wc.Current as IdentifierWord;\n191: \t\t\t\t\tif (word == null)\n192: \t\t\t\t\t\tthrow new CodeEE(\&quot;置換元の引数指定の書式が間違っています\&quot;, position);\n193: \t\t\t\t\tword.SetIsMacro();\n194: \t\t\t\t\tstring id = word.Code;\n195: \t\t\t\t\tif (argID.Contains(id))\n196: \t\t\t\t\t\tthrow new CodeEE(\&quot;置換元の引数に同じ文字が2回以上使われています\&quot;, position);\n197: \t\t\t\t\targID.Add(id);\n198: \t\t\t\t\twc.ShiftNext();\n199: \t\t\t\t\tif (wc.Current.Type == &#x27;,&#x27;)\n200: \t\t\t\t\t{\n201: \t\t\t\t\t\twc.ShiftNext();\n202: \t\t\t\t\t\tcontinue;\n203: \t\t\t\t\t}\n204: \t\t\t\t\tif (wc.Current.Type == &#x27;)&#x27;)\n205: \t\t\t\t\t\tbreak;\n206: \t\t\t\t\tthrow new CodeEE(\&quot;置換元の引数指定の書式が間違っています\&quot;, position);\n207: \t\t\t\t}\n208: \t\t\t\tif (wc.EOL)\n209: \t\t\t\t\tthrow new CodeEE(\&quot;&#x27;)&#x27;が閉じられていません\&quot;, position);\n210: &quot;
+        },
+        {
+          &quot;start&quot;: 213,
+          &quot;end&quot;: 247,
+          &quot;text&quot;: &quot;213: \t\t\tif (wc.EOL)\n214: \t\t\t\tthrow new CodeEE(\&quot;置換先の式がありません\&quot;, position);\n215: \t\t\tWordCollection destWc = new WordCollection();\n216: \t\t\twhile (!wc.EOL)\n217: \t\t\t{\n218: \t\t\t\tdestWc.Add(wc.Current);\n219: \t\t\t\twc.ShiftNext();\n220: \t\t\t}\n221: \t\t\tif (hasArg)//関数型マクロの引数セット\n222: \t\t\t{\n223: \t\t\t\twhile (!destWc.EOL)\n224: \t\t\t\t{\n225: \t\t\t\t\tIdentifierWord word = destWc.Current as IdentifierWord;\n226: \t\t\t\t\tif (word == null)\n227: \t\t\t\t\t{\n228: \t\t\t\t\t\tdestWc.ShiftNext();\n229: \t\t\t\t\t\tcontinue;\n230: \t\t\t\t\t}\n231: \t\t\t\t\tfor (int i = 0; i &lt; argID.Count; i++)\n232: \t\t\t\t\t{\n233: \t\t\t\t\t\tif (string.Equals(word.Code, argID[i], Config.SCVariable))\n234: \t\t\t\t\t\t{\n235: \t\t\t\t\t\t\tdestWc.Remove();\n236: \t\t\t\t\t\t\tdestWc.Insert(new MacroWord(i));\n237: \t\t\t\t\t\t\tbreak;\n238: \t\t\t\t\t\t}\n239: \t\t\t\t\t}\n240: \t\t\t\t\tdestWc.ShiftNext();\n241: \t\t\t\t}\n242: \t\t\t\tdestWc.Pointer = 0;\n243: \t\t\t}\n244: \t\t\tif (hasArg)//1808a3 関数型マクロの封印\n245: \t\t\t\tthrow new CodeEE(\&quot;関数型マクロは宣言できません\&quot;, position);\n246: \t\t\tDefineMacro mac = new DefineMacro(srcID, destWc, argID.Count);\n247: \t\t\tidDic.AddMacro(mac);&quot;
+        }
+      ]
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/IdentifierDictionary.cs&quot;,
+      &quot;sha256&quot;: &quot;f08f454def3847ce33cf396a42c1e6cb83354ad586df439916aa881e6d9977e9&quot;,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start&quot;: 317,
+          &quot;end&quot;: 356,
+          &quot;text&quot;: &quot;317: \t\tpublic void CheckUserMacroName(ref string errMes, ref int warnLevel, string macroName)\n318: \t\t{\n319: \t\t\tif (macroName.IndexOfAny(badSymbolAsIdentifier) &gt;= 0)\n320: \t\t\t{\n321: \t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;に\\\&quot;_\\\&quot;以外の記号が含まれています\&quot;;\n322: \t\t\t\twarnLevel = 2;\n323: \t\t\t\treturn;\n324: \t\t\t}\n325: \t\t\tif (nameDic.ContainsKey(macroName))\n326: \t\t\t{\n327: \t\t\t\tswitch (nameDic[macroName])\n328: \t\t\t\t{\n329: \t\t\t\t\tcase DefinedNameType.Reserved:\n330: \t\t\t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;はEmueraの予約語です\&quot;;\n331: \t\t\t\t\t\twarnLevel = 2;\n332: \t\t\t\t\t\tbreak;\n333: \t\t\t\t\tcase DefinedNameType.SystemInstrument:\n334: \t\t\t\t\tcase DefinedNameType.SystemMethod:\n335: \t\t\t\t\t\t//命令名を上書きした時が面倒なのでとりあえず許可しない\n336: \t\t\t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;はEmueraの命令名として使われています\&quot;;\n337: \t\t\t\t\t\twarnLevel = 2;\n338: \t\t\t\t\t\tbreak;\n339: \t\t\t\t\tcase DefinedNameType.SystemVariable:\n340: \t\t\t\t\t\t//別に上書きしてもいいがとりあえず許可しないでおく。いずれ解放するかもしれない\n341: \t\t\t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;はEmueraの変数名として使われています\&quot;;\n342: \t\t\t\t\t\twarnLevel = 2;\n343: \t\t\t\t\t\tbreak;\n344: \t\t\t\t\tcase DefinedNameType.UserMacro:\n345: \t\t\t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;は既にマクロ名に使用されています\&quot;;\n346: \t\t\t\t\t\twarnLevel = 2;\n347: \t\t\t\t\t\tbreak;\n348: \t\t\t\t\tcase DefinedNameType.UserGlobalVariable:\n349: \t\t\t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;はユーザー定義の広域変数名に使用されています\&quot;;\n350: \t\t\t\t\t\twarnLevel = 2;\n351: \t\t\t\t\t\tbreak;\n352: \t\t\t\t\tcase DefinedNameType.UserRefMethod:\n353: \t\t\t\t\t\terrMes = \&quot;マクロ名\&quot; + macroName + \&quot;は参照型関数の名称に使用されています\&quot;;\n354: \t\t\t\t\t\twarnLevel = 2;\n355: \t\t\t\t\t\tbreak;\n356: \t\t\t\t}&quot;
+        },
+        {
+          &quot;start&quot;: 430,
+          &quot;end&quot;: 440,
+          &quot;text&quot;: &quot;430: \t\t\t}\n431: \t\t\tnameDic.Add(var.Name, DefinedNameType.UserGlobalVariable);\n432: \t\t}\n433: \t\tinternal void AddMacro(DefineMacro mac)\n434: \t\t{\n435: \t\t\tnameDic.Add(mac.Keyword, DefinedNameType.UserMacro);\n436: \t\t\tmacroDic.Add(mac.Keyword, mac);\n437: \t\t}\n438: \t\tinternal void AddRefMethod(UserDefinedRefMethod refm)\n439: \t\t{\n440: \t\t\trefmethodDic.Add(refm.Name, refm);&quot;
+        }
+      ]
+    },
+    {
+      &quot;member&quot;: &quot;Emuera1824+v24/src1824+v24/src1824/Emuera/Sub/LexicalAnalyzer.cs&quot;,
+      &quot;sha256&quot;: &quot;710388d067a0e6297fb01ba578c5ee85d03fd1d48707f02b1f06213eff72cc44&quot;,
+      &quot;excerpts&quot;: [
+        {
+          &quot;start&quot;: 1041,
+          &quot;end&quot;: 1080,
+          &quot;text&quot;: &quot;1041: \t\t\tif (UseMacro)\n1042: \t\t\t\treturn expandMacro(ret);\n1043: \t\t\treturn ret;\n1044: \n1045: \t\t}\n1046: \n1047: \t\tprivate static WordCollection expandMacro(WordCollection wc)\n1048: \t\t{\n1049: \t\t\t//マクロ展開\n1050: \t\t\twc.Pointer = 0;\n1051: \t\t\tint count = 0;\n1052: \t\t\twhile (!wc.EOL)\n1053: \t\t\t{\n1054: \t\t\t\tIdentifierWord word = wc.Current as IdentifierWord;\n1055: \t\t\t\tif (word == null)\n1056: \t\t\t\t{\n1057: \t\t\t\t\twc.ShiftNext();\n1058: \t\t\t\t\tcontinue;\n1059: \t\t\t\t}\n1060: \t\t\t\tstring idStr = word.Code;\n1061: \t\t\t\tDefineMacro macro = GlobalStatic.IdentifierDictionary.GetMacro(idStr);\n1062: \t\t\t\tif (macro == null)\n1063: \t\t\t\t{\n1064: \t\t\t\t\twc.ShiftNext();\n1065: \t\t\t\t\tcontinue;\n1066: \t\t\t\t}\n1067: \t\t\t\tcount++;\n1068: \t\t\t\tif (count &gt; MAX_EXPAND_MACRO)\n1069: \t\t\t\t\tthrow new CodeEE(\&quot;マクロの展開数が1文あたりの上限\&quot; + MAX_EXPAND_MACRO.ToString() + \&quot;を超えました(自己参照・循環参照のおそれ)\&quot;);\n1070: \t\t\t\tif (!macro.HasArguments)\n1071: \t\t\t\t{\n1072: \t\t\t\t\twc.Remove();\n1073: \t\t\t\t\twc.InsertRange(macro.Statement);\n1074: \t\t\t\t\tcontinue;\n1075: \t\t\t\t}\n1076: \t\t\t\t//関数型マクロ\n1077: \t\t\t\twc = expandFunctionlikeMacro(macro, wc);\n1078: \t\t\t}\n1079: \t\t\twc.Pointer = 0;\n1080: \t\t\treturn wc;&quot;
+        }
+      ]
+    }
+  ],
+  &quot;source_encoding&quot;: &quot;UTF-8 with optional BOM, verified by successful decode from the fixed archive members.&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2440 · declaration:#DEFINE · check</li>
+<li>L2443 · declaration:#DEFINE · check</li>
+</ul></html>

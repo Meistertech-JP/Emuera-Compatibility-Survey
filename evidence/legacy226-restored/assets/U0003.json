@@ -1,0 +1,132 @@
+{
+  "generated_utc": "2026-11-11T22:56:05.497040+00:00",
+  "scope": "Exact UTF-16 OUTPUTLOG comparison for the specified fixture and settings only; screen images alone cannot establish characters. No whole-program compatibility claim.",
+  "cases": [
+    {
+      "case": "KANALOG01",
+      "native_probe": "runs/isolated-native-0e566c4aecfc42ef929615e03dbd0837/probe.json",
+      "py_dir": "runs/kanalog-python-7c053302",
+      "native_capture": "runs/native-fresh-KANALOG01-3315bada-display.bmp",
+      "erb_sha256": "3056ab9e9d763647a3e7ffd9928fef208b5061c8a90ad6ae33c5be11b4ffd631",
+      "native_log": "runs/isolated-native-0e566c4aecfc42ef929615e03dbd0837/emuera.log",
+      "native_log_sha256": "0bcb67219e8180d29f347f3f2602c4e26b6d1a3cfc944bf61b69634b7716eee9",
+      "py_log": "runs/kanalog-python-7c053302/game/.pyemuera/logs/emuera.log",
+      "py_log_sha256": "819abc8ca1db0cd34c60537ff17d5792f7c7784ed39b470cf9ad91e58dc4c9f1",
+      "native_log_text": "Now Loading...\r\nBEGIN\r\nMODE0\r\n[あアｱ A]\r\nMODE1\r\n[アアｱ A]\r\nMODE2\r\n[ああｱ A]\r\nMODE3\r\n［あああ　Ａ］\r\n",
+      "py_log_text": "Now Loading...\r\nBEGIN\r\nMODE0\r\n[あアｱ A]\r\nMODE1\r\n[アアｱ A]\r\nMODE2\r\n[あああ A]\r\nMODE3\r\n［あああ　Ａ］\r\n",
+      "mode_results": [
+        {
+          "mode": 0,
+          "native_line": "[あアｱ A]",
+          "py_line": "[あアｱ A]",
+          "text_equal": true,
+          "native_codepoints": [
+            "U+005B",
+            "U+3042",
+            "U+30A2",
+            "U+FF71",
+            "U+0020",
+            "U+0041",
+            "U+005D"
+          ],
+          "py_codepoints": [
+            "U+005B",
+            "U+3042",
+            "U+30A2",
+            "U+FF71",
+            "U+0020",
+            "U+0041",
+            "U+005D"
+          ]
+        },
+        {
+          "mode": 1,
+          "native_line": "[アアｱ A]",
+          "py_line": "[アアｱ A]",
+          "text_equal": true,
+          "native_codepoints": [
+            "U+005B",
+            "U+30A2",
+            "U+30A2",
+            "U+FF71",
+            "U+0020",
+            "U+0041",
+            "U+005D"
+          ],
+          "py_codepoints": [
+            "U+005B",
+            "U+30A2",
+            "U+30A2",
+            "U+FF71",
+            "U+0020",
+            "U+0041",
+            "U+005D"
+          ]
+        },
+        {
+          "mode": 2,
+          "native_line": "[ああｱ A]",
+          "py_line": "[あああ A]",
+          "text_equal": false,
+          "native_codepoints": [
+            "U+005B",
+            "U+3042",
+            "U+3042",
+            "U+FF71",
+            "U+0020",
+            "U+0041",
+            "U+005D"
+          ],
+          "py_codepoints": [
+            "U+005B",
+            "U+3042",
+            "U+3042",
+            "U+3042",
+            "U+0020",
+            "U+0041",
+            "U+005D"
+          ]
+        },
+        {
+          "mode": 3,
+          "native_line": "［あああ　Ａ］",
+          "py_line": "［あああ　Ａ］",
+          "text_equal": true,
+          "native_codepoints": [
+            "U+FF3B",
+            "U+3042",
+            "U+3042",
+            "U+3042",
+            "U+3000",
+            "U+FF21",
+            "U+FF3D"
+          ],
+          "py_codepoints": [
+            "U+FF3B",
+            "U+3042",
+            "U+3042",
+            "U+3042",
+            "U+3000",
+            "U+FF21",
+            "U+FF3D"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "KANALOG02",
+      "native_probe": "runs/isolated-native-dd4852e9900d4ad997f8162fd53d728a/probe.json",
+      "py_dir": "runs/kanalog02-python-304b7ec2",
+      "native_capture": "runs/native-fresh-KANALOG02-5166d550-display.bmp",
+      "erb_sha256": "ab5052153327ca3577dab899bd13780fe01bc7dfa1f14c4fe9b623809c4c35d5",
+      "native_log": "runs/isolated-native-dd4852e9900d4ad997f8162fd53d728a/emuera.log",
+      "native_log_sha256": "81f6a29681f2a1794afe833deb5ea8260e197b6c932ba51541b093d1b886aee3",
+      "py_log": "runs/kanalog02-python-304b7ec2/game/.pyemuera/logs/emuera.log",
+      "py_log_sha256": "16704927b4bb7babf62046b0bc0e775493b0525d252cb9ac0fb68b8afb1bdcf1",
+      "native_log_text": "Now Loading...\r\nBEFORE\r\nｱ\r\n",
+      "py_log_text": "Now Loading...\r\nBEFORE\r\nあ\r\n",
+      "native_character": "U+FF71",
+      "py_character": "U+3042"
+    }
+  ]
+}

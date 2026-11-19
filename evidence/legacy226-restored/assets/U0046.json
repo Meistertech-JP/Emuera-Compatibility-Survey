@@ -1,0 +1,161 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-14T21:17:10.070760+00:00",
+  "decision_authority": "Codex evidence review of retained Native/public case evidence; not owner release sign-off.",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINT_SPACE"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "SHAPEIMG229_space_valid",
+    "SHAPEIMG229_space_negative",
+    "SHAPEIMG229_space_high",
+    "SHAPEIMG229_skip_all"
+  ],
+  "accepted_scope": "Selected valid, negative and high-boundary paths plus skip short-circuit; Native/public serialized presentation differences and selected error-text differences remain scoped.",
+  "accepted_finite_requirements": [
+    {
+      "id": "registration_signature_and_reached_form",
+      "state": "source_pinned_and_runtime_reached",
+      "case_ids": [
+        "SHAPEIMG229_space_valid",
+        "SHAPEIMG229_space_negative",
+        "SHAPEIMG229_space_high",
+        "SHAPEIMG229_skip_all"
+      ],
+      "basis": "Pinned v24 registration/constructor references and case229 source/condition records were checked; each case record directly attributes the target."
+    },
+    {
+      "id": "selected_output_state_control",
+      "state": "compared_with_scoped_differences",
+      "case_ids": [
+        "SHAPEIMG229_space_valid",
+        "SHAPEIMG229_space_negative",
+        "SHAPEIMG229_space_high",
+        "SHAPEIMG229_skip_all"
+      ],
+      "basis": "Existing Native/public records compare selected output serialization, history query or skip behavior. Differences between serialized shape/image HTML and terminal projection are kept distinct from pixel rendering."
+    },
+    {
+      "id": "target_specific_boundary_and_evaluation",
+      "state": "compared_with_scoped_differences",
+      "case_ids": [
+        "SHAPEIMG229_space_valid",
+        "SHAPEIMG229_space_negative",
+        "SHAPEIMG229_space_high",
+        "SHAPEIMG229_skip_all"
+      ],
+      "basis": "Each row's finite boundary list is present in case229: image exists/missing/skip; RECT valid/fallback/negative-order; SPACE valid/negative/high/skip."
+    }
+  ],
+  "source_refs": [
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "member_sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "lines": [
+        [
+          287,
+          350
+        ],
+        [
+          1371,
+          1380
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/EmueraConsole.Print.cs",
+      "member_sha256": "6b9a9b360a25d0064e37563b13fd1afa832ee5c2f88192f752347d54498e4e53",
+      "lines": [
+        [
+          332,
+          342
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/ConsoleImagePart.cs",
+      "member_sha256": "e2ca2e56b770e899045e7f1ec57ebf102ff3593eaa06942a26ad06aa8480e81e",
+      "lines": [
+        [
+          13,
+          93
+        ],
+        [
+          122,
+          127
+        ]
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/ConsoleShapePart.cs",
+      "member_sha256": "c14ca0fcc73dca183abd75532f2f835a2a842c3b22cdd583da898518f94cec21",
+      "lines": [
+        [
+          9,
+          97
+        ]
+      ]
+    }
+  ],
+  "artifacts": {
+    "native_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "case_comparison_sha256": "12809aa14d224b69fc4eb1ac530137b9088ead5d90cdd272c0897546572a44d6",
+    "case_manifest_sha256": "3094a1eced7fc6ad1a97fe01353ec22ca95eda2cc5d5cce0c7518e9a682fc99c"
+  },
+  "comparison_path": "evidence/print-shapes-images-20261113-229/COMPARISON.json",
+  "comparison_sha256": "12809aa14d224b69fc4eb1ac530137b9088ead5d90cdd272c0897546572a44d6",
+  "evidence_manifest_path": "evidence/print-shapes-images-20261113-229/MANIFEST.json",
+  "evidence_manifest_sha256": "3094a1eced7fc6ad1a97fe01353ec22ca95eda2cc5d5cce0c7518e9a682fc99c",
+  "review_path": "evidence/print-shapes-images-20261113-229/CASE_REVIEW_ja.md",
+  "review_sha256": "9f4c3a2dd541d39df9e2e498ab459706cf5acfeb028eb885f9875df0ed00f45d",
+  "source_hashes_path": "evidence/print-shapes-images-20261113-229/SOURCE.json",
+  "source_hashes_sha256": "5e2dfcfaf4bc24efd7f1effa5ae45c2e13784392b21f5416347989bac8d83109",
+  "case_outcomes": {
+    "SHAPEIMG229_space_valid": "different_scoped",
+    "SHAPEIMG229_space_negative": "matched_scoped",
+    "SHAPEIMG229_space_high": "matched_scoped",
+    "SHAPEIMG229_skip_all": "matched_scoped"
+  },
+  "evidence_paths": [
+    {
+      "path": "evidence/print-shapes-images-20261113-229/COMPARISON.json",
+      "sha256": "12809aa14d224b69fc4eb1ac530137b9088ead5d90cdd272c0897546572a44d6"
+    },
+    {
+      "path": "evidence/print-shapes-images-20261113-229/CASE_REVIEW_ja.md",
+      "sha256": "9f4c3a2dd541d39df9e2e498ab459706cf5acfeb028eb885f9875df0ed00f45d"
+    },
+    {
+      "path": "evidence/print-shapes-images-20261113-229/SOURCE.json",
+      "sha256": "5e2dfcfaf4bc24efd7f1effa5ae45c2e13784392b21f5416347989bac8d83109"
+    },
+    {
+      "path": "evidence/print-shapes-images-20261113-229/MANIFEST.json",
+      "sha256": "3094a1eced7fc6ad1a97fe01353ec22ca95eda2cc5d5cce0c7518e9a682fc99c"
+    },
+    {
+      "path": "evidence/print-shapes-images-20261113-229/conditions.json",
+      "sha256": "a7c25ba7a0f1ac36da45dc168be6f1787e0b706ae544099f6ffd5b007ca081ea"
+    }
+  ],
+  "finite_remainder": [],
+  "retained_limits": [
+    "No GUI pixel, width, click, or full renderer equivalence was tested.",
+    "Native natural GUI exit was not observed; retained runner records owned-process cleanup.",
+    "For PRINT_IMG, public SPRITEWIDTH presence-control stops before target use; this is not promoted as successful public image handling. The direct existing/missing image-name fixtures reached PRINT_IMG."
+  ],
+  "product_code_modified": false,
+  "published_artifacts_modified": false,
+  "global_completion": false
+}

@@ -1,0 +1,273 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0178 · conditions.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0178 · conditions.json</h1>
+<p>原票種別=conditions.json; 参照対象=command_or_syntax:PRINTBUTTON, command_or_syntax:PRINTBUTTONC, command_or_syntax:PRINTBUTTONLC。配列要素数=24; 先頭要素=[{&quot;id&quot;: &quot;B216_0&quot;, &quot;command&quot;: &quot;PRINTBUTTON&quot;, &quot;label_case&quot;: &quot;numeric&quot;, &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;, &quot;value_type&quot;: &quot;num&quot;, &quot;value&quot;: 7, &quot;skip&quot;: false, &quot;count_expected&quot;: 2, &quot;order_expected&quot;: 12}]。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>cc299ccf10e942cf06a26e162233be0c47ea82e1008ac4b531a802e9f07eb8c5</code></p>
+<p><a href="../assets/U0178.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>cc299ccf10e942cf06a26e162233be0c47ea82e1008ac4b531a802e9f07eb8c5</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>[
+  {
+    &quot;id&quot;: &quot;B216_0&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;numeric&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_1&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;negative&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;back\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: -2,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_2&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;string&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;,
+    &quot;value_type&quot;: &quot;str&quot;,
+    &quot;value&quot;: &quot;go216&quot;,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_3&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;empty&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_4&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;lf&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;A\&quot;+UNICODE(10)+\&quot;B\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_5&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;cr&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;A\&quot;+UNICODE(13)+\&quot;B\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_6&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTON&quot;,
+    &quot;label_case&quot;: &quot;skip&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;hidden\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: true,
+    &quot;count_expected&quot;: 0,
+    &quot;order_expected&quot;: 0
+  },
+  {
+    &quot;id&quot;: &quot;B216_7&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;numeric&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_8&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;negative&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;back\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: -2,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_9&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;string&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;,
+    &quot;value_type&quot;: &quot;str&quot;,
+    &quot;value&quot;: &quot;go216&quot;,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_10&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;empty&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_11&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;lf&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;A\&quot;+UNICODE(10)+\&quot;B\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_12&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;cr&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;A\&quot;+UNICODE(13)+\&quot;B\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_13&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONC&quot;,
+    &quot;label_case&quot;: &quot;skip&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;hidden\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: true,
+    &quot;count_expected&quot;: 0,
+    &quot;order_expected&quot;: 0
+  },
+  {
+    &quot;id&quot;: &quot;B216_14&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;numeric&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_15&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;negative&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;back\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: -2,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_16&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;string&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;label\&quot;&quot;,
+    &quot;value_type&quot;: &quot;str&quot;,
+    &quot;value&quot;: &quot;go216&quot;,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_17&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;empty&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_18&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;lf&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;A\&quot;+UNICODE(10)+\&quot;B\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_19&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;cr&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;A\&quot;+UNICODE(13)+\&quot;B\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: false,
+    &quot;count_expected&quot;: 2,
+    &quot;order_expected&quot;: 12
+  },
+  {
+    &quot;id&quot;: &quot;B216_20&quot;,
+    &quot;command&quot;: &quot;PRINTBUTTONLC&quot;,
+    &quot;label_case&quot;: &quot;skip&quot;,
+    &quot;label_expression&quot;: &quot;\&quot;hidden\&quot;&quot;,
+    &quot;value_type&quot;: &quot;num&quot;,
+    &quot;value&quot;: 7,
+    &quot;skip&quot;: true,
+    &quot;count_expected&quot;: 0,
+    &quot;order_expected&quot;: 0
+  },
+  {
+    &quot;id&quot;: &quot;B216_21&quot;,
+    &quot;command&quot;: &quot;PRINTCPERLINE&quot;,
+    &quot;destination&quot;: &quot;default RESULT0&quot;,
+    &quot;count_expected&quot;: 0,
+    &quot;order_expected&quot;: 0
+  },
+  {
+    &quot;id&quot;: &quot;B216_22&quot;,
+    &quot;command&quot;: &quot;PRINTCPERLINE&quot;,
+    &quot;destination&quot;: &quot;D:ZZ216INDEX()&quot;,
+    &quot;count_expected&quot;: 1,
+    &quot;order_expected&quot;: 1
+  },
+  {
+    &quot;id&quot;: &quot;B216_23&quot;,
+    &quot;command&quot;: &quot;PRINTCPERLINE&quot;,
+    &quot;destination&quot;: &quot;CFLAG:0:ZZ216INDEX()&quot;,
+    &quot;count_expected&quot;: 1,
+    &quot;order_expected&quot;: 1
+  }
+]</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0858 · command_or_syntax:PRINTBUTTON · check</li>
+<li>L0873 · command_or_syntax:PRINTBUTTONC · check</li>
+<li>L0888 · command_or_syntax:PRINTBUTTONLC · check</li>
+</ul></html>

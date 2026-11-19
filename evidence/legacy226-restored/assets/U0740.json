@@ -1,0 +1,62 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-15T05:37:39.779212+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "IF"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "scope": "Observed branch evaluation for case269 P1/P2 and the execution-progress difference in three recorded unclosed-IF cases P38B/P38UNUSED01/P38CALL01; other IF forms excluded.",
+  "case_ids": [
+    "P38B",
+    "PILOTIF13",
+    "P38UNUSED01",
+    "P38CALL01",
+    "ELSEENDIF01",
+    "ELSEIF01",
+    "IFCHAIN269_P1",
+    "IFCHAIN269_P2"
+  ],
+  "p38_source_members": {
+    "Emuera1824+v24/src1824+v24/src1824/Emuera/Program.cs": {
+      "sha256": "6ffff0de0673243a19081ad59bf82f4943db8dad1a3c707c1411f82bef7140e1",
+      "size": 6217
+    },
+    "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.cs": {
+      "sha256": "ef8ecc12e0321091127f600e581932986a50d2bd94b22fc4acae82921507e362",
+      "size": 18725
+    },
+    "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs": {
+      "sha256": "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab",
+      "size": 62268
+    },
+    "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/ParserMediator.cs": {
+      "sha256": "9531ddcff5adb7543ff26db818962d8bae8dfad139039497aa0454cbf2670cf1",
+      "size": 5632
+    },
+    "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs": {
+      "sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+      "size": 37245
+    }
+  },
+  "p38_audit_sha256": "cc06e3a59273687081014df53c08cbe215f346108dbc4befdecc40d0541f061f",
+  "p38_third_party_review_sha256": "1facc48b623502fcdc545b16c930128b739ce514c606d72f02d74ea19441aa17",
+  "case269_comparison_sha256": "0e3e478dc63931161676962206a4bc5ed7b63d0883e7927bddb729aabdf7c544",
+  "case269_log_sha256": "38349c787b70225b189a57787e1e7b2fe2b22ec73c40b67dfb11621ffd1687ad",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "v24_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "registered_evidence_files_rehashed": 146,
+  "historical_provenance_limitations": [
+    "P38B Native executable hash absent",
+    "P38B public before/after runtime receipt absent",
+    "P38UNUSED01 and P38CALL01 public receipts contain single hash only",
+    "P38UNUSED01 Native run has three saved captures but no input or terminal completion"
+  ],
+  "native_natural_exit_observed": false,
+  "new_engine_execution": false,
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_modified": false
+}

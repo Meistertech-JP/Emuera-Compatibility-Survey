@@ -1,0 +1,453 @@
+{
+  "artifacts": [
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S008",
+          "source_sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/native-01/fixture/PRINTDB15.ERB",
+      "role": "fixture",
+      "sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5",
+      "size": 328
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S010",
+          "source_sha256": "f7aa8afa5a77f3dfdaf21096c0254e9621e80b8b55800dde58cef89f0d57d909"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/native-01/raw/emuera.log",
+      "role": "native_log",
+      "sha256": "f7aa8afa5a77f3dfdaf21096c0254e9621e80b8b55800dde58cef89f0d57d909",
+      "size": 412
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S011",
+          "source_sha256": "917faebcec33a72371a55c0318ce6b96217469e850bf85de86e1b9ac52faf5f9"
+        }
+      ],
+      "method": "receipt allowlist",
+      "path": "cases/PRINTDB15/native-01/receipt.json",
+      "role": "receipt",
+      "sha256": "f8ea17c7b0b4560ecdaf94df56d4c02a78824a58fb6d3e7c00ed1f51d546c51b",
+      "size": 945
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S012",
+          "source_sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/native-02/fixture/PRINTDB15.ERB",
+      "role": "fixture",
+      "sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5",
+      "size": 328
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S014",
+          "source_sha256": "f7aa8afa5a77f3dfdaf21096c0254e9621e80b8b55800dde58cef89f0d57d909"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/native-02/raw/emuera.log",
+      "role": "native_log",
+      "sha256": "f7aa8afa5a77f3dfdaf21096c0254e9621e80b8b55800dde58cef89f0d57d909",
+      "size": 412
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S015",
+          "source_sha256": "4afbd77782efa80eab01960eae1f994c611d989a803b7685e2610a5aba4fbe88"
+        }
+      ],
+      "method": "receipt allowlist",
+      "path": "cases/PRINTDB15/native-02/receipt.json",
+      "role": "receipt",
+      "sha256": "f8ea17c7b0b4560ecdaf94df56d4c02a78824a58fb6d3e7c00ed1f51d546c51b",
+      "size": 945
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S016",
+          "source_sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/public-01/fixture/PRINTDB15.ERB",
+      "role": "fixture",
+      "sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5",
+      "size": 328
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S018",
+          "source_sha256": "5249e4388a1a8bb0e427b5255bb8d9ce657ab7690237bc380c341afd484dbbae"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/public-01/raw/stdout.bin",
+      "role": "stdout",
+      "sha256": "5249e4388a1a8bb0e427b5255bb8d9ce657ab7690237bc380c341afd484dbbae",
+      "size": 192
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S019",
+          "source_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/public-01/raw/stderr.bin",
+      "role": "stderr",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S020",
+          "source_sha256": "65d301cb927be6b7c08359422c844c668c4f75a627a7e5d9d2bf3f26d221d434"
+        }
+      ],
+      "method": "byte-identical copy",
+      "path": "cases/PRINTDB15/public-01/raw/app-log.bin",
+      "role": "app_log",
+      "sha256": "65d301cb927be6b7c08359422c844c668c4f75a627a7e5d9d2bf3f26d221d434",
+      "size": 270
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "",
+          "source_id": "S021",
+          "source_sha256": "9836f109e908850814ab5a85364fad1b164c3cf8e6862c42acd9e97c8adf28a9"
+        }
+      ],
+      "method": "receipt allowlist",
+      "path": "cases/PRINTDB15/public-01/receipt.json",
+      "role": "receipt",
+      "sha256": "508135f4a7db1b33b7e1b2b72ea5a491d6731c96d812e87265b785f64abe75c9",
+      "size": 926
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "/rows/162",
+          "source_id": "S001",
+          "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+        },
+        {
+          "pointer": "",
+          "source_id": "S004",
+          "source_sha256": "5240618e62bb89a4d8c7284b9f6d44cb4d333d54ff9e35414ee0d89de6edfaa3"
+        },
+        {
+          "pointer": "/old_own_case_ids/1",
+          "source_id": "S005",
+          "source_sha256": "83b4734ccee088f3309c5f1658c4a0399cbb81b1bfc3cc4258c317050f65f55e"
+        },
+        {
+          "pointer": "/rows/651",
+          "source_id": "S001",
+          "source_sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c"
+        },
+        {
+          "pointer": "",
+          "source_id": "S006",
+          "source_sha256": "ad49d5d820a9b766e64e4f5e22ce9de81663510bf669bc51d05eaa54fd34e898"
+        },
+        {
+          "pointer": "/old_own_case_ids/1",
+          "source_id": "S007",
+          "source_sha256": "a41de488052821e6afceed909b096af98729b6790320c80591a274e403ffb0e9"
+        },
+        {
+          "pointer": "/registered_cases/51/targets",
+          "source_id": "S003",
+          "source_sha256": "ff9add120e8038385e6af97e2cc6278931ea5fa82aea076b2d6adad856d2a59e"
+        }
+      ],
+      "method": "typed records selected",
+      "path": "records/targets.json",
+      "role": "metadata",
+      "sha256": "b0c9715628058dbde5dfc5f576d311eb05299c8a13a8aaf1e26888d4823b8e25",
+      "size": 815
+    },
+    {
+      "derived_from": [
+        {
+          "pointer": "/records/1882",
+          "source_id": "S002",
+          "source_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195"
+        },
+        {
+          "pointer": "/registered_cases/51",
+          "source_id": "S003",
+          "source_sha256": "ff9add120e8038385e6af97e2cc6278931ea5fa82aea076b2d6adad856d2a59e"
+        },
+        {
+          "pointer": "/witnesses/0",
+          "source_id": "S003",
+          "source_sha256": "ff9add120e8038385e6af97e2cc6278931ea5fa82aea076b2d6adad856d2a59e"
+        },
+        {
+          "pointer": "",
+          "source_id": "S009",
+          "source_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        {
+          "pointer": "",
+          "source_id": "S011",
+          "source_sha256": "917faebcec33a72371a55c0318ce6b96217469e850bf85de86e1b9ac52faf5f9"
+        },
+        {
+          "pointer": "",
+          "source_id": "S013",
+          "source_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        {
+          "pointer": "",
+          "source_id": "S015",
+          "source_sha256": "4afbd77782efa80eab01960eae1f994c611d989a803b7685e2610a5aba4fbe88"
+        },
+        {
+          "pointer": "",
+          "source_id": "S017",
+          "source_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        },
+        {
+          "pointer": "",
+          "source_id": "S021",
+          "source_sha256": "9836f109e908850814ab5a85364fad1b164c3cf8e6862c42acd9e97c8adf28a9"
+        }
+      ],
+      "method": "select and normalize saved case, witness and receipt fields",
+      "path": "records/case.json",
+      "role": "metadata",
+      "sha256": "e442808ff02353886d4b919dd39ac1dcbf76afd552287bb952d3812d275ad26f",
+      "size": 3561
+    },
+    {
+      "derived_from": [],
+      "method": "revised for v3",
+      "path": "README.md",
+      "role": "documentation",
+      "sha256": "cf8df3120bd8bea13c6bf92e7ee90e989f6648a4485a8f43a4331310bf17dfaa",
+      "size": 1951
+    },
+    {
+      "derived_from": [],
+      "method": "revised for v3",
+      "path": "verify.py",
+      "role": "code",
+      "sha256": "5805816135085a04e843eca16af9313f89f2a2830c63f5ebb34f28c7019207db",
+      "size": 14978
+    },
+    {
+      "derived_from": [],
+      "method": "revised for v3",
+      "path": "test_negative.py",
+      "role": "code",
+      "sha256": "1ed337a67875907cde309753adc58ba8cd80a25665cee7dd35d8e3a1aabbb436",
+      "size": 5093
+    },
+    {
+      "derived_from": [],
+      "method": "newly authored",
+      "path": "README.ja.md",
+      "role": "documentation",
+      "sha256": "38e663185055fcc266f082cd01cffc42052216483c8836ca5b2bb0c2d524d698",
+      "size": 2116
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "LICENSES/README.md",
+      "role": "license_notice",
+      "sha256": "290023c6d64c8fec850d17b173f3999a5ffd42d6756f4819aacfd3455b6befe6",
+      "size": 749
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "LICENSES/README.ja.md",
+      "role": "license_notice",
+      "sha256": "3f3cd6417b7e685cc52ec59664dc9d5f92fdb8b4930a73e2e641774643d2df3b",
+      "size": 836
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "LICENSES/Emuera1824-v24-license-original.txt",
+      "role": "license_notice",
+      "sha256": "ce1134568e4a9fd56d4831c37dceb82050009e90349394f3f05a03a668500a06",
+      "size": 1266
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "LICENSES/PyEmuera-3.0.0-LICENSE.txt",
+      "role": "license_notice",
+      "sha256": "b33bbcc5a0d1ace88bfb1d3f9443337ce4b1030a68396430c53b1563203d63f0",
+      "size": 1078
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "LICENSES/PyEmuera-3.0.0-THIRD-PARTY-NOTICES.md",
+      "role": "license_notice",
+      "sha256": "cdb1dfe80b9ffe1defc575c280ac8bd2b82d44f6c81ad50a10671f0dbf284edb",
+      "size": 5848
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "vendor/emuera/NOTICE.en.md",
+      "role": "license_notice",
+      "sha256": "7de4147b1f436cfdde867f8b3f86a06fb3d9c630b86ffa6408338f2e46b81218",
+      "size": 6196
+    },
+    {
+      "derived_from": [],
+      "method": "byte-identical display document",
+      "path": "vendor/emuera/NOTICE.ja.md",
+      "role": "license_notice",
+      "sha256": "c0cc102a92bf1c11c2a600e8a8a0fb620668eb9da3ac2b8c6af93f1f03717790",
+      "size": 6508
+    }
+  ],
+  "schema": "printdb15-private-finite-v3",
+  "scope": "One physical PRINTDB15 case, two typed roles and three saved modes only; no inference to other targets.",
+  "sources": {
+    "S001": {
+      "availability": "original_not_included",
+      "sha256": "415b84a530a87e4c5e050019a68a689dfd2c5acb2eae693d065c693cad53a44c",
+      "size": 23054496
+    },
+    "S002": {
+      "availability": "original_not_included",
+      "sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195",
+      "size": 80538288
+    },
+    "S003": {
+      "availability": "original_not_included",
+      "sha256": "ff9add120e8038385e6af97e2cc6278931ea5fa82aea076b2d6adad856d2a59e",
+      "size": 1122279
+    },
+    "S004": {
+      "availability": "original_not_included",
+      "sha256": "5240618e62bb89a4d8c7284b9f6d44cb4d333d54ff9e35414ee0d89de6edfaa3",
+      "size": 17734
+    },
+    "S005": {
+      "availability": "original_not_included",
+      "sha256": "83b4734ccee088f3309c5f1658c4a0399cbb81b1bfc3cc4258c317050f65f55e",
+      "size": 111647
+    },
+    "S006": {
+      "availability": "original_not_included",
+      "sha256": "ad49d5d820a9b766e64e4f5e22ce9de81663510bf669bc51d05eaa54fd34e898",
+      "size": 19116
+    },
+    "S007": {
+      "availability": "original_not_included",
+      "sha256": "a41de488052821e6afceed909b096af98729b6790320c80591a274e403ffb0e9",
+      "size": 112388
+    },
+    "S008": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5",
+      "size": 328
+    },
+    "S009": {
+      "availability": "original_not_included",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    "S010": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "f7aa8afa5a77f3dfdaf21096c0254e9621e80b8b55800dde58cef89f0d57d909",
+      "size": 412
+    },
+    "S011": {
+      "availability": "original_not_included",
+      "sha256": "917faebcec33a72371a55c0318ce6b96217469e850bf85de86e1b9ac52faf5f9",
+      "size": 1234
+    },
+    "S012": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5",
+      "size": 328
+    },
+    "S013": {
+      "availability": "original_not_included",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    "S014": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "f7aa8afa5a77f3dfdaf21096c0254e9621e80b8b55800dde58cef89f0d57d909",
+      "size": 412
+    },
+    "S015": {
+      "availability": "original_not_included",
+      "sha256": "4afbd77782efa80eab01960eae1f994c611d989a803b7685e2610a5aba4fbe88",
+      "size": 1234
+    },
+    "S016": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "8a79e293a57d0aaaf534085f2c1715c454fa89fbb2d973d7bc01e6a58d8289a5",
+      "size": 328
+    },
+    "S017": {
+      "availability": "original_not_included",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    "S018": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "5249e4388a1a8bb0e427b5255bb8d9ce657ab7690237bc380c341afd484dbbae",
+      "size": 192
+    },
+    "S019": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110
+    },
+    "S020": {
+      "availability": "byte_identical_copy_in_projection",
+      "sha256": "65d301cb927be6b7c08359422c844c668c4f75a627a7e5d9d2bf3f26d221d434",
+      "size": 270
+    },
+    "S021": {
+      "availability": "original_not_included",
+      "sha256": "9836f109e908850814ab5a85364fad1b164c3cf8e6862c42acd9e97c8adf28a9",
+      "size": 1563
+    }
+  }
+}

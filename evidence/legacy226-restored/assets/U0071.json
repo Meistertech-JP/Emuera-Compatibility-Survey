@@ -1,0 +1,26 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTBUTTONC"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_PRINTBUTTONC_EXISTING_20261115.json",
+  "acceptance_sha256": "816cb590f7a68e13681c23b610d8b86038a689ca55eff6b1d528c73d298fbcef",
+  "evidence_manifest_path": "evidence/buttons-printcperline-20261113-216/MANIFEST.json",
+  "evidence_manifest_sha256": "306e1999ed21a8ca7a05107d56165b2e2e4a72bb9cc52f0d224bb53a90960a4f",
+  "registered_case_ids": [
+    "BUTTONGET216_B216_7",
+    "BUTTONGET216_B216_8",
+    "BUTTONGET216_B216_9",
+    "BUTTONGET216_B216_10",
+    "BUTTONGET216_B216_11",
+    "BUTTONGET216_B216_12",
+    "BUTTONGET216_B216_13"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

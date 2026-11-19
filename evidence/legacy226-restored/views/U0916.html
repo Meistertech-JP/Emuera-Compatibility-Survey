@@ -1,0 +1,143 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0916 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0916 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:PRINTW。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;PRINTW&quot;}; native_natural_exit_observed=false; fixture件数=2。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>6bb624c01790042bff203e7864bdb677fae0b3d4810f9ddc158c24174b800886</code></p>
+<p><a href="../assets/U0916.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>6bb624c01790042bff203e7864bdb677fae0b3d4810f9ddc158c24174b800886</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;native-public-finite-command-comparison-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-13T18:05:13.485448+00:00&quot;,
+  &quot;case_ids&quot;: [
+    &quot;PRINTWEMPTYRAW01_20261114&quot;
+  ],
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;PRINTW&quot;
+  },
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+  &quot;source_archive_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+  &quot;public_source_zip_sha256&quot;: &quot;c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2&quot;,
+  &quot;fixture&quot;: {
+    &quot;path&quot;: &quot;pilot/variants/PRINTWEMPTY01/ERB/PRINTWEMPTY01.ERB&quot;,
+    &quot;sha256&quot;: &quot;6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611&quot;
+  },
+  &quot;runs&quot;: {
+    &quot;native-01&quot;: {
+      &quot;receipt&quot;: &quot;native-01/receipt.json&quot;,
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256&quot;: &quot;6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611&quot;,
+      &quot;outputlog_sha256&quot;: &quot;ebf8d146c1ec9aa082cdf7a60eb93971e28a34b99953b3fbd3f7d37ece719398&quot;,
+      &quot;selected_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;BEFORE_EMPTY_PRINTW&quot;,
+        &quot;&lt;AFTER_EMPTY_PRINTW&gt;&quot;,
+        &quot;X  Y&quot;,
+        &quot;&lt;AFTER_SPACES_PRINTW&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;
+      ],
+      &quot;desktop&quot;: &quot;PyEmueraProbe_3a585d5451494154b615f5106404b5dc&quot;,
+      &quot;pid&quot;: 20680,
+      &quot;input&quot;: &quot;empty text + Enter posted to editor on private desktop&quot;,
+      &quot;screenshots&quot;: false,
+      &quot;natural_exit&quot;: false,
+      &quot;exit_code&quot;: null
+    },
+    &quot;native-02&quot;: {
+      &quot;receipt&quot;: &quot;native-02/receipt.json&quot;,
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256&quot;: &quot;6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611&quot;,
+      &quot;outputlog_sha256&quot;: &quot;ebf8d146c1ec9aa082cdf7a60eb93971e28a34b99953b3fbd3f7d37ece719398&quot;,
+      &quot;selected_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;BEFORE_EMPTY_PRINTW&quot;,
+        &quot;&lt;AFTER_EMPTY_PRINTW&gt;&quot;,
+        &quot;X  Y&quot;,
+        &quot;&lt;AFTER_SPACES_PRINTW&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;
+      ],
+      &quot;desktop&quot;: &quot;PyEmueraProbe_5c0c7da3c45f4d18b8b6a6313f0ae637&quot;,
+      &quot;pid&quot;: 30092,
+      &quot;input&quot;: &quot;empty text + Enter posted to editor on private desktop&quot;,
+      &quot;screenshots&quot;: false,
+      &quot;natural_exit&quot;: false,
+      &quot;exit_code&quot;: null
+    },
+    &quot;public-01&quot;: {
+      &quot;receipt&quot;: &quot;public-01/receipt.json&quot;,
+      &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256&quot;: &quot;6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611&quot;,
+      &quot;outputlog_sha256&quot;: &quot;32645012e9d5a18c0b1b2cbc6f7163ba4328c7026aef15d5843672c29766cdc9&quot;,
+      &quot;selected_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;BEFORE_EMPTY_PRINTW&quot;,
+        &quot;&lt;AFTER_EMPTY_PRINTW&gt;&quot;,
+        &quot;X  Y&quot;,
+        &quot;&lt;AFTER_SPACES_PRINTW&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;
+      ],
+      &quot;returncode&quot;: 0,
+      &quot;python&quot;: &quot;3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]&quot;,
+      &quot;input&quot;: &quot;one empty stdin line&quot;
+    },
+    &quot;public-02&quot;: {
+      &quot;receipt&quot;: &quot;public-02/receipt.json&quot;,
+      &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;fixture_sha256&quot;: &quot;6f8237130f9555d784c49c11d8bbd7c354f746ba7f599268761acc329dc82611&quot;,
+      &quot;outputlog_sha256&quot;: &quot;32645012e9d5a18c0b1b2cbc6f7163ba4328c7026aef15d5843672c29766cdc9&quot;,
+      &quot;selected_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;BEFORE_EMPTY_PRINTW&quot;,
+        &quot;&lt;AFTER_EMPTY_PRINTW&gt;&quot;,
+        &quot;X  Y&quot;,
+        &quot;&lt;AFTER_SPACES_PRINTW&gt;&quot;,
+        &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;
+      ],
+      &quot;returncode&quot;: 0,
+      &quot;python&quot;: &quot;3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]&quot;,
+      &quot;input&quot;: &quot;one empty stdin line&quot;
+    }
+  },
+  &quot;selected_semantic_lines&quot;: [
+    &quot;Now Loading...&quot;,
+    &quot;BEFORE_EMPTY_PRINTW&quot;,
+    &quot;&lt;AFTER_EMPTY_PRINTW&gt;&quot;,
+    &quot;X  Y&quot;,
+    &quot;&lt;AFTER_SPACES_PRINTW&gt;&quot;,
+    &quot;RESULT=77;RESULTS=[\&quot;KEEP\&quot;]&quot;
+  ],
+  &quot;observations&quot;: [
+    &quot;Bare PRINTW after BEFORE_EMPTY_PRINTW resumed after empty Enter and reached the following-line marker in each run.&quot;,
+    &quot;PRINTL X  Y retained two internal spaces; RESULT and RESULTS sentinels matched.&quot;
+  ],
+  &quot;input_path_difference&quot;: &quot;Native used empty WM_SETTEXT and Enter keydown/up on the editor in a private desktop; public pyz received one empty stdin line. Both resumed the same wait path, though the input methods differ.&quot;,
+  &quot;raw_logs_equal_across_engines&quot;: false,
+  &quot;raw_log_equality_explanation&quot;: &quot;Native UTF-16/CRLF; public UTF-8/LF plus generic host notice. No byte-equivalence or GUI-layout claim.&quot;,
+  &quot;native_natural_exit_observed&quot;: false,
+  &quot;native_exit_code_observed&quot;: false,
+  &quot;public_returncodes&quot;: [
+    0,
+    0
+  ],
+  &quot;screenshots_taken&quot;: false,
+  &quot;global_keyboard_events&quot;: false,
+  &quot;scoped_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;product_modified&quot;: false,
+  &quot;published_artifacts_modified&quot;: false,
+  &quot;drive_originals_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0009 · command_or_syntax:PRINTW · check</li>
+</ul></html>

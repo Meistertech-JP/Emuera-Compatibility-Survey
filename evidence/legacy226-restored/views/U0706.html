@@ -1,0 +1,143 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0706 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0706 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:ONEINPUTS。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;ONEINPUTS&quot;}; classification=&quot;matched_scoped&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>7c7c74504aed87532935adf58486e168e5b843cf49f99ed9c97082c8b093d977</code></p>
+<p><a href="../assets/U0706.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>7c7c74504aed87532935adf58486e168e5b843cf49f99ed9c97082c8b093d977</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;native-public-input-boundary-comparison-1&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;ONEINPUTS&quot;
+  },
+  &quot;case_id&quot;: &quot;ONEINPUTS_ARGUMENT_BUILDER01&quot;,
+  &quot;classification&quot;: &quot;matched_scoped&quot;,
+  &quot;scope&quot;: &quot;Compare Native and public behavior for constant formatted argument text, empty quoted text, extra argument continuation, and the following INPUTS request.&quot;,
+  &quot;artifacts&quot;: {
+    &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+    &quot;native_config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+    &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+    &quot;fixture_sha256&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+  },
+  &quot;input_protocol&quot;: {
+    &quot;native&quot;: &quot;Isolated desktop; only the Native RichEdit receives Enter/character messages.&quot;,
+    &quot;public&quot;: &quot;Pinned public pyz; stdin bytes 0a0a0a380a.&quot;,
+    &quot;global_keyboard_events&quot;: false,
+    &quot;screenshots_retained&quot;: false,
+    &quot;automatic_retries&quot;: 0
+  },
+  &quot;replicates&quot;: {
+    &quot;native&quot;: 2,
+    &quot;public&quot;: 2
+  },
+  &quot;observations&quot;: {
+    &quot;shared_output_log_bytes&quot;: 632,
+    &quot;shared_output_log_sha256&quot;: &quot;0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5&quot;,
+    &quot;all_four_logs_byte_identical&quot;: true,
+    &quot;sentinels&quot;: [
+      &quot;READY_FOR_LITERAL&quot;,
+      &quot;LITERAL=[\&quot;]&quot;,
+      &quot;READY_FOR_EMPTY_CONSTANT&quot;,
+      &quot;EMPTY=[\&quot;]&quot;,
+      &quot;READY_FOR_EXTRA_ARGUMENT&quot;,
+      &quot;EXTRA=[\&quot;]&quot;,
+      &quot;INPUTS=[8]&quot;,
+      &quot;ONEINPUTS_PARSER_DONE&quot;
+    ],
+    &quot;interpreted_inputs&quot;: &quot;The ERB formatted text includes quote characters; the first logged result for each quoted form is the leading U+0022 quote. This test does not treat quote delimiters as a zero-length/value-only literal.&quot;
+  },
+  &quot;native_runs&quot;: [
+    {
+      &quot;run&quot;: 1,
+      &quot;probe_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/native-01/probe.json&quot;,
+      &quot;probe_sha256&quot;: &quot;ca7622e1a992ae6849e45dd3bcc55d7047cc747e080ca4864cd05bd7ff99db94&quot;,
+      &quot;log_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/native-01/emuera.log&quot;,
+      &quot;log_sha256&quot;: &quot;0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5&quot;,
+      &quot;markers&quot;: [
+        &quot;READY_FOR_LITERAL&quot;,
+        &quot;READY_FOR_EMPTY_CONSTANT&quot;,
+        &quot;READY_FOR_EXTRA_ARGUMENT&quot;,
+        &quot;READY_FOR_INPUTS&quot;,
+        &quot;ONEINPUTS_PARSER_DONE&quot;
+      ],
+      &quot;global_keyboard_events_sent&quot;: false,
+      &quot;closed_desktop&quot;: true,
+      &quot;input_sha256_before&quot;: {
+        &quot;ERB/ONEINPUTSBOUNDARY08.ERB&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+      },
+      &quot;input_sha256_after&quot;: {
+        &quot;ERB/ONEINPUTSBOUNDARY08.ERB&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+      },
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;native_config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;run&quot;: 2,
+      &quot;probe_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/native-02/probe.json&quot;,
+      &quot;probe_sha256&quot;: &quot;1cb6527f57b12f25b40a5e23cf44678efdc2092e94a9a8bcf800a23d7c5456bc&quot;,
+      &quot;log_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/native-02/emuera.log&quot;,
+      &quot;log_sha256&quot;: &quot;0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5&quot;,
+      &quot;markers&quot;: [
+        &quot;READY_FOR_LITERAL&quot;,
+        &quot;READY_FOR_EMPTY_CONSTANT&quot;,
+        &quot;READY_FOR_EXTRA_ARGUMENT&quot;,
+        &quot;READY_FOR_INPUTS&quot;,
+        &quot;ONEINPUTS_PARSER_DONE&quot;
+      ],
+      &quot;global_keyboard_events_sent&quot;: false,
+      &quot;closed_desktop&quot;: true,
+      &quot;input_sha256_before&quot;: {
+        &quot;ERB/ONEINPUTSBOUNDARY08.ERB&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+      },
+      &quot;input_sha256_after&quot;: {
+        &quot;ERB/ONEINPUTSBOUNDARY08.ERB&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+      },
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;native_config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    }
+  ],
+  &quot;public_runs&quot;: [
+    {
+      &quot;run&quot;: 1,
+      &quot;receipt_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/public-01/receipt.json&quot;,
+      &quot;receipt_sha256&quot;: &quot;9482d691c4378d55a31c8cd8e58f5e4fb74b9696c3464537ea2d40fcc50d4609&quot;,
+      &quot;log_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/public-01/emuera.log&quot;,
+      &quot;log_sha256&quot;: &quot;0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5&quot;,
+      &quot;stdin_hex&quot;: &quot;0a0a0a380a&quot;,
+      &quot;returncode&quot;: 0,
+      &quot;stdout_sha256&quot;: &quot;91899e86bbb2f3b08f9eadf18f87b0415aacf25355d448ec7b07ccceb694917e&quot;,
+      &quot;stderr_sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;,
+      &quot;pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;fixture_sha256&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+    },
+    {
+      &quot;run&quot;: 2,
+      &quot;receipt_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/public-02/receipt.json&quot;,
+      &quot;receipt_sha256&quot;: &quot;e02e0f9f5968b5e0eca3f7bf9f48d7040e977aca50b1a6a5d90055394e87a209&quot;,
+      &quot;log_path&quot;: &quot;evidence/oneinputs-parser-boundary-20261115/public-02/emuera.log&quot;,
+      &quot;log_sha256&quot;: &quot;0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5&quot;,
+      &quot;stdin_hex&quot;: &quot;0a0a0a380a&quot;,
+      &quot;returncode&quot;: 0,
+      &quot;stdout_sha256&quot;: &quot;afee4193106f55a7baded174605c79d974ea5ea3a335e5ce2c8d02e636f6c24d&quot;,
+      &quot;stderr_sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;,
+      &quot;pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;fixture_sha256&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;
+    }
+  ],
+  &quot;limitations&quot;: [
+    &quot;Native probe closes the isolated GUI after the final marker; Native natural process exit is not claimed.&quot;,
+    &quot;Parser warning UI text, prompt and input echo are not compared; the comparison is for continued execution and stored output log.&quot;,
+    &quot;This scoped case does not independently test malformed expression exception diagnostics or close ONEINPUTS by itself.&quot;
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0029 · command_or_syntax:ONEINPUTS · check</li>
+</ul></html>

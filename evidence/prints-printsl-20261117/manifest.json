@@ -1,0 +1,472 @@
+{
+  "schema": "prints-printsl-private-evidence-bundle-v2",
+  "scope": "Selected counted string/skip cases only; retained observations, no replay",
+  "limitations": [
+    "Not proof of complete target acceptance; historical boundary evidence and source/binary proof are not shipped.",
+    "Original historical public identity unknown remains unknown.",
+    "Native natural exit and native process exit code not observed; helper returncode is not native exit code.",
+    "No intermediate suppressed-print numeric state; SKIPDISP independently writes RESULT.",
+    "No general GUI, complete stdout, compatibility, or fresh-replay claim.",
+    "Rights and privacy review incomplete; provisional candidate; final publication review required."
+  ],
+  "cases": {
+    "PRINTS": {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTS"
+      },
+      "case_id": "PRINTS_CURRENT_PRINTS_COUNTED_SKIP_20261116",
+      "source_case_id": "PRINTS_COUNTED_SKIP",
+      "scenario": {
+        "invocation": "PRINTS_COUNTED_SKIP own command: Native2/public1, exact prepared fixture, independent processes.",
+        "fixtures_and_initial_state": "Pinned ERB/config and executable/pyz before and after. Initial A0,B71,RESULT701; RESULTS holds literal quoted KEEP.",
+        "observation_points_and_comparison": "Exact internal double spaces and selected newline, helper sequence1->12, skipped9 suppression, B/RESULT/RESULTS with SKIPDISP writes independently attributed.",
+        "scenario_verdict": "matched_scoped",
+        "limitations": "Selected finite original requirements, not full stdout/pixel equivalence. No unobserved intermediate numeric sentinel or natural Native exit inferred."
+      },
+      "comparison": {
+        "selected_outputs_and_state_equal": true,
+        "scenario_verdict": "matched_scoped"
+      },
+      "acceptance": {
+        "decision": "necessary_comparison_complete",
+        "comparison_outcome": "matched_in_finite_scope",
+        "case_ids": [
+          "PRINTS_CURRENT_PRINTS_COUNTED_SKIP_20261116",
+          "PRINTMODE_A_S_EMPTY_TYPE_20261115"
+        ],
+        "scope": "Own normal counted string/skip/sentinel behavior plus existing explicitly accepted same S/isForms=false finite empty/type guard. No arbitrary cross-command transfer.",
+        "limits": [
+          "PRINTSL integer rejection uses exact existing accepted same-builder boundary, not an invented own integer run.",
+          "Historical public identity unknown remains unknown; fresh own normal receipts establish only current evidence identity.",
+          "SKIPDISP writes RESULT; no claim of intermediate suppressed print numeric state.",
+          "Not all arities/types/rendering paths."
+        ]
+      },
+      "excluded_historical_case_ids": [
+        "PRINTSCASE01",
+        "PRINTMODE_A_S_EMPTY_TYPE_20261115"
+      ],
+      "historical_boundary_evidence": "not included; underlying acceptance relies also on a previously accepted boundary case",
+      "runs": {
+        "native-01": {
+          "mode": "native-01",
+          "case_id": "PRINTS_COUNTED_SKIP",
+          "markers": [
+            "BEFORE_PRINTS_COUNTED_SKIP",
+            "AFTER_FIRST_PRINTS A=1 B=71 R=701 RS=[\"KEEP\"]",
+            "AFTER_SKIP_PRINTS A=1 B=71 R=0 RS=[\"KEEP\"]",
+            "FINAL_PRINTS A=12 B=71 R=0 RS=[\"KEEP\"]",
+            "DONE_PRINTS_COUNTED_SKIP"
+          ],
+          "selected_output_lines": [
+            "PREFIX1[left  right]SUFFIX1",
+            "PREFIX2[left  right]SUFFIX2"
+          ],
+          "native_runner0_not_natural_exit": true,
+          "fixture": "cases/PRINTS/native-01/input/ERB/MAIN.ERB",
+          "config": "cases/PRINTS/native-01/input/emuera.config",
+          "raw": "cases/PRINTS/native-01/observation/raw.bin",
+          "stderr": "cases/PRINTS/native-01/observation/stderr.bin",
+          "receipt": "cases/PRINTS/native-01/receipt.json",
+          "probe": "cases/PRINTS/native-01/probe.json",
+          "raw_encoding": "utf-16"
+        },
+        "native-02": {
+          "mode": "native-02",
+          "case_id": "PRINTS_COUNTED_SKIP",
+          "markers": [
+            "BEFORE_PRINTS_COUNTED_SKIP",
+            "AFTER_FIRST_PRINTS A=1 B=71 R=701 RS=[\"KEEP\"]",
+            "AFTER_SKIP_PRINTS A=1 B=71 R=0 RS=[\"KEEP\"]",
+            "FINAL_PRINTS A=12 B=71 R=0 RS=[\"KEEP\"]",
+            "DONE_PRINTS_COUNTED_SKIP"
+          ],
+          "selected_output_lines": [
+            "PREFIX1[left  right]SUFFIX1",
+            "PREFIX2[left  right]SUFFIX2"
+          ],
+          "native_runner0_not_natural_exit": true,
+          "fixture": "cases/PRINTS/native-02/input/ERB/MAIN.ERB",
+          "config": "cases/PRINTS/native-02/input/emuera.config",
+          "raw": "cases/PRINTS/native-02/observation/raw.bin",
+          "stderr": "cases/PRINTS/native-02/observation/stderr.bin",
+          "receipt": "cases/PRINTS/native-02/receipt.json",
+          "probe": "cases/PRINTS/native-02/probe.json",
+          "raw_encoding": "utf-16"
+        },
+        "public-01": {
+          "mode": "public-01",
+          "case_id": "PRINTS_COUNTED_SKIP",
+          "markers": [
+            "BEFORE_PRINTS_COUNTED_SKIP",
+            "AFTER_FIRST_PRINTS A=1 B=71 R=701 RS=[\"KEEP\"]",
+            "AFTER_SKIP_PRINTS A=1 B=71 R=0 RS=[\"KEEP\"]",
+            "FINAL_PRINTS A=12 B=71 R=0 RS=[\"KEEP\"]",
+            "DONE_PRINTS_COUNTED_SKIP"
+          ],
+          "selected_output_lines": [
+            "PREFIX1[left  right]SUFFIX1",
+            "PREFIX2[left  right]SUFFIX2"
+          ],
+          "native_runner0_not_natural_exit": false,
+          "fixture": "cases/PRINTS/public-01/input/ERB/MAIN.ERB",
+          "config": "cases/PRINTS/public-01/input/emuera.config",
+          "raw": "cases/PRINTS/public-01/observation/raw.bin",
+          "stderr": "cases/PRINTS/public-01/observation/stderr.bin",
+          "receipt": "cases/PRINTS/public-01/receipt.json",
+          "probe_status": "not present in retained public run; not inferred",
+          "raw_encoding": "cp932"
+        }
+      }
+    },
+    "PRINTSL": {
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTSL"
+      },
+      "case_id": "PRINTS_CURRENT_PRINTSL_COUNTED_SKIP_20261116",
+      "source_case_id": "PRINTSL_COUNTED_SKIP",
+      "scenario": {
+        "invocation": "PRINTSL_COUNTED_SKIP own command: Native2/public1, exact prepared fixture, independent processes.",
+        "fixtures_and_initial_state": "Pinned ERB/config and executable/pyz before and after. Initial A0,B71,RESULT701; RESULTS holds literal quoted KEEP.",
+        "observation_points_and_comparison": "Exact internal double spaces and selected newline, helper sequence1->12, skipped9 suppression, B/RESULT/RESULTS with SKIPDISP writes independently attributed.",
+        "scenario_verdict": "matched_scoped",
+        "limitations": "Selected finite original requirements, not full stdout/pixel equivalence. No unobserved intermediate numeric sentinel or natural Native exit inferred."
+      },
+      "comparison": {
+        "selected_outputs_and_state_equal": true,
+        "scenario_verdict": "matched_scoped"
+      },
+      "acceptance": {
+        "decision": "necessary_comparison_complete",
+        "comparison_outcome": "matched_in_finite_scope",
+        "case_ids": [
+          "PRINTS_CURRENT_PRINTSL_COUNTED_SKIP_20261116",
+          "PRINTMODE_A_S_EMPTY_TYPE_20261115"
+        ],
+        "scope": "Own normal counted string/skip/sentinel behavior plus existing explicitly accepted same S/isForms=false finite empty/type guard. No arbitrary cross-command transfer.",
+        "limits": [
+          "PRINTSL integer rejection uses exact existing accepted same-builder boundary, not an invented own integer run.",
+          "Historical public identity unknown remains unknown; fresh own normal receipts establish only current evidence identity.",
+          "SKIPDISP writes RESULT; no claim of intermediate suppressed print numeric state.",
+          "Not all arities/types/rendering paths."
+        ]
+      },
+      "excluded_historical_case_ids": [
+        "PRINTSLCASE01",
+        "PRINTMODE_A_S_EMPTY_TYPE_20261115"
+      ],
+      "historical_boundary_evidence": "not included; underlying acceptance relies also on a previously accepted boundary case",
+      "runs": {
+        "native-01": {
+          "mode": "native-01",
+          "case_id": "PRINTSL_COUNTED_SKIP",
+          "markers": [
+            "BEFORE_PRINTSL_COUNTED_SKIP",
+            "AFTER_FIRST_PRINTSL A=1 B=71 R=701 RS=[\"KEEP\"]",
+            "AFTER_SKIP_PRINTSL A=1 B=71 R=0 RS=[\"KEEP\"]",
+            "FINAL_PRINTSL A=12 B=71 R=0 RS=[\"KEEP\"]",
+            "DONE_PRINTSL_COUNTED_SKIP"
+          ],
+          "selected_output_lines": [
+            "PREFIX1[left  right",
+            "]SUFFIX1",
+            "PREFIX2[left  right",
+            "]SUFFIX2"
+          ],
+          "native_runner0_not_natural_exit": true,
+          "fixture": "cases/PRINTSL/native-01/input/ERB/MAIN.ERB",
+          "config": "cases/PRINTSL/native-01/input/emuera.config",
+          "raw": "cases/PRINTSL/native-01/observation/raw.bin",
+          "stderr": "cases/PRINTSL/native-01/observation/stderr.bin",
+          "receipt": "cases/PRINTSL/native-01/receipt.json",
+          "probe": "cases/PRINTSL/native-01/probe.json",
+          "raw_encoding": "utf-16"
+        },
+        "native-02": {
+          "mode": "native-02",
+          "case_id": "PRINTSL_COUNTED_SKIP",
+          "markers": [
+            "BEFORE_PRINTSL_COUNTED_SKIP",
+            "AFTER_FIRST_PRINTSL A=1 B=71 R=701 RS=[\"KEEP\"]",
+            "AFTER_SKIP_PRINTSL A=1 B=71 R=0 RS=[\"KEEP\"]",
+            "FINAL_PRINTSL A=12 B=71 R=0 RS=[\"KEEP\"]",
+            "DONE_PRINTSL_COUNTED_SKIP"
+          ],
+          "selected_output_lines": [
+            "PREFIX1[left  right",
+            "]SUFFIX1",
+            "PREFIX2[left  right",
+            "]SUFFIX2"
+          ],
+          "native_runner0_not_natural_exit": true,
+          "fixture": "cases/PRINTSL/native-02/input/ERB/MAIN.ERB",
+          "config": "cases/PRINTSL/native-02/input/emuera.config",
+          "raw": "cases/PRINTSL/native-02/observation/raw.bin",
+          "stderr": "cases/PRINTSL/native-02/observation/stderr.bin",
+          "receipt": "cases/PRINTSL/native-02/receipt.json",
+          "probe": "cases/PRINTSL/native-02/probe.json",
+          "raw_encoding": "utf-16"
+        },
+        "public-01": {
+          "mode": "public-01",
+          "case_id": "PRINTSL_COUNTED_SKIP",
+          "markers": [
+            "BEFORE_PRINTSL_COUNTED_SKIP",
+            "AFTER_FIRST_PRINTSL A=1 B=71 R=701 RS=[\"KEEP\"]",
+            "AFTER_SKIP_PRINTSL A=1 B=71 R=0 RS=[\"KEEP\"]",
+            "FINAL_PRINTSL A=12 B=71 R=0 RS=[\"KEEP\"]",
+            "DONE_PRINTSL_COUNTED_SKIP"
+          ],
+          "selected_output_lines": [
+            "PREFIX1[left  right",
+            "]SUFFIX1",
+            "PREFIX2[left  right",
+            "]SUFFIX2"
+          ],
+          "native_runner0_not_natural_exit": false,
+          "fixture": "cases/PRINTSL/public-01/input/ERB/MAIN.ERB",
+          "config": "cases/PRINTSL/public-01/input/emuera.config",
+          "raw": "cases/PRINTSL/public-01/observation/raw.bin",
+          "stderr": "cases/PRINTSL/public-01/observation/stderr.bin",
+          "receipt": "cases/PRINTSL/public-01/receipt.json",
+          "probe_status": "not present in retained public run; not inferred",
+          "raw_encoding": "cp932"
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "LICENSES/Emuera1824-v24-license-original.txt",
+      "sha256": "ce1134568e4a9fd56d4831c37dceb82050009e90349394f3f05a03a668500a06",
+      "size": 1266
+    },
+    {
+      "path": "LICENSES/PyEmuera-3.0.0-LICENSE.txt",
+      "sha256": "b33bbcc5a0d1ace88bfb1d3f9443337ce4b1030a68396430c53b1563203d63f0",
+      "size": 1078
+    },
+    {
+      "path": "LICENSES/PyEmuera-3.0.0-THIRD-PARTY-NOTICES.md",
+      "sha256": "cdb1dfe80b9ffe1defc575c280ac8bd2b82d44f6c81ad50a10671f0dbf284edb",
+      "size": 5848
+    },
+    {
+      "path": "LICENSES/README.ja.md",
+      "sha256": "3f3cd6417b7e685cc52ec59664dc9d5f92fdb8b4930a73e2e641774643d2df3b",
+      "size": 836
+    },
+    {
+      "path": "LICENSES/README.md",
+      "sha256": "290023c6d64c8fec850d17b173f3999a5ffd42d6756f4819aacfd3455b6befe6",
+      "size": 749
+    },
+    {
+      "path": "README.ja.md",
+      "sha256": "ef65ec2362295b8f7fbdfd8dedf7b962f0673e1f4fe60c75a2fa2aabced47c87",
+      "size": 3550
+    },
+    {
+      "path": "README.md",
+      "sha256": "64739375850ae6e33830e3724fb3bb2acf57369d530fdc132b0b184de7ad4470",
+      "size": 3336
+    },
+    {
+      "path": "cases/PRINTS/native-01/input/ERB/MAIN.ERB",
+      "sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "size": 539
+    },
+    {
+      "path": "cases/PRINTS/native-01/input/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    {
+      "path": "cases/PRINTS/native-01/observation/raw.bin",
+      "sha256": "7dae8c447a3e181c052e56e25f5cc750b312f8ca21d38525c8f8a577c471f15e",
+      "size": 520
+    },
+    {
+      "path": "cases/PRINTS/native-01/observation/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "cases/PRINTS/native-01/probe.json",
+      "sha256": "40c007e205a28b8e59df73a370629bba7bc43c67a00265eb69e6f9c1518b0aae",
+      "size": 512
+    },
+    {
+      "path": "cases/PRINTS/native-01/receipt.json",
+      "sha256": "fe7b25a2859565e15106e25a4cfb7133c1967c60f9b60c361816b4edebd10ddb",
+      "size": 911
+    },
+    {
+      "path": "cases/PRINTS/native-02/input/ERB/MAIN.ERB",
+      "sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "size": 539
+    },
+    {
+      "path": "cases/PRINTS/native-02/input/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    {
+      "path": "cases/PRINTS/native-02/observation/raw.bin",
+      "sha256": "7dae8c447a3e181c052e56e25f5cc750b312f8ca21d38525c8f8a577c471f15e",
+      "size": 520
+    },
+    {
+      "path": "cases/PRINTS/native-02/observation/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "cases/PRINTS/native-02/probe.json",
+      "sha256": "40c007e205a28b8e59df73a370629bba7bc43c67a00265eb69e6f9c1518b0aae",
+      "size": 512
+    },
+    {
+      "path": "cases/PRINTS/native-02/receipt.json",
+      "sha256": "6288c1f3d27f26b9e37688430f81eb7c434010e01d1f1e50809d275ae83f8a92",
+      "size": 911
+    },
+    {
+      "path": "cases/PRINTS/public-01/input/ERB/MAIN.ERB",
+      "sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "size": 539
+    },
+    {
+      "path": "cases/PRINTS/public-01/input/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    {
+      "path": "cases/PRINTS/public-01/observation/raw.bin",
+      "sha256": "278c0f98606b1230b648109998d24718c12c1f54ebf9d025a992cbdac73622e1",
+      "size": 317
+    },
+    {
+      "path": "cases/PRINTS/public-01/observation/stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110
+    },
+    {
+      "path": "cases/PRINTS/public-01/receipt.json",
+      "sha256": "50b6438f2b2577cd0b0624067691bde4f7a53819496651bd74d0468669816ec4",
+      "size": 725
+    },
+    {
+      "path": "cases/PRINTSL/native-01/input/ERB/MAIN.ERB",
+      "sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "size": 547
+    },
+    {
+      "path": "cases/PRINTSL/native-01/input/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    {
+      "path": "cases/PRINTSL/native-01/observation/raw.bin",
+      "sha256": "0eccd82c21d6634d2b48b924e801b5b71a23ebb33ad414aed31eb79e390d4f7a",
+      "size": 538
+    },
+    {
+      "path": "cases/PRINTSL/native-01/observation/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "cases/PRINTSL/native-01/probe.json",
+      "sha256": "cc0fa44d0adc5d4e4aaa62cdae5b32937a72d612247419c5952c8a1a3d38fea7",
+      "size": 512
+    },
+    {
+      "path": "cases/PRINTSL/native-01/receipt.json",
+      "sha256": "915519d3157a2fe43f682bd8aa1de52eace5a8c2087deb59bf25e61e61625610",
+      "size": 912
+    },
+    {
+      "path": "cases/PRINTSL/native-02/input/ERB/MAIN.ERB",
+      "sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "size": 547
+    },
+    {
+      "path": "cases/PRINTSL/native-02/input/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    {
+      "path": "cases/PRINTSL/native-02/observation/raw.bin",
+      "sha256": "0eccd82c21d6634d2b48b924e801b5b71a23ebb33ad414aed31eb79e390d4f7a",
+      "size": 538
+    },
+    {
+      "path": "cases/PRINTSL/native-02/observation/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "cases/PRINTSL/native-02/probe.json",
+      "sha256": "cc0fa44d0adc5d4e4aaa62cdae5b32937a72d612247419c5952c8a1a3d38fea7",
+      "size": 512
+    },
+    {
+      "path": "cases/PRINTSL/native-02/receipt.json",
+      "sha256": "4d5293aca83327a07755035c48ed696b24dfe5afe4b1f9afefbcfc25f90ba5f4",
+      "size": 912
+    },
+    {
+      "path": "cases/PRINTSL/public-01/input/ERB/MAIN.ERB",
+      "sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "size": 547
+    },
+    {
+      "path": "cases/PRINTSL/public-01/input/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "size": 2164
+    },
+    {
+      "path": "cases/PRINTSL/public-01/observation/raw.bin",
+      "sha256": "d81cd385ebc0cb0cdc8d00d05e40565c825560f16665785a03cf9c402221d6a8",
+      "size": 326
+    },
+    {
+      "path": "cases/PRINTSL/public-01/observation/stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110
+    },
+    {
+      "path": "cases/PRINTSL/public-01/receipt.json",
+      "sha256": "4c5efe450ac0b9a9ff80e2a787cccba8af2414f54471a62bea93386e005742d6",
+      "size": 726
+    },
+    {
+      "path": "negative_checks.py",
+      "sha256": "f816208a5b3ef2387c7f70d2d71bdd08b878e8abc8df6d85828e43db8220f4af",
+      "size": 6081
+    },
+    {
+      "path": "role-bindings.json",
+      "sha256": "45d16c506754761144467b42b635b7a3eb8637dfdd5cb435b490443737f139b5",
+      "size": 15087
+    },
+    {
+      "path": "vendor/emuera/NOTICE.en.md",
+      "sha256": "7de4147b1f436cfdde867f8b3f86a06fb3d9c630b86ffa6408338f2e46b81218",
+      "size": 6196
+    },
+    {
+      "path": "vendor/emuera/NOTICE.ja.md",
+      "sha256": "c0cc102a92bf1c11c2a600e8a8a0fb620668eb9da3ac2b8c6af93f1f03717790",
+      "size": 6508
+    },
+    {
+      "path": "verify.py",
+      "sha256": "14c94cc0eff8f37b67eaf124e0e82573c877e754bbbbd90e410474fae230e8c9",
+      "size": 8081
+    }
+  ]
+}

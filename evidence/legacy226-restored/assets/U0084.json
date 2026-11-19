@@ -1,0 +1,43 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:08.058162+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ADDCOPYCHARA"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "26968fab6de5c12b14fa18167eaa18aa32d29990ebc7db59aeb0fd94ada60b0b",
+  "case_ids": [
+    "ARGBOUND245_empty",
+    "ARGBOUND245_hole_middle",
+    "ARGBOUND245_string_numeric",
+    "ARGBOUND245_trailing_hole",
+    "ARGBOUND245_triple",
+    "BOUNDARY241_addcopy_dynamic_growth_retry",
+    "BOUNDARY241_addcopy_invalid_then_helper_retry",
+    "BOUNDARY241_addcopy_valid_then_invalid_retry",
+    "BOUNDARY244_minimal_multiple_sources"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "ARGBOUND245_empty: No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+    "ARGBOUND245_hole_middle: No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+    "ARGBOUND245_string_numeric: No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+    "ARGBOUND245_trailing_hole: No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+    "ARGBOUND245_triple: No post-error hidden character state or all parser/builders generalization. Native exported log vs public stdout layouts kept distinct. Unexecuted-invalid cases only prove delayed rejection for these branches.; Source authority is SOURCE_CONTRACT_CURRENT, original prediction/corrections retained. Native own cleanup distinct from natural exit.",
+    "BOUNDARY241_addcopy_dynamic_growth_retry: Selected NO, NAME, CFLAG[1], CSTR[0], CHARANUM, RESULT, TARGET/MASTER/ASSI and helper counters only. Error post-state is unobserved unless a helper checkpoint precedes it. No GUI, natural-exit parity or universal semantics claim. Native row returncode0 is controller exit, not natural engine success; own process probe defines lifecycle.",
+    "BOUNDARY241_addcopy_invalid_then_helper_retry: Selected NO, NAME, CFLAG[1], CSTR[0], CHARANUM, RESULT, TARGET/MASTER/ASSI and helper counters only. Error post-state is unobserved unless a helper checkpoint precedes it. No GUI, natural-exit parity or universal semantics claim. Native row returncode0 is controller exit, not natural engine success; own process probe defines lifecycle.",
+    "BOUNDARY241_addcopy_valid_then_invalid_retry: Selected NO, NAME, CFLAG[1], CSTR[0], CHARANUM, RESULT, TARGET/MASTER/ASSI and helper counters only. Error post-state is unobserved unless a helper checkpoint precedes it. No GUI, natural-exit parity or universal semantics claim. Native row returncode0 is controller exit, not natural engine success; own process probe defines lifecycle.",
+    "BOUNDARY244_minimal_multiple_sources: Only arity/continuation/count minimal witness; no helper order/post-error state claimed from this minimal fixture. See case241 for independent helper state/evaluation witness. No product fix."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "ca027e5daf879b5b42c8045d9b6a90389fc6bd061d2dc9efb3e70af1ab3bf31f",
+  "independent_semantic_review_sha256": "b99f614fe95e9a92b9463c660267def0ac1915b7f643bd61a1e4a6fe4bfa971e",
+  "independent_semantic_results_sha256": "522daae4bf8457a4967a76902ac676c13e54dd485538a0ac570baf5d8e26e5b3",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

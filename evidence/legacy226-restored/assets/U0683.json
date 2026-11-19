@@ -1,0 +1,5335 @@
+{
+  "case": 201,
+  "conditions": 20,
+  "fixture_processes": 3,
+  "summary": {
+    "raw": 20,
+    "layout": 20,
+    "value": 20,
+    "state": 20,
+    "evaluation": 20,
+    "native_repeat_equal": 20
+  },
+  "raw_logs": {
+    "native-01": {
+      "path": "native-01/emuera.log",
+      "sha256": "30d21c97eba0814ee24d98e7b442b5e40ad5d6bc3232993e83c9c2b58b7af0b8",
+      "size": 9340
+    },
+    "native-02": {
+      "path": "native-02/emuera.log",
+      "sha256": "30d21c97eba0814ee24d98e7b442b5e40ad5d6bc3232993e83c9c2b58b7af0b8",
+      "size": 9340
+    },
+    "public-01": {
+      "path": "public-01/.pyemuera/logs/emuera.log",
+      "sha256": "30d21c97eba0814ee24d98e7b442b5e40ad5d6bc3232993e83c9c2b58b7af0b8",
+      "size": 9340
+    }
+  },
+  "rows": [
+    {
+      "condition": {
+        "id": "C201_01",
+        "kind": "escape-expression-ordinary",
+        "input": "abc 123",
+        "command": "ZZ201V '= HTML_ESCAPE(ZZ201S(1))",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "abc 123",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "abc 123",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_01_BEGIN\r\nVALUE=[abc 123]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[abc 123]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_01_END\r\n",
+            "sha256_utf16le_no_bom": "50ab9d20e30e7ee806a39c7ab30c9e77720868488ce5793376c1dc89ea690c95"
+          },
+          "layout": {
+            "rows": [
+              "C201_01_BEGIN",
+              "VALUE=[abc 123]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[abc 123]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_01_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "abc 123",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "abc 123",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "abc 123",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_01_BEGIN\r\nVALUE=[abc 123]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[abc 123]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_01_END\r\n",
+            "sha256_utf16le_no_bom": "50ab9d20e30e7ee806a39c7ab30c9e77720868488ce5793376c1dc89ea690c95"
+          },
+          "layout": {
+            "rows": [
+              "C201_01_BEGIN",
+              "VALUE=[abc 123]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[abc 123]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_01_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "abc 123",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "abc 123",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "abc 123",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_01_BEGIN\r\nVALUE=[abc 123]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[abc 123]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_01_END\r\n",
+            "sha256_utf16le_no_bom": "50ab9d20e30e7ee806a39c7ab30c9e77720868488ce5793376c1dc89ea690c95"
+          },
+          "layout": {
+            "rows": [
+              "C201_01_BEGIN",
+              "VALUE=[abc 123]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[abc 123]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_01_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "abc 123",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "abc 123",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "abc 123",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_02",
+        "kind": "escape-command-ordinary",
+        "input": "abc 123",
+        "command": "HTML_ESCAPE ZZ201S(1)",
+        "setup": [
+          "ZZ201V = V0"
+        ]
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "abc 123",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "abc 123",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_02_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[abc 123]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[abc 123]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_02_END\r\n",
+            "sha256_utf16le_no_bom": "431d233fc16671f1ff8a9680cc18c9702db5ea63f01275aa73d74756af57fe15"
+          },
+          "layout": {
+            "rows": [
+              "C201_02_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[abc 123]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[abc 123]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_02_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "abc 123",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "abc 123",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "abc 123",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_02_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[abc 123]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[abc 123]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_02_END\r\n",
+            "sha256_utf16le_no_bom": "431d233fc16671f1ff8a9680cc18c9702db5ea63f01275aa73d74756af57fe15"
+          },
+          "layout": {
+            "rows": [
+              "C201_02_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[abc 123]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[abc 123]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_02_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "abc 123",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "abc 123",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "abc 123",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_02_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[abc 123]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[abc 123]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_02_END\r\n",
+            "sha256_utf16le_no_bom": "431d233fc16671f1ff8a9680cc18c9702db5ea63f01275aa73d74756af57fe15"
+          },
+          "layout": {
+            "rows": [
+              "C201_02_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[abc 123]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[abc 123]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_02_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "abc 123",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "abc 123",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "abc 123",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_03",
+        "kind": "escape-expression-empty",
+        "input": "",
+        "command": "ZZ201V '= HTML_ESCAPE(ZZ201S(1))",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_03_BEGIN\r\nVALUE=[]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_03_END\r\n",
+            "sha256_utf16le_no_bom": "bdc649f07a339e946e7d9b9c04b7eaf6fde4db8c7f32d7e061982719952bacb1"
+          },
+          "layout": {
+            "rows": [
+              "C201_03_BEGIN",
+              "VALUE=[]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_03_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_03_BEGIN\r\nVALUE=[]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_03_END\r\n",
+            "sha256_utf16le_no_bom": "bdc649f07a339e946e7d9b9c04b7eaf6fde4db8c7f32d7e061982719952bacb1"
+          },
+          "layout": {
+            "rows": [
+              "C201_03_BEGIN",
+              "VALUE=[]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_03_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_03_BEGIN\r\nVALUE=[]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_03_END\r\n",
+            "sha256_utf16le_no_bom": "bdc649f07a339e946e7d9b9c04b7eaf6fde4db8c7f32d7e061982719952bacb1"
+          },
+          "layout": {
+            "rows": [
+              "C201_03_BEGIN",
+              "VALUE=[]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_03_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_04",
+        "kind": "escape-command-empty",
+        "input": "",
+        "command": "HTML_ESCAPE ZZ201S(1)",
+        "setup": [
+          "ZZ201V = V0"
+        ]
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_04_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_04_END\r\n",
+            "sha256_utf16le_no_bom": "e2c06eaeed6b290ca04b0d5816a8dccae97f7a8095b06380bd06256a1b15f7f0"
+          },
+          "layout": {
+            "rows": [
+              "C201_04_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_04_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_04_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_04_END\r\n",
+            "sha256_utf16le_no_bom": "e2c06eaeed6b290ca04b0d5816a8dccae97f7a8095b06380bd06256a1b15f7f0"
+          },
+          "layout": {
+            "rows": [
+              "C201_04_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_04_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_04_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_04_END\r\n",
+            "sha256_utf16le_no_bom": "e2c06eaeed6b290ca04b0d5816a8dccae97f7a8095b06380bd06256a1b15f7f0"
+          },
+          "layout": {
+            "rows": [
+              "C201_04_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_04_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_05",
+        "kind": "escape-expression-angle",
+        "input": "<a>",
+        "command": "ZZ201V '= HTML_ESCAPE(ZZ201S(1))",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "&lt;a&gt;",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "<a>",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_05_BEGIN\r\nVALUE=[&lt;a&gt;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[<a>]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_05_END\r\n",
+            "sha256_utf16le_no_bom": "37c71d09b62269acd905106545fa2eb0989d34f1ae00f4469632e2f6a1ef081c"
+          },
+          "layout": {
+            "rows": [
+              "C201_05_BEGIN",
+              "VALUE=[&lt;a&gt;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[<a>]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_05_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&lt;a&gt;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "&lt;a&gt;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "<a>",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_05_BEGIN\r\nVALUE=[&lt;a&gt;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[<a>]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_05_END\r\n",
+            "sha256_utf16le_no_bom": "37c71d09b62269acd905106545fa2eb0989d34f1ae00f4469632e2f6a1ef081c"
+          },
+          "layout": {
+            "rows": [
+              "C201_05_BEGIN",
+              "VALUE=[&lt;a&gt;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[<a>]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_05_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&lt;a&gt;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "&lt;a&gt;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "<a>",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_05_BEGIN\r\nVALUE=[&lt;a&gt;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[<a>]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_05_END\r\n",
+            "sha256_utf16le_no_bom": "37c71d09b62269acd905106545fa2eb0989d34f1ae00f4469632e2f6a1ef081c"
+          },
+          "layout": {
+            "rows": [
+              "C201_05_BEGIN",
+              "VALUE=[&lt;a&gt;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[<a>]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_05_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&lt;a&gt;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "&lt;a&gt;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "<a>",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_06",
+        "kind": "escape-command-angle",
+        "input": "<a>",
+        "command": "HTML_ESCAPE ZZ201S(1)",
+        "setup": [
+          "ZZ201V = V0"
+        ]
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "&lt;a&gt;",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "<a>",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_06_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[&lt;a&gt;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[<a>]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_06_END\r\n",
+            "sha256_utf16le_no_bom": "d6d0d71584b2f125e530ce1bf7704792321a9fab35641e133ec4773e3c72bca7"
+          },
+          "layout": {
+            "rows": [
+              "C201_06_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[&lt;a&gt;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[<a>]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_06_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&lt;a&gt;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&lt;a&gt;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "<a>",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_06_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[&lt;a&gt;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[<a>]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_06_END\r\n",
+            "sha256_utf16le_no_bom": "d6d0d71584b2f125e530ce1bf7704792321a9fab35641e133ec4773e3c72bca7"
+          },
+          "layout": {
+            "rows": [
+              "C201_06_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[&lt;a&gt;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[<a>]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_06_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&lt;a&gt;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&lt;a&gt;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "<a>",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_06_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[&lt;a&gt;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[<a>]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_06_END\r\n",
+            "sha256_utf16le_no_bom": "d6d0d71584b2f125e530ce1bf7704792321a9fab35641e133ec4773e3c72bca7"
+          },
+          "layout": {
+            "rows": [
+              "C201_06_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[&lt;a&gt;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[<a>]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_06_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&lt;a&gt;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&lt;a&gt;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "<a>",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_07",
+        "kind": "escape-expression-amp",
+        "input": "&amp;&",
+        "command": "ZZ201V '= HTML_ESCAPE(ZZ201S(1))",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "&amp;amp;&amp;",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "&amp;&",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_07_BEGIN\r\nVALUE=[&amp;amp;&amp;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&amp;&]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_07_END\r\n",
+            "sha256_utf16le_no_bom": "778a3fb02187a56a776345f38cd413fa8708887e7a2150e5acd2184afdc9ffff"
+          },
+          "layout": {
+            "rows": [
+              "C201_07_BEGIN",
+              "VALUE=[&amp;amp;&amp;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&amp;&]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_07_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&amp;amp;&amp;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "&amp;amp;&amp;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&amp;&",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_07_BEGIN\r\nVALUE=[&amp;amp;&amp;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&amp;&]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_07_END\r\n",
+            "sha256_utf16le_no_bom": "778a3fb02187a56a776345f38cd413fa8708887e7a2150e5acd2184afdc9ffff"
+          },
+          "layout": {
+            "rows": [
+              "C201_07_BEGIN",
+              "VALUE=[&amp;amp;&amp;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&amp;&]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_07_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&amp;amp;&amp;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "&amp;amp;&amp;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&amp;&",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_07_BEGIN\r\nVALUE=[&amp;amp;&amp;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&amp;&]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_07_END\r\n",
+            "sha256_utf16le_no_bom": "778a3fb02187a56a776345f38cd413fa8708887e7a2150e5acd2184afdc9ffff"
+          },
+          "layout": {
+            "rows": [
+              "C201_07_BEGIN",
+              "VALUE=[&amp;amp;&amp;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&amp;&]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_07_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&amp;amp;&amp;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "&amp;amp;&amp;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&amp;&",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_08",
+        "kind": "escape-command-amp",
+        "input": "&amp;&",
+        "command": "HTML_ESCAPE ZZ201S(1)",
+        "setup": [
+          "ZZ201V = V0"
+        ]
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "&amp;amp;&amp;",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "&amp;&",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_08_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[&amp;amp;&amp;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&amp;&]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_08_END\r\n",
+            "sha256_utf16le_no_bom": "9a8b664c9d04fbd5c4f0a42ab3311d22f207c6ad6096f663e74d8b2d3c2437f1"
+          },
+          "layout": {
+            "rows": [
+              "C201_08_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[&amp;amp;&amp;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&amp;&]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_08_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&amp;amp;&amp;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&amp;amp;&amp;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&amp;&",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_08_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[&amp;amp;&amp;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&amp;&]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_08_END\r\n",
+            "sha256_utf16le_no_bom": "9a8b664c9d04fbd5c4f0a42ab3311d22f207c6ad6096f663e74d8b2d3c2437f1"
+          },
+          "layout": {
+            "rows": [
+              "C201_08_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[&amp;amp;&amp;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&amp;&]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_08_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&amp;amp;&amp;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&amp;amp;&amp;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&amp;&",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_08_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[&amp;amp;&amp;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&amp;&]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_08_END\r\n",
+            "sha256_utf16le_no_bom": "9a8b664c9d04fbd5c4f0a42ab3311d22f207c6ad6096f663e74d8b2d3c2437f1"
+          },
+          "layout": {
+            "rows": [
+              "C201_08_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[&amp;amp;&amp;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&amp;&]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_08_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "&amp;amp;&amp;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&amp;amp;&amp;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&amp;&",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_09",
+        "kind": "escape-expression-Japanese-quotes",
+        "input": "日本語\"'",
+        "command": "ZZ201V '= HTML_ESCAPE(ZZ201S(1))",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "日本語&quot;&apos;",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "日本語\"'",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_09_BEGIN\r\nVALUE=[日本語&quot;&apos;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語\"']\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_09_END\r\n",
+            "sha256_utf16le_no_bom": "5ee686731eb2be99e3939a3e4e9486dfab64399e134f978699173d1f7010cfe1"
+          },
+          "layout": {
+            "rows": [
+              "C201_09_BEGIN",
+              "VALUE=[日本語&quot;&apos;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語\"']",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_09_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "日本語&quot;&apos;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "日本語&quot;&apos;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語\"'",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_09_BEGIN\r\nVALUE=[日本語&quot;&apos;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語\"']\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_09_END\r\n",
+            "sha256_utf16le_no_bom": "5ee686731eb2be99e3939a3e4e9486dfab64399e134f978699173d1f7010cfe1"
+          },
+          "layout": {
+            "rows": [
+              "C201_09_BEGIN",
+              "VALUE=[日本語&quot;&apos;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語\"']",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_09_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "日本語&quot;&apos;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "日本語&quot;&apos;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語\"'",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_09_BEGIN\r\nVALUE=[日本語&quot;&apos;]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語\"']\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_09_END\r\n",
+            "sha256_utf16le_no_bom": "5ee686731eb2be99e3939a3e4e9486dfab64399e134f978699173d1f7010cfe1"
+          },
+          "layout": {
+            "rows": [
+              "C201_09_BEGIN",
+              "VALUE=[日本語&quot;&apos;]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語\"']",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_09_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "日本語&quot;&apos;",
+            "destination": "ZZ201V:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "日本語&quot;&apos;",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語\"'",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_10",
+        "kind": "escape-command-Japanese-quotes",
+        "input": "日本語\"'",
+        "command": "HTML_ESCAPE ZZ201S(1)",
+        "setup": [
+          "ZZ201V = V0"
+        ]
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "日本語&quot;&apos;",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "日本語\"'",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 1
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_10_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[日本語&quot;&apos;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語\"']\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_10_END\r\n",
+            "sha256_utf16le_no_bom": "f746966c5856499edf7c88997574757e851af94c388f2c9825ef55146f221b29"
+          },
+          "layout": {
+            "rows": [
+              "C201_10_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[日本語&quot;&apos;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語\"']",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_10_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "日本語&quot;&apos;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "日本語&quot;&apos;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語\"'",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_10_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[日本語&quot;&apos;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語\"']\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_10_END\r\n",
+            "sha256_utf16le_no_bom": "f746966c5856499edf7c88997574757e851af94c388f2c9825ef55146f221b29"
+          },
+          "layout": {
+            "rows": [
+              "C201_10_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[日本語&quot;&apos;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語\"']",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_10_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "日本語&quot;&apos;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "日本語&quot;&apos;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語\"'",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_10_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=704\r\nEVAL A=1 B=1\r\nS0=[日本語&quot;&apos;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語\"']\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_10_END\r\n",
+            "sha256_utf16le_no_bom": "f746966c5856499edf7c88997574757e851af94c388f2c9825ef55146f221b29"
+          },
+          "layout": {
+            "rows": [
+              "C201_10_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=704",
+              "EVAL A=1 B=1",
+              "S0=[日本語&quot;&apos;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語\"']",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_10_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "escaped_value": "日本語&quot;&apos;",
+            "destination": "RESULTS:0"
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "日本語&quot;&apos;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語\"'",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 1
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_11",
+        "kind": "split-ordinary-Japanese",
+        "input": "日本語 abc > tail",
+        "command": "HTML_TAGSPLIT ZZ201S(3)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "日本語 abc > tail",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "日本語 abc > tail",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 1,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_11_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[日本語 abc > tail]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語 abc > tail]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_11_END\r\n",
+            "sha256_utf16le_no_bom": "b94a6cb6d39b3c1e432411f48a52de6c545feebe3a8ba89b439de0e51d520eed"
+          },
+          "layout": {
+            "rows": [
+              "C201_11_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[日本語 abc > tail]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語 abc > tail]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_11_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "日本語 abc > tail"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "日本語 abc > tail",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語 abc > tail",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_11_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[日本語 abc > tail]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語 abc > tail]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_11_END\r\n",
+            "sha256_utf16le_no_bom": "b94a6cb6d39b3c1e432411f48a52de6c545feebe3a8ba89b439de0e51d520eed"
+          },
+          "layout": {
+            "rows": [
+              "C201_11_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[日本語 abc > tail]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語 abc > tail]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_11_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "日本語 abc > tail"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "日本語 abc > tail",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語 abc > tail",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_11_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[日本語 abc > tail]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[日本語 abc > tail]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_11_END\r\n",
+            "sha256_utf16le_no_bom": "b94a6cb6d39b3c1e432411f48a52de6c545feebe3a8ba89b439de0e51d520eed"
+          },
+          "layout": {
+            "rows": [
+              "C201_11_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[日本語 abc > tail]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[日本語 abc > tail]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_11_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "日本語 abc > tail"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "日本語 abc > tail",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "日本語 abc > tail",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_12",
+        "kind": "split-empty",
+        "input": "",
+        "command": "HTML_TAGSPLIT ZZ201S(3)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 0,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_12_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=0 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_12_END\r\n",
+            "sha256_utf16le_no_bom": "9e04b1fa8699e14a5412cca1b11137bfbc6b1537b7654450313bf41d74bae57f"
+          },
+          "layout": {
+            "rows": [
+              "C201_12_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=0 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_12_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 0,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 0,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_12_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=0 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_12_END\r\n",
+            "sha256_utf16le_no_bom": "9e04b1fa8699e14a5412cca1b11137bfbc6b1537b7654450313bf41d74bae57f"
+          },
+          "layout": {
+            "rows": [
+              "C201_12_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=0 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_12_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 0,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 0,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_12_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=0 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_12_END\r\n",
+            "sha256_utf16le_no_bom": "9e04b1fa8699e14a5412cca1b11137bfbc6b1537b7654450313bf41d74bae57f"
+          },
+          "layout": {
+            "rows": [
+              "C201_12_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=0 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_12_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 0,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 0,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_13",
+        "kind": "split-actual-tags",
+        "input": "pre<b>中</b><br>tail",
+        "command": "HTML_TAGSPLIT ZZ201S(3)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "pre",
+          "S1": "<b>",
+          "S2": "中",
+          "S3": "</b>",
+          "S4": "<br>",
+          "S5": "tail",
+          "S9": "pre<b>中</b><br>tail",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 6,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_13_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=6 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[pre]\r\nS1=[<b>]\r\nS2=[中]\r\nS3=[</b>]\r\nS4=[<br>]\r\nS5=[tail]\r\nS9=[pre<b>中</b><br>tail]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_13_END\r\n",
+            "sha256_utf16le_no_bom": "4d2954d9e7f6670049de17029466ac91234bd52f98e34a2328fad9f49c09a117"
+          },
+          "layout": {
+            "rows": [
+              "C201_13_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=6 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[pre]",
+              "S1=[<b>]",
+              "S2=[中]",
+              "S3=[</b>]",
+              "S4=[<br>]",
+              "S5=[tail]",
+              "S9=[pre<b>中</b><br>tail]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_13_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 6,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "pre",
+              "<b>",
+              "中",
+              "</b>",
+              "<br>",
+              "tail"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 6,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "pre",
+              "S1": "<b>",
+              "S2": "中",
+              "S3": "</b>",
+              "S4": "<br>",
+              "S5": "tail",
+              "S9": "pre<b>中</b><br>tail",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_13_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=6 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[pre]\r\nS1=[<b>]\r\nS2=[中]\r\nS3=[</b>]\r\nS4=[<br>]\r\nS5=[tail]\r\nS9=[pre<b>中</b><br>tail]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_13_END\r\n",
+            "sha256_utf16le_no_bom": "4d2954d9e7f6670049de17029466ac91234bd52f98e34a2328fad9f49c09a117"
+          },
+          "layout": {
+            "rows": [
+              "C201_13_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=6 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[pre]",
+              "S1=[<b>]",
+              "S2=[中]",
+              "S3=[</b>]",
+              "S4=[<br>]",
+              "S5=[tail]",
+              "S9=[pre<b>中</b><br>tail]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_13_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 6,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "pre",
+              "<b>",
+              "中",
+              "</b>",
+              "<br>",
+              "tail"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 6,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "pre",
+              "S1": "<b>",
+              "S2": "中",
+              "S3": "</b>",
+              "S4": "<br>",
+              "S5": "tail",
+              "S9": "pre<b>中</b><br>tail",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_13_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=6 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[pre]\r\nS1=[<b>]\r\nS2=[中]\r\nS3=[</b>]\r\nS4=[<br>]\r\nS5=[tail]\r\nS9=[pre<b>中</b><br>tail]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_13_END\r\n",
+            "sha256_utf16le_no_bom": "4d2954d9e7f6670049de17029466ac91234bd52f98e34a2328fad9f49c09a117"
+          },
+          "layout": {
+            "rows": [
+              "C201_13_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=6 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[pre]",
+              "S1=[<b>]",
+              "S2=[中]",
+              "S3=[</b>]",
+              "S4=[<br>]",
+              "S5=[tail]",
+              "S9=[pre<b>中</b><br>tail]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_13_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 6,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "pre",
+              "<b>",
+              "中",
+              "</b>",
+              "<br>",
+              "tail"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 6,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "pre",
+              "S1": "<b>",
+              "S2": "中",
+              "S3": "</b>",
+              "S4": "<br>",
+              "S5": "tail",
+              "S9": "pre<b>中</b><br>tail",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_14",
+        "kind": "split-entity",
+        "input": "&lt;b&gt;&amp;",
+        "command": "HTML_TAGSPLIT ZZ201S(3)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "&lt;b&gt;&amp;",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "&lt;b&gt;&amp;",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 1,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_14_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[&lt;b&gt;&amp;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&lt;b&gt;&amp;]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_14_END\r\n",
+            "sha256_utf16le_no_bom": "7dd9af16d85c6b00d863d1e085236620de4cc3965150015c413c23b01da1b023"
+          },
+          "layout": {
+            "rows": [
+              "C201_14_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[&lt;b&gt;&amp;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&lt;b&gt;&amp;]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_14_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "&lt;b&gt;&amp;"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&lt;b&gt;&amp;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&lt;b&gt;&amp;",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_14_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[&lt;b&gt;&amp;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&lt;b&gt;&amp;]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_14_END\r\n",
+            "sha256_utf16le_no_bom": "7dd9af16d85c6b00d863d1e085236620de4cc3965150015c413c23b01da1b023"
+          },
+          "layout": {
+            "rows": [
+              "C201_14_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[&lt;b&gt;&amp;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&lt;b&gt;&amp;]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_14_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "&lt;b&gt;&amp;"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&lt;b&gt;&amp;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&lt;b&gt;&amp;",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_14_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[&lt;b&gt;&amp;]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[&lt;b&gt;&amp;]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_14_END\r\n",
+            "sha256_utf16le_no_bom": "7dd9af16d85c6b00d863d1e085236620de4cc3965150015c413c23b01da1b023"
+          },
+          "layout": {
+            "rows": [
+              "C201_14_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[&lt;b&gt;&amp;]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[&lt;b&gt;&amp;]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_14_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "&lt;b&gt;&amp;"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "&lt;b&gt;&amp;",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "&lt;b&gt;&amp;",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_15",
+        "kind": "split-quoted-angle",
+        "input": "a<x q=\">\">b",
+        "command": "HTML_TAGSPLIT ZZ201S(3)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "a",
+          "S1": "<x q=\">",
+          "S2": "\">b",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "a<x q=\">\">b",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 3,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_15_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[a]\r\nS1=[<x q=\">]\r\nS2=[\">b]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<x q=\">\">b]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_15_END\r\n",
+            "sha256_utf16le_no_bom": "d3e3632d4e65fb0a3d6eac5ce8dc558e2f42b82a18defafc742f1d0466f2bb55"
+          },
+          "layout": {
+            "rows": [
+              "C201_15_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[a]",
+              "S1=[<x q=\">]",
+              "S2=[\">b]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<x q=\">\">b]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_15_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "a",
+              "<x q=\">",
+              "\">b"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "a",
+              "S1": "<x q=\">",
+              "S2": "\">b",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<x q=\">\">b",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_15_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[a]\r\nS1=[<x q=\">]\r\nS2=[\">b]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<x q=\">\">b]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_15_END\r\n",
+            "sha256_utf16le_no_bom": "d3e3632d4e65fb0a3d6eac5ce8dc558e2f42b82a18defafc742f1d0466f2bb55"
+          },
+          "layout": {
+            "rows": [
+              "C201_15_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[a]",
+              "S1=[<x q=\">]",
+              "S2=[\">b]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<x q=\">\">b]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_15_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "a",
+              "<x q=\">",
+              "\">b"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "a",
+              "S1": "<x q=\">",
+              "S2": "\">b",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<x q=\">\">b",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_15_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[a]\r\nS1=[<x q=\">]\r\nS2=[\">b]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<x q=\">\">b]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_15_END\r\n",
+            "sha256_utf16le_no_bom": "d3e3632d4e65fb0a3d6eac5ce8dc558e2f42b82a18defafc742f1d0466f2bb55"
+          },
+          "layout": {
+            "rows": [
+              "C201_15_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[a]",
+              "S1=[<x q=\">]",
+              "S2=[\">b]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<x q=\">\">b]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_15_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "a",
+              "<x q=\">",
+              "\">b"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "a",
+              "S1": "<x q=\">",
+              "S2": "\">b",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<x q=\">\">b",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_16",
+        "kind": "split-unclosed",
+        "input": "pre<b>ok<bad",
+        "command": "HTML_TAGSPLIT ZZ201S(3)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "pre<b>ok<bad",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": -1,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_16_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=-1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[pre<b>ok<bad]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_16_END\r\n",
+            "sha256_utf16le_no_bom": "4a1a70afc65c27c53a2a4481c908ef5e1cd2311b1606f4c786d6b00991ec1ecc"
+          },
+          "layout": {
+            "rows": [
+              "C201_16_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=-1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[pre<b>ok<bad]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_16_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": -1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": true
+          },
+          "state": {
+            "numeric": {
+              "R0": -1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "pre<b>ok<bad",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_16_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=-1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[pre<b>ok<bad]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_16_END\r\n",
+            "sha256_utf16le_no_bom": "4a1a70afc65c27c53a2a4481c908ef5e1cd2311b1606f4c786d6b00991ec1ecc"
+          },
+          "layout": {
+            "rows": [
+              "C201_16_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=-1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[pre<b>ok<bad]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_16_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": -1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": true
+          },
+          "state": {
+            "numeric": {
+              "R0": -1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "pre<b>ok<bad",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_16_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=-1 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[pre<b>ok<bad]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_16_END\r\n",
+            "sha256_utf16le_no_bom": "4a1a70afc65c27c53a2a4481c908ef5e1cd2311b1606f4c786d6b00991ec1ecc"
+          },
+          "layout": {
+            "rows": [
+              "C201_16_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=-1 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[pre<b>ok<bad]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_16_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": -1,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": true
+          },
+          "state": {
+            "numeric": {
+              "R0": -1,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "pre<b>ok<bad",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_17",
+        "kind": "split-short",
+        "input": "a<b>c</b>d",
+        "command": "HTML_TAGSPLIT ZZ201S(3), ZZ201SHORT, C",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "a<b>c</b>d",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "a",
+          "T1": "<b>"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 702,
+          "R2": 703,
+          "C": 5
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_17_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=5\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c</b>d]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[a]\r\nT1=[<b>]\r\nC201_17_END\r\n",
+            "sha256_utf16le_no_bom": "823abfd99971bb0b8506a34b5125cc003a24a1654b977205f0594482573947e4"
+          },
+          "layout": {
+            "rows": [
+              "C201_17_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=5",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c</b>d]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[a]",
+              "T1=[<b>]",
+              "C201_17_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 5,
+            "count_destination": "C",
+            "output_array": "T",
+            "stored_tokens": [
+              "a",
+              "<b>"
+            ],
+            "token_count_exceeds_capacity": true,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 5
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c</b>d",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "a",
+              "T1": "<b>"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_17_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=5\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c</b>d]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[a]\r\nT1=[<b>]\r\nC201_17_END\r\n",
+            "sha256_utf16le_no_bom": "823abfd99971bb0b8506a34b5125cc003a24a1654b977205f0594482573947e4"
+          },
+          "layout": {
+            "rows": [
+              "C201_17_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=5",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c</b>d]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[a]",
+              "T1=[<b>]",
+              "C201_17_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 5,
+            "count_destination": "C",
+            "output_array": "T",
+            "stored_tokens": [
+              "a",
+              "<b>"
+            ],
+            "token_count_exceeds_capacity": true,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 5
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c</b>d",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "a",
+              "T1": "<b>"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_17_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=702 R2=703 C=5\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c</b>d]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[a]\r\nT1=[<b>]\r\nC201_17_END\r\n",
+            "sha256_utf16le_no_bom": "823abfd99971bb0b8506a34b5125cc003a24a1654b977205f0594482573947e4"
+          },
+          "layout": {
+            "rows": [
+              "C201_17_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=702 R2=703 C=5",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c</b>d]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[a]",
+              "T1=[<b>]",
+              "C201_17_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 5,
+            "count_destination": "C",
+            "output_array": "T",
+            "stored_tokens": [
+              "a",
+              "<b>"
+            ],
+            "token_count_exceeds_capacity": true,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 702,
+              "R2": 703,
+              "C": 5
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c</b>d",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "a",
+              "T1": "<b>"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_18",
+        "kind": "split-destination-index-eval",
+        "input": "a<b>c",
+        "command": "HTML_TAGSPLIT ZZ201S(3), ZZ201D:ZZ201N(2), RESULT:ZZ201N(1)",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "a<b>c",
+          "D0": "a",
+          "D1": "<b>",
+          "D2": "c",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 701,
+          "R1": 3,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 2,
+          "B": 31
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_18_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=3 R2=703 C=704\r\nEVAL A=2 B=31\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[a]\r\nD1=[<b>]\r\nD2=[c]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_18_END\r\n",
+            "sha256_utf16le_no_bom": "8e18f240efd9baa1978f63eefa4121fa303c6ea53029ab0ca746f2c19682e6fa"
+          },
+          "layout": {
+            "rows": [
+              "C201_18_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=3 R2=703 C=704",
+              "EVAL A=2 B=31",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[a]",
+              "D1=[<b>]",
+              "D2=[c]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_18_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R1",
+            "output_array": "D",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 3,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "a",
+              "D1": "<b>",
+              "D2": "c",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_digit_order_B": 31
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_18_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=3 R2=703 C=704\r\nEVAL A=2 B=31\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[a]\r\nD1=[<b>]\r\nD2=[c]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_18_END\r\n",
+            "sha256_utf16le_no_bom": "8e18f240efd9baa1978f63eefa4121fa303c6ea53029ab0ca746f2c19682e6fa"
+          },
+          "layout": {
+            "rows": [
+              "C201_18_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=3 R2=703 C=704",
+              "EVAL A=2 B=31",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[a]",
+              "D1=[<b>]",
+              "D2=[c]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_18_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R1",
+            "output_array": "D",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 3,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "a",
+              "D1": "<b>",
+              "D2": "c",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_digit_order_B": 31
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_18_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=701 R1=3 R2=703 C=704\r\nEVAL A=2 B=31\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[a]\r\nD1=[<b>]\r\nD2=[c]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_18_END\r\n",
+            "sha256_utf16le_no_bom": "8e18f240efd9baa1978f63eefa4121fa303c6ea53029ab0ca746f2c19682e6fa"
+          },
+          "layout": {
+            "rows": [
+              "C201_18_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=701 R1=3 R2=703 C=704",
+              "EVAL A=2 B=31",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[a]",
+              "D1=[<b>]",
+              "D2=[c]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_18_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R1",
+            "output_array": "D",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 701,
+              "R1": 3,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "a",
+              "D1": "<b>",
+              "D2": "c",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 2,
+            "helper_digit_order_B": 31
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_19",
+        "kind": "split-count-alias",
+        "input": "a<b>c",
+        "command": "HTML_TAGSPLIT ZZ201S(3), ZZ201D, RESULT:0",
+        "setup": []
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "S0",
+          "S1": "S1",
+          "S2": "S2",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "a<b>c",
+          "D0": "a",
+          "D1": "<b>",
+          "D2": "c",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 3,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 1,
+          "B": 3
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_19_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[a]\r\nD1=[<b>]\r\nD2=[c]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_19_END\r\n",
+            "sha256_utf16le_no_bom": "42bae4bcd9bc29f817a9843accd04e0812d5211620652ca622798d99d3559159"
+          },
+          "layout": {
+            "rows": [
+              "C201_19_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[a]",
+              "D1=[<b>]",
+              "D2=[c]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_19_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "D",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "a",
+              "D1": "<b>",
+              "D2": "c",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_19_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[a]\r\nD1=[<b>]\r\nD2=[c]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_19_END\r\n",
+            "sha256_utf16le_no_bom": "42bae4bcd9bc29f817a9843accd04e0812d5211620652ca622798d99d3559159"
+          },
+          "layout": {
+            "rows": [
+              "C201_19_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[a]",
+              "D1=[<b>]",
+              "D2=[c]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_19_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "D",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "a",
+              "D1": "<b>",
+              "D2": "c",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_19_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=1 B=3\r\nS0=[S0]\r\nS1=[S1]\r\nS2=[S2]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[a]\r\nD1=[<b>]\r\nD2=[c]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_19_END\r\n",
+            "sha256_utf16le_no_bom": "42bae4bcd9bc29f817a9843accd04e0812d5211620652ca622798d99d3559159"
+          },
+          "layout": {
+            "rows": [
+              "C201_19_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=1 B=3",
+              "S0=[S0]",
+              "S1=[S1]",
+              "S2=[S2]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[a]",
+              "D1=[<b>]",
+              "D2=[c]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_19_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "D",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "S0",
+              "S1": "S1",
+              "S2": "S2",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "a",
+              "D1": "<b>",
+              "D2": "c",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 1,
+            "helper_digit_order_B": 3
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    },
+    {
+      "condition": {
+        "id": "C201_20",
+        "kind": "split-source-alias",
+        "input": "a<b>c",
+        "command": "HTML_TAGSPLIT RESULTS:0",
+        "setup": [
+          "RESULTS:0 '= \"a<b>c\""
+        ]
+      },
+      "expected": {
+        "strings": {
+          "VALUE": "V0",
+          "S0": "a",
+          "S1": "<b>",
+          "S2": "c",
+          "S3": "S3",
+          "S4": "S4",
+          "S5": "S5",
+          "S9": "a<b>c",
+          "D0": "D0",
+          "D1": "D1",
+          "D2": "D2",
+          "D3": "D3",
+          "D4": "D4",
+          "D5": "D5",
+          "T0": "T0",
+          "T1": "T1"
+        },
+        "numeric_state": {
+          "R0": 3,
+          "R1": 702,
+          "R2": 703,
+          "C": 704
+        },
+        "evaluation": {
+          "A": 0,
+          "B": 0
+        }
+      },
+      "observed": {
+        "native-01": {
+          "raw": {
+            "block": "C201_20_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=0 B=0\r\nS0=[a]\r\nS1=[<b>]\r\nS2=[c]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_20_END\r\n",
+            "sha256_utf16le_no_bom": "62d8dcce20a0849371a6dee23274f3ca05d4fb9f175e87bba625647eff75faee"
+          },
+          "layout": {
+            "rows": [
+              "C201_20_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=0 B=0",
+              "S0=[a]",
+              "S1=[<b>]",
+              "S2=[c]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_20_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "a",
+              "S1": "<b>",
+              "S2": "c",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_digit_order_B": 0
+          },
+          "source_contract_expected_equal": true
+        },
+        "native-02": {
+          "raw": {
+            "block": "C201_20_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=0 B=0\r\nS0=[a]\r\nS1=[<b>]\r\nS2=[c]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_20_END\r\n",
+            "sha256_utf16le_no_bom": "62d8dcce20a0849371a6dee23274f3ca05d4fb9f175e87bba625647eff75faee"
+          },
+          "layout": {
+            "rows": [
+              "C201_20_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=0 B=0",
+              "S0=[a]",
+              "S1=[<b>]",
+              "S2=[c]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_20_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "a",
+              "S1": "<b>",
+              "S2": "c",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_digit_order_B": 0
+          },
+          "source_contract_expected_equal": true
+        },
+        "public-01": {
+          "raw": {
+            "block": "C201_20_BEGIN\r\nVALUE=[V0]\r\nSTATE R0=3 R1=702 R2=703 C=704\r\nEVAL A=0 B=0\r\nS0=[a]\r\nS1=[<b>]\r\nS2=[c]\r\nS3=[S3]\r\nS4=[S4]\r\nS5=[S5]\r\nS9=[a<b>c]\r\nD0=[D0]\r\nD1=[D1]\r\nD2=[D2]\r\nD3=[D3]\r\nD4=[D4]\r\nD5=[D5]\r\nT0=[T0]\r\nT1=[T1]\r\nC201_20_END\r\n",
+            "sha256_utf16le_no_bom": "62d8dcce20a0849371a6dee23274f3ca05d4fb9f175e87bba625647eff75faee"
+          },
+          "layout": {
+            "rows": [
+              "C201_20_BEGIN",
+              "VALUE=[V0]",
+              "STATE R0=3 R1=702 R2=703 C=704",
+              "EVAL A=0 B=0",
+              "S0=[a]",
+              "S1=[<b>]",
+              "S2=[c]",
+              "S3=[S3]",
+              "S4=[S4]",
+              "S5=[S5]",
+              "S9=[a<b>c]",
+              "D0=[D0]",
+              "D1=[D1]",
+              "D2=[D2]",
+              "D3=[D3]",
+              "D4=[D4]",
+              "D5=[D5]",
+              "T0=[T0]",
+              "T1=[T1]",
+              "C201_20_END"
+            ],
+            "line_ending": "CRLF",
+            "terminal_crlf": true,
+            "scope": "serialized log rows only"
+          },
+          "value": {
+            "count": 3,
+            "count_destination": "R0",
+            "output_array": "S",
+            "stored_tokens": [
+              "a",
+              "<b>",
+              "c"
+            ],
+            "token_count_exceeds_capacity": false,
+            "failure_preserves_output": false
+          },
+          "state": {
+            "numeric": {
+              "R0": 3,
+              "R1": 702,
+              "R2": 703,
+              "C": 704
+            },
+            "strings": {
+              "VALUE": "V0",
+              "S0": "a",
+              "S1": "<b>",
+              "S2": "c",
+              "S3": "S3",
+              "S4": "S4",
+              "S5": "S5",
+              "S9": "a<b>c",
+              "D0": "D0",
+              "D1": "D1",
+              "D2": "D2",
+              "D3": "D3",
+              "D4": "D4",
+              "D5": "D5",
+              "T0": "T0",
+              "T1": "T1"
+            }
+          },
+          "evaluation": {
+            "helper_count_A": 0,
+            "helper_digit_order_B": 0
+          },
+          "source_contract_expected_equal": true
+        }
+      },
+      "comparison": {
+        "raw": true,
+        "layout": true,
+        "value": true,
+        "state": true,
+        "evaluation": true,
+        "native_repeat_equal": true
+      },
+      "classification": "MATCH_OBSERVED_TEXT_CONTRACT"
+    }
+  ],
+  "claim_scope": "Text transformation, tokenization, selected arrays/counts, helper calls; no HTML rendering claim."
+}

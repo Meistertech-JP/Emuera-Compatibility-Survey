@@ -1,0 +1,7 @@
+PRINTK source cross-reference (version pinned)
+
+Native source: `runs/native-analysis/src1824-check/Emuera/GameProc/Function/FunctionIdentifier.cs` registers PRINTK with the print-command family. The common implementation in `Instraction.Child.cs` applies K conversion during printing.
+
+PyEmuera 3.0.0 public source: `evidence/cold-tests-first-01/source/pyemuera/specs/commands.json` defines PRINTK with `kana=true`, `newline=false`, `wait=false`; `printing.py` contains the kana conversion path.
+
+The fixture sets `FORCEKANA 0` before printing, to fix mode independently of user configuration. It follows PRINTK with `<PRINTK_END>` without another newline-producing command in between.

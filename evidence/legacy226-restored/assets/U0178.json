@@ -1,0 +1,254 @@
+[
+  {
+    "id": "B216_0",
+    "command": "PRINTBUTTON",
+    "label_case": "numeric",
+    "label_expression": "\"label\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_1",
+    "command": "PRINTBUTTON",
+    "label_case": "negative",
+    "label_expression": "\"back\"",
+    "value_type": "num",
+    "value": -2,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_2",
+    "command": "PRINTBUTTON",
+    "label_case": "string",
+    "label_expression": "\"label\"",
+    "value_type": "str",
+    "value": "go216",
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_3",
+    "command": "PRINTBUTTON",
+    "label_case": "empty",
+    "label_expression": "\"\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_4",
+    "command": "PRINTBUTTON",
+    "label_case": "lf",
+    "label_expression": "\"A\"+UNICODE(10)+\"B\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_5",
+    "command": "PRINTBUTTON",
+    "label_case": "cr",
+    "label_expression": "\"A\"+UNICODE(13)+\"B\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_6",
+    "command": "PRINTBUTTON",
+    "label_case": "skip",
+    "label_expression": "\"hidden\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": true,
+    "count_expected": 0,
+    "order_expected": 0
+  },
+  {
+    "id": "B216_7",
+    "command": "PRINTBUTTONC",
+    "label_case": "numeric",
+    "label_expression": "\"label\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_8",
+    "command": "PRINTBUTTONC",
+    "label_case": "negative",
+    "label_expression": "\"back\"",
+    "value_type": "num",
+    "value": -2,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_9",
+    "command": "PRINTBUTTONC",
+    "label_case": "string",
+    "label_expression": "\"label\"",
+    "value_type": "str",
+    "value": "go216",
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_10",
+    "command": "PRINTBUTTONC",
+    "label_case": "empty",
+    "label_expression": "\"\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_11",
+    "command": "PRINTBUTTONC",
+    "label_case": "lf",
+    "label_expression": "\"A\"+UNICODE(10)+\"B\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_12",
+    "command": "PRINTBUTTONC",
+    "label_case": "cr",
+    "label_expression": "\"A\"+UNICODE(13)+\"B\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_13",
+    "command": "PRINTBUTTONC",
+    "label_case": "skip",
+    "label_expression": "\"hidden\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": true,
+    "count_expected": 0,
+    "order_expected": 0
+  },
+  {
+    "id": "B216_14",
+    "command": "PRINTBUTTONLC",
+    "label_case": "numeric",
+    "label_expression": "\"label\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_15",
+    "command": "PRINTBUTTONLC",
+    "label_case": "negative",
+    "label_expression": "\"back\"",
+    "value_type": "num",
+    "value": -2,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_16",
+    "command": "PRINTBUTTONLC",
+    "label_case": "string",
+    "label_expression": "\"label\"",
+    "value_type": "str",
+    "value": "go216",
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_17",
+    "command": "PRINTBUTTONLC",
+    "label_case": "empty",
+    "label_expression": "\"\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_18",
+    "command": "PRINTBUTTONLC",
+    "label_case": "lf",
+    "label_expression": "\"A\"+UNICODE(10)+\"B\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_19",
+    "command": "PRINTBUTTONLC",
+    "label_case": "cr",
+    "label_expression": "\"A\"+UNICODE(13)+\"B\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": false,
+    "count_expected": 2,
+    "order_expected": 12
+  },
+  {
+    "id": "B216_20",
+    "command": "PRINTBUTTONLC",
+    "label_case": "skip",
+    "label_expression": "\"hidden\"",
+    "value_type": "num",
+    "value": 7,
+    "skip": true,
+    "count_expected": 0,
+    "order_expected": 0
+  },
+  {
+    "id": "B216_21",
+    "command": "PRINTCPERLINE",
+    "destination": "default RESULT0",
+    "count_expected": 0,
+    "order_expected": 0
+  },
+  {
+    "id": "B216_22",
+    "command": "PRINTCPERLINE",
+    "destination": "D:ZZ216INDEX()",
+    "count_expected": 1,
+    "order_expected": 1
+  },
+  {
+    "id": "B216_23",
+    "command": "PRINTCPERLINE",
+    "destination": "CFLAG:0:ZZ216INDEX()",
+    "count_expected": 1,
+    "order_expected": 1
+  }
+]

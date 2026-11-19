@@ -1,0 +1,52 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0470 · emuera.log</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0470 · emuera.log</h1>
+<p>U0470 / addcopy_valid_then_invalid_retry/native-01。キャラクターコピー/削除の境界・評価順。ADDCOPYCHARA複数引数の部分更新と公開版arity診断の差を保持。 retryの対象診断・副作用は有効な境界観測として扱う。出力34行、マーカー1種、診断候補2行を確認。「SEARCHBOUND01.ERBの23行目でエラーが発生しました:Emuera1824+v24」を削除せず保持。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>c48288050cfed1ebeea106aba9fe471fffd623a3ee15c6f9b49391f91a7b366f</code></p>
+<p><a href="../assets/U0470.log">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>c48288050cfed1ebeea106aba9fe471fffd623a3ee15c6f9b49391f91a7b366f</code></p>
+<pre>Now Loading...
+CASE241 addcopy_valid_then_invalid
+OBS241 BEFORE N=3 R=701 A=0 B=0
+OBS241 BEFORE T=2 M=1 S=0
+OBS241 BEFORE I=0 NO=0 F=101
+OBS241 BEFORE I=0 NAME=[N0] CS=[SRC]
+OBS241 BEFORE I=1 NO=10 F=202
+OBS241 BEFORE I=1 NAME=[N10] CS=[MID]
+OBS241 BEFORE I=2 NO=20 F=303
+OBS241 BEFORE I=2 NAME=[N20] CS=[DST]
+※※※ログファイルをemuera.logに出力しました※※※
+OBS241 H1 N=3 R=701 A=1 B=1
+OBS241 H1 T=2 M=1 S=0
+OBS241 H1 I=0 NO=0 F=101
+OBS241 H1 I=0 NAME=[N0] CS=[SRC]
+OBS241 H1 I=1 NO=10 F=202
+OBS241 H1 I=1 NAME=[N10] CS=[MID]
+OBS241 H1 I=2 NO=20 F=303
+OBS241 H1 I=2 NAME=[N20] CS=[DST]
+OBS241 H2 N=4 R=701 A=2 B=12
+OBS241 H2 T=2 M=1 S=0
+OBS241 H2 I=0 NO=0 F=101
+OBS241 H2 I=0 NAME=[N0] CS=[SRC]
+OBS241 H2 I=1 NO=10 F=202
+OBS241 H2 I=1 NAME=[N10] CS=[MID]
+OBS241 H2 I=2 NO=20 F=303
+OBS241 H2 I=2 NAME=[N20] CS=[DST]
+OBS241 H2 I=3 NO=0 F=101
+OBS241 H2 I=3 NAME=[N0] CS=[SRC]
+SEARCHBOUND01.ERBの23行目でエラーが発生しました:Emuera1824+v24
+ADDCOPYCHARA H241A(),H241B()
+エラー内容：コピー元のキャラクタが存在しません
+現在の関数：@SYSTEM_TITLE（SEARCHBOUND01.ERBの1行目）
+関数呼び出しスタック：
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0518 · command_or_syntax:COPYCHARA · check</li>
+<li>L1304 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

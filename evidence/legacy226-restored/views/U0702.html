@@ -1,0 +1,29 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0702 · SOURCE_SCOPE.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0702 · SOURCE_SCOPE.md</h1>
+<p>LOG10のガード順とピンハッシュは公開に有用で、L5の私的pyz絶対パスだけをファイルラベルに置換した派生票を収録する。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>f52075992802f51d2b09b0ccc029f3b23e09d04e1963f20120e05e857c3cb571</code></p>
+<p><a href="../assets/U0702.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3205386e7d993e37ad17de974f2af297002bdf10fb3e517df0ab284b2bc5f5c4</code></p>
+<pre>&gt; 公開用派生資料 `U0702`（公開用編集日: 2026-11-18）。原票全文の技術観測・判定・制限を保持し、指定箇所だけを編集した。
+&gt; 原票ファイルSHA-256: `f52075992802f51d2b09b0ccc029f3b23e09d04e1963f20120e05e857c3cb571`。これは原票の識別値であり、派生物のハッシュや元実行のsealを新たに発行するものではない。
+&gt; 本文中の旧相対パス・ファイル名・nonce・PID・実行時刻・fixture値・hash/seal・「現行/現在」は原票作成/実行当時の参照と記録。今回のstage構成・新規実行・現行状態を示さない。
+&gt; Copyright (c) 2026 Meistertech-JP — MIT（独自の説明・編集部分、LICENSE.txt）。エンジン由来の診断・表現はLICENSES/とvendor/emuera/NOTICEの個別条件を維持する。
+
+# LOG10 source scope
+
+Pinned v24 contract: `Creator.Method.cs` evaluates `arguments[0].GetIntValue(exm)` at line 1121, rejects `ret &lt;= 0` at lines 1122-1123, computes base-10 logarithm for `Base == 10.0d`, checks numeric range, then casts to Int64 at line 1137. Exact source archive/member hashes and signature are pinned in `evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json#/contracts/LOG10`.
+
+Pinned public pyz: `PyEmuera-3.0.0.pyz`, SHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`. `compat1824.py` converts the argument, rejects nonpositive LOG10, and integerizes the logarithm. Native EXE SHA-256 `14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964`; config SHA-256 `f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc`.
+
+Existing positive 1 and `LOG10(9)-&gt;0` / `LOG10(10)-&gt;1` evidence is reused. The method-as-command target remains separate.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2206 · expression_function:LOG10 · check</li>
+</ul></html>

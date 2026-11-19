@@ -1,0 +1,4964 @@
+{
+  "schema": "legacy50-selected-observations/v1",
+  "purpose": "Selected finite observed cases, not historical acceptance reconstruction or comprehensive compatibility. No new engine executions.",
+  "historical_acceptance_status": "TYPED_SOURCE_NOT_IDENTIFIED; unchanged from earlier audit; these later observations do not establish an earlier acceptance sheet.",
+  "selected_target_count": 27,
+  "getter": {
+    "source_comparison_sha256": "8dc6c12a9c588d9359761ed50cb3353e37a2a49f9ca2bd51854ec18df6a5e03e",
+    "source_conditions_sha256": "9fe9c667ba1494d122b7c23b18da9845c23957daf135bc68108f70b168b52dd0",
+    "observation_field_meanings": {
+      "value": "Value captured by the fixture; encoded as a string, with value_type in each condition.",
+      "RESULT0": "RESULT:0 after target call",
+      "RESULT1": "RESULT:1 after target call",
+      "RESULTS": "RESULTS after target call"
+    },
+    "target_count": 14,
+    "case_count": 23,
+    "shared_run_ids": [
+      "getter-expression-native-01",
+      "getter-expression-native-02",
+      "getter-expression-public-01",
+      "getter-method-native-01",
+      "getter-method-native-02",
+      "getter-method-public-01"
+    ],
+    "configured_native_rgb": {
+      "foreground": [
+        17,
+        34,
+        51
+      ],
+      "background": [
+        4,
+        5,
+        6
+      ],
+      "focus": [
+        7,
+        8,
+        9
+      ]
+    },
+    "cases": [
+      {
+        "case_id": "GETTER251_expression_0",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETDEFCOLOR"
+        },
+        "original_verdict": "different_scoped",
+        "comparison_pointer": "/rows/0",
+        "register_pointer": "/records/1332",
+        "condition": {
+          "form": "expression",
+          "state_label": "nondefault_config_vs_current",
+          "target_call": "ZZ250V:0 = GETDEFCOLOR()",
+          "setup_at_this_probe": [
+            "SETCOLOR 11259375",
+            "SETBGCOLOR 4478310"
+          ],
+          "preceding_setups_in_shared_run": [],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725000,
+            "RESULT1": 825000,
+            "RESULTS": "ZZ250_SENT_expression_0"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              3,
+              4,
+              5
+            ],
+            "state": {
+              "value": "1122867",
+              "RESULT0": 725000,
+              "RESULT1": 825000,
+              "RESULTS": "ZZ250_SENT_expression_0"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              3,
+              4,
+              5
+            ],
+            "state": {
+              "value": "1122867",
+              "RESULT0": 725000,
+              "RESULT1": 825000,
+              "RESULTS": "ZZ250_SENT_expression_0"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              3,
+              4,
+              5
+            ],
+            "state": {
+              "value": "12632256",
+              "RESULT0": 725000,
+              "RESULT1": 825000,
+              "RESULTS": "ZZ250_SENT_expression_0"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_1",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETDEFBGCOLOR"
+        },
+        "original_verdict": "different_scoped",
+        "comparison_pointer": "/rows/1",
+        "register_pointer": "/records/1333",
+        "condition": {
+          "form": "expression",
+          "state_label": "nondefault_config_vs_current",
+          "target_call": "ZZ250V:1 = GETDEFBGCOLOR()",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725001,
+            "RESULT1": 825001,
+            "RESULTS": "ZZ250_SENT_expression_1"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              6,
+              7,
+              8
+            ],
+            "state": {
+              "value": "263430",
+              "RESULT0": 725001,
+              "RESULT1": 825001,
+              "RESULTS": "ZZ250_SENT_expression_1"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              6,
+              7,
+              8
+            ],
+            "state": {
+              "value": "263430",
+              "RESULT0": 725001,
+              "RESULT1": 825001,
+              "RESULTS": "ZZ250_SENT_expression_1"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              6,
+              7,
+              8
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 725001,
+              "RESULT1": 825001,
+              "RESULTS": "ZZ250_SENT_expression_1"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_2",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETFOCUSCOLOR"
+        },
+        "original_verdict": "different_scoped",
+        "comparison_pointer": "/rows/2",
+        "register_pointer": "/records/1334",
+        "condition": {
+          "form": "expression",
+          "state_label": "nondefault_comma_rgb",
+          "target_call": "ZZ250V:2 = GETFOCUSCOLOR()",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725002,
+            "RESULT1": 825002,
+            "RESULTS": "ZZ250_SENT_expression_2"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              9,
+              10,
+              11
+            ],
+            "state": {
+              "value": "460809",
+              "RESULT0": 725002,
+              "RESULT1": 825002,
+              "RESULTS": "ZZ250_SENT_expression_2"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              9,
+              10,
+              11
+            ],
+            "state": {
+              "value": "460809",
+              "RESULT0": 725002,
+              "RESULT1": 825002,
+              "RESULTS": "ZZ250_SENT_expression_2"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              9,
+              10,
+              11
+            ],
+            "state": {
+              "value": "16776960",
+              "RESULT0": 725002,
+              "RESULT1": 825002,
+              "RESULTS": "ZZ250_SENT_expression_2"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_3",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETSTYLE"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/3",
+        "register_pointer": "/records/1335",
+        "condition": {
+          "form": "expression",
+          "state_label": "strikeout_bit4",
+          "target_call": "ZZ250V:3 = GETSTYLE()",
+          "setup_at_this_probe": [
+            "FONTSTYLE 4"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725003,
+            "RESULT1": 825003,
+            "RESULTS": "ZZ250_SENT_expression_3"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              12,
+              13,
+              14
+            ],
+            "state": {
+              "value": "4",
+              "RESULT0": 725003,
+              "RESULT1": 825003,
+              "RESULTS": "ZZ250_SENT_expression_3"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              12,
+              13,
+              14
+            ],
+            "state": {
+              "value": "4",
+              "RESULT0": 725003,
+              "RESULT1": 825003,
+              "RESULTS": "ZZ250_SENT_expression_3"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              12,
+              13,
+              14
+            ],
+            "state": {
+              "value": "4",
+              "RESULT0": 725003,
+              "RESULT1": 825003,
+              "RESULTS": "ZZ250_SENT_expression_3"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_4",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETSTYLE"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/4",
+        "register_pointer": "/records/1336",
+        "condition": {
+          "form": "expression",
+          "state_label": "underline_bit8",
+          "target_call": "ZZ250V:4 = GETSTYLE()",
+          "setup_at_this_probe": [
+            "FONTSTYLE 8"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725004,
+            "RESULT1": 825004,
+            "RESULTS": "ZZ250_SENT_expression_4"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              15,
+              16,
+              17
+            ],
+            "state": {
+              "value": "8",
+              "RESULT0": 725004,
+              "RESULT1": 825004,
+              "RESULTS": "ZZ250_SENT_expression_4"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              15,
+              16,
+              17
+            ],
+            "state": {
+              "value": "8",
+              "RESULT0": 725004,
+              "RESULT1": 825004,
+              "RESULTS": "ZZ250_SENT_expression_4"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              15,
+              16,
+              17
+            ],
+            "state": {
+              "value": "8",
+              "RESULT0": 725004,
+              "RESULT1": 825004,
+              "RESULTS": "ZZ250_SENT_expression_4"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_5",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETSTYLE"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/5",
+        "register_pointer": "/records/1337",
+        "condition": {
+          "form": "expression",
+          "state_label": "reset_control",
+          "target_call": "ZZ250V:5 = GETSTYLE()",
+          "setup_at_this_probe": [
+            "FONTSTYLE 0"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725005,
+            "RESULT1": 825005,
+            "RESULTS": "ZZ250_SENT_expression_5"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              18,
+              19,
+              20
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 725005,
+              "RESULT1": 825005,
+              "RESULTS": "ZZ250_SENT_expression_5"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              18,
+              19,
+              20
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 725005,
+              "RESULT1": 825005,
+              "RESULTS": "ZZ250_SENT_expression_5"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              18,
+              19,
+              20
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 725005,
+              "RESULT1": 825005,
+              "RESULTS": "ZZ250_SENT_expression_5"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_6",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETFONT"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/6",
+        "register_pointer": "/records/1338",
+        "condition": {
+          "form": "expression",
+          "state_label": "configured_baseline_control",
+          "target_call": "ZZ250T:6 '= GETFONT()",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725006,
+            "RESULT1": 825006,
+            "RESULTS": "ZZ250_SENT_expression_6"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              21,
+              22,
+              23
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725006,
+              "RESULT1": 825006,
+              "RESULTS": "ZZ250_SENT_expression_6"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              21,
+              22,
+              23
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725006,
+              "RESULT1": 825006,
+              "RESULTS": "ZZ250_SENT_expression_6"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              21,
+              22,
+              23
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725006,
+              "RESULT1": 825006,
+              "RESULTS": "ZZ250_SENT_expression_6"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_7",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETFONT"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/7",
+        "register_pointer": "/records/1339",
+        "condition": {
+          "form": "expression",
+          "state_label": "changed_valid_name",
+          "target_call": "ZZ250T:7 '= GETFONT()",
+          "setup_at_this_probe": [
+            "SETFONT \"Arial\""
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725007,
+            "RESULT1": 825007,
+            "RESULTS": "ZZ250_SENT_expression_7"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              24,
+              25,
+              26
+            ],
+            "state": {
+              "value": "Arial",
+              "RESULT0": 725007,
+              "RESULT1": 825007,
+              "RESULTS": "ZZ250_SENT_expression_7"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              24,
+              25,
+              26
+            ],
+            "state": {
+              "value": "Arial",
+              "RESULT0": 725007,
+              "RESULT1": 825007,
+              "RESULTS": "ZZ250_SENT_expression_7"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              24,
+              25,
+              26
+            ],
+            "state": {
+              "value": "Arial",
+              "RESULT0": 725007,
+              "RESULT1": 825007,
+              "RESULTS": "ZZ250_SENT_expression_7"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_8",
+        "target": {
+          "kind": "expression_function",
+          "name": "GETFONT"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/8",
+        "register_pointer": "/records/1340",
+        "condition": {
+          "form": "expression",
+          "state_label": "explicit_restore_to_configured_name",
+          "target_call": "ZZ250T:8 '= GETFONT()",
+          "setup_at_this_probe": [
+            "SETFONT \"Courier New\""
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725008,
+            "RESULT1": 825008,
+            "RESULTS": "ZZ250_SENT_expression_8"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              27,
+              28,
+              29
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725008,
+              "RESULT1": 825008,
+              "RESULTS": "ZZ250_SENT_expression_8"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              27,
+              28,
+              29
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725008,
+              "RESULT1": 825008,
+              "RESULTS": "ZZ250_SENT_expression_8"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              27,
+              28,
+              29
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725008,
+              "RESULT1": 825008,
+              "RESULTS": "ZZ250_SENT_expression_8"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_expression_9",
+        "target": {
+          "kind": "expression_function",
+          "name": "CURRENTALIGN"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/9",
+        "register_pointer": "/records/1341",
+        "condition": {
+          "form": "expression",
+          "state_label": "center",
+          "target_call": "ZZ250T:9 '= CURRENTALIGN()",
+          "setup_at_this_probe": [
+            "ALIGNMENT CENTER"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            },
+            {
+              "index": 8,
+              "setup": [
+                "SETFONT \"Courier New\""
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725009,
+            "RESULT1": 825009,
+            "RESULTS": "ZZ250_SENT_expression_9"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-expression-native-01",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              30,
+              31,
+              32
+            ],
+            "state": {
+              "value": "CENTER",
+              "RESULT0": 725009,
+              "RESULT1": 825009,
+              "RESULTS": "ZZ250_SENT_expression_9"
+            }
+          },
+          {
+            "run_id": "getter-expression-native-02",
+            "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28",
+            "raw_line_numbers": [
+              30,
+              31,
+              32
+            ],
+            "state": {
+              "value": "CENTER",
+              "RESULT0": 725009,
+              "RESULT1": 825009,
+              "RESULTS": "ZZ250_SENT_expression_9"
+            }
+          },
+          {
+            "run_id": "getter-expression-public-01",
+            "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3",
+            "raw_line_numbers": [
+              30,
+              31,
+              32
+            ],
+            "state": {
+              "value": "CENTER",
+              "RESULT0": 725009,
+              "RESULT1": 825009,
+              "RESULTS": "ZZ250_SENT_expression_9"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_0",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETDEFCOLOR"
+        },
+        "original_verdict": "different_scoped",
+        "comparison_pointer": "/rows/10",
+        "register_pointer": "/records/1342",
+        "condition": {
+          "form": "method",
+          "state_label": "nondefault_config_vs_current",
+          "target_call": "GETDEFCOLOR",
+          "setup_at_this_probe": [
+            "SETCOLOR 11259375",
+            "SETBGCOLOR 4478310"
+          ],
+          "preceding_setups_in_shared_run": [],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725000,
+            "RESULT1": 825000,
+            "RESULTS": "ZZ250_SENT_method_0"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              3,
+              4,
+              5
+            ],
+            "state": {
+              "value": "1122867",
+              "RESULT0": 1122867,
+              "RESULT1": 825000,
+              "RESULTS": "ZZ250_SENT_method_0"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              3,
+              4,
+              5
+            ],
+            "state": {
+              "value": "1122867",
+              "RESULT0": 1122867,
+              "RESULT1": 825000,
+              "RESULTS": "ZZ250_SENT_method_0"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              3,
+              4,
+              5
+            ],
+            "state": {
+              "value": "12632256",
+              "RESULT0": 12632256,
+              "RESULT1": 825000,
+              "RESULTS": "ZZ250_SENT_method_0"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_1",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETDEFBGCOLOR"
+        },
+        "original_verdict": "different_scoped",
+        "comparison_pointer": "/rows/11",
+        "register_pointer": "/records/1343",
+        "condition": {
+          "form": "method",
+          "state_label": "nondefault_config_vs_current",
+          "target_call": "GETDEFBGCOLOR",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725001,
+            "RESULT1": 825001,
+            "RESULTS": "ZZ250_SENT_method_1"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              6,
+              7,
+              8
+            ],
+            "state": {
+              "value": "263430",
+              "RESULT0": 263430,
+              "RESULT1": 825001,
+              "RESULTS": "ZZ250_SENT_method_1"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              6,
+              7,
+              8
+            ],
+            "state": {
+              "value": "263430",
+              "RESULT0": 263430,
+              "RESULT1": 825001,
+              "RESULTS": "ZZ250_SENT_method_1"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              6,
+              7,
+              8
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825001,
+              "RESULTS": "ZZ250_SENT_method_1"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_2",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETFOCUSCOLOR"
+        },
+        "original_verdict": "different_scoped",
+        "comparison_pointer": "/rows/12",
+        "register_pointer": "/records/1344",
+        "condition": {
+          "form": "method",
+          "state_label": "nondefault_comma_rgb",
+          "target_call": "GETFOCUSCOLOR",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725002,
+            "RESULT1": 825002,
+            "RESULTS": "ZZ250_SENT_method_2"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              9,
+              10,
+              11
+            ],
+            "state": {
+              "value": "460809",
+              "RESULT0": 460809,
+              "RESULT1": 825002,
+              "RESULTS": "ZZ250_SENT_method_2"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              9,
+              10,
+              11
+            ],
+            "state": {
+              "value": "460809",
+              "RESULT0": 460809,
+              "RESULT1": 825002,
+              "RESULTS": "ZZ250_SENT_method_2"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              9,
+              10,
+              11
+            ],
+            "state": {
+              "value": "16776960",
+              "RESULT0": 16776960,
+              "RESULT1": 825002,
+              "RESULTS": "ZZ250_SENT_method_2"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_3",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETSTYLE"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/13",
+        "register_pointer": "/records/1345",
+        "condition": {
+          "form": "method",
+          "state_label": "strikeout_bit4",
+          "target_call": "GETSTYLE",
+          "setup_at_this_probe": [
+            "FONTSTYLE 4"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725003,
+            "RESULT1": 825003,
+            "RESULTS": "ZZ250_SENT_method_3"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              12,
+              13,
+              14
+            ],
+            "state": {
+              "value": "4",
+              "RESULT0": 4,
+              "RESULT1": 825003,
+              "RESULTS": "ZZ250_SENT_method_3"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              12,
+              13,
+              14
+            ],
+            "state": {
+              "value": "4",
+              "RESULT0": 4,
+              "RESULT1": 825003,
+              "RESULTS": "ZZ250_SENT_method_3"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              12,
+              13,
+              14
+            ],
+            "state": {
+              "value": "4",
+              "RESULT0": 4,
+              "RESULT1": 825003,
+              "RESULTS": "ZZ250_SENT_method_3"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_4",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETSTYLE"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/14",
+        "register_pointer": "/records/1346",
+        "condition": {
+          "form": "method",
+          "state_label": "underline_bit8",
+          "target_call": "GETSTYLE",
+          "setup_at_this_probe": [
+            "FONTSTYLE 8"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725004,
+            "RESULT1": 825004,
+            "RESULTS": "ZZ250_SENT_method_4"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              15,
+              16,
+              17
+            ],
+            "state": {
+              "value": "8",
+              "RESULT0": 8,
+              "RESULT1": 825004,
+              "RESULTS": "ZZ250_SENT_method_4"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              15,
+              16,
+              17
+            ],
+            "state": {
+              "value": "8",
+              "RESULT0": 8,
+              "RESULT1": 825004,
+              "RESULTS": "ZZ250_SENT_method_4"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              15,
+              16,
+              17
+            ],
+            "state": {
+              "value": "8",
+              "RESULT0": 8,
+              "RESULT1": 825004,
+              "RESULTS": "ZZ250_SENT_method_4"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_5",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETSTYLE"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/15",
+        "register_pointer": "/records/1347",
+        "condition": {
+          "form": "method",
+          "state_label": "reset_control",
+          "target_call": "GETSTYLE",
+          "setup_at_this_probe": [
+            "FONTSTYLE 0"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725005,
+            "RESULT1": 825005,
+            "RESULTS": "ZZ250_SENT_method_5"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              18,
+              19,
+              20
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825005,
+              "RESULTS": "ZZ250_SENT_method_5"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              18,
+              19,
+              20
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825005,
+              "RESULTS": "ZZ250_SENT_method_5"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              18,
+              19,
+              20
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825005,
+              "RESULTS": "ZZ250_SENT_method_5"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_6",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETFONT"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/16",
+        "register_pointer": "/records/1348",
+        "condition": {
+          "form": "method",
+          "state_label": "configured_baseline_control",
+          "target_call": "GETFONT",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725006,
+            "RESULT1": 825006,
+            "RESULTS": "ZZ250_SENT_method_6"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              21,
+              22,
+              23
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725006,
+              "RESULT1": 825006,
+              "RESULTS": "Courier New"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              21,
+              22,
+              23
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725006,
+              "RESULT1": 825006,
+              "RESULTS": "Courier New"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              21,
+              22,
+              23
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725006,
+              "RESULT1": 825006,
+              "RESULTS": "Courier New"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_7",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETFONT"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/17",
+        "register_pointer": "/records/1349",
+        "condition": {
+          "form": "method",
+          "state_label": "changed_valid_name",
+          "target_call": "GETFONT",
+          "setup_at_this_probe": [
+            "SETFONT \"Arial\""
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725007,
+            "RESULT1": 825007,
+            "RESULTS": "ZZ250_SENT_method_7"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              24,
+              25,
+              26
+            ],
+            "state": {
+              "value": "Arial",
+              "RESULT0": 725007,
+              "RESULT1": 825007,
+              "RESULTS": "Arial"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              24,
+              25,
+              26
+            ],
+            "state": {
+              "value": "Arial",
+              "RESULT0": 725007,
+              "RESULT1": 825007,
+              "RESULTS": "Arial"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              24,
+              25,
+              26
+            ],
+            "state": {
+              "value": "Arial",
+              "RESULT0": 725007,
+              "RESULT1": 825007,
+              "RESULTS": "Arial"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_8",
+        "target": {
+          "kind": "method_as_command",
+          "name": "GETFONT"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/18",
+        "register_pointer": "/records/1350",
+        "condition": {
+          "form": "method",
+          "state_label": "explicit_restore_to_configured_name",
+          "target_call": "GETFONT",
+          "setup_at_this_probe": [
+            "SETFONT \"Courier New\""
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725008,
+            "RESULT1": 825008,
+            "RESULTS": "ZZ250_SENT_method_8"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              27,
+              28,
+              29
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725008,
+              "RESULT1": 825008,
+              "RESULTS": "Courier New"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              27,
+              28,
+              29
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725008,
+              "RESULT1": 825008,
+              "RESULTS": "Courier New"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              27,
+              28,
+              29
+            ],
+            "state": {
+              "value": "Courier New",
+              "RESULT0": 725008,
+              "RESULT1": 825008,
+              "RESULTS": "Courier New"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_9",
+        "target": {
+          "kind": "method_as_command",
+          "name": "CURRENTALIGN"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/19",
+        "register_pointer": "/records/1351",
+        "condition": {
+          "form": "method",
+          "state_label": "center",
+          "target_call": "CURRENTALIGN",
+          "setup_at_this_probe": [
+            "ALIGNMENT CENTER"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            },
+            {
+              "index": 8,
+              "setup": [
+                "SETFONT \"Courier New\""
+              ]
+            }
+          ],
+          "value_type": "string",
+          "initial_sentinels": {
+            "RESULT0": 725009,
+            "RESULT1": 825009,
+            "RESULTS": "ZZ250_SENT_method_9"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              30,
+              31,
+              32
+            ],
+            "state": {
+              "value": "CENTER",
+              "RESULT0": 725009,
+              "RESULT1": 825009,
+              "RESULTS": "CENTER"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              30,
+              31,
+              32
+            ],
+            "state": {
+              "value": "CENTER",
+              "RESULT0": 725009,
+              "RESULT1": 825009,
+              "RESULTS": "CENTER"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              30,
+              31,
+              32
+            ],
+            "state": {
+              "value": "CENTER",
+              "RESULT0": 725009,
+              "RESULT1": 825009,
+              "RESULTS": "CENTER"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_10",
+        "target": {
+          "kind": "method_as_command",
+          "name": "ISSKIP"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/20",
+        "register_pointer": "/records/1352",
+        "condition": {
+          "form": "method",
+          "state_label": "skip_on",
+          "target_call": "ISSKIP",
+          "setup_at_this_probe": [
+            "SKIPDISP 1"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            },
+            {
+              "index": 8,
+              "setup": [
+                "SETFONT \"Courier New\""
+              ]
+            },
+            {
+              "index": 9,
+              "setup": [
+                "ALIGNMENT CENTER"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725010,
+            "RESULT1": 825010,
+            "RESULTS": "ZZ250_SENT_method_10"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              33,
+              34,
+              35
+            ],
+            "state": {
+              "value": "1",
+              "RESULT0": 1,
+              "RESULT1": 825010,
+              "RESULTS": "ZZ250_SENT_method_10"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              33,
+              34,
+              35
+            ],
+            "state": {
+              "value": "1",
+              "RESULT0": 1,
+              "RESULT1": 825010,
+              "RESULTS": "ZZ250_SENT_method_10"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              33,
+              34,
+              35
+            ],
+            "state": {
+              "value": "1",
+              "RESULT0": 1,
+              "RESULT1": 825010,
+              "RESULTS": "ZZ250_SENT_method_10"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_11",
+        "target": {
+          "kind": "method_as_command",
+          "name": "ISSKIP"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/21",
+        "register_pointer": "/records/1353",
+        "condition": {
+          "form": "method",
+          "state_label": "skip_off",
+          "target_call": "ISSKIP",
+          "setup_at_this_probe": [
+            "SKIPDISP 0"
+          ],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            },
+            {
+              "index": 8,
+              "setup": [
+                "SETFONT \"Courier New\""
+              ]
+            },
+            {
+              "index": 9,
+              "setup": [
+                "ALIGNMENT CENTER"
+              ]
+            },
+            {
+              "index": 10,
+              "setup": [
+                "SKIPDISP 1"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725011,
+            "RESULT1": 825011,
+            "RESULTS": "ZZ250_SENT_method_11"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              36,
+              37,
+              38
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825011,
+              "RESULTS": "ZZ250_SENT_method_11"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              36,
+              37,
+              38
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825011,
+              "RESULTS": "ZZ250_SENT_method_11"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              36,
+              37,
+              38
+            ],
+            "state": {
+              "value": "0",
+              "RESULT0": 0,
+              "RESULT1": 825011,
+              "RESULTS": "ZZ250_SENT_method_11"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      },
+      {
+        "case_id": "GETTER251_method_12",
+        "target": {
+          "kind": "method_as_command",
+          "name": "PRINTCLENGTH"
+        },
+        "original_verdict": "matched_scoped",
+        "comparison_pointer": "/rows/22",
+        "register_pointer": "/records/1354",
+        "condition": {
+          "form": "method",
+          "state_label": "independent_result_sentinels",
+          "target_call": "PRINTCLENGTH",
+          "setup_at_this_probe": [],
+          "preceding_setups_in_shared_run": [
+            {
+              "index": 0,
+              "setup": [
+                "SETCOLOR 11259375",
+                "SETBGCOLOR 4478310"
+              ]
+            },
+            {
+              "index": 3,
+              "setup": [
+                "FONTSTYLE 4"
+              ]
+            },
+            {
+              "index": 4,
+              "setup": [
+                "FONTSTYLE 8"
+              ]
+            },
+            {
+              "index": 5,
+              "setup": [
+                "FONTSTYLE 0"
+              ]
+            },
+            {
+              "index": 7,
+              "setup": [
+                "SETFONT \"Arial\""
+              ]
+            },
+            {
+              "index": 8,
+              "setup": [
+                "SETFONT \"Courier New\""
+              ]
+            },
+            {
+              "index": 9,
+              "setup": [
+                "ALIGNMENT CENTER"
+              ]
+            },
+            {
+              "index": 10,
+              "setup": [
+                "SKIPDISP 1"
+              ]
+            },
+            {
+              "index": 11,
+              "setup": [
+                "SKIPDISP 0"
+              ]
+            }
+          ],
+          "value_type": "integer",
+          "initial_sentinels": {
+            "RESULT0": 725012,
+            "RESULT1": 825012,
+            "RESULTS": "ZZ250_SENT_method_12"
+          }
+        },
+        "observations": [
+          {
+            "run_id": "getter-method-native-01",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              39,
+              40,
+              41
+            ],
+            "state": {
+              "value": "25",
+              "RESULT0": 25,
+              "RESULT1": 825012,
+              "RESULTS": "ZZ250_SENT_method_12"
+            }
+          },
+          {
+            "run_id": "getter-method-native-02",
+            "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5",
+            "raw_line_numbers": [
+              39,
+              40,
+              41
+            ],
+            "state": {
+              "value": "25",
+              "RESULT0": 25,
+              "RESULT1": 825012,
+              "RESULTS": "ZZ250_SENT_method_12"
+            }
+          },
+          {
+            "run_id": "getter-method-public-01",
+            "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05",
+            "raw_line_numbers": [
+              39,
+              40,
+              41
+            ],
+            "state": {
+              "value": "25",
+              "RESULT0": 25,
+              "RESULT1": 825012,
+              "RESULTS": "ZZ250_SENT_method_12"
+            }
+          }
+        ],
+        "limits": "Explicit font-name restoration, not no-argument SETFONT compatibility; no font raster/pixel equivalence, performance or every configuration/flag combination claim."
+      }
+    ],
+    "unobserved": [
+      "Native natural exit",
+      "No-argument SETFONT reset in this later fixture",
+      "rendered pixels, all fonts, colors or configurations"
+    ]
+  },
+  "operator_normal": {
+    "source_comparison_sha256": "171ba13ecbb0aebbfc5ba0c0bd7a7b02df3326a8c78bedb480fb7843696b68ec",
+    "marker_field_meanings": {
+      "VALUE": "Captured expression result",
+      "COUNT": "A; number of instrumented helper calls in the shown condition",
+      "ORDER": "B; instrumented helper sequence, where left appends 1 and right appends 2",
+      "BADCOUNT": "A; count of calls to the deliberately failing helper"
+    },
+    "target_count": 13,
+    "cases": [
+      {
+        "case_id": "OPNORMAL273_E143",
+        "original_verdict": "matched_scoped",
+        "register_pointer": "/records/1611",
+        "comparison_pointer": "/rows/0",
+        "fixture_sha256": "52dd310ae9fbd0d37fb050f3da8c35d41a3f4a49887b07f3f7c8a0ae4bfbb5be",
+        "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "initial_topology": "ERB with fixture, empty csv directory",
+        "marker_observations": [
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR0",
+            "condition_statements": [
+              "E=0",
+              "F=0",
+              "A=0",
+              "B=0",
+              "C=E+F"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 2,
+                "observed_marker": "AR0 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 2,
+                "observed_marker": "AR0 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 2,
+                "observed_marker": "AR0 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR1",
+            "condition_statements": [
+              "E=(-7)",
+              "F=3",
+              "A=0",
+              "B=0",
+              "C=E+F"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 3,
+                "observed_marker": "AR1 VALUE=-4 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 3,
+                "observed_marker": "AR1 VALUE=-4 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 3,
+                "observed_marker": "AR1 VALUE=-4 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR2",
+            "condition_statements": [
+              "E=7",
+              "F=(-3)",
+              "A=0",
+              "B=0",
+              "C=E+F"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 4,
+                "observed_marker": "AR2 VALUE=4 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 4,
+                "observed_marker": "AR2 VALUE=4 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 4,
+                "observed_marker": "AR2 VALUE=4 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR3",
+            "condition_statements": [
+              "E=9223372036854775807",
+              "F=1",
+              "A=0",
+              "B=0",
+              "C=E+F"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 5,
+                "observed_marker": "AR3 VALUE=-9223372036854775808 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 5,
+                "observed_marker": "AR3 VALUE=-9223372036854775808 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 5,
+                "observed_marker": "AR3 VALUE=-9223372036854775808 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR4",
+            "condition_statements": [
+              "E=(-9223372036854775807-1)",
+              "F=(-1)",
+              "A=0",
+              "B=0",
+              "C=E+F"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 6,
+                "observed_marker": "AR4 VALUE=9223372036854775807 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 6,
+                "observed_marker": "AR4 VALUE=9223372036854775807 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 6,
+                "observed_marker": "AR4 VALUE=9223372036854775807 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR5",
+            "condition_statements": [
+              "E=9223372036854775807",
+              "F=2",
+              "A=0",
+              "B=0",
+              "C=E+F"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 7,
+                "observed_marker": "AR5 VALUE=-9223372036854775807 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 7,
+                "observed_marker": "AR5 VALUE=-9223372036854775807 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 7,
+                "observed_marker": "AR5 VALUE=-9223372036854775807 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR6",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()+ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF A+4"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 8,
+                "observed_marker": "AR6 VALUE=8 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 8,
+                "observed_marker": "AR6 VALUE=8 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 8,
+                "observed_marker": "AR6 VALUE=8 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR21",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=+ZZ_L()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF A+4"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 23,
+                "observed_marker": "AR21 VALUE=5 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 23,
+                "observed_marker": "AR21 VALUE=5 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 23,
+                "observed_marker": "AR21 VALUE=5 COUNT=1 ORDER=1"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "+"
+            },
+            "marker": "AR23",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "STR:0 '= ZZ_SL()+ZZ_SR()"
+            ],
+            "referenced_helpers": {
+              "ZZ_SL": [
+                "#FUNCTIONS",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF \"A\""
+              ],
+              "ZZ_SR": [
+                "#FUNCTIONS",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF \"B\""
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E143-retained-native-1",
+                "raw_line": 25,
+                "observed_marker": "AR23 VALUE=[AB] COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E143-retained-native-2",
+                "raw_line": 25,
+                "observed_marker": "AR23 VALUE=[AB] COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E143-fresh-py",
+                "raw_line": 25,
+                "observed_marker": "AR23 VALUE=[AB] COUNT=2 ORDER=12"
+              }
+            ]
+          }
+        ],
+        "stderr_notice": "[PyEmuera warning] OUTPUTLOG writes the bounded text history under .pyemuera/logs; review it before sharing.",
+        "limitations": "Only listed necessary normal roles; other finite guards, postfatal cells, alias warnings, mixed logical/ternary gaps remain. Old public pins not retroactively repaired; no new Native. No shared target status changed."
+      },
+      {
+        "case_id": "OPNORMAL273_E138",
+        "original_verdict": "matched_scoped",
+        "register_pointer": "/records/1613",
+        "comparison_pointer": "/rows/2",
+        "fixture_sha256": "12c18d7f66242b2d82f73ec7deffd4c4ad80e66f407941c3589f4ade29256a90",
+        "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "initial_topology": "ERB with fixture, empty csv directory",
+        "marker_observations": [
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&"
+            },
+            "marker": "OP0",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=6&3"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 2,
+                "observed_marker": "OP0 VALUE=2 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 2,
+                "observed_marker": "OP0 VALUE=2 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 2,
+                "observed_marker": "OP0 VALUE=2 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&"
+            },
+            "marker": "OP1",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)&5"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 3,
+                "observed_marker": "OP1 VALUE=5 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 3,
+                "observed_marker": "OP1 VALUE=5 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 3,
+                "observed_marker": "OP1 VALUE=5 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&"
+            },
+            "marker": "OP2",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0&9"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 4,
+                "observed_marker": "OP2 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 4,
+                "observed_marker": "OP2 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 4,
+                "observed_marker": "OP2 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&"
+            },
+            "marker": "OP3",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()&ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 6"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 5,
+                "observed_marker": "OP3 VALUE=2 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 5,
+                "observed_marker": "OP3 VALUE=2 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 5,
+                "observed_marker": "OP3 VALUE=2 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "|"
+            },
+            "marker": "OP4",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=6|3"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 6,
+                "observed_marker": "OP4 VALUE=7 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 6,
+                "observed_marker": "OP4 VALUE=7 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 6,
+                "observed_marker": "OP4 VALUE=7 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "|"
+            },
+            "marker": "OP5",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)|5"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 7,
+                "observed_marker": "OP5 VALUE=-1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 7,
+                "observed_marker": "OP5 VALUE=-1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 7,
+                "observed_marker": "OP5 VALUE=-1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "|"
+            },
+            "marker": "OP6",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0|9"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 8,
+                "observed_marker": "OP6 VALUE=9 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 8,
+                "observed_marker": "OP6 VALUE=9 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 8,
+                "observed_marker": "OP6 VALUE=9 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "|"
+            },
+            "marker": "OP7",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()|ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 6"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 9,
+                "observed_marker": "OP7 VALUE=7 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 9,
+                "observed_marker": "OP7 VALUE=7 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 9,
+                "observed_marker": "OP7 VALUE=7 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^"
+            },
+            "marker": "OP8",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=6^3"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 10,
+                "observed_marker": "OP8 VALUE=5 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 10,
+                "observed_marker": "OP8 VALUE=5 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 10,
+                "observed_marker": "OP8 VALUE=5 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^"
+            },
+            "marker": "OP9",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)^5"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 11,
+                "observed_marker": "OP9 VALUE=-6 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 11,
+                "observed_marker": "OP9 VALUE=-6 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 11,
+                "observed_marker": "OP9 VALUE=-6 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^"
+            },
+            "marker": "OP10",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0^9"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 12,
+                "observed_marker": "OP10 VALUE=9 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 12,
+                "observed_marker": "OP10 VALUE=9 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 12,
+                "observed_marker": "OP10 VALUE=9 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^"
+            },
+            "marker": "OP11",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()^ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 6"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E138-retained-native-1",
+                "raw_line": 13,
+                "observed_marker": "OP11 VALUE=5 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E138-retained-native-2",
+                "raw_line": 13,
+                "observed_marker": "OP11 VALUE=5 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E138-fresh-py",
+                "raw_line": 13,
+                "observed_marker": "OP11 VALUE=5 COUNT=2 ORDER=12"
+              }
+            ]
+          }
+        ],
+        "stderr_notice": "[PyEmuera warning] OUTPUTLOG writes the bounded text history under .pyemuera/logs; review it before sharing.",
+        "limitations": "Only listed necessary normal roles; other finite guards, postfatal cells, alias warnings, mixed logical/ternary gaps remain. Old public pins not retroactively repaired; no new Native. No shared target status changed."
+      },
+      {
+        "case_id": "OPNORMAL273_E140",
+        "original_verdict": "matched_scoped",
+        "register_pointer": "/records/1614",
+        "comparison_pointer": "/rows/3",
+        "fixture_sha256": "888a13bef765713db2ddf7521c30c5605081c52f0eed90004ec47ad767125cab",
+        "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "initial_topology": "ERB with fixture, empty csv directory",
+        "marker_observations": [
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&&"
+            },
+            "marker": "LOG0",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL0()&&ZZR0()"
+            ],
+            "referenced_helpers": {
+              "ZZL0": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 0"
+              ],
+              "ZZR0": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 0"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 2,
+                "observed_marker": "LOG0 VALUE=0 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 2,
+                "observed_marker": "LOG0 VALUE=0 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 2,
+                "observed_marker": "LOG0 VALUE=0 COUNT=1 ORDER=1"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&&"
+            },
+            "marker": "LOG1",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL1()&&ZZR1()"
+            ],
+            "referenced_helpers": {
+              "ZZL1": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 0"
+              ],
+              "ZZR1": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 3,
+                "observed_marker": "LOG1 VALUE=0 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 3,
+                "observed_marker": "LOG1 VALUE=0 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 3,
+                "observed_marker": "LOG1 VALUE=0 COUNT=1 ORDER=1"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&&"
+            },
+            "marker": "LOG2",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL2()&&ZZR2()"
+            ],
+            "referenced_helpers": {
+              "ZZL2": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZR2": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 0"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 4,
+                "observed_marker": "LOG2 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 4,
+                "observed_marker": "LOG2 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 4,
+                "observed_marker": "LOG2 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&&"
+            },
+            "marker": "LOG3",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL3()&&ZZR3()"
+            ],
+            "referenced_helpers": {
+              "ZZL3": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZR3": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 5,
+                "observed_marker": "LOG3 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 5,
+                "observed_marker": "LOG3 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 5,
+                "observed_marker": "LOG3 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^^"
+            },
+            "marker": "LOG8",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL8()^^ZZR8()"
+            ],
+            "referenced_helpers": {
+              "ZZL8": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 0"
+              ],
+              "ZZR8": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 0"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 10,
+                "observed_marker": "LOG8 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 10,
+                "observed_marker": "LOG8 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 10,
+                "observed_marker": "LOG8 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^^"
+            },
+            "marker": "LOG9",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL9()^^ZZR9()"
+            ],
+            "referenced_helpers": {
+              "ZZL9": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 0"
+              ],
+              "ZZR9": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 11,
+                "observed_marker": "LOG9 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 11,
+                "observed_marker": "LOG9 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 11,
+                "observed_marker": "LOG9 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^^"
+            },
+            "marker": "LOG10",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL10()^^ZZR10()"
+            ],
+            "referenced_helpers": {
+              "ZZL10": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZR10": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 0"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 12,
+                "observed_marker": "LOG10 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 12,
+                "observed_marker": "LOG10 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 12,
+                "observed_marker": "LOG10 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "^^"
+            },
+            "marker": "LOG11",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL11()^^ZZR11()"
+            ],
+            "referenced_helpers": {
+              "ZZL11": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZR11": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 13,
+                "observed_marker": "LOG11 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 13,
+                "observed_marker": "LOG11 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 13,
+                "observed_marker": "LOG11 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!&"
+            },
+            "marker": "LOG12",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL12()!&ZZR12()"
+            ],
+            "referenced_helpers": {
+              "ZZL12": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 0"
+              ],
+              "ZZR12": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 0"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 14,
+                "observed_marker": "LOG12 VALUE=1 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 14,
+                "observed_marker": "LOG12 VALUE=1 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 14,
+                "observed_marker": "LOG12 VALUE=1 COUNT=1 ORDER=1"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!&"
+            },
+            "marker": "LOG13",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL13()!&ZZR13()"
+            ],
+            "referenced_helpers": {
+              "ZZL13": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 0"
+              ],
+              "ZZR13": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 15,
+                "observed_marker": "LOG13 VALUE=1 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 15,
+                "observed_marker": "LOG13 VALUE=1 COUNT=1 ORDER=1"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 15,
+                "observed_marker": "LOG13 VALUE=1 COUNT=1 ORDER=1"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!&"
+            },
+            "marker": "LOG14",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL14()!&ZZR14()"
+            ],
+            "referenced_helpers": {
+              "ZZL14": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZR14": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF 0"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 16,
+                "observed_marker": "LOG14 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 16,
+                "observed_marker": "LOG14 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 16,
+                "observed_marker": "LOG14 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!&"
+            },
+            "marker": "LOG15",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZL15()!&ZZR15()"
+            ],
+            "referenced_helpers": {
+              "ZZL15": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZR15": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 17,
+                "observed_marker": "LOG15 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 17,
+                "observed_marker": "LOG15 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 17,
+                "observed_marker": "LOG15 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "&&"
+            },
+            "marker": "LOG20",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0&&ZZ_BAD()"
+            ],
+            "referenced_helpers": {
+              "ZZ_BAD": [
+                "#FUNCTION",
+                "A += 1",
+                "RETURNF 1/(B-B)"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 22,
+                "observed_marker": "LOG20 VALUE=0 BADCOUNT=0"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 22,
+                "observed_marker": "LOG20 VALUE=0 BADCOUNT=0"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 22,
+                "observed_marker": "LOG20 VALUE=0 BADCOUNT=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!&"
+            },
+            "marker": "LOG22",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0!&ZZ_BAD()"
+            ],
+            "referenced_helpers": {
+              "ZZ_BAD": [
+                "#FUNCTION",
+                "A += 1",
+                "RETURNF 1/(B-B)"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E140-retained-native-1",
+                "raw_line": 24,
+                "observed_marker": "LOG22 VALUE=1 BADCOUNT=0"
+              },
+              {
+                "run_id": "E140-retained-native-2",
+                "raw_line": 24,
+                "observed_marker": "LOG22 VALUE=1 BADCOUNT=0"
+              },
+              {
+                "run_id": "E140-fresh-py",
+                "raw_line": 24,
+                "observed_marker": "LOG22 VALUE=1 BADCOUNT=0"
+              }
+            ]
+          }
+        ],
+        "stderr_notice": "[PyEmuera warning] OUTPUTLOG writes the bounded text history under .pyemuera/logs; review it before sharing.",
+        "limitations": "Only listed necessary normal roles; other finite guards, postfatal cells, alias warnings, mixed logical/ternary gaps remain. Old public pins not retroactively repaired; no new Native. No shared target status changed."
+      },
+      {
+        "case_id": "OPNORMAL273_E141",
+        "original_verdict": "matched_scoped",
+        "register_pointer": "/records/1615",
+        "comparison_pointer": "/rows/4",
+        "fixture_sha256": "4681c464f57ca883d4ff6b3bf13687fe6d82659a5cacf6b932e4ae8a273472d6",
+        "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "initial_topology": "ERB with fixture, empty csv directory",
+        "marker_observations": [
+          {
+            "target": {
+              "kind": "operator",
+              "name": "=="
+            },
+            "marker": "CMP0",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)==0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 2,
+                "observed_marker": "CMP0 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 2,
+                "observed_marker": "CMP0 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 2,
+                "observed_marker": "CMP0 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "=="
+            },
+            "marker": "CMP1",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0==0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 3,
+                "observed_marker": "CMP1 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 3,
+                "observed_marker": "CMP1 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 3,
+                "observed_marker": "CMP1 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "=="
+            },
+            "marker": "CMP2",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=1==0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 4,
+                "observed_marker": "CMP2 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 4,
+                "observed_marker": "CMP2 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 4,
+                "observed_marker": "CMP2 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "=="
+            },
+            "marker": "CMP3",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-9223372036854775807-1)==9223372036854775807"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 5,
+                "observed_marker": "CMP3 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 5,
+                "observed_marker": "CMP3 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 5,
+                "observed_marker": "CMP3 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "=="
+            },
+            "marker": "CMP4",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=9223372036854775807==(-9223372036854775807-1)"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 6,
+                "observed_marker": "CMP4 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 6,
+                "observed_marker": "CMP4 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 6,
+                "observed_marker": "CMP4 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "=="
+            },
+            "marker": "CMP5",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()==ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 7,
+                "observed_marker": "CMP5 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 7,
+                "observed_marker": "CMP5 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 7,
+                "observed_marker": "CMP5 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!="
+            },
+            "marker": "CMP6",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)!=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 8,
+                "observed_marker": "CMP6 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 8,
+                "observed_marker": "CMP6 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 8,
+                "observed_marker": "CMP6 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!="
+            },
+            "marker": "CMP7",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0!=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 9,
+                "observed_marker": "CMP7 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 9,
+                "observed_marker": "CMP7 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 9,
+                "observed_marker": "CMP7 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!="
+            },
+            "marker": "CMP8",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=1!=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 10,
+                "observed_marker": "CMP8 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 10,
+                "observed_marker": "CMP8 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 10,
+                "observed_marker": "CMP8 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!="
+            },
+            "marker": "CMP9",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-9223372036854775807-1)!=9223372036854775807"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 11,
+                "observed_marker": "CMP9 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 11,
+                "observed_marker": "CMP9 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 11,
+                "observed_marker": "CMP9 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!="
+            },
+            "marker": "CMP10",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=9223372036854775807!=(-9223372036854775807-1)"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 12,
+                "observed_marker": "CMP10 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 12,
+                "observed_marker": "CMP10 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 12,
+                "observed_marker": "CMP10 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "!="
+            },
+            "marker": "CMP11",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()!=ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 13,
+                "observed_marker": "CMP11 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 13,
+                "observed_marker": "CMP11 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 13,
+                "observed_marker": "CMP11 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">"
+            },
+            "marker": "CMP12",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)>0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 14,
+                "observed_marker": "CMP12 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 14,
+                "observed_marker": "CMP12 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 14,
+                "observed_marker": "CMP12 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">"
+            },
+            "marker": "CMP13",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0>0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 15,
+                "observed_marker": "CMP13 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 15,
+                "observed_marker": "CMP13 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 15,
+                "observed_marker": "CMP13 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">"
+            },
+            "marker": "CMP14",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=1>0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 16,
+                "observed_marker": "CMP14 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 16,
+                "observed_marker": "CMP14 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 16,
+                "observed_marker": "CMP14 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">"
+            },
+            "marker": "CMP15",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-9223372036854775807-1)>9223372036854775807"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 17,
+                "observed_marker": "CMP15 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 17,
+                "observed_marker": "CMP15 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 17,
+                "observed_marker": "CMP15 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">"
+            },
+            "marker": "CMP16",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=9223372036854775807>(-9223372036854775807-1)"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 18,
+                "observed_marker": "CMP16 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 18,
+                "observed_marker": "CMP16 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 18,
+                "observed_marker": "CMP16 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">"
+            },
+            "marker": "CMP17",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()>ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 19,
+                "observed_marker": "CMP17 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 19,
+                "observed_marker": "CMP17 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 19,
+                "observed_marker": "CMP17 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<"
+            },
+            "marker": "CMP18",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)<0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 20,
+                "observed_marker": "CMP18 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 20,
+                "observed_marker": "CMP18 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 20,
+                "observed_marker": "CMP18 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<"
+            },
+            "marker": "CMP19",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0<0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 21,
+                "observed_marker": "CMP19 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 21,
+                "observed_marker": "CMP19 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 21,
+                "observed_marker": "CMP19 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<"
+            },
+            "marker": "CMP20",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=1<0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 22,
+                "observed_marker": "CMP20 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 22,
+                "observed_marker": "CMP20 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 22,
+                "observed_marker": "CMP20 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<"
+            },
+            "marker": "CMP21",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-9223372036854775807-1)<9223372036854775807"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 23,
+                "observed_marker": "CMP21 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 23,
+                "observed_marker": "CMP21 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 23,
+                "observed_marker": "CMP21 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<"
+            },
+            "marker": "CMP22",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=9223372036854775807<(-9223372036854775807-1)"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 24,
+                "observed_marker": "CMP22 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 24,
+                "observed_marker": "CMP22 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 24,
+                "observed_marker": "CMP22 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<"
+            },
+            "marker": "CMP23",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()<ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 25,
+                "observed_marker": "CMP23 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 25,
+                "observed_marker": "CMP23 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 25,
+                "observed_marker": "CMP23 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">="
+            },
+            "marker": "CMP24",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)>=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 26,
+                "observed_marker": "CMP24 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 26,
+                "observed_marker": "CMP24 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 26,
+                "observed_marker": "CMP24 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">="
+            },
+            "marker": "CMP25",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0>=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 27,
+                "observed_marker": "CMP25 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 27,
+                "observed_marker": "CMP25 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 27,
+                "observed_marker": "CMP25 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">="
+            },
+            "marker": "CMP26",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=1>=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 28,
+                "observed_marker": "CMP26 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 28,
+                "observed_marker": "CMP26 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 28,
+                "observed_marker": "CMP26 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">="
+            },
+            "marker": "CMP27",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-9223372036854775807-1)>=9223372036854775807"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 29,
+                "observed_marker": "CMP27 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 29,
+                "observed_marker": "CMP27 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 29,
+                "observed_marker": "CMP27 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">="
+            },
+            "marker": "CMP28",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=9223372036854775807>=(-9223372036854775807-1)"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 30,
+                "observed_marker": "CMP28 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 30,
+                "observed_marker": "CMP28 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 30,
+                "observed_marker": "CMP28 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": ">="
+            },
+            "marker": "CMP29",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()>=ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 31,
+                "observed_marker": "CMP29 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 31,
+                "observed_marker": "CMP29 VALUE=1 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 31,
+                "observed_marker": "CMP29 VALUE=1 COUNT=2 ORDER=12"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<="
+            },
+            "marker": "CMP30",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-1)<=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 32,
+                "observed_marker": "CMP30 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 32,
+                "observed_marker": "CMP30 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 32,
+                "observed_marker": "CMP30 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<="
+            },
+            "marker": "CMP31",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=0<=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 33,
+                "observed_marker": "CMP31 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 33,
+                "observed_marker": "CMP31 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 33,
+                "observed_marker": "CMP31 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<="
+            },
+            "marker": "CMP32",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=1<=0"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 34,
+                "observed_marker": "CMP32 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 34,
+                "observed_marker": "CMP32 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 34,
+                "observed_marker": "CMP32 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<="
+            },
+            "marker": "CMP33",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=(-9223372036854775807-1)<=9223372036854775807"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 35,
+                "observed_marker": "CMP33 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 35,
+                "observed_marker": "CMP33 VALUE=1 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 35,
+                "observed_marker": "CMP33 VALUE=1 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<="
+            },
+            "marker": "CMP34",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=9223372036854775807<=(-9223372036854775807-1)"
+            ],
+            "referenced_helpers": {},
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 36,
+                "observed_marker": "CMP34 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 36,
+                "observed_marker": "CMP34 VALUE=0 COUNT=0 ORDER=0"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 36,
+                "observed_marker": "CMP34 VALUE=0 COUNT=0 ORDER=0"
+              }
+            ]
+          },
+          {
+            "target": {
+              "kind": "operator",
+              "name": "<="
+            },
+            "marker": "CMP35",
+            "condition_statements": [
+              "A=0",
+              "B=0",
+              "C=ZZ_L()<=ZZ_R()"
+            ],
+            "referenced_helpers": {
+              "ZZ_L": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+1",
+                "RETURNF 2"
+              ],
+              "ZZ_R": [
+                "#FUNCTION",
+                "A += 1",
+                "B=B*10+2",
+                "RETURNF -3"
+              ]
+            },
+            "observations": [
+              {
+                "run_id": "E141-retained-native-1",
+                "raw_line": 37,
+                "observed_marker": "CMP35 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-retained-native-2",
+                "raw_line": 37,
+                "observed_marker": "CMP35 VALUE=0 COUNT=2 ORDER=12"
+              },
+              {
+                "run_id": "E141-fresh-py",
+                "raw_line": 37,
+                "observed_marker": "CMP35 VALUE=0 COUNT=2 ORDER=12"
+              }
+            ]
+          }
+        ],
+        "stderr_notice": "[PyEmuera warning] OUTPUTLOG writes the bounded text history under .pyemuera/logs; review it before sharing.",
+        "limitations": "Only listed necessary normal roles; other finite guards, postfatal cells, alias warnings, mixed logical/ternary gaps remain. Old public pins not retroactively repaired; no new Native. No shared target status changed."
+      }
+    ],
+    "unobserved": [
+      "new Native execution for case273",
+      "historical missing Py receipt",
+      "other guard, postfatal state, diagnostic equivalence, broader operator acceptance"
+    ]
+  },
+  "runs": {
+    "getter-expression-native-01": {
+      "engine": "Native",
+      "fixture": "expression",
+      "receipt_sha256": "a831ab0463e97287a98db39216bde0e078c376d2446b73f2db7c92e1d7107e30",
+      "natural_exit": "unobserved",
+      "exit_code": null,
+      "cleanup_terminate_ok": true,
+      "fixture_sha256": "f5a989150cb1c60bc17e435a6fd3317a8c8f460d5ed9c64de98d8e4cdf10bd2a",
+      "config_sha256": "eac0acc37b8c717bc1bb7d4592e2cfa3a0615f864ddfccaad5306fbea41d5d20",
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "completion_marker": {
+        "text": "DONE251_expression",
+        "raw_line": 33,
+        "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28"
+      }
+    },
+    "getter-expression-native-02": {
+      "engine": "Native",
+      "fixture": "expression",
+      "receipt_sha256": "5a2f87969913014a685885ebd88c9c0575821f45ea87604c1f08cb25baf1943a",
+      "natural_exit": "unobserved",
+      "exit_code": null,
+      "cleanup_terminate_ok": true,
+      "fixture_sha256": "f5a989150cb1c60bc17e435a6fd3317a8c8f460d5ed9c64de98d8e4cdf10bd2a",
+      "config_sha256": "eac0acc37b8c717bc1bb7d4592e2cfa3a0615f864ddfccaad5306fbea41d5d20",
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "completion_marker": {
+        "text": "DONE251_expression",
+        "raw_line": 33,
+        "raw_sha256": "d89b9c58d24be6b825570156e0e0f577a32786a3d8a576f6ea9efe6441e4ae28"
+      }
+    },
+    "getter-expression-public-01": {
+      "engine": "Py",
+      "fixture": "expression",
+      "receipt_sha256": "271534ed287256a15b61161d45e96e0e4c53fee62bfb14a9533d60e5b9ca0e46",
+      "natural_exit": "process exited",
+      "exit_code": 0,
+      "cleanup_terminate_ok": null,
+      "fixture_sha256": "f5a989150cb1c60bc17e435a6fd3317a8c8f460d5ed9c64de98d8e4cdf10bd2a",
+      "config_sha256": "eac0acc37b8c717bc1bb7d4592e2cfa3a0615f864ddfccaad5306fbea41d5d20",
+      "engine_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "completion_marker": {
+        "text": "DONE251_expression",
+        "raw_line": 33,
+        "raw_sha256": "8cc2be9f74304800a57cf58bd7d77c345899f425c1068c724b067d5dab9c80d3"
+      }
+    },
+    "getter-method-native-01": {
+      "engine": "Native",
+      "fixture": "method",
+      "receipt_sha256": "6b995e49404c5ef34cd782aad96d3ab957f3e7ae8bda61ef87512156b88e6519",
+      "natural_exit": "unobserved",
+      "exit_code": null,
+      "cleanup_terminate_ok": true,
+      "fixture_sha256": "6e4669c4f313080784422b55f851b4aefb6c61502658193c61b19fde5f1624dd",
+      "config_sha256": "eac0acc37b8c717bc1bb7d4592e2cfa3a0615f864ddfccaad5306fbea41d5d20",
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "completion_marker": {
+        "text": "DONE251_method",
+        "raw_line": 54,
+        "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5"
+      }
+    },
+    "getter-method-native-02": {
+      "engine": "Native",
+      "fixture": "method",
+      "receipt_sha256": "c8903a99bb53daead00f4d5deee94cf375022b66148808d7dbdb6669af2cad01",
+      "natural_exit": "unobserved",
+      "exit_code": null,
+      "cleanup_terminate_ok": true,
+      "fixture_sha256": "6e4669c4f313080784422b55f851b4aefb6c61502658193c61b19fde5f1624dd",
+      "config_sha256": "eac0acc37b8c717bc1bb7d4592e2cfa3a0615f864ddfccaad5306fbea41d5d20",
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "completion_marker": {
+        "text": "DONE251_method",
+        "raw_line": 54,
+        "raw_sha256": "24dd054ca45a74492bb61b0aa5ed6f15cb5d5a067a09ca958497c1d4cfbd0ac5"
+      }
+    },
+    "getter-method-public-01": {
+      "engine": "Py",
+      "fixture": "method",
+      "receipt_sha256": "268cbb23f02359c7858225eb13b4d9b6a86105d94315aadbb1e10c46fdbe8948",
+      "natural_exit": "process exited",
+      "exit_code": 0,
+      "cleanup_terminate_ok": null,
+      "fixture_sha256": "6e4669c4f313080784422b55f851b4aefb6c61502658193c61b19fde5f1624dd",
+      "config_sha256": "eac0acc37b8c717bc1bb7d4592e2cfa3a0615f864ddfccaad5306fbea41d5d20",
+      "engine_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "completion_marker": {
+        "text": "DONE251_method",
+        "raw_line": 54,
+        "raw_sha256": "8bec5405bc511f1e36a241766860b501b52895ee1bbf4c4dc569e24cbf111d05"
+      }
+    },
+    "E143-retained-native-1": {
+      "run_id": "E143-retained-native-1",
+      "engine": "Native",
+      "raw_sha256": "78b3284d6bb9a758402d1dc1796141b7507f27203aca99879d424cdcb7938982",
+      "receipt_sha256": "9b0075c890b6a25814cb12a15b4f9bdcb158655ca6e03955d48f4d8af945e367",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 26
+    },
+    "E143-retained-native-2": {
+      "run_id": "E143-retained-native-2",
+      "engine": "Native",
+      "raw_sha256": "78b3284d6bb9a758402d1dc1796141b7507f27203aca99879d424cdcb7938982",
+      "receipt_sha256": "51dd113bf51f3c1bf3f1f69891ed4e922de73eca3e963d98bdf2c7147b82dbaf",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 26
+    },
+    "E143-fresh-py": {
+      "run_id": "E143-fresh-py",
+      "engine": "Py",
+      "raw_sha256": "9110af7110600f13b8b2e560390adb7cfced3b39f8124e6ab664108b1c27dad3",
+      "receipt_sha256": "250d64e15cafe9b75a26a093e52ac36c0b386f35344a6e02d474f09ea47c7785",
+      "natural_exit": "process exited",
+      "exit_code": 0,
+      "done_line": 26
+    },
+    "E138-retained-native-1": {
+      "run_id": "E138-retained-native-1",
+      "engine": "Native",
+      "raw_sha256": "f1c140e219accf06fe801a9aab6e35da6f59820f003f957354361393cbca77e0",
+      "receipt_sha256": "dac38d362555860856ad35993b03f386d1686c514ec55d0d0042e093b52db442",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 27
+    },
+    "E138-retained-native-2": {
+      "run_id": "E138-retained-native-2",
+      "engine": "Native",
+      "raw_sha256": "f1c140e219accf06fe801a9aab6e35da6f59820f003f957354361393cbca77e0",
+      "receipt_sha256": "a57b48953ebc84f957a1ec07474baf080a4a545b893f4d699c90f08c60942bb7",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 27
+    },
+    "E138-fresh-py": {
+      "run_id": "E138-fresh-py",
+      "engine": "Py",
+      "raw_sha256": "620d1052e54f516b80e20661550d418fe78ec5630dda8842e32709e196e9f7bd",
+      "receipt_sha256": "97fbd590c8b38d9629da695cefa487bc871dc451f8e8e8f1b07019d9bfe5d23c",
+      "natural_exit": "process exited",
+      "exit_code": 0,
+      "done_line": 27
+    },
+    "E140-retained-native-1": {
+      "run_id": "E140-retained-native-1",
+      "engine": "Native",
+      "raw_sha256": "4dca47ba67d72cc49d1175a231f4a5185d0696e138864a99ea3cf6f538bc2e8d",
+      "receipt_sha256": "e05e75ed4143a4eee5c243fe2a6c2111a70ef08694a0a80be2f2ac7099fcc784",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 26
+    },
+    "E140-retained-native-2": {
+      "run_id": "E140-retained-native-2",
+      "engine": "Native",
+      "raw_sha256": "4dca47ba67d72cc49d1175a231f4a5185d0696e138864a99ea3cf6f538bc2e8d",
+      "receipt_sha256": "e808dd7c36fbdd90d779e2343361a6f744b54463ed7d0178edb7b08afce5bfbb",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 26
+    },
+    "E140-fresh-py": {
+      "run_id": "E140-fresh-py",
+      "engine": "Py",
+      "raw_sha256": "82712acf4a8cab1181c9ca6ef1a8c0d579d8a5c6fc1820b549ee3afbec9b24c7",
+      "receipt_sha256": "16713bfb12c00c8c558e514379d20340282d9571bdb8cbc4eab209ba70ce0f26",
+      "natural_exit": "process exited",
+      "exit_code": 0,
+      "done_line": 26
+    },
+    "E141-retained-native-1": {
+      "run_id": "E141-retained-native-1",
+      "engine": "Native",
+      "raw_sha256": "f4b2e806adb60b328de27825a33dc84ddd58290e59fb7d09678c5e175fa5f784",
+      "receipt_sha256": "4c64c969a6503ba0c4a112c68edb4264eb6f774caea109aa86c4a644de655c95",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 38
+    },
+    "E141-retained-native-2": {
+      "run_id": "E141-retained-native-2",
+      "engine": "Native",
+      "raw_sha256": "f4b2e806adb60b328de27825a33dc84ddd58290e59fb7d09678c5e175fa5f784",
+      "receipt_sha256": "8d7ee790f0ecdcd78d2ca3fade19b5da1c9f91762d4e37472fb205674bead2f3",
+      "natural_exit": "unobserved",
+      "cleanup_terminate_ok": true,
+      "done_line": 38
+    },
+    "E141-fresh-py": {
+      "run_id": "E141-fresh-py",
+      "engine": "Py",
+      "raw_sha256": "813fec15f700ab1c439e5321014b62b6838a83378f736bbe1928da7a412a0873",
+      "receipt_sha256": "190d8200194fc782f4b94085488bd47672b0be90c0355ca4ea81acf35246964d",
+      "natural_exit": "process exited",
+      "exit_code": 0,
+      "done_line": 38
+    }
+  },
+  "raw_and_fixture_included": false,
+  "rights_and_privacy_clearance": "Not established here. Raw logs and fixtures are not included. SHA and private source mapping permit follow-up."
+}

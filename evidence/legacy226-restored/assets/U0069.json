@@ -1,0 +1,23 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "LOADGLOBAL"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_LOADGLOBAL_CORRUPT_20261115.json",
+  "acceptance_sha256": "580091b0eb456a45cb0536d43fa77e9497288e68acab31eab42bc43a354c6953",
+  "evidence_manifest_path": "evidence/loadglobal-corrupt-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "c5202cf4e09c33fd43715a7d075827b3aec149b83735b2f2c6871ddf3fd08e94",
+  "registered_case_ids": [
+    "GLOBAL03",
+    "GLOBALSAVE205_LOADGLOBAL",
+    "LOADGLOBAL_CORRUPT_TRUNCATION_20261115",
+    "LOADGLOBAL_CORRUPT_SECOND_VALUE_20261115"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "public_release_modified": false
+}

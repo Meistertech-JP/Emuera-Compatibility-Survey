@@ -1,0 +1,73 @@
+{
+  "case_id": "PRINTDB15",
+  "comparison_recorded": "Index/next-RAND observations agree for absent block (99/43) and empty item (0/5). Native emits a no-display warning for the absent block; public output and app log do not.",
+  "conditions": "PRINTDB15 fixture runs each condition with selected index reset to 99 and seed 12345; Native repeated twice and public pyz run once.",
+  "invocation": "PRINTDATA with absent DATA/ENDDATA block and with one empty DATA item; inspect selected index and next RAND100.",
+  "limitations": "Only absent-block and one empty-item structure are compared. Nonempty/selectable options, multiple choices, invalid/nested closure, remaining PRINTDATA variants, and GUI styling remain untested. Native natural exit and exit code were not observed.",
+  "modes": {
+    "native-01": {
+      "configuration_contents_disclosed": false,
+      "configuration_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "configuration_source_id": "S009",
+      "fixture": "cases/PRINTDB15/native-01/fixture/PRINTDB15.ERB",
+      "identity_basis": "Original case evidence path and saved Native receipt; the receipt has no explicit case or mode field.",
+      "raw": {
+        "native_log": "cases/PRINTDB15/native-01/raw/emuera.log"
+      },
+      "receipt": "cases/PRINTDB15/native-01/receipt.json"
+    },
+    "native-02": {
+      "configuration_contents_disclosed": false,
+      "configuration_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "configuration_source_id": "S013",
+      "fixture": "cases/PRINTDB15/native-02/fixture/PRINTDB15.ERB",
+      "identity_basis": "Original case evidence path and saved Native receipt; the receipt has no explicit case or mode field.",
+      "raw": {
+        "native_log": "cases/PRINTDB15/native-02/raw/emuera.log"
+      },
+      "receipt": "cases/PRINTDB15/native-02/receipt.json"
+    },
+    "public-01": {
+      "configuration_contents_disclosed": false,
+      "configuration_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "configuration_source_id": "S017",
+      "fixture": "cases/PRINTDB15/public-01/fixture/PRINTDB15.ERB",
+      "identity_basis": "Original case evidence path and saved public receipt; the receipt has no explicit case or mode field.",
+      "raw": {
+        "app_log": "cases/PRINTDB15/public-01/raw/app-log.bin",
+        "stderr": "cases/PRINTDB15/public-01/raw/stderr.bin",
+        "stdout": "cases/PRINTDB15/public-01/raw/stdout.bin"
+      },
+      "receipt": "cases/PRINTDB15/public-01/receipt.json"
+    }
+  },
+  "observed": {
+    "absent_block": {
+      "index": 99,
+      "next_rand100": 43
+    },
+    "empty_item": {
+      "index": 0,
+      "next_rand100": 5
+    },
+    "gui_pixels_observed": false,
+    "native_exit_code_observed": false,
+    "native_natural_exit_observed": false,
+    "native_no_display_warning": true,
+    "public_no_display_warning_seen_in_saved_streams": false
+  },
+  "physical_case_count": 1,
+  "recorded_note": "Partial comparison evidence recovered from preserved run files; 242-file inventory hashes verified. No target completion is implied.",
+  "scenario_verdict": "different_scoped",
+  "scope_note": "One physical case with two explicit typed roles. No separate run per role is claimed. Native exit, GUI pixels and withheld configuration are not established by these artifacts.",
+  "targets": [
+    {
+      "kind": "command_or_syntax",
+      "name": "PRINTDATA"
+    },
+    {
+      "kind": "structural_syntax",
+      "name": "PRINTDATA"
+    }
+  ]
+}

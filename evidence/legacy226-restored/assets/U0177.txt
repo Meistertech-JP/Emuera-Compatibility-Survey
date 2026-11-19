@@ -1,0 +1,98 @@
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs
+109: 				case FunctionCode.PRINTBUTTON://変数の内容
+110: 					{
+111: 						if (skipPrint)
+112: 							break;
+113:                         exm.Console.UseUserStyle = true;
+114:                         exm.Console.UseSetColorStyle = true;
+115:                         SpButtonArgument bArg = (SpButtonArgument)func.Argument;
+116: 						str = bArg.PrintStrTerm.GetStrValue(exm);
+117: 						//ボタン処理に絡んで表示がおかしくなるため、PRINTBUTTONでの改行コードはオミット
+118: 						str = str.Replace("\n", "");
+119: 						if (bArg.ButtonWord.GetOperandType() == typeof(long))
+120: 							exm.Console.PrintButton(str, bArg.ButtonWord.GetIntValue(exm));
+121: 						else
+122: 							exm.Console.PrintButton(str, bArg.ButtonWord.GetStrValue(exm));
+123: 					}
+124: 					break;
+125: 				case FunctionCode.PRINTBUTTONC://変数の内容
+126: 				case FunctionCode.PRINTBUTTONLC:
+127: 					{
+128: 						if (skipPrint)
+129: 							break;
+130:                         exm.Console.UseUserStyle = true;
+131:                         exm.Console.UseSetColorStyle = true;
+132:                         SpButtonArgument bArg = (SpButtonArgument)func.Argument;
+133: 						str = bArg.PrintStrTerm.GetStrValue(exm);
+134: 						//ボタン処理に絡んで表示がおかしくなるため、PRINTBUTTONでの改行コードはオミット
+135: 						str = str.Replace("\n", "");
+136: 						bool isRight = (func.FunctionCode == FunctionCode.PRINTBUTTONC) ? true : false;
+137: 						if (bArg.ButtonWord.GetOperandType() == typeof(long))
+138: 							exm.Console.PrintButtonC(str, bArg.ButtonWord.GetIntValue(exm), isRight);
+139: 						else
+140: 							exm.Console.PrintButtonC(str, bArg.ButtonWord.GetStrValue(exm), isRight);
+141: 					}
+142: 					break;
+539: 				case FunctionCode.PRINTCPERLINE:
+540: 					{
+541: 						SpGetIntArgument spGetintArg = (SpGetIntArgument)func.Argument;
+542: 						spGetintArg.VarToken.SetValue((Int64)Config.PrintCPerLine, exm);
+543: 					}
+544: 					break;
+545: 				case FunctionCode.SAVENOS:
+546: 					{
+547: 						SpGetIntArgument spGetintArg = (SpGetIntArgument)func.Argument;
+548: 						spGetintArg.VarToken.SetValue((Int64)Config.SaveDataNos, exm);
+549: 					}
+550: 					break;
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs
+1452: 		private sealed class SP_BUTTON_ArgumentBuilder : ArgumentBuilder
+1453: 		{
+1454: 			public SP_BUTTON_ArgumentBuilder()
+1455: 			{
+1456: 				argumentTypeArray = new Type[] { typeof(string), typeof(void) };
+1457: 			}
+1458: 			public override Argument CreateArgument(InstructionLine line, ExpressionMediator exm)
+1459: 			{
+1460: 				IOperandTerm[] terms = popTerms(line);
+1461: 				if (!checkArgumentType(line, exm, terms))
+1462: 					return null;
+1463: 				return new SpButtonArgument(terms[0], terms[1]);
+1464: 			}
+1465: 		}
+1561: 		private sealed class SP_GETINT_ArgumentBuilder : ArgumentBuilder
+1562: 		{
+1563: 			public SP_GETINT_ArgumentBuilder()
+1564: 			{
+1565: 				argumentTypeArray = new Type[] { typeof(Int64) };
+1566: 				minArg = 0;
+1567: 			}
+1568: 			public override Argument CreateArgument(InstructionLine line, ExpressionMediator exm)
+1569: 			{
+1570: 				IOperandTerm[] terms = popTerms(line);
+1571: 				if (terms.Length == 0)
+1572: 				{
+1573: 					VariableToken varToken = GlobalStatic.VariableData.GetSystemVariableToken("RESULT");
+1574: 					return new SpGetIntArgument(new VariableTerm(varToken, new IOperandTerm[]{new SingleTerm(0)}));
+1575: 				}
+1576: 				if (!checkArgumentType(line, exm, terms))
+1577: 					return null;
+1578: 				VariableTerm x = getChangeableVariable(terms, 1, line);
+1579: 				if (x == null)
+1580: 					return null;
+1581: 				return new SpGetIntArgument(x);
+1582: 			}
+1583: 		}
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs
+169: 			addFunction(FunctionCode.PRINTBUTTON, argb[FunctionArgType.SP_BUTTON], METHOD_SAFE | EXTENDED);
+170: 			addFunction(FunctionCode.PRINTBUTTONC, argb[FunctionArgType.SP_BUTTON], METHOD_SAFE | EXTENDED);
+171: 			addFunction(FunctionCode.PRINTBUTTONLC, argb[FunctionArgType.SP_BUTTON], METHOD_SAFE | EXTENDED);
+172: 
+173: 			addFunction(FunctionCode.PRINTPLAIN, argb[FunctionArgType.STR_NULLABLE], METHOD_SAFE | EXTENDED);
+174: 			addFunction(FunctionCode.PRINTPLAINFORM, argb[FunctionArgType.FORM_STR_NULLABLE], METHOD_SAFE | EXTENDED);
+384: 			addFunction(FunctionCode.GETTIME, argb[FunctionArgType.VOID], METHOD_SAFE | EXTENDED);//2つに代入する必要があるのでMETHOD化できない
+385: 			addFunction(FunctionCode.POWER, argb[FunctionArgType.SP_POWER], METHOD_SAFE | EXTENDED);//引数が違うのでMETHOD化できない。
+386: 			addFunction(FunctionCode.PRINTCPERLINE, argb[FunctionArgType.SP_GETINT], METHOD_SAFE | EXTENDED);//よく考えたら引数の仕様違うや
+387: 			addFunction(FunctionCode.SAVENOS, argb[FunctionArgType.SP_GETINT], METHOD_SAFE | EXTENDED);//引数の仕様が違うので(ry

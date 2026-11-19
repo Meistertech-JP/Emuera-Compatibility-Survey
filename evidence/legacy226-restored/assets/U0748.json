@@ -1,0 +1,33 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T17:55:33.724378+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTL"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "resolved_parent_obligations": [
+    "raw_nullable_empty",
+    "runtime_identity_PRINTL"
+  ],
+  "comparison_path": "evidence/printl-empty-raw-20261114/COMPARISON.json",
+  "comparison_sha256": "7ba9ad59a934b72efdde705e9d235b40fc33d0c41117a14fad62c9f91ac6b956",
+  "review_path": "evidence/printl-empty-raw-20261114/CASE_REVIEW_ja.md",
+  "finite_scope": [
+    "bare PRINTL through STR_NULLABLE",
+    "preceding raw text is terminated by empty PRINTL",
+    "selected internal double-space raw literal",
+    "RESULT/RESULTS sentinel output",
+    "Native/public runtime/config/fixture/output receipts"
+  ],
+  "excluded": [
+    "other PRINT/PRINTFORM variants",
+    "Unicode and layout",
+    "SKIPDISP behavior",
+    "Native natural exit and exit code"
+  ],
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "no_product_or_release_modification": true
+}

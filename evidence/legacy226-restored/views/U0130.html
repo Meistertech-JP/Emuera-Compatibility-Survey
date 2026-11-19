@@ -1,0 +1,1279 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0130 · PARENT_ACCEPTED_DECISION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0130 · PARENT_ACCEPTED_DECISION.json</h1>
+<p>原票種別=PARENT_ACCEPTED_DECISION.json; 参照対象=expression_function:INRANGE, expression_function:LIMIT。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>a8aa2b4cfd46e062c537ed8dff7a6060c72df940732a1d0ccfd32359ed666e98</code></p>
+<p><a href="../assets/U0130.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a8aa2b4cfd46e062c537ed8dff7a6060c72df940732a1d0ccfd32359ed666e98</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;pyemuera-parent-evidence-adjudication-v3&quot;,
+  &quot;draft&quot;: false,
+  &quot;bundles&quot;: [
+    {
+      &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4&quot;,
+      &quot;manifest_sha256&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+    }
+  ],
+  &quot;decisions&quot;: [
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;LIMIT&quot;,
+      &quot;accepted&quot;: true,
+      &quot;review_row_sha256&quot;: &quot;fb2a62d112487c789668045aedc81dd7d486f2cc42bbaba025e438ab92b8a854&quot;,
+      &quot;outcome&quot;: &quot;matched_in_finite_scope&quot;,
+      &quot;scope&quot;: &quot;Finite expression_function:LIMIT only: retained normal x=3,4,8,9 bounds[4,8], retained reversed x=6 bounds[8,4], new ordered numeric helpers, independent RESULT/RESULTS snapshots and continuation.&quot;,
+      &quot;completion_review&quot;: &quot;Parent accepted independent source/fixture/raw review: finite expression boundary, reversed-bound, evaluation-order and result-sentinel comparisons complete. Method form, exhaustive Int64 domain, invalid-call diagnostics and natural Native termination are outside this acceptance.&quot;,
+      &quot;finite_remainder&quot;: [],
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;exact_v24_registration_signature_form&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;exact_v24_registration_signature_form&quot;,
+            &quot;requirement&quot;: &quot;Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.&quot;,
+            &quot;evidence_state&quot;: &quot;source_inspected&quot;,
+            &quot;source_contract_ref&quot;: &quot;SOURCE_CONTRACTS.json#/contracts/LIMIT&quot;,
+            &quot;binary_registration&quot;: {
+              &quot;name&quot;: &quot;LIMIT&quot;,
+              &quot;ldstr_il_offset&quot;: &quot;03D8&quot;,
+              &quot;set_item_il_offset&quot;: &quot;03E2&quot;
+            },
+            &quot;form&quot;: &quot;Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.&quot;
+          },
+          &quot;original_requirement_sha256&quot;: &quot;6d4fd44d791293fbb3e551512a12eb798dcb2172f6123941b98684c860adde93&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_01_LIMIT&quot;
+          ],
+          &quot;finding&quot;: &quot;Creator.cs:87 registration GetLimitMethod; Creator.Method.cs:1182-1186 Int64 return and exactly three Int64 arguments;1190-1192 evaluate x/min/max before1194-1200 min-first clamp. Exact default fixed validator is source-inspected, not a new invalid-call observation. Only expression form is adjudicated.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/LIMIT&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+            &quot;requirement&quot;: &quot;Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.&quot;,
+            &quot;evidence_state&quot;: &quot;scoped_executions_require_per_case_readback&quot;,
+            &quot;case_ids&quot;: [
+              &quot;LIMITBASE01&quot;
+            ],
+            &quot;independent_gap_case_ids&quot;: []
+          },
+          &quot;original_requirement_sha256&quot;: &quot;ab1c2e0e1ac9dbd41cdbbe296786b036852c0c91a16287bac9a4fd536f9b4aaf&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_01_LIMIT&quot;
+          ],
+          &quot;finding&quot;: &quot;Own helper expression reached on full-batch Native2/public1; own return observed between generated expression and following marker block. AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -&gt; 4/4/8/8. AUTO010: x=6,bounds[8,4] -&gt;8.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/LIMIT&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;selected_normal_output_state_control&quot;,
+            &quot;requirement&quot;: &quot;Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.&quot;,
+            &quot;evidence_state&quot;: &quot;selected_scoped_evidence_present&quot;,
+            &quot;matching_case_ids&quot;: [
+              &quot;LIMITBASE01&quot;
+            ]
+          },
+          &quot;original_requirement_sha256&quot;: &quot;f01e22de07912336d97d8af138eb93c3cc6072110deb78e42e45a4ed2f257ecb&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_01_LIMIT&quot;
+          ],
+          &quot;finding&quot;: &quot;MATH_HELPER03_01_LIMIT: observed value 4, helper_count3/helper_order123, RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT and END/final DONE in Native2/public1. Snapshot precedes all PRINT instructions. AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -&gt; 4/4/8/8. AUTO010: x=6,bounds[8,4] -&gt;8.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/LIMIT&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+            &quot;requirement&quot;: &quot;For x=4 and bounds[4,8], test x=3,4,8,9 and reversed bounds[8,4], using helper-returned x/min/max with order readback. Distinguish inclusive comparisons from clamp behavior.&quot;,
+            &quot;finite_source_branches&quot;: [
+              {
+                &quot;line&quot;: 1190,
+                &quot;text&quot;: &quot;Int64 value = arguments[0].GetIntValue(exm);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1191,
+                &quot;text&quot;: &quot;Int64 min = arguments[1].GetIntValue(exm);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1192,
+                &quot;text&quot;: &quot;Int64 max = arguments[2].GetIntValue(exm);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1194,
+                &quot;text&quot;: &quot;if (value &lt; min)&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1196,
+                &quot;text&quot;: &quot;else if (value &gt; max)&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1198,
+                &quot;text&quot;: &quot;else&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1200,
+                &quot;text&quot;: &quot;return (ret);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              }
+            ],
+            &quot;evidence_state&quot;: &quot;source_relevant_review_required&quot;,
+            &quot;difference_case_ids&quot;: []
+          },
+          &quot;original_requirement_sha256&quot;: &quot;e8c8bcd69fb3e060d57c02cbd618faa9c998ce4fda61a7d6be373e5be1a9ab44&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_006_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_007_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_008_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_009_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_010_LIMIT&quot;,
+            &quot;MATH_HELPER03_01_LIMIT&quot;
+          ],
+          &quot;finding&quot;: &quot;AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -&gt; 4/4/8/8. AUTO010: x=6,bounds[8,4] -&gt;8. Named numerical finite branches already observed; new helper case discharges ordered x/min/max effectful evaluation. Creator.cs:87 registration GetLimitMethod; Creator.Method.cs:1182-1186 Int64 return and exactly three Int64 arguments;1190-1192 evaluate x/min/max before1194-1200 min-first clamp. Because all operand reads precede every value branch, no duplicate boundary helper trial is needed. No new error or post-fatal state claim.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/LIMIT&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;result_routing_and_stop_location&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;result_routing_and_stop_location&quot;,
+            &quot;requirement&quot;: &quot;Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.&quot;,
+            &quot;source_ref&quot;: &quot;Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment&quot;,
+            &quot;evidence_state&quot;: &quot;per_case_input_and_raw_readbacks_cited&quot;
+          },
+          &quot;original_requirement_sha256&quot;: &quot;c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_01_LIMIT&quot;
+          ],
+          &quot;finding&quot;: &quot;Expression result assigned to independent ZZAV0; RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT saved before printing on every cited runtime path. Full-batch reaches END and ZZBATCH_DONE. Native forced cleanup remains explicit; no natural exit or method routing inference.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/LIMIT&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            }
+          ]
+        }
+      ],
+      &quot;remaining&quot;: [
+        {
+          &quot;index&quot;: 0,
+          &quot;original_remaining&quot;: {
+            &quot;type&quot;: &quot;finite_evidence_adjudication&quot;,
+            &quot;source&quot;: &quot;evidence\\parent-function-evidence-review-20261113\\MATRIX.json&quot;,
+            &quot;target&quot;: {
+              &quot;kind&quot;: &quot;expression_function&quot;,
+              &quot;name&quot;: &quot;LIMIT&quot;
+            },
+            &quot;requirements&quot;: [
+              &quot;Own reached normal proof has not been established by the bounded direct-call/marker correlator for these retained fixtures. Read the listed legacy raw/fixture candidates before requesting execution; skipped/dead/setup-stop cannot be promoted.&quot;,
+              &quot;x=3,4,8,9 for[4,8] plus reversed[8,4], ordered x/min/max helpers; distinguish LIMIT clamp from INRANGE inclusive predicate.&quot;
+            ],
+            &quot;note&quot;: &quot;Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls.&quot;
+          },
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_006_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_007_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_008_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_009_LIMIT&quot;,
+            &quot;AUTO_V2_EXPR_010_LIMIT&quot;,
+            &quot;MATH_HELPER03_01_LIMIT&quot;
+          ],
+          &quot;finding&quot;: &quot;Own reached normal, named normal/reversed output branches, independent expression routing and ordered helper evaluation are jointly established. AUTO006/007/008/009: x=3/4/8/9, bounds[4,8] -&gt; 4/4/8/8. AUTO010: x=6,bounds[8,4] -&gt;8. New MATH_HELPER03_01_LIMIT adds measured count3/order123. Finite source-evaluation path does not vary across the already observed value branches. No method or error credit.&quot;,
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;bd53a5321d9e61238942d22a73932ff6e4827171f8114b012eeb493db3751b9c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;cbd5baa51d0aae0700fe6427128c4de06c5a48abd5cba62f77c6224146d58ebd&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;6faea57d526fcd3ec5641235a700b5badc412d47ae2505f9824e7d6b3de44726&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/2cf5b4882b25bcd1d176d5f505193cf93427689a42457f28898b4348e4cd5398/attempt-20261113T225527-17b86b5d8dfa/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b2ab7bb2e7616f4a74d78eaf29a232bef4b57c0267c89347b7da31b1df56b10e&quot;
+            }
+          ]
+        }
+      ]
+    },
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;INRANGE&quot;,
+      &quot;accepted&quot;: true,
+      &quot;review_row_sha256&quot;: &quot;052a70e02c82f7bd0927088154d9798c81c165f42191e28e0fcac0fc7f6516b2&quot;,
+      &quot;outcome&quot;: &quot;matched_in_finite_scope&quot;,
+      &quot;scope&quot;: &quot;Finite expression_function:INRANGE only: retained normal x=3,4,8,9 bounds[4,8], retained reversed x=6 bounds[8,4], new ordered numeric helpers, independent RESULT/RESULTS snapshots and continuation.&quot;,
+      &quot;completion_review&quot;: &quot;Parent accepted independent source/fixture/raw review: finite expression boundary, reversed-bound, evaluation-order and result-sentinel comparisons complete. Method form, exhaustive Int64 domain, invalid-call diagnostics and natural Native termination are outside this acceptance.&quot;,
+      &quot;finite_remainder&quot;: [],
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;exact_v24_registration_signature_form&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;exact_v24_registration_signature_form&quot;,
+            &quot;requirement&quot;: &quot;Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.&quot;,
+            &quot;evidence_state&quot;: &quot;source_inspected&quot;,
+            &quot;source_contract_ref&quot;: &quot;SOURCE_CONTRACTS.json#/contracts/INRANGE&quot;,
+            &quot;binary_registration&quot;: {
+              &quot;name&quot;: &quot;INRANGE&quot;,
+              &quot;ldstr_il_offset&quot;: &quot;0501&quot;,
+              &quot;set_item_il_offset&quot;: &quot;050B&quot;
+            },
+            &quot;form&quot;: &quot;Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.&quot;
+          },
+          &quot;original_requirement_sha256&quot;: &quot;3a5af4b0708408036cdb3867217094482a856dd6c5aeaf58fd9e25968eff310d&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_02_INRANGE&quot;
+          ],
+          &quot;finding&quot;: &quot;Creator.cs:107 registration InRangeMethod; Creator.Method.cs:1856-1860 Int64 return and exactly three Int64 arguments;1864-1866 evaluate x/min/max before1867 inclusive predicate. Boolean short circuit does not skip any helper. Exact default fixed validator is source-inspected, not a new invalid-call observation. Only expression form is adjudicated.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/INRANGE&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+            &quot;requirement&quot;: &quot;Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.&quot;,
+            &quot;evidence_state&quot;: &quot;scoped_executions_require_per_case_readback&quot;,
+            &quot;case_ids&quot;: [
+              &quot;INRANGEBASE01&quot;
+            ],
+            &quot;independent_gap_case_ids&quot;: []
+          },
+          &quot;original_requirement_sha256&quot;: &quot;5bb5143375a391e9306f247e89a0981af88d863d87c8251b6e42531a31c3631a&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_02_INRANGE&quot;
+          ],
+          &quot;finding&quot;: &quot;Own helper expression reached on full-batch Native2/public1; own return observed between generated expression and following marker block. AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] -&gt;0/1/1/0. AUTO015: x=6,bounds[8,4] -&gt;0.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/INRANGE&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;selected_normal_output_state_control&quot;,
+            &quot;requirement&quot;: &quot;Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.&quot;,
+            &quot;evidence_state&quot;: &quot;selected_scoped_evidence_present&quot;,
+            &quot;matching_case_ids&quot;: [
+              &quot;INRANGEBASE01&quot;
+            ]
+          },
+          &quot;original_requirement_sha256&quot;: &quot;1ac6f1fd0e8bf6010b53cd1fc10074232f0df8bcb4317ae95cb9635f36746d3e&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_02_INRANGE&quot;
+          ],
+          &quot;finding&quot;: &quot;MATH_HELPER03_02_INRANGE: observed value 0, helper_count3/helper_order123, RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT and END/final DONE in Native2/public1. Snapshot precedes all PRINT instructions. AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] -&gt;0/1/1/0. AUTO015: x=6,bounds[8,4] -&gt;0.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/INRANGE&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+            &quot;requirement&quot;: &quot;For x=4 and bounds[4,8], test x=3,4,8,9 and reversed bounds[8,4], using helper-returned x/min/max with order readback. Distinguish inclusive comparisons from clamp behavior.&quot;,
+            &quot;finite_source_branches&quot;: [
+              {
+                &quot;line&quot;: 1864,
+                &quot;text&quot;: &quot;Int64 value = arguments[0].GetIntValue(exm);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1865,
+                &quot;text&quot;: &quot;Int64 min = arguments[1].GetIntValue(exm);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1866,
+                &quot;text&quot;: &quot;Int64 max = arguments[2].GetIntValue(exm);&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              },
+              {
+                &quot;line&quot;: 1867,
+                &quot;text&quot;: &quot;return ((value &gt;= min) &amp;&amp; (value &lt;= max)) ? 1L : 0L;&quot;,
+                &quot;classification&quot;: &quot;active_source&quot;
+              }
+            ],
+            &quot;evidence_state&quot;: &quot;source_relevant_review_required&quot;,
+            &quot;difference_case_ids&quot;: []
+          },
+          &quot;original_requirement_sha256&quot;: &quot;912a6bfca4d760c7fe57445e7530d19183ee7fc60be81093b28c2fedf0e7fb2a&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_011_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_012_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_013_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_014_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_015_INRANGE&quot;,
+            &quot;MATH_HELPER03_02_INRANGE&quot;
+          ],
+          &quot;finding&quot;: &quot;AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] -&gt;0/1/1/0. AUTO015: x=6,bounds[8,4] -&gt;0. Named numerical finite branches already observed; new helper case discharges ordered x/min/max effectful evaluation. Creator.cs:107 registration InRangeMethod; Creator.Method.cs:1856-1860 Int64 return and exactly three Int64 arguments;1864-1866 evaluate x/min/max before1867 inclusive predicate. Boolean short circuit does not skip any helper. Because all operand reads precede every value branch, no duplicate boundary helper trial is needed. No new error or post-fatal state claim.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/INRANGE&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            }
+          ]
+        },
+        {
+          &quot;id&quot;: &quot;result_routing_and_stop_location&quot;,
+          &quot;original_requirement&quot;: {
+            &quot;axis&quot;: &quot;result_routing_and_stop_location&quot;,
+            &quot;requirement&quot;: &quot;Expression returns a value; retain independent RESULT/RESULTS sentinels unless the function itself intentionally mutates them.&quot;,
+            &quot;source_ref&quot;: &quot;Exact function GetIntValue/GetStrValue in SOURCE_CONTRACTS.json; no implicit METHOD assignment&quot;,
+            &quot;evidence_state&quot;: &quot;per_case_input_and_raw_readbacks_cited&quot;
+          },
+          &quot;original_requirement_sha256&quot;: &quot;c871160c355bc28c46600d81d0b5d4d58531072a442b846435b2509a87c25390&quot;,
+          &quot;case_ids&quot;: [
+            &quot;MATH_HELPER03_02_INRANGE&quot;
+          ],
+          &quot;finding&quot;: &quot;Expression result assigned to independent ZZAV0; RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT saved before printing on every cited runtime path. Full-batch reaches END and ZZBATCH_DONE. Native forced cleanup remains explicit; no natural exit or method routing inference.&quot;,
+          &quot;source_contract_ref&quot;: {
+            &quot;path&quot;: &quot;evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json&quot;,
+            &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;,
+            &quot;pointer&quot;: &quot;/contracts/INRANGE&quot;
+          },
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            }
+          ]
+        }
+      ],
+      &quot;remaining&quot;: [
+        {
+          &quot;index&quot;: 0,
+          &quot;original_remaining&quot;: {
+            &quot;type&quot;: &quot;finite_evidence_adjudication&quot;,
+            &quot;source&quot;: &quot;evidence\\parent-function-evidence-review-20261113\\MATRIX.json&quot;,
+            &quot;target&quot;: {
+              &quot;kind&quot;: &quot;expression_function&quot;,
+              &quot;name&quot;: &quot;INRANGE&quot;
+            },
+            &quot;requirements&quot;: [
+              &quot;Own reached normal proof has not been established by the bounded direct-call/marker correlator for these retained fixtures. Read the listed legacy raw/fixture candidates before requesting execution; skipped/dead/setup-stop cannot be promoted.&quot;,
+              &quot;x=3,4,8,9 for[4,8] plus reversed[8,4], ordered x/min/max helpers; distinguish LIMIT clamp from INRANGE inclusive predicate.&quot;
+            ],
+            &quot;note&quot;: &quot;Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls.&quot;
+          },
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_011_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_012_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_013_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_014_INRANGE&quot;,
+            &quot;AUTO_V2_EXPR_015_INRANGE&quot;,
+            &quot;MATH_HELPER03_02_INRANGE&quot;
+          ],
+          &quot;finding&quot;: &quot;Own reached normal, named normal/reversed output branches, independent expression routing and ordered helper evaluation are jointly established. AUTO011/012/013/014: x=3/4/8/9,bounds[4,8] -&gt;0/1/1/0. AUTO015: x=6,bounds[8,4] -&gt;0. New MATH_HELPER03_02_INRANGE adds measured count3/order123. Finite source-evaluation path does not vary across the already observed value branches. No method or error credit.&quot;,
+          &quot;evidence&quot;: [
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;698ea406c37cdff9caf439b30e87ee38da8b2a2af353d0c30d4861ad80161bcc&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;216f268b40c262d4cfd359102d279990eda660dbf929f4b32f64a3c18c082e87&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;0e81eeea34a70fe717322bf670655a2d8718f76595bac989eff8a0f502b826be&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;83928520405946337d78578a522c37f1f2aa4cdce7e3fa8a541c2657b824d73a&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;273a7adeb1ff2b14d724bff00985e8985e04077fcf36ba9e08cd9a138be8d496&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/RESULT.json&quot;,
+              &quot;sha256_current&quot;: &quot;07574020ef0f73588ef5350d6704b55b0c1d4bf316ef3252e2c7305afaac27c1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/MANIFEST.json&quot;,
+              &quot;sha256_current&quot;: &quot;45eb9b82a9439094c601b4168cd973759f30fdd36c0537419be5441abf13acf1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/SEAL.json&quot;,
+              &quot;sha256_current&quot;: &quot;a264a5bced0eec1bbc6a7c015d904729a1c9cc61f0a4f0d9fdce3ed224d4d8d5&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/6a52f7fc1c9e0f5177d1833d51b52c68d1b726d4547c4555b77dbcf9c2fc2c07/attempt-20261113T235341-059d37c99ca4/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;8df21f9400abe3f70730437a3657bcbf2e9b6ead8f535ba500b676f8ef3b78db&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5/full-batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;b9bb039cb98b6d93e597b494ce8ff773219e801467a522c308db9a19a44dfef1&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-01/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/native-02/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            },
+            {
+              &quot;path&quot;: &quot;automation-v2/v3/runs/bb18d9b11038707b646d67be021d99fd9693def4fedb9a467e09036c3246a4b4/attempt-20261113T225624-6e6913347190/batch/py/.pyemuera/logs/emuera.log&quot;,
+              &quot;sha256_current&quot;: &quot;a3788d85b4c0b45baf153a7cd1a149cd6988256b7fba87f86aaed0133fad0713&quot;
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2209 · expression_function:LIMIT · acceptance</li>
+<li>L2210 · expression_function:LIMIT · check</li>
+<li>L2228 · expression_function:INRANGE · acceptance</li>
+<li>L2229 · expression_function:INRANGE · check</li>
+</ul></html>

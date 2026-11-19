@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "declaration",
+    "name": "#FUNCTIONS"
+  },
+  "decision": "necessary_comparison_complete",
+  "acceptance_path": "PARENT_ACCEPTANCE_FUNCTIONS_FINITE_20261115.json",
+  "acceptance_sha256": "20313f2bd47ed609e08c9cda7d645335f7801003a223e3c3e9dff90a28a9c8b8",
+  "registered_case_ids": [
+    "DECLBASIC_FUNCTIONS",
+    "FUNCTION_TO_FUNCTIONS_CONFLICT",
+    "FUNCTIONS_DUPLICATE_SAME",
+    "FUNCTIONS_METHOD_UNSAFE",
+    "FUNCTIONS_METHOD_UNSAFE_OUTPUTLOG",
+    "FUNCTIONS_NUMERIC_LEADING_GUARD",
+    "FUNCTIONS_OPPOSITE_RETURN_NUMBER",
+    "FUNCTIONS_SYSTEM_GUARD",
+    "FUNCTIONS_TO_FUNCTION_CONFLICT"
+  ],
+  "evidence_manifest_path": "evidence/function-declaration-boundaries-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "d79619225032bfc17d2e0fe80a4fbff3e445ae8d28a87ff16dd876cbe5fe7626",
+  "product_modified": false,
+  "public_release_modified": false
+}

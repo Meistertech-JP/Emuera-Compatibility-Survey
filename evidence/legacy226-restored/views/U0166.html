@@ -1,0 +1,107 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0166 · FINAL_ARRAYCOPY_TARGET_DECISION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0166 · FINAL_ARRAYCOPY_TARGET_DECISION.json</h1>
+<p>原票種別=FINAL_ARRAYCOPY_TARGET_DECISION.json; 参照対象=command_or_syntax:ARRAYCOPY, command_or_syntax:ARRAYREMOVE。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;ARRAYCOPY&quot;}; decision=&quot;ACCEPT_FINITE_ORIGINAL_CONTRACT_COMPLETE_WITH_DOCUMENTED_DIFFERENCE&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>b93fb726cf19e0e2188f0d9a45b6d43eaf1349ecb75da52760f82dd307430e7c</code></p>
+<p><a href="../assets/U0166.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>b93fb726cf19e0e2188f0d9a45b6d43eaf1349ecb75da52760f82dd307430e7c</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;ARRAYCOPY&quot;
+  },
+  &quot;decision&quot;: &quot;ACCEPT_FINITE_ORIGINAL_CONTRACT_COMPLETE_WITH_DOCUMENTED_DIFFERENCE&quot;,
+  &quot;accepted_finite_closure&quot;: true,
+  &quot;necessary_comparison_complete&quot;: true,
+  &quot;semantic_result&quot;: &quot;known_difference_documented&quot;,
+  &quot;compatibility_match&quot;: false,
+  &quot;axes&quot;: [
+    {
+      &quot;axis&quot;: &quot;registration_form&quot;,
+      &quot;original_requirement&quot;: &quot;Exact v24 ARRAYCOPY command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+      &quot;decision&quot;: &quot;ACCEPTED_FINITE_SOURCE_PROOF&quot;,
+      &quot;proof&quot;: [
+        &quot;v24 registration322 selects SP_COPY_ARRAY, builder factory221 and complete1851-1920; binary registration retained in original contract; active public array owner pinned&quot;
+      ],
+      &quot;applied&quot;: false
+    },
+    {
+      &quot;axis&quot;: &quot;signature_parser&quot;,
+      &quot;original_requirement&quot;: &quot;ARRAYCOPY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+      &quot;decision&quot;: &quot;ACCEPTED_FINITE_DIFFERENCE_DOCUMENTED&quot;,
+      &quot;proof&quot;: [
+        &quot;Exact2 strings, mandatory terms, builder literal-vs-dynamic and guarded domains reviewed. Excess third argument has materially different warning/evaluation paths and no exact retained observation. Only AC_FINAL_EXTRA_THIRD_FAULT remains required.&quot;,
+        &quot;Case279 actual Native copy/DONE/count0 vs public helperline30/call16 fatal; no source-only closure&quot;
+      ],
+      &quot;applied&quot;: false
+    },
+    {
+      &quot;axis&quot;: &quot;normal_output_state_control&quot;,
+      &quot;original_requirement&quot;: &quot;Copy shorter integer/string source into longer destination; dynamic names each once.&quot;,
+      &quot;decision&quot;: &quot;ACCEPTED_PINNED_HISTORICAL_NORMAL&quot;,
+      &quot;proof&quot;: [
+        &quot;180 MUT14..17 actual Native2/public lines match; shorter integer/string copies into7 and dynamic helper count2/order12; original public8a7/input before-after receipt exists. Native180 separate before/after input fields were not recorded and remain historical.&quot;
+      ],
+      &quot;applied&quot;: false
+    },
+    {
+      &quot;axis&quot;: &quot;finite_boundary_error&quot;,
+      &quot;original_requirement&quot;: &quot;Copy length5 source into length3 destination; copy array onto itself; invalid source name alongside faulting destination-name helper.&quot;,
+      &quot;decision&quot;: &quot;ACCEPTED_FRESH_ALL_THREE_NAMED_CONDITIONS&quot;,
+      &quot;proof&quot;: [
+        &quot;274 5to3 and self-copy fresh raw match; dynamic invalid source plus faulting destination stops at helper15/callsite8 in Native2/public, AFTER absent; no copy-body or postfatal count credit.&quot;
+      ],
+      &quot;applied&quot;: false
+    },
+    {
+      &quot;axis&quot;: &quot;evaluation_and_side_effects&quot;,
+      &quot;original_requirement&quot;: &quot;Read full small source and destination before/after, including untouched tail; Process.ScriptProc661-700 type/rank/name guards.&quot;,
+      &quot;decision&quot;: &quot;ACCEPTED_MEASURED_FINITE_SCOPE_WITH_GUARDS_RECONCILED&quot;,
+      &quot;proof&quot;: [
+        &quot;274 full small source/destination pre/post, source preservation and self-alias;180 untouched longer tail and dynamic name order. All source type/rank/name/readonly/character guard sites listed without claiming rejected paths ran; excess warning/evaluation guard remains assigned to signature_parser.&quot;
+      ],
+      &quot;applied&quot;: false
+    }
+  ],
+  &quot;accepted_axes&quot;: 5,
+  &quot;held_axes&quot;: [],
+  &quot;remaining_named_proof&quot;: [],
+  &quot;new_guard_waivers&quot;: [],
+  &quot;basis&quot;: [
+    {
+      &quot;path&quot;: &quot;evidence/command-family-next-plan-274-20261113/arraycopy-target-final-review-20261113/FINAL_TARGET_DECISION.json&quot;,
+      &quot;sha256_current&quot;: &quot;4a1a311c64dc472840b1b4086642afa96960e94131cef2ea9149c364b3420559&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/command-family-next-plan-274-20261113/arraycopy-target-final-review-20261113/PROOF.json&quot;,
+      &quot;sha256_current&quot;: &quot;d44c070dfb0ae1555c17665522622f790cf489598a2aca5479a7adf6b21cacf6&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/arraycopy-extra-argument-279-20261113/ACTUAL_COMPARISON.json&quot;,
+      &quot;sha256_current&quot;: &quot;04710e4a28344497bdd2228e6fbbc3513e51fa45f47dd2d4515dece7675364fd&quot;
+    },
+    {
+      &quot;path&quot;: &quot;PARENT_COMPARISON_CASE279.json&quot;,
+      &quot;sha256_current&quot;: &quot;c14dc6f65d48483de6153815f639d0904a7d74139aaa23e5a2b1344c5507f1c5&quot;
+    }
+  ],
+  &quot;warning_scope&quot;: &quot;Observed absence in collected Native text; source-queued warning never promoted to printed text. GUI visibility/order UNOBSERVED; no added warning axis.&quot;,
+  &quot;provenance&quot;: &quot;Native180 fixture/config/executable hashes retained; separate inputs_before/after absent remain historical, not repaired or replayed. Public180 before/after receipt exists. Prior274 original false269 and all later layered history unchanged.&quot;,
+  &quot;shared_status_changed&quot;: false,
+  &quot;parent_apply&quot;: false,
+  &quot;engine_replays&quot;: 0,
+  &quot;scope&quot;: &quot;Original5 finite axes only, not all ARRAYCOPY values/ranks/types/parser inputs; preserves known source guards and the now-observed selected excess evaluation difference.&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1736 · command_or_syntax:ARRAYREMOVE · check</li>
+<li>L1747 · command_or_syntax:ARRAYCOPY · acceptance</li>
+<li>L1748 · command_or_syntax:ARRAYCOPY · check</li>
+<li>L1751 · command_or_syntax:ARRAYCOPY · check</li>
+</ul></html>

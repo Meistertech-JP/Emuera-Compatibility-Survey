@@ -1,0 +1,24 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "LOADVAR"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_LOADVAR_PARSER_20261115.json",
+  "acceptance_sha256": "3e8d2a8f86e19650b9b313b9ed882d523a5041b097707d8330aadcd2893ebfe4",
+  "evidence_manifest_path": "evidence/loadvar-parser-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "8550919e2b81c44da38450048ee22f8210d4d74fb59fd3235e79626a6de33ae7",
+  "registered_case_ids": [
+    "VARSAVE207_LOADVAR_STOP",
+    "VARSAVE207_UNREACHED_PLAN",
+    "LOADVAR_PARSER_OMITTED_20261115",
+    "LOADVAR_PARSER_NUMERIC_20261115",
+    "LOADVAR_DYNAMIC_NOT_EVALUATED_20261115"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "public_release_modified": false
+}

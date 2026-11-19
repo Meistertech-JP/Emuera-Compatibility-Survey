@@ -1,0 +1,49 @@
+{
+  "cases": [
+    "CASE001"
+  ],
+  "modes": [
+    "native-01",
+    "native-02",
+    "py"
+  ],
+  "name": "single-01",
+  "rows": [
+    {
+      "case_id": "CASE001",
+      "native": [
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        },
+        {
+          "observations": {
+            "result0": "701",
+            "result1": "702",
+            "results": "AUTO_SENT",
+            "value": "7"
+          },
+          "status": "observed"
+        }
+      ],
+      "native_repeats_agree": true,
+      "py": {
+        "observations": {
+          "result0": "701",
+          "result1": "702",
+          "results": "AUTO_SENT",
+          "value": "7"
+        },
+        "status": "observed"
+      },
+      "status": "matched_scoped",
+      "typed_key": "expression_function:ABS"
+    }
+  ],
+  "schema": "neutral-legacy-expression-stage.v1"
+}

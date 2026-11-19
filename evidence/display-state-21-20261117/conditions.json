@@ -1,0 +1,952 @@
+[
+  {
+    "marker": "STATE0",
+    "function": "GETCOLOR",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE1",
+    "function": "GETBGCOLOR",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE2",
+    "function": "GETDEFCOLOR",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE3",
+    "function": "GETDEFBGCOLOR",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE4",
+    "function": "GETFOCUSCOLOR",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE5",
+    "function": "GETSTYLE",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE6",
+    "function": "GETFONT",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": true
+  },
+  {
+    "marker": "STATE7",
+    "function": "CURRENTALIGN",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": true
+  },
+  {
+    "marker": "STATE8",
+    "function": "CURRENTREDRAW",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE9",
+    "function": "LINEISEMPTY",
+    "stage": "initial",
+    "preceding_command": null,
+    "string_return": false
+  },
+  {
+    "marker": "STATE10",
+    "function": "GETCOLOR",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE11",
+    "function": "GETBGCOLOR",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE12",
+    "function": "GETDEFCOLOR",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE13",
+    "function": "GETDEFBGCOLOR",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE14",
+    "function": "GETFOCUSCOLOR",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE15",
+    "function": "GETSTYLE",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE16",
+    "function": "GETFONT",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": true
+  },
+  {
+    "marker": "STATE17",
+    "function": "CURRENTALIGN",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": true
+  },
+  {
+    "marker": "STATE18",
+    "function": "CURRENTREDRAW",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE19",
+    "function": "LINEISEMPTY",
+    "stage": "red",
+    "preceding_command": "SETCOLORBYNAME Red",
+    "string_return": false
+  },
+  {
+    "marker": "STATE20",
+    "function": "GETCOLOR",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE21",
+    "function": "GETBGCOLOR",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE22",
+    "function": "GETDEFCOLOR",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE23",
+    "function": "GETDEFBGCOLOR",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE24",
+    "function": "GETFOCUSCOLOR",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE25",
+    "function": "GETSTYLE",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE26",
+    "function": "GETFONT",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": true
+  },
+  {
+    "marker": "STATE27",
+    "function": "CURRENTALIGN",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": true
+  },
+  {
+    "marker": "STATE28",
+    "function": "CURRENTREDRAW",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE29",
+    "function": "LINEISEMPTY",
+    "stage": "blue",
+    "preceding_command": "SETBGCOLORBYNAME Blue",
+    "string_return": false
+  },
+  {
+    "marker": "STATE30",
+    "function": "GETCOLOR",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE31",
+    "function": "GETBGCOLOR",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE32",
+    "function": "GETDEFCOLOR",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE33",
+    "function": "GETDEFBGCOLOR",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE34",
+    "function": "GETFOCUSCOLOR",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE35",
+    "function": "GETSTYLE",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE36",
+    "function": "GETFONT",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": true
+  },
+  {
+    "marker": "STATE37",
+    "function": "CURRENTALIGN",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": true
+  },
+  {
+    "marker": "STATE38",
+    "function": "CURRENTREDRAW",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE39",
+    "function": "LINEISEMPTY",
+    "stage": "bold",
+    "preceding_command": "FONTBOLD",
+    "string_return": false
+  },
+  {
+    "marker": "STATE40",
+    "function": "GETCOLOR",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE41",
+    "function": "GETBGCOLOR",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE42",
+    "function": "GETDEFCOLOR",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE43",
+    "function": "GETDEFBGCOLOR",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE44",
+    "function": "GETFOCUSCOLOR",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE45",
+    "function": "GETSTYLE",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE46",
+    "function": "GETFONT",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": true
+  },
+  {
+    "marker": "STATE47",
+    "function": "CURRENTALIGN",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": true
+  },
+  {
+    "marker": "STATE48",
+    "function": "CURRENTREDRAW",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE49",
+    "function": "LINEISEMPTY",
+    "stage": "italic",
+    "preceding_command": "FONTITALIC",
+    "string_return": false
+  },
+  {
+    "marker": "STATE50",
+    "function": "GETCOLOR",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE51",
+    "function": "GETBGCOLOR",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE52",
+    "function": "GETDEFCOLOR",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE53",
+    "function": "GETDEFBGCOLOR",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE54",
+    "function": "GETFOCUSCOLOR",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE55",
+    "function": "GETSTYLE",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE56",
+    "function": "GETFONT",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": true
+  },
+  {
+    "marker": "STATE57",
+    "function": "CURRENTALIGN",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": true
+  },
+  {
+    "marker": "STATE58",
+    "function": "CURRENTREDRAW",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE59",
+    "function": "LINEISEMPTY",
+    "stage": "regular",
+    "preceding_command": "FONTREGULAR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE60",
+    "function": "GETCOLOR",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE61",
+    "function": "GETBGCOLOR",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE62",
+    "function": "GETDEFCOLOR",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE63",
+    "function": "GETDEFBGCOLOR",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE64",
+    "function": "GETFOCUSCOLOR",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE65",
+    "function": "GETSTYLE",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE66",
+    "function": "GETFONT",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": true
+  },
+  {
+    "marker": "STATE67",
+    "function": "CURRENTALIGN",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": true
+  },
+  {
+    "marker": "STATE68",
+    "function": "CURRENTREDRAW",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE69",
+    "function": "LINEISEMPTY",
+    "stage": "reset_fore",
+    "preceding_command": "RESETCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE70",
+    "function": "GETCOLOR",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE71",
+    "function": "GETBGCOLOR",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE72",
+    "function": "GETDEFCOLOR",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE73",
+    "function": "GETDEFBGCOLOR",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE74",
+    "function": "GETFOCUSCOLOR",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE75",
+    "function": "GETSTYLE",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE76",
+    "function": "GETFONT",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": true
+  },
+  {
+    "marker": "STATE77",
+    "function": "CURRENTALIGN",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": true
+  },
+  {
+    "marker": "STATE78",
+    "function": "CURRENTREDRAW",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE79",
+    "function": "LINEISEMPTY",
+    "stage": "reset_back",
+    "preceding_command": "RESETBGCOLOR",
+    "string_return": false
+  },
+  {
+    "marker": "STATE80",
+    "function": "GETCOLOR",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE81",
+    "function": "GETBGCOLOR",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE82",
+    "function": "GETDEFCOLOR",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE83",
+    "function": "GETDEFBGCOLOR",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE84",
+    "function": "GETFOCUSCOLOR",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE85",
+    "function": "GETSTYLE",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE86",
+    "function": "GETFONT",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": true
+  },
+  {
+    "marker": "STATE87",
+    "function": "CURRENTALIGN",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": true
+  },
+  {
+    "marker": "STATE88",
+    "function": "CURRENTREDRAW",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE89",
+    "function": "LINEISEMPTY",
+    "stage": "font",
+    "preceding_command": "SETFONT GETFONT()",
+    "string_return": false
+  },
+  {
+    "marker": "STATE90",
+    "function": "GETCOLOR",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE91",
+    "function": "GETBGCOLOR",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE92",
+    "function": "GETDEFCOLOR",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE93",
+    "function": "GETDEFBGCOLOR",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE94",
+    "function": "GETFOCUSCOLOR",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE95",
+    "function": "GETSTYLE",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE96",
+    "function": "GETFONT",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": true
+  },
+  {
+    "marker": "STATE97",
+    "function": "CURRENTALIGN",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": true
+  },
+  {
+    "marker": "STATE98",
+    "function": "CURRENTREDRAW",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE99",
+    "function": "LINEISEMPTY",
+    "stage": "right",
+    "preceding_command": "ALIGNMENT RIGHT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE100",
+    "function": "GETCOLOR",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE101",
+    "function": "GETBGCOLOR",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE102",
+    "function": "GETDEFCOLOR",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE103",
+    "function": "GETDEFBGCOLOR",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE104",
+    "function": "GETFOCUSCOLOR",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE105",
+    "function": "GETSTYLE",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE106",
+    "function": "GETFONT",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": true
+  },
+  {
+    "marker": "STATE107",
+    "function": "CURRENTALIGN",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": true
+  },
+  {
+    "marker": "STATE108",
+    "function": "CURRENTREDRAW",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE109",
+    "function": "LINEISEMPTY",
+    "stage": "left",
+    "preceding_command": "ALIGNMENT LEFT",
+    "string_return": false
+  },
+  {
+    "marker": "STATE110",
+    "function": "GETCOLOR",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE111",
+    "function": "GETBGCOLOR",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE112",
+    "function": "GETDEFCOLOR",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE113",
+    "function": "GETDEFBGCOLOR",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE114",
+    "function": "GETFOCUSCOLOR",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE115",
+    "function": "GETSTYLE",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE116",
+    "function": "GETFONT",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": true
+  },
+  {
+    "marker": "STATE117",
+    "function": "CURRENTALIGN",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": true
+  },
+  {
+    "marker": "STATE118",
+    "function": "CURRENTREDRAW",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE119",
+    "function": "LINEISEMPTY",
+    "stage": "redraw_off",
+    "preceding_command": "REDRAW 0",
+    "string_return": false
+  },
+  {
+    "marker": "STATE120",
+    "function": "GETCOLOR",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE121",
+    "function": "GETBGCOLOR",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE122",
+    "function": "GETDEFCOLOR",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE123",
+    "function": "GETDEFBGCOLOR",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE124",
+    "function": "GETFOCUSCOLOR",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE125",
+    "function": "GETSTYLE",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE126",
+    "function": "GETFONT",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": true
+  },
+  {
+    "marker": "STATE127",
+    "function": "CURRENTALIGN",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": true
+  },
+  {
+    "marker": "STATE128",
+    "function": "CURRENTREDRAW",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE129",
+    "function": "LINEISEMPTY",
+    "stage": "redraw_on",
+    "preceding_command": "REDRAW 1",
+    "string_return": false
+  },
+  {
+    "marker": "STATE130",
+    "command": "STRLEN",
+    "empty": false
+  },
+  {
+    "marker": "STATE131",
+    "command": "STRLEN",
+    "empty": true
+  },
+  {
+    "marker": "STATE132",
+    "command": "STRLENU",
+    "empty": false
+  },
+  {
+    "marker": "STATE133",
+    "command": "STRLENU",
+    "empty": true
+  },
+  {
+    "marker": "STATE134",
+    "command": "STRLENFORM",
+    "empty": false
+  },
+  {
+    "marker": "STATE135",
+    "command": "STRLENFORM",
+    "empty": true
+  },
+  {
+    "marker": "STATE136",
+    "command": "STRLENFORMU",
+    "empty": false
+  },
+  {
+    "marker": "STATE137",
+    "command": "STRLENFORMU",
+    "empty": true
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "VARSIZE"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_VARSIZE_FINITE_20261115.json",
+  "acceptance_sha256": "f60b74334c3c40ec45b7e1d78afea55a516d51a29552756d89d8451a1d7d2030",
+  "evidence_manifest_path": "evidence/varsize-exact-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "c5df2a9a4e2a3549e0c9e32dda871c15bb3ccf64a4ac033769085d947b7c65ac",
+  "registered_case_ids": [
+    "VARSIZE01",
+    "VARSIZE_3D_SCALAR_RESULT_BOUNDS_20261115"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "product_modified": false,
+  "public_release_modified": false
+}

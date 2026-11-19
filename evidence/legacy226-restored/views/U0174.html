@@ -1,0 +1,31 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0174 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0174 · CASE_REVIEW_ja.md</h1>
+<p>ボタン印字とPRINTCPERLINEの24観測を記す技術票で、CRの有効差と未観測のクリック操作を原文で公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>e75f1294eb9544dcd1d0669044fbc7ef787b4b3f3285040a115153c42c835d82</code></p>
+<p><a href="../assets/U0174.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>e75f1294eb9544dcd1d0669044fbc7ef787b4b3f3285040a115153c42c835d82</code></p>
+<pre># ボタン文字列とPRINTCPERLINE（216）
+
+3ボタン形式×通常数値/負値−2/文字列値/空ラベル/LF/CR/skip=21観測と、PRINTCPERLINEの省略・数値配列添字・キャラクター添字3観測。本家2回の原ログ一致。21条件は原ブロック一致、CRを含む3条件で出力差。全条件のヘルパー回数・順序とRESULTは一致。
+
+PRINTBUTTON系はlabel→valueの順で各1回、空ラベルでもvalueヘルパーを評価、skipでは両者0回。負値−2は文字ラベルbackを表示し、数値が自動で表示に追加されない。LFは本家ソースで除去されAB表示、CRは本家原ログ内に保持されるが公開版のstdoutと履歴はABになる。C/LCのパディング差もCR保持/除去に伴う。これは保存テキストとstdoutの観測で、画面上のCR描画やクリック選択の一致とはしない。
+
+PRINTCPERLINE命令は関数と異なり代入先を受け取り、引数省略はRESULT0へ3、指定時はD1/CFLAG0:1へ3を書いて隣接値とRESULT701を保持。動的添字は1回評価。
+
+24 valid observations in one fixture:21 button text/effect cases and3 PRINTCPERLINE destination cases under standard3/25 config. Button click/input return value, binding storage and GUI focus/hit testing unobserved; known returned helper values do not certify click binding. CR observed in Native history versus public history/stdout, no pixel rendering conclusion or all-media normalization claim. No invalid argument/lvalue/overflow, arbitrary geometry or full button/getter closure. Native2 processes alive5s then own cleanup; natural exit unobserved.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0852 · command_or_syntax:PRINTBUTTON · check</li>
+<li>L0855 · command_or_syntax:PRINTBUTTON · check</li>
+<li>L0867 · command_or_syntax:PRINTBUTTONC · check</li>
+<li>L0870 · command_or_syntax:PRINTBUTTONC · check</li>
+<li>L0882 · command_or_syntax:PRINTBUTTONLC · check</li>
+<li>L0885 · command_or_syntax:PRINTBUTTONLC · check</li>
+</ul></html>

@@ -1,0 +1,32 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0506 · emuera.log</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0506 · emuera.log</h1>
+<p>U0506 / copy_invalid_source_then_division/py/.pyemuera/logs。キャラクターコピー/削除の境界・評価順。ADDCOPYCHARA複数引数の部分更新と公開版arity診断の差を保持。 この原試行は#FUNCTION内OUTPUTLOGの計測違反で対象前停止。retryとは分けて保持。出力14行、マーカー1種、診断候補3行を確認。「警告Lv2:SEARCHBOUND01.ERB:43行目:OUTPUTLOG命令は#FUNCTION中で使うことはできません」を削除せず保持。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>488ba189b193e9f9280f60b220041a5e795434bd9a164b5ce9826a7f47ae8484</code></p>
+<p><a href="../assets/U0506.log">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>488ba189b193e9f9280f60b220041a5e795434bd9a164b5ce9826a7f47ae8484</code></p>
+<pre>Now Loading...
+警告Lv2:SEARCHBOUND01.ERB:43行目:OUTPUTLOG命令は#FUNCTION中で使うことはできません
+OUTPUTLOG
+警告Lv2:SEARCHBOUND01.ERB:55行目:OUTPUTLOG命令は#FUNCTION中で使うことはできません
+OUTPUTLOG
+CASE241 copy_invalid_source_then_division
+OBS241 BEFORE N=3 R=701 A=0 B=0
+OBS241 BEFORE T=2 M=1 S=0
+OBS241 BEFORE I=0 NO=0 F=101
+OBS241 BEFORE I=0 NAME=[N0] CS=[SRC]
+OBS241 BEFORE I=1 NO=10 F=202
+OBS241 BEFORE I=1 NAME=[N10] CS=[MID]
+OBS241 BEFORE I=2 NO=20 F=303
+OBS241 BEFORE I=2 NAME=[N20] CS=[DST]
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0545 · command_or_syntax:COPYCHARA · check</li>
+<li>L1331 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

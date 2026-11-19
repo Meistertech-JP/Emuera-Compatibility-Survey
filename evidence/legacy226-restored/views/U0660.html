@@ -1,0 +1,34 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0660 · run_native.py</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0660 · run_native.py</h1>
+<p>U0660: run引数フォルダーの本家exeをCreateDesktopW/CreateProcessWで起動し、5秒待機・終了確認・必要時TerminateProcess・SHA一覧・probe.jsonを生成するWindows補助コード。固定私的パスなし。実行時PID/desktop名/時刻/cwdを記録する仕様も保持。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793</code></p>
+<p><a href="../assets/U0660.py">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793</code></p>
+<pre>from pathlib import Path
+import ctypes as c,hashlib,json,subprocess,sys,time
+from ctypes import wintypes as w
+run=Path(sys.argv[1]).resolve();name=&#x27;PyEmueraNative_STRLENSU_&#x27;+run.name+&#x27;_&#x27;+str(int(time.time()));u=c.WinDLL(&#x27;user32&#x27;,use_last_error=True);k=c.WinDLL(&#x27;kernel32&#x27;,use_last_error=True)
+class SI(c.Structure):_fields_=[(&#x27;cb&#x27;,w.DWORD),(&#x27;reserved&#x27;,w.LPWSTR),(&#x27;desktop&#x27;,w.LPWSTR),(&#x27;title&#x27;,w.LPWSTR),(&#x27;x&#x27;,w.DWORD),(&#x27;y&#x27;,w.DWORD),(&#x27;xsize&#x27;,w.DWORD),(&#x27;ysize&#x27;,w.DWORD),(&#x27;xcount&#x27;,w.DWORD),(&#x27;ycount&#x27;,w.DWORD),(&#x27;fill&#x27;,w.DWORD),(&#x27;flags&#x27;,w.DWORD),(&#x27;show&#x27;,w.WORD),(&#x27;reserved2count&#x27;,w.WORD),(&#x27;reserved2&#x27;,c.c_void_p),(&#x27;stdin&#x27;,w.HANDLE),(&#x27;stdout&#x27;,w.HANDLE),(&#x27;stderr&#x27;,w.HANDLE)]
+class PI(c.Structure):_fields_=[(&#x27;process&#x27;,w.HANDLE),(&#x27;thread&#x27;,w.HANDLE),(&#x27;pid&#x27;,w.DWORD),(&#x27;tid&#x27;,w.DWORD)]
+u.CreateDesktopW.argtypes=[w.LPCWSTR,w.LPCWSTR,c.c_void_p,w.DWORD,w.DWORD,c.c_void_p];u.CreateDesktopW.restype=w.HANDLE;u.CloseDesktop.argtypes=[w.HANDLE]
+k.CreateProcessW.argtypes=[w.LPCWSTR,w.LPWSTR,c.c_void_p,c.c_void_p,w.BOOL,w.DWORD,c.c_void_p,w.LPCWSTR,c.POINTER(SI),c.POINTER(PI)];k.CreateProcessW.restype=w.BOOL;k.WaitForSingleObject.argtypes=[w.HANDLE,w.DWORD];k.GetExitCodeProcess.argtypes=[w.HANDLE,c.POINTER(w.DWORD)];k.TerminateProcess.argtypes=[w.HANDLE,w.UINT];k.TerminateProcess.restype=w.BOOL;k.CloseHandle.argtypes=[w.HANDLE]
+exe=str(run/&#x27;Emuera1824+v24.exe&#x27;);desk=u.CreateDesktopW(name,None,None,0,0x01FF,None);si=SI();si.cb=c.sizeof(SI);si.desktop=&#x27;WinSta0\\&#x27;+name;pi=PI();cmd=c.create_unicode_buffer(subprocess.list2cmdline([exe]));created=bool(desk) and bool(k.CreateProcessW(exe,cmd,None,None,False,0,None,str(run),c.byref(si),c.byref(pi)))
+r={&#x27;desktop&#x27;:name,&#x27;desktop_created&#x27;:bool(desk),&#x27;process_created&#x27;:created,&#x27;pid&#x27;:pi.pid if created else None,&#x27;command_line&#x27;:subprocess.list2cmdline([exe]),&#x27;cwd&#x27;:str(run),&#x27;synthetic_keyboard_events_sent&#x27;:False,&#x27;fixture_sha256&#x27;:hashlib.sha256((run/&#x27;ERB&#x27;/&#x27;SEARCHBOUND01.ERB&#x27;).read_bytes()).hexdigest(),&#x27;native_exe_sha256&#x27;:hashlib.sha256((run/&#x27;Emuera1824+v24.exe&#x27;).read_bytes()).hexdigest(),&#x27;config_sha256&#x27;:hashlib.sha256((run/&#x27;emuera.config&#x27;).read_bytes()).hexdigest()}
+if created:
+ state=k.WaitForSingleObject(pi.process,5000);r[&#x27;process_exited_after_5s&#x27;]=state==0;code=w.DWORD();r[&#x27;exit_code_observed&#x27;]=bool(state==0 and k.GetExitCodeProcess(pi.process,c.byref(code)));r[&#x27;exit_code&#x27;]=code.value if r[&#x27;exit_code_observed&#x27;] else None
+ if state!=0:r[&#x27;cleanup_terminate_ok&#x27;]=bool(k.TerminateProcess(pi.process,1));k.WaitForSingleObject(pi.process,5000)
+ k.CloseHandle(pi.thread);k.CloseHandle(pi.process)
+r[&#x27;files&#x27;]=[{&#x27;path&#x27;:str(p.relative_to(run)).replace(&#x27;\\&#x27;,&#x27;/&#x27;),&#x27;size&#x27;:p.stat().st_size,&#x27;sha256&#x27;:hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(run.rglob(&#x27;*&#x27;)) if p.is_file()]
+if desk:r[&#x27;desktop_closed&#x27;]=bool(u.CloseDesktop(desk))
+(run/&#x27;probe.json&#x27;).write_text(json.dumps(r,ensure_ascii=False,indent=2)+&#x27;\n&#x27;,encoding=&#x27;utf-8&#x27;);print(json.dumps(r,ensure_ascii=True))
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1806 · command_or_syntax:PRINTK · check</li>
+</ul></html>

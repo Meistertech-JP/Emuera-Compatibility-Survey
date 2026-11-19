@@ -1,0 +1,1305 @@
+{
+  "case": 277,
+  "scope": "Exactly original4 command +4 structural targets; proposals, never root/aggregate mutations",
+  "targets": [
+    {
+      "target_id": "structural_syntax:CASE",
+      "kind": "structural_syntax",
+      "name": "CASE",
+      "decision": "ACCEPT_ORIGINAL_FINITE_COMPARISON_SCOPED",
+      "necessary_comparison_complete_proposed": true,
+      "original_finite_queue_groups": [
+        {
+          "original": {
+            "id": "select.01",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "String selector helper and CASE list with first-hit / later helper not run",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P1"
+        },
+        {
+          "original": {
+            "id": "select.02",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Integer CASE inclusive TO endpoints and IS >= threshold, no-match sentinel; one value per branch transition",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P2"
+        },
+        {
+          "original": {
+            "id": "select.03",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Orphan CASE and missing ENDSELECT: load warning/marked line versus reached stop, BEFORE and exact diagnostic location",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P3"
+        }
+      ],
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASE:registration_form",
+            "axis": "registration_form",
+            "requirement": "SELECTCASE numeric or string expression; CASE list/range/IS; CASEELSE fallback"
+          },
+          "assessment": {
+            "decision": "ACCEPT_SOURCE_CONTRACT",
+            "evidence_refs": [
+              {
+                "path": "evidence/select-string-list-next-277-20261113/SOURCE_PINS.json",
+                "sha256_current": "c652160f1bd2700b00bb4924bf7d4359f341619919ca5c1b381c41d52388c484"
+              }
+            ],
+            "scope": "Literal registrations/builders; CASE list/TO/IS forms; CASEELSE VOID, ENDSELECT paired role. Source is not runtime credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASE:normal_control",
+            "axis": "normal_control",
+            "requirement": "Selector int or string evaluated once; CASE list, TO range and IS relation; first matching clause terminates search; CASEELSE and no-match are distinct paths."
+          },
+          "assessment": {
+            "decision": "ACCEPT_SCOPED_MATCH_AND_DOCUMENTED_DIFFERENCES",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT270_P2",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT"
+            ],
+            "scope": "Actual once/string list, numeric range/IS from270, string counted range/IS difference and selected fallback/no-default from277. No skipped-body credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASE:timing_boundary",
+            "axis": "timing_boundary",
+            "requirement": "Compare source-distinct accepted boundary and rejection/ignore paths, warnings, BEFORE/stop/AFTER and exact line; no generalized load/runtime claim."
+          },
+          "assessment": {
+            "decision": "ACCEPT_EXACT_ORIGINAL_MALFORMED_COMPARISON",
+            "case_ids": [
+              "SELECT270_P3"
+            ],
+            "scope": "Only orphan CASE and missing ENDSELECT own owner: Native marked line4 then BEFORE/reached stop; public load-stop line4/orphan or5/missing. No post-stop cell inference."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASE:effects_lifetime",
+            "axis": "effects_lifetime",
+            "requirement": "Selector/case helpers count and evaluation order; skipped term must not mutate; nested block exits resume correct outer block."
+          },
+          "assessment": {
+            "decision": "ACCEPT_FINITE_ORIGINAL_ROLE_EFFECTS",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT",
+              "NESTEDSELECT01"
+            ],
+            "scope": "Actual counter/order/suppression and paired continuation; retained numeric nested outer2/inner3 debug trace and public stdout only, preserving original instrumentation/identity scope."
+          }
+        }
+      ],
+      "own_role_limits": "CASEELSE fresh selected fallback only277 FALLBACK/270numeric fallback; NODEFAULT absent, RANGE/IS default skipped. ENDSELECT paired continuations only; missing delimiter is not an invocation.",
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "exact_remaining": [],
+      "historical_identity_note": "No explicit historical-runtime-identity obligation exists in these four original structural requirement lists; retained provenance limits are disclosed, not silently repaired.",
+      "known_differences": [
+        "SELECT270_P3",
+        "SELECT277_IS"
+      ],
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "structural_syntax:CASEELSE",
+      "kind": "structural_syntax",
+      "name": "CASEELSE",
+      "decision": "ACCEPT_ORIGINAL_FINITE_COMPARISON_SCOPED",
+      "necessary_comparison_complete_proposed": true,
+      "original_finite_queue_groups": [
+        {
+          "original": {
+            "id": "select.01",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "String selector helper and CASE list with first-hit / later helper not run",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P1"
+        },
+        {
+          "original": {
+            "id": "select.02",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Integer CASE inclusive TO endpoints and IS >= threshold, no-match sentinel; one value per branch transition",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P2"
+        },
+        {
+          "original": {
+            "id": "select.03",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Orphan CASE and missing ENDSELECT: load warning/marked line versus reached stop, BEFORE and exact diagnostic location",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P3"
+        }
+      ],
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASEELSE:registration_form",
+            "axis": "registration_form",
+            "requirement": "SELECTCASE numeric or string expression; CASE list/range/IS; CASEELSE fallback"
+          },
+          "assessment": {
+            "decision": "ACCEPT_SOURCE_CONTRACT",
+            "evidence_refs": [
+              {
+                "path": "evidence/select-string-list-next-277-20261113/SOURCE_PINS.json",
+                "sha256_current": "c652160f1bd2700b00bb4924bf7d4359f341619919ca5c1b381c41d52388c484"
+              }
+            ],
+            "scope": "Literal registrations/builders; CASE list/TO/IS forms; CASEELSE VOID, ENDSELECT paired role. Source is not runtime credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASEELSE:normal_control",
+            "axis": "normal_control",
+            "requirement": "Selector int or string evaluated once; CASE list, TO range and IS relation; first matching clause terminates search; CASEELSE and no-match are distinct paths."
+          },
+          "assessment": {
+            "decision": "ACCEPT_SCOPED_MATCH_AND_DOCUMENTED_DIFFERENCES",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT270_P2",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT"
+            ],
+            "scope": "Actual once/string list, numeric range/IS from270, string counted range/IS difference and selected fallback/no-default from277. No skipped-body credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASEELSE:timing_boundary",
+            "axis": "timing_boundary",
+            "requirement": "Compare source-distinct accepted boundary and rejection/ignore paths, warnings, BEFORE/stop/AFTER and exact line; no generalized load/runtime claim."
+          },
+          "assessment": {
+            "decision": "ACCEPT_EXACT_ORIGINAL_MALFORMED_COMPARISON",
+            "case_ids": [
+              "SELECT270_P3"
+            ],
+            "scope": "Only orphan CASE and missing ENDSELECT own owner: Native marked line4 then BEFORE/reached stop; public load-stop line4/orphan or5/missing. No post-stop cell inference."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:CASEELSE:effects_lifetime",
+            "axis": "effects_lifetime",
+            "requirement": "Selector/case helpers count and evaluation order; skipped term must not mutate; nested block exits resume correct outer block."
+          },
+          "assessment": {
+            "decision": "ACCEPT_FINITE_ORIGINAL_ROLE_EFFECTS",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT",
+              "NESTEDSELECT01"
+            ],
+            "scope": "Actual counter/order/suppression and paired continuation; retained numeric nested outer2/inner3 debug trace and public stdout only, preserving original instrumentation/identity scope."
+          }
+        }
+      ],
+      "own_role_limits": "CASEELSE fresh selected fallback only277 FALLBACK/270numeric fallback; NODEFAULT absent, RANGE/IS default skipped. ENDSELECT paired continuations only; missing delimiter is not an invocation.",
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "exact_remaining": [],
+      "historical_identity_note": "No explicit historical-runtime-identity obligation exists in these four original structural requirement lists; retained provenance limits are disclosed, not silently repaired.",
+      "known_differences": [],
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "structural_syntax:ENDSELECT",
+      "kind": "structural_syntax",
+      "name": "ENDSELECT",
+      "decision": "ACCEPT_ORIGINAL_FINITE_COMPARISON_SCOPED",
+      "necessary_comparison_complete_proposed": true,
+      "original_finite_queue_groups": [
+        {
+          "original": {
+            "id": "select.01",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "String selector helper and CASE list with first-hit / later helper not run",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P1"
+        },
+        {
+          "original": {
+            "id": "select.02",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Integer CASE inclusive TO endpoints and IS >= threshold, no-match sentinel; one value per branch transition",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P2"
+        },
+        {
+          "original": {
+            "id": "select.03",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Orphan CASE and missing ENDSELECT: load warning/marked line versus reached stop, BEFORE and exact diagnostic location",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P3"
+        }
+      ],
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "structural_syntax:ENDSELECT:registration_form",
+            "axis": "registration_form",
+            "requirement": "SELECTCASE numeric or string expression; CASE list/range/IS; CASEELSE fallback"
+          },
+          "assessment": {
+            "decision": "ACCEPT_SOURCE_CONTRACT",
+            "evidence_refs": [
+              {
+                "path": "evidence/select-string-list-next-277-20261113/SOURCE_PINS.json",
+                "sha256_current": "c652160f1bd2700b00bb4924bf7d4359f341619919ca5c1b381c41d52388c484"
+              }
+            ],
+            "scope": "Literal registrations/builders; CASE list/TO/IS forms; CASEELSE VOID, ENDSELECT paired role. Source is not runtime credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:ENDSELECT:normal_control",
+            "axis": "normal_control",
+            "requirement": "Selector int or string evaluated once; CASE list, TO range and IS relation; first matching clause terminates search; CASEELSE and no-match are distinct paths."
+          },
+          "assessment": {
+            "decision": "ACCEPT_SCOPED_MATCH_AND_DOCUMENTED_DIFFERENCES",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT270_P2",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT"
+            ],
+            "scope": "Actual once/string list, numeric range/IS from270, string counted range/IS difference and selected fallback/no-default from277. No skipped-body credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:ENDSELECT:timing_boundary",
+            "axis": "timing_boundary",
+            "requirement": "Compare source-distinct accepted boundary and rejection/ignore paths, warnings, BEFORE/stop/AFTER and exact line; no generalized load/runtime claim."
+          },
+          "assessment": {
+            "decision": "ACCEPT_EXACT_ORIGINAL_MALFORMED_COMPARISON",
+            "case_ids": [
+              "SELECT270_P3"
+            ],
+            "scope": "Only orphan CASE and missing ENDSELECT own owner: Native marked line4 then BEFORE/reached stop; public load-stop line4/orphan or5/missing. No post-stop cell inference."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:ENDSELECT:effects_lifetime",
+            "axis": "effects_lifetime",
+            "requirement": "Selector/case helpers count and evaluation order; skipped term must not mutate; nested block exits resume correct outer block."
+          },
+          "assessment": {
+            "decision": "ACCEPT_FINITE_ORIGINAL_ROLE_EFFECTS",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT",
+              "NESTEDSELECT01"
+            ],
+            "scope": "Actual counter/order/suppression and paired continuation; retained numeric nested outer2/inner3 debug trace and public stdout only, preserving original instrumentation/identity scope."
+          }
+        }
+      ],
+      "own_role_limits": "CASEELSE fresh selected fallback only277 FALLBACK/270numeric fallback; NODEFAULT absent, RANGE/IS default skipped. ENDSELECT paired continuations only; missing delimiter is not an invocation.",
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "exact_remaining": [],
+      "historical_identity_note": "No explicit historical-runtime-identity obligation exists in these four original structural requirement lists; retained provenance limits are disclosed, not silently repaired.",
+      "known_differences": [],
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "structural_syntax:SELECTCASE",
+      "kind": "structural_syntax",
+      "name": "SELECTCASE",
+      "decision": "ACCEPT_ORIGINAL_FINITE_COMPARISON_SCOPED",
+      "necessary_comparison_complete_proposed": true,
+      "original_finite_queue_groups": [
+        {
+          "original": {
+            "id": "select.01",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "String selector helper and CASE list with first-hit / later helper not run",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P1"
+        },
+        {
+          "original": {
+            "id": "select.02",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Integer CASE inclusive TO endpoints and IS >= threshold, no-match sentinel; one value per branch transition",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P2"
+        },
+        {
+          "original": {
+            "id": "select.03",
+            "family": "select",
+            "targets": [
+              "structural_syntax:CASE",
+              "structural_syntax:CASEELSE",
+              "structural_syntax:ENDSELECT",
+              "structural_syntax:SELECTCASE"
+            ],
+            "finite_case_group": "Orphan CASE and missing ENDSELECT: load warning/marked line versus reached stop, BEFORE and exact diagnostic location",
+            "state": "queued_not_run",
+            "comparison_contract": [
+              "Pin exact ERB/ERH, config and engine SHA before/after",
+              "Native raw log or diagnostic receipt and public raw stdout/stderr",
+              "BEFORE, selected body/control state, AFTER absence/presence, exact stop line",
+              "Use target own active role; source-sharing alone is not evidence"
+            ],
+            "reuse_policy": "One source guard/path representative may serve multiple targets only with explicit own-role invocation on that exact active path; otherwise keep per-target gap.",
+            "split_rule": "Isolate independent errors; no later assertion credited after earlier failure. Split valid path and malformed setup."
+          },
+          "decision": "ACCEPT_ALREADY_MEASURED_ORIGINAL_GROUP",
+          "case_id": "SELECT270_P3"
+        }
+      ],
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "structural_syntax:SELECTCASE:registration_form",
+            "axis": "registration_form",
+            "requirement": "SELECTCASE numeric or string expression; CASE list/range/IS; CASEELSE fallback"
+          },
+          "assessment": {
+            "decision": "ACCEPT_SOURCE_CONTRACT",
+            "evidence_refs": [
+              {
+                "path": "evidence/select-string-list-next-277-20261113/SOURCE_PINS.json",
+                "sha256_current": "c652160f1bd2700b00bb4924bf7d4359f341619919ca5c1b381c41d52388c484"
+              }
+            ],
+            "scope": "Literal registrations/builders; CASE list/TO/IS forms; CASEELSE VOID, ENDSELECT paired role. Source is not runtime credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:SELECTCASE:normal_control",
+            "axis": "normal_control",
+            "requirement": "Selector int or string evaluated once; CASE list, TO range and IS relation; first matching clause terminates search; CASEELSE and no-match are distinct paths."
+          },
+          "assessment": {
+            "decision": "ACCEPT_SCOPED_MATCH_AND_DOCUMENTED_DIFFERENCES",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT270_P2",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT"
+            ],
+            "scope": "Actual once/string list, numeric range/IS from270, string counted range/IS difference and selected fallback/no-default from277. No skipped-body credit."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:SELECTCASE:timing_boundary",
+            "axis": "timing_boundary",
+            "requirement": "Compare source-distinct accepted boundary and rejection/ignore paths, warnings, BEFORE/stop/AFTER and exact line; no generalized load/runtime claim."
+          },
+          "assessment": {
+            "decision": "ACCEPT_EXACT_ORIGINAL_MALFORMED_COMPARISON",
+            "case_ids": [
+              "SELECT270_P3"
+            ],
+            "scope": "Only orphan CASE and missing ENDSELECT own owner: Native marked line4 then BEFORE/reached stop; public load-stop line4/orphan or5/missing. No post-stop cell inference."
+          }
+        },
+        {
+          "original_requirement": {
+            "id": "structural_syntax:SELECTCASE:effects_lifetime",
+            "axis": "effects_lifetime",
+            "requirement": "Selector/case helpers count and evaluation order; skipped term must not mutate; nested block exits resume correct outer block."
+          },
+          "assessment": {
+            "decision": "ACCEPT_FINITE_ORIGINAL_ROLE_EFFECTS",
+            "case_ids": [
+              "SELECT270_P1",
+              "SELECT277_RANGE",
+              "SELECT277_IS",
+              "SELECT277_FALLBACK",
+              "SELECT277_NODEFAULT",
+              "NESTEDSELECT01"
+            ],
+            "scope": "Actual counter/order/suppression and paired continuation; retained numeric nested outer2/inner3 debug trace and public stdout only, preserving original instrumentation/identity scope."
+          }
+        }
+      ],
+      "own_role_limits": "CASEELSE fresh selected fallback only277 FALLBACK/270numeric fallback; NODEFAULT absent, RANGE/IS default skipped. ENDSELECT paired continuations only; missing delimiter is not an invocation.",
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "exact_remaining": [],
+      "historical_identity_note": "No explicit historical-runtime-identity obligation exists in these four original structural requirement lists; retained provenance limits are disclosed, not silently repaired.",
+      "known_differences": [
+        "SELECT270_P3",
+        "SELECT277_IS"
+      ],
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "command_or_syntax:SELECTCASE",
+      "kind": "command_or_syntax",
+      "name": "SELECTCASE",
+      "decision": "HOLD_ORIGINAL_RECEIPT_CLOSURE_ACCEPT_CURRENT_FINITE_ROLES",
+      "necessary_comparison_complete_proposed": false,
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "registration_form",
+            "requirement": "Exact v24 SELECTCASE command registration and constructor arguments, not expression or method-as-command homonym."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "signature_parser",
+            "requirement": "SELECTCASE: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "normal_output_state_control",
+            "requirement": "Nested numeric/string SELECTCASE picks one CASE/CASEELSE and skips remaining bodies."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "finite_boundary_error",
+            "requirement": "Review exact CASE range/IS syntax in NESTEDSELECT01 vs source1924-1994; add one descending range or unmatched CASEELSE only if absent."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "evaluation_and_side_effects",
+            "requirement": "SELECTCASE selector once; unselected CASE expressions and bodies must not be treated as executed."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        }
+      ],
+      "original_command_obligation_decisions": [
+        {
+          "obligation_id": "target_SELECTCASE",
+          "original_obligation": {
+            "missing_proof": "One CASE range/IS condition with counted selector-once and unchosen-expression suppression, and descending range or unmatched CASEELSE; no alias/type product.",
+            "satisfaction": "missing",
+            "consumers": [
+              "SELECTCASE"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "ACCEPT_CURRENT_FINITE_COMPARISON_WITH_RECORDED_DIFFERENCE",
+          "accepted_case_ids": [
+            "SELECT277_RANGE",
+            "SELECT277_IS",
+            "SELECT270_P2",
+            "SELECT277_FALLBACK"
+          ],
+          "accepted_current_role_replacement": false,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        },
+        {
+          "obligation_id": "runtime_identity_SELECTCASE",
+          "original_obligation": {
+            "missing_proof": "Retain an original run-time identity receipt for SELECTCASE normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+            "satisfaction": "missing",
+            "consumers": [
+              "SELECTCASE"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+          "accepted_case_ids": [
+            "SELECT277_RANGE",
+            "SELECT277_IS",
+            "SELECT270_P2",
+            "SELECT277_FALLBACK"
+          ],
+          "accepted_current_role_replacement": true,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [
+            "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+          ],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        }
+      ],
+      "exact_remaining": [
+        {
+          "obligation_id": "runtime_identity_SELECTCASE",
+          "kind": "historical_provenance_or_parent_replacement_decision",
+          "next_action": "Read existing original receipts if any; otherwise retain unknown and ask parent to decide exact-role fresh277 replacement policy. No new cases or engine runs are proposed."
+        }
+      ],
+      "fresh_replacement_candidates": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "command_or_syntax:CASE",
+      "kind": "command_or_syntax",
+      "name": "CASE",
+      "decision": "HOLD_ORIGINAL_RECEIPT_CLOSURE_ACCEPT_CURRENT_FINITE_ROLES",
+      "necessary_comparison_complete_proposed": false,
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "registration_form",
+            "requirement": "Exact v24 CASE command registration and constructor arguments, not expression or method-as-command homonym."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "signature_parser",
+            "requirement": "CASE: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "normal_output_state_control",
+            "requirement": "Nested numeric/string SELECTCASE picks one CASE/CASEELSE and skips remaining bodies."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "finite_boundary_error",
+            "requirement": "Review exact CASE range/IS syntax in NESTEDSELECT01 vs source1924-1994; add one descending range or unmatched CASEELSE only if absent."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "evaluation_and_side_effects",
+            "requirement": "SELECTCASE selector once; unselected CASE expressions and bodies must not be treated as executed."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        }
+      ],
+      "original_command_obligation_decisions": [
+        {
+          "obligation_id": "target_CASE",
+          "original_obligation": {
+            "missing_proof": "One source CASE range and IS comparator branch with selector/CASE helper order; the exact-value branch is not range/IS proof.",
+            "satisfaction": "missing",
+            "consumers": [
+              "CASE"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "ACCEPT_CURRENT_FINITE_COMPARISON_WITH_RECORDED_DIFFERENCE",
+          "accepted_case_ids": [
+            "SELECT277_RANGE",
+            "SELECT277_IS",
+            "SELECT270_P2",
+            "SELECT277_FALLBACK"
+          ],
+          "accepted_current_role_replacement": false,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        },
+        {
+          "obligation_id": "runtime_identity_CASE",
+          "original_obligation": {
+            "missing_proof": "Retain an original run-time identity receipt for CASE normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+            "satisfaction": "missing",
+            "consumers": [
+              "CASE"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+          "accepted_case_ids": [
+            "SELECT277_RANGE",
+            "SELECT277_IS",
+            "SELECT270_P2",
+            "SELECT277_FALLBACK"
+          ],
+          "accepted_current_role_replacement": true,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [
+            "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+          ],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        }
+      ],
+      "exact_remaining": [
+        {
+          "obligation_id": "runtime_identity_CASE",
+          "kind": "historical_provenance_or_parent_replacement_decision",
+          "next_action": "Read existing original receipts if any; otherwise retain unknown and ask parent to decide exact-role fresh277 replacement policy. No new cases or engine runs are proposed."
+        }
+      ],
+      "fresh_replacement_candidates": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "command_or_syntax:CASEELSE",
+      "kind": "command_or_syntax",
+      "name": "CASEELSE",
+      "decision": "HOLD_ORIGINAL_RECEIPT_CLOSURE_ACCEPT_CURRENT_FINITE_ROLES",
+      "necessary_comparison_complete_proposed": false,
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "registration_form",
+            "requirement": "Exact v24 CASEELSE command registration and constructor arguments, not expression or method-as-command homonym."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "signature_parser",
+            "requirement": "CASEELSE: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "normal_output_state_control",
+            "requirement": "Nested numeric/string SELECTCASE picks one CASE/CASEELSE and skips remaining bodies."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "finite_boundary_error",
+            "requirement": "Review exact CASE range/IS syntax in NESTEDSELECT01 vs source1924-1994; add one descending range or unmatched CASEELSE only if absent."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "evaluation_and_side_effects",
+            "requirement": "SELECTCASE selector once; unselected CASE expressions and bodies must not be treated as executed."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        }
+      ],
+      "original_command_obligation_decisions": [
+        {
+          "obligation_id": "target_CASEELSE",
+          "original_obligation": {
+            "missing_proof": "Original public runtime identity for the reached unmatched-selector fallback and no-default continuation; CASE range/IS expression branches belong to CASE, not this VOID fallback marker.",
+            "satisfaction": "missing",
+            "consumers": [
+              "CASEELSE"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+          "accepted_case_ids": [
+            "SELECT277_FALLBACK",
+            "SELECT277_NODEFAULT"
+          ],
+          "accepted_current_role_replacement": true,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [
+            "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+          ],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        },
+        {
+          "obligation_id": "runtime_identity_CASEELSE",
+          "original_obligation": {
+            "missing_proof": "Retain an original run-time identity receipt for CASEELSE normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+            "satisfaction": "missing",
+            "consumers": [
+              "CASEELSE"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+          "accepted_case_ids": [
+            "SELECT277_FALLBACK",
+            "SELECT277_NODEFAULT"
+          ],
+          "accepted_current_role_replacement": true,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [
+            "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+          ],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        }
+      ],
+      "exact_remaining": [
+        {
+          "obligation_id": "target_CASEELSE",
+          "kind": "historical_provenance_or_parent_replacement_decision",
+          "next_action": "Read existing original receipts if any; otherwise retain unknown and ask parent to decide exact-role fresh277 replacement policy. No new cases or engine runs are proposed."
+        },
+        {
+          "obligation_id": "runtime_identity_CASEELSE",
+          "kind": "historical_provenance_or_parent_replacement_decision",
+          "next_action": "Read existing original receipts if any; otherwise retain unknown and ask parent to decide exact-role fresh277 replacement policy. No new cases or engine runs are proposed."
+        }
+      ],
+      "fresh_replacement_candidates": [
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    },
+    {
+      "target_id": "command_or_syntax:ENDSELECT",
+      "kind": "command_or_syntax",
+      "name": "ENDSELECT",
+      "decision": "HOLD_ORIGINAL_RECEIPT_CLOSURE_ACCEPT_CURRENT_FINITE_ROLES",
+      "necessary_comparison_complete_proposed": false,
+      "original_requirement_assessments": [
+        {
+          "original_requirement": {
+            "id": "registration_form",
+            "requirement": "Exact v24 ENDSELECT command registration and constructor arguments, not expression or method-as-command homonym."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "signature_parser",
+            "requirement": "ENDSELECT: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "normal_output_state_control",
+            "requirement": "Nested numeric/string SELECTCASE picks one CASE/CASEELSE and skips remaining bodies."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "finite_boundary_error",
+            "requirement": "Review exact CASE range/IS syntax in NESTEDSELECT01 vs source1924-1994; add one descending range or unmatched CASEELSE only if absent."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        },
+        {
+          "original_requirement": {
+            "id": "evaluation_and_side_effects",
+            "requirement": "SELECTCASE selector once; unselected CASE expressions and bodies must not be treated as executed."
+          },
+          "decision": "ACCEPT_EXACT_SOURCE_AND_SELECTED_SCOPED_TRACE",
+          "basis": "270/277 measured own role plus retained nested/malformed scope; no new generic axis"
+        }
+      ],
+      "original_command_obligation_decisions": [
+        {
+          "obligation_id": "target_ENDSELECT",
+          "original_obligation": {
+            "missing_proof": "One active unmatched-selector fallback/range history through ENDSELECT, tied to selector evaluation once and original runtimes.",
+            "satisfaction": "missing",
+            "consumers": [
+              "ENDSELECT"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "ACCEPT_CURRENT_OWN_PAIRED_HISTORY",
+          "accepted_case_ids": [
+            "SELECT277_FALLBACK",
+            "SELECT277_NODEFAULT"
+          ],
+          "accepted_current_role_replacement": false,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [],
+          "caveat": "For target_ENDSELECT, fresh277 unmatched fallback and RANGE each have same-invocation counted selector and original per-run receipts; no standalone ENDSELECT argument is invented.",
+          "applied": false
+        },
+        {
+          "obligation_id": "runtime_identity_ENDSELECT",
+          "original_obligation": {
+            "missing_proof": "Retain an original run-time identity receipt for ENDSELECT normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+            "satisfaction": "missing",
+            "consumers": [
+              "ENDSELECT"
+            ],
+            "execution_requested_by_this_review": false
+          },
+          "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+          "accepted_case_ids": [
+            "SELECT277_FALLBACK",
+            "SELECT277_NODEFAULT"
+          ],
+          "accepted_current_role_replacement": true,
+          "original_historical_receipt_backfilled": false,
+          "exact_remaining": [
+            "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+          ],
+          "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+          "applied": false
+        }
+      ],
+      "exact_remaining": [
+        {
+          "obligation_id": "runtime_identity_ENDSELECT",
+          "kind": "historical_provenance_or_parent_replacement_decision",
+          "next_action": "Read existing original receipts if any; otherwise retain unknown and ask parent to decide exact-role fresh277 replacement policy. No new cases or engine runs are proposed."
+        }
+      ],
+      "fresh_replacement_candidates": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "retained_nested_evidence_ref": "RETAINED_NESTED_REVIEW.json",
+      "parent_acceptance_required": true,
+      "closure_applied": false
+    }
+  ],
+  "command_obligations": [
+    {
+      "obligation_id": "target_SELECTCASE",
+      "original_obligation": {
+        "missing_proof": "One CASE range/IS condition with counted selector-once and unchosen-expression suppression, and descending range or unmatched CASEELSE; no alias/type product.",
+        "satisfaction": "missing",
+        "consumers": [
+          "SELECTCASE"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "ACCEPT_CURRENT_FINITE_COMPARISON_WITH_RECORDED_DIFFERENCE",
+      "accepted_case_ids": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT270_P2",
+        "SELECT277_FALLBACK"
+      ],
+      "accepted_current_role_replacement": false,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    },
+    {
+      "obligation_id": "runtime_identity_SELECTCASE",
+      "original_obligation": {
+        "missing_proof": "Retain an original run-time identity receipt for SELECTCASE normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+        "satisfaction": "missing",
+        "consumers": [
+          "SELECTCASE"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+      "accepted_case_ids": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT270_P2",
+        "SELECT277_FALLBACK"
+      ],
+      "accepted_current_role_replacement": true,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [
+        "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+      ],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    },
+    {
+      "obligation_id": "target_CASE",
+      "original_obligation": {
+        "missing_proof": "One source CASE range and IS comparator branch with selector/CASE helper order; the exact-value branch is not range/IS proof.",
+        "satisfaction": "missing",
+        "consumers": [
+          "CASE"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "ACCEPT_CURRENT_FINITE_COMPARISON_WITH_RECORDED_DIFFERENCE",
+      "accepted_case_ids": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT270_P2",
+        "SELECT277_FALLBACK"
+      ],
+      "accepted_current_role_replacement": false,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    },
+    {
+      "obligation_id": "runtime_identity_CASE",
+      "original_obligation": {
+        "missing_proof": "Retain an original run-time identity receipt for CASE normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+        "satisfaction": "missing",
+        "consumers": [
+          "CASE"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+      "accepted_case_ids": [
+        "SELECT277_RANGE",
+        "SELECT277_IS",
+        "SELECT270_P2",
+        "SELECT277_FALLBACK"
+      ],
+      "accepted_current_role_replacement": true,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [
+        "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+      ],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    },
+    {
+      "obligation_id": "target_CASEELSE",
+      "original_obligation": {
+        "missing_proof": "Original public runtime identity for the reached unmatched-selector fallback and no-default continuation; CASE range/IS expression branches belong to CASE, not this VOID fallback marker.",
+        "satisfaction": "missing",
+        "consumers": [
+          "CASEELSE"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+      "accepted_case_ids": [
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "accepted_current_role_replacement": true,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [
+        "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+      ],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    },
+    {
+      "obligation_id": "runtime_identity_CASEELSE",
+      "original_obligation": {
+        "missing_proof": "Retain an original run-time identity receipt for CASEELSE normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+        "satisfaction": "missing",
+        "consumers": [
+          "CASEELSE"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+      "accepted_case_ids": [
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "accepted_current_role_replacement": true,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [
+        "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+      ],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    },
+    {
+      "obligation_id": "target_ENDSELECT",
+      "original_obligation": {
+        "missing_proof": "One active unmatched-selector fallback/range history through ENDSELECT, tied to selector evaluation once and original runtimes.",
+        "satisfaction": "missing",
+        "consumers": [
+          "ENDSELECT"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "ACCEPT_CURRENT_OWN_PAIRED_HISTORY",
+      "accepted_case_ids": [
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "accepted_current_role_replacement": false,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [],
+      "caveat": "For target_ENDSELECT, fresh277 unmatched fallback and RANGE each have same-invocation counted selector and original per-run receipts; no standalone ENDSELECT argument is invented.",
+      "applied": false
+    },
+    {
+      "obligation_id": "runtime_identity_ENDSELECT",
+      "original_obligation": {
+        "missing_proof": "Retain an original run-time identity receipt for ENDSELECT normal evidence, binding executable/public hash, exact fixture/config and raw result; if never recorded, mark historical identity unknown. Current hashes must not be backfilled.",
+        "satisfaction": "missing",
+        "consumers": [
+          "ENDSELECT"
+        ],
+        "execution_requested_by_this_review": false
+      },
+      "decision": "HELD_ORIGINAL_HISTORICAL_RECEIPT",
+      "accepted_case_ids": [
+        "SELECT277_FALLBACK",
+        "SELECT277_NODEFAULT"
+      ],
+      "accepted_current_role_replacement": true,
+      "original_historical_receipt_backfilled": false,
+      "exact_remaining": [
+        "Original public loaded-runtime receipt for its historical normal case was never retained; current277 proves only the newly measured own role. Parent must explicitly accept fresh replacement if that is its closure policy."
+      ],
+      "caveat": "Recorded IS difference completes a bounded comparison; does not assert matching Native/public semantics.",
+      "applied": false
+    }
+  ],
+  "counts": {
+    "targets": 8,
+    "accepted_structural_finite": 4,
+    "held_command_historical_receipt": 4,
+    "held_original_obligation_ids": 5,
+    "fresh_semantic_obligations_accepted": 3
+  },
+  "all_applied": false,
+  "generic_new_axes": 0,
+  "new_engines": 0,
+  "historical_backfill": false,
+  "difference_is_not_unmeasured": true
+}

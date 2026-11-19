@@ -1,0 +1,31 @@
+{
+  "schema": "p1-observation-supplement.v1",
+  "records": [
+    {
+      "target": {
+        "kind": "assignment_syntax",
+        "name": "*="
+      },
+      "case_id": "OPISOLATED265_compound-trailing-comma",
+      "record_pointer": "/records/0",
+      "fixture_line": 12,
+      "evidence_role": "fixture_spelling",
+      "catalog_pointer": "/main_scenarios/444",
+      "source_record_pointer": "/records/21",
+      "survey_target_pointer": "/targets/616"
+    },
+    {
+      "target": {
+        "kind": "assignment_syntax",
+        "name": "+="
+      },
+      "case_id": "OPISOLATED265_compound-string-trailing",
+      "record_pointer": "/records/1",
+      "fixture_line": 12,
+      "evidence_role": "fixture_spelling",
+      "catalog_pointer": "/main_scenarios/445",
+      "source_record_pointer": "/records/22",
+      "survey_target_pointer": "/targets/614"
+    }
+  ]
+}

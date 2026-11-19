@@ -1,0 +1,19 @@
+{
+  "case_id": "LIST_TRYGOTOLIST_MISSING_CLOSE_REACHED_20261115",
+  "mode": "native-01",
+  "identity_basis": "case_evidence_and_source_path_receipt_has_no_case_or_mode",
+  "inputs_before": {
+    "ERB/LISTBOUND.ERB": "86647077e61f613c8cb6214253b661d9cb6b32fad4323f7e69f5ae25b8646dae",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/LISTBOUND.ERB": "86647077e61f613c8cb6214253b661d9cb6b32fad4323f7e69f5ae25b8646dae",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "9eff6b00a36e84b2cb4e4eb531c138ab79781ebe9e80638c72e00142871169ae",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt"
+}

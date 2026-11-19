@@ -1,0 +1,971 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0624 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0624 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=declaration:#DEFINE。対象={&quot;kind&quot;: &quot;declaration&quot;, &quot;name&quot;: &quot;#DEFINE&quot;}; classification=&quot;different_scoped&quot;。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を10個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>57371e2b542f2b636cb2fd2a9b1b8a208fa70295f981f1f9cf07aad7c1e2adb5</code></p>
+<p><a href="../assets/U0624.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>2f869ee1f540c66e40258ac71c2c486a029b2fe8c84893f73b8c7853f3ed46df</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;define-focused-finite-comparison-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T20:49:07.028952+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;declaration&quot;,
+    &quot;name&quot;: &quot;#DEFINE&quot;
+  },
+  &quot;classification&quot;: &quot;different_scoped&quot;,
+  &quot;case_ids&quot;: [
+    &quot;DEFINE_DUPLICATE_NAME_20261115&quot;,
+    &quot;DEFINE_EMPTY_EXPANSION_20261115&quot;,
+    &quot;DEFINE_MISSING_IDENTIFIER_20261115&quot;,
+    &quot;DEFINE_BAD_ARGUMENT_SEPARATOR_20261115&quot;,
+    &quot;DEFINE_UNCLOSED_ARGUMENT_LIST_20261115&quot;,
+    &quot;MACROFUNC01&quot;
+  ],
+  &quot;case_results&quot;: [
+    {
+      &quot;case_id&quot;: &quot;DEFINE_DUPLICATE_NAME_20261115&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;declaration&quot;,
+        &quot;name&quot;: &quot;#DEFINE&quot;
+      },
+      &quot;fixture&quot;: &quot;duplicate_state&quot;,
+      &quot;native&quot;: [
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/duplicate_state-native-01&quot;,
+          &quot;log_sha256&quot;: &quot;f020e69791aa5b3a136406660c52635ca25c4b6dc57b1dab2fed7913dae5ab26&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\n警告Lv2:DEFINEEDGE.ERH:2行目:マクロ名DDEF_DUPは既にマクロ名に使用されています\r\nDEFINE_DUP_VALUE=1\r\nDEFINE_DUP_AFTER\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;c90cf8e4865f844210b5e53891177ce636a68a5e449b615bc639740cee02c91d&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_duplicate_state-native-01_1794688816130853900&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 26664,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\duplicate_state-native-01&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [
+              {
+                &quot;file&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;sha256&quot;: &quot;b59fe6f3a3131af1d0fe377406b45b655e6b08682658a66908ee65b18ebd6d09&quot;,
+                &quot;width&quot;: 794,
+                &quot;height&quot;: 543,
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              }
+            ],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 220,
+                &quot;sha256&quot;: &quot;f020e69791aa5b3a136406660c52635ca25c4b6dc57b1dab2fed7913dae5ab26&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;size&quot;: 3570,
+                &quot;sha256&quot;: &quot;b59fe6f3a3131af1d0fe377406b45b655e6b08682658a66908ee65b18ebd6d09&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/duplicate_state-native-02&quot;,
+          &quot;log_sha256&quot;: &quot;f020e69791aa5b3a136406660c52635ca25c4b6dc57b1dab2fed7913dae5ab26&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\n警告Lv2:DEFINEEDGE.ERH:2行目:マクロ名DDEF_DUPは既にマクロ名に使用されています\r\nDEFINE_DUP_VALUE=1\r\nDEFINE_DUP_AFTER\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;c90cf8e4865f844210b5e53891177ce636a68a5e449b615bc639740cee02c91d&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_duplicate_state-native-02_1794688821329795900&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 23480,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\duplicate_state-native-02&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [
+              {
+                &quot;file&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;sha256&quot;: &quot;b59fe6f3a3131af1d0fe377406b45b655e6b08682658a66908ee65b18ebd6d09&quot;,
+                &quot;width&quot;: 794,
+                &quot;height&quot;: 543,
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              }
+            ],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 220,
+                &quot;sha256&quot;: &quot;f020e69791aa5b3a136406660c52635ca25c4b6dc57b1dab2fed7913dae5ab26&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;size&quot;: 3570,
+                &quot;sha256&quot;: &quot;b59fe6f3a3131af1d0fe377406b45b655e6b08682658a66908ee65b18ebd6d09&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;public&quot;: {
+        &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/duplicate_state-py&quot;,
+        &quot;returncode&quot;: 0,
+        &quot;inputs_sha256&quot;: {
+          &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9&quot;,
+          &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;c90cf8e4865f844210b5e53891177ce636a68a5e449b615bc639740cee02c91d&quot;,
+          &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+        },
+        &quot;pyz_sha256_before&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;pyz_sha256_after&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;stdout_sha256&quot;: &quot;51be16e7091d5313285d40515eb1aada887f51a2b843030501385165544ca905&quot;,
+        &quot;stderr_sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;,
+        &quot;log_sha256&quot;: &quot;91827c5b6e19ada8005f87907a2dfc06bdfe31ccbbe6d1487fb4d90304a4013f&quot;,
+        &quot;log_text&quot;: &quot;Now Loading...\r\nDEFINE_DUP_VALUE=2\r\nDEFINE_DUP_AFTER\r\n&quot;,
+        &quot;stderr_text&quot;: &quot;[PyEmuera warning] OUTPUTLOG writes the bounded text history under .pyemuera/logs; review it before sharing.\r\n&quot;
+      }
+    },
+    {
+      &quot;case_id&quot;: &quot;DEFINE_EMPTY_EXPANSION_20261115&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;declaration&quot;,
+        &quot;name&quot;: &quot;#DEFINE&quot;
+      },
+      &quot;fixture&quot;: &quot;empty_expr&quot;,
+      &quot;native&quot;: [
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/empty_expr-native-01&quot;,
+          &quot;log_sha256&quot;: &quot;f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\nDEFINE_EMPTY_VALUE=3\r\nDEFINE_EMPTY_EXPR_AFTER\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;18723a8580cf2efb670bad837946eb2e1c9772f35e460fabb6f7ca94db913fda&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;c860b6eca532799210cf8539a414948de422cd05dab8949797e97fd514ca106c&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_empty_expr-native-01_1794688588833559000&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 26576,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\empty_expr-native-01&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [
+              {
+                &quot;file&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;sha256&quot;: &quot;c90b2105e1006f6011b376e1b92b6a82b413a4c5748cc87650242cea7f8e8dee&quot;,
+                &quot;width&quot;: 794,
+                &quot;height&quot;: 543,
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              }
+            ],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 128,
+                &quot;sha256&quot;: &quot;f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;size&quot;: 2416,
+                &quot;sha256&quot;: &quot;c90b2105e1006f6011b376e1b92b6a82b413a4c5748cc87650242cea7f8e8dee&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/empty_expr-native-02&quot;,
+          &quot;log_sha256&quot;: &quot;f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\nDEFINE_EMPTY_VALUE=3\r\nDEFINE_EMPTY_EXPR_AFTER\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;18723a8580cf2efb670bad837946eb2e1c9772f35e460fabb6f7ca94db913fda&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;c860b6eca532799210cf8539a414948de422cd05dab8949797e97fd514ca106c&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_empty_expr-native-02_1794688594541051900&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 22400,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\empty_expr-native-02&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [
+              {
+                &quot;file&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;sha256&quot;: &quot;c90b2105e1006f6011b376e1b92b6a82b413a4c5748cc87650242cea7f8e8dee&quot;,
+                &quot;width&quot;: 794,
+                &quot;height&quot;: 543,
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              }
+            ],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 128,
+                &quot;sha256&quot;: &quot;f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;size&quot;: 2416,
+                &quot;sha256&quot;: &quot;c90b2105e1006f6011b376e1b92b6a82b413a4c5748cc87650242cea7f8e8dee&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;public&quot;: {
+        &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/empty_expr-py&quot;,
+        &quot;returncode&quot;: 0,
+        &quot;inputs_sha256&quot;: {
+          &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;18723a8580cf2efb670bad837946eb2e1c9772f35e460fabb6f7ca94db913fda&quot;,
+          &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;c860b6eca532799210cf8539a414948de422cd05dab8949797e97fd514ca106c&quot;,
+          &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+        },
+        &quot;pyz_sha256_before&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;pyz_sha256_after&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;stdout_sha256&quot;: &quot;b02164d3dd6ff3c9577854ff54774588413c753903de11ede4148c74cc34c318&quot;,
+        &quot;stderr_sha256&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;,
+        &quot;log_sha256&quot;: &quot;f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42&quot;,
+        &quot;log_text&quot;: &quot;Now Loading...\r\nDEFINE_EMPTY_VALUE=3\r\nDEFINE_EMPTY_EXPR_AFTER\r\n&quot;,
+        &quot;stderr_text&quot;: &quot;[PyEmuera warning] OUTPUTLOG writes the bounded text history under .pyemuera/logs; review it before sharing.\r\n&quot;
+      }
+    },
+    {
+      &quot;case_id&quot;: &quot;DEFINE_MISSING_IDENTIFIER_20261115&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;declaration&quot;,
+        &quot;name&quot;: &quot;#DEFINE&quot;
+      },
+      &quot;fixture&quot;: &quot;missing_id&quot;,
+      &quot;native&quot;: [
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/missing_id-native-01&quot;,
+          &quot;log_sha256&quot;: &quot;2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\nDEFINE_MISSING_ID_AFTER\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_missing_id-native-01_1794688229475622900&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 26540,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\missing_id-native-01&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 84,
+                &quot;sha256&quot;: &quot;2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/missing_id-native-02&quot;,
+          &quot;log_sha256&quot;: &quot;2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\nDEFINE_MISSING_ID_AFTER\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_missing_id-native-02_1794688234618320700&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 18456,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\missing_id-native-02&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 84,
+                &quot;sha256&quot;: &quot;2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;public&quot;: {
+        &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/missing_id-py&quot;,
+        &quot;returncode&quot;: 1,
+        &quot;inputs_sha256&quot;: {
+          &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc&quot;,
+          &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e&quot;,
+          &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+        },
+        &quot;pyz_sha256_before&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;pyz_sha256_after&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;stdout_sha256&quot;: &quot;349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265&quot;,
+        &quot;stderr_sha256&quot;: &quot;48d7cc37a8e7481a7dada0c4069c56f160ff675cc91aceb6bf69e7ec3540bdfe&quot;,
+        &quot;log_sha256&quot;: null,
+        &quot;log_text&quot;: &quot;Now Loading...\r\n&quot;,
+        &quot;stderr_text&quot;: &quot;ERB/DEFINEEDGE.ERH:1: E_SYNTAX: Invalid #DEFINE\r\n&quot;
+      }
+    },
+    {
+      &quot;case_id&quot;: &quot;DEFINE_BAD_ARGUMENT_SEPARATOR_20261115&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;declaration&quot;,
+        &quot;name&quot;: &quot;#DEFINE&quot;
+      },
+      &quot;fixture&quot;: &quot;malformed_args&quot;,
+      &quot;native&quot;: [
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/malformed_args-native-01&quot;,
+          &quot;log_sha256&quot;: &quot;5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\n警告Lv2:DEFINEEDGE.ERH:1行目:置換元の引数指定の書式が間違っています\r\nERHの読み込み中にエラーが発生したため処理を終了しました\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_malformed_args-native-01_1794688240257705100&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 34924,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\malformed_args-native-01&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 188,
+                &quot;sha256&quot;: &quot;5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/malformed_args-native-02&quot;,
+          &quot;log_sha256&quot;: &quot;5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\n警告Lv2:DEFINEEDGE.ERH:1行目:置換元の引数指定の書式が間違っています\r\nERHの読み込み中にエラーが発生したため処理を終了しました\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_malformed_args-native-02_1794688245401312900&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 10912,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\malformed_args-native-02&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 188,
+                &quot;sha256&quot;: &quot;5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;public&quot;: {
+        &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/malformed_args-py&quot;,
+        &quot;returncode&quot;: 1,
+        &quot;inputs_sha256&quot;: {
+          &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7&quot;,
+          &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f&quot;,
+          &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+        },
+        &quot;pyz_sha256_before&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;pyz_sha256_after&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;stdout_sha256&quot;: &quot;349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265&quot;,
+        &quot;stderr_sha256&quot;: &quot;1442007712e0a4335013fc6e1151041bafc34113d83fb84afd53ee5df1f1fb59&quot;,
+        &quot;log_sha256&quot;: null,
+        &quot;log_text&quot;: &quot;Now Loading...\r\n&quot;,
+        &quot;stderr_text&quot;: &quot;ERB/DEFINEEDGE.ERH:1: E_UNSUPPORTED: Parameterized #DEFINE is not implemented\r\n&quot;
+      }
+    },
+    {
+      &quot;case_id&quot;: &quot;DEFINE_UNCLOSED_ARGUMENT_LIST_20261115&quot;,
+      &quot;target&quot;: {
+        &quot;kind&quot;: &quot;declaration&quot;,
+        &quot;name&quot;: &quot;#DEFINE&quot;
+      },
+      &quot;fixture&quot;: &quot;unterminated_args&quot;,
+      &quot;native&quot;: [
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/unterminated_args-native-01&quot;,
+          &quot;log_sha256&quot;: &quot;791c9e46b540ecd22a258128ea3425877cc7307543b2da46e8a48fdda9694e1e&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\n警告Lv2:DEFINEEDGE.ERH:1行目:字句解析中に対応する&#x27;)&#x27;のない&#x27;(&#x27;を発見しました\r\nERHの読み込み中にエラーが発生したため処理を終了しました\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;82ef988186297af853369ec749dbc9879f9223e3cb895b9592b2bed805fe0f65&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;a240eedd499aa61f540aa53dcd5eb2dce41e4b6918ce8960543056aeb8bb3707&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_unterminated_args-native-01_1794688528160414800&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 34888,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\unterminated_args-native-01&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [
+              {
+                &quot;file&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;sha256&quot;: &quot;c690ce9f8411390a3c401b6e496cb9614338d84f5e4984f7257e24934a3f4b97&quot;,
+                &quot;width&quot;: 794,
+                &quot;height&quot;: 543,
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              }
+            ],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 202,
+                &quot;sha256&quot;: &quot;791c9e46b540ecd22a258128ea3425877cc7307543b2da46e8a48fdda9694e1e&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;size&quot;: 4311,
+                &quot;sha256&quot;: &quot;c690ce9f8411390a3c401b6e496cb9614338d84f5e4984f7257e24934a3f4b97&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-observation.json&quot;,
+                &quot;size&quot;: 2046,
+                &quot;sha256&quot;: &quot;021d8d38b1b0a0d224d2bdb2887d44900af94a104ac716120119f04231370a14&quot;
+              }
+            ]
+          }
+        },
+        {
+          &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/unterminated_args-native-02&quot;,
+          &quot;log_sha256&quot;: &quot;791c9e46b540ecd22a258128ea3425877cc7307543b2da46e8a48fdda9694e1e&quot;,
+          &quot;log_text&quot;: &quot;Now Loading...\r\n警告Lv2:DEFINEEDGE.ERH:1行目:字句解析中に対応する&#x27;)&#x27;のない&#x27;(&#x27;を発見しました\r\nERHの読み込み中にエラーが発生したため処理を終了しました\r\n&quot;,
+          &quot;inputs_sha256&quot;: {
+            &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;82ef988186297af853369ec749dbc9879f9223e3cb895b9592b2bed805fe0f65&quot;,
+            &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;a240eedd499aa61f540aa53dcd5eb2dce41e4b6918ce8960543056aeb8bb3707&quot;,
+            &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+          },
+          &quot;observation&quot;: {
+            &quot;desktop&quot;: &quot;PyEmueraDefine_unterminated_args-native-02_1794688533321256800&quot;,
+            &quot;desktop_created&quot;: true,
+            &quot;process_created&quot;: true,
+            &quot;pid&quot;: 2160,
+            &quot;no_keyboard_input&quot;: true,
+            &quot;run_directory&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\define-edge-cases-20261115\\unterminated_args-native-02&quot;,
+            &quot;exited_within_5s&quot;: false,
+            &quot;own_windows&quot;: [
+              {
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;GDI+ Hook Window Class&quot;,
+                &quot;title&quot;: &quot;GDI+ Window (Emuera1824+v24.exe)&quot;
+              },
+              {
+                &quot;class&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;,
+                &quot;title&quot;: &quot;.NET-BroadcastEventWindow.4.0.0.0.34f5582.0&quot;
+              },
+              {
+                &quot;class&quot;: &quot;CicLoaderWndClass&quot;,
+                &quot;title&quot;: &quot;&quot;
+              },
+              {
+                &quot;class&quot;: &quot;MSCTFIME UI&quot;,
+                &quot;title&quot;: &quot;MSCTFIME UI&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              },
+              {
+                &quot;class&quot;: &quot;IME&quot;,
+                &quot;title&quot;: &quot;Default IME&quot;
+              }
+            ],
+            &quot;dialog_crops&quot;: [
+              {
+                &quot;file&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;sha256&quot;: &quot;c690ce9f8411390a3c401b6e496cb9614338d84f5e4984f7257e24934a3f4b97&quot;,
+                &quot;width&quot;: 794,
+                &quot;height&quot;: 543,
+                &quot;class&quot;: &quot;WindowsForms10.Window.8.app.0.34f5582_r21_ad1&quot;,
+                &quot;title&quot;: &quot;&quot;
+              }
+            ],
+            &quot;cleanup_terminate_ok&quot;: true,
+            &quot;desktop_closed&quot;: true,
+            &quot;files&quot;: [
+              {
+                &quot;path&quot;: &quot;emuera.config&quot;,
+                &quot;size&quot;: 2164,
+                &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+              },
+              {
+                &quot;path&quot;: &quot;emuera.log&quot;,
+                &quot;size&quot;: 202,
+                &quot;sha256&quot;: &quot;791c9e46b540ecd22a258128ea3425877cc7307543b2da46e8a48fdda9694e1e&quot;
+              },
+              {
+                &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+                &quot;size&quot;: 761856,
+                &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+              },
+              {
+                &quot;path&quot;: &quot;native-main-transcript-crop-00.png&quot;,
+                &quot;size&quot;: 4311,
+                &quot;sha256&quot;: &quot;c690ce9f8411390a3c401b6e496cb9614338d84f5e4984f7257e24934a3f4b97&quot;
+              }
+            ]
+          }
+        }
+      ],
+      &quot;public&quot;: {
+        &quot;path&quot;: &quot;evidence/define-edge-cases-20261115/unterminated_args-py&quot;,
+        &quot;returncode&quot;: 1,
+        &quot;inputs_sha256&quot;: {
+          &quot;ERB/DEFINEEDGE.ERH&quot;: &quot;82ef988186297af853369ec749dbc9879f9223e3cb895b9592b2bed805fe0f65&quot;,
+          &quot;ERB/SEARCHBOUND01.ERB&quot;: &quot;a240eedd499aa61f540aa53dcd5eb2dce41e4b6918ce8960543056aeb8bb3707&quot;,
+          &quot;emuera.config&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+        },
+        &quot;pyz_sha256_before&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;pyz_sha256_after&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+        &quot;stdout_sha256&quot;: &quot;349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265&quot;,
+        &quot;stderr_sha256&quot;: &quot;1442007712e0a4335013fc6e1151041bafc34113d83fb84afd53ee5df1f1fb59&quot;,
+        &quot;log_sha256&quot;: null,
+        &quot;log_text&quot;: &quot;Now Loading...\r\n&quot;,
+        &quot;stderr_text&quot;: &quot;ERB/DEFINEEDGE.ERH:1: E_UNSUPPORTED: Parameterized #DEFINE is not implemented\r\n&quot;
+      }
+    }
+  ],
+  &quot;function_like_reference&quot;: {
+    &quot;case_id&quot;: &quot;MACROFUNC01&quot;,
+    &quot;source_record&quot;: &quot;NATIVE_V24_PARSER_MECHANISM_SUPPLEMENT.json&quot;,
+    &quot;native_crop&quot;: &quot;runs/native-MACROFUNC01-header-error-crop.png&quot;,
+    &quot;native_crop_sha256&quot;: &quot;64b1bf0e9549bd46d80a92e9bf4667156d836742db8613e913b36f0dfef5c2aa&quot;,
+    &quot;pyz_returncode&quot;: 1,
+    &quot;pyz_stderr&quot;: &quot;ERB/Header.ERH:1: E_UNSUPPORTED: Parameterized #DEFINE is not implemented\r\n&quot;,
+    &quot;scope_note&quot;: &quot;Compare only visible output/diagnostic before Native input wait. Native used the isolated owned desktop and was terminated after capture; PyEmuera received one line A to avoid EOF. Not a full-session byte/output/exit-code equivalence test.&quot;
+  },
+  &quot;summary&quot;: {
+    &quot;matched&quot;: [
+      &quot;Empty object-like replacement is accepted and removed in expression tokenization; value 3 and subsequent sentinel match.&quot;
+    ],
+    &quot;different&quot;: [
+      &quot;Duplicate macro name: Native logs a level-2 warning, preserves the first value (1), and continues; public pyz silently uses the later value (2).&quot;,
+      &quot;Missing identifier: Native reaches the later sentinel without a visible diagnostic in its log; public pyz stops at header line 1 with E_SYNTAX: Invalid #DEFINE.&quot;,
+      &quot;Function-like declaration, malformed argument separator, and unclosed argument list are rejected by both, but Native reports its declaration/parser diagnostic while public pyz reports E_UNSUPPORTED before equivalent detail-specific validation.&quot;
+    ]
+  },
+  &quot;conditions_path&quot;: &quot;evidence/define-edge-cases-20261115/conditions.json&quot;,
+  &quot;limitations&quot;: [
+    &quot;No recursion/expansion limit, string-valued replacement, reserved-name collisions, case-folding variants, or function-like call expansion beyond the cited rejection case.&quot;,
+    &quot;Missing-identifier Native behavior conflicts with the inspected source branch&#x27;s expected exception; the observed result is preserved as runtime evidence and not normalized to the source expectation.&quot;,
+    &quot;Native GUI processes were not observed to exit naturally; termination was controlled after the fixed observation window.&quot;
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2437 · declaration:#DEFINE · check</li>
+<li>L2441 · declaration:#DEFINE · check</li>
+</ul></html>

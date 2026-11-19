@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0192 · runner.stdout.bin</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0192 · runner.stdout.bin</h1>
+<p>U0192 / attempts-01/queue-copy/native-01。CALLTRAIN/STOPCALLTRAIN/DOTRAINの選択状態・継続マーカー・例外を区別。STOPCALLTRAIN後のNative例外も有効な観測として保持。 この試行は@TRACEのARGS不足で対象前停止。診断は保全するが対象命令の実行完了とはしない。実行レシートのfiles 7件とPID/desktop/fixture値/hashを保持。exit_code_observed=false・exit_code=nullは自然終了未観測のまま。 私的実行環境パスのみ置換した派生物として公開可。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>f9dc5ea82193b2f4b6fdc01e49d7241c9c38c901a88f078f52ea26d8e008367e</code></p>
+<p><a href="../assets/U0192.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a5e73bacf4c6beb1561a2e2a7e6285169f2f3b64f740a421083b639a7c6a4573</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;desktop&quot;: &quot;PyEmueraNative_STRLENSU_native-01_1794544517&quot;,
+  &quot;desktop_created&quot;: true,
+  &quot;process_created&quot;: true,
+  &quot;pid&quot;: 23032,
+  &quot;command_line&quot;: &quot;&lt;RUN_DIR&gt;\\Emuera1824+v24.exe&quot;,
+  &quot;cwd&quot;: &quot;&lt;RUN_DIR&gt;&quot;,
+  &quot;synthetic_keyboard_events_sent&quot;: false,
+  &quot;fixture_sha256&quot;: &quot;b8631b20f6f04913821b27221ee5b42c16e75dbe25322cc56daed074613fb624&quot;,
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+  &quot;process_exited_after_5s&quot;: false,
+  &quot;exit_code_observed&quot;: false,
+  &quot;exit_code&quot;: null,
+  &quot;cleanup_terminate_ok&quot;: true,
+  &quot;files&quot;: [
+    {
+      &quot;path&quot;: &quot;csv/CHARA0.CSV&quot;,
+      &quot;size&quot;: 20,
+      &quot;sha256&quot;: &quot;f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21&quot;
+    },
+    {
+      &quot;path&quot;: &quot;csv/TRAIN.CSV&quot;,
+      &quot;size&quot;: 25,
+      &quot;sha256&quot;: &quot;343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025&quot;
+    },
+    {
+      &quot;path&quot;: &quot;emuera.config&quot;,
+      &quot;size&quot;: 2164,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;emuera.log&quot;,
+      &quot;size&quot;: 2662,
+      &quot;sha256&quot;: &quot;2fe4944fd22012f1d24f48d83930d2402e682dd1bd28a9d9c458b998c7b61f90&quot;
+    },
+    {
+      &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+      &quot;size&quot;: 761856,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;size&quot;: 2367,
+      &quot;sha256&quot;: &quot;b8631b20f6f04913821b27221ee5b42c16e75dbe25322cc56daed074613fb624&quot;
+    },
+    {
+      &quot;path&quot;: &quot;prelaunch.json&quot;,
+      &quot;size&quot;: 599,
+      &quot;sha256&quot;: &quot;39507d8cb1635cb9a88a125f83ff19cfa72553151b9ef7ab0275e13efbd3c6d7&quot;
+    }
+  ],
+  &quot;desktop_closed&quot;: true
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0699 · command_or_syntax:COPYCHARA · check</li>
+<li>L1485 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

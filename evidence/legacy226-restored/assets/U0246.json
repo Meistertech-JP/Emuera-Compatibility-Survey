@@ -1,0 +1,74 @@
+{
+  "log": "runs\\dot-cancel-queue\\native-02\\emuera.log",
+  "raw_sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140",
+  "raw_size": 684,
+  "crlf": 9,
+  "trace": [
+    {
+      "label": "EVENTTRAIN",
+      "N": 0,
+      "S": 0,
+      "H": 0,
+      "E": 0,
+      "SEL": 0,
+      "P": -1,
+      "NEXT": -1,
+      "R": 701,
+      "SKIP": 0,
+      "UP": 0,
+      "DOWN": 0,
+      "CUP": 0,
+      "NOW": 0,
+      "SRC": 0
+    },
+    {
+      "label": "EVENTCOM",
+      "N": 0,
+      "S": 0,
+      "H": 0,
+      "E": 2,
+      "SEL": 1,
+      "P": -1,
+      "NEXT": -1,
+      "R": 0,
+      "SKIP": 0,
+      "UP": 0,
+      "DOWN": 0,
+      "CUP": 0,
+      "NOW": 0,
+      "SRC": 85
+    },
+    {
+      "label": "COM1",
+      "N": 1,
+      "S": 0,
+      "H": 0,
+      "E": 2,
+      "SEL": 1,
+      "P": -1,
+      "NEXT": -1,
+      "R": 0,
+      "SKIP": 0,
+      "UP": 0,
+      "DOWN": 0,
+      "CUP": 0,
+      "NOW": 0,
+      "SRC": 85
+    }
+  ],
+  "done": true,
+  "native_exception": false,
+  "guard_limit": false,
+  "following_dot_markers": [
+    "UNREACHED_DOT_EVENTTRAIN"
+  ],
+  "ordinary_status": 0,
+  "ordinary_usercom": 0,
+  "progress_lines": [],
+  "input_hashes": {
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "csv\\CHARA0.CSV": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21",
+    "csv\\TRAIN.CSV": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025",
+    "ERB\\SEARCHBOUND01.ERB": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+  }
+}

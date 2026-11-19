@@ -1,0 +1,100 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0152 · PARENT_ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0152 · PARENT_ADJUDICATION.json</h1>
+<p>原票種別=PARENT_ADJUDICATION.json; 参照対象=command_or_syntax:ADDDEFCHARA。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;ADDDEFCHARA&quot;}; comparison_outcome=&quot;documented_difference&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>237a99a84970d1406bfe356d659aae97e4480e3938a3ddb75efeb53e9b355ea0</code></p>
+<p><a href="../assets/U0152.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>237a99a84970d1406bfe356d659aae97e4480e3938a3ddb75efeb53e9b355ea0</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;decision_id&quot;: &quot;PARENT_ADDDEFCHARA_FINITE_SCOPE_20261113&quot;,
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;documented_difference&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;ADDDEFCHARA&quot;
+  },
+  &quot;registered_cases&quot;: [
+    &quot;CHARLIFE183_ADDDEFCHARA&quot;,
+    &quot;ADDDEFCHARA_DEFAULTCHARACTER10_20261113&quot;,
+    &quot;ADDDEFCHARA_EXTRA_ARGUMENT_20261113&quot;,
+    &quot;ADDDEFCHARA_OUTSIDE_SYSTEM_TITLE_20261113&quot;,
+    &quot;ADDDEFCHARA_MISSING_CSV0_20261113&quot;,
+    &quot;ADDDEFCHARA_MISSING_DEFAULT10_20261113&quot;
+  ],
+  &quot;basis&quot;: [
+    &quot;v24 registers ADDDEFCHARA as VOID, guards use outside SYSTEM_TITLE, adds CSV0 first, then adds configured default only when &gt;0.&quot;,
+    &quot;Normal state and DefaultCharacter 10 with template are covered by case183 and existing comparison; selected -1/0/10 boundaries now have records.&quot;,
+    &quot;Corrected missing CSV0 and missing positive-default CSV10 comparisons each match Native twice and public pyz at raw-log level for selected state fields.&quot;,
+    &quot;Outside-title error channel/stack presentation differs; extra-argument warning UI and Native natural exit remain unobserved and are explicitly limited, not assumed absent.&quot;,
+    &quot;The invalid initial missing-CHARA10 setup is retained and excluded. No product code changed.&quot;
+  ],
+  &quot;accepted_finite_requirements&quot;: [
+    &quot;registration and VOID builder source-reviewed&quot;,
+    &quot;SYSTEM_TITLE guard path and selected failure location compared&quot;,
+    &quot;normal add of CSV0 and positive default (with template)&quot;,
+    &quot;DefaultCharacter effective -1 without GAMEBASE, explicit 0, and positive 10&quot;,
+    &quot;missing-template fallback selected readbacks for CSV0 and configured positive template&quot;,
+    &quot;CHARANUM before/after and selected NO/NAME/CFLAG1&quot;
+  ],
+  &quot;not_claimed&quot;: [
+    &quot;Native surplus-argument UI warning text/location/equality; capture previously timed out.&quot;,
+    &quot;Native natural exit/exit code; isolated runner stopped processes after five seconds.&quot;,
+    &quot;All invalid VOID forms and side-effect arguments.&quot;,
+    &quot;Every field initialized by pseudo templates; all character arrays/deep-copy state; SP paths; API-only no-frame path; save/load; all ADDDEFCHARA compatibility.&quot;
+  ],
+  &quot;invalid_setup_preserved&quot;: &quot;evidence/adddefchara-missing-template-20261113/missing-default10/COMPARISON.json&quot;,
+  &quot;source_matrix&quot;: &quot;evidence/target-closure-review-20261113/commands/MATRIX.json&quot;,
+  &quot;evidence&quot;: [
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/CASE_REVIEW_ja.md&quot;,
+      &quot;sha256&quot;: &quot;cff04919533d13163bc36003ba8a3a77df155cf4a15b9c0c9750a766d7ebaee7&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/COMPARISON.json&quot;,
+      &quot;sha256&quot;: &quot;86d188d90f85fc7ef6d0f3b9d84d4dc42a56e61461d79da761fd594445f4c8c2&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/MANIFEST.json&quot;,
+      &quot;sha256&quot;: &quot;877e8e213c449f36f22d3786d4eec802d1403588e8711138a1d06f60994ed2d6&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/SEAL.json&quot;,
+      &quot;sha256&quot;: &quot;3b72edc7885dbadc21a256de9aa3ef1fa3655e1f0ddd7db27dc8ceecb8d2309f&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-default10/CASE_REVIEW_ja.md&quot;,
+      &quot;sha256&quot;: &quot;dddef71de27fd4ed08e122904a02872897936e4e8df4e77593211044508a1b54&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-default10/COMPARISON.json&quot;,
+      &quot;sha256&quot;: &quot;379d4e5bce920700586c642e4e5c3b4d9f6bbf9adb98623d34196164951b2baa&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-default10/MANIFEST.json&quot;,
+      &quot;sha256&quot;: &quot;3adc0feba96800c02c6c3f6f99a55676c667dbfb9b6aba7f1bb95846fbd0ce03&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/adddefchara-missing-template-corrected-20261113/missing-default10/SEAL.json&quot;,
+      &quot;sha256&quot;: &quot;bd2789a5797392b0779b8f30d6b2318ec31a2d978d2702b0459fcde5da5c4708&quot;
+    },
+    {
+      &quot;path&quot;: &quot;evidence/target-closure-review-20261113/commands/MATRIX.json&quot;,
+      &quot;sha256&quot;: &quot;747f2183bce98969241c88789d3cdd5036c819fc8a88181ebc544620f9c237f6&quot;
+    }
+  ],
+  &quot;global_completion&quot;: false,
+  &quot;source_matrix_sha256&quot;: &quot;747f2183bce98969241c88789d3cdd5036c819fc8a88181ebc544620f9c237f6&quot;,
+  &quot;independent_review&quot;: &quot;evidence/adddefchara-parent-adjudication-20261113/INDEPENDENT_REVIEW_20261113.md&quot;,
+  &quot;independent_review_sha256&quot;: &quot;290e3fed6517495cd5e2af91200925c979a1e00e8225e101078dc88d3576f4b9&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0065 · command_or_syntax:ADDDEFCHARA · acceptance</li>
+<li>L0066 · command_or_syntax:ADDDEFCHARA · check</li>
+</ul></html>

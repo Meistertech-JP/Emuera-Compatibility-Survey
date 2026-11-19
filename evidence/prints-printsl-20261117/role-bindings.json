@@ -1,0 +1,346 @@
+{
+  "schema": "prints-printsl-recorded-role-bindings-v1",
+  "scope": "Bindings derived from separately retained source pointers; identical bytes do not authenticate separate executions.",
+  "bindings": [
+    {
+      "target": "PRINTS",
+      "mode": "native-01",
+      "role": "fixture",
+      "path": "cases/PRINTS/native-01/input/ERB/MAIN.ERB",
+      "artifact_sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "original_artifact_sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/ERB~1MAIN.ERB"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-01",
+      "role": "config",
+      "path": "cases/PRINTS/native-01/input/emuera.config",
+      "artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "original_artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/emuera.config"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-01",
+      "role": "raw",
+      "path": "cases/PRINTS/native-01/observation/raw.bin",
+      "artifact_sha256": "7dae8c447a3e181c052e56e25f5cc750b312f8ca21d38525c8f8a577c471f15e",
+      "original_artifact_sha256": "7dae8c447a3e181c052e56e25f5cc750b312f8ca21d38525c8f8a577c471f15e",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/0/raw"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-01",
+      "role": "stderr",
+      "path": "cases/PRINTS/native-01/observation/stderr.bin",
+      "artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/0/stderr"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-01",
+      "role": "receipt",
+      "path": "cases/PRINTS/native-01/receipt.json",
+      "artifact_sha256": "fe7b25a2859565e15106e25a4cfb7133c1967c60f9b60c361816b4edebd10ddb",
+      "original_artifact_sha256": "ab97d09f08764b932154a0e23f21c9f46db3a087398613525b8b63049b57fd0d",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/0/receipt"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-01",
+      "role": "probe",
+      "path": "cases/PRINTS/native-01/probe.json",
+      "artifact_sha256": "40c007e205a28b8e59df73a370629bba7bc43c67a00265eb69e6f9c1518b0aae",
+      "original_artifact_sha256": "36d1fc205d783e7771bc014309badf766546402989e670fcf51a4b56ef646e06",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/0/probe"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-02",
+      "role": "fixture",
+      "path": "cases/PRINTS/native-02/input/ERB/MAIN.ERB",
+      "artifact_sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "original_artifact_sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/ERB~1MAIN.ERB"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-02",
+      "role": "config",
+      "path": "cases/PRINTS/native-02/input/emuera.config",
+      "artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "original_artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/emuera.config"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-02",
+      "role": "raw",
+      "path": "cases/PRINTS/native-02/observation/raw.bin",
+      "artifact_sha256": "7dae8c447a3e181c052e56e25f5cc750b312f8ca21d38525c8f8a577c471f15e",
+      "original_artifact_sha256": "7dae8c447a3e181c052e56e25f5cc750b312f8ca21d38525c8f8a577c471f15e",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/1/raw"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-02",
+      "role": "stderr",
+      "path": "cases/PRINTS/native-02/observation/stderr.bin",
+      "artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/1/stderr"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-02",
+      "role": "receipt",
+      "path": "cases/PRINTS/native-02/receipt.json",
+      "artifact_sha256": "6288c1f3d27f26b9e37688430f81eb7c434010e01d1f1e50809d275ae83f8a92",
+      "original_artifact_sha256": "a497766dad450ce935a5935bf556b1d31aef5c86857354a1f08b2a30abdaf671",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/1/receipt"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "native-02",
+      "role": "probe",
+      "path": "cases/PRINTS/native-02/probe.json",
+      "artifact_sha256": "40c007e205a28b8e59df73a370629bba7bc43c67a00265eb69e6f9c1518b0aae",
+      "original_artifact_sha256": "f74d1646df9732ef6a3457c4316ddf5af887e37e33bfba35d440c3c75e52af80",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/1/probe"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "public-01",
+      "role": "fixture",
+      "path": "cases/PRINTS/public-01/input/ERB/MAIN.ERB",
+      "artifact_sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "original_artifact_sha256": "d5c54374f9de7708330f51619fe30600e284c25a2e121ef76239671886ef2059",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/ERB~1MAIN.ERB"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "public-01",
+      "role": "config",
+      "path": "cases/PRINTS/public-01/input/emuera.config",
+      "artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "original_artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/emuera.config"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "public-01",
+      "role": "raw",
+      "path": "cases/PRINTS/public-01/observation/raw.bin",
+      "artifact_sha256": "278c0f98606b1230b648109998d24718c12c1f54ebf9d025a992cbdac73622e1",
+      "original_artifact_sha256": "278c0f98606b1230b648109998d24718c12c1f54ebf9d025a992cbdac73622e1",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/2/raw"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "public-01",
+      "role": "stderr",
+      "path": "cases/PRINTS/public-01/observation/stderr.bin",
+      "artifact_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "original_artifact_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/2/stderr"
+    },
+    {
+      "target": "PRINTS",
+      "mode": "public-01",
+      "role": "receipt",
+      "path": "cases/PRINTS/public-01/receipt.json",
+      "artifact_sha256": "50b6438f2b2577cd0b0624067691bde4f7a53819496651bd74d0468669816ec4",
+      "original_artifact_sha256": "8378ea4fc057e72b7cec8ec78136bb2c4f1bc31afeb68253260946d87e5de337",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/0/runs/2/receipt"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-01",
+      "role": "fixture",
+      "path": "cases/PRINTSL/native-01/input/ERB/MAIN.ERB",
+      "artifact_sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "original_artifact_sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/ERB~1MAIN.ERB"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-01",
+      "role": "config",
+      "path": "cases/PRINTSL/native-01/input/emuera.config",
+      "artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "original_artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/emuera.config"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-01",
+      "role": "raw",
+      "path": "cases/PRINTSL/native-01/observation/raw.bin",
+      "artifact_sha256": "0eccd82c21d6634d2b48b924e801b5b71a23ebb33ad414aed31eb79e390d4f7a",
+      "original_artifact_sha256": "0eccd82c21d6634d2b48b924e801b5b71a23ebb33ad414aed31eb79e390d4f7a",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/0/raw"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-01",
+      "role": "stderr",
+      "path": "cases/PRINTSL/native-01/observation/stderr.bin",
+      "artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/0/stderr"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-01",
+      "role": "receipt",
+      "path": "cases/PRINTSL/native-01/receipt.json",
+      "artifact_sha256": "915519d3157a2fe43f682bd8aa1de52eace5a8c2087deb59bf25e61e61625610",
+      "original_artifact_sha256": "a4aec2968f6ca556e4b7d59009a1e92977ffb60912fd3fb6fd0fc242323f1aa9",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/0/receipt"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-01",
+      "role": "probe",
+      "path": "cases/PRINTSL/native-01/probe.json",
+      "artifact_sha256": "cc0fa44d0adc5d4e4aaa62cdae5b32937a72d612247419c5952c8a1a3d38fea7",
+      "original_artifact_sha256": "b9dd356fe5f8b82f62f80d3033510597516d37e7243494d8f7ccd9d0b185a0a3",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/0/probe"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-02",
+      "role": "fixture",
+      "path": "cases/PRINTSL/native-02/input/ERB/MAIN.ERB",
+      "artifact_sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "original_artifact_sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/ERB~1MAIN.ERB"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-02",
+      "role": "config",
+      "path": "cases/PRINTSL/native-02/input/emuera.config",
+      "artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "original_artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/emuera.config"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-02",
+      "role": "raw",
+      "path": "cases/PRINTSL/native-02/observation/raw.bin",
+      "artifact_sha256": "0eccd82c21d6634d2b48b924e801b5b71a23ebb33ad414aed31eb79e390d4f7a",
+      "original_artifact_sha256": "0eccd82c21d6634d2b48b924e801b5b71a23ebb33ad414aed31eb79e390d4f7a",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/1/raw"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-02",
+      "role": "stderr",
+      "path": "cases/PRINTSL/native-02/observation/stderr.bin",
+      "artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/1/stderr"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-02",
+      "role": "receipt",
+      "path": "cases/PRINTSL/native-02/receipt.json",
+      "artifact_sha256": "4d5293aca83327a07755035c48ed696b24dfe5afe4b1f9afefbcfc25f90ba5f4",
+      "original_artifact_sha256": "53e7fa6fc431fdf456c1db4a40f8d8707b4662c5c756b9a066dc031acafc78b8",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/1/receipt"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "native-02",
+      "role": "probe",
+      "path": "cases/PRINTSL/native-02/probe.json",
+      "artifact_sha256": "cc0fa44d0adc5d4e4aaa62cdae5b32937a72d612247419c5952c8a1a3d38fea7",
+      "original_artifact_sha256": "8faf327a9823b48f0283e63b3f40916112c7a70337ce433184a51880e27eb9d7",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/1/probe"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "public-01",
+      "role": "fixture",
+      "path": "cases/PRINTSL/public-01/input/ERB/MAIN.ERB",
+      "artifact_sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "original_artifact_sha256": "3c6c2d80371b06d122619b6a37ae5422f05d594223f214ad17a1d3037023cadc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/ERB~1MAIN.ERB"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "public-01",
+      "role": "config",
+      "path": "cases/PRINTSL/public-01/input/emuera.config",
+      "artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "original_artifact_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "reference_kind": "receipt",
+      "reference_pointer": "/inputs_before/emuera.config"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "public-01",
+      "role": "raw",
+      "path": "cases/PRINTSL/public-01/observation/raw.bin",
+      "artifact_sha256": "d81cd385ebc0cb0cdc8d00d05e40565c825560f16665785a03cf9c402221d6a8",
+      "original_artifact_sha256": "d81cd385ebc0cb0cdc8d00d05e40565c825560f16665785a03cf9c402221d6a8",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/2/raw"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "public-01",
+      "role": "stderr",
+      "path": "cases/PRINTSL/public-01/observation/stderr.bin",
+      "artifact_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "original_artifact_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/2/stderr"
+    },
+    {
+      "target": "PRINTSL",
+      "mode": "public-01",
+      "role": "receipt",
+      "path": "cases/PRINTSL/public-01/receipt.json",
+      "artifact_sha256": "4c5efe450ac0b9a9ff80e2a787cccba8af2414f54471a62bea93386e005742d6",
+      "original_artifact_sha256": "b1110a7c2278f81e0d1e6487233d845b9ba61185a591b654ee24272fa7e9b25e",
+      "reference_kind": "readback",
+      "reference_pointer": "/observations/1/runs/2/receipt"
+    }
+  ]
+}

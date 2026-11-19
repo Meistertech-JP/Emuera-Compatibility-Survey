@@ -1,0 +1,55 @@
+{
+  "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+  "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "members": [
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "ranges": [
+        [
+          287,
+          350
+        ],
+        [
+          1371,
+          1380
+        ]
+      ]
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/EmueraConsole.Print.cs",
+      "sha256": "6b9a9b360a25d0064e37563b13fd1afa832ee5c2f88192f752347d54498e4e53",
+      "ranges": [
+        [
+          332,
+          342
+        ]
+      ]
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/ConsoleImagePart.cs",
+      "sha256": "e2ca2e56b770e899045e7f1ec57ebf102ff3593eaa06942a26ad06aa8480e81e",
+      "ranges": [
+        [
+          13,
+          93
+        ],
+        [
+          122,
+          127
+        ]
+      ]
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/ConsoleShapePart.cs",
+      "sha256": "c14ca0fcc73dca183abd75532f2f835a2a842c3b22cdd583da898518f94cec21",
+      "ranges": [
+        [
+          9,
+          97
+        ]
+      ]
+    }
+  ],
+  "contract": "PRINT_SPACE nonnegativeInt32 one arg;RECT converts each evaluated arg immediately before next, shape1positivewidth/4geometry params else fallback; IMG stringexpr existing/missing sprite; all skip before expression evaluation. Actual GUI pixel rendering not observed."
+}

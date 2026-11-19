@@ -1,0 +1,296 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Content/AppContents.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>Content/AppContents.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/Content/AppContents.cs</p><p>SHA-256 (original member bytes): 88f6f7ee85d64c86dd086bce46df4a417a8b8c6cd2655d09aa666b08024aa5f0</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using MinorShift.Emuera.Sub;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Collections.Generic;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using System.Drawing;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> using System.IO;</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> using System.Text;</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> </span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> namespace MinorShift.Emuera.Content</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> {</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> 	static class AppContents</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> 	{</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> 		static AppContents()</span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> 		{</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> 			gList = new Dictionary&lt;int, GraphicsImage&gt;();</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> 		}</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> 		static readonly Dictionary&lt;string, AContentFile&gt; resourceDic = new Dictionary&lt;string, AContentFile&gt;();</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> 		static readonly Dictionary&lt;string, ASprite&gt; imageDictionary = new Dictionary&lt;string, ASprite&gt;();</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 		static readonly Dictionary&lt;int, GraphicsImage&gt; gList;</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> </span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> 		//static public T GetContent&lt;T&gt;(string name)where T :AContentItem</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 		//{</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 		//	if (name == null)</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 		//		return null;</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> 		//	name = name.ToUpper();</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a> 		//	if (!itemDic.ContainsKey(name))</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 		//		return null;</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 		//	return itemDic[name] as T;</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 		//}</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		static public GraphicsImage GetGraphics(int i)</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 		{</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 			if (gList.ContainsKey(i))</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> 				return gList[i];</span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> 			GraphicsImage g =  new GraphicsImage(i);</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> 			gList[i] = g;</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 			return g;</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> 		}</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> </span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 		static public ASprite GetSprite(string name)</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 		{</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 			if (name == null)</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 				return null;</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 			name = name.ToUpper();</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 			if (!imageDictionary.ContainsKey(name))</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 				return null;</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> 			return imageDictionary[name];</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a> 		}</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a> </span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> 		static public void SpriteDispose(string name)</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> 		{</span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 			if (name == null)</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 				return;</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 			name = name.ToUpper();</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a> 			if (!imageDictionary.ContainsKey(name))</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a> 				return;</span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> 			imageDictionary[name].Dispose();</span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> 			imageDictionary.Remove(name);</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a> 		}</span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> </span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 		static public void CreateSpriteG(string imgName, GraphicsImage parent,Rectangle rect)</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 		{</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 			if (string.IsNullOrEmpty(imgName))</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 				throw new ArgumentOutOfRangeException();</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 			imgName = imgName.ToUpper();</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 			SpriteG newCImg = new SpriteG(imgName, parent, rect);</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 			imageDictionary[imgName] = newCImg;</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 		}</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> </span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 		internal static void CreateSpriteAnime(string imgName, int w, int h)</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 		{</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a> 			if (string.IsNullOrEmpty(imgName))</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a> 				throw new ArgumentOutOfRangeException();</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 			imgName = imgName.ToUpper();</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> 			SpriteAnime newCImg = new SpriteAnime(imgName, new Size(w, h));</span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a> 			imageDictionary[imgName] = newCImg;</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a> 		}</span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a> 		</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a> 		static public bool LoadContents()</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 		{</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a> 			if (!Directory.Exists(Program.ContentDir))</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a> 				return true;</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a> 			try</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a> 			{</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a> 				//resourcesフォルダ内の全てのcsvファイルを探索する</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 				string[] csvFiles = Directory.GetFiles(Program.ContentDir, &quot;*.csv&quot;, SearchOption.AllDirectories);</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a> 				foreach (var filepath in csvFiles)</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a> 				{</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a> 					//&quot;.csv&quot;のみを拾うように</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a> 					if (0 != &quot;.csv&quot;.CompareTo(Path.GetExtension(filepath).ToLower()))</span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a> 						continue;</span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a> 					//アニメスプライト宣言。nullでないとき、フレーム追加モード</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a> 					SpriteAnime currentAnime = null;</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a> 					string directory = Path.GetDirectoryName(filepath).ToUpper() + &quot;\\&quot;;</span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a> 					string filename = Path.GetFileName(filepath);</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a> 					string[] lines = File.ReadAllLines(filepath, Config.Encode);</span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a> 					int lineNo = 0;</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a> 					foreach (var line in lines)</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 					{</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 						lineNo++;</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 						if (line.Length == 0)</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> 							continue;</span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> 						string str = line.Trim();</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> 						if (str.Length == 0 || str.StartsWith(&quot;;&quot;))</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 							continue;</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a> 						string[] tokens = str.Split(&#x27;,&#x27;);</span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a> 						//AContentItem item = CreateFromCsv(tokens);</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a> 						ScriptPosition sp = new ScriptPosition(filename, lineNo);</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a>                         if (CreateFromCsv(tokens, directory, currentAnime, sp) is ASprite item)</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a>                         {</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a>                             //アニメスプライト宣言ならcurrentAnime上書きしてフレーム追加モードにする。そうでないならnull</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a>                             currentAnime = item as SpriteAnime;</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a>                             if (!imageDictionary.ContainsKey(item.Name))</span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a>                             {</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a>                                 imageDictionary.Add(item.Name, item);</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a>                             }</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a>                             else</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a>                             {</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a>                                 ParserMediator.Warn(&quot;同名のリソースがすでに作成されています:&quot; + item.Name, sp, 0);</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a>                                 item.Dispose();</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a>                             }</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a>                         }</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a>                     }</span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a> 				}</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a> 			}</span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a> 			catch</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a> 			{</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a> 				return false;</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a> 				//throw new CodeEE(&quot;リソースファイルのロード中にエラーが発生しました&quot;);</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> 			}</span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 			return true;</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 		}</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a> </span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a> 		static public void UnloadContents()</span>
+<span id="L133"><a href="#L133" aria-label="line 133">  133</a> 		{</span>
+<span id="L134"><a href="#L134" aria-label="line 134">  134</a> 			foreach (var img in resourceDic.Values)</span>
+<span id="L135"><a href="#L135" aria-label="line 135">  135</a> 				img.Dispose();</span>
+<span id="L136"><a href="#L136" aria-label="line 136">  136</a> 			resourceDic.Clear();</span>
+<span id="L137"><a href="#L137" aria-label="line 137">  137</a> 			imageDictionary.Clear();</span>
+<span id="L138"><a href="#L138" aria-label="line 138">  138</a> 			foreach (var graph in gList.Values)</span>
+<span id="L139"><a href="#L139" aria-label="line 139">  139</a> 				graph.GDispose();</span>
+<span id="L140"><a href="#L140" aria-label="line 140">  140</a> 			gList.Clear();</span>
+<span id="L141"><a href="#L141" aria-label="line 141">  141</a> 		}</span>
+<span id="L142"><a href="#L142" aria-label="line 142">  142</a> </span>
+<span id="L143"><a href="#L143" aria-label="line 143">  143</a> 		//タイトルに戻る時用（コードの変更はないので、動的に作られた分だけ削除）</span>
+<span id="L144"><a href="#L144" aria-label="line 144">  144</a> 		static public void UnloadGraphicList()</span>
+<span id="L145"><a href="#L145" aria-label="line 145">  145</a> 		{</span>
+<span id="L146"><a href="#L146" aria-label="line 146">  146</a> 			foreach (var graph in gList.Values)</span>
+<span id="L147"><a href="#L147" aria-label="line 147">  147</a> 				graph.GDispose();</span>
+<span id="L148"><a href="#L148" aria-label="line 148">  148</a> 			gList.Clear();</span>
+<span id="L149"><a href="#L149" aria-label="line 149">  149</a> 		}</span>
+<span id="L150"><a href="#L150" aria-label="line 150">  150</a> </span>
+<span id="L151"><a href="#L151" aria-label="line 151">  151</a> 		/// &lt;summary&gt;</span>
+<span id="L152"><a href="#L152" aria-label="line 152">  152</a> 		/// resourcesフォルダ中のcsvの1行を読んで新しいリソースを作る(or既存のアニメーションスプライトに1フレーム追加する)</span>
+<span id="L153"><a href="#L153" aria-label="line 153">  153</a> 		/// &lt;/summary&gt;</span>
+<span id="L154"><a href="#L154" aria-label="line 154">  154</a> 		/// &lt;param name=&quot;tokens&quot;&gt;&lt;/param&gt;</span>
+<span id="L155"><a href="#L155" aria-label="line 155">  155</a> 		/// &lt;param name=&quot;dir&quot;&gt;&lt;/param&gt;</span>
+<span id="L156"><a href="#L156" aria-label="line 156">  156</a> 		/// &lt;param name=&quot;currentAnime&quot;&gt;&lt;/param&gt;</span>
+<span id="L157"><a href="#L157" aria-label="line 157">  157</a> 		/// &lt;param name=&quot;sp&quot;&gt;&lt;/param&gt;</span>
+<span id="L158"><a href="#L158" aria-label="line 158">  158</a> 		/// &lt;returns&gt;&lt;/returns&gt;</span>
+<span id="L159"><a href="#L159" aria-label="line 159">  159</a> 		static private AContentItem CreateFromCsv(string[] tokens, string dir, SpriteAnime currentAnime, ScriptPosition sp)</span>
+<span id="L160"><a href="#L160" aria-label="line 160">  160</a> 		{</span>
+<span id="L161"><a href="#L161" aria-label="line 161">  161</a> 			if(tokens.Length &lt; 2)</span>
+<span id="L162"><a href="#L162" aria-label="line 162">  162</a> 				return null;</span>
+<span id="L163"><a href="#L163" aria-label="line 163">  163</a> 			string name = tokens[0].Trim().ToUpper();//</span>
+<span id="L164"><a href="#L164" aria-label="line 164">  164</a> 			string arg2 = tokens[1].ToUpper();//画像ファイル名</span>
+<span id="L165"><a href="#L165" aria-label="line 165">  165</a> 			if (name.Length == 0 || arg2.Length == 0)</span>
+<span id="L166"><a href="#L166" aria-label="line 166">  166</a> 				return null;</span>
+<span id="L167"><a href="#L167" aria-label="line 167">  167</a> 			//アニメーションスプライト宣言</span>
+<span id="L168"><a href="#L168" aria-label="line 168">  168</a> 			if (arg2 == &quot;ANIME&quot;)</span>
+<span id="L169"><a href="#L169" aria-label="line 169">  169</a> 			{</span>
+<span id="L170"><a href="#L170" aria-label="line 170">  170</a> 				if (tokens.Length &lt; 4)</span>
+<span id="L171"><a href="#L171" aria-label="line 171">  171</a> 				{</span>
+<span id="L172"><a href="#L172" aria-label="line 172">  172</a> 					ParserMediator.Warn(&quot;アニメーションスプライトのサイズが宣言されていません&quot;, sp, 1);</span>
+<span id="L173"><a href="#L173" aria-label="line 173">  173</a> 					return null;</span>
+<span id="L174"><a href="#L174" aria-label="line 174">  174</a> 				}</span>
+<span id="L175"><a href="#L175" aria-label="line 175">  175</a> 				//w,h</span>
+<span id="L176"><a href="#L176" aria-label="line 176">  176</a> 				int[] sizeValue = new int[2];</span>
+<span id="L177"><a href="#L177" aria-label="line 177">  177</a> 				bool sccs = true;</span>
+<span id="L178"><a href="#L178" aria-label="line 178">  178</a> 				for (int i = 0; i &lt; 2; i++)</span>
+<span id="L179"><a href="#L179" aria-label="line 179">  179</a> 					sccs &amp;= int.TryParse(tokens[i + 2], out sizeValue[i]);</span>
+<span id="L180"><a href="#L180" aria-label="line 180">  180</a> 				if (!sccs || sizeValue[0] &lt;= 0 || sizeValue[1] &lt;= 0 || sizeValue[0] &gt; AbstractImage.MAX_IMAGESIZE || sizeValue[1] &gt; AbstractImage.MAX_IMAGESIZE)</span>
+<span id="L181"><a href="#L181" aria-label="line 181">  181</a> 				{</span>
+<span id="L182"><a href="#L182" aria-label="line 182">  182</a> 					ParserMediator.Warn(&quot;アニメーションスプライトのサイズの指定が適切ではありません&quot;, sp, 1);</span>
+<span id="L183"><a href="#L183" aria-label="line 183">  183</a> 					return null;</span>
+<span id="L184"><a href="#L184" aria-label="line 184">  184</a> 				}</span>
+<span id="L185"><a href="#L185" aria-label="line 185">  185</a> 				SpriteAnime anime = new SpriteAnime(name, new Size(sizeValue[0],sizeValue[1]));</span>
+<span id="L186"><a href="#L186" aria-label="line 186">  186</a> </span>
+<span id="L187"><a href="#L187" aria-label="line 187">  187</a> 				return anime;</span>
+<span id="L188"><a href="#L188" aria-label="line 188">  188</a> 			}</span>
+<span id="L189"><a href="#L189" aria-label="line 189">  189</a> 			//アニメ宣言以外（アニメ用フレーム含む</span>
+<span id="L190"><a href="#L190" aria-label="line 190">  190</a> </span>
+<span id="L191"><a href="#L191" aria-label="line 191">  191</a> 			if(arg2.IndexOf(&#x27;.&#x27;) &lt; 0)</span>
+<span id="L192"><a href="#L192" aria-label="line 192">  192</a> 			{</span>
+<span id="L193"><a href="#L193" aria-label="line 193">  193</a> 				ParserMediator.Warn(&quot;第二引数に拡張子がありません:&quot; + arg2, sp, 1);</span>
+<span id="L194"><a href="#L194" aria-label="line 194">  194</a> 				return null;</span>
+<span id="L195"><a href="#L195" aria-label="line 195">  195</a> 			}</span>
+<span id="L196"><a href="#L196" aria-label="line 196">  196</a> 			string parentName = dir + arg2;</span>
+<span id="L197"><a href="#L197" aria-label="line 197">  197</a> </span>
+<span id="L198"><a href="#L198" aria-label="line 198">  198</a> </span>
+<span id="L199"><a href="#L199" aria-label="line 199">  199</a> 			//親画像のロードConstImage</span>
+<span id="L200"><a href="#L200" aria-label="line 200">  200</a> 			if (!resourceDic.ContainsKey(parentName))</span>
+<span id="L201"><a href="#L201" aria-label="line 201">  201</a> 			{</span>
+<span id="L202"><a href="#L202" aria-label="line 202">  202</a> 				string filepath = parentName;</span>
+<span id="L203"><a href="#L203" aria-label="line 203">  203</a> 				if (!File.Exists(filepath))</span>
+<span id="L204"><a href="#L204" aria-label="line 204">  204</a> 				{</span>
+<span id="L205"><a href="#L205" aria-label="line 205">  205</a> 					ParserMediator.Warn(&quot;指定された画像ファイルが見つかりませんでした:&quot; + arg2, sp, 1);</span>
+<span id="L206"><a href="#L206" aria-label="line 206">  206</a> 					return null;</span>
+<span id="L207"><a href="#L207" aria-label="line 207">  207</a> 				}</span>
+<span id="L208"><a href="#L208" aria-label="line 208">  208</a> 				Bitmap bmp = new Bitmap(filepath);</span>
+<span id="L209"><a href="#L209" aria-label="line 209">  209</a> 				if (bmp == null)</span>
+<span id="L210"><a href="#L210" aria-label="line 210">  210</a> 				{</span>
+<span id="L211"><a href="#L211" aria-label="line 211">  211</a> 					ParserMediator.Warn(&quot;指定されたファイルの読み込みに失敗しました:&quot; + arg2, sp, 1);</span>
+<span id="L212"><a href="#L212" aria-label="line 212">  212</a> 					return null;</span>
+<span id="L213"><a href="#L213" aria-label="line 213">  213</a> 				}</span>
+<span id="L214"><a href="#L214" aria-label="line 214">  214</a> 				if (bmp.Width &gt; AbstractImage.MAX_IMAGESIZE || bmp.Height &gt; AbstractImage.MAX_IMAGESIZE)</span>
+<span id="L215"><a href="#L215" aria-label="line 215">  215</a> 				{</span>
+<span id="L216"><a href="#L216" aria-label="line 216">  216</a> 					//1824-2 すでに8192以上の幅を持つ画像を利用したバリアントが存在してしまっていたため、警告しつつ許容するように変更</span>
+<span id="L217"><a href="#L217" aria-label="line 217">  217</a> 					//	bmp.Dispose();</span>
+<span id="L218"><a href="#L218" aria-label="line 218">  218</a> 					ParserMediator.Warn(&quot;指定された画像ファイルの大きさが大きすぎます(幅及び高さを&quot;+ AbstractImage.MAX_IMAGESIZE.ToString()+ &quot;以下にすることを強く推奨します):&quot; + arg2, sp, 1);</span>
+<span id="L219"><a href="#L219" aria-label="line 219">  219</a> 					//return null;</span>
+<span id="L220"><a href="#L220" aria-label="line 220">  220</a> 				}</span>
+<span id="L221"><a href="#L221" aria-label="line 221">  221</a> 				ConstImage img = new ConstImage(parentName);</span>
+<span id="L222"><a href="#L222" aria-label="line 222">  222</a> 				img.CreateFrom(bmp, Config.TextDrawingMode == TextDrawingMode.WINAPI);</span>
+<span id="L223"><a href="#L223" aria-label="line 223">  223</a> 				if (!img.IsCreated)</span>
+<span id="L224"><a href="#L224" aria-label="line 224">  224</a> 				{</span>
+<span id="L225"><a href="#L225" aria-label="line 225">  225</a> 					ParserMediator.Warn(&quot;画像リソースの作成に失敗しました:&quot; + arg2, sp, 1);</span>
+<span id="L226"><a href="#L226" aria-label="line 226">  226</a> 					return null;</span>
+<span id="L227"><a href="#L227" aria-label="line 227">  227</a> 				}</span>
+<span id="L228"><a href="#L228" aria-label="line 228">  228</a> 				resourceDic.Add(parentName, img);</span>
+<span id="L229"><a href="#L229" aria-label="line 229">  229</a> 			}</span>
+<span id="L230"><a href="#L230" aria-label="line 230">  230</a>             if (!(resourceDic[parentName] is ConstImage parentImage) || !parentImage.IsCreated)</span>
+<span id="L231"><a href="#L231" aria-label="line 231">  231</a>             {</span>
+<span id="L232"><a href="#L232" aria-label="line 232">  232</a>                 ParserMediator.Warn(&quot;作成に失敗したリソースを元にスプライトを作成しようとしました:&quot; + arg2, sp, 1);</span>
+<span id="L233"><a href="#L233" aria-label="line 233">  233</a>                 return null;</span>
+<span id="L234"><a href="#L234" aria-label="line 234">  234</a>             }</span>
+<span id="L235"><a href="#L235" aria-label="line 235">  235</a>             Rectangle rect = new Rectangle(new Point(0, 0), parentImage.Bitmap.Size);</span>
+<span id="L236"><a href="#L236" aria-label="line 236">  236</a> 			Point pos = new Point();</span>
+<span id="L237"><a href="#L237" aria-label="line 237">  237</a> 			int delay = 1000;</span>
+<span id="L238"><a href="#L238" aria-label="line 238">  238</a> 			//name,parentname, x,y,w,h ,offset_x,offset_y, delayTime</span>
+<span id="L239"><a href="#L239" aria-label="line 239">  239</a> 			if(tokens.Length &gt;= 6)//x,y,w,h</span>
+<span id="L240"><a href="#L240" aria-label="line 240">  240</a> 			{</span>
+<span id="L241"><a href="#L241" aria-label="line 241">  241</a> 				int[] rectValue = new int[4];</span>
+<span id="L242"><a href="#L242" aria-label="line 242">  242</a> 				bool sccs = true;</span>
+<span id="L243"><a href="#L243" aria-label="line 243">  243</a> 				for (int i = 0; i &lt; 4; i++)</span>
+<span id="L244"><a href="#L244" aria-label="line 244">  244</a> 					sccs &amp;= int.TryParse(tokens[i + 2], out rectValue[i]);</span>
+<span id="L245"><a href="#L245" aria-label="line 245">  245</a> 				if (sccs)</span>
+<span id="L246"><a href="#L246" aria-label="line 246">  246</a> 				{</span>
+<span id="L247"><a href="#L247" aria-label="line 247">  247</a> 					rect = new Rectangle(rectValue[0], rectValue[1], rectValue[2], rectValue[3]);</span>
+<span id="L248"><a href="#L248" aria-label="line 248">  248</a> 					if (rect.Width &lt;= 0 || rect.Height &lt;= 0)</span>
+<span id="L249"><a href="#L249" aria-label="line 249">  249</a> 					{</span>
+<span id="L250"><a href="#L250" aria-label="line 250">  250</a> 						ParserMediator.Warn(&quot;スプライトの高さ又は幅には正の値のみ指定できます:&quot; + name, sp, 1);</span>
+<span id="L251"><a href="#L251" aria-label="line 251">  251</a> 						return null;</span>
+<span id="L252"><a href="#L252" aria-label="line 252">  252</a> 					}</span>
+<span id="L253"><a href="#L253" aria-label="line 253">  253</a> 					if (!rect.IntersectsWith(new Rectangle(0,0,parentImage.Bitmap.Width, parentImage.Bitmap.Height)))</span>
+<span id="L254"><a href="#L254" aria-label="line 254">  254</a> 					{</span>
+<span id="L255"><a href="#L255" aria-label="line 255">  255</a> 						ParserMediator.Warn(&quot;親画像の範囲外を参照しています:&quot; + name, sp, 1);</span>
+<span id="L256"><a href="#L256" aria-label="line 256">  256</a> 						return null;</span>
+<span id="L257"><a href="#L257" aria-label="line 257">  257</a> 					}</span>
+<span id="L258"><a href="#L258" aria-label="line 258">  258</a> 				}</span>
+<span id="L259"><a href="#L259" aria-label="line 259">  259</a> 				if(tokens.Length &gt;= 8)</span>
+<span id="L260"><a href="#L260" aria-label="line 260">  260</a> 				{</span>
+<span id="L261"><a href="#L261" aria-label="line 261">  261</a> 					sccs = true;</span>
+<span id="L262"><a href="#L262" aria-label="line 262">  262</a> 					for (int i = 0; i &lt; 2; i++)</span>
+<span id="L263"><a href="#L263" aria-label="line 263">  263</a> 						sccs &amp;= int.TryParse(tokens[i + 6], out rectValue[i]);</span>
+<span id="L264"><a href="#L264" aria-label="line 264">  264</a> 					if (sccs)</span>
+<span id="L265"><a href="#L265" aria-label="line 265">  265</a> 						pos = new Point(rectValue[0], rectValue[1]);</span>
+<span id="L266"><a href="#L266" aria-label="line 266">  266</a> 					if (tokens.Length &gt;= 9)</span>
+<span id="L267"><a href="#L267" aria-label="line 267">  267</a> 					{</span>
+<span id="L268"><a href="#L268" aria-label="line 268">  268</a> 						sccs = int.TryParse(tokens[8], out delay);</span>
+<span id="L269"><a href="#L269" aria-label="line 269">  269</a> 						if (sccs &amp;&amp; delay &lt;= 0)</span>
+<span id="L270"><a href="#L270" aria-label="line 270">  270</a> 						{</span>
+<span id="L271"><a href="#L271" aria-label="line 271">  271</a> 							ParserMediator.Warn(&quot;フレーム表示時間には正の値のみ指定できます:&quot; + name, sp, 1);</span>
+<span id="L272"><a href="#L272" aria-label="line 272">  272</a> 							return null;</span>
+<span id="L273"><a href="#L273" aria-label="line 273">  273</a> 						}</span>
+<span id="L274"><a href="#L274" aria-label="line 274">  274</a> 					}</span>
+<span id="L275"><a href="#L275" aria-label="line 275">  275</a> 				}</span>
+<span id="L276"><a href="#L276" aria-label="line 276">  276</a> 			}</span>
+<span id="L277"><a href="#L277" aria-label="line 277">  277</a> 			//既存のスプライトに対するフレーム追加</span>
+<span id="L278"><a href="#L278" aria-label="line 278">  278</a> 			if (currentAnime != null &amp;&amp; currentAnime.Name == name)</span>
+<span id="L279"><a href="#L279" aria-label="line 279">  279</a> 			{</span>
+<span id="L280"><a href="#L280" aria-label="line 280">  280</a> 				if(!currentAnime.AddFrame(parentImage, rect, pos, delay))</span>
+<span id="L281"><a href="#L281" aria-label="line 281">  281</a> 				{</span>
+<span id="L282"><a href="#L282" aria-label="line 282">  282</a> 					ParserMediator.Warn(&quot;アニメーションスプライトのフレームの追加に失敗しました:&quot; + arg2, sp, 1);</span>
+<span id="L283"><a href="#L283" aria-label="line 283">  283</a> 					return null;</span>
+<span id="L284"><a href="#L284" aria-label="line 284">  284</a> 				}</span>
+<span id="L285"><a href="#L285" aria-label="line 285">  285</a> 				return null;</span>
+<span id="L286"><a href="#L286" aria-label="line 286">  286</a> 			}</span>
+<span id="L287"><a href="#L287" aria-label="line 287">  287</a> </span>
+<span id="L288"><a href="#L288" aria-label="line 288">  288</a> 			//新規スプライト定義</span>
+<span id="L289"><a href="#L289" aria-label="line 289">  289</a> 			ASprite image = new SpriteF(name, parentImage, rect, pos);</span>
+<span id="L290"><a href="#L290" aria-label="line 290">  290</a> 			return image;</span>
+<span id="L291"><a href="#L291" aria-label="line 291">  291</a> 		}</span>
+<span id="L292"><a href="#L292" aria-label="line 292">  292</a> </span>
+<span id="L293"><a href="#L293" aria-label="line 293">  293</a> </span>
+<span id="L294"><a href="#L294" aria-label="line 294">  294</a> </span>
+<span id="L295"><a href="#L295" aria-label="line 295">  295</a> 	}</span>
+<span id="L296"><a href="#L296" aria-label="line 296">  296</a> }</span></pre></html>

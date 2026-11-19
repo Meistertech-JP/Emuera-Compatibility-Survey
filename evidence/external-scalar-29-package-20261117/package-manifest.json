@@ -1,0 +1,834 @@
+{
+  "schema": "selected-file-set.v1",
+  "roots": [
+    "bundle"
+  ],
+  "manifest_location": {
+    "root": "bundle",
+    "path": "package-manifest.json"
+  },
+  "files": [
+    {
+      "root": "bundle",
+      "path": "README.ja.md",
+      "size": 2351,
+      "sha256": "9eb68e2e45c4368c0b9f809b3f4c4b5f384a42f5f71e31bfef5bef0afaa49893"
+    },
+    {
+      "root": "bundle",
+      "path": "README.md",
+      "size": 2353,
+      "sha256": "d516d2d41ab333b25849d947bd662be2b1f49e48cb930072d93ea9d4c3e95207"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/OBSERVATIONS_en.md",
+      "size": 13670,
+      "sha256": "f3620d9d2f3984ca6c74968353cb4aeb208086a6fe7e006eb2909cca9fd27212"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/OBSERVATIONS_ja.md",
+      "size": 14615,
+      "sha256": "cea7e8aa0044755ea1df499a5e5a5c5cc0d29d9dff76a8b7fd9f512cc5595cf9"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/README_en.md",
+      "size": 4740,
+      "sha256": "c7b15d6a70e9dd91f59050af4ff056cfd7813caca39a538bcb52a6675312a9a2"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/README_ja.md",
+      "size": 4726,
+      "sha256": "8f86b9eade08df7e33f76cdc874d8d53e3d80c14b74eb7207444d9fff7c5a696"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C001/MAIN.ERB",
+      "size": 407,
+      "sha256": "c9ac119e35c5db488f53752388ae4a9a4d268427b2c813faadb35db75c6d81bf"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C001/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C002/MAIN.ERB",
+      "size": 76,
+      "sha256": "7097d27120fdd6b12a924092c5ef0fae3d1fa7b49755fb86b1e0d86a896fbc73"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C002/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C003/MAIN.ERB",
+      "size": 95,
+      "sha256": "0030319c5223db33ac58f796664811bc35033bfe40184bfff091c71eb7e0a9be"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C003/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C004/MAIN.ERB",
+      "size": 92,
+      "sha256": "3e86694ccae44f30f3b24b054a46dc1062d4aa2e874c875ee9d778519a51e8e8"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C004/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C005/MAIN.ERB",
+      "size": 91,
+      "sha256": "1c44b3d522c20c160fa3336f1c1b1a960ae09617663e4461615270a08ff9bea4"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C005/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C006/MAIN.ERB",
+      "size": 94,
+      "sha256": "014e80d73e626fc1b7b03ba4d149e7358d7496935ee818c1714825df3af4c821"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C006/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C007/MAIN.ERB",
+      "size": 79,
+      "sha256": "4f935f72627f679f2d206ae90bf5bb1e9f83df110e34c1b46d07086a683d78ee"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C007/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C008/MAIN.ERB",
+      "size": 103,
+      "sha256": "7a46696f46d862ef8340de02b2e01a992da3f492fb066afff815cf9d97829236"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C008/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C009/MAIN.ERB",
+      "size": 98,
+      "sha256": "2f2a7349ec1ff94341144c1e9ef55583eb3be61a82c648677a2b0d9165e7baac"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C009/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C010/MAIN.ERB",
+      "size": 167,
+      "sha256": "cf6bbc17543bcf0600e31af01c212ca7a755b2cbe230c67cd3f14c566abea07f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C010/csv/TALENT.CSV",
+      "size": 9,
+      "sha256": "5b4705723db548d34baf4a1484d2626dabf8334be228667fb79f91aa881fded5"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C010/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C011/MAIN.ERB",
+      "size": 167,
+      "sha256": "5e75e9cb68d2b8823a3332e42dde3315f47735426a1b8411da254e7f392f0794"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C011/csv/TALENT.CSV",
+      "size": 18,
+      "sha256": "94177e805be584f4ba5451533d06511a89b8319eddbaac6c1015c5ef0c69b66e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C011/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C012/MAIN.ERB",
+      "size": 212,
+      "sha256": "e2136edfd805082b7a4107a8136a3b2eb2562576a824666e309f5119028de4f8"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C012/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C013/MAIN.ERB",
+      "size": 79,
+      "sha256": "78b21cc47b7e3b7f693121c82a3685b35c3a2ca4262e09bf9c67f34208775469"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C013/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C014/MAIN.ERB",
+      "size": 75,
+      "sha256": "8f148a8c42af29ff0922425e80d9d0ac0a840c2e7824ec8baeee7ea957e34136"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C014/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C015/MAIN.ERB",
+      "size": 85,
+      "sha256": "6b4e273c585db33c22b11ebb14027f38434a90d199d64ca81536b016425b69e3"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C015/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C016/MAIN.ERB",
+      "size": 85,
+      "sha256": "b520e86fa7fbcc1fec6800a4b6746909555012941f5a1a55b0b7483d094fc8fb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C016/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C017/MAIN.ERB",
+      "size": 84,
+      "sha256": "e212df43f50270c69a4f8cb5daca6714614d4e571c93db58535e3a5ed3d29492"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C017/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C018/MAIN.ERB",
+      "size": 83,
+      "sha256": "70a1908d41f36a7deb5878d8f7abba8afa2a44609431a5a9c1df2fe02f9ea45b"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C018/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C019/MAIN.ERB",
+      "size": 76,
+      "sha256": "5eae3b97fd345b5e95fa65ed270cef5b1efc6d6db803da8dc01d21c1f1b13e76"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C019/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C020/MAIN.ERB",
+      "size": 99,
+      "sha256": "56cc2586717f6ae7222ee852280656e081820bcb38704a0ce59005f6db5b79c2"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C020/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C021/MAIN.ERB",
+      "size": 100,
+      "sha256": "aee1418b71af2a18771f6952aa0100efedfa187cdcd46a2af59bab302b007600"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C021/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C022/MAIN.ERB",
+      "size": 84,
+      "sha256": "1a01c5c081b89a327240baa79e82bf1d18cebcece326c47349efddf7302aac23"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C022/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C023/MAIN.ERB",
+      "size": 98,
+      "sha256": "a95437547de5cfe1d66a08739b5b1513ef96a429fcf55e2da794c1b22e92f30f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C023/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C024/MAIN.ERB",
+      "size": 99,
+      "sha256": "44b3d87e33b781fa114c2136e495fb640f0e5866a67bd5b9b272c0b9e0522870"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C024/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C025/MAIN.ERB",
+      "size": 98,
+      "sha256": "ed38ea998220f22a0638761e86c8d252bcefc03f027065ecbdcc4ea5429b8ae7"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C025/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C026/MAIN.ERB",
+      "size": 81,
+      "sha256": "0a40b2ad22d95d1e36500a9c91f3383dc8d70485725277dd7cf1bf8509407b9d"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C026/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C027/MAIN.ERB",
+      "size": 90,
+      "sha256": "5da373a83c7cc09ace9e2dc6a01cfc7f3c36dbcfc7a4d3d16ffcba0fa7cdeb37"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C027/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C028/MAIN.ERB",
+      "size": 88,
+      "sha256": "da353ab92875d1e240dbd5aa87f20ecff14a5c4fbfc83c489d8fc241eafa3349"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C028/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C029/MAIN.ERB",
+      "size": 90,
+      "sha256": "3a272366205ab709770529af8da6823fc6a70ddc5197641aa3b466607d384f67"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/fixtures/C029/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/manifest.json",
+      "size": 22661,
+      "sha256": "dcc5a5ece93d7c4f1daaeaaa2549eae7820375011e064242ae0d6288007df9a0"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C001/native/emuera.log",
+      "size": 124,
+      "sha256": "259edcd91c62b72bbe0692981c6d2166fb2d3dd76ba8dd54045398ec58fcfafa"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C001/public/emuera.log",
+      "size": 124,
+      "sha256": "259edcd91c62b72bbe0692981c6d2166fb2d3dd76ba8dd54045398ec58fcfafa"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C002/native/emuera.log",
+      "size": 66,
+      "sha256": "44e992d6e752005f9b35f1682c31cd4dcf0d1935f52d93c690f04e87ab4aff89"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C002/public/emuera.log",
+      "size": 66,
+      "sha256": "44e992d6e752005f9b35f1682c31cd4dcf0d1935f52d93c690f04e87ab4aff89"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C003/native/emuera.log",
+      "size": 80,
+      "sha256": "38c9c74729332c8b950cf9046fe99886bd984a7e94bfad0851433fc4e3cba1ee"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C003/public/emuera.log",
+      "size": 80,
+      "sha256": "38c9c74729332c8b950cf9046fe99886bd984a7e94bfad0851433fc4e3cba1ee"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C004/native/emuera.log",
+      "size": 68,
+      "sha256": "ff3b7cf32387d20d55c1ad0188b78c4514dbd81dda613db65127f7db0bb6f5be"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C004/public/emuera.log",
+      "size": 68,
+      "sha256": "ff3b7cf32387d20d55c1ad0188b78c4514dbd81dda613db65127f7db0bb6f5be"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C005/native/emuera.log",
+      "size": 68,
+      "sha256": "92bf83bdec3615c91594bbedd5649becea1dec8ed1b2c8c3c0c2637e10d21c71"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C005/public/emuera.log",
+      "size": 68,
+      "sha256": "92bf83bdec3615c91594bbedd5649becea1dec8ed1b2c8c3c0c2637e10d21c71"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C006/native/emuera.log",
+      "size": 74,
+      "sha256": "5600817d94897d66c706c9ebb0492d6e190784b6ad24639073d6b6cfb9caf6b1"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C006/public/emuera.log",
+      "size": 74,
+      "sha256": "5600817d94897d66c706c9ebb0492d6e190784b6ad24639073d6b6cfb9caf6b1"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C007/native/emuera.log",
+      "size": 68,
+      "sha256": "ffd6b120d5bd42a5375ab33e90f50a253fdd53a677ad76df1c64533bc1d07ffb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C007/public/emuera.log",
+      "size": 68,
+      "sha256": "ffd6b120d5bd42a5375ab33e90f50a253fdd53a677ad76df1c64533bc1d07ffb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C008/native/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C008/public/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C009/native/emuera.log",
+      "size": 78,
+      "sha256": "514935fb6e3365e05557c79847ed0e2dadc0e7090ae138c518176b29ac7bacd3"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C009/public/emuera.log",
+      "size": 78,
+      "sha256": "514935fb6e3365e05557c79847ed0e2dadc0e7090ae138c518176b29ac7bacd3"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C010/native/emuera.log",
+      "size": 108,
+      "sha256": "f904ce3481b7a004b4dfea47ff274268dddb01c782722d474675f0805800d2d3"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C010/public/emuera.log",
+      "size": 108,
+      "sha256": "f904ce3481b7a004b4dfea47ff274268dddb01c782722d474675f0805800d2d3"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C011/native/emuera.log",
+      "size": 108,
+      "sha256": "19edb4363127b98bfa54fae16ad93a02ae3a16eda4f52ead7cf36f460cc1fc02"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C011/public/emuera.log",
+      "size": 108,
+      "sha256": "f904ce3481b7a004b4dfea47ff274268dddb01c782722d474675f0805800d2d3"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C012/native/emuera.log",
+      "size": 98,
+      "sha256": "fba1b8c1772bedcd3d1540d2eb449684398b7b03569f879e1fc29ddb1f07350f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C012/public/emuera.log",
+      "size": 98,
+      "sha256": "bb90fde4a5a902e0e7e8f345ca694cb45e2b4f476d6ecdcd3726a7dbfa796c18"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C013/native/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C013/public/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C014/native/emuera.log",
+      "size": 66,
+      "sha256": "44e992d6e752005f9b35f1682c31cd4dcf0d1935f52d93c690f04e87ab4aff89"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C014/public/emuera.log",
+      "size": 66,
+      "sha256": "44e992d6e752005f9b35f1682c31cd4dcf0d1935f52d93c690f04e87ab4aff89"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C015/native/emuera.log",
+      "size": 66,
+      "sha256": "5500f1be7b0f4dc06a1eeeb229bdbeca7e4453751d147ba002adc71b1207b67f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C015/public/emuera.log",
+      "size": 66,
+      "sha256": "5500f1be7b0f4dc06a1eeeb229bdbeca7e4453751d147ba002adc71b1207b67f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C016/native/emuera.log",
+      "size": 68,
+      "sha256": "7b64b5d288646ce5831f76d542e59dbc82358ce59ad28406054f0e4d20170e84"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C016/public/emuera.log",
+      "size": 68,
+      "sha256": "7b64b5d288646ce5831f76d542e59dbc82358ce59ad28406054f0e4d20170e84"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C017/native/emuera.log",
+      "size": 66,
+      "sha256": "f7da8e1a0a520f53c048baa0e4b75b6cbec1b2840d2e1044ae0f236d89c4be2c"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C017/public/emuera.log",
+      "size": 66,
+      "sha256": "f7da8e1a0a520f53c048baa0e4b75b6cbec1b2840d2e1044ae0f236d89c4be2c"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C018/native/emuera.log",
+      "size": 68,
+      "sha256": "ffd6b120d5bd42a5375ab33e90f50a253fdd53a677ad76df1c64533bc1d07ffb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C018/public/emuera.log",
+      "size": 68,
+      "sha256": "ffd6b120d5bd42a5375ab33e90f50a253fdd53a677ad76df1c64533bc1d07ffb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C019/native/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C019/public/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C020/native/emuera.log",
+      "size": 66,
+      "sha256": "f99cf21fbf150fbd86f4c9e8ce9bda6f55c29ca220ddaec35ee27a5ab2768862"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C020/public/emuera.log",
+      "size": 66,
+      "sha256": "f99cf21fbf150fbd86f4c9e8ce9bda6f55c29ca220ddaec35ee27a5ab2768862"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C021/native/emuera.log",
+      "size": 66,
+      "sha256": "f99cf21fbf150fbd86f4c9e8ce9bda6f55c29ca220ddaec35ee27a5ab2768862"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C021/public/emuera.log",
+      "size": 66,
+      "sha256": "f99cf21fbf150fbd86f4c9e8ce9bda6f55c29ca220ddaec35ee27a5ab2768862"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C022/native/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C022/public/emuera.log",
+      "size": 66,
+      "sha256": "5bc176732806c86ff738a0cb712f6b45505434063510f8a3f1075333606c4f9e"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C023/native/emuera.log",
+      "size": 72,
+      "sha256": "bc2f125862a66c91b8f44425e1287aac55474fc724920ca382c455e3515c48f9"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C023/public/emuera.log",
+      "size": 72,
+      "sha256": "bc2f125862a66c91b8f44425e1287aac55474fc724920ca382c455e3515c48f9"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C024/native/emuera.log",
+      "size": 72,
+      "sha256": "bc2f125862a66c91b8f44425e1287aac55474fc724920ca382c455e3515c48f9"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C024/public/emuera.log",
+      "size": 72,
+      "sha256": "bc2f125862a66c91b8f44425e1287aac55474fc724920ca382c455e3515c48f9"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C025/native/emuera.log",
+      "size": 80,
+      "sha256": "4ce57b66ebf00416bd4c88cc2afe30086a0d003281f95365e7dd0b5eede3d67c"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C025/public/emuera.log",
+      "size": 80,
+      "sha256": "4ce57b66ebf00416bd4c88cc2afe30086a0d003281f95365e7dd0b5eede3d67c"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C026/native/emuera.log",
+      "size": 72,
+      "sha256": "9a8a00824be623b1112b78be16ce86d8415a2acd5d7e4c36c230d2bcf3be8200"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C026/public/emuera.log",
+      "size": 72,
+      "sha256": "9a8a00824be623b1112b78be16ce86d8415a2acd5d7e4c36c230d2bcf3be8200"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C027/native/emuera.log",
+      "size": 74,
+      "sha256": "1e7e5d99649d6b260be2b187780dda89e52ec8a66679864c02699a56e195ca52"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C027/public/emuera.log",
+      "size": 74,
+      "sha256": "1e7e5d99649d6b260be2b187780dda89e52ec8a66679864c02699a56e195ca52"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C028/native/emuera.log",
+      "size": 78,
+      "sha256": "7f993cf37a067681f79dcf5736ad808cc22cc1076ad22e92915d8de2666ddfeb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C028/public/emuera.log",
+      "size": 78,
+      "sha256": "7f993cf37a067681f79dcf5736ad808cc22cc1076ad22e92915d8de2666ddfeb"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C029/native/emuera.log",
+      "size": 74,
+      "sha256": "a0a0240ae634886c15a72d14d7f9912749398b43f3bb57a087ed4047c108855f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/raw/C029/public/emuera.log",
+      "size": 74,
+      "sha256": "a0a0240ae634886c15a72d14d7f9912749398b43f3bb57a087ed4047c108855f"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/records.json",
+      "size": 36277,
+      "sha256": "10f88f4e1aac3f9cea41ec3561cdccfc9f0bebbe459a1b2f30907926d22c0419"
+    },
+    {
+      "root": "bundle",
+      "path": "evidence/external-scalar-observations-20261117/verify.py",
+      "size": 5562,
+      "sha256": "1e0504debcc2e4b344ff5a45b7a8e012a6e7095a172c7374ff97af7fc8b2a8c0"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/Emuera-NOTICE.en.md",
+      "size": 6205,
+      "sha256": "e3f4febbedd3f428b626f753744d9e0e478a48db66d28e975e473401cd1a608d"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/Emuera-NOTICE.ja.md",
+      "size": 6517,
+      "sha256": "05dc4699cf549bd9a6171bc6a9b47fece9fec836237630f2472d5030b1898024"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/Emuera1824-v24-license-original.txt",
+      "size": 1266,
+      "sha256": "ce1134568e4a9fd56d4831c37dceb82050009e90349394f3f05a03a668500a06"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/PyEmuera-3.0.0-LICENSE.txt",
+      "size": 1078,
+      "sha256": "b33bbcc5a0d1ace88bfb1d3f9443337ce4b1030a68396430c53b1563203d63f0"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/PyEmuera-3.0.0-THIRD-PARTY-NOTICES.md",
+      "size": 5848,
+      "sha256": "cdb1dfe80b9ffe1defc575c280ac8bd2b82d44f6c81ad50a10671f0dbf284edb"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/README.md",
+      "size": 2964,
+      "sha256": "6641a6f8f4939d885cbf2e92895d7020d4e8f8eb5c02528f092ec8e3cf1e9ad4"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/SOURCES.md",
+      "size": 10835,
+      "sha256": "9212448dd06cafaf3481845612fcc1dbc597854dc729de70159011f29a4e27bb"
+    },
+    {
+      "root": "bundle",
+      "path": "notices/licenses/Emuera1824.txt",
+      "size": 1266,
+      "sha256": "ce1134568e4a9fd56d4831c37dceb82050009e90349394f3f05a03a668500a06"
+    },
+    {
+      "root": "bundle",
+      "path": "provenance/external-scalar-observations-original-manifest.json",
+      "size": 22659,
+      "sha256": "8cfb13c337fd4d0131925acb087fdcbb8718d46d633dbfce7030377cc574e71e"
+    },
+    {
+      "root": "bundle",
+      "path": "tools/file_set_manifest.py",
+      "size": 12866,
+      "sha256": "387204bdfe5288a967176c46549ec5e9c00b1a26466a9e8bee01846a98237366"
+    }
+  ]
+}

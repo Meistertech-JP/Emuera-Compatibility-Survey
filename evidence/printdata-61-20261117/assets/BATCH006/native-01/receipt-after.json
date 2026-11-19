@@ -1,0 +1,48 @@
+{
+  "fixture": "CHOICE_GOOD_PRINTDATAKW",
+  "mode": "native-01",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]"
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "0c23a718745b9292c72db168e31e7e7adb0371e08c12a03b8d58e8a3dc23fc67",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "native_before": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "started_utc": "2026-11-15T23:49:24.831239+00:00",
+  "controller_sha256": "2ee53f88ab1f33b6f816d77e97ee9bd956c5c97610abd24cbf09c644e0b2fcfa",
+  "desktop": "ordinary; exact owned process/window and Computer Use targeted Return required",
+  "not_private_desktop": true,
+  "returncode": 0,
+  "controller_returncode_not_native_natural_exit": true,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "0c23a718745b9292c72db168e31e7e7adb0371e08c12a03b8d58e8a3dc23fc67",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "native_after": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "ended_utc": "2026-11-15T23:50:02.179616+00:00",
+  "native_process_returncode": 1,
+  "normal_completion_observed": true,
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "e53a3357d2d0d542b8c2be219e827ea32c31b60be5657657bdeb9d91835a87a3",
+    "emuera.log": "d5069c6c9ff1b0cf3dd0233a90e351038f01767262548b1ef9a92ae7369769db",
+    "INPUT_ACTION.json": "fbb79dbdd2270a10653393d4889158fe8b6716490fa4facf781b68b476a0875e",
+    "INPUT_INTENT.json": "8917d2c9c17661577cf4e84456dcb7c84799363ff33c56a9637ec5165de58ea4",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "c33d254d297f95fd2fd1637c064ec6ec31174352ee887bb63db0edc09048c23c",
+    "probe.json": "e749d243e13050aca07b7131ba09c04819eb0aa296f8be181adca30ba8e7e183",
+    "stderr.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "UI_AFTER.json": "541ba72ca0cd379c9c3f951429bd04ed37b5de8f83241bbd9c907fa64562cace",
+    "UI_BEFORE.json": "e887df218efd9c3e7211a51db1ca3dabcfc5b5bc6da3f23428e05a94b8a7b025",
+    "UI_BEFORE_VISUAL_VERIFICATION.json": "40b45535550112499e4f91718c5fe8dda6fd0e746aa33da784b62d374615c843",
+    "WINDOWS_MCP_AFTER_TEXT.txt": "695057ab400820d055d3123d87495d104644b91ec8e1df58b1df3d0fa4001bcd",
+    "WINDOWS_MCP_BEFORE_TEXT.txt": "d7fd462dc9ea7f3b7967069de957bfe9327634fa2b38c816ea8161a2adec971d"
+  }
+}

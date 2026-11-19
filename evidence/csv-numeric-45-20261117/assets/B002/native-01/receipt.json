@@ -1,0 +1,33 @@
+{
+  "source_condition_id": "CSVCSTR_EXPR_NEGATIVE",
+  "mode": "native-01",
+  "fixture_inputs_before": {
+    "ERB/MAIN.ERB": "a6b4c83ac198c7610af31c73db3a1bbb04f608422fc49d0527c8da8ce027805e",
+    "csv/CHARA10.CSV": "c4699a6a0e30cd621cf9b0adcb0ff3fb3a312b35fddd90611d9ed418a4093d5f",
+    "emuera.config": "b2a753dee3820126d56cd380e5b696e145811f721dc80e9147b3a8670cfdd4f4"
+  },
+  "fixture_inputs_after": {
+    "ERB/MAIN.ERB": "a6b4c83ac198c7610af31c73db3a1bbb04f608422fc49d0527c8da8ce027805e",
+    "csv/CHARA10.CSV": "c4699a6a0e30cd621cf9b0adcb0ff3fb3a312b35fddd90611d9ed418a4093d5f",
+    "emuera.config": "b2a753dee3820126d56cd380e5b696e145811f721dc80e9147b3a8670cfdd4f4"
+  },
+  "case_fatal_isolated_process": true,
+  "sp_enabled_gate": false,
+  "recorded_returncode": 0,
+  "recorded_status": "completed",
+  "recorded_integrity_ok": true,
+  "native_probe_selected": {
+    "process_created": true,
+    "synthetic_keyboard_events_sent": false,
+    "process_exited_after_5s": false,
+    "exit_code_observed": false,
+    "exit_code": null,
+    "cleanup_terminate_ok": true,
+    "desktop_closed": true
+  },
+  "native_natural_exit": "not_observed",
+  "selected_raw": {
+    "sha256": "942e7cd1f39d82392cb33c3adefcb1a4ebac51cf2ade2080fc8f9cd46cf82195",
+    "binding_basis": "case_record_and_group_manifest_and_saved_raw_readback"
+  }
+}

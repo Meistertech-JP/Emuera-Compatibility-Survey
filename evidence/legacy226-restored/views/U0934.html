@@ -1,0 +1,516 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0934 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0934 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:CALLTRAIN, command_or_syntax:COPYCHARA。対象=246; rows件数=8。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c</code></p>
+<p><a href="../assets/U0934.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;case&quot;: 246,
+  &quot;fixtures&quot;: 8,
+  &quot;native_runs&quot;: 16,
+  &quot;public_runs&quot;: 8,
+  &quot;rows&quot;: [
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;copychara-control&quot;,
+        &quot;target&quot;: &quot;COPYCHARA&quot;,
+        &quot;kind&quot;: &quot;command_or_syntax&quot;,
+        &quot;variant&quot;: &quot;control&quot;,
+        &quot;call&quot;: &quot;COPYCHARA 0,0&quot;,
+        &quot;fixture_sha256&quot;: &quot;f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;copychara-control/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;copychara-control/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;copychara-control/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;a71b8bf21d57d41d79d355dfab7c9650492e00ae8f381c75f9c7d2e17c87750b&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;matched_scoped&quot;,
+      &quot;classification&quot;: &quot;selected_control_or_result_matched&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;copychara-trailing&quot;,
+        &quot;target&quot;: &quot;COPYCHARA&quot;,
+        &quot;kind&quot;: &quot;command_or_syntax&quot;,
+        &quot;variant&quot;: &quot;trailing&quot;,
+        &quot;call&quot;: &quot;COPYCHARA 0,0,&quot;,
+        &quot;fixture_sha256&quot;: &quot;64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;copychara-trailing/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;copychara-trailing/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;copychara-trailing/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa&quot;,
+          &quot;state&quot;: null,
+          &quot;done&quot;: false,
+          &quot;error&quot;: {
+            &quot;line&quot;: 9,
+            &quot;code&quot;: &quot;E_TYPE&quot;,
+            &quot;body&quot;: &quot;Integer required, got NoneType&quot;
+          },
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;different_scoped&quot;,
+      &quot;classification&quot;: &quot;trailing_comma_native_ignored_public_missing_argument_rejected&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;strlen-control&quot;,
+        &quot;target&quot;: &quot;STRLEN&quot;,
+        &quot;kind&quot;: &quot;command_or_syntax&quot;,
+        &quot;variant&quot;: &quot;control&quot;,
+        &quot;call&quot;: &quot;STRLEN \&quot;abc\&quot;&quot;,
+        &quot;fixture_sha256&quot;: &quot;a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;strlen-control/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            5,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;strlen-control/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            5,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;strlen-control/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            5,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;matched_scoped&quot;,
+      &quot;classification&quot;: &quot;selected_control_or_result_matched&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;strlen-trailing&quot;,
+        &quot;target&quot;: &quot;STRLEN&quot;,
+        &quot;kind&quot;: &quot;command_or_syntax&quot;,
+        &quot;variant&quot;: &quot;trailing&quot;,
+        &quot;call&quot;: &quot;STRLEN \&quot;abc\&quot;,&quot;,
+        &quot;fixture_sha256&quot;: &quot;30804cf5fa7098afcbe4b7183251d7cc0e4a5b3da55105fc4da0a5b7af7785ce&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;strlen-trailing/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            6,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;strlen-trailing/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;58e351b13e35c5d7c0d2be034cfc56b15856cd36a67920d6275bc16d7479ef29&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            6,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;strlen-trailing/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;51db54e397abb263108cc277671b02b848d73be86646f486b82d5094fcc20c9b&quot;,
+          &quot;state&quot;: [
+            919,
+            818,
+            6,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;matched_scoped&quot;,
+      &quot;classification&quot;: &quot;raw_string_trailing_comma_is_data_matched&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;abs-control&quot;,
+        &quot;target&quot;: &quot;ABS&quot;,
+        &quot;kind&quot;: &quot;expression_function&quot;,
+        &quot;variant&quot;: &quot;control&quot;,
+        &quot;call&quot;: &quot;B=ABS(-3)&quot;,
+        &quot;fixture_sha256&quot;: &quot;1349786c5aa22af88064191f940a9d2d6a42d210c8a4adfb4f77747930dfd9b7&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;abs-control/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;838d0ee45f44504d5a4747af2d41becef38fb5d0e6fe8b217606018c3eb71416&quot;,
+          &quot;state&quot;: [
+            919,
+            3,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;abs-control/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;838d0ee45f44504d5a4747af2d41becef38fb5d0e6fe8b217606018c3eb71416&quot;,
+          &quot;state&quot;: [
+            919,
+            3,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;abs-control/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;ac30c60f323476ec1a1e5e3ae62edf31147e3fdf522b4d1793c6b4256b287dcd&quot;,
+          &quot;state&quot;: [
+            919,
+            3,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;matched_scoped&quot;,
+      &quot;classification&quot;: &quot;selected_control_or_result_matched&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;abs-trailing&quot;,
+        &quot;target&quot;: &quot;ABS&quot;,
+        &quot;kind&quot;: &quot;expression_function&quot;,
+        &quot;variant&quot;: &quot;trailing&quot;,
+        &quot;call&quot;: &quot;B=ABS(-3,)&quot;,
+        &quot;fixture_sha256&quot;: &quot;b08280c4e8f97d8989f796de57c2bfb46d9ff8a446b21dc50202f5a1e0b440b0&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;abs-trailing/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;0abd5412341c33a666a2ccd1d4be1fa3374e8e7975f51f7a09f63f4278dbf6fb&quot;,
+          &quot;state&quot;: [
+            919,
+            3,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;abs-trailing/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;0abd5412341c33a666a2ccd1d4be1fa3374e8e7975f51f7a09f63f4278dbf6fb&quot;,
+          &quot;state&quot;: [
+            919,
+            3,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;abs-trailing/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;147506b0abc2dee1ed755e4edbc518bc886cfa21247af98c887f393935f84eb8&quot;,
+          &quot;state&quot;: null,
+          &quot;done&quot;: false,
+          &quot;error&quot;: {
+            &quot;line&quot;: 9,
+            &quot;code&quot;: &quot;E_ARGUMENT&quot;,
+            &quot;body&quot;: &quot;ABS関数:引数の数が間違っています&quot;
+          },
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;different_scoped&quot;,
+      &quot;classification&quot;: &quot;trailing_comma_native_ignored_public_missing_argument_rejected&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;max-control&quot;,
+        &quot;target&quot;: &quot;MAX&quot;,
+        &quot;kind&quot;: &quot;expression_function&quot;,
+        &quot;variant&quot;: &quot;control&quot;,
+        &quot;call&quot;: &quot;B=MAX(1,2)&quot;,
+        &quot;fixture_sha256&quot;: &quot;17204057f97159ebf56aba5d7aa466d677b06b5a66bfb9384fa5b2264c94e7fe&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;max-control/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;08c895c0ed3d69e653e0750535d3d256082d4799bbbfe56282c2725b744b8701&quot;,
+          &quot;state&quot;: [
+            919,
+            2,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;max-control/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;08c895c0ed3d69e653e0750535d3d256082d4799bbbfe56282c2725b744b8701&quot;,
+          &quot;state&quot;: [
+            919,
+            2,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;max-control/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;926a1bfbd1c1b31168d315b952d485d03c5a7897e91eb825e96b484abcbfd638&quot;,
+          &quot;state&quot;: [
+            919,
+            2,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;matched_scoped&quot;,
+      &quot;classification&quot;: &quot;selected_control_or_result_matched&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    },
+    {
+      &quot;fixture&quot;: {
+        &quot;name&quot;: &quot;max-trailing&quot;,
+        &quot;target&quot;: &quot;MAX&quot;,
+        &quot;kind&quot;: &quot;expression_function&quot;,
+        &quot;variant&quot;: &quot;trailing&quot;,
+        &quot;call&quot;: &quot;B=MAX(1,2,)&quot;,
+        &quot;fixture_sha256&quot;: &quot;962ca5a69c5a93fb295f5d224cdbf3b0fc2a383307bebc07f494731633c26b19&quot;,
+        &quot;target_line&quot;: 9
+      },
+      &quot;runs&quot;: [
+        {
+          &quot;mode&quot;: &quot;native-01&quot;,
+          &quot;raw&quot;: &quot;max-trailing/native-01/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;f8f6ab67bfac2e3e93a0f3a5068a173c0538b9004c9facb4c5bf379680d01a79&quot;,
+          &quot;state&quot;: [
+            919,
+            2,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;native-02&quot;,
+          &quot;raw&quot;: &quot;max-trailing/native-02/emuera.log&quot;,
+          &quot;raw_sha256&quot;: &quot;f8f6ab67bfac2e3e93a0f3a5068a173c0538b9004c9facb4c5bf379680d01a79&quot;,
+          &quot;state&quot;: [
+            919,
+            2,
+            701,
+            1,
+            173
+          ],
+          &quot;done&quot;: true,
+          &quot;error&quot;: null,
+          &quot;native_exit_semantics&quot;: &quot;owned cleanup after5seconds, not natural exit0&quot;
+        },
+        {
+          &quot;mode&quot;: &quot;public&quot;,
+          &quot;raw&quot;: &quot;max-trailing/public/verified.stdout.bin&quot;,
+          &quot;raw_sha256&quot;: &quot;3eeee90ef29b71a4338d2ae83456491b6ba4901e1be1b68e5fbefd530703bb83&quot;,
+          &quot;state&quot;: null,
+          &quot;done&quot;: false,
+          &quot;error&quot;: {
+            &quot;line&quot;: 9,
+            &quot;code&quot;: &quot;E_ARGUMENT&quot;,
+            &quot;body&quot;: &quot;MAX関数の3番目の引数は省略できません&quot;
+          },
+          &quot;native_exit_semantics&quot;: null
+        }
+      ],
+      &quot;verdict&quot;: &quot;different_scoped&quot;,
+      &quot;classification&quot;: &quot;trailing_comma_native_ignored_public_missing_argument_rejected&quot;,
+      &quot;limits&quot;: &quot;Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.&quot;
+    }
+  ],
+  &quot;counts&quot;: {
+    &quot;matched_scoped&quot;: 5,
+    &quot;different_scoped&quot;: 3
+  },
+  &quot;source_authority&quot;: &quot;SOURCE_CONTRACT_CURRENT.json&quot;,
+  &quot;semantic_completion&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0783 · command_or_syntax:COPYCHARA · check</li>
+<li>L0784 · command_or_syntax:COPYCHARA · check</li>
+<li>L1569 · command_or_syntax:CALLTRAIN · check</li>
+<li>L1570 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

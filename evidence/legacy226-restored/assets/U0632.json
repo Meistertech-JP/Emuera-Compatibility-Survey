@@ -1,0 +1,93 @@
+{
+  "results": [
+    {
+      "case": "omitted",
+      "verdict": "different_scoped",
+      "runs": [
+        {
+          "case": "omitted",
+          "mode": "native-01",
+          "markers": [
+            "FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]",
+            "FS_AFTER STYLE=0 C=0 R=777 S=[SENTINEL]",
+            "FS_DONE"
+          ],
+          "raw_log_exists": true,
+          "raw_sha256": "da2c7745c3d7763be5b9a4958b2a6d69c3ce8e267032e6b1929cbc040e0807c6",
+          "returncode": 0
+        },
+        {
+          "case": "omitted",
+          "mode": "native-02",
+          "markers": [
+            "FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]",
+            "FS_AFTER STYLE=0 C=0 R=777 S=[SENTINEL]",
+            "FS_DONE"
+          ],
+          "raw_log_exists": true,
+          "raw_sha256": "da2c7745c3d7763be5b9a4958b2a6d69c3ce8e267032e6b1929cbc040e0807c6",
+          "returncode": 0
+        },
+        {
+          "case": "omitted",
+          "mode": "public-01",
+          "markers": [
+            "FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]"
+          ],
+          "raw_log_exists": true,
+          "raw_sha256": "c233a3924f0215f3c5983147ac6533c242b46ffa55403927ea2119e61de0814e",
+          "returncode": 1
+        }
+      ],
+      "native_repeat_markers_equal": true
+    },
+    {
+      "case": "dynamic-helper",
+      "verdict": "matched_scoped",
+      "runs": [
+        {
+          "case": "dynamic-helper",
+          "mode": "native-01",
+          "markers": [
+            "FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]",
+            "FS_AFTER STYLE=13 C=1 R=777 S=[SENTINEL]",
+            "FS_DONE"
+          ],
+          "raw_log_exists": true,
+          "raw_sha256": "3b6b25cbee9176067a58740c95e67337c070c41fac5a363356bfc98d03fb2af2",
+          "returncode": 0
+        },
+        {
+          "case": "dynamic-helper",
+          "mode": "native-02",
+          "markers": [
+            "FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]",
+            "FS_AFTER STYLE=13 C=1 R=777 S=[SENTINEL]",
+            "FS_DONE"
+          ],
+          "raw_log_exists": true,
+          "raw_sha256": "3b6b25cbee9176067a58740c95e67337c070c41fac5a363356bfc98d03fb2af2",
+          "returncode": 0
+        },
+        {
+          "case": "dynamic-helper",
+          "mode": "public-01",
+          "markers": [
+            "FS_BEFORE STYLE=15 C=0 R=777 S=[SENTINEL]",
+            "FS_AFTER STYLE=13 C=1 R=777 S=[SENTINEL]",
+            "FS_DONE"
+          ],
+          "raw_log_exists": true,
+          "raw_sha256": "3b6b25cbee9176067a58740c95e67337c070c41fac5a363356bfc98d03fb2af2",
+          "returncode": 0
+        }
+      ],
+      "native_repeat_markers_equal": true
+    }
+  ],
+  "limitations": [
+    "Stored style, helper count, numeric/string sentinels and continuation only; font pixels are not compared",
+    "Native runner owns isolated desktops and cleans exact created process; natural exit not inferred",
+    "Historical mask -1/16 differences are not erased by these cases"
+  ]
+}

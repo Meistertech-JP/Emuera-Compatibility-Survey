@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_EVENT_PRIORITY_SINGLE_RESULT_20261116",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "da3ef5e0a7d762509c58c6b01d88ec5e4ed952d39e4a7e23ceea12edbc25d219",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "da3ef5e0a7d762509c58c6b01d88ec5e4ed952d39e4a7e23ceea12edbc25d219",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "bdf558c639e22fec1a742e5bd1f8fbcea95bbf193f4bb6c18e988bd9bbce35db",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "EVENT_PRIORITY_SINGLE_RESULT",
+  "source_declared_mode": "public-01"
+}

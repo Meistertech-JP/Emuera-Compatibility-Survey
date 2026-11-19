@@ -1,0 +1,469 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0938 · PUBLIC_expr.py.txt</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0938 · PUBLIC_expr.py.txt</h1>
+<p>U0938 / source-scope。COPYCHARA等の末尾カンマ対照と固定公開Pythonソース。正常対照・停止差・STRLENのraw文字列契約を区別。固定pyz内pyemuera/expr.pyと全バイト一致、静的AST解析成功。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>4e5a810aa8e360651fb186523dece345a4dae903f7e08762b4e90c088e4c9e52</code></p>
+<p><a href="../assets/U0938.txt">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>4e5a810aa8e360651fb186523dece345a4dae903f7e08762b4e90c088e4c9e52</code></p>
+<pre>&quot;&quot;&quot;A cached Pratt parser. No Python eval/exec and no access to host objects.&quot;&quot;&quot;
+
+from __future__ import annotations
+from dataclasses import dataclass
+from functools import lru_cache
+import re
+import math
+from typing import Any
+from .errors import EraError
+from .ast_nodes import IncrementNode
+from .text import quoted_end, conditional_end
+
+MASK = (1 &lt;&lt; 64) - 1
+
+
+def i64(value: int) -&gt; int:
+    if type(value) is int and -(1 &lt;&lt; 63) &lt;= value &lt; (1 &lt;&lt; 63):
+        return value
+    value = int(value) &amp; MASK
+    return value - (1 &lt;&lt; 64) if value &gt;= (1 &lt;&lt; 63) else value
+
+
+def integer(value: Any) -&gt; int:
+    if not isinstance(value, int):
+        raise EraError(f&quot;Integer required, got {type(value).__name__}&quot;, code=&quot;E_TYPE&quot;)
+    return value
+
+
+_BASE_INTEGER = integer
+
+
+def truncdiv(a: int, b: int) -&gt; int:
+    if b == 0:
+        raise EraError(&quot;Division by zero&quot;, code=&quot;E_ARITH&quot;)
+    if a == -(1 &lt;&lt; 63) and b == -1:
+        raise EraError(&quot;Int64 division overflow&quot;, code=&quot;E_ARITH&quot;)
+    return (-1 if (a &lt; 0) != (b &lt; 0) else 1) * (abs(a) // abs(b))
+
+
+# ERB differs from Python/C: each of these two operator groups has ONE precedence.
+BP = {
+    &#x27;?&#x27;: 5,
+    &#x27;&amp;&amp;&#x27;: 10,
+    &#x27;||&#x27;: 10,
+    &#x27;^^&#x27;: 10,
+    &#x27;!&amp;&#x27;: 10,
+    &#x27;!|&#x27;: 10,
+    &#x27;&amp;&#x27;: 20,
+    &#x27;|&#x27;: 20,
+    &#x27;^&#x27;: 20,
+    &#x27;==&#x27;: 30,
+    &#x27;!=&#x27;: 30,
+    &#x27;&lt;&#x27;: 40,
+    &#x27;&gt;&#x27;: 40,
+    &#x27;&lt;=&#x27;: 40,
+    &#x27;&gt;=&#x27;: 40,
+    &#x27;&lt;&lt;&#x27;: 50,
+    &#x27;&gt;&gt;&#x27;: 50,
+    &#x27;+&#x27;: 60,
+    &#x27;-&#x27;: 60,
+    &#x27;*&#x27;: 70,
+    &#x27;/&#x27;: 70,
+    &#x27;%&#x27;: 70,
+}
+# LexicalAnalyzer.ReadSingleIdentifier separator set in src1824. Punctuation
+# such as U+FF0F is identifier data, not the ASCII division operator.
+_ID_ATOM = r&quot;[^ \t\r\n\u3000+\-*/%=!&lt;&gt;|&amp;^~?#(){}\[\],:$\\&#x27;\&quot;@.;]+&quot;
+IDENT = re.compile(r&#x27;(?![0-9])&#x27; + _ID_ATOM + r&#x27;(?:@&#x27; + _ID_ATOM + r&#x27;)?&#x27;)
+NUMBER = re.compile(
+    r&#x27;0[xX][0-9a-fA-F]*(?:[pP][+-]?[0-9a-fA-F]*)?|0[bB][0-9]*(?:[pPeE][+-]?[0-9]*)?|[0-9]+(?:[pPeE][+-]?[0-9]*)?&#x27;
+)
+
+
+def _number_token(text):
+    &quot;&quot;&quot;LexicalAnalyzer.ReadInt64: digits bind before unary operators.
+
+    Decimal significands are signed Int64 tokens; radix 2/16 tokens may use
+    all 64 bits. Arithmetic wrapping belongs to operators, never decimal
+    token acceptance. p/e scaling uses the source&#x27;s Double/Int32 route.
+    &quot;&quot;&quot;
+    base = 16 if text[:2].lower() == &#x27;0x&#x27; else 2 if text[:2].lower() == &#x27;0b&#x27; else 10
+    digits = text[2:] if base != 10 else text
+    split = re.search(&#x27;[pP]&#x27; if base == 16 else &#x27;[pPeE]&#x27;, digits)
+    significand = digits[: split.start()] if split else digits
+    exponent = digits[split.end() :] if split else None
+
+    def fail(message):
+        raise EraError(message, code=&#x27;E_SYNTAX&#x27;, diagnostic_message=message)
+
+    def read(value):
+        if base == 2 and any(c not in &#x27;01+-&#x27; for c in value):
+            fail(&#x27;二進法表記の中で使用できない文字が使われています&#x27;)
+        if not value or value in (&#x27;+&#x27;, &#x27;-&#x27;):
+            fail(&#x27;&quot;&#x27; + value + &#x27;&quot;は整数値に変換できません&#x27;)
+        significant = value.lstrip(&#x27;+-&#x27;).lstrip(&#x27;0&#x27;)
+        limit = 19 if base == 10 else 16 if base == 16 else 64
+        if len(significant) &gt; limit:
+            fail(&#x27;&quot;&#x27; + value + &#x27;&quot;は64ビット符号付き整数の範囲を超えています&#x27;)
+        number = int(value, base)
+        if (base == 10 and not -(1 &lt;&lt; 63) &lt;= number &lt; (1 &lt;&lt; 63)) or (
+            base != 10 and not 0 &lt;= number &lt; (1 &lt;&lt; 64)
+        ):
+            fail(&#x27;&quot;&#x27; + value + &#x27;&quot;は64ビット符号付き整数の範囲を超えています&#x27;)
+        return i64(number)
+
+    value = read(significand)
+    if exponent is not None:
+        power = read(exponent)
+        power = ((power + (1 &lt;&lt; 31)) % (1 &lt;&lt; 32)) - (1 &lt;&lt; 31)
+        if power:
+            try:
+                scaled = float(value) * math.pow(
+                    2 if split[0].lower() == &#x27;p&#x27; else 10, power
+                )
+            except OverflowError:
+                scaled = math.inf
+            if (
+                not math.isfinite(scaled)
+                or scaled &gt; float((1 &lt;&lt; 63) - 1)
+                or scaled &lt; float(-(1 &lt;&lt; 63))
+            ):
+                fail(&#x27;&quot;&#x27; + text + &#x27;&quot;は64ビット符号付整数の範囲を超えています&#x27;)
+            # CLR unchecked conv.i8 at the rounded positive 2^63 boundary.
+            value = -(1 &lt;&lt; 63) if scaled &gt;= float(1 &lt;&lt; 63) else int(scaled)
+    return value
+
+
+@dataclass(frozen=True)
+class Token:
+    kind: str
+    value: Any
+    pos: int
+
+
+def tokenize(text: str) -&gt; list[Token]:
+    out, i = [], 0
+    while i &lt; len(text):
+        c = text[i]
+        if c.isspace():
+            i += 1
+            continue
+        if text.startswith(&#x27;\\@&#x27;, i):
+            end = conditional_end(text, i)
+            out.append(Token(&#x27;FORM&#x27;, text[i:end], i))
+            i = end
+            continue
+        fmt = text.startswith(&#x27;@&quot;&#x27;, i)
+        if fmt:
+            end = quoted_end(text, i, True)
+            out.append(Token(&#x27;FORM&#x27;, text[i + 2 : end - 1], i))
+            i = end
+            continue
+        if c == &#x27;&quot;&#x27;:
+            start = i
+            end = quoted_end(text, i)
+            i += 1
+            chars = []
+            while i &lt; end - 1:
+                if text[i] == &#x27;\\&#x27; and i + 1 &lt; end - 1:
+                    chars.append(
+                        {&#x27;n&#x27;: &#x27;\n&#x27;, &#x27;r&#x27;: &#x27;\r&#x27;, &#x27;t&#x27;: &#x27;\t&#x27;, &#x27;s&#x27;: &#x27; &#x27;, &#x27;S&#x27;: &#x27;　&#x27;}.get(
+                            text[i + 1], text[i + 1]
+                        )
+                    )
+                    i += 2
+                else:
+                    chars.append(text[i])
+                    i += 1
+            i = end
+            out.append(Token(&#x27;STR&#x27;, &#x27;&#x27;.join(chars), start))
+            continue
+        m = NUMBER.match(text, i)
+        if m:
+            s = m.group()
+            i = m.end()
+            out.append(Token(&#x27;NUM&#x27;, _number_token(s), m.start()))
+            continue
+        m = IDENT.match(text, i)
+        if m:
+            out.append(Token(&#x27;ID&#x27;, m.group().upper(), i))
+            i = m.end()
+            continue
+        op = text[i : i + 2]
+        if op in BP or op in (&#x27;++&#x27;, &#x27;--&#x27;):
+            out.append(Token(op, op, i))
+            i += 2
+            continue
+        if c in &#x27;+-*/%&amp;|^~!&lt;&gt;()?:#,&#x27; or c == &#x27;:&#x27;:
+            out.append(Token(c, c, i))
+            i += 1
+            continue
+        raise EraError(
+            f&quot;Unexpected expression character {c!r} at column {i+1}: {text}&quot;,
+            code=&quot;E_SYNTAX&quot;,
+        )
+    out.append(Token(&#x27;EOF&#x27;, &#x27;&#x27;, len(text)))
+    return out
+
+
+# AST nodes are immutable tuples to make expression caching safe across runtimes.
+class Parser:
+    def __init__(self, text: str):
+        self.tokens, self.i, self.text = tokenize(text), 0, text
+
+    @property
+    def tok(self):
+        return self.tokens[self.i]
+
+    def take(self, kind=None):
+        t = self.tok
+        if kind and t.kind != kind:
+            raise EraError(
+                f&quot;Expected {kind}, got {t.kind} at column {t.pos+1}: {self.text}&quot;,
+                code=&quot;E_SYNTAX&quot;,
+            )
+        self.i += 1
+        return t
+
+    def expression(self, minimum=0, allow_index=True, allow_postfix=True):
+        t = self.take()
+        if t.kind in (&#x27;NUM&#x27;, &#x27;STR&#x27;):
+            node = (&#x27;lit&#x27;, t.value)
+        elif t.kind == &#x27;FORM&#x27;:
+            node = (&#x27;form&#x27;, t.value)
+        elif t.kind in (&#x27;+&#x27;, &#x27;-&#x27;, &#x27;!&#x27;, &#x27;~&#x27;):
+            node = (&#x27;unary&#x27;, t.kind, self.expression(80, allow_index))
+        elif t.kind in (&#x27;++&#x27;, &#x27;--&#x27;):
+            target = self.expression(90, allow_index)
+            if target[0] != &#x27;var&#x27;:
+                raise EraError(
+                    &#x27;Increment requires an integer variable&#x27;, code=&#x27;E_REFERENCE&#x27;
+                )
+            node = (&#x27;inc&#x27;, target, 1 if t.kind == &#x27;++&#x27; else -1, False)
+        elif t.kind == &#x27;(&#x27;:
+            node = self.expression()
+            self.take(&#x27;)&#x27;)
+        elif t.kind == &#x27;ID&#x27;:
+            if self.tok.kind == &#x27;(&#x27;:
+                self.take(&#x27;(&#x27;)
+                args = []
+                if self.tok.kind != &#x27;)&#x27;:
+                    while True:
+                        args.append(
+                            (&#x27;missing&#x27;,)
+                            if self.tok.kind in (&#x27;,&#x27;, &#x27;)&#x27;)
+                            else self.expression()
+                        )
+                        if self.tok.kind != &#x27;,&#x27;:
+                            break
+                        self.take(&#x27;,&#x27;)
+                self.take(&#x27;)&#x27;)
+                node = (&#x27;call&#x27;, t.value, tuple(args))
+            else:
+                indices = []
+                if allow_index:
+                    while self.tok.kind == &#x27;:&#x27;:
+                        self.take(&#x27;:&#x27;)
+                        if self.tok.kind in (&#x27;+&#x27;, &#x27;-&#x27;, &#x27;!&#x27;, &#x27;~&#x27;, &#x27;++&#x27;, &#x27;--&#x27;):
+                            raise EraError(
+                                &#x27;変数の引数の読み取り中に予期しない演算子を発見しました&#x27;,
+                                code=&#x27;E_SYNTAX&#x27;,
+                            )
+                        # Native ReduceVariableArgument consumes one primary; the
+                        # following ++/-- belongs to the completed reference.
+                        indices.append(self.expression(80, False, False))
+                node = (&#x27;var&#x27;, t.value, tuple(indices))
+        else:
+            raise EraError(
+                f&quot;Expected expression at column {t.pos+1}: {self.text}&quot;, code=&quot;E_SYNTAX&quot;
+            )
+        if allow_postfix and self.tok.kind in (&#x27;++&#x27;, &#x27;--&#x27;) and minimum &lt;= 90:
+            if node[0] != &#x27;var&#x27;:
+                raise EraError(
+                    &#x27;Increment requires an integer variable&#x27;, code=&#x27;E_REFERENCE&#x27;
+                )
+            op = self.take().kind
+            node = (&#x27;inc&#x27;, node, 1 if op == &#x27;++&#x27; else -1, True)
+        while self.tok.kind in BP and BP[self.tok.kind] &gt;= minimum:
+            op = self.take().kind
+            priority = BP[op]
+            if op == &#x27;?&#x27;:
+                yes = self.expression()
+                self.take(&#x27;#&#x27;)
+                no = self.expression(priority)
+                node = (&#x27;ternary&#x27;, node, yes, no)
+            else:
+                node = (&#x27;binary&#x27;, op, node, self.expression(priority + 1))
+        return node
+
+
+@lru_cache(maxsize=131072)
+def parse(text: str):
+    p = Parser(text.strip())
+    ast = p.expression()
+    p.take(&#x27;EOF&#x27;)
+    return ast
+
+
+@lru_cache(maxsize=131072)
+def parse_case_condition(text: str):
+    &quot;&quot;&quot;CASE uses the same tokens/Pratt parser as all expressions.
+
+    ExpressionParser.reduceCaseExpression recognizes IdentifierWord IS/TO;
+    StringWord and formatted-string tokens never act as these keywords.
+    &quot;&quot;&quot;
+    p = Parser(text.strip())
+    if p.tok.kind == &#x27;ID&#x27; and p.tok.value == &#x27;IS&#x27;:
+        p.take()
+        op = p.take()
+        if op.kind not in BP or op.kind == &#x27;?&#x27;:
+            raise EraError(&#x27;CASE IS requires a binary operator&#x27;, code=&#x27;E_SYNTAX&#x27;)
+        rhs = p.expression()
+        p.take(&#x27;EOF&#x27;)
+        return (&#x27;is&#x27;, op.kind, rhs)
+    left = p.expression()
+    if p.tok.kind == &#x27;ID&#x27; and p.tok.value == &#x27;TO&#x27;:
+        p.take()
+        right = p.expression()
+        p.take(&#x27;EOF&#x27;)
+        return (&#x27;range&#x27;, left, right)
+    p.take(&#x27;EOF&#x27;)
+    return (&#x27;value&#x27;, left)
+
+
+def apply_binary(op: str, a, b):
+    # Custom operators, operand subclasses and replaced integer helpers
+    # retain the complete original dispatch and its live helper lookups.
+    if (type(op) is str and type(a) is int and type(b) is int
+            and integer is _BASE_INTEGER):
+        if op == &#x27;+&#x27;:
+            return i64(a + b)
+        if op == &#x27;-&#x27;:
+            return i64(a - b)
+        if op == &#x27;*&#x27;:
+            return i64(a * b)
+    if op in (&#x27;==&#x27;, &#x27;!=&#x27;, &#x27;&lt;&#x27;, &#x27;&gt;&#x27;, &#x27;&lt;=&#x27;, &#x27;&gt;=&#x27;):
+        if type(a) is not type(b):
+            raise EraError(&quot;Cannot compare a string and an integer&quot;, code=&quot;E_TYPE&quot;)
+        if op == &#x27;==&#x27;:
+            return int(a == b)
+        if op == &#x27;!=&#x27;:
+            return int(a != b)
+        if op == &#x27;&lt;&#x27;:
+            return int(a &lt; b)
+        if op == &#x27;&gt;&#x27;:
+            return int(a &gt; b)
+        if op == &#x27;&lt;=&#x27;:
+            return int(a &lt;= b)
+        return int(a &gt;= b)
+    if op == &#x27;+&#x27; and isinstance(a, str) and isinstance(b, str):
+        if len(a) + len(b) &gt; 10_000_000:
+            raise EraError(&quot;String size limit&quot;, code=&quot;E_LIMIT&quot;)
+        return a + b
+    if op == &#x27;*&#x27; and isinstance(a, str) and isinstance(b, int):
+        if b &lt; 0 or len(a) * b &gt; 10_000_000:
+            raise EraError(&quot;Invalid string repetition&quot;, code=&quot;E_LIMIT&quot;)
+        return a * b
+    a, b = integer(a), integer(b)
+    if op == &#x27;+&#x27;:
+        return i64(a + b)
+    if op == &#x27;-&#x27;:
+        return i64(a - b)
+    if op == &#x27;*&#x27;:
+        return i64(a * b)
+    if op == &#x27;/&#x27;:
+        return truncdiv(a, b)
+    if op == &#x27;%&#x27;:
+        return a - truncdiv(a, b) * b
+    if op == &#x27;&lt;&lt;&#x27;:
+        return i64(a &lt;&lt; (b &amp; 63))
+    if op == &#x27;&gt;&gt;&#x27;:
+        return a &gt;&gt; (b &amp; 63)
+    if op == &#x27;&amp;&#x27;:
+        return i64(a &amp; b)
+    if op == &#x27;|&#x27;:
+        return i64(a | b)
+    if op == &#x27;^&#x27;:
+        return i64(a ^ b)
+    if op == &#x27;&amp;&amp;&#x27;:
+        return int(bool(a) and bool(b))
+    if op == &#x27;||&#x27;:
+        return int(bool(a) or bool(b))
+    if op == &#x27;!&amp;&#x27;:
+        return int(not (bool(a) and bool(b)))
+    if op == &#x27;!|&#x27;:
+        return int(not (bool(a) or bool(b)))
+    if op == &#x27;^^&#x27;:
+        return int(bool(a) != bool(b))
+    raise EraError(f&quot;Unknown operator {op}&quot;)
+
+
+def evaluate(node, vm):
+    kind = node[0]
+    if kind == &#x27;lit&#x27;:
+        return node[1]
+    if kind == &#x27;form&#x27;:
+        return vm.format(node[1])
+    if kind == &#x27;missing&#x27;:
+        return None
+    if kind == &#x27;var&#x27;:
+        return vm.read_node(node)
+    if kind == &#x27;inc&#x27;:
+        if getattr(vm, &#x27;initializing_declarations&#x27;, False):
+            raise EraError(
+                &#x27;Increment is not a constant initializer&#x27;, code=&#x27;E_DECLARATION&#x27;
+            )
+        increment: IncrementNode = node
+        _, target, delta, postfix = increment
+        ref = vm.ref_node(target)
+        old = integer(ref.get())
+        new = i64(old + delta)
+        ref.set(new)
+        return old if postfix else new
+    if kind == &#x27;call&#x27;:
+        return vm.call_expr(node[1], node[2])
+    if kind == &#x27;ternary&#x27;:
+        return evaluate(node[2] if integer(evaluate(node[1], vm)) else node[3], vm)
+    if kind == &#x27;unary&#x27;:
+        val = integer(evaluate(node[2], vm))
+        op = node[1]
+        if op == &#x27;+&#x27;:
+            return val
+        if op == &#x27;-&#x27;:
+            # v24 MinusInt reads the operand again after its MinValue check.
+            if val == -(1 &lt;&lt; 63):
+                vm.console.write(
+                    &#x27;整数型最小値(-9223372036854775808)は-を取っても値は変化しません&#x27;,
+                    True,
+                )
+            return i64(-integer(evaluate(node[2], vm)))
+        if op == &#x27;!&#x27;:
+            return int(not val)
+        return i64(~val)
+    if kind == &#x27;binary&#x27;:
+        # OperatorMethod.DivIntInt/ModIntInt evaluate and validate RHS first.
+        if node[1] in (&#x27;/&#x27;, &#x27;%&#x27;):
+            right = integer(evaluate(node[3], vm))
+            if right == 0:
+                raise EraError(&#x27;Division by zero&#x27;, code=&#x27;E_ARITH&#x27;)
+            return apply_binary(node[1], evaluate(node[2], vm), right)
+        op, a = node[1], evaluate(node[2], vm)
+        if op in (&#x27;&amp;&amp;&#x27;, &#x27;!&amp;&#x27;) and integer(a) == 0:
+            return int(op == &#x27;!&amp;&#x27;)
+        if op in (&#x27;||&#x27;, &#x27;!|&#x27;) and integer(a) != 0:
+            return int(op == &#x27;||&#x27;)
+        return apply_binary(op, a, evaluate(node[3], vm))
+    raise EraError(f&quot;Invalid AST node: {kind}&quot;)
+
+
+# Stable original entry for optional evaluator backends and replacement hooks.
+_BASE_EVALUATE = evaluate
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0435 · command_or_syntax:COPYCHARA · check</li>
+<li>L1221 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

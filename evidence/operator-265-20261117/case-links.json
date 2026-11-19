@@ -1,0 +1,166 @@
+{
+  "schema": "operator265-case-links.v1",
+  "cases": [
+    {
+      "case_id": "OPISOLATED265_plain-num-badindex",
+      "record_id": "C001",
+      "pointer": "/records/0",
+      "ja": "OBSERVATIONS_ja.md#c001",
+      "en": "OBSERVATIONS_en.md#c001"
+    },
+    {
+      "case_id": "OPISOLATED265_vector-str-1",
+      "record_id": "C002",
+      "pointer": "/records/1",
+      "ja": "OBSERVATIONS_ja.md#c002",
+      "en": "OBSERVATIONS_en.md#c002"
+    },
+    {
+      "case_id": "OPISOLATED265_vector-str-rhs-fails",
+      "record_id": "C003",
+      "pointer": "/records/2",
+      "ja": "OBSERVATIONS_ja.md#c003",
+      "en": "OBSERVATIONS_en.md#c003"
+    },
+    {
+      "case_id": "OPISOLATED265_plain-str-control",
+      "record_id": "C004",
+      "pointer": "/records/3",
+      "ja": "OBSERVATIONS_ja.md#c004",
+      "en": "OBSERVATIONS_en.md#c004"
+    },
+    {
+      "case_id": "OPISOLATED265_plain-str-trailing",
+      "record_id": "C005",
+      "pointer": "/records/4",
+      "ja": "OBSERVATIONS_ja.md#c005",
+      "en": "OBSERVATIONS_en.md#c005"
+    },
+    {
+      "case_id": "OPISOLATED265_plain-str-hole",
+      "record_id": "C006",
+      "pointer": "/records/5",
+      "ja": "OBSERVATIONS_ja.md#c006",
+      "en": "OBSERVATIONS_en.md#c006"
+    },
+    {
+      "case_id": "OPISOLATED265_plain-str-empty",
+      "record_id": "C007",
+      "pointer": "/records/6",
+      "ja": "OBSERVATIONS_ja.md#c007",
+      "en": "OBSERVATIONS_en.md#c007"
+    },
+    {
+      "case_id": "OPISOLATED265_plain-str-wrongtype",
+      "record_id": "C008",
+      "pointer": "/records/7",
+      "ja": "OBSERVATIONS_ja.md#c008",
+      "en": "OBSERVATIONS_en.md#c008"
+    },
+    {
+      "case_id": "OPISOLATED265_plain-str-badindex",
+      "record_id": "C009",
+      "pointer": "/records/8",
+      "ja": "OBSERVATIONS_ja.md#c009",
+      "en": "OBSERVATIONS_en.md#c009"
+    },
+    {
+      "case_id": "OPISOLATED265_assignment-alias-warning",
+      "record_id": "C010",
+      "pointer": "/records/9",
+      "ja": "OBSERVATIONS_ja.md#c010",
+      "en": "OBSERVATIONS_en.md#c010"
+    },
+    {
+      "case_id": "OPISOLATED265_assignment-common-const",
+      "record_id": "C011",
+      "pointer": "/records/10",
+      "ja": "OBSERVATIONS_ja.md#c011",
+      "en": "OBSERVATIONS_en.md#c011"
+    },
+    {
+      "case_id": "OPISOLATED265_assignment-common-nonvar",
+      "record_id": "C012",
+      "pointer": "/records/11",
+      "ja": "OBSERVATIONS_ja.md#c012",
+      "en": "OBSERVATIONS_en.md#c012"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-badindex-mul",
+      "record_id": "C013",
+      "pointer": "/records/12",
+      "ja": "OBSERVATIONS_ja.md#c013",
+      "en": "OBSERVATIONS_en.md#c013"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-badindex-div",
+      "record_id": "C014",
+      "pointer": "/records/13",
+      "ja": "OBSERVATIONS_ja.md#c014",
+      "en": "OBSERVATIONS_en.md#c014"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-addconst-badindex",
+      "record_id": "C015",
+      "pointer": "/records/14",
+      "ja": "OBSERVATIONS_ja.md#c015",
+      "en": "OBSERVATIONS_en.md#c015"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-write-index-fails",
+      "record_id": "C016",
+      "pointer": "/records/15",
+      "ja": "OBSERVATIONS_ja.md#c016",
+      "en": "OBSERVATIONS_en.md#c016"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-string-index-add",
+      "record_id": "C017",
+      "pointer": "/records/16",
+      "ja": "OBSERVATIONS_ja.md#c017",
+      "en": "OBSERVATIONS_en.md#c017"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-string-index-mul",
+      "record_id": "C018",
+      "pointer": "/records/17",
+      "ja": "OBSERVATIONS_ja.md#c018",
+      "en": "OBSERVATIONS_en.md#c018"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-string-reject",
+      "record_id": "C019",
+      "pointer": "/records/18",
+      "ja": "OBSERVATIONS_ja.md#c019",
+      "en": "OBSERVATIONS_en.md#c019"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-extra-rhs",
+      "record_id": "C020",
+      "pointer": "/records/19",
+      "ja": "OBSERVATIONS_ja.md#c020",
+      "en": "OBSERVATIONS_en.md#c020"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-wrong-rhs",
+      "record_id": "C021",
+      "pointer": "/records/20",
+      "ja": "OBSERVATIONS_ja.md#c021",
+      "en": "OBSERVATIONS_en.md#c021"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-trailing-comma",
+      "record_id": "C022",
+      "pointer": "/records/21",
+      "ja": "OBSERVATIONS_ja.md#c022",
+      "en": "OBSERVATIONS_en.md#c022"
+    },
+    {
+      "case_id": "OPISOLATED265_compound-string-trailing",
+      "record_id": "C023",
+      "pointer": "/records/22",
+      "ja": "OBSERVATIONS_ja.md#c023",
+      "en": "OBSERVATIONS_en.md#c023"
+    }
+  ]
+}

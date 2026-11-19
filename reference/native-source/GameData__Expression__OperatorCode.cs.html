@@ -1,0 +1,132 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>GameData/Expression/OperatorCode.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>GameData/Expression/OperatorCode.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Expression/OperatorCode.cs</p><p>SHA-256 (original member bytes): e7128a5da0a0987605ba3bf3a0d3379e5ad9253814ce4e918dd2ce83151d3e31</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using System;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System.Collections.Generic;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Text;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> </span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> namespace MinorShift.Emuera.GameData.Expression</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> {</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> 	internal enum OperatorCode</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> 	{</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> 		</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> 		//単項 &gt; &quot;*/%&quot; &gt; &quot;+-&quot; &gt; 比較                &gt; ビット演算  &gt; 論理演算 &gt; 代入</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> 		//xx   &gt; 90    &gt; 80   &gt; 65,60(不等価優先)   &gt; 50          &gt; 40       &gt; xx</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> 		//優先順は本家に準拠</span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> 		NULL = 0,</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> 		__PRIORITY_MASK__ = 0xFF,</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> 		__UNARY__ = 0x10000,//単項</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> 		__BINARY__ =  0x20000,//2項</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a>         __TERNARY__ = 0x40000,//3項</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 		__UNARY_AFTER__ = 0x80000,//後置単項</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> 		Plus = 0x0100 + 0x80 | __UNARY__ | __BINARY__,//&quot;+&quot;単項可</span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> 		Minus = 0x0200 + 0x80 | __UNARY__ | __BINARY__,//&quot;-&quot;</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 		Mult = 0x0300 + 0x90 | __BINARY__,//&quot;*&quot;</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 		Div = 0x0400 + 0x90 | __BINARY__,//&quot;/&quot;</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 		Mod = 0x0500 + 0x90 | __BINARY__,//&quot;%&quot;</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> 		Equal = 0x0600 + 0x60 | __BINARY__,//&quot;==&quot;</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a> 		Greater = 0x0700 + 0x65 | __BINARY__,//&quot;&gt;&quot;</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 		Less = 0x0800 + 0x65 | __BINARY__,//&quot;&lt;&quot;</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 		GreaterEqual = 0x0900 + 0x65 | __BINARY__,//&quot;&gt;=&quot;</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 		LessEqual = 0x0A00 + 0x65 | __BINARY__,//&quot;&lt;=&quot;</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		NotEqual = 0x0B00 + 0x60 | __BINARY__,//&quot;!=&quot;</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a>         Increment = 0x2000 | __UNARY__ | __UNARY_AFTER__,//&quot;++&quot;</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a>         Decrement = 0x2100 | __UNARY__ | __UNARY_AFTER__,//&quot;--&quot;</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> </span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> 		And = 0x0C00 + 0x40 | __BINARY__,//&quot;&amp;&amp;&quot;</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> 		Or = 0x0D00 + 0x40 | __BINARY__,//&quot;||&quot;</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a>         Xor = 0x1500 + 0x40 | __BINARY__,//&quot;^^&quot;</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a>         Nand = 0x1600 + 0x40 | __BINARY__,//&quot;!&amp;&quot;</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a>         Nor = 0x1700 + 0x40 | __BINARY__,//&quot;!^&quot;</span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 		BitAnd = 0x0E00 + 0x50 | __BINARY__,//&quot;&amp;&quot;</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 		BitOr = 0x0F00 + 0x50 | __BINARY__,//&quot;|&quot;</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 		BitXor = 0x1000 + 0x50 | __BINARY__,//&quot;^&quot;、優先順位は&amp;と|の中間。</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 		Not = 0x1100 | __UNARY__,//&quot;!&quot;単項</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 		BitNot = 0x1200 | __UNARY__,//&quot;~&quot;単項</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 		RightShift = 0x1300 + 0x70 | __BINARY__,//&quot;&gt;&gt;&quot;</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 		LeftShift = 0x1400 + 0x70 | __BINARY__,//&quot;&lt;&lt;&quot;</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> </span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a>         Ternary_a = 0x1800 + 0x05 | __TERNARY__,//&quot;?&quot;、三項演算子</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a>         Ternary_b = 0x1900 + 0x10 | __TERNARY__,//&quot;#&quot;、三項演算子区切り&quot;:&quot;が使えないのでかわり</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> </span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> </span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 		Assignment = 0x0100 + 0xFE,//&quot;=&quot;</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 		AssignmentStr = 0x0200 + 0xFE,//&quot;&#x27;=&quot;</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 	}</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a> 	internal static class OperatorManager</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a> 	{</span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> </span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> 		readonly static Dictionary&lt;string, OperatorCode&gt; opDictionary;</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a> 		static OperatorManager()</span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> 		{</span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 		</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 			opDictionary = new Dictionary&lt;string, OperatorCode&gt;();</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 			opDictionary.Add(&quot;+&quot;, OperatorCode.Plus);</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 			opDictionary.Add(&quot;-&quot;, OperatorCode.Minus);</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 			opDictionary.Add(&quot;*&quot;, OperatorCode.Mult);</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 			opDictionary.Add(&quot;/&quot;, OperatorCode.Div);</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 			opDictionary.Add(&quot;%&quot;, OperatorCode.Mod);</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 			opDictionary.Add(&quot;==&quot;, OperatorCode.Equal);</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> 			opDictionary.Add(&quot;&gt;&quot;, OperatorCode.Greater);</span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 			opDictionary.Add(&quot;&lt;&quot;, OperatorCode.Less);</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 			opDictionary.Add(&quot;&gt;=&quot;, OperatorCode.GreaterEqual);</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a> 			opDictionary.Add(&quot;&lt;=&quot;, OperatorCode.LessEqual);</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a> 			opDictionary.Add(&quot;!=&quot;, OperatorCode.NotEqual);</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 			opDictionary.Add(&quot;&amp;&amp;&quot;, OperatorCode.And);</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> 			opDictionary.Add(&quot;||&quot;, OperatorCode.Or);</span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a>             opDictionary.Add(&quot;^^&quot;, OperatorCode.Xor);</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a>             opDictionary.Add(&quot;!&amp;&quot;, OperatorCode.Nand);</span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a>             opDictionary.Add(&quot;!|&quot;, OperatorCode.Nor);</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a>             opDictionary.Add(&quot;&amp;&quot;, OperatorCode.BitAnd);</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 			opDictionary.Add(&quot;|&quot;, OperatorCode.BitOr);</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a> 			opDictionary.Add(&quot;!&quot;, OperatorCode.Not);</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a> 			opDictionary.Add(&quot;^&quot;, OperatorCode.BitXor);</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a> 			opDictionary.Add(&quot;~&quot;, OperatorCode.BitNot);</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a>             opDictionary.Add(&quot;?&quot;, OperatorCode.Ternary_a);</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a>             opDictionary.Add(&quot;#&quot;, OperatorCode.Ternary_b);</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 			opDictionary.Add(&quot;&gt;&gt;&quot;, OperatorCode.RightShift);</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a> 			opDictionary.Add(&quot;&lt;&lt;&quot;, OperatorCode.LeftShift);</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a>             opDictionary.Add(&quot;++&quot;, OperatorCode.Increment);</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a>             opDictionary.Add(&quot;--&quot;, OperatorCode.Decrement);</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a> </span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a> 			opDictionary.Add(&quot;=&quot;, OperatorCode.Assignment);</span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a> 			opDictionary.Add(&quot;&#x27;=&quot;, OperatorCode.AssignmentStr);</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a> 		}</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a> </span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a> 		public static string ToOperatorString(OperatorCode op)</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a> 		{</span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a> 			if (op == OperatorCode.NULL)</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a> 				return &quot;&quot;;</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 			foreach(KeyValuePair&lt;string, OperatorCode&gt; pair in opDictionary)</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 			{</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 				if(op == pair.Value)</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> 					return pair.Key;</span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> 			}</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> 			return &quot;&quot;;</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 		}</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a> </span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a> 		public static bool IsUnary(OperatorCode type)</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a> 		{</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a> 			return ((type &amp; OperatorCode.__UNARY__) == OperatorCode.__UNARY__);</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a> 		}</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a>         public static bool IsUnaryAfter(OperatorCode type)</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a>         {</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a>             return ((type &amp; OperatorCode.__UNARY_AFTER__) == OperatorCode.__UNARY_AFTER__);</span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a>         }</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a>         public static bool IsBinary(OperatorCode type)</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a> 		{</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a> 			return ((type &amp; OperatorCode.__BINARY__) == OperatorCode.__BINARY__);</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a> 		}</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a>         public static bool IsTernary(OperatorCode type)</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a>         {</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a>             return ((type &amp; OperatorCode.__TERNARY__) == OperatorCode.__TERNARY__);</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a>         }</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a> </span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a> 		/// &lt;summary&gt;</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a> 		/// 大きい方が優先度が高い。 &#x27;&amp;&#x27; &lt; &#x27;+&#x27; &lt; &#x27;*&#x27;等</span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a> 		/// &lt;/summary&gt;</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a> 		/// &lt;param name=&quot;type&quot;&gt;&lt;/param&gt;</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a> 		/// &lt;returns&gt;&lt;/returns&gt;</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a> 		public static int GetPriority(OperatorCode type)</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> 		{</span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 			return (int)(type &amp; OperatorCode.__PRIORITY_MASK__);</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 		}</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a> 	}</span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a> }</span></pre></html>

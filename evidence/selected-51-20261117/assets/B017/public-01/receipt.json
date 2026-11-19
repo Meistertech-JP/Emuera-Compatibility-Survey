@@ -1,0 +1,19 @@
+{
+  "case_id": "CARRAY_CURRENT_MINCARRAY_CMD_END_OVERRUN_20261115",
+  "mode": "public-01",
+  "identity_basis": "explicit_case_evidence_and_source_path",
+  "inputs_before": {
+    "ERB/SEARCHBOUND01.ERB": "3f1967d5c912b1a206ae4e5307aa64f414e8b07e5900b0c8b42cbff383e31219",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "3f1967d5c912b1a206ae4e5307aa64f414e8b07e5900b0c8b42cbff383e31219",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "55b028184cb72caeee9a46fb2da24e7f0a0d87ccb8a5908c29b684516bd49acc",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable"
+}

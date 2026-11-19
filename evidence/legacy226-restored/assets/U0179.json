@@ -1,0 +1,3472 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "CALLTRAIN"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "TRAINLIFE220_queue-copy",
+    "TRAINLIFE220_queue-unavailable",
+    "TRAINLIFE220_stop-active",
+    "TRAINLIFE220_stop-active-guard",
+    "TRAINLIFE220_dot-cancel-queue"
+  ],
+  "accepted_scope": "Queue snapshot/evaluation/progress/skip/completion matched in queue-copy/unavailable; selected CUP state difference belongs to training cleanup; stop-active return and dot cancellation continuation differences are STOPCALLTRAIN/DOTRAIN interactions. Guarded callback credits only actual reach. No isolated CALLTRAIN defect claim.",
+  "original_required_work": [
+    {
+      "action": "review_existing",
+      "condition": "Parent confirm the documented CALLTRAIN difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+      "case_ids": [
+        "TRAINLIFE220_queue-copy",
+        "TRAINLIFE220_queue-unavailable",
+        "TRAINLIFE220_stop-active",
+        "TRAINLIFE220_stop-active-guard",
+        "TRAINLIFE220_dot-cancel-queue"
+      ],
+      "source_refs": [
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+          "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+          "start_line": 290,
+          "end_line": 290
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+          "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+          "start_line": 849,
+          "end_line": 855
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+          "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+          "start_line": 171,
+          "end_line": 181
+        }
+      ]
+    }
+  ],
+  "requirement_mapping": {
+    "kind": "command_or_syntax",
+    "name": "CALLTRAIN",
+    "remaining_index": 0,
+    "exact_current_remaining": {
+      "action": "review_existing",
+      "condition": "Parent confirm the documented CALLTRAIN difference against the cited raw fixture and source branch; separate behavioral/state differences from diagnostic-only/layout-only differences. No implementation or repeat-until-pass required.",
+      "case_ids": [
+        "TRAINLIFE220_queue-copy",
+        "TRAINLIFE220_queue-unavailable",
+        "TRAINLIFE220_stop-active",
+        "TRAINLIFE220_stop-active-guard",
+        "TRAINLIFE220_dot-cancel-queue"
+      ],
+      "source_refs": [
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+          "member_sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+          "start_line": 290,
+          "end_line": 290
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+          "member_sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+          "start_line": 849,
+          "end_line": 855
+        },
+        {
+          "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+          "member_sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+          "start_line": 171,
+          "end_line": 181
+        }
+      ]
+    },
+    "resolution": "satisfied_for_parent_adoption_with_corrected_finite_scope",
+    "canonical_case_ids": [
+      "TRAINLIFE220_queue-copy",
+      "TRAINLIFE220_queue-unavailable",
+      "TRAINLIFE220_stop-active",
+      "TRAINLIFE220_stop-active-guard",
+      "TRAINLIFE220_dot-cancel-queue"
+    ],
+    "components": [
+      {
+        "condition": "confirm cited raw fixture",
+        "resolution": "satisfied",
+        "evidence": "raw_readback and actual hash_verification"
+      },
+      {
+        "condition": "confirm source branch",
+        "resolution": "satisfied",
+        "evidence": "verified archive members and numbered source_branches"
+      },
+      {
+        "condition": "separate state/control from diagnostic/layout/instrumentation",
+        "resolution": "satisfied",
+        "evidence": [
+          "CALLTRAIN_queue-copy",
+          "CALLTRAIN_queue-unavailable",
+          "CALLTRAIN_CUP",
+          "CALLTRAIN_observer",
+          "CALLTRAIN_stop-active",
+          "CALLTRAIN_stop-active-guard",
+          "CALLTRAIN_dot-cancel-queue"
+        ]
+      },
+      {
+        "condition": "reconcile record",
+        "resolution": "resolved in review proposal; parent shared-record adoption pending",
+        "evidence": "CALLTRAIN progress equal, CUP onset after sentinel, actual COM0 then USERCOM, STOP/DOT attribution"
+      },
+      {
+        "condition": "no implementation or repeat-until-pass",
+        "resolution": "satisfied",
+        "evidence": "zero engine runs; review only"
+      }
+    ],
+    "unresolved_mandatory_evidence_gaps": []
+  },
+  "review_path": "evidence/calltrain-copychara-parent-review-20261115-resume/REVIEW.json",
+  "review_sha256": "31d75bde33191e14bd2fc12ddfbc56eb58beb634ee57fb4428e2c698ecf79b37",
+  "evidence": [
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-cancel-queue/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-cancel-queue/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-cancel-queue/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-cancel-queue/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-copy/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-copy/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-copy/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-copy/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-unavailable/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-unavailable/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-unavailable/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-unavailable/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active-guard/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active-guard/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active-guard/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active-guard/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/emuera.log",
+      "sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/execution.json",
+      "sha256": "9ac910395c6b3f0a5bf19b73a9466d79be80692342efbecd7f6b6c79eec73662"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/log.decoded.txt",
+      "sha256": "d3bd947c2d6e71334635abbca28663448ee8c8de24b7bde429f260af83328c4a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/observed.json",
+      "sha256": "31368ee50251f7a5707a165c03b39dc4a7f2087f42dbbcebff5697b1d0c252de"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/prelaunch.json",
+      "sha256": "2d7f4d6a4c15fec235d0139fd5da9e19d6b09c13820933d39fcfef1c105bfe93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/probe.json",
+      "sha256": "147624ca4aad83543e8ebb938067fdc98bc197722cd222c7ebaf5524d92fe6b0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/runner.stdout.bin",
+      "sha256": "70843d12d00b04f47de745474829b1254afa84ca2079360a58904ac4d4e26ce5"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/emuera.log",
+      "sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/execution.json",
+      "sha256": "cafdf6c83d42f79157d213400ea00eab0e21b4dd2f668e8b6befa0e53264f909"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/log.decoded.txt",
+      "sha256": "d3bd947c2d6e71334635abbca28663448ee8c8de24b7bde429f260af83328c4a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/observed.json",
+      "sha256": "d986b5d368636175123b3e9736a73fb517a52bd792422002a757281b66d6a439"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/prelaunch.json",
+      "sha256": "e9847041927c3c3d98f084d51589319b3bbe777884854aa4bdb0b9b08eeb187b"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/probe.json",
+      "sha256": "4c8e3c1fa3b37a0fe2897cbf2dbe09def0bb88bad0cbc426ba0d4a4a6e081eb1"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/runner.stdout.bin",
+      "sha256": "2ec18f9a7cde9334d93efb59bd445baf8e0113709917591c1bebf27c78162d51"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "8b37133683c05b14520c5d97b5b57f17a0c30eaecdf030eb9650568d689d2d15"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/.pyemuera/logs/output-20261113-133839-228925.txt",
+      "sha256": "0682cccde46e676d937365e392ea623b34d50de76e14c9c145a83c24a2f51ad3"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "be0d0ed1f5a69614b3cbe92046a97418d34a92307efc3e7a1de6b2e137c8c142"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/execution.json",
+      "sha256": "9ffbdb9ef50a5363b318427c905bfc9f13177ac70e62c84446de2c554aba2818"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/log.decoded.txt",
+      "sha256": "ee367340acfb8fc949211667858808d77788f80e7d930b9c9c5a16e4d81a2f45"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/observed.json",
+      "sha256": "3284632ef8c3b0655139405ec742ee450bc7afc586ecb603e6d182a425677243"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/prelaunch.json",
+      "sha256": "344414fab67329e9907fd4ed9723f8f5cb53bb2c5f320b9a0d4ac66da03546e6"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/verified-public-pyz.json",
+      "sha256": "04a02bc2c8ddbb13019a7c3fc095a9efcd6f91fd19400adff15d84169f7ce923"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/verified.stdout.bin",
+      "sha256": "e4c6e60ba7b8ebf2b8998d579d7bc82623bdd76623755836177463f3f37429fd"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/emuera.log",
+      "sha256": "304b38a74db8b1b27b85f3f5bdf1276688d74738f18047105f01f3ff51f4dd97"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/execution.json",
+      "sha256": "e0478cd41e007f1001e6fd2e94180332d2168c1364ffac9ab2a2d33314941b03"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/log.decoded.txt",
+      "sha256": "c40d9b7f456fca66c8a9ad5487223e66849ea568e2c6a7e0bcc32c20e0216b89"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/observed.json",
+      "sha256": "0c761e0d3deeb1995cfb21d1fdfa09f77f132ec54ab7b2e371b310fa9fc01cec"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/prelaunch.json",
+      "sha256": "4aa0a4f298df101afbab7a669a8c903c5b477a3cb51cc24228596f9b4b3bd3ee"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/probe.json",
+      "sha256": "0b3eadfd180f3016cc517aa9125158286a25ab9507f8b9d22e5c2c08b2d33829"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/runner.stdout.bin",
+      "sha256": "a878e80a97e223ceb1172aa6203ee11950eda0c2561a50ea13bad0d3dcd1ea0a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/emuera.log",
+      "sha256": "304b38a74db8b1b27b85f3f5bdf1276688d74738f18047105f01f3ff51f4dd97"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/execution.json",
+      "sha256": "84786d50bd478f8b49c587ab7f664384d03906180fb3b96b48733e311bfa6c6b"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/log.decoded.txt",
+      "sha256": "c40d9b7f456fca66c8a9ad5487223e66849ea568e2c6a7e0bcc32c20e0216b89"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/observed.json",
+      "sha256": "084901c0b7f0dd5aec93d7c42f0369575b71378a07a854203a814acfd50954ef"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/prelaunch.json",
+      "sha256": "a99134a0b7f7f8d6221821f0adab7592296782933633386f6f52291832c6a1b0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/probe.json",
+      "sha256": "80beef1ef0d6149eb47cbec1404a15d386c72be4a70f7a46bf827d2bd4ad60fe"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/runner.stdout.bin",
+      "sha256": "d2a5a1f37a54663c5f18c226d58fe7ad2c44afbf3285d916ad3ec052a4bf6c07"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "36b467c4447443624291ca359a12845dad9187cd10a61d06cd1196184b0bd1ec"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/.pyemuera/logs/output-20261113-133605-059629.txt",
+      "sha256": "8c66b025645431eff70bb2619afa5fb8aefa2dd40bda3c7f57c0b98e24362dcf"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "f8344a81ec8df6c2a58f0762303b1b44c5f1066c65e172d382e09c841d78cbbf"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/execution.json",
+      "sha256": "3c4fb7df24bd32c97206e969c07e0f924250339db3c7d351467201618d76a99c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/log.decoded.txt",
+      "sha256": "c9b79495ce2f097ddf73102adf1e139a0400da50ebb4116c499d57d852ab8b1f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/observed.json",
+      "sha256": "ca6a514412ed73936e5d8a650987da6a4f4d8edfe1a03be46c2c7ade3d22bb4a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/prelaunch.json",
+      "sha256": "ffd853c32abe440b80bcedac94ab2b82a8655307d7a995486e9820a9c5fefdd3"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/verified-public-pyz.json",
+      "sha256": "e5c0a9213cb2a622856ff8e58ae4bfdd652ce03b7520221c5231f9e891f7b1c4"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/verified.stdout.bin",
+      "sha256": "717c1310a415d0b0aba7325c1ba2927270748080faa3994332dd610fef881df8"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/emuera.log",
+      "sha256": "f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/execution.json",
+      "sha256": "38bbef406cfbe41999ab6c14463bdaefbdf02df5ee8b71dd94d2856e2cd79974"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/log.decoded.txt",
+      "sha256": "8e5c57b03f8c47906cd30aebf1542c33d1d67708862fa883870bd69668de16e6"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/observed.json",
+      "sha256": "cc678a55f67feae01352aa49156bfa5b52583181abbba65634f78a51a37a3ed7"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/prelaunch.json",
+      "sha256": "06e5a109827d71eed2fa002613b4e3793cbf243ddaa6970d1e7109276f3d1464"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/probe.json",
+      "sha256": "1c29363b9d720180665509c2725a453fdc1a3e6cdef611116098fb5807b31429"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/runner.stdout.bin",
+      "sha256": "e9d14323c90079abf5beb87608b0c89ab92a44da06884f1578c1b7d953f79beb"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/emuera.log",
+      "sha256": "f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/execution.json",
+      "sha256": "f9a8933289e0dcd68a4536acc6b98304408813889d59e3dfe0ec166ff0fe9a09"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/log.decoded.txt",
+      "sha256": "8e5c57b03f8c47906cd30aebf1542c33d1d67708862fa883870bd69668de16e6"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/observed.json",
+      "sha256": "16489a8cc4b50dfbf40a7a16c6615512d97ec21a8dabfdd2e49cfa882c108c55"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/prelaunch.json",
+      "sha256": "109817aee0930da416893875eb4e312602765bcf6ff7f0600715f505b37fc4d0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/probe.json",
+      "sha256": "881c95ce1d7b1a132a2c73ae006be88f46b3e92cc0014f533eb0d93826640f50"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/runner.stdout.bin",
+      "sha256": "a6a3f3654d81d4c60751b51fc673ad5ad6564864de71e9557df0b6bfe68331b7"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "17a766ef4434b64a6ac2d0fc950cac236fcd956bc195f446c55da1c3cb01c3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/.pyemuera/logs/output-20261113-133631-806007.txt",
+      "sha256": "ae1de93af42eec65ca3d8d1b52397bdcf9f4fc4d1935c76cc73cc78b0bb986b0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "08a4b160847f2597b9abb12ac415dfa34210893b1fb5f302c09835b407ae4f3d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/execution.json",
+      "sha256": "38d2e6d1ff8dea66f031bb988b8c50e844c1d6f64f56460ea60d7c3e82ffe7ed"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/log.decoded.txt",
+      "sha256": "119e1a78f319a0816a7d6286c2b84b712f0d2a045d26598f2581f8ed130b5586"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/observed.json",
+      "sha256": "56a26e9d45a8eb569d3852616beed745dfcbaafa44c15b65ec2652f29aaae5f6"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/prelaunch.json",
+      "sha256": "c8b1d3c007bf70268ca060d5c60050fb6a29bac37eaf571eed049251cc47a73a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/verified-public-pyz.json",
+      "sha256": "129a800044f72bf4b42a47d42cee058cb9c832abf163510eece8ba88b6b8d43e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/verified.stdout.bin",
+      "sha256": "460cc4ff176136d20c1bbcc8cde49cda8066228e37c4d4614f61e0f26b551236"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/emuera.log",
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/execution.json",
+      "sha256": "a9a4ceb4423a4ec640e6f65a01e294f0626fdbb0757ec08f4c116ba6af032790"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/log.decoded.txt",
+      "sha256": "70fd95288069cb1139ee0b7e415c48a184d2302e65fbf05248419e2c16f122b0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/observed.json",
+      "sha256": "a80e214c9fa717dc1d41f85b2e63aacf99a03dc10d55dbb2f9dfa3a14a3ac882"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/prelaunch.json",
+      "sha256": "32f1f256470326bbd5305f0bfc6bf69654dda900612545a6ee6aa23afcce7871"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/probe.json",
+      "sha256": "31c8e79a11defe423cb09a38aeb30343e7fba5c6509cb39ea7b928e2bcf2b496"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/runner.stdout.bin",
+      "sha256": "2974f118def5497ce7cadc2d07f39124fed610ae8681f1a6abdaf071f24970cf"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/emuera.log",
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/execution.json",
+      "sha256": "0bfe5c68d8fded3bbb2d7bf3389b852ecfa44313cbf7e5c4d7747fa0053d9fe4"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/log.decoded.txt",
+      "sha256": "70fd95288069cb1139ee0b7e415c48a184d2302e65fbf05248419e2c16f122b0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/observed.json",
+      "sha256": "a2c725be342ac240db1b20e9c5a319aea483f8d0a18492e0ac64f4bf903640a6"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/prelaunch.json",
+      "sha256": "cbfd39f3b1251a41745c3fd41c6f1e0d5cec0085e6496185dd759219ae0308e7"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/probe.json",
+      "sha256": "a2b925a51a86625f4d458d87ef2c7f3f398f7344e3d52d5df57a4dc5762cde11"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/runner.stdout.bin",
+      "sha256": "c9647e4f6c4fec14c9acb0e11c8b1ec75b0af204948240275c7a9c1af0cfabd4"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "0e4b7638b493c3447d2f7fbe89e8dc23e09ec3ec1df478de0f63558013810d90"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/.pyemuera/logs/output-20261113-133642-684945.txt",
+      "sha256": "242a037954b717f28c367193bab7ca222861364ff5a2b8a1a14fbe5129ef3e5c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "19cf1d3a04a3f8a7583bdebdc165142f7dea7a8a6e3847eb147ecf8577ecb58e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/execution.json",
+      "sha256": "71885afa6126141aa45ba1e4652febf46206f9b38dcebecce6f302a90c3ea67f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/log.decoded.txt",
+      "sha256": "3863dbab58d3bcd9c0abf7e07ea99d1b1bfd364f23d7ea1a9338fa32b300c897"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/observed.json",
+      "sha256": "2b19b0fe3b2ffde28bb82a9b7443ce2b4be272ced413c2e075e8caae313660ed"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/prelaunch.json",
+      "sha256": "f233338de8ca7319e9a271094d6c47294e6c68c29e37177dadf719f75a8f9dbe"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/verified-public-pyz.json",
+      "sha256": "1b093af08e73a3fba6e561564285e4a8466cf1c974988eaba23d589edeac7608"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/verified.stdout.bin",
+      "sha256": "3d4f902e986a48d1536d9d55676dc5e51bec8cd25df38a6779cc22c97e4bcedc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/emuera.log",
+      "sha256": "3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/execution.json",
+      "sha256": "754ea63e723ac9987f418166a37c3b8d6e943598bc8608a9b7f842c45fc3e149"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/log.decoded.txt",
+      "sha256": "a13783b872d7d16c720a8c638365e06af090db1849e2976adf090dcbbe4d0a5f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/observed.json",
+      "sha256": "fc985fe865d9a87a0dcf5e27fa43d7f2aa38a87fd4cb2579a35f8ccfa457d414"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/prelaunch.json",
+      "sha256": "5907a5e966b1bf4958877a44b9aa1bff8455e318dd08fe2b81f391140637c839"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/probe.json",
+      "sha256": "367b5db766903d0e67a84ddf8d12de060a0ae3ebd4f81a4d88b4df90e1eec8e2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/runner.stdout.bin",
+      "sha256": "52347aac08371c776ae1ee2ec6f342201cc8c2de8a3e7c7807c760ea78473805"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/emuera.log",
+      "sha256": "3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/execution.json",
+      "sha256": "cb7444dcad327a7763ab5a0ca33acd88414bb10816db69372c90d7a22da4c8f4"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/log.decoded.txt",
+      "sha256": "a13783b872d7d16c720a8c638365e06af090db1849e2976adf090dcbbe4d0a5f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/observed.json",
+      "sha256": "f0915b9820389b030fa0e5652cfddfd821453ae01cc746ef3fe7c24f9849e507"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/prelaunch.json",
+      "sha256": "101389769696f1eb39ffe360b152d8166aa9eb01915d33fce28e005f5caa32a5"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/probe.json",
+      "sha256": "e959fa445fa2df8f8fc4fdc2a478f2e6e6fdf1a06b32ee8c22ea6ec6158d2845"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/runner.stdout.bin",
+      "sha256": "66c190bd488b236eb37e12241aa6de9976298b13972eff1fbfa2ee2f48cf4cba"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "e161ec88debfd21e6dd3be59f481d1ce58d2d33ded0befbdfa6c7cedbdc23665"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/.pyemuera/logs/output-20261113-133828-309526.txt",
+      "sha256": "9d9dfcb33ed1cba9ccd809f5fae704a5072e16918c510eb251e0443d1258d161"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "f461d5e983692941c5a7cf66e60965c3aa5c76a1266b915f5425087cb9d320ac"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/csv/CHARA0.CSV",
+      "sha256": "f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/csv/TRAIN.CSV",
+      "sha256": "343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/execution.json",
+      "sha256": "a183dcef17986821d8291dbe6c60559e3ab5e481b0e7275c508709f172446989"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/log.decoded.txt",
+      "sha256": "db7026212d2dbff427697c5b0617c722c8369e58da46f5f530ce509cc0dc0c5f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/observed.json",
+      "sha256": "ff84c5c69e3e58412a27dd325bbb179cf8f5f9a55e81fe17ce52d51218f8fe8f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/prelaunch.json",
+      "sha256": "9c751d7f23f28950c26dc33c4f148191494bba5bfe10ce886088229c14498a8c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/runner.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/runner.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/verified-public-pyz.json",
+      "sha256": "c2327e143f3866aff314aec3d6314d9c1b724741455434af86a31895a256c221"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/verified.stdout.bin",
+      "sha256": "f386835f7fd42f68de7273611736fe4f833e3e1d045858f7e3272f4a1d3ce971"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameData/Function/Creator.Method.cs",
+      "sha256": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameData/Variable/VariableEvaluator.cs",
+      "sha256": "bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/ErbLoader.cs",
+      "sha256": "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/Process.cs",
+      "sha256": "ef8ecc12e0321091127f600e581932986a50d2bd94b22fc4acae82921507e362"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/Process.ScriptProc.cs",
+      "sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/Process.State.cs",
+      "sha256": "e47ce67d2e04940081a11ad057003aad88adaafca41bca5107fdd190fdc06b23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/source/GameProc/Process.SystemProc.cs",
+      "sha256": "c0d2aac19be4d4e7265bcd1cd4c6775d60bca59762c121b03589d3d081f15a51"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/controller.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/controller.stdout.bin",
+      "sha256": "294dfcced50773e9da96956c3e52c5cfb8a8f73adc9b60af5f1ff1d4a9c7489b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/INVOCATION.json",
+      "sha256": "2915434459a4457c2c5781c699195a9cd3ba46c2f5605997b6b559736b78d45b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/PRELAUNCH.json",
+      "sha256": "b4c1c906a26a72c4f7893a2b4515007dba0c16b8f9e2dc02aa5e337349ad48a5"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/probe.json",
+      "sha256": "c65a142b202ec8d451242a5a628addbbf2db539835d0bdfc602fc1f65541f09e"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/controller.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/controller.stdout.bin",
+      "sha256": "40e01ff04808fb8081beb5761179e467405b1dcf318b699c2c39d92c671edf72"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/INVOCATION.json",
+      "sha256": "28e36892ba7c79521b8760f160a13902b76c996801a673d58cb597f2371c5229"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/PRELAUNCH.json",
+      "sha256": "ee598f6ac399782ec719caf6b5f36fbb990d163e0dfe181e673255939ac14bc1"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/probe.json",
+      "sha256": "69a8b8653c24675ef0466349940057afa43724a06be8c32c9d66932f5ebaa05c"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/.pyemuera/logs/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/.pyemuera/logs/output-20261113-151448-538050.txt",
+      "sha256": "17f73dbacef8060463c33cf1831777f029ba0f18ad43ee18ca833086ff07adeb"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/.pyemuera/logs/output-20261113-151448-560050.txt",
+      "sha256": "119ef66571b5078d14947c748632e023299384120d69a30149774c47bf1da02b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "c94806ef6ffc53f4e2acc7c77e84b5a4151618fc19654e26e4d590aa95ce01d3"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/controller.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/controller.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/INVOCATION.json",
+      "sha256": "5da648fb56cb34ab5d3a3652e4de687a10611db31a55e70c1370257f0abafdcc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/PRELAUNCH.json",
+      "sha256": "0003a0a0ea575e33d7a38cf7c274b34092f0114c4d2357aff5fc1edcc34b52cb"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/verified-public-pyz.json",
+      "sha256": "24b3e9b0f1199fa07da6a51ae388f675794520f98cba1121440950d5ab6f8e8f"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/verified.stdout.bin",
+      "sha256": "a71b8bf21d57d41d79d355dfab7c9650492e00ae8f381c75f9c7d2e17c87750b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/controller.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/controller.stdout.bin",
+      "sha256": "7b1c56bc98b11832aea8d0d2eb63703179e0f62d9bd0d3b354ec5a15637fef71"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/emuera.log",
+      "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/INVOCATION.json",
+      "sha256": "ea4717ee1e77dc30e2e9393e0d8e4c0ba348f8c65db6d9b2de4030e4b53315a5"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/PRELAUNCH.json",
+      "sha256": "9d32e9fed5a9d9a05129b1c46ddb248c6cc2ad986f8e46cf016ec7112cff8578"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/probe.json",
+      "sha256": "8e5219db9396430440ca7ad0afb9ea6efa47fe2698dee4b94d87546ba46ec887"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/controller.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/controller.stdout.bin",
+      "sha256": "f0524b5f1eb258af43e14521f03220ae7f856cf1da1b844de70cce0be4700557"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/emuera.log",
+      "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/Emuera1824+v24.exe",
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/INVOCATION.json",
+      "sha256": "9c05b3e13f016b269324fc1e684afcf0de29fe077cd97e69b2bbb617f0faad49"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/PRELAUNCH.json",
+      "sha256": "4ba1c5cf4930d439b4a089630078829a0fabd1edb1cef9fcd068d71d0c62af92"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/probe.json",
+      "sha256": "1ff8c1cab0331e3adc93fb6a30ecbac124561cd7c95e691a53cd3900e6619324"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/.pyemuera/logs/emuera.log",
+      "sha256": "d81bff7c90ecc65a7f2fce5f0125341bdd785a6a3721f39b6da90286dafe8418"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/.pyemuera/logs/output-20261113-151459-717994.txt",
+      "sha256": "7ed3b5f477720679c35debff4bacc45eb647310a4123a7da8fd5df1381eb3c30"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/.pyemuera/logs/outputlog-manifest.json",
+      "sha256": "7368bcbf2e418c21a8c2834b222b0d68f86e3b8e36e7f2a01759fbb49734d6ca"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/controller.stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/controller.stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/emuera.config",
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/ERB/SEARCHBOUND01.ERB",
+      "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/INVOCATION.json",
+      "sha256": "51528b007f74f34c6cfab5e57fd87c83a86e1f607946b5796a73004041a40cd6"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/PRELAUNCH.json",
+      "sha256": "878bf83b2c257650b3cb49a73c4e0cafed56c7046f8533b9494bea82bc06771e"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/verified-public-pyz.json",
+      "sha256": "7d0a136a55bfe6f7141d5e4d4daa313715388ad71fc3c4627cb811db51587262"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/verified.stderr.bin",
+      "sha256": "e319a40132558220daae96f0c76a93a7f7ef47601c7d87eb797fbcaa5a08b32b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/verified.stdout.bin",
+      "sha256": "1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/PUBLIC_character_commands.py.txt",
+      "sha256": "70b5c882af696b41854af10bc3c793ffb687fe7263ab79a5ce0f2b9bc8fa3768"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/PUBLIC_expr.py.txt",
+      "sha256": "4e5a810aa8e360651fb186523dece345a4dae903f7e08762b4e90c088e4c9e52"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/PUBLIC_SOURCE.json",
+      "sha256": "9c49c7280f742b514d8b3f3e0450bcb701044c29d1ca38e947cb95b658df4a1c"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/PUBLIC_text.py.txt",
+      "sha256": "0bd28a2589888140c38df35e83c57113efb4e0d55073d5ffb2db7dea64eb82ca"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/source/GameData/Expression/ExpressionParser.cs",
+      "sha256": "7b2700f4ace3e64e4070470fd0456547bdcfd7d75d836935baeb62bfec4f5baf"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/source/GameData/Function/Creator.cs",
+      "sha256": "b2e5f60c5457741208ba99b991cced5106b22834b00347876dea411a3e0dd36a"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/source/GameData/Function/Creator.Method.cs",
+      "sha256": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/source/GameProc/Function/ArgumentBuilder.cs",
+      "sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/source/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/source/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/fixture.ERB",
+      "sha256": "cd83f12b8767d4e6b064eeba0786fbe491c11e38d7d6b8f468d70a9df3f20aff"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "cd83f12b8767d4e6b064eeba0786fbe491c11e38d7d6b8f468d70a9df3f20aff"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "cd83f12b8767d4e6b064eeba0786fbe491c11e38d7d6b8f468d70a9df3f20aff"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "cd83f12b8767d4e6b064eeba0786fbe491c11e38d7d6b8f468d70a9df3f20aff"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/fixture.ERB",
+      "sha256": "5784beaa9c97cf5e8d777bfd5186a4411cab24b2fd31cb5e3523c6c70a1ecd7b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/fixture.ERB",
+      "sha256": "bbdd05a37337fd5a9b7acb1d8b23bd9fd38db8760556dce218caba530347bd20"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/fixture.ERB",
+      "sha256": "5b408652e6840192572ee06ac39a93cbee7b32ed0be15d801085ad27d1ebe899"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/fixture.ERB",
+      "sha256": "4689efa319c925cc99bd6f29d1e1068d6ba5dfea88c057f050ce0f29e8a3147d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/fixture.ERB",
+      "sha256": "1e845c40a598b52e96968a0e1be43c7917b2b9ee5728a017094709b382476b4e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/fixture.ERB",
+      "sha256": "0c2e53752650fdde3cca10780e02a2ed10f3f85a184da16ba241f112bf30bd0c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/fixture.ERB",
+      "sha256": "6890c7ee160c8e580eb673a0f9191fc36c00e729eebb3d38974c43f6892c1611"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5784beaa9c97cf5e8d777bfd5186a4411cab24b2fd31cb5e3523c6c70a1ecd7b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5784beaa9c97cf5e8d777bfd5186a4411cab24b2fd31cb5e3523c6c70a1ecd7b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5784beaa9c97cf5e8d777bfd5186a4411cab24b2fd31cb5e3523c6c70a1ecd7b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "bbdd05a37337fd5a9b7acb1d8b23bd9fd38db8760556dce218caba530347bd20"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "bbdd05a37337fd5a9b7acb1d8b23bd9fd38db8760556dce218caba530347bd20"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "bbdd05a37337fd5a9b7acb1d8b23bd9fd38db8760556dce218caba530347bd20"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5b408652e6840192572ee06ac39a93cbee7b32ed0be15d801085ad27d1ebe899"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5b408652e6840192572ee06ac39a93cbee7b32ed0be15d801085ad27d1ebe899"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5b408652e6840192572ee06ac39a93cbee7b32ed0be15d801085ad27d1ebe899"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4689efa319c925cc99bd6f29d1e1068d6ba5dfea88c057f050ce0f29e8a3147d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4689efa319c925cc99bd6f29d1e1068d6ba5dfea88c057f050ce0f29e8a3147d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4689efa319c925cc99bd6f29d1e1068d6ba5dfea88c057f050ce0f29e8a3147d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "1e845c40a598b52e96968a0e1be43c7917b2b9ee5728a017094709b382476b4e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "1e845c40a598b52e96968a0e1be43c7917b2b9ee5728a017094709b382476b4e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "1e845c40a598b52e96968a0e1be43c7917b2b9ee5728a017094709b382476b4e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0c2e53752650fdde3cca10780e02a2ed10f3f85a184da16ba241f112bf30bd0c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0c2e53752650fdde3cca10780e02a2ed10f3f85a184da16ba241f112bf30bd0c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0c2e53752650fdde3cca10780e02a2ed10f3f85a184da16ba241f112bf30bd0c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "6890c7ee160c8e580eb673a0f9191fc36c00e729eebb3d38974c43f6892c1611"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "6890c7ee160c8e580eb673a0f9191fc36c00e729eebb3d38974c43f6892c1611"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/py/ERB/SEARCHBOUND01.ERB",
+      "sha256": "6890c7ee160c8e580eb673a0f9191fc36c00e729eebb3d38974c43f6892c1611"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/native-01/emuera.log",
+      "sha256": "1d9bc3d4d4e8c0e8799811ef97dfbf68b992412ad88f0d68d10d17b6029b490b"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/native-01/runner.stdout.bin",
+      "sha256": "61fa922c6a6c3b7189b8e69c05f927875cefa2ab88f8e8948d5f0d0569dbd65f"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/native-02/emuera.log",
+      "sha256": "1d9bc3d4d4e8c0e8799811ef97dfbf68b992412ad88f0d68d10d17b6029b490b"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/native-02/runner.stdout.bin",
+      "sha256": "4c4a10400896a4d48ecf95ba19bad7aad9947483a7112f82a1c12ac509691c2e"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/py/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/py/verified.stdout.bin",
+      "sha256": "e5fdfcf89c481e2c70364a427b428e703d571b26b25c6c30c4b168a37311c242"
+    },
+    {
+      "path": "evidence/character-lifecycle-20261113-183/COPYCHARA/py/.pyemuera/logs/emuera.log",
+      "sha256": "1d9bc3d4d4e8c0e8799811ef97dfbf68b992412ad88f0d68d10d17b6029b490b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/native-01/emuera.log",
+      "sha256": "d20a0314b5ecbf67034a099ead4f9133763c87f6ee069dcc1d67db0fdd9cf5d3"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/native-01/runner.stdout.bin",
+      "sha256": "830c9474a1d5e194f858b4f3b45eab0568f41ef3bfb89c4bdde32281c844ea08"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/native-02/emuera.log",
+      "sha256": "d20a0314b5ecbf67034a099ead4f9133763c87f6ee069dcc1d67db0fdd9cf5d3"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/native-02/runner.stdout.bin",
+      "sha256": "7effbfc7466039a1bd67f6bbe7828f16f584a0596dc0eea7c68ea45f865b2a98"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/py/verified.stdout.bin",
+      "sha256": "50c646822a947765a0eb950a33ebcc738b8c81c601fc7d99cfe79899aa0e1adc"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth/py/.pyemuera/logs/emuera.log",
+      "sha256": "f35e37441424a0a7005f0e3e0ad0adde038521c80dc4231964191d6b977e0161"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/native-01/emuera.log",
+      "sha256": "d5d01c7e464786cad311bd6e27d4c4aea207778164addda6f02cf00ea843e748"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/native-01/runner.stdout.bin",
+      "sha256": "e6be662a29f71cfe15b69d2d47a4efd776021c5bdba17bcce36a8006d54b0153"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/native-02/emuera.log",
+      "sha256": "d5d01c7e464786cad311bd6e27d4c4aea207778164addda6f02cf00ea843e748"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/native-02/runner.stdout.bin",
+      "sha256": "c0037887412a91cc560851dcf10d63f989a1e223faeca556ec94f794901eb8d8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/py/verified.stderr.bin",
+      "sha256": "143409e6b952c6c2928da0ef58f9b094e6f4df6b3de8445d2e7724ed482d45b8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/py/verified.stdout.bin",
+      "sha256": "ac489e59b725b65b677e4ccadef8905fe76acec8a76a663268df925d0ae32d92"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_dynamic_growth_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "41e8ef796c9e881e67e9730c35cfaa940fb92f4821d5b0ad9bb213743d09d0a5"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/native-01/emuera.log",
+      "sha256": "a7c4b21fd632c1127cb386b2feea95d3cbbd34545c1c1e03ed8352a17eb63620"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/native-01/runner.stdout.bin",
+      "sha256": "239cceb149911b340274f31dadf6e195cc6af4e1e3ae9958f965d729541234c0"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/native-02/emuera.log",
+      "sha256": "a7c4b21fd632c1127cb386b2feea95d3cbbd34545c1c1e03ed8352a17eb63620"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/native-02/runner.stdout.bin",
+      "sha256": "ced09a2423047debb4618dddf11b0d9977fb3fcb06a61c8fd5242110c458a62a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/py/verified.stdout.bin",
+      "sha256": "e6b099f62bdb1635a07783fa8cf039ca4acb6a43c26e4cfeeba3497a740dbf0a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper/py/.pyemuera/logs/emuera.log",
+      "sha256": "81c6429640e8fe69ff83172c23dd1d85fe1ac0f0fa885bccfa54a4af765b283b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/native-01/emuera.log",
+      "sha256": "a888654f2d3272c558dca550b6b0e106c0c23a000ed03872351ffddfc405fe80"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/native-01/runner.stdout.bin",
+      "sha256": "2644209742ad6428fcff7628785653c63c4191328545d21e7411cd081383c738"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/native-02/emuera.log",
+      "sha256": "a888654f2d3272c558dca550b6b0e106c0c23a000ed03872351ffddfc405fe80"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/native-02/runner.stdout.bin",
+      "sha256": "b4486b1fe9dba8da89c9203d567078d3a52f4abfe44fc840491adb2f8caf2cfc"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/py/verified.stderr.bin",
+      "sha256": "143409e6b952c6c2928da0ef58f9b094e6f4df6b3de8445d2e7724ed482d45b8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/py/verified.stdout.bin",
+      "sha256": "8398c8276aafd5032f68615f7eeda6be260f12dc7ce88669d949766df2282985"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_invalid_then_helper_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "178d25e97b70909d1a563501bb04f523bf5ec43c0fc63cb48246b9a74602e385"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/native-01/emuera.log",
+      "sha256": "eb7f8ea49296fafed2e87506fc12c01c1f14513df338307fa5648f8430bd0f22"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/native-01/runner.stdout.bin",
+      "sha256": "b83791e6624f13006efd2d1edfb45748c5c5bdaa95ccaea7d628a93517dd13aa"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/native-02/emuera.log",
+      "sha256": "eb7f8ea49296fafed2e87506fc12c01c1f14513df338307fa5648f8430bd0f22"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/native-02/runner.stdout.bin",
+      "sha256": "89094a0c0259a2aec9188e3359beb44c648ff9b4516ee14b742dc9aca764146c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/py/verified.stdout.bin",
+      "sha256": "1a21b80c8d71900e35d71a2c6b72a032ee9c443cfb52dee959836d5daa8e40ce"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid/py/.pyemuera/logs/emuera.log",
+      "sha256": "66ced7661f0e349f6733e1e10f06c67a3d42259d29478388ada9250b77ab62c1"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/native-01/emuera.log",
+      "sha256": "c48288050cfed1ebeea106aba9fe471fffd623a3ee15c6f9b49391f91a7b366f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/native-01/runner.stdout.bin",
+      "sha256": "8fe125feb6e564b998f6f0eff378bc15bd3bc4dd13dbc517e2ece6db2079a817"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/native-02/emuera.log",
+      "sha256": "c48288050cfed1ebeea106aba9fe471fffd623a3ee15c6f9b49391f91a7b366f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/native-02/runner.stdout.bin",
+      "sha256": "a722d04f5944d657d8c674f9dd8486028c42ce17b185fb859d0119608445454c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/py/verified.stderr.bin",
+      "sha256": "143409e6b952c6c2928da0ef58f9b094e6f4df6b3de8445d2e7724ed482d45b8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/py/verified.stdout.bin",
+      "sha256": "0de789c37449df59fd989be8143a821056d39c700de91e1bb2a87b669cbfa9d3"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/addcopy_valid_then_invalid_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "25b43e84d6b08b3a38c99cfaa51cf910514944632e425df35d92f1654e72b883"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/native-01/emuera.log",
+      "sha256": "a0adfc06d6e0f2b3bc4e34cb488994a3bb4fc749eab6a20792ec9c377721efd7"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/native-01/runner.stdout.bin",
+      "sha256": "4ab62a4a420ab23dd760d062f5e3839da791d7c9d59caa25ddc073908364b30d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/native-02/emuera.log",
+      "sha256": "a0adfc06d6e0f2b3bc4e34cb488994a3bb4fc749eab6a20792ec9c377721efd7"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/native-02/runner.stdout.bin",
+      "sha256": "ab8ae8003c050234fd13fcb2a0edb55f916e31c02e6ba661f594723e3d45e28a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/py/verified.stdout.bin",
+      "sha256": "a2ce744e2ebecebb5103790d1ea3942c47226739e4fc0555682b3c2cd9ee6c2e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination/py/.pyemuera/logs/emuera.log",
+      "sha256": "1b3c422c1f1c4234c45f52129f19ad945c86edbd8526617c6559a9b1f932e6d9"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/native-01/emuera.log",
+      "sha256": "c6446a132745e22c3372e80f6419ec75e8dbc9837abecffa1f616b69c28af8e6"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/native-01/runner.stdout.bin",
+      "sha256": "06df2850dddd568c2c4204dcdeee76d4cabd0f2c1fd1b9232a00ebbfd1bd741d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/native-02/emuera.log",
+      "sha256": "c6446a132745e22c3372e80f6419ec75e8dbc9837abecffa1f616b69c28af8e6"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/native-02/runner.stdout.bin",
+      "sha256": "a69f3ecd7d8341b73b6c0d0c7f58cb7363f1059486bf4160eb2b60ad716fa44d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/py/verified.stderr.bin",
+      "sha256": "98f395071c739aa91c50a15a09ead2224dc0345ef6b08b3459811e1a916d1b1e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/py/verified.stdout.bin",
+      "sha256": "d3183050f7714e26c790dc60ee2fd0fd62ca901b2ad325af98a37b1f288344af"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_destination_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "9b278ff4324c32e1e228f3c7c2ee5ef2f59fa783917a5337c5fc831bca430e52"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/native-01/emuera.log",
+      "sha256": "3e0b14c52625be6e8355f1b38e7cec8f97602774ee9d00071c85cf3b9ddd1f7a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/native-01/runner.stdout.bin",
+      "sha256": "f08c9d94950bd9b5a1dd5b44afe1332af992d385573a6bd4922d47d902dd6d4f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/native-02/emuera.log",
+      "sha256": "3e0b14c52625be6e8355f1b38e7cec8f97602774ee9d00071c85cf3b9ddd1f7a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/native-02/runner.stdout.bin",
+      "sha256": "339caf35b5480d07c7bba4422e849aa290c6c2c7b89459a7377e3aa37c1397c7"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/py/verified.stdout.bin",
+      "sha256": "59d6551f633b6d51221d5c3ab1320db615bc8c0915fe20ceb4737a0028e298c1"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division/py/.pyemuera/logs/emuera.log",
+      "sha256": "488ba189b193e9f9280f60b220041a5e795434bd9a164b5ce9826a7f47ae8484"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/native-01/emuera.log",
+      "sha256": "863cf62e36abe92bb7004a1f8dbcea8ba58ede07f6080443e03df04ec7d652fd"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/native-01/runner.stdout.bin",
+      "sha256": "6df8ae3a4d2739eeba9f67be44bc3bcd1a1fddf900e356b6b1db85c102435a22"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/native-02/emuera.log",
+      "sha256": "863cf62e36abe92bb7004a1f8dbcea8ba58ede07f6080443e03df04ec7d652fd"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/native-02/runner.stdout.bin",
+      "sha256": "be7277c1247338a7b8719d444e0244a64d355753df3f189b7dfd6ecaa0d2f8e6"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/py/verified.stderr.bin",
+      "sha256": "5a9101915f411088e05154067597034fe58d0a3976688a1afd0e5b1a4f0267b8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/py/verified.stdout.bin",
+      "sha256": "20c8aef5a999d91e0422d755fbf13cd53eb24366db51c99f85180d894e525414"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_invalid_source_then_division_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "b6c36b0d2f7c65834106019f029f29c7cc7ce53e4c42db820c033c0912be55c9"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/native-01/emuera.log",
+      "sha256": "f2aac30d32fbb9cad74cdfb97263879a950100854957aaf99902dd9e1af3ae2f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/native-01/runner.stdout.bin",
+      "sha256": "b646eeaf8592ea1e1ab380a87ec31d350cf65418d5064f16fe1b65977dfbf813"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/native-02/emuera.log",
+      "sha256": "f2aac30d32fbb9cad74cdfb97263879a950100854957aaf99902dd9e1af3ae2f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/native-02/runner.stdout.bin",
+      "sha256": "c563fc2fa7f256d47b3334c8d09a35079f14cf987297132ce1228bbcaa174a4d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/py/verified.stdout.bin",
+      "sha256": "a95af42f7a276762713ef4ce2dd6b4769b975466ff97b00fd17710764a682c93"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self/py/.pyemuera/logs/emuera.log",
+      "sha256": "373d962c0873969602fc473c18f2939e498fe7a691faac82a5c3431dedb40040"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/native-01/emuera.log",
+      "sha256": "ca0198f42fe649d4cab4ebc537781c2abcf93dbba9005c6f9805deba3fac65be"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/native-01/runner.stdout.bin",
+      "sha256": "9e583cabfe1c3b20a9d2266c3484e7082afb1a65f83d36a7ce1cec72c2410aaa"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/native-02/emuera.log",
+      "sha256": "ca0198f42fe649d4cab4ebc537781c2abcf93dbba9005c6f9805deba3fac65be"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/native-02/runner.stdout.bin",
+      "sha256": "ff4c4771a18ae440d6b1d3aa4109941d3054a2f9fefb1d44be232b0995436ad8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/py/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/py/verified.stdout.bin",
+      "sha256": "312c8db8deab411e25ca841be8b38a4c917b5e763cf156e71716f326413881f2"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_self_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "ca0198f42fe649d4cab4ebc537781c2abcf93dbba9005c6f9805deba3fac65be"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/native-01/emuera.log",
+      "sha256": "31c5bd3e383bc6d0cfe856e9ac0481c01ec836e5017f80cce61586f74ab2c282"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/native-01/runner.stdout.bin",
+      "sha256": "6d9607bfbc034b4c540463cc22f6700f5c44fa4ff084a65c6956028c5859d043"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/native-02/emuera.log",
+      "sha256": "31c5bd3e383bc6d0cfe856e9ac0481c01ec836e5017f80cce61586f74ab2c282"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/native-02/runner.stdout.bin",
+      "sha256": "59392293261aa2b529178a1e20806709f243d5df6a95c89538d114c2d8d3db5a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/py/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/py/verified.stdout.bin",
+      "sha256": "bd90d6137c28a68defa66f2ede775324b0389026d74246263b8b4e8364fc8e0e"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/copy_string_independence/py/.pyemuera/logs/emuera.log",
+      "sha256": "31c5bd3e383bc6d0cfe856e9ac0481c01ec836e5017f80cce61586f74ab2c282"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/native-01/emuera.log",
+      "sha256": "07e62b30b4927e81ce847ca11a1d46fa01d11c774f87122d52b5ef522355132d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/native-01/runner.stdout.bin",
+      "sha256": "8ca80071a0bfb111ed16cc71124c73fc0ce7278003fc2b3adb72ca2cba921c9f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/native-02/emuera.log",
+      "sha256": "07e62b30b4927e81ce847ca11a1d46fa01d11c774f87122d52b5ef522355132d"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/native-02/runner.stdout.bin",
+      "sha256": "389f9b82525399126b8d5a155d6db21dab14a20593ae43e52a4f26b00d0752d0"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/py/verified.stdout.bin",
+      "sha256": "db51cff21cac63b9be550488821f52e671486d0c0ef98421045e3930030c1424"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate/py/.pyemuera/logs/emuera.log",
+      "sha256": "269f5fccaf5c9efa508e6b23e686a9ddf1e3ea520125c1891a1276e0d548c29c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/native-01/emuera.log",
+      "sha256": "d486f38e6224bedb665439f35d3e356da4991885554a7d35db4a124904903594"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/native-01/runner.stdout.bin",
+      "sha256": "26c9273049a2760e042f798929cc6ff2d015272463be43898e4548cb6e61d853"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/native-02/emuera.log",
+      "sha256": "d486f38e6224bedb665439f35d3e356da4991885554a7d35db4a124904903594"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/native-02/runner.stdout.bin",
+      "sha256": "78187ad2834b6769fef3fe79d27d9db8d1223e8b788b0ac899b71ca82c8e4218"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/py/verified.stderr.bin",
+      "sha256": "dad0a3a072ed8df8469619be6c94fc02fbb967182f56e656325f1f7c6e843ef4"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/py/verified.stdout.bin",
+      "sha256": "fdeedccec841111e1201cf50815a10bc5f4c1959bfebdd547dcb53fc798591a9"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_duplicate_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "dda9f4e2b0f591d134854269133a4b0ac5c3fc6632ab5017af94f2f278e25fec"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/native-01/emuera.log",
+      "sha256": "a749c71416a7c1affcbfacdf3156070d845430a0593f550559f5a4fa5e8954a8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/native-01/runner.stdout.bin",
+      "sha256": "4bae8ace0a463dfa5be42ca03bc4f44b10043bc232643acdd15b1d17b43ba4a4"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/native-02/emuera.log",
+      "sha256": "a749c71416a7c1affcbfacdf3156070d845430a0593f550559f5a4fa5e8954a8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/native-02/runner.stdout.bin",
+      "sha256": "62ed82bd30ece49699f77fd2f2c9ba013ff1fc11df9ec3859ff5149d93f4eff5"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/py/verified.stderr.bin",
+      "sha256": "ccfec07f1ada89c1debfcf9ca1b8068e9a8ccff945892ec2d0e5fb21d471bff6"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/py/verified.stdout.bin",
+      "sha256": "7b9089856046b12f1329947e4b19b986021c9a710a3aec0740372abcef0e7a44"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty/py/.pyemuera/logs/emuera.log",
+      "sha256": "55a245e186b4efc18a8559bab3720a1f5cfa4da1dc1014596cba818c5653e3a8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/native-01/emuera.log",
+      "sha256": "c9027336145b8ff564a3d2da919010fb2ac8dc8dedd181471e738c00f674ce9c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/native-01/runner.stdout.bin",
+      "sha256": "d2e86e797bc5615e9f8d0eb18606c4c7c1bfcf77aa109fc0c8f0d241738a984c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/native-02/emuera.log",
+      "sha256": "c9027336145b8ff564a3d2da919010fb2ac8dc8dedd181471e738c00f674ce9c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/native-02/runner.stdout.bin",
+      "sha256": "b6f6450896575b9418c5d7dbe987c9dfc7076d86aba561add83aee8ea71692e3"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/py/verified.stderr.bin",
+      "sha256": "6ded91489e3d4bf6e98074d52f5756a11a5e539ee3da99cbf1a5677d91a49f58"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/py/verified.stdout.bin",
+      "sha256": "dc1414e0c11c6bd0e1de52946735355e4ac38df3505f6a889abc30db8064e1c4"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_empty_normalized/py/.pyemuera/logs/emuera.log",
+      "sha256": "8b3d9dcdc0bfc337513614ee116ab80c1d69c924dd893130264e0483408e5d10"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/native-01/emuera.log",
+      "sha256": "57c81487de1fb12870f24a61d5a3ace0eea922e89f78df87bdeffecafe135c87"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/native-01/runner.stdout.bin",
+      "sha256": "a936cd575ee049c6b871d3a7f7452de44318c3cff1b2aa90e5f6964bea2ec89c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/native-02/emuera.log",
+      "sha256": "57c81487de1fb12870f24a61d5a3ace0eea922e89f78df87bdeffecafe135c87"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/native-02/runner.stdout.bin",
+      "sha256": "7355d288d55be3752245ab3a48e46355cf5fb101d6a7bcc501832fc84c5483e4"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/py/verified.stderr.bin",
+      "sha256": "fdf57238b82a0676c40d0697db7048aa0a6927d8d13af74e59ddb7d91b159c32"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/py/verified.stdout.bin",
+      "sha256": "ab78f45482fc46bbc58c99a57a9e382e66eacc56da7fbfc971fab0153328109f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division/py/.pyemuera/logs/emuera.log",
+      "sha256": "2f055074616dd2f07881e20c9848fe253a3a0cd651ecc80a6c70e763a7bb3b42"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/native-01/emuera.log",
+      "sha256": "b399eebee1746a15b633b104af860414745b079a66760cc0a65c78eded24a7d6"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/native-01/runner.stdout.bin",
+      "sha256": "db24026975ae27386dc3b5fac4466fc23cf15e0a9170c448317923f0432fe603"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/native-02/emuera.log",
+      "sha256": "b399eebee1746a15b633b104af860414745b079a66760cc0a65c78eded24a7d6"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/native-02/runner.stdout.bin",
+      "sha256": "a7f77277c2cb8d53f954e7d3b74aaaa0f9d8823fe4ef215b105d488e274b44ee"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/py/verified.stderr.bin",
+      "sha256": "5a9101915f411088e05154067597034fe58d0a3976688a1afd0e5b1a4f0267b8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/py/verified.stdout.bin",
+      "sha256": "86da688df1fa396a7a55f12ae6fa4e39a210a7cddbfabfaa45c89f9297a926e5"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_invalid_then_division_retry/py/.pyemuera/logs/emuera.log",
+      "sha256": "6b4206be7e2c20fc805fadab886e5e2e464b53b11e48f7127f236979c18669fb"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/native-01/emuera.log",
+      "sha256": "caebc243a8dc9756358cc434b00864a529a605271e811051ff5a6997b330d02f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/native-01/runner.stdout.bin",
+      "sha256": "d08f854a67611a519ff5b3904de1b8f4c9b7750b0c3d962e3900021dd8c96714"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/native-02/emuera.log",
+      "sha256": "caebc243a8dc9756358cc434b00864a529a605271e811051ff5a6997b330d02f"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/native-02/runner.stdout.bin",
+      "sha256": "bac48d9821a1f738d2fb06a57b93d2b557f4e5c07399c8fde584f0073f73b33a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/py/verified.stderr.bin",
+      "sha256": "dad0a3a072ed8df8469619be6c94fc02fbb967182f56e656325f1f7c6e843ef4"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/py/verified.stdout.bin",
+      "sha256": "689ad7695a0ece95e97cb95429f311d3bf26218398674be79282225ffc6bc983"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_negative/py/.pyemuera/logs/emuera.log",
+      "sha256": "0cce51372a1b5425ae5d25afb2895d5b9d6435f43326870fd1d980a70cea4c43"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/native-01/emuera.log",
+      "sha256": "55538b3f95eccd71d1338f2fc91586063299b4b2fd385223aba61cd3bd19cb6a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/native-01/runner.stdout.bin",
+      "sha256": "88106028c5f17ff31f14afe79789f9a4106ace6235504fd5f2ad4acce4c44c71"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/native-02/emuera.log",
+      "sha256": "55538b3f95eccd71d1338f2fc91586063299b4b2fd385223aba61cd3bd19cb6a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/native-02/runner.stdout.bin",
+      "sha256": "b003c0cea3508f2e925c9b3fabc3ebe6ff24083642c5b11e11ddde56024cc5c8"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/py/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/py/verified.stdout.bin",
+      "sha256": "fa0530ae6ea60c289c6feaa8d74ea63565031dfdc8b8e47abb8501caf241b86c"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/delete_pointer_values/py/.pyemuera/logs/emuera.log",
+      "sha256": "55538b3f95eccd71d1338f2fc91586063299b4b2fd385223aba61cd3bd19cb6a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/native-01/emuera.log",
+      "sha256": "034d08b36fdd090aab0ab5fd43b4c06a46b99093d8db2a5e566c2007dd9ada87"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/native-01/runner.stdout.bin",
+      "sha256": "802d026faeca6b5d21850443667502e629d0ad384d4c6ca63d6bedbb00b7a62a"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/native-02/emuera.log",
+      "sha256": "034d08b36fdd090aab0ab5fd43b4c06a46b99093d8db2a5e566c2007dd9ada87"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/native-02/runner.stdout.bin",
+      "sha256": "612110147991e55ca7fce6f2a9b23e327f11f6cf81f1c432f78bb825aeb7135b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/py/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/py/verified.stdout.bin",
+      "sha256": "4043f58dfc37c08975ba745f61bf3fa5f655aca0e0d42d2ea6212af6ee79130b"
+    },
+    {
+      "path": "evidence/character-copy-delete-boundaries-20261113-241/void_after_delete/py/.pyemuera/logs/emuera.log",
+      "sha256": "034d08b36fdd090aab0ab5fd43b4c06a46b99093d8db2a5e566c2007dd9ada87"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/verified.stdout.bin",
+      "sha256": "a71b8bf21d57d41d79d355dfab7c9650492e00ae8f381c75f9c7d2e17c87750b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/emuera.log",
+      "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/emuera.log",
+      "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/verified.stdout.bin",
+      "sha256": "1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/dot-eventcomend/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d1135cb9fd21d5b08175e14d5cc6a812f4bb9ef374e747421c729b6161a123a2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/dot-eventtrain/ERB/SEARCHBOUND01.ERB",
+      "sha256": "36ed6c427e46904963d49ac3957d771c2262bc815d17f53387713a795f77951e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/dot-showstatus/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ab94ab9814dc6ae03d8dc9a9973679baeb912380b403b1ce79dc3da193a47e79"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/dot-showusercom/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f1461b4033305c2973a8121b35c822fc69b458b13fb02979f904bf0656d2cae5"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/queue-copy/ERB/SEARCHBOUND01.ERB",
+      "sha256": "b8631b20f6f04913821b27221ee5b42c16e75dbe25322cc56daed074613fb624"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/queue-unavailable/ERB/SEARCHBOUND01.ERB",
+      "sha256": "580d3161b8a96685e22c89c40c8213f7b36d6eed70fedb6e31e269fc5d5e823f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/stop-active/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2576633d5d91736b9365a13ec4adac430d116013c23ded8f0ee4685587fb4495"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/fixtures/stop-inactive/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f2fb345709d8f937d6ef43027d7acabc5fbf92ea77c2b8046703589dc7ae63eb"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "b8631b20f6f04913821b27221ee5b42c16e75dbe25322cc56daed074613fb624"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "b8631b20f6f04913821b27221ee5b42c16e75dbe25322cc56daed074613fb624"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "b8631b20f6f04913821b27221ee5b42c16e75dbe25322cc56daed074613fb624"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "aaa05a7f0782db25db6695f5d7a79a3f085580b894c0a16e415cb672e76ab1a9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "aaa05a7f0782db25db6695f5d7a79a3f085580b894c0a16e415cb672e76ab1a9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "aaa05a7f0782db25db6695f5d7a79a3f085580b894c0a16e415cb672e76ab1a9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/fixture/ERB/SEARCHBOUND01.ERB",
+      "sha256": "aaa05a7f0782db25db6695f5d7a79a3f085580b894c0a16e415cb672e76ab1a9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-cancel-queue/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-eventcomend/ERB/SEARCHBOUND01.ERB",
+      "sha256": "607e9b28eca94354df403c5ceed2f45b37ad127807b083ed546c5f23d66ebafc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-eventtrain/ERB/SEARCHBOUND01.ERB",
+      "sha256": "29b0b37dc47aba2ded40e3eb2f768a2abf5fae521e7a22df84b0d2abe60569f1"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-showstatus/ERB/SEARCHBOUND01.ERB",
+      "sha256": "663d6dc01b3a51c12848b395d6e14c4ecde3fcf21886d046c51d1066e7ccd534"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/dot-showusercom/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5049b3028697492e4479256c24da67c1e7bcd4d27e65308f4c1bd726f5bce26d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-copy/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/queue-unavailable/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-active-guard/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/fixtures/stop-inactive/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4e91cde8232d0669059b34ce22ec97a85f17c1bc63bbb69b5d07108316cec938"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "0cbdc44e7802ec8f9e66fbec8f0a99f22cb3a96e45e9c814c8057eb5c6e9b506"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "607e9b28eca94354df403c5ceed2f45b37ad127807b083ed546c5f23d66ebafc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "607e9b28eca94354df403c5ceed2f45b37ad127807b083ed546c5f23d66ebafc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "607e9b28eca94354df403c5ceed2f45b37ad127807b083ed546c5f23d66ebafc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "29b0b37dc47aba2ded40e3eb2f768a2abf5fae521e7a22df84b0d2abe60569f1"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "29b0b37dc47aba2ded40e3eb2f768a2abf5fae521e7a22df84b0d2abe60569f1"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "29b0b37dc47aba2ded40e3eb2f768a2abf5fae521e7a22df84b0d2abe60569f1"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "663d6dc01b3a51c12848b395d6e14c4ecde3fcf21886d046c51d1066e7ccd534"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "663d6dc01b3a51c12848b395d6e14c4ecde3fcf21886d046c51d1066e7ccd534"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "663d6dc01b3a51c12848b395d6e14c4ecde3fcf21886d046c51d1066e7ccd534"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5049b3028697492e4479256c24da67c1e7bcd4d27e65308f4c1bd726f5bce26d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5049b3028697492e4479256c24da67c1e7bcd4d27e65308f4c1bd726f5bce26d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "5049b3028697492e4479256c24da67c1e7bcd4d27e65308f4c1bd726f5bce26d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "afb2eb84847cb1eaf8e280aca3a634beb033261ee71b3287e0cfd12f1f39d563"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "2bcc91b3b399eb8400a7a437253f35a500321378971debdcf4a2be12ad98e59e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "d2be1568fc8eeb8bf8c0745b452d58af409549da54de79379dd0a5b26666c340"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4e91cde8232d0669059b34ce22ec97a85f17c1bc63bbb69b5d07108316cec938"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4e91cde8232d0669059b34ce22ec97a85f17c1bc63bbb69b5d07108316cec938"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/public-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "4e91cde8232d0669059b34ce22ec97a85f17c1bc63bbb69b5d07108316cec938"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/native-01/emuera.log",
+      "sha256": "2fe4944fd22012f1d24f48d83930d2402e682dd1bd28a9d9c458b998c7b61f90"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/native-01/runner.stdout.bin",
+      "sha256": "f9dc5ea82193b2f4b6fdc01e49d7241c9c38c901a88f078f52ea26d8e008367e"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/native-02/emuera.log",
+      "sha256": "2fe4944fd22012f1d24f48d83930d2402e682dd1bd28a9d9c458b998c7b61f90"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/native-02/runner.stdout.bin",
+      "sha256": "b487eda3bde7bc4f7a03c88a69b4e5c2521301f8192d38c3ab4083b43d08ce73"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/public-01/verified.stderr.bin",
+      "sha256": "95dc04c783ddb6527f87b4460be491fbc2e2a4b65950cd0672909727c8109b36"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-01/queue-copy/public-01/verified.stdout.bin",
+      "sha256": "cb77cbc1f428ea381275b054c056f548aba0e487c6226a12838e1e114d5f55ec"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/native-01/emuera.log",
+      "sha256": "551cdd80712e9f029f6234a2747216389b46aedb65063ad592d38c0b6b44da8c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/native-01/runner.stdout.bin",
+      "sha256": "06505a45239b3986ac77fc54c1a18dd895d8ac03a543595944db9642580d7041"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/native-02/emuera.log",
+      "sha256": "551cdd80712e9f029f6234a2747216389b46aedb65063ad592d38c0b6b44da8c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/native-02/runner.stdout.bin",
+      "sha256": "3562293c316e009fbd1504d17e60e9f0eae953ea75d897d5501d8302a8af560d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/public-01/verified.stdout.bin",
+      "sha256": "5c0714140a9360e81cd784642645024d8a9203a66679332a5244f40abbe92c4f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/attempts-02/dot-eventcomend/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "62e194ec5fe1dc9d755a27c52f4b773cf9cfeb7a0e009a7b47f41aeeeefc40cd"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/emuera.log",
+      "sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/runner.stdout.bin",
+      "sha256": "70843d12d00b04f47de745474829b1254afa84ca2079360a58904ac4d4e26ce5"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/emuera.log",
+      "sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/runner.stdout.bin",
+      "sha256": "2ec18f9a7cde9334d93efb59bd445baf8e0113709917591c1bebf27c78162d51"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/verified.stdout.bin",
+      "sha256": "e4c6e60ba7b8ebf2b8998d579d7bc82623bdd76623755836177463f3f37429fd"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "8b37133683c05b14520c5d97b5b57f17a0c30eaecdf030eb9650568d689d2d15"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/native-01/emuera.log",
+      "sha256": "ce2d62e8a285b01a1737b2626efe10979f8e512551d919ae39c21ce053970ff9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/native-01/runner.stdout.bin",
+      "sha256": "ee1c0a7732db704b92827918f2fec18e837bb4299d19712fe9f930324c221b8d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/native-02/emuera.log",
+      "sha256": "ce2d62e8a285b01a1737b2626efe10979f8e512551d919ae39c21ce053970ff9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/native-02/runner.stdout.bin",
+      "sha256": "cd058fe182240147790c25487b25b333ececb2f5ba1ac80fbc597ed2858c297a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/public-01/verified.stdout.bin",
+      "sha256": "5c0714140a9360e81cd784642645024d8a9203a66679332a5244f40abbe92c4f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventcomend/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "62e194ec5fe1dc9d755a27c52f4b773cf9cfeb7a0e009a7b47f41aeeeefc40cd"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/native-01/emuera.log",
+      "sha256": "96dd70fd7ce0703ddab22c4ca8c162fb054844530e8e4b3db86efd278cd5888c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/native-01/runner.stdout.bin",
+      "sha256": "070ed0e8b433b51e8d5b6b7d9db6032788bb98129ede5037ead9d5e3b557b441"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/native-02/emuera.log",
+      "sha256": "96dd70fd7ce0703ddab22c4ca8c162fb054844530e8e4b3db86efd278cd5888c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/native-02/runner.stdout.bin",
+      "sha256": "1fd6a915771ea943cff3b7192e279f8751bd7ea3d806324b8556ed020dee7658"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/public-01/verified.stdout.bin",
+      "sha256": "d82ebf306da4698cc8e490a49ad73799d01c91616c1b09b6eb7abfc808a0c7e5"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-eventtrain/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "af3c0090dd4aacc8cf6061d9c446f0c785bec03a138e4cd45b11ecc366af36c0"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/native-01/emuera.log",
+      "sha256": "c9fe94c0a3a201c6619bcb6344d375197ca4c3148d21318c1612f483ba319b55"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/native-01/runner.stdout.bin",
+      "sha256": "a5126da5554e6ff2fa41e2f7ed896b94ee45d36fd43b89bee9b9d16bc05b52ec"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/native-02/emuera.log",
+      "sha256": "c9fe94c0a3a201c6619bcb6344d375197ca4c3148d21318c1612f483ba319b55"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/native-02/runner.stdout.bin",
+      "sha256": "5055f8661a4e36a605431f8a50ea0c074ef11c14cea37bc6bf958630b0c89ebc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/public-01/verified.stdout.bin",
+      "sha256": "43e33afe4fdb1213af41fc7e3595d28bd5b8e2b00ebaa587168677ece4318cc5"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showstatus/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "83280487f8c10b532adf94060ee9d49cc722b439725130336826f7e164a0a92b"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/native-01/emuera.log",
+      "sha256": "d04d3816b1497ea22b02f99e62ef933867d44cf23bca3ac3b07b0519ac83c2cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/native-01/runner.stdout.bin",
+      "sha256": "22ae63efcdc38756fa7b36f78a381ce6ad331cef43e34e927f1c40c246ed1a5f"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/native-02/emuera.log",
+      "sha256": "d04d3816b1497ea22b02f99e62ef933867d44cf23bca3ac3b07b0519ac83c2cc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/native-02/runner.stdout.bin",
+      "sha256": "e62b9dde21e2f3a461eb39c7d4d829b220ea4c57e76bf6d9730b2544aabe021d"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/public-01/verified.stdout.bin",
+      "sha256": "b18c0940968064b35d90ea92aea6a417cbd3d38c58397b6bc8c446217f879ad3"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-showusercom/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "d058ce524abac7e1531c60992b9ad339eaca9d9aedc8df095d30dd468c4867e9"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/emuera.log",
+      "sha256": "304b38a74db8b1b27b85f3f5bdf1276688d74738f18047105f01f3ff51f4dd97"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/runner.stdout.bin",
+      "sha256": "a878e80a97e223ceb1172aa6203ee11950eda0c2561a50ea13bad0d3dcd1ea0a"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/emuera.log",
+      "sha256": "304b38a74db8b1b27b85f3f5bdf1276688d74738f18047105f01f3ff51f4dd97"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/runner.stdout.bin",
+      "sha256": "d2a5a1f37a54663c5f18c226d58fe7ad2c44afbf3285d916ad3ec052a4bf6c07"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/verified.stdout.bin",
+      "sha256": "717c1310a415d0b0aba7325c1ba2927270748080faa3994332dd610fef881df8"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "36b467c4447443624291ca359a12845dad9187cd10a61d06cd1196184b0bd1ec"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/emuera.log",
+      "sha256": "f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/runner.stdout.bin",
+      "sha256": "e9d14323c90079abf5beb87608b0c89ab92a44da06884f1578c1b7d953f79beb"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/emuera.log",
+      "sha256": "f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/runner.stdout.bin",
+      "sha256": "a6a3f3654d81d4c60751b51fc673ad5ad6564864de71e9557df0b6bfe68331b7"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/verified.stdout.bin",
+      "sha256": "460cc4ff176136d20c1bbcc8cde49cda8066228e37c4d4614f61e0f26b551236"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "17a766ef4434b64a6ac2d0fc950cac236fcd956bc195f446c55da1c3cb01c3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/emuera.log",
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/runner.stdout.bin",
+      "sha256": "2974f118def5497ce7cadc2d07f39124fed610ae8681f1a6abdaf071f24970cf"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/emuera.log",
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/runner.stdout.bin",
+      "sha256": "c9647e4f6c4fec14c9acb0e11c8b1ec75b0af204948240275c7a9c1af0cfabd4"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/verified.stdout.bin",
+      "sha256": "3d4f902e986a48d1536d9d55676dc5e51bec8cd25df38a6779cc22c97e4bcedc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "0e4b7638b493c3447d2f7fbe89e8dc23e09ec3ec1df478de0f63558013810d90"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/emuera.log",
+      "sha256": "3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/runner.stdout.bin",
+      "sha256": "52347aac08371c776ae1ee2ec6f342201cc8c2de8a3e7c7807c760ea78473805"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/emuera.log",
+      "sha256": "3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/runner.stdout.bin",
+      "sha256": "66c190bd488b236eb37e12241aa6de9976298b13972eff1fbfa2ee2f48cf4cba"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/verified.stdout.bin",
+      "sha256": "f386835f7fd42f68de7273611736fe4f833e3e1d045858f7e3272f4a1d3ce971"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "e161ec88debfd21e6dd3be59f481d1ce58d2d33ded0befbdfa6c7cedbdc23665"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/native-01/emuera.log",
+      "sha256": "a41cec06e2195b6a748a4148e7747dcf3249a5895df04c338b95b545bc079aa7"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/native-01/runner.stdout.bin",
+      "sha256": "716dc904d966a9f8d2af8337a72c04847726fdb49422ac6677906fc4cbb9dffa"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/native-02/emuera.log",
+      "sha256": "a41cec06e2195b6a748a4148e7747dcf3249a5895df04c338b95b545bc079aa7"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/native-02/runner.stdout.bin",
+      "sha256": "1713494ec703c274086972c52cc9fc1c9505c84b5b5c1e6c0edb25706dd837d8"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/public-01/verified.stderr.bin",
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/public-01/verified.stdout.bin",
+      "sha256": "4d7c742fd38b3fd046c24a2fbd1cf62adc41e047177c7cee068f5f03dbc7cf32"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-inactive/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "6a1d423d4804fa5c65926adf96bb92d2ab36abb509aeefa35774a777184cbf37"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/comparison.json",
+      "sha256": "dba0fac842951052d88e87c7d4be3f4015e1cb5a883e634fe9e9a6305d1abd5b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/MANIFEST.json",
+      "sha256": "66d4b52879f306740669362d45e09dbcb2bfb893994005efa4d45b4dce9f74e2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/COMPARISON.json",
+      "sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/COMPARISON.json",
+      "sha256": "8622ee8d4ce273032d9397a86befc3fb5bdc5d23a8abedffb397f04cc92bd95c"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-01/emuera.log",
+      "sha256": "304b38a74db8b1b27b85f3f5bdf1276688d74738f18047105f01f3ff51f4dd97"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/native-02/emuera.log",
+      "sha256": "304b38a74db8b1b27b85f3f5bdf1276688d74738f18047105f01f3ff51f4dd97"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-copy/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "36b467c4447443624291ca359a12845dad9187cd10a61d06cd1196184b0bd1ec"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-01/emuera.log",
+      "sha256": "f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/native-02/emuera.log",
+      "sha256": "f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/queue-unavailable/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "17a766ef4434b64a6ac2d0fc950cac236fcd956bc195f446c55da1c3cb01c3dc"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-01/emuera.log",
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/native-02/emuera.log",
+      "sha256": "c61f8f97a6af02127c8d4b27d549dbcf29ea11d9d795bea899a09a0555947753"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "0e4b7638b493c3447d2f7fbe89e8dc23e09ec3ec1df478de0f63558013810d90"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-01/emuera.log",
+      "sha256": "3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/native-02/emuera.log",
+      "sha256": "3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/stop-active-guard/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "e161ec88debfd21e6dd3be59f481d1ce58d2d33ded0befbdfa6c7cedbdc23665"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-01/emuera.log",
+      "sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/native-02/emuera.log",
+      "sha256": "0ce2af1163e9c34ec57fef8d14a1cba22161d1da49e7b90e29587b463dc39140"
+    },
+    {
+      "path": "evidence/calltrain-lifecycle-20261113-220/runs/dot-cancel-queue/public-01/.pyemuera/logs/emuera.log",
+      "sha256": "8b37133683c05b14520c5d97b5b57f17a0c30eaecdf030eb9650568d689d2d15"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/emuera.log",
+      "sha256": "e1502ec1c507b0f5fbc7b688a00c88ed382820325f4bf600edef1aeb100ee1e4"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/verified.stdout.bin",
+      "sha256": "a71b8bf21d57d41d79d355dfab7c9650492e00ae8f381c75f9c7d2e17c87750b"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-control/public/ERB/SEARCHBOUND01.ERB",
+      "sha256": "f5f095eb51696e7abe4fb72983a55ee6e1bb1c1dd43ff93c2fff5a8a93a33da2"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/emuera.log",
+      "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-01/ERB/SEARCHBOUND01.ERB",
+      "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/emuera.log",
+      "sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/native-02/ERB/SEARCHBOUND01.ERB",
+      "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/verified.stdout.bin",
+      "sha256": "1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa"
+    },
+    {
+      "path": "evidence/trailing-comma-parsers-20261113-246/copychara-trailing/public/ERB/SEARCHBOUND01.ERB",
+      "sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35"
+    }
+  ],
+  "source_refs": [
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "start_line": 260,
+      "end_line": 260,
+      "numbered_source": [
+        "260: \t\t\taddFunction(FunctionCode.COPYCHARA, new COPYCHARA_Instruction());"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "start_line": 290,
+      "end_line": 292,
+      "numbered_source": [
+        "290: \t\t\taddFunction(FunctionCode.CALLTRAIN, argb[FunctionArgType.INT_EXPRESSION], EXTENDED | FLOW_CONTROL);",
+        "291: \t\t\taddFunction(FunctionCode.STOPCALLTRAIN, argb[FunctionArgType.VOID], EXTENDED | FLOW_CONTROL);",
+        "292: \t\t\taddFunction(FunctionCode.DOTRAIN, argb[FunctionArgType.INT_EXPRESSION], EXTENDED | FLOW_CONTROL);"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs",
+      "sha256": "fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb",
+      "start_line": 849,
+      "end_line": 895,
+      "numbered_source": [
+        "849: \t\t\t\tcase FunctionCode.CALLTRAIN:",
+        "850: \t\t\t\t\t{",
+        "851: \t\t\t\t\t\tExpressionArgument intExpArg = (ExpressionArgument)func.Argument;",
+        "852: \t\t\t\t\t\tInt64 count = intExpArg.Term.GetIntValue(exm);",
+        "853: \t\t\t\t\t\tSetCommnds(count);",
+        "854: \t\t\t\t\t\treturn false;",
+        "855: \t\t\t\t\t}",
+        "856: \t\t\t\tcase FunctionCode.STOPCALLTRAIN:",
+        "857: \t\t\t\t\t{",
+        "858: \t\t\t\t\t\tif (isCTrain)",
+        "859: \t\t\t\t\t\t{",
+        "860: \t\t\t\t\t\t\tClearCommands();",
+        "861: \t\t\t\t\t\t\tskipPrint = false;",
+        "862: \t\t\t\t\t\t}",
+        "863: \t\t\t\t\t\treturn false;",
+        "864: \t\t\t\t\t}",
+        "865: \t\t\t\tcase FunctionCode.DOTRAIN:",
+        "866: \t\t\t\t\t{",
+        "867: \t\t\t\t\t\tswitch (state.SystemState)",
+        "868: \t\t\t\t\t\t{",
+        "869: \t\t\t\t\t\t\t//case SystemStateCode.Train_Begin://BEGIN TRAINから。",
+        "870: \t\t\t\t\t\t\tcase SystemStateCode.Train_CallEventTrain://@EVENTTRAINの呼び出し中。スキップ可能",
+        "871: \t\t\t\t\t\t\tcase SystemStateCode.Train_CallShowStatus://@SHOW_STATUSの呼び出し中",
+        "872: \t\t\t\t\t\t\t//case SystemStateCode.Train_CallComAbleXX://@COM_ABLExxの呼び出し中。",
+        "873: \t\t\t\t\t\t\tcase SystemStateCode.Train_CallShowUserCom://@SHOW_USERCOMの呼び出し中",
+        "874: \t\t\t\t\t\t\t//case SystemStateCode.Train_WaitInput://入力待ち状態。選択が実行可能ならEVENTCOMからCOMxx、そうでなければ@USERCOMにRESULTを渡す",
+        "875: \t\t\t\t\t\t\t//case SystemStateCode.Train_CallEventCom://@EVENTCOMの呼び出し中",
+        "876: \t\t\t\t\t\t\t//case SystemStateCode.Train_CallComXX://@COMxxの呼び出し中",
+        "877: \t\t\t\t\t\t\t//case SystemStateCode.Train_CallSourceCheck://@SOURCE_CHECKの呼び出し中",
+        "878: \t\t\t\t\t\t\tcase SystemStateCode.Train_CallEventComEnd://@EVENTCOMENDの呼び出し中。スキップ可能。Train_CallEventTrainへ帰る。@USERCOMの呼び出し中もここ",
+        "879: \t\t\t\t\t\t\t\tbreak;",
+        "880: \t\t\t\t\t\t\tdefault:",
+        "881: \t\t\t\t\t\t\t\texm.Console.PrintSystemLine(state.SystemState.ToString());",
+        "882: \t\t\t\t\t\t\t\tthrow new CodeEE(\"DOTRAIN命令をこの位置で実行することはできません\");",
+        "883: \t\t\t\t\t\t}",
+        "884: \t\t\t\t\t\tcoms.Clear();",
+        "885: \t\t\t\t\t\tisCTrain = false;",
+        "886: \t\t\t\t\t\tthis.count = 0;",
+        "887: ",
+        "888: \t\t\t\t\t\tInt64 train = ((ExpressionArgument)func.Argument).Term.GetIntValue(exm);",
+        "889: \t\t\t\t\t\tif (train < 0)",
+        "890: \t\t\t\t\t\t\tthrow new CodeEE(\"DOTRAIN命令に0未満の値が渡されました\");",
+        "891: \t\t\t\t\t\tif (train >= TrainName.Length)",
+        "892: \t\t\t\t\t\t\tthrow new CodeEE(\"DOTRAIN命令にTRAINNAMEの配列数以上の値が渡されました\");",
+        "893: \t\t\t\t\t\tdoTrainSelectCom = train;",
+        "894: \t\t\t\t\t\tstate.SystemState = SystemStateCode.Train_DoTrain;",
+        "895: \t\t\t\t\t\treturn false;"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.cs",
+      "sha256": "ef8ecc12e0321091127f600e581932986a50d2bd94b22fc4acae82921507e362",
+      "start_line": 217,
+      "end_line": 239,
+      "numbered_source": [
+        "217: \t\tpublic void SetCommnds(Int64 count)",
+        "218: \t\t{",
+        "219: \t\t\tcoms = new List<long>((int)count);",
+        "220: \t\t\tisCTrain = true;",
+        "221: \t\t\tInt64[] selectcom = vEvaluator.SELECTCOM_ARRAY;",
+        "222: \t\t\tif (count >= selectcom.Length)",
+        "223: \t\t\t{",
+        "224: \t\t\t\tthrow new CodeEE(\"CALLTRAIN命令の引数の値がSELECTCOMの要素数を超えています\");",
+        "225: \t\t\t}",
+        "226: \t\t\tfor (int i = 0; i < (int)count; i++)",
+        "227: \t\t\t{",
+        "228: \t\t\t\tcoms.Add(selectcom[i + 1]);",
+        "229: \t\t\t}",
+        "230: \t\t}",
+        "231: ",
+        "232:         public bool ClearCommands()",
+        "233:         {",
+        "234:             coms.Clear();",
+        "235:             count = 0;",
+        "236:             isCTrain = false;",
+        "237:             skipPrint = true;",
+        "238:             return (callFunction(\"CALLTRAINEND\", false, false));",
+        "239:         }"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.SystemProc.cs",
+      "sha256": "c0d2aac19be4d4e7265bcd1cd4c6775d60bca59762c121b03589d3d081f15a51",
+      "start_line": 372,
+      "end_line": 425,
+      "numbered_source": [
+        "372: \t\tvoid endCallShowUserCom()",
+        "373: \t\t{",
+        "374: \t\t\tif (skipPrint)",
+        "375: \t\t\t\tskipPrint = false;",
+        "376: \t\t\tvEvaluator.UpdateAfterShowUsercom();",
+        "377: \t\t\tif (!isCTrain)",
+        "378: \t\t\t{",
+        "379: \t\t\t\t//数値入力待ち状態にしてTrain_WaitInputへ移行。",
+        "380: \t\t\t\tsetWaitInput();",
+        "381: ",
+        "382: \t\t\t\tstate.SystemState = SystemStateCode.Train_WaitInput;",
+        "383: \t\t\t}",
+        "384: \t\t\telse",
+        "385: \t\t\t{",
+        "386: \t\t\t\tif (count < coms.Count)",
+        "387: \t\t\t\t{",
+        "388: \t\t\t\t\tsystemResult = coms[count];",
+        "389: \t\t\t\t\tcount++;",
+        "390: \t\t\t\t\ttrainWaitInput();",
+        "391: \t\t\t\t}",
+        "392: \t\t\t}",
+        "393: \t\t}",
+        "394: ",
+        "395: \t\tvoid trainWaitInput()",
+        "396: \t\t{",
+        "397: \t\t\tint selectCom = -1;",
+        "398: \t\t\tif (!isCTrain)",
+        "399: \t\t\t{",
+        "400: \t\t\t\tif ((systemResult >= 0) && (systemResult < comAble.Length))",
+        "401: \t\t\t\t\tselectCom = comAble[systemResult];",
+        "402: \t\t\t}",
+        "403: \t\t\telse",
+        "404: \t\t\t{",
+        "405: \t\t\t\tfor (int i = 0; i < comAble.Length; i++)",
+        "406: \t\t\t\t{",
+        "407: \t\t\t\t\tif (comAble[i] == systemResult)",
+        "408: \t\t\t\t\t\tselectCom = (int)systemResult;",
+        "409: \t\t\t\t}",
+        "410: \t\t\t\tconsole.PrintSingleLine(string.Format(\"＜コマンド連続実行：{0}/{1}＞\", count, coms.Count));",
+        "411: \t\t\t}",
+        "412: \t\t\t//TrainNameが定義されていて使用可能(COMABLEが非0を返した)である",
+        "413: \t\t\tif (selectCom >= 0)",
+        "414: \t\t\t{",
+        "415: \t\t\t\tvEvaluator.SELECTCOM = selectCom;",
+        "416: \t\t\t\tcallEventCom();",
+        "417: \t\t\t}",
+        "418: \t\t\telse",
+        "419: \t\t\t{//されていない。",
+        "420: \t\t\t\tif (isCTrain)",
+        "421: \t\t\t\t\tconsole.PrintSingleLine(\"コマンドを実行できませんでした\");",
+        "422: \t\t\t\tvEvaluator.RESULT = systemResult;",
+        "423: \t\t\t\tstate.SystemState = SystemStateCode.Train_CallEventComEnd;",
+        "424: \t\t\t\tcallFunction(\"USERCOM\", true, false);",
+        "425: \t\t\t\t//COM中の必要なことは全部USERCOM内でやる。"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Variable/VariableEvaluator.cs",
+      "sha256": "bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582",
+      "start_line": 1467,
+      "end_line": 1509,
+      "numbered_source": [
+        "1467: \t\tpublic void UpdateAfterShowUsercom()",
+        "1468: \t\t{",
+        "1469: \t\t\t//UP = 0,DOWN = 0,LOSEBASE = 0",
+        "1470: \t\t\tInt64[] array;",
+        "1471: \t\t\tarray = varData.DataIntegerArray[(int)(VariableCode.UP & VariableCode.__LOWERCASE__)];",
+        "1472: \t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1473: \t\t\t\tarray[i] = 0;",
+        "1474: \t\t\tarray = varData.DataIntegerArray[(int)(VariableCode.DOWN & VariableCode.__LOWERCASE__)];",
+        "1475: \t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1476: \t\t\t\tarray[i] = 0;",
+        "1477: \t\t\tarray = varData.DataIntegerArray[(int)(VariableCode.LOSEBASE & VariableCode.__LOWERCASE__)];",
+        "1478: \t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1479: \t\t\t\tarray[i] = 0;",
+        "1480: \t\t\tforeach (CharacterData chara in varData.CharacterList)",
+        "1481: \t\t\t{",
+        "1482: \t\t\t\tarray = chara.DataIntegerArray[(int)(VariableCode.DOWNBASE & VariableCode.__LOWERCASE__)];",
+        "1483: \t\t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1484: \t\t\t\t\tarray[i] = 0;",
+        "1485: \t\t\t\tarray = chara.DataIntegerArray[(int)(VariableCode.CUP & VariableCode.__LOWERCASE__)];",
+        "1486: \t\t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1487: \t\t\t\t\tarray[i] = 0;",
+        "1488: \t\t\t\tarray = chara.DataIntegerArray[(int)(VariableCode.CDOWN & VariableCode.__LOWERCASE__)];",
+        "1489: \t\t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1490: \t\t\t\t\tarray[i] = 0;",
+        "1491: \t\t\t}",
+        "1492: ",
+        "1493: \t\t\t//SOURCEはリセットタイミングが違うので消し",
+        "1494: \t\t\t//1.728 NOWEXも微妙に違うので移動",
+        "1495: \t\t}",
+        "1496: ",
+        "1497: \t\t//1.728 NOWEXもリセットタイミングが違うので移動",
+        "1498: \t\t//UP,DOWN,LOSEBASEはUSERCOMに移動する場合にもリセットされるがNOWEXはCOMが実行される場合のみ更新される",
+        "1499: \t\t//なのでEVENTCOM直前に呼ぶ",
+        "1500: \t\tpublic void UpdateAfterInputCom()",
+        "1501: \t\t{",
+        "1502: \t\t\t//本家の仕様にあわせ、選択中以外のキャラクタも全部リセット。",
+        "1503: \t\t\tInt64[] array;",
+        "1504: \t\t\tforeach (CharacterData chara in varData.CharacterList)",
+        "1505: \t\t\t{",
+        "1506: \t\t\t\tarray = chara.DataIntegerArray[(int)(VariableCode.NOWEX & VariableCode.__LOWERCASE__)];",
+        "1507: \t\t\t\tfor (int i = 0; i < array.Length; i++)",
+        "1508: \t\t\t\t\tarray[i] = 0;",
+        "1509: \t\t\t}"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "start_line": 1038,
+      "end_line": 1054,
+      "numbered_source": [
+        "1038: \t\tprivate sealed class COPYCHARA_Instruction : AbstractInstruction",
+        "1039: \t\t{",
+        "1040: \t\t\tpublic COPYCHARA_Instruction()",
+        "1041: \t\t\t{",
+        "1042: \t\t\t\tArgBuilder = ArgumentParser.GetArgumentBuilder(FunctionArgType.SP_SWAP);",
+        "1043: \t\t\t\tflag = METHOD_SAFE | EXTENDED;",
+        "1044: \t\t\t}",
+        "1045: ",
+        "1046: \t\t\tpublic override void DoInstruction(ExpressionMediator exm, InstructionLine func, ProcessState state)",
+        "1047: \t\t\t{",
+        "1048: \t\t\t\tSpSwapCharaArgument arg = (SpSwapCharaArgument)func.Argument;",
+        "1049: \t\t\t\tlong x = arg.X.GetIntValue(exm);",
+        "1050: \t\t\t\tlong y = arg.Y.GetIntValue(exm);",
+        "1051: \t\t\t\texm.VEvaluator.CopyChara(x, y);",
+        "1052: \t\t\t}",
+        "1053: \t\t}",
+        "1054: "
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/ArgumentBuilder.cs",
+      "sha256": "3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9",
+      "start_line": 1099,
+      "end_line": 1118,
+      "numbered_source": [
+        "1099: \t\tprivate sealed class SP_SWAP_ArgumentBuilder : ArgumentBuilder",
+        "1100: \t\t{",
+        "1101:             //emuera1803beta2+v1 第2引数省略型に対応",
+        "1102: \t\t\tpublic SP_SWAP_ArgumentBuilder(bool nullable)",
+        "1103: \t\t\t{",
+        "1104: \t\t\t\targumentTypeArray = new Type[] { typeof(Int64), typeof(Int64) };",
+        "1105:                 if (nullable)",
+        "1106:                     minArg = 1;",
+        "1107: \t\t\t}",
+        "1108: \t\t\tpublic override Argument CreateArgument(InstructionLine line, ExpressionMediator exm)",
+        "1109: \t\t\t{",
+        "1110: \t\t\t\tIOperandTerm[] terms = popTerms(line);",
+        "1111: \t\t\t\tif (!checkArgumentType(line, exm, terms))",
+        "1112: \t\t\t\t\treturn null;",
+        "1113:                 //上の判定で省略不可時はここに来ないので即さばける",
+        "1114:                 if (terms.Length == 1)",
+        "1115:                     terms = new IOperandTerm[] { terms[0], null };",
+        "1116: \t\t\t\treturn new SpSwapCharaArgument(terms[0], terms[1]);",
+        "1117: \t\t\t}",
+        "1118: \t\t}"
+      ]
+    },
+    {
+      "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Expression/ExpressionParser.cs",
+      "sha256": "7b2700f4ace3e64e4070470fd0456547bdcfd7d75d836935baeb62bfec4f5baf",
+      "start_line": 63,
+      "end_line": 120,
+      "numbered_source": [
+        "63: \t\t\twhile (true)",
+        "64: \t\t\t{",
+        "65: \t\t\t\tWord word = wc.Current;",
+        "66: \t\t\t\tswitch (word.Type)",
+        "67: \t\t\t\t{",
+        "68: \t\t\t\t\tcase '\\0':",
+        "69:                         if (endWith == ArgsEndWith.RightBracket)",
+        "70:                             throw new CodeEE(\"'['に対応する']'が見つかりません\");",
+        "71: \t\t\t\t\t\tif (endWith == ArgsEndWith.RightParenthesis)",
+        "72: \t\t\t\t\t\t\tthrow new CodeEE(\"'('に対応する')'が見つかりません\");",
+        "73: \t\t\t\t\t\tgoto end;",
+        "74: \t\t\t\t\tcase ')':",
+        "75: \t\t\t\t\t\tif (endWith == ArgsEndWith.RightParenthesis)",
+        "76: \t\t\t\t\t\t{",
+        "77: \t\t\t\t\t\t\twc.ShiftNext();",
+        "78: \t\t\t\t\t\t\tgoto end;",
+        "79: \t\t\t\t\t\t}",
+        "80: \t\t\t\t\t\tthrow new CodeEE(\"構文解析中に予期しない')'を発見しました\");",
+        "81:                     case ']':",
+        "82:                         if (endWith == ArgsEndWith.RightBracket)",
+        "83:                         {",
+        "84:                             wc.ShiftNext();",
+        "85:                             goto end;",
+        "86:                         }",
+        "87:                         throw new CodeEE(\"構文解析中に予期しない']'を発見しました\");",
+        "88: \t\t\t\t}",
+        "89: \t\t\t\tif(!isDefine)",
+        "90: \t\t\t\t\tterms.Add(ReduceExpressionTerm(wc, termEndWith));",
+        "91: \t\t\t\telse",
+        "92: \t\t\t\t{",
+        "93: \t\t\t\t\tterms.Add(ReduceExpressionTerm(wc, termEndWith_Assignment));",
+        "94:                     if (terms[terms.Count - 1] == null)",
+        "95:                         throw new CodeEE(\"関数定義の引数は省略できません\");",
+        "96: \t\t\t\t\tif (wc.Current is OperatorWord)",
+        "97: \t\t\t\t\t{//=がある",
+        "98: \t\t\t\t\t\twc.ShiftNext();",
+        "99: \t\t\t\t\t\tIOperandTerm term = reduceTerm(wc, false, termEndWith, VariableCode.__NULL__);",
+        "100: \t\t\t\t\t\tif (term == null)",
+        "101: \t\t\t\t\t\t\tthrow new CodeEE(\"'='の後に式がありません\");",
+        "102: \t\t\t\t\t\tif (term.GetOperandType() != terms[terms.Count - 1].GetOperandType())",
+        "103: \t\t\t\t\t\t\tthrow new CodeEE(\"'='の前後で型が一致しません\");",
+        "104: \t\t\t\t\t\tterms.Add(term);",
+        "105: \t\t\t\t\t}",
+        "106: \t\t\t\t\telse",
+        "107: \t\t\t\t\t{",
+        "108: \t\t\t\t\t\tif (terms[terms.Count - 1].GetOperandType() == typeof(Int64))",
+        "109: \t\t\t\t\t\t\tterms.Add(new NullTerm(0));",
+        "110: \t\t\t\t\t\telse",
+        "111: \t\t\t\t\t\t\tterms.Add(new NullTerm(\"\"));",
+        "112: \t\t\t\t\t}",
+        "113: \t\t\t\t}",
+        "114: \t\t\t\tif (wc.Current.Type == ',')",
+        "115: \t\t\t\t\twc.ShiftNext();",
+        "116: \t\t\t}",
+        "117: \t\tend:",
+        "118:             IOperandTerm[] ret = new IOperandTerm[terms.Count];",
+        "119: \t\t\tterms.CopyTo(ret);",
+        "120: \t\t\treturn ret;"
+      ]
+    },
+    {
+      "archive": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/flow.py",
+      "sha256": "b3d0bd91644087ea538ec35bb4466a33a8f67528f2ab7ce7765d86b317e7dadb",
+      "start_line": 137,
+      "end_line": 198,
+      "numbered_source": [
+        "137:     if op == 'STOPCALLTRAIN':",
+        "138:         # VOID argument builder discards any text without evaluating it.",
+        "139:         finish_queue(vm)",
+        "140:         return",
+        "141:     # Native ArgumentBuilder runs before DoInstruction, even when the VM",
+        "142:     # lazily constructs a first-used instruction. It may reject types or",
+        "143:     # constant arithmetic without executing any dynamic term.",
+        "144:     from .load_arguments import StaticContext",
+        "145:     from .load_builders import integer_terms",
+        "146: ",
+        "147:     function = (",
+        "148:         vm.frames[-1].function",
+        "149:         if vm.frames",
+        "150:         else vm.function(next(iter(vm.program.functions)))",
+        "151:     )",
+        "152:     context = StaticContext(vm, function)",
+        "153:     context.runtime = True",
+        "154:     integer_terms(context, op, arg)",
+        "155:     if op == 'DOTRAIN':",
+        "156:         if vm.train_context is None or vm.train_phase not in DOTRAIN_PHASES:",
+        "157:             vm.console.write(native_train_phase(vm), True)",
+        "158:             raise EraError(",
+        "159:                 'DOTRAIN命令をこの位置で実行することはできません', code='E_FLOW'",
+        "160:             )",
+        "161:         # Process.ScriptProc clears these before GetIntValue, including when",
+        "162:         # that evaluation or its bounds check subsequently fails.",
+        "163:         vm.train_queue = None",
+        "164:         vm.train_queue_index = 0",
+        "165:     from .text import split_args",
+        "166: ",
+        "167:     parts = split_args(arg) if arg.strip() else []",
+        "168:     value = integer(vm.eval(parts[0])) if parts else 0",
+        "169:     if op == 'CALLTRAIN':",
+        "170:         # List<long>((int)count) occurs before assignment and can reject a",
+        "171:         # negative Int32 capacity without replacing the previous list.",
+        "172:         capacity = ((value + (1 << 31)) % (1 << 32)) - (1 << 31)",
+        "173:         if capacity < 0:",
+        "174:             raise EraError(",
+        "175:                 'CALLTRAIN命令のキュー容量に負の値が指定されました', code='E_ARGUMENT'",
+        "176:             )",
+        "177:         vm.train_queue = deque()",
+        "178:         vm.train_queue_total = 0",
+        "179:         size = vm.data.variables['SELECTCOM'].dims[0]",
+        "180:         if value >= size:",
+        "181:             raise EraError(",
+        "182:                 'CALLTRAIN命令の引数の値がSELECTCOMの要素数を超えています',",
+        "183:                 code='E_ARGUMENT',",
+        "184:             )",
+        "185:         for i in range(1, capacity + 1):",
+        "186:             command = vm.get('SELECTCOM:' + str(i))",
+        "187:             vm.train_queue_total += 1",
+        "188:             if i > vm.train_queue_index:",
+        "189:                 vm.train_queue.append(command)",
+        "190:         # Native SetCommnds does not reset its consumption index on replacement.",
+        "191:         return",
+        "192:     if value < 0:",
+        "193:         raise EraError('DOTRAIN命令に0未満の値が渡されました', code='E_INDEX')",
+        "194:     if value >= vm.data.variables['TRAINNAME'].dims[0]:",
+        "195:         raise EraError(",
+        "196:             'DOTRAIN命令にTRAINNAMEの配列数以上の値が渡されました', code='E_INDEX'",
+        "197:         )",
+        "198:     raise TrainRequest(value)"
+      ]
+    },
+    {
+      "archive": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/flow.py",
+      "sha256": "b3d0bd91644087ea538ec35bb4466a33a8f67528f2ab7ce7765d86b317e7dadb",
+      "start_line": 311,
+      "end_line": 362,
+      "numbered_source": [
+        "311: def clear_selection_temporaries(vm):",
+        "312:     for name in ('UP', 'DOWN', 'LOSEBASE'):",
+        "313:         vm.data.variables[name].values.clear()",
+        "314: ",
+        "315: ",
+        "316: def select_from_menu(vm):",
+        "317:     if vm.train_queue is not None:",
+        "318:         vm.console.skip_print = True",
+        "319:     phase_call(vm, 'SHOW_STATUS')",
+        "320:     names = vm.data.variables['TRAINNAME']",
+        "321:     ids = vm.data.train_ids",
+        "322:     menu = {}",
+        "323:     available_csv = set()",
+        "324:     for ordinal, csv_id in enumerate(ids):",
+        "325:         test = 'COM_ABLE' + str(csv_id)",
+        "326:         enabled = (",
+        "327:             phase_call(vm, test) != 0",
+        "328:             if test in vm.program.functions",
+        "329:             else vm.data.settings.com_able_default != 0",
+        "330:         )",
+        "331:         if enabled:",
+        "332:             menu[ordinal] = csv_id",
+        "333:             available_csv.add(csv_id)",
+        "334:             if vm.train_queue is None:",
+        "335:                 vm.console.write(f'[{ordinal}] {names.get((csv_id,))}  ')",
+        "336:     if vm.train_queue is None:",
+        "337:         vm.console.write('', True)",
+        "338:     phase_call(vm, 'SHOW_USERCOM')",
+        "339:     # The legacy flow turns suppression off after SHOW_USERCOM.",
+        "340:     vm.console.skip_print = False",
+        "341:     clear_selection_temporaries(vm)",
+        "342:     if vm.train_queue is not None:",
+        "343:         # Empty initial/replaced queues leave native Train_CallShowUserCom",
+        "344:         # pending without input or callback. Retain a VM safepoint in this",
+        "345:         # otherwise idle engine state (explicit instruction budgets still work).",
+        "346:         while not vm.train_queue:",
+        "347:             vm.tick()",
+        "348:         choice = vm.train_queue.popleft()",
+        "349:         vm.train_queue_index += 1",
+        "350:         vm.console.write(",
+        "351:             f'＜コマンド連続実行：{vm.train_queue_index}/{vm.train_queue_total}＞', True",
+        "352:         )",
+        "353:         selected = choice if choice in available_csv else None",
+        "354:     else:",
+        "355:         choice = vm.console.input()",
+        "356:         selected = menu.get(choice)",
+        "357:     if selected is None:",
+        "358:         vm.set('RESULT', choice)",
+        "359:         if vm.train_queue is not None:",
+        "360:             vm.console.write('コマンドを実行できませんでした', True)",
+        "361:         phase_call(vm, 'USERCOM')",
+        "362:     return selected"
+      ]
+    },
+    {
+      "archive": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/flow.py",
+      "sha256": "b3d0bd91644087ea538ec35bb4466a33a8f67528f2ab7ce7765d86b317e7dadb",
+      "start_line": 365,
+      "end_line": 425,
+      "numbered_source": [
+        "365: def execute_selected(vm, csv_id):",
+        "366:     vm.set('SELECTCOM', csv_id)",
+        "367:     vm.data.variables['NOWEX'].values.clear()",
+        "368:     phase_call(vm, 'EVENTCOM', event=True)",
+        "369:     # EVENTCOM may deliberately change SELECTCOM.",
+        "370:     result = phase_call(vm, 'COM' + str(vm.get('SELECTCOM')), optional=False)",
+        "371:     if not result:",
+        "372:         return False",
+        "373:     phase_call(vm, 'SOURCE_CHECK')",
+        "374:     vm.data.variables['SOURCE'].values.clear()",
+        "375:     waited = vm.console.wait_count",
+        "376:     phase_call(vm, 'EVENTCOMEND', event=True)",
+        "377:     return vm.console.wait_count == waited",
+        "378: ",
+        "379: ",
+        "380: def train(vm):",
+        "381:     for name, value in [('ASSIPLAY', 0), ('PREVCOM', -1), ('NEXTCOM', -1)]:",
+        "382:         vm.set(name, value)",
+        "383:     for name in ('TFLAG', 'GOTJUEL', 'TEQUIP', 'EX', 'PALAM', 'SOURCE'):",
+        "384:         vm.data.variables[name].values.clear()",
+        "385:     for character in range(vm.data.character_count):",
+        "386:         vm.data.reset_stain(character)",
+        "387:     vm.train_context = True",
+        "388:     pending = None",
+        "389:     first = True",
+        "390:     try:",
+        "391:         while True:",
+        "392:             try:",
+        "393:                 vm.tick()",
+        "394:                 if first:",
+        "395:                     first = False",
+        "396:                     phase_call(vm, 'EVENTTRAIN', event=True)",
+        "397:                 if pending is not None:",
+        "398:                     selected, pending = pending, None",
+        "399:                     clear_selection_temporaries(vm)",
+        "400:                 elif vm.get('NEXTCOM') >= 0:",
+        "401:                     selected = vm.get('NEXTCOM')",
+        "402:                     # This surprising reset to ZERO is the historical behavior,",
+        "403:                     # not -1. Scripts must clear it; the instruction budget still applies.",
+        "404:                     vm.set('NEXTCOM', 0)",
+        "405:                 else:",
+        "406:                     selected = select_from_menu(vm)",
+        "407:                 needs_wait = (",
+        "408:                     execute_selected(vm, selected) if selected is not None else False",
+        "409:                 )",
+        "410:                 if (",
+        "411:                     vm.train_queue is not None",
+        "412:                     and vm.train_queue_index == vm.train_queue_total",
+        "413:                 ):",
+        "414:                     finish_queue(vm)",
+        "415:                 if needs_wait:",
+        "416:                     vm.console.wait()",
+        "417:                 # PREVCOM is script-managed, apart from its BEGIN TRAIN reset.",
+        "418:             except TrainRequest as request:",
+        "419:                 vm.clear_frames()",
+        "420:                 vm.train_queue = None  # DOTRAIN cancels without CALLTRAINEND.",
+        "421:                 vm.train_queue_index = 0",
+        "422:                 pending = request.command",
+        "423:     finally:",
+        "424:         vm.train_context = None",
+        "425:         vm.train_phase = None"
+      ]
+    },
+    {
+      "archive": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/character_commands.py",
+      "sha256": "70b5c882af696b41854af10bc3c793ffb687fe7263ab79a5ce0f2b9bc8fa3768",
+      "start_line": 121,
+      "end_line": 153,
+      "numbered_source": [
+        "121: def _indexed(vm, name: str, argument: str) -> None:",
+        "122:     \"\"\"Convert every index before checking count/bounds or writing state.\"\"\"",
+        "123:     indices = [integer(value) for value in vm.args(argument)]",
+        "124:     count = vm.data.character_count",
+        "125:     if name == 'DELALLCHARA':",
+        "126:         _expect(indices, 0, 0, name)",
+        "127:         vm.data.reorder_characters([], remap_roles=False)",
+        "128:     elif name == 'DELCHARA':",
+        "129:         if any(not 0 <= index < count for index in indices) or len(set(indices)) != len(",
+        "130:             indices",
+        "131:         ):",
+        "132:             raise EraError('Invalid/duplicate character index', code='E_CHARACTER')",
+        "133:         remaining = [index for index in range(count) if index not in set(indices)]",
+        "134:         vm.data.reorder_characters(remaining, remap_roles=False)",
+        "135:     elif name == 'PICKUPCHARA':",
+        "136:         _pickup(vm, indices, count)",
+        "137:     elif name == 'SWAPCHARA':",
+        "138:         _expect(indices, 2, 2, name)",
+        "139:         _validate_indices(indices, count)",
+        "140:         order = list(range(count))",
+        "141:         order[indices[0]], order[indices[1]] = order[indices[1]], order[indices[0]]",
+        "142:         vm.data.reorder_characters(order, remap_roles=False)",
+        "143:     else:",
+        "144:         expected = 1 if name == 'ADDCOPYCHARA' else 2",
+        "145:         _expect(indices, expected, expected, name)",
+        "146:         _validate_indices(indices, count)",
+        "147:         source = indices[0]",
+        "148:         destination = (",
+        "149:             vm.data.add_character(-1, void=True)",
+        "150:             if name == 'ADDCOPYCHARA'",
+        "151:             else indices[1]",
+        "152:         )",
+        "153:         _copy_character(vm.data, source, destination)"
+      ]
+    },
+    {
+      "archive": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+      "member": "pyemuera/expr.py",
+      "sha256": "4e5a810aa8e360651fb186523dece345a4dae903f7e08762b4e90c088e4c9e52",
+      "start_line": 238,
+      "end_line": 252,
+      "numbered_source": [
+        "238:             if self.tok.kind == '(':",
+        "239:                 self.take('(')",
+        "240:                 args = []",
+        "241:                 if self.tok.kind != ')':",
+        "242:                     while True:",
+        "243:                         args.append(",
+        "244:                             ('missing',)",
+        "245:                             if self.tok.kind in (',', ')')",
+        "246:                             else self.expression()",
+        "247:                         )",
+        "248:                         if self.tok.kind != ',':",
+        "249:                             break",
+        "250:                         self.take(',')",
+        "251:                 self.take(')')",
+        "252:                 node = ('call', t.value, tuple(args))"
+      ]
+    }
+  ],
+  "limitations": [
+    "Exactly five final TRAINLIFE220 fixtures and COPYCHARA control/trailing: Native twice/public once each. Discarded attempts receive no coverage credit.",
+    "14 selected numeric trace fields; no full-array, ordinary numeric/UI input, count-boundary, invalid-state, missing-callback, arbitrary restart or nested NOSKIP closure.",
+    "Native five-second observation and owned cleanup are not natural exit. Guarded QUIT is explicit termination; later callbacks not observed.",
+    "COPYCHARA comma case uses self-copy constants; post-error character state unobserved. Other registered COPYCHARA cases are not newly adjudicated.",
+    "These limits bound claims beyond the exact current review_existing obligations. No current mandatory gap has been reclassified as a limit."
+  ],
+  "global_completion": false,
+  "product_modified": false
+}

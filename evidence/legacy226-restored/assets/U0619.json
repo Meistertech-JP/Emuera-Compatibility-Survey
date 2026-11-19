@@ -1,0 +1,55 @@
+{
+  "schema": "native-public-finite-comparison-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "CONTINUE"
+  },
+  "case_id": "CONTINUE_OUTSIDE_LOOP_20261115",
+  "classification": "different_scoped",
+  "result": "Outside-loop CONTINUE is flagged by both engines at line 3, but Native executes the preceding marker and stops at runtime after its load warning, while public pyz rejects during compilation before the marker.",
+  "case": {
+    "case_id": "CONTINUE_OUTSIDE_LOOP_20261115",
+    "fixture_sha256": "bb720f1951ba322a2d82bdd6b3e50fe2fa05a80ab8aa8400e4e7dcbe311a5008",
+    "native_repeat_log_sha256": [
+      "319267de749b0a8a877b695946e010955f6f832b8072c9fe04d67980cd2e7b9b",
+      "319267de749b0a8a877b695946e010955f6f832b8072c9fe04d67980cd2e7b9b"
+    ],
+    "public_pyz_sha256_before_after": [
+      "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+    ],
+    "native_result": "Native logs a line-3 warning while loading, executes the BEFORE marker, then stops at line 3 with the outside-loop CONTINUE error; AFTER is absent.",
+    "public_result": "Public pyz rejects the same line 3 during compilation with E_SYNTAX; neither BEFORE nor AFTER executes.",
+    "classification": "different_scoped",
+    "native_repeat_agreement": true,
+    "input_agreement": true,
+    "no_keyboard_input": true,
+    "native_capture_paths": [
+      "evidence/continue-finite-20261115/outside_loop-native-01/emuera.config",
+      "evidence/continue-finite-20261115/outside_loop-native-01/emuera.log",
+      "evidence/continue-finite-20261115/outside_loop-native-01/Emuera1824+v24.exe",
+      "evidence/continue-finite-20261115/outside_loop-native-01/native-main-transcript-crop-00.png",
+      "evidence/continue-finite-20261115/outside_loop-native-01/native-observation.json",
+      "evidence/continue-finite-20261115/outside_loop-native-02/emuera.config",
+      "evidence/continue-finite-20261115/outside_loop-native-02/emuera.log",
+      "evidence/continue-finite-20261115/outside_loop-native-02/Emuera1824+v24.exe",
+      "evidence/continue-finite-20261115/outside_loop-native-02/native-main-transcript-crop-00.png",
+      "evidence/continue-finite-20261115/outside_loop-native-02/native-observation.json"
+    ],
+    "public_capture_paths": [
+      "evidence/continue-finite-20261115/outside_loop-py/emuera.config",
+      "evidence/continue-finite-20261115/outside_loop-py/verified-public-pyz.json",
+      "evidence/continue-finite-20261115/outside_loop-py/verified.stderr.bin",
+      "evidence/continue-finite-20261115/outside_loop-py/verified.stdout.bin",
+      "evidence/continue-finite-20261115/outside_loop-py/ERB/SEARCHBOUND01.ERB"
+    ]
+  },
+  "source_basis": "Emuera1824+v24 Instraction.Child.cs lines 2120-2172 and ErbLoader loop-binding source; the pinned source member and excerpt are recorded in SOURCE_HASHES.json.",
+  "limitations": [
+    "Only the outside-loop CONTINUE form on line 3 is compared.",
+    "Native GUI natural exit was not observed; its isolated runner was terminated after the fixed 5-second window.",
+    "The public/native diagnostic text is not asserted byte-identical."
+  ],
+  "product_code_modified": false,
+  "published_artifacts_modified": false
+}

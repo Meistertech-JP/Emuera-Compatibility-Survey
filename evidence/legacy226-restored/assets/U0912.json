@@ -1,0 +1,121 @@
+{
+  "schema": "native-public-finite-command-comparison-1",
+  "generated_utc": "2026-11-13T18:18:56.331533+00:00",
+  "case_ids": [
+    "PRINTVEMPTYFAULT01_20261114"
+  ],
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTV"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "native_source_zip_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "public_source_zip_sha256": "c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2",
+  "fixture": {
+    "path": "pilot/variants/PRINTVTRACE01/ERB/PRINTVTRACE01.ERB",
+    "sha256": "682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf"
+  },
+  "runs": {
+    "accepted-native-01": {
+      "receipt": "accepted-native-01/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "fixture_sha256": "682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "output_sha256": "e07557e53d1968d4ba11c0c039aff749b5612abab57b4e3f0f530031199b4514",
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "SKIP_RESULT=0",
+        "BEGIN_EMPTY_PRINTV<AFTER_EMPTY_PRINTV>",
+        "<FIRST_TERM_SIDE_EFFECT>"
+      ],
+      "division_by_zero_observed": true,
+      "unreachable_marker_absent": true,
+      "private_desktop": "PyEmueraProbe_252438f6b3574bc58f41f9a9b7cf3f8d",
+      "no_screenshot_or_input": true,
+      "natural_exit": false,
+      "exit_code": null
+    },
+    "accepted-native-02": {
+      "receipt": "accepted-native-02/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "fixture_sha256": "682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "output_sha256": "e07557e53d1968d4ba11c0c039aff749b5612abab57b4e3f0f530031199b4514",
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "SKIP_RESULT=0",
+        "BEGIN_EMPTY_PRINTV<AFTER_EMPTY_PRINTV>",
+        "<FIRST_TERM_SIDE_EFFECT>"
+      ],
+      "division_by_zero_observed": true,
+      "unreachable_marker_absent": true,
+      "private_desktop": "PyEmueraProbe_f0237b177e294f9981ec56124237bcc3",
+      "no_screenshot_or_input": true,
+      "natural_exit": false,
+      "exit_code": null
+    },
+    "accepted-public-01": {
+      "receipt": "accepted-public-01/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "fixture_sha256": "682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "stdout_sha256": "282b8ed73d19a711343c63deaca3e340288f4011e4bab2501c850310f47e5a03",
+      "stderr_sha256": "9e378546bcf67df795b0704dd283dca959ff4130e5992aa69dabe58046a28373",
+      "returncode": 1,
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "SKIP_RESULT=0",
+        "BEGIN_EMPTY_PRINTV<AFTER_EMPTY_PRINTV>",
+        "<FIRST_TERM_SIDE_EFFECT>"
+      ],
+      "division_by_zero_observed": true,
+      "unreachable_marker_absent": true,
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+    },
+    "accepted-public-02": {
+      "receipt": "accepted-public-02/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "fixture_sha256": "682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "stdout_sha256": "282b8ed73d19a711343c63deaca3e340288f4011e4bab2501c850310f47e5a03",
+      "stderr_sha256": "9e378546bcf67df795b0704dd283dca959ff4130e5992aa69dabe58046a28373",
+      "returncode": 1,
+      "selected_semantic_lines": [
+        "Now Loading...",
+        "SKIP_RESULT=0",
+        "BEGIN_EMPTY_PRINTV<AFTER_EMPTY_PRINTV>",
+        "<FIRST_TERM_SIDE_EFFECT>"
+      ],
+      "division_by_zero_observed": true,
+      "unreachable_marker_absent": true,
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+    }
+  },
+  "selected_semantic_lines": [
+    "Now Loading...",
+    "SKIP_RESULT=0",
+    "BEGIN_EMPTY_PRINTV<AFTER_EMPTY_PRINTV>",
+    "<FIRST_TERM_SIDE_EFFECT>"
+  ],
+  "observations": [
+    "SKIPDISP1 wrapped PRINTV TOUCH(); after SKIPDISP0, RESULT remained 0 in all four runs, so the helper did not execute while suppressed.",
+    "PRINTV EMPTYTEXT() where EMPTYTEXT returns \"\" produced no text; BEGIN_EMPTY_PRINTV and <AFTER_EMPTY_PRINTV> are contiguous in all outputs.",
+    "Normal PRINTV TOUCH(),1/ZEROVAL() emitted <FIRST_TERM_SIDE_EFFECT> before both engines reported division by zero; the later marker was absent. This observes the first term side effect before the second-term fault."
+  ],
+  "error_comparison": "Both report division by zero at fixture line 10; diagnostic wording/format differs between Native and public PyEmuera. Selected pre-error output/state agrees; no byte-identical diagnostic claim.",
+  "raw_logs_equal_across_engines": false,
+  "raw_log_equality_explanation": "Native log is UTF-16/CRLF with Native Japanese diagnostic; public stdout/stderr are UTF-8 with E_ARITH diagnostic.",
+  "native_natural_exit_observed": false,
+  "native_exit_code_observed": false,
+  "public_returncodes": [
+    1,
+    1
+  ],
+  "screenshots_taken": false,
+  "global_keyboard_events": false,
+  "scoped_outcome": "matched_in_finite_scope",
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_originals_modified": false
+}

@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-11-13T04:04:08.866380+00:00",
+  "finished_utc": "2026-11-13T04:04:10.266902+00:00",
+  "public_pyz": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+  "sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "sha256_expected": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "unchanged": true,
+  "argv": [
+    "[USER_HOME]\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-I",
+    "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+    "--debug",
+    "."
+  ],
+  "cwd": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\forcekana-minimal-20261113-213\\standalone\\py",
+  "returncode": 0,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "inputs": {
+    "ERB/SEARCHBOUND01.ERB": "8e4bf2467054a97a057fc2e690e6fd333c0a21383fb9c6a147823ef0ca87a2cd",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "8e4bf2467054a97a057fc2e690e6fd333c0a21383fb9c6a147823ef0ca87a2cd",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "stdout_sha256": "61233c34d81be40b47211d462e2498e2458cfea3fd2b3083c19a91b374c21a2b",
+  "stderr_sha256": "6364bc30d3a39c423d8f13d2eee49b594877a7d32d01d38a227983bb3df6c8ee",
+  "log_sha256": "e084d6014b15547ab2f98a810c8f9063af6ca263b5bd74723a44957ccaf7baaf"
+}

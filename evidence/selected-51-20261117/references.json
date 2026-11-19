@@ -1,0 +1,3673 @@
+{
+  "scope": "Neutral references; not-included is not missing or unobserved",
+  "references": [
+    {
+      "id": "R00001",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00002",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00003",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00004",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00005",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00006",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00007",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00008",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00009",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00010",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00011",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-01/raw.bin",
+        "sha256": "5527580851805376f86fe6b9fa9ee2a4cfaf8aefa669957b6542d9273b9e876e",
+        "size": 620
+      }
+    },
+    {
+      "id": "R00012",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00013",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-01/receipt.json",
+        "sha256": "67d40fb6708ddb91fb7136f443d6716dc47e8debd8032c1127ecd2560d00aa2a",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00014",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00015",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00016",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00017",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00018",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00019",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00020",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00021",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00022",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00023",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "def5704bb5ebb9eb1b6385b8f5c826f418787e70dbf43a054c32d9297745664b",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00024",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00025",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-02/raw.bin",
+        "sha256": "5527580851805376f86fe6b9fa9ee2a4cfaf8aefa669957b6542d9273b9e876e",
+        "size": 620
+      }
+    },
+    {
+      "id": "R00026",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00027",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-02/receipt.json",
+        "sha256": "5a8411078e7cee490f0c8a509b76ae8b75719e1b9a68fc33d57d69729ab97527",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00028",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00029",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00030",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00031",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00032",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00033",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00034",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00035",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00036",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00037",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "def5704bb5ebb9eb1b6385b8f5c826f418787e70dbf43a054c32d9297745664b",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00038",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00039",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/public-01/raw.bin",
+        "sha256": "fc4dbc63d0a6bb87941f3dd6c9b239150b3e9698990304718c7355cba294b72b",
+        "size": 184
+      }
+    },
+    {
+      "id": "R00040",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00041",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/public-01/receipt.json",
+        "sha256": "9d79d01be5160d5dea7398b60298a71fa8c66a46a6f57d4d6a259f76d11b018a",
+        "size": 1297
+      }
+    },
+    {
+      "id": "R00042",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00043",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00044",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00045",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00046",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00047",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "def5704bb5ebb9eb1b6385b8f5c826f418787e70dbf43a054c32d9297745664b",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00048",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B001/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00049",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00050",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00051",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00052",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00053",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00054",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00055",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-01/raw.bin",
+        "sha256": "15be27c840bda6268dd2e0041074aed954b63a99cb2e4849bd5b31e7b1cef380",
+        "size": 1436
+      }
+    },
+    {
+      "id": "R00056",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00057",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-01/receipt.json",
+        "sha256": "be6aeef18198f9d685f0b1a146a9e290c986ce5e0d58954408cde954e59e0571",
+        "size": 1325
+      }
+    },
+    {
+      "id": "R00058",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00059",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00060",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00061",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00062",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00063",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00064",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00065",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00066",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00067",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "888e979b6ce12817e4b5da2a3785f973802e0e687925ca0da39a6112e0e08483",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00068",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00069",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-02/raw.bin",
+        "sha256": "15be27c840bda6268dd2e0041074aed954b63a99cb2e4849bd5b31e7b1cef380",
+        "size": 1436
+      }
+    },
+    {
+      "id": "R00070",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00071",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-02/receipt.json",
+        "sha256": "441854e91d3c23aeab6ece12547ebc34ae1f57d4a8f9f0cc780f88d685fdfac1",
+        "size": 1325
+      }
+    },
+    {
+      "id": "R00072",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00073",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00074",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00075",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00076",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00077",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00078",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00079",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00080",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00081",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "888e979b6ce12817e4b5da2a3785f973802e0e687925ca0da39a6112e0e08483",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00082",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00083",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/public-01/raw.bin",
+        "sha256": "acbff1d12d2b20b3b4eff87f9397d26437dfbd6cf0ccf3da0e4b68018e0a65cf",
+        "size": 791
+      }
+    },
+    {
+      "id": "R00084",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00085",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/public-01/receipt.json",
+        "sha256": "0f32d109149dbf3c0b33c96fcf4f493de51733acb8a56c7640da1da53880ecfe",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00086",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00087",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00088",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00089",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00090",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00091",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "888e979b6ce12817e4b5da2a3785f973802e0e687925ca0da39a6112e0e08483",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00092",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B002/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00093",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00094",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00095",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00096",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00097",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00098",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00099",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-01/raw.bin",
+        "sha256": "11c99949fc5245a1db4e8afc9f8999324490cde4411c4748193be4128f59a143",
+        "size": 630
+      }
+    },
+    {
+      "id": "R00100",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00101",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-01/receipt.json",
+        "sha256": "48efdcf4a4b5916e8a519c7df69b3b5e4e7e7bd1a9671927c60c65b8f685d099",
+        "size": 1317
+      }
+    },
+    {
+      "id": "R00102",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00103",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00104",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00105",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00106",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00107",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00108",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00109",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00110",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00111",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "0172cecb1c092078e316a52c86b3a17db204237e6d323a0c9c1671aceacb0eba",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00112",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00113",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-02/raw.bin",
+        "sha256": "11c99949fc5245a1db4e8afc9f8999324490cde4411c4748193be4128f59a143",
+        "size": 630
+      }
+    },
+    {
+      "id": "R00114",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00115",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-02/receipt.json",
+        "sha256": "0680949be2fb9acf4ca41a3998ba7f46622758b6069d7958238702bd3604ae54",
+        "size": 1317
+      }
+    },
+    {
+      "id": "R00116",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00117",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00118",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00119",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00120",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00121",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00122",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00123",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00124",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00125",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "0172cecb1c092078e316a52c86b3a17db204237e6d323a0c9c1671aceacb0eba",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00126",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00127",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/public-01/raw.bin",
+        "sha256": "e5e1ca2c317e1be13da4986c56742738a160bf2608be44a669f527cca9282fd9",
+        "size": 187
+      }
+    },
+    {
+      "id": "R00128",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00129",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/public-01/receipt.json",
+        "sha256": "47223d2c40f3902e09f06c36b4225dc550a3a6e7babe1430256ed658ecae82f3",
+        "size": 1303
+      }
+    },
+    {
+      "id": "R00130",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00131",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00132",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00133",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00134",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00135",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "0172cecb1c092078e316a52c86b3a17db204237e6d323a0c9c1671aceacb0eba",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00136",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B003/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00137",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00138",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00139",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00140",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00141",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00142",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00143",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-01/raw.bin",
+        "sha256": "93e394d9132fe866e5853b1e722373451caa245799bb2297c518ec1e694a2e9d",
+        "size": 700
+      }
+    },
+    {
+      "id": "R00144",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00145",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-01/receipt.json",
+        "sha256": "ea2987d4f902f6bb6e8cb1e0ddb3d6ef36f4e2e21382590400570cbbfe036b52",
+        "size": 1307
+      }
+    },
+    {
+      "id": "R00146",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00147",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00148",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00149",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00150",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00151",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00152",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00153",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00154",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00155",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "4d1d58f83bb16cdfe1ae51d4d6eb0dfd7203938d097116a9eda0a947b462133c",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00156",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00157",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-02/raw.bin",
+        "sha256": "93e394d9132fe866e5853b1e722373451caa245799bb2297c518ec1e694a2e9d",
+        "size": 700
+      }
+    },
+    {
+      "id": "R00158",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00159",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-02/receipt.json",
+        "sha256": "04ff386d14eaa5a66f9071fe2a0d4637e1dae72d10bcd7d8bba03384873a2cb6",
+        "size": 1307
+      }
+    },
+    {
+      "id": "R00160",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00161",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00162",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00163",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00164",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00165",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00166",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00167",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00168",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00169",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "4d1d58f83bb16cdfe1ae51d4d6eb0dfd7203938d097116a9eda0a947b462133c",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00170",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00171",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/public-01/raw.bin",
+        "sha256": "d833c5eb0bbf2e37d25f2fae59371f992a9218e67c47f2aaf5458189ef9c9fe5",
+        "size": 429
+      }
+    },
+    {
+      "id": "R00172",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00173",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/public-01/receipt.json",
+        "sha256": "faf5c93ead1cede20583e243883f4e2cf23ed234bb160c7739e4736b943b3631",
+        "size": 1293
+      }
+    },
+    {
+      "id": "R00174",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00175",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00176",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00177",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00178",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00179",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "4d1d58f83bb16cdfe1ae51d4d6eb0dfd7203938d097116a9eda0a947b462133c",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00180",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B004/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00181",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00182",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00183",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00184",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00185",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00186",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00187",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-01/raw.bin",
+        "sha256": "6cb2d65c998b220e3f7b65332229c6908c74b6761739a32243c37770fe256ca2",
+        "size": 620
+      }
+    },
+    {
+      "id": "R00188",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00189",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-01/receipt.json",
+        "sha256": "d8a17583958255e60ae1359d0739c4bea4e0a4ca7df815ccff3bb1bb83eb0f9c",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00190",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00191",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00192",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00193",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00194",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00195",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00196",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00197",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00198",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00199",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "0595d0f69845b73d441aa4a92af38a5aa018726b6137d35b2c0e3941cbeecb7f",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00200",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00201",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-02/raw.bin",
+        "sha256": "6cb2d65c998b220e3f7b65332229c6908c74b6761739a32243c37770fe256ca2",
+        "size": 620
+      }
+    },
+    {
+      "id": "R00202",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00203",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-02/receipt.json",
+        "sha256": "2712eaaa706167c498448c1bdacc0f182ef1f92ae238c1be288db50013380364",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00204",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00205",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00206",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00207",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00208",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00209",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00210",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00211",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00212",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00213",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "0595d0f69845b73d441aa4a92af38a5aa018726b6137d35b2c0e3941cbeecb7f",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00214",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00215",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/public-01/raw.bin",
+        "sha256": "5fcf81dea49e529e1c082bfe851f7966903380ee07a64fa25f992a068b8e75fe",
+        "size": 184
+      }
+    },
+    {
+      "id": "R00216",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00217",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/public-01/receipt.json",
+        "sha256": "b8aca9d92e09f3031b0274f22f04e365b4529c6d0e38168fc2cad07337c18675",
+        "size": 1297
+      }
+    },
+    {
+      "id": "R00218",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00219",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00220",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00221",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00222",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00223",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "0595d0f69845b73d441aa4a92af38a5aa018726b6137d35b2c0e3941cbeecb7f",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00224",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B005/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00225",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00226",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00227",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00228",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00229",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00230",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00231",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-01/raw.bin",
+        "sha256": "7d574e513621874bdfae42cefa20f132efdac9de8ec252d988d6bfbdd4f79f1d",
+        "size": 1432
+      }
+    },
+    {
+      "id": "R00232",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00233",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-01/receipt.json",
+        "sha256": "39e104e70c327514e854767f2126f04c7fd1aad929afd264cea19bc892e42e97",
+        "size": 1325
+      }
+    },
+    {
+      "id": "R00234",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00235",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00236",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00237",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00238",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00239",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00240",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00241",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00242",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00243",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "c16a92976680d6de77fac03a34bc4d9d6a9409d5df28c142d68f68901c8cbf37",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00244",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00245",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-02/raw.bin",
+        "sha256": "7d574e513621874bdfae42cefa20f132efdac9de8ec252d988d6bfbdd4f79f1d",
+        "size": 1432
+      }
+    },
+    {
+      "id": "R00246",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00247",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-02/receipt.json",
+        "sha256": "28e99bbd6ed51a55323d46bec9e09b0707359f8b80be9bdf2e4cbd39f4501b3a",
+        "size": 1325
+      }
+    },
+    {
+      "id": "R00248",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00249",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00250",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00251",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00252",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00253",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00254",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00255",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00256",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00257",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "c16a92976680d6de77fac03a34bc4d9d6a9409d5df28c142d68f68901c8cbf37",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00258",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00259",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/public-01/raw.bin",
+        "sha256": "a86eae65d0c090af0839d5694d3cda10640e314e2ae5f6f1e1f3c32d3d624b77",
+        "size": 789
+      }
+    },
+    {
+      "id": "R00260",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00261",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/public-01/receipt.json",
+        "sha256": "bdcb2245f35bf215f03d4372ad3b1464a1796077a3336bab8f95383443bed29b",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00262",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00263",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00264",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00265",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00266",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00267",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "c16a92976680d6de77fac03a34bc4d9d6a9409d5df28c142d68f68901c8cbf37",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00268",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B006/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00269",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00270",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00271",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00272",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00273",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00274",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00275",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-01/raw.bin",
+        "sha256": "5f5a369cc9082dd0add9899e13f9b6ffe2d5192c9be352c0b1a5ea2ce48b2cd2",
+        "size": 630
+      }
+    },
+    {
+      "id": "R00276",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00277",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-01/receipt.json",
+        "sha256": "f5d724f328bccee30384e72405458c62cb4bae7bbbc02c70651283d645a12afc",
+        "size": 1317
+      }
+    },
+    {
+      "id": "R00278",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00279",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00280",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00281",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00282",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00283",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00284",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00285",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00286",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00287",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "1bd0e1fbfaf7a06ec481c9df77b879a341b281f496626096051faf5e694f62c1",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00288",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00289",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-02/raw.bin",
+        "sha256": "5f5a369cc9082dd0add9899e13f9b6ffe2d5192c9be352c0b1a5ea2ce48b2cd2",
+        "size": 630
+      }
+    },
+    {
+      "id": "R00290",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00291",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-02/receipt.json",
+        "sha256": "9d3ec453e57920a972a86105aa0977179c0d35794a523efdc022b0e693289746",
+        "size": 1317
+      }
+    },
+    {
+      "id": "R00292",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00293",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00294",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00295",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00296",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00297",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00298",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00299",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00300",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00301",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "1bd0e1fbfaf7a06ec481c9df77b879a341b281f496626096051faf5e694f62c1",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00302",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00303",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/public-01/raw.bin",
+        "sha256": "50621035dd360f4f6f505ef2c0f950d7270f92aa143a51baf08b2bb881e1e158",
+        "size": 187
+      }
+    },
+    {
+      "id": "R00304",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00305",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/public-01/receipt.json",
+        "sha256": "70b03522811a6f264a1375fcb203bd9c3a0a07956701375e0db4ffe97d81f590",
+        "size": 1303
+      }
+    },
+    {
+      "id": "R00306",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00307",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00308",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00309",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00310",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00311",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "1bd0e1fbfaf7a06ec481c9df77b879a341b281f496626096051faf5e694f62c1",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00312",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B007/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00313",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00314",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00315",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00316",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00317",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00318",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00319",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-01/raw.bin",
+        "sha256": "feacdb6582cc8660d07d840b887493ad5a75703cf55f5cd8c803cad0cd43828e",
+        "size": 700
+      }
+    },
+    {
+      "id": "R00320",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00321",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-01/receipt.json",
+        "sha256": "ce38812203bfa1d81f8313abc56d6a679e8040cf637773fe59915114697ce0bc",
+        "size": 1307
+      }
+    },
+    {
+      "id": "R00322",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00323",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00324",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00325",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00326",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00327",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00328",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00329",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00330",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00331",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "76e217422e1fcce1f9a289dca77013d4fcf284b39437321d3296b1485aa90145",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00332",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00333",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-02/raw.bin",
+        "sha256": "feacdb6582cc8660d07d840b887493ad5a75703cf55f5cd8c803cad0cd43828e",
+        "size": 700
+      }
+    },
+    {
+      "id": "R00334",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00335",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-02/receipt.json",
+        "sha256": "e64e14fcd0e096622f65279695a56974b72492b5d5b81824c725f0d575592f59",
+        "size": 1307
+      }
+    },
+    {
+      "id": "R00336",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00337",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00338",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00339",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00340",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00341",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00342",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00343",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00344",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00345",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "76e217422e1fcce1f9a289dca77013d4fcf284b39437321d3296b1485aa90145",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00346",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00347",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/public-01/raw.bin",
+        "sha256": "6f9af4dba58ebfcef5ace6e0b541c1697e2f23afc9f8aae5ded992bb1092223b",
+        "size": 429
+      }
+    },
+    {
+      "id": "R00348",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00349",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/public-01/receipt.json",
+        "sha256": "caec49eac7f92767a62014ee8f115761400d46d1ef3f60e1eb12aed39ab51b61",
+        "size": 1293
+      }
+    },
+    {
+      "id": "R00350",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00351",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00352",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00353",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00354",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00355",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "76e217422e1fcce1f9a289dca77013d4fcf284b39437321d3296b1485aa90145",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00356",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B008/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00357",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00358",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00359",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00360",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00361",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00362",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00363",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-01/raw.bin",
+        "sha256": "729538ef43682a4e119878ebf2a8dd2ba6d36a2098b20fa0a2514f2339c44a73",
+        "size": 620
+      }
+    },
+    {
+      "id": "R00364",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00365",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-01/receipt.json",
+        "sha256": "b0c1eae1e7997edcaa8d7549d69e4b6280489856fb1c2b2a395168d13fe200cd",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00366",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00367",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00368",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00369",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00370",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00371",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00372",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00373",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00374",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00375",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "b3f67b177746f8658813e496219d28bf4f9fae05ac4a051e4b9d2b3d3543a8f0",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00376",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00377",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-02/raw.bin",
+        "sha256": "729538ef43682a4e119878ebf2a8dd2ba6d36a2098b20fa0a2514f2339c44a73",
+        "size": 620
+      }
+    },
+    {
+      "id": "R00378",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00379",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-02/receipt.json",
+        "sha256": "95035cdc8876d396a451fbd2e21c659b551ee44a4ac75211d2d15e293b9eb75f",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00380",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00381",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00382",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00383",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00384",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00385",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00386",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00387",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00388",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00389",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "b3f67b177746f8658813e496219d28bf4f9fae05ac4a051e4b9d2b3d3543a8f0",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00390",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00391",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/public-01/raw.bin",
+        "sha256": "138b305c55eb489dc24c89c48e709f302a94c1f39c7c049d54e5b32c5f0aa27b",
+        "size": 184
+      }
+    },
+    {
+      "id": "R00392",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00393",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/public-01/receipt.json",
+        "sha256": "89c9a153f39bac26e6adc1617d2fb658912087aae0705a18ae5ec1e4006a5e7c",
+        "size": 1297
+      }
+    },
+    {
+      "id": "R00394",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00395",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00396",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00397",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00398",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00399",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "b3f67b177746f8658813e496219d28bf4f9fae05ac4a051e4b9d2b3d3543a8f0",
+        "size": 730,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00400",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B009/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00401",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00402",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00403",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00404",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00405",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00406",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00407",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-01/raw.bin",
+        "sha256": "1029f265f260befb76e6ca044dbf772e5364c5108a0345960967529d84ee7ab7",
+        "size": 1436
+      }
+    },
+    {
+      "id": "R00408",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00409",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-01/receipt.json",
+        "sha256": "e5063b3f569ef66487778dbc328a8d1503b092e62b8beb6946a32a85b1fab65d",
+        "size": 1325
+      }
+    },
+    {
+      "id": "R00410",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00411",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00412",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00413",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00414",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00415",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00416",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00417",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00418",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00419",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "c0296095586a34e08b5c9d43f0d64d1102fd9cdde80fcab72fde70a81a1f94b6",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00420",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00421",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-02/raw.bin",
+        "sha256": "1029f265f260befb76e6ca044dbf772e5364c5108a0345960967529d84ee7ab7",
+        "size": 1436
+      }
+    },
+    {
+      "id": "R00422",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00423",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-02/receipt.json",
+        "sha256": "dfd52d16e8f6dae9d7d1ee6b5719b9a103020aa0ba4749f21fa1f24c15903cff",
+        "size": 1325
+      }
+    },
+    {
+      "id": "R00424",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00425",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00426",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00427",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00428",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00429",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00430",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00431",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00432",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00433",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "c0296095586a34e08b5c9d43f0d64d1102fd9cdde80fcab72fde70a81a1f94b6",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00434",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00435",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/public-01/raw.bin",
+        "sha256": "c97cc15bfcf39661bc0d5dcdbc621509d569c44aa86cb353c97a190f25734487",
+        "size": 791
+      }
+    },
+    {
+      "id": "R00436",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00437",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/public-01/receipt.json",
+        "sha256": "e67a497611cb83bd4ba865fe88f378a43c566e6e839888b1ca396cdb616fa8c6",
+        "size": 1311
+      }
+    },
+    {
+      "id": "R00438",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00439",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00440",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00441",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00442",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00443",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "c0296095586a34e08b5c9d43f0d64d1102fd9cdde80fcab72fde70a81a1f94b6",
+        "size": 1539,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00444",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B010/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00445",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00446",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00447",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00448",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00449",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00450",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00451",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-01/raw.bin",
+        "sha256": "a7ee4607ac9cd1eb4da725d4d4e69f9494c1ba16914104ddefc9601f8c0d2b2d",
+        "size": 630
+      }
+    },
+    {
+      "id": "R00452",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00453",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-01/receipt.json",
+        "sha256": "a80163132e8039d847ad2bf1e1ab8ab822448dd943ae609aeea342fe839a0b8c",
+        "size": 1317
+      }
+    },
+    {
+      "id": "R00454",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00455",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00456",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00457",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00458",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00459",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00460",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00461",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00462",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00463",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "aa53e74fa21962c4b9133e98d734ede3ebea8f4143e2fb0f471d5f473085a7a2",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00464",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00465",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-02/raw.bin",
+        "sha256": "a7ee4607ac9cd1eb4da725d4d4e69f9494c1ba16914104ddefc9601f8c0d2b2d",
+        "size": 630
+      }
+    },
+    {
+      "id": "R00466",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00467",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-02/receipt.json",
+        "sha256": "3116d74de20e8b47fea113b3865215127453a0767d980693ae8c83171d2e74e6",
+        "size": 1317
+      }
+    },
+    {
+      "id": "R00468",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00469",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00470",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00471",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00472",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00473",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00474",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00475",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00476",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00477",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "aa53e74fa21962c4b9133e98d734ede3ebea8f4143e2fb0f471d5f473085a7a2",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00478",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00479",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/public-01/raw.bin",
+        "sha256": "5ddceaa67a3021bd63e56041752ab7b5c7481d14ce3e152b9e9526ad8b75a6f1",
+        "size": 187
+      }
+    },
+    {
+      "id": "R00480",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00481",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/public-01/receipt.json",
+        "sha256": "4ec0674ae57e987af051bdecb3a3febee6b8ead9d32853be8c893be1f628ee4d",
+        "size": 1303
+      }
+    },
+    {
+      "id": "R00482",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00483",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00484",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00485",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00486",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00487",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "aa53e74fa21962c4b9133e98d734ede3ebea8f4143e2fb0f471d5f473085a7a2",
+        "size": 740,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00488",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B011/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00489",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00490",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00491",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00492",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00493",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00494",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00495",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-01/raw.bin",
+        "sha256": "d6e3b6f0637899caaa9ffdd0689753c1de3ab907bc742d1436f29c48633f575a",
+        "size": 700
+      }
+    },
+    {
+      "id": "R00496",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00497",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-01/receipt.json",
+        "sha256": "04ca77814093e27a5deb299c9988a4b03816fd909f6103ada313d0a6c32d3da3",
+        "size": 1307
+      }
+    },
+    {
+      "id": "R00498",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00499",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00500",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00501",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00502",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00503",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00504",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00505",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00506",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00507",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-01/inputs/ERB/CASE.ERB",
+        "sha256": "f26190450abc19393e79dbb28a8e747a5e3bada2c285865dcde2276618738fb8",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00508",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00509",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-02/raw.bin",
+        "sha256": "d6e3b6f0637899caaa9ffdd0689753c1de3ab907bc742d1436f29c48633f575a",
+        "size": 700
+      }
+    },
+    {
+      "id": "R00510",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00511",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-02/receipt.json",
+        "sha256": "c1048e776656556b6a197c4490fe40dc6258239f9eaa13854827f9a441b177d8",
+        "size": 1307
+      }
+    },
+    {
+      "id": "R00512",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00513",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00514",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00515",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00516",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00517",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00518",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00519",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00520",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-02/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00521",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-02/inputs/ERB/CASE.ERB",
+        "sha256": "f26190450abc19393e79dbb28a8e747a5e3bada2c285865dcde2276618738fb8",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00522",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/native-02/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    },
+    {
+      "id": "R00523",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/public-01/raw.bin",
+        "sha256": "4dda2da4cbb2cf0ad8ba8eecdb1d977b58f31e6515a5e08e51e99e4adfb53abe",
+        "size": 429
+      }
+    },
+    {
+      "id": "R00524",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00525",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/public-01/receipt.json",
+        "sha256": "427880721298b6f01aed4dd74e24a38976081a9806817b2af86f41cc7ab17df8",
+        "size": 1293
+      }
+    },
+    {
+      "id": "R00526",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00527",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00528",
+      "availability": "not_included",
+      "asset": null
+    },
+    {
+      "id": "R00529",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/public-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "relative_name": "emuera.config"
+      }
+    },
+    {
+      "id": "R00530",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/public-01/inputs/ERB/ARRAYMSORT176.ERH",
+        "sha256": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+        "size": 89,
+        "relative_name": "ERB/ARRAYMSORT176.ERH"
+      }
+    },
+    {
+      "id": "R00531",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/public-01/inputs/ERB/CASE.ERB",
+        "sha256": "f26190450abc19393e79dbb28a8e747a5e3bada2c285865dcde2276618738fb8",
+        "size": 724,
+        "relative_name": "ERB/CASE.ERB"
+      }
+    },
+    {
+      "id": "R00532",
+      "availability": "included_derivative",
+      "asset": {
+        "path": "assets/B012/public-01/inputs/ERB/ENDPOINT_READBACK.ERH",
+        "sha256": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412",
+        "size": 68,
+        "relative_name": "ERB/ENDPOINT_READBACK.ERH"
+      }
+    }
+  ]
+}

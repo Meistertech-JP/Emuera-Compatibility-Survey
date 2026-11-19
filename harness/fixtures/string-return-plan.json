@@ -1,0 +1,25 @@
+{
+  "schema": "pyemuera.batch-plan.v1",
+  "approved_pure_expressions": [
+    "TOSTR((-15 + (RESULT:0 - 701)),\"D4\")"
+  ],
+  "cases": [
+    {
+      "case_id": "STRING_RETURN_TOSTR_D4_NEG15_20261117",
+      "typed_key": "expression_function:TOSTR",
+      "expression": "TOSTR((-15 + (RESULT:0 - 701)),\"D4\")",
+      "scope": {
+        "description": "One normal string return from TOSTR; compare the exact value on both engine sides and preserve the RESULT/RESULTS sentinels."
+      },
+      "observations": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ],
+      "expected_optional": [
+        "-0015"
+      ]
+    }
+  ]
+}

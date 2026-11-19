@@ -1,0 +1,402 @@
+{
+  "case": "KANA213",
+  "rows": [
+    {
+      "condition": {
+        "id": "K213_0",
+        "source_literal": "ｱ",
+        "forcekana": 1,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ｱ",
+        "native-02": "ｱ",
+        "py": "ｱ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF71"
+        ],
+        "native-02": [
+          "U+FF71"
+        ],
+        "py": [
+          "U+FF71"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_1",
+        "source_literal": "ｱ",
+        "forcekana": 2,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ｱ",
+        "native-02": "ｱ",
+        "py": "あ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF71"
+        ],
+        "native-02": [
+          "U+FF71"
+        ],
+        "py": [
+          "U+3042"
+        ]
+      },
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_2",
+        "source_literal": "ｱ",
+        "forcekana": 3,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "あ",
+        "native-02": "あ",
+        "py": "あ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+3042"
+        ],
+        "native-02": [
+          "U+3042"
+        ],
+        "py": [
+          "U+3042"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_3",
+        "source_literal": "ｶﾞ",
+        "forcekana": 1,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ｶﾞ",
+        "native-02": "ｶﾞ",
+        "py": "ｶﾞ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF76",
+          "U+FF9E"
+        ],
+        "native-02": [
+          "U+FF76",
+          "U+FF9E"
+        ],
+        "py": [
+          "U+FF76",
+          "U+FF9E"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_4",
+        "source_literal": "ｶﾞ",
+        "forcekana": 2,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ｶﾞ",
+        "native-02": "ｶﾞ",
+        "py": "が"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF76",
+          "U+FF9E"
+        ],
+        "native-02": [
+          "U+FF76",
+          "U+FF9E"
+        ],
+        "py": [
+          "U+304C"
+        ]
+      },
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_5",
+        "source_literal": "ｶﾞ",
+        "forcekana": 3,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "が",
+        "native-02": "が",
+        "py": "が"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+304C"
+        ],
+        "native-02": [
+          "U+304C"
+        ],
+        "py": [
+          "U+304C"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_6",
+        "source_literal": "ｳﾞ",
+        "forcekana": 1,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ｳﾞ",
+        "native-02": "ｳﾞ",
+        "py": "ｳﾞ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF73",
+          "U+FF9E"
+        ],
+        "native-02": [
+          "U+FF73",
+          "U+FF9E"
+        ],
+        "py": [
+          "U+FF73",
+          "U+FF9E"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_7",
+        "source_literal": "ｳﾞ",
+        "forcekana": 2,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ｳﾞ",
+        "native-02": "ｳﾞ",
+        "py": "ゔ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF73",
+          "U+FF9E"
+        ],
+        "native-02": [
+          "U+FF73",
+          "U+FF9E"
+        ],
+        "py": [
+          "U+3094"
+        ]
+      },
+      "category": "forcekana2_unexpected_halfwidth_normalization",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_8",
+        "source_literal": "ｳﾞ",
+        "forcekana": 3,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ヴ",
+        "native-02": "ヴ",
+        "py": "ゔ"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+30F4"
+        ],
+        "native-02": [
+          "U+30F4"
+        ],
+        "py": [
+          "U+3094"
+        ]
+      },
+      "category": "legacy_vu_hiragana_mapping_difference",
+      "verdict": "different_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_9",
+        "source_literal": "ABC123",
+        "forcekana": 1,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ABC123",
+        "native-02": "ABC123",
+        "py": "ABC123"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+0041",
+          "U+0042",
+          "U+0043",
+          "U+0031",
+          "U+0032",
+          "U+0033"
+        ],
+        "native-02": [
+          "U+0041",
+          "U+0042",
+          "U+0043",
+          "U+0031",
+          "U+0032",
+          "U+0033"
+        ],
+        "py": [
+          "U+0041",
+          "U+0042",
+          "U+0043",
+          "U+0031",
+          "U+0032",
+          "U+0033"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_10",
+        "source_literal": "ABC123",
+        "forcekana": 2,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ABC123",
+        "native-02": "ABC123",
+        "py": "ABC123"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+0041",
+          "U+0042",
+          "U+0043",
+          "U+0031",
+          "U+0032",
+          "U+0033"
+        ],
+        "native-02": [
+          "U+0041",
+          "U+0042",
+          "U+0043",
+          "U+0031",
+          "U+0032",
+          "U+0033"
+        ],
+        "py": [
+          "U+0041",
+          "U+0042",
+          "U+0043",
+          "U+0031",
+          "U+0032",
+          "U+0033"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    },
+    {
+      "condition": {
+        "id": "K213_11",
+        "source_literal": "ABC123",
+        "forcekana": 3,
+        "instruction": "PRINTK",
+        "helpers": "none",
+        "FORM_interpretation": "none"
+      },
+      "emitted": {
+        "native-01": "ＡＢＣ１２３",
+        "native-02": "ＡＢＣ１２３",
+        "py": "ＡＢＣ１２３"
+      },
+      "unicode_codepoints": {
+        "native-01": [
+          "U+FF21",
+          "U+FF22",
+          "U+FF23",
+          "U+FF11",
+          "U+FF12",
+          "U+FF13"
+        ],
+        "native-02": [
+          "U+FF21",
+          "U+FF22",
+          "U+FF23",
+          "U+FF11",
+          "U+FF12",
+          "U+FF13"
+        ],
+        "py": [
+          "U+FF21",
+          "U+FF22",
+          "U+FF23",
+          "U+FF11",
+          "U+FF12",
+          "U+FF13"
+        ]
+      },
+      "category": "selected_literal_conversion_match",
+      "verdict": "matched_scoped"
+    }
+  ],
+  "matches": 8,
+  "differences": 4,
+  "standalone_minimal_repro_executed": true,
+  "standalone_native": "U+FF71",
+  "standalone_public": "U+3042",
+  "limitations": "Twelve literal PRINTK conditions over four inputs/modes1–3 plus one separately executed6-line minimum, no helper/FORM/variable dependency. BMP codepoint readback only, no glyph/font rendering or full LCMap/Unicode/kana domain. Native4 processes alive5s then own cleanup, natural exit unobserved. Pure source-level difference evidence, no product correction."
+}

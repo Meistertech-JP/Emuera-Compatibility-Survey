@@ -1,0 +1,1135 @@
+{
+  "scope": "One shared batch; ten registered typed cases and 60 selected conditions; four saved mode histories are byte-identical.",
+  "cases": [
+    {
+      "case_id": "COMPOUNDASSIGN_0",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "+="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN0",
+        "ASSIGN1",
+        "ASSIGN2",
+        "ASSIGN3",
+        "ASSIGN4",
+        "ASSIGN5"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_1",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "-="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN6",
+        "ASSIGN7",
+        "ASSIGN8",
+        "ASSIGN9",
+        "ASSIGN10",
+        "ASSIGN11"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_2",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "*="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN12",
+        "ASSIGN13",
+        "ASSIGN14",
+        "ASSIGN15",
+        "ASSIGN16",
+        "ASSIGN17"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_3",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "/="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN18",
+        "ASSIGN19",
+        "ASSIGN20",
+        "ASSIGN21",
+        "ASSIGN22",
+        "ASSIGN23"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_4",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "%="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN24",
+        "ASSIGN25",
+        "ASSIGN26",
+        "ASSIGN27",
+        "ASSIGN28",
+        "ASSIGN29"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_5",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "<<="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN30",
+        "ASSIGN31",
+        "ASSIGN32",
+        "ASSIGN33",
+        "ASSIGN34",
+        "ASSIGN35"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_6",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": ">>="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN36",
+        "ASSIGN37",
+        "ASSIGN38",
+        "ASSIGN39",
+        "ASSIGN40",
+        "ASSIGN41"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_7",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "|="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN42",
+        "ASSIGN43",
+        "ASSIGN44",
+        "ASSIGN45",
+        "ASSIGN46",
+        "ASSIGN47"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_8",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "&="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN48",
+        "ASSIGN49",
+        "ASSIGN50",
+        "ASSIGN51",
+        "ASSIGN52",
+        "ASSIGN53"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    },
+    {
+      "case_id": "COMPOUNDASSIGN_9",
+      "typed_target": {
+        "kind": "assignment_syntax",
+        "name": "^="
+      },
+      "verdict_recorded": "matched_scoped",
+      "condition_markers": [
+        "ASSIGN54",
+        "ASSIGN55",
+        "ASSIGN56",
+        "ASSIGN57",
+        "ASSIGN58",
+        "ASSIGN59"
+      ],
+      "execution": "shared_batch_not_independent_case_execution"
+    }
+  ],
+  "conditions": [
+    {
+      "marker": "ASSIGN0",
+      "operator": "+=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN0",
+        "value": 8,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN1",
+      "operator": "+=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN1",
+        "value": 8,
+        "other": 99,
+        "count": 1,
+        "order": 1
+      }
+    },
+    {
+      "marker": "ASSIGN2",
+      "operator": "+=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN2",
+        "value": -5,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN3",
+      "operator": "+=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN3",
+        "value": -5,
+        "other": 99,
+        "count": 1,
+        "order": 1
+      }
+    },
+    {
+      "marker": "ASSIGN4",
+      "operator": "+=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN4",
+        "value": 1,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN5",
+      "operator": "+=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN5",
+        "value": 1,
+        "other": 99,
+        "count": 1,
+        "order": 1
+      }
+    },
+    {
+      "marker": "ASSIGN6",
+      "operator": "-=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN6",
+        "value": 4,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN7",
+      "operator": "-=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN7",
+        "value": 4,
+        "other": 99,
+        "count": 1,
+        "order": 1
+      }
+    },
+    {
+      "marker": "ASSIGN8",
+      "operator": "-=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN8",
+        "value": -9,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN9",
+      "operator": "-=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN9",
+        "value": -9,
+        "other": 99,
+        "count": 1,
+        "order": 1
+      }
+    },
+    {
+      "marker": "ASSIGN10",
+      "operator": "-=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN10",
+        "value": -1,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN11",
+      "operator": "-=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN11",
+        "value": -1,
+        "other": 99,
+        "count": 1,
+        "order": 1
+      }
+    },
+    {
+      "marker": "ASSIGN12",
+      "operator": "*=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN12",
+        "value": 12,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN13",
+      "operator": "*=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN13",
+        "value": 12,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN14",
+      "operator": "*=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN14",
+        "value": -14,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN15",
+      "operator": "*=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN15",
+        "value": -14,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN16",
+      "operator": "*=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN16",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN17",
+      "operator": "*=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN17",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN18",
+      "operator": "/=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN18",
+        "value": 3,
+        "other": 99,
+        "count": 3,
+        "order": 211
+      }
+    },
+    {
+      "marker": "ASSIGN19",
+      "operator": "/=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN19",
+        "value": 3,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN20",
+      "operator": "/=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN20",
+        "value": -3,
+        "other": 99,
+        "count": 3,
+        "order": 211
+      }
+    },
+    {
+      "marker": "ASSIGN21",
+      "operator": "/=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN21",
+        "value": -3,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN22",
+      "operator": "/=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN22",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 211
+      }
+    },
+    {
+      "marker": "ASSIGN23",
+      "operator": "/=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN23",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN24",
+      "operator": "%=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN24",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 211
+      }
+    },
+    {
+      "marker": "ASSIGN25",
+      "operator": "%=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN25",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN26",
+      "operator": "%=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN26",
+        "value": -1,
+        "other": 99,
+        "count": 3,
+        "order": 211
+      }
+    },
+    {
+      "marker": "ASSIGN27",
+      "operator": "%=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN27",
+        "value": -1,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN28",
+      "operator": "%=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN28",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 211
+      }
+    },
+    {
+      "marker": "ASSIGN29",
+      "operator": "%=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN29",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN30",
+      "operator": "<<=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN30",
+        "value": 24,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN31",
+      "operator": "<<=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN31",
+        "value": 24,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN32",
+      "operator": "<<=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN32",
+        "value": -28,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN33",
+      "operator": "<<=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN33",
+        "value": -28,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN34",
+      "operator": "<<=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN34",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN35",
+      "operator": "<<=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN35",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN36",
+      "operator": ">>=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN36",
+        "value": 1,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN37",
+      "operator": ">>=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN37",
+        "value": 1,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN38",
+      "operator": ">>=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN38",
+        "value": -2,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN39",
+      "operator": ">>=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN39",
+        "value": -2,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN40",
+      "operator": ">>=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN40",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN41",
+      "operator": ">>=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN41",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN42",
+      "operator": "|=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN42",
+        "value": 6,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN43",
+      "operator": "|=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN43",
+        "value": 6,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN44",
+      "operator": "|=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN44",
+        "value": -5,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN45",
+      "operator": "|=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN45",
+        "value": -5,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN46",
+      "operator": "|=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN46",
+        "value": 1,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN47",
+      "operator": "|=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN47",
+        "value": 1,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN48",
+      "operator": "&=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN48",
+        "value": 2,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN49",
+      "operator": "&=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN49",
+        "value": 2,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN50",
+      "operator": "&=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN50",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN51",
+      "operator": "&=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN51",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN52",
+      "operator": "&=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN52",
+        "value": 0,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN53",
+      "operator": "&=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN53",
+        "value": 0,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN54",
+      "operator": "^=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN54",
+        "value": 4,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN55",
+      "operator": "^=",
+      "initial": 6,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN55",
+        "value": 4,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN56",
+      "operator": "^=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN56",
+        "value": -5,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN57",
+      "operator": "^=",
+      "initial": -7,
+      "rhs": 2,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN57",
+        "value": -5,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    },
+    {
+      "marker": "ASSIGN58",
+      "operator": "^=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "helper",
+      "observed": {
+        "marker": "ASSIGN58",
+        "value": 1,
+        "other": 99,
+        "count": 3,
+        "order": 121
+      }
+    },
+    {
+      "marker": "ASSIGN59",
+      "operator": "^=",
+      "initial": 0,
+      "rhs": 1,
+      "rhs_kind": "literal",
+      "observed": {
+        "marker": "ASSIGN59",
+        "value": 1,
+        "other": 99,
+        "count": 2,
+        "order": 11
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode": "native-01",
+      "assets": {
+        "fixture": {
+          "path": "assets/native-01/fixture.erb",
+          "sha256": "307789b4bc7052643b956799f54a2fcabd14ef4da04b6e02472fb3e06456c257",
+          "size": 12572
+        },
+        "config": {
+          "path": "assets/native-01/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "history": {
+          "path": "assets/native-01/history.bin",
+          "sha256": "e67b038029b4932baed03090dec66975a450266669180d4ac4aef28dd4114575",
+          "size": 5410
+        }
+      },
+      "receipt": {
+        "path": "assets/native-01/receipt.json",
+        "sha256": "a72d3a794cdfb292a2e6d9d827b664947839c1e6befb33172b74e8c952d6eb20"
+      }
+    },
+    {
+      "mode": "native-02",
+      "assets": {
+        "fixture": {
+          "path": "assets/native-02/fixture.erb",
+          "sha256": "307789b4bc7052643b956799f54a2fcabd14ef4da04b6e02472fb3e06456c257",
+          "size": 12572
+        },
+        "config": {
+          "path": "assets/native-02/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "history": {
+          "path": "assets/native-02/history.bin",
+          "sha256": "e67b038029b4932baed03090dec66975a450266669180d4ac4aef28dd4114575",
+          "size": 5410
+        }
+      },
+      "receipt": {
+        "path": "assets/native-02/receipt.json",
+        "sha256": "a72d3a794cdfb292a2e6d9d827b664947839c1e6befb33172b74e8c952d6eb20"
+      }
+    },
+    {
+      "mode": "py",
+      "assets": {
+        "fixture": {
+          "path": "assets/py/fixture.erb",
+          "sha256": "307789b4bc7052643b956799f54a2fcabd14ef4da04b6e02472fb3e06456c257",
+          "size": 12572
+        },
+        "config": {
+          "path": "assets/py/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "history": {
+          "path": "assets/py/history.bin",
+          "sha256": "e67b038029b4932baed03090dec66975a450266669180d4ac4aef28dd4114575",
+          "size": 5410
+        },
+        "stdout": {
+          "path": "assets/py/stdout.bin",
+          "sha256": "eac3bc566ebafde0fcd966f4cc09e3dafbc3e9e69ee64e3ec593a8da5b79e0e9",
+          "size": 2762
+        },
+        "stderr": {
+          "path": "assets/py/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "size": 110
+        }
+      },
+      "receipt": {
+        "path": "assets/py/receipt.json",
+        "sha256": "a67321f356b9590ac4a68082265e4040d25823521c989c58e17cc158f56cd5ec"
+      }
+    },
+    {
+      "mode": "py-verified-01",
+      "assets": {
+        "fixture": {
+          "path": "assets/py-verified-01/fixture.erb",
+          "sha256": "307789b4bc7052643b956799f54a2fcabd14ef4da04b6e02472fb3e06456c257",
+          "size": 12572
+        },
+        "config": {
+          "path": "assets/py-verified-01/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "history": {
+          "path": "assets/py-verified-01/history.bin",
+          "sha256": "e67b038029b4932baed03090dec66975a450266669180d4ac4aef28dd4114575",
+          "size": 5410
+        },
+        "stdout": {
+          "path": "assets/py-verified-01/stdout.bin",
+          "sha256": "eac3bc566ebafde0fcd966f4cc09e3dafbc3e9e69ee64e3ec593a8da5b79e0e9",
+          "size": 2762
+        },
+        "stderr": {
+          "path": "assets/py-verified-01/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "size": 110
+        }
+      },
+      "receipt": {
+        "path": "assets/py-verified-01/receipt.json",
+        "sha256": "d0c7b15b0ee288aac138e3e7dcc118d4bac375d0f00803e4aeda3db76828f62a"
+      }
+    }
+  ]
+}

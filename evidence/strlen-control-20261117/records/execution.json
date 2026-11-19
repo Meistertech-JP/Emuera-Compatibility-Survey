@@ -1,0 +1,47 @@
+{
+  "configuration_contents_disclosed": false,
+  "limits": "Selected fields only; configuration content, full runtime setup and original receipts are not disclosed.",
+  "modes": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "exit_code_observed": false,
+      "fixture_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "natural_exit_observed": false,
+      "process_exited_after_5s": false,
+      "raw_sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf"
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "exit_code_observed": false,
+      "fixture_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "natural_exit_observed": false,
+      "process_exited_after_5s": false,
+      "raw_sha256": "881fbd6a8e9ebf331c125b0a0ef348750725213dd85c2b1c1a9289d9a3a47adf"
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "fixture_and_config_pre_post_hash_equal": true,
+      "fixture_sha256": "a568f7a7e5cbdf88605a101389e942b6908b68ad234bb48a363d416ce69d6e23",
+      "raw_sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b",
+      "returncode": 0,
+      "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "stdout_sha256": "800655f798cdb70df7cdb8efea6eb4d6ab3540b42e740ac969536ce8da1fc22b"
+    }
+  },
+  "omitted_fields": [
+    "local_paths",
+    "command_arguments",
+    "process_ids",
+    "timestamps",
+    "desktop_identifiers",
+    "lock_records",
+    "full_configuration"
+  ],
+  "original_receipts_disclosed": false
+}

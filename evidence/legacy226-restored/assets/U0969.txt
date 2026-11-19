@@ -1,0 +1,133 @@
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Function/Creator.Method.cs
+2477:         private sealed class UnicodeMethod : FunctionMethod
+2478:         {
+2479:             public UnicodeMethod()
+2480:             {
+2481:                 ReturnType = typeof(string);
+2482:                 argumentTypeArray = new Type[] { typeof(Int64) };
+2483:                 CanRestructure = true;
+2484:             }
+2485:             public override string GetStrValue(ExpressionMediator exm, IOperandTerm[] arguments)
+2486:             {
+2487:                 Int64 i = arguments[0].GetIntValue(exm);
+2488:                 if ((i < 0) || (i > 0xFFFF))
+2489:                     throw new CodeEE("UNICODE関数に範囲外の値(" + i.ToString() + ")が渡されました");
+2490:                 //改行関係以外の制御文字は警告扱いに変更
+2491:                 //とはいえ、改行以外の制御文字を意図的に渡すのはそもそもコーディングに問題がありすぎるので、エラーでもいい気はする
+2492:                 if ((i < 0x001F && i != 0x000A && i != 0x000D) || (i >= 0x007F && i <= 0x009F))
+2493:                 {
+2494:                     //コード実行中の場合
+2495:                     if(GlobalStatic.Process.getCurrentLine != null)
+2496:                         GlobalStatic.Console.PrintSystemLine("注意:" + GlobalStatic.Process.getCurrentLine.Position.Filename + "の" + GlobalStatic.Process.getCurrentLine.Position.LineNo.ToString() + "行目でUNICODE関数に制御文字に対応する値(0x" + String.Format("{0:X}", i) + ")が渡されました");
+2497:                     else
+2498:                         ParserMediator.Warn("UNICODE関数に制御文字に対応する値(0x" + String.Format("{0:X}", i) + ")が渡されました", GlobalStatic.Process.scaningLine, 1, false, false, null);
+2499: 
+2500:                     return "";
+2501:                 }
+2502:                 string s = new string(new char[] { (char)i });
+2503: 
+2504:                 return (s);
+2505:             }
+2506:         }
+2586:         private sealed class EscapeMethod : FunctionMethod
+2587:         {
+2588:             public EscapeMethod()
+2589:             {
+2590:                 ReturnType = typeof(string);
+2591:                 argumentTypeArray = new Type[] { typeof(string) };
+2592:                 CanRestructure = true;
+2593:             }
+2594:             public override string GetStrValue(ExpressionMediator exm, IOperandTerm[] arguments)
+2595:             {
+2596:                 return Regex.Escape(arguments[0].GetStrValue(exm));
+2597:             }
+2598:         }
+2599: 
+2600:         private sealed class EncodeToUniMethod : FunctionMethod
+2601:         {
+2602:             public EncodeToUniMethod()
+2603:             {
+2604:                 ReturnType = typeof(Int64);
+2605:                 argumentTypeArray = new Type[] { null };
+2606:                 CanRestructure = true;
+2607:             }
+2608:             public override string CheckArgumentType(string name, IOperandTerm[] arguments)
+2609:             {
+2610:                 //通常2つ、1つ省略可能で1～2の引数が必要。
+2611:                 if (arguments.Length < 1)
+2612:                     return name + "関数には少なくとも1つの引数が必要です";
+2613:                 if (arguments.Length > 2)
+2614:                     return name + "関数の引数が多すぎます";
+2615:                 if (arguments[0] == null)
+2616:                     return name + "関数の1番目の引数は省略できません";
+2617:                 if (arguments[0].GetOperandType() != typeof(string))
+2618:                     return name + "関数の1番目の引数の型が正しくありません";
+2619:                 if ((arguments.Length >= 2) && (arguments[1] != null) && (arguments[1].GetOperandType() != typeof(Int64)))
+2620:                     return name + "関数の2番目の引数の型が正しくありません";
+2621:                 return null;
+2622:             }
+2623:             public override Int64 GetIntValue(ExpressionMediator exm, IOperandTerm[] arguments)
+2624:             {
+2625:                 string baseStr = arguments[0].GetStrValue(exm);
+2626:                 if (baseStr.Length == 0)
+2627:                     return -1;
+2628:                 Int64 position = (arguments.Length > 1 && arguments[1] != null) ? arguments[1].GetIntValue(exm) : 0;
+2629:                 if (position < 0)
+2630:                     throw new CodeEE("ENCOIDETOUNI関数の第２引数(" + position.ToString() + ")が負の値です");
+2631:                 if (position >= baseStr.Length)
+2632:                     throw new CodeEE("ENCOIDETOUNI関数の第２引数(" + position.ToString() + ")が第１引数の文字列(" + baseStr + ")の文字数を超えています");
+2633:                 return char.ConvertToUtf32(baseStr, (int)position);
+2634:             }
+2635:         }
+2636: 
+2637:         public sealed class CharAtMethod : FunctionMethod
+2638:         {
+2639:             public CharAtMethod()
+2640:             {
+2641:                 ReturnType = typeof(string);
+2642:                 argumentTypeArray = new Type[] { typeof(string), typeof(Int64) };
+2643:                 CanRestructure = true;
+2644:             }
+2645:             public override string GetStrValue(ExpressionMediator exm, IOperandTerm[] arguments)
+2646:             {
+2647:                 string str = arguments[0].GetStrValue(exm);
+2648:                 Int64 pos = arguments[1].GetIntValue(exm);
+2649:                 if (pos < 0 || pos >= str.Length)
+2650:                     return "";
+2651:                 return str[(int)pos].ToString();
+2652:             }
+2653:         }
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Process.ScriptProc.cs
+701: 				case FunctionCode.ENCODETOUNI:
+702: 					{
+703: 						//int length = Encoding.UTF32.GetEncoder().GetByteCount(target.ToCharArray(), 0, target.Length, false);
+704: 						//byte[] bytes = new byte[length];
+705: 						//Encoding.UTF32.GetEncoder().GetBytes(target.ToCharArray(), 0, target.Length, bytes, 0, false);
+706: 						//vEvaluator.setEncodingResult(bytes);
+707: 						term = ((ExpressionArgument)func.Argument).Term;
+708: 						string target = term.GetStrValue(exm);
+709: 
+710: 						int length = vEvaluator.RESULT_ARRAY.Length;
+711: 						// result:0には長さが入るのでその分-1
+712: 						if (target.Length > length - 1)
+713: 							throw new CodeEE(String.Format("ENCODETOUNIの引数が長すぎます（現在{0}文字。最大{1}文字まで）", target.Length, length - 1));
+714: 
+715: 						int[] ary = new int[target.Length];
+716: 						for (int i = 0; i < target.Length; i++)
+717: 							ary[i] = char.ConvertToUtf32(target, i);
+718: 						vEvaluator.SetEncodingResult(ary);
+719: 					}
+720: 					break;
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs
+388: 			addFunction(FunctionCode.ENCODETOUNI, argb[FunctionArgType.FORM_STR_NULLABLE], METHOD_SAFE | EXTENDED);//式中関数版を追加。処理が全然違う
+
+Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Variable/VariableEvaluator.cs
+1714: 		public void SetEncodingResult(int[] ary)
+1715: 		{
+1716: 			long[] resary = varData.DataIntegerArray[(int)(VariableCode.RESULT & VariableCode.__LOWERCASE__)];
+1717: 			resary[0] = ary.Length;
+1718: 			for (int i = 0; i < ary.Length; i++)
+1719: 				resary[i + 1] = ary[i];
+1720: 		}

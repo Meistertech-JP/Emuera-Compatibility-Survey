@@ -1,0 +1,49 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0879 · capture_crop_only.py</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0879 · capture_crop_only.py</h1>
+<p>U0879: 引数の隔離desktop/HWNDからPrintWindow/GetDIBitsで取得し、外枠除去後(0,450,250,477)だけ保存するWindows/Pillow補助コード。固定私的パスなし。クロップ条件とAPI呼出順を保持。画像取得の成功は今回再認定しない。  合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>faa53f5f5e900620d8f6f52e105a1407322c73377a0c8199bad36464bbc7bf86</code></p>
+<p><a href="../assets/U0879.py">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>faa53f5f5e900620d8f6f52e105a1407322c73377a0c8199bad36464bbc7bf86</code></p>
+<pre>import ctypes as c, sys
+from ctypes import wintypes as w
+from pathlib import Path
+from PIL import Image
+u=c.windll.user32; g=c.windll.gdi32
+u.OpenDesktopW.argtypes=[w.LPCWSTR,w.DWORD,w.BOOL,w.DWORD];u.OpenDesktopW.restype=w.HANDLE
+u.SetThreadDesktop.argtypes=[w.HANDLE]
+if len(sys.argv)!=5: raise SystemExit(&#x27;usage: case hwnd desktop output.png&#x27;)
+case,hs,desktop,out=sys.argv[1:]
+desk=u.OpenDesktopW(desktop,0,False,0x01FF)
+if not desk or not u.SetThreadDesktop(desk): raise SystemExit(&#x27;cannot attach isolated desktop&#x27;)
+hwnd=int(hs)
+class RECT(c.Structure): _fields_=[(&#x27;left&#x27;,w.LONG),(&#x27;top&#x27;,w.LONG),(&#x27;right&#x27;,w.LONG),(&#x27;bottom&#x27;,w.LONG)]
+r=RECT()
+if not u.GetWindowRect(hwnd,c.byref(r)): raise SystemExit(&#x27;GetWindowRect failed&#x27;)
+width,height=r.right-r.left,r.bottom-r.top
+if width&lt;120 or height&lt;100: raise SystemExit(f&#x27;window too small: {width}x{height}&#x27;)
+hdc=u.GetWindowDC(hwnd); mem=g.CreateCompatibleDC(hdc); bmp=g.CreateCompatibleBitmap(hdc,width,height); old=g.SelectObject(mem,bmp)
+printed=u.PrintWindow(hwnd,mem,2)
+class BIH(c.Structure): _fields_=[(&#x27;size&#x27;,w.DWORD),(&#x27;width&#x27;,w.LONG),(&#x27;height&#x27;,w.LONG),(&#x27;planes&#x27;,w.WORD),(&#x27;bits&#x27;,w.WORD),(&#x27;compression&#x27;,w.DWORD),(&#x27;image_size&#x27;,w.DWORD),(&#x27;xppm&#x27;,w.LONG),(&#x27;yppm&#x27;,w.LONG),(&#x27;used&#x27;,w.DWORD),(&#x27;important&#x27;,w.DWORD)]
+info=BIH();info.size=c.sizeof(BIH);info.width=width;info.height=-height;info.planes=1;info.bits=32
+raw=c.create_string_buffer(width*height*4)
+lines=g.GetDIBits(mem,bmp,0,height,raw,c.byref(info),0)
+if not lines: raise SystemExit(&#x27;GetDIBits failed&#x27;)
+# Keep only the client/display area: title and outer frame are excluded. Full pixels stay in memory only.
+image=Image.frombytes(&#x27;RGBA&#x27;,(width,height),raw.raw,&#x27;raw&#x27;,&#x27;BGRA&#x27;)
+client=image.crop((6,26,width-6,height-6))
+# The single candidate is rendered near the lower-left of the Emuera text area. Retain only that line.
+crop=client.crop((0,450,250,477)).convert(&#x27;RGB&#x27;)
+Path(out).parent.mkdir(parents=True,exist_ok=True);crop.save(out,optimize=True)
+print({&#x27;case&#x27;:case,&#x27;print_window&#x27;:bool(printed),&#x27;window&#x27;:(width,height),&#x27;retained_crop&#x27;:crop.size,&#x27;output&#x27;:out})
+g.SelectObject(mem,old);g.DeleteObject(bmp);g.DeleteDC(mem);u.ReleaseDC(hwnd,hdc);u.CloseDesktop(desk)
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1796 · command_or_syntax:PRINTK · check</li>
+</ul></html>

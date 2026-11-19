@@ -1,0 +1,19 @@
+{
+  "case_id": "LIST_TRYJUMPLIST_MISSING_CLOSE_UNCALLED_20261115",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_and_source_path_receipt_has_no_case_or_mode",
+  "inputs_before": {
+    "ERB/LISTBOUND.ERB": "6283555ab018cb5a6e53a40d7dee73333ddc0c68d2b48cfb14e01bc194d0a1e1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/LISTBOUND.ERB": "6283555ab018cb5a6e53a40d7dee73333ddc0c68d2b48cfb14e01bc194d0a1e1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable"
+}

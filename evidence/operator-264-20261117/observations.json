@@ -1,0 +1,3963 @@
+{
+  "schema": "operator-264-saved-observations-v1",
+  "scope": "24 bounded conditions, two Native modes and one PyEmuera mode per condition; this is not a full operator compatibility claim.",
+  "source_comparison_sha256": "beeb304cbf2b9bc865f283d638373c1a96576b0a324bcf6ef6eff3cd25ab6703",
+  "source_observations_sha256": "ac47c57ef2a678a95d88f7ce2375b29f635321f90fc79ffe6302151288366c19",
+  "source_execution_manifest_sha256": "7b407683a6851a9cc2f3703e77834ca11cede8016d39d42a2300d6ef3329090f",
+  "source_case_register_sha256": "32f008d1e6ebf6a373a080484b8a493d173bcff6b911249d8b6bf6e894295195",
+  "engines": {
+    "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "pyemuera_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+  },
+  "input_layout": "Each mode used ERB/REVIEW.ERB, ERB/REVIEW.ERH and emuera.config, with an empty csv directory.",
+  "cases": [
+    {
+      "case_id": "OPISOLATED264_ternary-orphan-uncalled",
+      "planned_id": "C264-01-ternary-orphan-uncalled",
+      "unit_id": "ternary-orphan-uncalled",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "?"
+        },
+        {
+          "kind": "operator",
+          "name": "#"
+        }
+      ],
+      "condition": "1#2; uncalled",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_UNCALLED_CONTINUATION_NO_BODY_CREDIT",
+      "diagnostic_text_equal": true,
+      "operator_body_credit": 0,
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "UNCALLED_CONTINUED_NO_BODY_CREDIT",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE ternary-orphan-uncalled",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW DONE ternary-orphan-uncalled"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/ternary-orphan-uncalled/native-01/ERB_REVIEW.ERB",
+            "sha256": "6301bb38c6065adfa3afb42ca43b4d15a0c99f17260d744c8d0bb57998cee64f",
+            "size": 375
+          },
+          "header": {
+            "path": "assets/ternary-orphan-uncalled/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/ternary-orphan-uncalled/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/ternary-orphan-uncalled/native-01/emuera.log",
+            "sha256": "af5e8421dd747bbda198ab308032b5b93ba7ac71807cd0bf625272a1de0c2734",
+            "size": 362
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "UNCALLED_CONTINUED_NO_BODY_CREDIT",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE ternary-orphan-uncalled",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW DONE ternary-orphan-uncalled"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/ternary-orphan-uncalled/native-02/ERB_REVIEW.ERB",
+            "sha256": "6301bb38c6065adfa3afb42ca43b4d15a0c99f17260d744c8d0bb57998cee64f",
+            "size": 375
+          },
+          "header": {
+            "path": "assets/ternary-orphan-uncalled/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/ternary-orphan-uncalled/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/ternary-orphan-uncalled/native-02/emuera.log",
+            "sha256": "af5e8421dd747bbda198ab308032b5b93ba7ac71807cd0bf625272a1de0c2734",
+            "size": 362
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "UNCALLED_CONTINUED_NO_BODY_CREDIT",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE ternary-orphan-uncalled",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW DONE ternary-orphan-uncalled",
+            "※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ "
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/ternary-orphan-uncalled/public-01/ERB_REVIEW.ERB",
+            "sha256": "6301bb38c6065adfa3afb42ca43b4d15a0c99f17260d744c8d0bb57998cee64f",
+            "size": 375
+          },
+          "header": {
+            "path": "assets/ternary-orphan-uncalled/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/ternary-orphan-uncalled/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/ternary-orphan-uncalled/public-01/verified.stdout.bin",
+            "sha256": "4db0be984a483419eab62f9351b3950c7b83b0f5836c475694e1052f56e6d8c3",
+            "size": 238
+          },
+          "stderr": {
+            "path": "assets/ternary-orphan-uncalled/public-01/verified.stderr.bin",
+            "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_ternary-strcond-uncalled",
+      "planned_id": "C264-02-ternary-strcond-uncalled",
+      "unit_id": "ternary-strcond-uncalled",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "?"
+        },
+        {
+          "kind": "operator",
+          "name": "#"
+        }
+      ],
+      "condition": "\"x\"?1#2; uncalled",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_UNCALLED_CONTINUATION_NO_BODY_CREDIT",
+      "diagnostic_text_equal": true,
+      "operator_body_credit": 0,
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "UNCALLED_CONTINUED_NO_BODY_CREDIT",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE ternary-strcond-uncalled",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW DONE ternary-strcond-uncalled"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/ternary-strcond-uncalled/native-01/ERB_REVIEW.ERB",
+            "sha256": "a350fd2ff3879013872049f8f9ce4e3aa1e7dfcde7e8bc88cb10c5c4365bda25",
+            "size": 381
+          },
+          "header": {
+            "path": "assets/ternary-strcond-uncalled/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/ternary-strcond-uncalled/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/ternary-strcond-uncalled/native-01/emuera.log",
+            "sha256": "616c666362c04f7c6f3757d232ea78ae6598dc1aa50911f5c5f242b5a29df4fc",
+            "size": 366
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "UNCALLED_CONTINUED_NO_BODY_CREDIT",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE ternary-strcond-uncalled",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW DONE ternary-strcond-uncalled"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/ternary-strcond-uncalled/native-02/ERB_REVIEW.ERB",
+            "sha256": "a350fd2ff3879013872049f8f9ce4e3aa1e7dfcde7e8bc88cb10c5c4365bda25",
+            "size": 381
+          },
+          "header": {
+            "path": "assets/ternary-strcond-uncalled/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/ternary-strcond-uncalled/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/ternary-strcond-uncalled/native-02/emuera.log",
+            "sha256": "616c666362c04f7c6f3757d232ea78ae6598dc1aa50911f5c5f242b5a29df4fc",
+            "size": 366
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "UNCALLED_CONTINUED_NO_BODY_CREDIT",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE ternary-strcond-uncalled",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW DONE ternary-strcond-uncalled",
+            "※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ "
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/ternary-strcond-uncalled/public-01/ERB_REVIEW.ERB",
+            "sha256": "a350fd2ff3879013872049f8f9ce4e3aa1e7dfcde7e8bc88cb10c5c4365bda25",
+            "size": 381
+          },
+          "header": {
+            "path": "assets/ternary-strcond-uncalled/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/ternary-strcond-uncalled/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/ternary-strcond-uncalled/public-01/verified.stdout.bin",
+            "sha256": "70ba9adef8f73e434226504cf0780484aea4282691351bbaa7691f610654eda4",
+            "size": 240
+          },
+          "stderr": {
+            "path": "assets/ternary-strcond-uncalled/public-01/verified.stderr.bin",
+            "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_inc-badindex-pre",
+      "planned_id": "C264-03-inc-badindex-pre",
+      "unit_id": "inc-badindex-pre",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "++"
+        },
+        {
+          "kind": "assignment_syntax",
+          "name": "--"
+        }
+      ],
+      "condition": "F=2 with #DIM D,2; same index guard precedes +/-delta and prefix/postfix correction",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 13,
+          "fault_source_line": "C=++ZZREVD:ZZIDX()",
+          "exact_reason_lines": [
+            "エラー内容：配列型変数ZZREVDの第１引数(2)は配列の範囲外です"
+          ],
+          "event_lines": [
+            "EVENT INDEX A=1"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-badindex-pre",
+            "EVENT INDEX A=1",
+            "REVIEW.ERBの13行目でエラーが発生しました:Emuera1824+v24",
+            "C=++ZZREVD:ZZIDX()",
+            "エラー内容：配列型変数ZZREVDの第１引数(2)は配列の範囲外です",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-badindex-pre/native-01/ERB_REVIEW.ERB",
+            "sha256": "84809b7d95de003a6bf965f2928a0d508afaa5bfcafae434d28fabe6b20971e1",
+            "size": 801
+          },
+          "header": {
+            "path": "assets/inc-badindex-pre/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-badindex-pre/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-badindex-pre/native-01/emuera.log",
+            "sha256": "54e68871a138fa679c99f579bb17bc57bc8d96658c1b41c1ef8387554d65c159",
+            "size": 430
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 13,
+          "fault_source_line": "C=++ZZREVD:ZZIDX()",
+          "exact_reason_lines": [
+            "エラー内容：配列型変数ZZREVDの第１引数(2)は配列の範囲外です"
+          ],
+          "event_lines": [
+            "EVENT INDEX A=1"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-badindex-pre",
+            "EVENT INDEX A=1",
+            "REVIEW.ERBの13行目でエラーが発生しました:Emuera1824+v24",
+            "C=++ZZREVD:ZZIDX()",
+            "エラー内容：配列型変数ZZREVDの第１引数(2)は配列の範囲外です",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-badindex-pre/native-02/ERB_REVIEW.ERB",
+            "sha256": "84809b7d95de003a6bf965f2928a0d508afaa5bfcafae434d28fabe6b20971e1",
+            "size": 801
+          },
+          "header": {
+            "path": "assets/inc-badindex-pre/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-badindex-pre/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-badindex-pre/native-02/emuera.log",
+            "sha256": "54e68871a138fa679c99f579bb17bc57bc8d96658c1b41c1ef8387554d65c159",
+            "size": 430
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 13,
+          "fault_source_line": "C=++ZZREVD:ZZIDX()",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:13: E_INDEX: 配列型変数ZZREVDの第１引数(2)は配列の範囲外です"
+          ],
+          "event_lines": [
+            "EVENT INDEX A=1"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-badindex-pre",
+            "EVENT INDEX A=1"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-badindex-pre/public-01/ERB_REVIEW.ERB",
+            "sha256": "84809b7d95de003a6bf965f2928a0d508afaa5bfcafae434d28fabe6b20971e1",
+            "size": 801
+          },
+          "header": {
+            "path": "assets/inc-badindex-pre/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-badindex-pre/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-badindex-pre/public-01/verified.stdout.bin",
+            "sha256": "cacccdc1a6d2053aefc3f67dac287ae2c9c8afceefee9cffd055b980f100e7d0",
+            "size": 65
+          },
+          "stderr": {
+            "path": "assets/inc-badindex-pre/public-01/verified.stderr.bin",
+            "sha256": "1da9bb86c4314391fcc4c9fe9b7cd5b383d9417f83cc8f03f86075d10cfe87d5",
+            "size": 115
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_inc-nonlvalue",
+      "planned_id": "C264-04-inc-nonlvalue",
+      "unit_id": "inc-nonlvalue",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        }
+      ],
+      "condition": "C=++(A+1)",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++(A+1)",
+          "exact_reason_lines": [
+            "エラー内容：変数以外をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-nonlvalue",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++(A+1)",
+            "エラー内容：変数以外をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-nonlvalue/native-01/ERB_REVIEW.ERB",
+            "sha256": "3cd8d456189527ea6d51e73e7a00aa609a442d3d0ff1fdcaccac9854c090218a",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/inc-nonlvalue/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-nonlvalue/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-nonlvalue/native-01/emuera.log",
+            "sha256": "7f19a9c5251b169a77e811bbb9b86c41b183047e18d1c67651ac70a686ac0242",
+            "size": 360
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++(A+1)",
+          "exact_reason_lines": [
+            "エラー内容：変数以外をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-nonlvalue",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++(A+1)",
+            "エラー内容：変数以外をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-nonlvalue/native-02/ERB_REVIEW.ERB",
+            "sha256": "3cd8d456189527ea6d51e73e7a00aa609a442d3d0ff1fdcaccac9854c090218a",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/inc-nonlvalue/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-nonlvalue/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-nonlvalue/native-02/emuera.log",
+            "sha256": "7f19a9c5251b169a77e811bbb9b86c41b183047e18d1c67651ac70a686ac0242",
+            "size": 360
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++(A+1)",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_REFERENCE: Increment requires an integer variable"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-nonlvalue"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-nonlvalue/public-01/ERB_REVIEW.ERB",
+            "sha256": "3cd8d456189527ea6d51e73e7a00aa609a442d3d0ff1fdcaccac9854c090218a",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/inc-nonlvalue/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-nonlvalue/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-nonlvalue/public-01/verified.stdout.bin",
+            "sha256": "af240fdc364662f09aa7aa3f64b132436d9e459d0090ea43b72e9f68452e27d5",
+            "size": 45
+          },
+          "stderr": {
+            "path": "assets/inc-nonlvalue/public-01/verified.stderr.bin",
+            "sha256": "4e2c14f63bf8f330c133f11f2f285c4eb4437f9af211a096589b21e8150d8306",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_inc-readonly",
+      "planned_id": "C264-05-inc-readonly",
+      "unit_id": "inc-readonly",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        }
+      ],
+      "condition": "C=++ZZCONST",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：変更できない変数をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++ZZCONST",
+            "エラー内容：変更できない変数をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-readonly/native-01/ERB_REVIEW.ERB",
+            "sha256": "bea3bbf8b25d9102e0e9a11777d0ce6223775eb432eaeb161b637521aae2d937",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/inc-readonly/native-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/inc-readonly/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-readonly/native-01/emuera.log",
+            "sha256": "2902622aaac4ca05b0ecd94edf785bc42bf752a1e2fc2d8c7eac88e44905177b",
+            "size": 370
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：変更できない変数をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++ZZCONST",
+            "エラー内容：変更できない変数をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-readonly/native-02/ERB_REVIEW.ERB",
+            "sha256": "bea3bbf8b25d9102e0e9a11777d0ce6223775eb432eaeb161b637521aae2d937",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/inc-readonly/native-02/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/inc-readonly/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-readonly/native-02/emuera.log",
+            "sha256": "2902622aaac4ca05b0ecd94edf785bc42bf752a1e2fc2d8c7eac88e44905177b",
+            "size": 370
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++ZZCONST",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_READONLY: ZZCONST is read-only"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-readonly"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-readonly/public-01/ERB_REVIEW.ERB",
+            "sha256": "bea3bbf8b25d9102e0e9a11777d0ce6223775eb432eaeb161b637521aae2d937",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/inc-readonly/public-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/inc-readonly/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-readonly/public-01/verified.stdout.bin",
+            "sha256": "f755452229f4695c3c5c798b84d4504ccafe8d85d69b838dd6fb7d0d81e92751",
+            "size": 44
+          },
+          "stderr": {
+            "path": "assets/inc-readonly/public-01/verified.stderr.bin",
+            "sha256": "5f07253a2ac86349f350940aad4e63a25c0e10fe6d5dbcdbe8df806ff914d328",
+            "size": 91
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_inc-stmt-readonly",
+      "planned_id": "C264-06-inc-stmt-readonly",
+      "unit_id": "inc-stmt-readonly",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "++"
+        }
+      ],
+      "condition": "++ZZCONST",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "++ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-stmt-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "++ZZCONST",
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-stmt-readonly/native-01/ERB_REVIEW.ERB",
+            "sha256": "befe053236cbee8463f385d71a0d4460623e9c1bd6af114bb1ba997c7eafd8df",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/inc-stmt-readonly/native-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/inc-stmt-readonly/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-stmt-readonly/native-01/emuera.log",
+            "sha256": "22f1c27f26468103dbdc155e9bc05d456f88116d13999b0e99cad3b52a5bbc12",
+            "size": 380
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "++ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-stmt-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "++ZZCONST",
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-stmt-readonly/native-02/ERB_REVIEW.ERB",
+            "sha256": "befe053236cbee8463f385d71a0d4460623e9c1bd6af114bb1ba997c7eafd8df",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/inc-stmt-readonly/native-02/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/inc-stmt-readonly/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-stmt-readonly/native-02/emuera.log",
+            "sha256": "22f1c27f26468103dbdc155e9bc05d456f88116d13999b0e99cad3b52a5bbc12",
+            "size": 380
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "++ZZCONST",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_READONLY: ZZCONST is read-only"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-stmt-readonly"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-stmt-readonly/public-01/ERB_REVIEW.ERB",
+            "sha256": "befe053236cbee8463f385d71a0d4460623e9c1bd6af114bb1ba997c7eafd8df",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/inc-stmt-readonly/public-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/inc-stmt-readonly/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-stmt-readonly/public-01/verified.stdout.bin",
+            "sha256": "53991d91ecb7ee77b507388685adf006c249582cd216191d3641a93c4cd9f8f2",
+            "size": 49
+          },
+          "stderr": {
+            "path": "assets/inc-stmt-readonly/public-01/verified.stderr.bin",
+            "sha256": "5f07253a2ac86349f350940aad4e63a25c0e10fe6d5dbcdbe8df806ff914d328",
+            "size": 91
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_inc-stmt-tail",
+      "planned_id": "C264-07-inc-stmt-tail",
+      "unit_id": "inc-stmt-tail",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "++"
+        }
+      ],
+      "condition": "++A,1",
+      "scenario_verdict": "different_scoped",
+      "verdict": "OBSERVED_SCOPED_TIMING_OR_BEHAVIOR_DIFFERENCE",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "++A,1",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に余分な','があります"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-stmt-tail",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "++A,1",
+            "エラー内容：代入文の左辺に余分な','があります",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-stmt-tail/native-01/ERB_REVIEW.ERB",
+            "sha256": "3e3ded837ad1fe2c4fbe05383db3c20c580acfb16db5d761eaedf1f549d75783",
+            "size": 336
+          },
+          "header": {
+            "path": "assets/inc-stmt-tail/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-stmt-tail/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-stmt-tail/native-01/emuera.log",
+            "sha256": "afa30af76b359b9d75f6696a0051f3d88538b6a116dec5042f46aa1e152b3209",
+            "size": 344
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "++A,1",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に余分な','があります"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE inc-stmt-tail",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "++A,1",
+            "エラー内容：代入文の左辺に余分な','があります",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-stmt-tail/native-02/ERB_REVIEW.ERB",
+            "sha256": "3e3ded837ad1fe2c4fbe05383db3c20c580acfb16db5d761eaedf1f549d75783",
+            "size": 336
+          },
+          "header": {
+            "path": "assets/inc-stmt-tail/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-stmt-tail/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/inc-stmt-tail/native-02/emuera.log",
+            "sha256": "afa30af76b359b9d75f6696a0051f3d88538b6a116dec5042f46aa1e152b3209",
+            "size": 344
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": false,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "++A,1",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_SYNTAX: Expected EOF, got , at column 4: ++A,1"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/inc-stmt-tail/public-01/ERB_REVIEW.ERB",
+            "sha256": "3e3ded837ad1fe2c4fbe05383db3c20c580acfb16db5d761eaedf1f549d75783",
+            "size": 336
+          },
+          "header": {
+            "path": "assets/inc-stmt-tail/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/inc-stmt-tail/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": null,
+          "stderr": {
+            "path": "assets/inc-stmt-tail/public-01/verified.stderr.bin",
+            "sha256": "d7c4b4067491452bf4573fe64e7ad5e418d095ffb0b7f86695941d9b83de2532",
+            "size": 69
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_dec-nonlvalue",
+      "planned_id": "C264-08-dec-nonlvalue",
+      "unit_id": "dec-nonlvalue",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "C=--(A+1)",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=--(A+1)",
+          "exact_reason_lines": [
+            "エラー内容：変数以外をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-nonlvalue",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=--(A+1)",
+            "エラー内容：変数以外をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-nonlvalue/native-01/ERB_REVIEW.ERB",
+            "sha256": "607b35d5c9f6af1ad5381df771d0a457e711fb77533ab74a58f7812f45867ddb",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/dec-nonlvalue/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/dec-nonlvalue/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-nonlvalue/native-01/emuera.log",
+            "sha256": "7db2ad72cd79c8175736376671d052334632fd74e99e9c19b58b43c8029a3a2c",
+            "size": 360
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=--(A+1)",
+          "exact_reason_lines": [
+            "エラー内容：変数以外をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-nonlvalue",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=--(A+1)",
+            "エラー内容：変数以外をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-nonlvalue/native-02/ERB_REVIEW.ERB",
+            "sha256": "607b35d5c9f6af1ad5381df771d0a457e711fb77533ab74a58f7812f45867ddb",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/dec-nonlvalue/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/dec-nonlvalue/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-nonlvalue/native-02/emuera.log",
+            "sha256": "7db2ad72cd79c8175736376671d052334632fd74e99e9c19b58b43c8029a3a2c",
+            "size": 360
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=--(A+1)",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_REFERENCE: Increment requires an integer variable"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-nonlvalue"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-nonlvalue/public-01/ERB_REVIEW.ERB",
+            "sha256": "607b35d5c9f6af1ad5381df771d0a457e711fb77533ab74a58f7812f45867ddb",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/dec-nonlvalue/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/dec-nonlvalue/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-nonlvalue/public-01/verified.stdout.bin",
+            "sha256": "ac7bf992857ea862d609e845083f46ca698d75c99dd8a29db3e41f90737784b5",
+            "size": 45
+          },
+          "stderr": {
+            "path": "assets/dec-nonlvalue/public-01/verified.stderr.bin",
+            "sha256": "4e2c14f63bf8f330c133f11f2f285c4eb4437f9af211a096589b21e8150d8306",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_dec-readonly",
+      "planned_id": "C264-09-dec-readonly",
+      "unit_id": "dec-readonly",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "C=--ZZCONST",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=--ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：変更できない変数をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=--ZZCONST",
+            "エラー内容：変更できない変数をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-readonly/native-01/ERB_REVIEW.ERB",
+            "sha256": "dabb20810420b86aa6cba7cd5300df6168d537de80d3626de1bb26430cbd959e",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/dec-readonly/native-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/dec-readonly/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-readonly/native-01/emuera.log",
+            "sha256": "c36e95044df40ae6c2b66312327913c48479104382834b98246d5ce08034eab6",
+            "size": 370
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=--ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：変更できない変数をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=--ZZCONST",
+            "エラー内容：変更できない変数をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-readonly/native-02/ERB_REVIEW.ERB",
+            "sha256": "dabb20810420b86aa6cba7cd5300df6168d537de80d3626de1bb26430cbd959e",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/dec-readonly/native-02/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/dec-readonly/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-readonly/native-02/emuera.log",
+            "sha256": "c36e95044df40ae6c2b66312327913c48479104382834b98246d5ce08034eab6",
+            "size": 370
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=--ZZCONST",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_READONLY: ZZCONST is read-only"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-readonly"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-readonly/public-01/ERB_REVIEW.ERB",
+            "sha256": "dabb20810420b86aa6cba7cd5300df6168d537de80d3626de1bb26430cbd959e",
+            "size": 340
+          },
+          "header": {
+            "path": "assets/dec-readonly/public-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/dec-readonly/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-readonly/public-01/verified.stdout.bin",
+            "sha256": "5484d5633014e4d290b4695b399c87ca7f58aac557aebd5849052c0f06e8ce50",
+            "size": 44
+          },
+          "stderr": {
+            "path": "assets/dec-readonly/public-01/verified.stderr.bin",
+            "sha256": "5f07253a2ac86349f350940aad4e63a25c0e10fe6d5dbcdbe8df806ff914d328",
+            "size": 91
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_dec-stmt-readonly",
+      "planned_id": "C264-10-dec-stmt-readonly",
+      "unit_id": "dec-stmt-readonly",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "--"
+        }
+      ],
+      "condition": "--ZZCONST",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "--ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-stmt-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "--ZZCONST",
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-stmt-readonly/native-01/ERB_REVIEW.ERB",
+            "sha256": "bedef34c48f661dfeabbf082daf9065cba3d640dcf1e7e27a402b0c32e08ddcd",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/dec-stmt-readonly/native-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/dec-stmt-readonly/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-stmt-readonly/native-01/emuera.log",
+            "sha256": "2ee11259817d3c78b8394cc1aedccddb308b5baa51d7fafbd2824d965a92b575",
+            "size": 380
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "--ZZCONST",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-stmt-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "--ZZCONST",
+            "エラー内容：代入文の左辺に変更できない変数を指定することはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-stmt-readonly/native-02/ERB_REVIEW.ERB",
+            "sha256": "bedef34c48f661dfeabbf082daf9065cba3d640dcf1e7e27a402b0c32e08ddcd",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/dec-stmt-readonly/native-02/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/dec-stmt-readonly/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-stmt-readonly/native-02/emuera.log",
+            "sha256": "2ee11259817d3c78b8394cc1aedccddb308b5baa51d7fafbd2824d965a92b575",
+            "size": 380
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "--ZZCONST",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_READONLY: ZZCONST is read-only"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-stmt-readonly"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-stmt-readonly/public-01/ERB_REVIEW.ERB",
+            "sha256": "bedef34c48f661dfeabbf082daf9065cba3d640dcf1e7e27a402b0c32e08ddcd",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/dec-stmt-readonly/public-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/dec-stmt-readonly/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-stmt-readonly/public-01/verified.stdout.bin",
+            "sha256": "9008186d6bdb8556d081e351c2042bcd8fdaad1c6dd3b3d0f5e31a9ad6b6b1c3",
+            "size": 49
+          },
+          "stderr": {
+            "path": "assets/dec-stmt-readonly/public-01/verified.stderr.bin",
+            "sha256": "5f07253a2ac86349f350940aad4e63a25c0e10fe6d5dbcdbe8df806ff914d328",
+            "size": 91
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_dec-stmt-tail",
+      "planned_id": "C264-11-dec-stmt-tail",
+      "unit_id": "dec-stmt-tail",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "--"
+        }
+      ],
+      "condition": "--A,1",
+      "scenario_verdict": "different_scoped",
+      "verdict": "OBSERVED_SCOPED_TIMING_OR_BEHAVIOR_DIFFERENCE",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "--A,1",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に余分な','があります"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-stmt-tail",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "--A,1",
+            "エラー内容：代入文の左辺に余分な','があります",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-stmt-tail/native-01/ERB_REVIEW.ERB",
+            "sha256": "241d74499dc104a94587ffb6cd731cb63289fbd73679a7f2c70d3d5c3612262a",
+            "size": 336
+          },
+          "header": {
+            "path": "assets/dec-stmt-tail/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/dec-stmt-tail/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-stmt-tail/native-01/emuera.log",
+            "sha256": "7abfb84b096747915f13439f4dce9521b45d181ee97adf5ce14b4202682a5726",
+            "size": 344
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "--A,1",
+          "exact_reason_lines": [
+            "エラー内容：代入文の左辺に余分な','があります"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE dec-stmt-tail",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "--A,1",
+            "エラー内容：代入文の左辺に余分な','があります",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-stmt-tail/native-02/ERB_REVIEW.ERB",
+            "sha256": "241d74499dc104a94587ffb6cd731cb63289fbd73679a7f2c70d3d5c3612262a",
+            "size": 336
+          },
+          "header": {
+            "path": "assets/dec-stmt-tail/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/dec-stmt-tail/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/dec-stmt-tail/native-02/emuera.log",
+            "sha256": "7abfb84b096747915f13439f4dce9521b45d181ee97adf5ce14b4202682a5726",
+            "size": 344
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": false,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "--A,1",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_SYNTAX: Expected EOF, got , at column 4: --A,1"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/dec-stmt-tail/public-01/ERB_REVIEW.ERB",
+            "sha256": "241d74499dc104a94587ffb6cd731cb63289fbd73679a7f2c70d3d5c3612262a",
+            "size": 336
+          },
+          "header": {
+            "path": "assets/dec-stmt-tail/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/dec-stmt-tail/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": null,
+          "stderr": {
+            "path": "assets/dec-stmt-tail/public-01/verified.stderr.bin",
+            "sha256": "eca5687be6b6079303dc126ca71d59f5f4db4df2bd30f0113c79dcab6a929dd4",
+            "size": 69
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_incdec-string-type",
+      "planned_id": "C264-12-incdec-string-type",
+      "unit_id": "incdec-string-type",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "Mutable string variable passes VariableTerm/IsConst then fails integer dispatch",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++LOCALS",
+          "exact_reason_lines": [
+            "エラー内容：文字列型に単項演算子'++'は適用できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-string-type",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++LOCALS",
+            "エラー内容：文字列型に単項演算子'++'は適用できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-string-type/native-01/ERB_REVIEW.ERB",
+            "sha256": "9d23e7185f32eaa5f660de5f45589371e70b002e7d5b2830cdcea2bf02adbe1d",
+            "size": 351
+          },
+          "header": {
+            "path": "assets/incdec-string-type/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-string-type/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-string-type/native-01/emuera.log",
+            "sha256": "e53d114832417ae08f43f397f45619021b00bc6c3039381f6224a63a5d89cc51",
+            "size": 372
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++LOCALS",
+          "exact_reason_lines": [
+            "エラー内容：文字列型に単項演算子'++'は適用できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-string-type",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++LOCALS",
+            "エラー内容：文字列型に単項演算子'++'は適用できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-string-type/native-02/ERB_REVIEW.ERB",
+            "sha256": "9d23e7185f32eaa5f660de5f45589371e70b002e7d5b2830cdcea2bf02adbe1d",
+            "size": 351
+          },
+          "header": {
+            "path": "assets/incdec-string-type/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-string-type/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-string-type/native-02/emuera.log",
+            "sha256": "e53d114832417ae08f43f397f45619021b00bc6c3039381f6224a63a5d89cc51",
+            "size": 372
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++LOCALS",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_TYPE: 式の結果が数値ではありません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-string-type"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-string-type/public-01/ERB_REVIEW.ERB",
+            "sha256": "9d23e7185f32eaa5f660de5f45589371e70b002e7d5b2830cdcea2bf02adbe1d",
+            "size": 351
+          },
+          "header": {
+            "path": "assets/incdec-string-type/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-string-type/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-string-type/public-01/verified.stdout.bin",
+            "sha256": "559bd8ed250f98035534aa9d06449304fa5dfedde461a8da9b881c3760f05029",
+            "size": 50
+          },
+          "stderr": {
+            "path": "assets/incdec-string-type/public-01/verified.stderr.bin",
+            "sha256": "fe9ddae94966dc242fe0fac5c651822dbe0a2f5d23bf729e43241d46176fc8d3",
+            "size": 95
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_incdec-post-nonlvalue",
+      "planned_id": "C264-13-incdec-post-nonlvalue",
+      "unit_id": "incdec-post-nonlvalue",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "Postfix has separate ReduceUnaryAfterTerm body: (A+1)++",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=(A+1)++",
+          "exact_reason_lines": [
+            "エラー内容：変数以外をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-nonlvalue",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=(A+1)++",
+            "エラー内容：変数以外をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-nonlvalue/native-01/ERB_REVIEW.ERB",
+            "sha256": "87e0ad1703445aace56b10c73abd33517279df08bda7faee2f75981b42e36afc",
+            "size": 356
+          },
+          "header": {
+            "path": "assets/incdec-post-nonlvalue/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-post-nonlvalue/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-nonlvalue/native-01/emuera.log",
+            "sha256": "1dcb518c0fe318852b70aa309b2d5f78cc8c0a91f42ba04279e5b25ead06aa1e",
+            "size": 376
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=(A+1)++",
+          "exact_reason_lines": [
+            "エラー内容：変数以外をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-nonlvalue",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=(A+1)++",
+            "エラー内容：変数以外をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-nonlvalue/native-02/ERB_REVIEW.ERB",
+            "sha256": "87e0ad1703445aace56b10c73abd33517279df08bda7faee2f75981b42e36afc",
+            "size": 356
+          },
+          "header": {
+            "path": "assets/incdec-post-nonlvalue/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-post-nonlvalue/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-nonlvalue/native-02/emuera.log",
+            "sha256": "1dcb518c0fe318852b70aa309b2d5f78cc8c0a91f42ba04279e5b25ead06aa1e",
+            "size": 376
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=(A+1)++",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_REFERENCE: Increment requires an integer variable"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-nonlvalue"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-nonlvalue/public-01/ERB_REVIEW.ERB",
+            "sha256": "87e0ad1703445aace56b10c73abd33517279df08bda7faee2f75981b42e36afc",
+            "size": 356
+          },
+          "header": {
+            "path": "assets/incdec-post-nonlvalue/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-post-nonlvalue/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-nonlvalue/public-01/verified.stdout.bin",
+            "sha256": "1d3b86cf2c1632f5d5b93fcb196944c37f3651c0d479b3f9b7befc8e2c28ac5e",
+            "size": 53
+          },
+          "stderr": {
+            "path": "assets/incdec-post-nonlvalue/public-01/verified.stderr.bin",
+            "sha256": "4e2c14f63bf8f330c133f11f2f285c4eb4437f9af211a096589b21e8150d8306",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_incdec-post-readonly",
+      "planned_id": "C264-14-incdec-post-readonly",
+      "unit_id": "incdec-post-readonly",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "Postfix has separate ReduceUnaryAfterTerm body: ZZCONST++",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=ZZCONST++",
+          "exact_reason_lines": [
+            "エラー内容：変更できない変数をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=ZZCONST++",
+            "エラー内容：変更できない変数をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-readonly/native-01/ERB_REVIEW.ERB",
+            "sha256": "cb19c9c9a9f96e4bb5e0e52c325427ff4ab73e37d2322f531e9ed8367d094591",
+            "size": 356
+          },
+          "header": {
+            "path": "assets/incdec-post-readonly/native-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/incdec-post-readonly/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-readonly/native-01/emuera.log",
+            "sha256": "af7c1b96741e424eca067e8b89b9c371f208a03b03ed67266bcb8851b9370d5b",
+            "size": 386
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=ZZCONST++",
+          "exact_reason_lines": [
+            "エラー内容：変更できない変数をインクリメントすることはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-readonly",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=ZZCONST++",
+            "エラー内容：変更できない変数をインクリメントすることはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-readonly/native-02/ERB_REVIEW.ERB",
+            "sha256": "cb19c9c9a9f96e4bb5e0e52c325427ff4ab73e37d2322f531e9ed8367d094591",
+            "size": 356
+          },
+          "header": {
+            "path": "assets/incdec-post-readonly/native-02/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/incdec-post-readonly/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-readonly/native-02/emuera.log",
+            "sha256": "af7c1b96741e424eca067e8b89b9c371f208a03b03ed67266bcb8851b9370d5b",
+            "size": 386
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=ZZCONST++",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_READONLY: ZZCONST is read-only"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-readonly"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-readonly/public-01/ERB_REVIEW.ERB",
+            "sha256": "cb19c9c9a9f96e4bb5e0e52c325427ff4ab73e37d2322f531e9ed8367d094591",
+            "size": 356
+          },
+          "header": {
+            "path": "assets/incdec-post-readonly/public-01/ERB_REVIEW.ERH",
+            "sha256": "a6256c0fa106838651fd76cf92a159745f6ba38317b969440fd212604552c4df",
+            "size": 51
+          },
+          "config": {
+            "path": "assets/incdec-post-readonly/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-readonly/public-01/verified.stdout.bin",
+            "sha256": "c86637009c47a72ef6bbdf27e87d92db5bdc18df2bd5eb7a9019f188818f71db",
+            "size": 52
+          },
+          "stderr": {
+            "path": "assets/incdec-post-readonly/public-01/verified.stderr.bin",
+            "sha256": "5f07253a2ac86349f350940aad4e63a25c0e10fe6d5dbcdbe8df806ff914d328",
+            "size": 91
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_incdec-post-string-type",
+      "planned_id": "C264-15-incdec-post-string-type",
+      "unit_id": "incdec-post-string-type",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "Postfix has separate ReduceUnaryAfterTerm body: LOCALS++",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=LOCALS++",
+          "exact_reason_lines": [
+            "エラー内容：文字列型に後置単項演算子'++'は適用できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-string-type",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=LOCALS++",
+            "エラー内容：文字列型に後置単項演算子'++'は適用できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-string-type/native-01/ERB_REVIEW.ERB",
+            "sha256": "00657cedf4e9bba1804f735204a15bc0550df209eadc773be9661a7551e2be59",
+            "size": 361
+          },
+          "header": {
+            "path": "assets/incdec-post-string-type/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-post-string-type/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-string-type/native-01/emuera.log",
+            "sha256": "ddde7bd5858acdb5fe6eacf9dacb122326c1f831ae419bdde7eb32b011bd7c8c",
+            "size": 386
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=LOCALS++",
+          "exact_reason_lines": [
+            "エラー内容：文字列型に後置単項演算子'++'は適用できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-string-type",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=LOCALS++",
+            "エラー内容：文字列型に後置単項演算子'++'は適用できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-string-type/native-02/ERB_REVIEW.ERB",
+            "sha256": "00657cedf4e9bba1804f735204a15bc0550df209eadc773be9661a7551e2be59",
+            "size": 361
+          },
+          "header": {
+            "path": "assets/incdec-post-string-type/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-post-string-type/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-string-type/native-02/emuera.log",
+            "sha256": "ddde7bd5858acdb5fe6eacf9dacb122326c1f831ae419bdde7eb32b011bd7c8c",
+            "size": 386
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=LOCALS++",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_TYPE: 式の結果が数値ではありません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-post-string-type"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-post-string-type/public-01/ERB_REVIEW.ERB",
+            "sha256": "00657cedf4e9bba1804f735204a15bc0550df209eadc773be9661a7551e2be59",
+            "size": 361
+          },
+          "header": {
+            "path": "assets/incdec-post-string-type/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-post-string-type/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-post-string-type/public-01/verified.stdout.bin",
+            "sha256": "2a4b0540a83f715ce41732e0694d63446afe6a3dcb8a76dba9610fc7a7f1b6b1",
+            "size": 55
+          },
+          "stderr": {
+            "path": "assets/incdec-post-string-type/public-01/verified.stderr.bin",
+            "sha256": "fe9ddae94966dc242fe0fac5c651822dbe0a2f5d23bf729e43241d46176fc8d3",
+            "size": 95
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_incdec-pre-and-post",
+      "planned_id": "C264-16-incdec-pre-and-post",
+      "unit_id": "incdec-pre-and-post",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "++A++; shared TermStack flags before/after guards",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++A++",
+          "exact_reason_lines": [
+            "エラー内容：インクリメント・デクリメントを前置・後置両方同時に使うことはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-pre-and-post",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++A++",
+            "エラー内容：インクリメント・デクリメントを前置・後置両方同時に使うことはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-pre-and-post/native-01/ERB_REVIEW.ERB",
+            "sha256": "d20cb57250b1c61ce389fad3956f1e35b79ddf8f5cd1bd50928c2f5d23900882",
+            "size": 350
+          },
+          "header": {
+            "path": "assets/incdec-pre-and-post/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-pre-and-post/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-pre-and-post/native-01/emuera.log",
+            "sha256": "57ea391f1053cd028b9b65fe7b98c5ffcf24e79184b5e743d1bff9ef19fab0e6",
+            "size": 394
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++A++",
+          "exact_reason_lines": [
+            "エラー内容：インクリメント・デクリメントを前置・後置両方同時に使うことはできません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-pre-and-post",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=++A++",
+            "エラー内容：インクリメント・デクリメントを前置・後置両方同時に使うことはできません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-pre-and-post/native-02/ERB_REVIEW.ERB",
+            "sha256": "d20cb57250b1c61ce389fad3956f1e35b79ddf8f5cd1bd50928c2f5d23900882",
+            "size": 350
+          },
+          "header": {
+            "path": "assets/incdec-pre-and-post/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-pre-and-post/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-pre-and-post/native-02/emuera.log",
+            "sha256": "57ea391f1053cd028b9b65fe7b98c5ffcf24e79184b5e743d1bff9ef19fab0e6",
+            "size": 394
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=++A++",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_REFERENCE: Increment requires an integer variable"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-pre-and-post"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-pre-and-post/public-01/ERB_REVIEW.ERB",
+            "sha256": "d20cb57250b1c61ce389fad3956f1e35b79ddf8f5cd1bd50928c2f5d23900882",
+            "size": 350
+          },
+          "header": {
+            "path": "assets/incdec-pre-and-post/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-pre-and-post/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-pre-and-post/public-01/verified.stdout.bin",
+            "sha256": "f94dd85506636a456492e74bfc674d471169ead450ede47dae4bbcd144f63f4b",
+            "size": 51
+          },
+          "stderr": {
+            "path": "assets/incdec-pre-and-post/public-01/verified.stderr.bin",
+            "sha256": "4e2c14f63bf8f330c133f11f2f285c4eb4437f9af211a096589b21e8150d8306",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_incdec-double-post",
+      "planned_id": "C264-17-incdec-double-post",
+      "unit_id": "incdec-double-post",
+      "targets": [
+        {
+          "kind": "operator",
+          "name": "++"
+        },
+        {
+          "kind": "operator",
+          "name": "--"
+        }
+      ],
+      "condition": "A++++; shared TermStack flags before/after guards",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=A++++",
+          "exact_reason_lines": [
+            "エラー内容：後置の単項演算子が複数存在しています"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-double-post",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=A++++",
+            "エラー内容：後置の単項演算子が複数存在しています",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-double-post/native-01/ERB_REVIEW.ERB",
+            "sha256": "f3c25573b6f8d1b0625219a373f36efa0dacded4d2ef131bdf78f6c4787f1721",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/incdec-double-post/native-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-double-post/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-double-post/native-01/emuera.log",
+            "sha256": "ccbbcc9c0e9891388b76746769c7b46b05367557abde0ba82a1c890913b91b18",
+            "size": 358
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=A++++",
+          "exact_reason_lines": [
+            "エラー内容：後置の単項演算子が複数存在しています"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-double-post",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "C=A++++",
+            "エラー内容：後置の単項演算子が複数存在しています",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-double-post/native-02/ERB_REVIEW.ERB",
+            "sha256": "f3c25573b6f8d1b0625219a373f36efa0dacded4d2ef131bdf78f6c4787f1721",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/incdec-double-post/native-02/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-double-post/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-double-post/native-02/emuera.log",
+            "sha256": "ccbbcc9c0e9891388b76746769c7b46b05367557abde0ba82a1c890913b91b18",
+            "size": 358
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "C=A++++",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_SYNTAX: Expected EOF, got ++ at column 4: A++++"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE incdec-double-post"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/incdec-double-post/public-01/ERB_REVIEW.ERB",
+            "sha256": "f3c25573b6f8d1b0625219a373f36efa0dacded4d2ef131bdf78f6c4787f1721",
+            "size": 348
+          },
+          "header": {
+            "path": "assets/incdec-double-post/public-01/ERB_REVIEW.ERH",
+            "sha256": "a8ff4e3bc735d9d7629a30b79a5a94f8b7b19ca8b01dd34c5ff46028771fdb93",
+            "size": 29
+          },
+          "config": {
+            "path": "assets/incdec-double-post/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/incdec-double-post/public-01/verified.stdout.bin",
+            "sha256": "91985c897fafa00baca65cc9041ecf974e211f7cb5ffa5dd3ea47437b3691f5d",
+            "size": 50
+          },
+          "stderr": {
+            "path": "assets/incdec-double-post/public-01/verified.stderr.bin",
+            "sha256": "d5fd0556e6ea1d8cb8301ecc0d3fd36a6894616587787d4d90aa6defcd3f1377",
+            "size": 108
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_vector-num-1",
+      "planned_id": "C264-18-vector-num-1",
+      "unit_id": "vector-num-1",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "2-element vector, start=1; RHS helpers evaluated before sequential write",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 14,
+          "fault_source_line": "ZZV:1 = ZZL(),ZZR()",
+          "exact_reason_lines": [
+            "エラー内容：配列変数ZZVの要素数を超えて代入しようとしました"
+          ],
+          "event_lines": [
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE vector-num-1",
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12",
+            "REVIEW.ERBの14行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:1 = ZZL(),ZZR()",
+            "エラー内容：配列変数ZZVの要素数を超えて代入しようとしました",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/vector-num-1/native-01/ERB_REVIEW.ERB",
+            "sha256": "9d9791ce48930ca5305187e3e406d2dcb2ddd02933ed2cd072c4ebfa0f75ef50",
+            "size": 888
+          },
+          "header": {
+            "path": "assets/vector-num-1/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/vector-num-1/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/vector-num-1/native-01/emuera.log",
+            "sha256": "f29e87206d178ce2f7a9db0a5f414f385fc5012c4c01c38ebe3bce1ec6e8c36a",
+            "size": 468
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 14,
+          "fault_source_line": "ZZV:1 = ZZL(),ZZR()",
+          "exact_reason_lines": [
+            "エラー内容：配列変数ZZVの要素数を超えて代入しようとしました"
+          ],
+          "event_lines": [
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE vector-num-1",
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12",
+            "REVIEW.ERBの14行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:1 = ZZL(),ZZR()",
+            "エラー内容：配列変数ZZVの要素数を超えて代入しようとしました",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/vector-num-1/native-02/ERB_REVIEW.ERB",
+            "sha256": "9d9791ce48930ca5305187e3e406d2dcb2ddd02933ed2cd072c4ebfa0f75ef50",
+            "size": 888
+          },
+          "header": {
+            "path": "assets/vector-num-1/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/vector-num-1/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/vector-num-1/native-02/emuera.log",
+            "sha256": "f29e87206d178ce2f7a9db0a5f414f385fc5012c4c01c38ebe3bce1ec6e8c36a",
+            "size": 468
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 14,
+          "fault_source_line": "ZZV:1 = ZZL(),ZZR()",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:14: E_INDEX: 配列変数ZZVの要素数を超えて代入しようとしました"
+          ],
+          "event_lines": [
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE vector-num-1",
+            "EVENT LEFT A=1 B=1",
+            "EVENT RIGHT A=2 B=12"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/vector-num-1/public-01/ERB_REVIEW.ERB",
+            "sha256": "9d9791ce48930ca5305187e3e406d2dcb2ddd02933ed2cd072c4ebfa0f75ef50",
+            "size": 888
+          },
+          "header": {
+            "path": "assets/vector-num-1/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/vector-num-1/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/vector-num-1/public-01/verified.stdout.bin",
+            "sha256": "d7d58a78a9356240c6a91208570ed1ceb8599a34427a5d4a535c4d02eaa55de9",
+            "size": 86
+          },
+          "stderr": {
+            "path": "assets/vector-num-1/public-01/verified.stderr.bin",
+            "sha256": "f6eb13a756823342a8c6c51f69181898f5505ee5f531e58b8f902e2013ccaa4e",
+            "size": 115
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_vector-num-rhs-fails",
+      "planned_id": "C264-19-vector-num-rhs-fails",
+      "unit_id": "vector-num-rhs-fails",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "Second RHS fails before any destination setter call",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_HELPER_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 39,
+          "fault_source_line": "RETURNF 1/E",
+          "exact_reason_lines": [
+            "エラー内容：0による除算が行なわれました"
+          ],
+          "event_lines": [
+            "EVENT RIGHT A=1 B=2",
+            "EVENT BAD A=2"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE vector-num-rhs-fails",
+            "EVENT RIGHT A=1 B=2",
+            "EVENT BAD A=2",
+            "REVIEW.ERBの39行目でエラーが発生しました:Emuera1824+v24",
+            "RETURNF 1/E",
+            "エラー内容：0による除算が行なわれました",
+            "現在の関数：@ZZBAD（REVIEW.ERBの35行目）",
+            "関数呼び出しスタック：",
+            "↑REVIEW.ERBの14行目（関数@SYSTEM_TITLE内）"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/vector-num-rhs-fails/native-01/ERB_REVIEW.ERB",
+            "sha256": "a402f6541feba96fa8ae761231e98b0369b8cf400e4cad06969edc453df168f7",
+            "size": 863
+          },
+          "header": {
+            "path": "assets/vector-num-rhs-fails/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/vector-num-rhs-fails/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/vector-num-rhs-fails/native-01/emuera.log",
+            "sha256": "f1336804b503801d735486127d2468c22158d097020ba4fa73ab4dbd7d68f01f",
+            "size": 494
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_HELPER_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 39,
+          "fault_source_line": "RETURNF 1/E",
+          "exact_reason_lines": [
+            "エラー内容：0による除算が行なわれました"
+          ],
+          "event_lines": [
+            "EVENT RIGHT A=1 B=2",
+            "EVENT BAD A=2"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE vector-num-rhs-fails",
+            "EVENT RIGHT A=1 B=2",
+            "EVENT BAD A=2",
+            "REVIEW.ERBの39行目でエラーが発生しました:Emuera1824+v24",
+            "RETURNF 1/E",
+            "エラー内容：0による除算が行なわれました",
+            "現在の関数：@ZZBAD（REVIEW.ERBの35行目）",
+            "関数呼び出しスタック：",
+            "↑REVIEW.ERBの14行目（関数@SYSTEM_TITLE内）"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/vector-num-rhs-fails/native-02/ERB_REVIEW.ERB",
+            "sha256": "a402f6541feba96fa8ae761231e98b0369b8cf400e4cad06969edc453df168f7",
+            "size": 863
+          },
+          "header": {
+            "path": "assets/vector-num-rhs-fails/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/vector-num-rhs-fails/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/vector-num-rhs-fails/native-02/emuera.log",
+            "sha256": "f1336804b503801d735486127d2468c22158d097020ba4fa73ab4dbd7d68f01f",
+            "size": 494
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_HELPER_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 39,
+          "fault_source_line": "RETURNF 1/E",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:39: E_ARITH: 0による除算が行なわれました"
+          ],
+          "event_lines": [
+            "EVENT RIGHT A=1 B=2",
+            "EVENT BAD A=2"
+          ],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE vector-num-rhs-fails",
+            "EVENT RIGHT A=1 B=2",
+            "EVENT BAD A=2"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/vector-num-rhs-fails/public-01/ERB_REVIEW.ERB",
+            "sha256": "a402f6541feba96fa8ae761231e98b0369b8cf400e4cad06969edc453df168f7",
+            "size": 863
+          },
+          "header": {
+            "path": "assets/vector-num-rhs-fails/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/vector-num-rhs-fails/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/vector-num-rhs-fails/public-01/verified.stdout.bin",
+            "sha256": "493869b9c642d2bf8002ded4015cbdc904401f8f72dddaba99c7278b4177d587",
+            "size": 88
+          },
+          "stderr": {
+            "path": "assets/vector-num-rhs-fails/public-01/verified.stderr.bin",
+            "sha256": "21d2f77d49558921ea5904e45543388903e9ce19420ebe89392f75e5e1a1fca0",
+            "size": 126
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_plain-num-control",
+      "planned_id": "C264-20-plain-num-control",
+      "unit_id": "plain-num-control",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "= RHS '7'; ReduceArguments not a universal comma rule",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_REACHED_EMITTED_STATE",
+      "diagnostic_text_equal": true,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "REACHED_CONTINUATION_OBSERVED",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-control",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0",
+            "REVIEW DONE plain-num-control"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-control/native-01/ERB_REVIEW.ERB",
+            "sha256": "17bd05d978649c4117c5f36629b30468b24ac467502583f3346b84de98d97ba9",
+            "size": 395
+          },
+          "header": {
+            "path": "assets/plain-num-control/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-control/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-control/native-01/emuera.log",
+            "sha256": "1a3eafc02a392ee09ebe3b8882b27c386aa55905aeed272d711903af788cb800",
+            "size": 388
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "REACHED_CONTINUATION_OBSERVED",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-control",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0",
+            "REVIEW DONE plain-num-control"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-control/native-02/ERB_REVIEW.ERB",
+            "sha256": "17bd05d978649c4117c5f36629b30468b24ac467502583f3346b84de98d97ba9",
+            "size": 395
+          },
+          "header": {
+            "path": "assets/plain-num-control/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-control/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-control/native-02/emuera.log",
+            "sha256": "1a3eafc02a392ee09ebe3b8882b27c386aa55905aeed272d711903af788cb800",
+            "size": 388
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "REACHED_CONTINUATION_OBSERVED",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-control",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0",
+            "REVIEW DONE plain-num-control",
+            "※ ※ ※ ログファイルをemuera.logに出力しました※ ※ ※ "
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-control/public-01/ERB_REVIEW.ERB",
+            "sha256": "17bd05d978649c4117c5f36629b30468b24ac467502583f3346b84de98d97ba9",
+            "size": 395
+          },
+          "header": {
+            "path": "assets/plain-num-control/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-control/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-control/public-01/verified.stdout.bin",
+            "sha256": "63ca7e6c9e0881825625ca8cfcc5d8285851384dfeb555be89a5f3fd84b88d5b",
+            "size": 251
+          },
+          "stderr": {
+            "path": "assets/plain-num-control/public-01/verified.stderr.bin",
+            "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+            "size": 110
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_plain-num-trailing",
+      "planned_id": "C264-21-plain-num-trailing",
+      "unit_id": "plain-num-trailing",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "= RHS '7,'; ReduceArguments not a universal comma rule",
+      "scenario_verdict": "different_scoped",
+      "verdict": "OBSERVED_SCOPED_TIMING_OR_BEHAVIOR_DIFFERENCE",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "REACHED_CONTINUATION_OBSERVED",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-trailing",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0",
+            "REVIEW DONE plain-num-trailing"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-trailing/native-01/ERB_REVIEW.ERB",
+            "sha256": "fb29e152e6102da46c4370e8e0d1e9246b5e3fcb06da79340bc36fac79f2d5a5",
+            "size": 398
+          },
+          "header": {
+            "path": "assets/plain-num-trailing/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-trailing/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-trailing/native-01/emuera.log",
+            "sha256": "cfe7a3135125822088a0f86275813bc2da12a05758821c99752d9999a7683010",
+            "size": 392
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "REACHED_CONTINUATION_OBSERVED",
+          "before": true,
+          "done": true,
+          "fault_line_number": null,
+          "fault_source_line": null,
+          "exact_reason_lines": [],
+          "event_lines": [],
+          "observed_state_lines": [
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0"
+          ],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-trailing",
+            "REVIEW AFTER C=701",
+            "REVIEW STATE A=0 B=0",
+            "REVIEW STATE D0=6 D1=99",
+            "REVIEW STATE S=[ab]",
+            "REVIEW VECTOR V0=7 V1=0",
+            "REVIEW DONE plain-num-trailing"
+          ],
+          "post_error_destination_state": "not inferred beyond emitted lines",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-trailing/native-02/ERB_REVIEW.ERB",
+            "sha256": "fb29e152e6102da46c4370e8e0d1e9246b5e3fcb06da79340bc36fac79f2d5a5",
+            "size": 398
+          },
+          "header": {
+            "path": "assets/plain-num-trailing/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-trailing/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-trailing/native-02/emuera.log",
+            "sha256": "cfe7a3135125822088a0f86275813bc2da12a05758821c99752d9999a7683010",
+            "size": 392
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = 7,",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_SYNTAX: 式が異常です"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-trailing"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-trailing/public-01/ERB_REVIEW.ERB",
+            "sha256": "fb29e152e6102da46c4370e8e0d1e9246b5e3fcb06da79340bc36fac79f2d5a5",
+            "size": 398
+          },
+          "header": {
+            "path": "assets/plain-num-trailing/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-trailing/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-trailing/public-01/verified.stdout.bin",
+            "sha256": "eac4424677aaf1cfa54d0cbb98579185291dd36f4a0b86d3fb1570dcbd60dd51",
+            "size": 50
+          },
+          "stderr": {
+            "path": "assets/plain-num-trailing/public-01/verified.stderr.bin",
+            "sha256": "454926afc1b3b6ff40241e9dd02b22910456ba3d95ca70b97d7efe7214bdcdca",
+            "size": 81
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_plain-num-hole",
+      "planned_id": "C264-22-plain-num-hole",
+      "unit_id": "plain-num-hole",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "= RHS '7,,7'; ReduceArguments not a universal comma rule",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = 7,,7",
+          "exact_reason_lines": [
+            "エラー内容：代入式の右辺の値は省略できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-hole",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:0 = 7,,7",
+            "エラー内容：代入式の右辺の値は省略できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-hole/native-01/ERB_REVIEW.ERB",
+            "sha256": "d9c625c20a419e695eaf478e61d4853a74ce7e3bb9385a459452b43c7b2de9f0",
+            "size": 392
+          },
+          "header": {
+            "path": "assets/plain-num-hole/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-hole/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-hole/native-01/emuera.log",
+            "sha256": "7f6ad4473aa5743d1334f65170bbabbfeffe17f21f20eb5607d2cb1a4c4ec56f",
+            "size": 356
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = 7,,7",
+          "exact_reason_lines": [
+            "エラー内容：代入式の右辺の値は省略できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-hole",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:0 = 7,,7",
+            "エラー内容：代入式の右辺の値は省略できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-hole/native-02/ERB_REVIEW.ERB",
+            "sha256": "d9c625c20a419e695eaf478e61d4853a74ce7e3bb9385a459452b43c7b2de9f0",
+            "size": 392
+          },
+          "header": {
+            "path": "assets/plain-num-hole/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-hole/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-hole/native-02/emuera.log",
+            "sha256": "7f6ad4473aa5743d1334f65170bbabbfeffe17f21f20eb5607d2cb1a4c4ec56f",
+            "size": 356
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = 7,,7",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_SYNTAX: 式が異常です"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-hole"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-hole/public-01/ERB_REVIEW.ERB",
+            "sha256": "d9c625c20a419e695eaf478e61d4853a74ce7e3bb9385a459452b43c7b2de9f0",
+            "size": 392
+          },
+          "header": {
+            "path": "assets/plain-num-hole/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-hole/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-hole/public-01/verified.stdout.bin",
+            "sha256": "f398206f55f2d7929e4cf4a24859527f35a385ba1803db97bed14c546b77db25",
+            "size": 46
+          },
+          "stderr": {
+            "path": "assets/plain-num-hole/public-01/verified.stderr.bin",
+            "sha256": "454926afc1b3b6ff40241e9dd02b22910456ba3d95ca70b97d7efe7214bdcdca",
+            "size": 81
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_plain-num-empty",
+      "planned_id": "C264-23-plain-num-empty",
+      "unit_id": "plain-num-empty",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "= RHS ''; ReduceArguments not a universal comma rule",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = ",
+          "exact_reason_lines": [
+            "エラー内容：代入文の右辺の読み取りに失敗しました"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-empty",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:0 = ",
+            "エラー内容：代入文の右辺の読み取りに失敗しました",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-empty/native-01/ERB_REVIEW.ERB",
+            "sha256": "f0f621ff14317616e3233d30fb35ec8ab69f8bac09ceeed8f07c7abf8e94b63d",
+            "size": 390
+          },
+          "header": {
+            "path": "assets/plain-num-empty/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-empty/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-empty/native-01/emuera.log",
+            "sha256": "3965285ffad8288083bf34a436bdac3912dcfff8808dfe33750ec2739bc2d439",
+            "size": 354
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = ",
+          "exact_reason_lines": [
+            "エラー内容：代入文の右辺の読み取りに失敗しました"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-empty",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:0 = ",
+            "エラー内容：代入文の右辺の読み取りに失敗しました",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-empty/native-02/ERB_REVIEW.ERB",
+            "sha256": "f0f621ff14317616e3233d30fb35ec8ab69f8bac09ceeed8f07c7abf8e94b63d",
+            "size": 390
+          },
+          "header": {
+            "path": "assets/plain-num-empty/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-empty/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-empty/native-02/emuera.log",
+            "sha256": "3965285ffad8288083bf34a436bdac3912dcfff8808dfe33750ec2739bc2d439",
+            "size": 354
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = ",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_SYNTAX: 式が異常です"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-empty"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-empty/public-01/ERB_REVIEW.ERB",
+            "sha256": "f0f621ff14317616e3233d30fb35ec8ab69f8bac09ceeed8f07c7abf8e94b63d",
+            "size": 390
+          },
+          "header": {
+            "path": "assets/plain-num-empty/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-empty/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-empty/public-01/verified.stdout.bin",
+            "sha256": "985ca6202824af7e29492c74d619fb3e6333462ff03d1f0e38f0fe9fbbd294a0",
+            "size": 47
+          },
+          "stderr": {
+            "path": "assets/plain-num-empty/public-01/verified.stderr.bin",
+            "sha256": "454926afc1b3b6ff40241e9dd02b22910456ba3d95ca70b97d7efe7214bdcdca",
+            "size": 81
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "OPISOLATED264_plain-num-wrongtype",
+      "planned_id": "C264-24-plain-num-wrongtype",
+      "unit_id": "plain-num-wrongtype",
+      "targets": [
+        {
+          "kind": "assignment_syntax",
+          "name": "="
+        }
+      ],
+      "condition": "= RHS '\"ab\"'; ReduceArguments not a universal comma rule",
+      "scenario_verdict": "matched_scoped",
+      "verdict": "MATCHED_GUARD_LOCATION_EVENT_SCOPE_DIAGNOSTICS_RETAINED",
+      "diagnostic_text_equal": false,
+      "operator_body_credit": "not inferred from guard or source presence",
+      "all_values_equivalence": false,
+      "modes": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = \"ab\"",
+          "exact_reason_lines": [
+            "エラー内容：数値型変数に文字列は代入できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-wrongtype",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:0 = \"ab\"",
+            "エラー内容：数値型変数に文字列は代入できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-wrongtype/native-01/ERB_REVIEW.ERB",
+            "sha256": "d416034b03f13afaddc71aa9a5f5ec2a6c2eb695e0fc4e619121674294477171",
+            "size": 402
+          },
+          "header": {
+            "path": "assets/plain-num-wrongtype/native-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-wrongtype/native-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-wrongtype/native-01/emuera.log",
+            "sha256": "373b3d18350b282e24521fcda5dc02c764c4d9b55b7ccfcc9696ba0060196cf9",
+            "size": 368
+          },
+          "stderr": null
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = \"ab\"",
+          "exact_reason_lines": [
+            "エラー内容：数値型変数に文字列は代入できません"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-wrongtype",
+            "REVIEW.ERBの12行目でエラーが発生しました:Emuera1824+v24",
+            "ZZV:0 = \"ab\"",
+            "エラー内容：数値型変数に文字列は代入できません",
+            "現在の関数：@SYSTEM_TITLE（REVIEW.ERBの1行目）",
+            "関数呼び出しスタック："
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "unobserved",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-wrongtype/native-02/ERB_REVIEW.ERB",
+            "sha256": "d416034b03f13afaddc71aa9a5f5ec2a6c2eb695e0fc4e619121674294477171",
+            "size": 402
+          },
+          "header": {
+            "path": "assets/plain-num-wrongtype/native-02/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-wrongtype/native-02/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-wrongtype/native-02/emuera.log",
+            "sha256": "373b3d18350b282e24521fcda5dc02c764c4d9b55b7ccfcc9696ba0060196cf9",
+            "size": 368
+          },
+          "stderr": null
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "classification": "INTENTIONAL_TARGET_GUARD_OBSERVED",
+          "before": true,
+          "done": false,
+          "fault_line_number": 12,
+          "fault_source_line": "ZZV:0 = \"ab\"",
+          "exact_reason_lines": [
+            "ERB/REVIEW.ERB:12: E_TYPE: Invalid assignment type/readonly destination"
+          ],
+          "event_lines": [],
+          "observed_state_lines": [],
+          "trace_lines": [
+            "Now Loading...",
+            "REVIEW BEFORE plain-num-wrongtype"
+          ],
+          "post_error_destination_state": "UNOBSERVED",
+          "natural_exit": "not_native",
+          "no_afterstop_credit": true,
+          "fixture": {
+            "path": "assets/plain-num-wrongtype/public-01/ERB_REVIEW.ERB",
+            "sha256": "d416034b03f13afaddc71aa9a5f5ec2a6c2eb695e0fc4e619121674294477171",
+            "size": 402
+          },
+          "header": {
+            "path": "assets/plain-num-wrongtype/public-01/ERB_REVIEW.ERH",
+            "sha256": "8b1dc71341ba12424eb7490e10886c8472502919f48f6429315e7935ab89bae7",
+            "size": 41
+          },
+          "config": {
+            "path": "assets/plain-num-wrongtype/public-01/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "trace": {
+            "path": "assets/plain-num-wrongtype/public-01/verified.stdout.bin",
+            "sha256": "d1a75f0b3f98c127ea7dc9204d5ba14fc790371ab53eeb5c1aa7fc7a12e9ffd2",
+            "size": 51
+          },
+          "stderr": {
+            "path": "assets/plain-num-wrongtype/public-01/verified.stderr.bin",
+            "sha256": "cfd5bac232b0e58c0a87ec7d05d80b6c8593b731e34c8046ff6f889d036e69fa",
+            "size": 111
+          }
+        }
+      ]
+    }
+  ]
+}

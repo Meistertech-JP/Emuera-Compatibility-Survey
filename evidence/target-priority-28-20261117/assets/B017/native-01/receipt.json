@@ -1,0 +1,19 @@
+{
+  "case_id": "LIST_TRYJUMPLIST_EMPTY_REACHED_20261115",
+  "mode": "native-01",
+  "identity_basis": "case_evidence_and_source_path_receipt_has_no_case_or_mode",
+  "inputs_before": {
+    "ERB/LISTBOUND.ERB": "14590a28714c12efca303a8e644fdcc0b952c3dfd38aae74a36d11acc4d97db5",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/LISTBOUND.ERB": "14590a28714c12efca303a8e644fdcc0b952c3dfd38aae74a36d11acc4d97db5",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "0270466a27a3b1309a1df79d8aaf9275db94b67538812133af0944eea6a35c84",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt"
+}

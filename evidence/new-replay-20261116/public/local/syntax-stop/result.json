@@ -1,0 +1,16 @@
+{
+  "case": "P38",
+  "runner_status": "visual_review_required",
+  "visual_review": "conducted; crop included; visual interpretation remains manual",
+  "native_observation": "load warnings; BEFORE, then IF error at line 3",
+  "py_observation": "E_SYNTAX at load, BEFORE not observed",
+  "py_returncode": 1,
+  "native_outcome": "forced_termination",
+  "native_natural_exit": "unobserved",
+  "lock_released": true,
+  "fixture_sha256": "8b2bf27fed8c6131fa8a2a22a57522cf4ce846b5d16ac78f4951f72d81581471",
+  "raw_native_diagnostic": "included: native-diagnostic.log",
+  "native_crop": "included: native/crop-before.bmp",
+  "raw_py_diagnostic": "included: py-stderr.bin",
+  "verification_limit": "original private process receipt and seal are not included; visual interpretation remains manual"
+}

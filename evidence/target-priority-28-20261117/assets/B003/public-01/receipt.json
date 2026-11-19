@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_CALLFORM_CALLEE_FAULT_20261116",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "3acb1f60fd8895fb3f1f646647b16c4711a88cf212ee4fb6f0658856715a0b4c",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "3acb1f60fd8895fb3f1f646647b16c4711a88cf212ee4fb6f0658856715a0b4c",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "77e9a7244393e1ccf3996209d7da17a4e6b19a8a035ffd99a38c0b9b662dfede",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "CALLFORM_CALLEE_FAULT",
+  "source_declared_mode": "public-01"
+}

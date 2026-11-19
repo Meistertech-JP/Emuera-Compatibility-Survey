@@ -1,0 +1,23 @@
+{
+  "schema": "command-coverage-case-plan-1",
+  "case_id": "ONEINPUTS_ARGUMENT_BUILDER01",
+  "target": "ONEINPUTS",
+  "purpose": "Compare Native and public behavior for constant formatted argument text, empty quoted text, extra argument continuation, and the following INPUTS request.",
+  "fixture_sha256": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846",
+  "native_replicates": 2,
+  "public_replicates": 2,
+  "input_sequence_hex": "0a0a0a380a",
+  "observation_points": [
+    "READY_FOR_LITERAL",
+    "LITERAL=[\"]",
+    "READY_FOR_EMPTY_CONSTANT",
+    "EMPTY=[\"]",
+    "READY_FOR_EXTRA_ARGUMENT",
+    "EXTRA=[\"]",
+    "INPUTS=[8]",
+    "ONEINPUTS_PARSER_DONE"
+  ],
+  "screenshots_retained": false,
+  "global_keyboard_input": false,
+  "closure_claim": false
+}

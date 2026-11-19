@@ -1,0 +1,492 @@
+{
+  "schema": "display-state-method150-shared-evidence-v1",
+  "batch_id": "DISPLAYSTATE01",
+  "scope": "one shared batch; Native twice and Public once; case roles do not mean 15 independent runs",
+  "cases": [
+    {
+      "case_id": "DISPLAYSTATE_CMD_ALIGNMENT",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "ALIGNMENT"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASECURRENTALIGN",
+        "SETCURRENTALIGN"
+      ],
+      "relationship": "setting_transition_observed_through_getter",
+      "observation_recorded": "One fixed setting transition observed through CURRENTALIGN; rendering not compared. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_CMD_FONTSTYLE",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "FONTSTYLE"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETSTYLE",
+        "SETGETSTYLE"
+      ],
+      "relationship": "setting_transition_observed_through_getter",
+      "observation_recorded": "One fixed setting transition observed through GETSTYLE; rendering not compared. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_CMD_REDRAW",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "REDRAW"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASECURRENTREDRAW",
+        "SETCURRENTREDRAW"
+      ],
+      "relationship": "setting_transition_observed_through_getter",
+      "observation_recorded": "One fixed setting transition observed through CURRENTREDRAW; rendering not compared. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_CMD_SETBGCOLOR",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "SETBGCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETBGCOLOR",
+        "SETGETBGCOLOR"
+      ],
+      "relationship": "setting_transition_observed_through_getter",
+      "observation_recorded": "One fixed setting transition observed through GETBGCOLOR; rendering not compared. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_CMD_SETCOLOR",
+      "typed_target": {
+        "kind": "command_or_syntax",
+        "name": "SETCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETCOLOR",
+        "SETGETCOLOR"
+      ],
+      "relationship": "setting_transition_observed_through_getter",
+      "observation_recorded": "One fixed setting transition observed through GETCOLOR; rendering not compared. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_CURRENTALIGN",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "CURRENTALIGN"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASECURRENTALIGN",
+        "SETCURRENTALIGN"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for CURRENTALIGN. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_CURRENTREDRAW",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "CURRENTREDRAW"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASECURRENTREDRAW",
+        "SETCURRENTREDRAW"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for CURRENTREDRAW. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETBGCOLOR",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETBGCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETBGCOLOR",
+        "SETGETBGCOLOR"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETBGCOLOR. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETCOLOR",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETCOLOR",
+        "SETGETCOLOR"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETCOLOR. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETDEFBGCOLOR",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETDEFBGCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETDEFBGCOLOR",
+        "SETGETDEFBGCOLOR"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETDEFBGCOLOR. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETDEFCOLOR",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETDEFCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETDEFCOLOR",
+        "SETGETDEFCOLOR"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETDEFCOLOR. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETFOCUSCOLOR",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETFOCUSCOLOR"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETFOCUSCOLOR",
+        "SETGETFOCUSCOLOR"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETFOCUSCOLOR. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETFONT",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETFONT"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETFONT",
+        "SETGETFONT"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETFONT. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_GETSTYLE",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "GETSTYLE"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASEGETSTYLE",
+        "SETGETSTYLE"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for GETSTYLE. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    },
+    {
+      "case_id": "DISPLAYSTATE_LINEISEMPTY",
+      "typed_target": {
+        "kind": "method_as_command",
+        "name": "LINEISEMPTY"
+      },
+      "batch_id": "DISPLAYSTATE01",
+      "recorded_verdict": "matched_scoped",
+      "condition_markers": [
+        "BASELINEISEMPTY",
+        "SETLINEISEMPTY"
+      ],
+      "relationship": "getter_two_snapshots",
+      "observation_recorded": "Two snapshot values and RESULT/RESULTS routing for LINEISEMPTY. Native twice/Py full raw-log equality and DONE.",
+      "execution_credit": "shared_batch_only_not_a_separate_run"
+    }
+  ],
+  "conditions": [
+    {
+      "marker": "BASEGETCOLOR",
+      "function": "GETCOLOR",
+      "phase": "BASE",
+      "observed_line": "BASEGETCOLOR INT=12632256 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASEGETDEFCOLOR",
+      "function": "GETDEFCOLOR",
+      "phase": "BASE",
+      "observed_line": "BASEGETDEFCOLOR INT=12632256 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASEGETFOCUSCOLOR",
+      "function": "GETFOCUSCOLOR",
+      "phase": "BASE",
+      "observed_line": "BASEGETFOCUSCOLOR INT=16776960 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASEGETBGCOLOR",
+      "function": "GETBGCOLOR",
+      "phase": "BASE",
+      "observed_line": "BASEGETBGCOLOR INT=0 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASEGETDEFBGCOLOR",
+      "function": "GETDEFBGCOLOR",
+      "phase": "BASE",
+      "observed_line": "BASEGETDEFBGCOLOR INT=0 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASEGETSTYLE",
+      "function": "GETSTYLE",
+      "phase": "BASE",
+      "observed_line": "BASEGETSTYLE INT=0 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASEGETFONT",
+      "function": "GETFONT",
+      "phase": "BASE",
+      "observed_line": "BASEGETFONT INT=777 STR=[ＭＳ ゴシック]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASECURRENTALIGN",
+      "function": "CURRENTALIGN",
+      "phase": "BASE",
+      "observed_line": "BASECURRENTALIGN INT=777 STR=[LEFT]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASECURRENTREDRAW",
+      "function": "CURRENTREDRAW",
+      "phase": "BASE",
+      "observed_line": "BASECURRENTREDRAW INT=1 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "BASELINEISEMPTY",
+      "function": "LINEISEMPTY",
+      "phase": "BASE",
+      "observed_line": "BASELINEISEMPTY INT=1 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETCOLOR",
+      "function": "GETCOLOR",
+      "phase": "SET",
+      "observed_line": "SETGETCOLOR INT=1122867 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETDEFCOLOR",
+      "function": "GETDEFCOLOR",
+      "phase": "SET",
+      "observed_line": "SETGETDEFCOLOR INT=12632256 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETFOCUSCOLOR",
+      "function": "GETFOCUSCOLOR",
+      "phase": "SET",
+      "observed_line": "SETGETFOCUSCOLOR INT=16776960 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETBGCOLOR",
+      "function": "GETBGCOLOR",
+      "phase": "SET",
+      "observed_line": "SETGETBGCOLOR INT=4478310 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETDEFBGCOLOR",
+      "function": "GETDEFBGCOLOR",
+      "phase": "SET",
+      "observed_line": "SETGETDEFBGCOLOR INT=0 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETSTYLE",
+      "function": "GETSTYLE",
+      "phase": "SET",
+      "observed_line": "SETGETSTYLE INT=1 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETGETFONT",
+      "function": "GETFONT",
+      "phase": "SET",
+      "observed_line": "SETGETFONT INT=777 STR=[ＭＳ ゴシック]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETCURRENTALIGN",
+      "function": "CURRENTALIGN",
+      "phase": "SET",
+      "observed_line": "SETCURRENTALIGN INT=777 STR=[RIGHT]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETCURRENTREDRAW",
+      "function": "CURRENTREDRAW",
+      "phase": "SET",
+      "observed_line": "SETCURRENTREDRAW INT=0 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    },
+    {
+      "marker": "SETLINEISEMPTY",
+      "function": "LINEISEMPTY",
+      "phase": "SET",
+      "observed_line": "SETLINEISEMPTY INT=1 STR=[SENTINEL]",
+      "verdict": "matched_scoped"
+    }
+  ],
+  "modes": [
+    {
+      "mode": "native-01",
+      "fixture": {
+        "path": "modes/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+        "sha256": "90beecacd1912bb42d58b8a515d7bf69c1753ee938fa5b896e1939d0774021cb",
+        "size": 2176,
+        "encoding": "cp932"
+      },
+      "config": {
+        "path": "modes/native-01/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "encoding": "cp932"
+      },
+      "history": {
+        "path": "modes/native-01/raw-history.bin",
+        "sha256": "d682487bbdf751e29300b8e56c0d3ab900cd8016231c21193cc272870be180b7",
+        "size": 1622,
+        "encoding": "utf-16"
+      },
+      "receipt_projection": {
+        "source_kind": "native_probe",
+        "inputs": "probe_declared_sha256; pre_post_not_independently_recorded",
+        "input_channel": "isolated_gui; synthetic_keyboard_events_sent_false",
+        "natural_exit": "not_observed_after_5_seconds",
+        "exit_code": "not_observed",
+        "cleanup": "recorded_success",
+        "execution_time": "not_recorded_in_probe",
+        "native_exe_sha256_probe_declared": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+      }
+    },
+    {
+      "mode": "native-02",
+      "fixture": {
+        "path": "modes/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+        "sha256": "90beecacd1912bb42d58b8a515d7bf69c1753ee938fa5b896e1939d0774021cb",
+        "size": 2176,
+        "encoding": "cp932"
+      },
+      "config": {
+        "path": "modes/native-02/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "encoding": "cp932"
+      },
+      "history": {
+        "path": "modes/native-02/raw-history.bin",
+        "sha256": "d682487bbdf751e29300b8e56c0d3ab900cd8016231c21193cc272870be180b7",
+        "size": 1622,
+        "encoding": "utf-16"
+      },
+      "receipt_projection": {
+        "source_kind": "native_probe",
+        "inputs": "probe_declared_sha256; pre_post_not_independently_recorded",
+        "input_channel": "isolated_gui; synthetic_keyboard_events_sent_false",
+        "natural_exit": "not_observed_after_5_seconds",
+        "exit_code": "not_observed",
+        "cleanup": "recorded_success",
+        "execution_time": "not_recorded_in_probe",
+        "native_exe_sha256_probe_declared": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+      }
+    },
+    {
+      "mode": "py",
+      "fixture": {
+        "path": "modes/py/inputs/ERB/SEARCHBOUND01.ERB",
+        "sha256": "90beecacd1912bb42d58b8a515d7bf69c1753ee938fa5b896e1939d0774021cb",
+        "size": 2176,
+        "encoding": "cp932"
+      },
+      "config": {
+        "path": "modes/py/inputs/emuera.config",
+        "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+        "size": 2164,
+        "encoding": "cp932"
+      },
+      "history": {
+        "path": "modes/py/raw-history.bin",
+        "sha256": "d682487bbdf751e29300b8e56c0d3ab900cd8016231c21193cc272870be180b7",
+        "size": 1622,
+        "encoding": "utf-16"
+      },
+      "receipt_projection": {
+        "source_kind": "public_invocation_and_comparison",
+        "inputs": "retained_files_and_comparison_declared; pre_post_not_independently_recorded",
+        "stdin": "inherited; content_not_recorded",
+        "returncode": 0,
+        "execution_time": "not_recorded_in_invocation",
+        "pyz_sha256_comparison_declared": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "historical_pyz_pre_post": "not_recorded_in_invocation"
+      }
+    }
+  ],
+  "unobserved": [
+    "native_natural_exit",
+    "gui_rendering",
+    "font_drawing",
+    "input_layout",
+    "other_settings",
+    "public_execution_time_pyz_before_after"
+  ],
+  "previous_attempt": "case149 is not included in these observations"
+}

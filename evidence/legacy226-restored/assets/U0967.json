@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-11-13T06:14:59.304980+00:00",
+  "finished_utc": "2026-11-13T06:14:59.750995+00:00",
+  "public_pyz": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+  "sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "sha256_expected": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "unchanged": true,
+  "argv": [
+    "[USER_HOME]\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-I",
+    "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+    "--debug",
+    "."
+  ],
+  "cwd": "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\trailing-comma-parsers-20261113-246\\copychara-trailing\\public",
+  "returncode": 1,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "inputs": {
+    "ERB/SEARCHBOUND01.ERB": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "stdout_sha256": "1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa",
+  "stderr_sha256": "e319a40132558220daae96f0c76a93a7f7ef47601c7d87eb797fbcaa5a08b32b",
+  "log_sha256": "d81bff7c90ecc65a7f2fce5f0125341bdd785a6a3721f39b6da90286dafe8418"
+}

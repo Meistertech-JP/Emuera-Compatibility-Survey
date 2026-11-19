@@ -1,0 +1,90 @@
+[
+  {
+    "adapter_pointer": "/rows/1",
+    "case_ids": [
+      "SPRITEPOS221_spritesetpos-expression-existing",
+      "SPRITEPOS221_spritesetpos-expression-missing"
+    ],
+    "matrix_pointer": "/rows/35",
+    "outcome": "documented_difference",
+    "public_positive_runtime_observed": false,
+    "public_spec_presence": {
+      "command": false,
+      "function": false
+    },
+    "public_value_parity_claimed": false,
+    "readback_source_id": "S0012",
+    "requirement_axes": [
+      "exact_v24_registration_signature_form",
+      "actual_target_reach_or_independent_public_availability_gap",
+      "selected_normal_output_state_control",
+      "applicable_boundary_error_evaluation_side_effect",
+      "result_routing_and_stop_location"
+    ],
+    "static_contract": {
+      "argument_types": [
+        "string",
+        "Int64",
+        "Int64"
+      ],
+      "classification": "source_only",
+      "contract_pointer": "/contracts/SPRITESETPOS",
+      "form_role": "expression_value",
+      "native_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "native_position_operation": "absolute_set",
+      "native_result_destination": "expression_value",
+      "public_release_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "registration_class": "SpriteSetPosMethod",
+      "return_type": "Int64"
+    },
+    "target": {
+      "kind": "expression_function",
+      "name": "SPRITESETPOS"
+    },
+    "target_ledger_pointer": "/rows/385"
+  },
+  {
+    "adapter_pointer": "/rows/39",
+    "case_ids": [
+      "SPRITEPOS221_spritesetpos-command-existing",
+      "SPRITEPOS221_spritesetpos-command-missing"
+    ],
+    "matrix_pointer": "/rows/105",
+    "outcome": "documented_difference",
+    "public_positive_runtime_observed": false,
+    "public_spec_presence": {
+      "command": false,
+      "function": false
+    },
+    "public_value_parity_claimed": false,
+    "readback_source_id": "S0043",
+    "requirement_axes": [
+      "exact_v24_registration_signature_form",
+      "actual_target_reach_or_independent_public_availability_gap",
+      "selected_normal_output_state_control",
+      "applicable_boundary_error_evaluation_side_effect",
+      "result_routing_and_stop_location"
+    ],
+    "static_contract": {
+      "argument_types": [
+        "string",
+        "Int64",
+        "Int64"
+      ],
+      "classification": "source_only",
+      "contract_pointer": "/contracts/SPRITESETPOS",
+      "form_role": "method_result_routing",
+      "native_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "native_position_operation": "absolute_set",
+      "native_result_destination": "RESULT",
+      "public_release_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "registration_class": "SpriteSetPosMethod",
+      "return_type": "Int64"
+    },
+    "target": {
+      "kind": "method_as_command",
+      "name": "SPRITESETPOS"
+    },
+    "target_ledger_pointer": "/rows/539"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "fixture_id": "SUBSTRING_EXPR_START_LEN_MINUS1",
+  "mode": "native-01",
+  "inputs_before": {
+    "ERB/SLICE_RADIX.ERB": "f2985f73a63e344e61b095d0f6b46a84ed2014d63a5ccef9155ba8dfa12ce4e2",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SLICE_RADIX.ERB": "f2985f73a63e344e61b095d0f6b46a84ed2014d63a5ccef9155ba8dfa12ce4e2",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "f632657b60867f200597c1e4467771e35688c5f8c889655d08aba7a46312250e",
+    "binding_basis": "case_reference_and_saved_frozen_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt"
+}

@@ -1,0 +1,113 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0129 · PARENT_ACCEPTED_DECISION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0129 · PARENT_ACCEPTED_DECISION.json</h1>
+<p>原票種別=PARENT_ACCEPTED_DECISION.json; 参照対象=operator:++。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>9c9575e7ac425e72d3de41ee3fa35b328b9875635a005ca158a27f580ab3e478</code></p>
+<p><a href="../assets/U0129.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>9c9575e7ac425e72d3de41ee3fa35b328b9875635a005ca158a27f580ab3e478</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;pyemuera-parent-evidence-adjudication-v3&quot;,
+  &quot;draft&quot;: false,
+  &quot;bundles&quot;: [
+    {
+      &quot;schema&quot;: &quot;pyemuera.operator-secondary-anchor.v1&quot;,
+      &quot;source_reports&quot;: [
+        {
+          &quot;path&quot;: &quot;automation-v2/incdec-08/registration-v1/reports/initial-v1/INCDEC08_INC_NONLV_DIAGNOSTIC.json&quot;,
+          &quot;sha256&quot;: &quot;86fde101fc0f16f24b0c8d13a55c815e6421171025cebe27271c25bad2f7ca79&quot;
+        },
+        {
+          &quot;path&quot;: &quot;automation-v2/incdec-08/registration-v1/reports/initial-v1/INCDEC08_DEC_NONLV_DIAGNOSTIC.json&quot;,
+          &quot;sha256&quot;: &quot;b3c5e45f787176a9318c8b9426682ee90f5a3244298acb7554366ffc62bb664c&quot;
+        }
+      ]
+    }
+  ],
+  &quot;decisions&quot;: [
+    {
+      &quot;kind&quot;: &quot;operator&quot;,
+      &quot;name&quot;: &quot;++&quot;,
+      &quot;accepted&quot;: true,
+      &quot;outcome&quot;: &quot;documented_difference&quot;,
+      &quot;outcome_basis&quot;: &quot;Finite own ++ scope includes a paired native/public diagnostic payload difference in the registered INCDEC08_INC_NONLV_DIAGNOSTIC record; the remaining selected normal and queue witnesses are matched_scoped. This is a documented scoped difference, not a general incompatibility rate.&quot;,
+      &quot;scope&quot;: &quot;operator:++ only; exact registered normal, boundary, error timing and side-effect witnesses mapped below. Actual ++ spelling was present in every queue fixture. No -- transfer, no postfatal cell equality, no full-domain claim.&quot;,
+      &quot;completion_review&quot;: &quot;Parent accepted finite closure after read-only replay, raw reference validation and source binding. All four requirement axes and all eleven queue roles map to observed own ++ paired cases; the new diagnostic difference is registered as its own case. OPCONT262 edge records remain unverified and preserved; CASE289 postfatal records remain unverified/blocked and unused. Conditional postfatal-state text does not require new state capture for this queue, and no cell values after error are claimed.&quot;,
+      &quot;finite_remainder&quot;: [],
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;v24_registration_signature_form&quot;,
+          &quot;case_ids&quot;: [
+            &quot;INCEXPR_INCREMENT&quot;,
+            &quot;OPISOLATED264_inc-nonlvalue&quot;,
+            &quot;OPISOLATED264_inc-readonly&quot;
+          ],
+          &quot;finding&quot;: &quot;Pinned v24 OperatorCode.cs/OperatorMethod.cs registration and common writable-variable guards, linked to own ++ normal and invalid-lvalue/read-only paired observations. Runtime witnesses are retained separately from source facts.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;actual_target_use&quot;,
+          &quot;case_ids&quot;: [
+            &quot;INCEXPR_INCREMENT&quot;
+          ],
+          &quot;finding&quot;: &quot;The registered own ++ normal expression case executes and returns through both Native v24 and the pinned public PyEmuera; the selected run is scoped and does not claim all value domains.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;case_ids&quot;: [
+            &quot;INCEXPR_INCREMENT&quot;
+          ],
+          &quot;finding&quot;: &quot;Retained INCEXPR_INCREMENT paired stdout/state/control observations match in the selected finite scope.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;case_ids&quot;: [
+            &quot;OPCONT268_inc-edge-pre&quot;,
+            &quot;OPCONT268_inc-edge-post&quot;,
+            &quot;OPISOLATED264_inc-badindex-pre&quot;,
+            &quot;OPISOLATED264_inc-nonlvalue&quot;,
+            &quot;OPISOLATED264_inc-readonly&quot;,
+            &quot;OPISOLATED264_incdec-string-type&quot;,
+            &quot;OPISOLATED264_incdec-post-nonlvalue&quot;,
+            &quot;OPISOLATED264_incdec-post-readonly&quot;,
+            &quot;OPISOLATED264_incdec-post-string-type&quot;,
+            &quot;OPISOLATED264_incdec-pre-and-post&quot;,
+            &quot;OPISOLATED264_incdec-double-post&quot;,
+            &quot;INCDEC08_INC_NONLV_DIAGNOSTIC&quot;
+          ],
+          &quot;finding&quot;: &quot;All 11 finite queue roles use actual ++ spelling and paired Native/public observations. Corrected case268 edges replace no old case262 raw record. Own ++ non-lvalue diagnostic payload difference is separately registered. Post-error cells remain UNOBSERVED; the queue only conditionally requests supported inspection when required.&quot;
+        }
+      ],
+      &quot;remaining&quot;: [
+        {
+          &quot;index&quot;: 0,
+          &quot;case_ids&quot;: [
+            &quot;OPCONT268_inc-edge-pre&quot;,
+            &quot;OPCONT268_inc-edge-post&quot;,
+            &quot;OPISOLATED264_inc-badindex-pre&quot;,
+            &quot;OPISOLATED264_inc-nonlvalue&quot;,
+            &quot;INCDEC08_INC_NONLV_DIAGNOSTIC&quot;,
+            &quot;OPISOLATED264_inc-readonly&quot;,
+            &quot;OPISOLATED264_incdec-string-type&quot;,
+            &quot;OPISOLATED264_incdec-post-nonlvalue&quot;,
+            &quot;OPISOLATED264_incdec-post-readonly&quot;,
+            &quot;OPISOLATED264_incdec-post-string-type&quot;,
+            &quot;OPISOLATED264_incdec-pre-and-post&quot;,
+            &quot;OPISOLATED264_incdec-double-post&quot;
+          ],
+          &quot;finding&quot;: &quot;Every original queue suffix maps to an observed own ++ Native/public case; see per-role mapping in the preserved incdec08 draft and inventory. No postfatal values are inferred.&quot;
+        }
+      ],
+      &quot;review_row_sha256&quot;: &quot;e23eb7fb76692cb5a4109287d3cae98b199cb563edb2145898c73cd36b070201&quot;
+    }
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2336 · operator:++ · acceptance</li>
+<li>L2337 · operator:++ · check</li>
+</ul></html>

@@ -1,0 +1,31 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0760 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0760 · CASE_REVIEW_ja.md</h1>
+<p>代入7観測の値・評価順・警告取得範囲を記す票で、原バイト一致の範囲を広げず原文収録する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>c7fefd5a9dc81e219380021394fb7f26cd5f20698a198ff406359fe9d4326fc5</code></p>
+<p><a href="../assets/U0760.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>c7fefd5a9dc81e219380021394fb7f26cd5f20698a198ff406359fe9d4326fc5</code></p>
+<pre># 通常代入・文字列式代入・互換代入の比較（167）
+
+数値=/==、文字列式のapostrophe-equals、FORM文字列=/==、空文字の計7観測。本家2回と公開pyzのemuera.logは原バイト一致。入力ERB/config同一、Pyは実行前後のSHAを記録。
+
+右辺ヘルパー→書込先添字の順（21）で各1回評価。値と隣接要素の初期値99/OTHERを維持。全実行DONE到達。
+
+本家LogicalLineParser:470-475は代入行の==に警告し通常代入へ変換。Py stderrには該当2行の警告あり。本家のGUI警告文は未取得なので、ログ原バイト一致をロード警告の厳密一致へ拡張しない。
+
+演算子台帳の=/apostrophe-equalsは代入トークンとしての実行証拠。式の中に自由に置ける二項演算子であるとは主張しない。
+
+Seven scalar/indexed plain assignment observations: numeric =/==, string expression apostrophe-equals, raw FORM string =/==, empty string. Assignment-token role for operator-ledger =/apostrophe-equals only, not expression-operator support. No invalid context, conversion, vector assignment, overflow or failure/write timing. The emuera.log raw equality excludes loading diagnostics: Native warning text on screen was not captured; Py has two == warnings in stderr. Native alive after5s then helper-terminated; natural exit unobserved.
+
+隔離デスクトップ、キー送信・スクリーンショットなし。製品コード・公開原本は変更しない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2348 · operator:= · check</li>
+<li>L2381 · operator:&#x27;= · check</li>
+</ul></html>

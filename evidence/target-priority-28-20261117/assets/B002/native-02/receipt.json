@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_CALLFORMF_SUPPLIED_DEFAULT_20261116",
+  "mode": "native-02",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "00dfc89ad82c6752cfd93966d7a4525633ef62182d85f64850d598dd92fd78bf",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "00dfc89ad82c6752cfd93966d7a4525633ef62182d85f64850d598dd92fd78bf",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "43b0aa72866a12f769e47ed0d33ab349dc5e98334ded870d48be54542c481eb4",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt",
+  "source_condition_id": "CALLFORMF_SUPPLIED_DEFAULT",
+  "source_declared_mode": "native-02"
+}

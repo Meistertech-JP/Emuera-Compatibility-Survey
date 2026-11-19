@@ -1,0 +1,39 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0927 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0927 · REVIEW_ja.md</h1>
+<p>SETFONTの未インストール名と描画境界を記す比較票で、実測フォールバック名と差の範囲を原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>82692f88b39e0fa4e9f36be6321a0ce03cd424a6c57527ab367732d296fec675</code></p>
+<p><a href="../assets/U0927.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>82692f88b39e0fa4e9f36be6321a0ce03cd424a6c57527ab367732d296fec675</code></p>
+<pre># SETFONT 未インストール名の比較
+
+## 対象と結果
+
+本家Emuera1824+v24と公開PyEmuera 3.0.0を、同一ERB・同一設定で比較しました。`SETFONT &quot;zz_missing_font&quot;`の後に`GETFONT()`を読み、描画経路を通す文字列と後続マーカーを出力しています。本家は隔離デスクトップで2回、公開pyzはPython 3.12.10の`-I`で1回実行しました。
+
+3実行すべてで、`BEFORE`、`STORED=[zz_missing_font]`、`TEXT_RENDER_PROBE`、`AFTER`が記録され、コマンドの保存値と後続命令への継続は一致しました。公開pyzは実行前後で固定SHAのままでした。本家の自然終了は観測していません（5秒後にrunner所有PIDを終了）。
+
+## 未インストール名と描画境界
+
+このWindows環境では`zz_missing_font`はインストール済みフォント一覧にありません。`System.Drawing.Font(&quot;zz_missing_font&quot;, 18, Regular, Pixel)`を直接試すと例外ではなく`Microsoft Sans Serif`へ解決されました。これは当該環境の.NET/GDI+の結果です。
+
+本家ソースでは`SETFONT`が`EmueraConsole.SetFont`へ名前を渡し、`Config.GetFont`が`new Font(fn, ...)`を試します。`ConsoleStyledString`は返り値がnullの場合に`Error=true`を設定します（C#ソースは`SOURCE_HASHES.json`の固定アーカイブに対応）。今回のホストではFont生成が成功したため、null・Error分岐そのものはアプリ内で観測していません。公開pyzは文字列を`vm.ui[&#x27;font&#x27;]`へ保存し、`GETFONT()`がその値を返します。PyEmueraはGUIフォントの描画を行わないため、描画結果の同一性は対象外です。
+
+## 判定と制限
+
+`SETFONT`の要求名保存・取得・継続は観測範囲で一致しました。描画フォントの解決は本家GUI固有で、公開ランタイムに対応するレンダラーがありません。この境界を`different_scoped`として記録し、画素一致や他環境のフォント選択は主張しません。製品コード、公開物、GitHub、Drive原本は変更していません。
+
+## 再実行記録
+
+実行条件、入力、各ログのSHA-256、固定exe/pyz/ソースアーカイブのハッシュ、フォントプローブは同じフォルダーの`conditions.json`、`COMPARISON.json`、`SOURCE_HASHES.json`、各`native-*`/`py`に保存しています。`run_native.py`は合成キーイベントを送らず、各本家プロセスを隔離デスクトップ上で5秒後に終了します。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1653 · command_or_syntax:SETFONT · check</li>
+<li>L1656 · command_or_syntax:SETFONT · check</li>
+</ul></html>

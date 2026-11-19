@@ -1,0 +1,13 @@
+# Historical restoration decisions: 40 typed targets
+
+[日本語](README.ja.md)
+
+This is a metadata-only projection. It records 40 typed targets selected from a 41-row restoration document created at `2026-11-14T05:05:22.763930+00:00`. That timestamp is the restoration document's recorded creation time, not necessarily the time each decision or execution occurred. The recorded decision and finite outcome are historical statements, not new executions, fresh acceptance or proof of complete compatibility.
+
+[`targets.jsonl`](targets.jsonl) contains one row per typed target. The historical source is identified by its SHA-256 but is not included. `case_ids_as_recorded` lists IDs named by that historical record; their typed roles were checked against the separately supplied survey snapshot, but the list does not establish independent runs, target reach, complete inputs or acceptance of every condition. The 232 references cover 218 distinct case IDs and may overlap. The original conditions, receipt, raw output and parent reviews are not included. Hashes and IDs alone do not let an external reader inspect or authenticate the withheld originals.
+
+Each row separately identifies the later retained ledger snapshot and its recorded finite outcome. Its `ledger_header_generated_utc` is the timestamp recorded in the ledger header, not an established individual decision timestamp. Equal outcome labels do not establish identical source, timing, conditions or full compatibility. In `command_or_syntax:FONTSTYLE`, the historical restoration records `documented_difference`; the separate later parent and ledger record `different_scoped`. Their source SHA values and records are kept distinct; neither replaces the other. The later parent has no asserted decision timestamp here.
+
+Fourteen restoration rows have an explicit typed target inside their embedded accepted-source field; for the other 26 that nested field does not specify a typed target. All 40 restoration rows themselves contain a typed key; their later typed-source associations use the separately retained audit mapping. A shared file or SHA alone is not evidence of a target's role. The original source documents and private crosswalk are not distributed in this projection.
+
+The `candidate_survey` path is relative to the eventual distribution root and its pointer is valid only for the supplied survey with the recorded SHA. This projection does not include that survey. The projection includes no original evidence, parent adjudication text, or proof of reproducibility. Source, derivative, case identifiers and survey materials remain subject to separate privacy and rights review; no publication authorization is implied.

@@ -1,0 +1,778 @@
+{
+  "schema": "pyemuera-parent-evidence-adjudication-v3",
+  "draft": false,
+  "bundles": [
+    {
+      "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797",
+      "manifest_sha256": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "method_as_command",
+      "name": "ESCAPE",
+      "accepted": true,
+      "review_row_sha256": "9669085d55f34e258f35f7ae74d29c324ddb5c98497a8a64c9ca8e7ed4127ccd",
+      "outcome": "matched_in_finite_scope",
+      "scope": "Finite ESCAPE method only: retained189 selected body/helper cases and new method RESULTS routing, independent numeric RESULT0/1 preservation, continuation.",
+      "completion_review": "Parent accepted final pinned raw/fixture/receipt and source review: finite ESCAPE statement body/helper witnesses plus independent RESULTS destination, numeric RESULT0/1 preservation and continuation complete. Expression form, HTML escaping, invalid-call diagnostics, exhaustive Unicode/regex domain and natural Native termination excluded.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "exact_v24_registration_signature_form",
+          "original_requirement": {
+            "axis": "exact_v24_registration_signature_form",
+            "requirement": "Resolve exact dictionary constructor, return type, accepted argument structure and invocation-form routing; historical minimum/maximum arity alone is insufficient.",
+            "evidence_state": "source_inspected",
+            "source_contract_ref": "SOURCE_CONTRACTS.json#/contracts/ESCAPE",
+            "binary_registration": {
+              "name": "ESCAPE",
+              "ldstr_il_offset": "0688",
+              "set_item_il_offset": "0692"
+            },
+            "form": "METHOD_Instruction assigns Int64 return to RESULT or string return to RESULTS at Instraction.Child.cs435/437; prove destination and unrelated sentinel independently of expression cases."
+          },
+          "original_requirement_sha256": "b4bec794aa9e22c0b77f75c5ce6eebe6f2674daa40fa24e5a67cdfbd62fc9bd9",
+          "case_ids": [
+            "METHOD_ROUTING04_ESCAPE_01",
+            "UNICODETEXT189_method_as_command_ESCAPE"
+          ],
+          "finding": "Creator.cs134 registers EscapeMethod; Creator.Method.cs2586-2596 declares exactly one string argument and string result, Regex.Escape(GetStrValue). METHOD_Instruction Instraction.Child.cs423-441 commits string return to RESULTS. Exact source inspected; no new invalid-call diagnostic observation.",
+          "evidence": [
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/RESULT.json",
+              "sha256_current": "0290447fbad8e525787837d2a8f938bbb2c1e508a52f07bbe794f45ae7654227"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/REQUEST.json",
+              "sha256_current": "d07679acab1afc66a21c735eb6ddfb2d37c7fbe177d04a2eb596e9681034146a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/MANIFEST.json",
+              "sha256_current": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/SEAL.json",
+              "sha256_current": "6db112223cebc0d3dc24558c0c57d0fa145d285c5837ad39b43daa6de407de16"
+            },
+            {
+              "path": "automation-v2/method-routing-04/PINS.json",
+              "sha256_current": "f4f98c2fea49e8f9dd4edb0a8367408b3a947457297b6049d96777cfdc4fbb9a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/FREEZE.json",
+              "sha256_current": "e01d7af8c119926d5bd31db21d20e8f580afee4a9ae9b733d5158c22744649fd"
+            },
+            {
+              "path": "automation-v2/method-routing-04/SCOPE_SOURCES.json",
+              "sha256_current": "14a0892e949d063daa264794877ec263b825c6c0c57e86ba17fbe7b1d2f66532"
+            },
+            {
+              "path": "automation-v2/method-routing-04/METHOD_PLAN.json",
+              "sha256_current": "fd2dc8e5d8da1a7aa6fc4d3d5e216b821391c14c2cabad17419119e5e825adb4"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            }
+          ]
+        },
+        {
+          "id": "actual_target_reach_or_independent_public_availability_gap",
+          "original_requirement": {
+            "axis": "actual_target_reach_or_independent_public_availability_gap",
+            "requirement": "Executed target on valid normal path, or independently demonstrated public name/load rejection of this target. Skip-only, untaken branch and setup-stop are insufficient.",
+            "evidence_state": "scoped_executions_require_per_case_readback",
+            "case_ids": [
+              "METHODTEXT_ESCAPE",
+              "UNICODETEXT189_method_as_command_ESCAPE"
+            ],
+            "independent_gap_case_ids": []
+          },
+          "original_requirement_sha256": "ddee8a5cdbf009b309f90a6cf3248261423c23057778a7d9f59dffbabdfaf8f2",
+          "case_ids": [
+            "METHOD_ROUTING04_ESCAPE_01",
+            "UNICODETEXT189_method_as_command_ESCAPE"
+          ],
+          "finding": "Actual statement ESCAPE LOCALS:0 line6 reached snapshots and END/DONE in single-01 and batch, each Native2/Py1. Existing189 method markers23/25/27/29 reached their own helpers. No expression or HTML_ESCAPE credit.",
+          "evidence": [
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/RESULT.json",
+              "sha256_current": "0290447fbad8e525787837d2a8f938bbb2c1e508a52f07bbe794f45ae7654227"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/REQUEST.json",
+              "sha256_current": "d07679acab1afc66a21c735eb6ddfb2d37c7fbe177d04a2eb596e9681034146a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/MANIFEST.json",
+              "sha256_current": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/SEAL.json",
+              "sha256_current": "6db112223cebc0d3dc24558c0c57d0fa145d285c5837ad39b43daa6de407de16"
+            },
+            {
+              "path": "automation-v2/method-routing-04/PINS.json",
+              "sha256_current": "f4f98c2fea49e8f9dd4edb0a8367408b3a947457297b6049d96777cfdc4fbb9a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/FREEZE.json",
+              "sha256_current": "e01d7af8c119926d5bd31db21d20e8f580afee4a9ae9b733d5158c22744649fd"
+            },
+            {
+              "path": "automation-v2/method-routing-04/SCOPE_SOURCES.json",
+              "sha256_current": "14a0892e949d063daa264794877ec263b825c6c0c57e86ba17fbe7b1d2f66532"
+            },
+            {
+              "path": "automation-v2/method-routing-04/METHOD_PLAN.json",
+              "sha256_current": "fd2dc8e5d8da1a7aa6fc4d3d5e216b821391c14c2cabad17419119e5e825adb4"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            }
+          ]
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "original_requirement": {
+            "axis": "selected_normal_output_state_control",
+            "requirement": "Read selected return, relevant mutation, helper count and post-target continuation; statement form must read correct RESULT/RESULTS.",
+            "evidence_state": "selected_scoped_evidence_present",
+            "matching_case_ids": [
+              "METHODTEXT_ESCAPE",
+              "UNICODETEXT189_method_as_command_ESCAPE"
+            ]
+          },
+          "original_requirement_sha256": "fa4ad3e3d20e2e3500cc1d2f70e2856a65d4b1556790ef74ec5aa1a77f8853b0",
+          "case_ids": [
+            "METHOD_ROUTING04_ESCAPE_01",
+            "UNICODETEXT189_method_as_command_ESCAPE"
+          ],
+          "finding": "New observed RESULTS0=a\\.b and independent RESULT0=701/RESULT1=702 saved to LOCALS1/LOCAL0/LOCAL1 before printing. Existing189 method outputs/helper COUNT1 ORDER1 retained. value/results are two field names for the same string destination snapshot.",
+          "evidence": [
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/RESULT.json",
+              "sha256_current": "0290447fbad8e525787837d2a8f938bbb2c1e508a52f07bbe794f45ae7654227"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/REQUEST.json",
+              "sha256_current": "d07679acab1afc66a21c735eb6ddfb2d37c7fbe177d04a2eb596e9681034146a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/MANIFEST.json",
+              "sha256_current": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/SEAL.json",
+              "sha256_current": "6db112223cebc0d3dc24558c0c57d0fa145d285c5837ad39b43daa6de407de16"
+            },
+            {
+              "path": "automation-v2/method-routing-04/PINS.json",
+              "sha256_current": "f4f98c2fea49e8f9dd4edb0a8367408b3a947457297b6049d96777cfdc4fbb9a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/FREEZE.json",
+              "sha256_current": "e01d7af8c119926d5bd31db21d20e8f580afee4a9ae9b733d5158c22744649fd"
+            },
+            {
+              "path": "automation-v2/method-routing-04/SCOPE_SOURCES.json",
+              "sha256_current": "14a0892e949d063daa264794877ec263b825c6c0c57e86ba17fbe7b1d2f66532"
+            },
+            {
+              "path": "automation-v2/method-routing-04/METHOD_PLAN.json",
+              "sha256_current": "fd2dc8e5d8da1a7aa6fc4d3d5e216b821391c14c2cabad17419119e5e825adb4"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            }
+          ]
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": {
+            "axis": "applicable_boundary_error_evaluation_side_effect",
+            "requirement": "Native EscapeMethod returns Regex.Escape(arguments[0].GetStrValue(exm)): one string argument, string result and one helper evaluation. Retain case189 empty/ASCII/Japanese/metacharacter observations; case201 calls HTML_ESCAPE and supplies no ESCAPE proof. HTML ampersand-first/entity double escaping is rejected as inapplicable. Still pending: separate method-as-command RESULTS routing, independent numeric RESULT preservation and post-target continuation, by source-based parent adjudication or a method-specific sentinel observation; the expression harness supplies no method closure.",
+            "finite_source_branches": [
+              {
+                "line": 2596,
+                "text": "return Regex.Escape(arguments[0].GetStrValue(exm));",
+                "classification": "active_source"
+              }
+            ],
+            "evidence_state": "source_relevant_review_required",
+            "difference_case_ids": []
+          },
+          "original_requirement_sha256": "2516bbc8480a33ceb6b0e2724230213e366189ba9dd0c027848df41224cff1f0",
+          "case_ids": [
+            "METHOD_ROUTING04_ESCAPE_01",
+            "UNICODETEXT189_method_as_command_ESCAPE"
+          ],
+          "finding": "Existing189 method empty/ASCII/metacharacters/Japanese and actual #FUNCTIONS helpers establish COUNT1 ORDER1. New method observation fills only the pending RESULTS0 routing, numeric RESULT0/1 preservation and continuation gap. Regex.Escape, not HTML/entity escaping; case201 contributes no proof. No duplicate helper run or new invalid-call error claim.",
+          "evidence": [
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/RESULT.json",
+              "sha256_current": "0290447fbad8e525787837d2a8f938bbb2c1e508a52f07bbe794f45ae7654227"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/REQUEST.json",
+              "sha256_current": "d07679acab1afc66a21c735eb6ddfb2d37c7fbe177d04a2eb596e9681034146a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/MANIFEST.json",
+              "sha256_current": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/SEAL.json",
+              "sha256_current": "6db112223cebc0d3dc24558c0c57d0fa145d285c5837ad39b43daa6de407de16"
+            },
+            {
+              "path": "automation-v2/method-routing-04/PINS.json",
+              "sha256_current": "f4f98c2fea49e8f9dd4edb0a8367408b3a947457297b6049d96777cfdc4fbb9a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/FREEZE.json",
+              "sha256_current": "e01d7af8c119926d5bd31db21d20e8f580afee4a9ae9b733d5158c22744649fd"
+            },
+            {
+              "path": "automation-v2/method-routing-04/SCOPE_SOURCES.json",
+              "sha256_current": "14a0892e949d063daa264794877ec263b825c6c0c57e86ba17fbe7b1d2f66532"
+            },
+            {
+              "path": "automation-v2/method-routing-04/METHOD_PLAN.json",
+              "sha256_current": "fd2dc8e5d8da1a7aa6fc4d3d5e216b821391c14c2cabad17419119e5e825adb4"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            }
+          ]
+        },
+        {
+          "id": "result_routing_and_stop_location",
+          "original_requirement": {
+            "axis": "result_routing_and_stop_location",
+            "requirement": "METHOD_Instruction assigns Int64 return to RESULT or string return to RESULTS at Instraction.Child.cs435/437; prove destination and unrelated sentinel independently of expression cases.",
+            "source_ref": "GameProc/Function/Instraction.Child.cs:423-441",
+            "evidence_state": "per_case_input_and_raw_readbacks_cited"
+          },
+          "original_requirement_sha256": "5a684019c9e214724a09b218af7545e25bc977729bc3eed74d6f2dd1ba73d255",
+          "case_ids": [
+            "METHOD_ROUTING04_ESCAPE_01",
+            "UNICODETEXT189_method_as_command_ESCAPE"
+          ],
+          "finding": "Actual command updates RESULTS0, then independently saves numeric RESULT0/1. END and ZZBATCH_DONE follow snapshots in both stages. Forced Native cleanup retained; natural Native exit and timing equivalence remain unobserved.",
+          "evidence": [
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/RESULT.json",
+              "sha256_current": "0290447fbad8e525787837d2a8f938bbb2c1e508a52f07bbe794f45ae7654227"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/REQUEST.json",
+              "sha256_current": "d07679acab1afc66a21c735eb6ddfb2d37c7fbe177d04a2eb596e9681034146a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/MANIFEST.json",
+              "sha256_current": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/SEAL.json",
+              "sha256_current": "6db112223cebc0d3dc24558c0c57d0fa145d285c5837ad39b43daa6de407de16"
+            },
+            {
+              "path": "automation-v2/method-routing-04/PINS.json",
+              "sha256_current": "f4f98c2fea49e8f9dd4edb0a8367408b3a947457297b6049d96777cfdc4fbb9a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/FREEZE.json",
+              "sha256_current": "e01d7af8c119926d5bd31db21d20e8f580afee4a9ae9b733d5158c22744649fd"
+            },
+            {
+              "path": "automation-v2/method-routing-04/SCOPE_SOURCES.json",
+              "sha256_current": "14a0892e949d063daa264794877ec263b825c6c0c57e86ba17fbe7b1d2f66532"
+            },
+            {
+              "path": "automation-v2/method-routing-04/METHOD_PLAN.json",
+              "sha256_current": "fd2dc8e5d8da1a7aa6fc4d3d5e216b821391c14c2cabad17419119e5e825adb4"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            }
+          ]
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "original_remaining": {
+            "type": "finite_evidence_adjudication",
+            "source": "evidence\\parent-function-evidence-review-20261113\\MATRIX.json",
+            "target": {
+              "kind": "method_as_command",
+              "name": "ESCAPE"
+            },
+            "requirements": [
+              "Native EscapeMethod returns Regex.Escape(arguments[0].GetStrValue(exm)): one string argument, string result and one helper evaluation. Retain case189 empty/ASCII/Japanese/metacharacter observations; case201 calls HTML_ESCAPE and supplies no ESCAPE proof. HTML ampersand-first/entity double escaping is rejected as inapplicable. Still pending: separate method-as-command RESULTS routing, independent numeric RESULT preservation and post-target continuation, by source-based parent adjudication or a method-specific sentinel observation; the expression harness supplies no method closure."
+            ],
+            "note": "Consult explicit source and original raw before requesting new execution. Later supplements discharge their own recorded conditions; do not repeat case254 dynamic math boundaries or other fulfilled controls."
+          },
+          "original_remaining_sha256": "2ed39363c586054bd568376faab0c455e7d00e1bd25b0acec3ca31757ffa9d39",
+          "case_ids": [
+            "METHOD_ROUTING04_ESCAPE_01",
+            "UNICODETEXT189_method_as_command_ESCAPE"
+          ],
+          "finding": "Corrected finite method remainder discharged jointly: existing189 body/helper-once branches plus new actual RESULTS0 destination, independent numeric sentinels and post-target END/DONE. No expression/HTML behavior credited.",
+          "evidence": [
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/RESULT.json",
+              "sha256_current": "0290447fbad8e525787837d2a8f938bbb2c1e508a52f07bbe794f45ae7654227"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/REQUEST.json",
+              "sha256_current": "d07679acab1afc66a21c735eb6ddfb2d37c7fbe177d04a2eb596e9681034146a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/MANIFEST.json",
+              "sha256_current": "36a925de3d7521943663cd5a8d9afb69724ae7469c0c33f6373586562757882d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/SEAL.json",
+              "sha256_current": "6db112223cebc0d3dc24558c0c57d0fa145d285c5837ad39b43daa6de407de16"
+            },
+            {
+              "path": "automation-v2/method-routing-04/PINS.json",
+              "sha256_current": "f4f98c2fea49e8f9dd4edb0a8367408b3a947457297b6049d96777cfdc4fbb9a"
+            },
+            {
+              "path": "automation-v2/method-routing-04/FREEZE.json",
+              "sha256_current": "e01d7af8c119926d5bd31db21d20e8f580afee4a9ae9b733d5158c22744649fd"
+            },
+            {
+              "path": "automation-v2/method-routing-04/SCOPE_SOURCES.json",
+              "sha256_current": "14a0892e949d063daa264794877ec263b825c6c0c57e86ba17fbe7b1d2f66532"
+            },
+            {
+              "path": "automation-v2/method-routing-04/METHOD_PLAN.json",
+              "sha256_current": "fd2dc8e5d8da1a7aa6fc4d3d5e216b821391c14c2cabad17419119e5e825adb4"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/single-01/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "254f8a9996309d370a47246cbaaf798fc24c9b8495662cfe10086badf6641bec"
+            },
+            {
+              "path": "automation-v2/method-routing-04/runs/7cb4f1d63e7059f0b43af65de935c937921a9afdb1714d731ad8aca72cb94ab8/attempt-20261114T001048-d73f910b2797/batch/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "402e543a36f4cb4e8483740227bb07727489026538726a46260a4e8fda999d8d"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-01/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/native-02/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/ERB/SEARCHBOUND01.ERB",
+              "sha256_current": "f6edea9181cc0ec752b36f1cca6d8ddf5820b4fdf39f5103a04e9827381acc14"
+            },
+            {
+              "path": "evidence/unicode-text-boundaries-20261113-189/py/.pyemuera/logs/emuera.log",
+              "sha256_current": "56e77a7732888fc43e578cc3f5ee0b73d0fe86be2a782a5e6774db1ed5985f5b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

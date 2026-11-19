@@ -1,0 +1,100 @@
+{
+  "schema": "native-public-command-comparison-1",
+  "generated_utc": "2026-11-13T16:51:56.673792+00:00",
+  "case_ids": [
+    "SETCOLORBYNAME_UNKNOWN_20261114",
+    "SETCOLORBYNAME_TRANSPARENT_20261114"
+  ],
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "SETCOLORBYNAME"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "python": "CPython 3.12.10 (from public run receipts)",
+  "conditions": {
+    "unknown_name": {
+      "command": "SETCOLORBYNAME zz_no_color",
+      "fixture_sha256": "a44473bec02ae28b16b1e120a1974e1c02ef7ba09d0b0ae6e3ea5798977df7d1",
+      "native_runs": [
+        {
+          "receipt": "unknown_name/native-01/probe.json",
+          "desktop": "PyEmueraNative_STRLENSU_native-01_1794588463",
+          "pid": 2232,
+          "log_sha256": "be2cfb00d43ddf536e4d2c55240c60a05502a155d8d53bd79b5140c929deb374"
+        },
+        {
+          "receipt": "unknown_name/native-02/probe.json",
+          "desktop": "PyEmueraNative_STRLENSU_native-02_1794588466",
+          "pid": 20228,
+          "log_sha256": "be2cfb00d43ddf536e4d2c55240c60a05502a155d8d53bd79b5140c929deb374"
+        }
+      ],
+      "native_replicates_identical": true,
+      "public_run": {
+        "receipt": "unknown_name/pyz-02/verified-public-pyz.json",
+        "returncode": 1,
+        "pyz_sha256_before_after": [
+          "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+          "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+        ],
+        "stdout_sha256": "623ac7a0a87064387894bc3f9b57674d74bd4249acd6f332bd05a9978d64bcc9",
+        "stderr_sha256": "18e938b16d8b380aff8bcb1eb3fa3357c831dcc1b8a061bbd3a0c104180e20b8"
+      },
+      "native_error_message": "指定された色名\"zz_no_color\"は無効な色名です",
+      "public_error_message": "指定された色名\"zz_no_color\"は無効な色名です",
+      "diagnostic_equal": true,
+      "stop_line_native": 3,
+      "stop_line_public": 3,
+      "before_target_reached": true,
+      "after_target_and_done_not_reached": true,
+      "native_natural_exit": false,
+      "native_exit_code_observed": false,
+      "native_cleanup_terminated": true
+    },
+    "transparent": {
+      "command": "SETCOLORBYNAME Transparent",
+      "fixture_sha256": "52f2224eeaea2eac7e041f5bdddf87c9d2bcfe718d52ad0d0bc2a8399dfec240",
+      "native_runs": [
+        {
+          "receipt": "transparent/native-01/probe.json",
+          "desktop": "PyEmueraNative_STRLENSU_native-01_1794588476",
+          "pid": 36928,
+          "log_sha256": "ab988b70dae45ee4c8ace3e04b7b78fa8aed13f8dbfb57eecffd2bbe3f2a5a7a"
+        },
+        {
+          "receipt": "transparent/native-02/probe.json",
+          "desktop": "PyEmueraNative_STRLENSU_native-02_1794588475",
+          "pid": 7596,
+          "log_sha256": "ab988b70dae45ee4c8ace3e04b7b78fa8aed13f8dbfb57eecffd2bbe3f2a5a7a"
+        }
+      ],
+      "native_replicates_identical": true,
+      "public_run": {
+        "receipt": "transparent/pyz-02/verified-public-pyz.json",
+        "returncode": 1,
+        "pyz_sha256_before_after": [
+          "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+          "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+        ],
+        "stdout_sha256": "623ac7a0a87064387894bc3f9b57674d74bd4249acd6f332bd05a9978d64bcc9",
+        "stderr_sha256": "5d3005cd918be34f8eca44f7b16c69983836d59a9a8cfa1acc5a4a9a5960cb6c"
+      },
+      "native_error_message": "無色透明(Transparent)は色として指定できません",
+      "public_error_message": "無色透明(Transparent)は色として指定できません",
+      "diagnostic_equal": true,
+      "stop_line_native": 3,
+      "stop_line_public": 3,
+      "before_target_reached": true,
+      "after_target_and_done_not_reached": true,
+      "native_natural_exit": false,
+      "native_exit_code_observed": false,
+      "native_cleanup_terminated": true
+    }
+  },
+  "scoped_outcome": "matched_in_finite_scope",
+  "raw_logs_equal_across_engines": false,
+  "raw_log_equality_explanation": "Native UTF-16 OUTPUTLOG includes GUI error transcript; public process emits the command diagnostic on CP932 stderr and a generic layout warning. The selected command error text, stop line, pre-target marker and non-reached continuation markers were compared after decoding.",
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

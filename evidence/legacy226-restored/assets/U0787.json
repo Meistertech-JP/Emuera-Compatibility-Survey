@@ -1,0 +1,126 @@
+{
+  "schema": "native-public-command-comparison-1",
+  "generated_utc": "2026-11-13T17:44:42.982530+00:00",
+  "case_ids": [
+    "PRINTEMPTYRAW01_20261114"
+  ],
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINT"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "source_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "public_source_zip_sha256": "c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2",
+  "fixture": {
+    "path": "pilot/variants/PRINTEMPTY01/ERB/PRINTEMPTY01.ERB",
+    "sha256": "4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766",
+    "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "runs": {
+    "native-final-01": {
+      "receipt": "native-final-01/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766",
+      "outputlog_sha256": "cfd029ba4a57efd09bc3a60175121f5f2cd9272faef53deb1506eb95c9550488",
+      "selected_lines": [
+        "<AFTER_EMPTY>",
+        "  <AFTER_TRAILING_SPACES>",
+        "X  Y<AFTER_INTERNAL_SPACES>",
+        "RESULT=77;RESULTS=[\"KEEP\"]",
+        "RESUMED_TOKEN<AFTER_SKIP>"
+      ],
+      "desktop": "PyEmueraProbe_c59be1ce136b4607a8cb80daac733fd7",
+      "pid": 32560,
+      "process_signaled_after_wait": false,
+      "natural_exit_observed": false,
+      "screenshot": false,
+      "global_keyboard_events": false
+    },
+    "native-final-02": {
+      "receipt": "native-final-02/receipt.json",
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766",
+      "outputlog_sha256": "cfd029ba4a57efd09bc3a60175121f5f2cd9272faef53deb1506eb95c9550488",
+      "selected_lines": [
+        "<AFTER_EMPTY>",
+        "  <AFTER_TRAILING_SPACES>",
+        "X  Y<AFTER_INTERNAL_SPACES>",
+        "RESULT=77;RESULTS=[\"KEEP\"]",
+        "RESUMED_TOKEN<AFTER_SKIP>"
+      ],
+      "desktop": "PyEmueraProbe_4fa5a99a902d440faf63c78cf52ebedd",
+      "pid": 24788,
+      "process_signaled_after_wait": false,
+      "natural_exit_observed": false,
+      "screenshot": false,
+      "global_keyboard_events": false
+    },
+    "public-receipted-01": {
+      "receipt": "public-receipted-01/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "config_sha256_before_after": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766",
+      "outputlog_sha256": "b886d5ae58bb5cf62ec54590aa4bbfee8e72a06058e32897bfe201a46f66d549",
+      "returncode": 0,
+      "selected_lines": [
+        "<AFTER_EMPTY>",
+        "  <AFTER_TRAILING_SPACES>",
+        "X  Y<AFTER_INTERNAL_SPACES>",
+        "RESULT=77;RESULTS=[\"KEEP\"]",
+        "RESUMED_TOKEN<AFTER_SKIP>"
+      ],
+      "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    "public-receipted-02": {
+      "receipt": "public-receipted-02/receipt.json",
+      "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "config_sha256_before_after": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "fixture_sha256_before_after": "4e78b5da929ebe1fd1fd156fc1465b6970dcfcbda4bdfd83a7cf1f8986a07766",
+      "outputlog_sha256": "b886d5ae58bb5cf62ec54590aa4bbfee8e72a06058e32897bfe201a46f66d549",
+      "returncode": 0,
+      "selected_lines": [
+        "<AFTER_EMPTY>",
+        "  <AFTER_TRAILING_SPACES>",
+        "X  Y<AFTER_INTERNAL_SPACES>",
+        "RESULT=77;RESULTS=[\"KEEP\"]",
+        "RESUMED_TOKEN<AFTER_SKIP>"
+      ],
+      "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    }
+  },
+  "selected_semantic_lines": [
+    "<AFTER_EMPTY>",
+    "  <AFTER_TRAILING_SPACES>",
+    "X  Y<AFTER_INTERNAL_SPACES>",
+    "RESULT=77;RESULTS=[\"KEEP\"]",
+    "RESUMED_TOKEN<AFTER_SKIP>"
+  ],
+  "observations": {
+    "omitted_raw_argument": "PRINT with no raw text emitted zero characters; following marker reached",
+    "trailing_whitespace": "the three-space raw command line yielded two spaces before the following marker in both engines",
+    "internal_whitespace": "PRINT X  Y preserved two internal spaces in both engines",
+    "state": "RESULT=77 and RESULTS=[\"KEEP\"] retained across PRINT output",
+    "skipdisp": "SUPPRESSED_TOKEN absent while SKIPDISP=1; RESUMED_TOKEN appeared after SKIPDISP=0",
+    "continuation": "AFTER_SKIP reached",
+    "replicates_identical_per_engine": true
+  },
+  "raw_logs_equal_across_engines": false,
+  "raw_log_equality_explanation": "Native output file is UTF-16LE with BOM and CRLF; public OUTPUTLOG is UTF-8/LF and appends the generic OUTPUTLOG notice. The five selected semantic lines match exactly after newline normalization and excluding only startup and host-specific OUTPUTLOG notice.",
+  "native_natural_exit_observed": false,
+  "native_exit_code_observed": false,
+  "public_returncodes": [
+    0,
+    0
+  ],
+  "screenshots_taken": false,
+  "global_keyboard_events": false,
+  "scoped_outcome": "matched_in_finite_scope",
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_originals_modified": false
+}

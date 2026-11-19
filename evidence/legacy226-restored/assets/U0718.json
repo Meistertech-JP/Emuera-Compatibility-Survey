@@ -1,0 +1,33 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-15T05:27:31.488723+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "BREAK"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_path": "evidence/break-transfer-20261115",
+  "case_ids": [
+    "BREAK_NESTED_NEAREST_COUNTED_EXIT_20261115",
+    "BREAK_OUTSIDE_LINE_TIMING_20261115"
+  ],
+  "comparison_sha256": "0f9a0a77ff74f615d36d4b931032c99529fd765f124fd11c58deb3931c09edc4",
+  "manifest_sha256": "3448b2658e494f351a74ae09ebc57ed2e8a70ebcb7ab682f81e7871cea1592a1",
+  "seal_sha256": "efe431ab9a55c8023b1c663ef6e99e30dca8a4f49798dc8df949ee80738dad29",
+  "source_hashes_sha256": "0ec134739bce04bc56eed9aaec615a234801c9fcd47b536154816194c07ac38f",
+  "registered_evidence_files_rehashed": 75,
+  "nested_log_sha256": "89a2e4c0126fd968768361d16cfa19c7a8a47582aec5ec63248b770a3a569340",
+  "outside_native_log_sha256": "2a1341fb60adfb4248309eb6ad1a6845af0736a666cc59c8ec3414912662990a",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "native_natural_exit_observed": false,
+  "limitations": [
+    "Finite witness covers nested WHILE plus counted FOR, not REPEAT or DO.",
+    "Native natural process exit was not observed; the isolated runner terminated each GUI process after five seconds. The completed output/error logs were captured before cleanup.",
+    "Only the selected outside-loop diagnostic/timing path is compared; no generalized malformed-control-flow claim."
+  ],
+  "product_modified": false,
+  "published_artifacts_modified": false,
+  "drive_modified": false
+}

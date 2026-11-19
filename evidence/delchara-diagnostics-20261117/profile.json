@@ -1,0 +1,27 @@
+{
+  "schema": "delchara-profile-1",
+  "records_sha256": "f65ed5688e1114a54d32b8a342e20ac32c7f236924b58528eb772ef30b7f6940",
+  "bindings": [
+    {
+      "case_id": "BOUNDARY241_delete_empty_normalized",
+      "condition": "C01",
+      "stop_line": 16,
+      "statement": "DELCHARA 0",
+      "condition_text": "index zero with zero registered characters"
+    },
+    {
+      "case_id": "BOUNDARY241_delete_negative",
+      "condition": "C02",
+      "stop_line": 23,
+      "statement": "DELCHARA -1",
+      "condition_text": "negative deletion index"
+    },
+    {
+      "case_id": "BOUNDARY241_delete_duplicate_retry",
+      "condition": "C03",
+      "stop_line": 23,
+      "statement": "DELCHARA H241A(),H241B()",
+      "condition_text": "duplicate index failure after all argument helpers; snapshots precede validation"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0171 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0171 · REVIEW_ja.md</h1>
+<p>BREAKの正常制御移動とループ外診断差を切り分けたレビューで、無効な初回fixtureを有効観測と混同せず原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>3d685710a2e9ae121a22148a44278aa9f9ed9ed3aee164563a3dd9849c7a7478</code></p>
+<p><a href="../assets/U0171.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3d685710a2e9ae121a22148a44278aa9f9ed9ed3aee164563a3dd9849c7a7478</code></p>
+<pre># BREAK 有限比較レビュー（2026-11-15）
+
+## 比較対象
+
+Native Emuera1824+v24 と、公開 PyEmuera 3.0.0 の同一 ERB を比較した。Native は隔離デスクトップで2回、公開 pyz は1回実行した。合計4回の Native 起動では人工キー入力を送っていない。
+
+## 入れ子ループのBREAK
+
+修正版ケースでは、FOR OUTERIDX,1,3 の内側に WHILE INNERIDX&lt;3 を置いた。WHILE内のBREAK後は WHILE_SKIPPED が出ず、同じFOR反復の OUTER_CONTINUE に進んだ。2回目のFOR内のBREAK後は FOR_SKIPPED が出ず、終了後の FINAL I=3 と AFTER に進んだ。
+
+Nativeの独立2回のログは一致し、公開pyzの出力マーカーも一致した。Nativeの実装は、対応するループを選び、FOR/REPEATのBREAKではカウンターを増分してからループ後へ移す。公開実装もカウンターを更新してループ後へ移す（C# ErbLoader.cs 1035-1055、FunctionIdentifier.cs 241-248、Instraction.Child.cs 2095-2117、Python program.py 886-890、runtime.py 1234-1239・1293-1299）。
+
+## ループ外のBREAK
+
+Nativeはロード時に警告を出し、BEFOREを表示した後、3行目のBREAKで停止してAFTERを出さなかった。公開pyzはコンパイル段階で3行目の E_SYNTAX: BREAK outside loop を返し、BEFOREを実行しなかった。停止行は同じだが、検出時点と診断が異なるため、この範囲は差分として記録する。
+
+## 除外した初回フィクスチャ
+
+初回案は予約済みの I・Jを #DIM 宣言し、NativeがBREAK実行前にERBを拒否した。この試行を挙動比較に数えず、原ログを保持した。修正版では OUTERIDX・INNERIDXを使った。
+
+## 判定と限界
+
+この有限範囲では、入れ子WHILEとカウント付きFORの制御移動は一致し、ループ外BREAKの診断タイミングには差がある。よって different_scoped とする。REPEAT/DO、ほかの不正制御構文、Nativeプロセスの自然終了は未検証であり、一般化しない。Native GUIは各回5秒後に隔離runnerが終了させた。出力・エラーログはその前に記録された。
+
+製品コード・公開原本・Drive原本は変更していない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2421 · structural_syntax:BREAK · check</li>
+<li>L2424 · structural_syntax:BREAK · check</li>
+</ul></html>

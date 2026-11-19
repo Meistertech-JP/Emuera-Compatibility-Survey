@@ -1,0 +1,30 @@
+{
+  "schema": "target-comparison-adjudication-1",
+  "generated_utc": "2026-11-14T16:59:50.237513+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "LOADVAR"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "VARSAVE207_LOADVAR_STOP",
+    "VARSAVE207_UNREACHED_PLAN",
+    "LOADVAR_PARSER_OMITTED_20261115",
+    "LOADVAR_PARSER_NUMERIC_20261115",
+    "LOADVAR_DYNAMIC_NOT_EVALUATED_20261115"
+  ],
+  "basis": [
+    "Native argument builder is STR_EXPRESSION. Omitted and numeric arguments were run and produce distinct Native argument diagnostics at the command line; the public source_only handler instead stops with E_SOURCE_UNIMPLEMENTED.",
+    "A well-formed dynamic string expression with a division-by-zero term reaches Native NotImplCodeEE and public E_SOURCE_UNIMPLEMENTED without evaluating the term; AFTER_LOADVAR is unreachable in both.",
+    "The existing case207 valid literal form remains a scoped unsupported-handler stop; its planned save/load and post-command observations remain unreachable, not passes."
+  ],
+  "limitations": [
+    "No LOADVAR file lookup, valid roundtrip, RESULT/RESULTS update, or post-command state is claimed; the native command handler is an unconditional NotImplCodeEE stub.",
+    "Only omitted, numeric, dynamic-expression, and existing valid-literal forms are compared; other malformed syntax and filesystem conditions are excluded.",
+    "Native process natural exit and graphical diagnostic rendering were not observed. Native output evidence is the fresh per-run emuera.log; RichEdit GetWindowText returned empty.",
+    "The candidate is finite-scope target completion, not complete LOADVAR functionality or universal compatibility."
+  ],
+  "product_modified": false,
+  "public_release_modified": false
+}

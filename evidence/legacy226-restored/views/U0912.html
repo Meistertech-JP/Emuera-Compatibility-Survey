@@ -1,0 +1,138 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0912 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0912 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:PRINTV。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;PRINTV&quot;}; native_natural_exit_observed=false; fixture件数=2。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>9bca76fdfa55fb886c0028a3e8c91aeecbbf7c51c518cf4c66655cda8b128c1d</code></p>
+<p><a href="../assets/U0912.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>9bca76fdfa55fb886c0028a3e8c91aeecbbf7c51c518cf4c66655cda8b128c1d</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;native-public-finite-command-comparison-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-13T18:18:56.331533+00:00&quot;,
+  &quot;case_ids&quot;: [
+    &quot;PRINTVEMPTYFAULT01_20261114&quot;
+  ],
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;PRINTV&quot;
+  },
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+  &quot;native_source_zip_sha256&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+  &quot;public_source_zip_sha256&quot;: &quot;c0ef7f8071e918b3a6999a6df9d76a5b2f183229b81e7b5556a2c46fa212a3e2&quot;,
+  &quot;fixture&quot;: {
+    &quot;path&quot;: &quot;pilot/variants/PRINTVTRACE01/ERB/PRINTVTRACE01.ERB&quot;,
+    &quot;sha256&quot;: &quot;682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf&quot;
+  },
+  &quot;runs&quot;: {
+    &quot;accepted-native-01&quot;: {
+      &quot;receipt&quot;: &quot;accepted-native-01/receipt.json&quot;,
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;fixture_sha256&quot;: &quot;682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;output_sha256&quot;: &quot;e07557e53d1968d4ba11c0c039aff749b5612abab57b4e3f0f530031199b4514&quot;,
+      &quot;selected_semantic_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;SKIP_RESULT=0&quot;,
+        &quot;BEGIN_EMPTY_PRINTV&lt;AFTER_EMPTY_PRINTV&gt;&quot;,
+        &quot;&lt;FIRST_TERM_SIDE_EFFECT&gt;&quot;
+      ],
+      &quot;division_by_zero_observed&quot;: true,
+      &quot;unreachable_marker_absent&quot;: true,
+      &quot;private_desktop&quot;: &quot;PyEmueraProbe_252438f6b3574bc58f41f9a9b7cf3f8d&quot;,
+      &quot;no_screenshot_or_input&quot;: true,
+      &quot;natural_exit&quot;: false,
+      &quot;exit_code&quot;: null
+    },
+    &quot;accepted-native-02&quot;: {
+      &quot;receipt&quot;: &quot;accepted-native-02/receipt.json&quot;,
+      &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+      &quot;fixture_sha256&quot;: &quot;682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;output_sha256&quot;: &quot;e07557e53d1968d4ba11c0c039aff749b5612abab57b4e3f0f530031199b4514&quot;,
+      &quot;selected_semantic_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;SKIP_RESULT=0&quot;,
+        &quot;BEGIN_EMPTY_PRINTV&lt;AFTER_EMPTY_PRINTV&gt;&quot;,
+        &quot;&lt;FIRST_TERM_SIDE_EFFECT&gt;&quot;
+      ],
+      &quot;division_by_zero_observed&quot;: true,
+      &quot;unreachable_marker_absent&quot;: true,
+      &quot;private_desktop&quot;: &quot;PyEmueraProbe_f0237b177e294f9981ec56124237bcc3&quot;,
+      &quot;no_screenshot_or_input&quot;: true,
+      &quot;natural_exit&quot;: false,
+      &quot;exit_code&quot;: null
+    },
+    &quot;accepted-public-01&quot;: {
+      &quot;receipt&quot;: &quot;accepted-public-01/receipt.json&quot;,
+      &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;fixture_sha256&quot;: &quot;682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;stdout_sha256&quot;: &quot;282b8ed73d19a711343c63deaca3e340288f4011e4bab2501c850310f47e5a03&quot;,
+      &quot;stderr_sha256&quot;: &quot;9e378546bcf67df795b0704dd283dca959ff4130e5992aa69dabe58046a28373&quot;,
+      &quot;returncode&quot;: 1,
+      &quot;selected_semantic_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;SKIP_RESULT=0&quot;,
+        &quot;BEGIN_EMPTY_PRINTV&lt;AFTER_EMPTY_PRINTV&gt;&quot;,
+        &quot;&lt;FIRST_TERM_SIDE_EFFECT&gt;&quot;
+      ],
+      &quot;division_by_zero_observed&quot;: true,
+      &quot;unreachable_marker_absent&quot;: true,
+      &quot;python&quot;: &quot;3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]&quot;
+    },
+    &quot;accepted-public-02&quot;: {
+      &quot;receipt&quot;: &quot;accepted-public-02/receipt.json&quot;,
+      &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+      &quot;fixture_sha256&quot;: &quot;682baf6e98885fe7ad53169d41a078972084b6a9cb67bca8c6779c28d2ce0cdf&quot;,
+      &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+      &quot;stdout_sha256&quot;: &quot;282b8ed73d19a711343c63deaca3e340288f4011e4bab2501c850310f47e5a03&quot;,
+      &quot;stderr_sha256&quot;: &quot;9e378546bcf67df795b0704dd283dca959ff4130e5992aa69dabe58046a28373&quot;,
+      &quot;returncode&quot;: 1,
+      &quot;selected_semantic_lines&quot;: [
+        &quot;Now Loading...&quot;,
+        &quot;SKIP_RESULT=0&quot;,
+        &quot;BEGIN_EMPTY_PRINTV&lt;AFTER_EMPTY_PRINTV&gt;&quot;,
+        &quot;&lt;FIRST_TERM_SIDE_EFFECT&gt;&quot;
+      ],
+      &quot;division_by_zero_observed&quot;: true,
+      &quot;unreachable_marker_absent&quot;: true,
+      &quot;python&quot;: &quot;3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]&quot;
+    }
+  },
+  &quot;selected_semantic_lines&quot;: [
+    &quot;Now Loading...&quot;,
+    &quot;SKIP_RESULT=0&quot;,
+    &quot;BEGIN_EMPTY_PRINTV&lt;AFTER_EMPTY_PRINTV&gt;&quot;,
+    &quot;&lt;FIRST_TERM_SIDE_EFFECT&gt;&quot;
+  ],
+  &quot;observations&quot;: [
+    &quot;SKIPDISP1 wrapped PRINTV TOUCH(); after SKIPDISP0, RESULT remained 0 in all four runs, so the helper did not execute while suppressed.&quot;,
+    &quot;PRINTV EMPTYTEXT() where EMPTYTEXT returns \&quot;\&quot; produced no text; BEGIN_EMPTY_PRINTV and &lt;AFTER_EMPTY_PRINTV&gt; are contiguous in all outputs.&quot;,
+    &quot;Normal PRINTV TOUCH(),1/ZEROVAL() emitted &lt;FIRST_TERM_SIDE_EFFECT&gt; before both engines reported division by zero; the later marker was absent. This observes the first term side effect before the second-term fault.&quot;
+  ],
+  &quot;error_comparison&quot;: &quot;Both report division by zero at fixture line 10; diagnostic wording/format differs between Native and public PyEmuera. Selected pre-error output/state agrees; no byte-identical diagnostic claim.&quot;,
+  &quot;raw_logs_equal_across_engines&quot;: false,
+  &quot;raw_log_equality_explanation&quot;: &quot;Native log is UTF-16/CRLF with Native Japanese diagnostic; public stdout/stderr are UTF-8 with E_ARITH diagnostic.&quot;,
+  &quot;native_natural_exit_observed&quot;: false,
+  &quot;native_exit_code_observed&quot;: false,
+  &quot;public_returncodes&quot;: [
+    1,
+    1
+  ],
+  &quot;screenshots_taken&quot;: false,
+  &quot;global_keyboard_events&quot;: false,
+  &quot;scoped_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;product_modified&quot;: false,
+  &quot;published_artifacts_modified&quot;: false,
+  &quot;drive_originals_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0012 · command_or_syntax:PRINTV · check</li>
+</ul></html>

@@ -1,0 +1,183 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0122 · REPLACE_STRCOUNT_PARENT_DECISION_01.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0122 · REPLACE_STRCOUNT_PARENT_DECISION_01.json</h1>
+<p>原票種別=REPLACE_STRCOUNT_PARENT_DECISION_01.json; 参照対象=expression_function:REPLACE, expression_function:STRCOUNT。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>c3ed3329a7b2c4bed229dd1a00c3905f1e9c6c5f726d0fdbebea642e81f00364</code></p>
+<p><a href="../assets/U0122.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>c3ed3329a7b2c4bed229dd1a00c3905f1e9c6c5f726d0fdbebea642e81f00364</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;pyemuera-parent-evidence-adjudication-v3&quot;,
+  &quot;draft&quot;: false,
+  &quot;bundles&quot;: [
+    {
+      &quot;path&quot;: &quot;automation-v2/runs/46b877766fe87c9c62ce25db05336fc2b650e13e3cc37a921dea5517550a7437/attempt-20261113T223856-27503b724fe5&quot;,
+      &quot;manifest_sha256&quot;: &quot;7f62f156d8fa4bfbcca249d7f6255dfcae8f3f316ac78d3f630145be0332294d&quot;,
+      &quot;legacy&quot;: true,
+      &quot;plan&quot;: &quot;automation-v2/classification/expression-plan.json&quot;,
+      &quot;selected&quot;: [],
+      &quot;repeat_native&quot;: 2,
+      &quot;representatives&quot;: 1
+    },
+    {
+      &quot;path&quot;: &quot;automation-v2/v3/runs/fa62fd64de07a597b618a68ddcf12e7566efe79e82f2430f59db336c39d1b410/attempt-20261113T225707-5535734818fc&quot;,
+      &quot;manifest_sha256&quot;: &quot;b7f5c1160b3615ea6b06d744851420fd92ed0ff5245877de388ba5d0d42fe5dd&quot;
+    }
+  ],
+  &quot;decisions&quot;: [
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;REPLACE&quot;,
+      &quot;accepted&quot;: true,
+      &quot;review_row_sha256&quot;: &quot;f1dd41c62cc6a75893df89ec17123a527c908305cd1cb2d6e6b5a570866063b7&quot;,
+      &quot;outcome&quot;: &quot;documented_difference&quot;,
+      &quot;scope&quot;: &quot;Finite expression_function:REPLACE source-relevant comparison only; retained historical helpers/errors and new selected RESULT/RESULTS snapshots. No method-form or post-fatal state inference.&quot;,
+      &quot;completion_review&quot;: &quot;REPLACE: Accept retained157 and REPLACEORDER01 plus audited027 capture substitution and028 no-match. Current finite remaining item is fully addressed; preserve known regex-error evaluation difference. No new execution required.&quot;,
+      &quot;finite_remainder&quot;: [],
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;exact_v24_registration_signature_form&quot;,
+          &quot;case_ids&quot;: [
+            &quot;STRINGINVOKE_REPLACEEXPR&quot;,
+            &quot;REPLACEORDER01&quot;
+          ],
+          &quot;finding&quot;: &quot;Creator.Method.cs2453-2474: string return, three string arguments, shared fixed validator; source evaluates base, compiles pattern, then evaluates replacement. Exact expression registration retained.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_027_REPLACE&quot;,
+            &quot;AUTO_V2_EXPR_028_REPLACE&quot;,
+            &quot;STRINGINVOKE_REPLACEEXPR&quot;
+          ],
+          &quot;finding&quot;: &quot;Sealed main29 native2/public1 dynamic calls reached. 027 capture(a)/$1X -&gt; aXbaX; 028 no-match z -&gt; aba. Old157 own expression calls are also reached.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_027_REPLACE&quot;,
+            &quot;AUTO_V2_EXPR_028_REPLACE&quot;,
+            &quot;STRINGINVOKE_REPLACEEXPR&quot;
+          ],
+          &quot;finding&quot;: &quot;027/028 output and RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT all observed;157 STR52/54/56/58/60 retains ordinary, class, no-match, empty base and empty-pattern output with count3/order123.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;case_ids&quot;: [
+            &quot;STRINGINVOKE_REPLACEEXPR&quot;,
+            &quot;REPLACEORDER01&quot;,
+            &quot;AUTO_V2_EXPR_027_REPLACE&quot;,
+            &quot;AUTO_V2_EXPR_028_REPLACE&quot;
+          ],
+          &quot;finding&quot;: &quot;The exact remaining capture substitution/no-match clauses are discharged by027/028. REPLACEORDER01 retains invalid[ native pattern-only vs public pattern+replacement evaluation and line3 stop; public E_REGEX vs native diagnostic. No after-fatal state or full regex compatibility credit.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;result_routing_and_stop_location&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_027_REPLACE&quot;,
+            &quot;AUTO_V2_EXPR_028_REPLACE&quot;,
+            &quot;REPLACEORDER01&quot;
+          ],
+          &quot;finding&quot;: &quot;New normal expression sentinels preserve701/702/AUTO_SENT. Existing REPLACEORDER01 BEFORE and call-line3 diagnostic with AFTER absent retains only its observed stop scope. No method RESULTS destination inference.&quot;
+        }
+      ],
+      &quot;remaining&quot;: [
+        {
+          &quot;index&quot;: 0,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_027_REPLACE&quot;,
+            &quot;AUTO_V2_EXPR_028_REPLACE&quot;,
+            &quot;REPLACEORDER01&quot;,
+            &quot;STRINGINVOKE_REPLACEEXPR&quot;
+          ],
+          &quot;finding&quot;: &quot;Accept retained157 and REPLACEORDER01 plus audited027 capture substitution and028 no-match. Current finite remaining item is fully addressed; preserve known regex-error evaluation difference. No new execution required.&quot;
+        }
+      ]
+    },
+    {
+      &quot;kind&quot;: &quot;expression_function&quot;,
+      &quot;name&quot;: &quot;STRCOUNT&quot;,
+      &quot;accepted&quot;: true,
+      &quot;review_row_sha256&quot;: &quot;7a66a5075f15069f263d846392ccc592cfa4a6ea72faa5f607ddbe76292eabd4&quot;,
+      &quot;outcome&quot;: &quot;documented_difference&quot;,
+      &quot;scope&quot;: &quot;Finite expression_function:STRCOUNT source-relevant comparison only; retained historical helpers/errors and new selected RESULT/RESULTS snapshots. No method-form or post-fatal state inference.&quot;,
+      &quot;completion_review&quot;: &quot;STRCOUNT: Accept existing SRCORDER01/02 plus audited025 no-match0,026 repeated-aa2 and valid isolated024 empty-pattern5. Current finite remaining item is fully addressed; preserve helper/error-order difference. No duplicate empty-pattern execution.&quot;,
+      &quot;finite_remainder&quot;: [],
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;exact_v24_registration_signature_form&quot;,
+          &quot;case_ids&quot;: [
+            &quot;SRCORDER01&quot;,
+            &quot;SRCORDER02&quot;
+          ],
+          &quot;finding&quot;: &quot;Creator.Method.cs2283-2304: integer return, two string arguments, shared fixed validator. Source compiles argument1 pattern before evaluating argument0 text.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;actual_target_reach_or_independent_public_availability_gap&quot;,
+          &quot;case_ids&quot;: [
+            &quot;SRCORDER01&quot;,
+            &quot;AUTO_V2_EXPR_025_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_026_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_024_STRCOUNT&quot;
+          ],
+          &quot;finding&quot;: &quot;Own valid SRCORDER01 output2 is retained. Main29 025/026 and v3 isolated024 are reached on Native2/public1; latest024 semantic audit valid=true.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;selected_normal_output_state_control&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_025_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_026_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_024_STRCOUNT&quot;
+          ],
+          &quot;finding&quot;: &quot;025 no-match=0,026 aa in aaaa=2,024 empty regex in aaaa=5, each with independent RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT and matching Native repeats.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;applicable_boundary_error_evaluation_side_effect&quot;,
+          &quot;case_ids&quot;: [
+            &quot;SRCORDER01&quot;,
+            &quot;SRCORDER02&quot;,
+            &quot;AUTO_V2_EXPR_025_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_026_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_024_STRCOUNT&quot;
+          ],
+          &quot;finding&quot;: &quot;All three exact remaining clauses are fulfilled. Retain SRCORDER01 normal helper ORDER21 native vs12 public; SRCORDER02 invalid[ evaluates pattern only native vs text then pattern public, call-line3 stop and diagnostics. Regex.Matches counts nonoverlapping matches; no literal-only claim about helper order.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;result_routing_and_stop_location&quot;,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_025_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_026_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_024_STRCOUNT&quot;,
+            &quot;SRCORDER02&quot;
+          ],
+          &quot;finding&quot;: &quot;Normal selected result and701/702/AUTO_SENT snapshots observed. SRCORDER02 AFTER absent and line3 error retained; post-fatal destination state UNOBSERVED, not a reason to rerun already sufficient finite normal/error-stop evidence.&quot;
+        }
+      ],
+      &quot;remaining&quot;: [
+        {
+          &quot;index&quot;: 0,
+          &quot;case_ids&quot;: [
+            &quot;AUTO_V2_EXPR_024_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_025_STRCOUNT&quot;,
+            &quot;AUTO_V2_EXPR_026_STRCOUNT&quot;,
+            &quot;SRCORDER01&quot;,
+            &quot;SRCORDER02&quot;
+          ],
+          &quot;finding&quot;: &quot;Accept existing SRCORDER01/02 plus audited025 no-match0,026 repeated-aa2 and valid isolated024 empty-pattern5. Current finite remaining item is fully addressed; preserve helper/error-order difference. No duplicate empty-pattern execution.&quot;
+        }
+      ]
+    }
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2263 · expression_function:STRCOUNT · acceptance</li>
+<li>L2264 · expression_function:STRCOUNT · check</li>
+<li>L2273 · expression_function:REPLACE · acceptance</li>
+<li>L2274 · expression_function:REPLACE · check</li>
+</ul></html>

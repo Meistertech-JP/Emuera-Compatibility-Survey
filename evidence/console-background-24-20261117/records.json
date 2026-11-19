@@ -1,0 +1,3965 @@
+{
+  "scope": "Saved 24-case evidence; native logs, public stdout/stderr, ERB/config and redacted derived receipts are referenced per mode; complete original receipts and executables are not included.",
+  "cases": [
+    {
+      "case_id": "UIQUERY236_cbgsetg-expr-direct",
+      "fixture_id": "cbgsetg-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETG"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "819ba9df6150e56b8d74b1e047f57afd9cdd1bc5f49811de9f647b0c30b6d638",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "d651b1282c37335ae2bb2ea2ac19f7c2208ed61a4c89f59745475e88271cc53e",
+          "stderr_sha256": null,
+          "receipt_sha256": "adb64e27145a7fbfae4f157014cd88a3dc679fd1f69d4313cd554d83478a1f04",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C001/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "819ba9df6150e56b8d74b1e047f57afd9cdd1bc5f49811de9f647b0c30b6d638",
+              "size": 191
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C001/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C001/native-01/native-history.bin",
+              "sha256": "d651b1282c37335ae2bb2ea2ac19f7c2208ed61a4c89f59745475e88271cc53e",
+              "size": 220
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C001/native-01/receipt.json",
+              "sha256": "937ee77ca41ebff52664926182d87b0b5b1c4f76d087ac0721eabce3b63b2bf4",
+              "size": 860
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "819ba9df6150e56b8d74b1e047f57afd9cdd1bc5f49811de9f647b0c30b6d638",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "d651b1282c37335ae2bb2ea2ac19f7c2208ed61a4c89f59745475e88271cc53e",
+          "stderr_sha256": null,
+          "receipt_sha256": "13063aaf7bb1d443b5f41e4cdce2c9592c40d6e1c75cd31c3e92edea9e68e0ec",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C001/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "819ba9df6150e56b8d74b1e047f57afd9cdd1bc5f49811de9f647b0c30b6d638",
+              "size": 191
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C001/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C001/native-02/native-history.bin",
+              "sha256": "d651b1282c37335ae2bb2ea2ac19f7c2208ed61a4c89f59745475e88271cc53e",
+              "size": 220
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C001/native-02/receipt.json",
+              "sha256": "c355b7b10b71e816f29ce2aff06508a62b34fdb084f1cfa0608f85ca0a43b403",
+              "size": 860
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "819ba9df6150e56b8d74b1e047f57afd9cdd1bc5f49811de9f647b0c30b6d638",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "4d9c4520b9eeba97f482b79475d72de597dbf8cdfdd8499812ae4643bd249815",
+          "stderr_sha256": "153284aa7b2566825ca15d883aa3936ebad00002cb5033a268e9c5357c280927",
+          "receipt_sha256": "80076c0b366e01a430814993e2e92313d72f1260e96e22fa33267d13bb2f58cb",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C001/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "819ba9df6150e56b8d74b1e047f57afd9cdd1bc5f49811de9f647b0c30b6d638",
+              "size": 191
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C001/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C001/public-01/public-stdout.bin",
+              "sha256": "4d9c4520b9eeba97f482b79475d72de597dbf8cdfdd8499812ae4643bd249815",
+              "size": 104
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C001/public-01/public-stderr.bin",
+              "sha256": "153284aa7b2566825ca15d883aa3936ebad00002cb5033a268e9c5357c280927",
+              "size": 218
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C001/public-01/receipt.json",
+              "sha256": "7cf3af468d0e3b19b111c599120d9f588d90dc243c82df4717fa56f5baca9c8b",
+              "size": 1269
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetg-method-direct",
+      "fixture_id": "cbgsetg-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETG"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "ee0993982e9732c3b357138d1abf10efce1436df340d957ff8a630bee436e9b7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "ae522a854af15b2f1db78775daa0f416b4a70b2010d05133a9f8e7b09c934241",
+          "stderr_sha256": null,
+          "receipt_sha256": "4d5c5d513ea53c29e6da4292319e18bc3877e29da3d219bec645a187ef0ba628",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C002/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "ee0993982e9732c3b357138d1abf10efce1436df340d957ff8a630bee436e9b7",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C002/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C002/native-01/native-history.bin",
+              "sha256": "ae522a854af15b2f1db78775daa0f416b4a70b2010d05133a9f8e7b09c934241",
+              "size": 224
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C002/native-01/receipt.json",
+              "sha256": "efca37653b36cd15db8ff4b128504f2d635aa9d53aae960933242d3f5d694cf3",
+              "size": 862
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "ee0993982e9732c3b357138d1abf10efce1436df340d957ff8a630bee436e9b7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "ae522a854af15b2f1db78775daa0f416b4a70b2010d05133a9f8e7b09c934241",
+          "stderr_sha256": null,
+          "receipt_sha256": "564158985a8db187bf4d7670b1c9f716925f6f756499a213ef6315697d1d156f",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C002/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "ee0993982e9732c3b357138d1abf10efce1436df340d957ff8a630bee436e9b7",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C002/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C002/native-02/native-history.bin",
+              "sha256": "ae522a854af15b2f1db78775daa0f416b4a70b2010d05133a9f8e7b09c934241",
+              "size": 224
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C002/native-02/receipt.json",
+              "sha256": "fcb5684b6752ebbca62517bd4fdc4a1334e8aacd7c1c64d095ca4489ade24822",
+              "size": 862
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "ee0993982e9732c3b357138d1abf10efce1436df340d957ff8a630bee436e9b7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "83ef3250f1282a1a37aca48c83676e0df5099218b15cbc1db9588149a3a7d69f",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "76b3628276577e9727dc46b40bef630d0843f54ccddbd25e5849ad892e8fa5dc",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C002/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "ee0993982e9732c3b357138d1abf10efce1436df340d957ff8a630bee436e9b7",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C002/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C002/public-01/public-stdout.bin",
+              "sha256": "83ef3250f1282a1a37aca48c83676e0df5099218b15cbc1db9588149a3a7d69f",
+              "size": 146
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C002/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C002/public-01/receipt.json",
+              "sha256": "99d74090201f425903d3457cbbe584e1f4c0d6fb1ad1029dbaba4d94c3caebf5",
+              "size": 1271
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetsprite-expr-direct",
+      "fixture_id": "cbgsetsprite-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETSPRITE"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "2079cc1f094b180e94648c1a633448916174ceea7c08665e198c58051d9513c6",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "c5503cc3051727cc0dd04a631c61eeff4ab6b16be49bc756360472803c538cfe",
+          "stderr_sha256": null,
+          "receipt_sha256": "039da92a5621e948feb09ee7cfd8d1f4f613f1c73d10ac45747b269d0c8a67c3",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C003/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2079cc1f094b180e94648c1a633448916174ceea7c08665e198c58051d9513c6",
+              "size": 208
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C003/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C003/native-01/native-history.bin",
+              "sha256": "c5503cc3051727cc0dd04a631c61eeff4ab6b16be49bc756360472803c538cfe",
+              "size": 230
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C003/native-01/receipt.json",
+              "sha256": "24f931eebda1484c5c9e4d6a47c2fd5534ae18e034aa42221d77107dc9c706d8",
+              "size": 865
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "2079cc1f094b180e94648c1a633448916174ceea7c08665e198c58051d9513c6",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "c5503cc3051727cc0dd04a631c61eeff4ab6b16be49bc756360472803c538cfe",
+          "stderr_sha256": null,
+          "receipt_sha256": "3884a5ea5fdf59882747bcf3ce1f80fd5616bd6b352268a695a09b0e012f0d36",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C003/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2079cc1f094b180e94648c1a633448916174ceea7c08665e198c58051d9513c6",
+              "size": 208
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C003/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C003/native-02/native-history.bin",
+              "sha256": "c5503cc3051727cc0dd04a631c61eeff4ab6b16be49bc756360472803c538cfe",
+              "size": 230
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C003/native-02/receipt.json",
+              "sha256": "ab2d8c1971c42738b520b03acfa7be733bf654ee7e1eef072eace0959e6e3a0e",
+              "size": 865
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "2079cc1f094b180e94648c1a633448916174ceea7c08665e198c58051d9513c6",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "7a87336f1e43b91676da387662cfbd3083f323803cf43f250f204672313a025f",
+          "stderr_sha256": "1d433c76ac14f1899dd5b2f3a671bbf78a45e9c159787aa6dee8782d55a9de2c",
+          "receipt_sha256": "7de664ee6b1c54736758037440d799220c05387082c1d10ebc2ba36b5d6f4052",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C003/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2079cc1f094b180e94648c1a633448916174ceea7c08665e198c58051d9513c6",
+              "size": 208
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C003/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C003/public-01/public-stdout.bin",
+              "sha256": "7a87336f1e43b91676da387662cfbd3083f323803cf43f250f204672313a025f",
+              "size": 109
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C003/public-01/public-stderr.bin",
+              "sha256": "1d433c76ac14f1899dd5b2f3a671bbf78a45e9c159787aa6dee8782d55a9de2c",
+              "size": 223
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C003/public-01/receipt.json",
+              "sha256": "1be05769ffa6848bc4fab86981e006b3dce4c808c81b199bc6d261f8cd23af87",
+              "size": 1274
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetsprite-method-direct",
+      "fixture_id": "cbgsetsprite-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETSPRITE"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "9c89dcc0d8e728b3493ab5f9061f533ee0b8c47f65a9b957a199ecb7a1a48c85",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "7afb0341780649e8d490b7facab64dc5c94ac6b5d310d4dee8cb6e1f82c761a7",
+          "stderr_sha256": null,
+          "receipt_sha256": "d60ba8cdaa310217a606b17681af121056e5d029a94e5e6b6b29a70be64586d5",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C004/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9c89dcc0d8e728b3493ab5f9061f533ee0b8c47f65a9b957a199ecb7a1a48c85",
+              "size": 207
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C004/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C004/native-01/native-history.bin",
+              "sha256": "7afb0341780649e8d490b7facab64dc5c94ac6b5d310d4dee8cb6e1f82c761a7",
+              "size": 234
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C004/native-01/receipt.json",
+              "sha256": "d5c11e267741846f873ad962802de506d2869eda7d35eadc86a6c1c5c060dac5",
+              "size": 867
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "9c89dcc0d8e728b3493ab5f9061f533ee0b8c47f65a9b957a199ecb7a1a48c85",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "7afb0341780649e8d490b7facab64dc5c94ac6b5d310d4dee8cb6e1f82c761a7",
+          "stderr_sha256": null,
+          "receipt_sha256": "6a6d522c7dead0054eace347614b3c63a034b77ceae1d4edd46cdd46c72ce575",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C004/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9c89dcc0d8e728b3493ab5f9061f533ee0b8c47f65a9b957a199ecb7a1a48c85",
+              "size": 207
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C004/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C004/native-02/native-history.bin",
+              "sha256": "7afb0341780649e8d490b7facab64dc5c94ac6b5d310d4dee8cb6e1f82c761a7",
+              "size": 234
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C004/native-02/receipt.json",
+              "sha256": "e48d0b740317aa3d336f8d3f1e8cd5d0a75a423fb8d058978e7453b69d0c1215",
+              "size": 867
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "9c89dcc0d8e728b3493ab5f9061f533ee0b8c47f65a9b957a199ecb7a1a48c85",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "f185aaea83f22557fae94c07393754bc95f22a9d74019544054e50c905332597",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "c4f00dae0bbd837f8bd36367e715e1fe5131743dbfecfbf9581f1baa65b0e3d0",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C004/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9c89dcc0d8e728b3493ab5f9061f533ee0b8c47f65a9b957a199ecb7a1a48c85",
+              "size": 207
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C004/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C004/public-01/public-stdout.bin",
+              "sha256": "f185aaea83f22557fae94c07393754bc95f22a9d74019544054e50c905332597",
+              "size": 158
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C004/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C004/public-01/receipt.json",
+              "sha256": "7a18f94d631ce97c5c0e2cd07d9dd409f19838699bfa4f72e0dae1f6e2478e6b",
+              "size": 1276
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgclear-expr-direct",
+      "fixture_id": "cbgclear-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGCLEAR"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "abfbbd9736fa295afb6c50a431b6c2ce9f3302e582a9d7a04e612baa2c6fff10",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "8d01a3f13df6b145b041bf5150949d1d0b892060a293dc72e9dbd3213f2570a1",
+          "stderr_sha256": null,
+          "receipt_sha256": "2861623eb4e949ad43b710e140a7d7d1dcde2445762986e5d33fefcce2b82324",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C005/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "abfbbd9736fa295afb6c50a431b6c2ce9f3302e582a9d7a04e612baa2c6fff10",
+              "size": 180
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C005/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C005/native-01/native-history.bin",
+              "sha256": "8d01a3f13df6b145b041bf5150949d1d0b892060a293dc72e9dbd3213f2570a1",
+              "size": 222
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C005/native-01/receipt.json",
+              "sha256": "fb6d0c648142fbd112f0766c5649662760011935edb0085c9c6f88ed532ffaf7",
+              "size": 861
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "abfbbd9736fa295afb6c50a431b6c2ce9f3302e582a9d7a04e612baa2c6fff10",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "8d01a3f13df6b145b041bf5150949d1d0b892060a293dc72e9dbd3213f2570a1",
+          "stderr_sha256": null,
+          "receipt_sha256": "fca75df475d124ce04651b044c648ed947a4df6466414d542f4b938fb1b18101",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C005/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "abfbbd9736fa295afb6c50a431b6c2ce9f3302e582a9d7a04e612baa2c6fff10",
+              "size": 180
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C005/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C005/native-02/native-history.bin",
+              "sha256": "8d01a3f13df6b145b041bf5150949d1d0b892060a293dc72e9dbd3213f2570a1",
+              "size": 222
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C005/native-02/receipt.json",
+              "sha256": "ac08bb06fc243325281e2b8c53f40970d0a903e3229e36c47d5998ecbc99f9aa",
+              "size": 861
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "abfbbd9736fa295afb6c50a431b6c2ce9f3302e582a9d7a04e612baa2c6fff10",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "f9986bbd005ebc277d1c3c14cf9d9af432d855766d099af4ab4f138788553aa7",
+          "stderr_sha256": "4c45e610b8b1de9246cb4a5c0ffeb5941f1c63a0caad97cfa05df676bcc5279f",
+          "receipt_sha256": "e2d485f5c36ec8d006577e0d3cfaed9367f9020700e201cf2e9dad38b844b90b",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C005/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "abfbbd9736fa295afb6c50a431b6c2ce9f3302e582a9d7a04e612baa2c6fff10",
+              "size": 180
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C005/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C005/public-01/public-stdout.bin",
+              "sha256": "f9986bbd005ebc277d1c3c14cf9d9af432d855766d099af4ab4f138788553aa7",
+              "size": 105
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C005/public-01/public-stderr.bin",
+              "sha256": "4c45e610b8b1de9246cb4a5c0ffeb5941f1c63a0caad97cfa05df676bcc5279f",
+              "size": 219
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C005/public-01/receipt.json",
+              "sha256": "215e505aa46e97e7f0b0e2043038510d58f1743e0961788ae9c9ac5fe24d8b28",
+              "size": 1270
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgclear-method-direct",
+      "fixture_id": "cbgclear-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGCLEAR"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "26e16ec3e23488818e3ca7ab0971e4fe4e2293c02254f2d9f5f9cd4702bafaf0",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "0516469faf14242c62564a29d1a86ce86af638b21305fe766d3150370c08e72c",
+          "stderr_sha256": null,
+          "receipt_sha256": "e5c8630a231481eda430c120b3abd3a63b310bc5b3dcf9a7be57466e871d821c",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C006/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "26e16ec3e23488818e3ca7ab0971e4fe4e2293c02254f2d9f5f9cd4702bafaf0",
+              "size": 178
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C006/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C006/native-01/native-history.bin",
+              "sha256": "0516469faf14242c62564a29d1a86ce86af638b21305fe766d3150370c08e72c",
+              "size": 226
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C006/native-01/receipt.json",
+              "sha256": "021e81e479a9c89903cf0e3fbf2c1bbbb18c8ebf71904637a30be09cc92f97a0",
+              "size": 863
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "26e16ec3e23488818e3ca7ab0971e4fe4e2293c02254f2d9f5f9cd4702bafaf0",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "0516469faf14242c62564a29d1a86ce86af638b21305fe766d3150370c08e72c",
+          "stderr_sha256": null,
+          "receipt_sha256": "035fba8db7a08695ab7fb478b420dbd726e3a5a85a5ce9f952bb5d3f8704c5a0",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C006/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "26e16ec3e23488818e3ca7ab0971e4fe4e2293c02254f2d9f5f9cd4702bafaf0",
+              "size": 178
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C006/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C006/native-02/native-history.bin",
+              "sha256": "0516469faf14242c62564a29d1a86ce86af638b21305fe766d3150370c08e72c",
+              "size": 226
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C006/native-02/receipt.json",
+              "sha256": "58e553a012107d57d1b96523df1a26da2a9c9eabfe619fa6c2ed5acde8cad244",
+              "size": 863
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "26e16ec3e23488818e3ca7ab0971e4fe4e2293c02254f2d9f5f9cd4702bafaf0",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "8f6332a0bfd9379dafb4897d47abf2c9da438e9520fbfb3804b06f157f0adf30",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "43db55ed7fba1d73fdb2467c404faeb7b7a227f8e8f2fc8a703c929f02a4b078",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C006/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "26e16ec3e23488818e3ca7ab0971e4fe4e2293c02254f2d9f5f9cd4702bafaf0",
+              "size": 178
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C006/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C006/public-01/public-stdout.bin",
+              "sha256": "8f6332a0bfd9379dafb4897d47abf2c9da438e9520fbfb3804b06f157f0adf30",
+              "size": 133
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C006/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C006/public-01/receipt.json",
+              "sha256": "dcbf6a845bd217eab271b0c566d2b679415d0988003e614fe55dd56fd68a93c8",
+              "size": 1272
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgclearbutton-expr-direct",
+      "fixture_id": "cbgclearbutton-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGCLEARBUTTON"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "ddcdf5479a51f06dc88a98f3f75fed865f5fe82c45575c299a229eabf8368e5c",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "bd9d2fe51a46fe60929005d4692b7f45f9699d213925201b594bce6336f51d4d",
+          "stderr_sha256": null,
+          "receipt_sha256": "3c6e8ad97defb3e940a22d20ab54cce11563ac894d9c31bbc3a3fbfa54e4df31",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C007/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "ddcdf5479a51f06dc88a98f3f75fed865f5fe82c45575c299a229eabf8368e5c",
+              "size": 192
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C007/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C007/native-01/native-history.bin",
+              "sha256": "bd9d2fe51a46fe60929005d4692b7f45f9699d213925201b594bce6336f51d4d",
+              "size": 234
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C007/native-01/receipt.json",
+              "sha256": "1f3dc39ebe2c10d03f55c918b97e430c58dafc48db63f22def7d0625f245a1d8",
+              "size": 867
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "ddcdf5479a51f06dc88a98f3f75fed865f5fe82c45575c299a229eabf8368e5c",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "bd9d2fe51a46fe60929005d4692b7f45f9699d213925201b594bce6336f51d4d",
+          "stderr_sha256": null,
+          "receipt_sha256": "51001ec79494809cd1ad107287bff47e242076ad302ba944cbd202d1fb71b791",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C007/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "ddcdf5479a51f06dc88a98f3f75fed865f5fe82c45575c299a229eabf8368e5c",
+              "size": 192
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C007/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C007/native-02/native-history.bin",
+              "sha256": "bd9d2fe51a46fe60929005d4692b7f45f9699d213925201b594bce6336f51d4d",
+              "size": 234
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C007/native-02/receipt.json",
+              "sha256": "11924f424058afcff571ac4f2037aa66f09005e1a6412f12cb202365b07db712",
+              "size": 867
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "ddcdf5479a51f06dc88a98f3f75fed865f5fe82c45575c299a229eabf8368e5c",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "cc17fb51332b90686b262ef90f804ba16098606bbc52b1f0c1ab1f9b9e56a8b6",
+          "stderr_sha256": "88e58d964cda56164df892bb98d3bdcf4274fc43958558dbc0dd93f8437065cb",
+          "receipt_sha256": "fcceec73ae379327d9ee915b447b008f5950968410af62017641a7bf0ff9ad9b",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C007/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "ddcdf5479a51f06dc88a98f3f75fed865f5fe82c45575c299a229eabf8368e5c",
+              "size": 192
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C007/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C007/public-01/public-stdout.bin",
+              "sha256": "cc17fb51332b90686b262ef90f804ba16098606bbc52b1f0c1ab1f9b9e56a8b6",
+              "size": 111
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C007/public-01/public-stderr.bin",
+              "sha256": "88e58d964cda56164df892bb98d3bdcf4274fc43958558dbc0dd93f8437065cb",
+              "size": 225
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C007/public-01/receipt.json",
+              "sha256": "c19e629f2f1f99b84cec7fcb5ce5c4cd017ec0bdfe0cad67263f6ea83ff5936c",
+              "size": 1276
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgclearbutton-method-direct",
+      "fixture_id": "cbgclearbutton-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGCLEARBUTTON"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "0cc2f9444584a30c9b38f00f8abe76f4cc78703482d6aed71e5ff4d17d31b21f",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "3e9af7bf1a6a06596f69dbbf8cd2551fac1f4aece47b356cc9e16231b3572348",
+          "stderr_sha256": null,
+          "receipt_sha256": "48bf1622e3a3561f1ef8d0a85d96142030a2d08fa3608ba44d2cf0666213b55b",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C008/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0cc2f9444584a30c9b38f00f8abe76f4cc78703482d6aed71e5ff4d17d31b21f",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C008/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C008/native-01/native-history.bin",
+              "sha256": "3e9af7bf1a6a06596f69dbbf8cd2551fac1f4aece47b356cc9e16231b3572348",
+              "size": 238
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C008/native-01/receipt.json",
+              "sha256": "6cec44315cf26b71a2076347d757eb95f1f559f6e5bdbea3449bbef615021358",
+              "size": 869
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "0cc2f9444584a30c9b38f00f8abe76f4cc78703482d6aed71e5ff4d17d31b21f",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "3e9af7bf1a6a06596f69dbbf8cd2551fac1f4aece47b356cc9e16231b3572348",
+          "stderr_sha256": null,
+          "receipt_sha256": "816bc8b6a3f34d9cbce94e0d1c49368fcf5b1d80a0d513f16fc0d5b36370e19a",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C008/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0cc2f9444584a30c9b38f00f8abe76f4cc78703482d6aed71e5ff4d17d31b21f",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C008/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C008/native-02/native-history.bin",
+              "sha256": "3e9af7bf1a6a06596f69dbbf8cd2551fac1f4aece47b356cc9e16231b3572348",
+              "size": 238
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C008/native-02/receipt.json",
+              "sha256": "f8625b92e5da327ca90a64957f25f5321d3c3f381ae11811c7170eca2676b07f",
+              "size": 869
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "0cc2f9444584a30c9b38f00f8abe76f4cc78703482d6aed71e5ff4d17d31b21f",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "102efdbbf029990cbaeb19476ee08350f274df41ea187ab506ad1776c84c5cf8",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "b1762ff55eab002f06a8d9ee236306556ee467eaf194c195360fa4a24760cf14",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C008/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "0cc2f9444584a30c9b38f00f8abe76f4cc78703482d6aed71e5ff4d17d31b21f",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C008/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C008/public-01/public-stdout.bin",
+              "sha256": "102efdbbf029990cbaeb19476ee08350f274df41ea187ab506ad1776c84c5cf8",
+              "size": 139
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C008/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C008/public-01/receipt.json",
+              "sha256": "a97cc9f226629db126d409a28e9eb46b4ca9f75630583716ffb5450cfbfe91ff",
+              "size": 1278
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgremoverange-expr-direct",
+      "fixture_id": "cbgremoverange-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGREMOVERANGE"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "c813df8df22e8437ba2c19376d74088e269d4f7cef72022e3ed2e458f1cdfdf7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "7e2746a9c1edf57240cefd844ecd6ab0602f540e5380787bb8ea9feea2171709",
+          "stderr_sha256": null,
+          "receipt_sha256": "56b14bddfe593d92dcd1ac44ea0fa59848c6c61259ba68e4f781f7a41ef8adca",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C009/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "c813df8df22e8437ba2c19376d74088e269d4f7cef72022e3ed2e458f1cdfdf7",
+              "size": 196
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C009/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C009/native-01/native-history.bin",
+              "sha256": "7e2746a9c1edf57240cefd844ecd6ab0602f540e5380787bb8ea9feea2171709",
+              "size": 234
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C009/native-01/receipt.json",
+              "sha256": "f21ab657bd2f7843366beb7e900ebcbe7cca5ac06c143d9d6818ad9365f66c8e",
+              "size": 867
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "c813df8df22e8437ba2c19376d74088e269d4f7cef72022e3ed2e458f1cdfdf7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "7e2746a9c1edf57240cefd844ecd6ab0602f540e5380787bb8ea9feea2171709",
+          "stderr_sha256": null,
+          "receipt_sha256": "e03711c769ee3f0fbc3e7272cd10e8dd5631ecfa7a4c6152a378037de16059a3",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C009/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "c813df8df22e8437ba2c19376d74088e269d4f7cef72022e3ed2e458f1cdfdf7",
+              "size": 196
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C009/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C009/native-02/native-history.bin",
+              "sha256": "7e2746a9c1edf57240cefd844ecd6ab0602f540e5380787bb8ea9feea2171709",
+              "size": 234
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C009/native-02/receipt.json",
+              "sha256": "dcd1cff2f900c5b93925a968849a1242f00b5a465c9f8bcaee24ec6b96ac57c5",
+              "size": 867
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "c813df8df22e8437ba2c19376d74088e269d4f7cef72022e3ed2e458f1cdfdf7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "ffe4f80a9f498d2d921c7ae2a9916903539cb64b99d7d499e32508148f92bbf5",
+          "stderr_sha256": "ccca74966d137fb75c246e181228d710c239e495aa75fcfe71095b8f2f170f4b",
+          "receipt_sha256": "37c4c8bebad7bc26ccc47f814982649e55727cd2b6fdfbdd45a99030f0cdcf21",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C009/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "c813df8df22e8437ba2c19376d74088e269d4f7cef72022e3ed2e458f1cdfdf7",
+              "size": 196
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C009/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C009/public-01/public-stdout.bin",
+              "sha256": "ffe4f80a9f498d2d921c7ae2a9916903539cb64b99d7d499e32508148f92bbf5",
+              "size": 111
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C009/public-01/public-stderr.bin",
+              "sha256": "ccca74966d137fb75c246e181228d710c239e495aa75fcfe71095b8f2f170f4b",
+              "size": 225
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C009/public-01/receipt.json",
+              "sha256": "fc6c779b9f2511a191f1ea231d2936210240a9c9e9452265b689ae72522c629c",
+              "size": 1276
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgremoverange-method-direct",
+      "fixture_id": "cbgremoverange-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGREMOVERANGE"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "382f8b069bd9953be56935e95d03ed8de1db9f364270c0cc3f4161a7b765959e",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "46e18d294b4b236779fd7730ba908d8b4caba23635804c762a49a5cfb60d0759",
+          "stderr_sha256": null,
+          "receipt_sha256": "d09ce9f631da5e267b1eb9e93a03d63e132a706c7498ea95c0f69454a41a87f8",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C010/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "382f8b069bd9953be56935e95d03ed8de1db9f364270c0cc3f4161a7b765959e",
+              "size": 195
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C010/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C010/native-01/native-history.bin",
+              "sha256": "46e18d294b4b236779fd7730ba908d8b4caba23635804c762a49a5cfb60d0759",
+              "size": 238
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C010/native-01/receipt.json",
+              "sha256": "1296ba133c65d1136265ab91b2fea53b9b4ea3c19ac87a1cb5cacba86a84959e",
+              "size": 869
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "382f8b069bd9953be56935e95d03ed8de1db9f364270c0cc3f4161a7b765959e",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "46e18d294b4b236779fd7730ba908d8b4caba23635804c762a49a5cfb60d0759",
+          "stderr_sha256": null,
+          "receipt_sha256": "8e13c67732a6c5115ca26b59d4924e4df2d99e19f9e176213449c2976d183241",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C010/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "382f8b069bd9953be56935e95d03ed8de1db9f364270c0cc3f4161a7b765959e",
+              "size": 195
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C010/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C010/native-02/native-history.bin",
+              "sha256": "46e18d294b4b236779fd7730ba908d8b4caba23635804c762a49a5cfb60d0759",
+              "size": 238
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C010/native-02/receipt.json",
+              "sha256": "e7f84e0741e09649865ffd3807898848d3679ee68c0299a70a5b25e1425794b5",
+              "size": 869
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "382f8b069bd9953be56935e95d03ed8de1db9f364270c0cc3f4161a7b765959e",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "cfc096d85f2b7586f2b801405d5e142d78a19171957fc69b05cca2f9cf86f0f9",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "54ae780465034b358b4736063e95f1c68ffe405189ef3fdd976b5d4a5499ac85",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C010/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "382f8b069bd9953be56935e95d03ed8de1db9f364270c0cc3f4161a7b765959e",
+              "size": 195
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C010/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C010/public-01/public-stdout.bin",
+              "sha256": "cfc096d85f2b7586f2b801405d5e142d78a19171957fc69b05cca2f9cf86f0f9",
+              "size": 144
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C010/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C010/public-01/receipt.json",
+              "sha256": "fcfc18861bc39b91703b87c55b44c84d1ebbd9946f42acff76c7f65fe53905b8",
+              "size": 1278
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgremovebmap-expr-direct",
+      "fixture_id": "cbgremovebmap-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGREMOVEBMAP"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "82c49df8fdead0b7f6b261694ccc78f967f73a0b264113bfc4f7bdd00250d6f7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "3e6ebec74ca4de83b0314c8851d48a0db502c23df235f5bc7b16fc4cc491b937",
+          "stderr_sha256": null,
+          "receipt_sha256": "edbc96e51080e19c8c5e20a90f0569fd388a0d310fd77823498eb7158b97521d",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C011/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "82c49df8fdead0b7f6b261694ccc78f967f73a0b264113bfc4f7bdd00250d6f7",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C011/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C011/native-01/native-history.bin",
+              "sha256": "3e6ebec74ca4de83b0314c8851d48a0db502c23df235f5bc7b16fc4cc491b937",
+              "size": 232
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C011/native-01/receipt.json",
+              "sha256": "91bbecaafa2fbd02c5cb5a668c6fc06a2469453d0c218e1277619a9b994760d5",
+              "size": 866
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "82c49df8fdead0b7f6b261694ccc78f967f73a0b264113bfc4f7bdd00250d6f7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "3e6ebec74ca4de83b0314c8851d48a0db502c23df235f5bc7b16fc4cc491b937",
+          "stderr_sha256": null,
+          "receipt_sha256": "f5be749caf88846a0b777c77f7b8309341b184f2d6656155a0953f0708e63b4c",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C011/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "82c49df8fdead0b7f6b261694ccc78f967f73a0b264113bfc4f7bdd00250d6f7",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C011/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C011/native-02/native-history.bin",
+              "sha256": "3e6ebec74ca4de83b0314c8851d48a0db502c23df235f5bc7b16fc4cc491b937",
+              "size": 232
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C011/native-02/receipt.json",
+              "sha256": "00308d11edbad42594435531863a0cfe9b9a3590a3a18d27cfe2cec903ef52e1",
+              "size": 866
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "82c49df8fdead0b7f6b261694ccc78f967f73a0b264113bfc4f7bdd00250d6f7",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "af2665cde46504e6c4af767daa7cb56b5367e97ab2a24b70b98c30770b3e551b",
+          "stderr_sha256": "370df28832c452b8ef406a6ae8a165900c650171e8652566921b1ea9f2692d4e",
+          "receipt_sha256": "a74f92e4891d55a315ca97fde091811f6420585468e69781eca33c1bb7e552df",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C011/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "82c49df8fdead0b7f6b261694ccc78f967f73a0b264113bfc4f7bdd00250d6f7",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C011/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C011/public-01/public-stdout.bin",
+              "sha256": "af2665cde46504e6c4af767daa7cb56b5367e97ab2a24b70b98c30770b3e551b",
+              "size": 110
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C011/public-01/public-stderr.bin",
+              "sha256": "370df28832c452b8ef406a6ae8a165900c650171e8652566921b1ea9f2692d4e",
+              "size": 224
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C011/public-01/receipt.json",
+              "sha256": "4758df5803759e35834d7c4b22c9bf1de5a68d8ac717f62413da8bb8d16c1512",
+              "size": 1275
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgremovebmap-method-direct",
+      "fixture_id": "cbgremovebmap-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGREMOVEBMAP"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "6f148e75120798244d38e882a3c85e684140f64f0906c785fd6003fc50558945",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "ec210f98a479cdc340e239f48a657eea25b78584993b2c918c2e4bcfa5abcadc",
+          "stderr_sha256": null,
+          "receipt_sha256": "3d6a5c6fb186a2e8c0ea8c0326aaae3880e66e56c82b88cf74d313717ff409bb",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C012/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "6f148e75120798244d38e882a3c85e684140f64f0906c785fd6003fc50558945",
+              "size": 188
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C012/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C012/native-01/native-history.bin",
+              "sha256": "ec210f98a479cdc340e239f48a657eea25b78584993b2c918c2e4bcfa5abcadc",
+              "size": 236
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C012/native-01/receipt.json",
+              "sha256": "5cb69a129d2e83229e3718395d5e55f819358977b60af0ad7b84152c550ad3a5",
+              "size": 868
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "6f148e75120798244d38e882a3c85e684140f64f0906c785fd6003fc50558945",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "ec210f98a479cdc340e239f48a657eea25b78584993b2c918c2e4bcfa5abcadc",
+          "stderr_sha256": null,
+          "receipt_sha256": "187d770c01f5fdc2c58e3b358adfca2944782bbfd05e35b51b729f4255a65ecd",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C012/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "6f148e75120798244d38e882a3c85e684140f64f0906c785fd6003fc50558945",
+              "size": 188
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C012/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C012/native-02/native-history.bin",
+              "sha256": "ec210f98a479cdc340e239f48a657eea25b78584993b2c918c2e4bcfa5abcadc",
+              "size": 236
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C012/native-02/receipt.json",
+              "sha256": "ff6986c783fda2d9da9d4f71ef0e9b5dc207d9f554dc923be9a819114566263b",
+              "size": 868
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "6f148e75120798244d38e882a3c85e684140f64f0906c785fd6003fc50558945",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "367a6a8a8047d0713377e911efdf25f397f58c541f2aae2ccea96f8f8ddf128e",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "7f53f98e3459ee5f87e34d82a41f9acd30fa26a9520deaf6d4f3aa14fd16d794",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C012/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "6f148e75120798244d38e882a3c85e684140f64f0906c785fd6003fc50558945",
+              "size": 188
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C012/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C012/public-01/public-stdout.bin",
+              "sha256": "367a6a8a8047d0713377e911efdf25f397f58c541f2aae2ccea96f8f8ddf128e",
+              "size": 138
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C012/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C012/public-01/receipt.json",
+              "sha256": "cd6931a8af61f5f1ab00c65231709c00751e9e21298359abe437ac97f30758c3",
+              "size": 1277
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetbmapg-expr-direct",
+      "fixture_id": "cbgsetbmapg-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBMAPG"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "503d2305ea8e7d759a362acba470ed8f69e5eb988ef8c9af0f9ff7941647a4c4",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "5e496bc1b7965d0486a1bfc65dfeb57c76f9cebedbd927e5c74a9b12cf10ee5c",
+          "stderr_sha256": null,
+          "receipt_sha256": "b2a84fd110a1737a8d542718a40543260f215e1fb44ed3b19e9919754517aead",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C013/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "503d2305ea8e7d759a362acba470ed8f69e5eb988ef8c9af0f9ff7941647a4c4",
+              "size": 191
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C013/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C013/native-01/native-history.bin",
+              "sha256": "5e496bc1b7965d0486a1bfc65dfeb57c76f9cebedbd927e5c74a9b12cf10ee5c",
+              "size": 228
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C013/native-01/receipt.json",
+              "sha256": "d7cb59970e6509353924e1a87bbfb81b88339d7378cee9e3ac352239dcafec6b",
+              "size": 864
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "503d2305ea8e7d759a362acba470ed8f69e5eb988ef8c9af0f9ff7941647a4c4",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "5e496bc1b7965d0486a1bfc65dfeb57c76f9cebedbd927e5c74a9b12cf10ee5c",
+          "stderr_sha256": null,
+          "receipt_sha256": "2319d97c09649a7da60520dbbb1626ec90a6c531316936abed585cece6458034",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C013/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "503d2305ea8e7d759a362acba470ed8f69e5eb988ef8c9af0f9ff7941647a4c4",
+              "size": 191
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C013/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C013/native-02/native-history.bin",
+              "sha256": "5e496bc1b7965d0486a1bfc65dfeb57c76f9cebedbd927e5c74a9b12cf10ee5c",
+              "size": 228
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C013/native-02/receipt.json",
+              "sha256": "578fe368fcffa0eba08406e9f2191485cbacdfd7db9d6738a7ae6ac3b0a7a6dc",
+              "size": 864
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "503d2305ea8e7d759a362acba470ed8f69e5eb988ef8c9af0f9ff7941647a4c4",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "19ae4fd9864916572e0edf6fe6b99ecc9378fc9b880e01e894de47a3da411c4b",
+          "stderr_sha256": "f7e73f9527b3e0e10e6dc08b8ce3f6192dfe1c538a0ba0d24b7dccf8923c8caf",
+          "receipt_sha256": "f3e9f7ce894d578230963fc2b6b7b64e52a215fb4fe904910ba08b0c457cf2a1",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C013/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "503d2305ea8e7d759a362acba470ed8f69e5eb988ef8c9af0f9ff7941647a4c4",
+              "size": 191
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C013/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C013/public-01/public-stdout.bin",
+              "sha256": "19ae4fd9864916572e0edf6fe6b99ecc9378fc9b880e01e894de47a3da411c4b",
+              "size": 108
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C013/public-01/public-stderr.bin",
+              "sha256": "f7e73f9527b3e0e10e6dc08b8ce3f6192dfe1c538a0ba0d24b7dccf8923c8caf",
+              "size": 222
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C013/public-01/receipt.json",
+              "sha256": "d466b3d48511f1e6a489402c350e54d5afffd08c60b2a09bb97f525607114d90",
+              "size": 1273
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetbmapg-method-direct",
+      "fixture_id": "cbgsetbmapg-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBMAPG"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "55dbc4a7808b115015824a1f32902f65714541b1399e9e605da855035e88e2a8",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "b8a820884cc125e7168d3486a37904d1701e4e7d947cc5e0ac1604e419f6a1a6",
+          "stderr_sha256": null,
+          "receipt_sha256": "3a5a9c01f002acd4884157b2d6e3282cbc25a892a2baa739a410664bddfeed09",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C014/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "55dbc4a7808b115015824a1f32902f65714541b1399e9e605da855035e88e2a8",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C014/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C014/native-01/native-history.bin",
+              "sha256": "b8a820884cc125e7168d3486a37904d1701e4e7d947cc5e0ac1604e419f6a1a6",
+              "size": 232
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C014/native-01/receipt.json",
+              "sha256": "f440798d5c66d1df0e1ee34e0d13d98dcf07a47ca19870d383229949ddbdc9dd",
+              "size": 866
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "55dbc4a7808b115015824a1f32902f65714541b1399e9e605da855035e88e2a8",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "b8a820884cc125e7168d3486a37904d1701e4e7d947cc5e0ac1604e419f6a1a6",
+          "stderr_sha256": null,
+          "receipt_sha256": "8ca75ddf55376b117dd7271744cd21b3cc59c738c0d87bb629f62e88f877eff8",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C014/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "55dbc4a7808b115015824a1f32902f65714541b1399e9e605da855035e88e2a8",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C014/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C014/native-02/native-history.bin",
+              "sha256": "b8a820884cc125e7168d3486a37904d1701e4e7d947cc5e0ac1604e419f6a1a6",
+              "size": 232
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C014/native-02/receipt.json",
+              "sha256": "143b41b1873a010ebb3b493cd81e2fe599f6b219c871bddcc723b8e93786fc54",
+              "size": 866
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "55dbc4a7808b115015824a1f32902f65714541b1399e9e605da855035e88e2a8",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "fb336d54a44a83fcc38e4ea3c48390a1ba2d1c1275e6bbe3eb45197be9808c75",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "3ba837a763f9a78945cfb02d092fe10735709f8383626aa3102137a9db2cdaea",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C014/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "55dbc4a7808b115015824a1f32902f65714541b1399e9e605da855035e88e2a8",
+              "size": 190
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C014/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C014/public-01/public-stdout.bin",
+              "sha256": "fb336d54a44a83fcc38e4ea3c48390a1ba2d1c1275e6bbe3eb45197be9808c75",
+              "size": 142
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C014/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C014/public-01/receipt.json",
+              "sha256": "261d50a03ac57a933f1b1034b787a74cdb4d87e694e1ba7ff761ef68d016a97c",
+              "size": 1275
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetbuttonsprite-expr-direct",
+      "fixture_id": "cbgsetbuttonsprite-expr-direct",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBUTTONSPRITE"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "aa3b468dd26f243ed57791931be892c0ed1c7030da6693c5ff18da1f9bca81d1",
+          "stderr_sha256": null,
+          "receipt_sha256": "661f4a12ea03a59402989ce01c64174aa753929e10f77fd4d2dd43e1016d170a",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C015/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+              "size": 245
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C015/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C015/native-01/native-history.bin",
+              "sha256": "aa3b468dd26f243ed57791931be892c0ed1c7030da6693c5ff18da1f9bca81d1",
+              "size": 242
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C015/native-01/receipt.json",
+              "sha256": "5750b378865b4a30cfca3e0b2d6a0b34490f657ed31247841f5dcd14a323e341",
+              "size": 871
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "aa3b468dd26f243ed57791931be892c0ed1c7030da6693c5ff18da1f9bca81d1",
+          "stderr_sha256": null,
+          "receipt_sha256": "7f29ad71456a3c079a52a56be99ad2107e050223c459c46471be6087a5b2a4fd",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C015/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+              "size": 245
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C015/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C015/native-02/native-history.bin",
+              "sha256": "aa3b468dd26f243ed57791931be892c0ed1c7030da6693c5ff18da1f9bca81d1",
+              "size": 242
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C015/native-02/receipt.json",
+              "sha256": "149055b5c3b110b6a0d6941b0cf17333d417a6dbbb66d2c6b8c2cde2ab90b631",
+              "size": 871
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "6849786a600f9535f2c4550c6f88c96f21aec9d470da1a907acf5e3b491f63f5",
+          "stderr_sha256": "dc879153face7c237b98e0a0a5f5505ca7bcfcc98a5d0356c22381d8126558da",
+          "receipt_sha256": "ca699ece708116225b5aa11560cf0a920f6acb5448d387899f628ee46d0f741b",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C015/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "6756e6d7696067a35475a634a79e6cdfd2f9de2f7eb8374fbb9478ddffac7863",
+              "size": 245
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C015/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C015/public-01/public-stdout.bin",
+              "sha256": "6849786a600f9535f2c4550c6f88c96f21aec9d470da1a907acf5e3b491f63f5",
+              "size": 115
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C015/public-01/public-stderr.bin",
+              "sha256": "dc879153face7c237b98e0a0a5f5505ca7bcfcc98a5d0356c22381d8126558da",
+              "size": 229
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C015/public-01/receipt.json",
+              "sha256": "a03fb3cd24547e0966e60599fb5fcfdb5cfabe410a7c7756c6caaa7ee13ffa3e",
+              "size": 1280
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetbuttonsprite-method-direct",
+      "fixture_id": "cbgsetbuttonsprite-method-direct",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBUTTONSPRITE"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=1 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "dafbeaebec19c5d28a1a876a59602f915d9bd56a86aa0a3a17eff9bdae653d2b",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "5a9212928c609ce78bc94556b4137d69c06f071f86517e7e26da5b0c6f2bb858",
+          "stderr_sha256": null,
+          "receipt_sha256": "99b8779a28737c9d9132f6f15f7b14ced7c6751bffbb267ae704e957ac34ea06",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C016/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "dafbeaebec19c5d28a1a876a59602f915d9bd56a86aa0a3a17eff9bdae653d2b",
+              "size": 244
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C016/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C016/native-01/native-history.bin",
+              "sha256": "5a9212928c609ce78bc94556b4137d69c06f071f86517e7e26da5b0c6f2bb858",
+              "size": 246
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C016/native-01/receipt.json",
+              "sha256": "a6e3e08fef6381e08aaa0a9bb490da5c85b8f75d48e35181c0ef2671eb06b0ec",
+              "size": 873
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "dafbeaebec19c5d28a1a876a59602f915d9bd56a86aa0a3a17eff9bdae653d2b",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "5a9212928c609ce78bc94556b4137d69c06f071f86517e7e26da5b0c6f2bb858",
+          "stderr_sha256": null,
+          "receipt_sha256": "572b00d74f1e469c898bef627ab65ba2a01d9bf09cc354dbe02c4afc40dea6f8",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C016/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "dafbeaebec19c5d28a1a876a59602f915d9bd56a86aa0a3a17eff9bdae653d2b",
+              "size": 244
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C016/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C016/native-02/native-history.bin",
+              "sha256": "5a9212928c609ce78bc94556b4137d69c06f071f86517e7e26da5b0c6f2bb858",
+              "size": 246
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C016/native-02/receipt.json",
+              "sha256": "e9cae1c22df313f707cfd5b2ae3756a654faf4185860623a0a172c4382ce2d8a",
+              "size": 873
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "dafbeaebec19c5d28a1a876a59602f915d9bd56a86aa0a3a17eff9bdae653d2b",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "51ea3b0aa6e3437fe990b1b911aae9ab096c226cf3b6132ce5a40c78b553945a",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "6724fd65f043315b74e96ac9d46ad20bf1dd7d7124d9507bcaea12d9234cc903",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C016/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "dafbeaebec19c5d28a1a876a59602f915d9bd56a86aa0a3a17eff9bdae653d2b",
+              "size": 244
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C016/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C016/public-01/public-stdout.bin",
+              "sha256": "51ea3b0aa6e3437fe990b1b911aae9ab096c226cf3b6132ce5a40c78b553945a",
+              "size": 189
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C016/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C016/public-01/receipt.json",
+              "sha256": "446a140a73faa6f2f21f1c55dd5ed8ed4e3a78170a773b7c5e7da67bb86ef1a1",
+              "size": 1282
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_lifecycle-expr",
+      "fixture_id": "lifecycle-expr",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETG"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGSETSPRITE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBMAPG"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBUTTONSPRITE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGREMOVERANGE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGCLEARBUTTON"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGREMOVEBMAP"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGCLEAR"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "setup",
+      "recorded_verdict": "unverified",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "SETUP236 G=1",
+        "SETUP236 S=1",
+        "STEP236 CBGSETG V=1 R=701",
+        "STEP236 CBGSETSPRITE V=1 R=701",
+        "STEP236 CBGSETBMAPG V=1 R=701",
+        "STEP236 CBGSETBUTTONSPRITE V=1 R=701",
+        "STEP236 CBGREMOVERANGE V=1 R=701",
+        "STEP236 CBGCLEARBUTTON V=1 R=701",
+        "STEP236 CBGREMOVEBMAP V=1 R=701",
+        "STEP236 CBGCLEAR V=1 R=701",
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "SETUP236 G=1",
+        "SETUP236 S=1",
+        "STEP236 CBGSETG V=1 R=701",
+        "STEP236 CBGSETSPRITE V=1 R=701",
+        "STEP236 CBGSETBMAPG V=1 R=701",
+        "STEP236 CBGSETBUTTONSPRITE V=1 R=701",
+        "STEP236 CBGREMOVERANGE V=1 R=701",
+        "STEP236 CBGCLEARBUTTON V=1 R=701",
+        "STEP236 CBGREMOVEBMAP V=1 R=701",
+        "STEP236 CBGCLEAR V=1 R=701",
+        "OBS236 V=1 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "not_established_setup_or_load_stopped",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "4e10d3597581a371bfd849e5e0916486b1472e8cce627180f8ecac342cb10e53",
+          "stderr_sha256": null,
+          "receipt_sha256": "673365ecb3f0758e2ad58c64235801dc33daaa9981e36f9c3b99363deaf0d5e4",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C017/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+              "size": 889
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C017/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C017/native-01/native-history.bin",
+              "sha256": "4e10d3597581a371bfd849e5e0916486b1472e8cce627180f8ecac342cb10e53",
+              "size": 780
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C017/native-01/receipt.json",
+              "sha256": "97a95e81c592e085d94f638d46c58dc379a5ea5c3330da29079fbe6008f3d4ec",
+              "size": 855
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "4e10d3597581a371bfd849e5e0916486b1472e8cce627180f8ecac342cb10e53",
+          "stderr_sha256": null,
+          "receipt_sha256": "223186be0d29d1a9d8b9cf9806a0359e72fc8960c6c49cea63153678810edebc",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C017/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+              "size": 889
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C017/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C017/native-02/native-history.bin",
+              "sha256": "4e10d3597581a371bfd849e5e0916486b1472e8cce627180f8ecac342cb10e53",
+              "size": 780
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C017/native-02/receipt.json",
+              "sha256": "1443ab85e0ffdace4db699647aea75a90ab28882ae0465b1c21955cea5714959",
+              "size": 855
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "51c7511879088d54c53c6c9849ab86623545fe23f191b55bc3e66d05db366b1e",
+          "stderr_sha256": "22882ebb7851429d399defe60319cb088d085268f1bc963e58518cc8ebd540a6",
+          "receipt_sha256": "e7a5d65722d7b576f0764152d5d0889151b09ec7549bc4cb1a5af762fa25f0e2",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C017/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+              "size": 889
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C017/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C017/public-01/public-stdout.bin",
+              "sha256": "51c7511879088d54c53c6c9849ab86623545fe23f191b55bc3e66d05db366b1e",
+              "size": 99
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C017/public-01/public-stderr.bin",
+              "sha256": "22882ebb7851429d399defe60319cb088d085268f1bc963e58518cc8ebd540a6",
+              "size": 218
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C017/public-01/receipt.json",
+              "sha256": "bf5b8daa60988e3996b6d0b020cff8b33872d5fc7f1397d4a27269e5208761fb",
+              "size": 1264
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_lifecycle-method",
+      "fixture_id": "lifecycle-method",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETG"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETSPRITE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBMAPG"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBUTTONSPRITE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGREMOVERANGE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGCLEARBUTTON"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGREMOVEBMAP"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGCLEAR"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "setup",
+      "recorded_verdict": "unverified",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "SETUP236 G=1",
+        "SETUP236 S=1",
+        "STEP236 CBGSETG V=1 R=1",
+        "STEP236 CBGSETSPRITE V=1 R=1",
+        "STEP236 CBGSETBMAPG V=1 R=1",
+        "STEP236 CBGSETBUTTONSPRITE V=1 R=1",
+        "STEP236 CBGREMOVERANGE V=1 R=1",
+        "STEP236 CBGCLEARBUTTON V=1 R=1",
+        "STEP236 CBGREMOVEBMAP V=1 R=1",
+        "STEP236 CBGCLEAR V=1 R=1",
+        "OBS236 V=1 R=1 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "SETUP236 G=1",
+        "SETUP236 S=1",
+        "STEP236 CBGSETG V=1 R=1",
+        "STEP236 CBGSETSPRITE V=1 R=1",
+        "STEP236 CBGSETBMAPG V=1 R=1",
+        "STEP236 CBGSETBUTTONSPRITE V=1 R=1",
+        "STEP236 CBGREMOVERANGE V=1 R=1",
+        "STEP236 CBGCLEARBUTTON V=1 R=1",
+        "STEP236 CBGREMOVEBMAP V=1 R=1",
+        "STEP236 CBGCLEAR V=1 R=1",
+        "OBS236 V=1 R=1 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "not_established_setup_or_load_stopped",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "48dd0bddfbbacfa63318fd731525f70a319911acc4089cc96ee25f549d5f9eed",
+          "stderr_sha256": null,
+          "receipt_sha256": "d5aa156d58816b1d0fcec49cb9a4ea6143ebbfff01bf012f86c52a2ae6ba8ed0",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C018/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+              "size": 864
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C018/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C018/native-01/native-history.bin",
+              "sha256": "48dd0bddfbbacfa63318fd731525f70a319911acc4089cc96ee25f549d5f9eed",
+              "size": 748
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C018/native-01/receipt.json",
+              "sha256": "e5bdd252ddc72e189cd0c642486bd7759de5fefbede8e712b7532438390e1d3f",
+              "size": 857
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "48dd0bddfbbacfa63318fd731525f70a319911acc4089cc96ee25f549d5f9eed",
+          "stderr_sha256": null,
+          "receipt_sha256": "7eb8cc7035d16cb15b1074fceaf42597f8577a95c42ba66cab2bb4804c10468a",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C018/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+              "size": 864
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C018/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C018/native-02/native-history.bin",
+              "sha256": "48dd0bddfbbacfa63318fd731525f70a319911acc4089cc96ee25f549d5f9eed",
+              "size": 748
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C018/native-02/receipt.json",
+              "sha256": "537fece8ad72e4867f2df24d7e9cdef181a22536e61df77e5aab8679ae24fb58",
+              "size": 857
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "0bde73688fb6bb7f737deb322beea13377f556bc6f81439f6db4ca3beeef983c",
+          "stderr_sha256": "95213bf8c0f7e41c18c6f4401b54ef3fd96e915093ddcd34c3e08ff12227c89d",
+          "receipt_sha256": "2e1e2ff024fff77c0f0e7d803a023a210c094ce28b920e54c82c92024bc61497",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C018/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+              "size": 864
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C018/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C018/public-01/public-stdout.bin",
+              "sha256": "0bde73688fb6bb7f737deb322beea13377f556bc6f81439f6db4ca3beeef983c",
+              "size": 682
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C018/public-01/public-stderr.bin",
+              "sha256": "95213bf8c0f7e41c18c6f4401b54ef3fd96e915093ddcd34c3e08ff12227c89d",
+              "size": 89
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C018/public-01/receipt.json",
+              "sha256": "07f6f349a173938493307cd100e11cd6a8ab25cc13227fc924db4cf0b42eb32f",
+              "size": 1266
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetg-expr-shortcircuit",
+      "fixture_id": "cbgsetg-expr-shortcircuit",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETG"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct_shortcircuit",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "cb051b3d0d0fda98ceba9ea38aba42805ebc5e9ba02649fa4768ed830623d696",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "9bcc683639d029a297b5aea01dc0380ae751439d86abf41ee79ff49f081aafe7",
+          "stderr_sha256": null,
+          "receipt_sha256": "275f5867a6ce5808cd6537f058c297457836ea3f4c36c118ff0cdbf00609d397",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C019/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "cb051b3d0d0fda98ceba9ea38aba42805ebc5e9ba02649fa4768ed830623d696",
+              "size": 201
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C019/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C019/native-01/native-history.bin",
+              "sha256": "9bcc683639d029a297b5aea01dc0380ae751439d86abf41ee79ff49f081aafe7",
+              "size": 232
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C019/native-01/receipt.json",
+              "sha256": "57189f5455a8691ae1a7616dbadae79808ab2c981514ed0852dd8fc3ad525a59",
+              "size": 866
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "cb051b3d0d0fda98ceba9ea38aba42805ebc5e9ba02649fa4768ed830623d696",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "9bcc683639d029a297b5aea01dc0380ae751439d86abf41ee79ff49f081aafe7",
+          "stderr_sha256": null,
+          "receipt_sha256": "d5a977005697d33b9b650487eb42e7131be33ed6d5ce5f3d233a72e0460a9c47",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C019/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "cb051b3d0d0fda98ceba9ea38aba42805ebc5e9ba02649fa4768ed830623d696",
+              "size": 201
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C019/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C019/native-02/native-history.bin",
+              "sha256": "9bcc683639d029a297b5aea01dc0380ae751439d86abf41ee79ff49f081aafe7",
+              "size": 232
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C019/native-02/receipt.json",
+              "sha256": "aeaaaf0877ef29bbb12b4d24f3d1a87d476450fefbb052b04e8b05483e99e5e7",
+              "size": 866
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "cb051b3d0d0fda98ceba9ea38aba42805ebc5e9ba02649fa4768ed830623d696",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "f2a91be896648e1580c18989c5071bb94d04feaed41a2a8f32e5ab95265adfcc",
+          "stderr_sha256": "153284aa7b2566825ca15d883aa3936ebad00002cb5033a268e9c5357c280927",
+          "receipt_sha256": "b0491ec1e294e1cd8213d592bd29ddaec5a75922b4b7315a20dda14a16459735",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C019/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "cb051b3d0d0fda98ceba9ea38aba42805ebc5e9ba02649fa4768ed830623d696",
+              "size": 201
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C019/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C019/public-01/public-stdout.bin",
+              "sha256": "f2a91be896648e1580c18989c5071bb94d04feaed41a2a8f32e5ab95265adfcc",
+              "size": 110
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C019/public-01/public-stderr.bin",
+              "sha256": "153284aa7b2566825ca15d883aa3936ebad00002cb5033a268e9c5357c280927",
+              "size": 218
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C019/public-01/receipt.json",
+              "sha256": "2c590f122b27e4eb8d2a58685f950ada90c623d8742b06572ac49bdd25fb35c4",
+              "size": 1275
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetg-method-shortcircuit",
+      "fixture_id": "cbgsetg-method-shortcircuit",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETG"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct_shortcircuit",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "3280261b10fde4a5e492541d4297568342bb08cf2b1f28b98a0ad47888ccf637",
+          "stderr_sha256": null,
+          "receipt_sha256": "687ff925fbfef823733a539c636550c990a098e1ff784b580fa233f2a1bec32e",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C020/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+              "size": 200
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C020/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C020/native-01/native-history.bin",
+              "sha256": "3280261b10fde4a5e492541d4297568342bb08cf2b1f28b98a0ad47888ccf637",
+              "size": 236
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C020/native-01/receipt.json",
+              "sha256": "5a57cd4857626d1713e6d562871dbc59290baf7a7c4551088d691654d47d5fb0",
+              "size": 868
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "3280261b10fde4a5e492541d4297568342bb08cf2b1f28b98a0ad47888ccf637",
+          "stderr_sha256": null,
+          "receipt_sha256": "acda7a4c0217a57172245456b285a23e1974763044023507094f07ffcd400d07",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C020/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+              "size": 200
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C020/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C020/native-02/native-history.bin",
+              "sha256": "3280261b10fde4a5e492541d4297568342bb08cf2b1f28b98a0ad47888ccf637",
+              "size": 236
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C020/native-02/receipt.json",
+              "sha256": "feecd5ba5b0db40619819f20af37de81793960311b996d2b66bb46d50fe9a5d7",
+              "size": 868
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "b94613af91a84f12adaca93e5e4ab479e39a8eeca88b2fb233b1eb24974e6361",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "d19c2e3867838d289cceff87076c1489991ac54b8a8604a05d0e05b901bed768",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C020/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "8dd4eb35634fd4941201fe32cd8dbe4d292a992e6778868c460a707075af6b61",
+              "size": 200
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C020/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C020/public-01/public-stdout.bin",
+              "sha256": "b94613af91a84f12adaca93e5e4ab479e39a8eeca88b2fb233b1eb24974e6361",
+              "size": 150
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C020/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C020/public-01/receipt.json",
+              "sha256": "a729a2e6c74e1a2e2a4ca6b5e71827042d0e0d81d2c45e0096d4a29e2b4ca2b3",
+              "size": 1277
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetsprite-expr-shortcircuit",
+      "fixture_id": "cbgsetsprite-expr-shortcircuit",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETSPRITE"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct_shortcircuit",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "2d4fe05284027c8c4d0470987df50a4f2da9e340091740cc85e477cde54c94ea",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "ad0b7da8416d2e175a4aced98e76ee2c105903621118a98a83768d772e96b88e",
+          "stderr_sha256": null,
+          "receipt_sha256": "54a569be347742963ea5f483ababce23366b1fa7cf739c42d4b7c155e68760fa",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C021/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2d4fe05284027c8c4d0470987df50a4f2da9e340091740cc85e477cde54c94ea",
+              "size": 218
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C021/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C021/native-01/native-history.bin",
+              "sha256": "ad0b7da8416d2e175a4aced98e76ee2c105903621118a98a83768d772e96b88e",
+              "size": 242
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C021/native-01/receipt.json",
+              "sha256": "99bb097bddabb8f52f6e02a202a840e1937a73c50706d99e1a3b5fea11c1975f",
+              "size": 871
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "2d4fe05284027c8c4d0470987df50a4f2da9e340091740cc85e477cde54c94ea",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "ad0b7da8416d2e175a4aced98e76ee2c105903621118a98a83768d772e96b88e",
+          "stderr_sha256": null,
+          "receipt_sha256": "0329546bc4e05d55f48cf8fb9515baf3da09c661592a29249e6c3710117eec7d",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C021/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2d4fe05284027c8c4d0470987df50a4f2da9e340091740cc85e477cde54c94ea",
+              "size": 218
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C021/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C021/native-02/native-history.bin",
+              "sha256": "ad0b7da8416d2e175a4aced98e76ee2c105903621118a98a83768d772e96b88e",
+              "size": 242
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C021/native-02/receipt.json",
+              "sha256": "3bad7a7ca0b406db87bc22a5e4d26b37e43e6c6aa6361d08dd9703d7b036bb0a",
+              "size": 871
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "2d4fe05284027c8c4d0470987df50a4f2da9e340091740cc85e477cde54c94ea",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "78ebda66478de527cd976104ab672a8cc3795668df1c52537709579815f6037a",
+          "stderr_sha256": "1d433c76ac14f1899dd5b2f3a671bbf78a45e9c159787aa6dee8782d55a9de2c",
+          "receipt_sha256": "1949a3a25dc64ccb8088f0088bf3f5167b50cc7d773dcee7a9b3cffca17aa430",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C021/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2d4fe05284027c8c4d0470987df50a4f2da9e340091740cc85e477cde54c94ea",
+              "size": 218
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C021/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C021/public-01/public-stdout.bin",
+              "sha256": "78ebda66478de527cd976104ab672a8cc3795668df1c52537709579815f6037a",
+              "size": 115
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C021/public-01/public-stderr.bin",
+              "sha256": "1d433c76ac14f1899dd5b2f3a671bbf78a45e9c159787aa6dee8782d55a9de2c",
+              "size": 223
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C021/public-01/receipt.json",
+              "sha256": "2120570682d7d1a8b7583f2fda3ab4c0de17b1c0fa6c9ccfafa62ca22531e8ad",
+              "size": 1280
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetsprite-method-shortcircuit",
+      "fixture_id": "cbgsetsprite-method-shortcircuit",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETSPRITE"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct_shortcircuit",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "13ba36b2e13eba90b3aee3f1f5f55a0a1ea8e90af15e5623c72efd56816e1c14",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "1dab6e09cfaea3b2fba6fb45d7483a4a2914d5f2400818e6118577abbb3c5bd2",
+          "stderr_sha256": null,
+          "receipt_sha256": "f7add521eb251f3eba5a7f55f9f2326ab30b42dd8fd2bfbfe4ac0d4d00fff269",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C022/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "13ba36b2e13eba90b3aee3f1f5f55a0a1ea8e90af15e5623c72efd56816e1c14",
+              "size": 217
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C022/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C022/native-01/native-history.bin",
+              "sha256": "1dab6e09cfaea3b2fba6fb45d7483a4a2914d5f2400818e6118577abbb3c5bd2",
+              "size": 246
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C022/native-01/receipt.json",
+              "sha256": "dc430b08c831239e65eadd6ac5d9639777d9e9f3b4b6d6e274ef1244746b92b9",
+              "size": 873
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "13ba36b2e13eba90b3aee3f1f5f55a0a1ea8e90af15e5623c72efd56816e1c14",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "1dab6e09cfaea3b2fba6fb45d7483a4a2914d5f2400818e6118577abbb3c5bd2",
+          "stderr_sha256": null,
+          "receipt_sha256": "daaf3255acd2fb4a851c2096aef76eff0e3f68fde0599b80863440912869ed43",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C022/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "13ba36b2e13eba90b3aee3f1f5f55a0a1ea8e90af15e5623c72efd56816e1c14",
+              "size": 217
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C022/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C022/native-02/native-history.bin",
+              "sha256": "1dab6e09cfaea3b2fba6fb45d7483a4a2914d5f2400818e6118577abbb3c5bd2",
+              "size": 246
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C022/native-02/receipt.json",
+              "sha256": "4b77cc74f8de54f324d90e017a639d45c02a859c50c05571fbe3b7c680869999",
+              "size": 873
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "13ba36b2e13eba90b3aee3f1f5f55a0a1ea8e90af15e5623c72efd56816e1c14",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "5ec9966f57642350088971362ad15751d0e526a6301b7fe3b9274723b3112a79",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "57d72b541f4d8f4d268d0e674c11ba040859fd6e9fa577bc4effb0db2bc0cedb",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C022/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "13ba36b2e13eba90b3aee3f1f5f55a0a1ea8e90af15e5623c72efd56816e1c14",
+              "size": 217
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C022/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C022/public-01/public-stdout.bin",
+              "sha256": "5ec9966f57642350088971362ad15751d0e526a6301b7fe3b9274723b3112a79",
+              "size": 162
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C022/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C022/public-01/receipt.json",
+              "sha256": "b417e126be11abc6c507db0b733550dd11391f0321016ff84c493b61434411fd",
+              "size": 1282
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetbuttonsprite-expr-shortcircuit",
+      "fixture_id": "cbgsetbuttonsprite-expr-shortcircuit",
+      "roles": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBUTTONSPRITE"
+        }
+      ],
+      "case_form": "expr",
+      "case_kind": "direct_shortcircuit",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=0 R=701 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_FUNCTION",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "2410336af3df2d5f85462f7ec0e148749ece3eeba7e9db55d0498f746b12dc90",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "c239dfe7c0a854628a686b0686860bce04acf081a835c12f4105ea97fd9d2286",
+          "stderr_sha256": null,
+          "receipt_sha256": "9025ec0fc800ba4e5220af701f68e0804e0526e21af8ffa653c08bedee4114b0",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C023/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2410336af3df2d5f85462f7ec0e148749ece3eeba7e9db55d0498f746b12dc90",
+              "size": 247
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C023/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C023/native-01/native-history.bin",
+              "sha256": "c239dfe7c0a854628a686b0686860bce04acf081a835c12f4105ea97fd9d2286",
+              "size": 254
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C023/native-01/receipt.json",
+              "sha256": "adce814eadf4768d6e3d6bca326cf42669b1d1b7ea947924f535b156f1142feb",
+              "size": 877
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "2410336af3df2d5f85462f7ec0e148749ece3eeba7e9db55d0498f746b12dc90",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "c239dfe7c0a854628a686b0686860bce04acf081a835c12f4105ea97fd9d2286",
+          "stderr_sha256": null,
+          "receipt_sha256": "03756108736ec7c0fba15a0218e87feaeb3bc33583f858adfdfc3723c222e850",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C023/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2410336af3df2d5f85462f7ec0e148749ece3eeba7e9db55d0498f746b12dc90",
+              "size": 247
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C023/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C023/native-02/native-history.bin",
+              "sha256": "c239dfe7c0a854628a686b0686860bce04acf081a835c12f4105ea97fd9d2286",
+              "size": 254
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C023/native-02/receipt.json",
+              "sha256": "5c62dba0862ab22ff1824f405f0126d0bc87222e3b8ef8910096cb223cdbfeef",
+              "size": 877
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "2410336af3df2d5f85462f7ec0e148749ece3eeba7e9db55d0498f746b12dc90",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "1f73d312c75bf209aebb59cde5a18c7c665105b0382013fc48c1869602f376fa",
+          "stderr_sha256": "dc879153face7c237b98e0a0a5f5505ca7bcfcc98a5d0356c22381d8126558da",
+          "receipt_sha256": "5c37f2071f4ce3e608d434f1bd2c6e326dc583e0f172adcd2271f1b5a34b520b",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_FUNCTION",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C023/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "2410336af3df2d5f85462f7ec0e148749ece3eeba7e9db55d0498f746b12dc90",
+              "size": 247
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C023/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C023/public-01/public-stdout.bin",
+              "sha256": "1f73d312c75bf209aebb59cde5a18c7c665105b0382013fc48c1869602f376fa",
+              "size": 121
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C023/public-01/public-stderr.bin",
+              "sha256": "dc879153face7c237b98e0a0a5f5505ca7bcfcc98a5d0356c22381d8126558da",
+              "size": 229
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C023/public-01/receipt.json",
+              "sha256": "55ede9726a6b5089aee87c56265bd21914dcafb304d4e7f1eb44d87f713a3d39",
+              "size": 1286
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "UIQUERY236_cbgsetbuttonsprite-method-shortcircuit",
+      "fixture_id": "cbgsetbuttonsprite-method-shortcircuit",
+      "roles": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBUTTONSPRITE"
+        }
+      ],
+      "case_form": "method",
+      "case_kind": "direct_shortcircuit",
+      "recorded_verdict": "different_scoped",
+      "verdict_scope": "saved_case_not_target_acceptance",
+      "native_01_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_02_selected_rows": [
+        "OBS236 V=702 R=0 A=0",
+        "DONE236"
+      ],
+      "native_repeat_raw_equal_recorded": true,
+      "public_error_recorded": "E_LOAD",
+      "public_target_reach": "recorded_resolution_error_see_case_scope",
+      "unobserved": [
+        "GUI pixels",
+        "click/mouse events",
+        "entire background state"
+      ],
+      "modes": [
+        {
+          "mode": "native-01",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "e0b457303a7209fa59a7c4f7cab019f1748f3960027e53ab04e3da1d795281f9",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "8a7d43aed0013c885c66e1c9106ed2cdcfc68fe80256f5e45b0e710767e85095",
+          "stderr_sha256": null,
+          "receipt_sha256": "0c7d86e402d490672f75dd2a99d549211f7d3b4b449d7463a8512d55a4a72ac0",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C024/native-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e0b457303a7209fa59a7c4f7cab019f1748f3960027e53ab04e3da1d795281f9",
+              "size": 246
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C024/native-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C024/native-01/native-history.bin",
+              "sha256": "8a7d43aed0013c885c66e1c9106ed2cdcfc68fe80256f5e45b0e710767e85095",
+              "size": 258
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C024/native-01/receipt.json",
+              "sha256": "f74521d375f5a327f0dbad6e997738f301f81d3231d2f3b9cd63d2596bbf5ff0",
+              "size": 879
+            }
+          }
+        },
+        {
+          "mode": "native-02",
+          "input_identity_basis": "native_probe_declared_fixture_and_config",
+          "fixture_sha256": "e0b457303a7209fa59a7c4f7cab019f1748f3960027e53ab04e3da1d795281f9",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "native_history_log",
+          "raw_sha256": "8a7d43aed0013c885c66e1c9106ed2cdcfc68fe80256f5e45b0e710767e85095",
+          "stderr_sha256": null,
+          "receipt_sha256": "70ad73d4415ffe899ea5b91df303ae3b5ae630e3035b1613bf63ff35dae31797",
+          "native_natural_exit": "not_observed_cleanup_separate",
+          "recorded_public_returncode": null,
+          "recorded_public_error": null,
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C024/native-02/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e0b457303a7209fa59a7c4f7cab019f1748f3960027e53ab04e3da1d795281f9",
+              "size": 246
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C024/native-02/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C024/native-02/native-history.bin",
+              "sha256": "8a7d43aed0013c885c66e1c9106ed2cdcfc68fe80256f5e45b0e710767e85095",
+              "size": 258
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C024/native-02/receipt.json",
+              "sha256": "a8a818195849a486a1a96938623855111f30b629433b3530c472397d44b3c660",
+              "size": 879
+            }
+          }
+        },
+        {
+          "mode": "public-01",
+          "input_identity_basis": "public_receipt_before_after",
+          "fixture_sha256": "e0b457303a7209fa59a7c4f7cab019f1748f3960027e53ab04e3da1d795281f9",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "raw_kind": "public_verified_stdout",
+          "raw_sha256": "7d46c2c6ac02bb6357683bea00e955a30f05bb1133f414214cad5d9a00a805f6",
+          "stderr_sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+          "receipt_sha256": "d70a51438a549b3b5255916736a99357957f605025db966efb6d94eb42296756",
+          "native_natural_exit": "not_applicable",
+          "recorded_public_returncode": 1,
+          "recorded_public_error": "E_LOAD",
+          "source_receipt_included": false,
+          "source_receipt_sha256_scope": "original_receipt_not_included",
+          "evidence": {
+            "fixture": {
+              "status": "included",
+              "path": "assets/C024/public-01/inputs/ERB/SEARCHBOUND01.ERB",
+              "sha256": "e0b457303a7209fa59a7c4f7cab019f1748f3960027e53ab04e3da1d795281f9",
+              "size": 246
+            },
+            "config": {
+              "status": "included",
+              "path": "assets/C024/public-01/inputs/emuera.config",
+              "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+              "size": 2164
+            },
+            "raw": {
+              "status": "included",
+              "path": "assets/C024/public-01/public-stdout.bin",
+              "sha256": "7d46c2c6ac02bb6357683bea00e955a30f05bb1133f414214cad5d9a00a805f6",
+              "size": 185
+            },
+            "stderr": {
+              "status": "included",
+              "path": "assets/C024/public-01/public-stderr.bin",
+              "sha256": "f974ab57ab4f622c99f9cbc8067def4f3a495c7b59645a2bdb158a0aa2a7fe97",
+              "size": 88
+            },
+            "derived_receipt": {
+              "status": "included",
+              "path": "assets/C024/public-01/receipt.json",
+              "sha256": "9b837bab64dd2e2f96ac4789597785cdba410b2e16dfce0d2c16ea6d1195ae15",
+              "size": 1288
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_EVENT_MISSING_RESULT_20261116",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "939055c3aa874f42717cd37d70e8ef975aaffb08843ded3b0cbedf2567afa06f",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "939055c3aa874f42717cd37d70e8ef975aaffb08843ded3b0cbedf2567afa06f",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "051446eeed166e5d134c7d0cd6ef0ed8b9700733c59ee3855ca1ed22f57009ba",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "EVENT_MISSING_RESULT",
+  "source_declared_mode": "public-01"
+}

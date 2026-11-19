@@ -1,0 +1,3358 @@
+{
+  "schema": "graphics-38-historical-and-followup-v1",
+  "scope": "38 historical cases; 2 later separate same-input Native observations",
+  "historical_case_verdicts_changed": 0,
+  "new_cross_engine_verdicts": 0,
+  "cases": [
+    {
+      "case_id": "GQUERY230_graphics-expression-created",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GWIDTH"
+        },
+        {
+          "kind": "expression_function",
+          "name": "GHEIGHT"
+        },
+        {
+          "kind": "expression_function",
+          "name": "GGETCOLOR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "graphics-expression-created: UNOBSERVED_SETUP_FAILURE. Native actual selected values/state/order repeat. Public stops at setup/load before positive target state; public positive pixel/value/eval unverified, not target mismatch. In the related method-form case, the existing parent correction reads the wrapped raw marker EVAL1 CRLF23 as 123.",
+        "observation": "graphics-expression-created: UNOBSERVED_SETUP_FAILURE. Native actual selected values/state/order repeat. Public stops at setup/load before positive target state; public positive pixel/value/eval unverified, not target mismatch. In the related method-form case, the existing parent correction reads the wrapped raw marker EVAL1 CRLF23 as 123.",
+        "limitations": "12fixtures Native24/public12;8direct missing controls pluspositive graphics/resource cases. Public UNKNOWN_FUNCTION/E_FUNCTION vs E_LOAD separated from setup stops. Native32selected observations perrepeat, corrected only2truncatedmarkers. Sprite encodedcolors follow original precedence/Int64 shifts, not standardARGB. No GUI/pixel rendering/all ranges/negativey/fullgraphics closure;natural exit unobserved,own cleanup.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C01/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "d13453c5010382fdf43bc2fe4c7a858829fdfa7f98dd13b0eb8ffbc52b6f9cf3",
+          "size": 1803
+        },
+        "config": {
+          "path": "cases/C01/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C01/original/raw/native-01.bin",
+            "sha256": "10902f96a1327dd068872553074d223e03ae7fbe291ccf74ae3c683ace1c7705",
+            "size": 2968
+          },
+          {
+            "path": "cases/C01/original/raw/native-02.bin",
+            "sha256": "10902f96a1327dd068872553074d223e03ae7fbe291ccf74ae3c683ace1c7705",
+            "size": 2968
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 17,
+            "targets": [
+              "GWIDTH"
+            ],
+            "text": "B=GWIDTH(QID(230))"
+          },
+          {
+            "line": 23,
+            "targets": [
+              "GHEIGHT"
+            ],
+            "text": "B=GHEIGHT(QID(230))"
+          },
+          {
+            "line": 29,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "B=GGETCOLOR(QID(230),QX(0),QY(0))"
+          },
+          {
+            "line": 35,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "B=GGETCOLOR(QID(230),QX(3),QY(2))"
+          },
+          {
+            "line": 41,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "B=GGETCOLOR(QID(230),QX(-1),QY(0))"
+          },
+          {
+            "line": 47,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "B=GGETCOLOR(QID(230),QX(4),QY(0))"
+          },
+          {
+            "line": 53,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "B=GGETCOLOR(QID(230),QX(0),QY(3))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS230 1 width_created VALUE=4 RESULT=701 EVAL=1",
+          "OBS230 2 height_created VALUE=3 RESULT=701 EVAL=1",
+          "OBS230 3 fill_origin VALUE=4279312947 RESULT=701 EVAL=123",
+          "OBS230 4 fill_last VALUE=4279312947 RESULT=701 EVAL=123",
+          "OBS230 5 x_negative VALUE=-1 RESULT=701 EVAL=123",
+          "OBS230 6 x_equal_width VALUE=-1 RESULT=701 EVAL=123",
+          "OBS230 7 y_equal_height VALUE=-1 RESULT=701 EVAL=123"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GQUERY230_graphics-method-created",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GWIDTH"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "GHEIGHT"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "GGETCOLOR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "graphics-method-created: UNOBSERVED_LOAD_REJECTED_BEFORE_SETUP. Native actual selected values/state/order repeat. Public stops at setup/load before positive target state; public positive pixel/value/eval unverified, not target mismatch. The existing parent correction reads the wrapped raw marker EVAL1 CRLF23 as 123.",
+        "observation": "graphics-method-created: UNOBSERVED_LOAD_REJECTED_BEFORE_SETUP. Native actual selected values/state/order repeat. Public stops at setup/load before positive target state; public positive pixel/value/eval unverified, not target mismatch. The existing parent correction reads the wrapped raw marker EVAL1 CRLF23 as 123.",
+        "limitations": "12fixtures Native24/public12;8direct missing controls pluspositive graphics/resource cases. Public UNKNOWN_FUNCTION/E_FUNCTION vs E_LOAD separated from setup stops. Native32selected observations perrepeat, corrected only2truncatedmarkers. Sprite encodedcolors follow original precedence/Int64 shifts, not standardARGB. No GUI/pixel rendering/all ranges/negativey/fullgraphics closure;natural exit unobserved,own cleanup.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C02/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "4cb7df549f2cb9e9e5c9cf37f27dbad06248c15fbf7af1df68c85d769623315d",
+          "size": 1848
+        },
+        "config": {
+          "path": "cases/C02/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C02/original/raw/native-01.bin",
+            "sha256": "7f2d236eb32c32aa29b042c4d1dece1b23f89397850899d43240345c009071ba",
+            "size": 2978
+          },
+          {
+            "path": "cases/C02/original/raw/native-02.bin",
+            "sha256": "7f2d236eb32c32aa29b042c4d1dece1b23f89397850899d43240345c009071ba",
+            "size": 2978
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 17,
+            "targets": [
+              "GWIDTH"
+            ],
+            "text": "GWIDTH QID(230)"
+          },
+          {
+            "line": 24,
+            "targets": [
+              "GHEIGHT"
+            ],
+            "text": "GHEIGHT QID(230)"
+          },
+          {
+            "line": 31,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "GGETCOLOR QID(230),QX(0),QY(0)"
+          },
+          {
+            "line": 38,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "GGETCOLOR QID(230),QX(3),QY(2)"
+          },
+          {
+            "line": 45,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "GGETCOLOR QID(230),QX(-1),QY(0)"
+          },
+          {
+            "line": 52,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "GGETCOLOR QID(230),QX(4),QY(0)"
+          },
+          {
+            "line": 59,
+            "targets": [
+              "GGETCOLOR"
+            ],
+            "text": "GGETCOLOR QID(230),QX(0),QY(3)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS230 1 width_created VALUE=4 RESULT=4 EVAL=1",
+          "OBS230 2 height_created VALUE=3 RESULT=3 EVAL=1",
+          "親訂正: 子票EVAL=1、原rawは EVAL=1 CRLF 23 → 123（当該1ブロックのみ）",
+          "OBS230 3 fill_origin VALUE=4279312947 RESULT=4279312947 EVAL=123",
+          "OBS230 4 fill_last VALUE=4279312947 RESULT=4279312947 EVAL=123",
+          "OBS230 5 x_negative VALUE=-1 RESULT=-1 EVAL=123",
+          "OBS230 6 x_equal_width VALUE=-1 RESULT=-1 EVAL=123",
+          "OBS230 7 y_equal_height VALUE=-1 RESULT=-1 EVAL=123"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gdispose-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDISPOSE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdispose-expr-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "observation": "gdispose-expr-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C03/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "902167c2d4affae81246a27b89f978fca3405931805c33341a797c0a8c469bf1",
+          "size": 880
+        },
+        "config": {
+          "path": "cases/C03/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C03/original/raw/native-01.bin",
+            "sha256": "4245b14a198cd400aa3e69a12b36dd5864f005838bb954874746f8867c49c9bb",
+            "size": 1266
+          },
+          {
+            "path": "cases/C03/original/raw/native-02.bin",
+            "sha256": "4245b14a198cd400aa3e69a12b36dd5864f005838bb954874746f8867c49c9bb",
+            "size": 1266
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 12,
+            "targets": [
+              "GDISPOSE"
+            ],
+            "text": "LOCAL = GDISPOSE(231)"
+          },
+          {
+            "line": 17,
+            "targets": [
+              "GDISPOSE"
+            ],
+            "text": "LOCAL = GDISPOSE(231)"
+          },
+          {
+            "line": 27,
+            "targets": [
+              "GDISPOSE"
+            ],
+            "text": "LOCAL = GDISPOSE(231)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "CREATE=1",
+          "CREATED_STATE=1,3,2",
+          "DISPOSE=1",
+          "AFTER_DISPOSE_STATE=0,0,0",
+          "REPEAT=0",
+          "AFTER_REPEAT_STATE=0,0,0",
+          "RECREATE=1",
+          "RECREATED_STATE=1,2,1",
+          "DISPOSE_RECREATED=1",
+          "FINAL_STATE=0,0,0",
+          "DONE"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gdispose-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDISPOSE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdispose-method-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "observation": "gdispose-method-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C04/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "820633ab6b758e22c781018aec37b5befc63eec89ccee5432881f744c0e1e322",
+          "size": 948
+        },
+        "config": {
+          "path": "cases/C04/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C04/original/raw/native-01.bin",
+            "sha256": "f0bf37a24f3891dd1301c33161b667d2c76926ba76388a2591fd4b898dcec7e6",
+            "size": 1270
+          },
+          {
+            "path": "cases/C04/original/raw/native-02.bin",
+            "sha256": "f0bf37a24f3891dd1301c33161b667d2c76926ba76388a2591fd4b898dcec7e6",
+            "size": 1270
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDISPOSE"
+            ],
+            "text": "GDISPOSE 231"
+          },
+          {
+            "line": 20,
+            "targets": [
+              "GDISPOSE"
+            ],
+            "text": "GDISPOSE 231"
+          },
+          {
+            "line": 32,
+            "targets": [
+              "GDISPOSE"
+            ],
+            "text": "GDISPOSE 231"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "CREATE=1",
+          "CREATED_STATE=1,3,2",
+          "DISPOSE=1",
+          "AFTER_DISPOSE_STATE=0,0,0",
+          "REPEAT=0",
+          "AFTER_REPEAT_STATE=0,0,0",
+          "RECREATE=1",
+          "RECREATED_STATE=1,2,1",
+          "DISPOSE_RECREATED=1",
+          "FINAL_STATE=0,0,0",
+          "DONE"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gclear-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GCLEAR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gclear-expr-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "observation": "gclear-expr-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C05/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "cd6a452a066e305f47fe7fb57ac8efc1273387698db51378829dbb9fa648a886",
+          "size": 988
+        },
+        "config": {
+          "path": "cases/C05/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C05/original/raw/native-01.bin",
+            "sha256": "350f0b5abfc601797cb4366dab0fcc539fe21a524480cac9e11351a168bcbaa9",
+            "size": 1396
+          },
+          {
+            "path": "cases/C05/original/raw/native-02.bin",
+            "sha256": "350f0b5abfc601797cb4366dab0fcc539fe21a524480cac9e11351a168bcbaa9",
+            "size": 1396
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 14,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "LOCAL = GCLEAR(231,4279312947)"
+          },
+          {
+            "line": 19,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "LOCAL = GCLEAR(231,4279312947)"
+          },
+          {
+            "line": 24,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "LOCAL = GCLEAR(231,0)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "CREATE=1",
+          "CREATED_STATE=1,3,2",
+          "INITIAL_PIXELS=0,0,0",
+          "CLEAR_OPAQUE=1",
+          "OPAQUE_PIXELS=4279312947,4279312947,4279312947",
+          "CLEAR_REPEAT=1",
+          "REPEAT_PIXELS=4279312947,4279312947,4279312947",
+          "CLEAR_TRANSPARENT=1",
+          "TRANSPARENT_PIXELS=0,0,0",
+          "FINAL_STATE=1,3,2",
+          "DONE"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gclear-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GCLEAR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gclear-method-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "observation": "gclear-method-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C06/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "03497d732f08ca4b2db8c003ef0074daf57c9b55f0c399e6537edf656a9e0517",
+          "size": 1056
+        },
+        "config": {
+          "path": "cases/C06/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C06/original/raw/native-01.bin",
+            "sha256": "8fdbef08ce20e6bb32b8675d7e8f80141ceaf2a76a12343cf529cf89e82ad4bd",
+            "size": 1400
+          },
+          {
+            "path": "cases/C06/original/raw/native-02.bin",
+            "sha256": "8fdbef08ce20e6bb32b8675d7e8f80141ceaf2a76a12343cf529cf89e82ad4bd",
+            "size": 1400
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 15,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "GCLEAR 231,4279312947"
+          },
+          {
+            "line": 22,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "GCLEAR 231,4279312947"
+          },
+          {
+            "line": 29,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "GCLEAR 231,0"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "CREATE=1",
+          "CREATED_STATE=1,3,2",
+          "INITIAL_PIXELS=0,0,0",
+          "CLEAR_OPAQUE=1",
+          "OPAQUE_PIXELS=4279312947,4279312947,4279312947",
+          "CLEAR_REPEAT=1",
+          "REPEAT_PIXELS=4279312947,4279312947,4279312947",
+          "CLEAR_TRANSPARENT=1",
+          "TRANSPARENT_PIXELS=0,0,0",
+          "FINAL_STATE=1,3,2",
+          "DONE"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gsetcolor-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GSETCOLOR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetcolor-expr-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "observation": "gsetcolor-expr-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C07/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "c837caafe13d29dc48a5148b973bf9de32ef6fd1cd048d60d081fbebcb2976d2",
+          "size": 1123
+        },
+        "config": {
+          "path": "cases/C07/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C07/original/raw/native-01.bin",
+            "sha256": "469418c1e5ae6c9a064f898259e24647e4c092dee32fb24ccb4475b4e9b6db90",
+            "size": 1464
+          },
+          {
+            "path": "cases/C07/original/raw/native-02.bin",
+            "sha256": "469418c1e5ae6c9a064f898259e24647e4c092dee32fb24ccb4475b4e9b6db90",
+            "size": 1464
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 14,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "LOCAL = GSETCOLOR(231,4279312947,1,1)"
+          },
+          {
+            "line": 19,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "LOCAL = GSETCOLOR(231,4294967295,1,1)"
+          },
+          {
+            "line": 24,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "LOCAL = GSETCOLOR(231,0,-1,0)"
+          },
+          {
+            "line": 27,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "LOCAL = GSETCOLOR(231,0,3,0)"
+          },
+          {
+            "line": 30,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "LOCAL = GSETCOLOR(231,0,0,2)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "CREATE=1",
+          "CREATED_STATE=1,3,2",
+          "INITIAL_PIXELS=0,0,0",
+          "SET=1",
+          "SET_PIXELS=0,4279312947,0",
+          "REPEAT=1",
+          "REPEAT_PIXELS=0,4294967295,0",
+          "X_NEG=0",
+          "X_WIDTH=0",
+          "Y_HEIGHT=0",
+          "AFTER_BOUNDS_PIXELS=0,4294967295,0",
+          "FINAL_STATE=1,3,2",
+          "DONE"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gsetcolor-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GSETCOLOR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetcolor-method-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "observation": "gsetcolor-method-positive: POSITIVE_NATIVE_ONLY_PUBLIC_SETUP_BLOCKED; public load_time_setup_rejection. Public GCREATE setup rejected; positive target state/pixel parity unobserved.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C08/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "19e9580046d26fcabd44a11c3ad365695142b145cd1a2efb2bd17df7676d4daf",
+          "size": 1235
+        },
+        "config": {
+          "path": "cases/C08/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C08/original/raw/native-01.bin",
+            "sha256": "f21418de3d655a3085d851e2a99bcf0e63a24017f08a5cafcd582709717e41f4",
+            "size": 1468
+          },
+          {
+            "path": "cases/C08/original/raw/native-02.bin",
+            "sha256": "f21418de3d655a3085d851e2a99bcf0e63a24017f08a5cafcd582709717e41f4",
+            "size": 1468
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 15,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "GSETCOLOR 231,4279312947,1,1"
+          },
+          {
+            "line": 22,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "GSETCOLOR 231,4294967295,1,1"
+          },
+          {
+            "line": 29,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "GSETCOLOR 231,0,-1,0"
+          },
+          {
+            "line": 34,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "GSETCOLOR 231,0,3,0"
+          },
+          {
+            "line": 39,
+            "targets": [
+              "GSETCOLOR"
+            ],
+            "text": "GSETCOLOR 231,0,0,2"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "CREATE=1",
+          "CREATED_STATE=1,3,2",
+          "INITIAL_PIXELS=0,0,0",
+          "SET=1",
+          "SET_PIXELS=0,4279312947,0",
+          "REPEAT=1",
+          "REPEAT_PIXELS=0,4294967295,0",
+          "X_NEG=0",
+          "X_WIDTH=0",
+          "Y_HEIGHT=0",
+          "AFTER_BOUNDS_PIXELS=0,4294967295,0",
+          "FINAL_STATE=1,3,2",
+          "DONE"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gclear-expr-missing-invalid-color",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GCLEAR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gclear-expr-missing-invalid-color: NATIVE_ERROR_PATH_INCOMPLETE_PUBLIC_RESOLUTION_GAP_ONLY; public runtime_expression_resolution. Only independent direct target availability gap observed; no returned public target value. Native error diagnostic not observed, retain incomplete boundary attempt without error-match credit.",
+        "observation": "gclear-expr-missing-invalid-color: NATIVE_ERROR_PATH_INCOMPLETE_PUBLIC_RESOLUTION_GAP_ONLY; public runtime_expression_resolution. Only independent direct target availability gap observed; no returned public target value. Native error diagnostic not observed, retain incomplete boundary attempt without error-match credit.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C09/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "25ffa72d95ae96076b0914df3093b5b2b3ed597ed3cdbba3f78733dfdf5beffd",
+          "size": 143
+        },
+        "config": {
+          "path": "cases/C09/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C09/original/raw/native-01.bin",
+            "sha256": "e79c6366645b066b6035249e69ff0eeeb1dc71eb5482bdf3fb8d4876eda30bcb",
+            "size": 558
+          },
+          {
+            "path": "cases/C09/original/raw/native-02.bin",
+            "sha256": "e79c6366645b066b6035249e69ff0eeeb1dc71eb5482bdf3fb8d4876eda30bcb",
+            "size": 558
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 4,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "LOCAL = GCLEAR(231,4294967296)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "BEGIN_",
+          "GRAPHICS231.ERBの4行目",
+          "GCLEAR関数:ColorARGB引数に不適切な値(0x100000000)が指定されました"
+        ],
+        "native_natural_exit": "not_observed",
+        "recorded_claim_vs_raw": {
+          "historical_comparison_claim": "Native diagnostic not observed",
+          "direct_readback": "Both frozen original raw files contain the diagnostic at line 4",
+          "cause": "unknown",
+          "original_verdict_changed": false
+        }
+      },
+      "later_observations": [
+        {
+          "identity": "subsequent independent recorded run",
+          "form": "expr",
+          "fixture": {
+            "path": "cases/C09/followup/inputs/ERB/GRAPHICS231.ERB",
+            "sha256": "25ffa72d95ae96076b0914df3093b5b2b3ed597ed3cdbba3f78733dfdf5beffd",
+            "size": 143
+          },
+          "config": {
+            "path": "cases/C09/followup/inputs/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "native_raw": {
+            "path": "cases/C09/followup/raw/native.bin",
+            "sha256": "e79c6366645b066b6035249e69ff0eeeb1dc71eb5482bdf3fb8d4876eda30bcb",
+            "size": 558
+          },
+          "crop": {
+            "path": "cases/C09/followup/crop.png",
+            "sha256": "f2344decf38dfed2f8384e3352785ba966a5ef34d1185039d0a04c78b1924378",
+            "size": 22768
+          },
+          "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "input_hashes_before_after_equal": true,
+          "csv_input_empty": true,
+          "observed_native_line": 4,
+          "native_diagnostic": "GCLEAR関数:ColorARGB引数に不適切な値(0x100000000)が指定されました",
+          "original_raw_and_followup_raw_byte_equal": true,
+          "same_bytes_do_not_imply_same_attempt": true,
+          "native_natural_exit": "not_observed",
+          "owned_cleanup_reported": true,
+          "crop_record": "source capture receipt matches run PID and image SHA; screenshot was downscaled before crop",
+          "crop_dimensions": [
+            324,
+            81
+          ],
+          "post_error_state": "not_observed",
+          "public_engine_comparison": "not_assessed"
+        }
+      ],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GMUTATE231_gclear-method-missing-invalid-color",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GCLEAR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gclear-method-missing-invalid-color: NATIVE_ERROR_PATH_INCOMPLETE_PUBLIC_RESOLUTION_GAP_ONLY; public load_time_target_line_rejection. Only independent direct target availability gap observed; no returned public target value. Native error diagnostic not observed, retain incomplete boundary attempt without error-match credit.",
+        "observation": "gclear-method-missing-invalid-color: NATIVE_ERROR_PATH_INCOMPLETE_PUBLIC_RESOLUTION_GAP_ONLY; public load_time_target_line_rejection. Only independent direct target availability gap observed; no returned public target value. Native error diagnostic not observed, retain incomplete boundary attempt without error-match credit.",
+        "limitations": "Across the GMUTATE231 case group, Native observations cover image creation, disposal and recreation, three selected points after clear, and selected GSETCOLOR boundaries; these group observations do not establish all pixels or drawing. Each case's own results are recorded in its corresponding Native raw logs. Positive cases have PyEmuera setup failures. The historical classification left two Native error-diagnostic paths unresolved, while the frozen raw records contain diagnostics; the cause of this discrepancy is unknown. Cross-engine state and pixel parity, negative y, all ARGB values, IDs, boundaries and complete graphics behavior remain unverified. Native natural exit was not observed; owned cleanup was recorded.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C10/original/inputs/ERB/GRAPHICS231.ERB",
+          "sha256": "1b83bd68165d7b12898fe7a77d1f01b2a2522429ef84a22fd327c28f2ae694d4",
+          "size": 136
+        },
+        "config": {
+          "path": "cases/C10/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C10/original/raw/native-01.bin",
+            "sha256": "51c9eeb2ffcee4220ec3e4a72a76bb60cf8aadd0df7fa54c7057af6ae899d919",
+            "size": 544
+          },
+          {
+            "path": "cases/C10/original/raw/native-02.bin",
+            "sha256": "51c9eeb2ffcee4220ec3e4a72a76bb60cf8aadd0df7fa54c7057af6ae899d919",
+            "size": 544
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 4,
+            "targets": [
+              "GCLEAR"
+            ],
+            "text": "GCLEAR 231,4294967296"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "BEGIN_",
+          "GRAPHICS231.ERBの4行目",
+          "GCLEAR関数:ColorARGB引数に不適切な値(0x100000000)が指定されました"
+        ],
+        "native_natural_exit": "not_observed",
+        "recorded_claim_vs_raw": {
+          "historical_comparison_claim": "Native diagnostic not observed",
+          "direct_readback": "Both frozen original raw files contain the diagnostic at line 4",
+          "cause": "unknown",
+          "original_verdict_changed": false
+        }
+      },
+      "later_observations": [
+        {
+          "identity": "subsequent independent recorded run",
+          "form": "method",
+          "fixture": {
+            "path": "cases/C10/followup/inputs/ERB/GRAPHICS231.ERB",
+            "sha256": "1b83bd68165d7b12898fe7a77d1f01b2a2522429ef84a22fd327c28f2ae694d4",
+            "size": 136
+          },
+          "config": {
+            "path": "cases/C10/followup/inputs/emuera.config",
+            "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+            "size": 2164
+          },
+          "native_raw": {
+            "path": "cases/C10/followup/raw/native.bin",
+            "sha256": "51c9eeb2ffcee4220ec3e4a72a76bb60cf8aadd0df7fa54c7057af6ae899d919",
+            "size": 544
+          },
+          "crop": {
+            "path": "cases/C10/followup/crop.png",
+            "sha256": "54df28b512f7ec41d2ed3395311d1f638f5591ad946282a16bef7b3a1385eff8",
+            "size": 22668
+          },
+          "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "input_hashes_before_after_equal": true,
+          "csv_input_empty": true,
+          "observed_native_line": 4,
+          "native_diagnostic": "GCLEAR関数:ColorARGB引数に不適切な値(0x100000000)が指定されました",
+          "original_raw_and_followup_raw_byte_equal": true,
+          "same_bytes_do_not_imply_same_attempt": true,
+          "native_natural_exit": "not_observed",
+          "owned_cleanup_reported": true,
+          "crop_record": "source capture receipt matches run PID and image SHA; screenshot was downscaled before crop",
+          "crop_dimensions": [
+            326,
+            83
+          ],
+          "post_error_state": "not_observed",
+          "public_engine_comparison": "not_assessed"
+        }
+      ],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS232_gsave-expression-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GSAVE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsave-expression-positive: Native selected behavior only; public setup failed",
+        "observation": "gsave-expression-positive: Native selected behavior only; public setup failed",
+        "limitations": "GUI and actual Native error diagnostic/post-error state unobserved. Public setup stop is not a target value. {'output': 'raw Native repeats equal; cross-engine diagnostic/output differs', 'state': 'Native selected return/RESULT/RESULTS/existence/dimensions/pixels captured only for returning cases; public unavailable', 'evaluation': 'Native helper sequence captured only after returning calls; public post-error sequence unobserved', 'exception': 'Native invalid-ID error predicted by exact source; runtime diagnostic not exported; public code/location captured', 'GUI': 'unobserved; no screenshots'}",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C11/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "0a9681797f232d6bc1b30c9eae1da040249b7506ccda1ec42a881b166a4347b9",
+          "size": 1628
+        },
+        "config": {
+          "path": "cases/C11/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [
+          {
+            "path": "cases/C11/original/inputs/resources/PIX232.BMP",
+            "sha256": "38ed6e6bf1c90a869cffed28a65fcf7b14c8eb6f0ae95762219f073e05ca5210",
+            "size": 90
+          }
+        ],
+        "native_raw": [
+          {
+            "path": "cases/C11/original/raw/native-01.bin",
+            "sha256": "77227d7a13292fd1a07eb16a6c9cab0d04a1585e82ce1294000739d3f57e5163",
+            "size": 1590
+          },
+          {
+            "path": "cases/C11/original/raw/native-02.bin",
+            "sha256": "77227d7a13292fd1a07eb16a6c9cab0d04a1585e82ce1294000739d3f57e5163",
+            "size": 1590
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 19,
+            "targets": [
+              "GSAVE"
+            ],
+            "text": "B=GSAVE(ZZ232ID(232),ZZ232SLOT(232))"
+          },
+          {
+            "line": 35,
+            "targets": [
+              "GSAVE"
+            ],
+            "text": "B=GSAVE(ZZ232ID(232),ZZ232SLOT(-1))"
+          },
+          {
+            "line": 51,
+            "targets": [
+              "GSAVE"
+            ],
+            "text": "B=GSAVE(ZZ232ID(232),ZZ232SLOT(2147483648))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "SAVE RET=1, R=701, RS=sentinel232, EVAL=12, EXISTS=1, W=4, H=3, P00=4281640448, P32=4283891853",
+          "NEGATIVE_SLOT RET=0, R=701, RS=sentinel232, EVAL=12, EXISTS=1, W=4, H=3, P00=4281640448, P32=4283891853",
+          "OVER_SLOT RET=0, R=701, RS=sentinel232, EVAL=12, EXISTS=1, W=4, H=3, P00=4281640448, P32=4283891853"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS232_gload-expression-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GLOAD"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gload-expression-positive: Native selected behavior only; public setup failed",
+        "observation": "gload-expression-positive: Native selected behavior only; public setup failed",
+        "limitations": "GUI and actual Native error diagnostic/post-error state unobserved. Public setup stop is not a target value. {'output': 'raw Native repeats equal; cross-engine diagnostic/output differs', 'state': 'Native selected return/RESULT/RESULTS/existence/dimensions/pixels captured only for returning cases; public unavailable', 'evaluation': 'Native helper sequence captured only after returning calls; public post-error sequence unobserved', 'exception': 'Native invalid-ID error predicted by exact source; runtime diagnostic not exported; public code/location captured', 'GUI': 'unobserved; no screenshots'}",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C12/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "f3c719c89578c36a24ef9ddbf6c00f0b8a8a9fb74e264cb4f75947cff0115c03",
+          "size": 2158
+        },
+        "config": {
+          "path": "cases/C12/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [
+          {
+            "path": "cases/C12/original/inputs/resources/PIX232.BMP",
+            "sha256": "38ed6e6bf1c90a869cffed28a65fcf7b14c8eb6f0ae95762219f073e05ca5210",
+            "size": 90
+          }
+        ],
+        "native_raw": [
+          {
+            "path": "cases/C12/original/raw/native-01.bin",
+            "sha256": "ba473e782e1956a35253e9e4d3e1b9ad5d0c895f261a11847071896502aeabc3",
+            "size": 2110
+          },
+          {
+            "path": "cases/C12/original/raw/native-02.bin",
+            "sha256": "ba473e782e1956a35253e9e4d3e1b9ad5d0c895f261a11847071896502aeabc3",
+            "size": 2110
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 29,
+            "targets": [
+              "GLOAD"
+            ],
+            "text": "B=GLOAD(ZZ232ID(233),ZZ232SLOT(232))"
+          },
+          {
+            "line": 45,
+            "targets": [
+              "GLOAD"
+            ],
+            "text": "B=GLOAD(ZZ232ID(233),ZZ232SLOT(9999))"
+          },
+          {
+            "line": 61,
+            "targets": [
+              "GLOAD"
+            ],
+            "text": "B=GLOAD(ZZ232ID(234),ZZ232SLOT(-1))"
+          },
+          {
+            "line": 77,
+            "targets": [
+              "GLOAD"
+            ],
+            "text": "B=GLOAD(ZZ232ID(234),ZZ232SLOT(2147483648))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "LOAD RET=1, R=701, RS=sentinel232, EVAL=12, EXISTS=1, W=4, H=3, P00=4281640448, P32=4283891853",
+          "EXISTING RET=0, R=701, RS=sentinel232, EVAL=1, EXISTS=1, W=4, H=3, P00=4281640448, P32=4283891853",
+          "NEGATIVE_SLOT RET=0, R=701, RS=sentinel232, EVAL=12, EXISTS=0, W=0, H=0, P00=-1, P32=-1",
+          "OVER_SLOT RET=0, R=701, RS=sentinel232, EVAL=12, EXISTS=0, W=0, H=0, P00=-1, P32=-1"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gfillrectangle-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GFILLRECTANGLE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gfillrectangle-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gfillrectangle-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C13/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "d3d91061553b2a0aeccdcf7cc813be3ece25663a11b64acf0c916c47a11f59aa",
+          "size": 1860
+        },
+        "config": {
+          "path": "cases/C13/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C13/original/raw/native-01.bin",
+            "sha256": "cdfdde955a929a71d093727dcb3f9fd49f1d7641095722de43cbc6154afa1c41",
+            "size": 2308
+          },
+          {
+            "path": "cases/C13/original/raw/native-02.bin",
+            "sha256": "cdfdde955a929a71d093727dcb3f9fd49f1d7641095722de43cbc6154afa1c41",
+            "size": 2308
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "LOCAL = GFILLRECTANGLE(MARK(1,233),MARK(2,1),MARK(3,1),MARK(4,2),MARK(5,1))"
+          },
+          {
+            "line": 37,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "LOCAL = GFILLRECTANGLE(MARK(1,233),MARK(2,1),MARK(3,1),MARK(4,2),MARK(5,1))"
+          },
+          {
+            "line": 49,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "LOCAL = GFILLRECTANGLE(233,-1,0,2,1)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "OBS_FILL_DEFAULT=1|701|\"sentinel233\"|12345",
+          "OBS_PIX_DEFAULT=0,4278190080,4278190080,0",
+          "OBS_BRUSH_SETUP=1",
+          "OBS_FILL=1|701|\"sentinel233\"|12345",
+          "OBS_PIX_FILL=0,4279312947,4279312947,0",
+          "OBS_CLIP_NEG_X=1|701|\"sentinel233\"|0",
+          "OBS_PIX_CLIP=4279312947,4279312947,4279312947,0",
+          "OBS_STATE_FINAL=1,4,3"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gfillrectangle-expr-zero-width",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GFILLRECTANGLE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gfillrectangle-expr-zero-width: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gfillrectangle-expr-zero-width: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C14/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "eda491015ad776c424f21286acc8c32a96e67f9c93768c8a25663a66010a62b4",
+          "size": 888
+        },
+        "config": {
+          "path": "cases/C14/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C14/original/raw/native-01.bin",
+            "sha256": "5fd6a446cb63c604a838cf5e92f369be33db0321a781ebf2e785dd0dd34b55f0",
+            "size": 1332
+          },
+          {
+            "path": "cases/C14/original/raw/native-02.bin",
+            "sha256": "5fd6a446cb63c604a838cf5e92f369be33db0321a781ebf2e785dd0dd34b55f0",
+            "size": 1332
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "LOCAL = GFILLRECTANGLE(MARK(1,233),MARK(2,0),MARK(3,0),MARK(4,0),MARK(5,1))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "GRAPHICS233.ERBの21行目でエラーが発生しました:Emuera1824+v24",
+          "エラー内容：GFILLRECTANGLE関数:第4引数に不適切な値(0)が指定されました"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gfillrectangle-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GFILLRECTANGLE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gfillrectangle-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gfillrectangle-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C15/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "adfc7d244c5e912ccc8ade3d2228839d69bd6956f96710a3d28cc7e7f4d2455f",
+          "size": 1883
+        },
+        "config": {
+          "path": "cases/C15/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C15/original/raw/native-01.bin",
+            "sha256": "3d71c5cca12a626346c3fa3ca52726f98afc27d034d050c7d20c181d6933cf13",
+            "size": 2300
+          },
+          {
+            "path": "cases/C15/original/raw/native-02.bin",
+            "sha256": "3d71c5cca12a626346c3fa3ca52726f98afc27d034d050c7d20c181d6933cf13",
+            "size": 2300
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "GFILLRECTANGLE MARK(1,233),MARK(2,1),MARK(3,1),MARK(4,2),MARK(5,1)"
+          },
+          {
+            "line": 38,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "GFILLRECTANGLE MARK(1,233),MARK(2,1),MARK(3,1),MARK(4,2),MARK(5,1)"
+          },
+          {
+            "line": 51,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "GFILLRECTANGLE 233,-1,0,2,1"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "OBS_FILL_DEFAULT=1|1|\"sentinel233\"|12345",
+          "OBS_PIX_DEFAULT=0,4278190080,4278190080,0",
+          "OBS_BRUSH_SETUP=1",
+          "OBS_FILL=1|1|\"sentinel233\"|12345",
+          "OBS_PIX_FILL=0,4279312947,4279312947,0",
+          "OBS_CLIP_NEG_X=1|1|\"sentinel233\"|0",
+          "OBS_PIX_CLIP=4279312947,4279312947,4279312947,0",
+          "OBS_STATE_FINAL=1,4,3"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gfillrectangle-method-zero-width",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GFILLRECTANGLE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gfillrectangle-method-zero-width: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gfillrectangle-method-zero-width: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C16/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "84e465f059fc9bfb8386ce471dd1ccda5080eda25a4d3d28563fff527f83762e",
+          "size": 897
+        },
+        "config": {
+          "path": "cases/C16/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C16/original/raw/native-01.bin",
+            "sha256": "95b90ebc93abb5b4dc2c12f6ed32fbc0e1c61214e783b35e700f1d3bb3c4a2f4",
+            "size": 1318
+          },
+          {
+            "path": "cases/C16/original/raw/native-02.bin",
+            "sha256": "95b90ebc93abb5b4dc2c12f6ed32fbc0e1c61214e783b35e700f1d3bb3c4a2f4",
+            "size": 1318
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GFILLRECTANGLE"
+            ],
+            "text": "GFILLRECTANGLE MARK(1,233),MARK(2,0),MARK(3,0),MARK(4,0),MARK(5,1)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "GRAPHICS233.ERBの21行目でエラーが発生しました:Emuera1824+v24",
+          "エラー内容：GFILLRECTANGLE関数:第4引数に不適切な値(0)が指定されました"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gsetbrush-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GSETBRUSH"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetbrush-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gsetbrush-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C17/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "131dac9fe3b89585e2df4f4853c67ee8c5edc1f724aceae81198a5c6eab9d3d5",
+          "size": 1640
+        },
+        "config": {
+          "path": "cases/C17/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C17/original/raw/native-01.bin",
+            "sha256": "6eb07dde41cd23466fe559dad33c5edf900628dfb15e37318c463f9da70e0490",
+            "size": 2026
+          },
+          {
+            "path": "cases/C17/original/raw/native-02.bin",
+            "sha256": "6eb07dde41cd23466fe559dad33c5edf900628dfb15e37318c463f9da70e0490",
+            "size": 2026
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GSETBRUSH"
+            ],
+            "text": "LOCAL = GSETBRUSH(MARK(1,233),MARK(2,4279312947))"
+          },
+          {
+            "line": 40,
+            "targets": [
+              "GSETBRUSH"
+            ],
+            "text": "LOCAL = GSETBRUSH(MARK(1,233),MARK(2,4294967295))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "OBS_SET_BRUSH=1|701|\"sentinel233\"|12",
+          "OBS_PIX_AFTER_SET=0,0,0,0",
+          "OBS_FILL_SETUP=1",
+          "OBS_PIX_FILL=0,4279312947,4279312947,0",
+          "OBS_REPLACE_BRUSH=1|701|\"sentinel233\"|12",
+          "OBS_PIX_REPLACED=4294967295,4279312947,4279312947,0",
+          "OBS_STATE_FINAL=1,4,3"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gsetbrush-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GSETBRUSH"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetbrush-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gsetbrush-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C18/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "bba5acff258bc6c2bd0f9bccffd66426ddb50b5ccaa675682748706a246a3354",
+          "size": 1656
+        },
+        "config": {
+          "path": "cases/C18/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C18/original/raw/native-01.bin",
+            "sha256": "d56e822488a9614c7071d67ef2592a8a8df665f1c9a16ee27e5d6d03d2e4c586",
+            "size": 2022
+          },
+          {
+            "path": "cases/C18/original/raw/native-02.bin",
+            "sha256": "d56e822488a9614c7071d67ef2592a8a8df665f1c9a16ee27e5d6d03d2e4c586",
+            "size": 2022
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GSETBRUSH"
+            ],
+            "text": "GSETBRUSH MARK(1,233),MARK(2,4279312947)"
+          },
+          {
+            "line": 41,
+            "targets": [
+              "GSETBRUSH"
+            ],
+            "text": "GSETBRUSH MARK(1,233),MARK(2,4294967295)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "OBS_SET_BRUSH=1|1|\"sentinel233\"|12",
+          "OBS_PIX_AFTER_SET=0,0,0,0",
+          "OBS_FILL_SETUP=1",
+          "OBS_PIX_FILL=0,4279312947,4279312947,0",
+          "OBS_REPLACE_BRUSH=1|1|\"sentinel233\"|12",
+          "OBS_PIX_REPLACED=4294967295,4279312947,4279312947,0",
+          "OBS_STATE_FINAL=1,4,3"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gsetfont-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GSETFONT"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetfont-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gsetfont-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C19/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "5239b1e28ae059faeb667cf875e03955ed07f17b41ac41c1b5c5d76b40e1c25a",
+          "size": 1780
+        },
+        "config": {
+          "path": "cases/C19/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C19/original/raw/native-01.bin",
+            "sha256": "fee160eeee3d991655666290d0d0f00e7c7e1b6c8ebb93b0ad01158a3edc5644",
+            "size": 2208
+          },
+          {
+            "path": "cases/C19/original/raw/native-02.bin",
+            "sha256": "fee160eeee3d991655666290d0d0f00e7c7e1b6c8ebb93b0ad01158a3edc5644",
+            "size": 2208
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "LOCAL = GSETFONT(MARK(1,233),\"Arial\",MARK(2,12))"
+          },
+          {
+            "line": 33,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "LOCAL = GSETFONT(233,\"Arial\",18)"
+          },
+          {
+            "line": 42,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "LOCAL = GSETFONT(233,\"Arial\",0)"
+          },
+          {
+            "line": 51,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "LOCAL = GSETFONT(233,\"Arial\",-1)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "OBS_SET_FONT=1|701|\"sentinel233\"|12",
+          "OBS_PIX_AFTER_FONT=0,0,0,0",
+          "OBS_REPLACE_FONT=1|701|\"sentinel233\"|0",
+          "OBS_SIZE_ZERO=0|701|\"sentinel233\"|0",
+          "OBS_SIZE_NEG=0|701|\"sentinel233\"|0",
+          "OBS_PIX_AFTER_FONT_BOUNDS=0,0,0,0",
+          "OBS_STATE_FINAL=1,4,3"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gsetfont-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GSETFONT"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetfont-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gsetfont-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C20/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "854c852afdf353b681474344a82545d4f62fd21d6271ba7ce25466c2a2cb642c",
+          "size": 1810
+        },
+        "config": {
+          "path": "cases/C20/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C20/original/raw/native-01.bin",
+            "sha256": "7c4bb619237a1db0da1bb4ea6b250916facf5679aed3860ce917f68f4fe02c7c",
+            "size": 2196
+          },
+          {
+            "path": "cases/C20/original/raw/native-02.bin",
+            "sha256": "7c4bb619237a1db0da1bb4ea6b250916facf5679aed3860ce917f68f4fe02c7c",
+            "size": 2196
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "GSETFONT MARK(1,233),\"Arial\",MARK(2,12)"
+          },
+          {
+            "line": 34,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "GSETFONT 233,\"Arial\",18"
+          },
+          {
+            "line": 44,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "GSETFONT 233,\"Arial\",0"
+          },
+          {
+            "line": 54,
+            "targets": [
+              "GSETFONT"
+            ],
+            "text": "GSETFONT 233,\"Arial\",-1"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "OBS_SET_FONT=1|1|\"sentinel233\"|12",
+          "OBS_PIX_AFTER_FONT=0,0,0,0",
+          "OBS_REPLACE_FONT=1|1|\"sentinel233\"|0",
+          "OBS_SIZE_ZERO=0|0|\"sentinel233\"|0",
+          "OBS_SIZE_NEG=0|0|\"sentinel233\"|0",
+          "OBS_PIX_AFTER_FONT_BOUNDS=0,0,0,0",
+          "OBS_STATE_FINAL=1,4,3"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gsetpen-expr-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GSETPEN"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetpen-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gsetpen-expr-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C21/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "b19cf28513562061160e8ce8c07fade3a50d0e2ff5d397af89c96d83c8716e58",
+          "size": 993
+        },
+        "config": {
+          "path": "cases/C21/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C21/original/raw/native-01.bin",
+            "sha256": "799dbff33c53d22e73ccadca5226f2c62da33c322ba04d91b4927fd0df3bca38",
+            "size": 1910
+          },
+          {
+            "path": "cases/C21/original/raw/native-02.bin",
+            "sha256": "799dbff33c53d22e73ccadca5226f2c62da33c322ba04d91b4927fd0df3bca38",
+            "size": 1910
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GSETPEN"
+            ],
+            "text": "LOCAL = GSETPEN(MARK(1,233),MARK(2,4279312947))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "GRAPHICS233.ERBの21行目で予期しないエラーが発生しました:Emuera1824+v24",
+          "System.IndexOutOfRangeException:インデックスが配列の境界外です。"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS233_gsetpen-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GSETPEN"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gsetpen-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "observation": "gsetpen-method-positive: Native selected target/state/error observations retained; public target-state comparison unavailable",
+        "limitations": "{'raw_output': 'Native repeat byte-identical; cross-engine raw output differs; encoding/layout kept', 'state': 'Native sampled state only; public target state unobserved', 'evaluation': 'Native completed numeric marker results only; source-only ordering separately referenced', 'exceptions': 'Native log diagnostics and public stderr preserved separately', 'gui': 'unobserved, no screenshots', 'natural_exit': 'see per-run receipt; harness return0 is not engine exit0'}; ['No public graphics implementation result: expr positive fails unsupported setup GCREATE; method forms fail target recognition at load', 'No GUI pixel capture, font selection/glyph rendering, Pen drawing or exhaustive argument domain', 'Zero-width and pen exception post-error state not read back', 'Four pixel samples are not full bitmap/image equality', 'GSETPEN arity3 Native validation occurs after BEGIN/BEFORE at encountered line9; no target-body or valid pen rendering evidence']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C22/original/inputs/ERB/GRAPHICS233.ERB",
+          "sha256": "9defe6872e26c61db43018ae0ad4a99ab659bc3db887ca62b519596ba2b2a57a",
+          "size": 1002
+        },
+        "config": {
+          "path": "cases/C22/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C22/original/raw/native-01.bin",
+            "sha256": "7e382260e322d10f9ed68cc5e0db7ab685833dbe415d5025fcf6c17b21aeafec",
+            "size": 1920
+          },
+          {
+            "path": "cases/C22/original/raw/native-02.bin",
+            "sha256": "7e382260e322d10f9ed68cc5e0db7ab685833dbe415d5025fcf6c17b21aeafec",
+            "size": 1920
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 21,
+            "targets": [
+              "GSETPEN"
+            ],
+            "text": "GSETPEN MARK(1,233),MARK(2,4279312947)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "OBS_CREATE=1",
+          "OBS_STATE_BEFORE=1,4,3",
+          "OBS_PIX_BEFORE=0,0,0,0",
+          "GRAPHICS233.ERBの21行目で予期しないエラーが発生しました:Emuera1824+v24",
+          "System.IndexOutOfRangeException:インデックスが配列の境界外です。"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS234_lifecycle-expression-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "SPRITECREATE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "SPRITEDISPOSE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "SPRITEANIMECREATE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "SPRITEANIMEADDFRAME"
+        },
+        {
+          "kind": "expression_function",
+          "name": "SETANIMETIMER"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "lifecycle-expression-positive: Public runtime stops at GCREATE setup (E_FUNCTION); none of five lifecycle targets reached.",
+        "observation": "lifecycle-expression-positive: Public runtime stops at GCREATE setup (E_FUNCTION); none of five lifecycle targets reached.",
+        "limitations": "{'output': 'Selected records repeat exactly in Native; public output differs and contains no target result records. Raw logs/stdout/stderr retained. Layout is not equated to semantics.', 'state': 'Native return/B, RESULT, RESULTS and selected existence/size queries only; no public target state result.', 'evaluation': 'Native E accumulator in completed OBS blocks; no post-exception accumulator sample and no public target evaluation count inferred.', 'exception': 'Native raw error text/location retained for missing animation and timer overflow; public runtime resolution vs loader errors recorded separately.', 'GUI': 'unobserved', 'pixel': 'unobserved', 'timer_progression': 'unobserved'}; ['14 direct controls prove availability/load differences; public does not implement these targets in the selected paths.', 'Two lifecycle scenarios have only Native positive observations; public setup/load failures do not prove target implementation behavior.', 'No screenshot, GUI, pixel, active timer interval, elapsed animation or frame progression observations.', 'Native processes alive after the bounded 5s wait are terminated via owned process handles; runner return 0 is not Native natural exit 0.', 'Missing-name AddFrame raises Native NullReferenceException; source && guard is retained as an observation, not fixed.']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C23/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "580dc1a21324c709f4dc8a677afdbe7a3d928b11307d86e14f4db7b2408f75de",
+          "size": 6917
+        },
+        "config": {
+          "path": "cases/C23/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C23/original/raw/native-01.bin",
+            "sha256": "edccbd49ea6f82119e015a1b02c78be9cd929941ef747acb74858ee085d3e7e7",
+            "size": 8418
+          },
+          {
+            "path": "cases/C23/original/raw/native-02.bin",
+            "sha256": "edccbd49ea6f82119e015a1b02c78be9cd929941ef747acb74858ee085d3e7e7",
+            "size": 8418
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "SPRITECREATE"
+            ],
+            "text": "B=SPRITECREATE(QS(\"SP234\",1),QN(234,2))"
+          },
+          {
+            "line": 57,
+            "targets": [
+              "SPRITECREATE"
+            ],
+            "text": "B=SPRITECREATE(QS(\"SP234\",1),QN(234,2),QN(0,3),QN(0,4),QN(2,5),QN(2,6))"
+          },
+          {
+            "line": 68,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "B=SPRITEDISPOSE(QS(\"SP234\",1))"
+          },
+          {
+            "line": 90,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "B=SPRITEDISPOSE(QS(\"SP234\",1))"
+          },
+          {
+            "line": 101,
+            "targets": [
+              "SPRITECREATE"
+            ],
+            "text": "B=SPRITECREATE(QS(\"SP234\",1),QN(234,2),QN(1,3),QN(1,4),QN(2,5),QN(2,6))"
+          },
+          {
+            "line": 134,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "B=SPRITEDISPOSE(QS(\"SP234\",1))"
+          },
+          {
+            "line": 145,
+            "targets": [
+              "SPRITEANIMECREATE"
+            ],
+            "text": "B=SPRITEANIMECREATE(QS(\"AN234\",1),QN(4,2),QN(3,3))"
+          },
+          {
+            "line": 189,
+            "targets": [
+              "SPRITEANIMECREATE"
+            ],
+            "text": "B=SPRITEANIMECREATE(QS(\"AN234\",1),QN(2,2),QN(2,3))"
+          },
+          {
+            "line": 200,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "B=SPRITEANIMEADDFRAME(QS(\"AN234\",1),QN(234,2),QN(0,3),QN(0,4),QN(4,5),QN(3,6),QN(0,7),QN(0,8),QN(100,9))"
+          },
+          {
+            "line": 211,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "B=SPRITEANIMEADDFRAME(QS(\"AN234\",1),QN(234,2),QN(1,3),QN(1,4),QN(2,5),QN(2,6),QN(1,7),QN(0,8),QN(200,9))"
+          },
+          {
+            "line": 222,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "B=SPRITEANIMEADDFRAME(QS(\"AN234\",1),QN(234,2),QN(0,3),QN(0,4),QN(4,5),QN(3,6),QN(0,7),QN(0,8),QN(0,9))"
+          },
+          {
+            "line": 233,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "B=SPRITEANIMEADDFRAME(QS(\"AN234\",1),QN(234,2),QN(3,3),QN(0,4),QN(2,5),QN(2,6),QN(0,7),QN(0,8),QN(100,9))"
+          },
+          {
+            "line": 244,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "B=SPRITEANIMEADDFRAME(QS(\"AN234\",1),QN(235,2),QN(0,3),QN(0,4),QN(4,5),QN(3,6),QN(0,7),QN(0,8),QN(100,9))"
+          },
+          {
+            "line": 288,
+            "targets": [
+              "SETANIMETIMER"
+            ],
+            "text": "B=SETANIMETIMER(QN(10,1))"
+          },
+          {
+            "line": 299,
+            "targets": [
+              "SETANIMETIMER"
+            ],
+            "text": "B=SETANIMETIMER(QN(0,1))"
+          },
+          {
+            "line": 310,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "B=SPRITEDISPOSE(QS(\"AN234\",1))"
+          },
+          {
+            "line": 332,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "B=SPRITEDISPOSE(QS(\"AN234\",1))"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "1 SPRITECREATE create_full V=1 R=701 E=12",
+          "2 SPRITECREATED spritecreated V=1 R=701 E=1",
+          "3 SPRITEWIDTH spritewidth V=4 R=701 E=1",
+          "4 SPRITEHEIGHT spriteheight V=3 R=701 E=1",
+          "5 SPRITECREATE repeat V=0 R=701 E=1",
+          "6 SPRITEDISPOSE dispose V=1 R=701 E=1",
+          "7 SPRITECREATED after_dispose V=0 R=701 E=1",
+          "8 SPRITEDISPOSE dispose_again V=0 R=701 E=1",
+          "9 SPRITECREATE crop_recreate V=1 R=701 E=123456",
+          "10 SPRITEWIDTH crop_width V=2 R=701 E=1",
+          "11 SPRITEHEIGHT crop_height V=2 R=701 E=1",
+          "12 SPRITEDISPOSE crop_dispose V=1 R=701 E=1",
+          "13 SPRITEANIMECREATE anime_create V=1 R=701 E=123",
+          "14 SPRITECREATED spritecreated V=1 R=701 E=1",
+          "15 SPRITEWIDTH spritewidth V=4 R=701 E=1",
+          "16 SPRITEHEIGHT spriteheight V=3 R=701 E=1",
+          "17 SPRITEANIMECREATE anime_repeat V=0 R=701 E=1",
+          "18 SPRITEANIMEADDFRAME frame1 V=1 R=701 E=123456789",
+          "19 SPRITEANIMEADDFRAME frame2 V=1 R=701 E=123456789",
+          "20 SPRITEANIMEADDFRAME delay_zero V=0 R=701 E=123456789",
+          "21 SPRITEANIMEADDFRAME rect_outside V=0 R=701 E=123456",
+          "22 SPRITEANIMEADDFRAME missing_graph V=0 R=701 E=12",
+          "23 SPRITECREATED post_frames_spritecreated V=1 R=701 E=1",
+          "24 SPRITEWIDTH post_frames_spritewidth V=4 R=701 E=1",
+          "25 SPRITEHEIGHT post_frames_spriteheight V=3 R=701 E=1",
+          "26 SETANIMETIMER timer_enable V=1 R=701 E=1",
+          "27 SETANIMETIMER timer_disable V=1 R=701 E=1",
+          "28 SPRITEDISPOSE anime_dispose V=1 R=701 E=1",
+          "29 SPRITECREATED anime_after_dispose V=0 R=701 E=1",
+          "30 SPRITEDISPOSE anime_dispose_again V=0 R=701 E=1"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS234_lifecycle-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "SPRITECREATE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "SPRITEDISPOSE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "SPRITEANIMECREATE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "SPRITEANIMEADDFRAME"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "SETANIMETIMER"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "lifecycle-method-positive: Public loader rejects method lines (E_LOAD), before GCREATE or target execution; no lifecycle state comparison possible.",
+        "observation": "lifecycle-method-positive: Public loader rejects method lines (E_LOAD), before GCREATE or target execution; no lifecycle state comparison possible.",
+        "limitations": "{'output': 'Selected records repeat exactly in Native; public output differs and contains no target result records. Raw logs/stdout/stderr retained. Layout is not equated to semantics.', 'state': 'Native return/B, RESULT, RESULTS and selected existence/size queries only; no public target state result.', 'evaluation': 'Native E accumulator in completed OBS blocks; no post-exception accumulator sample and no public target evaluation count inferred.', 'exception': 'Native raw error text/location retained for missing animation and timer overflow; public runtime resolution vs loader errors recorded separately.', 'GUI': 'unobserved', 'pixel': 'unobserved', 'timer_progression': 'unobserved'}; ['14 direct controls prove availability/load differences; public does not implement these targets in the selected paths.', 'Two lifecycle scenarios have only Native positive observations; public setup/load failures do not prove target implementation behavior.', 'No screenshot, GUI, pixel, active timer interval, elapsed animation or frame progression observations.', 'Native processes alive after the bounded 5s wait are terminated via owned process handles; runner return 0 is not Native natural exit 0.', 'Missing-name AddFrame raises Native NullReferenceException; source && guard is retained as an observation, not fixed.']",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C24/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "196a15fbfa736c6e99a6ed40dc4dc2aff9dd31973eff134ed7e8f2c21ad9bad2",
+          "size": 7127
+        },
+        "config": {
+          "path": "cases/C24/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C24/original/raw/native-01.bin",
+            "sha256": "bda435585e47dbeeca15ba0f97f4b42b35a3fa862994b226dab93f22ca584596",
+            "size": 8298
+          },
+          {
+            "path": "cases/C24/original/raw/native-02.bin",
+            "sha256": "bda435585e47dbeeca15ba0f97f4b42b35a3fa862994b226dab93f22ca584596",
+            "size": 8298
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "SPRITECREATE"
+            ],
+            "text": "SPRITECREATE QS(\"SP234\",1),QN(234,2)"
+          },
+          {
+            "line": 61,
+            "targets": [
+              "SPRITECREATE"
+            ],
+            "text": "SPRITECREATE QS(\"SP234\",1),QN(234,2),QN(0,3),QN(0,4),QN(2,5),QN(2,6)"
+          },
+          {
+            "line": 73,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "SPRITEDISPOSE QS(\"SP234\",1)"
+          },
+          {
+            "line": 97,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "SPRITEDISPOSE QS(\"SP234\",1)"
+          },
+          {
+            "line": 109,
+            "targets": [
+              "SPRITECREATE"
+            ],
+            "text": "SPRITECREATE QS(\"SP234\",1),QN(234,2),QN(1,3),QN(1,4),QN(2,5),QN(2,6)"
+          },
+          {
+            "line": 145,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "SPRITEDISPOSE QS(\"SP234\",1)"
+          },
+          {
+            "line": 157,
+            "targets": [
+              "SPRITEANIMECREATE"
+            ],
+            "text": "SPRITEANIMECREATE QS(\"AN234\",1),QN(4,2),QN(3,3)"
+          },
+          {
+            "line": 205,
+            "targets": [
+              "SPRITEANIMECREATE"
+            ],
+            "text": "SPRITEANIMECREATE QS(\"AN234\",1),QN(2,2),QN(2,3)"
+          },
+          {
+            "line": 217,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "SPRITEANIMEADDFRAME QS(\"AN234\",1),QN(234,2),QN(0,3),QN(0,4),QN(4,5),QN(3,6),QN(0,7),QN(0,8),QN(100,9)"
+          },
+          {
+            "line": 229,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "SPRITEANIMEADDFRAME QS(\"AN234\",1),QN(234,2),QN(1,3),QN(1,4),QN(2,5),QN(2,6),QN(1,7),QN(0,8),QN(200,9)"
+          },
+          {
+            "line": 241,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "SPRITEANIMEADDFRAME QS(\"AN234\",1),QN(234,2),QN(0,3),QN(0,4),QN(4,5),QN(3,6),QN(0,7),QN(0,8),QN(0,9)"
+          },
+          {
+            "line": 253,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "SPRITEANIMEADDFRAME QS(\"AN234\",1),QN(234,2),QN(3,3),QN(0,4),QN(2,5),QN(2,6),QN(0,7),QN(0,8),QN(100,9)"
+          },
+          {
+            "line": 265,
+            "targets": [
+              "SPRITEANIMEADDFRAME"
+            ],
+            "text": "SPRITEANIMEADDFRAME QS(\"AN234\",1),QN(235,2),QN(0,3),QN(0,4),QN(4,5),QN(3,6),QN(0,7),QN(0,8),QN(100,9)"
+          },
+          {
+            "line": 313,
+            "targets": [
+              "SETANIMETIMER"
+            ],
+            "text": "SETANIMETIMER QN(10,1)"
+          },
+          {
+            "line": 325,
+            "targets": [
+              "SETANIMETIMER"
+            ],
+            "text": "SETANIMETIMER QN(0,1)"
+          },
+          {
+            "line": 337,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "SPRITEDISPOSE QS(\"AN234\",1)"
+          },
+          {
+            "line": 361,
+            "targets": [
+              "SPRITEDISPOSE"
+            ],
+            "text": "SPRITEDISPOSE QS(\"AN234\",1)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "1 SPRITECREATE create_full V=1 R=1 E=12",
+          "2 SPRITECREATED spritecreated V=1 R=1 E=1",
+          "3 SPRITEWIDTH spritewidth V=4 R=4 E=1",
+          "4 SPRITEHEIGHT spriteheight V=3 R=3 E=1",
+          "5 SPRITECREATE repeat V=0 R=0 E=1",
+          "6 SPRITEDISPOSE dispose V=1 R=1 E=1",
+          "7 SPRITECREATED after_dispose V=0 R=0 E=1",
+          "8 SPRITEDISPOSE dispose_again V=0 R=0 E=1",
+          "9 SPRITECREATE crop_recreate V=1 R=1 E=123456",
+          "10 SPRITEWIDTH crop_width V=2 R=2 E=1",
+          "11 SPRITEHEIGHT crop_height V=2 R=2 E=1",
+          "12 SPRITEDISPOSE crop_dispose V=1 R=1 E=1",
+          "13 SPRITEANIMECREATE anime_create V=1 R=1 E=123",
+          "14 SPRITECREATED spritecreated V=1 R=1 E=1",
+          "15 SPRITEWIDTH spritewidth V=4 R=4 E=1",
+          "16 SPRITEHEIGHT spriteheight V=3 R=3 E=1",
+          "17 SPRITEANIMECREATE anime_repeat V=0 R=0 E=1",
+          "18 SPRITEANIMEADDFRAME frame1 V=1 R=1 E=123456789",
+          "19 SPRITEANIMEADDFRAME frame2 V=1 R=1 E=123456789",
+          "20 SPRITEANIMEADDFRAME delay_zero V=0 R=0 E=123456789",
+          "21 SPRITEANIMEADDFRAME rect_outside V=0 R=0 E=123456",
+          "22 SPRITEANIMEADDFRAME missing_graph V=0 R=0 E=12",
+          "23 SPRITECREATED post_frames_spritecreated V=1 R=1 E=1",
+          "24 SPRITEWIDTH post_frames_spritewidth V=4 R=4 E=1",
+          "25 SPRITEHEIGHT post_frames_spriteheight V=3 R=3 E=1",
+          "26 SETANIMETIMER timer_enable V=1 R=1 E=1",
+          "27 SETANIMETIMER timer_disable V=1 R=1 E=1",
+          "28 SPRITEDISPOSE anime_dispose V=1 R=1 E=1",
+          "29 SPRITECREATED anime_after_dispose V=0 R=0 E=1",
+          "30 SPRITEDISPOSE anime_dispose_again V=0 R=0 E=1"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawg-expression-missing-source",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDRAWG"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawg-expression-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawg-expression-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C25/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "27274a26059392e838aa84c890a8c6a12a42788b9449a695ff0c1add5df5ce3f",
+          "size": 768
+        },
+        "config": {
+          "path": "cases/C25/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C25/original/raw/native-01.bin",
+            "sha256": "fb2d047bdb8cc0f87f3ef035470c5b1e0ce89977fcbdbca0f15460d16be699f7",
+            "size": 640
+          },
+          {
+            "path": "cases/C25/original/raw/native-02.bin",
+            "sha256": "fb2d047bdb8cc0f87f3ef035470c5b1e0ce89977fcbdbca0f15460d16be699f7",
+            "size": 640
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDRAWG"
+            ],
+            "text": "B=GDRAWG(ZZ235D(235),ZZ235S(236),0,0,4,3,0,0,4,3)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=0",
+          "RESULT=701",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4278190080",
+          "P32=4278190080"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawg-expression-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDRAWG"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawg-expression-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawg-expression-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C26/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "306f7e7b8e1096fe66fb7adcf613535f575b47bf0e8814524da044d27ca7d0c1",
+          "size": 808
+        },
+        "config": {
+          "path": "cases/C26/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C26/original/raw/native-01.bin",
+            "sha256": "a47bb15ae4f87450562e3c4dbfee65cc0b2d41f4d58535920f49bcf689b837cc",
+            "size": 628
+          },
+          {
+            "path": "cases/C26/original/raw/native-02.bin",
+            "sha256": "a47bb15ae4f87450562e3c4dbfee65cc0b2d41f4d58535920f49bcf689b837cc",
+            "size": 628
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 15,
+            "targets": [
+              "GDRAWG"
+            ],
+            "text": "B=GDRAWG(ZZ235D(235),ZZ235S(236),0,0,4,3,0,0,4,3)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=1",
+          "RESULT=701",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4279312947",
+          "P32=4279312947"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawg-method-missing-source",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDRAWG"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawg-method-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawg-method-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C27/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "566b5655846d7e165ef1d53b08ed78f56892edd8e618c76a7245c9a82eb06c76",
+          "size": 771
+        },
+        "config": {
+          "path": "cases/C27/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C27/original/raw/native-01.bin",
+            "sha256": "7e17b35c93d9d967185773e64b631af2925064387f28683d330bb902f5c26568",
+            "size": 628
+          },
+          {
+            "path": "cases/C27/original/raw/native-02.bin",
+            "sha256": "7e17b35c93d9d967185773e64b631af2925064387f28683d330bb902f5c26568",
+            "size": 628
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDRAWG"
+            ],
+            "text": "GDRAWG ZZ235D(235),ZZ235S(236),0,0,4,3,0,0,4,3"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=0",
+          "RESULT=0",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4278190080",
+          "P32=4278190080"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawg-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDRAWG"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawg-method-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawg-method-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C28/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "0ce11d3843467b55fa8016cb1ba0c993a5fd29147bef5c5f217ccb6a559fb7d5",
+          "size": 811
+        },
+        "config": {
+          "path": "cases/C28/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C28/original/raw/native-01.bin",
+            "sha256": "57f2dd704e80e4c0eb07353f31f42329eaf8067f857852c72778987c928fe990",
+            "size": 616
+          },
+          {
+            "path": "cases/C28/original/raw/native-02.bin",
+            "sha256": "57f2dd704e80e4c0eb07353f31f42329eaf8067f857852c72778987c928fe990",
+            "size": 616
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 15,
+            "targets": [
+              "GDRAWG"
+            ],
+            "text": "GDRAWG ZZ235D(235),ZZ235S(236),0,0,4,3,0,0,4,3"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=1",
+          "RESULT=1",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4279312947",
+          "P32=4279312947"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawsprite-expression-missing-source",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDRAWSPRITE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawsprite-expression-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawsprite-expression-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C29/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "b9a86611b27f624dc5d44b3f7938dc7cefa09afe2e35ec0eda08c7f12420c4fb",
+          "size": 783
+        },
+        "config": {
+          "path": "cases/C29/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C29/original/raw/native-01.bin",
+            "sha256": "2d0ed88f61b759af2fd36a4d71670ce061f138a53e8ab443f1c8731ab5da0ef6",
+            "size": 650
+          },
+          {
+            "path": "cases/C29/original/raw/native-02.bin",
+            "sha256": "2d0ed88f61b759af2fd36a4d71670ce061f138a53e8ab443f1c8731ab5da0ef6",
+            "size": 650
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDRAWSPRITE"
+            ],
+            "text": "B=GDRAWSPRITE(ZZ235D(235),ZZ235N(\"SPR235\"),ZZ235X(0),0,4,3)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=0",
+          "RESULT=701",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4278190080",
+          "P32=4278190080"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawsprite-expression-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDRAWSPRITE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawsprite-expression-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawsprite-expression-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C30/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "825aef8a5fc6a4d8ea2384094048288b657e4af50f5b65a572bc3bc4b2ea18fa",
+          "size": 853
+        },
+        "config": {
+          "path": "cases/C30/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C30/original/raw/native-01.bin",
+            "sha256": "25580ca9737efd63ec92786164f6707aae89cf5da7c06fe15182cf3beca302fc",
+            "size": 640
+          },
+          {
+            "path": "cases/C30/original/raw/native-02.bin",
+            "sha256": "25580ca9737efd63ec92786164f6707aae89cf5da7c06fe15182cf3beca302fc",
+            "size": 640
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 16,
+            "targets": [
+              "GDRAWSPRITE"
+            ],
+            "text": "B=GDRAWSPRITE(ZZ235D(235),ZZ235N(\"SPR235\"),ZZ235X(0),0,4,3)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=1",
+          "RESULT=701",
+          "RESULTS=sentinel235",
+          "EVAL=124",
+          "P00=4279312947",
+          "P32=4279312947"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawsprite-method-missing-source",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDRAWSPRITE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawsprite-method-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawsprite-method-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C31/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "6b13f3f9a04a3556c38d3d4513a6d2fbf1cfb584ae3f45b0834ce7b84fdb3bcd",
+          "size": 786
+        },
+        "config": {
+          "path": "cases/C31/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C31/original/raw/native-01.bin",
+            "sha256": "f788122c8babfec9e66440587342bc4c2caf4fd13f9f7dd345cc54aa489281f9",
+            "size": 638
+          },
+          {
+            "path": "cases/C31/original/raw/native-02.bin",
+            "sha256": "f788122c8babfec9e66440587342bc4c2caf4fd13f9f7dd345cc54aa489281f9",
+            "size": 638
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDRAWSPRITE"
+            ],
+            "text": "GDRAWSPRITE ZZ235D(235),ZZ235N(\"SPR235\"),ZZ235X(0),0,4,3"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=0",
+          "RESULT=0",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4278190080",
+          "P32=4278190080"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawsprite-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDRAWSPRITE"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawsprite-method-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawsprite-method-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C32/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "27664fd6d230cf8f1777ab755a4e83a19c806db9335b448b16b82b64a0835474",
+          "size": 856
+        },
+        "config": {
+          "path": "cases/C32/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C32/original/raw/native-01.bin",
+            "sha256": "0a0d0512e2cf15630df96c8ce80bcc3312170a7e727c4e6692d9e6897745eaf2",
+            "size": 628
+          },
+          {
+            "path": "cases/C32/original/raw/native-02.bin",
+            "sha256": "0a0d0512e2cf15630df96c8ce80bcc3312170a7e727c4e6692d9e6897745eaf2",
+            "size": 628
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 16,
+            "targets": [
+              "GDRAWSPRITE"
+            ],
+            "text": "GDRAWSPRITE ZZ235D(235),ZZ235N(\"SPR235\"),ZZ235X(0),0,4,3"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=1",
+          "RESULT=1",
+          "RESULTS=sentinel235",
+          "EVAL=124",
+          "P00=4279312947",
+          "P32=4279312947"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawgwithmask-expression-missing-source",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDRAWGWITHMASK"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawgwithmask-expression-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawgwithmask-expression-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C33/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "50705b223041cfd962f8a325ff46b8a0bc87550fb350ccf1b0a8e5825ab1a273",
+          "size": 792
+        },
+        "config": {
+          "path": "cases/C33/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C33/original/raw/native-01.bin",
+            "sha256": "d18ff113397d20cce5572def7676fb1e7cae0ebc5ecabd5c5386b33c6876ed71",
+            "size": 656
+          },
+          {
+            "path": "cases/C33/original/raw/native-02.bin",
+            "sha256": "d18ff113397d20cce5572def7676fb1e7cae0ebc5ecabd5c5386b33c6876ed71",
+            "size": 656
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDRAWGWITHMASK"
+            ],
+            "text": "B=GDRAWGWITHMASK(ZZ235D(235),ZZ235S(236),ZZ235M(237),ZZ235X(0),0)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=0",
+          "RESULT=701",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4278190080",
+          "P32=4278190080"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawgwithmask-expression-positive",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "GDRAWGWITHMASK"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawgwithmask-expression-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawgwithmask-expression-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C34/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "74fc4de0aab5e1305c95afd4399abc5d32113e6553de1e6b63cdc0356989505d",
+          "size": 878
+        },
+        "config": {
+          "path": "cases/C34/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C34/original/raw/native-01.bin",
+            "sha256": "169f74f6441c082bec39f6900fa4ff1bf7fe7d061f5225952fa5ef2a207c4e19",
+            "size": 648
+          },
+          {
+            "path": "cases/C34/original/raw/native-02.bin",
+            "sha256": "169f74f6441c082bec39f6900fa4ff1bf7fe7d061f5225952fa5ef2a207c4e19",
+            "size": 648
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 17,
+            "targets": [
+              "GDRAWGWITHMASK"
+            ],
+            "text": "B=GDRAWGWITHMASK(ZZ235D(235),ZZ235S(236),ZZ235M(237),ZZ235X(0),0)"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=1",
+          "RESULT=701",
+          "RESULTS=sentinel235",
+          "EVAL=1234",
+          "P00=4279312947",
+          "P32=4279312947"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawgwithmask-method-missing-source",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDRAWGWITHMASK"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawgwithmask-method-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawgwithmask-method-missing-source: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C35/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "869fef12787a1c75bf3ffe9fd3461887099a445f9989151bf887d9b8651a46e8",
+          "size": 795
+        },
+        "config": {
+          "path": "cases/C35/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C35/original/raw/native-01.bin",
+            "sha256": "2e44c46f6f2fc5bb4e08e7546ee0e7138a733a3da968b56346fad1b4d4e9ac79",
+            "size": 644
+          },
+          {
+            "path": "cases/C35/original/raw/native-02.bin",
+            "sha256": "2e44c46f6f2fc5bb4e08e7546ee0e7138a733a3da968b56346fad1b4d4e9ac79",
+            "size": 644
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 13,
+            "targets": [
+              "GDRAWGWITHMASK"
+            ],
+            "text": "GDRAWGWITHMASK ZZ235D(235),ZZ235S(236),ZZ235M(237),ZZ235X(0),0"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=0",
+          "RESULT=0",
+          "RESULTS=sentinel235",
+          "EVAL=12",
+          "P00=4278190080",
+          "P32=4278190080"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "GRAPHICS235_gdrawgwithmask-method-positive",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "GDRAWGWITHMASK"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "gdrawgwithmask-method-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "observation": "gdrawgwithmask-method-positive: NATIVE_STATE_OBSERVED_PUBLIC_POSITIVE_RUNTIME_UNREACHED",
+        "limitations": "Selected destination/source/mask and full-size copy only. Positive Native pixels from GGETCOLOR at two coordinates are not GUI or whole image evidence. No color matrix, scaling/interpolation, clipping, partial alpha, invalid ID/range/arity/type closure. Public positive runtime unobserved; direct target-resolution controls independent of setup. Native private desktop, no input or screenshot. No natural-exit success inferred from controller exit.",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C36/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "9cfdaceb7e3ea9c937a59a3a6994a428f34430e41ab36d6a0453e34950517556",
+          "size": 881
+        },
+        "config": {
+          "path": "cases/C36/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C36/original/raw/native-01.bin",
+            "sha256": "f47f739c021373f8bdbc2a685ec760ad0839e9621e75854d93fd829a2a5d88fb",
+            "size": 636
+          },
+          {
+            "path": "cases/C36/original/raw/native-02.bin",
+            "sha256": "f47f739c021373f8bdbc2a685ec760ad0839e9621e75854d93fd829a2a5d88fb",
+            "size": 636
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 17,
+            "targets": [
+              "GDRAWGWITHMASK"
+            ],
+            "text": "GDRAWGWITHMASK ZZ235D(235),ZZ235S(236),ZZ235M(237),ZZ235X(0),0"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "RET=1",
+          "RESULT=1",
+          "RESULTS=sentinel235",
+          "EVAL=1234",
+          "P00=4279312947",
+          "P32=4279312947"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "UIQUERY236_lifecycle-expr",
+      "typed_targets": [
+        {
+          "kind": "expression_function",
+          "name": "CBGSETG"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGSETSPRITE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBMAPG"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGSETBUTTONSPRITE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGREMOVERANGE"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGCLEARBUTTON"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGREMOVEBMAP"
+        },
+        {
+          "kind": "expression_function",
+          "name": "CBGCLEAR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "lifecycle-expr: public setup/load stopped before CBG target; Native selected lifecycle returns only",
+        "observation": "lifecycle-expr: public setup/load stopped before CBG target; Native selected lifecycle returns only",
+        "limitations": "['GUI pixels', 'click/mouse events', 'entire background state']; return 1 is not evidence of visible background or interactive button",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C37/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+          "size": 889
+        },
+        "config": {
+          "path": "cases/C37/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C37/original/raw/native-01.bin",
+            "sha256": "4e10d3597581a371bfd849e5e0916486b1472e8cce627180f8ecac342cb10e53",
+            "size": 780
+          },
+          {
+            "path": "cases/C37/original/raw/native-02.bin",
+            "sha256": "4e10d3597581a371bfd849e5e0916486b1472e8cce627180f8ecac342cb10e53",
+            "size": 780
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 11,
+            "targets": [
+              "CBGSETG"
+            ],
+            "text": "V=CBGSETG(93236,11,12,1)"
+          },
+          {
+            "line": 13,
+            "targets": [
+              "CBGSETSPRITE"
+            ],
+            "text": "V=CBGSETSPRITE(\"s236\",11,12,-1)"
+          },
+          {
+            "line": 15,
+            "targets": [
+              "CBGSETBMAPG"
+            ],
+            "text": "V=CBGSETBMAPG(93236)"
+          },
+          {
+            "line": 17,
+            "targets": [
+              "CBGSETBUTTONSPRITE"
+            ],
+            "text": "V=CBGSETBUTTONSPRITE(1,\"s236\",\"s236\",11,12,2,\"tip236\")"
+          },
+          {
+            "line": 19,
+            "targets": [
+              "CBGREMOVERANGE"
+            ],
+            "text": "V=CBGREMOVERANGE(-1,1)"
+          },
+          {
+            "line": 21,
+            "targets": [
+              "CBGCLEARBUTTON"
+            ],
+            "text": "V=CBGCLEARBUTTON()"
+          },
+          {
+            "line": 23,
+            "targets": [
+              "CBGREMOVEBMAP"
+            ],
+            "text": "V=CBGREMOVEBMAP()"
+          },
+          {
+            "line": 25,
+            "targets": [
+              "CBGCLEAR"
+            ],
+            "text": "V=CBGCLEAR()"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "SETUP236 G=1",
+          "SETUP236 S=1",
+          "STEP236 CBGSETG V=1 R=701",
+          "STEP236 CBGSETSPRITE V=1 R=701",
+          "STEP236 CBGSETBMAPG V=1 R=701",
+          "STEP236 CBGSETBUTTONSPRITE V=1 R=701",
+          "STEP236 CBGREMOVERANGE V=1 R=701",
+          "STEP236 CBGCLEARBUTTON V=1 R=701",
+          "STEP236 CBGREMOVEBMAP V=1 R=701",
+          "STEP236 CBGCLEAR V=1 R=701",
+          "OBS236 V=1 R=701 A=0",
+          "DONE236"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    },
+    {
+      "case_id": "UIQUERY236_lifecycle-method",
+      "typed_targets": [
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETG"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETSPRITE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBMAPG"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGSETBUTTONSPRITE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGREMOVERANGE"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGCLEARBUTTON"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGREMOVEBMAP"
+        },
+        {
+          "kind": "method_as_command",
+          "name": "CBGCLEAR"
+        }
+      ],
+      "historical_verdict": "unverified",
+      "historical_registry_claim": {
+        "condition": "lifecycle-method: public setup/load stopped before CBG target; Native selected lifecycle returns only",
+        "observation": "lifecycle-method: public setup/load stopped before CBG target; Native selected lifecycle returns only",
+        "limitations": "['GUI pixels', 'click/mouse events', 'entire background state']; return 1 is not evidence of visible background or interactive button",
+        "record_bytes_included": false
+      },
+      "original": {
+        "fixture": {
+          "path": "cases/C38/original/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "9e6eb8eb8f92c9069b1a862fc7c5b763cf8999de2cc2abe269f4727a63315177",
+          "size": 864
+        },
+        "config": {
+          "path": "cases/C38/original/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "size": 2164
+        },
+        "assets": [],
+        "native_raw": [
+          {
+            "path": "cases/C38/original/raw/native-01.bin",
+            "sha256": "48dd0bddfbbacfa63318fd731525f70a319911acc4089cc96ee25f549d5f9eed",
+            "size": 748
+          },
+          {
+            "path": "cases/C38/original/raw/native-02.bin",
+            "sha256": "48dd0bddfbbacfa63318fd731525f70a319911acc4089cc96ee25f549d5f9eed",
+            "size": 748
+          }
+        ],
+        "native_raw_repeats_byte_equal": true,
+        "native_executable_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+        "fixture_target_mentions": [
+          {
+            "line": 11,
+            "targets": [
+              "CBGSETG"
+            ],
+            "text": "CBGSETG 93236,11,12,1"
+          },
+          {
+            "line": 13,
+            "targets": [
+              "CBGSETSPRITE"
+            ],
+            "text": "CBGSETSPRITE \"s236\",11,12,-1"
+          },
+          {
+            "line": 15,
+            "targets": [
+              "CBGSETBMAPG"
+            ],
+            "text": "CBGSETBMAPG 93236"
+          },
+          {
+            "line": 17,
+            "targets": [
+              "CBGSETBUTTONSPRITE"
+            ],
+            "text": "CBGSETBUTTONSPRITE 1,\"s236\",\"s236\",11,12,2,\"tip236\""
+          },
+          {
+            "line": 19,
+            "targets": [
+              "CBGREMOVERANGE"
+            ],
+            "text": "CBGREMOVERANGE -1,1"
+          },
+          {
+            "line": 21,
+            "targets": [
+              "CBGCLEARBUTTON"
+            ],
+            "text": "CBGCLEARBUTTON"
+          },
+          {
+            "line": 23,
+            "targets": [
+              "CBGREMOVEBMAP"
+            ],
+            "text": "CBGREMOVEBMAP"
+          },
+          {
+            "line": 25,
+            "targets": [
+              "CBGCLEAR"
+            ],
+            "text": "CBGCLEAR"
+          }
+        ],
+        "native_raw_selected_readback": [
+          "SETUP236 G=1",
+          "SETUP236 S=1",
+          "STEP236 CBGSETG V=1 R=1",
+          "STEP236 CBGSETSPRITE V=1 R=1",
+          "STEP236 CBGSETBMAPG V=1 R=1",
+          "STEP236 CBGSETBUTTONSPRITE V=1 R=1",
+          "STEP236 CBGREMOVERANGE V=1 R=1",
+          "STEP236 CBGCLEARBUTTON V=1 R=1",
+          "STEP236 CBGREMOVEBMAP V=1 R=1",
+          "STEP236 CBGCLEAR V=1 R=1",
+          "OBS236 V=1 R=1 A=0",
+          "DONE236"
+        ],
+        "native_natural_exit": "not_observed"
+      },
+      "later_observations": [],
+      "new_cross_engine_verdict": "not_assessed"
+    }
+  ],
+  "historical_registry_claim_projection": "Neutral projection of selected historical registry text; the complete original registry is not included. Historical verdicts and recorded observations are unchanged."
+}

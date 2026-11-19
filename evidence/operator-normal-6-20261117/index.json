@@ -1,0 +1,784 @@
+{
+  "schema": "operator-normal273-saved-evidence-v1",
+  "scope": "Six saved public runs and twelve retained Native repetitions, linked by case and byte-identical fixture/config; exact complete conditions and historical build identity are not established.",
+  "cases": [
+    {
+      "case_id": "OPNORMAL273_E143",
+      "typed_targets": [
+        {
+          "kind": "operator",
+          "name": "+"
+        }
+      ],
+      "case_register_pointer": "/records/1611",
+      "inputs": {
+        "config": {
+          "path": "assets/OPNORMAL273_E143/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "encoding": "cp932"
+        },
+        "fixture": {
+          "path": "assets/OPNORMAL273_E143/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "52dd310ae9fbd0d37fb050f3da8c35d41a3f4a49887b07f3f7c8a0ae4bfbb5be",
+          "bytes": 2216,
+          "encoding": "utf-8-sig"
+        }
+      },
+      "recorded_conditions": {
+        "public_initial_directories": [
+          "ERB",
+          "csv_empty"
+        ],
+        "native_saved_topology": [
+          "ERB",
+          "csv_empty"
+        ],
+        "full_environment_and_input_equivalence": "not_established",
+        "public_vs_historical_public_build_identity": "not_established",
+        "unobserved": [
+          "full_stdin_content",
+          "other_external_inputs",
+          "native_natural_exit",
+          "postfatal_state",
+          "full_diagnostic_equivalence",
+          "all_target_acceptance",
+          "pixel_or_visual_equivalence"
+        ]
+      },
+      "public": {
+        "mode": "public-refresh",
+        "started_utc": "2026-11-13T10:16:19.153326+00:00",
+        "finished_utc": "2026-11-13T10:16:19.668326+00:00",
+        "execution_time_basis": "saved_public_receipt",
+        "stdin": "inherited; content_not_recorded",
+        "public_pyz_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "public_pyz_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "stdout": {
+          "path": "assets/OPNORMAL273_E143/public/stdout.bin",
+          "sha256": "9110af7110600f13b8b2e560390adb7cfced3b39f8124e6ab664108b1c27dad3",
+          "bytes": 957,
+          "encoding": "cp932"
+        },
+        "stderr": {
+          "path": "assets/OPNORMAL273_E143/public/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "bytes": 110,
+          "encoding": "utf-8-sig"
+        },
+        "stderr_scope": "nonfatal_OUTPUTLOG_bounded_text_history_notice_not_diagnostic_parity"
+      },
+      "native": [
+        {
+          "mode": "native-01",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E143/native-01/emuera.log",
+            "sha256": "78b3284d6bb9a758402d1dc1796141b7507f27203aca99879d424cdcb7938982",
+            "bytes": 1800,
+            "encoding": "utf-16"
+          }
+        },
+        {
+          "mode": "native-02",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E143/native-02/emuera.log",
+            "sha256": "78b3284d6bb9a758402d1dc1796141b7507f27203aca99879d424cdcb7938982",
+            "bytes": 1800,
+            "encoding": "utf-16"
+          }
+        }
+      ],
+      "selected_normal_markers": [
+        "AR0 VALUE=0 COUNT=0 ORDER=0",
+        "AR1 VALUE=-4 COUNT=0 ORDER=0",
+        "AR2 VALUE=4 COUNT=0 ORDER=0",
+        "AR3 VALUE=-9223372036854775808 COUNT=0 ORDER=0",
+        "AR4 VALUE=9223372036854775807 COUNT=0 ORDER=0",
+        "AR5 VALUE=-9223372036854775807 COUNT=0 ORDER=0",
+        "AR6 VALUE=8 COUNT=2 ORDER=12",
+        "AR21 VALUE=5 COUNT=1 ORDER=1",
+        "AR23 VALUE=[AB] COUNT=2 ORDER=12"
+      ],
+      "selected_marker_comparison": "readback_once_and_in_order_in_public_stdout_and_both_native_logs; DONE_once_after",
+      "comparison_scope": "selected_normal_markers_only_not_all_lines_or_behavior"
+    },
+    {
+      "case_id": "OPNORMAL273_E145",
+      "typed_targets": [
+        {
+          "kind": "operator",
+          "name": "%"
+        },
+        {
+          "kind": "operator",
+          "name": "/"
+        }
+      ],
+      "case_register_pointer": "/records/1612",
+      "inputs": {
+        "config": {
+          "path": "assets/OPNORMAL273_E145/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "encoding": "cp932"
+        },
+        "fixture": {
+          "path": "assets/OPNORMAL273_E145/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "d6f923a8983af403ef4519fd3a1a563911d9af4721f5d179bc3d714cbdd86223",
+          "bytes": 1467,
+          "encoding": "utf-8-sig"
+        }
+      },
+      "recorded_conditions": {
+        "public_initial_directories": [
+          "ERB",
+          "csv_empty"
+        ],
+        "native_saved_topology": [
+          "ERB",
+          "csv_empty"
+        ],
+        "full_environment_and_input_equivalence": "not_established",
+        "public_vs_historical_public_build_identity": "not_established",
+        "unobserved": [
+          "full_stdin_content",
+          "other_external_inputs",
+          "native_natural_exit",
+          "postfatal_state",
+          "full_diagnostic_equivalence",
+          "all_target_acceptance",
+          "pixel_or_visual_equivalence"
+        ]
+      },
+      "public": {
+        "mode": "public-refresh",
+        "started_utc": "2026-11-13T10:16:19.817325+00:00",
+        "finished_utc": "2026-11-13T10:16:20.335326+00:00",
+        "execution_time_basis": "saved_public_receipt",
+        "stdin": "inherited; content_not_recorded",
+        "public_pyz_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "public_pyz_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "stdout": {
+          "path": "assets/OPNORMAL273_E145/public/stdout.bin",
+          "sha256": "e7004438da615762a7b8cb4753cc8b2879d580b688bb7ca54ccf1ef17c3fe4fc",
+          "bytes": 613,
+          "encoding": "cp932"
+        },
+        "stderr": {
+          "path": "assets/OPNORMAL273_E145/public/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "bytes": 110,
+          "encoding": "utf-8-sig"
+        },
+        "stderr_scope": "nonfatal_OUTPUTLOG_bounded_text_history_notice_not_diagnostic_parity"
+      },
+      "native": [
+        {
+          "mode": "native-01",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E145/native-01/emuera.log",
+            "sha256": "a5f89b609ae00857a0b5ad17088784e87b2b53faf0d48eaf4efc1608d01bb6e5",
+            "bytes": 1112,
+            "encoding": "utf-16"
+          }
+        },
+        {
+          "mode": "native-02",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E145/native-02/emuera.log",
+            "sha256": "a5f89b609ae00857a0b5ad17088784e87b2b53faf0d48eaf4efc1608d01bb6e5",
+            "bytes": 1112,
+            "encoding": "utf-16"
+          }
+        }
+      ],
+      "selected_normal_markers": [
+        "DM0 VALUE=-2 COUNT=0 ORDER=0",
+        "DM1 VALUE=-2 COUNT=0 ORDER=0",
+        "DM2 VALUE=2 COUNT=0 ORDER=0",
+        "DM3 VALUE=0 COUNT=0 ORDER=0",
+        "DM4 VALUE=3074457345618258602 COUNT=0 ORDER=0",
+        "DM5 VALUE=-3074457345618258602 COUNT=0 ORDER=0",
+        "DM6 VALUE=-9223372036854775808 COUNT=0 ORDER=0",
+        "DM7 VALUE=2 COUNT=2 ORDER=21",
+        "DM8 VALUE=-1 COUNT=0 ORDER=0",
+        "DM9 VALUE=1 COUNT=0 ORDER=0",
+        "DM10 VALUE=-1 COUNT=0 ORDER=0",
+        "DM11 VALUE=0 COUNT=0 ORDER=0",
+        "DM12 VALUE=1 COUNT=0 ORDER=0",
+        "DM13 VALUE=-2 COUNT=0 ORDER=0",
+        "DM14 VALUE=0 COUNT=0 ORDER=0",
+        "DM15 VALUE=0 COUNT=2 ORDER=21"
+      ],
+      "selected_marker_comparison": "readback_once_and_in_order_in_public_stdout_and_both_native_logs; DONE_once_after",
+      "comparison_scope": "selected_normal_markers_only_not_all_lines_or_behavior"
+    },
+    {
+      "case_id": "OPNORMAL273_E138",
+      "typed_targets": [
+        {
+          "kind": "operator",
+          "name": "&"
+        },
+        {
+          "kind": "operator",
+          "name": "^"
+        },
+        {
+          "kind": "operator",
+          "name": "|"
+        }
+      ],
+      "case_register_pointer": "/records/1613",
+      "inputs": {
+        "config": {
+          "path": "assets/OPNORMAL273_E138/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "encoding": "cp932"
+        },
+        "fixture": {
+          "path": "assets/OPNORMAL273_E138/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "12c18d7f66242b2d82f73ec7deffd4c4ad80e66f407941c3589f4ade29256a90",
+          "bytes": 1808,
+          "encoding": "utf-8-sig"
+        }
+      },
+      "recorded_conditions": {
+        "public_initial_directories": [
+          "ERB",
+          "csv_empty"
+        ],
+        "native_saved_topology": [
+          "ERB",
+          "csv_empty"
+        ],
+        "full_environment_and_input_equivalence": "not_established",
+        "public_vs_historical_public_build_identity": "not_established",
+        "unobserved": [
+          "full_stdin_content",
+          "other_external_inputs",
+          "native_natural_exit",
+          "postfatal_state",
+          "full_diagnostic_equivalence",
+          "all_target_acceptance",
+          "pixel_or_visual_equivalence"
+        ]
+      },
+      "public": {
+        "mode": "public-refresh",
+        "started_utc": "2026-11-13T10:16:20.447327+00:00",
+        "finished_utc": "2026-11-13T10:16:20.941325+00:00",
+        "execution_time_basis": "saved_public_receipt",
+        "stdin": "inherited; content_not_recorded",
+        "public_pyz_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "public_pyz_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "stdout": {
+          "path": "assets/OPNORMAL273_E138/public/stdout.bin",
+          "sha256": "620d1052e54f516b80e20661550d418fe78ec5630dda8842e32709e196e9f7bd",
+          "bytes": 845,
+          "encoding": "cp932"
+        },
+        "stderr": {
+          "path": "assets/OPNORMAL273_E138/public/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "bytes": 110,
+          "encoding": "utf-8-sig"
+        },
+        "stderr_scope": "nonfatal_OUTPUTLOG_bounded_text_history_notice_not_diagnostic_parity"
+      },
+      "native": [
+        {
+          "mode": "native-01",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E138/native-01/emuera.log",
+            "sha256": "f1c140e219accf06fe801a9aab6e35da6f59820f003f957354361393cbca77e0",
+            "bytes": 1576,
+            "encoding": "utf-16"
+          }
+        },
+        {
+          "mode": "native-02",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E138/native-02/emuera.log",
+            "sha256": "f1c140e219accf06fe801a9aab6e35da6f59820f003f957354361393cbca77e0",
+            "bytes": 1576,
+            "encoding": "utf-16"
+          }
+        }
+      ],
+      "selected_normal_markers": [
+        "OP0 VALUE=2 COUNT=0 ORDER=0",
+        "OP1 VALUE=5 COUNT=0 ORDER=0",
+        "OP2 VALUE=0 COUNT=0 ORDER=0",
+        "OP3 VALUE=2 COUNT=2 ORDER=12",
+        "OP4 VALUE=7 COUNT=0 ORDER=0",
+        "OP5 VALUE=-1 COUNT=0 ORDER=0",
+        "OP6 VALUE=9 COUNT=0 ORDER=0",
+        "OP7 VALUE=7 COUNT=2 ORDER=12",
+        "OP8 VALUE=5 COUNT=0 ORDER=0",
+        "OP9 VALUE=-6 COUNT=0 ORDER=0",
+        "OP10 VALUE=9 COUNT=0 ORDER=0",
+        "OP11 VALUE=5 COUNT=2 ORDER=12",
+        "OP19 VALUE=4 COUNT=0 ORDER=0",
+        "OP20 VALUE=3 COUNT=0 ORDER=0",
+        "OP21 VALUE=1 COUNT=0 ORDER=0",
+        "OP22 VALUE=1 COUNT=0 ORDER=0",
+        "OP23 VALUE=2 COUNT=0 ORDER=0",
+        "OP24 VALUE=6 COUNT=0 ORDER=0"
+      ],
+      "selected_marker_comparison": "readback_once_and_in_order_in_public_stdout_and_both_native_logs; DONE_once_after",
+      "comparison_scope": "selected_normal_markers_only_not_all_lines_or_behavior"
+    },
+    {
+      "case_id": "OPNORMAL273_E140",
+      "typed_targets": [
+        {
+          "kind": "operator",
+          "name": "!&"
+        },
+        {
+          "kind": "operator",
+          "name": "!|"
+        },
+        {
+          "kind": "operator",
+          "name": "&&"
+        },
+        {
+          "kind": "operator",
+          "name": "^^"
+        },
+        {
+          "kind": "operator",
+          "name": "||"
+        }
+      ],
+      "case_register_pointer": "/records/1614",
+      "inputs": {
+        "config": {
+          "path": "assets/OPNORMAL273_E140/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "encoding": "cp932"
+        },
+        "fixture": {
+          "path": "assets/OPNORMAL273_E140/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "888a13bef765713db2ddf7521c30c5605081c52f0eed90004ec47ad767125cab",
+          "bytes": 3794,
+          "encoding": "utf-8-sig"
+        }
+      },
+      "recorded_conditions": {
+        "public_initial_directories": [
+          "ERB",
+          "csv_empty"
+        ],
+        "native_saved_topology": [
+          "ERB",
+          "csv_empty"
+        ],
+        "full_environment_and_input_equivalence": "not_established",
+        "public_vs_historical_public_build_identity": "not_established",
+        "unobserved": [
+          "full_stdin_content",
+          "other_external_inputs",
+          "native_natural_exit",
+          "postfatal_state",
+          "full_diagnostic_equivalence",
+          "all_target_acceptance",
+          "pixel_or_visual_equivalence"
+        ]
+      },
+      "public": {
+        "mode": "public-refresh",
+        "started_utc": "2026-11-13T10:16:21.045325+00:00",
+        "finished_utc": "2026-11-13T10:16:21.548353+00:00",
+        "execution_time_basis": "saved_public_receipt",
+        "stdin": "inherited; content_not_recorded",
+        "public_pyz_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "public_pyz_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "stdout": {
+          "path": "assets/OPNORMAL273_E140/public/stdout.bin",
+          "sha256": "82712acf4a8cab1181c9ca6ef1a8c0d579d8a5c6fc1820b549ee3afbec9b24c7",
+          "bytes": 806,
+          "encoding": "cp932"
+        },
+        "stderr": {
+          "path": "assets/OPNORMAL273_E140/public/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "bytes": 110,
+          "encoding": "utf-8-sig"
+        },
+        "stderr_scope": "nonfatal_OUTPUTLOG_bounded_text_history_notice_not_diagnostic_parity"
+      },
+      "native": [
+        {
+          "mode": "native-01",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E140/native-01/emuera.log",
+            "sha256": "4dca47ba67d72cc49d1175a231f4a5185d0696e138864a99ea3cf6f538bc2e8d",
+            "bytes": 1498,
+            "encoding": "utf-16"
+          }
+        },
+        {
+          "mode": "native-02",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E140/native-02/emuera.log",
+            "sha256": "4dca47ba67d72cc49d1175a231f4a5185d0696e138864a99ea3cf6f538bc2e8d",
+            "bytes": 1498,
+            "encoding": "utf-16"
+          }
+        }
+      ],
+      "selected_normal_markers": [
+        "LOG0 VALUE=0 COUNT=1 ORDER=1",
+        "LOG1 VALUE=0 COUNT=1 ORDER=1",
+        "LOG2 VALUE=0 COUNT=2 ORDER=12",
+        "LOG3 VALUE=1 COUNT=2 ORDER=12",
+        "LOG4 VALUE=0 COUNT=2 ORDER=12",
+        "LOG5 VALUE=1 COUNT=2 ORDER=12",
+        "LOG6 VALUE=1 COUNT=1 ORDER=1",
+        "LOG7 VALUE=1 COUNT=1 ORDER=1",
+        "LOG8 VALUE=0 COUNT=2 ORDER=12",
+        "LOG9 VALUE=1 COUNT=2 ORDER=12",
+        "LOG10 VALUE=1 COUNT=2 ORDER=12",
+        "LOG11 VALUE=0 COUNT=2 ORDER=12",
+        "LOG12 VALUE=1 COUNT=1 ORDER=1",
+        "LOG13 VALUE=1 COUNT=1 ORDER=1",
+        "LOG14 VALUE=1 COUNT=2 ORDER=12",
+        "LOG15 VALUE=0 COUNT=2 ORDER=12",
+        "LOG16 VALUE=1 COUNT=2 ORDER=12",
+        "LOG17 VALUE=0 COUNT=2 ORDER=12",
+        "LOG18 VALUE=0 COUNT=1 ORDER=1",
+        "LOG19 VALUE=0 COUNT=1 ORDER=1",
+        "LOG20 VALUE=0 BADCOUNT=0",
+        "LOG21 VALUE=1 BADCOUNT=0",
+        "LOG22 VALUE=1 BADCOUNT=0",
+        "LOG23 VALUE=0 BADCOUNT=0"
+      ],
+      "selected_marker_comparison": "readback_once_and_in_order_in_public_stdout_and_both_native_logs; DONE_once_after",
+      "comparison_scope": "selected_normal_markers_only_not_all_lines_or_behavior"
+    },
+    {
+      "case_id": "OPNORMAL273_E141",
+      "typed_targets": [
+        {
+          "kind": "operator",
+          "name": "!="
+        },
+        {
+          "kind": "operator",
+          "name": "<"
+        },
+        {
+          "kind": "operator",
+          "name": "<="
+        },
+        {
+          "kind": "operator",
+          "name": "=="
+        },
+        {
+          "kind": "operator",
+          "name": ">"
+        },
+        {
+          "kind": "operator",
+          "name": ">="
+        }
+      ],
+      "case_register_pointer": "/records/1615",
+      "inputs": {
+        "config": {
+          "path": "assets/OPNORMAL273_E141/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "encoding": "cp932"
+        },
+        "fixture": {
+          "path": "assets/OPNORMAL273_E141/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "4681c464f57ca883d4ff6b3bf13687fe6d82659a5cacf6b932e4ae8a273472d6",
+          "bytes": 3064,
+          "encoding": "utf-8-sig"
+        }
+      },
+      "recorded_conditions": {
+        "public_initial_directories": [
+          "ERB",
+          "csv_empty"
+        ],
+        "native_saved_topology": [
+          "ERB",
+          "csv_empty"
+        ],
+        "full_environment_and_input_equivalence": "not_established",
+        "public_vs_historical_public_build_identity": "not_established",
+        "unobserved": [
+          "full_stdin_content",
+          "other_external_inputs",
+          "native_natural_exit",
+          "postfatal_state",
+          "full_diagnostic_equivalence",
+          "all_target_acceptance",
+          "pixel_or_visual_equivalence"
+        ]
+      },
+      "public": {
+        "mode": "public-refresh",
+        "started_utc": "2026-11-13T10:16:21.659352+00:00",
+        "finished_utc": "2026-11-13T10:16:22.202353+00:00",
+        "execution_time_basis": "saved_public_receipt",
+        "stdin": "inherited; content_not_recorded",
+        "public_pyz_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "public_pyz_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "stdout": {
+          "path": "assets/OPNORMAL273_E141/public/stdout.bin",
+          "sha256": "813fec15f700ab1c439e5321014b62b6838a83378f736bbe1928da7a412a0873",
+          "bytes": 1192,
+          "encoding": "cp932"
+        },
+        "stderr": {
+          "path": "assets/OPNORMAL273_E141/public/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "bytes": 110,
+          "encoding": "utf-8-sig"
+        },
+        "stderr_scope": "nonfatal_OUTPUTLOG_bounded_text_history_notice_not_diagnostic_parity"
+      },
+      "native": [
+        {
+          "mode": "native-01",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E141/native-01/emuera.log",
+            "sha256": "f4b2e806adb60b328de27825a33dc84ddd58290e59fb7d09678c5e175fa5f784",
+            "bytes": 2270,
+            "encoding": "utf-16"
+          }
+        },
+        {
+          "mode": "native-02",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E141/native-02/emuera.log",
+            "sha256": "f4b2e806adb60b328de27825a33dc84ddd58290e59fb7d09678c5e175fa5f784",
+            "bytes": 2270,
+            "encoding": "utf-16"
+          }
+        }
+      ],
+      "selected_normal_markers": [
+        "CMP0 VALUE=0 COUNT=0 ORDER=0",
+        "CMP1 VALUE=1 COUNT=0 ORDER=0",
+        "CMP2 VALUE=0 COUNT=0 ORDER=0",
+        "CMP3 VALUE=0 COUNT=0 ORDER=0",
+        "CMP4 VALUE=0 COUNT=0 ORDER=0",
+        "CMP5 VALUE=0 COUNT=2 ORDER=12",
+        "CMP6 VALUE=1 COUNT=0 ORDER=0",
+        "CMP7 VALUE=0 COUNT=0 ORDER=0",
+        "CMP8 VALUE=1 COUNT=0 ORDER=0",
+        "CMP9 VALUE=1 COUNT=0 ORDER=0",
+        "CMP10 VALUE=1 COUNT=0 ORDER=0",
+        "CMP11 VALUE=1 COUNT=2 ORDER=12",
+        "CMP12 VALUE=0 COUNT=0 ORDER=0",
+        "CMP13 VALUE=0 COUNT=0 ORDER=0",
+        "CMP14 VALUE=1 COUNT=0 ORDER=0",
+        "CMP15 VALUE=0 COUNT=0 ORDER=0",
+        "CMP16 VALUE=1 COUNT=0 ORDER=0",
+        "CMP17 VALUE=1 COUNT=2 ORDER=12",
+        "CMP18 VALUE=1 COUNT=0 ORDER=0",
+        "CMP19 VALUE=0 COUNT=0 ORDER=0",
+        "CMP20 VALUE=0 COUNT=0 ORDER=0",
+        "CMP21 VALUE=1 COUNT=0 ORDER=0",
+        "CMP22 VALUE=0 COUNT=0 ORDER=0",
+        "CMP23 VALUE=0 COUNT=2 ORDER=12",
+        "CMP24 VALUE=0 COUNT=0 ORDER=0",
+        "CMP25 VALUE=1 COUNT=0 ORDER=0",
+        "CMP26 VALUE=1 COUNT=0 ORDER=0",
+        "CMP27 VALUE=0 COUNT=0 ORDER=0",
+        "CMP28 VALUE=1 COUNT=0 ORDER=0",
+        "CMP29 VALUE=1 COUNT=2 ORDER=12",
+        "CMP30 VALUE=1 COUNT=0 ORDER=0",
+        "CMP31 VALUE=1 COUNT=0 ORDER=0",
+        "CMP32 VALUE=0 COUNT=0 ORDER=0",
+        "CMP33 VALUE=1 COUNT=0 ORDER=0",
+        "CMP34 VALUE=0 COUNT=0 ORDER=0",
+        "CMP35 VALUE=0 COUNT=2 ORDER=12"
+      ],
+      "selected_marker_comparison": "readback_once_and_in_order_in_public_stdout_and_both_native_logs; DONE_once_after",
+      "comparison_scope": "selected_normal_markers_only_not_all_lines_or_behavior"
+    },
+    {
+      "case_id": "OPNORMAL273_E144",
+      "typed_targets": [
+        {
+          "kind": "operator",
+          "name": "#"
+        },
+        {
+          "kind": "operator",
+          "name": "?"
+        }
+      ],
+      "case_register_pointer": "/records/1616",
+      "inputs": {
+        "config": {
+          "path": "assets/OPNORMAL273_E144/inputs/emuera.config",
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "bytes": 2164,
+          "encoding": "cp932"
+        },
+        "fixture": {
+          "path": "assets/OPNORMAL273_E144/inputs/ERB/SEARCHBOUND01.ERB",
+          "sha256": "5f373b40055fa5384f29e04bd72fe2de0d68685bcbdb270db65321a802f72207",
+          "bytes": 1413,
+          "encoding": "utf-8-sig"
+        }
+      },
+      "recorded_conditions": {
+        "public_initial_directories": [
+          "ERB",
+          "csv_empty"
+        ],
+        "native_saved_topology": [
+          "ERB",
+          "csv_empty"
+        ],
+        "full_environment_and_input_equivalence": "not_established",
+        "public_vs_historical_public_build_identity": "not_established",
+        "unobserved": [
+          "full_stdin_content",
+          "other_external_inputs",
+          "native_natural_exit",
+          "postfatal_state",
+          "full_diagnostic_equivalence",
+          "all_target_acceptance",
+          "pixel_or_visual_equivalence"
+        ]
+      },
+      "public": {
+        "mode": "public-refresh",
+        "started_utc": "2026-11-13T10:16:22.334352+00:00",
+        "finished_utc": "2026-11-13T10:16:22.850352+00:00",
+        "execution_time_basis": "saved_public_receipt",
+        "stdin": "inherited; content_not_recorded",
+        "public_pyz_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "public_pyz_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+        "stdout": {
+          "path": "assets/OPNORMAL273_E144/public/stdout.bin",
+          "sha256": "9d9b5142eecc52a7ff569c23a0c9f7df54adba1f7fdefd9094f67ecb984517ce",
+          "bytes": 423,
+          "encoding": "cp932"
+        },
+        "stderr": {
+          "path": "assets/OPNORMAL273_E144/public/stderr.bin",
+          "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+          "bytes": 110,
+          "encoding": "utf-8-sig"
+        },
+        "stderr_scope": "nonfatal_OUTPUTLOG_bounded_text_history_notice_not_diagnostic_parity"
+      },
+      "native": [
+        {
+          "mode": "native-01",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E144/native-01/emuera.log",
+            "sha256": "14ea2fdca559513f56c19008e0c2bcc0a5d4a446612c510362c66d199022fde0",
+            "bytes": 732,
+            "encoding": "utf-16"
+          }
+        },
+        {
+          "mode": "native-02",
+          "source_type": "retained_native_log",
+          "recorded_execution_time_utc": null,
+          "execution_time_limit": "not_present_in_retained_probe_receipt",
+          "input_channel": "gui_separate_desktop; synthetic_keyboard_events_sent_false",
+          "natural_exit": "not_observed_after_5_seconds; cleanup_recorded",
+          "exe_sha256_recorded_and_retained": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+          "raw": {
+            "path": "assets/OPNORMAL273_E144/native-02/emuera.log",
+            "sha256": "14ea2fdca559513f56c19008e0c2bcc0a5d4a446612c510362c66d199022fde0",
+            "bytes": 732,
+            "encoding": "utf-16"
+          }
+        }
+      ],
+      "selected_normal_markers": [
+        "TERN5 VALUE=[NO] COUNT=2 ORDER=13",
+        "TERN6 VALUE=[YES] COUNT=2 ORDER=12",
+        "TERN7 VALUE=[YES] COUNT=2 ORDER=12",
+        "TERN8 VALUE=[NO] COUNT=2 ORDER=13",
+        "TERN9 VALUE=[YES] COUNT=2 ORDER=12"
+      ],
+      "selected_marker_comparison": "readback_once_and_in_order_in_public_stdout_and_both_native_logs; DONE_once_after",
+      "comparison_scope": "selected_normal_markers_only_not_all_lines_or_behavior"
+    }
+  ]
+}

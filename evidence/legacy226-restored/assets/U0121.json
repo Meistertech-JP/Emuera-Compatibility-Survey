@@ -1,0 +1,71 @@
+{
+  "schema": "pyemuera-parent-evidence-adjudication-v3",
+  "draft": false,
+  "bundles": [
+    {
+      "path": "automation-v2/v3/runs/a10d33867cc3ad16d4d4aef0b6bffae377ea2ae39d274a5bfd57b2871b4099ea/attempt-20261113T231925-a0d0137bd393",
+      "manifest_sha256": "7ddd954e54381efe498d70f103e5633702924a3189c7e721620966f14388a389"
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "expression_function",
+      "name": "ESCAPE",
+      "accepted": true,
+      "review_row_sha256": "6a3a28b4e3a78108f1e941bf048e40838b06d86e5c5980fae1e3b68167aacdf7",
+      "outcome": "matched_in_finite_scope",
+      "scope": "Finite expression_function:ESCAPE source-relevant comparison only; retained historical helpers/errors and new selected RESULT/RESULTS snapshots. No method-form or post-fatal state inference.",
+      "completion_review": "Finite ESCAPE expression comparison accepted after source-backed correction of the rejected HTML requirement: Native Regex.Escape body, selected case189 empty/ASCII/Japanese/metacharacters/helper once, and new dynamic a.b -> a\\.b with Native2/public1 independent701/702/AUTO_SENT snapshots and continuation. Method form, all Unicode/regex domains and post-fatal state are excluded.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "exact_v24_registration_signature_form",
+          "case_ids": [
+            "UNICODETEXT189_expression_function_ESCAPE"
+          ],
+          "finding": "Source EscapeMethod2586-2599, Regex.Escape line2596, one string return/argument; default signature checker. HTML behavior is explicitly rejected historical scope."
+        },
+        {
+          "id": "actual_target_reach_or_independent_public_availability_gap",
+          "case_ids": [
+            "UNICODETEXT189_expression_function_ESCAPE",
+            "NEXT_ESCAPE_REGEX_ROUTING_01"
+          ],
+          "finding": "Case189 dynamic helpers show count1/order1/DONE; new dynamic ESCAPE call reaches case END and ZZBATCH_DONE in Native2/public1, no constant-folded-only claim."
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "case_ids": [
+            "UNICODETEXT189_expression_function_ESCAPE",
+            "NEXT_ESCAPE_REGEX_ROUTING_01"
+          ],
+          "finding": "Case189 selected regex escaping plus new dynamic a.b -> a\\.b and independent RESULT0=701/RESULT1=702/RESULTS=AUTO_SENT all observed in Native2/public1."
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "case_ids": [
+            "UNICODETEXT189_expression_function_ESCAPE"
+          ],
+          "finding": "189 empty/ASCII/special/Japanese and helper once suffice for named finite Regex.Escape body behavior. No HTML ampersand-doubleescape requirement;201 belongs only to HTML_ESCAPE. Shared validator is static source proof only."
+        },
+        {
+          "id": "result_routing_and_stop_location",
+          "case_ids": [
+            "NEXT_ESCAPE_REGEX_ROUTING_01"
+          ],
+          "finding": "New return a\\.b and independent701/702/AUTO_SENT snapshots precede printing and are followed by END/DONE. Only normal expression path; no method destination or post-fatal inference."
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "case_ids": [
+            "NEXT_ESCAPE_REGEX_ROUTING_01",
+            "UNICODETEXT189_expression_function_ESCAPE"
+          ],
+          "finding": "The corrected source-based finite routing/continuation requirement is directly covered by NEXT_ESCAPE_REGEX_ROUTING_01 plus retained case189 helper/body branches. Prior HTML text is preserved as rejected source-scope history; the method target remains separate."
+        }
+      ]
+    }
+  ]
+}

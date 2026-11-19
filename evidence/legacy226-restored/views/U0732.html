@@ -1,0 +1,149 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0732 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0732 · REVIEW_ja.md</h1>
+<p>12対象の技術差とstatus/necessary_comparison_complete=Falseを保存し、各項の英語直接依頼だけを残件審査範囲の説明に中立化した派生票を収録する。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>e9973700f61be9d39c5117d08bea71d06fc57a90fc09fdc770161d4c71dc4edf</code></p>
+<p><a href="../assets/U0732.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>39eb5edf676a761d2d9f6cb1e184c6be0bb625eaa5a5b92004e58f377aa6bbdb</code></p>
+<pre>&gt; 公開用派生資料 `U0732`（公開用編集日: 2026-11-18）。原票全文の技術観測・判定・制限を保持し、指定箇所だけを編集した。
+&gt; 原票ファイルSHA-256: `e9973700f61be9d39c5117d08bea71d06fc57a90fc09fdc770161d4c71dc4edf`。これは原票の識別値であり、派生物のハッシュや元実行のsealを新たに発行するものではない。
+&gt; 本文中の旧相対パス・ファイル名・nonce・PID・実行時刻・fixture値・hash/seal・「現行/現在」は原票作成/実行当時の参照と記録。今回のstage構成・新規実行・現行状態を示さない。
+&gt; Copyright (c) 2026 Meistertech-JP — MIT（独自の説明・編集部分、LICENSE.txt）。エンジン由来の診断・表現はLICENSES/とvendor/emuera/NOTICEの個別条件を維持する。
+
+# 既存証拠の意味レビュー 03
+
+## 範囲と判断方法
+
+指定12対象について、現在の `TARGET_COMPARISON_REVIEW_CURRENT.json` の対象行・残条件、親レビュー提案の `case_records` / limitations / evidence_refs、現行 `CASE_SCENARIO_REGISTER.json` の登録内容、ケースレビュー・比較結果・fixture・本家ソース抜粋を照合した。Native/PyEmueraの再実行はしていない。製品、公開物、Git、Drive、親台帳・ケース登録簿・件数は変更していない。
+
+提案に列挙された証拠参照は **1267件**。現在ファイルの存在とSHA-256を全件再確認し、欠落・ハッシュ不一致は0件だった。この検査は原票の同一性確認であり、意味上の一致を自動的に証明するものではない。
+
+判定の `accept` は記載した有限範囲の差分を親が受け入れてよいという推奨で、命令全体の網羅完了や互換性認定ではない。`partial` は表示幅・診断・他命令との相互作用などに限定した観測の受入候補で、命令単体の一般的な挙動差としては範囲を狭める判断。
+
+## 対象別レビュー
+
+### TRYJUMPLIST — accept
+
+確認ケース: `TRYJUMPLIST01`
+
+TRYJUMPLIST01 では、本家2回とも欠落候補 MISSING を飛ばして後続の定義済み GOOD を実行し、GOOD_BODY と復帰後マーカーを出した。公開PyEmueraは @GOOD の最初の命令で E_UNCALLED となり、本文・後続へ進まない。これは診断文だけでなく、ERBから観測できる実行到達・継続の差。有限受入は「欠落候補の後に定義候補が1件」の形だけ。全欠落、複数候補、引数、動的名、入れ子、FUNC/ENDFUNC全構文には広げない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくTRYJUMPLISTの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### CUSTOMDRAWLINE — partial
+
+確認ケース: `DISPLAYLINES202_C202_17, DISPLAYLINES202_C202_18`
+
+C202_17/C202_18 で、リテラルを繰り返す生成本文の長さ・終端が本家と公開版で異なる。C202_17 では見かけ上の関数呼出しは両者とも評価されず、状態・評価副作用は一致。差は設定された描画幅に基づく繰返し量・折返しの有限な出力差として実在する一方、証拠は異なる表示幅環境のピクセル測定を含まず、命令ロジック一般の不一致原因までは分離しない。固定fixture/configでの表示出力差だけを受入候補とし、一般的な意味差やGUI描画一致は認定しない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくCUSTOMDRAWLINEの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### DRAWLINEFORM — partial
+
+確認ケース: `DISPLAYLINES202_C202_15, DISPLAYLINES202_C202_20`
+
+C202_15 はFORMの最終内容、ヘルパー回数2・順序12、RESULT/RESULTSが一致し、物理行の折返しとLINECOUNT差だけが残る。C202_20 は両エンジンとも空の実行時FORMで同じERB 300行目に停止し、後続状態は観測不能。本家のDRAWLINE空文字診断と公開版のGETLINESTR/E_ARGUMENT診断、およびOUTPUTLOGのエラー後ライフサイクルが異なる。したがって確認できる差はこのケースの折返し/行数と診断・ログ経路であり、エラー後状態やFORM評価後の副作用差は推定しない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくDRAWLINEFORMの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### SAVEGLOBAL — accept
+
+確認ケース: `GLOBALSAVE205_global_only_RESULT, GLOBALSAVE205_global_savedata_RESULT`
+
+2つの有効fixture（GLOBALのみ、GLOBAL SAVEDATA）で、本家2反復の選択161状態値/fixtureは安定。LOADGLOBALの保存・復元値など大部分は一致し、唯一の選択差はSAVEGLOBAL後のRESULTで本家は事前値703を保持、公開版は成功値1を設定する。これはOUTPUTLOGに記録された診断差ではなく、後続ERBが読める状態差。選定項目・同一プロセスの範囲に限定し、保存形式のバイト互換、相互読込、全フィールド・失敗系は含めない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくSAVEGLOBALの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### RESETDATA — accept
+
+確認ケース: `RESETGLOBAL198_RESETDATA_STYLE`
+
+RESETDATAの選定後状態は大部分一致するが、直後のGETSTYLEが本家0、公開版1となり、再実行後も同じ。C#側のResetData後Console.ResetStyle呼出しと対応する選択状態差で、単なるエラー文やログ整形差ではない。確認したのは数値STYLE状態であり、フォント/色の画面描画同等性や全RESET系状態ではない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくRESETDATAの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### DOTRAIN — accept
+
+確認ケース: `TRAINLIFE220_dot-cancel-queue, TRAINLIFE220_dot-eventcomend, TRAINLIFE220_dot-eventtrain, TRAINLIFE220_dot-showstatus, TRAINLIFE220_dot-showusercom, TRAINLIFE220_stop-inactive`
+
+6つの登録ケースの有効経路で、DOTRAIN直後の命令到達が分かれる。本家は UNREACHED_DOT_* の後続マーカーを出してから選択先へ進み、公開版は直ちに切替えてそのマーカーを出さない。EVENTTRAIN、SHOW_STATUS、SHOW_USERCOM、EVENTCOMENDおよびcancel-queue経路で比較され、動的選択/回数の一部も記録済み。これは制御フロー差。CUP等の一部状態差はBEGIN既知差またはライフサイクル文脈と結び付いておりDOTRAIN単独の効果に帰属させない。active STOPCALLTRAIN例外もDOTRAIN差として受け入れない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくDOTRAINの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### SETBIT — accept
+
+確認ケース: `BITINDEXEFFECT185_SETBIT, BITPOWERSWAP184_SETBIT`
+
+BITINDEXEFFECT185で動的添字ヘルパーを使うと、本家は各ビットの読取/書込ごとに添字式を再評価し、公開版は最初の添字を一度だけ評価する。SETBITの2bit条件では本家配列が0,1,16,20、公開版は5,8,16,32となり、評価回数/順序も異なる。BITPOWERSWAP184でも最終値が一致する固定添字条件で副作用回数/順序の差を確認。配列状態とERB副作用の双方に出る有限差。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくSETBITの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### CLEARBIT — accept
+
+確認ケース: `BITINDEXEFFECT185_CLEARBIT, BITPOWERSWAP184_CLEARBIT`
+
+BITINDEXEFFECT185で動的添字の再評価差が実配列の書込要素を変える。2bit条件は本家7,6,16,16、公開版2,8,16,32で、helper回数/順序も異なる。BITPOWERSWAP184の固定添字条件でも評価回数/順序差が記録され、最終値一致だけでは同値でない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくCLEARBITの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### INVERTBIT — accept
+
+確認ケース: `BITINDEXEFFECT185_INVERTBIT, BITPOWERSWAP184_INVERTBIT`
+
+BITINDEXEFFECT185で動的添字を再評価する本家と、初回添字を固定する公開版の差が、2bit条件の実配列値（本家7,6,16,20／公開版2,8,16,32）とhelper回数/順序に現れる。BITPOWERSWAP184でも固定添字で評価回数/順序の差を確認。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくINVERTBITの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### VARSET — accept
+
+確認ケース: `VARCVARSET192_C192X03, VARCVARSET192_C192X09`
+
+有効な逆順範囲 VARSET ZZN:3,77,4,1 と文字列配列版で、本家は境界を入替えて [1,4) の3要素を更新するが、公開版は全6要素を変更しない。Native反復は一致し、公開側も命令後の継続を確認。値ベクトルの差であり、ログ配置だけの差ではない。通常/順方向/空範囲等は一致する条件も含むが、全型・全配列への一般化はしない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくVARSETの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### CVARSET — accept
+
+確認ケース: `VARCVARSET192_C192X13, VARCVARSET192_C192X17`
+
+本家v24の引数ビルダーはCVARSETの1引数形式を受け付け、要素index=0・値=0/空文字の既定を適用する。CFLAG/CSTRの選定要素を本家2回ともリセットして後続へ進む一方、公開版は有効な同一入力を引数個数 E_ARGUMENT（ERB 28行目）で停止する。これは有効構文に対する実行差。公開版の停止後状態・評価副作用は未観測なので、途中で何も変更していないとは結論しない。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくCVARSETの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+### FORCEKANA — partial
+
+確認ケース: `KANALITERAL213_K213_1, KANALITERAL213_K213_4, KANALITERAL213_K213_7, KANALITERAL213_K213_8, KANALITERAL213_STANDALONE, KANALOG01, KANALOG02, PARFORCE01, PRINTKD212_FORCEKANA_INTERACTION`
+
+登録9ケースでは、FORCEKANA設定後のPRINTK/K付き出力に限定したコードポイント差が強く確認される。最小ケースと反復付きケースで、mode 2の半角ｱ/ｶﾞ/ｳﾞは本家が保持、公開版はひらがな化し、mode 3のｳﾞは本家ヴ(U+30F4)、公開版ゔ(U+3094)。混合ログでもmode 2差が再現し、指定外modeや選定文字の一致も記録。これは表示変換の実出力差だが、FORCEKANA setter単体の状態設定不一致を示すものではなく、PRINTK等の変換経路との相互作用として限定する。負値-1では両方とも同じERB行で停止し、異なるのは診断文。全Unicode/文字集合・GUI字形は未確認。
+
+現行行: status=`known_difference_documented`, necessary_comparison_complete=`False`。残条件は「原fixture/ソース分岐に基づくFORCEKANAの差分確認と、動作・状態差/診断・表示差の分類（実装修正や成功までの反復は条件外）」の親レビューであり、本レビューだけで行の状態・完了数は変更しない。
+
+## 集約
+
+- **accept（有限な観測差）:** TRYJUMPLIST、SAVEGLOBAL、RESETDATA、DOTRAIN、SETBIT、CLEARBIT、INVERTBIT、VARSET、CVARSET。
+- **partial（観測差は受け入れ候補だが、分類を限定）:** CUSTOMDRAWLINE、DRAWLINEFORM、FORCEKANA。
+- 診断文や改行・折返しだけの差を、配列状態・評価副作用・制御フロー差として計上していない。CVARSETの公開側停止後状態、DRAWLINEFORMのエラー後状態、DOTRAINに付随するBEGIN由来状態、FORCEKANA setter単体の状態差など、直接観測できない事項は未確定のまま残した。
+- 12対象すべての現在statusは `known_difference_documented`。このレビューは親受入の意味判断のみであり、ledger/register/countを更新していない。
+
+## 参照した fixture とソース抜粋
+
+代表的な実行fixtureと本家ソース抜粋のパス・SHA-256は `RESULTS.json` の `manually_inspected_fixture_and_source_refs` に記録した。TRYJUMPLISTの欠落候補→GOOD fixture、DISPLAYの同一ERB、SAVEGLOBAL/RESETDATA/DOTRAIN/ビット添字/VARSET-CVARSETのERB、FORCEKANAの混合文字列・最小再現を確認した。本家抜粋は、TRYJUMPLISTのScriptProc、ビット命令のVariableTerm再読込、SAVEGLOBAL/RESETDATAの命令本体、DOTRAINのstate switch、VARSET/CVARSETの引数builderと実行本体、ForceKanaのflag代入を含む。
+
+fixture内容は読み取りのみで、実行していない。Native/publicの出力と状態は保存済みCOMPARISONおよび原ログを参照し、今回新たな起動は行っていない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1666 · command_or_syntax:SAVEGLOBAL · check</li>
+<li>L1676 · command_or_syntax:RESETDATA · check</li>
+<li>L1688 · command_or_syntax:DOTRAIN · check</li>
+<li>L1697 · command_or_syntax:SETBIT · check</li>
+<li>L1702 · command_or_syntax:CLEARBIT · check</li>
+<li>L1707 · command_or_syntax:INVERTBIT · check</li>
+<li>L1712 · command_or_syntax:VARSET · check</li>
+<li>L1717 · command_or_syntax:CVARSET · check</li>
+</ul></html>

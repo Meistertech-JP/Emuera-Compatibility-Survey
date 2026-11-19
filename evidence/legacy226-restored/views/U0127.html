@@ -1,0 +1,320 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0127 · comparison-3.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0127 · comparison-3.json</h1>
+<p>原票種別=comparison-3.json; 参照対象=expression_function:STRFINDU。対象=&quot;SEARCH02_STRFINDU_EMPTY_NEG1&quot;; classification=&quot;different_scoped_stop&quot;; valid=true。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を1個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>f6bc68192283085ff774c141d516ba477042590c66219bddc8f54023d4d7b6d0</code></p>
+<p><a href="../assets/U0127.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>f2798f3eb2b165a7e7a6ff17a7be3d73db7b5f95ecc108e130c40c0bacd01f0d</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;pyemuera.fatal-comparison.v1&quot;,
+  &quot;valid&quot;: true,
+  &quot;case_id&quot;: &quot;SEARCH02_STRFINDU_EMPTY_NEG1&quot;,
+  &quot;typed_key&quot;: &quot;expression_function:STRFINDU&quot;,
+  &quot;classification&quot;: &quot;different_scoped_stop&quot;,
+  &quot;expression&quot;: &quot;STRFINDU((RESULT:0 == 701 ? \&quot;AあBA\&quot; # \&quot;BAD_SENT\&quot;),\&quot;\&quot;,-1)&quot;,
+  &quot;attempt&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\automation-v2\\v3\\runs\\5b1477937969ee7d4523d5881a9bfb49f0147aa74bab31582b28f76d65b9de35\\attempt-20261113T232847-88ef2abe3559&quot;,
+  &quot;run_key&quot;: &quot;5b1477937969ee7d4523d5881a9bfb49f0147aa74bab31582b28f76d65b9de35&quot;,
+  &quot;plan_sha256&quot;: &quot;d64010f5987704746753145c4ef629e27ef58b99f271b99be7e2195338d2e590&quot;,
+  &quot;source_result_sha256&quot;: &quot;af0dde17feb68f74901bfe813fe174e0cc429e3951cfaf8ab9d4b1b1fde81eb3&quot;,
+  &quot;manifest_sha256&quot;: &quot;6aea679311b73ca635ef7d1318788e1786c7a209a58912177e868a12c22abd19&quot;,
+  &quot;original_v3&quot;: {
+    &quot;status&quot;: &quot;failure&quot;,
+    &quot;error&quot;: &quot;single_vs_batch_gate_failed&quot;,
+    &quot;case_status&quot;: &quot;failure&quot;,
+    &quot;sha256&quot;: &quot;af0dde17feb68f74901bfe813fe174e0cc429e3951cfaf8ab9d4b1b1fde81eb3&quot;,
+    &quot;unchanged&quot;: true
+  },
+  &quot;native&quot;: {
+    &quot;return&quot;: &quot;-1&quot;,
+    &quot;complete_markers&quot;: true,
+    &quot;repeat_native&quot;: 2,
+    &quot;all_four_stage_logs_equal&quot;: true,
+    &quot;observations&quot;: {
+      &quot;value&quot;: &quot;-1&quot;,
+      &quot;result0&quot;: &quot;701&quot;,
+      &quot;result1&quot;: &quot;702&quot;,
+      &quot;results&quot;: &quot;AUTO_SENT&quot;
+    }
+  },
+  &quot;stages&quot;: [
+    {
+      &quot;name&quot;: &quot;single-01&quot;,
+      &quot;native_process_outcomes&quot;: [
+        &quot;forced_termination&quot;,
+        &quot;forced_termination&quot;
+      ],
+      &quot;public&quot;: {
+        &quot;source&quot;: &quot;ERB/SEARCHBOUND01.ERB&quot;,
+        &quot;line&quot;: 9,
+        &quot;error_code&quot;: &quot;E_INDEX&quot;,
+        &quot;returncode&quot;: 1,
+        &quot;aftermarkers_present&quot;: false,
+        &quot;postfatalvalues&quot;: &quot;UNOBSERVED&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;batch&quot;,
+      &quot;native_process_outcomes&quot;: [
+        &quot;forced_termination&quot;,
+        &quot;forced_termination&quot;
+      ],
+      &quot;public&quot;: {
+        &quot;source&quot;: &quot;ERB/SEARCHBOUND01.ERB&quot;,
+        &quot;line&quot;: 9,
+        &quot;error_code&quot;: &quot;E_INDEX&quot;,
+        &quot;returncode&quot;: 1,
+        &quot;aftermarkers_present&quot;: false,
+        &quot;postfatalvalues&quot;: &quot;UNOBSERVED&quot;
+      }
+    }
+  ],
+  &quot;public_postfatalvalues&quot;: &quot;UNOBSERVED&quot;,
+  &quot;postfatalvalues&quot;: &quot;UNOBSERVED&quot;,
+  &quot;fullrawmatch&quot;: false,
+  &quot;fulltargetclosure&quot;: false,
+  &quot;natural_native_exit_claim&quot;: false,
+  &quot;rawpins&quot;: [
+    {
+      &quot;path&quot;: &quot;MANIFEST.json&quot;,
+      &quot;sha256&quot;: &quot;6aea679311b73ca635ef7d1318788e1786c7a209a58912177e868a12c22abd19&quot;
+    },
+    {
+      &quot;path&quot;: &quot;REQUEST.json&quot;,
+      &quot;sha256&quot;: &quot;94127c6f625a16ee2727bc101b8e612ec688c10c4bdb8a90dc2b3e2d6c33f31e&quot;
+    },
+    {
+      &quot;path&quot;: &quot;RESULT.json&quot;,
+      &quot;sha256&quot;: &quot;af0dde17feb68f74901bfe813fe174e0cc429e3951cfaf8ab9d4b1b1fde81eb3&quot;
+    },
+    {
+      &quot;path&quot;: &quot;SEAL.json&quot;,
+      &quot;sha256&quot;: &quot;f17e6b4cd1aa49bae57539d7a956fbc4dd76964b302596500c6f5cf42bfb368e&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;sha256&quot;: &quot;e93cc4e2152fb3f5860ba3f7d4f2e3fc836f73338eb078aeb9a691a555b204a0&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/Emuera1824+v24.exe&quot;,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/emuera.config&quot;,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;20e6ee13db89b1085daa43a0d40bf0b540c00674d4b1d2e9505c2e6ce5e3cf43&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/native-settlement.json&quot;,
+      &quot;sha256&quot;: &quot;1f9917081eac16860e950d806ae2d1ca26fb88e0aa9327ef7a6f5c598bd20bcb&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/probe.json&quot;,
+      &quot;sha256&quot;: &quot;c7e26498b81ee33dd78b2e47a340b2041e5a9a4295376e775c519f1996ec0997&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/runner.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-01/runner.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;6bd4a97299198e9dbda98b6d1d91bedf84a8fd28a6cb27caf5b61cb66c0d8064&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;sha256&quot;: &quot;e93cc4e2152fb3f5860ba3f7d4f2e3fc836f73338eb078aeb9a691a555b204a0&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/Emuera1824+v24.exe&quot;,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/emuera.config&quot;,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;20e6ee13db89b1085daa43a0d40bf0b540c00674d4b1d2e9505c2e6ce5e3cf43&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/native-settlement.json&quot;,
+      &quot;sha256&quot;: &quot;f1df03419fe2bed113492174d391bb3f63f31657004ffb980721f05e37336b72&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/probe.json&quot;,
+      &quot;sha256&quot;: &quot;61879cfff0b71d4919c03a4867502177b4a27af7ea26735d063cee71f595423a&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/runner.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/native-02/runner.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;76dd10d6a09e1684c20c105eb91e22bd3cc8333ef9722fd8e77a5e15f332d99a&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;sha256&quot;: &quot;e93cc4e2152fb3f5860ba3f7d4f2e3fc836f73338eb078aeb9a691a555b204a0&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/emuera.config&quot;,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/runner.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/runner.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/verified-public-pyz.json&quot;,
+      &quot;sha256&quot;: &quot;352d2e10ba7e389973840331b67f0dc594852a1eccbde4bb10fe1c774807ce6c&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/verified.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;3b1b27140b62d45aefe615d173778e7a43d2fea2d854a528367f50b0ef084499&quot;
+    },
+    {
+      &quot;path&quot;: &quot;batch/py/verified.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scope-sources/63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8.json&quot;,
+      &quot;sha256&quot;: &quot;63fbd64face952a5fa9aac867d34c8dcc6d6e89d5bf14911df817eb4c7b8bcc8&quot;
+    },
+    {
+      &quot;path&quot;: &quot;scope-sources/e973ebacf2e9751a5dec04d4454066e2923c1f6e17a3c3b3b56f1ee195889a94.json&quot;,
+      &quot;sha256&quot;: &quot;e973ebacf2e9751a5dec04d4454066e2923c1f6e17a3c3b3b56f1ee195889a94&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;sha256&quot;: &quot;e93cc4e2152fb3f5860ba3f7d4f2e3fc836f73338eb078aeb9a691a555b204a0&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/Emuera1824+v24.exe&quot;,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/emuera.config&quot;,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;20e6ee13db89b1085daa43a0d40bf0b540c00674d4b1d2e9505c2e6ce5e3cf43&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/native-settlement.json&quot;,
+      &quot;sha256&quot;: &quot;7c44c6d5abf610273ff523966eab0e45adc78369fca0e2b350e8115fede54544&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/probe.json&quot;,
+      &quot;sha256&quot;: &quot;ffa2e48eb497cd9a06c937b3e6677961cc3de8ea4e6e0e575c3a7dd280c7cecf&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/runner.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-01/runner.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;ddc997bb3f0f175b4447b96b248812daa975866336d48541131ffb46f6a9e839&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;sha256&quot;: &quot;e93cc4e2152fb3f5860ba3f7d4f2e3fc836f73338eb078aeb9a691a555b204a0&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/Emuera1824+v24.exe&quot;,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/emuera.config&quot;,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;20e6ee13db89b1085daa43a0d40bf0b540c00674d4b1d2e9505c2e6ce5e3cf43&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/native-settlement.json&quot;,
+      &quot;sha256&quot;: &quot;104bc2656773e96c9eb4d3362bab94d2cc71ff04db2e6ede4e5b04889eebdda2&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/probe.json&quot;,
+      &quot;sha256&quot;: &quot;09f1cec455c114c09b873de43fa540fb444631ba7e7464b7c287e26ca8ce1742&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/runner.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/native-02/runner.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;db279d210f4ccd013a34700c346a84fa4e26af593c7247882d1ee81e8cd1afe4&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;sha256&quot;: &quot;e93cc4e2152fb3f5860ba3f7d4f2e3fc836f73338eb078aeb9a691a555b204a0&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/emuera.config&quot;,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/runner.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/runner.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/verified-public-pyz.json&quot;,
+      &quot;sha256&quot;: &quot;3160234cd38e563bf0923162fbd4c23ff13d687f654aab71d35b50c96ad541aa&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/verified.stderr.bin&quot;,
+      &quot;sha256&quot;: &quot;3b1b27140b62d45aefe615d173778e7a43d2fea2d854a528367f50b0ef084499&quot;
+    },
+    {
+      &quot;path&quot;: &quot;single-01/py/verified.stdout.bin&quot;,
+      &quot;sha256&quot;: &quot;349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/native-helper.py&quot;,
+      &quot;sha256&quot;: &quot;4b21ca3dd42e2d8f5ba2614f70ecc36c5b2a81251ff3d738841b0137b163a1b5&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/public-helper.py&quot;,
+      &quot;sha256&quot;: &quot;7b40f716f18436786694557d986e56a2da711a916e5434fc588e19ee43733ec3&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/runner.py&quot;,
+      &quot;sha256&quot;: &quot;fdaa272ff1db2221bcf2ef82d74ca7202cb40cfe10b4a7b3ae18152286b2a0ae&quot;
+    },
+    {
+      &quot;path&quot;: &quot;tools/validator.py&quot;,
+      &quot;sha256&quot;: &quot;5a03132d0c525d3450f6f4b0f2b11d0f6c0416e8b01afa5cdbc0ade466dd3fb9&quot;
+    }
+  ],
+  &quot;raw_format_references&quot;: {
+    &quot;evidence/strfind-range-20261113-129/UNEG/py/runner.stderr.bin&quot;: &quot;9486b17167f3a23e7d4219213e58d2cd90018ea0f83598668a292e4fa5c60e3e&quot;,
+    &quot;evidence/strfind-range-20261113-129/UNEG/py/runner.stdout.bin&quot;: &quot;349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265&quot;,
+    &quot;evidence/strfindu-empty-boundary-20261113-127/py.stderr.bin&quot;: &quot;59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc&quot;
+  },
+  &quot;classifier_sha256&quot;: &quot;00ed14e347f01495c7628bbc1e64d2e64e226daa0669133bba06bd7aa9049c0c&quot;,
+  &quot;scope&quot;: &quot;Exact singleton Native returning observations versus public E_INDEX stop only; no postfatal variable or whole-target closure.&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2256 · expression_function:STRFINDU · check</li>
+<li>L2261 · expression_function:STRFINDU · check</li>
+</ul></html>

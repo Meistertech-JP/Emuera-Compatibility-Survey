@@ -1,0 +1,62 @@
+{
+  "schema": "parent-finite-target-acceptance-v1",
+  "accepted_utc": "2026-11-13T22:10:51.334518+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "OUTPUTLOG"
+  },
+  "accepted": true,
+  "outcome": "documented_difference",
+  "scope": "Normal one-call log-byte control plus directory-at-emuera.log collision; both engines preserve sentinel and continue past first failed write; Native modal vs public stderr.",
+  "independent_review": "evidence/outputlog-directory-collision-20261114/attempt-08/INDEPENDENT_REVIEW_ja.md",
+  "attempt01_manifest_sha256": "979d353df2ac7ca49d3e8e8d6bbe0de9e6ef11dd30696c374f1dc303a98bb81d",
+  "attempt08_manifest_sha256": "01d8a1a55478f811ece276459ecd1c871016252f175f549bf7675fb02f6f2c9c",
+  "remaining": [
+    "Native natural process exit",
+    "continuation after second write failure",
+    "other OUTPUTLOG write-failure classes"
+  ],
+  "before_sha256": {
+    "MASTER_LEDGER.json": "9035ee5bfdfd12601a05ecfe1bbd3915e1aeb8d875cabff7755f1a93ffdee4b7",
+    "CASE_SCENARIO_REGISTER.json": "5101e18bb41f88d7dbe0872620970ad14bf83029e65415d6f46ebb23c7fdde48",
+    "FULL_COVERAGE_CASE_PLAN.json": "1da7a77e87f5a394d7ee3b7a1914f4d9b56d6c3480764f93c46a1a2bd4eed3a1",
+    "TARGET_COMPARISON_REVIEW_CURRENT.json": "83941504c5f6d15140b39c695303e4247c4eceb57bf042640653bfab4546ad44",
+    "COVERAGE_PROGRESS_CURRENT.json": "c55acce9b5ac4d0ce3c241d5bc6391000a0291c1d0777e0342dfbc5d6a4d86a7",
+    "EXECUTION_BACKLOG.json": "2e7ff55b0c488ef66fee6e807e10dec5a974be71fc7b739800b2f4f1f73f5d2a",
+    "COVERAGE_STATUS.md": "8da24b76cce951d15370f0cd4132745eff3f24403339dd87ff13b37ce79a4dfa",
+    "PARENT_COMPARISON_REVIEW_VALIDATION_CURRENT.json": "6aae023db3d587c63f103b68ece71fc5e3d4320946d3e63d79d90f6b37249012"
+  },
+  "after_sha256_before_review_snapshot": {
+    "MASTER_LEDGER.json": "c6e59f061c127545ea7e0e3b0f6278b324989a526b84a8147f13ea567f5f0b50",
+    "CASE_SCENARIO_REGISTER.json": "4606a34714294b7e9c998af233dedf0e9430cff0b39bfd8bf18b82088164b155",
+    "FULL_COVERAGE_CASE_PLAN.json": "7cf48472851d5ca5b10bbf0d69e1ac5b26a1c4f03072479f16fb3d22e04f1530"
+  },
+  "product_modified": false,
+  "public_artifact_modified": false,
+  "drive_modified": false,
+  "after_sha256": {
+    "MASTER_LEDGER.json": "c6e59f061c127545ea7e0e3b0f6278b324989a526b84a8147f13ea567f5f0b50",
+    "CASE_SCENARIO_REGISTER.json": "4606a34714294b7e9c998af233dedf0e9430cff0b39bfd8bf18b82088164b155",
+    "FULL_COVERAGE_CASE_PLAN.json": "7cf48472851d5ca5b10bbf0d69e1ac5b26a1c4f03072479f16fb3d22e04f1530",
+    "COVERAGE_PROGRESS_CURRENT.json": "c55acce9b5ac4d0ce3c241d5bc6391000a0291c1d0777e0342dfbc5d6a4d86a7",
+    "EXECUTION_BACKLOG.json": "2e7ff55b0c488ef66fee6e807e10dec5a974be71fc7b739800b2f4f1f73f5d2a",
+    "COVERAGE_STATUS.md": "7f4c826bba975e7f0d81c4b89687ecf2d8e9dd355f30d2fc22d996878cadbda1",
+    "PARENT_COMPARISON_REVIEW_VALIDATION_CURRENT.json": "6aae023db3d587c63f103b68ece71fc5e3d4320946d3e63d79d90f6b37249012"
+  },
+  "decision_count_correction": {
+    "corrected_utc": "2026-11-14",
+    "finding": "The first integration script incremented the necessary-complete count twice while only one target row changed status. Two scenarios were registered, one target was accepted. Counts are corrected to 248 complete and 446 remaining.",
+    "incorrect_snapshot_sha256": "cdee65585b1ab92e8910e03c48a9a7210fbb90ea189865bee63e9d3bfb369ad6"
+  },
+  "accepted_files_sha256": {
+    "MASTER_LEDGER.json": "c6e59f061c127545ea7e0e3b0f6278b324989a526b84a8147f13ea567f5f0b50",
+    "CASE_SCENARIO_REGISTER.json": "4606a34714294b7e9c998af233dedf0e9430cff0b39bfd8bf18b82088164b155",
+    "FULL_COVERAGE_CASE_PLAN.json": "7cf48472851d5ca5b10bbf0d69e1ac5b26a1c4f03072479f16fb3d22e04f1530"
+  },
+  "counts": {
+    "targets": 694,
+    "registered_scenarios": 1708,
+    "necessary_comparison_complete": 248,
+    "remaining_targets": 446
+  }
+}

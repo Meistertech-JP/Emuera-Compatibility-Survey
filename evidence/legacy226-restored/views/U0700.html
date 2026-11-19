@@ -1,0 +1,24 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0700 · SOURCE_SCOPE.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0700 · SOURCE_SCOPE.md</h1>
+<p>LOGのソース行・ガード順・既存/追加条件を説明した技術票で、全ハッシュを含め原文収録できる。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>24e77fd19add5e9d2a24b8052b0c58ac1fa3333485e2bad589f8a6aad21e29a2</code></p>
+<p><a href="../assets/U0700.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>24e77fd19add5e9d2a24b8052b0c58ac1fa3333485e2bad589f8a6aad21e29a2</code></p>
+<pre># LOG expression-function source scope
+
+Pinned Emuera v24 `Creator.Method.cs` SHA-256 `e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08`, recorded at `evidence/target-closure-review-20261113/functions/SOURCE_CONTRACTS.json#/contracts/LOG`: the function evaluates its Int64 argument at line 1121, rejects `ret &lt;= 0` at lines 1122-1123, uses the natural logarithm for the default `Base == Math.E` at lines 1127-1130, checks invalid/range results, then casts to Int64 at line 1137. Native registration is `LogMethod(Math.E)`; this remains distinct from LOG10&#x27;s base-10 constructor.
+
+New dynamic cases return 0, -1, and 3 through a counted helper. The invalid inputs test argument-before-domain-guard ordering; 3 tests positive truncation to 1 and continuation. Existing registered comparisons for LOG(2)-&gt;0 and LOG(3)-&gt;1, plus LOG(1) helper evidence, are reused.
+
+Pinned public pyz SHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`; Native executable SHA-256 `14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964`; config SHA-256 `f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc`.
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2200 · expression_function:LOG · check</li>
+</ul></html>

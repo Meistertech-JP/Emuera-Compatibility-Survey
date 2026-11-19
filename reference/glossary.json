@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "scope": "Independent explanations of terms used by this reference and its requirements; not new observation results.",
+  "terms": [
+    {"en":"command registration","ja":"本家内部の命令登録","explanation_ja":"ERBの命令名を、引数の読み方や実行処理に対応付ける内部の定義です。実際にその命令を実行できたという観測とは別です。","explanation_en":"An internal definition associates an ERB command name with argument parsing and execution. Registration alone is not a runtime observation."},
+    {"en":"constructor arguments","ja":"内部初期化の引数","explanation_ja":"本家ソースが処理オブジェクトを作る際の設定値です。ERBに書く引数の個数や並びと同じものとは限りません。","explanation_en":"Settings passed when the native source creates a handler. These are not necessarily the arguments written in ERB."},
+    {"en":"builder","ja":"引数解析器","explanation_ja":"命令の後の文字列を、実行処理が扱う式や変数参照へ読み替える内部処理です。","explanation_en":"Internal code parses the text following a command into expressions or variable references used during execution."},
+    {"en":"CreateArgument","ja":"内部の引数生成処理","explanation_ja":"本家ソースにある引数生成メソッド名です。引数の型・省略・エラーをどの時点で検査するかの根拠になります。","explanation_en":"A native-source method name. Its implementation helps establish argument types, omissions, and when errors are checked."},
+    {"en":"method-as-command","ja":"メソッドの命令形式","explanation_ja":"式中関数と同じ処理を命令の形で呼ぶ形式です。戻り値の格納先などは、各対象の説明で式中関数と区別します。","explanation_en":"A command-form invocation of an expression method. Each entry distinguishes it from expression use, including where the return value is stored."},
+    {"en":"raw literal","ja":"式評価しない生の文字列","explanation_ja":"式として計算するのではなく、記述された文字として読む入力です。FORM展開や引数区切りの有無は命令ごとに異なります。","explanation_en":"Text read as written rather than evaluated as an expression. FORM expansion and separators depend on the particular command."},
+    {"en":"nullable","ja":"省略・空欄を許す指定","explanation_ja":"引数の空欄や未指定を許すことを表す内部用語です。空文字列・数値0と同じ意味とは限らず、対象ごとの省略規則を確認します。","explanation_en":"An internal allowance for an omitted or empty argument slot. It does not automatically mean an empty string or numeric zero."},
+    {"en":"evaluation order","ja":"評価順序","explanation_ja":"式の各部分をどの順番で計算するかです。変数の更新やエラーがあると順序の違いが結果に現れます。","explanation_en":"The order in which parts of an expression are evaluated. Updates and errors can make this order observable."},
+    {"en":"sentinel","ja":"変更を見分ける確認用値","explanation_ja":"実行前に変数へ入れておき、その欄が変更されたかを判別する値です。エンジンの特別な予約値とは限りません。","explanation_en":"A value placed in a variable before a test to reveal whether the field changes. It need not be a reserved engine value."},
+    {"en":"side effect","ja":"副作用","explanation_ja":"式が値を返す以外に起こす変化です。変数への書込み、乱数状態の更新、表示やファイル操作などが該当します。","explanation_en":"A change beyond returning a value, such as a variable write, RNG update, display operation, or file operation."},
+    {"en":"selected output","ja":"選定した出力","explanation_ja":"保存された出力のうち、対象ケースの確認に用いた部分です。全実行の全出力を示しているとは限りません。","explanation_en":"The portion of saved output selected for checking a case. It need not represent every output from the full run."},
+    {"en":"finite scope","ja":"定めた有限の確認範囲","explanation_ja":"選んだ入力・設定・環境に限った検証範囲です。一致しても、すべての引数や環境での一致を意味しません。","explanation_en":"Verification limited to selected inputs, settings, and environments. A match does not establish agreement for every input or environment."},
+    {"en":"source anchor","ja":"根拠ソースの位置","explanation_ja":"固定したソースのファイル名と行範囲です。行番号だけでなく、版・元ファイルのSHA-256と併せて参照します。","explanation_en":"A file and line range in a pinned source. It is interpreted together with the version and the original member SHA-256."},
+    {"en":"fixture","ja":"検証用の入力一式","explanation_ja":"検証に使用するERB・CSV・設定などです。同じERBでも、設定やCSVが異なれば同じ実行条件とは限りません。","explanation_en":"ERB, CSV, configuration, and other test inputs. Identical ERB alone does not establish identical execution conditions."},
+    {"en":"typed target","ja":"種別を含む調査対象","explanation_ja":"名前と種別を組にした対象です。同名でも式中関数と命令形式は別対象として追跡します。","explanation_en":"A target identified by both kind and name. An expression function and a same-named command form are tracked separately."},
+    {"en":"expected effect","ja":"通常期待される効果","explanation_ja":"文献・ソース等から説明した動作です。その使用例を実機で新たに実行した記録とは区別します。","explanation_en":"Behavior explained from documentation or source. It is distinct from a new recorded execution of that example."},
+    {"en":"observation","ja":"観測","explanation_ja":"特定の実行で実際に得た出力・状態・診断・画面です。確認しようとした要件そのものとは別です。","explanation_en":"Output, state, diagnostics, or captures obtained in a specific run, distinct from the requirement the run intended to check."},
+    {"en":"neutralized","ja":"公開用に中立化した要件文","explanation_ja":"既存の公開処理で調査場所等の表現を中立化した要件です。原文と公開文のハッシュは別々に保持され、翻訳では変更しません。","explanation_en":"A requirement whose location-related wording was neutralized in the existing publication process. Original and derived text hashes remain distinct and unchanged by translation."}
+  ]
+}

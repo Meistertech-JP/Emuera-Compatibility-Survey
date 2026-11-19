@@ -1,0 +1,30 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0144 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0144 · CASE_REVIEW_ja.md</h1>
+<p>未定義CSV番号へのADDCHARA診断は有効な異常系比較であり、両側のチャネル差と停止結果を原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>c4fd4217bfde3a46e65afb8d533c477a25aef0c01c1a744c4e934a3e906f9871</code></p>
+<p><a href="../assets/U0144.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>c4fd4217bfde3a46e65afb8d533c477a25aef0c01c1a744c4e934a3e906f9871</code></p>
+<pre># ADDCHARA_UNKNOWN_CSV_20261113
+
+## 比較条件
+
+`ADDCHARA 9999` を同一 ERB・CSV・設定で Native v24 を2回、公開 PyEmuera 3.0.0 pyz を1回実行した。公開pyzは実行前後ともSHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`。 Nativeの画面入力は送っておらず、ログと標準出力・標準エラーだけを保存した。
+
+## 観測
+
+At the selected `ADDCHARA 9999` line, both Native v24 runs produced the same error log: the template is undefined; the command did not reach the after-count or completion marker. The public pyz produced the same Japanese diagnostic meaning in its UTF-8 stderr as `E_CSV`, while its console stdout retained the prefix through `BEFORE N=0`; it exited 1 and created no engine log file. Native remained alive at five seconds and was cleaned up by the runner. The Native raw log hashes match each other; Native and PyEmuera diagnostic artifacts are retained separately because their channels/formats differ.
+
+## 判定範囲
+
+これはADDCHARAの該当条件に限った、エラー診断経路の差分観測である。通常のCSV追加はcase183で別途照合済み。 Nativeの自然終了、他のCSV番号、UI描画・スクリーンショットの一致は主張しない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0054 · command_or_syntax:ADDCHARA · check</li>
+</ul></html>

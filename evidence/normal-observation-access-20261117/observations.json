@@ -1,0 +1,1005 @@
+{
+  "schema": "normal-observation-c196-v1",
+  "scope": "10 selected conditions in one shared batch; two Native modes and one Py mode; not independent case executions",
+  "source_index": "../multi-group-101-20261117/index.json",
+  "source_index_sha256": "27193a76166965d737eb219bb9417de556496d9e1f416d58d27d86e6895cde1e",
+  "limitations": [
+    "Native natural termination was not observed.",
+    "The original acceptance record, comparison sheet and original receipts are not included.",
+    "Internal argument values are unobserved.",
+    "These ordinary-condition observations do not establish behavior for fault conditions or full command compatibility.",
+    "History bytes and mode labels retain their separate roles; raw layout differences are not normalized."
+  ],
+  "cases": [
+    {
+      "case_id": "PRINTPLAIN196_C196_04",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEV"
+        }
+      ],
+      "condition": {
+        "id": "C196_04",
+        "command": "PRINTSINGLEV",
+        "argument": "ZZ196H(1),\"/\",ZZ196H(2)",
+        "kind": "expressions",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "matched_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            544,
+            708
+          ],
+          "raw_block": "C196_04_BEGIN\r\nP>\r\n1/2\r\n<T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n",
+          "state_line": "C196_04_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            544,
+            708
+          ],
+          "raw_block": "C196_04_BEGIN\r\nP>\r\n1/2\r\n<T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n",
+          "state_line": "C196_04_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            544,
+            708
+          ],
+          "raw_block": "C196_04_BEGIN\r\nP>\r\n1/2\r\n<T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n",
+          "state_line": "C196_04_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_05",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLES"
+        }
+      ],
+      "condition": {
+        "id": "C196_05",
+        "command": "PRINTSINGLES",
+        "argument": "ZZ196T(1)",
+        "kind": "string-expression",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "matched_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            708,
+            888
+          ],
+          "raw_block": "C196_05_BEGIN\r\nP>\r\ns{ZZ196H(2)}\r\n<T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n",
+          "state_line": "C196_05_STATE A=1 B=1 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            708,
+            888
+          ],
+          "raw_block": "C196_05_BEGIN\r\nP>\r\ns{ZZ196H(2)}\r\n<T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n",
+          "state_line": "C196_05_STATE A=1 B=1 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            708,
+            888
+          ],
+          "raw_block": "C196_05_BEGIN\r\nP>\r\ns{ZZ196H(2)}\r\n<T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n",
+          "state_line": "C196_05_STATE A=1 B=1 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_06",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEFORM"
+        }
+      ],
+      "condition": {
+        "id": "C196_06",
+        "command": "PRINTSINGLEFORM",
+        "argument": "f{ZZ196H(1)}/{ZZ196H(2)}",
+        "kind": "form",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "matched_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            888,
+            1054
+          ],
+          "raw_block": "C196_06_BEGIN\r\nP>\r\nf1/2\r\n<T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n",
+          "state_line": "C196_06_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            888,
+            1054
+          ],
+          "raw_block": "C196_06_BEGIN\r\nP>\r\nf1/2\r\n<T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n",
+          "state_line": "C196_06_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            888,
+            1054
+          ],
+          "raw_block": "C196_06_BEGIN\r\nP>\r\nf1/2\r\n<T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n",
+          "state_line": "C196_06_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_07",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEFORMS"
+        }
+      ],
+      "condition": {
+        "id": "C196_07",
+        "command": "PRINTSINGLEFORMS",
+        "argument": "ZZ196T(1)",
+        "kind": "runtime-form",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "matched_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            1054,
+            1216
+          ],
+          "raw_block": "C196_07_BEGIN\r\nP>\r\ns2\r\n<T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n",
+          "state_line": "C196_07_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            1054,
+            1216
+          ],
+          "raw_block": "C196_07_BEGIN\r\nP>\r\ns2\r\n<T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n",
+          "state_line": "C196_07_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            1054,
+            1216
+          ],
+          "raw_block": "C196_07_BEGIN\r\nP>\r\ns2\r\n<T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n",
+          "state_line": "C196_07_STATE A=2 B=12 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_13",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEV"
+        }
+      ],
+      "condition": {
+        "id": "C196_13",
+        "command": "PRINTSINGLEV",
+        "argument": "\"\"",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "different_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2062,
+            2210
+          ],
+          "raw_block": "C196_13_BEGIN\r\nP><T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n",
+          "state_line": "C196_13_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2062,
+            2210
+          ],
+          "raw_block": "C196_13_BEGIN\r\nP><T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n",
+          "state_line": "C196_13_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2072,
+            2230
+          ],
+          "raw_block": "C196_13_BEGIN\r\nP>\r\n \r\n<T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n",
+          "state_line": "C196_13_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_14",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLES"
+        }
+      ],
+      "condition": {
+        "id": "C196_14",
+        "command": "PRINTSINGLES",
+        "argument": "\"\"",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "different_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2210,
+            2358
+          ],
+          "raw_block": "C196_14_BEGIN\r\nP><T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n",
+          "state_line": "C196_14_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2210,
+            2358
+          ],
+          "raw_block": "C196_14_BEGIN\r\nP><T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n",
+          "state_line": "C196_14_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2230,
+            2388
+          ],
+          "raw_block": "C196_14_BEGIN\r\nP>\r\n \r\n<T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n",
+          "state_line": "C196_14_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_15",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEFORM"
+        }
+      ],
+      "condition": {
+        "id": "C196_15",
+        "command": "PRINTSINGLEFORM",
+        "argument": "",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "different_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2358,
+            2506
+          ],
+          "raw_block": "C196_15_BEGIN\r\nP><T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n",
+          "state_line": "C196_15_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2358,
+            2506
+          ],
+          "raw_block": "C196_15_BEGIN\r\nP><T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n",
+          "state_line": "C196_15_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2388,
+            2546
+          ],
+          "raw_block": "C196_15_BEGIN\r\nP>\r\n \r\n<T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n",
+          "state_line": "C196_15_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_16",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEFORMS"
+        }
+      ],
+      "condition": {
+        "id": "C196_16",
+        "command": "PRINTSINGLEFORMS",
+        "argument": "\"\"",
+        "kind": "empty",
+        "skipdisp": false,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "different_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": false,
+        "layout_equal": false,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2506,
+            2654
+          ],
+          "raw_block": "C196_16_BEGIN\r\nP><T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n",
+          "state_line": "C196_16_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2506,
+            2654
+          ],
+          "raw_block": "C196_16_BEGIN\r\nP><T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n",
+          "state_line": "C196_16_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2546,
+            2704
+          ],
+          "raw_block": "C196_16_BEGIN\r\nP>\r\n \r\n<T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n",
+          "state_line": "C196_16_STATE A=0 B=0 R=701 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_18",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEV"
+        }
+      ],
+      "condition": {
+        "id": "C196_18",
+        "command": "PRINTSINGLEV",
+        "argument": "ZZ196H(1),ZZ196H(2)",
+        "kind": "helper-suppression",
+        "skipdisp": true,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "matched_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2798,
+            2942
+          ],
+          "raw_block": "C196_18_BEGIN\r\nP><T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n",
+          "state_line": "C196_18_STATE A=0 B=0 R=0 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2798,
+            2942
+          ],
+          "raw_block": "C196_18_BEGIN\r\nP><T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n",
+          "state_line": "C196_18_STATE A=0 B=0 R=0 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2848,
+            2992
+          ],
+          "raw_block": "C196_18_BEGIN\r\nP><T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n",
+          "state_line": "C196_18_STATE A=0 B=0 R=0 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    },
+    {
+      "case_id": "PRINTPLAIN196_C196_19",
+      "target": [
+        {
+          "kind": "command_or_syntax",
+          "name": "PRINTSINGLEFORMS"
+        }
+      ],
+      "condition": {
+        "id": "C196_19",
+        "command": "PRINTSINGLEFORMS",
+        "argument": "ZZ196T(1)",
+        "kind": "helper-suppression",
+        "skipdisp": true,
+        "pending_prefix": "P>",
+        "following_printl": "<T",
+        "initial_state": {
+          "A": 0,
+          "B": 0,
+          "RESULT": 701,
+          "RESULTS:0": "sentinel"
+        },
+        "state_axes": [
+          "A",
+          "B",
+          "RESULT",
+          "RESULTS:0"
+        ]
+      },
+      "recorded_verdict": "matched_scoped",
+      "recorded_comparison_axes": {
+        "native_repeat_equal": true,
+        "raw_equal": true,
+        "layout_equal": true,
+        "observable_content_equal": true,
+        "internal_value_equal": "UNOBSERVED",
+        "state_equal": true,
+        "evaluation_equal": true
+      },
+      "observations": [
+        {
+          "mode": "native-01",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2942,
+            3086
+          ],
+          "raw_block": "C196_19_BEGIN\r\nP><T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n",
+          "state_line": "C196_19_STATE A=0 B=0 R=0 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "7e38ef9c614bf155fa66e4a0bf738f9088ce7ddf05f4bd82c1ea6bc2f43948cd"
+        },
+        {
+          "mode": "native-02",
+          "engine": "Emuera",
+          "history": "../multi-group-101-20261117/assets/bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b.bin",
+          "history_sha256": "bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2942,
+            3086
+          ],
+          "raw_block": "C196_19_BEGIN\r\nP><T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n",
+          "state_line": "C196_19_STATE A=0 B=0 R=0 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "native_probe",
+          "mode_source_record_sha256": "56186d5e4563d4ddfcd7668360863083d9d2abc85396a8879717c95d9fc9ac35"
+        },
+        {
+          "mode": "public-01",
+          "engine": "PyEmuera",
+          "history": "../multi-group-101-20261117/assets/21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b.bin",
+          "history_sha256": "21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b",
+          "encoding": "utf-16",
+          "byte_span": [
+            2992,
+            3136
+          ],
+          "raw_block": "C196_19_BEGIN\r\nP><T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n",
+          "state_line": "C196_19_STATE A=0 B=0 R=0 S=sentinel",
+          "fixture": "../multi-group-101-20261117/assets/60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3.bin",
+          "fixture_sha256": "60d4874a8e3d7495a9d6adad8bdf11fb7cf11d8226ac94ab94fee7e7018237e3",
+          "config": "../multi-group-101-20261117/assets/f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc.bin",
+          "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+          "mode_source_record_kind": "verified_public_receipt",
+          "mode_source_record_sha256": "14a55314a28de3f0116441163dbf86af1aa2df313ff74b34e9c10318123dcc21"
+        }
+      ]
+    }
+  ]
+}

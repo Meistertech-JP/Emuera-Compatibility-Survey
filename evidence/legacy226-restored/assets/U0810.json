@@ -1,0 +1,79 @@
+[
+  {
+    "id": "space_valid",
+    "command": "PRINT_SPACE",
+    "ops": [
+      "PRINT_SPACE 0",
+      "PRINT_SPACE 100",
+      "PRINT_SPACE ZZ229N(1,25)",
+      "PRINT_SPACE ZZ229N(2,25)"
+    ]
+  },
+  {
+    "id": "rect_valid",
+    "command": "PRINT_RECT",
+    "ops": [
+      "PRINT_RECT 100",
+      "PRINT_RECT ZZ229N(1,0),ZZ229N(2,0),ZZ229N(3,100),ZZ229N(4,100)"
+    ]
+  },
+  {
+    "id": "image_existing",
+    "command": "PRINT_IMG",
+    "ops": [
+      "PRINT_IMG \"ZZ229\"",
+      "PRINT_IMG ZZ229S()"
+    ],
+    "resource": true
+  },
+  {
+    "id": "image_missing",
+    "command": "PRINT_IMG",
+    "ops": [
+      "PRINT_IMG \"MISSING229\""
+    ]
+  },
+  {
+    "id": "space_negative",
+    "command": "PRINT_SPACE",
+    "ops": [
+      "PRINT_SPACE ZZ229N(1,-1)"
+    ],
+    "error": true
+  },
+  {
+    "id": "space_high",
+    "command": "PRINT_SPACE",
+    "ops": [
+      "PRINT_SPACE ZZ229N(1,2147483648)"
+    ],
+    "error": true
+  },
+  {
+    "id": "rect_first_invalid",
+    "command": "PRINT_RECT",
+    "ops": [
+      "PRINT_RECT ZZ229N(1,-1),ZZ229FAULT(),100,100"
+    ],
+    "error": true
+  },
+  {
+    "id": "rect_shape_fallback",
+    "command": "PRINT_RECT",
+    "ops": [
+      "PRINT_RECT 0",
+      "PRINT_RECT 1,2,3"
+    ]
+  },
+  {
+    "id": "skip_all",
+    "command": "PRINT_SPACE PRINT_RECT PRINT_IMG",
+    "ops": [
+      "SKIPDISP 1",
+      "PRINT_SPACE ZZ229FAULT()",
+      "PRINT_RECT ZZ229FAULT(),0,100,100",
+      "PRINT_IMG ZZ229BADSTR()",
+      "SKIPDISP 0"
+    ]
+  }
+]

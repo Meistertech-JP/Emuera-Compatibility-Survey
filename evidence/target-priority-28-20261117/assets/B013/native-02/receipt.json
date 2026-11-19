@@ -1,0 +1,19 @@
+{
+  "case_id": "LIST_TRYGOTOLIST_EMPTY_REACHED_20261115",
+  "mode": "native-02",
+  "identity_basis": "case_evidence_and_source_path_receipt_has_no_case_or_mode",
+  "inputs_before": {
+    "ERB/LISTBOUND.ERB": "73791e1ca274bd40400f5637c9a84e3fa47dffad003d9c0b518f5a645d84fe3f",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/LISTBOUND.ERB": "73791e1ca274bd40400f5637c9a84e3fa47dffad003d9c0b518f5a645d84fe3f",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "0270466a27a3b1309a1df79d8aaf9275db94b67538812133af0944eea6a35c84",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt"
+}

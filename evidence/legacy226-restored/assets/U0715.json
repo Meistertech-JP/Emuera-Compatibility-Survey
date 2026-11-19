@@ -1,0 +1,420 @@
+{
+  "scope": "Exactly4 original operator rows from unchanged original42 requirements",
+  "accepted": 4,
+  "rejected": 0,
+  "rows": [
+    {
+      "kind": "operator",
+      "name": "||",
+      "accepted": true,
+      "decision": "ACCEPTED_ORIGINAL_NECESSARY_FINITE_COMPARISON_COMPLETE",
+      "axes": [
+        {
+          "axis": "v24_registration_signature_form",
+          "original_requirement": "integer truth operation; nonzero true",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PROOF_READBACK.json#/source_members"
+          ]
+        },
+        {
+          "axis": "actual_target_use",
+          "original_requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E140"
+          ]
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "original_requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E140"
+          ]
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "logical-error-or",
+            "type-strstr-reached",
+            "type-strstr-uncalled",
+            "OPSEM272_mixed-or-reached",
+            "OPSEM272_mixed-or-uncalled"
+          ]
+        }
+      ],
+      "original_remaining_prose": [
+        "Execute ZZ_LEFT()||ZZ_BAD() on a truth combination that selects RHS; in ZZ_BAD increment counter and OUTPUTLOG-compatible trace before variable division zero (use DEBUGPRINT if expression method cannot OUTPUTLOG). Compare first error location and left-before-right trace.",
+        "Compare C=1||\"x\" in uncalled/reached function to test ReduceBinaryTerm type rejection; share fixture design across this common int-only dispatcher, report each spelling separately."
+      ],
+      "original_minimal_remainder": [
+        {
+          "id": "PIN-E140",
+          "detail": "Retain all five: each new logical-error fixture intentionally selects a fatal RHS and provides no successful normal return. Uncalled or failing type witnesses do not replace LOG normal/shortcircuit markers."
+        },
+        {
+          "id": "LOGICAL-MIXED-PUBLIC-OR",
+          "detail": "Native mixed-type dispatch175 is shared, but public truthy left operand can shortcircuit before RHS type validation. No actual own-spelling mixed reached/uncalled observation of this distinct public path exists. A source prediction cannot serve as its runtime oracle."
+        }
+      ],
+      "discharged_by": {
+        "normal_unit": "PUBLIC-REFRESH-E140",
+        "actual272_aliases": [
+          "OPSEM272_mixed-or-reached",
+          "OPSEM272_mixed-or-uncalled"
+        ]
+      },
+      "retained_finite_witness_ids": [
+        "type-strstr-reached",
+        "type-strstr-uncalled",
+        "logical-error-or"
+      ],
+      "actual_difference": "Reached Native typeguard vs public shortcircuit continues; uncalled selected markers match with zero body credit.",
+      "exact_remainder": [],
+      "explicit_unknowns": {
+        "afterfatal_state": "UNOBSERVED; not named as a requirement for these4 rows",
+        "uncalled_body_credit": false,
+        "all_value_or_full_output_equivalence": "NOT_CLAIMED",
+        "historical_missing_public_pins_retroactively_repaired": false
+      },
+      "supporting_guard_body_credit": false,
+      "own_normal_witness": "PUBLIC-REFRESH-E140",
+      "source_shared_guard_role": "guard-only plus independent own successful normals",
+      "scope": "Original named finite obligations only, with actual documented differences; not mathematical conformity, all-input compatibility or whole-output/body equivalence."
+    },
+    {
+      "kind": "operator",
+      "name": "!|",
+      "accepted": true,
+      "decision": "ACCEPTED_ORIGINAL_NECESSARY_FINITE_COMPARISON_COMPLETE",
+      "axes": [
+        {
+          "axis": "v24_registration_signature_form",
+          "original_requirement": "integer truth operation; nonzero true",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PROOF_READBACK.json#/source_members"
+          ]
+        },
+        {
+          "axis": "actual_target_use",
+          "original_requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E140"
+          ]
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "original_requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E140"
+          ]
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "logical-error-nor",
+            "type-strstr-reached",
+            "type-strstr-uncalled",
+            "OPSEM272_mixed-nor-reached",
+            "OPSEM272_mixed-nor-uncalled"
+          ]
+        }
+      ],
+      "original_remaining_prose": [
+        "Execute ZZ_LEFT()!|ZZ_BAD() on a truth combination that selects RHS; in ZZ_BAD increment counter and OUTPUTLOG-compatible trace before variable division zero (use DEBUGPRINT if expression method cannot OUTPUTLOG). Compare first error location and left-before-right trace.",
+        "Compare C=1!|\"x\" in uncalled/reached function to test ReduceBinaryTerm type rejection; share fixture design across this common int-only dispatcher, report each spelling separately."
+      ],
+      "original_minimal_remainder": [
+        {
+          "id": "PIN-E140",
+          "detail": "Retain all five: each new logical-error fixture intentionally selects a fatal RHS and provides no successful normal return. Uncalled or failing type witnesses do not replace LOG normal/shortcircuit markers."
+        },
+        {
+          "id": "LOGICAL-MIXED-PUBLIC-NOR",
+          "detail": "Native mixed-type dispatch175 is shared, but public truthy left operand can shortcircuit before RHS type validation. No actual own-spelling mixed reached/uncalled observation of this distinct public path exists. A source prediction cannot serve as its runtime oracle."
+        }
+      ],
+      "discharged_by": {
+        "normal_unit": "PUBLIC-REFRESH-E140",
+        "actual272_aliases": [
+          "OPSEM272_mixed-nor-reached",
+          "OPSEM272_mixed-nor-uncalled"
+        ]
+      },
+      "retained_finite_witness_ids": [
+        "type-strstr-reached",
+        "type-strstr-uncalled",
+        "logical-error-nor"
+      ],
+      "actual_difference": "Reached Native typeguard vs public shortcircuit continues; uncalled selected markers match with zero body credit.",
+      "exact_remainder": [],
+      "explicit_unknowns": {
+        "afterfatal_state": "UNOBSERVED; not named as a requirement for these4 rows",
+        "uncalled_body_credit": false,
+        "all_value_or_full_output_equivalence": "NOT_CLAIMED",
+        "historical_missing_public_pins_retroactively_repaired": false
+      },
+      "supporting_guard_body_credit": false,
+      "own_normal_witness": "PUBLIC-REFRESH-E140",
+      "source_shared_guard_role": "guard-only plus independent own successful normals",
+      "scope": "Original named finite obligations only, with actual documented differences; not mathematical conformity, all-input compatibility or whole-output/body equivalence."
+    },
+    {
+      "kind": "operator",
+      "name": "?",
+      "accepted": true,
+      "decision": "ACCEPTED_ORIGINAL_NECESSARY_FINITE_COMPARISON_COMPLETE",
+      "axes": [
+        {
+          "axis": "v24_registration_signature_form",
+          "original_requirement": "joint ternary condition ? true_expr # false_expr; numeric condition, same branch types",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PROOF_READBACK.json#/source_members"
+          ]
+        },
+        {
+          "axis": "actual_target_use",
+          "original_requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E144"
+          ]
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "original_requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E144"
+          ]
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "ternary-nested",
+            "ternary-mixed-reached",
+            "ternary-mixed-uncalled",
+            "ternary-missing-reached",
+            "ternary-missing-uncalled",
+            "ternary-orphan-reached",
+            "ternary-orphan-uncalled",
+            "ternary-strcond-reached",
+            "ternary-strcond-uncalled",
+            "OPSEM272_mixed-ternary-false-reached"
+          ]
+        }
+      ],
+      "original_remaining_prose": [
+        "Compare A=0; C=1?2#\"x\" vs C=0?2#\"x\": mixed-type rejection timing, not skipped runtime error. Compare nested 0?BAD()#(1?GOOD()#BAD()) with trace, plus missing # diagnostic in reached/uncalled function."
+      ],
+      "original_minimal_remainder": [
+        {
+          "id": "PIN-E144",
+          "detail": "Retain ?/# string-result normal role. Fresh nested numeric ternary supplies numeric result/control, but TernaryIntStrStr is a different class and remains dependent on retained TERN5..9 public provenance."
+        },
+        {
+          "id": "TERNARY-MIXED-FALSE",
+          "detail": "Original remaining prose requires both 1?2#\"x\" and 0?2#\"x\". Original106 fixture ternary-mixed-reached executes only first condition.267 Native-error/public-value2 comparison does not measure the false-condition branch. Need retained paired evidence for that exact original false-condition requirement; do not invent its outcome from source."
+        }
+      ],
+      "discharged_by": {
+        "normal_unit": "PUBLIC-REFRESH-E144",
+        "actual272_aliases": [
+          "OPSEM272_mixed-ternary-false-reached"
+        ]
+      },
+      "retained_finite_witness_ids": [
+        "ternary-nested",
+        "ternary-mixed-reached",
+        "ternary-missing-reached",
+        "ternary-orphan-reached",
+        "ternary-strcond-reached",
+        "ternary-mixed-uncalled",
+        "ternary-missing-uncalled",
+        "ternary-orphan-uncalled",
+        "ternary-strcond-uncalled"
+      ],
+      "actual_difference": "True mixed branch:267 Native invalid ternary vs public C2/DONE. False mixed branch:272 both line13 stop, Native invalid ternary vs public assignment E_TYPE. Source phase explains reason, no postfatal C observed.",
+      "exact_remainder": [],
+      "explicit_unknowns": {
+        "afterfatal_state": "UNOBSERVED; not named as a requirement for these4 rows",
+        "uncalled_body_credit": false,
+        "all_value_or_full_output_equivalence": "NOT_CLAIMED",
+        "historical_missing_public_pins_retroactively_repaired": false
+      },
+      "supporting_guard_body_credit": false,
+      "own_normal_witness": "PUBLIC-REFRESH-E144",
+      "source_shared_guard_role": "guard-only plus independent own successful normals",
+      "scope": "Original named finite obligations only, with actual documented differences; not mathematical conformity, all-input compatibility or whole-output/body equivalence."
+    },
+    {
+      "kind": "operator",
+      "name": "#",
+      "accepted": true,
+      "decision": "ACCEPTED_ORIGINAL_NECESSARY_FINITE_COMPARISON_COMPLETE",
+      "axes": [
+        {
+          "axis": "v24_registration_signature_form",
+          "original_requirement": "joint ternary condition ? true_expr # false_expr; numeric condition, same branch types",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PROOF_READBACK.json#/source_members"
+          ]
+        },
+        {
+          "axis": "actual_target_use",
+          "original_requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E144"
+          ]
+        },
+        {
+          "axis": "selected_normal_output_state_control",
+          "original_requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "PUBLIC-REFRESH-E144"
+          ]
+        },
+        {
+          "axis": "applicable_boundary_error_evaluation_side_effect",
+          "original_requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+          "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+          "evidence": [
+            "ternary-nested",
+            "ternary-mixed-reached",
+            "ternary-mixed-uncalled",
+            "ternary-missing-reached",
+            "ternary-missing-uncalled",
+            "ternary-orphan-reached",
+            "ternary-orphan-uncalled",
+            "ternary-strcond-reached",
+            "ternary-strcond-uncalled",
+            "OPSEM272_mixed-ternary-false-reached"
+          ]
+        }
+      ],
+      "original_remaining_prose": [
+        "Compare A=0; C=1?2#\"x\" vs C=0?2#\"x\": mixed-type rejection timing, not skipped runtime error. Compare nested 0?BAD()#(1?GOOD()#BAD()) with trace, plus missing # diagnostic in reached/uncalled function."
+      ],
+      "original_minimal_remainder": [
+        {
+          "id": "PIN-E144",
+          "detail": "Retain ?/# string-result normal role. Fresh nested numeric ternary supplies numeric result/control, but TernaryIntStrStr is a different class and remains dependent on retained TERN5..9 public provenance."
+        },
+        {
+          "id": "TERNARY-MIXED-FALSE",
+          "detail": "Original remaining prose requires both 1?2#\"x\" and 0?2#\"x\". Original106 fixture ternary-mixed-reached executes only first condition.267 Native-error/public-value2 comparison does not measure the false-condition branch. Need retained paired evidence for that exact original false-condition requirement; do not invent its outcome from source."
+        }
+      ],
+      "discharged_by": {
+        "normal_unit": "PUBLIC-REFRESH-E144",
+        "actual272_aliases": [
+          "OPSEM272_mixed-ternary-false-reached"
+        ]
+      },
+      "retained_finite_witness_ids": [
+        "ternary-nested",
+        "ternary-mixed-reached",
+        "ternary-missing-reached",
+        "ternary-orphan-reached",
+        "ternary-strcond-reached",
+        "ternary-mixed-uncalled",
+        "ternary-missing-uncalled",
+        "ternary-orphan-uncalled",
+        "ternary-strcond-uncalled"
+      ],
+      "actual_difference": "True mixed branch:267 Native invalid ternary vs public C2/DONE. False mixed branch:272 both line13 stop, Native invalid ternary vs public assignment E_TYPE. Source phase explains reason, no postfatal C observed.",
+      "exact_remainder": [],
+      "explicit_unknowns": {
+        "afterfatal_state": "UNOBSERVED; not named as a requirement for these4 rows",
+        "uncalled_body_credit": false,
+        "all_value_or_full_output_equivalence": "NOT_CLAIMED",
+        "historical_missing_public_pins_retroactively_repaired": false
+      },
+      "supporting_guard_body_credit": false,
+      "own_normal_witness": "PUBLIC-REFRESH-E144",
+      "source_shared_guard_role": "guard-only plus independent own successful normals",
+      "scope": "Original named finite obligations only, with actual documented differences; not mathematical conformity, all-input compatibility or whole-output/body equivalence."
+    }
+  ],
+  "original42_counts": {
+    "parent_after273_accepted": 31,
+    "parent_after273_pending": 11,
+    "proposed_accepted": 35,
+    "proposed_pending": 7
+  },
+  "root_total_projection": {
+    "parent_reported_accepted": 200,
+    "additional_if_parent_applies": 4,
+    "projected_accepted": 204,
+    "actual_root_changed": false
+  },
+  "remaining_seven": [
+    {
+      "kind": "operator",
+      "name": "/",
+      "exact_remaining_proof_ids": [
+        "DIV-ZERO-SENTINEL-STATE"
+      ]
+    },
+    {
+      "kind": "operator",
+      "name": "%",
+      "exact_remaining_proof_ids": [
+        "MOD-ZERO-SENTINEL-STATE"
+      ]
+    },
+    {
+      "kind": "operator",
+      "name": "++",
+      "exact_remaining_proof_ids": [
+        "INC-GUARD-NO-WRITE"
+      ]
+    },
+    {
+      "kind": "operator",
+      "name": "--",
+      "exact_remaining_proof_ids": [
+        "DEC-GUARD-NO-WRITE"
+      ]
+    },
+    {
+      "kind": "assignment_syntax",
+      "name": "=",
+      "exact_remaining_proof_ids": [
+        "VECTOR-NUM-POSTFAULT-STATE"
+      ]
+    },
+    {
+      "kind": "assignment_syntax",
+      "name": "'=",
+      "exact_remaining_proof_ids": [
+        "VECTOR-STR-POSTFAULT-STATE"
+      ]
+    },
+    {
+      "kind": "assignment_syntax",
+      "name": "==",
+      "exact_remaining_proof_ids": [
+        "ALIAS-NATIVE-WARNING"
+      ]
+    }
+  ],
+  "registration_is_proof": false,
+  "engine_launches": 0,
+  "root_writes": 0,
+  "original_freezes_modified": false
+}

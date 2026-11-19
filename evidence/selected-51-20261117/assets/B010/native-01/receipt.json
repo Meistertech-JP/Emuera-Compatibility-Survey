@@ -1,0 +1,25 @@
+{
+  "case_id": "AGGMETHOD_SUMARRAY_MUTATING_ENDPOINTS_20261116",
+  "mode": "native-01",
+  "identity_basis": "explicit_case_evidence_and_source_path_plus_receipt_case_and_mode",
+  "inputs_before": {
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "ERB/ARRAYMSORT176.ERH": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+    "ERB/CASE.ERB": "c0296095586a34e08b5c9d43f0d64d1102fd9cdde80fcab72fde70a81a1f94b6",
+    "ERB/ENDPOINT_READBACK.ERH": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412"
+  },
+  "inputs_after": {
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "ERB/ARRAYMSORT176.ERH": "deb3307b5de9131f605384f2b4a6b9a74d67cbfd0a6ed6cbf4a13446db3fdee7",
+    "ERB/CASE.ERB": "c0296095586a34e08b5c9d43f0d64d1102fd9cdde80fcab72fde70a81a1f94b6",
+    "ERB/ENDPOINT_READBACK.ERH": "1fce751bd3347f0e90a6ac9d87fe15a90d6b47e7b206622c71eb6d03810f2412"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "1029f265f260befb76e6ca044dbf772e5364c5108a0345960967529d84ee7ab7",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt",
+  "source_condition_id": "SUMARRAY_MUTATING_ENDPOINTS",
+  "recorded_timeout": false
+}

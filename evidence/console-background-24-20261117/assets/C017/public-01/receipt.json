@@ -1,0 +1,22 @@
+{
+  "schema": "public-receipt-selected-fields-1",
+  "case_id": "UIQUERY236_lifecycle-expr",
+  "mode": "public-01",
+  "identity_basis": "CASE_PLAN_COMPARISON_AND_SOURCE_PATH_NOT_SOURCE_RECEIPT_ID",
+  "source_receipt_sha256": "e7a5d65722d7b576f0764152d5d0889151b09ec7549bc4cb1a5af762fa25f0e2",
+  "inputs_before": {
+    "ERB/SEARCHBOUND01.ERB": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SEARCHBOUND01.ERB": "bee9f4270bb8b368839df295a6482416be470cf5faefdb744156f586c5e12de1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "public_executable_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "public_executable_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "public_executable_sha256_expected": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "executable_included": false,
+  "recorded_returncode": 1,
+  "stdout_sha256": "51c7511879088d54c53c6c9849ab86623545fe23f191b55bc3e66d05db366b1e",
+  "stderr_sha256": "22882ebb7851429d399defe60319cb088d085268f1bc963e58518cc8ebd540a6"
+}

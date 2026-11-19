@@ -1,0 +1,211 @@
+{
+  "desktop": "PyEmueraProbe_94932e7cc87b4226aff2024fe1a191c2",
+  "desktop_created": true,
+  "no_input_sent": false,
+  "native_artifact_sha256_before": {
+    "Emuera1824+v24.exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "mode": "native",
+  "create_process_ok": true,
+  "pid": 271096,
+  "enumeration_ok": true,
+  "windows": [
+    {
+      "hwnd": 12519218,
+      "pid": 271096
+    },
+    {
+      "hwnd": 9114198,
+      "pid": 271096
+    },
+    {
+      "hwnd": 11146002,
+      "pid": 271096
+    },
+    {
+      "hwnd": 25825904,
+      "pid": 271096
+    },
+    {
+      "hwnd": 20976586,
+      "pid": 271096
+    },
+    {
+      "hwnd": 21107364,
+      "pid": 271096
+    },
+    {
+      "hwnd": 6951452,
+      "pid": 271096
+    },
+    {
+      "hwnd": 11867012,
+      "pid": 271096
+    },
+    {
+      "hwnd": 35261620,
+      "pid": 271096
+    },
+    {
+      "hwnd": 4592304,
+      "pid": 271096
+    }
+  ],
+  "own_windows": [
+    {
+      "hwnd": 12519218,
+      "pid": 271096
+    },
+    {
+      "hwnd": 9114198,
+      "pid": 271096
+    },
+    {
+      "hwnd": 11146002,
+      "pid": 271096
+    },
+    {
+      "hwnd": 25825904,
+      "pid": 271096
+    },
+    {
+      "hwnd": 20976586,
+      "pid": 271096
+    },
+    {
+      "hwnd": 21107364,
+      "pid": 271096
+    },
+    {
+      "hwnd": 6951452,
+      "pid": 271096
+    },
+    {
+      "hwnd": 11867012,
+      "pid": 271096
+    },
+    {
+      "hwnd": 35261620,
+      "pid": 271096
+    },
+    {
+      "hwnd": 4592304,
+      "pid": 271096
+    }
+  ],
+  "children": [
+    {
+      "hwnd": 18617262,
+      "pid": 271096,
+      "class": "WindowsForms10.BUTTON.app.0.34f5582_r8_ad1",
+      "title": "データ更新"
+    },
+    {
+      "hwnd": 31723260,
+      "pid": 271096,
+      "class": "WindowsForms10.BUTTON.app.0.34f5582_r8_ad1",
+      "title": "閉じる"
+    },
+    {
+      "hwnd": 8917966,
+      "pid": 271096,
+      "class": "WindowsForms10.BUTTON.app.0.34f5582_r8_ad1",
+      "title": "最前面に表示"
+    },
+    {
+      "hwnd": 4461314,
+      "pid": 271096,
+      "class": "WindowsForms10.SysTabControl32.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 19403296,
+      "pid": 271096,
+      "class": "WindowsForms10.Window.8.app.0.34f5582_r8_ad1",
+      "title": "変数ウォッチ"
+    },
+    {
+      "hwnd": 29036270,
+      "pid": 271096,
+      "class": "WindowsForms10.SysListView32.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 9114314,
+      "pid": 271096,
+      "class": "SysHeader32",
+      "title": ""
+    },
+    {
+      "hwnd": 66981278,
+      "pid": 271096,
+      "class": "WindowsForms10.Window.8.app.0.34f5582_r8_ad1",
+      "title": "menuStrip1"
+    },
+    {
+      "hwnd": 29036254,
+      "pid": 271096,
+      "class": "WindowsForms10.RICHEDIT50W.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 20971814,
+      "pid": 271096,
+      "class": "WindowsForms10.SCROLLBAR.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 8065640,
+      "pid": 271096,
+      "class": "WindowsForms10.Window.8.app.0.34f5582_r8_ad1",
+      "title": ""
+    },
+    {
+      "hwnd": 19534736,
+      "pid": 271096,
+      "class": "WindowsForms10.Window.8.app.0.34f5582_r8_ad1",
+      "title": "menuStrip1"
+    },
+    {
+      "hwnd": 12981248,
+      "pid": 271096,
+      "class": "WindowsForms10.EDIT.app.0.34f5582_r8_ad1",
+      "title": "Emuera Ver. 1.824"
+    }
+  ],
+  "rich_edit_text": [
+    {
+      "hwnd": 29036254,
+      "length": 0,
+      "ok": true,
+      "text": ""
+    }
+  ],
+  "capture_returncode": 0,
+  "capture_output": "{\"crop_returncode\":0,\"crop_path\":\"[SURVEY_ROOT]\\\\work\\\\command-coverage-20261111\\\\evidence\\\\printk-command-20261113-114\\\\native-printk-crop-isolated-PRINTK01-e1a191c2.png\",\"crop_sha256\":\"e8f1a42b00444ca19fd186377b82364ffc73215a123fbc1290da23fc989c8d1d\",\"crop_size_bytes\":559,\"crop_dimensions\":[250,27]}\n",
+  "capture_samples": [
+    {
+      "sample": 1,
+      "returncode": 0,
+      "output": "{\"crop_returncode\":0,\"crop_path\":\"[SURVEY_ROOT]\\\\work\\\\command-coverage-20261111\\\\evidence\\\\printk-command-20261113-114\\\\native-printk-crop-fresh-PRINTK01-e1a191c2.png\",\"crop_sha256\":\"29b5792a32dd2787e9e65b70b4a772622f2b1835b5e5d159c202637182980b3e\",\"crop_size_bytes\":498,\"crop_dimensions\":[250,27]}\n"
+    }
+  ],
+  "requested_input_utf8_hex": "404445425547",
+  "set_text_ok": true,
+  "set_text_result": 1,
+  "keydown_posted": true,
+  "keyup_posted": true,
+  "process_signaled_before_cleanup": false,
+  "closed_desktop": true,
+  "input_sha256_before": {
+    "ERB/PRINTK01.ERB": "2ba39d69e455e3277c2486d7ab9316ca19fd258ba23184cbf9816b25d7eeeb01"
+  },
+  "input_sha256_after": {
+    "ERB/PRINTK01.ERB": "2ba39d69e455e3277c2486d7ab9316ca19fd258ba23184cbf9816b25d7eeeb01"
+  },
+  "native_artifact_sha256_after": {
+    "Emuera1824+v24.exe": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  }
+}

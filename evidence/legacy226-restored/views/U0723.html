@@ -1,0 +1,668 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0723 · ACCEPTANCE.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0723 · ACCEPTANCE.json</h1>
+<p>原票種別=ACCEPTANCE.json; 参照対象=command_or_syntax:CLEARTEXTBOX, command_or_syntax:TOOLTIP_SETCOLOR, command_or_syntax:TOOLTIP_SETDELAY, command_or_syntax:TOOLTIP_SETDURATION。scope=[&quot;CLEARTEXTBOX&quot;, &quot;DO&quot;, &quot;LOOP&quot;, &quot;TOOLTIP_SETCOLOR&quot;, &quot;TOOLTIP_SETDELAY&quot;, &quot;TOOLTIP_SETDURATION&quot;]; counts={&quot;adjudicated&quot;: 6, &quot;accepted&quot;: 4, &quot;rejected&quot;: 2}; rows件数=6。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を2個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>631500f9fdf73986e52c01f95818ef45b01ce58c34817b1d59210401bb5f4a3a</code></p>
+<p><a href="../assets/U0723.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>b2e7735c3340dccfb14cdbf4b5aad7bafe73edb7823901fd8159b072ee592176</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;parent-command-six-adjudication-v1&quot;,
+  &quot;scope&quot;: [
+    &quot;CLEARTEXTBOX&quot;,
+    &quot;DO&quot;,
+    &quot;LOOP&quot;,
+    &quot;TOOLTIP_SETCOLOR&quot;,
+    &quot;TOOLTIP_SETDELAY&quot;,
+    &quot;TOOLTIP_SETDURATION&quot;
+  ],
+  &quot;review&quot;: {
+    &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\parent-command-evidence-review-20261113\\REVIEW.json&quot;,
+    &quot;sha256&quot;: &quot;7c6074a8379e595b608ce331abca2f60c2163d1598c769e7a6e6ace3c7359a2c&quot;
+  },
+  &quot;original_requirements&quot;: {
+    &quot;path&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\target-closure-review-20261113\\commands\\MATRIX.json&quot;,
+    &quot;sha256&quot;: &quot;747f2183bce98969241c88789d3cdd5036c819fc8a88181ebc544620f9c237f6&quot;
+  },
+  &quot;evidence_index&quot;: {
+    &quot;path&quot;: &quot;EVIDENCE.json&quot;,
+    &quot;sha256&quot;: &quot;f0789d7e2635642df1113d56161a568c7b558ed894eec297f5900870090fefba&quot;
+  },
+  &quot;decision_basis&quot;: &quot;Authored comparison against unchanged original finite requirements and original raw/runtime/source evidence; structural validation is not acceptance. Exactly six proposals; no parent integration or ledger writes.&quot;,
+  &quot;pins&quot;: {
+    &quot;source_archive&quot;: &quot;fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a&quot;,
+    &quot;native_exe_member&quot;: &quot;Emuera1824+v24/Emuera1824+v24.exe&quot;,
+    &quot;native_exe&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+    &quot;public_pyz&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;
+  },
+  &quot;rows&quot;: [
+    {
+      &quot;kind&quot;: &quot;command_or_syntax&quot;,
+      &quot;name&quot;: &quot;CLEARTEXTBOX&quot;,
+      &quot;accepted&quot;: true,
+      &quot;comparison_outcome&quot;: &quot;documented_availability_gap&quot;,
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;registration_form&quot;,
+          &quot;requirement&quot;: &quot;Exact v24 CLEARTEXTBOX command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;VOID registration and ScriptProc dispatch to MainWindow.clear_richText are exact archive members.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;signature_parser&quot;,
+          &quot;requirement&quot;: &quot;CLEARTEXTBOX: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;VOID builder ignores surplus text with a level-1 warning; no expression evaluation. Public source rejects nonempty arguments. This source-only parser difference is retained, not claimed matched.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Target reached and subsequent checkpoint continues; previous input textbox state handled separately.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Own line281 is followed by C202_19_STATE and END in Native1, Native2 and public. Pending P&gt; joins &lt;T; DELTA=0, RESULT=701 and RESULTS=sentinel survive.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;finite_boundary_error&quot;,
+          &quot;requirement&quot;: &quot;Inspect ClearTextBox implementation to decide observable state; do not claim empty GUI textbox from OUTPUTLOG alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;MainWindow.clear_richText calls richTextBox1.Clear. OUTPUTLOG proves continuation/history only; populated editable text is unobserved. Public warning explicitly says pending terminal input is cleared and no retained GUI edit box exists.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+          &quot;requirement&quot;: &quot;VOID has no expression/range axes; if unavailable publicly, document explicit adaptation/availability instead of pixel equivalence.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;No expression/range axes for VOID. Explicit terminal adaptation discharges the original availability alternative; no GUI textbox-state equivalence is inferred.&quot;
+        }
+      ],
+      &quot;case_ids&quot;: [
+        &quot;DISPLAYLINES202_C202_19&quot;
+      ],
+      &quot;context_case_ids&quot;: [],
+      &quot;evidence_refs&quot;: [
+        &quot;C00055&quot;,
+        &quot;C00405&quot;,
+        &quot;C00407&quot;,
+        &quot;C00768&quot;,
+        &quot;C00833&quot;,
+        &quot;C00834&quot;,
+        &quot;C01046&quot;,
+        &quot;C01047&quot;,
+        &quot;C01048&quot;,
+        &quot;C01049&quot;,
+        &quot;C01050&quot;,
+        &quot;C01462&quot;,
+        &quot;C01463&quot;,
+        &quot;S_CLEAR&quot;
+      ],
+      &quot;evidence_hashes&quot;: [
+        &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+        &quot;0faf8af9e163204600511d618222111343d09017919fad1f73702ea419037281&quot;,
+        &quot;15ec0755115d860b7f2c9b9b349e833a9f3fda5e1a607c6d5b0cf730da2219d6&quot;,
+        &quot;3609c88ed5f4fd384323356923fdb8cd6c561d5fbb6ec5c06803606657ca4d72&quot;,
+        &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+        &quot;631bcdea87efff5e5e68a5e2713e32eb579e22478dc7bb484b684fe06e4accad&quot;,
+        &quot;7cf1fbbba3f0e9c6efb669f83e74d5414a0a7291c88a97bcaf8f616586e5ff9f&quot;,
+        &quot;81cb18a4a1b36005e9df801f6194a3644c07513be62107157a0369ed6b9e1886&quot;,
+        &quot;9153a29a5293e86f44e2b40e75a35970cdd33b063b7259fa8a7364f61b334684&quot;,
+        &quot;e1fe64c5f2cf169f487742ccf9e6e7a658a68b68f03f053d6b0190d93535d4ac&quot;,
+        &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+        &quot;fbbdeecb2bf1e5aefbdc1334c7c09868f8707ca251440a7d36856608cac08ccb&quot;
+      ],
+      &quot;remainder&quot;: [],
+      &quot;limits&quot;: &quot;Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred.&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;command_or_syntax&quot;,
+      &quot;name&quot;: &quot;DO&quot;,
+      &quot;accepted&quot;: false,
+      &quot;comparison_outcome&quot;: &quot;matched_selected_paths_original_requirements_incomplete&quot;,
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;registration_form&quot;,
+          &quot;requirement&quot;: &quot;Exact v24 DO command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Exact DO registration selects ENDIF_Instruction (VOID, no-op runtime handler); structural pairing comes from ErbLoader, independently read.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;signature_parser&quot;,
+          &quot;requirement&quot;: &quot;DO: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;VOID builder body and inherited guards read from exact archive. Surplus text warns; source review is not malformed-input runtime proof.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Chosen loop body/continue/break sequence with exact marker/counter trace.&quot;,
+          &quot;discharged&quot;: false,
+          &quot;assessment&quot;: &quot;partial_original_obligation_remains&quot;,
+          &quot;finding&quot;: &quot;LOOPCOND02/03 prove entered/nested bodies and CONTINUE, traces123/123123. Their BREAK instructions are only A&gt;4/B&gt;4 guards, never reached; the original named break sequence is not observed.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;finite_boundary_error&quot;,
+          &quot;requirement&quot;: &quot;Review LOOPCOND02/03 nested/false-body and WHILE01; outside-loop BREAK or CONTINUE guard in exact builders/parser.&quot;,
+          &quot;discharged&quot;: false,
+          &quot;assessment&quot;: &quot;partial_original_obligation_remains&quot;,
+          &quot;finding&quot;: &quot;WHILE01 original fixture/raw reviewed as a related control only: it enters A&lt;3 and has no false-entry body. Exact ErbLoader outside-loop BREAK/CONTINUE guard and DO/LOOP pairing are inspected; false-body runtime obligation remains.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+          &quot;requirement&quot;: &quot;Condition helper count and skipped body divide-by-zero; paired delimiter source role is independent of text token spelling.&quot;,
+          &quot;discharged&quot;: false,
+          &quot;assessment&quot;: &quot;partial_original_obligation_remains&quot;,
+          &quot;finding&quot;: &quot;Condition counts3/6 and ordering agree, including CONTINUE. None of LOOPCOND02, LOOPCOND03 or WHILE01 contains the original requested skipped-body divide-by-zero witness. The proposal narrows this away without discharging it.&quot;
+        }
+      ],
+      &quot;case_ids&quot;: [
+        &quot;LOOPCOND02&quot;,
+        &quot;LOOPCOND03&quot;
+      ],
+      &quot;context_case_ids&quot;: [
+        &quot;WHILE01&quot;
+      ],
+      &quot;evidence_refs&quot;: [
+        &quot;C00117&quot;,
+        &quot;C00118&quot;,
+        &quot;C00178&quot;,
+        &quot;C00179&quot;,
+        &quot;C00180&quot;,
+        &quot;C00181&quot;,
+        &quot;C00182&quot;,
+        &quot;C00768&quot;,
+        &quot;C00833&quot;,
+        &quot;C00834&quot;,
+        &quot;C00850&quot;,
+        &quot;C00860&quot;,
+        &quot;C00861&quot;,
+        &quot;C01101&quot;,
+        &quot;C01102&quot;,
+        &quot;C01103&quot;,
+        &quot;C01104&quot;,
+        &quot;C01105&quot;,
+        &quot;S_GUARD&quot;,
+        &quot;S_PAIR&quot;
+      ],
+      &quot;evidence_hashes&quot;: [
+        &quot;00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab&quot;,
+        &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+        &quot;07eff50984adbd4063196ab0c78a6562eb91388e197f4e13af043587b14fd1b2&quot;,
+        &quot;16cddd1ba4025495a5d25aa0e6f06236598438ed223588ba41dd91a961301202&quot;,
+        &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+        &quot;442f507d9cb4d4e78cb45598eb277175990746dd5ebaccd5e71f2ca15ad81009&quot;,
+        &quot;5bb5082d06287340610fcdbc437b2f059a654d6ceff24c965f6310d5221851e1&quot;,
+        &quot;83a813862aa190b70278a573968c5c32093ea8d7a1b15247d43ecf225cd54156&quot;,
+        &quot;89df5be3b0a14d21c5702ee61096ac256a8b88f845daec064d685102173bf6fc&quot;,
+        &quot;bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95&quot;,
+        &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+        &quot;c64a30eeeeb59d7d3978b91e14bf4d1d9c3eb043a9578bebd598cc26b23fa7c1&quot;,
+        &quot;cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d&quot;,
+        &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+        &quot;e5420babaf03421ed7d6141bec042625da71690097a38221a830f083254a967c&quot;,
+        &quot;ea36b01f1630d891dcf26f1ae0eb01016bf96d4776bbbdfdc3b994bffc473c37&quot;
+      ],
+      &quot;remainder&quot;: [
+        &quot;Retain a reached BREAK sequence or explicitly resolve that original normal_output_state_control clause with a source-backed scope decision; the existing guard BREAK is never executed.&quot;,
+        &quot;Discharge frozen nested/false-body and skipped-body divide-by-zero clauses with an original bound witness, or obtain an explicit parent requirement correction with rationale. LOOPCOND02/03 and WHILE01 do not contain that fault witness; no new execution authorized here.&quot;
+      ],
+      &quot;limits&quot;: &quot;Finite traces remain valid evidence; rejection of closure does not assert an engine defect. WHILE01 is read only as named context, not separately adjudicated.&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;command_or_syntax&quot;,
+      &quot;name&quot;: &quot;LOOP&quot;,
+      &quot;accepted&quot;: false,
+      &quot;comparison_outcome&quot;: &quot;matched_selected_paths_original_requirements_incomplete&quot;,
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;registration_form&quot;,
+          &quot;requirement&quot;: &quot;Exact v24 LOOP command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Exact LOOP registration selects LOOP_Instruction; evaluates integer condition and jumps to paired DO on nonzero.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;signature_parser&quot;,
+          &quot;requirement&quot;: &quot;LOOP: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;INT_EXPRESSION(false) full builder plus base guards read. minArg=0 does not mean free-form: empty terms become0 with warning, null/type guards apply, excess terms warn. No universal parser parity inferred.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Chosen loop body/continue/break sequence with exact marker/counter trace.&quot;,
+          &quot;discharged&quot;: false,
+          &quot;assessment&quot;: &quot;partial_original_obligation_remains&quot;,
+          &quot;finding&quot;: &quot;LOOPCOND02/03 prove post-body conditions, nested finite continuation and CONTINUE traces. Active BREAK path is absent; guard BREAK is dead in these runs.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;finite_boundary_error&quot;,
+          &quot;requirement&quot;: &quot;Review LOOPCOND02/03 nested/false-body and WHILE01; outside-loop BREAK or CONTINUE guard in exact builders/parser.&quot;,
+          &quot;discharged&quot;: false,
+          &quot;assessment&quot;: &quot;partial_original_obligation_remains&quot;,
+          &quot;finding&quot;: &quot;WHILE01 original fixture/raw reviewed only as a related control; no false-entry branch. Exact outside-loop guard and delimiter pairing read from ErbLoader. The frozen false-body clause is not discharged.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+          &quot;requirement&quot;: &quot;Condition helper count and skipped body divide-by-zero; paired delimiter source role is independent of text token spelling.&quot;,
+          &quot;discharged&quot;: false,
+          &quot;assessment&quot;: &quot;partial_original_obligation_remains&quot;,
+          &quot;finding&quot;: &quot;ZZ_COND count3, ZZ_INNER count6 and trace123/123123 match. Original skipped-body divide-by-zero witness is absent from all three named fixtures; normal trace matching cannot substitute for it.&quot;
+        }
+      ],
+      &quot;case_ids&quot;: [
+        &quot;LOOPCOND02&quot;,
+        &quot;LOOPCOND03&quot;
+      ],
+      &quot;context_case_ids&quot;: [
+        &quot;WHILE01&quot;
+      ],
+      &quot;evidence_refs&quot;: [
+        &quot;C00117&quot;,
+        &quot;C00118&quot;,
+        &quot;C00178&quot;,
+        &quot;C00179&quot;,
+        &quot;C00180&quot;,
+        &quot;C00181&quot;,
+        &quot;C00182&quot;,
+        &quot;C00768&quot;,
+        &quot;C00842&quot;,
+        &quot;C00843&quot;,
+        &quot;C00860&quot;,
+        &quot;C00861&quot;,
+        &quot;C01106&quot;,
+        &quot;C01107&quot;,
+        &quot;C01108&quot;,
+        &quot;C01109&quot;,
+        &quot;C01110&quot;,
+        &quot;C01111&quot;,
+        &quot;S_GUARD&quot;,
+        &quot;S_PAIR&quot;
+      ],
+      &quot;evidence_hashes&quot;: [
+        &quot;00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab&quot;,
+        &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+        &quot;07eff50984adbd4063196ab0c78a6562eb91388e197f4e13af043587b14fd1b2&quot;,
+        &quot;16cddd1ba4025495a5d25aa0e6f06236598438ed223588ba41dd91a961301202&quot;,
+        &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+        &quot;442f507d9cb4d4e78cb45598eb277175990746dd5ebaccd5e71f2ca15ad81009&quot;,
+        &quot;5bb5082d06287340610fcdbc437b2f059a654d6ceff24c965f6310d5221851e1&quot;,
+        &quot;83a813862aa190b70278a573968c5c32093ea8d7a1b15247d43ecf225cd54156&quot;,
+        &quot;89df5be3b0a14d21c5702ee61096ac256a8b88f845daec064d685102173bf6fc&quot;,
+        &quot;bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95&quot;,
+        &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+        &quot;c64a30eeeeb59d7d3978b91e14bf4d1d9c3eb043a9578bebd598cc26b23fa7c1&quot;,
+        &quot;cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d&quot;,
+        &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+        &quot;e5420babaf03421ed7d6141bec042625da71690097a38221a830f083254a967c&quot;,
+        &quot;ea36b01f1630d891dcf26f1ae0eb01016bf96d4776bbbdfdc3b994bffc473c37&quot;
+      ],
+      &quot;remainder&quot;: [
+        &quot;Retain a reached BREAK sequence or explicitly resolve that original normal_output_state_control clause with a source-backed scope decision; the existing guard BREAK is never executed.&quot;,
+        &quot;Discharge frozen nested/false-body and skipped-body divide-by-zero clauses with an original bound witness, or obtain an explicit parent requirement correction with rationale. LOOPCOND02/03 and WHILE01 do not contain that fault witness; no new execution authorized here.&quot;
+      ],
+      &quot;limits&quot;: &quot;Finite traces remain valid evidence; rejection of closure does not assert an engine defect. WHILE01 is read only as named context, not separately adjudicated.&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;command_or_syntax&quot;,
+      &quot;name&quot;: &quot;TOOLTIP_SETCOLOR&quot;,
+      &quot;accepted&quot;: true,
+      &quot;comparison_outcome&quot;: &quot;documented_availability_gap&quot;,
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;registration_form&quot;,
+          &quot;requirement&quot;: &quot;Exact v24 TOOLTIP_SETCOLOR command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Exact TOOLTIP_SETCOLOR registration, SP_SWAP(false), handler and Console.SetToolTipColor assigning ForeColor/BackColor inspected.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;signature_parser&quot;,
+          &quot;requirement&quot;: &quot;TOOLTIP_SETCOLOR: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;SP_SWAP(false) requires two Int64 terms via default minArg=-1; base rejects missing/null/type faults, warns on extras. Public exact-count checking differs on extras; source-only difference explicitly retained.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Valid literal and helper setter call reaches AFTER with preserved RESULT/RESULTS.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Literal0,16777215 and own counted helper setter reach O0/O1 and DONE227 in both Native logs and public; O1 A=2 B=12 R=701 S=[sentinel227].&quot;
+        },
+        {
+          &quot;id&quot;: &quot;finite_boundary_error&quot;,
+          &quot;requirement&quot;: &quot;Case227 negative/Int32Max+1 or bad color/error-order; Native GUI setting vs public no-tooltip warning is explicit availability limitation.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;color_low stops at own line7 foreground guard. color_second_fault instead stops at helper line21 division-by-zero before first-color validation; Native/public error bodies and locations agree, diagnostic wrappers differ.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+          &quot;requirement&quot;: &quot;Source exact setters and helper order/exception boundary; no pixel/duration-popup-equivalence requirement for public absent GUI feature.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Exact handler evaluates X then Y before validating colors; B=12 corroborates order on normal return. Error-time state and actual GUI color fields unobserved. Retained public tooltip model and unsupported-hover warning satisfy original availability limitation.&quot;
+        }
+      ],
+      &quot;case_ids&quot;: [
+        &quot;TOOLTIP227_color_valid&quot;,
+        &quot;TOOLTIP227_color_low&quot;,
+        &quot;TOOLTIP227_color_second_fault&quot;
+      ],
+      &quot;context_case_ids&quot;: [],
+      &quot;evidence_refs&quot;: [
+        &quot;C00110&quot;,
+        &quot;C00111&quot;,
+        &quot;C00112&quot;,
+        &quot;C00681&quot;,
+        &quot;C00682&quot;,
+        &quot;C00683&quot;,
+        &quot;C00684&quot;,
+        &quot;C00685&quot;,
+        &quot;C00686&quot;,
+        &quot;C00687&quot;,
+        &quot;C00688&quot;,
+        &quot;C00689&quot;,
+        &quot;C00690&quot;,
+        &quot;C00691&quot;,
+        &quot;C00692&quot;,
+        &quot;C00693&quot;,
+        &quot;C00694&quot;,
+        &quot;C00695&quot;,
+        &quot;C00696&quot;,
+        &quot;C00697&quot;,
+        &quot;C00698&quot;,
+        &quot;C00699&quot;,
+        &quot;C00700&quot;,
+        &quot;C00701&quot;,
+        &quot;C00768&quot;,
+        &quot;C01435&quot;,
+        &quot;C01436&quot;,
+        &quot;C01437&quot;,
+        &quot;C01438&quot;,
+        &quot;C01439&quot;,
+        &quot;C01440&quot;,
+        &quot;C01441&quot;,
+        &quot;C01442&quot;,
+        &quot;C01443&quot;,
+        &quot;C01444&quot;,
+        &quot;C01445&quot;,
+        &quot;C01464&quot;
+      ],
+      &quot;evidence_hashes&quot;: [
+        &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+        &quot;02f733ef90e0db5c81d11c7bf0914bc8f45215a5d883cb96268b476f4eaa3244&quot;,
+        &quot;0617de5d48c52a09b81e7ceb5eec07e7e9fd4ea126c1e53df8dadf99cafdbea3&quot;,
+        &quot;17b53c1da30c0d20bf7e04208d7b4d434e4293c6e4eb6b81461c48c828b1ac25&quot;,
+        &quot;23638444d3e169d10ee75a0abdc224635b8cc09c10860a4c1565ea5b8fa57cce&quot;,
+        &quot;2ae3c17b6e51f0956d1659c5bddb479dd96451d9754807b3e180f34b896e1728&quot;,
+        &quot;2f074b58c82c9764dfb1dd9db8e92c2ccc6662282dac2af6adde2f142ec4e10b&quot;,
+        &quot;363f47edc9b7e799282ea11c1d9e63dff48e3e23ead51409a6877f73f42589dd&quot;,
+        &quot;370ea6e7ebe4c403ec9e0c70fd0693fa5f6d9a6f7f8b10b0fbdfc774a26392f0&quot;,
+        &quot;38e1e918d66724fb8b427e5aeb5fb1503c68618a64cf5ecd7b57234a15e838b5&quot;,
+        &quot;3b1fa81672097f9281013cce97ec362d0835c9803b6088b45bc98e9f1a7341bd&quot;,
+        &quot;3c8f94e64c60203477df4c22cdcf7b11bfd46890852167aa0d4762fd60d8c0ca&quot;,
+        &quot;3d7152148e96d3b98d9d3de117209ab2c83b237865ea998a15b2e7401e3fcf39&quot;,
+        &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+        &quot;4cfc87a54732b6f865c3e4c046ede02afcfc548d899c74c9d9d3610e7e013bbc&quot;,
+        &quot;53348804c3b380a2c37b30a4033558dfc7008410a7077feccb6003505bfbf2be&quot;,
+        &quot;5679dfc1777abbdcd65fbf59fbe2879a7466ee1c5442334ca1766d9dbd5b7731&quot;,
+        &quot;66f0ef5a275b0220a688d76b742f6150f04f281116e0f21d81d198258ad7e71c&quot;,
+        &quot;6f1555b21e4dd38393c254ee7e9583346451d00bf5bfd6d80e9f2396c5a9844a&quot;,
+        &quot;70673faf28754993cc49611ea2f5d2b8c05c42b9357d3f5ab8fcb3e8ae95b54e&quot;,
+        &quot;797d867ff0286f082e40f6fbbadae81f09dd89979c537bf4a8e61325e73f70c3&quot;,
+        &quot;877664e83943890f76362e654f0ebfdfe4bb4ac0be71e5bef88cb8b1a9680594&quot;,
+        &quot;8c6c4971728b37ee082e0abb0aa05eef75ff7a01a2c62e4787f173e0efb039ac&quot;,
+        &quot;a32e2fb7c43443adfc12eb825ec0f1536d5625301ac647499c5390d4541e0a28&quot;,
+        &quot;a68d610365547aca7c096acde13395285cf4fbd418f563a6708cc69568c65d95&quot;,
+        &quot;a8b1552ac577a1db8c7f8308c7f5cbc6e744507653891569e274516207932b64&quot;,
+        &quot;c03748223d05820a114110c214f3fd12b152b83529d6476aa0d0f55a574b9c15&quot;,
+        &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+        &quot;d85bdd9a2dfd2c0a6d005a1e8d486ac4010ee666b0e99e3d911dcf443cd0fda8&quot;,
+        &quot;d986d42e469ce0a2e246aa6f211a2261460304e64002879a830cbaec5f48f9a5&quot;,
+        &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+        &quot;e504c63485f018ff040f08e25645831d2d909c11981bd4c75e55dfdaecfe22ce&quot;,
+        &quot;fcff61584f543afedec5a7c4dc3690f1747cba51f917785e834d57d89259e6f8&quot;
+      ],
+      &quot;remainder&quot;: [],
+      &quot;limits&quot;: &quot;Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred.&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;command_or_syntax&quot;,
+      &quot;name&quot;: &quot;TOOLTIP_SETDELAY&quot;,
+      &quot;accepted&quot;: true,
+      &quot;comparison_outcome&quot;: &quot;documented_availability_gap&quot;,
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;registration_form&quot;,
+          &quot;requirement&quot;: &quot;Exact v24 TOOLTIP_SETDELAY command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Exact registration and INT_EXPRESSION(false) handler call Console.SetToolTipDelay, which writes ToolTip.InitialDelay.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;signature_parser&quot;,
+          &quot;requirement&quot;: &quot;TOOLTIP_SETDELAY: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Full integer builder/base guards reviewed: missing expression is native warning/default0, extras warn; public exact arity differs. Selected literal/helper forms are valid; no all-input parser match claimed.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Valid literal and helper setter call reaches AFTER with preserved RESULT/RESULTS.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Own literal0/helper25 operations reach O0/O1 and DONE227 in both Native logs and public; O1 A=1 B=1 R=701 S=[sentinel227].&quot;
+        },
+        {
+          &quot;id&quot;: &quot;finite_boundary_error&quot;,
+          &quot;requirement&quot;: &quot;Case227 negative/Int32Max+1 or bad color/error-order; Native GUI setting vs public no-tooltip warning is explicit availability limitation.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;delay_negative helper(-1) stops at own line7 range guard in Native/public; error body agrees with differing diagnostic transport. Public unsupported-hover warning retained on valid path.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+          &quot;requirement&quot;: &quot;Source exact setters and helper order/exception boundary; no pixel/duration-popup-equivalence requirement for public absent GUI feature.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Handler evaluates helper once before 0..Int32Max guard. Normal A=1/B=1 agrees. Error-time helper state and actual GUI delay are unobserved; original requirement allows explicit absent-popup limitation.&quot;
+        }
+      ],
+      &quot;case_ids&quot;: [
+        &quot;TOOLTIP227_delay_valid&quot;,
+        &quot;TOOLTIP227_delay_negative&quot;
+      ],
+      &quot;context_case_ids&quot;: [],
+      &quot;evidence_refs&quot;: [
+        &quot;C00113&quot;,
+        &quot;C00114&quot;,
+        &quot;C00700&quot;,
+        &quot;C00702&quot;,
+        &quot;C00703&quot;,
+        &quot;C00704&quot;,
+        &quot;C00705&quot;,
+        &quot;C00706&quot;,
+        &quot;C00707&quot;,
+        &quot;C00708&quot;,
+        &quot;C00709&quot;,
+        &quot;C00710&quot;,
+        &quot;C00711&quot;,
+        &quot;C00712&quot;,
+        &quot;C00713&quot;,
+        &quot;C00714&quot;,
+        &quot;C00768&quot;,
+        &quot;C00842&quot;,
+        &quot;C00843&quot;,
+        &quot;C01445&quot;,
+        &quot;C01446&quot;,
+        &quot;C01447&quot;,
+        &quot;C01448&quot;,
+        &quot;C01449&quot;,
+        &quot;C01450&quot;,
+        &quot;C01451&quot;,
+        &quot;C01452&quot;,
+        &quot;C01465&quot;
+      ],
+      &quot;evidence_hashes&quot;: [
+        &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+        &quot;17b53c1da30c0d20bf7e04208d7b4d434e4293c6e4eb6b81461c48c828b1ac25&quot;,
+        &quot;2ceac32c3d6593451e9dc5e40558c46a9952661e5bebd2ac01a27763ae7c309e&quot;,
+        &quot;3a5b25d8cc63d700f05c8ae33c30468246f2bf0a552a1fa0c16445bd56c3ef98&quot;,
+        &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+        &quot;40d3490e00f7461d6fbf783adc14eb4de45f9f470a2980cb0a7d5b5fc6454893&quot;,
+        &quot;4b3eb96bc084d110590811dec93532a396bc246ef8b00b7b118bff77cc236670&quot;,
+        &quot;4dfa4458868c82b5707394ae21e79e21147cff7262c1fc330f1b0b5d78ebaec4&quot;,
+        &quot;6632fbc58ee548ecfe15108809ffe72bab25940e1ad62022aa62ba3d9aa39e89&quot;,
+        &quot;70673faf28754993cc49611ea2f5d2b8c05c42b9357d3f5ab8fcb3e8ae95b54e&quot;,
+        &quot;74376024d09aad27d075cf1e86e8e60109f95a6e6ee9667c7ba86610d0d71996&quot;,
+        &quot;7fac7cb21ead2d5051ca16b20d08535b6f77f6a1224b26a202e6875de882a98c&quot;,
+        &quot;8303abcad0160008b9194df774468bc0c5ccaa62a7c6f908cba72257d2e4df44&quot;,
+        &quot;a11835c073971a59aee52e75a46a77be2321acb9ac8229a40f3fe838c18b7c91&quot;,
+        &quot;a95a71d90f260c7382d56c7037d4158d841e1a8a36dedfe503ca86ee50f5a6b5&quot;,
+        &quot;c03748223d05820a114110c214f3fd12b152b83529d6476aa0d0f55a574b9c15&quot;,
+        &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+        &quot;d72e087e0fb265eb794ab204d72f6febb3547f4c11c0cff31b4851afee880a89&quot;,
+        &quot;dafa5a295d07cb3010abe62c6e263cb08a83042e2256b9fdfd1ecde0199b01c0&quot;,
+        &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+        &quot;ec8f14ef012b77379aa85a65a089f5b3de7e892426c47461c3e5d6823ef4f4fe&quot;,
+        &quot;f6b34bcddf38acd9c1de59c39315c8cab20c307cea33c7dc5da2d356cd5b864f&quot;,
+        &quot;f88b8eb92949001720c46b8ac58ad676fc4668955360584929ac0420a7fc6a33&quot;,
+        &quot;fdd27bd30a600b98958ba94948da80d572d5713a64652c1bda04a986f0935f63&quot;
+      ],
+      &quot;remainder&quot;: [],
+      &quot;limits&quot;: &quot;Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred.&quot;
+    },
+    {
+      &quot;kind&quot;: &quot;command_or_syntax&quot;,
+      &quot;name&quot;: &quot;TOOLTIP_SETDURATION&quot;,
+      &quot;accepted&quot;: true,
+      &quot;comparison_outcome&quot;: &quot;documented_availability_gap&quot;,
+      &quot;requirements&quot;: [
+        {
+          &quot;id&quot;: &quot;registration_form&quot;,
+          &quot;requirement&quot;: &quot;Exact v24 TOOLTIP_SETDURATION command registration and constructor arguments, not expression or method-as-command homonym.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Exact registration and integer handler plus Console.SetToolTipDuration assigning tooltip_duration inspected.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;signature_parser&quot;,
+          &quot;requirement&quot;: &quot;TOOLTIP_SETDURATION: actual constructor-selected builder and CreateArgument rejection/nullable/raw rules; never infer legal inputs from minArg alone.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Full INT_EXPRESSION(false)/base guards reviewed, including native warning/default0 for omission and warning on extras; public exact arity differs. Selected normal inputs only have runtime credit.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;normal_output_state_control&quot;,
+          &quot;requirement&quot;: &quot;Valid literal and helper setter call reaches AFTER with preserved RESULT/RESULTS.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Own literal0/helper2147483647 reach O0/O1 and DONE227 in Native1/2 and public; O1 A=1 B=1 R=701 S=[sentinel227].&quot;
+        },
+        {
+          &quot;id&quot;: &quot;finite_boundary_error&quot;,
+          &quot;requirement&quot;: &quot;Case227 negative/Int32Max+1 or bad color/error-order; Native GUI setting vs public no-tooltip warning is explicit availability limitation.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;duration_high helper2147483648 stops at own line7 Int32 guard in Native/public, same error body with different wrappers. Valid public warning explicitly excludes terminal hover popup.&quot;
+        },
+        {
+          &quot;id&quot;: &quot;evaluation_and_side_effects&quot;,
+          &quot;requirement&quot;: &quot;Source exact setters and helper order/exception boundary; no pixel/duration-popup-equivalence requirement for public absent GUI feature.&quot;,
+          &quot;discharged&quot;: true,
+          &quot;assessment&quot;: &quot;discharged_with_stated_scope&quot;,
+          &quot;finding&quot;: &quot;Helper count/order agrees. Native source clamps duration&gt;32767 after range check; public source also min(v,32767), but stored native/public duration and popup timing were not read back. Original requirement permits this documented GUI limitation.&quot;
+        }
+      ],
+      &quot;case_ids&quot;: [
+        &quot;TOOLTIP227_duration_valid&quot;,
+        &quot;TOOLTIP227_duration_high&quot;
+      ],
+      &quot;context_case_ids&quot;: [],
+      &quot;evidence_refs&quot;: [
+        &quot;C00115&quot;,
+        &quot;C00116&quot;,
+        &quot;C00700&quot;,
+        &quot;C00707&quot;,
+        &quot;C00715&quot;,
+        &quot;C00716&quot;,
+        &quot;C00717&quot;,
+        &quot;C00718&quot;,
+        &quot;C00719&quot;,
+        &quot;C00720&quot;,
+        &quot;C00721&quot;,
+        &quot;C00722&quot;,
+        &quot;C00723&quot;,
+        &quot;C00724&quot;,
+        &quot;C00725&quot;,
+        &quot;C00726&quot;,
+        &quot;C00768&quot;,
+        &quot;C00842&quot;,
+        &quot;C00843&quot;,
+        &quot;C01445&quot;,
+        &quot;C01453&quot;,
+        &quot;C01454&quot;,
+        &quot;C01455&quot;,
+        &quot;C01456&quot;,
+        &quot;C01457&quot;,
+        &quot;C01458&quot;,
+        &quot;C01459&quot;,
+        &quot;C01466&quot;
+      ],
+      &quot;evidence_hashes&quot;: [
+        &quot;00b515ac11dd8d6cb95c856149ff45d7f6fda76f8cfcfcf9a0de6ccb95e62ae8&quot;,
+        &quot;027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334&quot;,
+        &quot;06b62b7273c69f4d580e9e4d1c2b4b9c887fc68ec940b55b3bad7a8ea80d5144&quot;,
+        &quot;17b53c1da30c0d20bf7e04208d7b4d434e4293c6e4eb6b81461c48c828b1ac25&quot;,
+        &quot;2ceac32c3d6593451e9dc5e40558c46a9952661e5bebd2ac01a27763ae7c309e&quot;,
+        &quot;3a5810e20e474c0e4592483d2e630a9bff956388590a3f4a8ce91e4edf04451a&quot;,
+        &quot;3df8f94f041dcee9e703f3f170cc48ad82d1d3016ce96b7f87a06ec5bba3ace9&quot;,
+        &quot;578e75e9b8aefbac778d8d2ed594b5fe9dbcfdc969e1f977e8e4dfe8eb4bdcbe&quot;,
+        &quot;70673faf28754993cc49611ea2f5d2b8c05c42b9357d3f5ab8fcb3e8ae95b54e&quot;,
+        &quot;77b906bd3ee2192178faf6460e8d224373063d63cdc42a2a6c75bf8c77bd0154&quot;,
+        &quot;822bbf87eeabd72d45ff36485848e49f2cf202ca1d0fae40f6bde8fb8005ed7a&quot;,
+        &quot;9ba1f5470b2f669d14a62688c55c367e26dc93c78a28f7e062975e7c531f1138&quot;,
+        &quot;bc5b71131194275a1a9294f7620cf735a079329eaf5ba90c8c0a54c15d52dce9&quot;,
+        &quot;bd4bc4498857b8631fe56c0a1134eee54b347f5836165b9b7dc6d1b6ebe16d46&quot;,
+        &quot;c03748223d05820a114110c214f3fd12b152b83529d6476aa0d0f55a574b9c15&quot;,
+        &quot;c5a4e650783498cbca8454b5bab282653d3964918c12cfd7867c5dea4cc15c65&quot;,
+        &quot;c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4&quot;,
+        &quot;d6c1c5ac30ea62f1201cba807fcddc2ffedb789e50bd43a90075230f53114ba0&quot;,
+        &quot;d7f8ae2bd9609da2a215e708770933ea6066f01aac1d0f481a5dd2ab4ca60c7f&quot;,
+        &quot;df8e9881a343f7c4713d7a84a55382d2cc27832d37b2ca99db03fc94ad20bf78&quot;,
+        &quot;e0c2b4b58c097fc508384d7623416c7647856b7905a04c0fc8a17eff0edafdf9&quot;,
+        &quot;e4d80d9b90d65fef848690ef68ef93f3af565c22cc02dc9a4b2f556e17484c83&quot;,
+        &quot;f31856dfbda5ae9ab89bc7e824a08ba4e442d9b56ce81890dc20cb77ddf0df42&quot;,
+        &quot;fcddd3a5b0b10383d1dba8adcecd19eac71d1f846aa3637fdac1094da4688aba&quot;
+      ],
+      &quot;remainder&quot;: [],
+      &quot;limits&quot;: &quot;Availability closure only: GUI textbox/tooltip fields, pixels, hover, popup timing and runtime duration clamp are not proved; source parser differences above remain. Native processes were cleaned up; natural exit is not inferred.&quot;
+    }
+  ],
+  &quot;counts&quot;: {
+    &quot;adjudicated&quot;: 6,
+    &quot;accepted&quot;: 4,
+    &quot;rejected&quot;: 2
+  },
+  &quot;execution&quot;: &quot;Offline file/ZIP inspection only; no engine, tests, UI, Git, Drive or external actions.&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1644 · command_or_syntax:CLEARTEXTBOX · acceptance</li>
+<li>L1645 · command_or_syntax:CLEARTEXTBOX · check</li>
+<li>L2119 · command_or_syntax:TOOLTIP_SETCOLOR · acceptance</li>
+<li>L2120 · command_or_syntax:TOOLTIP_SETCOLOR · check</li>
+<li>L2121 · command_or_syntax:TOOLTIP_SETDELAY · acceptance</li>
+<li>L2122 · command_or_syntax:TOOLTIP_SETDELAY · check</li>
+<li>L2123 · command_or_syntax:TOOLTIP_SETDURATION · acceptance</li>
+<li>L2124 · command_or_syntax:TOOLTIP_SETDURATION · check</li>
+</ul></html>

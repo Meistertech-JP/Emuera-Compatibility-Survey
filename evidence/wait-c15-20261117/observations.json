@@ -1,0 +1,37 @@
+{
+  "schema": "wait-c15-observations-v1",
+  "records": [
+    {
+      "case_id": "PRINTVKWC15",
+      "fixture_sha256": "f1d7771e5afed8bca8dc8eff59fe2aa56eeaf68bf0961bb92d2afe769669707c",
+      "markers": [
+        "BEFORE_EMPTY_PRINTVKW",
+        "AFTER_EMPTY_PRINTVKW",
+        "BEFORE_FAULT_PRINTVKW",
+        "FIRST_TERM_SIDE_EFFECT"
+      ],
+      "native_observation": "visual_crop_before_and_after_enter",
+      "native_diagnostic": "division_by_zero_line_7",
+      "native_exit": "not_observed_process_terminated_after_observation",
+      "py_diagnostic": "E_ARITH_line_7",
+      "py_returncode": 1,
+      "scope": "original_fixture; empty_enter_once; post_fault_state_unobserved"
+    },
+    {
+      "case_id": "PRINTVDWC15",
+      "fixture_sha256": "ab7c764d8eec97fb9d5dab821e8a8209b2279bd9882a6b2ea15e953c3f53afd7",
+      "markers": [
+        "BEFORE_EMPTY_PRINTVDW",
+        "AFTER_EMPTY_PRINTVDW",
+        "BEFORE_FAULT_PRINTVDW",
+        "FIRST_TERM_SIDE_EFFECT"
+      ],
+      "native_observation": "visual_crop_before_and_after_enter",
+      "native_diagnostic": "division_by_zero_line_7",
+      "native_exit": "not_observed_process_terminated_after_observation",
+      "py_diagnostic": "E_ARITH_line_7",
+      "py_returncode": 1,
+      "scope": "original_fixture; empty_enter_once; post_fault_state_unobserved"
+    }
+  ]
+}

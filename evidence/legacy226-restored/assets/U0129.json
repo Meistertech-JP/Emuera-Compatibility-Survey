@@ -1,0 +1,95 @@
+{
+  "schema": "pyemuera-parent-evidence-adjudication-v3",
+  "draft": false,
+  "bundles": [
+    {
+      "schema": "pyemuera.operator-secondary-anchor.v1",
+      "source_reports": [
+        {
+          "path": "automation-v2/incdec-08/registration-v1/reports/initial-v1/INCDEC08_INC_NONLV_DIAGNOSTIC.json",
+          "sha256": "86fde101fc0f16f24b0c8d13a55c815e6421171025cebe27271c25bad2f7ca79"
+        },
+        {
+          "path": "automation-v2/incdec-08/registration-v1/reports/initial-v1/INCDEC08_DEC_NONLV_DIAGNOSTIC.json",
+          "sha256": "b3c5e45f787176a9318c8b9426682ee90f5a3244298acb7554366ffc62bb664c"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "kind": "operator",
+      "name": "++",
+      "accepted": true,
+      "outcome": "documented_difference",
+      "outcome_basis": "Finite own ++ scope includes a paired native/public diagnostic payload difference in the registered INCDEC08_INC_NONLV_DIAGNOSTIC record; the remaining selected normal and queue witnesses are matched_scoped. This is a documented scoped difference, not a general incompatibility rate.",
+      "scope": "operator:++ only; exact registered normal, boundary, error timing and side-effect witnesses mapped below. Actual ++ spelling was present in every queue fixture. No -- transfer, no postfatal cell equality, no full-domain claim.",
+      "completion_review": "Parent accepted finite closure after read-only replay, raw reference validation and source binding. All four requirement axes and all eleven queue roles map to observed own ++ paired cases; the new diagnostic difference is registered as its own case. OPCONT262 edge records remain unverified and preserved; CASE289 postfatal records remain unverified/blocked and unused. Conditional postfatal-state text does not require new state capture for this queue, and no cell values after error are claimed.",
+      "finite_remainder": [],
+      "requirements": [
+        {
+          "id": "v24_registration_signature_form",
+          "case_ids": [
+            "INCEXPR_INCREMENT",
+            "OPISOLATED264_inc-nonlvalue",
+            "OPISOLATED264_inc-readonly"
+          ],
+          "finding": "Pinned v24 OperatorCode.cs/OperatorMethod.cs registration and common writable-variable guards, linked to own ++ normal and invalid-lvalue/read-only paired observations. Runtime witnesses are retained separately from source facts."
+        },
+        {
+          "id": "actual_target_use",
+          "case_ids": [
+            "INCEXPR_INCREMENT"
+          ],
+          "finding": "The registered own ++ normal expression case executes and returns through both Native v24 and the pinned public PyEmuera; the selected run is scoped and does not claim all value domains."
+        },
+        {
+          "id": "selected_normal_output_state_control",
+          "case_ids": [
+            "INCEXPR_INCREMENT"
+          ],
+          "finding": "Retained INCEXPR_INCREMENT paired stdout/state/control observations match in the selected finite scope."
+        },
+        {
+          "id": "applicable_boundary_error_evaluation_side_effect",
+          "case_ids": [
+            "OPCONT268_inc-edge-pre",
+            "OPCONT268_inc-edge-post",
+            "OPISOLATED264_inc-badindex-pre",
+            "OPISOLATED264_inc-nonlvalue",
+            "OPISOLATED264_inc-readonly",
+            "OPISOLATED264_incdec-string-type",
+            "OPISOLATED264_incdec-post-nonlvalue",
+            "OPISOLATED264_incdec-post-readonly",
+            "OPISOLATED264_incdec-post-string-type",
+            "OPISOLATED264_incdec-pre-and-post",
+            "OPISOLATED264_incdec-double-post",
+            "INCDEC08_INC_NONLV_DIAGNOSTIC"
+          ],
+          "finding": "All 11 finite queue roles use actual ++ spelling and paired Native/public observations. Corrected case268 edges replace no old case262 raw record. Own ++ non-lvalue diagnostic payload difference is separately registered. Post-error cells remain UNOBSERVED; the queue only conditionally requests supported inspection when required."
+        }
+      ],
+      "remaining": [
+        {
+          "index": 0,
+          "case_ids": [
+            "OPCONT268_inc-edge-pre",
+            "OPCONT268_inc-edge-post",
+            "OPISOLATED264_inc-badindex-pre",
+            "OPISOLATED264_inc-nonlvalue",
+            "INCDEC08_INC_NONLV_DIAGNOSTIC",
+            "OPISOLATED264_inc-readonly",
+            "OPISOLATED264_incdec-string-type",
+            "OPISOLATED264_incdec-post-nonlvalue",
+            "OPISOLATED264_incdec-post-readonly",
+            "OPISOLATED264_incdec-post-string-type",
+            "OPISOLATED264_incdec-pre-and-post",
+            "OPISOLATED264_incdec-double-post"
+          ],
+          "finding": "Every original queue suffix maps to an observed own ++ Native/public case; see per-role mapping in the preserved incdec08 draft and inventory. No postfatal values are inferred."
+        }
+      ],
+      "review_row_sha256": "e23eb7fb76692cb5a4109287d3cae98b199cb563edb2145898c73cd36b070201"
+    }
+  ]
+}

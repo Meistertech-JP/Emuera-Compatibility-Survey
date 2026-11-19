@@ -1,0 +1,40 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0708 · PLAN.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0708 · PLAN.json</h1>
+<p>原票種別=PLAN.json; 参照対象=command_or_syntax:ONEINPUTS。対象=&quot;ONEINPUTS&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>28f1d808b8f374385a7cf1f60a907616ddaf3a63c8a77f11b1a111e8d8341266</code></p>
+<p><a href="../assets/U0708.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>28f1d808b8f374385a7cf1f60a907616ddaf3a63c8a77f11b1a111e8d8341266</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;command-coverage-case-plan-1&quot;,
+  &quot;case_id&quot;: &quot;ONEINPUTS_ARGUMENT_BUILDER01&quot;,
+  &quot;target&quot;: &quot;ONEINPUTS&quot;,
+  &quot;purpose&quot;: &quot;Compare Native and public behavior for constant formatted argument text, empty quoted text, extra argument continuation, and the following INPUTS request.&quot;,
+  &quot;fixture_sha256&quot;: &quot;cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846&quot;,
+  &quot;native_replicates&quot;: 2,
+  &quot;public_replicates&quot;: 2,
+  &quot;input_sequence_hex&quot;: &quot;0a0a0a380a&quot;,
+  &quot;observation_points&quot;: [
+    &quot;READY_FOR_LITERAL&quot;,
+    &quot;LITERAL=[\&quot;]&quot;,
+    &quot;READY_FOR_EMPTY_CONSTANT&quot;,
+    &quot;EMPTY=[\&quot;]&quot;,
+    &quot;READY_FOR_EXTRA_ARGUMENT&quot;,
+    &quot;EXTRA=[\&quot;]&quot;,
+    &quot;INPUTS=[8]&quot;,
+    &quot;ONEINPUTS_PARSER_DONE&quot;
+  ],
+  &quot;screenshots_retained&quot;: false,
+  &quot;global_keyboard_input&quot;: false,
+  &quot;closure_claim&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0031 · command_or_syntax:ONEINPUTS · check</li>
+</ul></html>

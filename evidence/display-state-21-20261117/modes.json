@@ -1,0 +1,85 @@
+{
+  "schema": "display-state-shared-modes-prototype.v1",
+  "mode_records": [
+    {
+      "mode": "native-01",
+      "engine": {
+        "type": "native",
+        "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+      },
+      "fixture": "modes/native-01/fixture.erb",
+      "fixture_sha256": "9faefa0df7ec9718c475ee7107bdccc4af57857f452f609dda686026dd7e6754",
+      "config": "modes/native-01/emuera.config",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "raw": "modes/native-01/raw.log",
+      "raw_sha256": "96b211c6f4df2811efd0efa1f4a62138cf865d96a7ba4e77597c53cb6c13d43f",
+      "source_receipt_sha256": "890a75b71edae33bcada3c32326e00c36a5a8611ba905f7f28a908f7f4576bbe",
+      "recorded_process": {
+        "process_created": true,
+        "natural_exit_observed": false,
+        "alive_after_5s": true,
+        "cleanup_terminate_ok": true,
+        "synthetic_keyboard_events_sent": false,
+        "desktop_closed": true,
+        "exit_code": null
+      },
+      "done_marker_in_raw": true,
+      "case_run_scope": "SHARED_BATCH_NOT_21_INDEPENDENT_RUNS"
+    },
+    {
+      "mode": "native-02",
+      "engine": {
+        "type": "native",
+        "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+      },
+      "fixture": "modes/native-02/fixture.erb",
+      "fixture_sha256": "9faefa0df7ec9718c475ee7107bdccc4af57857f452f609dda686026dd7e6754",
+      "config": "modes/native-02/emuera.config",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "raw": "modes/native-02/raw.log",
+      "raw_sha256": "96b211c6f4df2811efd0efa1f4a62138cf865d96a7ba4e77597c53cb6c13d43f",
+      "source_receipt_sha256": "75a5620b6f744650a4584436b9114b6eeacecf14d621ac1511497db504e1ad23",
+      "recorded_process": {
+        "process_created": true,
+        "natural_exit_observed": false,
+        "alive_after_5s": true,
+        "cleanup_terminate_ok": true,
+        "synthetic_keyboard_events_sent": false,
+        "desktop_closed": true,
+        "exit_code": null
+      },
+      "done_marker_in_raw": true,
+      "case_run_scope": "SHARED_BATCH_NOT_21_INDEPENDENT_RUNS"
+    },
+    {
+      "mode": "public-01",
+      "engine": {
+        "type": "public_pyz",
+        "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+      },
+      "fixture": "modes/public-01/fixture.erb",
+      "fixture_sha256": "9faefa0df7ec9718c475ee7107bdccc4af57857f452f609dda686026dd7e6754",
+      "config": "modes/public-01/emuera.config",
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "raw": "modes/public-01/raw.log",
+      "raw_sha256": "96b211c6f4df2811efd0efa1f4a62138cf865d96a7ba4e77597c53cb6c13d43f",
+      "source_receipt_sha256": "a9b62ea64c8b29c690848418b93b13212b073f210eabc37aad11b8f430e287f4",
+      "recorded_process": {
+        "returncode": 0,
+        "inputs_before_after_equal": true,
+        "pyz_before_after_equal": true,
+        "natural_exit_observed": "not_inferred_from_wrapper_returncode"
+      },
+      "done_marker_in_raw": true,
+      "case_run_scope": "SHARED_BATCH_NOT_21_INDEPENDENT_RUNS"
+    }
+  ],
+  "reported_comparison_verdict": "matched_scoped",
+  "raw_byte_equality": true,
+  "conditions": 138,
+  "selected_cases": 21,
+  "shared_batch": true,
+  "source_case_and_markers_do_not_prove_target_reach": true,
+  "native_natural_exit_observed": false,
+  "not_selected_but_in_shared_fixture": "command_or_syntax:STRLEN"
+}

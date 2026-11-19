@@ -1,0 +1,179 @@
+{
+  "cases": [
+    {
+      "case_id": "CASE001",
+      "expression": "ABS((-7 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:ABS",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE002",
+      "expression": "MIN((7 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:MIN",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE003",
+      "expression": "MIN(((-9223372036854775807 - 1) + (RESULT:0 - 701)),0,9223372036854775807)",
+      "typed_key": "expression_function:MIN",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE004",
+      "expression": "MAX((7 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:MAX",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE005",
+      "expression": "MAX(((-9223372036854775807 - 1) + (RESULT:0 - 701)),0,9223372036854775807)",
+      "typed_key": "expression_function:MAX",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE006",
+      "expression": "LIMIT((3 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:LIMIT",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE007",
+      "expression": "LIMIT((4 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:LIMIT",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE008",
+      "expression": "LIMIT((8 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:LIMIT",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE009",
+      "expression": "LIMIT((9 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:LIMIT",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE010",
+      "expression": "INRANGE((3 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:INRANGE",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE011",
+      "expression": "INRANGE((4 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:INRANGE",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE012",
+      "expression": "INRANGE((8 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:INRANGE",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE013",
+      "expression": "INRANGE((9 + (RESULT:0 - 701)),4,8)",
+      "typed_key": "expression_function:INRANGE",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE014",
+      "expression": "LOG((2 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE015",
+      "expression": "LOG((3 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE016",
+      "expression": "LOG((7 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE017",
+      "expression": "LOG((8 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE018",
+      "expression": "LOG10((9 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG10",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE019",
+      "expression": "LOG10((10 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG10",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE020",
+      "expression": "LOG10((99 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG10",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE021",
+      "expression": "LOG10((100 + (RESULT:0 - 701)))",
+      "typed_key": "expression_function:LOG10",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE022",
+      "expression": "STRCOUNT((RESULT:0 == 701 ? \"aaaa\" # \"BAD_SENT\"),\"z\")",
+      "typed_key": "expression_function:STRCOUNT",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE023",
+      "expression": "STRCOUNT((RESULT:0 == 701 ? \"aaaa\" # \"BAD_SENT\"),\"aa\")",
+      "typed_key": "expression_function:STRCOUNT",
+      "value_type": "numeric"
+    },
+    {
+      "case_id": "CASE024",
+      "expression": "REPLACE((RESULT:0 == 701 ? \"aba\" # \"BAD_SENT\"),\"(a)\",\"$1X\")",
+      "typed_key": "expression_function:REPLACE",
+      "value_type": "string"
+    },
+    {
+      "case_id": "CASE025",
+      "expression": "REPLACE((RESULT:0 == 701 ? \"aba\" # \"BAD_SENT\"),\"z\",\"X\")",
+      "typed_key": "expression_function:REPLACE",
+      "value_type": "string"
+    },
+    {
+      "case_id": "CASE026",
+      "expression": "TOSTR((-15 + (RESULT:0 - 701)),\"D4\")",
+      "typed_key": "expression_function:TOSTR",
+      "value_type": "string"
+    },
+    {
+      "case_id": "CASE027",
+      "expression": "TOSTR((-15 + (RESULT:0 - 701)),\"X\")",
+      "typed_key": "expression_function:TOSTR",
+      "value_type": "string"
+    },
+    {
+      "case_id": "CASE028",
+      "expression": "TOSTR((0 + (RESULT:0 - 701)),\"D4\")",
+      "typed_key": "expression_function:TOSTR",
+      "value_type": "string"
+    },
+    {
+      "case_id": "CASE029",
+      "expression": "TOSTR((0 + (RESULT:0 - 701)),\"X\")",
+      "typed_key": "expression_function:TOSTR",
+      "value_type": "string"
+    }
+  ],
+  "schema": "neutral-legacy-expression-plan.v1"
+}

@@ -1,0 +1,222 @@
+{
+  "case": 229,
+  "rows": [
+    {
+      "condition": {
+        "id": "space_valid",
+        "command": "PRINT_SPACE",
+        "ops": [
+          "PRINT_SPACE 0",
+          "PRINT_SPACE 100",
+          "PRINT_SPACE ZZ229N(1,25)",
+          "PRINT_SPACE ZZ229N(2,25)"
+        ]
+      },
+      "native_log_sha256": "d8ff4b9e002132f3e8d3f19c254668a39e21c0473714f2046058abd58f3e0784",
+      "public_stderr_sha256": "456ae2fd9904734950615f9b04d35be6c99b5ca43cdea322bd2df4d03aba5c75",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "history_serialization_differs_from_terminal_projection",
+      "scope": "Payload OUTPUTLOG tags and selected state/eval agree; HTML_GETPRINTEDSTR differs (Native shape/image element versus public text/space projection). No pixel rendering or shape width equivalence.",
+      "native_HTML": "<p align='left'><nobr>P229&gt;<shape type='space' param='0'><shape type='space' param='100'><shape type='space' param='25'><shape type='space' param='25'>&lt;T229</nobr></p>",
+      "public_HTML": "<p align='left'><nobr>P229&gt;   &lt;T229</nobr></p>",
+      "payload": "P229><shape type='space' param='0'><shape type='space' param='100'><shape type='space' param='25'><shape type='space' param='25'><T229",
+      "selected_state": "STATE229 A=2 B=12 R=701 S=[sentinel229]"
+    },
+    {
+      "condition": {
+        "id": "rect_valid",
+        "command": "PRINT_RECT",
+        "ops": [
+          "PRINT_RECT 100",
+          "PRINT_RECT ZZ229N(1,0),ZZ229N(2,0),ZZ229N(3,100),ZZ229N(4,100)"
+        ]
+      },
+      "native_log_sha256": "d117ce84f90391f417b365ba920c5f0d03005a2bd433575e5d2df552852b1aa9",
+      "public_stderr_sha256": "9ca22f905670496c8f72690ecc43af8030575dce995165d6a4f655ed8634e0b4",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "history_serialization_differs_from_terminal_projection",
+      "scope": "Payload OUTPUTLOG tags and selected state/eval agree; HTML_GETPRINTEDSTR differs (Native shape/image element versus public text/space projection). No pixel rendering or shape width equivalence.",
+      "native_HTML": "<p align='left'><nobr>P229&gt;<shape type='rect' param='100'><shape type='rect' param='0, 0, 100, 100'>&lt;T229</nobr></p>",
+      "public_HTML": "<p align='left'><nobr>P229&gt;    &lt;T229</nobr></p>",
+      "payload": "P229><shape type='rect' param='100'><shape type='rect' param='0, 0, 100, 100'><T229",
+      "selected_state": "STATE229 A=4 B=1234 R=701 S=[sentinel229]"
+    },
+    {
+      "condition": {
+        "id": "image_existing",
+        "command": "PRINT_IMG",
+        "ops": [
+          "PRINT_IMG \"ZZ229\"",
+          "PRINT_IMG ZZ229S()"
+        ],
+        "resource": true
+      },
+      "native_log_sha256": "92c409278033a22623a4644ad56725e0d94c63267a678e870d98209ae07de69c",
+      "public_stderr_sha256": "9ca22f905670496c8f72690ecc43af8030575dce995165d6a4f655ed8634e0b4",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "history_serialization_differs_from_terminal_projection",
+      "scope": "Payload OUTPUTLOG tags and selected state/eval agree; HTML_GETPRINTEDSTR differs (Native shape/image element versus public text/space projection). No pixel rendering or shape width equivalence.",
+      "native_HTML": "<p align='left'><nobr>P229&gt;<img src='ZZ229'><img src='ZZ229'>&lt;T229</nobr></p>",
+      "public_HTML": "<p align='left'><nobr>P229&gt;&lt;img src=&apos;ZZ229&apos;&gt;&lt;img src=&apos;ZZ229&apos;&gt;&lt;T229</nobr></p>",
+      "payload": "P229><img src='ZZ229'><img src='ZZ229'><T229",
+      "selected_state": "STATE229 A=1 B=1 R=701 S=[sentinel229]"
+    },
+    {
+      "condition": {
+        "id": "image_missing",
+        "command": "PRINT_IMG",
+        "ops": [
+          "PRINT_IMG \"MISSING229\""
+        ]
+      },
+      "native_log_sha256": "3485fe4ded0feb68497fcfbad02a6fd0bdb8c7c7c711d2b02cbd25426a20a7ee",
+      "public_stderr_sha256": "9ca22f905670496c8f72690ecc43af8030575dce995165d6a4f655ed8634e0b4",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "history_serialization_differs_from_terminal_projection",
+      "scope": "Payload OUTPUTLOG tags and selected state/eval agree; HTML_GETPRINTEDSTR differs (Native shape/image element versus public text/space projection). No pixel rendering or shape width equivalence.",
+      "native_HTML": "<p align='left'><nobr>P229&gt;<img src='MISSING229'>&lt;T229</nobr></p>",
+      "public_HTML": "<p align='left'><nobr>P229&gt;&lt;img src=&apos;MISSING229&apos;&gt;&lt;T229</nobr></p>",
+      "payload": "P229><img src='MISSING229'><T229",
+      "selected_state": "STATE229 A=0 B=0 R=701 S=[sentinel229]"
+    },
+    {
+      "condition": {
+        "id": "space_negative",
+        "command": "PRINT_SPACE",
+        "ops": [
+          "PRINT_SPACE ZZ229N(1,-1)"
+        ],
+        "error": true
+      },
+      "native_log_sha256": "a923b177fbcdc8524c4f9c1ad8cc37017a60a4b7337f049454bc688e613cac84",
+      "public_stderr_sha256": "e6dafb3bdd350d036b24f8b21f76a87458829885ce9535e9c3faac5749f26fdc",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "matched_scoped",
+      "category": "selected_stop_location",
+      "scope": "Both stop atline8; error body matches, wrappers differ. No post-error state observation.",
+      "error_body_equal": true
+    },
+    {
+      "condition": {
+        "id": "space_high",
+        "command": "PRINT_SPACE",
+        "ops": [
+          "PRINT_SPACE ZZ229N(1,2147483648)"
+        ],
+        "error": true
+      },
+      "native_log_sha256": "745230fd6d3420d11ef2c01caaac78601e04fbe73b8345a21222085e91d21e8c",
+      "public_stderr_sha256": "0ba549a9a633e5f181507154837bf24d60d5b79ea00d62f5afc937fb6253d10e",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "matched_scoped",
+      "category": "selected_stop_location",
+      "scope": "Both stop atline8; error body differs for Int32-high bound. No post-error state observation.",
+      "error_body_equal": false
+    },
+    {
+      "condition": {
+        "id": "rect_first_invalid",
+        "command": "PRINT_RECT",
+        "ops": [
+          "PRINT_RECT ZZ229N(1,-1),ZZ229FAULT(),100,100"
+        ],
+        "error": true
+      },
+      "native_log_sha256": "4ca64c9c0d75af964fd3d3c108dd336ae09fc1e93924ecb91b95e913a4fb204f",
+      "public_stderr_sha256": "3db95337542e01077f9f650e87d197e5cfd64c60db8fba17e72d2f95021ef3c4",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "rect_per_operand_check_vs_eager_later_evaluation",
+      "scope": "Native negative first arg line8; public later helper division line30."
+    },
+    {
+      "condition": {
+        "id": "rect_shape_fallback",
+        "command": "PRINT_RECT",
+        "ops": [
+          "PRINT_RECT 0",
+          "PRINT_RECT 1,2,3"
+        ]
+      },
+      "native_log_sha256": "3fdaa2d8854a68b769984b9d2559c132f167ff368911cc30b9d421679882adf6",
+      "public_stderr_sha256": "9ca22f905670496c8f72690ecc43af8030575dce995165d6a4f655ed8634e0b4",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "history_serialization_differs_from_terminal_projection",
+      "scope": "Payload OUTPUTLOG tags and selected state/eval agree; HTML_GETPRINTEDSTR differs (Native shape/image element versus public text/space projection). No pixel rendering or shape width equivalence.",
+      "native_HTML": "<p align='left'><nobr>P229&gt;<shape type='rect' param='0'><shape type='rect' param='1, 2, 3'>&lt;T229</nobr></p>",
+      "public_HTML": "<p align='left'><nobr>P229&gt;&lt;shape type=&apos;rect&apos; param=&apos;0&apos;&gt;&lt;shape type=&apos;rect&apos; param=&apos;1, 2, 3&apos;&gt;&lt;T229</nobr></p>",
+      "payload": "P229><shape type='rect' param='0'><shape type='rect' param='1, 2, 3'><T229",
+      "selected_state": "STATE229 A=0 B=0 R=701 S=[sentinel229]"
+    },
+    {
+      "condition": {
+        "id": "skip_all",
+        "command": "PRINT_SPACE PRINT_RECT PRINT_IMG",
+        "ops": [
+          "SKIPDISP 1",
+          "PRINT_SPACE ZZ229FAULT()",
+          "PRINT_RECT ZZ229FAULT(),0,100,100",
+          "PRINT_IMG ZZ229BADSTR()",
+          "SKIPDISP 0"
+        ]
+      },
+      "native_log_sha256": "d1a9450d4028a2534171a799af2a51f6697bee0c580ff670e0d146dd02d45e4f",
+      "public_stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "matched_scoped",
+      "category": "skip_before_arguments_match",
+      "scope": "Payload OUTPUTLOG tags and selected state/eval agree; HTML_GETPRINTEDSTR matches, skipped divide-by-zero helpers not evaluated. No pixel rendering or shape width equivalence.",
+      "native_HTML": "<p align='left'><nobr>P229&gt;&lt;T229</nobr></p>",
+      "public_HTML": "<p align='left'><nobr>P229&gt;&lt;T229</nobr></p>",
+      "payload": "P229><T229",
+      "selected_state": "STATE229 A=0 B=0 R=0 S=[sentinel229]"
+    },
+    {
+      "condition": {
+        "id": "minimal-order",
+        "command": "PRINT_RECT",
+        "error": true
+      },
+      "native_log_sha256": "bc2d04e41b30f514d1cfe872f232a179ce356a7f7e84440e1f58fa65e845ea77",
+      "public_stderr_sha256": "a2a2e84a136798c543eb1f3dad19bcc76e5abb53a57f0fe56d44175a8285a4ff",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "rect_per_operand_check_vs_eager_later_evaluation",
+      "scope": "Native negative first argument stops atline4 before later operand. Public evaluates later division and throwsE_ARITH atline4. Minimal repro separately executed without helpers."
+    },
+    {
+      "condition": {
+        "id": "image_presence_control",
+        "command": "SPRITEWIDTH",
+        "control": true
+      },
+      "native_log_sha256": "d45b6bd4ecc6e6dd7e5e9e83448cb88a18df18e2c45d24873799e1ed084da233",
+      "public_stderr_sha256": "cc0f33ba99773ebc32e5b593341f524620e8331d9c04fbb0a96dfb555c88cc4c",
+      "native_natural_exit": "unobserved",
+      "GUI_pixels": "unobserved",
+      "verdict": "different_scoped",
+      "category": "public_spritewidth_resolution_failure",
+      "scope": "Native same-resource control confirms sprite exists1,width4,height3 then PRINT_IMG; public stops atSPRITEWIDTH before image operation. No public PRINT_IMG credit for this control; no public HEIGHT observation."
+    }
+  ],
+  "native_runs": 22,
+  "public_runs": 11,
+  "matches": 3,
+  "differences": 8,
+  "limitations": "Nine main fixtures plus separately executed seven-line minimal RECT and resource-presence control;Native22/public11. H229 known serialized HTML field joins only physical wraps, all raw logs retained. No GUI pixel/dimensions/click correctness;public raw stdout is cell/placeholder projection not compared as native GUI stream. Presence control Native1/4/3;public stops atSPRITEWIDTH beforeIMG, no fabricated positive image parity. Existing/missing IMG main cases directly reach target. Negative/high space stop positions only;RECT per-arg exception ordering differs. No full shape/image/argument closure;Native natural exit unobserved, own cleanup only. Product unchanged."
+}

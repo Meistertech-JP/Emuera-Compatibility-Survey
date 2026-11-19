@@ -1,0 +1,45 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0047 · PARENT_ACCEPTANCE_RANDOMIZE_20261115.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0047 · PARENT_ACCEPTANCE_RANDOMIZE_20261115.json</h1>
+<p>原票種別=PARENT_ACCEPTANCE_RANDOMIZE_20261115.json; 参照対象=command_or_syntax:RANDOMIZE。対象={&quot;kind&quot;: &quot;command_or_syntax&quot;, &quot;name&quot;: &quot;RANDOMIZE&quot;}; comparison_outcome=&quot;matched_in_finite_scope&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>18a29b4d96af052f8107cebbf48aaac0ce6c97c4f548cc498a49d96f21b4fa3e</code></p>
+<p><a href="../assets/U0047.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>18a29b4d96af052f8107cebbf48aaac0ce6c97c4f548cc498a49d96f21b4fa3e</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;target-comparison-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-14T17:28:38.788023+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;command_or_syntax&quot;,
+    &quot;name&quot;: &quot;RANDOMIZE&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;case_ids&quot;: [
+    &quot;RANDROUNDTRIP197_command_or_syntax_RANDOMIZE&quot;,
+    &quot;RANDOMIZE_OMIT_DYNAMIC_20261115&quot;
+  ],
+  &quot;basis&quot;: [
+    &quot;Native and public logs for omitted RANDOMIZE are byte-identical to their existing literal RANDOMIZE 0 references across two repeated runs, including the complete 625-slot state dump.&quot;,
+    &quot;A dynamic helper returns seed 1234 exactly once in each engine/run; after the RNG is disturbed, reinitialization restores all 625 state elements to the pre-disturbance state. Native/public logs are byte-identical in both runs.&quot;,
+    &quot;The source registration, nullable integer-expression builder, runtime handler and seed-to-generator handoff were checked against fixed v24 source member hashes.&quot;
+  ],
+  &quot;limitations&quot;: [
+    &quot;Only omitted seed equivalence to literal zero and one dynamic helper returning existing seed 1234 are covered; this is not a proof over all seeds, invalid expressions, or parser forms.&quot;,
+    &quot;Native process natural exit was not observed; the owned isolated-desktop runner cleaned up each process.&quot;,
+    &quot;The separate RAND expression, RANDOM method-as-command, DUMPRAND and INITRAND targets retain their own scope and statuses.&quot;
+  ],
+  &quot;product_modified&quot;: false,
+  &quot;public_release_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1678 · command_or_syntax:RANDOMIZE · acceptance</li>
+<li>L1679 · command_or_syntax:RANDOMIZE · check</li>
+<li>L1681 · command_or_syntax:RANDOMIZE · check</li>
+</ul></html>

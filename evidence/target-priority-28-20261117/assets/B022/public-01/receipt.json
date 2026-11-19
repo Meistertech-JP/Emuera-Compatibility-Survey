@@ -1,0 +1,21 @@
+{
+  "case_id": "PRINT_D_CURRENT_PRINTFORMD_20261116",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "4c12a508b5d18fc0999e2a75646b8ea538625cb97e83ce2fc3d11394fcf15d24",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/MAIN.ERB": "4c12a508b5d18fc0999e2a75646b8ea538625cb97e83ce2fc3d11394fcf15d24",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "1d3157db7c06fa79347a1e76dc60780c50c201ae2971143d1b2ed6c41dd8293e",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "PRINTFORMD",
+  "source_declared_mode": "public-01"
+}

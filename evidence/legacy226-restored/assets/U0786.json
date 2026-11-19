@@ -1,0 +1,44 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTLC"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "case_ids": [
+    "COLUMN_PRINTLC_EMPTY_SHORT_EQUAL_20261115"
+  ],
+  "accepted_scope": "Direct own PRINTLC statement with empty, ASCII width3 and configured width25 text; RESULT777/RESULTS SENTINEL preserved, boundary END markers and DONE reached. Native2/public1 raw UTF16 output bytes match. Native PRINT_Instruction lines141-144 bind C true / LC false; serialized text alignment only.",
+  "original_remaining": [
+    {
+      "type": "finite_command_obligation",
+      "source": "evidence\\parent-command-evidence-review-20261113\\REVIEW.json",
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "PRINTLC"
+      },
+      "obligation_ids": [
+        "raw_nullable_empty",
+        "column_LC"
+      ],
+      "note": "Read exact obligation source and existing own-target observations before execution; no cross-target normal-credit transfer."
+    }
+  ],
+  "source_refs": {
+    "member": "GameProc/Function/Instraction.Child.cs",
+    "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+    "lines": [
+      141,
+      144
+    ]
+  },
+  "manifest_path": "evidence/print-column-boundary-20261115/attempt-02/MANIFEST.json",
+  "manifest_sha256": "72c63377c51030c910fe0562c1c702b1c2dbb90f38e582b5d734f12e780d2266",
+  "limitations": [
+    "Only selected serialized text boundaries; font and pixels outside scope",
+    "Native natural exit unobserved"
+  ],
+  "product_modified": false,
+  "global_completion": false
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:08.980760+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "VARSET"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "3e3700c16262b3b54bcd38effc64388517db75d28480455791083636f862f247",
+  "case_ids": [
+    "VARCVARSET192_C192X03",
+    "VARCVARSET192_C192X09"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "VARCVARSET192_C192X03: Twenty selected valid conditions, split after first batch stops on valid omitted CVARSET. Custom integer/string arrays all6 slots observed; two real chara templates only0/1/2/last slots of CFLAG/CSTR. No all-field/element reset, multidimensional/scalar/readonly/invalid range, empty character set, CVARSET reversed/empty range or dynamic destination resolution closure. Error public after-state/evaluation unobserved, not inferred. Initial batch preserved; Native8 processes including initial alive5s then own cleanup, natural exit unobserved.",
+    "VARCVARSET192_C192X09: Twenty selected valid conditions, split after first batch stops on valid omitted CVARSET. Custom integer/string arrays all6 slots observed; two real chara templates only0/1/2/last slots of CFLAG/CSTR. No all-field/element reset, multidimensional/scalar/readonly/invalid range, empty character set, CVARSET reversed/empty range or dynamic destination resolution closure. Error public after-state/evaluation unobserved, not inferred. Initial batch preserved; Native8 processes including initial alive5s then own cleanup, natural exit unobserved."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "80704dcbc187a18473acda2bc8800f3fba4661ec3f62ccb4e27b713392dbf834",
+  "independent_semantic_review_sha256": "e9973700f61be9d39c5117d08bea71d06fc57a90fc09fdc770161d4c71dc4edf",
+  "independent_semantic_results_sha256": "bec0099232ee54577fea798bcc490ef7dc9b23d33293cb0288a119102742260d",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

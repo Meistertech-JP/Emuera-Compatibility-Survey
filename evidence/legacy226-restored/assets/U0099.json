@@ -1,0 +1,28 @@
+{
+  "schema": "parent-acceptance-readback-1",
+  "generated_utc": "2026-11-14T22:39:09.392067+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "PRINTSINGLED"
+  },
+  "decision": "necessary_comparison_complete_as_documented_difference",
+  "acceptance_sha256": "a87c876251a411bf42cd44ca56605175e8708152efd728ba1e2e178e35d223b1",
+  "case_ids": [
+    "PRINTKD212_C212_80"
+  ],
+  "case_verdict": "different_scoped",
+  "limitations": [
+    "This parent acceptance closes only the existing review_existing action for the named target and cited finite conditions.",
+    "It does not establish complete command behavior, every argument/branch/context, or universal compatibility.",
+    "空引数・選定表示履歴の行構造差のみ。色/GUIレイアウトや他引数条件への一般化なし。",
+    "PRINTKD212_C212_80: 88 selected observations over33 nonwait K/D print variants in one process perrun. K modes0–3 on あ/ア/ｱ and ASCII, one helper template per input kind, ten SINGLE empty and three selected skip conditions. Raw logs retain padding/blank-space rows; serialized payload extraction removes only CRLF,prefix/tail and known boundary ASCII padding for a separate text axis, not internal argument value. D printed colors/font/style not observed by plain history; no GUI-color equivalence, W variants, all Unicode/kana marks, malformed FORM/type errors, column-width/config coverage or full PRINT closure. Native2 processes alive5s then cleanup, natural exit unobserved."
+  ],
+  "necessary_comparison_complete": true,
+  "comparison_outcome": "different_scoped",
+  "prior_target_row_sha256": "9066f1561e893979624bbf11d28ff2247bcaf96c15d40992da2878f8e1d41558",
+  "independent_semantic_review_sha256": "89618fd78615da015a550f5b0918b5987d9483c2afbecf8dc2f9f2e97715adab",
+  "independent_semantic_results_sha256": "d61de0670ddd02bb9193d6241eef095b46a917f1787b2e9ea6ba192365884a5a",
+  "case_register_sha256": "7edaf09bbb6b65988d93d9a3af98aaeb314b55247be7ff870c8965ccb002d5da",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35"
+}

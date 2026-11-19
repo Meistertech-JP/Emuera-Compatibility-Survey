@@ -1,0 +1,27 @@
+{
+  "source_condition_id": "CSVCSTR_EXPR_OPTIONAL_ON",
+  "mode": "public-01",
+  "fixture_inputs_before": {
+    "ERB/MAIN.ERB": "b2391a6e05752bc3c29890f8646edd7dccbafa5ad6cbd0d5b0045bff891e13a0",
+    "csv/CHARA10.CSV": "c4699a6a0e30cd621cf9b0adcb0ff3fb3a312b35fddd90611d9ed418a4093d5f",
+    "csv/CHARA30.CSV": "a87682688b5312ae929c6b44ff093a7df2eb1edfe3ae89f81fb4a4b826bb4f60",
+    "emuera.config": "7c37efd9049278258fa7b9572e7567d0cac53d6dcc12e2a7d75720136e816a18"
+  },
+  "fixture_inputs_after": {
+    "ERB/MAIN.ERB": "b2391a6e05752bc3c29890f8646edd7dccbafa5ad6cbd0d5b0045bff891e13a0",
+    "csv/CHARA10.CSV": "c4699a6a0e30cd621cf9b0adcb0ff3fb3a312b35fddd90611d9ed418a4093d5f",
+    "csv/CHARA30.CSV": "a87682688b5312ae929c6b44ff093a7df2eb1edfe3ae89f81fb4a4b826bb4f60",
+    "emuera.config": "7c37efd9049278258fa7b9572e7567d0cac53d6dcc12e2a7d75720136e816a18"
+  },
+  "case_fatal_isolated_process": false,
+  "sp_enabled_gate": true,
+  "recorded_returncode": 1,
+  "recorded_status": "completed",
+  "recorded_integrity_ok": true,
+  "native_probe_selected": null,
+  "native_natural_exit": "not_applicable",
+  "selected_raw": {
+    "sha256": "667e5645310d82afb175adaeabcb04bdf3799062e817dab9d1c11d997915dce1",
+    "binding_basis": "case_record_and_group_manifest_and_saved_raw_readback"
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0625 · EXCLUDED_ATTEMPTS.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0625 · EXCLUDED_ATTEMPTS.json</h1>
+<p>原票種別=EXCLUDED_ATTEMPTS.json; 参照対象=declaration:#DEFINE。原票の実行前後ピン・記録構造と全フィールドを保持。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>a7052e233dc15fcecc2c3a7ab27061fd4685ddaa00a8481db86ed7ce39bbb5dd</code></p>
+<p><a href="../assets/U0625.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a7052e233dc15fcecc2c3a7ab27061fd4685ddaa00a8481db86ed7ce39bbb5dd</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;define-excluded-attempts-1&quot;,
+  &quot;attempts&quot;: [
+    {
+      &quot;path&quot;: &quot;empty-native-01 / empty-native-02 / empty-py&quot;,
+      &quot;reason&quot;: &quot;The first empty-macro probe placed the identifier in PRINTL text, where it remained literal. It did not test preprocessor expression expansion and is superseded by empty_expr; do not count it.&quot;
+    },
+    {
+      &quot;path&quot;: &quot;duplicate-native-cap-01 / missing_id-native-cap-01 / malformed_args-native-cap-01&quot;,
+      &quot;reason&quot;: &quot;PowerShell Copy-Item used LiteralPath with a wildcard, leaving ERB fixtures uncopied. These capture attempts are invalid setup and excluded.&quot;
+    },
+    {
+      &quot;path&quot;: &quot;missing_id-native-cap-02&quot;,
+      &quot;reason&quot;: &quot;The cap02 fixture bytes match, but cap03 is the designated retained visual capture; cap02 is redundant and not used.&quot;
+    },
+    {
+      &quot;path&quot;: &quot;malformed_args-native-cap-02&quot;,
+      &quot;reason&quot;: &quot;The second copy batch stopped on the existing directory, but post-run byte comparison proved its ERH/ERB exactly match the accepted fixture. The raw capture is valid and is included; the setup error itself is not counted as a run.&quot;
+    },
+    {
+      &quot;path&quot;: &quot;duplicate-native-cap-01&quot;,
+      &quot;reason&quot;: &quot;Initial screenshot helper raised on a Win32 handle conversion after creating an uncropped app-window image. The full image was replaced by its transcript crop; this attempt is not counted.&quot;
+    }
+  ],
+  &quot;retention&quot;: &quot;Raw attempts remain in the work folder for auditability. The accepted evidence manifest excludes these paths. The only retained screenshots are transcript/dialog crops, not full-screen captures.&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2446 · declaration:#DEFINE · check</li>
+</ul></html>

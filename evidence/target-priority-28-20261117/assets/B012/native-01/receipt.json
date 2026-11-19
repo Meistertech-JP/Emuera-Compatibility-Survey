@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_JUMP_ARG_FAULT_20261116",
+  "mode": "native-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "d717ac9a87651b2f66ea8cf9278b65016998eb6033df5d93c7e54dee784cf6c1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "d717ac9a87651b2f66ea8cf9278b65016998eb6033df5d93c7e54dee784cf6c1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "8d4dc554b17d6a304b00e905cd6d6f8c22c0ef07c565c215248da5c7a4c5a10a",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt",
+  "source_condition_id": "JUMP_ARG_FAULT",
+  "source_declared_mode": "native-01"
+}

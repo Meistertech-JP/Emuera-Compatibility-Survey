@@ -1,0 +1,292 @@
+{
+  "schema": "delchara-diagnostics-1",
+  "scope": "Three saved cases; shared input bytes are not shared executions; diagnostics differ on a separate axis; no error post-state or Native natural-exit claim.",
+  "cases": [
+    {
+      "id": "C01",
+      "case_id": "BOUNDARY241_delete_empty_normalized",
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "DELCHARA"
+      },
+      "condition": "index zero with zero registered characters",
+      "case_verdict": "matched_scoped",
+      "comparison_scope": "pre_error_or_argument_helper_checkpoints_and_stop_line",
+      "stop_line": 16,
+      "statement": "DELCHARA 0",
+      "selected_checkpoints": [
+        "OBS241 BEFORE N=0 R=701 A=0 B=0",
+        "OBS241 BEFORE T=-1 M=-1 S=-1"
+      ],
+      "native_diagnostic": [
+        "SEARCHBOUND01.ERBの16行目でエラーが発生しました:Emuera1824+v24",
+        "エラー内容：存在しない登録キャラクタ(0)を削除しようとしました"
+      ],
+      "py_diagnostic": [
+        "ERB/SEARCHBOUND01.ERB:16: E_CHARACTER: Invalid/duplicate character index",
+        "  at @SYSTEM_TITLE ERB/SEARCHBOUND01.ERB:16"
+      ],
+      "post_error_state": "UNOBSERVED",
+      "inputs": {
+        "ERB/SEARCHBOUND01.ERB": {
+          "path": "assets/fixtures/C01/SEARCHBOUND01.ERB",
+          "size": 734,
+          "sha256": "af0d3e3970900c223d3fece2f94738174f41bcdf4af3f95a871f7a79882dd3d9"
+        },
+        "csv/CHARA0.CSV": {
+          "path": "assets/common/csv/CHARA0.CSV",
+          "size": 28,
+          "sha256": "e694bdaaa9374205bab9dc42fa158bfe0f0abe99768abd3023a65f0f957121e7"
+        },
+        "csv/CHARA10.CSV": {
+          "path": "assets/common/csv/CHARA10.CSV",
+          "size": 30,
+          "sha256": "4995c7b08ebe83596c0621e97c61b9b53a323cff880f03206fa3f04c9e9676b5"
+        },
+        "csv/CHARA20.CSV": {
+          "path": "assets/common/csv/CHARA20.CSV",
+          "size": 30,
+          "sha256": "03f288443413702a3f013c6b281ad15994557e04f326e10763cbd5ce3600e489"
+        },
+        "emuera.config": {
+          "path": "assets/common/emuera.config",
+          "size": 2164,
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        }
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "observation_raw": {
+            "path": "assets/raw/C01/native-01/emuera.log",
+            "size": 574,
+            "sha256": "c9027336145b8ff564a3d2da919010fb2ac8dc8dedd181471e738c00f674ce9c"
+          },
+          "natural_exit": "UNOBSERVED"
+        },
+        {
+          "mode": "native-02",
+          "observation_raw": {
+            "path": "assets/raw/C01/native-02/emuera.log",
+            "size": 574,
+            "sha256": "c9027336145b8ff564a3d2da919010fb2ac8dc8dedd181471e738c00f674ce9c"
+          },
+          "natural_exit": "UNOBSERVED"
+        },
+        {
+          "mode": "py",
+          "observation_raw": {
+            "path": "assets/raw/C01/py/stdout.bin",
+            "size": 159,
+            "sha256": "dc1414e0c11c6bd0e1de52946735355e4ac38df3505f6a889abc30db8064e1c4"
+          },
+          "stderr": {
+            "path": "assets/raw/C01/py/stderr.bin",
+            "size": 229,
+            "sha256": "6ded91489e3d4bf6e98074d52f5756a11a5e539ee3da99cbf1a5677d91a49f58"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "case_id": "BOUNDARY241_delete_negative",
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "DELCHARA"
+      },
+      "condition": "negative deletion index",
+      "case_verdict": "matched_scoped",
+      "comparison_scope": "pre_error_or_argument_helper_checkpoints_and_stop_line",
+      "stop_line": 23,
+      "statement": "DELCHARA -1",
+      "selected_checkpoints": [
+        "OBS241 BEFORE N=3 R=701 A=0 B=0",
+        "OBS241 BEFORE T=2 M=1 S=0",
+        "OBS241 BEFORE I=0 NO=0 F=101",
+        "OBS241 BEFORE I=0 NAME=[N0] CS=[SRC]",
+        "OBS241 BEFORE I=1 NO=10 F=202",
+        "OBS241 BEFORE I=1 NAME=[N10] CS=[MID]",
+        "OBS241 BEFORE I=2 NO=20 F=303",
+        "OBS241 BEFORE I=2 NAME=[N20] CS=[DST]"
+      ],
+      "native_diagnostic": [
+        "SEARCHBOUND01.ERBの23行目でエラーが発生しました:Emuera1824+v24",
+        "エラー内容：存在しない登録キャラクタ(-1)を削除しようとしました"
+      ],
+      "py_diagnostic": [
+        "ERB/SEARCHBOUND01.ERB:23: E_CHARACTER: Invalid/duplicate character index",
+        "  at @SYSTEM_TITLE ERB/SEARCHBOUND01.ERB:23"
+      ],
+      "post_error_state": "UNOBSERVED",
+      "inputs": {
+        "ERB/SEARCHBOUND01.ERB": {
+          "path": "assets/fixtures/C02/SEARCHBOUND01.ERB",
+          "size": 840,
+          "sha256": "866020167b624b2d255679e0d2d27fb4d01e38eb56c76e96b1aec4c0d03b8cac"
+        },
+        "csv/CHARA0.CSV": {
+          "path": "assets/common/csv/CHARA0.CSV",
+          "size": 28,
+          "sha256": "e694bdaaa9374205bab9dc42fa158bfe0f0abe99768abd3023a65f0f957121e7"
+        },
+        "csv/CHARA10.CSV": {
+          "path": "assets/common/csv/CHARA10.CSV",
+          "size": 30,
+          "sha256": "4995c7b08ebe83596c0621e97c61b9b53a323cff880f03206fa3f04c9e9676b5"
+        },
+        "csv/CHARA20.CSV": {
+          "path": "assets/common/csv/CHARA20.CSV",
+          "size": 30,
+          "sha256": "03f288443413702a3f013c6b281ad15994557e04f326e10763cbd5ce3600e489"
+        },
+        "emuera.config": {
+          "path": "assets/common/emuera.config",
+          "size": 2164,
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        }
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "observation_raw": {
+            "path": "assets/raw/C02/native-01/emuera.log",
+            "size": 994,
+            "sha256": "caebc243a8dc9756358cc434b00864a529a605271e811051ff5a6997b330d02f"
+          },
+          "natural_exit": "UNOBSERVED"
+        },
+        {
+          "mode": "native-02",
+          "observation_raw": {
+            "path": "assets/raw/C02/native-02/emuera.log",
+            "size": 994,
+            "sha256": "caebc243a8dc9756358cc434b00864a529a605271e811051ff5a6997b330d02f"
+          },
+          "natural_exit": "UNOBSERVED"
+        },
+        {
+          "mode": "py",
+          "observation_raw": {
+            "path": "assets/raw/C02/py/stdout.bin",
+            "size": 367,
+            "sha256": "689ad7695a0ece95e97cb95429f311d3bf26218398674be79282225ffc6bc983"
+          },
+          "stderr": {
+            "path": "assets/raw/C02/py/stderr.bin",
+            "size": 229,
+            "sha256": "dad0a3a072ed8df8469619be6c94fc02fbb967182f56e656325f1f7c6e843ef4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "case_id": "BOUNDARY241_delete_duplicate_retry",
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "DELCHARA"
+      },
+      "condition": "duplicate index failure after all argument helpers; snapshots precede validation",
+      "case_verdict": "matched_scoped",
+      "comparison_scope": "pre_error_or_argument_helper_checkpoints_and_stop_line",
+      "stop_line": 23,
+      "statement": "DELCHARA H241A(),H241B()",
+      "selected_checkpoints": [
+        "OBS241 BEFORE N=3 R=701 A=0 B=0",
+        "OBS241 BEFORE T=2 M=1 S=0",
+        "OBS241 BEFORE I=0 NO=0 F=101",
+        "OBS241 BEFORE I=0 NAME=[N0] CS=[SRC]",
+        "OBS241 BEFORE I=1 NO=10 F=202",
+        "OBS241 BEFORE I=1 NAME=[N10] CS=[MID]",
+        "OBS241 BEFORE I=2 NO=20 F=303",
+        "OBS241 BEFORE I=2 NAME=[N20] CS=[DST]",
+        "OBS241 H1 N=3 R=701 A=1 B=1",
+        "OBS241 H1 T=2 M=1 S=0",
+        "OBS241 H1 I=0 NO=0 F=101",
+        "OBS241 H1 I=0 NAME=[N0] CS=[SRC]",
+        "OBS241 H1 I=1 NO=10 F=202",
+        "OBS241 H1 I=1 NAME=[N10] CS=[MID]",
+        "OBS241 H1 I=2 NO=20 F=303",
+        "OBS241 H1 I=2 NAME=[N20] CS=[DST]",
+        "OBS241 H2 N=3 R=701 A=2 B=12",
+        "OBS241 H2 T=2 M=1 S=0",
+        "OBS241 H2 I=0 NO=0 F=101",
+        "OBS241 H2 I=0 NAME=[N0] CS=[SRC]",
+        "OBS241 H2 I=1 NO=10 F=202",
+        "OBS241 H2 I=1 NAME=[N10] CS=[MID]",
+        "OBS241 H2 I=2 NO=20 F=303",
+        "OBS241 H2 I=2 NAME=[N20] CS=[DST]"
+      ],
+      "native_diagnostic": [
+        "SEARCHBOUND01.ERBの23行目でエラーが発生しました:Emuera1824+v24",
+        "エラー内容：同一の登録キャラクタ番号(1)が複数回指定されました"
+      ],
+      "py_diagnostic": [
+        "ERB/SEARCHBOUND01.ERB:23: E_CHARACTER: Invalid/duplicate character index",
+        "  at @SYSTEM_TITLE ERB/SEARCHBOUND01.ERB:23"
+      ],
+      "post_error_state": "UNOBSERVED",
+      "inputs": {
+        "ERB/SEARCHBOUND01.ERB": {
+          "path": "assets/fixtures/C03/SEARCHBOUND01.ERB",
+          "size": 1496,
+          "sha256": "254909af3b928e195cab09a0eaf224c85ee69b0062963631a8b2a2fb874ca476"
+        },
+        "csv/CHARA0.CSV": {
+          "path": "assets/common/csv/CHARA0.CSV",
+          "size": 28,
+          "sha256": "e694bdaaa9374205bab9dc42fa158bfe0f0abe99768abd3023a65f0f957121e7"
+        },
+        "csv/CHARA10.CSV": {
+          "path": "assets/common/csv/CHARA10.CSV",
+          "size": 30,
+          "sha256": "4995c7b08ebe83596c0621e97c61b9b53a323cff880f03206fa3f04c9e9676b5"
+        },
+        "csv/CHARA20.CSV": {
+          "path": "assets/common/csv/CHARA20.CSV",
+          "size": 30,
+          "sha256": "03f288443413702a3f013c6b281ad15994557e04f326e10763cbd5ce3600e489"
+        },
+        "emuera.config": {
+          "path": "assets/common/emuera.config",
+          "size": 2164,
+          "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+        }
+      },
+      "modes": [
+        {
+          "mode": "native-01",
+          "observation_raw": {
+            "path": "assets/raw/C03/native-01/emuera.log",
+            "size": 1966,
+            "sha256": "d486f38e6224bedb665439f35d3e356da4991885554a7d35db4a124904903594"
+          },
+          "natural_exit": "UNOBSERVED"
+        },
+        {
+          "mode": "native-02",
+          "observation_raw": {
+            "path": "assets/raw/C03/native-02/emuera.log",
+            "size": 1966,
+            "sha256": "d486f38e6224bedb665439f35d3e356da4991885554a7d35db4a124904903594"
+          },
+          "natural_exit": "UNOBSERVED"
+        },
+        {
+          "mode": "py",
+          "observation_raw": {
+            "path": "assets/raw/C03/py/stdout.bin",
+            "size": 841,
+            "sha256": "fdeedccec841111e1201cf50815a10bc5f4c1959bfebdd547dcb53fc798591a9"
+          },
+          "stderr": {
+            "path": "assets/raw/C03/py/stderr.bin",
+            "size": 229,
+            "sha256": "dad0a3a072ed8df8469619be6c94fc02fbb967182f56e656325f1f7c6e843ef4"
+          }
+        }
+      ]
+    }
+  ]
+}

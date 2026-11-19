@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_JUMP_ARG_FAULT_20261116",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "d717ac9a87651b2f66ea8cf9278b65016998eb6033df5d93c7e54dee784cf6c1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "d717ac9a87651b2f66ea8cf9278b65016998eb6033df5d93c7e54dee784cf6c1",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "561966928cd090129c3f0da9d8528c94e662dc4fe964a9dfd349067241de9eb9",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "JUMP_ARG_FAULT",
+  "source_declared_mode": "public-01"
+}

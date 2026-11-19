@@ -1,0 +1,30 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0137 · CASE_REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0137 · CASE_REVIEW_ja.md</h1>
+<p>ADDCHARAのヘルパー呼出し順と複製後状態の独立性を記す独自比較票で、原文公開を妨げる情報を含まない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>fe88a69b813179166f354b0ac882bea4544fde41e7129c76b217408b417597f8</code></p>
+<p><a href="../assets/U0137.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>fe88a69b813179166f354b0ac882bea4544fde41e7129c76b217408b417597f8</code></p>
+<pre># ADDCHARA_HELPERS_COPY_STATE_20261113
+
+## 比較条件
+
+`ADDCHARA EVZERO(); ADDCHARA EVTENA(),EVTENA()` を同一 ERB・CSV・設定で Native v24 を2回、公開 PyEmuera 3.0.0 pyz を1回実行した。公開pyzは実行前後ともSHA-256 `8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35`。 Nativeの画面入力は送っておらず、ログと標準出力・標準エラーだけを保存した。
+
+## 観測
+
+All runs matched the same observable states: three calls to the two user functions (returns 0,10,10), order accumulator B=122, CHARANUM-read accumulator C=12, roster NOs 0/10/10, and RESULT/RESULTS plus TARGET/MASTER/ASSI sentinels unchanged. The two NO=10 records begin with the same NAME and CFLAG1. Mutating the first duplicate&#x27;s NAME, CFLAG1 and CSTR0 leaves the second&#x27;s values unchanged in Native x2 and public pyz x1. This directly compares the selected helper sequencing, state fields and duplicate template isolation under ordinary ADDCHARA.
+
+## 判定範囲
+
+これはADDCHARAの該当条件に限った、ヘルパー呼び出し順・選択状態・重複テンプレートの可変項目独立性の一致観測である。すべてのキャラクター配列やポインタ状態へ一般化しない。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0058 · command_or_syntax:ADDCHARA · check</li>
+</ul></html>

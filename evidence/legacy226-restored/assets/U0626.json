@@ -1,0 +1,726 @@
+{
+  "schema": "define-edge-evidence-manifest-1",
+  "file_count": 140,
+  "files": [
+    {
+      "path": "prepare.py",
+      "size": 3149,
+      "sha256": "fc25db40fa879896204514ef7c968c39995c275b68e82b2c0bb11b2217b0e837"
+    },
+    {
+      "path": "run_native_capture.py",
+      "size": 6943,
+      "sha256": "5a67f1ff84c00bdf4e254b3260d47b2e781a3931cc1ed2bc51ef0097968d92f7"
+    },
+    {
+      "path": "build_evidence.py",
+      "size": 16980,
+      "sha256": "5783319d9ba53b55dd70f3f6a300c22e6b4c57dab746daa2986b787e321c92c9"
+    },
+    {
+      "path": "register_define_crops.py",
+      "size": 2377,
+      "sha256": "7450ba8b8dd35ae6972f38e6c4c9c7aa072958a2c88a2a627a368a88b3df5656"
+    },
+    {
+      "path": "PREPARATION.json",
+      "size": 3061,
+      "sha256": "dc16e930d35b10d159f4ca9b8d4cff3669475a14456f7d42728bbb20b2a42dee"
+    },
+    {
+      "path": "conditions.json",
+      "size": 1318,
+      "sha256": "c2ec1ea253815d49d4d59272834ba09ca48ec474c05a6d96395404a5eb0d6bfb"
+    },
+    {
+      "path": "COMPARISON.json",
+      "size": 41886,
+      "sha256": "57371e2b542f2b636cb2fd2a9b1b8a208fa70295f981f1f9cf07aad7c1e2adb5"
+    },
+    {
+      "path": "SOURCE_HASHES.json",
+      "size": 10248,
+      "sha256": "5cda2a055570fa7e6c0ec5761c8348bba6a6c9f41e78fc7f56a7cede13cf1746"
+    },
+    {
+      "path": "EXCLUDED_ATTEMPTS.json",
+      "size": 1620,
+      "sha256": "a7052e233dc15fcecc2c3a7ab27061fd4685ddaa00a8481db86ed7ce39bbb5dd"
+    },
+    {
+      "path": "REVIEW_ja.md",
+      "size": 3155,
+      "sha256": "4c2c3c8095b42a01333b21ec513a32253b4447aca505ef51b26e772ceb98cb48"
+    },
+    {
+      "path": "duplicate-native-cap-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "duplicate-native-cap-02/emuera.log",
+      "size": 180,
+      "sha256": "3e774d297af765428147841216a9ae940ab0ff0384120192bed452e248be3188"
+    },
+    {
+      "path": "duplicate-native-cap-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "duplicate-native-cap-02/ERB/DEFINEEDGE.ERH",
+      "size": 43,
+      "sha256": "ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9"
+    },
+    {
+      "path": "duplicate-native-cap-02/ERB/SEARCHBOUND01.ERB",
+      "size": 60,
+      "sha256": "f63b7786e77c13a885763b8b483937ef7eef9e4a1d322e44f4ccdd59e8e7a4c8"
+    },
+    {
+      "path": "duplicate-native-cap-02/native-main-transcript-crop-00.png",
+      "size": 3330,
+      "sha256": "9ac0608e9aa40157280ef5c54393598014a855f1e1c451acad68f3afacbbe671"
+    },
+    {
+      "path": "duplicate-native-cap-02/native-observation.json",
+      "size": 2038,
+      "sha256": "fbf9e35a2a0a8c7ed6196175db03549030448170c61ebdcb9174cc629c43e078"
+    },
+    {
+      "path": "duplicate_state-native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "duplicate_state-native-01/emuera.log",
+      "size": 220,
+      "sha256": "f020e69791aa5b3a136406660c52635ca25c4b6dc57b1dab2fed7913dae5ab26"
+    },
+    {
+      "path": "duplicate_state-native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "duplicate_state-native-01/ERB/DEFINEEDGE.ERH",
+      "size": 43,
+      "sha256": "ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9"
+    },
+    {
+      "path": "duplicate_state-native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 100,
+      "sha256": "c90cf8e4865f844210b5e53891177ce636a68a5e449b615bc639740cee02c91d"
+    },
+    {
+      "path": "duplicate_state-native-01/native-main-transcript-crop-00.png",
+      "size": 3570,
+      "sha256": "b59fe6f3a3131af1d0fe377406b45b655e6b08682658a66908ee65b18ebd6d09"
+    },
+    {
+      "path": "duplicate_state-native-01/native-observation.json",
+      "size": 2042,
+      "sha256": "0ea2a3f88962bd67174654c17c76c64911a13b148ccce37a8131f59810329258"
+    },
+    {
+      "path": "duplicate_state-native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "duplicate_state-native-02/emuera.log",
+      "size": 220,
+      "sha256": "f020e69791aa5b3a136406660c52635ca25c4b6dc57b1dab2fed7913dae5ab26"
+    },
+    {
+      "path": "duplicate_state-native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "duplicate_state-native-02/ERB/DEFINEEDGE.ERH",
+      "size": 43,
+      "sha256": "ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9"
+    },
+    {
+      "path": "duplicate_state-native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 100,
+      "sha256": "c90cf8e4865f844210b5e53891177ce636a68a5e449b615bc639740cee02c91d"
+    },
+    {
+      "path": "duplicate_state-native-02/native-main-transcript-crop-00.png",
+      "size": 3570,
+      "sha256": "b59fe6f3a3131af1d0fe377406b45b655e6b08682658a66908ee65b18ebd6d09"
+    },
+    {
+      "path": "duplicate_state-native-02/native-observation.json",
+      "size": 2042,
+      "sha256": "c828a7121cab8ade2f7a31dd1231c0e49a3b6ae0376355498738f0c07f2f1cb5"
+    },
+    {
+      "path": "duplicate_state-py/.pyemuera/logs/emuera.log",
+      "size": 110,
+      "sha256": "91827c5b6e19ada8005f87907a2dfc06bdfe31ccbbe6d1487fb4d90304a4013f"
+    },
+    {
+      "path": "duplicate_state-py/.pyemuera/logs/output-20261115-054026-858201.txt",
+      "size": 123,
+      "sha256": "aad870c07ceaa35ffd365d64ff7dc109a5f91a32e5cc04eda359ee25b96ef6f8"
+    },
+    {
+      "path": "duplicate_state-py/.pyemuera/logs/outputlog-manifest.json",
+      "size": 359,
+      "sha256": "52b9d1f1f86b17e89adcff159e238d95ae72fa325af9bdd5d4052de982137cbf"
+    },
+    {
+      "path": "duplicate_state-py/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "duplicate_state-py/ERB/DEFINEEDGE.ERH",
+      "size": 43,
+      "sha256": "ed7b25f5d2772304cb0065da26b98ee52cf36f103da5e99be5bb82923c9ea8d9"
+    },
+    {
+      "path": "duplicate_state-py/ERB/SEARCHBOUND01.ERB",
+      "size": 100,
+      "sha256": "c90cf8e4865f844210b5e53891177ce636a68a5e449b615bc639740cee02c91d"
+    },
+    {
+      "path": "duplicate_state-py/verified-public-pyz.json",
+      "size": 1845,
+      "sha256": "b3ccfb2cde2310cf3385fd817f34781478ca4f04a945c67fbb57fe2ba972be54"
+    },
+    {
+      "path": "duplicate_state-py/verified.stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "duplicate_state-py/verified.stdout.bin",
+      "size": 112,
+      "sha256": "51be16e7091d5313285d40515eb1aada887f51a2b843030501385165544ca905"
+    },
+    {
+      "path": "empty_expr-native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "empty_expr-native-01/emuera.log",
+      "size": 128,
+      "sha256": "f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42"
+    },
+    {
+      "path": "empty_expr-native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "empty_expr-native-01/ERB/DEFINEEDGE.ERH",
+      "size": 23,
+      "sha256": "18723a8580cf2efb670bad837946eb2e1c9772f35e460fabb6f7ca94db913fda"
+    },
+    {
+      "path": "empty_expr-native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 117,
+      "sha256": "c860b6eca532799210cf8539a414948de422cd05dab8949797e97fd514ca106c"
+    },
+    {
+      "path": "empty_expr-native-01/native-main-transcript-crop-00.png",
+      "size": 2416,
+      "sha256": "c90b2105e1006f6011b376e1b92b6a82b413a4c5748cc87650242cea7f8e8dee"
+    },
+    {
+      "path": "empty_expr-native-01/native-observation.json",
+      "size": 2032,
+      "sha256": "6cf6dbbd724a819a60bb6574584bb072d49a7bfb669b2bfb5b62a6040a40b586"
+    },
+    {
+      "path": "empty_expr-native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "empty_expr-native-02/emuera.log",
+      "size": 128,
+      "sha256": "f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42"
+    },
+    {
+      "path": "empty_expr-native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "empty_expr-native-02/ERB/DEFINEEDGE.ERH",
+      "size": 23,
+      "sha256": "18723a8580cf2efb670bad837946eb2e1c9772f35e460fabb6f7ca94db913fda"
+    },
+    {
+      "path": "empty_expr-native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 117,
+      "sha256": "c860b6eca532799210cf8539a414948de422cd05dab8949797e97fd514ca106c"
+    },
+    {
+      "path": "empty_expr-native-02/native-main-transcript-crop-00.png",
+      "size": 2416,
+      "sha256": "c90b2105e1006f6011b376e1b92b6a82b413a4c5748cc87650242cea7f8e8dee"
+    },
+    {
+      "path": "empty_expr-native-02/native-observation.json",
+      "size": 2032,
+      "sha256": "d9a542c3adb90a9301b804395bd5325918ee8d3829fe6240e7b16143224a99de"
+    },
+    {
+      "path": "empty_expr-py/.pyemuera/logs/emuera.log",
+      "size": 128,
+      "sha256": "f359a762ef265839d0b7069ba5abbb11e624838879319939b0d53e3bf8f24f42"
+    },
+    {
+      "path": "empty_expr-py/.pyemuera/logs/output-20261115-053640-073852.txt",
+      "size": 132,
+      "sha256": "753e2489d99777b54c972371847fb152a0c5040282f73b1c59ebf79fdc66f555"
+    },
+    {
+      "path": "empty_expr-py/.pyemuera/logs/outputlog-manifest.json",
+      "size": 359,
+      "sha256": "38a1bbd6644119a3b7635fd2148933a1712b74816bf8fdc3e87393f432047c26"
+    },
+    {
+      "path": "empty_expr-py/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "empty_expr-py/ERB/DEFINEEDGE.ERH",
+      "size": 23,
+      "sha256": "18723a8580cf2efb670bad837946eb2e1c9772f35e460fabb6f7ca94db913fda"
+    },
+    {
+      "path": "empty_expr-py/ERB/SEARCHBOUND01.ERB",
+      "size": 117,
+      "sha256": "c860b6eca532799210cf8539a414948de422cd05dab8949797e97fd514ca106c"
+    },
+    {
+      "path": "empty_expr-py/verified-public-pyz.json",
+      "size": 1840,
+      "sha256": "b0fcbbb63859e8b687b42eca0df8c6e1be2bb0f53d12f1f7c61c381b0ffcf32b"
+    },
+    {
+      "path": "empty_expr-py/verified.stderr.bin",
+      "size": 110,
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc"
+    },
+    {
+      "path": "empty_expr-py/verified.stdout.bin",
+      "size": 121,
+      "sha256": "b02164d3dd6ff3c9577854ff54774588413c753903de11ede4148c74cc34c318"
+    },
+    {
+      "path": "missing_id-native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "missing_id-native-01/emuera.log",
+      "size": 84,
+      "sha256": "2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414"
+    },
+    {
+      "path": "missing_id-native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "missing_id-native-01/ERB/DEFINEEDGE.ERH",
+      "size": 12,
+      "sha256": "ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc"
+    },
+    {
+      "path": "missing_id-native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 67,
+      "sha256": "2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e"
+    },
+    {
+      "path": "missing_id-native-01/native-observation.json",
+      "size": 1575,
+      "sha256": "64de413a1f98b70b8b029c2f7c457c680760af61b526aabb85684063371dc1bb"
+    },
+    {
+      "path": "missing_id-native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "missing_id-native-02/emuera.log",
+      "size": 84,
+      "sha256": "2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414"
+    },
+    {
+      "path": "missing_id-native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "missing_id-native-02/ERB/DEFINEEDGE.ERH",
+      "size": 12,
+      "sha256": "ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc"
+    },
+    {
+      "path": "missing_id-native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 67,
+      "sha256": "2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e"
+    },
+    {
+      "path": "missing_id-native-02/native-observation.json",
+      "size": 1575,
+      "sha256": "fb7733c4ba402e76a274a67990d34b67ea1963c3d2181b3410dc576267dda0e5"
+    },
+    {
+      "path": "missing_id-native-cap-03/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "missing_id-native-cap-03/emuera.log",
+      "size": 84,
+      "sha256": "2dc172fc4f6c24e0c5425bf54e5c812f5d60bf34397b101f3bc65305ff45c414"
+    },
+    {
+      "path": "missing_id-native-cap-03/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "missing_id-native-cap-03/ERB/DEFINEEDGE.ERH",
+      "size": 12,
+      "sha256": "ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc"
+    },
+    {
+      "path": "missing_id-native-cap-03/ERB/SEARCHBOUND01.ERB",
+      "size": 67,
+      "sha256": "2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e"
+    },
+    {
+      "path": "missing_id-native-cap-03/native-main-transcript-crop-00.png",
+      "size": 2161,
+      "sha256": "4875ec6bb8219072d41cc9edbd96db2ff8645e5af89ac036c11ad055ca8896dc"
+    },
+    {
+      "path": "missing_id-native-cap-03/native-observation.json",
+      "size": 2039,
+      "sha256": "1e589540f2119d16db65763818c0c81b8c0b405095e2a2fd6e8d8daf8086c9e1"
+    },
+    {
+      "path": "missing_id-py/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "missing_id-py/ERB/DEFINEEDGE.ERH",
+      "size": 12,
+      "sha256": "ac4eeb9ecd59bdd65f5dd2a5737464cb4bc7b601fe7da78ea9bd1148e917cadc"
+    },
+    {
+      "path": "missing_id-py/ERB/SEARCHBOUND01.ERB",
+      "size": 67,
+      "sha256": "2fc01194b09622f7e7ec614522e8157b9773c6511d5ad00ac2a8b4aa9ff4852e"
+    },
+    {
+      "path": "missing_id-py/verified-public-pyz.json",
+      "size": 1755,
+      "sha256": "f9b1ad6761a0636817d0e71f2892eb6c869bd761f1653a9860a17ca3a7522bb8"
+    },
+    {
+      "path": "missing_id-py/verified.stderr.bin",
+      "size": 49,
+      "sha256": "48d7cc37a8e7481a7dada0c4069c56f160ff675cc91aceb6bf69e7ec3540bdfe"
+    },
+    {
+      "path": "missing_id-py/verified.stdout.bin",
+      "size": 16,
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    },
+    {
+      "path": "malformed_args-native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "malformed_args-native-01/emuera.log",
+      "size": 188,
+      "sha256": "5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410"
+    },
+    {
+      "path": "malformed_args-native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "malformed_args-native-01/ERB/DEFINEEDGE.ERH",
+      "size": 27,
+      "sha256": "c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7"
+    },
+    {
+      "path": "malformed_args-native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 65,
+      "sha256": "d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f"
+    },
+    {
+      "path": "malformed_args-native-01/native-observation.json",
+      "size": 1584,
+      "sha256": "0faacdb609da4bf6501ac59d210d7600dd0c6c4de536a42a1ad415fb92eee5a9"
+    },
+    {
+      "path": "malformed_args-native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "malformed_args-native-02/emuera.log",
+      "size": 188,
+      "sha256": "5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410"
+    },
+    {
+      "path": "malformed_args-native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "malformed_args-native-02/ERB/DEFINEEDGE.ERH",
+      "size": 27,
+      "sha256": "c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7"
+    },
+    {
+      "path": "malformed_args-native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 65,
+      "sha256": "d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f"
+    },
+    {
+      "path": "malformed_args-native-02/native-observation.json",
+      "size": 1584,
+      "sha256": "3222ab779bcab4314f073986f0c4286a2bc256c4ed7ad5320d87b2fe73bb6c54"
+    },
+    {
+      "path": "malformed_args-native-cap-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "malformed_args-native-cap-02/emuera.log",
+      "size": 188,
+      "sha256": "5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410"
+    },
+    {
+      "path": "malformed_args-native-cap-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "malformed_args-native-cap-02/ERB/DEFINEEDGE.ERH",
+      "size": 27,
+      "sha256": "c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7"
+    },
+    {
+      "path": "malformed_args-native-cap-02/ERB/SEARCHBOUND01.ERB",
+      "size": 65,
+      "sha256": "d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f"
+    },
+    {
+      "path": "malformed_args-native-cap-02/native-main-transcript-crop-00.png",
+      "size": 4320,
+      "sha256": "51a500cc028008afe7b197025c269c723732ec7f240c8e04abbafd49f61c1d2d"
+    },
+    {
+      "path": "malformed_args-native-cap-02/native-observation.json",
+      "size": 2048,
+      "sha256": "3c275d57ca89730c060ac01963447bd49a780bdface8738f9b9bdc273d03bfde"
+    },
+    {
+      "path": "malformed_args-native-cap-03/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "malformed_args-native-cap-03/emuera.log",
+      "size": 188,
+      "sha256": "5ac33208c12b5e685f1eb0d4b6ee4eebc66a1ef0915ff92f4a24ec6cca48c410"
+    },
+    {
+      "path": "malformed_args-native-cap-03/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "malformed_args-native-cap-03/ERB/DEFINEEDGE.ERH",
+      "size": 27,
+      "sha256": "c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7"
+    },
+    {
+      "path": "malformed_args-native-cap-03/ERB/SEARCHBOUND01.ERB",
+      "size": 65,
+      "sha256": "d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f"
+    },
+    {
+      "path": "malformed_args-native-cap-03/native-main-transcript-crop-00.png",
+      "size": 4320,
+      "sha256": "51a500cc028008afe7b197025c269c723732ec7f240c8e04abbafd49f61c1d2d"
+    },
+    {
+      "path": "malformed_args-native-cap-03/native-observation.json",
+      "size": 2048,
+      "sha256": "2e1b35657a466afba33c74b4bd6052e99db59f5f4c1b6923ae29c7f858d03bac"
+    },
+    {
+      "path": "malformed_args-py/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "malformed_args-py/ERB/DEFINEEDGE.ERH",
+      "size": 27,
+      "sha256": "c6c9205629b121819a518d7ba9db55e7507cc20c5c97f39828eca6528fa15ea7"
+    },
+    {
+      "path": "malformed_args-py/ERB/SEARCHBOUND01.ERB",
+      "size": 65,
+      "sha256": "d5892fe5b746b52fc7aeaebbcbac934cd126467b9ebd49c646824754aec8a05f"
+    },
+    {
+      "path": "malformed_args-py/verified-public-pyz.json",
+      "size": 1759,
+      "sha256": "ef1ab02e7c95494dd25360de57f512a4baccfcdd40a4784a20642ccd3cfefbfc"
+    },
+    {
+      "path": "malformed_args-py/verified.stderr.bin",
+      "size": 79,
+      "sha256": "1442007712e0a4335013fc6e1151041bafc34113d83fb84afd53ee5df1f1fb59"
+    },
+    {
+      "path": "malformed_args-py/verified.stdout.bin",
+      "size": 16,
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    },
+    {
+      "path": "unterminated_args-native-01/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "unterminated_args-native-01/emuera.log",
+      "size": 202,
+      "sha256": "791c9e46b540ecd22a258128ea3425877cc7307543b2da46e8a48fdda9694e1e"
+    },
+    {
+      "path": "unterminated_args-native-01/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "unterminated_args-native-01/ERB/DEFINEEDGE.ERH",
+      "size": 23,
+      "sha256": "82ef988186297af853369ec749dbc9879f9223e3cb895b9592b2bed805fe0f65"
+    },
+    {
+      "path": "unterminated_args-native-01/ERB/SEARCHBOUND01.ERB",
+      "size": 74,
+      "sha256": "a240eedd499aa61f540aa53dcd5eb2dce41e4b6918ce8960543056aeb8bb3707"
+    },
+    {
+      "path": "unterminated_args-native-01/native-main-transcript-crop-00.png",
+      "size": 4311,
+      "sha256": "c690ce9f8411390a3c401b6e496cb9614338d84f5e4984f7257e24934a3f4b97"
+    },
+    {
+      "path": "unterminated_args-native-01/native-observation.json",
+      "size": 2208,
+      "sha256": "cd2010be5b99712a091cc9e22557fd2a4fb236f83e2cd7d79f8aa39667946614"
+    },
+    {
+      "path": "unterminated_args-native-02/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "unterminated_args-native-02/emuera.log",
+      "size": 202,
+      "sha256": "791c9e46b540ecd22a258128ea3425877cc7307543b2da46e8a48fdda9694e1e"
+    },
+    {
+      "path": "unterminated_args-native-02/Emuera1824+v24.exe",
+      "size": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "unterminated_args-native-02/ERB/DEFINEEDGE.ERH",
+      "size": 23,
+      "sha256": "82ef988186297af853369ec749dbc9879f9223e3cb895b9592b2bed805fe0f65"
+    },
+    {
+      "path": "unterminated_args-native-02/ERB/SEARCHBOUND01.ERB",
+      "size": 74,
+      "sha256": "a240eedd499aa61f540aa53dcd5eb2dce41e4b6918ce8960543056aeb8bb3707"
+    },
+    {
+      "path": "unterminated_args-native-02/native-main-transcript-crop-00.png",
+      "size": 4311,
+      "sha256": "c690ce9f8411390a3c401b6e496cb9614338d84f5e4984f7257e24934a3f4b97"
+    },
+    {
+      "path": "unterminated_args-native-02/native-observation.json",
+      "size": 2045,
+      "sha256": "7ad151f4d5d3348a0e12def3b9b04d3686f7a186368ba26196e84bb1a37bb456"
+    },
+    {
+      "path": "unterminated_args-py/emuera.config",
+      "size": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "unterminated_args-py/ERB/DEFINEEDGE.ERH",
+      "size": 23,
+      "sha256": "82ef988186297af853369ec749dbc9879f9223e3cb895b9592b2bed805fe0f65"
+    },
+    {
+      "path": "unterminated_args-py/ERB/SEARCHBOUND01.ERB",
+      "size": 74,
+      "sha256": "a240eedd499aa61f540aa53dcd5eb2dce41e4b6918ce8960543056aeb8bb3707"
+    },
+    {
+      "path": "unterminated_args-py/verified-public-pyz.json",
+      "size": 1762,
+      "sha256": "b57c93bf8bc9e392475f32ff1c02ee82ddfcae2c8f8a0b9c3a1ffa012da55b16"
+    },
+    {
+      "path": "unterminated_args-py/verified.stderr.bin",
+      "size": 79,
+      "sha256": "1442007712e0a4335013fc6e1151041bafc34113d83fb84afd53ee5df1f1fb59"
+    },
+    {
+      "path": "unterminated_args-py/verified.stdout.bin",
+      "size": 16,
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+    }
+  ],
+  "external_files": [
+    {
+      "path": "NATIVE_V24_PARSER_MECHANISM_SUPPLEMENT.json",
+      "sha256": "9e9033f01ba54d4a340ac48989920f4e74dd6c52ec766c48d79723b8c423da74",
+      "size": 20159
+    },
+    {
+      "path": "runs/native-MACROFUNC01-header-error-crop.png",
+      "sha256": "64b1bf0e9549bd46d80a92e9bf4667156d836742db8613e913b36f0dfef5c2aa",
+      "size": 3365
+    }
+  ],
+  "excluded_subtrees": [
+    "empty-*",
+    "duplicate-native-cap-01",
+    "missing_id-native-cap-01",
+    "malformed_args-native-cap-01",
+    "missing_id-native-cap-02"
+  ],
+  "screenshots_retained": "Only dialog or transcript crops; no full-screen images."
+}

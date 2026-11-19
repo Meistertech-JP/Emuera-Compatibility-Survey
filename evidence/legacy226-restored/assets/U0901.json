@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "[USER_HOME]\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-I",
+    "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+    "--debug",
+    "--inputs",
+    "[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\printkl-command-20261113-115\\inputs.txt",
+    "."
+  ],
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "fixture_sha256": "6fb07ed0d17092f3bc9b7f5bd0b8c1022f5e8dca0c769ebc36ecc7b198054572",
+  "returncode": 0,
+  "stdout_hex": "4e6f77204c6f6164696e672e2e2e0d0a82a08341b120410d0a3c5052494e544b4c5f454e443e0d0a34320d0a",
+  "stderr_hex": "5b5079456d75657261207761726e696e675d2054657874206c61796f757420757365732061206c6f676963616c2063656c6c20677269643b20666f6e747320616e6420706978656c20706f736974696f6e696e6720617265206e6f7420726570726f64756365642e0d0a",
+  "stdout_cp932_escape": "Now Loading...\\r\\n\\u3042\\u30a2\\uff71 A\\r\\n<PRINTKL_END>\\r\\n42\\r\\n",
+  "stderr_cp932_escape": "[PyEmuera warning] Text layout uses a logical cell grid; fonts and pixel positioning are not reproduced.\\r\\n",
+  "source_tree_imported": false
+}

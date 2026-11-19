@@ -1,0 +1,32 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0709 · REVIEW_ja.md</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0709 · REVIEW_ja.md</h1>
+<p>ONEINPUTSの実際の引用符出力と後続到達を示す有効な引数境界比較で、値を読み替えず原文公開する。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>2e4594f67671c417d54874bd72692065f58e643005afb12cd4e3418e6c99c11f</code></p>
+<p><a href="../assets/U0709.md">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>2e4594f67671c417d54874bd72692065f58e643005afb12cd4e3418e6c99c11f</code></p>
+<pre># ONEINPUTS SP_INPUTS 引数境界 比較レビュー
+
+## 判定
+
+定数書式`&quot;XYZ&quot;`、空の引用符`&quot;&quot;`、余分な引数`&quot;A&quot;, &quot;B&quot;`を含むERBで、Native 2回・公開PyEmuera 2回を実行しました。4本の`emuera.log`は632バイトで原バイト一致し、各入力後に`LITERAL=[&quot;]`、`EMPTY=[&quot;]`、`EXTRA=[&quot;]`、続く`INPUTS=[8]`と完了マーカーを記録しました。
+
+引用符はこのERB書式で実際にログへ出た値です。引用符を値から除く前提で「XYZの先頭X」や「空文字」と読み替えていません。Nativeソースは追加引数を警告する一方でその場で拒否しない経路を示し、実行ログでも後続命令へ進んでいます。警告文そのものと画面表示の一致は測定していません。
+
+## Nativeソース照合
+
+選択されたビルダー、引数0個を許す処理、追加引数警告、実行時文字列型と1 UTF-16コード単位化を`V24_SOURCE_REVIEW_ja.md`に行番号とSHA付きで記録しました。数値不正入力の再試行とタイムアウトはONEINPUTSの契約には適用しません。
+
+## 制限
+
+この限定ERBの引数処理・継続の比較です。パーサー例外の診断全文、GUIの警告・入力プロンプト・入力エコー、Nativeの自然終了は比較していません。
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0030 · command_or_syntax:ONEINPUTS · check</li>
+</ul></html>

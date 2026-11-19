@@ -1,0 +1,242 @@
+{
+  "schema": "legacy226-adapter-coverage-index.v1",
+  "source_audit": "ACCEPTANCE_CHAIN_AUDIT_CURRENT.json",
+  "source_summary": "evidence/acceptance-chain-uniform-audit-20261116/runs/current694-key-mes-adopted-01/SUMMARY.json",
+  "source_summary_sha256": "6d28624e9cfedaefd04a5dfa601ef5e2bc0947b5d75d7bfb668ed490afeaa289",
+  "complete_rows": 694,
+  "confirmed_without_additional_adapter": 468,
+  "legacy_or_layout_adapter_required": 226,
+  "adapter_groups": 9,
+  "adapter_recorded_resolved_chains": 142,
+  "legacy_rows_matched_by_exact_kind_and_name": 2,
+  "legacy_rows_without_exact_kind_and_name_match": 224,
+  "current_adapter_read": {
+    "rows": 226,
+    "partial": 35,
+    "unsupported": 169,
+    "invalid": 18,
+    "record_pointer_resolution": "array and object pointers are followed without changing the selected record",
+    "exit_zero_passes": 0,
+    "audit_sha256": "74334acf9014ad16c27fd8cca7be8a181059826b70cc2bdef320abeb104b90e3"
+  },
+  "adapter_record_paths": 27,
+  "legacy_rows_referencing_adapter_paths": 0,
+  "legacy_rows_referencing_adapter_directories": 0,
+  "adapter_results_with_explicit_target_scope": [
+    "RETURN",
+    "RETURNFORM",
+    "RETURNF"
+  ],
+  "adapter_results_without_explicit_target_list": 8,
+  "semantic_reproof": false,
+  "raw_logs_included": false,
+  "independent_reproduction": "not_established",
+  "gap_instances": {
+    "ORIGINAL_REQUIREMENT_LINK_ADAPTER_REQUIRED": 132,
+    "READBACK_ADAPTER_REQUIRED": 78,
+    "DECISION_ADAPTER_REQUIRED": 2,
+    "OUTCOME_ADAPTER_REQUIRED": 35,
+    "LEGACY_ACCEPTANCE_ADAPTER_REQUIRED": 64,
+    "UNPINNED_REFERENCE": 24,
+    "RELATIVE_REFERENCE_BASE_ADAPTER_REQUIRED": 10
+  },
+  "adapters": [
+    {
+      "index": 1,
+      "names": [
+        "RETURN",
+        "RETURNFORM",
+        "RETURNF"
+      ],
+      "resolved_chains": 3
+    },
+    {
+      "index": 2,
+      "names": [
+        "TRYCALLFORM",
+        "TRYGOTO",
+        "TRYGOTOFORM",
+        "TRYCCALLFORM",
+        "TRYCCALLFORM"
+      ],
+      "resolved_chains": 5
+    },
+    {
+      "index": 3,
+      "names": [
+        "SET"
+      ],
+      "resolved_chains": 1
+    },
+    {
+      "index": 4,
+      "names": [
+        "SPRITEMOVE",
+        "SPRITESETPOS",
+        "MOUSEX",
+        "MOUSEY",
+        "GWIDTH",
+        "GHEIGHT",
+        "GGETCOLOR",
+        "SPRITEGETCOLOR",
+        "GCREATEFROMFILE",
+        "GDISPOSE",
+        "GCLEAR",
+        "GFILLRECTANGLE",
+        "GDRAWSPRITE",
+        "GSETCOLOR",
+        "GDRAWG",
+        "GDRAWGWITHMASK",
+        "GSETBRUSH",
+        "GSETFONT",
+        "GSETPEN",
+        "SPRITECREATE",
+        "SPRITEDISPOSE",
+        "CBGSETG",
+        "CBGSETSPRITE",
+        "CBGCLEAR",
+        "CBGCLEARBUTTON",
+        "CBGREMOVERANGE",
+        "CBGREMOVEBMAP",
+        "CBGSETBMAPG",
+        "CBGSETBUTTONSPRITE",
+        "GSAVE",
+        "GLOAD",
+        "SPRITEANIMECREATE",
+        "SPRITEANIMEADDFRAME",
+        "SETANIMETIMER",
+        "HTML_GETPRINTEDSTR",
+        "HTML_POPPRINTINGSTR",
+        "SPRITEMOVE",
+        "SPRITESETPOS",
+        "CLIENTWIDTH",
+        "CLIENTHEIGHT",
+        "GETKEY",
+        "GETKEYTRIGGERED",
+        "MOUSEX",
+        "MOUSEY",
+        "ISACTIVE",
+        "GWIDTH",
+        "GHEIGHT",
+        "GGETCOLOR",
+        "SPRITEGETCOLOR",
+        "GCREATEFROMFILE",
+        "GDISPOSE",
+        "GCLEAR",
+        "GFILLRECTANGLE",
+        "GDRAWSPRITE",
+        "GSETCOLOR",
+        "GDRAWG",
+        "GDRAWGWITHMASK",
+        "GSETBRUSH",
+        "GSETFONT",
+        "GSETPEN",
+        "SPRITECREATE",
+        "SPRITEDISPOSE",
+        "CBGSETG",
+        "CBGSETSPRITE",
+        "CBGCLEAR",
+        "CBGCLEARBUTTON",
+        "CBGREMOVERANGE",
+        "CBGREMOVEBMAP",
+        "CBGSETBMAPG",
+        "CBGSETBUTTONSPRITE",
+        "GSAVE",
+        "GLOAD",
+        "SPRITEANIMECREATE",
+        "SPRITEANIMEADDFRAME",
+        "SETANIMETIMER"
+      ],
+      "resolved_chains": 75
+    },
+    {
+      "index": 5,
+      "names": [
+        "CATCH",
+        "ENDCATCH",
+        "CATCH",
+        "ENDCATCH"
+      ],
+      "resolved_chains": 4
+    },
+    {
+      "index": 6,
+      "names": [
+        "PRINT_ABL",
+        "PRINT_TALENT",
+        "PRINT_MARK",
+        "PRINT_EXP",
+        "PRINT_ITEM",
+        "ADDVOIDCHARA",
+        "DELCHARA",
+        "PUTFORM",
+        "STRLENU",
+        "STRLENFORMU",
+        "SPLIT",
+        "PRINTPLAIN",
+        "PRINTPLAINFORM",
+        "RESETBGCOLOR",
+        "FONTBOLD",
+        "FONTITALIC",
+        "FONTREGULAR",
+        "RESETGLOBAL",
+        "DUMPRAND",
+        "HTML_TAGSPLIT"
+      ],
+      "resolved_chains": 20
+    },
+    {
+      "index": 7,
+      "names": [
+        "-",
+        "*",
+        "!",
+        "~",
+        ">>",
+        "<<",
+        "+=",
+        "-=",
+        "*=",
+        "/=",
+        "%=",
+        "<<=",
+        ">>=",
+        "|=",
+        "&=",
+        "^=",
+        "++",
+        "--"
+      ],
+      "resolved_chains": 18
+    },
+    {
+      "index": 8,
+      "names": [
+        "SIF",
+        "TRYCCALL",
+        "TRYCGOTO",
+        "TRYCGOTOFORM"
+      ],
+      "resolved_chains": 4
+    },
+    {
+      "index": 9,
+      "names": [
+        "CLEARLINE",
+        "REUSELASTLINE",
+        "TINPUT",
+        "TINPUTS",
+        "ONEINPUT",
+        "TONEINPUT",
+        "TONEINPUTS",
+        "DRAWLINE",
+        "BAR",
+        "BARL",
+        "PRINT_PALAM",
+        "BEGIN"
+      ],
+      "resolved_chains": 12
+    }
+  ],
+  "limit": "After following recorded non-empty pointers, the current public legacy reader produces 35 partial reads, 169 unsupported schemas, and 18 invalid inputs. Partial and unsupported results do not return exit code zero. This is not full conversion, semantic reproof, or independent reproduction."
+}

@@ -1,0 +1,39 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0365 · emuera.log</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0365 · emuera.log</h1>
+<p>U0365 / runs/stop-active-guard/native-01。CALLTRAIN/STOPCALLTRAIN/DOTRAINの選択状態・継続マーカー・例外を区別。STOPCALLTRAIN後のNative例外も有効な観測として保持。出力17行、マーカー3種、診断候補0行を確認。例: CASE220_START, CALLTRAINEND, CASE220_DONE。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23</code></p>
+<p><a href="../assets/U0365.log">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>3a859915577cd5a620783eb356017c03b8f8d54bfd5dedd4701c1b207431fc23</code></p>
+<pre>Now Loading...
+CASE220_START
+T|EVENTTRAIN|N=0|S=0|H=0|E=0|SEL=0|P=-1|NEXT=-1|R=701|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0
+|SRC=0
+T|AFTER_CALLTRAIN|N=0|S=0|H=0|E=1|SEL=99|P=-1|NEXT=-1|R=0|SKIP=0|UP=0|DOWN=0|CUP=0|N
+OW=0|SRC=0
+T|SHOW_STATUS|N=0|S=1|H=0|E=1|SEL=99|P=-1|NEXT=-1|R=0|SKIP=1|UP=0|DOWN=0|CUP=0|NOW=0
+|SRC=0
+T|SHOW_USERCOM|N=0|S=1|H=0|E=1|SEL=99|P=-1|NEXT=-1|R=1|SKIP=1|UP=0|DOWN=0|CUP=0|NOW=
+0|SRC=0
+＜コマンド連続実行：1/2＞
+T|EVENTCOM|N=0|S=1|H=0|E=1|SEL=0|P=-1|NEXT=-1|R=0|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0|SRC
+=85
+T|COM0|N=1|S=1|H=0|E=1|SEL=0|P=-1|NEXT=-1|R=0|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0|SRC=85
+T|CALLTRAINEND|N=1|S=1|H=1|E=1|SEL=0|P=-1|NEXT=-1|R=0|SKIP=0|UP=0|DOWN=0|CUP=0|NOW=0
+|SRC=85
+CASE220_DONE
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0325 · command_or_syntax:COPYCHARA · check</li>
+<li>L0767 · command_or_syntax:COPYCHARA · check</li>
+<li>L0794 · command_or_syntax:COPYCHARA · check</li>
+<li>L1111 · command_or_syntax:CALLTRAIN · check</li>
+<li>L1553 · command_or_syntax:CALLTRAIN · check</li>
+<li>L1580 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

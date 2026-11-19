@@ -1,0 +1,18 @@
+{
+  "case_id": "LEX_LONE_EQUALS",
+  "inputs_after": {
+    "ERB/MAIN.ERB": "e27bf0ce0fd01826f0d4245d5a366547d9e11e8946b6ea989aecae6f93ab1108",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_before": {
+    "ERB/MAIN.ERB": "e27bf0ce0fd01826f0d4245d5a366547d9e11e8946b6ea989aecae6f93ab1108",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "mode": "public-default01",
+  "natural_exit_observed": true,
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "rc": 1,
+  "stderr_sha256": "2c2f206ea7bea1a5d71a3a8ab41c5c1415efcbf694c97647a914a684ba22bb81",
+  "stdout_sha256": "1b8710993db24f55796b566698bb12cdc8b69fdd1821adcf53dd1b9ae67cfcbf",
+  "timeout": false
+}

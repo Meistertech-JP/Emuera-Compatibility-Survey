@@ -1,0 +1,419 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0637 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0637 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:PRINTK。対象=&quot;KANA213&quot;; rows件数=12。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>6d2c1f4d9198cbeed41575bec6647f7cd2eabf052fb103da8693dd2259ba7463</code></p>
+<p><a href="../assets/U0637.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>6d2c1f4d9198cbeed41575bec6647f7cd2eabf052fb103da8693dd2259ba7463</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;case&quot;: &quot;KANA213&quot;,
+  &quot;rows&quot;: [
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_0&quot;,
+        &quot;source_literal&quot;: &quot;ｱ&quot;,
+        &quot;forcekana&quot;: 1,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ｱ&quot;,
+        &quot;native-02&quot;: &quot;ｱ&quot;,
+        &quot;py&quot;: &quot;ｱ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF71&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF71&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+FF71&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_1&quot;,
+        &quot;source_literal&quot;: &quot;ｱ&quot;,
+        &quot;forcekana&quot;: 2,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ｱ&quot;,
+        &quot;native-02&quot;: &quot;ｱ&quot;,
+        &quot;py&quot;: &quot;あ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF71&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF71&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+3042&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;forcekana2_unexpected_halfwidth_normalization&quot;,
+      &quot;verdict&quot;: &quot;different_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_2&quot;,
+        &quot;source_literal&quot;: &quot;ｱ&quot;,
+        &quot;forcekana&quot;: 3,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;あ&quot;,
+        &quot;native-02&quot;: &quot;あ&quot;,
+        &quot;py&quot;: &quot;あ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+3042&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+3042&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+3042&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_3&quot;,
+        &quot;source_literal&quot;: &quot;ｶﾞ&quot;,
+        &quot;forcekana&quot;: 1,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ｶﾞ&quot;,
+        &quot;native-02&quot;: &quot;ｶﾞ&quot;,
+        &quot;py&quot;: &quot;ｶﾞ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF76&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF76&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+FF76&quot;,
+          &quot;U+FF9E&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_4&quot;,
+        &quot;source_literal&quot;: &quot;ｶﾞ&quot;,
+        &quot;forcekana&quot;: 2,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ｶﾞ&quot;,
+        &quot;native-02&quot;: &quot;ｶﾞ&quot;,
+        &quot;py&quot;: &quot;が&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF76&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF76&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+304C&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;forcekana2_unexpected_halfwidth_normalization&quot;,
+      &quot;verdict&quot;: &quot;different_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_5&quot;,
+        &quot;source_literal&quot;: &quot;ｶﾞ&quot;,
+        &quot;forcekana&quot;: 3,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;が&quot;,
+        &quot;native-02&quot;: &quot;が&quot;,
+        &quot;py&quot;: &quot;が&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+304C&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+304C&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+304C&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_6&quot;,
+        &quot;source_literal&quot;: &quot;ｳﾞ&quot;,
+        &quot;forcekana&quot;: 1,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ｳﾞ&quot;,
+        &quot;native-02&quot;: &quot;ｳﾞ&quot;,
+        &quot;py&quot;: &quot;ｳﾞ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF73&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF73&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+FF73&quot;,
+          &quot;U+FF9E&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_7&quot;,
+        &quot;source_literal&quot;: &quot;ｳﾞ&quot;,
+        &quot;forcekana&quot;: 2,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ｳﾞ&quot;,
+        &quot;native-02&quot;: &quot;ｳﾞ&quot;,
+        &quot;py&quot;: &quot;ゔ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF73&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF73&quot;,
+          &quot;U+FF9E&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+3094&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;forcekana2_unexpected_halfwidth_normalization&quot;,
+      &quot;verdict&quot;: &quot;different_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_8&quot;,
+        &quot;source_literal&quot;: &quot;ｳﾞ&quot;,
+        &quot;forcekana&quot;: 3,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ヴ&quot;,
+        &quot;native-02&quot;: &quot;ヴ&quot;,
+        &quot;py&quot;: &quot;ゔ&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+30F4&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+30F4&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+3094&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;legacy_vu_hiragana_mapping_difference&quot;,
+      &quot;verdict&quot;: &quot;different_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_9&quot;,
+        &quot;source_literal&quot;: &quot;ABC123&quot;,
+        &quot;forcekana&quot;: 1,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ABC123&quot;,
+        &quot;native-02&quot;: &quot;ABC123&quot;,
+        &quot;py&quot;: &quot;ABC123&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+0041&quot;,
+          &quot;U+0042&quot;,
+          &quot;U+0043&quot;,
+          &quot;U+0031&quot;,
+          &quot;U+0032&quot;,
+          &quot;U+0033&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+0041&quot;,
+          &quot;U+0042&quot;,
+          &quot;U+0043&quot;,
+          &quot;U+0031&quot;,
+          &quot;U+0032&quot;,
+          &quot;U+0033&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+0041&quot;,
+          &quot;U+0042&quot;,
+          &quot;U+0043&quot;,
+          &quot;U+0031&quot;,
+          &quot;U+0032&quot;,
+          &quot;U+0033&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_10&quot;,
+        &quot;source_literal&quot;: &quot;ABC123&quot;,
+        &quot;forcekana&quot;: 2,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ABC123&quot;,
+        &quot;native-02&quot;: &quot;ABC123&quot;,
+        &quot;py&quot;: &quot;ABC123&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+0041&quot;,
+          &quot;U+0042&quot;,
+          &quot;U+0043&quot;,
+          &quot;U+0031&quot;,
+          &quot;U+0032&quot;,
+          &quot;U+0033&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+0041&quot;,
+          &quot;U+0042&quot;,
+          &quot;U+0043&quot;,
+          &quot;U+0031&quot;,
+          &quot;U+0032&quot;,
+          &quot;U+0033&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+0041&quot;,
+          &quot;U+0042&quot;,
+          &quot;U+0043&quot;,
+          &quot;U+0031&quot;,
+          &quot;U+0032&quot;,
+          &quot;U+0033&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;K213_11&quot;,
+        &quot;source_literal&quot;: &quot;ABC123&quot;,
+        &quot;forcekana&quot;: 3,
+        &quot;instruction&quot;: &quot;PRINTK&quot;,
+        &quot;helpers&quot;: &quot;none&quot;,
+        &quot;FORM_interpretation&quot;: &quot;none&quot;
+      },
+      &quot;emitted&quot;: {
+        &quot;native-01&quot;: &quot;ＡＢＣ１２３&quot;,
+        &quot;native-02&quot;: &quot;ＡＢＣ１２３&quot;,
+        &quot;py&quot;: &quot;ＡＢＣ１２３&quot;
+      },
+      &quot;unicode_codepoints&quot;: {
+        &quot;native-01&quot;: [
+          &quot;U+FF21&quot;,
+          &quot;U+FF22&quot;,
+          &quot;U+FF23&quot;,
+          &quot;U+FF11&quot;,
+          &quot;U+FF12&quot;,
+          &quot;U+FF13&quot;
+        ],
+        &quot;native-02&quot;: [
+          &quot;U+FF21&quot;,
+          &quot;U+FF22&quot;,
+          &quot;U+FF23&quot;,
+          &quot;U+FF11&quot;,
+          &quot;U+FF12&quot;,
+          &quot;U+FF13&quot;
+        ],
+        &quot;py&quot;: [
+          &quot;U+FF21&quot;,
+          &quot;U+FF22&quot;,
+          &quot;U+FF23&quot;,
+          &quot;U+FF11&quot;,
+          &quot;U+FF12&quot;,
+          &quot;U+FF13&quot;
+        ]
+      },
+      &quot;category&quot;: &quot;selected_literal_conversion_match&quot;,
+      &quot;verdict&quot;: &quot;matched_scoped&quot;
+    }
+  ],
+  &quot;matches&quot;: 8,
+  &quot;differences&quot;: 4,
+  &quot;standalone_minimal_repro_executed&quot;: true,
+  &quot;standalone_native&quot;: &quot;U+FF71&quot;,
+  &quot;standalone_public&quot;: &quot;U+3042&quot;,
+  &quot;limitations&quot;: &quot;Twelve literal PRINTK conditions over four inputs/modes1–3 plus one separately executed6-line minimum, no helper/FORM/variable dependency. BMP codepoint readback only, no glyph/font rendering or full LCMap/Unicode/kana domain. Native4 processes alive5s then own cleanup, natural exit unobserved. Pure source-level difference evidence, no product correction.&quot;
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L1802 · command_or_syntax:PRINTK · check</li>
+</ul></html>

@@ -1,0 +1,54 @@
+{
+  "schema": "break-comparison-source-pins-1",
+  "native_source_archive": {
+    "path": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+    "sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "members_sha256": {
+      "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs": "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab",
+      "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4"
+    }
+  },
+  "native_source_lines": [
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/ErbLoader.cs",
+      "sha256": "00d1c7dd1c5a6051e3a413db8ab83e10b5ce788f09c7a34493c59408354d14ab",
+      "lines": "1035-1055",
+      "role": "Resolve BREAK/CONTINUE to nearest enclosing REPEAT/FOR/WHILE/DO; if absent, emit warning and leave no paired loop."
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/FunctionIdentifier.cs",
+      "sha256": "027e88946fe95accc7025224956d246721eedb412df7f97df1194929fad3e334",
+      "lines": "241-248",
+      "role": "Register FOR/NEXT/WHILE/WEND/DO/LOOP/BREAK control forms."
+    },
+    {
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/Function/Instraction.Child.cs",
+      "sha256": "c5f2284eb16409e4b6319b14eb009ceaa6520367e9f5aa5cba533828a732fce4",
+      "lines": "2095-2117",
+      "role": "BREAK increments counted FOR/REPEAT counter, excludes WHILE/DO, then jumps after paired loop."
+    }
+  ],
+  "public_pyz": {
+    "path": "[SURVEY_ROOT]\\PyEmuera-3.0.0.pyz",
+    "sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "member_sha256": {
+      "pyemuera/program.py": "bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95",
+      "pyemuera/runtime.py": "cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d"
+    }
+  },
+  "public_source_lines": [
+    {
+      "member": "pyemuera/program.py",
+      "sha256": "bafef96d0d1e8c0cea6e64405f23998f26ddf7bf5d86c34899b67c64904b0f95",
+      "lines": "886-890",
+      "role": "Reject BREAK outside a loop as E_SYNTAX during compilation; otherwise emit _BREAK and bind to nearest loop."
+    },
+    {
+      "member": "pyemuera/runtime.py",
+      "sha256": "cc98a538f63b75c4571dd4c6eaaee8a7060f5d067754bcba6908a1d9a507444d",
+      "lines": "1234-1239,1293-1299",
+      "role": "Increment active counter on _BREAK, end loop and jump to continuation."
+    }
+  ]
+}

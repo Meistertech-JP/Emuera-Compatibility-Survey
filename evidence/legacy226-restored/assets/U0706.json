@@ -1,0 +1,126 @@
+{
+  "schema": "native-public-input-boundary-comparison-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ONEINPUTS"
+  },
+  "case_id": "ONEINPUTS_ARGUMENT_BUILDER01",
+  "classification": "matched_scoped",
+  "scope": "Compare Native and public behavior for constant formatted argument text, empty quoted text, extra argument continuation, and the following INPUTS request.",
+  "artifacts": {
+    "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+    "native_config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+    "fixture_sha256": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+  },
+  "input_protocol": {
+    "native": "Isolated desktop; only the Native RichEdit receives Enter/character messages.",
+    "public": "Pinned public pyz; stdin bytes 0a0a0a380a.",
+    "global_keyboard_events": false,
+    "screenshots_retained": false,
+    "automatic_retries": 0
+  },
+  "replicates": {
+    "native": 2,
+    "public": 2
+  },
+  "observations": {
+    "shared_output_log_bytes": 632,
+    "shared_output_log_sha256": "0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5",
+    "all_four_logs_byte_identical": true,
+    "sentinels": [
+      "READY_FOR_LITERAL",
+      "LITERAL=[\"]",
+      "READY_FOR_EMPTY_CONSTANT",
+      "EMPTY=[\"]",
+      "READY_FOR_EXTRA_ARGUMENT",
+      "EXTRA=[\"]",
+      "INPUTS=[8]",
+      "ONEINPUTS_PARSER_DONE"
+    ],
+    "interpreted_inputs": "The ERB formatted text includes quote characters; the first logged result for each quoted form is the leading U+0022 quote. This test does not treat quote delimiters as a zero-length/value-only literal."
+  },
+  "native_runs": [
+    {
+      "run": 1,
+      "probe_path": "evidence/oneinputs-parser-boundary-20261115/native-01/probe.json",
+      "probe_sha256": "ca7622e1a992ae6849e45dd3bcc55d7047cc747e080ca4864cd05bd7ff99db94",
+      "log_path": "evidence/oneinputs-parser-boundary-20261115/native-01/emuera.log",
+      "log_sha256": "0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5",
+      "markers": [
+        "READY_FOR_LITERAL",
+        "READY_FOR_EMPTY_CONSTANT",
+        "READY_FOR_EXTRA_ARGUMENT",
+        "READY_FOR_INPUTS",
+        "ONEINPUTS_PARSER_DONE"
+      ],
+      "global_keyboard_events_sent": false,
+      "closed_desktop": true,
+      "input_sha256_before": {
+        "ERB/ONEINPUTSBOUNDARY08.ERB": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+      },
+      "input_sha256_after": {
+        "ERB/ONEINPUTSBOUNDARY08.ERB": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+      },
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "native_config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "run": 2,
+      "probe_path": "evidence/oneinputs-parser-boundary-20261115/native-02/probe.json",
+      "probe_sha256": "1cb6527f57b12f25b40a5e23cf44678efdc2092e94a9a8bcf800a23d7c5456bc",
+      "log_path": "evidence/oneinputs-parser-boundary-20261115/native-02/emuera.log",
+      "log_sha256": "0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5",
+      "markers": [
+        "READY_FOR_LITERAL",
+        "READY_FOR_EMPTY_CONSTANT",
+        "READY_FOR_EXTRA_ARGUMENT",
+        "READY_FOR_INPUTS",
+        "ONEINPUTS_PARSER_DONE"
+      ],
+      "global_keyboard_events_sent": false,
+      "closed_desktop": true,
+      "input_sha256_before": {
+        "ERB/ONEINPUTSBOUNDARY08.ERB": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+      },
+      "input_sha256_after": {
+        "ERB/ONEINPUTSBOUNDARY08.ERB": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+      },
+      "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "native_config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    }
+  ],
+  "public_runs": [
+    {
+      "run": 1,
+      "receipt_path": "evidence/oneinputs-parser-boundary-20261115/public-01/receipt.json",
+      "receipt_sha256": "9482d691c4378d55a31c8cd8e58f5e4fb74b9696c3464537ea2d40fcc50d4609",
+      "log_path": "evidence/oneinputs-parser-boundary-20261115/public-01/emuera.log",
+      "log_sha256": "0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5",
+      "stdin_hex": "0a0a0a380a",
+      "returncode": 0,
+      "stdout_sha256": "91899e86bbb2f3b08f9eadf18f87b0415aacf25355d448ec7b07ccceb694917e",
+      "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "fixture_sha256": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+    },
+    {
+      "run": 2,
+      "receipt_path": "evidence/oneinputs-parser-boundary-20261115/public-02/receipt.json",
+      "receipt_sha256": "e02e0f9f5968b5e0eca3f7bf9f48d7040e977aca50b1a6a5d90055394e87a209",
+      "log_path": "evidence/oneinputs-parser-boundary-20261115/public-02/emuera.log",
+      "log_sha256": "0abc0de6a78573f77af6bfed1b3e78b4a170cb99fcff63099900ec76b3b5e6f5",
+      "stdin_hex": "0a0a0a380a",
+      "returncode": 0,
+      "stdout_sha256": "afee4193106f55a7baded174605c79d974ea5ea3a335e5ce2c8d02e636f6c24d",
+      "stderr_sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "fixture_sha256": "cec49d606d93934a4226928d07073d0041adf8ca1c28c4a35a1856a4de0c0846"
+    }
+  ],
+  "limitations": [
+    "Native probe closes the isolated GUI after the final marker; Native natural process exit is not claimed.",
+    "Parser warning UI text, prompt and input echo are not compared; the comparison is for continued execution and stored output log.",
+    "This scoped case does not independently test malformed expression exception diagnostics or close ONEINPUTS by itself."
+  ]
+}

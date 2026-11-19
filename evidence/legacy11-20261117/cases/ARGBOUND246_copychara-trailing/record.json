@@ -1,0 +1,94 @@
+{
+  "case_id": "ARGBOUND246_copychara-trailing",
+  "case_verdict": "different_scoped",
+  "comparison_classification": "trailing_comma_native_ignored_public_missing_argument_rejected",
+  "comparison_limits": "Constant expressions only, no argument helper side-effect or full AST grammar closure. Raw command STRLEN is distinct from STRLEN function. No generalization to every builder or optional-argument contract.",
+  "condition": {
+    "call": "COPYCHARA 0,0,",
+    "fixture_sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+    "kind": "command_or_syntax",
+    "name": "copychara-trailing",
+    "target": "COPYCHARA",
+    "target_line": 9,
+    "variant": "trailing"
+  },
+  "configuration_contents_disclosed": false,
+  "fixture_path": "cases/ARGBOUND246_copychara-trailing/fixture/SEARCHBOUND01.ERB",
+  "group": "continuation_difference_246",
+  "legacy_case_id": "PARENT246_copychara-trailing",
+  "necessary_comparison_complete": true,
+  "non_disclosure_limit": "Full configuration, original receipts, and original ledgers are not in this projection. Hash equality does not prove full execution condition or engine identity.",
+  "original_receipts_disclosed": false,
+  "parent_review": {
+    "case_relation": "case_listed",
+    "decision": "necessary_comparison_complete",
+    "scope": "Selected parent source only; other target evidence is not included."
+  },
+  "public_stderr_path": "cases/ARGBOUND246_copychara-trailing/raw/public-stderr.bin",
+  "public_stderr_sha256": "e319a40132558220daae96f0c76a93a7f7ef47601c7d87eb797fbcaa5a08b32b",
+  "requirement_ids": [
+    "normal_output_state_control",
+    "finite_boundary_error",
+    "evaluation_and_side_effects"
+  ],
+  "runs": {
+    "native-01": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND246_copychara-trailing/raw/native-01-emuera.log",
+      "raw_sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539",
+      "state": [
+        919,
+        818,
+        701,
+        1,
+        173
+      ]
+    },
+    "native-02": {
+      "cleanup_terminate_ok": true,
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": true,
+      "engine_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+      "error": null,
+      "fixture_sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+      "natural_exit_observed": false,
+      "raw_path": "cases/ARGBOUND246_copychara-trailing/raw/native-02-emuera.log",
+      "raw_sha256": "1580685aef4a03608a5dcd4ed86e774adb124b188d9ce82d836e5148bbbc9539",
+      "state": [
+        919,
+        818,
+        701,
+        1,
+        173
+      ]
+    },
+    "public": {
+      "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+      "done": false,
+      "engine_sha256_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "engine_sha256_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+      "error": {
+        "body": "Integer required, got NoneType",
+        "code": "E_TYPE",
+        "line": 9
+      },
+      "fixture_config_pre_post_equal": true,
+      "fixture_sha256": "64039a9fc9c382015110a9cc4aba731a9cacdbf3ba8d42141d553e60674d2f35",
+      "raw_path": "cases/ARGBOUND246_copychara-trailing/raw/public-stdout.bin",
+      "raw_sha256": "1c639e9eb325ec421096b1202ad938ae7a917dc920cf45db1e336fd8e258f1fa",
+      "returncode": 1,
+      "state": null
+    }
+  },
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "COPYCHARA"
+  },
+  "target_outcome": "different_scoped"
+}

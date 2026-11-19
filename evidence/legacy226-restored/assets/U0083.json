@@ -1,0 +1,21 @@
+{
+  "schema": "parent-target-acceptance-readback-1",
+  "valid": true,
+  "accepted": true,
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "RANDOMIZE"
+  },
+  "acceptance_path": "PARENT_ACCEPTANCE_RANDOMIZE_20261115.json",
+  "acceptance_sha256": "18a29b4d96af052f8107cebbf48aaac0ce6c97c4f548cc498a49d96f21b4fa3e",
+  "evidence_manifest_path": "evidence/randomize-omitted-dynamic-20261115/MANIFEST.json",
+  "evidence_manifest_sha256": "e86b1c9d5236bc46a65e73285d5052ccbe190ce569c2814d14e316d2fd8ecfee",
+  "registered_case_ids": [
+    "RANDROUNDTRIP197_command_or_syntax_RANDOMIZE",
+    "RANDOMIZE_OMIT_DYNAMIC_20261115"
+  ],
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "product_modified": false,
+  "public_release_modified": false
+}

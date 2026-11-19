@@ -1,0 +1,54 @@
+{
+  "kind": "assignment_syntax",
+  "name": "==",
+  "accepted": true,
+  "decision": "PROPOSE_ACCEPT_ORIGINAL_NECESSARY_FINITE_COMPARISON_COMPLETE",
+  "axes": [
+    {
+      "axis": "v24_registration_signature_form",
+      "original_requirement": "writable destination == RHS; =/== on string means FORM, apostrophe-equals means string expression",
+      "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+      "support": "281 exact observed warnings plus ordinary own alias mutations; unchanged parent guard/normal witnesses and literal alias rewrite source proof"
+    },
+    {
+      "axis": "actual_target_use",
+      "original_requirement": "Executed normal role in both engines, or an independently documented public availability gap; an untaken block/setup failure does not count.",
+      "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+      "support": "281 exact observed warnings plus ordinary own alias mutations; unchanged parent guard/normal witnesses and literal alias rewrite source proof"
+    },
+    {
+      "axis": "selected_normal_output_state_control",
+      "original_requirement": "Selected result/state/control observations appropriate to the source form, without claiming every value or GUI pixel.",
+      "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+      "support": "281 exact observed warnings plus ordinary own alias mutations; unchanged parent guard/normal witnesses and literal alias rewrite source proof"
+    },
+    {
+      "axis": "applicable_boundary_error_evaluation_side_effect",
+      "original_requirement": "Finite branch probes/reviews listed below; shared parser guards may be grouped but per-spelling observations remain distinguishable.",
+      "decision": "SATISFIED_WITHIN_ORIGINAL_FINITE_SCOPE",
+      "support": "281 exact observed warnings plus ordinary own alias mutations; unchanged parent guard/normal witnesses and literal alias rewrite source proof"
+    }
+  ],
+  "original_remaining_prose": [
+    "Capture Native == warning text/location from existing retained diagnostics if available; otherwise a minimal numeric/string == fixture needs a fresh diagnostic capture. Value equality is already proven.",
+    "Compare runtime bad destination index with RHS helper that logs a counter before failure; observe RHS-before-index and no successful write without extrapolating from normal ORDER21."
+  ],
+  "previous_minimal_remainder": [
+    {
+      "id": "ALIAS-NATIVE-WARNING",
+      "detail": "265 assignment-alias-warning has reached AFTER/DONE value evidence but retained channels omit exact Native load-time == warning. E167 value equality does not satisfy the explicitly named warning text/location requirement."
+    }
+  ],
+  "discharged": "ALIAS-NATIVE-WARNING",
+  "exact_remainder": [],
+  "actual_warning_and_own_normal_ref": "ACTUAL_COMPARISON.json",
+  "supporting_prior_guard_refs": "FINITE_CLOSURE_PROOF_PINS.json",
+  "diagnostic_format_difference_preserved": true,
+  "shared_guard_is_own_body": false,
+  "new_invalid_alias_cases": 0,
+  "postfatal_state": "UNOBSERVED; no new postfatal requirement inferred or claimed",
+  "prior_uncalled_body_credit": false,
+  "all_values_or_full_output_equivalence": false,
+  "root_acceptance_changed": false,
+  "parent_adoption_required": true
+}

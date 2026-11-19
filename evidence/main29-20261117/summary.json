@@ -1,0 +1,25 @@
+{
+  "case_count": 29,
+  "final_marker_rule": "last_case_END_only",
+  "historical_v3_legacy_audit": "previously_recorded_not_reexecuted",
+  "modes_per_stage": [
+    "native-01",
+    "native-02",
+    "py"
+  ],
+  "not_observed": [
+    "Native natural exit",
+    "GUI and input",
+    "fatal and load errors",
+    "all conditions of all cases"
+  ],
+  "representative_count": 1,
+  "schema": "neutral-legacy-expression-summary.v1",
+  "scope": "exact expression and RESULT/RESULTS snapshots",
+  "stages": [
+    "single-01",
+    "batch",
+    "full-batch"
+  ],
+  "status": "completed_with_forced_native_cleanup"
+}

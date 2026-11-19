@@ -1,0 +1,368 @@
+{
+  "schema": "evidence-manifest-1",
+  "generated_utc": "2026-11-14T16:25:38.173179+00:00",
+  "root": "evidence/loadglobal-corrupt-20261115",
+  "file_count": 72,
+  "files": [
+    {
+      "path": "ADJUDICATION.json",
+      "bytes": 3330,
+      "sha256": "580091b0eb456a45cb0536d43fa77e9497288e68acab31eab42bc43a354c6953"
+    },
+    {
+      "path": "finalize_evidence.py",
+      "bytes": 12756,
+      "sha256": "a9f3e54c4ba83f2095810daeb9d470b8884987e1f342a54430777bfaf122c6d3"
+    },
+    {
+      "path": "native/conditions.json",
+      "bytes": 1117,
+      "sha256": "f2202c13ef6dff5b7afa7fbbf3dbd9c0e1773af254f5c78a35f5c6740744226c"
+    },
+    {
+      "path": "native/driver-exit.json",
+      "bytes": 256,
+      "sha256": "6f947f03fb020bae9010fd631eb879514594424d6635510c863abefca3c1776f"
+    },
+    {
+      "path": "native/driver.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native/driver.stdout.bin",
+      "bytes": 1808,
+      "sha256": "4a4e5ca92bbedd092648abf3abc0389acbb668d9ae8fc3f7ba5b175f4efafdde"
+    },
+    {
+      "path": "native/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "native/emuera.log",
+      "bytes": 522,
+      "sha256": "a7f28042801bb4a6cae0776ac4de444d042c0aaa3d5ed4476852563216c6e1a3"
+    },
+    {
+      "path": "native/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "native/ERB/GLOBAL205.ERH",
+      "bytes": 141,
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "native/ERB/SEARCHBOUND01.ERB",
+      "bytes": 644,
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "native/global.sav",
+      "bytes": 163,
+      "sha256": "0350f7dde4d161714a29785b825b9bc96937ec9baf0075b5a6b9c8df2ad82539"
+    },
+    {
+      "path": "native/probe.json",
+      "bytes": 2128,
+      "sha256": "2a94ae29c1b8a1d96bb1907e00dee2795f4cf5f05183b3caacd1ed1d445797d8"
+    },
+    {
+      "path": "native/run_native.py",
+      "bytes": 2927,
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "prepare_value_corruption.py",
+      "bytes": 3124,
+      "sha256": "471dac1f84e91a3fafbe2b56a6ba2ccca920e54ec0ebaaaf232ff348a6bbe561"
+    },
+    {
+      "path": "public/.pyemuera/logs/emuera.log",
+      "bytes": 528,
+      "sha256": "32d3593789b109d6fe1a143c874236ca0bdff35d2a444b60cc19063ad539945b"
+    },
+    {
+      "path": "public/.pyemuera/logs/output-20261115-012039-566657.txt",
+      "bytes": 323,
+      "sha256": "6d514576e91206c4cca27766e287c583fff748b0b59be8d5f0059d2eb8506065"
+    },
+    {
+      "path": "public/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "94cd66c3e104853767477fee5a751fffacf37a38090ee75f0e25b74dd95d3817"
+    },
+    {
+      "path": "public/.pyemuera/saves/global.json",
+      "bytes": 441,
+      "sha256": "991f88eb242fefbe97358d1bbf027332d437c9fe25de5f0593626c9fd00daca9"
+    },
+    {
+      "path": "public/conditions.json",
+      "bytes": 1129,
+      "sha256": "3fd1cb7d63d5493bf0f35142336767d788338273c1cdb5a53f520ce610ebc94d"
+    },
+    {
+      "path": "public/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "public/ERB/GLOBAL205.ERH",
+      "bytes": 141,
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "public/ERB/SEARCHBOUND01.ERB",
+      "bytes": 644,
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "public/run_public_pyz_verified.py",
+      "bytes": 1835,
+      "sha256": "7b40f716f18436786694557d986e56a2da711a916e5434fc588e19ee43733ec3"
+    },
+    {
+      "path": "public/verified-public-pyz.json",
+      "bytes": 1832,
+      "sha256": "1707ba46475ab010e7c4cc2e333cf4132c8dc545daedb449a2cbc5c85ef1623b"
+    },
+    {
+      "path": "public/verified.stderr.bin",
+      "bytes": 198,
+      "sha256": "ab89c40cb61d25b9371d3af1172e5c999669766e99c86ea0a9b6e2c72854cf88"
+    },
+    {
+      "path": "public/verified.stdout.bin",
+      "bytes": 321,
+      "sha256": "422cc2d837c9e9f8a3b91b05dd35e38e279e5db3892385fdf7848599dbe80d17"
+    },
+    {
+      "path": "REVIEW_ja.md",
+      "bytes": 2685,
+      "sha256": "d45e9d3ab963e7130056f8987e26f10aec29a0f160caffb4cb9ec854b845a76c"
+    },
+    {
+      "path": "RUN_COMPARISON.json",
+      "bytes": 8339,
+      "sha256": "8368b888d262153dc7c6c154698c95e3e83f62ad2987ef1bdc93fc14ee874090"
+    },
+    {
+      "path": "setup-attempts/prepare_and_run_with_missing_psutil.py",
+      "bytes": 4860,
+      "sha256": "13140ffaa5ff7c56990d80686c192f60e3d3301969dd64a45f3c75a830f6da6d"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/conditions.json",
+      "bytes": 1117,
+      "sha256": "f2202c13ef6dff5b7afa7fbbf3dbd9c0e1773af254f5c78a35f5c6740744226c"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/driver-exit.json",
+      "bytes": 256,
+      "sha256": "8ef4436388bc62119092f8c42d26dc22d52b48a4cd2c3fd536f50ce8990404f2"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/driver.stderr.bin",
+      "bytes": 1632,
+      "sha256": "27d14db9c4a3ee420b5967a7d439c957c73e435fea75786f21584ea7f271b74b"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/driver.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/ERB/CORRUPTGLOBAL01.ERB",
+      "bytes": 644,
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/ERB/GLOBAL205.ERH",
+      "bytes": 141,
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/global.sav",
+      "bytes": 163,
+      "sha256": "0350f7dde4d161714a29785b825b9bc96937ec9baf0075b5a6b9c8df2ad82539"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/native/run_native.py",
+      "bytes": 2927,
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/public/.pyemuera/saves/global.json",
+      "bytes": 441,
+      "sha256": "991f88eb242fefbe97358d1bbf027332d437c9fe25de5f0593626c9fd00daca9"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/public/conditions.json",
+      "bytes": 1129,
+      "sha256": "3fd1cb7d63d5493bf0f35142336767d788338273c1cdb5a53f520ce610ebc94d"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/public/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/public/ERB/CORRUPTGLOBAL01.ERB",
+      "bytes": 644,
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/public/ERB/GLOBAL205.ERH",
+      "bytes": 141,
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "setup-attempts/runner-mismatch/public/run_public_pyz_verified.py",
+      "bytes": 1835,
+      "sha256": "7b40f716f18436786694557d986e56a2da711a916e5434fc588e19ee43733ec3"
+    },
+    {
+      "path": "SETUP_ATTEMPTS_ja.md",
+      "bytes": 1063,
+      "sha256": "bf9188a3432dc70c90ef6a221e994d9b1b6c84a67e13a62e2812bb3b9120b2a9"
+    },
+    {
+      "path": "SOURCE_EXCERPTS.txt",
+      "bytes": 7217,
+      "sha256": "6f33ace9945d9855b96ee80bb8a5767b3c0f6f0942625115b6a059c532165811"
+    },
+    {
+      "path": "SOURCE_IDENTITY.json",
+      "bytes": 2233,
+      "sha256": "e410aa86b953f4dbc5324dbcaad5a72c6d43daefa2d15bdefa1ff7a76187d4b9"
+    },
+    {
+      "path": "value-corruption/native-value/conditions.json",
+      "bytes": 602,
+      "sha256": "0002f4ef739a416f775c4a168097c9260870675c0d3c95ba711a4f3bc4fb19b6"
+    },
+    {
+      "path": "value-corruption/native-value/driver-exit.json",
+      "bytes": 256,
+      "sha256": "d0206b3c3e7cdcc4ea8de666d00243fc9b729ba784f9d93bae5e40cdbefc30a1"
+    },
+    {
+      "path": "value-corruption/native-value/driver.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "value-corruption/native-value/driver.stdout.bin",
+      "bytes": 1860,
+      "sha256": "21e5f7f4b882b95e81e2496e18d663c5a8686fb4485ab17631f926e73350ada8"
+    },
+    {
+      "path": "value-corruption/native-value/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "value-corruption/native-value/emuera.log",
+      "bytes": 526,
+      "sha256": "f6b6af64980601c5c9b7f09bc3e462de26a057b40760e19486b72da4b282b61a"
+    },
+    {
+      "path": "value-corruption/native-value/Emuera1824+v24.exe",
+      "bytes": 761856,
+      "sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964"
+    },
+    {
+      "path": "value-corruption/native-value/ERB/GLOBAL205.ERH",
+      "bytes": 141,
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "value-corruption/native-value/ERB/SEARCHBOUND01.ERB",
+      "bytes": 644,
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "value-corruption/native-value/global.sav",
+      "bytes": 273,
+      "sha256": "f66000e2b56051e9f489a4686e719beda311c5555aac61ad8bf092a0961904e3"
+    },
+    {
+      "path": "value-corruption/native-value/probe.json",
+      "bytes": 2180,
+      "sha256": "e995727859e6c1d89cd8b630c18e42907a70969e264db203480079e512efdc11"
+    },
+    {
+      "path": "value-corruption/native-value/run_native.py",
+      "bytes": 2927,
+      "sha256": "66fa869af7856f7a5b410a30c236640999e475f07b9ca85cf0e1225f5d280793"
+    },
+    {
+      "path": "value-corruption/public-value/.pyemuera/logs/emuera.log",
+      "bytes": 528,
+      "sha256": "32d3593789b109d6fe1a143c874236ca0bdff35d2a444b60cc19063ad539945b"
+    },
+    {
+      "path": "value-corruption/public-value/.pyemuera/logs/output-20261115-012237-496403.txt",
+      "bytes": 323,
+      "sha256": "6d514576e91206c4cca27766e287c583fff748b0b59be8d5f0059d2eb8506065"
+    },
+    {
+      "path": "value-corruption/public-value/.pyemuera/logs/outputlog-manifest.json",
+      "bytes": 361,
+      "sha256": "9be68e55861d26e0149e5722aa045b6f13ec783f4ade3b79bb240f1b60663253"
+    },
+    {
+      "path": "value-corruption/public-value/.pyemuera/saves/global.json",
+      "bytes": 559,
+      "sha256": "b4124759c57e9abd80b2d5ae81228ea057703d70dc5a8fbc23268256a081ad05"
+    },
+    {
+      "path": "value-corruption/public-value/conditions.json",
+      "bytes": 602,
+      "sha256": "211d74b1a3ad02e55c9df3048fbe3f704c678fa8fece3ca8ddc1fc4b45a11353"
+    },
+    {
+      "path": "value-corruption/public-value/emuera.config",
+      "bytes": 2164,
+      "sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+    },
+    {
+      "path": "value-corruption/public-value/ERB/GLOBAL205.ERH",
+      "bytes": 141,
+      "sha256": "822d11bc9a96a4fa705664ecfde784ecdc9c522b9b4258bfe163f1595869e5a3"
+    },
+    {
+      "path": "value-corruption/public-value/ERB/SEARCHBOUND01.ERB",
+      "bytes": 644,
+      "sha256": "2b4bdfe59743906e2d8e65310663cb73c433dd3025f76262cea7f34b0ab17e02"
+    },
+    {
+      "path": "value-corruption/public-value/verified-public-pyz.json",
+      "bytes": 1856,
+      "sha256": "262a97ea4779d662cb6e815da62ceb49d3e6442d5269925956dc5d648bc1be8d"
+    },
+    {
+      "path": "value-corruption/public-value/verified.stderr.bin",
+      "bytes": 196,
+      "sha256": "22c25940f4589fbd1f7e124a0f95f529ca3d2f30f0911348b9bfba276f8e3ef5"
+    },
+    {
+      "path": "value-corruption/public-value/verified.stdout.bin",
+      "bytes": 321,
+      "sha256": "422cc2d837c9e9f8a3b91b05dd35e38e279e5db3892385fdf7848599dbe80d17"
+    }
+  ]
+}

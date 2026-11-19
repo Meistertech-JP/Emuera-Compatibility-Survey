@@ -1,0 +1,18 @@
+{
+  "fixture_id": "SUBSTRING_EXPR_LENGTH_NEG1",
+  "mode": "public-01",
+  "inputs_before": {
+    "ERB/SLICE_RADIX.ERB": "cccffbb803266fd68fa201da628c65f1992c5512cf15f3429d6cb90ada151734",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/SLICE_RADIX.ERB": "cccffbb803266fd68fa201da628c65f1992c5512cf15f3429d6cb90ada151734",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "f76b068261fc8caaf03c05616e7e3104e83162468f8ab4641643c87acf95c29b",
+    "binding_basis": "case_reference_and_saved_frozen_readback"
+  },
+  "native_natural_exit": "not_applicable"
+}

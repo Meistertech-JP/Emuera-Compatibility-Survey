@@ -1,0 +1,71 @@
+{
+  "schema": "native-public-command-comparison-1",
+  "generated_utc": "2026-11-13T17:12:38.417337+00:00",
+  "case_ids": [
+    "P36EMPTY02",
+    "P36SPACE02",
+    "INPUTS_DYNAMIC_DEFAULT_EMPTY_20261114"
+  ],
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "INPUTS"
+  },
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "python": "CPython 3.12.10",
+  "dynamic_default_case": {
+    "fixture_sha256": "e2a46439e85d667f79b82bcc559413487928a8557eb30628c02a5e7ce877e75a",
+    "invocation": "INPUTS %DEFAULTS()%; empty input",
+    "native_replicates": [
+      {
+        "receipt": "native-default/probe.json",
+        "outputlog_sha256": "73ed1973d4ef48d98099b5c0a89ab4966614b90790e4557ad8732c7e63b6a80c",
+        "natural_exit": false,
+        "exit_code_observed": false
+      },
+      {
+        "receipt": "native-default-02/probe.json",
+        "outputlog_sha256": "73ed1973d4ef48d98099b5c0a89ab4966614b90790e4557ad8732c7e63b6a80c",
+        "natural_exit": false,
+        "exit_code_observed": false
+      }
+    ],
+    "public_replicates": [
+      {
+        "receipt": "public-default/receipt.json",
+        "returncode": 0,
+        "outputlog_sha256": "73ed1973d4ef48d98099b5c0a89ab4966614b90790e4557ad8732c7e63b6a80c"
+      },
+      {
+        "receipt": "public-default-02/receipt.json",
+        "returncode": 0,
+        "outputlog_sha256": "73ed1973d4ef48d98099b5c0a89ab4966614b90790e4557ad8732c7e63b6a80c"
+      }
+    ],
+    "all_four_outputlogs_byte_identical": true,
+    "observed": "DEFAULT_SENTINEL became RESULTS; DEFAULT_CALLS=1; DONE_INPUTS reached",
+    "screenshots_taken": false,
+    "global_keyboard_events": false,
+    "native_termination": "harness terminated after outputlog observation; natural exit and exit code unobserved"
+  },
+  "typed_value_secondary_case": {
+    "invocation": "INPUTS %DEFAULTS()%; input USER_TYPED",
+    "native_receipt": "native-valid-02/probe.json",
+    "public_receipt": "public-valid/receipt.json",
+    "outputlogs_byte_identical": true,
+    "observed": "RESULTS=[USER_TYPED]; DEFAULT_CALLS=1; DONE_INPUTS reached"
+  },
+  "prior_boundary_cases": {
+    "comparison": "runs/p36-whitespace-python-6f92a96b/comparison.json",
+    "sha256": "3a61a8a37e99c577d5f18deefe89a1cf71e9b00a767c54210253930300d38692",
+    "cases": {
+      "P36EMPTY02": "empty input; native/public OUTPUTLOG byte-identical",
+      "P36SPACE02": "three ASCII spaces; native/public OUTPUTLOG byte-identical"
+    }
+  },
+  "source_contract": "Native INPUTS selects SP_INPUTS; permits zero or one string FORM; dynamic non-constant default is evaluated in INPUTS_Instruction before WaitInput; empty input uses the provided default. ONEINPUTS-only truncation is excluded.",
+  "scoped_outcome": "matched_in_finite_scope",
+  "raw_logs_equal_across_engines": true,
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

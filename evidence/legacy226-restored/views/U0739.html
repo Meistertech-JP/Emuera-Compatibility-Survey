@@ -1,0 +1,59 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0739 · ADJUDICATION.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0739 · ADJUDICATION.json</h1>
+<p>原票種別=ADJUDICATION.json; 参照対象=expression_function:HTML_POPPRINTINGSTR。対象={&quot;kind&quot;: &quot;expression_function&quot;, &quot;name&quot;: &quot;HTML_POPPRINTINGSTR&quot;}; comparison_outcome=&quot;matched_in_finite_scope&quot;; decision=&quot;necessary_comparison_complete&quot;。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>26fa1116eba89a527af41e70177e49f3f779f7691e90e4b40bc1a192d00b5ce9</code></p>
+<p><a href="../assets/U0739.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>26fa1116eba89a527af41e70177e49f3f779f7691e90e4b40bc1a192d00b5ce9</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;schema&quot;: &quot;parent-target-finite-scope-adjudication-1&quot;,
+  &quot;generated_utc&quot;: &quot;2026-11-15T05:10:05.074789+00:00&quot;,
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;expression_function&quot;,
+    &quot;name&quot;: &quot;HTML_POPPRINTINGSTR&quot;
+  },
+  &quot;decision&quot;: &quot;necessary_comparison_complete&quot;,
+  &quot;comparison_outcome&quot;: &quot;matched_in_finite_scope&quot;,
+  &quot;scope&quot;: &quot;Reached zero-argument expression calls that pop a pending line to a RESULTS slot, observe the next call returning empty, then pop a second pending line; independent RESULT sentinel and continuation only.&quot;,
+  &quot;source&quot;: {
+    &quot;case_source_json&quot;: &quot;evidence/html-buffer-queries-20261113-219/SOURCE.json&quot;,
+    &quot;case_source_json_sha256&quot;: &quot;891cd2567d898dc9b3238624afabde3e2f3eda48ae3fded9823cf0440e83cdb2&quot;,
+    &quot;source_excerpt&quot;: &quot;evidence/html-buffer-queries-20261113-219/SOURCE_EXCERPTS_V24.txt&quot;,
+    &quot;source_excerpt_sha256&quot;: &quot;15e470b3d0c4d999313c6edb7f1462a5642bd2956e7bf0fa95d1e5935a0a596a&quot;,
+    &quot;contract&quot;: &quot;Creator.Method.cs registration and HtmlPopPrintingStrMethod; EmueraConsole.Print.cs PopDisplayingLines&quot;
+  },
+  &quot;case&quot;: {
+    &quot;case_id&quot;: &quot;HTMLBUFFER219_EXPR_HTML_POPPRINTINGSTR&quot;,
+    &quot;case_path&quot;: &quot;evidence/html-buffer-queries-20261113-219&quot;,
+    &quot;control&quot;: &quot;pop_html_expr_control/CONTROL.json&quot;,
+    &quot;comparison_sha256&quot;: &quot;67bb17d25a6150702df1035ec5dd5e4978eefc0eb01d569dd6c2fb472f753ebd&quot;,
+    &quot;case_review_sha256&quot;: &quot;571bece948577925bc925471d004d8ee0a14f3286d03fc0578e46301aa8db125&quot;,
+    &quot;fixture_sha256&quot;: &quot;76455731ce59e1cde07024cc53dbb972b7947541e88ac5f37343f0f81ac36624&quot;,
+    &quot;raw_log_sha256&quot;: &quot;746c53b524f2dd91a8191237d609ca81a539a663e828a98dd6ac08e115b7fd78&quot;,
+    &quot;all_three_raw_logs_byte_identical&quot;: true,
+    &quot;public_receipt_sha256&quot;: &quot;f40f98aaee2edfd80ac6ef18063a95e43c42a79c96cf9965982fd43899935b46&quot;,
+    &quot;public_pyz_sha256&quot;: &quot;8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35&quot;,
+    &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+    &quot;native_exit_observed&quot;: false,
+    &quot;synthetic_keyboard_events_sent&quot;: false
+  },
+  &quot;explicit_exclusions&quot;: [
+    &quot;RESULTS sentinel preservation; RESULTS slots intentionally receive function return values&quot;,
+    &quot;command form and its public load-time rejection, tracked as a separate target&quot;,
+    &quot;HTML GUI pixels, arbitrary tags/styles, all error paths, and Native natural process exit&quot;
+  ],
+  &quot;product_modified&quot;: false,
+  &quot;published_artifacts_modified&quot;: false,
+  &quot;drive_modified&quot;: false
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L2286 · expression_function:HTML_POPPRINTINGSTR · acceptance</li>
+<li>L2287 · expression_function:HTML_POPPRINTINGSTR · check</li>
+</ul></html>

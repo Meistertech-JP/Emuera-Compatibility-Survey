@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0348 · probe.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0348 · probe.json</h1>
+<p>原票種別=probe.json; 参照対象=command_or_syntax:CALLTRAIN, command_or_syntax:COPYCHARA。process_created=true; process_exited_after_5s=false; exit_code_observed=false; cleanup_terminate_ok=true; files件数=7。全バイト・JSON構造・全キー/文字列を検査。私的環境ルート/内部レビュー識別情報を2個のJSON位置で処理し、残る技術的全文を公開する。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · derived</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>881c95ce1d7b1a132a2c73ae006be88f46b3e92cc0014f533eb0d93826640f50</code></p>
+<p><a href="../assets/U0348.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>a66a88fec781ce9a6a97d3a0de87bb84ee6ef892a74a3bb0355274c3099ec9e0</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;desktop&quot;: &quot;PyEmueraNative_STRLENSU_native-02_1794544586&quot;,
+  &quot;desktop_created&quot;: true,
+  &quot;process_created&quot;: true,
+  &quot;pid&quot;: 35780,
+  &quot;command_line&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\calltrain-lifecycle-20261113-220\\runs\\queue-unavailable\\native-02\\Emuera1824+v24.exe&quot;,
+  &quot;cwd&quot;: &quot;[SURVEY_ROOT]\\work\\command-coverage-20261111\\evidence\\calltrain-lifecycle-20261113-220\\runs\\queue-unavailable\\native-02&quot;,
+  &quot;synthetic_keyboard_events_sent&quot;: false,
+  &quot;fixture_sha256&quot;: &quot;ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93&quot;,
+  &quot;native_exe_sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;,
+  &quot;config_sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;,
+  &quot;process_exited_after_5s&quot;: false,
+  &quot;exit_code_observed&quot;: false,
+  &quot;exit_code&quot;: null,
+  &quot;cleanup_terminate_ok&quot;: true,
+  &quot;files&quot;: [
+    {
+      &quot;path&quot;: &quot;csv/CHARA0.CSV&quot;,
+      &quot;size&quot;: 20,
+      &quot;sha256&quot;: &quot;f461f62f5648ded4e3691064ead25c540ab52872ec7b6f2b101a6490934a7b21&quot;
+    },
+    {
+      &quot;path&quot;: &quot;csv/TRAIN.CSV&quot;,
+      &quot;size&quot;: 25,
+      &quot;sha256&quot;: &quot;343d692064e178eac3bc296b1394281893660e873a32412279e73f70dfe79025&quot;
+    },
+    {
+      &quot;path&quot;: &quot;emuera.config&quot;,
+      &quot;size&quot;: 2164,
+      &quot;sha256&quot;: &quot;f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc&quot;
+    },
+    {
+      &quot;path&quot;: &quot;emuera.log&quot;,
+      &quot;size&quot;: 2056,
+      &quot;sha256&quot;: &quot;f41abf5184cb9358bbb739baa57518cd04398e82ce436f99363cf4bc0b6733f2&quot;
+    },
+    {
+      &quot;path&quot;: &quot;Emuera1824+v24.exe&quot;,
+      &quot;size&quot;: 761856,
+      &quot;sha256&quot;: &quot;14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964&quot;
+    },
+    {
+      &quot;path&quot;: &quot;ERB/SEARCHBOUND01.ERB&quot;,
+      &quot;size&quot;: 2373,
+      &quot;sha256&quot;: &quot;ddbf594a5404c8a7fefcf2889e9cecbfcbacaa429f1b3e8dde384a392ca24e93&quot;
+    },
+    {
+      &quot;path&quot;: &quot;prelaunch.json&quot;,
+      &quot;size&quot;: 599,
+      &quot;sha256&quot;: &quot;109817aee0930da416893875eb4e312602765bcf6ff7f0600715f505b37fc4d0&quot;
+    }
+  ],
+  &quot;desktop_closed&quot;: true
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0261 · command_or_syntax:COPYCHARA · check</li>
+<li>L1047 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

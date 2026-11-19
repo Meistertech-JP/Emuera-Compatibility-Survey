@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0496 · SEARCHBOUND01.ERB</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0496 · SEARCHBOUND01.ERB</h1>
+<p>U0496: COPYCHARA不正宛先のretry版。H241A=0、H241B=CHARANUM、引数関数内OUTPUTLOGなし。ログ副作用の版差を保持し観測を混同しない。 初期条件はADDCHARA 0,10,20、CFLAG:1=101/202/303、CSTR:0=SRC/MID/DST、TARGET=2/MASTER=1/ASSI=0、A=B=0、RESULT=701。関連CSVのNO 0/10/20、NAME N0/N10/N20、初期CFLAG 100/110/120も読取確認。 合成fixture/独自測定補助コードとして権限表明に基づきMITで公開可能。私的絶対パス・認証値・第三者ゲーム本文は見当たらず、符号化・BOM・改行を含む元バイトをstage。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>bbdd05a37337fd5a9b7acb1d8b23bd9fd38db8760556dce218caba530347bd20</code></p>
+<p><a href="../assets/U0496.ERB">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>bbdd05a37337fd5a9b7acb1d8b23bd9fd38db8760556dce218caba530347bd20</code></p>
+<pre>@SYSTEM_TITLE
+PRINTL CASE241 copy_invalid_destination
+ADDCHARA 0,10,20
+CFLAG:0:1=101
+CFLAG:1:1=202
+CFLAG:2:1=303
+CSTR:0:0=SRC
+CSTR:1:0=MID
+CSTR:2:0=DST
+TARGET=2
+MASTER=1
+ASSI=0
+A=0
+B=0
+RESULT=701
+PRINTFORML OBS241 BEFORE N={CHARANUM} R={RESULT} A={A} B={B}
+PRINTFORML OBS241 BEFORE T={TARGET} M={MASTER} S={ASSI}
+FOR LOCAL,0,CHARANUM
+PRINTFORML OBS241 BEFORE I={LOCAL} NO={NO:LOCAL} F={CFLAG:LOCAL:1}
+PRINTFORML OBS241 BEFORE I={LOCAL} NAME=[%NAME:LOCAL%] CS=[%CSTR:LOCAL:0%]
+NEXT
+OUTPUTLOG
+COPYCHARA H241A(),H241B()
+PRINTFORML OBS241 AFTER N={CHARANUM} R={RESULT} A={A} B={B}
+PRINTFORML OBS241 AFTER T={TARGET} M={MASTER} S={ASSI}
+FOR LOCAL,0,CHARANUM
+PRINTFORML OBS241 AFTER I={LOCAL} NO={NO:LOCAL} F={CFLAG:LOCAL:1}
+PRINTFORML OBS241 AFTER I={LOCAL} NAME=[%NAME:LOCAL%] CS=[%CSTR:LOCAL:0%]
+NEXT
+PRINTL DONE241
+OUTPUTLOG
+QUIT
+@H241A
+#FUNCTION
+A+=1
+B=B*10+1
+PRINTFORML OBS241 H1 N={CHARANUM} R={RESULT} A={A} B={B}
+PRINTFORML OBS241 H1 T={TARGET} M={MASTER} S={ASSI}
+FOR LOCAL,0,CHARANUM
+PRINTFORML OBS241 H1 I={LOCAL} NO={NO:LOCAL} F={CFLAG:LOCAL:1}
+PRINTFORML OBS241 H1 I={LOCAL} NAME=[%NAME:LOCAL%] CS=[%CSTR:LOCAL:0%]
+NEXT
+RETURNF 0
+@H241B
+#FUNCTION
+A+=1
+B=B*10+2
+PRINTFORML OBS241 H2 N={CHARANUM} R={RESULT} A={A} B={B}
+PRINTFORML OBS241 H2 T={TARGET} M={MASTER} S={ASSI}
+FOR LOCAL,0,CHARANUM
+PRINTFORML OBS241 H2 I={LOCAL} NO={NO:LOCAL} F={CFLAG:LOCAL:1}
+PRINTFORML OBS241 H2 I={LOCAL} NAME=[%NAME:LOCAL%] CS=[%CSTR:LOCAL:0%]
+NEXT
+RETURNF CHARANUM
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0460 · command_or_syntax:COPYCHARA · check</li>
+<li>L1246 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

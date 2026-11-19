@@ -1,0 +1,82 @@
+{
+  "decision_id": "PARENT_ADDDEFCHARA_FINITE_SCOPE_20261113",
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "documented_difference",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "ADDDEFCHARA"
+  },
+  "registered_cases": [
+    "CHARLIFE183_ADDDEFCHARA",
+    "ADDDEFCHARA_DEFAULTCHARACTER10_20261113",
+    "ADDDEFCHARA_EXTRA_ARGUMENT_20261113",
+    "ADDDEFCHARA_OUTSIDE_SYSTEM_TITLE_20261113",
+    "ADDDEFCHARA_MISSING_CSV0_20261113",
+    "ADDDEFCHARA_MISSING_DEFAULT10_20261113"
+  ],
+  "basis": [
+    "v24 registers ADDDEFCHARA as VOID, guards use outside SYSTEM_TITLE, adds CSV0 first, then adds configured default only when >0.",
+    "Normal state and DefaultCharacter 10 with template are covered by case183 and existing comparison; selected -1/0/10 boundaries now have records.",
+    "Corrected missing CSV0 and missing positive-default CSV10 comparisons each match Native twice and public pyz at raw-log level for selected state fields.",
+    "Outside-title error channel/stack presentation differs; extra-argument warning UI and Native natural exit remain unobserved and are explicitly limited, not assumed absent.",
+    "The invalid initial missing-CHARA10 setup is retained and excluded. No product code changed."
+  ],
+  "accepted_finite_requirements": [
+    "registration and VOID builder source-reviewed",
+    "SYSTEM_TITLE guard path and selected failure location compared",
+    "normal add of CSV0 and positive default (with template)",
+    "DefaultCharacter effective -1 without GAMEBASE, explicit 0, and positive 10",
+    "missing-template fallback selected readbacks for CSV0 and configured positive template",
+    "CHARANUM before/after and selected NO/NAME/CFLAG1"
+  ],
+  "not_claimed": [
+    "Native surplus-argument UI warning text/location/equality; capture previously timed out.",
+    "Native natural exit/exit code; isolated runner stopped processes after five seconds.",
+    "All invalid VOID forms and side-effect arguments.",
+    "Every field initialized by pseudo templates; all character arrays/deep-copy state; SP paths; API-only no-frame path; save/load; all ADDDEFCHARA compatibility."
+  ],
+  "invalid_setup_preserved": "evidence/adddefchara-missing-template-20261113/missing-default10/COMPARISON.json",
+  "source_matrix": "evidence/target-closure-review-20261113/commands/MATRIX.json",
+  "evidence": [
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/CASE_REVIEW_ja.md",
+      "sha256": "cff04919533d13163bc36003ba8a3a77df155cf4a15b9c0c9750a766d7ebaee7"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/COMPARISON.json",
+      "sha256": "86d188d90f85fc7ef6d0f3b9d84d4dc42a56e61461d79da761fd594445f4c8c2"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/MANIFEST.json",
+      "sha256": "877e8e213c449f36f22d3786d4eec802d1403588e8711138a1d06f60994ed2d6"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-chara0/SEAL.json",
+      "sha256": "3b72edc7885dbadc21a256de9aa3ef1fa3655e1f0ddd7db27dc8ceecb8d2309f"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-default10/CASE_REVIEW_ja.md",
+      "sha256": "dddef71de27fd4ed08e122904a02872897936e4e8df4e77593211044508a1b54"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-default10/COMPARISON.json",
+      "sha256": "379d4e5bce920700586c642e4e5c3b4d9f6bbf9adb98623d34196164951b2baa"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-default10/MANIFEST.json",
+      "sha256": "3adc0feba96800c02c6c3f6f99a55676c667dbfb9b6aba7f1bb95846fbd0ce03"
+    },
+    {
+      "path": "evidence/adddefchara-missing-template-corrected-20261113/missing-default10/SEAL.json",
+      "sha256": "bd2789a5797392b0779b8f30d6b2318ec31a2d978d2702b0459fcde5da5c4708"
+    },
+    {
+      "path": "evidence/target-closure-review-20261113/commands/MATRIX.json",
+      "sha256": "747f2183bce98969241c88789d3cdd5036c819fc8a88181ebc544620f9c237f6"
+    }
+  ],
+  "global_completion": false,
+  "source_matrix_sha256": "747f2183bce98969241c88789d3cdd5036c819fc8a88181ebc544620f9c237f6",
+  "independent_review": "evidence/adddefchara-parent-adjudication-20261113/INDEPENDENT_REVIEW_20261113.md",
+  "independent_review_sha256": "290e3fed6517495cd5e2af91200925c979a1e00e8225e101078dc88d3576f4b9"
+}

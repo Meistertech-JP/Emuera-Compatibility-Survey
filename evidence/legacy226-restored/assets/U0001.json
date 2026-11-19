@@ -1,0 +1,90 @@
+{
+  "schema": "native-public-expression-order-comparison-1",
+  "generated_utc": "2026-11-14T12:07:29.938397+00:00",
+  "case_id": "COLORNEGFAULT01",
+  "target": {
+    "kind": "expression_function",
+    "name": "COLOR_FROMRGB"
+  },
+  "expression": "COLOR_FROMRGB(-1,ZZ_FAULT(),0)",
+  "condition": "first component is -1; second argument helper emits FAULT_HELPER_EVAL and then divides by zero using RESULT:0",
+  "native_runs": [
+    {
+      "run_id": "isolated-native-e5d160b4968d4c60a6d3b4370a57fbef",
+      "pid": 30448,
+      "probe_path": "runs/isolated-native-e5d160b4968d4c60a6d3b4370a57fbef/probe.json",
+      "probe_sha256": "9486dbe7e9e00dca3c543468c4ebef41ac7d5c6f6dba3eaebb87b2c94dad1587",
+      "emuera_log_path": "runs/isolated-native-e5d160b4968d4c60a6d3b4370a57fbef/emuera.log",
+      "emuera_log_sha256": "3b43e03e904dc89dd213b99d4df68f8ac2cc8cfc0ad5dea9540d1723531b287d",
+      "screenshot_crop_path": "native-error-crop.png",
+      "screenshot_crop_sha256": "7515aa6be34bc3b97ff1476aa8811058dc181aff7545aa55226cc14abe739cb2",
+      "marker_before_target": true,
+      "native_first_argument_error": true,
+      "later_helper_marker_observed": false,
+      "after_target_observed": false,
+      "synthetic_input_sent": false,
+      "native_exit_code_observed": false,
+      "natural_exit_observed": false,
+      "process_cleanup": "owned process terminated after error dialog capture"
+    },
+    {
+      "run_id": "isolated-native-8e76b55ca1dc4ce386b7310a36a217f7",
+      "pid": 37084,
+      "probe_path": "runs/isolated-native-8e76b55ca1dc4ce386b7310a36a217f7/probe.json",
+      "probe_sha256": "cf40bc47bffe8c480d6f857b82a4660bf78ba0009d832510569fd00b4e16f201",
+      "emuera_log_path": "runs/isolated-native-8e76b55ca1dc4ce386b7310a36a217f7/emuera.log",
+      "emuera_log_sha256": "3b43e03e904dc89dd213b99d4df68f8ac2cc8cfc0ad5dea9540d1723531b287d",
+      "screenshot_crop_path": "native-error-crop-02.png",
+      "screenshot_crop_sha256": "7515aa6be34bc3b97ff1476aa8811058dc181aff7545aa55226cc14abe739cb2",
+      "marker_before_target": true,
+      "native_first_argument_error": true,
+      "later_helper_marker_observed": false,
+      "after_target_observed": false,
+      "synthetic_input_sent": false,
+      "native_exit_code_observed": false,
+      "natural_exit_observed": false,
+      "process_cleanup": "owned process terminated after error dialog capture"
+    }
+  ],
+  "py_run": {
+    "path": "PY_RUN_FINAL.json",
+    "sha256": "f380586e73cd937cc17214daaa5d8cb451635b892f448788f516fc62a3c5f3b6",
+    "returncode": 1,
+    "stdout_sha256": "2760cad9a06a5c67423888951effe7722cd818f4549bbcc8679a5ce46fcccd6f",
+    "stderr_sha256": "1ca349d4f287f7272fdf9c7256b8e54c1e32dc7458e3b79eb00ee13d2b6bd171",
+    "config_sha256": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "native_observation": {
+    "before_marker": true,
+    "first_component_range_error": true,
+    "fault_helper_marker": false,
+    "after_marker": false,
+    "exit_code_observed": false,
+    "natural_exit_observed": false
+  },
+  "py_observation": {
+    "before_marker": true,
+    "first_component_range_error": false,
+    "fault_helper_marker": true,
+    "arithmetic_error_at_line": 13,
+    "after_marker": false,
+    "returncode": 1
+  },
+  "outcome": "different_scoped",
+  "interpretation": "For this input, Native validates the first component before evaluating the later helper; the pinned public pyz evaluates the later helper first. The values and diagnostics after the first failure are not claimed identical.",
+  "matched_conditions": [
+    "same ERB fixture bytes",
+    "same emuera.config SHA-256",
+    "same pinned Native executable/config across two runs",
+    "same pinned public pyz before and after",
+    "no synthetic keyboard input"
+  ],
+  "limitations": [
+    "one negative value at first component only",
+    "does not cover negative/out-of-range values at every component position, third component, arity, all conversions, or all expressions",
+    "Native natural exit and process exit code unobserved",
+    "initial Py run without matched config excluded"
+  ],
+  "product_code_changed": false,
+  "public_artifacts_changed": false
+}

@@ -1,0 +1,175 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "GOTO"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "case_ids": [
+    "REND_GOTO_ZERO_NESTED_NORMAL_20261115",
+    "GOTO_MISSING_LOCAL_LABEL_20261115"
+  ],
+  "accepted_scope": {
+    "target_GOTO": {
+      "status": "finite_observation_complete",
+      "evidence": "goto-missing-local/*: RG_MISSING_PRE, exact SEARCHBOUND01.ERB:7 error, no BAD markers",
+      "result": "Same-named label in @RG_OTHER does not satisfy lookup in @SYSTEM_TITLE. Native load warning then reaches pre and stops at marked-error line; public raises E_FUNCTION at reached line. Diagnostic timing/text/transport differ."
+    },
+    "runtime_identity_GOTO": {
+      "status": "new_original_receipts_complete",
+      "evidence": "normal/*/invocation.json + native probe.json + original verified-public-pyz.json",
+      "historical_identity": "unknown; no backfill"
+    },
+    "registration_form": {
+      "status": "source_bound",
+      "evidence": [
+        "C00874",
+        "C00875",
+        "C00880"
+      ],
+      "result": "Exact GOTO(false,false,false), not procedure JUMP or GOTOFORM."
+    },
+    "signature_parser": {
+      "status": "scoped_source_and_runtime",
+      "evidence": [
+        "C00876",
+        "C00877",
+        "C00878",
+        "C00884"
+      ],
+      "result": "Literal local target through SP_CALL(false,false); native constant local lookup at load and public runtime lookup recorded."
+    },
+    "normal_output_state_control": {
+      "status": "matched",
+      "evidence": "normal RG_GOTO_PRE/HIT, RG_LOOP_HIT twice, suppressed BAD"
+    },
+    "finite_boundary_error": {
+      "status": "requested_error_matched_in_control_outcome",
+      "evidence": "goto-missing-local native emuera.log and public verified.stderr.bin",
+      "remaining": "Diagnostics not identical; malformed/empty target and extra arguments not executed."
+    },
+    "evaluation_and_side_effects": {
+      "status": "matched_scoped",
+      "evidence": "normal B=3 and R=701 S=RG_SENTINEL across jump; missing pre B=41 and later increment suppressed",
+      "remaining": "State after fatal error cannot be read back; only pre-state and suppressed continuation are observed. No dynamic/form expression evaluation axis for this literal target."
+    },
+    "current_original_scope": {
+      "valid_local_label": "matched",
+      "skipped_sentinel": "matched",
+      "parser_supplement": "SP_CALL source retained; no extra syntax cases credited",
+      "remaining": "Full parser invalid-form and other control-context equivalence not claimed."
+    },
+    "current_required_work_mapping": [
+      {
+        "condition": "verify native registration and intended contract",
+        "result": "SOURCE_PINS.json, source/C*.excerpt.txt; original registration bound to runtime pin"
+      },
+      {
+        "condition": "verify linked evidence actually executes this target and preserves conditions",
+        "result": "new reached normal markers and exact input/runtime beforeafter receipts; historical receipts remain unknown"
+      },
+      {
+        "condition": "plan normal, boundary, invalid, and state or side effect cases as applicable",
+        "result": "PREFLIGHT.json and per-axis results above; unexecuted axes explicitly remaining"
+      },
+      {
+        "condition": "compare native executable and PyEmuera with isolated inputs and retain observations",
+        "result": "2 native +1 public per fixture; raw retained; marker match with diagnostic differences below"
+      }
+    ]
+  },
+  "original_remaining": [
+    {
+      "type": "finite_command_obligation",
+      "source": "evidence\\parent-command-evidence-review-20261113\\REVIEW.json",
+      "target": {
+        "kind": "command_or_syntax",
+        "name": "GOTO"
+      },
+      "obligation_ids": [
+        "target_GOTO",
+        "runtime_identity_GOTO"
+      ],
+      "note": "Read exact obligation source and existing own-target observations before execution; no cross-target normal-credit transfer."
+    }
+  ],
+  "proof": {
+    "original_missing_obligations": {
+      "target_GOTO": {
+        "status": "finite_observation_complete",
+        "evidence": "goto-missing-local/*: RG_MISSING_PRE, exact SEARCHBOUND01.ERB:7 error, no BAD markers",
+        "result": "Same-named label in @RG_OTHER does not satisfy lookup in @SYSTEM_TITLE. Native load warning then reaches pre and stops at marked-error line; public raises E_FUNCTION at reached line. Diagnostic timing/text/transport differ."
+      },
+      "runtime_identity_GOTO": {
+        "status": "new_original_receipts_complete",
+        "evidence": "normal/*/invocation.json + native probe.json + original verified-public-pyz.json",
+        "historical_identity": "unknown; no backfill"
+      },
+      "registration_form": {
+        "status": "source_bound",
+        "evidence": [
+          "C00874",
+          "C00875",
+          "C00880"
+        ],
+        "result": "Exact GOTO(false,false,false), not procedure JUMP or GOTOFORM."
+      },
+      "signature_parser": {
+        "status": "scoped_source_and_runtime",
+        "evidence": [
+          "C00876",
+          "C00877",
+          "C00878",
+          "C00884"
+        ],
+        "result": "Literal local target through SP_CALL(false,false); native constant local lookup at load and public runtime lookup recorded."
+      },
+      "normal_output_state_control": {
+        "status": "matched",
+        "evidence": "normal RG_GOTO_PRE/HIT, RG_LOOP_HIT twice, suppressed BAD"
+      },
+      "finite_boundary_error": {
+        "status": "requested_error_matched_in_control_outcome",
+        "evidence": "goto-missing-local native emuera.log and public verified.stderr.bin",
+        "remaining": "Diagnostics not identical; malformed/empty target and extra arguments not executed."
+      },
+      "evaluation_and_side_effects": {
+        "status": "matched_scoped",
+        "evidence": "normal B=3 and R=701 S=RG_SENTINEL across jump; missing pre B=41 and later increment suppressed",
+        "remaining": "State after fatal error cannot be read back; only pre-state and suppressed continuation are observed. No dynamic/form expression evaluation axis for this literal target."
+      },
+      "current_original_scope": {
+        "valid_local_label": "matched",
+        "skipped_sentinel": "matched",
+        "parser_supplement": "SP_CALL source retained; no extra syntax cases credited",
+        "remaining": "Full parser invalid-form and other control-context equivalence not claimed."
+      },
+      "current_required_work_mapping": [
+        {
+          "condition": "verify native registration and intended contract",
+          "result": "SOURCE_PINS.json, source/C*.excerpt.txt; original registration bound to runtime pin"
+        },
+        {
+          "condition": "verify linked evidence actually executes this target and preserves conditions",
+          "result": "new reached normal markers and exact input/runtime beforeafter receipts; historical receipts remain unknown"
+        },
+        {
+          "condition": "plan normal, boundary, invalid, and state or side effect cases as applicable",
+          "result": "PREFLIGHT.json and per-axis results above; unexecuted axes explicitly remaining"
+        },
+        {
+          "condition": "compare native executable and PyEmuera with isolated inputs and retain observations",
+          "result": "2 native +1 public per fixture; raw retained; marker match with diagnostic differences below"
+        }
+      ]
+    },
+    "diagnostic_differences": [
+      "Native nested REPEAT emits load warningLv1; public has no corresponding warning.",
+      "Native missing literal GOTO emits load warningLv2, marks line error and halts when line7 is reached; public reports E_FUNCTION on stderr at line7 without equivalent load warning.",
+      "Native error is in UTF16 emuera.log; public OUTPUTLOG snapshot precedes error, whose bytes are retained in verified.stderr.bin."
+    ]
+  },
+  "product_modified": false,
+  "global_completion": false
+}

@@ -1,0 +1,2160 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0907 · COMPARISON.json</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0907 · COMPARISON.json</h1>
+<p>原票種別=COMPARISON.json; 参照対象=command_or_syntax:PRINTSINGLE。対象=196; rows件数=20。全バイト・JSON構造・全キー/文字列を検査。除去が必要な私的環境ルート・認証値・内部対話を検出せず、技術原票の全バイトをそのまま公開できる。不一致・実機停止・終了未観測・原判定・原票記載のhash/sealを変更せず、過去の試行失敗も観測記録として保持。権利表示同伴を前提とする当該バイト列の審査であり、観測の再実行・製品全体の適合性・外部の引用先ファイルの公開許諾までは認定しない。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>cf12c082a07f6898fdc16f94cf6e92af74dc82aa2dc49f052d3242d0e2b7c96e</code></p>
+<p><a href="../assets/U0907.json">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>cf12c082a07f6898fdc16f94cf6e92af74dc82aa2dc49f052d3242d0e2b7c96e</code></p>
+<p>JSONは表示用に整形しています。 / JSON is formatted for display.</p>
+<pre>{
+  &quot;case&quot;: 196,
+  &quot;observation_count&quot;: 20,
+  &quot;fixture_count&quot;: 1,
+  &quot;native_runs&quot;: 2,
+  &quot;public_runs&quot;: 1,
+  &quot;summary&quot;: {
+    &quot;native_repeat_equal&quot;: 20,
+    &quot;raw_equal&quot;: 15,
+    &quot;layout_equal&quot;: 15,
+    &quot;observable_content_equal&quot;: 20,
+    &quot;state_equal&quot;: 20,
+    &quot;evaluation_equal&quot;: 20
+  },
+  &quot;raw_logs&quot;: {
+    &quot;native-01&quot;: {
+      &quot;path&quot;: &quot;native-01/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b&quot;,
+      &quot;size&quot;: 3252
+    },
+    &quot;native-02&quot;: {
+      &quot;path&quot;: &quot;native-02/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;bbdfcba295b75e9aeb4106422889f6615054e7d8f7198a24ac9ce7855856725b&quot;,
+      &quot;size&quot;: 3252
+    },
+    &quot;public-01&quot;: {
+      &quot;path&quot;: &quot;public-01/.pyemuera/logs/emuera.log&quot;,
+      &quot;sha256&quot;: &quot;21e3b1c81c747a125f5790f25104ede911879ca1e05db1895d8e76539bac639b&quot;,
+      &quot;size&quot;: 3302
+    }
+  },
+  &quot;rows&quot;: [
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_01&quot;,
+        &quot;command&quot;: &quot;PRINTPLAIN&quot;,
+        &quot;argument&quot;: &quot;p{ZZ196H(1)}&quot;,
+        &quot;kind&quot;: &quot;literal&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;2785ccd14503ea5dae269491b5a2d1d93fac8217b7f7bb58645ddd9047031721&quot;,
+          &quot;raw_block&quot;: &quot;C196_01_BEGIN\r\nP&gt;p{ZZ196H(1)}&lt;T\r\nC196_01_STATE A=0 B=0 R=701 S=sentinel\r\nC196_01_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;p{ZZ196H(1)}&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;p{ZZ196H(1)}&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;p{ZZ196H(1)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;2785ccd14503ea5dae269491b5a2d1d93fac8217b7f7bb58645ddd9047031721&quot;,
+          &quot;raw_block&quot;: &quot;C196_01_BEGIN\r\nP&gt;p{ZZ196H(1)}&lt;T\r\nC196_01_STATE A=0 B=0 R=701 S=sentinel\r\nC196_01_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;p{ZZ196H(1)}&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;p{ZZ196H(1)}&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;p{ZZ196H(1)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;2785ccd14503ea5dae269491b5a2d1d93fac8217b7f7bb58645ddd9047031721&quot;,
+          &quot;raw_block&quot;: &quot;C196_01_BEGIN\r\nP&gt;p{ZZ196H(1)}&lt;T\r\nC196_01_STATE A=0 B=0 R=701 S=sentinel\r\nC196_01_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;p{ZZ196H(1)}&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;p{ZZ196H(1)}&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;p{ZZ196H(1)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_02&quot;,
+        &quot;command&quot;: &quot;PRINTPLAINFORM&quot;,
+        &quot;argument&quot;: &quot;f{ZZ196H(1)}/{ZZ196H(2)}&quot;,
+        &quot;kind&quot;: &quot;form&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;06083815bef88e1ef910edd3c47a535d31ddf99488a8f2eaa90ffa342a9d9d08&quot;,
+          &quot;raw_block&quot;: &quot;C196_02_BEGIN\r\nP&gt;f1/2&lt;T\r\nC196_02_STATE A=2 B=12 R=701 S=sentinel\r\nC196_02_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;f1/2&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;f1/2&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;f1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;06083815bef88e1ef910edd3c47a535d31ddf99488a8f2eaa90ffa342a9d9d08&quot;,
+          &quot;raw_block&quot;: &quot;C196_02_BEGIN\r\nP&gt;f1/2&lt;T\r\nC196_02_STATE A=2 B=12 R=701 S=sentinel\r\nC196_02_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;f1/2&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;f1/2&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;f1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;06083815bef88e1ef910edd3c47a535d31ddf99488a8f2eaa90ffa342a9d9d08&quot;,
+          &quot;raw_block&quot;: &quot;C196_02_BEGIN\r\nP&gt;f1/2&lt;T\r\nC196_02_STATE A=2 B=12 R=701 S=sentinel\r\nC196_02_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;f1/2&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;f1/2&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;f1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_03&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLE&quot;,
+        &quot;argument&quot;: &quot;s{ZZ196H(1)}&quot;,
+        &quot;kind&quot;: &quot;literal&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;06759631f4d02940ce92b8ffec0ca4e898e3fd45bfb0b2cb66bec63af9e58ac2&quot;,
+          &quot;raw_block&quot;: &quot;C196_03_BEGIN\r\nP&gt;\r\ns{ZZ196H(1)}\r\n&lt;T\r\nC196_03_STATE A=0 B=0 R=701 S=sentinel\r\nC196_03_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns{ZZ196H(1)}\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s{ZZ196H(1)}&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s{ZZ196H(1)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;06759631f4d02940ce92b8ffec0ca4e898e3fd45bfb0b2cb66bec63af9e58ac2&quot;,
+          &quot;raw_block&quot;: &quot;C196_03_BEGIN\r\nP&gt;\r\ns{ZZ196H(1)}\r\n&lt;T\r\nC196_03_STATE A=0 B=0 R=701 S=sentinel\r\nC196_03_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns{ZZ196H(1)}\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s{ZZ196H(1)}&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s{ZZ196H(1)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;06759631f4d02940ce92b8ffec0ca4e898e3fd45bfb0b2cb66bec63af9e58ac2&quot;,
+          &quot;raw_block&quot;: &quot;C196_03_BEGIN\r\nP&gt;\r\ns{ZZ196H(1)}\r\n&lt;T\r\nC196_03_STATE A=0 B=0 R=701 S=sentinel\r\nC196_03_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns{ZZ196H(1)}\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s{ZZ196H(1)}&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s{ZZ196H(1)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_04&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEV&quot;,
+        &quot;argument&quot;: &quot;ZZ196H(1),\&quot;/\&quot;,ZZ196H(2)&quot;,
+        &quot;kind&quot;: &quot;expressions&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;8ed515b5fb4d9708c879f93e225f26bfffe6c1bc594e4b3e7da6404e8d8b5427&quot;,
+          &quot;raw_block&quot;: &quot;C196_04_BEGIN\r\nP&gt;\r\n1/2\r\n&lt;T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n1/2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;1/2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;8ed515b5fb4d9708c879f93e225f26bfffe6c1bc594e4b3e7da6404e8d8b5427&quot;,
+          &quot;raw_block&quot;: &quot;C196_04_BEGIN\r\nP&gt;\r\n1/2\r\n&lt;T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n1/2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;1/2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;8ed515b5fb4d9708c879f93e225f26bfffe6c1bc594e4b3e7da6404e8d8b5427&quot;,
+          &quot;raw_block&quot;: &quot;C196_04_BEGIN\r\nP&gt;\r\n1/2\r\n&lt;T\r\nC196_04_STATE A=2 B=12 R=701 S=sentinel\r\nC196_04_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n1/2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;1/2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_05&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLES&quot;,
+        &quot;argument&quot;: &quot;ZZ196T(1)&quot;,
+        &quot;kind&quot;: &quot;string-expression&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;0a440809bb82c9b026264d5324f4b39585ecbe4a33538bc5e91224f2f88b1fcd&quot;,
+          &quot;raw_block&quot;: &quot;C196_05_BEGIN\r\nP&gt;\r\ns{ZZ196H(2)}\r\n&lt;T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns{ZZ196H(2)}\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s{ZZ196H(2)}&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s{ZZ196H(2)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 1,
+            &quot;B&quot;: 1,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 1,
+            &quot;helper_order_B&quot;: 1
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;0a440809bb82c9b026264d5324f4b39585ecbe4a33538bc5e91224f2f88b1fcd&quot;,
+          &quot;raw_block&quot;: &quot;C196_05_BEGIN\r\nP&gt;\r\ns{ZZ196H(2)}\r\n&lt;T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns{ZZ196H(2)}\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s{ZZ196H(2)}&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s{ZZ196H(2)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 1,
+            &quot;B&quot;: 1,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 1,
+            &quot;helper_order_B&quot;: 1
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;0a440809bb82c9b026264d5324f4b39585ecbe4a33538bc5e91224f2f88b1fcd&quot;,
+          &quot;raw_block&quot;: &quot;C196_05_BEGIN\r\nP&gt;\r\ns{ZZ196H(2)}\r\n&lt;T\r\nC196_05_STATE A=1 B=1 R=701 S=sentinel\r\nC196_05_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns{ZZ196H(2)}\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s{ZZ196H(2)}&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s{ZZ196H(2)}&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 1,
+            &quot;B&quot;: 1,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 1,
+            &quot;helper_order_B&quot;: 1
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_06&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEFORM&quot;,
+        &quot;argument&quot;: &quot;f{ZZ196H(1)}/{ZZ196H(2)}&quot;,
+        &quot;kind&quot;: &quot;form&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;41b57b55ee8aae2bdea5554333133a189c45f314a76ef0b512c658b82c0bdab4&quot;,
+          &quot;raw_block&quot;: &quot;C196_06_BEGIN\r\nP&gt;\r\nf1/2\r\n&lt;T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\nf1/2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;f1/2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;f1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;41b57b55ee8aae2bdea5554333133a189c45f314a76ef0b512c658b82c0bdab4&quot;,
+          &quot;raw_block&quot;: &quot;C196_06_BEGIN\r\nP&gt;\r\nf1/2\r\n&lt;T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\nf1/2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;f1/2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;f1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;41b57b55ee8aae2bdea5554333133a189c45f314a76ef0b512c658b82c0bdab4&quot;,
+          &quot;raw_block&quot;: &quot;C196_06_BEGIN\r\nP&gt;\r\nf1/2\r\n&lt;T\r\nC196_06_STATE A=2 B=12 R=701 S=sentinel\r\nC196_06_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\nf1/2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;f1/2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;f1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_07&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEFORMS&quot;,
+        &quot;argument&quot;: &quot;ZZ196T(1)&quot;,
+        &quot;kind&quot;: &quot;runtime-form&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;32d4a7f73eb65e14bf9c29b2302812f731d67edfb4fdcffb4b9a6376b0d69d62&quot;,
+          &quot;raw_block&quot;: &quot;C196_07_BEGIN\r\nP&gt;\r\ns2\r\n&lt;T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;32d4a7f73eb65e14bf9c29b2302812f731d67edfb4fdcffb4b9a6376b0d69d62&quot;,
+          &quot;raw_block&quot;: &quot;C196_07_BEGIN\r\nP&gt;\r\ns2\r\n&lt;T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;32d4a7f73eb65e14bf9c29b2302812f731d67edfb4fdcffb4b9a6376b0d69d62&quot;,
+          &quot;raw_block&quot;: &quot;C196_07_BEGIN\r\nP&gt;\r\ns2\r\n&lt;T\r\nC196_07_STATE A=2 B=12 R=701 S=sentinel\r\nC196_07_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\ns2\r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot;s2&quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;s2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_08&quot;,
+        &quot;command&quot;: &quot;PRINTLC&quot;,
+        &quot;argument&quot;: &quot;lc&quot;,
+        &quot;kind&quot;: &quot;literal&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;704fc74f6b6cdf2ecbb1a7cae24d61ec5d3d7ac8f1c1564e2cb42a324dfa9123&quot;,
+          &quot;raw_block&quot;: &quot;C196_08_BEGIN\r\nP&gt;lc                        &lt;T\r\nC196_08_STATE A=0 B=0 R=701 S=sentinel\r\nC196_08_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;lc                        &lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;lc                        &lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;lc&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;704fc74f6b6cdf2ecbb1a7cae24d61ec5d3d7ac8f1c1564e2cb42a324dfa9123&quot;,
+          &quot;raw_block&quot;: &quot;C196_08_BEGIN\r\nP&gt;lc                        &lt;T\r\nC196_08_STATE A=0 B=0 R=701 S=sentinel\r\nC196_08_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;lc                        &lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;lc                        &lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;lc&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;704fc74f6b6cdf2ecbb1a7cae24d61ec5d3d7ac8f1c1564e2cb42a324dfa9123&quot;,
+          &quot;raw_block&quot;: &quot;C196_08_BEGIN\r\nP&gt;lc                        &lt;T\r\nC196_08_STATE A=0 B=0 R=701 S=sentinel\r\nC196_08_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;lc                        &lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;lc                        &lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;lc&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_09&quot;,
+        &quot;command&quot;: &quot;PRINTFORMLC&quot;,
+        &quot;argument&quot;: &quot;c{ZZ196H(1)}/{ZZ196H(2)}&quot;,
+        &quot;kind&quot;: &quot;form&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;071735931ebcf595d0e1ab006095ca538056d45380da266f133f44e3e3d9a0ae&quot;,
+          &quot;raw_block&quot;: &quot;C196_09_BEGIN\r\nP&gt;c1/2                      &lt;T\r\nC196_09_STATE A=2 B=12 R=701 S=sentinel\r\nC196_09_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;c1/2                      &lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;c1/2                      &lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;c1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;071735931ebcf595d0e1ab006095ca538056d45380da266f133f44e3e3d9a0ae&quot;,
+          &quot;raw_block&quot;: &quot;C196_09_BEGIN\r\nP&gt;c1/2                      &lt;T\r\nC196_09_STATE A=2 B=12 R=701 S=sentinel\r\nC196_09_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;c1/2                      &lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;c1/2                      &lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;c1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;071735931ebcf595d0e1ab006095ca538056d45380da266f133f44e3e3d9a0ae&quot;,
+          &quot;raw_block&quot;: &quot;C196_09_BEGIN\r\nP&gt;c1/2                      &lt;T\r\nC196_09_STATE A=2 B=12 R=701 S=sentinel\r\nC196_09_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;c1/2                      &lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;c1/2                      &lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;c1/2&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 2,
+            &quot;B&quot;: 12,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 2,
+            &quot;helper_order_B&quot;: 12
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_10&quot;,
+        &quot;command&quot;: &quot;PRINTPLAIN&quot;,
+        &quot;argument&quot;: &quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;1d1f7ba66ba3f21b4815245a4ad2634586dac114eb9162aee377c946fc42205d&quot;,
+          &quot;raw_block&quot;: &quot;C196_10_BEGIN\r\nP&gt;&lt;T\r\nC196_10_STATE A=0 B=0 R=701 S=sentinel\r\nC196_10_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;1d1f7ba66ba3f21b4815245a4ad2634586dac114eb9162aee377c946fc42205d&quot;,
+          &quot;raw_block&quot;: &quot;C196_10_BEGIN\r\nP&gt;&lt;T\r\nC196_10_STATE A=0 B=0 R=701 S=sentinel\r\nC196_10_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;1d1f7ba66ba3f21b4815245a4ad2634586dac114eb9162aee377c946fc42205d&quot;,
+          &quot;raw_block&quot;: &quot;C196_10_BEGIN\r\nP&gt;&lt;T\r\nC196_10_STATE A=0 B=0 R=701 S=sentinel\r\nC196_10_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_11&quot;,
+        &quot;command&quot;: &quot;PRINTPLAINFORM&quot;,
+        &quot;argument&quot;: &quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;65e07db81ffff6f0d7d8358f51854d514bb854879ce696beb46be2e3651e5063&quot;,
+          &quot;raw_block&quot;: &quot;C196_11_BEGIN\r\nP&gt;&lt;T\r\nC196_11_STATE A=0 B=0 R=701 S=sentinel\r\nC196_11_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;65e07db81ffff6f0d7d8358f51854d514bb854879ce696beb46be2e3651e5063&quot;,
+          &quot;raw_block&quot;: &quot;C196_11_BEGIN\r\nP&gt;&lt;T\r\nC196_11_STATE A=0 B=0 R=701 S=sentinel\r\nC196_11_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;65e07db81ffff6f0d7d8358f51854d514bb854879ce696beb46be2e3651e5063&quot;,
+          &quot;raw_block&quot;: &quot;C196_11_BEGIN\r\nP&gt;&lt;T\r\nC196_11_STATE A=0 B=0 R=701 S=sentinel\r\nC196_11_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_12&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLE&quot;,
+        &quot;argument&quot;: &quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;752da6c099dfde697e4e66447eb8238012eb25fc8f03fa72f3e0a75b463de461&quot;,
+          &quot;raw_block&quot;: &quot;C196_12_BEGIN\r\nP&gt;&lt;T\r\nC196_12_STATE A=0 B=0 R=701 S=sentinel\r\nC196_12_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;752da6c099dfde697e4e66447eb8238012eb25fc8f03fa72f3e0a75b463de461&quot;,
+          &quot;raw_block&quot;: &quot;C196_12_BEGIN\r\nP&gt;&lt;T\r\nC196_12_STATE A=0 B=0 R=701 S=sentinel\r\nC196_12_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;a0422e22810695dd47740876b7ff426d9b45234483288e4c5b944111177872f4&quot;,
+          &quot;raw_block&quot;: &quot;C196_12_BEGIN\r\nP&gt;\r\n \r\n&lt;T\r\nC196_12_STATE A=0 B=0 R=701 S=sentinel\r\nC196_12_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n \r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot; &quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 1
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: false,
+        &quot;layout_equal&quot;: false,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_13&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEV&quot;,
+        &quot;argument&quot;: &quot;\&quot;\&quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;6a34dc7fbc2b91e750bc65d97e649a93c36555dd486d186ce4ee74616ef097ce&quot;,
+          &quot;raw_block&quot;: &quot;C196_13_BEGIN\r\nP&gt;&lt;T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;6a34dc7fbc2b91e750bc65d97e649a93c36555dd486d186ce4ee74616ef097ce&quot;,
+          &quot;raw_block&quot;: &quot;C196_13_BEGIN\r\nP&gt;&lt;T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;ff252446bc138eb693d00a660d2c1a9f83ddef485c9d823550782e90b750c726&quot;,
+          &quot;raw_block&quot;: &quot;C196_13_BEGIN\r\nP&gt;\r\n \r\n&lt;T\r\nC196_13_STATE A=0 B=0 R=701 S=sentinel\r\nC196_13_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n \r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot; &quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 1
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: false,
+        &quot;layout_equal&quot;: false,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_14&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLES&quot;,
+        &quot;argument&quot;: &quot;\&quot;\&quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;f1d75bc43f27764caac912860dca59d6090ee8ee8fa4550bbb7797dbcc67c943&quot;,
+          &quot;raw_block&quot;: &quot;C196_14_BEGIN\r\nP&gt;&lt;T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;f1d75bc43f27764caac912860dca59d6090ee8ee8fa4550bbb7797dbcc67c943&quot;,
+          &quot;raw_block&quot;: &quot;C196_14_BEGIN\r\nP&gt;&lt;T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;9d7777b4146b5e0588f28974f71124811afa13b6f359d62c151a5eb3b872deee&quot;,
+          &quot;raw_block&quot;: &quot;C196_14_BEGIN\r\nP&gt;\r\n \r\n&lt;T\r\nC196_14_STATE A=0 B=0 R=701 S=sentinel\r\nC196_14_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n \r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot; &quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 1
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: false,
+        &quot;layout_equal&quot;: false,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_15&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEFORM&quot;,
+        &quot;argument&quot;: &quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;a271666269a96f09f28c92ecb40bc1444e087ea8d8a67630aa7d06435f3a0de2&quot;,
+          &quot;raw_block&quot;: &quot;C196_15_BEGIN\r\nP&gt;&lt;T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;a271666269a96f09f28c92ecb40bc1444e087ea8d8a67630aa7d06435f3a0de2&quot;,
+          &quot;raw_block&quot;: &quot;C196_15_BEGIN\r\nP&gt;&lt;T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;f3dd207724775501801cbef3f3a3348b5e747acbbed8e6f8621d8f2f6f28d480&quot;,
+          &quot;raw_block&quot;: &quot;C196_15_BEGIN\r\nP&gt;\r\n \r\n&lt;T\r\nC196_15_STATE A=0 B=0 R=701 S=sentinel\r\nC196_15_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n \r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot; &quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 1
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: false,
+        &quot;layout_equal&quot;: false,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_16&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEFORMS&quot;,
+        &quot;argument&quot;: &quot;\&quot;\&quot;&quot;,
+        &quot;kind&quot;: &quot;empty&quot;,
+        &quot;skipdisp&quot;: false,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;4f935d93f8a2eae761981f66daa9d33d770beb3c6486793a35c78b1daf3b1a31&quot;,
+          &quot;raw_block&quot;: &quot;C196_16_BEGIN\r\nP&gt;&lt;T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;4f935d93f8a2eae761981f66daa9d33d770beb3c6486793a35c78b1daf3b1a31&quot;,
+          &quot;raw_block&quot;: &quot;C196_16_BEGIN\r\nP&gt;&lt;T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 0
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;929137e4d082615f03fff0edd17489a7fc6710789dca15d471fb5e66814d39d6&quot;,
+          &quot;raw_block&quot;: &quot;C196_16_BEGIN\r\nP&gt;\r\n \r\n&lt;T\r\nC196_16_STATE A=0 B=0 R=701 S=sentinel\r\nC196_16_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;\r\n \r\n&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&quot;,
+            &quot; &quot;,
+            &quot;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;intended_argument&quot;: &quot;&quot;,
+            &quot;nonwhitespace_content&quot;: &quot;&quot;,
+            &quot;structural_ascii_spaces&quot;: 1
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 701,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: false,
+        &quot;layout_equal&quot;: false,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;EMPTY_SINGLE_SERIALIZED_LIFECYCLE_DIFFERENCE&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_17&quot;,
+        &quot;command&quot;: &quot;PRINTPLAINFORM&quot;,
+        &quot;argument&quot;: &quot;f{ZZ196H(1)}&quot;,
+        &quot;kind&quot;: &quot;helper-suppression&quot;,
+        &quot;skipdisp&quot;: true,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;b0c6a94a3b67f75834a968a11641c1173cce4d113f6efb1d02c9533617bd8da9&quot;,
+          &quot;raw_block&quot;: &quot;C196_17_BEGIN\r\nP&gt;&lt;T\r\nC196_17_STATE A=0 B=0 R=0 S=sentinel\r\nC196_17_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;b0c6a94a3b67f75834a968a11641c1173cce4d113f6efb1d02c9533617bd8da9&quot;,
+          &quot;raw_block&quot;: &quot;C196_17_BEGIN\r\nP&gt;&lt;T\r\nC196_17_STATE A=0 B=0 R=0 S=sentinel\r\nC196_17_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;b0c6a94a3b67f75834a968a11641c1173cce4d113f6efb1d02c9533617bd8da9&quot;,
+          &quot;raw_block&quot;: &quot;C196_17_BEGIN\r\nP&gt;&lt;T\r\nC196_17_STATE A=0 B=0 R=0 S=sentinel\r\nC196_17_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_18&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEV&quot;,
+        &quot;argument&quot;: &quot;ZZ196H(1),ZZ196H(2)&quot;,
+        &quot;kind&quot;: &quot;helper-suppression&quot;,
+        &quot;skipdisp&quot;: true,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;0b1087b854566ab502664d65fb22cbedf96df7ab0bc11d72abd9b33b7c83030d&quot;,
+          &quot;raw_block&quot;: &quot;C196_18_BEGIN\r\nP&gt;&lt;T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;0b1087b854566ab502664d65fb22cbedf96df7ab0bc11d72abd9b33b7c83030d&quot;,
+          &quot;raw_block&quot;: &quot;C196_18_BEGIN\r\nP&gt;&lt;T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;0b1087b854566ab502664d65fb22cbedf96df7ab0bc11d72abd9b33b7c83030d&quot;,
+          &quot;raw_block&quot;: &quot;C196_18_BEGIN\r\nP&gt;&lt;T\r\nC196_18_STATE A=0 B=0 R=0 S=sentinel\r\nC196_18_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_19&quot;,
+        &quot;command&quot;: &quot;PRINTSINGLEFORMS&quot;,
+        &quot;argument&quot;: &quot;ZZ196T(1)&quot;,
+        &quot;kind&quot;: &quot;helper-suppression&quot;,
+        &quot;skipdisp&quot;: true,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;759e9c253023ea82201e5a30a0da87f465431a166cc26643452a61fe5fabda93&quot;,
+          &quot;raw_block&quot;: &quot;C196_19_BEGIN\r\nP&gt;&lt;T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;759e9c253023ea82201e5a30a0da87f465431a166cc26643452a61fe5fabda93&quot;,
+          &quot;raw_block&quot;: &quot;C196_19_BEGIN\r\nP&gt;&lt;T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;759e9c253023ea82201e5a30a0da87f465431a166cc26643452a61fe5fabda93&quot;,
+          &quot;raw_block&quot;: &quot;C196_19_BEGIN\r\nP&gt;&lt;T\r\nC196_19_STATE A=0 B=0 R=0 S=sentinel\r\nC196_19_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    },
+    {
+      &quot;condition&quot;: {
+        &quot;id&quot;: &quot;C196_20&quot;,
+        &quot;command&quot;: &quot;PRINTFORMLC&quot;,
+        &quot;argument&quot;: &quot;c{ZZ196H(1)}&quot;,
+        &quot;kind&quot;: &quot;helper-suppression&quot;,
+        &quot;skipdisp&quot;: true,
+        &quot;pending_prefix&quot;: &quot;P&gt;&quot;,
+        &quot;following_printl&quot;: &quot;&lt;T&quot;,
+        &quot;initial_state&quot;: {
+          &quot;A&quot;: 0,
+          &quot;B&quot;: 0,
+          &quot;RESULT&quot;: 701,
+          &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+        },
+        &quot;state_axes&quot;: [
+          &quot;A&quot;,
+          &quot;B&quot;,
+          &quot;RESULT&quot;,
+          &quot;RESULTS:0&quot;
+        ]
+      },
+      &quot;observed&quot;: {
+        &quot;native-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;bd506d5677617ccdf1d8a5073453aa7b765c79f4303629b8ce00bc615ff4df4c&quot;,
+          &quot;raw_block&quot;: &quot;C196_20_BEGIN\r\nP&gt;&lt;T\r\nC196_20_STATE A=0 B=0 R=0 S=sentinel\r\nC196_20_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;native-02&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;bd506d5677617ccdf1d8a5073453aa7b765c79f4303629b8ce00bc615ff4df4c&quot;,
+          &quot;raw_block&quot;: &quot;C196_20_BEGIN\r\nP&gt;&lt;T\r\nC196_20_STATE A=0 B=0 R=0 S=sentinel\r\nC196_20_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        },
+        &quot;public-01&quot;: {
+          &quot;raw_block_sha256_utf16le&quot;: &quot;bd506d5677617ccdf1d8a5073453aa7b765c79f4303629b8ce00bc615ff4df4c&quot;,
+          &quot;raw_block&quot;: &quot;C196_20_BEGIN\r\nP&gt;&lt;T\r\nC196_20_STATE A=0 B=0 R=0 S=sentinel\r\nC196_20_END\r\n&quot;,
+          &quot;layout_body&quot;: &quot;P&gt;&lt;T\r\n&quot;,
+          &quot;layout_rows&quot;: [
+            &quot;P&gt;&lt;T&quot;
+          ],
+          &quot;content_value&quot;: {
+            &quot;internal_argument_value&quot;: &quot;UNOBSERVED&quot;,
+            &quot;observable_target_text&quot;: &quot;&quot;
+          },
+          &quot;state&quot;: {
+            &quot;A&quot;: 0,
+            &quot;B&quot;: 0,
+            &quot;RESULT&quot;: 0,
+            &quot;RESULTS:0&quot;: &quot;sentinel&quot;
+          },
+          &quot;evaluation&quot;: {
+            &quot;helper_count_A&quot;: 0,
+            &quot;helper_order_B&quot;: 0
+          }
+        }
+      },
+      &quot;comparison&quot;: {
+        &quot;native_repeat_equal&quot;: true,
+        &quot;raw_equal&quot;: true,
+        &quot;layout_equal&quot;: true,
+        &quot;observable_content_equal&quot;: true,
+        &quot;internal_value_equal&quot;: &quot;UNOBSERVED&quot;,
+        &quot;state_equal&quot;: true,
+        &quot;evaluation_equal&quot;: true
+      },
+      &quot;classification&quot;: &quot;MATCH_OBSERVED_AXES&quot;
+    }
+  ],
+  &quot;limits&quot;: [
+    &quot;Value axis captures observable content, not internal argument values; empty SINGLE structural spaces remain in raw/layout.&quot;,
+    &quot;RESULT=0 in SKIP conditions includes SKIPDISP 0 side effect.&quot;,
+    &quot;No screenshots, normal desktop input, waits, keys, glyph or paint validation.&quot;,
+    &quot;Native alive at 5s then owned-process cleanup, not natural exit.&quot;
+  ]
+}</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0836 · command_or_syntax:PRINTSINGLE · check</li>
+<li>L0840 · command_or_syntax:PRINTSINGLE · check</li>
+</ul></html>

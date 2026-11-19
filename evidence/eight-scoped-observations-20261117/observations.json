@@ -1,0 +1,1123 @@
+{
+  "schema": "eight-case-independent-observations.v1",
+  "scope": "selected projection from saved records; raw source files are not included; this projection alone is insufficient for independent reproduction; no new executions",
+  "source_register_sha256": "8d3a3dd1b3e87403df8e518461fbe12439bd1810195c29d4eb2747fd9e8efb94",
+  "sources": {
+    "candidate_case_register": {
+      "sha256": "8d3a3dd1b3e87403df8e518461fbe12439bd1810195c29d4eb2747fd9e8efb94",
+      "size": 7869477,
+      "kind": "register"
+    },
+    "printdw_comparison": {
+      "sha256": "af36f4dfa2793cf6b41d091385075ea3e45480550a39247bd8e3d2132b68aa30",
+      "size": 5491,
+      "kind": "comparison"
+    },
+    "printdw_native-final-empty-01_log": {
+      "sha256": "4ed2a20fde3af3faf9dbeb076fb7253c82a2eb17f7a6f277dcb6b64a0ca7322e",
+      "size": 152,
+      "kind": "raw_log"
+    },
+    "printdw_native-final-empty-01_receipt": {
+      "sha256": "742edf98885e3ede5a2196788f0a93eaee712ee066a5621ea59cdb9f7a1d9091",
+      "size": 4257,
+      "kind": "receipt"
+    },
+    "printdw_native-final-empty-02_log": {
+      "sha256": "4ed2a20fde3af3faf9dbeb076fb7253c82a2eb17f7a6f277dcb6b64a0ca7322e",
+      "size": 152,
+      "kind": "raw_log"
+    },
+    "printdw_native-final-empty-02_receipt": {
+      "sha256": "6e1d08494faaa53a978964bf6ba0fe3ea7cf11245ead62f3b0434a886bd11e7d",
+      "size": 4257,
+      "kind": "receipt"
+    },
+    "printdw_public-empty01-01_log": {
+      "sha256": "4ed2a20fde3af3faf9dbeb076fb7253c82a2eb17f7a6f277dcb6b64a0ca7322e",
+      "size": 152,
+      "kind": "raw_log"
+    },
+    "printdw_public-empty01-01_receipt": {
+      "sha256": "5363652ff817ac890f314d6218fca02ec6ea2b7fc073046156287c748b5ed62b",
+      "size": 1716,
+      "kind": "receipt"
+    },
+    "printdw_public-empty01-01_fixture": {
+      "sha256": "cb6d1875de52fb2a365fedac352f4a7b67417ea13aeb84814e7abc6eb0d0b4cd",
+      "size": 90,
+      "kind": "fixture"
+    },
+    "printdw_public-empty01-02_log": {
+      "sha256": "4ed2a20fde3af3faf9dbeb076fb7253c82a2eb17f7a6f277dcb6b64a0ca7322e",
+      "size": 152,
+      "kind": "raw_log"
+    },
+    "printdw_public-empty01-02_receipt": {
+      "sha256": "fd95eb04539e3d7ecab675e5df5ffb8ac9b274804af6bc07b35e50a0226cbdf0",
+      "size": 1716,
+      "kind": "receipt"
+    },
+    "printdw_public-empty01-02_fixture": {
+      "sha256": "cb6d1875de52fb2a365fedac352f4a7b67417ea13aeb84814e7abc6eb0d0b4cd",
+      "size": 90,
+      "kind": "fixture"
+    },
+    "printdw_native-final-space-01_log": {
+      "sha256": "7ce114dcb165acb81bdd9f4b43286965ea5c36c7bf2a8c86021148fcb8f1d8bc",
+      "size": 158,
+      "kind": "raw_log"
+    },
+    "printdw_native-final-space-01_receipt": {
+      "sha256": "6bfd59c001abb91b8f4027460c405b7fc368ed072a1aeb4c4eb2361d383832e1",
+      "size": 4253,
+      "kind": "receipt"
+    },
+    "printdw_native-final-space-02_log": {
+      "sha256": "7ce114dcb165acb81bdd9f4b43286965ea5c36c7bf2a8c86021148fcb8f1d8bc",
+      "size": 158,
+      "kind": "raw_log"
+    },
+    "printdw_native-final-space-02_receipt": {
+      "sha256": "9b2b33c819f05a14135ee62587358c591d276b5a5012b5ecbf9fa5603846f90e",
+      "size": 4253,
+      "kind": "receipt"
+    },
+    "printdw_public-space01-01_log": {
+      "sha256": "7ce114dcb165acb81bdd9f4b43286965ea5c36c7bf2a8c86021148fcb8f1d8bc",
+      "size": 158,
+      "kind": "raw_log"
+    },
+    "printdw_public-space01-01_receipt": {
+      "sha256": "5611db322898f1a1163420fb9e0dee17baa7c8bb6b3ba0e8eab399b7cf157fe1",
+      "size": 1716,
+      "kind": "receipt"
+    },
+    "printdw_public-space01-01_fixture": {
+      "sha256": "fd0eb68d6f79f31ff258b209de234e5b41dd2a72d527d078a48ee0b43c1a2730",
+      "size": 95,
+      "kind": "fixture"
+    },
+    "printdw_public-space01-02_log": {
+      "sha256": "7ce114dcb165acb81bdd9f4b43286965ea5c36c7bf2a8c86021148fcb8f1d8bc",
+      "size": 158,
+      "kind": "raw_log"
+    },
+    "printdw_public-space01-02_receipt": {
+      "sha256": "2d14a53dbf162429f3b4acb20b8d0374fe055918bfc1a36a8c28abe7f3149e07",
+      "size": 1716,
+      "kind": "receipt"
+    },
+    "printdw_public-space01-02_fixture": {
+      "sha256": "fd0eb68d6f79f31ff258b209de234e5b41dd2a72d527d078a48ee0b43c1a2730",
+      "size": 95,
+      "kind": "fixture"
+    },
+    "array_report_json": {
+      "sha256": "71ec57a61c04c2e421c575e081b6cec4ba0caef524647ff5a0b38e1a5475c4de",
+      "size": 44295,
+      "kind": "comparison"
+    },
+    "array_conditions": {
+      "sha256": "95ee81a26d57d25c8de2c2e3bc47957716ca0d5b55494a02e374868f87ad82f0",
+      "size": 2402,
+      "kind": "input_conditions"
+    },
+    "array_native-01_log": {
+      "sha256": "f14b1cc964cd8f07af6a31314d2c192d15c9e9d14e0cb2ec36db5e66a208d863",
+      "size": 5254,
+      "kind": "raw_log"
+    },
+    "array_native-01_fixture": {
+      "sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe",
+      "size": 4643,
+      "kind": "fixture"
+    },
+    "array_native-02_log": {
+      "sha256": "f14b1cc964cd8f07af6a31314d2c192d15c9e9d14e0cb2ec36db5e66a208d863",
+      "size": 5254,
+      "kind": "raw_log"
+    },
+    "array_native-02_fixture": {
+      "sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe",
+      "size": 4643,
+      "kind": "fixture"
+    },
+    "array_public-01_log": {
+      "sha256": "60b3a2b00d9a3f340af0ceb17897144e09cfb9143b4187b768fd8ba4c1f02845",
+      "size": 5194,
+      "kind": "raw_log"
+    },
+    "array_public-01_fixture": {
+      "sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe",
+      "size": 4643,
+      "kind": "fixture"
+    },
+    "level_comparison": {
+      "sha256": "d907a6db312f63ca9628a06027bbc1a57e834d094e767023f5b2ce062c6350c6",
+      "size": 45100,
+      "kind": "comparison"
+    },
+    "level_GETPALAMLV_NEGATIVE_native-01_log": {
+      "sha256": "8395b33a1d90e6306d35696ae3c0a8ab782d52f32f9cd19996dee75b022bd79c",
+      "size": 724,
+      "kind": "raw_log"
+    },
+    "level_GETPALAMLV_NEGATIVE_native-01_fixture": {
+      "sha256": "6ab4795cf366d49bb5ac7d3f7d43654b620cb21abc308f9ef0fdbbe5ae910a96",
+      "size": 747,
+      "kind": "fixture"
+    },
+    "level_GETPALAMLV_NEGATIVE_native-02_log": {
+      "sha256": "8395b33a1d90e6306d35696ae3c0a8ab782d52f32f9cd19996dee75b022bd79c",
+      "size": 724,
+      "kind": "raw_log"
+    },
+    "level_GETPALAMLV_NEGATIVE_native-02_fixture": {
+      "sha256": "6ab4795cf366d49bb5ac7d3f7d43654b620cb21abc308f9ef0fdbbe5ae910a96",
+      "size": 747,
+      "kind": "fixture"
+    },
+    "level_GETPALAMLV_NEGATIVE_public-01_log": {
+      "sha256": "5528abb86c2a7609a9f187b685f5aa59131e16b68e5698e32a7f77c11d11d763",
+      "size": 722,
+      "kind": "raw_log"
+    },
+    "level_GETPALAMLV_NEGATIVE_public-01_fixture": {
+      "sha256": "6ab4795cf366d49bb5ac7d3f7d43654b620cb21abc308f9ef0fdbbe5ae910a96",
+      "size": 747,
+      "kind": "fixture"
+    },
+    "level_GETPALAMLV_SIZEPLUS1_native-01_log": {
+      "sha256": "e899399359962c4c79b060311aaff36010e10af7a6d5f6f1fa36635532837d2d",
+      "size": 1530,
+      "kind": "raw_log"
+    },
+    "level_GETPALAMLV_SIZEPLUS1_native-01_fixture": {
+      "sha256": "187d04ea670ac971698eae3d961d61655d9db25833b2b365f348c454f2ca6fe1",
+      "size": 785,
+      "kind": "fixture"
+    },
+    "level_GETPALAMLV_SIZEPLUS1_native-02_log": {
+      "sha256": "e899399359962c4c79b060311aaff36010e10af7a6d5f6f1fa36635532837d2d",
+      "size": 1530,
+      "kind": "raw_log"
+    },
+    "level_GETPALAMLV_SIZEPLUS1_native-02_fixture": {
+      "sha256": "187d04ea670ac971698eae3d961d61655d9db25833b2b365f348c454f2ca6fe1",
+      "size": 785,
+      "kind": "fixture"
+    },
+    "level_GETPALAMLV_SIZEPLUS1_public-01_log": {
+      "sha256": "dd73b877a4e4b370339cf2e62a9e656b6f083069197836d6d77bc167dce82252",
+      "size": 734,
+      "kind": "raw_log"
+    },
+    "level_GETPALAMLV_SIZEPLUS1_public-01_fixture": {
+      "sha256": "187d04ea670ac971698eae3d961d61655d9db25833b2b365f348c454f2ca6fe1",
+      "size": 785,
+      "kind": "fixture"
+    },
+    "level_GETEXPLV_NEGATIVE_native-01_log": {
+      "sha256": "3fec66505ee9be2055bc964ab5234d95374a3534c8aa752a5d0d9eb05bf0dbf7",
+      "size": 704,
+      "kind": "raw_log"
+    },
+    "level_GETEXPLV_NEGATIVE_native-01_fixture": {
+      "sha256": "4ff3b33c98b1efa7fba02dbf3107329040566583396a8f2b1920ca6941fe9fdb",
+      "size": 727,
+      "kind": "fixture"
+    },
+    "level_GETEXPLV_NEGATIVE_native-02_log": {
+      "sha256": "3fec66505ee9be2055bc964ab5234d95374a3534c8aa752a5d0d9eb05bf0dbf7",
+      "size": 704,
+      "kind": "raw_log"
+    },
+    "level_GETEXPLV_NEGATIVE_native-02_fixture": {
+      "sha256": "4ff3b33c98b1efa7fba02dbf3107329040566583396a8f2b1920ca6941fe9fdb",
+      "size": 727,
+      "kind": "fixture"
+    },
+    "level_GETEXPLV_NEGATIVE_public-01_log": {
+      "sha256": "ad7a2ac89822eba5be0fce16fe1b53a71cf6219a6990a4df2e2eaac43d5ba198",
+      "size": 702,
+      "kind": "raw_log"
+    },
+    "level_GETEXPLV_NEGATIVE_public-01_fixture": {
+      "sha256": "4ff3b33c98b1efa7fba02dbf3107329040566583396a8f2b1920ca6941fe9fdb",
+      "size": 727,
+      "kind": "fixture"
+    },
+    "level_GETEXPLV_SIZEPLUS1_native-01_log": {
+      "sha256": "bf161f8675a8ed81773ec1d4f375f32df4fbd68d04955a475694c0a80d54a088",
+      "size": 1510,
+      "kind": "raw_log"
+    },
+    "level_GETEXPLV_SIZEPLUS1_native-01_fixture": {
+      "sha256": "993e1e81e59a86b5da54077ff11593d8b7844843bd22997fa56f0b9854191980",
+      "size": 761,
+      "kind": "fixture"
+    },
+    "level_GETEXPLV_SIZEPLUS1_native-02_log": {
+      "sha256": "bf161f8675a8ed81773ec1d4f375f32df4fbd68d04955a475694c0a80d54a088",
+      "size": 1510,
+      "kind": "raw_log"
+    },
+    "level_GETEXPLV_SIZEPLUS1_native-02_fixture": {
+      "sha256": "993e1e81e59a86b5da54077ff11593d8b7844843bd22997fa56f0b9854191980",
+      "size": 761,
+      "kind": "fixture"
+    },
+    "level_GETEXPLV_SIZEPLUS1_public-01_log": {
+      "sha256": "e3e1b69718457c7c062139fc687d58e9c27b1e720d6c162968fda248f60deb62",
+      "size": 714,
+      "kind": "raw_log"
+    },
+    "level_GETEXPLV_SIZEPLUS1_public-01_fixture": {
+      "sha256": "993e1e81e59a86b5da54077ff11593d8b7844843bd22997fa56f0b9854191980",
+      "size": 761,
+      "kind": "fixture"
+    },
+    "savechara_comparison": {
+      "sha256": "e40773827964075a992c58de42d6a5fd00ea34adcf8c2e0a1e878072668ca6e3",
+      "size": 30232,
+      "kind": "comparison"
+    },
+    "save_duplicate_native_fixture": {
+      "sha256": "b8bfe2696b61e44f9ba2be15291ca8d810ca4345a0b006a11ec84951f44e5787",
+      "size": 191,
+      "kind": "fixture"
+    },
+    "save_duplicate_native_emuera_log": {
+      "sha256": "e8f1117dc1a8ca564f43e6b6d755ee88ed640b47db12ed102b5783e078574f20",
+      "size": 394,
+      "kind": "raw_log"
+    },
+    "save_duplicate_public_fixture": {
+      "sha256": "b8bfe2696b61e44f9ba2be15291ca8d810ca4345a0b006a11ec84951f44e5787",
+      "size": 191,
+      "kind": "fixture"
+    },
+    "save_duplicate_public_verified_stdout_bin": {
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+      "size": 16,
+      "kind": "raw_log"
+    },
+    "save_duplicate_public_verified_stderr_bin": {
+      "sha256": "43ae0c0f0e1ce86dd7cbe110c586098659dbe67530896c8c0af333263efd2543",
+      "size": 131,
+      "kind": "raw_log"
+    },
+    "save_negative_late_helper_clean_native_fixture": {
+      "sha256": "6dd89db441dbc381a90a90781ae6833d4e4a6f5b85fccf3d9bd86275e4f9a8e6",
+      "size": 304,
+      "kind": "fixture"
+    },
+    "save_negative_late_helper_clean_native_emuera_log": {
+      "sha256": "6f11201ac9eaa9f2dd46bb0a80adf3b4d5035a8b1dd02fc895571c8d3d3ed068",
+      "size": 456,
+      "kind": "raw_log"
+    },
+    "save_negative_late_helper_clean_public_fixture": {
+      "sha256": "6dd89db441dbc381a90a90781ae6833d4e4a6f5b85fccf3d9bd86275e4f9a8e6",
+      "size": 304,
+      "kind": "fixture"
+    },
+    "save_negative_late_helper_clean_public_verified_stdout_bin": {
+      "sha256": "18e18cb828c9e6ae8e491d42200fa199fc5be3b428fa4b93ff41641076a7c181",
+      "size": 42,
+      "kind": "raw_log"
+    },
+    "save_negative_late_helper_clean_public_verified_stderr_bin": {
+      "sha256": "b610cd9fabe82f1c911f1263fd5815148cf43da5a465cdc80e1eb6cf2f244048",
+      "size": 131,
+      "kind": "raw_log"
+    },
+    "save_dynamic_bad_id_later_native_fixture": {
+      "sha256": "602135d21f7a9f50b11e22ea1715c2afff7b5c9aaac7fda7bf73d612ae146cea",
+      "size": 309,
+      "kind": "fixture"
+    },
+    "save_dynamic_bad_id_later_native_emuera_log": {
+      "sha256": "8d973fe7b5c0971c8d34766c9a12c60c54cc29ac474f089aca247f85bc0e4162",
+      "size": 458,
+      "kind": "raw_log"
+    },
+    "save_dynamic_bad_id_later_public_fixture": {
+      "sha256": "602135d21f7a9f50b11e22ea1715c2afff7b5c9aaac7fda7bf73d612ae146cea",
+      "size": 309,
+      "kind": "fixture"
+    },
+    "save_dynamic_bad_id_later_public_verified_stdout_bin": {
+      "sha256": "18e18cb828c9e6ae8e491d42200fa199fc5be3b428fa4b93ff41641076a7c181",
+      "size": 42,
+      "kind": "raw_log"
+    },
+    "save_dynamic_bad_id_later_public_verified_stderr_bin": {
+      "sha256": "b610cd9fabe82f1c911f1263fd5815148cf43da5a465cdc80e1eb6cf2f244048",
+      "size": 131,
+      "kind": "raw_log"
+    },
+    "save_index_equal_charanum_native_fixture": {
+      "sha256": "6eefd56ffa5f1b078cb9edd50a4ab428174d6da1a1ba6b25a804afdc6c16c86d",
+      "size": 188,
+      "kind": "fixture"
+    },
+    "save_index_equal_charanum_native_emuera_log": {
+      "sha256": "a0dc83a5a0bffba5ffab20ca15dd201a4f4bf7a34630767ce0a356a232d3f63c",
+      "size": 414,
+      "kind": "raw_log"
+    },
+    "save_index_equal_charanum_public_fixture": {
+      "sha256": "6eefd56ffa5f1b078cb9edd50a4ab428174d6da1a1ba6b25a804afdc6c16c86d",
+      "size": 188,
+      "kind": "fixture"
+    },
+    "save_index_equal_charanum_public_verified_stdout_bin": {
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+      "size": 16,
+      "kind": "raw_log"
+    },
+    "save_index_equal_charanum_public_verified_stderr_bin": {
+      "sha256": "789e404569aa7ae9646d8904339d97e161cde59836f9b2418daa535bf99e3153",
+      "size": 131,
+      "kind": "raw_log"
+    },
+    "save_filename_directory_collision_native_fixture": {
+      "sha256": "97202726c81a37569c75d66872c185be56af1c036fdac1af5cb7941972d85803",
+      "size": 200,
+      "kind": "fixture"
+    },
+    "save_filename_directory_collision_native_emuera_log": {
+      "sha256": "4d58e7e2b9f0dab8e987644b9b1182915014a0af652d9217e6f9271e65bd04f0",
+      "size": 2266,
+      "kind": "raw_log"
+    },
+    "save_filename_directory_collision_public_fixture": {
+      "sha256": "97202726c81a37569c75d66872c185be56af1c036fdac1af5cb7941972d85803",
+      "size": 200,
+      "kind": "fixture"
+    },
+    "save_filename_directory_collision_public_verified_stdout_bin": {
+      "sha256": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265",
+      "size": 16,
+      "kind": "raw_log"
+    },
+    "save_filename_directory_collision_public_verified_stderr_bin": {
+      "sha256": "f03304f2b1eaab629d45f8272538a1a1a74a173801d7ea832a4a1d953bf8f84f",
+      "size": 223,
+      "kind": "raw_log"
+    },
+    "save_ordered_success_native_fixture": {
+      "sha256": "b683191d5cc531c826accbaf6e7d5b93592724b37ba47cc8a67458cef085df57",
+      "size": 470,
+      "kind": "fixture"
+    },
+    "save_ordered_success_native_emuera_log": {
+      "sha256": "168fa149b2dd7da8488f839515d906a304f886bd237679cc33c3f4bf0d5705d0",
+      "size": 136,
+      "kind": "raw_log"
+    },
+    "save_ordered_success_public_fixture": {
+      "sha256": "b683191d5cc531c826accbaf6e7d5b93592724b37ba47cc8a67458cef085df57",
+      "size": 470,
+      "kind": "fixture"
+    },
+    "save_ordered_success_public_verified_stdout_bin": {
+      "sha256": "fe4f36f6f1666c7ee5ba231df4bab7bc345b09866a2b4453bb1a649a30f65864",
+      "size": 125,
+      "kind": "raw_log"
+    },
+    "save_ordered_success_public_verified_stderr_bin": {
+      "sha256": "59d6c462575c37a6dd0adadc1d7ed441479e05d3a15bc54055bc33bf8b68a3dc",
+      "size": 110,
+      "kind": "raw_log"
+    }
+  },
+  "records": [
+    {
+      "case_id": "PRINTDWEMPTY01",
+      "scenario_verdict": "matched_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 2,
+        "scope": "per_case"
+      },
+      "facts": {
+        "target": "PRINTDW",
+        "fixture_sha256": "cb6d1875de52fb2a365fedac352f4a7b67417ea13aeb84814e7abc6eb0d0b4cd",
+        "input_argument": "<empty>",
+        "input_release": {
+          "native": "one Return with empty input",
+          "public": "one newline on stdin"
+        },
+        "native": {
+          "selected_log": "no argument text",
+          "after_marker": "AFTER_EMPTY",
+          "marker_count": 1,
+          "natural_exit": "not_observed",
+          "exit_code": "not_observed"
+        },
+        "public": {
+          "selected_log": "no argument text",
+          "after_marker": "AFTER_EMPTY",
+          "marker_count": 1,
+          "process_returncode": 0
+        },
+        "log_sha256_all_selected_runs": "4ed2a20fde3af3faf9dbeb076fb7253c82a2eb17f7a6f277dcb6b64a0ca7322e",
+        "limitations": [
+          "selected Native runs did not capture screenshots",
+          "GUI pixel equivalence and other PRINT forms not established"
+        ]
+      },
+      "summary_ja": "空引数。両者で文字を出さず、待機解除後にAFTER_EMPTYを1回記録。待機解除には本家の空の入力欄へReturnを1回送り、Pyには標準入力で改行1行を与えた。各case Native2回・Py2回の選択ログは同一SHA。Native自然終了・終了コードは未観測。選択したNative実行のスクリーンショットはなく、GUIピクセルの一致や他のPRINT形式への一般化はできない。",
+      "summary_en": "Empty argument: neither engine emitted argument text, and AFTER_EMPTY appeared once after the wait was released. Native received one Return in an empty input field; Py received one newline on standard input. Each case has two Native and two Py selected runs with the same log SHA. Native natural exit and exit code were not observed; selected Native runs have no screenshot. GUI pixel equivalence and other PRINT forms are not established.",
+      "source_ids": [
+        "candidate_case_register",
+        "printdw_comparison",
+        "printdw_native-final-empty-01_log",
+        "printdw_native-final-empty-01_receipt",
+        "printdw_native-final-empty-02_log",
+        "printdw_native-final-empty-02_receipt",
+        "printdw_public-empty01-01_log",
+        "printdw_public-empty01-01_receipt",
+        "printdw_public-empty01-01_fixture",
+        "printdw_public-empty01-02_log",
+        "printdw_public-empty01-02_receipt",
+        "printdw_public-empty01-02_fixture"
+      ]
+    },
+    {
+      "case_id": "PRINTDWSPACE01",
+      "scenario_verdict": "matched_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 2,
+        "scope": "per_case"
+      },
+      "facts": {
+        "target": "PRINTDW",
+        "fixture_sha256": "fd0eb68d6f79f31ff258b209de234e5b41dd2a72d527d078a48ee0b43c1a2730",
+        "input_argument": "X  Y",
+        "input_release": {
+          "native": "one Return with empty input",
+          "public": "one newline on stdin"
+        },
+        "native": {
+          "selected_log": "X  Y",
+          "after_marker": "AFTER_SPACE",
+          "marker_count": 1,
+          "natural_exit": "not_observed",
+          "exit_code": "not_observed"
+        },
+        "public": {
+          "selected_log": "X  Y",
+          "after_marker": "AFTER_SPACE",
+          "marker_count": 1,
+          "process_returncode": 0
+        },
+        "log_sha256_all_selected_runs": "7ce114dcb165acb81bdd9f4b43286965ea5c36c7bf2a8c86021148fcb8f1d8bc",
+        "limitations": [
+          "selected Native runs did not capture screenshots",
+          "GUI pixel equivalence and other PRINT forms not established"
+        ]
+      },
+      "summary_ja": "引数は内部に空白2個の `X  Y`。両者で2空白を保持し、待機解除後にAFTER_SPACEを1回記録。待機解除には本家の空の入力欄へReturnを1回送り、Pyには標準入力で改行1行を与えた。各case Native2回・Py2回の選択ログは同一SHA。Native自然終了・終了コードは未観測。選択したNative実行のスクリーンショットはなく、GUIピクセルの一致や他のPRINT形式への一般化はできない。",
+      "summary_en": "Argument `X  Y` has two internal spaces: both retained them, and AFTER_SPACE appeared once after the wait was released. Native received one Return in an empty input field; Py received one newline on standard input. Each case has two Native and two Py selected runs with the same log SHA. Native natural exit and exit code were not observed; selected Native runs have no screenshot. GUI pixel equivalence and other PRINT forms are not established.",
+      "source_ids": [
+        "candidate_case_register",
+        "printdw_comparison",
+        "printdw_native-final-space-01_log",
+        "printdw_native-final-space-01_receipt",
+        "printdw_native-final-space-02_log",
+        "printdw_native-final-space-02_receipt",
+        "printdw_public-space01-01_log",
+        "printdw_public-space01-01_receipt",
+        "printdw_public-space01-01_fixture",
+        "printdw_public-space01-02_log",
+        "printdw_public-space01-02_receipt",
+        "printdw_public-space01-02_fixture"
+      ]
+    },
+    {
+      "case_id": "ARRAY_BOUNDARY_NORMAL_CORRECTED_20261115",
+      "scenario_verdict": "matched_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 1,
+        "scope": "shared_by_six_subobservations"
+      },
+      "facts": {
+        "initial_array": [
+          5,
+          2,
+          8,
+          9
+        ],
+        "array_size": 4,
+        "singleton_range": "[3,4)",
+        "fixture_sha256": "bb422d9b971eb65529a23c219f1c721ad0d56b36863db6391cf09fc41d1591fe",
+        "subobservations": [
+          {
+            "target": "SUMARRAY",
+            "variant": "singleton",
+            "expression": "PRINTFORML VALUE SUMARRAY_SINGLETON VALUE={SUMARRAY(ZZKEY,3,4)}",
+            "line": 16,
+            "native_value": 9,
+            "public_value": 9,
+            "native_runs": 2,
+            "public_runs": 1,
+            "shared_launch_set": true,
+            "helper_count": 0,
+            "helper_order": 0,
+            "end_readback": 0,
+            "final_data": [
+              5,
+              2,
+              8,
+              9
+            ],
+            "result": 777,
+            "results": "SENTINEL",
+            "after": "reached"
+          },
+          {
+            "target": "SUMARRAY",
+            "variant": "mutated-endpoints",
+            "expression": "PRINTFORML VALUE SUMARRAY_MUTATED_ENDPOINTS VALUE={SUMARRAY(ZZKEY:ZZAG0REF(),ZZAG0START(),ZZAG0END())}",
+            "line": 32,
+            "native_value": 23,
+            "public_value": 23,
+            "native_runs": 2,
+            "public_runs": 1,
+            "shared_launch_set": true,
+            "helper_count": 3,
+            "helper_order": 231,
+            "end_readback": 4,
+            "final_data": [
+              5,
+              2,
+              8,
+              13
+            ],
+            "result": 777,
+            "results": "SENTINEL",
+            "after": "reached"
+          },
+          {
+            "target": "MAXARRAY",
+            "variant": "singleton",
+            "expression": "PRINTFORML VALUE MAXARRAY_SINGLETON VALUE={MAXARRAY(ZZKEY,3,4)}",
+            "line": 48,
+            "native_value": 9,
+            "public_value": 9,
+            "native_runs": 2,
+            "public_runs": 1,
+            "shared_launch_set": true,
+            "helper_count": 0,
+            "helper_order": 0,
+            "end_readback": 0,
+            "final_data": [
+              5,
+              2,
+              8,
+              9
+            ],
+            "result": 777,
+            "results": "SENTINEL",
+            "after": "reached"
+          },
+          {
+            "target": "MAXARRAY",
+            "variant": "mutated-endpoints",
+            "expression": "PRINTFORML VALUE MAXARRAY_MUTATED_ENDPOINTS VALUE={MAXARRAY(ZZKEY:ZZAG1REF(),ZZAG1START(),ZZAG1END())}",
+            "line": 64,
+            "native_value": 13,
+            "public_value": 13,
+            "native_runs": 2,
+            "public_runs": 1,
+            "shared_launch_set": true,
+            "helper_count": 3,
+            "helper_order": 231,
+            "end_readback": 4,
+            "final_data": [
+              5,
+              2,
+              8,
+              13
+            ],
+            "result": 777,
+            "results": "SENTINEL",
+            "after": "reached"
+          },
+          {
+            "target": "MINARRAY",
+            "variant": "singleton",
+            "expression": "PRINTFORML VALUE MINARRAY_SINGLETON VALUE={MINARRAY(ZZKEY,3,4)}",
+            "line": 80,
+            "native_value": 9,
+            "public_value": 9,
+            "native_runs": 2,
+            "public_runs": 1,
+            "shared_launch_set": true,
+            "helper_count": 0,
+            "helper_order": 0,
+            "end_readback": 0,
+            "final_data": [
+              5,
+              2,
+              8,
+              9
+            ],
+            "result": 777,
+            "results": "SENTINEL",
+            "after": "reached"
+          },
+          {
+            "target": "MINARRAY",
+            "variant": "mutated-endpoints",
+            "expression": "PRINTFORML VALUE MINARRAY_MUTATED_ENDPOINTS VALUE={MINARRAY(ZZKEY:ZZAG2REF(),ZZAG2START(),ZZAG2END())}",
+            "line": 96,
+            "native_value": 2,
+            "public_value": 2,
+            "native_runs": 2,
+            "public_runs": 1,
+            "shared_launch_set": true,
+            "helper_count": 3,
+            "helper_order": 231,
+            "end_readback": 4,
+            "final_data": [
+              5,
+              2,
+              8,
+              13
+            ],
+            "result": 777,
+            "results": "SENTINEL",
+            "after": "reached"
+          }
+        ],
+        "done": "reached_on_both",
+        "native_natural_exit": "not_observed",
+        "limitations": [
+          "separate -1/end5 boundary cases are not included in these six results",
+          "existing empty/reverse differences remain",
+          "no full target closure"
+        ]
+      },
+      "summary_ja": "初期配列 `[5,2,8,9]`、長さ4。単一区間[3,4)のSUM/MAX/MINは両者9。端点helperを使う各式は両者SUM=23、MAX=13、MIN=2、helper順231・回数3・終端4・最終配列[5,2,8,13]。RESULT=777、RESULTS=SENTINEL、AFTER/DONE到達。6観測は同じNative2回・Py1回から得たもので18回の起動ではない。Native自然終了は未観測。別の境界停止と既存empty/reverse差は別範囲。",
+      "summary_en": "Initial array `[5,2,8,9]`, size 4. For singleton [3,4), SUM/MAX/MIN each return 9 on both. With endpoint helpers, SUM=23, MAX=13, MIN=2 on both; helper order 231, count 3, endpoint 4, final array [5,2,8,13]. RESULT=777 and RESULTS=SENTINEL; AFTER/DONE reached. These six observations share two Native and one Py launches; they are not 18 launches. Native natural exit was not observed. Boundary-stop and existing empty/reverse differences are separate.",
+      "source_ids": [
+        "candidate_case_register",
+        "array_report_json",
+        "array_conditions",
+        "array_native-01_log",
+        "array_native-01_fixture",
+        "array_native-02_log",
+        "array_native-02_fixture",
+        "array_public-01_log",
+        "array_public-01_fixture"
+      ]
+    },
+    {
+      "case_id": "LEVEL_BOUNDARY_GETPALAMLV_NEGATIVE_20261115",
+      "scenario_verdict": "different_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 1,
+        "scope": "per_case"
+      },
+      "facts": {
+        "target": "GETPALAMLV",
+        "kind": "expression_function",
+        "value_input_decimal": "9223372036854775807",
+        "maxlevel_expression": "-1",
+        "maxlevel_realized": -1,
+        "table_size": 1000,
+        "fixture_sha256": "6ab4795cf366d49bb5ac7d3f7d43654b620cb21abc308f9ef0fdbbe5ae910a96",
+        "helper_count": 2,
+        "helper_order": 12,
+        "native": {
+          "return_value": -1,
+          "return_status": "observed",
+          "after": "reached",
+          "done": "reached",
+          "diagnostic": null,
+          "post_target_state": "observed",
+          "natural_exit": "not_observed"
+        },
+        "public": {
+          "return_value": 0,
+          "return_status": "observed",
+          "after": "reached",
+          "done": "reached",
+          "results_after": "SENTINEL"
+        },
+        "limitations": [
+          "expression only; method_as_command not covered",
+          "old custom-table/default max0/1 runtime identity remains unresolved",
+          "no full target closure"
+        ]
+      },
+      "summary_ja": "GETPALAMLV式、値9223372036854775807、table長1000、maxlevel=-1。helper回数2・順12。本家は-1、Pyは0を返し、両者AFTER/DONE到達。Native2回・Py1回。本家自然終了未観測。method形式と旧custom-table等のruntime identityはこの記録では未確立。",
+      "summary_en": "GETPALAMLV expression, value 9223372036854775807, table size 1000, maxlevel -1. Helpers: count 2, order 12. Native returns -1 and Py returns 0; both reach AFTER/DONE. Two Native and one Py run. Native natural exit is unobserved. Method form and old custom-table runtime identity are not established here.",
+      "source_ids": [
+        "candidate_case_register",
+        "level_comparison",
+        "level_GETPALAMLV_NEGATIVE_native-01_log",
+        "level_GETPALAMLV_NEGATIVE_native-01_fixture",
+        "level_GETPALAMLV_NEGATIVE_native-02_log",
+        "level_GETPALAMLV_NEGATIVE_native-02_fixture",
+        "level_GETPALAMLV_NEGATIVE_public-01_log",
+        "level_GETPALAMLV_NEGATIVE_public-01_fixture"
+      ]
+    },
+    {
+      "case_id": "LEVEL_BOUNDARY_GETPALAMLV_SIZEPLUS1_20261115",
+      "scenario_verdict": "different_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 1,
+        "scope": "per_case"
+      },
+      "facts": {
+        "target": "GETPALAMLV",
+        "kind": "expression_function",
+        "value_input_decimal": "9223372036854775807",
+        "maxlevel_expression": "VARSIZE(\"PALAMLV\")+1",
+        "maxlevel_realized": 1001,
+        "table_size": 1000,
+        "fixture_sha256": "187d04ea670ac971698eae3d961d61655d9db25833b2b365f348c454f2ca6fe1",
+        "helper_count": 2,
+        "helper_order": 12,
+        "native": {
+          "return_value": null,
+          "return_status": "not_observed",
+          "after": "not_reached",
+          "done": "not_reached",
+          "diagnostic": "System.IndexOutOfRangeException at target line 10",
+          "post_target_state": "not_observed",
+          "natural_exit": "not_observed"
+        },
+        "public": {
+          "return_value": 999,
+          "return_status": "observed",
+          "after": "reached",
+          "done": "reached",
+          "results_after": "SENTINEL"
+        },
+        "limitations": [
+          "expression only; method_as_command not covered",
+          "old custom-table/default max0/1 runtime identity remains unresolved",
+          "no full target closure"
+        ]
+      },
+      "summary_ja": "GETPALAMLV式、値9223372036854775807、table長1000、maxlevel=1001（VARSIZE+1）。helper回数2・順12。本家は対象代入の10行目でSystem.IndexOutOfRangeException、AFTER/DONE未到達で戻り値・後状態は未観測。Pyは999を返しAFTER/DONE到達。Native2回・Py1回。本家自然終了未観測。method形式と旧custom-table等のruntime identityはこの記録では未確立。",
+      "summary_en": "GETPALAMLV expression, value 9223372036854775807, table size 1000, maxlevel 1001 (VARSIZE+1). Helpers: count 2, order 12. Native stops at target assignment line 10 with System.IndexOutOfRangeException; AFTER/DONE, return value and post-target state are not observed. Py returns 999 and reaches AFTER/DONE. Two Native and one Py run. Native natural exit is unobserved. Method form and old custom-table runtime identity are not established here.",
+      "source_ids": [
+        "candidate_case_register",
+        "level_comparison",
+        "level_GETPALAMLV_SIZEPLUS1_native-01_log",
+        "level_GETPALAMLV_SIZEPLUS1_native-01_fixture",
+        "level_GETPALAMLV_SIZEPLUS1_native-02_log",
+        "level_GETPALAMLV_SIZEPLUS1_native-02_fixture",
+        "level_GETPALAMLV_SIZEPLUS1_public-01_log",
+        "level_GETPALAMLV_SIZEPLUS1_public-01_fixture"
+      ]
+    },
+    {
+      "case_id": "LEVEL_BOUNDARY_GETEXPLV_NEGATIVE_20261115",
+      "scenario_verdict": "different_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 1,
+        "scope": "per_case"
+      },
+      "facts": {
+        "target": "GETEXPLV",
+        "kind": "expression_function",
+        "value_input_decimal": "9223372036854775807",
+        "maxlevel_expression": "-1",
+        "maxlevel_realized": -1,
+        "table_size": 1000,
+        "fixture_sha256": "4ff3b33c98b1efa7fba02dbf3107329040566583396a8f2b1920ca6941fe9fdb",
+        "helper_count": 2,
+        "helper_order": 12,
+        "native": {
+          "return_value": -1,
+          "return_status": "observed",
+          "after": "reached",
+          "done": "reached",
+          "diagnostic": null,
+          "post_target_state": "observed",
+          "natural_exit": "not_observed"
+        },
+        "public": {
+          "return_value": 0,
+          "return_status": "observed",
+          "after": "reached",
+          "done": "reached",
+          "results_after": "SENTINEL"
+        },
+        "limitations": [
+          "expression only; method_as_command not covered",
+          "old custom-table/default max0/1 runtime identity remains unresolved",
+          "no full target closure"
+        ]
+      },
+      "summary_ja": "GETEXPLV式、値9223372036854775807、table長1000、maxlevel=-1。helper回数2・順12。本家は-1、Pyは0を返し、両者AFTER/DONE到達。Native2回・Py1回。本家自然終了未観測。method形式と旧custom-table等のruntime identityはこの記録では未確立。",
+      "summary_en": "GETEXPLV expression, value 9223372036854775807, table size 1000, maxlevel -1. Helpers: count 2, order 12. Native returns -1 and Py returns 0; both reach AFTER/DONE. Two Native and one Py run. Native natural exit is unobserved. Method form and old custom-table runtime identity are not established here.",
+      "source_ids": [
+        "candidate_case_register",
+        "level_comparison",
+        "level_GETEXPLV_NEGATIVE_native-01_log",
+        "level_GETEXPLV_NEGATIVE_native-01_fixture",
+        "level_GETEXPLV_NEGATIVE_native-02_log",
+        "level_GETEXPLV_NEGATIVE_native-02_fixture",
+        "level_GETEXPLV_NEGATIVE_public-01_log",
+        "level_GETEXPLV_NEGATIVE_public-01_fixture"
+      ]
+    },
+    {
+      "case_id": "LEVEL_BOUNDARY_GETEXPLV_SIZEPLUS1_20261115",
+      "scenario_verdict": "different_scoped",
+      "run_counts": {
+        "native": 2,
+        "public": 1,
+        "scope": "per_case"
+      },
+      "facts": {
+        "target": "GETEXPLV",
+        "kind": "expression_function",
+        "value_input_decimal": "9223372036854775807",
+        "maxlevel_expression": "VARSIZE(\"EXPLV\")+1",
+        "maxlevel_realized": 1001,
+        "table_size": 1000,
+        "fixture_sha256": "993e1e81e59a86b5da54077ff11593d8b7844843bd22997fa56f0b9854191980",
+        "helper_count": 2,
+        "helper_order": 12,
+        "native": {
+          "return_value": null,
+          "return_status": "not_observed",
+          "after": "not_reached",
+          "done": "not_reached",
+          "diagnostic": "System.IndexOutOfRangeException at target line 10",
+          "post_target_state": "not_observed",
+          "natural_exit": "not_observed"
+        },
+        "public": {
+          "return_value": 999,
+          "return_status": "observed",
+          "after": "reached",
+          "done": "reached",
+          "results_after": "SENTINEL"
+        },
+        "limitations": [
+          "expression only; method_as_command not covered",
+          "old custom-table/default max0/1 runtime identity remains unresolved",
+          "no full target closure"
+        ]
+      },
+      "summary_ja": "GETEXPLV式、値9223372036854775807、table長1000、maxlevel=1001（VARSIZE+1）。helper回数2・順12。本家は対象代入の10行目でSystem.IndexOutOfRangeException、AFTER/DONE未到達で戻り値・後状態は未観測。Pyは999を返しAFTER/DONE到達。Native2回・Py1回。本家自然終了未観測。method形式と旧custom-table等のruntime identityはこの記録では未確立。",
+      "summary_en": "GETEXPLV expression, value 9223372036854775807, table size 1000, maxlevel 1001 (VARSIZE+1). Helpers: count 2, order 12. Native stops at target assignment line 10 with System.IndexOutOfRangeException; AFTER/DONE, return value and post-target state are not observed. Py returns 999 and reaches AFTER/DONE. Two Native and one Py run. Native natural exit is unobserved. Method form and old custom-table runtime identity are not established here.",
+      "source_ids": [
+        "candidate_case_register",
+        "level_comparison",
+        "level_GETEXPLV_SIZEPLUS1_native-01_log",
+        "level_GETEXPLV_SIZEPLUS1_native-01_fixture",
+        "level_GETEXPLV_SIZEPLUS1_native-02_log",
+        "level_GETEXPLV_SIZEPLUS1_native-02_fixture",
+        "level_GETEXPLV_SIZEPLUS1_public-01_log",
+        "level_GETEXPLV_SIZEPLUS1_public-01_fixture"
+      ]
+    },
+    {
+      "case_id": "SAVECHARA_FINITE_BOUNDARIES_EVALUATION_ORDER_20261115",
+      "scenario_verdict": "different_scoped",
+      "run_counts": {
+        "native_per_condition": 1,
+        "public_per_condition": 1,
+        "selected_conditions": 6
+      },
+      "facts": {
+        "initial_characters": [
+          0,
+          10,
+          20
+        ],
+        "initial_charanum": 3,
+        "subobservations": [
+          {
+            "source_case_id": "SAVECHARA_DUPLICATE_20261115",
+            "classification_in_comparison": "different_scoped",
+            "input": "duplicate ID arguments (0,0)",
+            "native": "argument construction rejects duplicate IDs",
+            "public": "E_ARGUMENT",
+            "native_selected_runs": 1,
+            "public_selected_runs": 1,
+            "source_ids": [
+              "save_duplicate_native_fixture",
+              "save_duplicate_native_emuera_log",
+              "save_duplicate_public_fixture",
+              "save_duplicate_public_verified_stdout_bin",
+              "save_duplicate_public_verified_stderr_bin"
+            ],
+            "done_marker": "DONE_SAVECHARA_DUP",
+            "done_observation": "not_observed_in_selected_logs",
+            "native_later_helper": "not_applicable",
+            "public_later_helper": "not_applicable",
+            "fixture_sha256": "b8bfe2696b61e44f9ba2be15291ca8d810ca4345a0b006a11ec84951f44e5787"
+          },
+          {
+            "source_case_id": "SAVECHARA_NEGATIVE_LATE_HELPER_CLEAN_20261115",
+            "classification_in_comparison": "different_scoped",
+            "input": "constant -1 followed by a helper",
+            "native": "negative constant rejected before later helper",
+            "public": "E_INDEX",
+            "native_selected_runs": 1,
+            "public_selected_runs": 1,
+            "source_ids": [
+              "save_negative_late_helper_clean_native_fixture",
+              "save_negative_late_helper_clean_native_emuera_log",
+              "save_negative_late_helper_clean_public_fixture",
+              "save_negative_late_helper_clean_public_verified_stdout_bin",
+              "save_negative_late_helper_clean_public_verified_stderr_bin"
+            ],
+            "done_marker": "DONE_SAVECHARA_NEG",
+            "done_observation": "not_observed_in_selected_logs",
+            "native_later_helper": "not_observed",
+            "public_later_helper": "marker_observed",
+            "fixture_sha256": "6dd89db441dbc381a90a90781ae6833d4e4a6f5b85fccf3d9bd86275e4f9a8e6"
+          },
+          {
+            "source_case_id": "SAVECHARA_DYNAMIC_BAD_ID_LATER_20261115",
+            "classification_in_comparison": "different_scoped",
+            "input": "FLAG:9=-1 followed by a helper",
+            "native": "negative third argument; later helper not observed",
+            "public": "E_INDEX",
+            "native_selected_runs": 1,
+            "public_selected_runs": 1,
+            "source_ids": [
+              "save_dynamic_bad_id_later_native_fixture",
+              "save_dynamic_bad_id_later_native_emuera_log",
+              "save_dynamic_bad_id_later_public_fixture",
+              "save_dynamic_bad_id_later_public_verified_stdout_bin",
+              "save_dynamic_bad_id_later_public_verified_stderr_bin"
+            ],
+            "done_marker": "DONE_SAVECHARA_NEG",
+            "done_observation": "not_observed_in_selected_logs",
+            "native_later_helper": "not_observed",
+            "public_later_helper": "marker_observed",
+            "fixture_sha256": "602135d21f7a9f50b11e22ea1715c2afff7b5c9aaac7fda7bf73d612ae146cea"
+          },
+          {
+            "source_case_id": "SAVECHARA_INDEX_EQUAL_CHARANUM_20261115",
+            "classification_in_comparison": "matched_scoped",
+            "input": "character registration index 3 with CHARANUM=3",
+            "native": "third argument outside registered character range",
+            "public": "E_INDEX",
+            "native_selected_runs": 1,
+            "public_selected_runs": 1,
+            "source_ids": [
+              "save_index_equal_charanum_native_fixture",
+              "save_index_equal_charanum_native_emuera_log",
+              "save_index_equal_charanum_public_fixture",
+              "save_index_equal_charanum_public_verified_stdout_bin",
+              "save_index_equal_charanum_public_verified_stderr_bin"
+            ],
+            "done_marker": "DONE_SAVECHARA_END",
+            "done_observation": "not_observed_in_selected_logs",
+            "native_later_helper": "not_applicable",
+            "public_later_helper": "not_applicable",
+            "fixture_sha256": "6eefd56ffa5f1b078cb9edd50a4ab428174d6da1a1ba6b25a804afdc6c16c86d"
+          },
+          {
+            "source_case_id": "SAVECHARA_FILENAME_DIRECTORY_COLLISION_20261115",
+            "classification_in_comparison": "different_scoped",
+            "input": "destination filename collides with a directory",
+            "native": "System.UnauthorizedAccessException",
+            "public": "E_SAVE_IO",
+            "native_selected_runs": 1,
+            "public_selected_runs": 1,
+            "source_ids": [
+              "save_filename_directory_collision_native_fixture",
+              "save_filename_directory_collision_native_emuera_log",
+              "save_filename_directory_collision_public_fixture",
+              "save_filename_directory_collision_public_verified_stdout_bin",
+              "save_filename_directory_collision_public_verified_stderr_bin"
+            ],
+            "done_marker": "DONE_SAVECHARA_COLLISION",
+            "done_observation": "not_observed_in_selected_logs",
+            "native_later_helper": "not_applicable",
+            "public_later_helper": "not_applicable",
+            "fixture_sha256": "97202726c81a37569c75d66872c185be56af1c036fdac1af5cb7941972d85803"
+          },
+          {
+            "source_case_id": "SAVECHARA_ORDERED_SUCCESS_20261115",
+            "classification_in_comparison": "matched_scoped",
+            "input": "dynamic filename, caption and registration indexes 0 and 1",
+            "native": "ORDER=1234|RESULT=0|COUNT=3; DONE_SAVECHARA_ORDER",
+            "public": "ORDER=1234|RESULT=0|COUNT=3; DONE_SAVECHARA_ORDER",
+            "native_selected_runs": 1,
+            "public_selected_runs": 1,
+            "source_ids": [
+              "save_ordered_success_native_fixture",
+              "save_ordered_success_native_emuera_log",
+              "save_ordered_success_public_fixture",
+              "save_ordered_success_public_verified_stdout_bin",
+              "save_ordered_success_public_verified_stderr_bin"
+            ],
+            "done_marker": "DONE_SAVECHARA_ORDER",
+            "done_observation": "reached_on_both",
+            "native_later_helper": "not_applicable",
+            "public_later_helper": "not_applicable",
+            "fixture_sha256": "b683191d5cc531c826accbaf6e7d5b93592724b37ba47cc8a67458cef085df57"
+          }
+        ],
+        "native_natural_exit": "not_observed",
+        "limitations": [
+          "one run per engine per condition",
+          "native/public saves not cross-loaded",
+          "finite selected conditions only",
+          "other errors and target outcomes not inferred"
+        ]
+      },
+      "summary_ja": "各条件でNative1回・Py1回。重複ID (0,0) は本家が引数構築で拒否、PyはE_ARGUMENT。定数-1またはFLAG:9=-1の後続helperは本家側で観測されず、Pyはmarker出力後E_INDEX。ID=CHARANUM=3は両者停止、PyはE_INDEX。保存先ディレクトリ衝突は本家UnauthorizedAccessException、PyはE_SAVE_IO。正常な動的引数は両者ORDER=1234・RESULT=0・COUNT=3・DONE。本家自然終了未観測、保存形式の相互ロードなし。",
+      "summary_en": "One Native and one Py run per condition. Duplicate IDs (0,0): Native rejects during argument construction; Py reports E_ARGUMENT. With constant -1 or FLAG:9=-1, the later helper is not observed on Native; Py emits the marker then E_INDEX. ID=CHARANUM=3 stops both; Py reports E_INDEX. Destination directory collision: Native UnauthorizedAccessException, Py E_SAVE_IO. Valid dynamic arguments: both record ORDER=1234, RESULT=0, COUNT=3 and DONE. Native natural exit was not observed; save formats were not cross-loaded.",
+      "source_ids": [
+        "candidate_case_register",
+        "savechara_comparison",
+        "save_duplicate_native_fixture",
+        "save_duplicate_native_emuera_log",
+        "save_duplicate_public_fixture",
+        "save_duplicate_public_verified_stdout_bin",
+        "save_duplicate_public_verified_stderr_bin",
+        "save_negative_late_helper_clean_native_fixture",
+        "save_negative_late_helper_clean_native_emuera_log",
+        "save_negative_late_helper_clean_public_fixture",
+        "save_negative_late_helper_clean_public_verified_stdout_bin",
+        "save_negative_late_helper_clean_public_verified_stderr_bin",
+        "save_dynamic_bad_id_later_native_fixture",
+        "save_dynamic_bad_id_later_native_emuera_log",
+        "save_dynamic_bad_id_later_public_fixture",
+        "save_dynamic_bad_id_later_public_verified_stdout_bin",
+        "save_dynamic_bad_id_later_public_verified_stderr_bin",
+        "save_index_equal_charanum_native_fixture",
+        "save_index_equal_charanum_native_emuera_log",
+        "save_index_equal_charanum_public_fixture",
+        "save_index_equal_charanum_public_verified_stdout_bin",
+        "save_index_equal_charanum_public_verified_stderr_bin",
+        "save_filename_directory_collision_native_fixture",
+        "save_filename_directory_collision_native_emuera_log",
+        "save_filename_directory_collision_public_fixture",
+        "save_filename_directory_collision_public_verified_stdout_bin",
+        "save_filename_directory_collision_public_verified_stderr_bin",
+        "save_ordered_success_native_fixture",
+        "save_ordered_success_native_emuera_log",
+        "save_ordered_success_public_fixture",
+        "save_ordered_success_public_verified_stdout_bin",
+        "save_ordered_success_public_verified_stderr_bin"
+      ]
+    }
+  ]
+}

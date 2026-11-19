@@ -1,0 +1,21 @@
+{
+  "case_id": "CALL_FAMILY_CURRENT_CALL_MISSING_20261116",
+  "mode": "public-01",
+  "identity_basis": "case_evidence_source_path_and_receipt_case_mode",
+  "inputs_before": {
+    "ERB/REVIEW.ERB": "f0f2965347debceedb8d691dc65821191f2012fc72974b189b731e962745f807",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "inputs_after": {
+    "ERB/REVIEW.ERB": "f0f2965347debceedb8d691dc65821191f2012fc72974b189b731e962745f807",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "recorded_returncode": 1,
+  "selected_raw": {
+    "sha256": "5b7538dba5513b16e88f14f01ff2649c3cd1c1ee3e58f18db3bde1b465fd1d55",
+    "binding_basis": "case_evidence_group_manifest_and_saved_readback"
+  },
+  "native_natural_exit": "not_applicable",
+  "source_condition_id": "CALL_MISSING",
+  "source_declared_mode": "public-01"
+}

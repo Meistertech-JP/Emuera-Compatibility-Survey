@@ -1,0 +1,54 @@
+{
+  "schema": "parent-target-finite-scope-adjudication-1",
+  "generated_utc": "2026-11-13T15:53:06.650901+00:00",
+  "target": {
+    "kind": "expression_function",
+    "name": "HTML_ESCAPE"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "matched_in_finite_scope",
+  "finite_scope": [
+    "Native v24 expression registration/signature and return route",
+    "five replacement characters and scan/replacement loop in HtmlManager.Escape",
+    "reached selected ordinary/empty/markup/entity/Japanese/quote expression observations from Case 201",
+    "reached standalone already-escaped &amp; expression input from HTML_ESCAPE_AMP_ENTITY_20261114",
+    "selected return, helper count, result sentinels, continuation, and raw log equality"
+  ],
+  "source": {
+    "archive": "[PROJECT_ROOT]\\Emuera1824+v24.zip",
+    "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+    "source_json": "evidence/html-string-processing-20261113-201/SOURCE.json",
+    "source_json_sha256": "f18308e10ca685cd7ebffe268674b94bf2b0128b9bff01a667c863593d63baed",
+    "creator_method_member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Function/Creator.Method.cs",
+    "creator_method_sha256": "e4efac8f8a81734e9cc75f893008dd8d5120e44e3391c44c075a582c0661cf08",
+    "html_manager_member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameView/HtmlManager.cs",
+    "html_manager_sha256": "1e2f0e2cefdea7e0f674bae447291e2f28e1467b452d9ab337e7cc33d46b4a96",
+    "scope_excerpt": "SOURCE_SCOPE.txt"
+  },
+  "cases": [
+    {
+      "case_id_prefix": "HTMLTEXT201_C201_",
+      "evidence_path": "evidence/html-string-processing-20261113-201",
+      "review_sha256": "9bc6caf9802f3a8ca110546b91819ee57f5419051ec41cc0f75ac78496f11d73",
+      "source_sha256": "f18308e10ca685cd7ebffe268674b94bf2b0128b9bff01a667c863593d63baed",
+      "scope": "Five reached expression inputs among Case 201's paired HTML_ESCAPE conditions."
+    },
+    {
+      "case_id": "HTML_ESCAPE_AMP_ENTITY_20261114",
+      "evidence_path": "evidence/html-escape-ampersand-20261114/HTML_ESCAPE_AMP_20261114",
+      "comparison_sha256": "ce0f6ec2858294204198036fc48946ce2d826a8ac6216b4a8fb54022417c5217",
+      "manifest_sha256": "02c9dea1228c3413ba7af954c3942c5303cff570191cc8f28ac939b2b024c9ff",
+      "seal_sha256": "092fc6de4243c181bc9eee99a2bd9c9ceddaf2c726384cdb1a56a1c1de1815b3",
+      "scope": "Native v24 x2 / pinned public pyz x1; standalone &amp; expression input; exact raw logs."
+    }
+  ],
+  "excluded": [
+    "method_as_command:HTML_ESCAPE as a separate target",
+    "HTML GUI rendering and visual output",
+    "null/unrelated error paths and untested inputs",
+    "Creator.Method.cs branches after the HtmlEscapeMethod closing brace at line 2923",
+    "Native natural exit and exit code for the new case"
+  ],
+  "product_modified": false,
+  "published_artifacts_modified": false
+}

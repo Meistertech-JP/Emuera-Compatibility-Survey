@@ -1,0 +1,67 @@
+{
+  "schema": "target-finite-comparison-adjudication-1",
+  "generated_utc": "2026-11-15T06:18:25.226689+00:00",
+  "decision_authority": "Evidence adjudication within the active Phase 2 survey; not owner release sign-off.",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "TRYJUMP"
+  },
+  "decision": "necessary_comparison_complete",
+  "comparison_outcome": "different_scoped",
+  "satisfied_parent_obligation_ids": [
+    "target_TRYJUMP"
+  ],
+  "case_ids": [
+    "CALLJUMP206_tryjump_missing",
+    "CALLJUMP206_tryjump_hit",
+    "BOUNDARY242_tryjump_missing_fault",
+    "TRYTRANSFER285_TRYJUMP_found_callee_fault"
+  ],
+  "accepted_scope": "Literal TRYJUMP reaches a found callee; the callee entry and selected argument/helper/order state are observed before a runtime fault, which is not converted to missing-target fallback. Existing selected missing/hit and missing-target argument-fault cases remain linked.",
+  "accepted_requirements": [
+    {
+      "id": "literal_target_binding",
+      "state": "source_and_fixture_verified",
+      "basis": "Pinned v24 FunctionIdentifier.cs line 326 registers FunctionCode.TRYJUMP with CALL_Instruction(false,true,true,false); the executed fixture line is a literal TRYJUMP."
+    },
+    {
+      "id": "found_callee_fault_boundary",
+      "state": "compared_different_scoped",
+      "case_id": "TRYTRANSFER285_TRYJUMP_found_callee_fault",
+      "basis": "Native repeats and public pyz record callee entry, ARG=41, COUNT=1, ORDER=1, then divide-by-zero at ZZ285.ERB:18."
+    },
+    {
+      "id": "selected_missing_and_hit_paths",
+      "state": "existing_cases_retained",
+      "case_ids": [
+        "CALLJUMP206_tryjump_missing",
+        "CALLJUMP206_tryjump_hit",
+        "BOUNDARY242_tryjump_missing_fault"
+      ]
+    }
+  ],
+  "native_repeat_raw_sha256": "d53ea103e4ecc25e6c6b86f0495423beecf7d68e6f4e8e4a2bb411783e6100ab",
+  "native_public_markers_equal": true,
+  "fatal_site_equal": true,
+  "caller_stack_presence_equal": false,
+  "native_natural_exit_observed": false,
+  "postfatal_state_observed": false,
+  "frozen_execution_validation": {
+    "valid": true,
+    "checks": 683,
+    "errors": []
+  },
+  "public_pyz_sha256": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "native_exe_sha256": "14cf28c137c6b76396c4d02fcb23ba6a31132301ce1fe0fcbab8c9f1c29d8964",
+  "native_source_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "limitations": [
+    "Only the finite found-callee error obligation and named paths are accepted; this is not exhaustive TRYJUMP grammar or arity/type coverage.",
+    "Native includes the caller frame in its fatal stack; public PyEmuera shows only the callee frame. This scoped diagnostic difference is retained.",
+    "Native natural exit and postfatal state are unobserved; no postfatal continuation is credited.",
+    "Only the literal target and selected helper argument are covered; other argument forms and control-flow contexts remain outside scope."
+  ],
+  "product_code_modified": false,
+  "public_release_modified": false,
+  "drive_modified": false,
+  "global_completion": false
+}

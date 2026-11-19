@@ -1,0 +1,32 @@
+{
+  "schema": "stopped-state-public-bundle-1",
+  "public_files": [
+    {
+      "path": "README_ja.md",
+      "bytes": 5425,
+      "sha256": "0f54d4987a0da677a6042df1ad760247dcc5b2817206af5fcba4de2c128be514"
+    },
+    {
+      "path": "README_en.md",
+      "bytes": 5371,
+      "sha256": "3541266edf13b6804a605204f3a7722f5835f5dcc846d3d6fc9eb98c1546d401"
+    },
+    {
+      "path": "observations.json",
+      "bytes": 12697,
+      "sha256": "90d58796f600e37f210aa88e6418fbc001075ce5894f7b39edefa17fa8ecb4b3"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 5106,
+      "sha256": "246bc856ded5a96095fe51eb93fb5777e2049084bb9e9958eed6ae8bd3875dd5"
+    }
+  ],
+  "observation_profile_sha256": "90d58796f600e37f210aa88e6418fbc001075ce5894f7b39edefa17fa8ecb4b3",
+  "diagnostic_source_pin_ids": [
+    "numeric-error-native-uia",
+    "numeric-error-py-error-json",
+    "swap-error-native-uia",
+    "swap-error-py-error-json"
+  ]
+}

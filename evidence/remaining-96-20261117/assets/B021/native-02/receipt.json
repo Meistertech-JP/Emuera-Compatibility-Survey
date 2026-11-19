@@ -1,0 +1,22 @@
+{
+  "fixture_id": "CSVTALENT_CMD_MISSING99",
+  "mode": "native-02",
+  "inputs_before": {
+    "csv/CHARA10.CSV": "8b9991af83bcb980d01db5ec0623209bce8c35f120338fafa9acd4a2ba4dd702",
+    "csv/CHARA30.CSV": "52deac056ab8ac2108aa150069de78b566369adf3ae77c5174175dbe023b1fd4",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "ERB/MAIN.ERB": "d9a56f2b98640a3f2777c97f9bce3b29375674cf20b5a50d6e0b2d92fc9e8b6a"
+  },
+  "inputs_after": {
+    "csv/CHARA10.CSV": "8b9991af83bcb980d01db5ec0623209bce8c35f120338fafa9acd4a2ba4dd702",
+    "csv/CHARA30.CSV": "52deac056ab8ac2108aa150069de78b566369adf3ae77c5174175dbe023b1fd4",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc",
+    "ERB/MAIN.ERB": "d9a56f2b98640a3f2777c97f9bce3b29375674cf20b5a50d6e0b2d92fc9e8b6a"
+  },
+  "recorded_returncode": 0,
+  "selected_raw": {
+    "sha256": "71a0611948c6e4002a0b7c6368a8ed52d39f9187176141ced6300b88867b4183",
+    "binding_basis": "case_reference_and_saved_frozen_readback"
+  },
+  "native_natural_exit": "not_established_from_receipt"
+}

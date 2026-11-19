@@ -1,0 +1,2963 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-18T11:45:47+00:00",
+  "policy": {
+    "publication": "Independent explanatory writing; registry metadata only. Downloaded source prose is not included.",
+    "classification_meanings": {
+      "DOCUMENTED_ORIGINAL": "Content retrieved from the original project endpoint or an actual replay of it; authorship is separate.",
+      "MIRROR": "Preserved/migrated documentation; preservation is not authorship and does not establish byte identity.",
+      "DERIVATIVE": "Later documentation, reorganized references, migration history, or auxiliary material.",
+      "SOURCE_CONFIRMED": "Inspected pinned source or saved survey evidence; see evidence_type and adoption_scope."
+    },
+    "snapshot_timestamp": "Actual successful Wayback replay timestamp in UTC (14 digits); null is unknown/not an archive.",
+    "checked_at": "UTC acquisition/inspection time, not a snapshot date.",
+    "authorship": "Unknown per-page authors/editors are null. MinorShift is not inferred from Wiki migration.",
+    "rights": "This registry does not relicense third-party documentation or code as MIT."
+  },
+  "sources": [
+    {
+      "author": null,
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "checked_at": "2026-11-18T11:45:47+00:00",
+      "classification": "SOURCE_CONFIRMED",
+      "id": "SRC-NATIVE-V24",
+      "title": "Emuera1824+v24 bundled C# source",
+      "sections": [
+        {
+          "title": "GameProc / Function",
+          "anchor": null,
+          "url": null
+        },
+        {
+          "title": "GameData / Function",
+          "anchor": null,
+          "url": null
+        },
+        {
+          "title": "GameData / Variable",
+          "anchor": null,
+          "url": null
+        },
+        {
+          "title": "GameData / Expression",
+          "anchor": null,
+          "url": null
+        },
+        {
+          "title": "Content / sprite and graphics",
+          "anchor": null,
+          "url": null
+        },
+        {
+          "title": "Forms / Console",
+          "anchor": null,
+          "url": null
+        }
+      ],
+      "documented_version": "Emuera1824+v24: bundled source snapshot, not EM+EE",
+      "license": {
+        "identifier": null,
+        "status": "bundled_notices_inspected",
+        "evidence": [
+          {
+            "path": "vendor/emuera/NOTICE.en.md"
+          },
+          {
+            "path": "vendor/emuera/NOTICE.ja.md"
+          },
+          {
+            "archive_member": "Emuera1824+v24/src1824+v24/src1824/license.txt",
+            "sha256": "ce1134568e4a9fd56d4831c37dceb82050009e90349394f3f05a03a668500a06"
+          }
+        ],
+        "scope": "Main bundled license is a Japanese zlib-style grant crediting MinorShift and 妊）|дﾟ)の中の人. Third-party files retain their own notices; do not replace with MIT."
+      },
+      "adoption_scope": [
+        "C# implementation facts in this exact archive; cite archive + member + member_sha256 + line_start/line_end.",
+        "Corroborate behavior with finite observations when available. Source reading alone is not a native runtime observation."
+      ],
+      "limits": [
+        "The source does not establish all historical or EM+EE behavior.",
+        "No upstream download URL is asserted for the local archive."
+      ],
+      "retrieval": {
+        "outcome": "local_archive_verified",
+        "archive": "vendor/emuera/Emuera1824-v24-with-notices.zip",
+        "archive_sha256": "b0c2bd639868728e8b0b591c3da3d323a4537209300fb74d3829def4837cea85",
+        "nested_archive_member": "Emuera1824+v24.zip",
+        "nested_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+        "readme_members": [
+          {
+            "member": "Emuera1824+v24/Emuera_readme.txt",
+            "sha256": "0e91c8659026dbdcbc0e678f6d1c9fbeb90fafad135e504b92169c1fc2a2e250",
+            "encoding": "utf-8-sig",
+            "lines": 66
+          },
+          {
+            "member": "Emuera1824+v24/私家改造版Emuera_readme.txt",
+            "sha256": "6dab2dfba7bf9f15d54b6b855c3670396c38b76977e2abb84c5aef5f98142aab",
+            "encoding": "cp932",
+            "lines": 246
+          }
+        ]
+      },
+      "citation_locator": {
+        "required": [
+          "source_id",
+          "archive",
+          "archive_sha256",
+          "nested_archive_member",
+          "nested_archive_sha256",
+          "member",
+          "member_sha256",
+          "line_start",
+          "line_end"
+        ],
+        "line_numbering": "1-based lines after strict decoding of the unchanged member; state encoding when non-UTF-8.",
+        "source_index_audit": "audit/native-source-index.json"
+      }
+    },
+    {
+      "author": "Meistertech-JP (survey and original materials; third-party rights remain separate)",
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "checked_at": "2026-11-18T11:45:47+00:00",
+      "classification": "SOURCE_CONFIRMED",
+      "id": "SRC-SURVEY-3",
+      "title": "PyEmuera 3.0 saved finite survey and native/PyEmuera observations",
+      "sections": [
+        {
+          "title": "results/survey.json",
+          "anchor": null,
+          "url": "../results/survey.json"
+        },
+        {
+          "title": "evidence/694-target-trace-20261117/requirements/requirements.jsonl",
+          "anchor": null,
+          "url": "../evidence/694-target-trace-20261117/requirements/requirements.jsonl"
+        }
+      ],
+      "documented_version": "Native Emuera1824+v24 versus PyEmuera 3.0 saved finite conditions; each case retains its own version and mode",
+      "license": {
+        "identifier": "MIT",
+        "status": "candidate_license_inspected",
+        "evidence": [
+          {
+            "path": "LICENSE"
+          },
+          {
+            "path": "LICENSES/"
+          }
+        ],
+        "scope": "Original survey writing/code only; vendor code, quoted materials, and source documents retain separate rights."
+      },
+      "adoption_scope": [
+        "Saved results for the exact case, typed target, fixture, mode, and engine version recorded.",
+        "Cite public evidence paths, IDs and hashes; preserve limitations and differing outcomes."
+      ],
+      "limits": [
+        "SOURCE_CONFIRMED here means saved survey records were inspected, not that this task reran native or PyEmuera tests.",
+        "Finite matches do not prove complete compatibility or support outside the tested conditions.",
+        "Legacy evidence_availability flags in results/survey.json are not silently upgraded by this source registry; consult the accompanying evidence locators."
+      ],
+      "retrieval": {
+        "outcome": "local_saved_records_inspected",
+        "files": [
+          {
+            "path": "results/survey.json",
+            "sha256": "499652bad50c7e39576df8cbbc7d718d2aabd23d3c79298c8dfbdfd6dca4501f",
+            "bytes": 1131747
+          },
+          {
+            "path": "evidence/694-target-trace-20261117/requirements/requirements.jsonl",
+            "sha256": "dfb37832a1aca187edb0de8948d74da1d1bb3bc365d865445d93155a381bd8ca",
+            "bytes": 2040861
+          }
+        ]
+      },
+      "evidence_type": "SAVED_FINITE_OBSERVATION"
+    },
+    {
+      "author": null,
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "checked_at": "2026-11-18T11:45:47+00:00",
+      "classification": "DOCUMENTED_ORIGINAL",
+      "id": "SRC-NATIVE-README",
+      "title": "Bundled Emuera 1.824 and private Emuera1824+v24 readmes",
+      "documented_version": "Main readme: 1.824; private readme current base: Emuera1824+v24, with earlier private change history",
+      "sections": [
+        {
+          "title": "Emuera_readme.txt",
+          "anchor": null,
+          "url": null
+        },
+        {
+          "title": "私家改造版Emuera_readme.txt",
+          "anchor": null,
+          "url": null
+        }
+      ],
+      "license": {
+        "identifier": null,
+        "status": "bundled_license_display_verified",
+        "evidence": [
+          {
+            "member": "Emuera1824+v24/Emuera_readme.txt",
+            "sha256": "0e91c8659026dbdcbc0e678f6d1c9fbeb90fafad135e504b92169c1fc2a2e250",
+            "displayed_label": "zlib/libpng"
+          },
+          {
+            "member": "Emuera1824+v24/私家改造版Emuera_readme.txt",
+            "sha256": "6dab2dfba7bf9f15d54b6b855c3670396c38b76977e2abb84c5aef5f98142aab",
+            "basis": "Private readme refers to Emuera main license."
+          }
+        ],
+        "scope": "Bundled software/license notices; no assumption that all historical Wiki text uses this license."
+      },
+      "adoption_scope": [
+        "Bundle identity, version declarations, software credits, and private change-history leads; verify behavior in the pinned source or observations."
+      ],
+      "limits": [
+        "Software authors credited in a readme are not evidence of authorship of all Wiki pages.",
+        "The source URL from which this exact local ZIP was originally downloaded is unverified."
+      ],
+      "credited_software_authors": [
+        "MinorShift",
+        "妊）|дﾟ)の中の人"
+      ],
+      "retrieval": {
+        "outcome": "local_archive_verified",
+        "archive": "vendor/emuera/Emuera1824-v24-with-notices.zip",
+        "archive_sha256": "b0c2bd639868728e8b0b591c3da3d323a4537209300fb74d3829def4837cea85",
+        "nested_archive_member": "Emuera1824+v24.zip",
+        "nested_archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+        "readme_members": [
+          {
+            "member": "Emuera1824+v24/Emuera_readme.txt",
+            "sha256": "0e91c8659026dbdcbc0e678f6d1c9fbeb90fafad135e504b92169c1fc2a2e250",
+            "encoding": "utf-8-sig",
+            "lines": 66
+          },
+          {
+            "member": "Emuera1824+v24/私家改造版Emuera_readme.txt",
+            "sha256": "6dab2dfba7bf9f15d54b6b855c3670396c38b76977e2abb84c5aef5f98142aab",
+            "encoding": "cp932",
+            "lines": 246
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-OSDN-FRONTPAGE",
+      "title": "Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/FrontPage",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage",
+      "snapshot_timestamp": "20230303163321",
+      "sections": [
+        {
+          "title": "Emuera Wiki",
+          "anchor": "h1-Emuera.20Wiki",
+          "url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage#h1-Emuera.20Wiki"
+        },
+        {
+          "title": "eramaker情報について",
+          "anchor": "h2-eramaker.E6.83.85.E5.A0.B1.E3.81.AB.E3.81.A4.E3.81.84.E3.81.A6",
+          "url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage#h2-eramaker.E6.83.85.E5.A0.B1.E3.81.AB.E3.81.A4.E3.81.84.E3.81.A6"
+        },
+        {
+          "title": "エンドユーザー向け情報",
+          "anchor": "h2-.E3.82.A8.E3.83.B3.E3.83.89.E3.83.A6.E3.83.BC.E3.82.B6.E3.83.BC.E5.90.91.E3.81.91.E6.83.85.E5.A0.B1",
+          "url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage#h2-.E3.82.A8.E3.83.B3.E3.83.89.E3.83.A6.E3.83.BC.E3.82.B6.E3.83.BC.E5.90.91.E3.81.91.E6.83.85.E5.A0.B1"
+        },
+        {
+          "title": "eramaker basic 開発者向け情報",
+          "anchor": "h2-eramaker.20basic.20.E9.96.8B.E7.99.BA.E8.80.85.E5.90.91.E3.81.91.E6.83.85.E5.A0.B1",
+          "url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage#h2-eramaker.20basic.20.E9.96.8B.E7.99.BA.E8.80.85.E5.90.91.E3.81.91.E6.83.85.E5.A0.B1"
+        },
+        {
+          "title": "Emuera 開発者向け情報",
+          "anchor": "h2-Emuera.20.E9.96.8B.E7.99.BA.E8.80.85.E5.90.91.E3.81.91.E6.83.85.E5.A0.B1",
+          "url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage#h2-Emuera.20.E9.96.8B.E7.99.BA.E8.80.85.E5.90.91.E3.81.91.E6.83.85.E5.A0.B1"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:35:47+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230101000000id_/https://osdn.net/projects/emuera/wiki/FrontPage",
+        "resolved_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/FrontPage",
+        "body_sha256": "119b6a3af03598ebb95f753179f102fa23198f35d9a3580a04d036395d3938f3",
+        "bytes": 29631
+      }
+    },
+    {
+      "id": "SRC-EMEE-EMUERA",
+      "title": "Index - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/",
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "エンドユーザー向け情報",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/#_1"
+        },
+        {
+          "title": "eramaker basic 開発者向け情報",
+          "anchor": "eramaker-basic",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/#eramaker-basic"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:36:01+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/",
+        "body_sha256": "f71c56e0984285ff008f5f38eb1fb7ac40f1366364a3160aaac2a6c999dadf54",
+        "bytes": 82693
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-ERAGAMES-EXCOM",
+      "title": "Emuera/excom - Era Wiki",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/excom",
+      "mirror_or_archive_url": "https://wiki.eragames.rip/index.php/Emuera/excom",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "命令[edit]",
+          "anchor": "命令",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#命令"
+        },
+        {
+          "title": "PRINT系[edit]",
+          "anchor": "PRINT系",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT系"
+        },
+        {
+          "title": "PRINT(|V|S|FORM|FORMS)(|K|D)(|L|W)[edit]",
+          "anchor": "PRINT(|V|S|FORM|FORMS)(|K|D)(|L|W)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT(|V|S|FORM|FORMS)(|K|D)(|L|W)"
+        },
+        {
+          "title": "PRINTSINGLE(|V|S|FORM|FORMS)(|K|D)[edit]",
+          "anchor": "PRINTSINGLE(|V|S|FORM|FORMS)(|K|D)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINTSINGLE(|V|S|FORM|FORMS)(|K|D)"
+        },
+        {
+          "title": "PRINT(|FORM)(C|LC)(|K|D)[edit]",
+          "anchor": "PRINT(|FORM)(C|LC)(|K|D)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT(|FORM)(C|LC)(|K|D)"
+        },
+        {
+          "title": "PRINTDATA(|K|D)(|L|W)[edit]",
+          "anchor": "PRINTDATA(|K|D)(|L|W)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINTDATA(|K|D)(|L|W)"
+        },
+        {
+          "title": "PRINTBUTTON(|C|LC) <文字列式>, <数式 or 文字列式>[edit]",
+          "anchor": "PRINTBUTTON(|C|LC)_<文字列式>,_<数式_or_文字列式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINTBUTTON(|C|LC)_<文字列式>,_<数式_or_文字列式>"
+        },
+        {
+          "title": "PRINTPLAIN(|FORM)[edit]",
+          "anchor": "PRINTPLAIN(|FORM)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINTPLAIN(|FORM)"
+        },
+        {
+          "title": "CUSTOMDRAWLINE <文字列>[edit]",
+          "anchor": "CUSTOMDRAWLINE_<文字列>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#CUSTOMDRAWLINE_<文字列>"
+        },
+        {
+          "title": "DRAWLINEFORM <FORM文字列>[edit]",
+          "anchor": "DRAWLINEFORM_<FORM文字列>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#DRAWLINEFORM_<FORM文字列>"
+        },
+        {
+          "title": "REUSELASTLINE <書式付文字列>[edit]",
+          "anchor": "REUSELASTLINE_<書式付文字列>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#REUSELASTLINE_<書式付文字列>"
+        },
+        {
+          "title": "CLEARLINE <消す行数>[edit]",
+          "anchor": "CLEARLINE_<消す行数>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#CLEARLINE_<消す行数>"
+        },
+        {
+          "title": "PRINT_IMG <文字列式>[edit]",
+          "anchor": "PRINT_IMG_<文字列式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT_IMG_<文字列式>"
+        },
+        {
+          "title": "PRINT_RECT <数式>[edit]",
+          "anchor": "PRINT_RECT_<数式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT_RECT_<数式>"
+        },
+        {
+          "title": "PRINT_RECT <数式>, <数式>, <数式>, <数式>[edit]",
+          "anchor": "PRINT_RECT_<数式>,_<数式>,_<数式>,_<数式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT_RECT_<数式>,_<数式>,_<数式>,_<数式>"
+        },
+        {
+          "title": "PRINT_SPACE <数式>[edit]",
+          "anchor": "PRINT_SPACE_<数式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINT_SPACE_<数式>"
+        },
+        {
+          "title": "表示操作・フォント操作・表示仕様参照[edit]",
+          "anchor": "表示操作・フォント操作・表示仕様参照",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#表示操作・フォント操作・表示仕様参照"
+        },
+        {
+          "title": "SETCOLOR <R>, <G>, <B>[edit]",
+          "anchor": "SETCOLOR_<R>,_<G>,_<B>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETCOLOR_<R>,_<G>,_<B>"
+        },
+        {
+          "title": "SETCOLOR <RGB>[edit]",
+          "anchor": "SETCOLOR_<RGB>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETCOLOR_<RGB>"
+        },
+        {
+          "title": "RESETCOLOR[edit]",
+          "anchor": "RESETCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#RESETCOLOR"
+        },
+        {
+          "title": "SETBGCOLOR <R>, <G>, <B>[edit]",
+          "anchor": "SETBGCOLOR_<R>,_<G>,_<B>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETBGCOLOR_<R>,_<G>,_<B>"
+        },
+        {
+          "title": "SETBGCOLOR <RGB>[edit]",
+          "anchor": "SETBGCOLOR_<RGB>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETBGCOLOR_<RGB>"
+        },
+        {
+          "title": "RESETBGCOLOR[edit]",
+          "anchor": "RESETBGCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#RESETBGCOLOR"
+        },
+        {
+          "title": "SETCOLORBYNAME <文字列>[edit]",
+          "anchor": "SETCOLORBYNAME_<文字列>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETCOLORBYNAME_<文字列>"
+        },
+        {
+          "title": "SETBGCOLORBYNAME <文字列>[edit]",
+          "anchor": "SETBGCOLORBYNAME_<文字列>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETBGCOLORBYNAME_<文字列>"
+        },
+        {
+          "title": "GETCOLOR[edit]",
+          "anchor": "GETCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETCOLOR"
+        },
+        {
+          "title": "GETDEFCOLOR[edit]",
+          "anchor": "GETDEFCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETDEFCOLOR"
+        },
+        {
+          "title": "GETBGCOLOR[edit]",
+          "anchor": "GETBGCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETBGCOLOR"
+        },
+        {
+          "title": "GETDEFBGCOLOR[edit]",
+          "anchor": "GETDEFBGCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETDEFBGCOLOR"
+        },
+        {
+          "title": "GETFOCUSCOLOR[edit]",
+          "anchor": "GETFOCUSCOLOR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETFOCUSCOLOR"
+        },
+        {
+          "title": "FONTBOLD[edit]",
+          "anchor": "FONTBOLD",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#FONTBOLD"
+        },
+        {
+          "title": "FONTITALIC[edit]",
+          "anchor": "FONTITALIC",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#FONTITALIC"
+        },
+        {
+          "title": "FONTREGULAR[edit]",
+          "anchor": "FONTREGULAR",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#FONTREGULAR"
+        },
+        {
+          "title": "FONTSTYLE <数式>[edit]",
+          "anchor": "FONTSTYLE_<数式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#FONTSTYLE_<数式>"
+        },
+        {
+          "title": "GETSTYLE[edit]",
+          "anchor": "GETSTYLE",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETSTYLE"
+        },
+        {
+          "title": "CHKFONT <文字列式>[edit]",
+          "anchor": "CHKFONT_<文字列式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#CHKFONT_<文字列式>"
+        },
+        {
+          "title": "SETFONT <文字列式>[edit]",
+          "anchor": "SETFONT_<文字列式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#SETFONT_<文字列式>"
+        },
+        {
+          "title": "GETFONT[edit]",
+          "anchor": "GETFONT",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#GETFONT"
+        },
+        {
+          "title": "FORCEKANA <数式>[edit]",
+          "anchor": "FORCEKANA_<数式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#FORCEKANA_<数式>"
+        },
+        {
+          "title": "ALIGNMENT <キーワード>[edit]",
+          "anchor": "ALIGNMENT_<キーワード>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#ALIGNMENT_<キーワード>"
+        },
+        {
+          "title": "CURRENTALIGN[edit]",
+          "anchor": "CURRENTALIGN",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#CURRENTALIGN"
+        },
+        {
+          "title": "REDRAW <数式>[edit]",
+          "anchor": "REDRAW_<数式>",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#REDRAW_<数式>"
+        },
+        {
+          "title": "CURRENTREDRAW[edit]",
+          "anchor": "CURRENTREDRAW",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#CURRENTREDRAW"
+        },
+        {
+          "title": "PRINTCPERLINE[edit]",
+          "anchor": "PRINTCPERLINE",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#PRINTCPERLINE"
+        },
+        {
+          "title": "LINEISEMPTY[edit]",
+          "anchor": "LINEISEMPTY",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/excom#LINEISEMPTY"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.736, 1.808, 1.824",
+      "checked_at": "2026-11-18T11:41:31+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Third-party preserved Wiki; original authors and per-page editing history are unverified.",
+        "Do not treat preservation or migration as MinorShift authorship."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://wiki.eragames.rip/index.php/Emuera/excom",
+        "resolved_url": "https://wiki.eragames.rip/index.php/Emuera/excom",
+        "body_sha256": "75dfc10e15efb27f56b6f7ae3a53d17ae0fb0c467ab71953a6416862fd86ce70",
+        "bytes": 324676
+      },
+      "revision_id": 40716,
+      "page_last_modified_display": "This page was last edited on 30 January 2023, at 10:27."
+    },
+    {
+      "id": "SRC-OSDN-EXCOM",
+      "title": "excom - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/excom",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom",
+      "snapshot_timestamp": "20230303163405",
+      "sections": [
+        {
+          "title": "命令",
+          "anchor": "h3-.E5.91.BD.E4.BB.A4",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h3-.E5.91.BD.E4.BB.A4"
+        },
+        {
+          "title": "PRINT系",
+          "anchor": "h4-PRINT.E7.B3.BB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-PRINT.E7.B3.BB"
+        },
+        {
+          "title": "表示操作・フォント操作・表示仕様参照",
+          "anchor": "h4-.E8.A1.A8.E7.A4.BA.E6.93.8D.E4.BD.9C.E3.83.BB.E3.83.95.E3.82.A9.E3.83.B3.E3.83.88.E6.93.8D.E4.BD.9C.E3.83.BB.E8.A1.A8.E7.A4.BA.E4.BB.95.E6.A7.98.E5.8F.82.E7.85.A7",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E8.A1.A8.E7.A4.BA.E6.93.8D.E4.BD.9C.E3.83.BB.E3.83.95.E3.82.A9.E3.83.B3.E3.83.88.E6.93.8D.E4.BD.9C.E3.83.BB.E8.A1.A8.E7.A4.BA.E4.BB.95.E6.A7.98.E5.8F.82.E7.85.A7"
+        },
+        {
+          "title": "文字列操作・参照",
+          "anchor": "h4-.E6.96.87.E5.AD.97.E5.88.97.E6.93.8D.E4.BD.9C.E3.83.BB.E5.8F.82.E7.85.A7",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E6.96.87.E5.AD.97.E5.88.97.E6.93.8D.E4.BD.9C.E3.83.BB.E5.8F.82.E7.85.A7"
+        },
+        {
+          "title": "算術",
+          "anchor": "h4-.E7.AE.97.E8.A1.93",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E7.AE.97.E8.A1.93"
+        },
+        {
+          "title": "キャラ操作・参照",
+          "anchor": "h4-.E3.82.AD.E3.83.A3.E3.83.A9.E6.93.8D.E4.BD.9C.E3.83.BB.E5.8F.82.E7.85.A7",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E3.82.AD.E3.83.A3.E3.83.A9.E6.93.8D.E4.BD.9C.E3.83.BB.E5.8F.82.E7.85.A7"
+        },
+        {
+          "title": "変数操作・変数参照・CSV参照",
+          "anchor": "h4-.E5.A4.89.E6.95.B0.E6.93.8D.E4.BD.9C.E3.83.BB.E5.A4.89.E6.95.B0.E5.8F.82.E7.85.A7.E3.83.BBCSV.E5.8F.82.E7.85.A7",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E5.A4.89.E6.95.B0.E6.93.8D.E4.BD.9C.E3.83.BB.E5.A4.89.E6.95.B0.E5.8F.82.E7.85.A7.E3.83.BBCSV.E5.8F.82.E7.85.A7"
+        },
+        {
+          "title": "セーブデータ操作",
+          "anchor": "h4-.E3.82.BB.E3.83.BC.E3.83.96.E3.83.87.E3.83.BC.E3.82.BF.E6.93.8D.E4.BD.9C",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E3.82.BB.E3.83.BC.E3.83.96.E3.83.87.E3.83.BC.E3.82.BF.E6.93.8D.E4.BD.9C"
+        },
+        {
+          "title": "日付・時刻取得",
+          "anchor": "h4-.E6.97.A5.E4.BB.98.E3.83.BB.E6.99.82.E5.88.BB.E5.8F.96.E5.BE.97",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E6.97.A5.E4.BB.98.E3.83.BB.E6.99.82.E5.88.BB.E5.8F.96.E5.BE.97"
+        },
+        {
+          "title": "入力・ウェイト",
+          "anchor": "h4-.E5.85.A5.E5.8A.9B.E3.83.BB.E3.82.A6.E3.82.A7.E3.82.A4.E3.83.88",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E5.85.A5.E5.8A.9B.E3.83.BB.E3.82.A6.E3.82.A7.E3.82.A4.E3.83.88"
+        },
+        {
+          "title": "ループ・分岐構文",
+          "anchor": "h4-.E3.83.AB.E3.83.BC.E3.83.97.E3.83.BB.E5.88.86.E5.B2.90.E6.A7.8B.E6.96.87",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E3.83.AB.E3.83.BC.E3.83.97.E3.83.BB.E5.88.86.E5.B2.90.E6.A7.8B.E6.96.87"
+        },
+        {
+          "title": "乱数制御",
+          "anchor": "h4-.E4.B9.B1.E6.95.B0.E5.88.B6.E5.BE.A1",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E4.B9.B1.E6.95.B0.E5.88.B6.E5.BE.A1"
+        },
+        {
+          "title": "デバッグ補助・システムフロー制御",
+          "anchor": "h4-.E3.83.87.E3.83.90.E3.83.83.E3.82.B0.E8.A3.9C.E5.8A.A9.E3.83.BB.E3.82.B7.E3.82.B9.E3.83.86.E3.83.A0.E3.83.95.E3.83.AD.E3.83.BC.E5.88.B6.E5.BE.A1",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E3.83.87.E3.83.90.E3.83.83.E3.82.B0.E8.A3.9C.E5.8A.A9.E3.83.BB.E3.82.B7.E3.82.B9.E3.83.86.E3.83.A0.E3.83.95.E3.83.AD.E3.83.BC.E5.88.B6.E5.BE.A1"
+        },
+        {
+          "title": "CALL・JUMP・GOTO系",
+          "anchor": "h4-CALL.E3.83.BBJUMP.E3.83.BBGOTO.E7.B3.BB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-CALL.E3.83.BBJUMP.E3.83.BBGOTO.E7.B3.BB"
+        },
+        {
+          "title": "CALL・JUMP・GOTO系2 (TRYC-CATCH-ENDCATCH)",
+          "anchor": "h4-CALL.E3.83.BBJUMP.E3.83.BBGOTO.E7.B3.BB2.20.28TRYC-CATCH-ENDCATCH.29",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-CALL.E3.83.BBJUMP.E3.83.BBGOTO.E7.B3.BB2.20.28TRYC-CATCH-ENDCATCH.29"
+        },
+        {
+          "title": "RETURN系",
+          "anchor": "h4-RETURN.E7.B3.BB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-RETURN.E7.B3.BB"
+        },
+        {
+          "title": "DEBUG系",
+          "anchor": "h4-DEBUG.E7.B3.BB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-DEBUG.E7.B3.BB"
+        },
+        {
+          "title": "ツールチップ系",
+          "anchor": "h4-.E3.83.84.E3.83.BC.E3.83.AB.E3.83.81.E3.83.83.E3.83.97.E7.B3.BB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E3.83.84.E3.83.BC.E3.83.AB.E3.83.81.E3.83.83.E3.83.97.E7.B3.BB"
+        },
+        {
+          "title": "HTML系",
+          "anchor": "h4-HTML.E7.B3.BB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-HTML.E7.B3.BB"
+        },
+        {
+          "title": "AWAIT関連",
+          "anchor": "h4-AWAIT.E9.96.A2.E9.80.A3",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-AWAIT.E9.96.A2.E9.80.A3"
+        },
+        {
+          "title": "画像処理関連",
+          "anchor": "h4-.E7.94.BB.E5.83.8F.E5.87.A6.E7.90.86.E9.96.A2.E9.80.A3",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E7.94.BB.E5.83.8F.E5.87.A6.E7.90.86.E9.96.A2.E9.80.A3"
+        },
+        {
+          "title": "未整理項目",
+          "anchor": "h4-.E6.9C.AA.E6.95.B4.E7.90.86.E9.A0.85.E7.9B.AE",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom#h4-.E6.9C.AA.E6.95.B4.E7.90.86.E9.A0.85.E7.9B.AE"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.736, 1.808, 1.824",
+      "checked_at": "2026-11-18T11:36:43+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior.",
+        "Contains explicit ver 1.736, 1.808, and 1.824 annotations. A statement labelled 1.736 is not a statement that all v24 behavior matches it."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/excom",
+        "resolved_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/excom",
+        "body_sha256": "f2e99a6355a81501b934a7b27a0ba4e1046b3f5d3302700998a642e00a54bbd3",
+        "bytes": 216310
+      }
+    },
+    {
+      "id": "SRC-OSDN-EXMETH",
+      "title": "exmeth - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exmeth",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exmeth",
+      "snapshot_timestamp": "20230303163405",
+      "sections": [
+        {
+          "title": "式中で使える関数",
+          "anchor": "h3-.E5.BC.8F.E4.B8.AD.E3.81.A7.E4.BD.BF.E3.81.88.E3.82.8B.E9.96.A2.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exmeth#h3-.E5.BC.8F.E4.B8.AD.E3.81.A7.E4.BD.BF.E3.81.88.E3.82.8B.E9.96.A2.E6.95.B0"
+        },
+        {
+          "title": "凡例",
+          "anchor": "h4-.E5.87.A1.E4.BE.8B",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exmeth#h4-.E5.87.A1.E4.BE.8B"
+        },
+        {
+          "title": "組み込み関数",
+          "anchor": "h4-.E7.B5.84.E3.81.BF.E8.BE.BC.E3.81.BF.E9.96.A2.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exmeth#h4-.E7.B5.84.E3.81.BF.E8.BE.BC.E3.81.BF.E9.96.A2.E6.95.B0"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.712, 1.824",
+      "checked_at": "2026-11-18T11:37:05+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/exmeth",
+        "resolved_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exmeth",
+        "body_sha256": "c59346c591add4b8abdc0401c19cf71ec469d1302d49f468c732c4873a6aeec1",
+        "bytes": 122996
+      }
+    },
+    {
+      "id": "SRC-OSDN-EXOP",
+      "title": "exop - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exop",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop",
+      "snapshot_timestamp": "20230303163446",
+      "sections": [
+        {
+          "title": "演算",
+          "anchor": "h3-.E6.BC.94.E7.AE.97",
+          "url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop#h3-.E6.BC.94.E7.AE.97"
+        },
+        {
+          "title": "演算子",
+          "anchor": "h4-.E6.BC.94.E7.AE.97.E5.AD.90",
+          "url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop#h4-.E6.BC.94.E7.AE.97.E5.AD.90"
+        },
+        {
+          "title": "暫定的な演算子の優先度表",
+          "anchor": "h4-.E6.9A.AB.E5.AE.9A.E7.9A.84.E3.81.AA.E6.BC.94.E7.AE.97.E5.AD.90.E3.81.AE.E5.84.AA.E5.85.88.E5.BA.A6.E8.A1.A8",
+          "url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop#h4-.E6.9A.AB.E5.AE.9A.E7.9A.84.E3.81.AA.E6.BC.94.E7.AE.97.E5.AD.90.E3.81.AE.E5.84.AA.E5.85.88.E5.BA.A6.E8.A1.A8"
+        },
+        {
+          "title": "演算の追加",
+          "anchor": "h4-.E6.BC.94.E7.AE.97.E3.81.AE.E8.BF.BD.E5.8A.A0",
+          "url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop#h4-.E6.BC.94.E7.AE.97.E3.81.AE.E8.BF.BD.E5.8A.A0"
+        },
+        {
+          "title": "論理演算子の短絡評価",
+          "anchor": "h4-.E8.AB.96.E7.90.86.E6.BC.94.E7.AE.97.E5.AD.90.E3.81.AE.E7.9F.AD.E7.B5.A1.E8.A9.95.E4.BE.A1",
+          "url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop#h4-.E8.AB.96.E7.90.86.E6.BC.94.E7.AE.97.E5.AD.90.E3.81.AE.E7.9F.AD.E7.B5.A1.E8.A9.95.E4.BE.A1"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:37:22+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/exop",
+        "resolved_url": "https://web.archive.org/web/20230303163446id_/https://osdn.net/projects/emuera/wiki/exop",
+        "body_sha256": "48dad7a68cc8f9eb4b9368431d5e2e35b6f7935985c550ce2f0bb2993527cc38",
+        "bytes": 32694
+      }
+    },
+    {
+      "id": "SRC-OSDN-EXFUNC",
+      "title": "exfunc - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exfunc",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc",
+      "snapshot_timestamp": "20230303163353",
+      "sections": [
+        {
+          "title": "関数",
+          "anchor": "h3-.E9.96.A2.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h3-.E9.96.A2.E6.95.B0"
+        },
+        {
+          "title": "@EVENTLOAD",
+          "anchor": "h4-.40EVENTLOAD",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.40EVENTLOAD"
+        },
+        {
+          "title": "@TITLE_LOADGAME",
+          "anchor": "h4-.40TITLE_LOADGAME",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.40TITLE_LOADGAME"
+        },
+        {
+          "title": "@SYSTEM_AUTOSAVE",
+          "anchor": "h4-.40SYSTEM_AUTOSAVE",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.40SYSTEM_AUTOSAVE"
+        },
+        {
+          "title": "@SYSTEM_TITLE",
+          "anchor": "h4-.40SYSTEM_TITLE",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.40SYSTEM_TITLE"
+        },
+        {
+          "title": "@CALLTRAINEND",
+          "anchor": "h4-.40CALLTRAINEND",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.40CALLTRAINEND"
+        },
+        {
+          "title": "自作関数における引数指定",
+          "anchor": "h4-.E8.87.AA.E4.BD.9C.E9.96.A2.E6.95.B0.E3.81.AB.E3.81.8A.E3.81.91.E3.82.8B.E5.BC.95.E6.95.B0.E6.8C.87.E5.AE.9A",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.E8.87.AA.E4.BD.9C.E9.96.A2.E6.95.B0.E3.81.AB.E3.81.8A.E3.81.91.E3.82.8B.E5.BC.95.E6.95.B0.E6.8C.87.E5.AE.9A"
+        },
+        {
+          "title": "属性",
+          "anchor": "h3-.E5.B1.9E.E6.80.A7",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h3-.E5.B1.9E.E6.80.A7"
+        },
+        {
+          "title": "#ONLY",
+          "anchor": "h4-.23ONLY",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23ONLY"
+        },
+        {
+          "title": "#FUNCTION",
+          "anchor": "h4-.23FUNCTION",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23FUNCTION"
+        },
+        {
+          "title": "#FUNCTIONS",
+          "anchor": "h4-.23FUNCTIONS",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23FUNCTIONS"
+        },
+        {
+          "title": "定義",
+          "anchor": "h3-.E5.AE.9A.E7.BE.A9",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h3-.E5.AE.9A.E7.BE.A9"
+        },
+        {
+          "title": "#LOCALSIZE <定数式>",
+          "anchor": "h4-.23LOCALSIZE.20.3C.E5.AE.9A.E6.95.B0.E5.BC.8F.3E",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23LOCALSIZE.20.3C.E5.AE.9A.E6.95.B0.E5.BC.8F.3E"
+        },
+        {
+          "title": "#LOCALSSIZE <定数式>",
+          "anchor": "h4-.23LOCALSSIZE.20.3C.E5.AE.9A.E6.95.B0.E5.BC.8F.3E",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23LOCALSSIZE.20.3C.E5.AE.9A.E6.95.B0.E5.BC.8F.3E"
+        },
+        {
+          "title": "#DIM",
+          "anchor": "h4-.23DIM",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23DIM"
+        },
+        {
+          "title": "#DIMS",
+          "anchor": "h4-.23DIMS",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23DIMS"
+        },
+        {
+          "title": "#DEFINE",
+          "anchor": "h4-.23DEFINE",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.23DEFINE"
+        },
+        {
+          "title": "特殊なブロックを表す行",
+          "anchor": "h3-.E7.89.B9.E6.AE.8A.E3.81.AA.E3.83.96.E3.83.AD.E3.83.83.E3.82.AF.E3.82.92.E8.A1.A8.E3.81.99.E8.A1.8C",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h3-.E7.89.B9.E6.AE.8A.E3.81.AA.E3.83.96.E3.83.AD.E3.83.83.E3.82.AF.E3.82.92.E8.A1.A8.E3.81.99.E8.A1.8C"
+        },
+        {
+          "title": "[SKIPSTART]",
+          "anchor": "h4-.7B.7B.7B.5BSKIPSTART.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BSKIPSTART.5D.7D.7D.7D"
+        },
+        {
+          "title": "[SKIPEND]",
+          "anchor": "h4-.7B.7B.7B.5BSKIPEND.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BSKIPEND.5D.7D.7D.7D"
+        },
+        {
+          "title": "[IF XXX]",
+          "anchor": "h4-.7B.7B.7B.5BIF.20XXX.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BIF.20XXX.5D.7D.7D.7D"
+        },
+        {
+          "title": "[ELSEIF XXX]",
+          "anchor": "h4-.7B.7B.7B.5BELSEIF.20XXX.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BELSEIF.20XXX.5D.7D.7D.7D"
+        },
+        {
+          "title": "[ELSE]",
+          "anchor": "h4-.7B.7B.7B.5BELSE.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BELSE.5D.7D.7D.7D"
+        },
+        {
+          "title": "[ENDIF]",
+          "anchor": "h4-.7B.7B.7B.5BENDIF.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BENDIF.5D.7D.7D.7D"
+        },
+        {
+          "title": "[IF_DEBUG]",
+          "anchor": "h4-.7B.7B.7B.5BIF_DEBUG.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BIF_DEBUG.5D.7D.7D.7D"
+        },
+        {
+          "title": "[ENDIF]",
+          "anchor": "h4-.7B.7B.7B.5BENDIF.5D.7D.7D.7D-2",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BENDIF.5D.7D.7D.7D-2"
+        },
+        {
+          "title": "[IF_NDEBUG]",
+          "anchor": "h4-.7B.7B.7B.5BIF_NDEBUG.5D.7D.7D.7D",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BIF_NDEBUG.5D.7D.7D.7D"
+        },
+        {
+          "title": "[ENDIF]",
+          "anchor": "h4-.7B.7B.7B.5BENDIF.5D.7D.7D.7D-3",
+          "url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc#h4-.7B.7B.7B.5BENDIF.5D.7D.7D.7D-3"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.807, 1.808, 1.810",
+      "checked_at": "2026-11-18T11:37:37+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/exfunc",
+        "resolved_url": "https://web.archive.org/web/20230303163353id_/https://osdn.net/projects/emuera/wiki/exfunc",
+        "body_sha256": "399fd78bd10294df061ee31785a8973ae857d461e05552e587daa1b9db705487",
+        "bytes": 44204
+      }
+    },
+    {
+      "id": "SRC-OSDN-USERVARS",
+      "title": "UserVars - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/UserVars",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars",
+      "snapshot_timestamp": "20230303163405",
+      "sections": [
+        {
+          "title": "ユーザー定義の変数",
+          "anchor": "h3-.E3.83.A6.E3.83.BC.E3.82.B6.E3.83.BC.E5.AE.9A.E7.BE.A9.E3.81.AE.E5.A4.89.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h3-.E3.83.A6.E3.83.BC.E3.82.B6.E3.83.BC.E5.AE.9A.E7.BE.A9.E3.81.AE.E5.A4.89.E6.95.B0"
+        },
+        {
+          "title": "書式（プライベート変数の場合）",
+          "anchor": "h4-.E6.9B.B8.E5.BC.8F.EF.BC.88.E3.83.97.E3.83.A9.E3.82.A4.E3.83.99.E3.83.BC.E3.83.88.E5.A4.89.E6.95.B0.E3.81.AE.E5.A0.B4.E5.90.88.EF.BC.89",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E6.9B.B8.E5.BC.8F.EF.BC.88.E3.83.97.E3.83.A9.E3.82.A4.E3.83.99.E3.83.BC.E3.83.88.E5.A4.89.E6.95.B0.E3.81.AE.E5.A0.B4.E5.90.88.EF.BC.89"
+        },
+        {
+          "title": "初期値の設定",
+          "anchor": "h4-.E5.88.9D.E6.9C.9F.E5.80.A4.E3.81.AE.E8.A8.AD.E5.AE.9A",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E5.88.9D.E6.9C.9F.E5.80.A4.E3.81.AE.E8.A8.AD.E5.AE.9A"
+        },
+        {
+          "title": "動的変数",
+          "anchor": "h4-.E5.8B.95.E7.9A.84.E5.A4.89.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E5.8B.95.E7.9A.84.E5.A4.89.E6.95.B0"
+        },
+        {
+          "title": "定数",
+          "anchor": "h4-.E5.AE.9A.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E5.AE.9A.E6.95.B0"
+        },
+        {
+          "title": "参照型変数",
+          "anchor": "h4-.E5.8F.82.E7.85.A7.E5.9E.8B.E5.A4.89.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E5.8F.82.E7.85.A7.E5.9E.8B.E5.A4.89.E6.95.B0"
+        },
+        {
+          "title": "書式（広域変数の場合）",
+          "anchor": "h4-.E6.9B.B8.E5.BC.8F.EF.BC.88.E5.BA.83.E5.9F.9F.E5.A4.89.E6.95.B0.E3.81.AE.E5.A0.B4.E5.90.88.EF.BC.89",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E6.9B.B8.E5.BC.8F.EF.BC.88.E5.BA.83.E5.9F.9F.E5.A4.89.E6.95.B0.E3.81.AE.E5.A0.B4.E5.90.88.EF.BC.89"
+        },
+        {
+          "title": "制限",
+          "anchor": "h4-.E5.88.B6.E9.99.90",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars#h4-.E5.88.B6.E9.99.90"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.815",
+      "checked_at": "2026-11-18T11:37:49+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/UserVars",
+        "resolved_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/UserVars",
+        "body_sha256": "9ee93f0b9388b798c3b91ba8c01049dfa68d631c111029d93ca4ac2aeacda999",
+        "bytes": 36103
+      }
+    },
+    {
+      "id": "SRC-OSDN-RESOURCES",
+      "title": "resources - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/resources",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/resources",
+      "snapshot_timestamp": "20230303163405",
+      "sections": [
+        {
+          "title": "リソースファイル",
+          "anchor": "h3-.E3.83.AA.E3.82.BD.E3.83.BC.E3.82.B9.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/resources#h3-.E3.83.AA.E3.82.BD.E3.83.BC.E3.82.B9.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB"
+        },
+        {
+          "title": "リソース指定ファイル(csv)",
+          "anchor": "h4-.E3.83.AA.E3.82.BD.E3.83.BC.E3.82.B9.E6.8C.87.E5.AE.9A.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.28csv.29",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/resources#h4-.E3.83.AA.E3.82.BD.E3.83.BC.E3.82.B9.E6.8C.87.E5.AE.9A.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.28csv.29"
+        },
+        {
+          "title": "画像ファイル",
+          "anchor": "h4-.E7.94.BB.E5.83.8F.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/resources#h4-.E7.94.BB.E5.83.8F.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB"
+        },
+        {
+          "title": "注意点",
+          "anchor": "h4-.E6.B3.A8.E6.84.8F.E7.82.B9",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/resources#h4-.E6.B3.A8.E6.84.8F.E7.82.B9"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:01+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/resources",
+        "resolved_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/resources",
+        "body_sha256": "d1795f21d33ef7326aa4a79da8a83d4c372e0a83a9135cec98599d4d1a8fb554",
+        "bytes": 32476
+      }
+    },
+    {
+      "id": "SRC-OSDN-EXHTML",
+      "title": "exhtml - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exhtml",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163436id_/https://osdn.net/projects/emuera/wiki/exhtml",
+      "snapshot_timestamp": "20230303163436",
+      "sections": [
+        {
+          "title": "HTML_PRINT関連",
+          "anchor": "h3-HTML_PRINT.E9.96.A2.E9.80.A3",
+          "url": "https://web.archive.org/web/20230303163436id_/https://osdn.net/projects/emuera/wiki/exhtml#h3-HTML_PRINT.E9.96.A2.E9.80.A3"
+        },
+        {
+          "title": "HTML_PRINT",
+          "anchor": "h4-HTML_PRINT",
+          "url": "https://web.archive.org/web/20230303163436id_/https://osdn.net/projects/emuera/wiki/exhtml#h4-HTML_PRINT"
+        },
+        {
+          "title": "関連命令",
+          "anchor": "h4-.E9.96.A2.E9.80.A3.E5.91.BD.E4.BB.A4",
+          "url": "https://web.archive.org/web/20230303163436id_/https://osdn.net/projects/emuera/wiki/exhtml#h4-.E9.96.A2.E9.80.A3.E5.91.BD.E4.BB.A4"
+        },
+        {
+          "title": "関連関数",
+          "anchor": "h4-.E9.96.A2.E9.80.A3.E9.96.A2.E6.95.B0",
+          "url": "https://web.archive.org/web/20230303163436id_/https://osdn.net/projects/emuera/wiki/exhtml#h4-.E9.96.A2.E9.80.A3.E9.96.A2.E6.95.B0"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:13+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/exhtml",
+        "resolved_url": "https://web.archive.org/web/20230303163436id_/https://osdn.net/projects/emuera/wiki/exhtml",
+        "body_sha256": "2ff8612bd29bad6872567613ccd3ee8b829ff5a6f486a8b274310921c61b2eec",
+        "bytes": 39595
+      }
+    },
+    {
+      "id": "SRC-EMEE-CHANGELOG-INDEX",
+      "title": "変更ログ - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://evilmask.gitlab.io/emuera.em.doc/Changelog/index.html",
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "変更ログ",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Changelog/index.html#_1"
+        },
+        {
+          "title": "Emuera.EM",
+          "anchor": "emueraem",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Changelog/index.html#emueraem"
+        },
+        {
+          "title": "Emuera.EE",
+          "anchor": "emueraee",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Changelog/index.html#emueraee"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:26+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "Migration provenance: the retrieved changelog states that Emuera documentation was moved from OSDN into the EM+EE Wiki."
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here.",
+        "The migration statement identifies neither every original author nor the exact original revision of each page."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Changelog/index.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Changelog/index.html",
+        "body_sha256": "bf03df5a0f118d38fd90bf2e79b15f2249ada468ddcb2a89902b5a0e4c7cbd18",
+        "bytes": 118666
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-REFERENCE-INDEX",
+      "title": "Index - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html",
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "命令・式中関数の一覧",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_1"
+        },
+        {
+          "title": "凡例",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_2"
+        },
+        {
+          "title": "PRINT 系",
+          "anchor": "print",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#print"
+        },
+        {
+          "title": "表示操作・フォント操作・表示仕様参照",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_3"
+        },
+        {
+          "title": "文字列操作・参照",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_4"
+        },
+        {
+          "title": "算術",
+          "anchor": "_5",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_5"
+        },
+        {
+          "title": "キャラ操作・参照",
+          "anchor": "_6",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_6"
+        },
+        {
+          "title": "変数操作・変数参照・CSV 参照",
+          "anchor": "csv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#csv"
+        },
+        {
+          "title": "セーブデータ操作",
+          "anchor": "_7",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_7"
+        },
+        {
+          "title": "日付・時刻取得",
+          "anchor": "_8",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_8"
+        },
+        {
+          "title": "入力・ウェイト",
+          "anchor": "_9",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_9"
+        },
+        {
+          "title": "ループ・分岐構文",
+          "anchor": "_10",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_10"
+        },
+        {
+          "title": "乱数制御",
+          "anchor": "_11",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_11"
+        },
+        {
+          "title": "デバッグ補助・システムフロー制御",
+          "anchor": "_12",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_12"
+        },
+        {
+          "title": "関数系（CALL 等）",
+          "anchor": "call",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#call"
+        },
+        {
+          "title": "RETURN 系",
+          "anchor": "return",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#return"
+        },
+        {
+          "title": "DEBUG 系",
+          "anchor": "debug",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#debug"
+        },
+        {
+          "title": "ツールチップ系",
+          "anchor": "_13",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_13"
+        },
+        {
+          "title": "HTML 系",
+          "anchor": "html",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#html"
+        },
+        {
+          "title": "AWAIT 関連",
+          "anchor": "await",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#await"
+        },
+        {
+          "title": "画像処理関連",
+          "anchor": "_14",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_14"
+        },
+        {
+          "title": "サウンド系",
+          "anchor": "_15",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_15"
+        },
+        {
+          "title": "XML 系",
+          "anchor": "xml",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#xml"
+        },
+        {
+          "title": "MAP（連想配列）系",
+          "anchor": "map",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#map"
+        },
+        {
+          "title": "DataTable（データベース）系",
+          "anchor": "datatable",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#datatable"
+        },
+        {
+          "title": "その他",
+          "anchor": "_16",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html#_16"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:27+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here.",
+        "This combined command/function index includes later EM+EE features; its table signatures are discovery leads, not v24 specification evidence."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/index.html",
+        "body_sha256": "1b6b4bccfce640e65d78b9592dc09837f3a5750a619beb4bb14a54bdc9ce2f3d",
+        "bytes": 215154
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-EMUERA-OPERAND",
+      "title": "演算 - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exop",
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "演算",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_1"
+        },
+        {
+          "title": "演算子",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_2"
+        },
+        {
+          "title": "単項演算子",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_3"
+        },
+        {
+          "title": "二項演算子",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_4"
+        },
+        {
+          "title": "三項演算子",
+          "anchor": "_5",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_5"
+        },
+        {
+          "title": "代入演算子",
+          "anchor": "_6",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_6"
+        },
+        {
+          "title": "インクリメント・デクリメント",
+          "anchor": "_7",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_7"
+        },
+        {
+          "title": "暫定的な演算子の優先度表",
+          "anchor": "_8",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_8"
+        },
+        {
+          "title": "演算の追加",
+          "anchor": "_9",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_9"
+        },
+        {
+          "title": "論理演算子の短絡評価",
+          "anchor": "_10",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html#_10"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:29+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/operand.html",
+        "body_sha256": "e56ea8db460005d51ca335ed5306f001a87e43e0890d8e45d88b82c49699a1b6",
+        "bytes": 91337
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-EMUERA-EXPRESSION",
+      "title": "Emueraで追加された記法 - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exetc",
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "Emueraで追加された記法",
+          "anchor": "emuera",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#emuera"
+        },
+        {
+          "title": "行末コメント",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_1"
+        },
+        {
+          "title": "行の連結",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_2"
+        },
+        {
+          "title": "特別なコメント行",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_3"
+        },
+        {
+          "title": ";!;",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_4"
+        },
+        {
+          "title": ";#;",
+          "anchor": "_5",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_5"
+        },
+        {
+          "title": "キャラクタ配列",
+          "anchor": "_6",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_6"
+        },
+        {
+          "title": "整数型の値の範囲",
+          "anchor": "_7",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_7"
+        },
+        {
+          "title": "配列変数への一括代入",
+          "anchor": "_8",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_8"
+        },
+        {
+          "title": "FORM構文を用いた文字列変数への代入",
+          "anchor": "form",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#form"
+        },
+        {
+          "title": "文字列式を用いた文字列変数への代入",
+          "anchor": "_9",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_9"
+        },
+        {
+          "title": "文字列による配列変数の要素の指定",
+          "anchor": "_10",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#_10"
+        },
+        {
+          "title": "書式付文字列（FORM構文）拡張",
+          "anchor": "form_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#form_1"
+        },
+        {
+          "title": "文字列式中での書式付文字列（FORM構文）の使用",
+          "anchor": "form_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#form_2"
+        },
+        {
+          "title": "INPUTS系でのマクロ構文の使用",
+          "anchor": "inputs",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html#inputs"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:30+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/expression.html",
+        "body_sha256": "940eaf2a10146c10d6f7f41d29bbe855ffec06f39278595c2c7fabf7e8522fc7",
+        "bytes": 99874
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-EMUERA-USER-DEFINED-VARIABLES",
+      "title": "ユーザー定義の変数 - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/UserVars",
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "ユーザー定義の変数",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_1"
+        },
+        {
+          "title": "書式（プライベート変数の場合）",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_2"
+        },
+        {
+          "title": "初期値の設定",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_3"
+        },
+        {
+          "title": "動的変数",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_4"
+        },
+        {
+          "title": "定数",
+          "anchor": "_5",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_5"
+        },
+        {
+          "title": "参照型変数",
+          "anchor": "_6",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_6"
+        },
+        {
+          "title": "書式（広域変数の場合）",
+          "anchor": "_7",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_7"
+        },
+        {
+          "title": "制限",
+          "anchor": "_8",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_8"
+        },
+        {
+          "title": "命令と同じ名前は使用不可",
+          "anchor": "_9",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_9"
+        },
+        {
+          "title": "関数の外部からの干渉",
+          "anchor": "_10",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#_10"
+        },
+        {
+          "title": "ERD(ERabasic Define)機能",
+          "anchor": "erderabasic-define",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html#erderabasic-define"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.815",
+      "checked_at": "2026-11-18T11:38:31+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/user_defined_variables.html",
+        "body_sha256": "1b08931e3759df70f39b861067a26aedfd05f5c5bc6aba0a384cbd44d99137c9",
+        "bytes": 94188
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-EMUERA-FUNCTION",
+      "title": "関数・プリプロセッサ - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exfunc",
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "関数・プリプロセッサ",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_1"
+        },
+        {
+          "title": "特殊な関数",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_2"
+        },
+        {
+          "title": "@EVENTLOAD",
+          "anchor": "eventload",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#eventload"
+        },
+        {
+          "title": "@TITLE_LOADGAME",
+          "anchor": "title_loadgame",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#title_loadgame"
+        },
+        {
+          "title": "@SYSTEM_AUTOSAVE",
+          "anchor": "system_autosave",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#system_autosave"
+        },
+        {
+          "title": "@SYSTEM_TITLE",
+          "anchor": "system_title",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#system_title"
+        },
+        {
+          "title": "@CALLTRAINEND",
+          "anchor": "calltrainend",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#calltrainend"
+        },
+        {
+          "title": "自作関数における引数指定",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_3"
+        },
+        {
+          "title": "書式",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_4"
+        },
+        {
+          "title": "引数の初期値",
+          "anchor": "_5",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_5"
+        },
+        {
+          "title": "引数の参照渡し",
+          "anchor": "_6",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_6"
+        },
+        {
+          "title": "属性",
+          "anchor": "_7",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_7"
+        },
+        {
+          "title": "#ONLY",
+          "anchor": "only",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#only"
+        },
+        {
+          "title": "#FUNCTION",
+          "anchor": "function",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#function"
+        },
+        {
+          "title": "#FUNCTIONS",
+          "anchor": "functions",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#functions"
+        },
+        {
+          "title": "定義",
+          "anchor": "_8",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_8"
+        },
+        {
+          "title": "#LOCALSIZE <定数式>,#LOCALSSIZE <定数式>",
+          "anchor": "localsize-localssize",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#localsize-localssize"
+        },
+        {
+          "title": "#DIM",
+          "anchor": "dim",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#dim"
+        },
+        {
+          "title": "#DIMS",
+          "anchor": "dims",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#dims"
+        },
+        {
+          "title": "#DEFINE",
+          "anchor": "define",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#define"
+        },
+        {
+          "title": "特殊なブロックを表す行",
+          "anchor": "_9",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#_9"
+        },
+        {
+          "title": "[SKIPSTART]～[SKIPEND]",
+          "anchor": "skipstartskipend",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#skipstartskipend"
+        },
+        {
+          "title": "[IF XXX]～[ELSEIF XXX]～[ELSE]～[ENDIF]",
+          "anchor": "if-xxxelseif-xxxelseendif",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#if-xxxelseif-xxxelseendif"
+        },
+        {
+          "title": "[IF_DEBUG]～[ENDIF]",
+          "anchor": "if_debugendif",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#if_debugendif"
+        },
+        {
+          "title": "[IF_NDEBUG]～[ENDIF]",
+          "anchor": "if_ndebugendif",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html#if_ndebugendif"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.807, 1.808, 1.810",
+      "checked_at": "2026-11-18T11:38:32+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/function.html",
+        "body_sha256": "0377925099379381fb78239aedf400a1948d59660456932c557d35d5c1500d28",
+        "bytes": 104683
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-EMUERA-IN-EXPRESSION-FUNCTION",
+      "title": "式中で使える関数 - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exmeth",
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/in_expression_function.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "式中で使える関数",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/in_expression_function.html#_1"
+        },
+        {
+          "title": "凡例",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/in_expression_function.html#_2"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.712",
+      "checked_at": "2026-11-18T11:38:33+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/in_expression_function.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/in_expression_function.html",
+        "body_sha256": "b9d09cc4cf50f267f522d0f2646b10bb14250cfceb5d074f2e8d8fdb8f37d491",
+        "bytes": 87199
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-EMUERA-RESOURCES",
+      "title": "リソースファイル - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/resources",
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "リソースファイル",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html#_1"
+        },
+        {
+          "title": "リソース指定ファイル(csv)",
+          "anchor": "csv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html#csv"
+        },
+        {
+          "title": "画像ファイル",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html#_2"
+        },
+        {
+          "title": "注意点",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html#_3"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:34+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Emuera/resources.html",
+        "body_sha256": "4cb600262dcccc4436a866053495a9fa9eb7461fe1a43fe6b278f30bd1ceab6b",
+        "bytes": 88154
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-ERAMAKER-ERB-FORMAT",
+      "title": "eramakerのERB書式 - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "eramakerのERB書式",
+          "anchor": "eramakererb",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#eramakererb"
+        },
+        {
+          "title": "基本情報",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#_1"
+        },
+        {
+          "title": "ERBファイルについて",
+          "anchor": "erb",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#erb"
+        },
+        {
+          "title": "ERBファイルの書き方",
+          "anchor": "erb_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#erb_1"
+        },
+        {
+          "title": "変数と命令",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#_2"
+        },
+        {
+          "title": "変数について",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#_3"
+        },
+        {
+          "title": "命令について（基本）",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#_4"
+        },
+        {
+          "title": "命令について（調教用）",
+          "anchor": "_5",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html#_5"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:38:35+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here.",
+        "The page explicitly documents eramaker and warns that current Emuera differs; do not adopt its restrictions as v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/ERB_format.html",
+        "body_sha256": "9769111a7d100d75574eb59d5ca7607c1be6591e970edfef329b66a2699668a4",
+        "bytes": 106829
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-ERAMAKER-CSV-FORMAT",
+      "title": "eramakerのCSV書式 - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "eramakerのCSV書式",
+          "anchor": "eramakercsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#eramakercsv"
+        },
+        {
+          "title": "基本情報",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#_1"
+        },
+        {
+          "title": "CSVファイルについて",
+          "anchor": "csv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#csv"
+        },
+        {
+          "title": "CSVファイルの書き方",
+          "anchor": "csv_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#csv_1"
+        },
+        {
+          "title": "各ファイルの書式",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#_2"
+        },
+        {
+          "title": "GameBase.csvの書式",
+          "anchor": "gamebasecsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#gamebasecsv"
+        },
+        {
+          "title": "Palam.csvの書式",
+          "anchor": "palamcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#palamcsv"
+        },
+        {
+          "title": "Abl.csvの書式",
+          "anchor": "ablcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#ablcsv"
+        },
+        {
+          "title": "Talent.csvの書式",
+          "anchor": "talentcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#talentcsv"
+        },
+        {
+          "title": "Mark.csvの書式",
+          "anchor": "markcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#markcsv"
+        },
+        {
+          "title": "Exp.csvの書式",
+          "anchor": "expcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#expcsv"
+        },
+        {
+          "title": "Train.csvの書式",
+          "anchor": "traincsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#traincsv"
+        },
+        {
+          "title": "Item.csvの書式",
+          "anchor": "itemcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#itemcsv"
+        },
+        {
+          "title": "Str.csvの書式",
+          "anchor": "strcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#strcsv"
+        },
+        {
+          "title": "CharaXX.csvの書式",
+          "anchor": "charaxxcsv",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#charaxxcsv"
+        },
+        {
+          "title": "知っておくと便利なこと",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html#_3"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.20",
+      "checked_at": "2026-11-18T11:38:36+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here.",
+        "The page explicitly documents eramaker and warns that current Emuera differs; do not adopt its restrictions as v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/eramaker/CSV_format.html",
+        "body_sha256": "c2a9f3e6b9335683252f31ad241e4c8cc50ec8b4400b12ef0073ad14d1aefbf9",
+        "bytes": 99381
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-INDEX",
+      "title": "Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://evilmask.gitlab.io/emuera.em.doc/",
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "ようこそ",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/#_1"
+        },
+        {
+          "title": "EmueraEM+EEとは",
+          "anchor": "emueraemee",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/#emueraemee"
+        },
+        {
+          "title": "Emuera私家版",
+          "anchor": "emuera",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/#emuera"
+        },
+        {
+          "title": "ライセンス",
+          "anchor": "_2",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2"
+        },
+        {
+          "title": "ダウンロード",
+          "anchor": "_3",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/#_3"
+        },
+        {
+          "title": "連絡先",
+          "anchor": "_4",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/#_4"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:39:25+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/",
+        "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+        "bytes": 83656
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    },
+    {
+      "id": "SRC-EMEE-REPO-README-MD",
+      "title": "README.md",
+      "author": null,
+      "editor": null,
+      "original_url": "https://gitlab.com/EvilMask/emuera.em.doc/-/raw/master/README.md",
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "sections": [],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:39:27+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://gitlab.com/EvilMask/emuera.em.doc/-/raw/master/README.md",
+        "resolved_url": "https://gitlab.com/EvilMask/emuera.em.doc/-/raw/master/README.md",
+        "body_sha256": "35dbc3577b7fdd4682163df7d836ca00ef5f6b112fb27b9c31c0106cb22a5197",
+        "bytes": 2034
+      }
+    },
+    {
+      "id": "SRC-ERAGAMES-INDEX",
+      "title": "Emuera - Era Wiki",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/FrontPage",
+      "mirror_or_archive_url": "https://wiki.eragames.rip/index.php/Emuera",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "Information about eramaker[edit]",
+          "anchor": "Information_about_eramaker",
+          "url": "https://wiki.eragames.rip/index.php/Emuera#Information_about_eramaker"
+        },
+        {
+          "title": "Information for end users[edit]",
+          "anchor": "Information_for_end_users",
+          "url": "https://wiki.eragames.rip/index.php/Emuera#Information_for_end_users"
+        },
+        {
+          "title": "eramaker basic Information for Developers[edit]",
+          "anchor": "eramaker_basic_Information_for_Developers",
+          "url": "https://wiki.eragames.rip/index.php/Emuera#eramaker_basic_Information_for_Developers"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:39:27+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Third-party preserved Wiki; original authors and per-page editing history are unverified.",
+        "Do not treat preservation or migration as MinorShift authorship."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://wiki.eragames.rip/index.php/Emuera",
+        "resolved_url": "https://wiki.eragames.rip/index.php/Emuera",
+        "body_sha256": "b2c14d475d8040ec31757b8aa96ea9066c5197c14cf3d01e2cc3eab39d92545e",
+        "bytes": 20109
+      },
+      "revision_id": 39963,
+      "page_last_modified_display": "This page was last edited on 2 July 2020, at 07:51."
+    },
+    {
+      "id": "SRC-OSDN-EXTENDED",
+      "title": "extended - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/extended",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163441id_/https://osdn.net/projects/emuera/wiki/extended",
+      "snapshot_timestamp": "20230303163441",
+      "sections": [],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:39:28+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "Navigation index into the historical extension pages; this page itself is not a full syntax reference."
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/extended",
+        "resolved_url": "https://web.archive.org/web/20230303163441id_/https://osdn.net/projects/emuera/wiki/extended",
+        "body_sha256": "5a1b32e1dab9a57530a4240e714ddfd7cc909814add587cfeba6b0509694f05d",
+        "bytes": 27302
+      }
+    },
+    {
+      "id": "SRC-OSDN-EXETC",
+      "title": "exetc - Emuera - emulator of eramaker Wiki - Emuera - emulator of eramaker - OSDN",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exetc",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc",
+      "snapshot_timestamp": "20230303163405",
+      "sections": [
+        {
+          "title": "一般",
+          "anchor": "h3-.E4.B8.80.E8.88.AC",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h3-.E4.B8.80.E8.88.AC"
+        },
+        {
+          "title": "行末コメント",
+          "anchor": "h4-.E8.A1.8C.E6.9C.AB.E3.82.B3.E3.83.A1.E3.83.B3.E3.83.88",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E8.A1.8C.E6.9C.AB.E3.82.B3.E3.83.A1.E3.83.B3.E3.83.88"
+        },
+        {
+          "title": "行の連結",
+          "anchor": "h4-.E8.A1.8C.E3.81.AE.E9.80.A3.E7.B5.90",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E8.A1.8C.E3.81.AE.E9.80.A3.E7.B5.90"
+        },
+        {
+          "title": "特別なコメント行",
+          "anchor": "h4-.E7.89.B9.E5.88.A5.E3.81.AA.E3.82.B3.E3.83.A1.E3.83.B3.E3.83.88.E8.A1.8C",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E7.89.B9.E5.88.A5.E3.81.AA.E3.82.B3.E3.83.A1.E3.83.B3.E3.83.88.E8.A1.8C"
+        },
+        {
+          "title": "キャラクタ配列",
+          "anchor": "h4-.E3.82.AD.E3.83.A3.E3.83.A9.E3.82.AF.E3.82.BF.E9.85.8D.E5.88.97",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E3.82.AD.E3.83.A3.E3.83.A9.E3.82.AF.E3.82.BF.E9.85.8D.E5.88.97"
+        },
+        {
+          "title": "整数型の値の範囲",
+          "anchor": "h4-.E6.95.B4.E6.95.B0.E5.9E.8B.E3.81.AE.E5.80.A4.E3.81.AE.E7.AF.84.E5.9B.B2",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E6.95.B4.E6.95.B0.E5.9E.8B.E3.81.AE.E5.80.A4.E3.81.AE.E7.AF.84.E5.9B.B2"
+        },
+        {
+          "title": "配列変数への一括代入",
+          "anchor": "h4-.E9.85.8D.E5.88.97.E5.A4.89.E6.95.B0.E3.81.B8.E3.81.AE.E4.B8.80.E6.8B.AC.E4.BB.A3.E5.85.A5",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E9.85.8D.E5.88.97.E5.A4.89.E6.95.B0.E3.81.B8.E3.81.AE.E4.B8.80.E6.8B.AC.E4.BB.A3.E5.85.A5"
+        },
+        {
+          "title": "FORM構文を用いた文字列変数への代入",
+          "anchor": "h4-FORM.E6.A7.8B.E6.96.87.E3.82.92.E7.94.A8.E3.81.84.E3.81.9F.E6.96.87.E5.AD.97.E5.88.97.E5.A4.89.E6.95.B0.E3.81.B8.E3.81.AE.E4.BB.A3.E5.85.A5",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-FORM.E6.A7.8B.E6.96.87.E3.82.92.E7.94.A8.E3.81.84.E3.81.9F.E6.96.87.E5.AD.97.E5.88.97.E5.A4.89.E6.95.B0.E3.81.B8.E3.81.AE.E4.BB.A3.E5.85.A5"
+        },
+        {
+          "title": "文字列式を用いた文字列変数への代入",
+          "anchor": "h4-.E6.96.87.E5.AD.97.E5.88.97.E5.BC.8F.E3.82.92.E7.94.A8.E3.81.84.E3.81.9F.E6.96.87.E5.AD.97.E5.88.97.E5.A4.89.E6.95.B0.E3.81.B8.E3.81.AE.E4.BB.A3.E5.85.A5",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E6.96.87.E5.AD.97.E5.88.97.E5.BC.8F.E3.82.92.E7.94.A8.E3.81.84.E3.81.9F.E6.96.87.E5.AD.97.E5.88.97.E5.A4.89.E6.95.B0.E3.81.B8.E3.81.AE.E4.BB.A3.E5.85.A5"
+        },
+        {
+          "title": "文字列による配列変数の要素の指定",
+          "anchor": "h4-.E6.96.87.E5.AD.97.E5.88.97.E3.81.AB.E3.82.88.E3.82.8B.E9.85.8D.E5.88.97.E5.A4.89.E6.95.B0.E3.81.AE.E8.A6.81.E7.B4.A0.E3.81.AE.E6.8C.87.E5.AE.9A",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E6.96.87.E5.AD.97.E5.88.97.E3.81.AB.E3.82.88.E3.82.8B.E9.85.8D.E5.88.97.E5.A4.89.E6.95.B0.E3.81.AE.E8.A6.81.E7.B4.A0.E3.81.AE.E6.8C.87.E5.AE.9A"
+        },
+        {
+          "title": "書式付文字列（FORM構文）拡張",
+          "anchor": "h4-.E6.9B.B8.E5.BC.8F.E4.BB.98.E6.96.87.E5.AD.97.E5.88.97.EF.BC.88FORM.E6.A7.8B.E6.96.87.EF.BC.89.E6.8B.A1.E5.BC.B5",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E6.9B.B8.E5.BC.8F.E4.BB.98.E6.96.87.E5.AD.97.E5.88.97.EF.BC.88FORM.E6.A7.8B.E6.96.87.EF.BC.89.E6.8B.A1.E5.BC.B5"
+        },
+        {
+          "title": "文字列式中での書式付文字列（FORM構文）の使用",
+          "anchor": "h4-.E6.96.87.E5.AD.97.E5.88.97.E5.BC.8F.E4.B8.AD.E3.81.A7.E3.81.AE.E6.9B.B8.E5.BC.8F.E4.BB.98.E6.96.87.E5.AD.97.E5.88.97.EF.BC.88FORM.E6.A7.8B.E6.96.87.EF.BC.89.E3.81.AE.E4.BD.BF.E7.94.A8",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-.E6.96.87.E5.AD.97.E5.88.97.E5.BC.8F.E4.B8.AD.E3.81.A7.E3.81.AE.E6.9B.B8.E5.BC.8F.E4.BB.98.E6.96.87.E5.AD.97.E5.88.97.EF.BC.88FORM.E6.A7.8B.E6.96.87.EF.BC.89.E3.81.AE.E4.BD.BF.E7.94.A8"
+        },
+        {
+          "title": "INPUTS系でのマクロ構文の使用",
+          "anchor": "h4-INPUTS.E7.B3.BB.E3.81.A7.E3.81.AE.E3.83.9E.E3.82.AF.E3.83.AD.E6.A7.8B.E6.96.87.E3.81.AE.E4.BD.BF.E7.94.A8",
+          "url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc#h4-INPUTS.E7.B3.BB.E3.81.A7.E3.81.AE.E3.83.9E.E3.82.AF.E3.83.AD.E6.A7.8B.E6.96.87.E3.81.AE.E4.BD.BF.E7.94.A8"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:39:47+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/exetc",
+        "resolved_url": "https://web.archive.org/web/20230303163405id_/https://osdn.net/projects/emuera/wiki/exetc",
+        "body_sha256": "56826414544c19b9c2024609efc73b123eafd0b2b2feb80171e1de076cbbf726",
+        "bytes": 42335
+      }
+    },
+    {
+      "id": "SRC-OSDN-EXVAR",
+      "title": "Internet Archive: Temporarily Offline",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exvar",
+      "mirror_or_archive_url": "https://web.archive.org/web/20230303163413id_/https://osdn.net/projects/emuera/wiki/exvar",
+      "snapshot_timestamp": null,
+      "sections": [],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:39:59+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "DOCUMENTED_ORIGINAL",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Archived project Wiki: per-page authorship is unverified; do not attribute all Wiki text to MinorShift.",
+        "The replay date is a capture date, not a documented engine version or a page authoring date.",
+        "Historical documentation is not proof of Emuera1824+v24 behavior.",
+        "This attempted endpoint did not return verified page content: http_error.",
+        "The replay returned HTTP 503 (Internet Archive: Temporarily Offline). No page body or successful snapshot is claimed."
+      ],
+      "retrieval": {
+        "outcome": "http_error",
+        "http_status": 503,
+        "requested_url": "https://web.archive.org/web/20230303163321id_/https://osdn.net/projects/emuera/wiki/exvar",
+        "resolved_url": "https://web.archive.org/web/20230303163413id_/https://osdn.net/projects/emuera/wiki/exvar",
+        "body_sha256": "e084d527921708642a79724e9f0210da659bbc0905c6ce9a3a1f416e4628091c",
+        "bytes": 11832
+      }
+    },
+    {
+      "id": "SRC-ERAGAMES-EXMETH",
+      "title": "Emuera/exmeth - Era Wiki",
+      "author": null,
+      "editor": null,
+      "original_url": "https://osdn.net/projects/emuera/wiki/exmeth",
+      "mirror_or_archive_url": "https://wiki.eragames.rip/index.php/Emuera/exmeth",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "式中で使える関数[edit]",
+          "anchor": "式中で使える関数",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/exmeth#式中で使える関数"
+        },
+        {
+          "title": "凡例[edit]",
+          "anchor": "凡例",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/exmeth#凡例"
+        },
+        {
+          "title": "組み込み関数[edit]",
+          "anchor": "組み込み関数",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/exmeth#組み込み関数"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.712, 1.824",
+      "checked_at": "2026-11-18T11:41:32+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Third-party preserved Wiki; original authors and per-page editing history are unverified.",
+        "Do not treat preservation or migration as MinorShift authorship."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://wiki.eragames.rip/index.php/Emuera/exmeth",
+        "resolved_url": "https://wiki.eragames.rip/index.php/Emuera/exmeth",
+        "body_sha256": "520ee2944ffa609b69865193695b8cc261f590c3dc9a1a14b503b9a11272676b",
+        "bytes": 191989
+      },
+      "revision_id": 41215,
+      "page_last_modified_display": "This page was last edited on 29 June 2023, at 18:04."
+    },
+    {
+      "id": "SRC-ERAGAMES-ERAMAERB",
+      "title": "Emuera/eramaerb - Era Wiki",
+      "author": null,
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "Basic Info[edit]",
+          "anchor": "Basic_Info",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#Basic_Info"
+        },
+        {
+          "title": "About the ERB file[edit]",
+          "anchor": "About_the_ERB_file",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#About_the_ERB_file"
+        },
+        {
+          "title": "How to write an ERB file[edit]",
+          "anchor": "How_to_write_an_ERB_file",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#How_to_write_an_ERB_file"
+        },
+        {
+          "title": "Variables and Instructions[edit]",
+          "anchor": "Variables_and_Instructions",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#Variables_and_Instructions"
+        },
+        {
+          "title": "About the variables[edit]",
+          "anchor": "About_the_variables",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#About_the_variables"
+        },
+        {
+          "title": "About Instructions (Basic)[edit]",
+          "anchor": "About_Instructions_(Basic)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#About_Instructions_(Basic)"
+        },
+        {
+          "title": "About Instructions (for Training)[edit]",
+          "anchor": "About_Instructions_(for_Training)",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#About_Instructions_(for_Training)"
+        },
+        {
+          "title": "Update History[edit]",
+          "anchor": "Update_History",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb#Update_History"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:41:34+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Third-party preserved Wiki; original authors and per-page editing history are unverified.",
+        "Do not treat preservation or migration as MinorShift authorship."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb",
+        "resolved_url": "https://wiki.eragames.rip/index.php/Emuera/eramaerb",
+        "body_sha256": "bfb5737fd2ed50c720a0a7a2862c6366dba5647076a972ac9caa4bcae7eaaac7",
+        "bytes": 47473
+      },
+      "revision_id": 39966,
+      "page_last_modified_display": "This page was last edited on 2 July 2020, at 07:53."
+    },
+    {
+      "id": "SRC-ERAGAMES-ERAMACSV",
+      "title": "Emuera/eramacsv - Era Wiki",
+      "author": null,
+      "editor": null,
+      "original_url": null,
+      "mirror_or_archive_url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv",
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "Basic Info[edit]",
+          "anchor": "Basic_Info",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Basic_Info"
+        },
+        {
+          "title": "About CSV Files[edit]",
+          "anchor": "About_CSV_Files",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#About_CSV_Files"
+        },
+        {
+          "title": "How to write a CSV file[edit]",
+          "anchor": "How_to_write_a_CSV_file",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#How_to_write_a_CSV_file"
+        },
+        {
+          "title": "Format for each file[edit]",
+          "anchor": "Format_for_each_file",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_each_file"
+        },
+        {
+          "title": "Format for GameBase.csv[edit]",
+          "anchor": "Format_for_GameBase.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_GameBase.csv"
+        },
+        {
+          "title": "Format for Palam.csv[edit]",
+          "anchor": "Format_for_Palam.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Palam.csv"
+        },
+        {
+          "title": "Format for Abl.csv[edit]",
+          "anchor": "Format_for_Abl.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Abl.csv"
+        },
+        {
+          "title": "Format for Talent.csv[edit]",
+          "anchor": "Format_for_Talent.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Talent.csv"
+        },
+        {
+          "title": "Format for Mark.csv[edit]",
+          "anchor": "Format_for_Mark.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Mark.csv"
+        },
+        {
+          "title": "Format for Exp.csv[edit]",
+          "anchor": "Format_for_Exp.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Exp.csv"
+        },
+        {
+          "title": "Format for Train.csv[edit]",
+          "anchor": "Format_for_Train.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Train.csv"
+        },
+        {
+          "title": "Format for Item.csv[edit]",
+          "anchor": "Format_for_Item.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Item.csv"
+        },
+        {
+          "title": "Format for Str.csv[edit]",
+          "anchor": "Format_for_Str.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_Str.csv"
+        },
+        {
+          "title": "Format for CharaXX.csv[edit]",
+          "anchor": "Format_for_CharaXX.csv",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Format_for_CharaXX.csv"
+        },
+        {
+          "title": "Useful things to know[edit]",
+          "anchor": "Useful_things_to_know",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Useful_things_to_know"
+        },
+        {
+          "title": "Update History[edit]",
+          "anchor": "Update_History",
+          "url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv#Update_History"
+        }
+      ],
+      "documented_version": "Mixed historical version annotations: 1.20",
+      "checked_at": "2026-11-18T11:41:35+00:00",
+      "license": {
+        "identifier": null,
+        "status": "not_verified_for_this_page",
+        "evidence": [],
+        "scope": "No permission to republish this page is inferred from source-code, theme, or icon licenses."
+      },
+      "classification": "MIRROR",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Third-party preserved Wiki; original authors and per-page editing history are unverified.",
+        "Do not treat preservation or migration as MinorShift authorship."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv",
+        "resolved_url": "https://wiki.eragames.rip/index.php/Emuera/eramacsv",
+        "body_sha256": "59fa8e929043dd09bc8e612ed0b0a297fa7331659098ed5ed4245dbaae45f046",
+        "bytes": 41437
+      },
+      "revision_id": 39964,
+      "page_last_modified_display": "This page was last edited on 2 July 2020, at 07:52."
+    },
+    {
+      "id": "SRC-EMEE-REFERENCE-IF",
+      "title": "(S)IF - Emuera.EM+EE ドキュメント",
+      "author": null,
+      "editor": null,
+      "original_url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/IF.html",
+      "mirror_or_archive_url": null,
+      "snapshot_timestamp": null,
+      "sections": [
+        {
+          "title": "(S)IF",
+          "anchor": "sif",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/IF.html#sif"
+        },
+        {
+          "title": "関連項目",
+          "anchor": "_1",
+          "url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/IF.html#_1"
+        }
+      ],
+      "documented_version": null,
+      "checked_at": "2026-11-18T11:41:36+00:00",
+      "license": {
+        "identifier": "CC-BY-NC-4.0",
+        "status": "site_level_display_verified",
+        "evidence": [
+          {
+            "source_id": "SRC-EMEE-INDEX",
+            "url": "https://evilmask.gitlab.io/emuera.em.doc/#_2",
+            "checked_at": "2026-11-18T11:39:25+00:00",
+            "body_sha256": "ba1bdbdb246bbf6978dbaf60d41d2f97d8b6fb3d30f6dc824d78670ebcdf7f96",
+            "displayed_label": "CC BY-NC 4.0",
+            "license_target": "https://creativecommons.org/licenses/by-nc/4.0/deed.ja"
+          }
+        ],
+        "scope": "The documentation homepage displays CC BY-NC 4.0 for the document. This does not establish relicensing authority over inherited third-party text. No prose is redistributed in this registry."
+      },
+      "classification": "DERIVATIVE",
+      "adoption_scope": [
+        "source discovery and section-level leads; semantic claims require explicit per-claim checking"
+      ],
+      "limits": [
+        "Migration provenance and original per-page authorship are separate questions; MinorShift authorship is not established.",
+        "The site combines inherited Emuera documentation and EM+EE additions. No unmarked EM+EE feature is adopted as a v24 feature.",
+        "CC BY-NC terms, if displayed by the site/repository, do not become MIT through this registry. No downloaded prose is published here."
+      ],
+      "retrieval": {
+        "outcome": "success",
+        "http_status": 200,
+        "requested_url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/IF.html",
+        "resolved_url": "https://evilmask.gitlab.io/emuera.em.doc/Reference/IF.html",
+        "body_sha256": "9d55d9ea26df33ec82d26a7782b09e3d1936ecbd4cd09ae9d5a6fbb7021dc470",
+        "bytes": 81065
+      },
+      "publisher": "EvilMask GitLab Pages documentation project (site namespace, not per-page authorship)"
+    }
+  ]
+}

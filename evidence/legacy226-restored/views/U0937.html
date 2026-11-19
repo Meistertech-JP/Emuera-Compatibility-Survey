@@ -1,0 +1,225 @@
+<!doctype html><html lang="ja"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U0937 · PUBLIC_character_commands.py.txt</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;line-height:1.7}pre{white-space:pre;overflow:auto;background:#f4f4f4;padding:1rem}img{max-width:100%}code{overflow-wrap:anywhere}</style>
+<a href="../README.ja.md">説明 / Guide</a> · <a href="../../../docs/survey-browser.html">調査全体 / Survey</a>
+<p><a href="../../../LICENSES/README.ja.md">権利表示 / Component notices</a> · <a href="../../../LICENSE">MIT</a></p>
+<h1>U0937 · PUBLIC_character_commands.py.txt</h1>
+<p>U0937 / source-scope。COPYCHARA等の末尾カンマ対照と固定公開Pythonソース。正常対照・停止差・STRLENのraw文字列契約を区別。固定pyz内pyemuera/character_commands.pyと全バイト一致、静的AST解析成功。私的環境パス・認証値を検出せず、原encoding/改行/全バイトを保ったrawとして公開可。</p>
+<p>分類 / Decision · exact</p>
+<p>本文は保存当時の記録です。元のパス・hash・seal・現在時点の記述は当時の状態を表します。 / The body is a historical record. Embedded paths, hashes, seals and statements about current status describe that retained record.</p>
+<p>原本 / Original SHA-256 <code>70b5c882af696b41854af10bc3c793ffb687fe7263ab79a5ce0f2b9bc8fa3768</code></p>
+<p><a href="../assets/U0937.txt">収録ファイル / Stored artifact</a></p>
+<p>収録物 / Artifact SHA-256 <code>70b5c882af696b41854af10bc3c793ffb687fe7263ab79a5ce0f2b9bc8fa3768</code></p>
+<pre>&quot;&quot;&quot;Roster mutations, separate from template queries and character file I/O.
+
+commands.execute_command delegates here at its historical branch position.
+Argument expressions are evaluated before mutation; conversion timing differs
+between addition and indexed operations and is intentionally preserved. Data
+owns storage/reordering, while these commands own role-variable bookkeeping.
+No transactional rollback is added: an error can retain earlier additions.
+&quot;&quot;&quot;
+
+from .errors import EraError, Unsupported
+from .expr import integer, parse
+from .text import split_args
+
+COMMANDS = frozenset(
+    {
+        &#x27;SORTCHARA&#x27;,
+        &#x27;ADDCHARA&#x27;,
+        &#x27;ADDSPCHARA&#x27;,
+        &#x27;ADDDEFCHARA&#x27;,
+        &#x27;ADDVOIDCHARA&#x27;,
+        &#x27;DELCHARA&#x27;,
+        &#x27;DELALLCHARA&#x27;,
+        &#x27;PICKUPCHARA&#x27;,
+        &#x27;SWAPCHARA&#x27;,
+        &#x27;COPYCHARA&#x27;,
+        &#x27;ADDCOPYCHARA&#x27;,
+    }
+)
+ROLE_NAMES = (&#x27;TARGET&#x27;, &#x27;MASTER&#x27;, &#x27;ASSI&#x27;)
+
+
+def _expect(values, minimum: int, maximum: int, name: str) -&gt; None:
+    if not minimum &lt;= len(values) &lt;= maximum:
+        raise EraError(
+            f&#x27;{name}: expected {minimum}..{maximum} arguments, got {len(values)}&#x27;,
+            code=&#x27;E_ARGUMENT&#x27;,
+        )
+
+
+def execute(vm, name: str, argument: str) -&gt; bool:
+    &quot;&quot;&quot;Apply one roster command without changing the legacy dispatch contract.&quot;&quot;&quot;
+    if name == &#x27;SORTCHARA&#x27;:
+        _sort(vm, argument)
+    elif name in {&#x27;ADDCHARA&#x27;, &#x27;ADDSPCHARA&#x27;, &#x27;ADDDEFCHARA&#x27;, &#x27;ADDVOIDCHARA&#x27;}:
+        _add(vm, name, argument)
+    elif name in COMMANDS:
+        _indexed(vm, name, argument)
+    else:
+        raise Unsupported(f&#x27;Character command {name}&#x27;)
+    return True
+
+
+def _sort(vm, argument: str) -&gt; None:
+    &quot;&quot;&quot;Sort around a pinned MASTER, then remap TARGET/MASTER/ASSI only.
+
+    Resolve the variable descriptor once before reading the roster. Stable
+    sorting and role writes follow the original order; PLAYER stays numeric.
+    &quot;&quot;&quot;
+    parts = split_args(argument) if argument.strip() else []
+    _expect(parts, 0, 2, &#x27;SORTCHARA&#x27;)
+    target = parts[0] if parts else &#x27;NO&#x27;
+    order = parts[1].upper() if len(parts) &gt; 1 else &#x27;FORWARD&#x27;
+    if target.upper() in (&#x27;BACK&#x27;, &#x27;FORWARD&#x27;) and len(parts) == 1:
+        order = target.upper()
+        target = &#x27;NO&#x27;
+    if order not in (&#x27;BACK&#x27;, &#x27;FORWARD&#x27;):
+        raise EraError(&#x27;Invalid SORTCHARA order&#x27;, code=&#x27;E_ARGUMENT&#x27;)
+    target = target or &#x27;NO&#x27;
+    reference = vm.ref_node(
+        parse(vm.program.expand(target)), allow_character_descriptor=True
+    )
+    if not reference.variable.character:
+        raise EraError(&#x27;SORTCHARA needs character variable&#x27;, code=&#x27;E_TYPE&#x27;)
+
+    master = vm.get(&#x27;MASTER&#x27;)
+    indices = list(range(vm.data.character_count))
+    remaining = [index for index in indices if index != master]
+    remaining.sort(
+        key=lambda index: reference.variable.get((index,) + reference.key[1:]),
+        reverse=order == &#x27;BACK&#x27;,
+    )
+    if 0 &lt;= master &lt; len(indices):
+        remaining.insert(master, master)
+    old_roles = {name: vm.get(name) for name in ROLE_NAMES}
+    vm.data.reorder_characters(remaining, remap_roles=False)
+    mapping = {old: new for new, old in enumerate(remaining)}
+    for name, value in old_roles.items():
+        if value in mapping:
+            vm.set(name, mapping[value])
+
+
+def _add(vm, name: str, argument: str) -&gt; None:
+    &quot;&quot;&quot;Check the SP gate, then evaluate/add each term without rollback.&quot;&quot;&quot;
+    if name in {&#x27;ADDCHARA&#x27;, &#x27;ADDSPCHARA&#x27;}:
+        if name == &#x27;ADDSPCHARA&#x27; and not vm.data.use_sp:
+            raise EraError(
+                &#x27;SPキャラ関係の機能は標準では使用できません&#x27;
+                &#x27;(互換性オプション「SPキャラを使用する」をONにしてください)&#x27;,
+                code=&#x27;E_ARGUMENT&#x27;,
+            )
+        parts = split_args(argument) if argument.strip() else []
+        _expect(parts, 1, 100000, name)
+        for part in parts:
+            vm.data.add_character(integer(vm.eval(part)), sp=name == &#x27;ADDSPCHARA&#x27;)
+        return
+    if name == &#x27;ADDDEFCHARA&#x27;:
+        # Null ParentLabelLine is the native debug/direct-API exception.
+        if vm.frames and vm.frames[-1].function.name != &#x27;SYSTEM_TITLE&#x27;:
+            raise EraError(
+                &#x27;@SYSTEM_TITLE以外でこの命令を使うことはできません&#x27;, code=&#x27;E_FUNCTION&#x27;
+            )
+        # VOID arguments were discarded by native ArgumentBuilder, not evaluated.
+        vm.data.add_default_character(0)
+        if vm.get(&#x27;GAMEBASE_DEFAULTCHARA&#x27;) &gt; 0:
+            vm.data.add_default_character(vm.get(&#x27;GAMEBASE_DEFAULTCHARA&#x27;))
+        return
+    # ADDVOIDCHARA is VOID: even malformed/excess text is discarded.
+    vm.data.add_pseudo_character()
+
+
+def _indexed(vm, name: str, argument: str) -&gt; None:
+    &quot;&quot;&quot;Convert every index before checking count/bounds or writing state.&quot;&quot;&quot;
+    indices = [integer(value) for value in vm.args(argument)]
+    count = vm.data.character_count
+    if name == &#x27;DELALLCHARA&#x27;:
+        _expect(indices, 0, 0, name)
+        vm.data.reorder_characters([], remap_roles=False)
+    elif name == &#x27;DELCHARA&#x27;:
+        if any(not 0 &lt;= index &lt; count for index in indices) or len(set(indices)) != len(
+            indices
+        ):
+            raise EraError(&#x27;Invalid/duplicate character index&#x27;, code=&#x27;E_CHARACTER&#x27;)
+        remaining = [index for index in range(count) if index not in set(indices)]
+        vm.data.reorder_characters(remaining, remap_roles=False)
+    elif name == &#x27;PICKUPCHARA&#x27;:
+        _pickup(vm, indices, count)
+    elif name == &#x27;SWAPCHARA&#x27;:
+        _expect(indices, 2, 2, name)
+        _validate_indices(indices, count)
+        order = list(range(count))
+        order[indices[0]], order[indices[1]] = order[indices[1]], order[indices[0]]
+        vm.data.reorder_characters(order, remap_roles=False)
+    else:
+        expected = 1 if name == &#x27;ADDCOPYCHARA&#x27; else 2
+        _expect(indices, expected, expected, name)
+        _validate_indices(indices, count)
+        source = indices[0]
+        destination = (
+            vm.data.add_character(-1, void=True)
+            if name == &#x27;ADDCOPYCHARA&#x27;
+            else indices[1]
+        )
+        _copy_character(vm.data, source, destination)
+
+
+def _validate_indices(indices: list[int], count: int) -&gt; None:
+    if any(not 0 &lt;= index &lt; count for index in indices):
+        raise EraError(&#x27;Invalid character index&#x27;, code=&#x27;E_CHARACTER&#x27;)
+
+
+def _pickup(vm, indices: list[int], count: int) -&gt; None:
+    &quot;&quot;&quot;Preserve VariableEvaluator.PickUpChara&#x27;s evolving swap-list algorithm.
+
+    This is not direct selection by original indices. Swaps adjust later picks;
+    role matching uses that adjusted list, including its historical quirks.
+    Negative indices are ignored, duplicates removed, PLAYER left untouched.
+    &quot;&quot;&quot;
+    picks = list(dict.fromkeys(index for index in indices if index &gt;= 0))
+    if any(index &gt;= count for index in picks):
+        raise EraError(&#x27;Invalid character index&#x27;, code=&#x27;E_CHARACTER&#x27;)
+    old_roles = {name: vm.get(name) for name in ROLE_NAMES}
+    roles = {name: -1 for name in old_roles}
+    order = list(range(count))
+    for position in range(len(picks)):
+        if position != picks[position]:
+            other = picks[position]
+            order[position], order[other] = order[other], order[position]
+            if position in picks and picks.index(position) &gt; position:
+                picks[picks.index(position)] = other
+        for name, value in old_roles.items():
+            if roles[name] &lt; 0 and picks[position] == value:
+                roles[name] = position
+    vm.data.reorder_characters(order[: len(picks)], remap_roles=False)
+    for name, value in roles.items():
+        vm.set(name, value)
+
+
+def _copy_character(data, source: int, destination: int) -&gt; None:
+    &quot;&quot;&quot;Replace destination&#x27;s sparse character entries, including self-copy.
+
+    Collect source entries before removing destination entries. Preserve the
+    existing variable iteration/write order and leave non-character storage
+    and role variables untouched. Missing source entries erase destination.
+    &quot;&quot;&quot;
+    for variable in data.variables.values():
+        if variable.character:
+            copied = {
+                (destination,) + key[1:]: value
+                for key, value in variable.values.items()
+                if key[0] == source
+            }
+            variable.values = {
+                key: value
+                for key, value in variable.values.items()
+                if key[0] != destination
+            }
+            variable.values.update(copied)
+</pre>
+<h2>個別審査で追跡した参照 / Individually reviewed references</h2><ul>
+<li>L0434 · command_or_syntax:COPYCHARA · check</li>
+<li>L1220 · command_or_syntax:CALLTRAIN · check</li>
+</ul></html>

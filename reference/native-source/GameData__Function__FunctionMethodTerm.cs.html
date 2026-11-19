@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>GameData/Function/FunctionMethodTerm.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>GameData/Function/FunctionMethodTerm.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Function/FunctionMethodTerm.cs</p><p>SHA-256 (original member bytes): 09c41738188f8b95181a82d9b66c8e56d1fdcc050800a9dd5ed804711fd253f8</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using System;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System.Collections.Generic;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Text;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using MinorShift.Emuera.GameData.Expression;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> </span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> namespace MinorShift.Emuera.GameData.Function</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> {</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> 	internal sealed class FunctionMethodTerm : IOperandTerm</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> 	{</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> 		public FunctionMethodTerm(FunctionMethod meth, IOperandTerm[] args)</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> 			: base(meth.ReturnType)</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> 		{</span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> 			method = meth;</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> 			arguments = args;</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> 		}</span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> </span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> 		private FunctionMethod method;</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 		private IOperandTerm[] arguments;</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> </span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a>         public override long GetIntValue(ExpressionMediator exm)</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a>         {</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 			return method.GetIntValue(exm, arguments);</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a>         }</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a>         public override string GetStrValue(ExpressionMediator exm)</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a>         {</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 			return method.GetStrValue(exm, arguments);</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a>         }</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 		public override SingleTerm GetValue(ExpressionMediator exm)</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		{</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 			return method.GetReturnValue(exm, arguments);</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 		}</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> 		</span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a>         public override IOperandTerm Restructure(ExpressionMediator exm)</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a>         {</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 			if (method.HasUniqueRestructure)</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> 			{</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> 				if (method.UniqueRestructure(exm, arguments) &amp;&amp; method.CanRestructure)</span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 					return GetValue(exm);</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 				return this;</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 			}</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 			bool argIsConst = true;</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 			for(int i = 0; i&lt; arguments.Length;i++)</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> 			{</span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 				if(arguments[i] == null)</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> 					continue;</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a> 				arguments[i] = arguments[i].Restructure(exm);</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a> 				argIsConst &amp;= arguments[i] is SingleTerm;</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> 			}</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> 			if ((method.CanRestructure) &amp;&amp; (argIsConst))</span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 				return GetValue(exm);</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 			return this;</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 			</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a>         }</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a>         </span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> 	}</span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> }</span></pre></html>

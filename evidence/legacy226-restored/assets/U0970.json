@@ -1,0 +1,37 @@
+{
+  "schema": "finite-target-adjudication-1",
+  "created_utc": "2026-11-13T21:02:30.653827+00:00",
+  "target": {
+    "kind": "command_or_syntax",
+    "name": "UPCHECK"
+  },
+  "obligation_id": "length_checks",
+  "decision": "necessary_comparison_complete_in_finite_scope",
+  "independent_review_agent": "[INTERNAL_REVIEWER_01]",
+  "reason": "The literal requested combination cannot be a valid Native v24 configuration because UP and DOWN are global one-dimensional arrays and Native rejects lengths below 100. Do not claim the invalid size setup passed. The closest valid distinct-size boundary (PALAM/UP/DOWN=200/150/100) was compared Native/public twice for normal and SKIPDISP; raw logs and selected state match. This proves only the legal reachable boundary and does not infer post-error state.",
+  "source_refs": [
+    {
+      "archive": "Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/ConstantData.cs",
+      "member_sha256": "fa855785b057f0886bd64b7d7ebc5089033876122db4787b378362ded6f0b824",
+      "lines": "287-291",
+      "claim": "nonlocal 1D size less than100 rejected"
+    },
+    {
+      "archive": "Emuera1824+v24.zip",
+      "archive_sha256": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+      "member": "Emuera1824+v24/src1824+v24/src1824/Emuera/GameData/Variable/VariableEvaluator.cs",
+      "member_sha256": "bade66d7f2dfad9546aafb6c087d4f02bb70226cd51d590dcc955723e7801582",
+      "lines": "1528-1582",
+      "claim": "loop bound reduced from PALAM length to UP and then DOWN length; delta arrays cleared after loop"
+    }
+  ],
+  "evidence": "evidence/upcheck-targets-skip-20261114/BOUNDARY_COMPARISON.json",
+  "evidence_sha256": "a914915e718e7d23c68c2bd4a21524c59cd7ff8db075e0cde065e12733a9e93a",
+  "case_review": "evidence/upcheck-targets-skip-20261114/CASE_REVIEW_ja.md",
+  "case_review_sha256": "05864c63f803ed4f80698d0ec13ccab96efef5f6f34723edc3eef2f233404dde",
+  "original_invalid_configuration_claimed_pass": false,
+  "post_error_state_inferred": false,
+  "native_natural_exit_observed": false
+}

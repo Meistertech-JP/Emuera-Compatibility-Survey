@@ -1,0 +1,340 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>GameProc/UserDefinedVariable.cs — Emuera1824+v24</title><style>body{font:15px system-ui;margin:1.5rem}pre{white-space:pre;overflow:auto;font:14px/1.5 monospace}pre span{display:block}pre span:target{background:#fff0a6}a{color:#165b90}</style><h1>GameProc/UserDefinedVariable.cs</h1><p>Emuera1824+v24 · SOURCE_CONFIRMED · utf-8-sig</p><p>本家C#ソースの閲覧用表示 / Readable view of the pinned upstream C# source. Line numbers refer to decoded physical lines. Source comments retain their original language.</p><p><a href="../../LICENSES/Emuera1824-v24-license-original.txt">Original source license</a> · <a href="../../vendor/emuera/NOTICE.en.md">Third-party notices</a> · <a href="../../vendor/emuera/Emuera1824-v24-with-notices.zip">Unmodified source archive and notices</a></p><p>Archive member: Emuera1824+v24/src1824+v24/src1824/Emuera/GameProc/UserDefinedVariable.cs</p><p>SHA-256 (original member bytes): df9a0dc3aeb2dc7772555ddfd9d31eb2194657a368b36de8e928f8a26d409bad</p><pre><span id="L1"><a href="#L1" aria-label="line 1">    1</a> using System;</span>
+<span id="L2"><a href="#L2" aria-label="line 2">    2</a> using System.Collections.Generic;</span>
+<span id="L3"><a href="#L3" aria-label="line 3">    3</a> using System.Text;</span>
+<span id="L4"><a href="#L4" aria-label="line 4">    4</a> using MinorShift.Emuera.Sub;</span>
+<span id="L5"><a href="#L5" aria-label="line 5">    5</a> using System.Text.RegularExpressions;</span>
+<span id="L6"><a href="#L6" aria-label="line 6">    6</a> using MinorShift.Emuera.GameData.Variable;</span>
+<span id="L7"><a href="#L7" aria-label="line 7">    7</a> using MinorShift.Emuera.GameData.Expression;</span>
+<span id="L8"><a href="#L8" aria-label="line 8">    8</a> using MinorShift.Emuera.GameView;</span>
+<span id="L9"><a href="#L9" aria-label="line 9">    9</a> using MinorShift.Emuera.GameData;</span>
+<span id="L10"><a href="#L10" aria-label="line 10">   10</a> using MinorShift.Emuera.GameData.Function;</span>
+<span id="L11"><a href="#L11" aria-label="line 11">   11</a> using MinorShift.Emuera.GameProc.Function;</span>
+<span id="L12"><a href="#L12" aria-label="line 12">   12</a> </span>
+<span id="L13"><a href="#L13" aria-label="line 13">   13</a> namespace MinorShift.Emuera.GameProc</span>
+<span id="L14"><a href="#L14" aria-label="line 14">   14</a> {</span>
+<span id="L15"><a href="#L15" aria-label="line 15">   15</a> </span>
+<span id="L16"><a href="#L16" aria-label="line 16">   16</a> 	internal sealed class UserDefinedVariableData</span>
+<span id="L17"><a href="#L17" aria-label="line 17">   17</a> 	{</span>
+<span id="L18"><a href="#L18" aria-label="line 18">   18</a> 		public string Name = null;</span>
+<span id="L19"><a href="#L19" aria-label="line 19">   19</a> 		public bool TypeIsStr = false;</span>
+<span id="L20"><a href="#L20" aria-label="line 20">   20</a> 		public bool Reference = false;</span>
+<span id="L21"><a href="#L21" aria-label="line 21">   21</a> 		public int Dimension = 1;</span>
+<span id="L22"><a href="#L22" aria-label="line 22">   22</a> 		public int[] Lengths = null;</span>
+<span id="L23"><a href="#L23" aria-label="line 23">   23</a> 		public Int64[] DefaultInt = null;</span>
+<span id="L24"><a href="#L24" aria-label="line 24">   24</a> 		public string[] DefaultStr = null;</span>
+<span id="L25"><a href="#L25" aria-label="line 25">   25</a> 		public bool Global = false;</span>
+<span id="L26"><a href="#L26" aria-label="line 26">   26</a> 		public bool Save = false;</span>
+<span id="L27"><a href="#L27" aria-label="line 27">   27</a> 		public bool Static = true;</span>
+<span id="L28"><a href="#L28" aria-label="line 28">   28</a> 		public bool Private = false;</span>
+<span id="L29"><a href="#L29" aria-label="line 29">   29</a> 		public bool CharaData = false;</span>
+<span id="L30"><a href="#L30" aria-label="line 30">   30</a> 		public bool Const = false;</span>
+<span id="L31"><a href="#L31" aria-label="line 31">   31</a> 		</span>
+<span id="L32"><a href="#L32" aria-label="line 32">   32</a> 		//1822 Privateの方もDIMだけ遅延させようとしたけどちょっと課題がおおいのでやめとく</span>
+<span id="L33"><a href="#L33" aria-label="line 33">   33</a> 		public static UserDefinedVariableData Create(DimLineWC dimline)</span>
+<span id="L34"><a href="#L34" aria-label="line 34">   34</a> 		{</span>
+<span id="L35"><a href="#L35" aria-label="line 35">   35</a> 			return Create(dimline.WC, dimline.Dims, dimline.IsPrivate, dimline.SC);</span>
+<span id="L36"><a href="#L36" aria-label="line 36">   36</a> 		}</span>
+<span id="L37"><a href="#L37" aria-label="line 37">   37</a> </span>
+<span id="L38"><a href="#L38" aria-label="line 38">   38</a> 		public static UserDefinedVariableData Create(WordCollection wc, bool dims, bool isPrivate, ScriptPosition sc)</span>
+<span id="L39"><a href="#L39" aria-label="line 39">   39</a> 		{</span>
+<span id="L40"><a href="#L40" aria-label="line 40">   40</a> 			string dimtype = dims ? &quot;#DIM&quot; : &quot;#DIMS&quot;;</span>
+<span id="L41"><a href="#L41" aria-label="line 41">   41</a> 			UserDefinedVariableData ret = new UserDefinedVariableData();</span>
+<span id="L42"><a href="#L42" aria-label="line 42">   42</a> 			ret.TypeIsStr = dims;</span>
+<span id="L43"><a href="#L43" aria-label="line 43">   43</a> </span>
+<span id="L44"><a href="#L44" aria-label="line 44">   44</a> 			IdentifierWord idw;</span>
+<span id="L45"><a href="#L45" aria-label="line 45">   45</a> 			bool staticDefined = false;</span>
+<span id="L46"><a href="#L46" aria-label="line 46">   46</a> 			ret.Const = false;</span>
+<span id="L47"><a href="#L47" aria-label="line 47">   47</a> 			string keyword = dimtype;</span>
+<span id="L48"><a href="#L48" aria-label="line 48">   48</a> 			//List&lt;string&gt; keywords;</span>
+<span id="L49"><a href="#L49" aria-label="line 49">   49</a> 			while (!wc.EOL &amp;&amp; (idw = wc.Current as IdentifierWord) != null)</span>
+<span id="L50"><a href="#L50" aria-label="line 50">   50</a> 			{</span>
+<span id="L51"><a href="#L51" aria-label="line 51">   51</a> 				wc.ShiftNext();</span>
+<span id="L52"><a href="#L52" aria-label="line 52">   52</a> 				keyword = idw.Code;</span>
+<span id="L53"><a href="#L53" aria-label="line 53">   53</a> 				if (Config.ICVariable)</span>
+<span id="L54"><a href="#L54" aria-label="line 54">   54</a> 					keyword = keyword.ToUpper();</span>
+<span id="L55"><a href="#L55" aria-label="line 55">   55</a> 				//TODO ifの数があたまわるい なんとかしたい</span>
+<span id="L56"><a href="#L56" aria-label="line 56">   56</a> 				switch (keyword)</span>
+<span id="L57"><a href="#L57" aria-label="line 57">   57</a> 				{</span>
+<span id="L58"><a href="#L58" aria-label="line 58">   58</a> 					case &quot;CONST&quot;:</span>
+<span id="L59"><a href="#L59" aria-label="line 59">   59</a> 						if (ret.CharaData)</span>
+<span id="L60"><a href="#L60" aria-label="line 60">   60</a> 							throw new CodeEE(keyword + &quot;とCHARADATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L61"><a href="#L61" aria-label="line 61">   61</a> 						if (ret.Global)</span>
+<span id="L62"><a href="#L62" aria-label="line 62">   62</a> 							throw new CodeEE(keyword + &quot;とGLOBALキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L63"><a href="#L63" aria-label="line 63">   63</a> 						if (ret.Save)</span>
+<span id="L64"><a href="#L64" aria-label="line 64">   64</a> 							throw new CodeEE(keyword + &quot;とSAVEDATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L65"><a href="#L65" aria-label="line 65">   65</a> 						if (ret.Reference)</span>
+<span id="L66"><a href="#L66" aria-label="line 66">   66</a> 							throw new CodeEE(keyword + &quot;とREFキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L67"><a href="#L67" aria-label="line 67">   67</a> 						if (!ret.Static)</span>
+<span id="L68"><a href="#L68" aria-label="line 68">   68</a> 							throw new CodeEE(keyword + &quot;とDYNAMICキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L69"><a href="#L69" aria-label="line 69">   69</a> 						if (ret.Const)</span>
+<span id="L70"><a href="#L70" aria-label="line 70">   70</a> 							throw new CodeEE(keyword + &quot;キーワードが二重に指定されています&quot;, sc);</span>
+<span id="L71"><a href="#L71" aria-label="line 71">   71</a> 						ret.Const = true;</span>
+<span id="L72"><a href="#L72" aria-label="line 72">   72</a> 						break;</span>
+<span id="L73"><a href="#L73" aria-label="line 73">   73</a> 					case &quot;REF&quot;:</span>
+<span id="L74"><a href="#L74" aria-label="line 74">   74</a> 						//throw new CodeEE(&quot;未実装の機能です&quot;, sc);</span>
+<span id="L75"><a href="#L75" aria-label="line 75">   75</a> 						//if (!isPrivate)</span>
+<span id="L76"><a href="#L76" aria-label="line 76">   76</a> 						//	throw new CodeEE(&quot;広域変数の宣言に&quot; + keyword + &quot;キーワードは指定できません&quot;, sc);</span>
+<span id="L77"><a href="#L77" aria-label="line 77">   77</a> 						if (staticDefined &amp;&amp; ret.Static)</span>
+<span id="L78"><a href="#L78" aria-label="line 78">   78</a> 							throw new CodeEE(keyword + &quot;とSTATICキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L79"><a href="#L79" aria-label="line 79">   79</a> 						if (ret.CharaData)</span>
+<span id="L80"><a href="#L80" aria-label="line 80">   80</a> 							throw new CodeEE(keyword + &quot;とCHARADATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L81"><a href="#L81" aria-label="line 81">   81</a> 						if (ret.Global)</span>
+<span id="L82"><a href="#L82" aria-label="line 82">   82</a> 							throw new CodeEE(keyword + &quot;とGLOBALキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L83"><a href="#L83" aria-label="line 83">   83</a> 						if (ret.Save)</span>
+<span id="L84"><a href="#L84" aria-label="line 84">   84</a> 							throw new CodeEE(keyword + &quot;とSAVEDATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L85"><a href="#L85" aria-label="line 85">   85</a> 						if (ret.Const)</span>
+<span id="L86"><a href="#L86" aria-label="line 86">   86</a> 							throw new CodeEE(keyword + &quot;とCONSTキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L87"><a href="#L87" aria-label="line 87">   87</a> 						if (ret.Reference)</span>
+<span id="L88"><a href="#L88" aria-label="line 88">   88</a> 							throw new CodeEE(keyword + &quot;キーワードが二重に指定されています&quot;, sc);</span>
+<span id="L89"><a href="#L89" aria-label="line 89">   89</a> 						ret.Reference = true;</span>
+<span id="L90"><a href="#L90" aria-label="line 90">   90</a> 						ret.Static = false;</span>
+<span id="L91"><a href="#L91" aria-label="line 91">   91</a> 						break;</span>
+<span id="L92"><a href="#L92" aria-label="line 92">   92</a> 					case &quot;DYNAMIC&quot;:</span>
+<span id="L93"><a href="#L93" aria-label="line 93">   93</a> 						if (!isPrivate)</span>
+<span id="L94"><a href="#L94" aria-label="line 94">   94</a> 							throw new CodeEE(&quot;広域変数の宣言に&quot; + keyword + &quot;キーワードは指定できません&quot;, sc);</span>
+<span id="L95"><a href="#L95" aria-label="line 95">   95</a> 						if (ret.CharaData)</span>
+<span id="L96"><a href="#L96" aria-label="line 96">   96</a> 							throw new CodeEE(keyword + &quot;とCHARADATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L97"><a href="#L97" aria-label="line 97">   97</a> 						if (ret.Const)</span>
+<span id="L98"><a href="#L98" aria-label="line 98">   98</a> 							throw new CodeEE(keyword + &quot;とCONSTキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L99"><a href="#L99" aria-label="line 99">   99</a> 						if (staticDefined)</span>
+<span id="L100"><a href="#L100" aria-label="line 100">  100</a> 							if (ret.Static)</span>
+<span id="L101"><a href="#L101" aria-label="line 101">  101</a> 								throw new CodeEE(&quot;STATICとDYNAMICキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L102"><a href="#L102" aria-label="line 102">  102</a> 							else</span>
+<span id="L103"><a href="#L103" aria-label="line 103">  103</a> 								throw new CodeEE(keyword + &quot;キーワードが二重に指定されています&quot;, sc);</span>
+<span id="L104"><a href="#L104" aria-label="line 104">  104</a> 						staticDefined = true;</span>
+<span id="L105"><a href="#L105" aria-label="line 105">  105</a> 						ret.Static = false;</span>
+<span id="L106"><a href="#L106" aria-label="line 106">  106</a> 						break;</span>
+<span id="L107"><a href="#L107" aria-label="line 107">  107</a> 					case &quot;STATIC&quot;:</span>
+<span id="L108"><a href="#L108" aria-label="line 108">  108</a> 						if (!isPrivate)</span>
+<span id="L109"><a href="#L109" aria-label="line 109">  109</a> 							throw new CodeEE(&quot;広域変数の宣言に&quot; + keyword + &quot;キーワードは指定できません&quot;, sc);</span>
+<span id="L110"><a href="#L110" aria-label="line 110">  110</a> 						if (ret.CharaData)</span>
+<span id="L111"><a href="#L111" aria-label="line 111">  111</a> 							throw new CodeEE(keyword + &quot;とCHARADATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L112"><a href="#L112" aria-label="line 112">  112</a> 						if (staticDefined)</span>
+<span id="L113"><a href="#L113" aria-label="line 113">  113</a> 							if (!ret.Static)</span>
+<span id="L114"><a href="#L114" aria-label="line 114">  114</a> 								throw new CodeEE(&quot;STATICとDYNAMICキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L115"><a href="#L115" aria-label="line 115">  115</a> 							else</span>
+<span id="L116"><a href="#L116" aria-label="line 116">  116</a> 								throw new CodeEE(keyword + &quot;キーワードが二重に指定されています&quot;, sc);</span>
+<span id="L117"><a href="#L117" aria-label="line 117">  117</a> 						if (ret.Reference)</span>
+<span id="L118"><a href="#L118" aria-label="line 118">  118</a> 							throw new CodeEE(keyword + &quot;とREFキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L119"><a href="#L119" aria-label="line 119">  119</a> 						staticDefined = true;</span>
+<span id="L120"><a href="#L120" aria-label="line 120">  120</a> 						ret.Static = true;</span>
+<span id="L121"><a href="#L121" aria-label="line 121">  121</a> 						break;</span>
+<span id="L122"><a href="#L122" aria-label="line 122">  122</a> 					case &quot;GLOBAL&quot;:</span>
+<span id="L123"><a href="#L123" aria-label="line 123">  123</a> 						if (isPrivate)</span>
+<span id="L124"><a href="#L124" aria-label="line 124">  124</a> 							throw new CodeEE(&quot;ローカル変数の宣言に&quot; + keyword + &quot;キーワードは指定できません&quot;, sc);</span>
+<span id="L125"><a href="#L125" aria-label="line 125">  125</a> 						if (ret.CharaData)</span>
+<span id="L126"><a href="#L126" aria-label="line 126">  126</a> 							throw new CodeEE(keyword + &quot;とCHARADATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L127"><a href="#L127" aria-label="line 127">  127</a> 						if (ret.Reference)</span>
+<span id="L128"><a href="#L128" aria-label="line 128">  128</a> 							throw new CodeEE(keyword + &quot;とREFキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L129"><a href="#L129" aria-label="line 129">  129</a> 						if (ret.Const)</span>
+<span id="L130"><a href="#L130" aria-label="line 130">  130</a> 							throw new CodeEE(keyword + &quot;とCONSTキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L131"><a href="#L131" aria-label="line 131">  131</a> 						if (staticDefined)</span>
+<span id="L132"><a href="#L132" aria-label="line 132">  132</a> 							if (ret.Static)</span>
+<span id="L133"><a href="#L133" aria-label="line 133">  133</a> 								throw new CodeEE(&quot;STATICとGLOBALキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L134"><a href="#L134" aria-label="line 134">  134</a> 							else</span>
+<span id="L135"><a href="#L135" aria-label="line 135">  135</a> 								throw new CodeEE(&quot;DYNAMICとGLOBALキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L136"><a href="#L136" aria-label="line 136">  136</a> 						ret.Global = true;</span>
+<span id="L137"><a href="#L137" aria-label="line 137">  137</a> 						break;</span>
+<span id="L138"><a href="#L138" aria-label="line 138">  138</a> 					case &quot;SAVEDATA&quot;:</span>
+<span id="L139"><a href="#L139" aria-label="line 139">  139</a> 						if (isPrivate)</span>
+<span id="L140"><a href="#L140" aria-label="line 140">  140</a> 							throw new CodeEE(&quot;ローカル変数の宣言に&quot; + keyword + &quot;キーワードは指定できません&quot;, sc);</span>
+<span id="L141"><a href="#L141" aria-label="line 141">  141</a> 						if (staticDefined)</span>
+<span id="L142"><a href="#L142" aria-label="line 142">  142</a> 							if (ret.Static)</span>
+<span id="L143"><a href="#L143" aria-label="line 143">  143</a> 								throw new CodeEE(&quot;STATICとSAVEDATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L144"><a href="#L144" aria-label="line 144">  144</a> 							else</span>
+<span id="L145"><a href="#L145" aria-label="line 145">  145</a> 								throw new CodeEE(&quot;DYNAMICとSAVEDATAキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L146"><a href="#L146" aria-label="line 146">  146</a> 						if (ret.Reference)</span>
+<span id="L147"><a href="#L147" aria-label="line 147">  147</a> 							throw new CodeEE(keyword + &quot;とREFキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L148"><a href="#L148" aria-label="line 148">  148</a> 						if (ret.Const)</span>
+<span id="L149"><a href="#L149" aria-label="line 149">  149</a> 							throw new CodeEE(keyword + &quot;とCONSTキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L150"><a href="#L150" aria-label="line 150">  150</a> 						if (ret.Save)</span>
+<span id="L151"><a href="#L151" aria-label="line 151">  151</a> 							throw new CodeEE(keyword + &quot;キーワードが二重に指定されています&quot;, sc);</span>
+<span id="L152"><a href="#L152" aria-label="line 152">  152</a> 						ret.Save = true;</span>
+<span id="L153"><a href="#L153" aria-label="line 153">  153</a> 						break;</span>
+<span id="L154"><a href="#L154" aria-label="line 154">  154</a> 					case &quot;CHARADATA&quot;:</span>
+<span id="L155"><a href="#L155" aria-label="line 155">  155</a> 						if (isPrivate)</span>
+<span id="L156"><a href="#L156" aria-label="line 156">  156</a> 							throw new CodeEE(&quot;ローカル変数の宣言に&quot; + keyword + &quot;キーワードは指定できません&quot;, sc);</span>
+<span id="L157"><a href="#L157" aria-label="line 157">  157</a> 						if (ret.Reference)</span>
+<span id="L158"><a href="#L158" aria-label="line 158">  158</a> 							throw new CodeEE(keyword + &quot;とREFキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L159"><a href="#L159" aria-label="line 159">  159</a> 						if (ret.Const)</span>
+<span id="L160"><a href="#L160" aria-label="line 160">  160</a> 							throw new CodeEE(keyword + &quot;とCONSTキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L161"><a href="#L161" aria-label="line 161">  161</a> 						if (staticDefined)</span>
+<span id="L162"><a href="#L162" aria-label="line 162">  162</a> 							if (ret.Static)</span>
+<span id="L163"><a href="#L163" aria-label="line 163">  163</a>                                 throw new CodeEE(keyword + &quot;とSTATICキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L164"><a href="#L164" aria-label="line 164">  164</a> 							else</span>
+<span id="L165"><a href="#L165" aria-label="line 165">  165</a>                                 throw new CodeEE(keyword + &quot;とDYNAMICキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L166"><a href="#L166" aria-label="line 166">  166</a> 						if (ret.Global)</span>
+<span id="L167"><a href="#L167" aria-label="line 167">  167</a>                             throw new CodeEE(keyword + &quot;とGLOBALキーワードは同時に指定できません&quot;, sc);</span>
+<span id="L168"><a href="#L168" aria-label="line 168">  168</a> 						if (ret.CharaData)</span>
+<span id="L169"><a href="#L169" aria-label="line 169">  169</a> 							throw new CodeEE(keyword + &quot;キーワードが二重に指定されています&quot;, sc);</span>
+<span id="L170"><a href="#L170" aria-label="line 170">  170</a> 						ret.CharaData = true;</span>
+<span id="L171"><a href="#L171" aria-label="line 171">  171</a> 						break;</span>
+<span id="L172"><a href="#L172" aria-label="line 172">  172</a> 					default:</span>
+<span id="L173"><a href="#L173" aria-label="line 173">  173</a> 						ret.Name = keyword;</span>
+<span id="L174"><a href="#L174" aria-label="line 174">  174</a> 						goto whilebreak;</span>
+<span id="L175"><a href="#L175" aria-label="line 175">  175</a> 				}</span>
+<span id="L176"><a href="#L176" aria-label="line 176">  176</a> 			}</span>
+<span id="L177"><a href="#L177" aria-label="line 177">  177</a> 		whilebreak:</span>
+<span id="L178"><a href="#L178" aria-label="line 178">  178</a> 			if (ret.Name == null)</span>
+<span id="L179"><a href="#L179" aria-label="line 179">  179</a> 				throw new CodeEE(keyword + &quot;の後に有効な変数名が指定されていません&quot;, sc);</span>
+<span id="L180"><a href="#L180" aria-label="line 180">  180</a> 			string errMes = &quot;&quot;;</span>
+<span id="L181"><a href="#L181" aria-label="line 181">  181</a> 			int errLevel = -1;</span>
+<span id="L182"><a href="#L182" aria-label="line 182">  182</a> 			if (isPrivate)</span>
+<span id="L183"><a href="#L183" aria-label="line 183">  183</a> 				GlobalStatic.IdentifierDictionary.CheckUserPrivateVarName(ref errMes, ref errLevel, ret.Name);</span>
+<span id="L184"><a href="#L184" aria-label="line 184">  184</a> 			else</span>
+<span id="L185"><a href="#L185" aria-label="line 185">  185</a> 				GlobalStatic.IdentifierDictionary.CheckUserVarName(ref errMes, ref errLevel, ret.Name);</span>
+<span id="L186"><a href="#L186" aria-label="line 186">  186</a> 			if (errLevel &gt;= 0)</span>
+<span id="L187"><a href="#L187" aria-label="line 187">  187</a> 			{</span>
+<span id="L188"><a href="#L188" aria-label="line 188">  188</a> 				if (errLevel &gt;= 2)</span>
+<span id="L189"><a href="#L189" aria-label="line 189">  189</a> 					throw new CodeEE(errMes, sc);</span>
+<span id="L190"><a href="#L190" aria-label="line 190">  190</a> 				ParserMediator.Warn(errMes, sc, errLevel);</span>
+<span id="L191"><a href="#L191" aria-label="line 191">  191</a> 			}</span>
+<span id="L192"><a href="#L192" aria-label="line 192">  192</a> </span>
+<span id="L193"><a href="#L193" aria-label="line 193">  193</a> </span>
+<span id="L194"><a href="#L194" aria-label="line 194">  194</a> 			List&lt;int&gt; sizeNum = new List&lt;int&gt;();</span>
+<span id="L195"><a href="#L195" aria-label="line 195">  195</a> 			if (wc.EOL)//サイズ省略</span>
+<span id="L196"><a href="#L196" aria-label="line 196">  196</a> 			{</span>
+<span id="L197"><a href="#L197" aria-label="line 197">  197</a> 				if (ret.Const)</span>
+<span id="L198"><a href="#L198" aria-label="line 198">  198</a> 					throw new CodeEE(&quot;CONSTキーワードが指定されていますが初期値が設定されていません&quot;);</span>
+<span id="L199"><a href="#L199" aria-label="line 199">  199</a> 				sizeNum.Add(1);</span>
+<span id="L200"><a href="#L200" aria-label="line 200">  200</a> 			}</span>
+<span id="L201"><a href="#L201" aria-label="line 201">  201</a> 			else if (wc.Current.Type == &#x27;,&#x27;)//サイズ指定</span>
+<span id="L202"><a href="#L202" aria-label="line 202">  202</a> 			{</span>
+<span id="L203"><a href="#L203" aria-label="line 203">  203</a> 				while (!wc.EOL)</span>
+<span id="L204"><a href="#L204" aria-label="line 204">  204</a> 				{</span>
+<span id="L205"><a href="#L205" aria-label="line 205">  205</a> 					if (wc.Current.Type == &#x27;=&#x27;)//サイズ指定解読完了＆初期値指定</span>
+<span id="L206"><a href="#L206" aria-label="line 206">  206</a> 						break;</span>
+<span id="L207"><a href="#L207" aria-label="line 207">  207</a> 					if (wc.Current.Type != &#x27;,&#x27;)</span>
+<span id="L208"><a href="#L208" aria-label="line 208">  208</a> 						throw new CodeEE(&quot;書式が間違っています&quot;, sc);</span>
+<span id="L209"><a href="#L209" aria-label="line 209">  209</a> 					wc.ShiftNext();</span>
+<span id="L210"><a href="#L210" aria-label="line 210">  210</a> 					if (ret.Reference)//参照型の場合は要素数不要</span>
+<span id="L211"><a href="#L211" aria-label="line 211">  211</a> 					{</span>
+<span id="L212"><a href="#L212" aria-label="line 212">  212</a> 						sizeNum.Add(0);</span>
+<span id="L213"><a href="#L213" aria-label="line 213">  213</a> 						if (wc.EOL)</span>
+<span id="L214"><a href="#L214" aria-label="line 214">  214</a> 							break;</span>
+<span id="L215"><a href="#L215" aria-label="line 215">  215</a> 						if (wc.Current.Type == &#x27;,&#x27;)</span>
+<span id="L216"><a href="#L216" aria-label="line 216">  216</a> 							continue;</span>
+<span id="L217"><a href="#L217" aria-label="line 217">  217</a> 					}</span>
+<span id="L218"><a href="#L218" aria-label="line 218">  218</a> 					if (wc.EOL)</span>
+<span id="L219"><a href="#L219" aria-label="line 219">  219</a> 						throw new CodeEE(&quot;カンマの後に有効な定数式が指定されていません&quot;, sc);</span>
+<span id="L220"><a href="#L220" aria-label="line 220">  220</a> 					IOperandTerm arg = ExpressionParser.ReduceIntegerTerm(wc, TermEndWith.Comma_Assignment);</span>
+<span id="L221"><a href="#L221" aria-label="line 221">  221</a> 					SingleTerm sizeTerm = arg.Restructure(null) as SingleTerm;</span>
+<span id="L222"><a href="#L222" aria-label="line 222">  222</a> 					if ((sizeTerm == null) || (sizeTerm.GetOperandType() != typeof(Int64)))</span>
+<span id="L223"><a href="#L223" aria-label="line 223">  223</a> 						throw new CodeEE(&quot;カンマの後に有効な定数式が指定されていません&quot;, sc);</span>
+<span id="L224"><a href="#L224" aria-label="line 224">  224</a> 					if (ret.Reference)//参照型には要素数指定不可(0にするか書かないかどっちか</span>
+<span id="L225"><a href="#L225" aria-label="line 225">  225</a> 					{</span>
+<span id="L226"><a href="#L226" aria-label="line 226">  226</a> 						if (sizeTerm.Int != 0)</span>
+<span id="L227"><a href="#L227" aria-label="line 227">  227</a> 							throw new CodeEE(&quot;参照型変数にはサイズを指定できません(サイズを省略するか0を指定してください)&quot;, sc);</span>
+<span id="L228"><a href="#L228" aria-label="line 228">  228</a> </span>
+<span id="L229"><a href="#L229" aria-label="line 229">  229</a> 						continue;</span>
+<span id="L230"><a href="#L230" aria-label="line 230">  230</a> 					}</span>
+<span id="L231"><a href="#L231" aria-label="line 231">  231</a> 					else if ((sizeTerm.Int &lt;= 0) || (sizeTerm.Int &gt; 1000000))</span>
+<span id="L232"><a href="#L232" aria-label="line 232">  232</a> 						throw new CodeEE(&quot;ユーザー定義変数のサイズは1以上1000000以下でなければなりません&quot;, sc);</span>
+<span id="L233"><a href="#L233" aria-label="line 233">  233</a> 					sizeNum.Add((int)sizeTerm.Int);</span>
+<span id="L234"><a href="#L234" aria-label="line 234">  234</a> 				}</span>
+<span id="L235"><a href="#L235" aria-label="line 235">  235</a> 			}</span>
+<span id="L236"><a href="#L236" aria-label="line 236">  236</a> </span>
+<span id="L237"><a href="#L237" aria-label="line 237">  237</a> </span>
+<span id="L238"><a href="#L238" aria-label="line 238">  238</a> 			if (wc.Current.Type != &#x27;=&#x27;)//初期値指定なし</span>
+<span id="L239"><a href="#L239" aria-label="line 239">  239</a> 			{</span>
+<span id="L240"><a href="#L240" aria-label="line 240">  240</a> 				if (ret.Const)</span>
+<span id="L241"><a href="#L241" aria-label="line 241">  241</a> 					throw new CodeEE(&quot;CONSTキーワードが指定されていますが初期値が設定されていません&quot;);</span>
+<span id="L242"><a href="#L242" aria-label="line 242">  242</a> 			}</span>
+<span id="L243"><a href="#L243" aria-label="line 243">  243</a> 			else//初期値指定あり</span>
+<span id="L244"><a href="#L244" aria-label="line 244">  244</a> 			{</span>
+<span id="L245"><a href="#L245" aria-label="line 245">  245</a> 				if (((OperatorWord)wc.Current).Code != OperatorCode.Assignment)</span>
+<span id="L246"><a href="#L246" aria-label="line 246">  246</a> 					throw new CodeEE(&quot;予期しない演算子を発見しました&quot;);</span>
+<span id="L247"><a href="#L247" aria-label="line 247">  247</a> 				if (ret.Reference)</span>
+<span id="L248"><a href="#L248" aria-label="line 248">  248</a> 					throw new CodeEE(&quot;参照型変数には初期値を設定できません&quot;);</span>
+<span id="L249"><a href="#L249" aria-label="line 249">  249</a> 				if (sizeNum.Count &gt;= 2)</span>
+<span id="L250"><a href="#L250" aria-label="line 250">  250</a> 					throw new CodeEE(&quot;多次元変数には初期値を設定できません&quot;);</span>
+<span id="L251"><a href="#L251" aria-label="line 251">  251</a> 				if (ret.CharaData)</span>
+<span id="L252"><a href="#L252" aria-label="line 252">  252</a> 					throw new CodeEE(&quot;キャラ型変数には初期値を設定できません&quot;);</span>
+<span id="L253"><a href="#L253" aria-label="line 253">  253</a> 				int size = 0;</span>
+<span id="L254"><a href="#L254" aria-label="line 254">  254</a> 				if (sizeNum.Count == 1)</span>
+<span id="L255"><a href="#L255" aria-label="line 255">  255</a> 					size = sizeNum[0];</span>
+<span id="L256"><a href="#L256" aria-label="line 256">  256</a> 				wc.ShiftNext();</span>
+<span id="L257"><a href="#L257" aria-label="line 257">  257</a> 				IOperandTerm[] terms = ExpressionParser.ReduceArguments(wc, ArgsEndWith.EoL, false);</span>
+<span id="L258"><a href="#L258" aria-label="line 258">  258</a> 				if (terms.Length == 0)</span>
+<span id="L259"><a href="#L259" aria-label="line 259">  259</a> 					throw new CodeEE(&quot;配列の初期値は省略できません&quot;);</span>
+<span id="L260"><a href="#L260" aria-label="line 260">  260</a> 				if (size &gt; 0)</span>
+<span id="L261"><a href="#L261" aria-label="line 261">  261</a> 				{</span>
+<span id="L262"><a href="#L262" aria-label="line 262">  262</a> 					if (terms.Length &gt; size)</span>
+<span id="L263"><a href="#L263" aria-label="line 263">  263</a> 						throw new CodeEE(&quot;初期値の数が配列のサイズを超えています&quot;);</span>
+<span id="L264"><a href="#L264" aria-label="line 264">  264</a> 					if (ret.Const &amp;&amp; terms.Length != size)</span>
+<span id="L265"><a href="#L265" aria-label="line 265">  265</a> 						throw new CodeEE(&quot;定数の初期値の数が配列のサイズと一致しません&quot;);</span>
+<span id="L266"><a href="#L266" aria-label="line 266">  266</a> 				}</span>
+<span id="L267"><a href="#L267" aria-label="line 267">  267</a> 				if (dims)</span>
+<span id="L268"><a href="#L268" aria-label="line 268">  268</a> 					ret.DefaultStr = new string[terms.Length];</span>
+<span id="L269"><a href="#L269" aria-label="line 269">  269</a> 				else</span>
+<span id="L270"><a href="#L270" aria-label="line 270">  270</a> 					ret.DefaultInt = new Int64[terms.Length];</span>
+<span id="L271"><a href="#L271" aria-label="line 271">  271</a> </span>
+<span id="L272"><a href="#L272" aria-label="line 272">  272</a> 				for (int i = 0; i &lt; terms.Length; i++)</span>
+<span id="L273"><a href="#L273" aria-label="line 273">  273</a> 				{</span>
+<span id="L274"><a href="#L274" aria-label="line 274">  274</a> 					if (terms[i] == null)</span>
+<span id="L275"><a href="#L275" aria-label="line 275">  275</a> 						throw new CodeEE(&quot;配列の初期値は省略できません&quot;);</span>
+<span id="L276"><a href="#L276" aria-label="line 276">  276</a> 					terms[i] = terms[i].Restructure(GlobalStatic.EMediator);</span>
+<span id="L277"><a href="#L277" aria-label="line 277">  277</a> 					SingleTerm sTerm = terms[i] as SingleTerm;</span>
+<span id="L278"><a href="#L278" aria-label="line 278">  278</a> 					if (sTerm == null)</span>
+<span id="L279"><a href="#L279" aria-label="line 279">  279</a> 						throw new CodeEE(&quot;配列の初期値には定数のみ指定できます&quot;);</span>
+<span id="L280"><a href="#L280" aria-label="line 280">  280</a> 					if (dims != sTerm.IsString)</span>
+<span id="L281"><a href="#L281" aria-label="line 281">  281</a> 						throw new CodeEE(&quot;変数の型と初期値の型が一致していません&quot;);</span>
+<span id="L282"><a href="#L282" aria-label="line 282">  282</a> 					if (dims)</span>
+<span id="L283"><a href="#L283" aria-label="line 283">  283</a> 						ret.DefaultStr[i] = sTerm.Str;</span>
+<span id="L284"><a href="#L284" aria-label="line 284">  284</a> 					else</span>
+<span id="L285"><a href="#L285" aria-label="line 285">  285</a> 						ret.DefaultInt[i] = sTerm.Int;</span>
+<span id="L286"><a href="#L286" aria-label="line 286">  286</a> 				}</span>
+<span id="L287"><a href="#L287" aria-label="line 287">  287</a> 				if (sizeNum.Count == 0)</span>
+<span id="L288"><a href="#L288" aria-label="line 288">  288</a> 					sizeNum.Add(terms.Length);</span>
+<span id="L289"><a href="#L289" aria-label="line 289">  289</a> 			}</span>
+<span id="L290"><a href="#L290" aria-label="line 290">  290</a> 			if (!wc.EOL)</span>
+<span id="L291"><a href="#L291" aria-label="line 291">  291</a> 				throw new CodeEE(&quot;書式が間違っています&quot;, sc);</span>
+<span id="L292"><a href="#L292" aria-label="line 292">  292</a> </span>
+<span id="L293"><a href="#L293" aria-label="line 293">  293</a> 			if (sizeNum.Count == 0)</span>
+<span id="L294"><a href="#L294" aria-label="line 294">  294</a> 				sizeNum.Add(1);</span>
+<span id="L295"><a href="#L295" aria-label="line 295">  295</a> </span>
+<span id="L296"><a href="#L296" aria-label="line 296">  296</a> 			ret.Private = isPrivate;</span>
+<span id="L297"><a href="#L297" aria-label="line 297">  297</a> 			ret.Dimension = sizeNum.Count;</span>
+<span id="L298"><a href="#L298" aria-label="line 298">  298</a> 			if (ret.Const &amp;&amp; ret.Dimension &gt; 1)</span>
+<span id="L299"><a href="#L299" aria-label="line 299">  299</a> 				throw new CodeEE(&quot;CONSTキーワードが指定された変数を多次元配列にはできません&quot;);</span>
+<span id="L300"><a href="#L300" aria-label="line 300">  300</a> 			if (ret.CharaData &amp;&amp; ret.Dimension &gt; 2)</span>
+<span id="L301"><a href="#L301" aria-label="line 301">  301</a> 				throw new CodeEE(&quot;3次元以上のキャラ型変数を宣言することはできません&quot;, sc);</span>
+<span id="L302"><a href="#L302" aria-label="line 302">  302</a> 			if (ret.Dimension &gt; 3)</span>
+<span id="L303"><a href="#L303" aria-label="line 303">  303</a> 				throw new CodeEE(&quot;4次元以上の配列変数を宣言することはできません&quot;, sc);</span>
+<span id="L304"><a href="#L304" aria-label="line 304">  304</a> 			ret.Lengths = new int[sizeNum.Count];</span>
+<span id="L305"><a href="#L305" aria-label="line 305">  305</a> 			if (ret.Reference)</span>
+<span id="L306"><a href="#L306" aria-label="line 306">  306</a> 				return ret;</span>
+<span id="L307"><a href="#L307" aria-label="line 307">  307</a> 			Int64 totalBytes = 1;</span>
+<span id="L308"><a href="#L308" aria-label="line 308">  308</a> 			for (int i = 0; i &lt; sizeNum.Count; i++)</span>
+<span id="L309"><a href="#L309" aria-label="line 309">  309</a> 			{</span>
+<span id="L310"><a href="#L310" aria-label="line 310">  310</a> 				ret.Lengths[i] = sizeNum[i];</span>
+<span id="L311"><a href="#L311" aria-label="line 311">  311</a> 				totalBytes *= ret.Lengths[i];</span>
+<span id="L312"><a href="#L312" aria-label="line 312">  312</a> 			}</span>
+<span id="L313"><a href="#L313" aria-label="line 313">  313</a> 			if ((totalBytes &lt;= 0) || (totalBytes &gt; 1000000))</span>
+<span id="L314"><a href="#L314" aria-label="line 314">  314</a> 				throw new CodeEE(&quot;ユーザー定義変数のサイズは1以上1000000以下でなければなりません&quot;, sc);</span>
+<span id="L315"><a href="#L315" aria-label="line 315">  315</a> 			if (!isPrivate &amp;&amp; ret.Save &amp;&amp; !Config.SystemSaveInBinary)</span>
+<span id="L316"><a href="#L316" aria-label="line 316">  316</a> 			{</span>
+<span id="L317"><a href="#L317" aria-label="line 317">  317</a> 				if (dims &amp;&amp; ret.Dimension &gt; 1)</span>
+<span id="L318"><a href="#L318" aria-label="line 318">  318</a> 					throw new CodeEE(&quot;文字列型の多次元配列変数にSAVEDATAフラグを付ける場合には「バイナリ型セーブ」オプションが必須です&quot;, sc);</span>
+<span id="L319"><a href="#L319" aria-label="line 319">  319</a> 				else if (ret.CharaData)</span>
+<span id="L320"><a href="#L320" aria-label="line 320">  320</a> 					throw new CodeEE(&quot;キャラ型変数にSAVEDATAフラグを付ける場合には「バイナリ型セーブ」オプションが必須です&quot;, sc);</span>
+<span id="L321"><a href="#L321" aria-label="line 321">  321</a> 			}</span>
+<span id="L322"><a href="#L322" aria-label="line 322">  322</a> 			return ret;</span>
+<span id="L323"><a href="#L323" aria-label="line 323">  323</a> 		}</span>
+<span id="L324"><a href="#L324" aria-label="line 324">  324</a> 	}</span>
+<span id="L325"><a href="#L325" aria-label="line 325">  325</a> 	internal sealed class DimLineWC</span>
+<span id="L326"><a href="#L326" aria-label="line 326">  326</a> 	{</span>
+<span id="L327"><a href="#L327" aria-label="line 327">  327</a> 		public WordCollection WC;</span>
+<span id="L328"><a href="#L328" aria-label="line 328">  328</a> 		public bool Dims;</span>
+<span id="L329"><a href="#L329" aria-label="line 329">  329</a> 		public bool IsPrivate;</span>
+<span id="L330"><a href="#L330" aria-label="line 330">  330</a> 		public ScriptPosition SC;</span>
+<span id="L331"><a href="#L331" aria-label="line 331">  331</a> 		public DimLineWC(WordCollection wc, bool isString, bool isPrivate, ScriptPosition position)</span>
+<span id="L332"><a href="#L332" aria-label="line 332">  332</a> 		{</span>
+<span id="L333"><a href="#L333" aria-label="line 333">  333</a> 			WC = wc;</span>
+<span id="L334"><a href="#L334" aria-label="line 334">  334</a> 			Dims = isString;</span>
+<span id="L335"><a href="#L335" aria-label="line 335">  335</a> 			IsPrivate = isPrivate;</span>
+<span id="L336"><a href="#L336" aria-label="line 336">  336</a> 			SC = position;</span>
+<span id="L337"><a href="#L337" aria-label="line 337">  337</a> 		}</span>
+<span id="L338"><a href="#L338" aria-label="line 338">  338</a> 	}</span>
+<span id="L339"><a href="#L339" aria-label="line 339">  339</a> </span>
+<span id="L340"><a href="#L340" aria-label="line 340">  340</a> }</span></pre></html>

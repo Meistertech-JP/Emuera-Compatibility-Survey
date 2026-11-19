@@ -1,0 +1,38 @@
+{
+  "fixture": "NEST_PRINTDATA_STRDATA_REACHED",
+  "mode": "public-01",
+  "argv": [
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "-B",
+    "-I",
+    "[WITHHELD_PRIVATE_REFERENCE]",
+    "."
+  ],
+  "cwd": "[WITHHELD_PRIVATE_REFERENCE]",
+  "inputs_before": {
+    "ERB/MAIN.ERB": "b8a238103c03f9c4d6a392a038a136a5df9fc99eacf00b0e4c700eef48b1f564",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_before": [],
+  "pyz_before": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_before": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "started_utc": "2026-11-15T23:29:45.445857+00:00",
+  "preflight_sha256": "fd0ed39a9430bfd46ee2316f77b660fb83f5bf41b35eb6f41c3a08f1532f20fa",
+  "native_before": null,
+  "helper_sha256": null,
+  "returncode": 1,
+  "inputs_after": {
+    "ERB/MAIN.ERB": "b8a238103c03f9c4d6a392a038a136a5df9fc99eacf00b0e4c700eef48b1f564",
+    "emuera.config": "f08f478f133fa2b1b0887d3a48934138860f3b13be623ecbba453ed85e9a11cc"
+  },
+  "CSV_after": [],
+  "pyz_after": "8a7b3697b97155c4dc994c8349c6756bb0401000d3bbccd8e85ff046e3774b35",
+  "zip_after": "fd0dd5b83ab3f929e69de0b9af739fa9bf785b6f510b30d11aaf44db35af182a",
+  "ended_utc": "2026-11-15T23:29:45.789585+00:00",
+  "outputs": {
+    "DIMENSION_PREFLIGHT.json": "1c648b4dcf51d722de6b342f8d62c80b5e003a3a5b5a2ad31ccaba6cf67868db",
+    "PREFLIGHT_ACTUAL_BEFORE_LAUNCH.json": "fd0ed39a9430bfd46ee2316f77b660fb83f5bf41b35eb6f41c3a08f1532f20fa",
+    "stderr.bin": "4000d1d02f76f6cd4239b6043c5a224512ea349b22b4936b2d21c9d33c93c148",
+    "stdout.bin": "349ce4891601bef407c5852e88135a16b75a3d1fd5afbd41173c8bf7ed956265"
+  }
+}
